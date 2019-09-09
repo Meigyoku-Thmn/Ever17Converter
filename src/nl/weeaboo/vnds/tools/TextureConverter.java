@@ -172,7 +172,7 @@ public class TextureConverter {
       File srcF = new File(src);
       File dstF = new File(dst);
 
-      if (srcF == null || !srcF.exists() || !srcF.isFile() || !srcF.canRead()) {
+      if (srcF.exists() || !srcF.isFile() || !srcF.canRead()) {
          throw new FileNotFoundException(srcF.getPath());
       }
 
@@ -334,13 +334,13 @@ public class TextureConverter {
       src.delete();
 
       File dst = new File(StringUtil.stripExtension(path) + ".dta");
-      BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(dst));
-      for (int c : argb) {
-         bout.write(c & 0xFF);
-         bout.write((c >> 8) & 0xFF);
+      try (BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(dst))) {
+         for (int c : argb) {
+            bout.write(c & 0xFF);
+            bout.write((c >> 8) & 0xFF);
+         }
+         bout.flush();
       }
-      bout.flush();
-      bout.close();
    }
 
    protected int A8R8G8B8_to_A1B5G5R5(int c) {

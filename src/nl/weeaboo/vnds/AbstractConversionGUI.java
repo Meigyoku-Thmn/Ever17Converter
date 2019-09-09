@@ -424,7 +424,7 @@ public abstract class AbstractConversionGUI extends JFrame implements Runnable {
             list.add("" + originalSize.h);
          }
 
-         if (target != null) {
+         {
             list.add("-targetSize");
             list.add("" + imageSize.w);
             list.add("" + imageSize.h);

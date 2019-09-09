@@ -54,7 +54,7 @@ public class FileMapper implements Iterable<Entry<String, String>> {
 
       while (hash == null || hash2file.containsKey(hash)) {
          hash = (hashPrefix + getRandomString(5, random) + ext).toLowerCase();
-      };
+      }
 
       hash2file.put(hash, key);
       file2hash.put(key, hash);

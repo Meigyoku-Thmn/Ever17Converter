@@ -11,7 +11,7 @@ public class StringCommandReader {
    private final boolean spacesBetweenWords;
 
    private ByteBuffer input;
-   private StringBuilder output;
+   private final StringBuilder output;
 
    public StringCommandReader(String inputEncoding, boolean spacesBetweenWords) {
       this.inputEncoding = inputEncoding;

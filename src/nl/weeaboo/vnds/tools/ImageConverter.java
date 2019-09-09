@@ -210,9 +210,9 @@ public class ImageConverter {
          filenameNoExt = filenameNoExt.substring(0, filenameNoExt.lastIndexOf('.'));
       }
 
-      StringBuilder log = new StringBuilder();
+      StringBuilder _log = new StringBuilder();
       if (isLogging()) {
-         processLogs.put(file, log);
+         processLogs.put(file, _log);
       }
 
       try {
@@ -451,7 +451,7 @@ public class ImageConverter {
          return file;
       } catch (IOException | IllegalArgumentException e) {
          Log.w(file.getName() + " " + e);
-         log.append(e.toString());
+         _log.append(e.toString());
       }
 
       return null;

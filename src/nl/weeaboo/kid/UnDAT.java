@@ -12,11 +12,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import nl.weeaboo.common.StringUtil;
-import nl.weeaboo.io.FileCollectFilter;
 import nl.weeaboo.io.FileUtil;
 import nl.weeaboo.io.LittleEndianInputStream;
 import nl.weeaboo.vnds.BatchProcess;
-import nl.weeaboo.vnds.FileOp;
 import nl.weeaboo.vnds.Log;
 
 public class UnDAT {
