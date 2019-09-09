@@ -13,7 +13,6 @@ import java.awt.dnd.DropTargetDropEvent;
 import java.awt.dnd.DropTargetEvent;
 import java.awt.dnd.DropTargetListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -70,259 +69,271 @@ import nl.weeaboo.vnds.tools.ImageConverter.ScalingType;
 @SuppressWarnings("serial")
 public class ImageConverterGUI extends JFrame {
 
-	private ImageConverter converter;
-	
-	private JComboBox modeCombo;
-	private JComboBox scalingCombo;
-	private JTextField widthField;
-	private JTextField heightField;
-	private JSpinner qualitySpinner;
-	private JComboBox ditheringCombo;
-	private JCheckBox loggingCheck;
-	private JSpinner threadsSpinner;
-	private FileBrowseField browseField;
-	private JButton convertButton;
-	
-	public ImageConverterGUI() {
-		converter = new ImageConverter();
-		
-		setTitle("VNDS Image Converter v1.0.5");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				
-		setLayout(new BorderLayout());
-		add(createCenterPanel(), BorderLayout.CENTER);
-				
-		reset();
-		
-		setMinimumSize(new Dimension(300, 100));
-		pack();
-		setLocationRelativeTo(null);
-		setVisible(true);
-	}
-	
-	//Functions
-	public static void main(String args[]) {
-		AwtUtil.setDefaultLAF();
-		
-		if (args.length > 0) {
-			try {
-				ImageConverter.main(args);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} else {
-			new ImageConverterGUI();
-		}
-	}
-	
-	protected JPanel createCenterPanel() {
-		JLabel modeLabel = new JLabel("Output Type");
-		modeCombo = new JComboBox(ImageConverter.ConvertType.values());
-		modeCombo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				ConvertType mode = (ConvertType)modeCombo.getSelectedItem();
-				converter.setMode(mode);
-				qualitySpinner.setEnabled(mode == ConvertType.TYPE_JPG);
-			}
-		});
+   private final ImageConverter converter;
 
-		JLabel scalingLabel = new JLabel("Scaling Mode");
-		scalingCombo = new JComboBox(ImageConverter.ScalingType.values());
-		scalingCombo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				ScalingType s = (ScalingType)scalingCombo.getSelectedItem();
-				converter.setScalingType(s);
-			}
-		});
-		
-		JLabel sizeLabel = new JLabel("Scaling Mode Size");
-		widthField = new DirectValidatingField() {
-			public boolean isValid(String text) {
-				try {
-					int i = Integer.parseInt(text);
-					return (i > 0 && i <= 2048);
-				} catch (NumberFormatException nfe) {					
-				}
-				return false;
-			}
-			protected void onValidTextEntered(String text) {
-				int w = Integer.parseInt(text);
-				converter.setSourceScreenSize(w, converter.getSourceScreenSize().height);
-			}
-		};
-		heightField = new DirectValidatingField() {
-			public boolean isValid(String text) {
-				try {
-					int i = Integer.parseInt(text);
-					return (i > 0 && i <= 2048);
-				} catch (NumberFormatException nfe) {					
-				}
-				return false;
-			}
-			protected void onValidTextEntered(String text) {
-				int h = Integer.parseInt(text);
-				converter.setSourceScreenSize(converter.getSourceScreenSize().width, h);
-			}
-		};
-		JLabel qualityLabel = new JLabel("JPEG Quality");
-		qualitySpinner = new JSpinner(new SpinnerNumberModel(98, 0, 100, 1));
-		qualitySpinner.setEnabled(false);
+   private JComboBox modeCombo;
+   private JComboBox scalingCombo;
+   private JTextField widthField;
+   private JTextField heightField;
+   private JSpinner qualitySpinner;
+   private JComboBox ditheringCombo;
+   private JCheckBox loggingCheck;
+   private JSpinner threadsSpinner;
+   private FileBrowseField browseField;
+   private JButton convertButton;
 
-		JLabel ditheringLabel = new JLabel("Dithering");
-		ditheringCombo = new JComboBox(new Object[] {DitheringType.NONE,
-				DitheringType.FLOYD_STEINBERG, DitheringType.RANDOM});
-		ditheringCombo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				DitheringType dt = (DitheringType)ditheringCombo.getSelectedItem();
-				converter.setDitheringType(dt);
-			}
-		});
+   public ImageConverterGUI() {
+      converter = new ImageConverter();
 
-		JLabel loggingLabel = new JLabel("Write logfile");
-		loggingCheck = new JCheckBox();
-		JLabel threadsLabel = new JLabel("Threads");
-		threadsSpinner = new JSpinner(new SpinnerNumberModel(8, 1, 128, 1));
-		
-		JPanel sizePanel = new JPanel(new GridLayout(-1, 3, 5, 5));
-		sizePanel.add(widthField);
-		sizePanel.add(new JLabel(" x ", JLabel.CENTER));
-		sizePanel.add(heightField);
-		
-		JPanel panel = new JPanel(new GridLayout(-1, 2, 15, 5));
-		panel.add(modeLabel); panel.add(modeCombo);
-		panel.add(scalingLabel); panel.add(scalingCombo);
-		panel.add(sizeLabel); panel.add(sizePanel);
-		panel.add(qualityLabel); panel.add(qualitySpinner);
-		panel.add(ditheringLabel); panel.add(ditheringCombo);
-		panel.add(loggingLabel); panel.add(loggingCheck);
-		panel.add(threadsLabel); panel.add(threadsSpinner);
-						
-		browseField = FileBrowseField.readFolder("Folder", new File(""));
-		convertButton = new JButton("Convert");
-		convertButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				convert();
-			}
-		});
-		
-		JPanel bottomPanel = new JPanel(new BorderLayout(10, 10));
-		bottomPanel.add(new Sash(Sash.HORIZONTAL), BorderLayout.NORTH);
-		bottomPanel.add(browseField, BorderLayout.CENTER);
-		bottomPanel.add(convertButton, BorderLayout.EAST);
-		
-		JPanel panel2 = new JPanel(new BorderLayout(0, 10));
-		panel2.setBorder(new EmptyBorder(10, 10, 10, 10));
-		panel2.add(panel, BorderLayout.NORTH);
-		panel2.add(bottomPanel, BorderLayout.SOUTH);
+      setTitle("VNDS Image Converter v1.0.5");
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		new DropTarget(panel2, new DropTargetListener() {
-			public void dragEnter(DropTargetDragEvent dtde) {
-			}
-			public void dragExit(DropTargetEvent dte) {
-			}
-			public void dragOver(DropTargetDragEvent dtde) {
-				for (DataFlavor df : dtde.getCurrentDataFlavorsAsList()) {
-					if (df.isFlavorJavaFileListType()) {
-						dtde.acceptDrag(DnDConstants.ACTION_COPY_OR_MOVE);
-						break;
-					}
-				}
-			}
-			@SuppressWarnings("unchecked")
-			public void drop(DropTargetDropEvent dtde) {
-				dtde.acceptDrop(DnDConstants.ACTION_COPY_OR_MOVE);
-				
-				Transferable t = dtde.getTransferable();				
-				for (DataFlavor df : t.getTransferDataFlavors()) {
-					if (df.isFlavorJavaFileListType()) {
-						try {
-							List<File> list = (List<File>)t.getTransferData(df);
-							convert(list);
-						} catch (UnsupportedFlavorException e) {
-							Log.w("Drag&Drop Exception", e);
-						} catch (IOException e) {
-							Log.w("Drag&Drop Exception", e);
-						}						
-					}					
-				}
-			}
-			public void dropActionChanged(DropTargetDragEvent dtde) {
-			}
-		});
+      setLayout(new BorderLayout());
+      add(createCenterPanel(), BorderLayout.CENTER);
 
-		return panel2;
-	}
-	
-	public void convert() {
-		convert(null);
-	}		
-	public void convert(final List<File> files) {
-		final File folder = browseField.getFile();
-		if (files == null) {
-			if (!folder.exists() || !folder.isDirectory()) {
-				JOptionPane.showMessageDialog(null, "Invalid directory: \"" + folder + "\"",
-						"Error", JOptionPane.ERROR_MESSAGE);
-				return;
-			}
-		}
+      reset();
 
-		converter.setMode((ConvertType)modeCombo.getSelectedItem());
-		converter.setScalingType((ScalingType)scalingCombo.getSelectedItem());
-		converter.setQuality((Integer)qualitySpinner.getValue());
-		converter.setLogging(loggingCheck.isSelected());
-		converter.setMaxThreads((Integer)threadsSpinner.getValue());
-		
-		ProgressListener pl = new ProgressListener() {
-			public void onFinished(String message) {
-				String logPath = "";
-				String logPart = "";
-				
-				try {
-					if (converter.isLogging()) {
-						logPath = converter.dumpLog("conversion.log").getAbsolutePath();
-						logPart = String.format("<br><br> Log dumped to %s", logPath);
-					}
-					
-					JOptionPane.showMessageDialog(null, String.format(
-							"<html>Conversion finished.%s</html>", logPart),
-							"Finished", JOptionPane.PLAIN_MESSAGE);
-				} catch (IOException e) {
-					AwtUtil.showError(e);
-				}				
-			}
-			public void onProgress(int value, int max, String message) {
-			}
-		};
-		
-		ProgressRunnable task = new ProgressRunnable() {
-			public void run(ProgressListener pl) {
-				if (files == null) {
-					try {
-						converter.convertFolder(folder.toString(), pl);
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				} else {
-					for (File f : files) {
-						converter.convertFile(f);
-					}
-				}
-			}
-		};
-		
-		VNDSProgressDialog dialog = new VNDSProgressDialog();
-		dialog.showDialog(task, pl);
-	}
-	
-	public void reset() {
-		widthField.setText("800");
-		heightField.setText("600");
-		qualitySpinner.setValue(converter.getQuality());
-		threadsSpinner.setValue(converter.getMaxThreads());
-	}
-	
-	//Getters
-	
-	//Setters
-	
+      setMinimumSize(new Dimension(300, 100));
+      pack();
+      setLocationRelativeTo(null);
+      setVisible(true);
+   }
+
+   //Functions
+   public static void main(String args[]) {
+      AwtUtil.setDefaultLAF();
+
+      if (args.length > 0) {
+         try {
+            ImageConverter.main(args);
+         } catch (IOException e) {
+            e.printStackTrace();
+         }
+      } else {
+         new ImageConverterGUI();
+      }
+   }
+
+   protected JPanel createCenterPanel() {
+      JLabel modeLabel = new JLabel("Output Type");
+      modeCombo = new JComboBox(ImageConverter.ConvertType.values());
+      modeCombo.addActionListener((ActionEvent e) -> {
+         ConvertType mode = (ConvertType) modeCombo.getSelectedItem();
+         converter.setMode(mode);
+         qualitySpinner.setEnabled(mode == ConvertType.TYPE_JPG);
+      });
+
+      JLabel scalingLabel = new JLabel("Scaling Mode");
+      scalingCombo = new JComboBox(ImageConverter.ScalingType.values());
+      scalingCombo.addActionListener((ActionEvent e) -> {
+         ScalingType s = (ScalingType) scalingCombo.getSelectedItem();
+         converter.setScalingType(s);
+      });
+
+      JLabel sizeLabel = new JLabel("Scaling Mode Size");
+      widthField = new DirectValidatingField() {
+         @Override
+         public boolean isValid(String text) {
+            try {
+               int i = Integer.parseInt(text);
+               return (i > 0 && i <= 2048);
+            } catch (NumberFormatException nfe) {
+            }
+            return false;
+         }
+
+         @Override
+         protected void onValidTextEntered(String text) {
+            int w = Integer.parseInt(text);
+            converter.setSourceScreenSize(w, converter.getSourceScreenSize().height);
+         }
+      };
+      heightField = new DirectValidatingField() {
+         @Override
+         public boolean isValid(String text) {
+            try {
+               int i = Integer.parseInt(text);
+               return (i > 0 && i <= 2048);
+            } catch (NumberFormatException nfe) {
+            }
+            return false;
+         }
+
+         @Override
+         protected void onValidTextEntered(String text) {
+            int h = Integer.parseInt(text);
+            converter.setSourceScreenSize(converter.getSourceScreenSize().width, h);
+         }
+      };
+      JLabel qualityLabel = new JLabel("JPEG Quality");
+      qualitySpinner = new JSpinner(new SpinnerNumberModel(98, 0, 100, 1));
+      qualitySpinner.setEnabled(false);
+
+      JLabel ditheringLabel = new JLabel("Dithering");
+      ditheringCombo = new JComboBox(new Object[]{DitheringType.NONE,
+         DitheringType.FLOYD_STEINBERG, DitheringType.RANDOM});
+      ditheringCombo.addActionListener((ActionEvent e) -> {
+         DitheringType dt = (DitheringType) ditheringCombo.getSelectedItem();
+         converter.setDitheringType(dt);
+      });
+
+      JLabel loggingLabel = new JLabel("Write logfile");
+      loggingCheck = new JCheckBox();
+      JLabel threadsLabel = new JLabel("Threads");
+      threadsSpinner = new JSpinner(new SpinnerNumberModel(8, 1, 128, 1));
+
+      JPanel sizePanel = new JPanel(new GridLayout(-1, 3, 5, 5));
+      sizePanel.add(widthField);
+      sizePanel.add(new JLabel(" x ", JLabel.CENTER));
+      sizePanel.add(heightField);
+
+      JPanel panel = new JPanel(new GridLayout(-1, 2, 15, 5));
+      panel.add(modeLabel);
+      panel.add(modeCombo);
+      panel.add(scalingLabel);
+      panel.add(scalingCombo);
+      panel.add(sizeLabel);
+      panel.add(sizePanel);
+      panel.add(qualityLabel);
+      panel.add(qualitySpinner);
+      panel.add(ditheringLabel);
+      panel.add(ditheringCombo);
+      panel.add(loggingLabel);
+      panel.add(loggingCheck);
+      panel.add(threadsLabel);
+      panel.add(threadsSpinner);
+
+      browseField = FileBrowseField.readFolder("Folder", new File(""));
+      convertButton = new JButton("Convert");
+      convertButton.addActionListener((ActionEvent e) -> {
+         convert();
+      });
+
+      JPanel bottomPanel = new JPanel(new BorderLayout(10, 10));
+      bottomPanel.add(new Sash(Sash.HORIZONTAL), BorderLayout.NORTH);
+      bottomPanel.add(browseField, BorderLayout.CENTER);
+      bottomPanel.add(convertButton, BorderLayout.EAST);
+
+      JPanel panel2 = new JPanel(new BorderLayout(0, 10));
+      panel2.setBorder(new EmptyBorder(10, 10, 10, 10));
+      panel2.add(panel, BorderLayout.NORTH);
+      panel2.add(bottomPanel, BorderLayout.SOUTH);
+
+      new DropTarget(panel2, new DropTargetListener() {
+         @Override
+         public void dragEnter(DropTargetDragEvent dtde) {
+         }
+
+         @Override
+         public void dragExit(DropTargetEvent dte) {
+         }
+
+         @Override
+         public void dragOver(DropTargetDragEvent dtde) {
+            for (DataFlavor df : dtde.getCurrentDataFlavorsAsList()) {
+               if (df.isFlavorJavaFileListType()) {
+                  dtde.acceptDrag(DnDConstants.ACTION_COPY_OR_MOVE);
+                  break;
+               }
+            }
+         }
+
+         @SuppressWarnings("unchecked")
+         @Override
+         public void drop(DropTargetDropEvent dtde) {
+            dtde.acceptDrop(DnDConstants.ACTION_COPY_OR_MOVE);
+
+            Transferable t = dtde.getTransferable();
+            for (DataFlavor df : t.getTransferDataFlavors()) {
+               if (df.isFlavorJavaFileListType()) {
+                  try {
+                     List<File> list = (List<File>) t.getTransferData(df);
+                     convert(list);
+                  } catch (UnsupportedFlavorException | IOException e) {
+                     Log.w("Drag&Drop Exception", e);
+                  }
+               }
+            }
+         }
+
+         @Override
+         public void dropActionChanged(DropTargetDragEvent dtde) {
+         }
+      });
+
+      return panel2;
+   }
+
+   public void convert() {
+      convert(null);
+   }
+
+   public void convert(final List<File> files) {
+      final File folder = browseField.getFile();
+      if (files == null) {
+         if (!folder.exists() || !folder.isDirectory()) {
+            JOptionPane.showMessageDialog(null, "Invalid directory: \"" + folder + "\"",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+         }
+      }
+
+      converter.setMode((ConvertType) modeCombo.getSelectedItem());
+      converter.setScalingType((ScalingType) scalingCombo.getSelectedItem());
+      converter.setQuality((Integer) qualitySpinner.getValue());
+      converter.setLogging(loggingCheck.isSelected());
+      converter.setMaxThreads((Integer) threadsSpinner.getValue());
+
+      ProgressListener pl = new ProgressListener() {
+         @Override
+         public void onFinished(String message) {
+            String logPath = "";
+            String logPart = "";
+
+            try {
+               if (converter.isLogging()) {
+                  logPath = converter.dumpLog("conversion.log").getAbsolutePath();
+                  logPart = String.format("<br><br> Log dumped to %s", logPath);
+               }
+
+               JOptionPane.showMessageDialog(null, String.format(
+                       "<html>Conversion finished.%s</html>", logPart),
+                       "Finished", JOptionPane.PLAIN_MESSAGE);
+            } catch (IOException e) {
+               AwtUtil.showError(e);
+            }
+         }
+
+         @Override
+         public void onProgress(int value, int max, String message) {
+         }
+      };
+
+      ProgressRunnable task = (ProgressListener pl1) -> {
+         if (files == null) {
+            try {
+               converter.convertFolder(folder.toString(), pl1);
+            }catch (IOException e) {
+               e.printStackTrace();
+            }
+         } else {
+            files.forEach((f) -> {
+               converter.convertFile(f);
+            });
+         }
+      };
+
+      VNDSProgressDialog dialog = new VNDSProgressDialog();
+      dialog.showDialog(task, pl);
+   }
+
+   public void reset() {
+      widthField.setText("800");
+      heightField.setText("600");
+      qualitySpinner.setValue(converter.getQuality());
+      threadsSpinner.setValue(converter.getMaxThreads());
+   }
+
+   //Getters
+   //Setters
 }

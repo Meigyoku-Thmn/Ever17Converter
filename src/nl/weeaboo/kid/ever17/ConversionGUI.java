@@ -11,17 +11,16 @@ import nl.weeaboo.vnds.AbstractConversionGUI;
 @SuppressWarnings("serial")
 public class ConversionGUI extends AbstractConversionGUI {
 
-	private static final String version = "1.1.2";
+   private static final String version = "1.1.2";
 
-	/*
+   /*
 	 * [ ] Add ending credits?
 	 *     [ ] Transliterate the multiple timelines in Coco's ending movie.
 	 * [ ] Support zoom/crop support of specialEffectImage (zoomed-in versions can be pre-created)
 	 * [ ] What to do about cutin movies
 	 * [ ] Needs more testing
-	 */
-	
-	/*
+    */
+ /*
 	 * Changes:
 	 *
 	 * 2012/05/02 -- v1.1.2
@@ -44,45 +43,43 @@ public class ConversionGUI extends AbstractConversionGUI {
 	 * 
 	 * 2011/05/27 -- v1.0.0
 	 * - Initial release
-	 */
-	
-	public ConversionGUI() {
-		super("Ever17 -> VNDS Conversion GUI v" + version,
-				ConversionGUI.class.getResource("res/icon.png"),
-				new File("D:/Games/KID/ever17PC_us"),
-				new File("Z:/temp"),
-				"ever17",
-				true,
-				new Dim(800, 600));
-	}
-	
-	public static void main(String args[]) {
-		AwtUtil.setDefaultLAF();
-		System.setProperty("line.separator", "\n");
+    */
+   public ConversionGUI() {
+      super("Ever17 -> VNDS Conversion GUI v" + version,
+              ConversionGUI.class.getResource("res/icon.png"),
+              new File("D:/Games/KID/ever17PC_us"),
+              new File("Z:/temp"),
+              "ever17",
+              true,
+              new Dim(800, 600));
+   }
 
-		new ConversionGUI().create();
-	}
+   public static void main(String args[]) {
+      AwtUtil.setDefaultLAF();
+      System.setProperty("line.separator", "\n");
 
-	@Override
-	protected void callResourceConverter(String templateFolder, String srcFolder,
-			String dstFolder, String... args)
-	{
-		String[] merged = new String[args.length+3];
-		merged[0] = templateFolder;
-		merged[1] = srcFolder;
-		merged[2] = dstFolder;
-		System.arraycopy(args, 0, merged, merged.length-args.length, args.length);
-		KIDResourceConverter.main(merged);
-	}
-	
-	@Override
-	protected void callScriptConverter(String srcFolder, String dstFolder) {
-		ScriptConverter.main(new String[] {srcFolder+"/script", dstFolder});
-	}
+      new ConversionGUI().create();
+   }
 
-	@Override
-	protected void callPacker(String srcFolder, String dstFolder) {
-		KIDPacker.main(new String[] {srcFolder, dstFolder});
-	}
+   @Override
+   protected void callResourceConverter(String templateFolder, String srcFolder,
+           String dstFolder, String... args) {
+      String[] merged = new String[args.length + 3];
+      merged[0] = templateFolder;
+      merged[1] = srcFolder;
+      merged[2] = dstFolder;
+      System.arraycopy(args, 0, merged, merged.length - args.length, args.length);
+      KIDResourceConverter.main(merged);
+   }
+
+   @Override
+   protected void callScriptConverter(String srcFolder, String dstFolder) {
+      ScriptConverter.main(new String[]{srcFolder + "/script", dstFolder});
+   }
+
+   @Override
+   protected void callPacker(String srcFolder, String dstFolder) {
+      KIDPacker.main(new String[]{srcFolder, dstFolder});
+   }
 
 }

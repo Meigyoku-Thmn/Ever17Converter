@@ -30,7 +30,7 @@ public class WafToWav {
 	
 	//Functions		
 	public static void convertFolder(File src, File dst) throws IOException {
-		Map<String, File> files = new Hashtable<String, File>();
+		Map<String, File> files = new Hashtable<>();
 		FileUtil.collectFiles(files, src, false);
 		
 		System.out.printf("Decoding WAF files (%d)", files.size());
@@ -85,12 +85,9 @@ public class WafToWav {
 		header.putInt(DATA);
 		header.putInt(wavDataSize);
 						
-		FileOutputStream fout = new FileOutputStream(dstF);
-		try {
+		try (FileOutputStream fout = new FileOutputStream(dstF)) {
 			fout.write(header.array(), 0, header.position());
 			StreamUtil.writeFully(fout, new ByteBufferInputStream(in));
-		} finally {
-			fout.close();
 		}
 	}
 	

@@ -145,7 +145,7 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 		Log.v("Converting backgrounds...");
 		ImageConverter ic = createBackgroundConverter();
 
-		Map<String, File> files = new TreeMap<String, File>();
+		Map<String, File> files = new TreeMap<>();
 		FileUtil.collectFiles(files, new File(root, "/_original/bg"), false);
 		FileUtil.collectFiles(files, new File(root, "/_original/system"), false);
 		
@@ -163,7 +163,7 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 		Log.v("Converting sprites...");
 		ImageConverter ic = createForegroundConverter();
 
-		Map<String, File> files = new TreeMap<String, File>();
+		Map<String, File> files = new TreeMap<>();
 		FileUtil.collectFiles(files, new File(root, "/_original/chara"), false);
 		FileUtil.collectFiles(files, new File(root, "/_original/system"), false);
 		
@@ -183,7 +183,7 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 		try {
 			SoundConverter sc = createSFXEncoder();
 			
-			Map<String, File> files = new HashMap<String, File>();
+			Map<String, File> files = new HashMap<>();
 			FileUtil.collectFiles(files, new File(root, "/_original/se"), false);
 			FileUtil.collectFiles(files, new File(root, "/_original/sysvoice"), false);
 
@@ -198,7 +198,7 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 			Log.v("Converting Voice...");
 			SoundConverter sc = createVoiceEncoder();
 
-			Map<String, File> files = new HashMap<String, File>();
+			Map<String, File> files = new HashMap<>();
 			FileUtil.collectFiles(files, new File(root, "/_original/voice"), false);
 			FileUtil.collectFiles(files, new File(root, "/_original/wave"), false);
 
@@ -218,7 +218,7 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 		Log.v("Converting Music...");
 		SoundConverter sc = createMusicEncoder();
 		
-		Map<String, File> files = new HashMap<String, File>();
+		Map<String, File> files = new HashMap<>();
 		FileUtil.collectFiles(files, new File(root, "_original/bgm"), false);		
 
 		BatchProcess bp = createBatch();
@@ -499,13 +499,18 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 			Insets insets = new Insets(0, 0, 0, 0);
 			BufferedImage image;
 			try {
-				if (fext.equals("") || fext.equals("bmp")) {
-					image = VNImageUtil.readBMP(file);
-				} else if (fext.equals("cps")) {
-					image = readCPS(file, sourceImageSize.w, sourceImageSize.h, insets);
-				} else {
-					image = ImageIO.read(file);
-				}
+            switch (fext) {
+               case "":
+               case "bmp":
+                  image = VNImageUtil.readBMP(file);
+                  break;
+               case "cps":
+                  image = readCPS(file, sourceImageSize.w, sourceImageSize.h, insets);
+                  break;
+               default:
+                  image = ImageIO.read(file);
+                  break;
+            }
 			} catch (IOException ioe) {
 				if (!file.getParentFile().getName().equals("system")) {
 					Log.w("Error reading image: " + relpath);
@@ -564,7 +569,7 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 		
 		@Override
 		public void execute(String relpath, final File file) throws IOException {
-			Map<String, File> tempFiles = new HashMap<String, File>();
+			Map<String, File> tempFiles = new HashMap<>();
 			
 			String fext = StringUtil.getExtension(relpath);
 			if (fext.equals("cps")) {
@@ -606,20 +611,20 @@ public class KIDResourceConverter extends AbstractResourceConverter {
 				tempFiles.put(relpath, file);
 			}
 			
-			for (Entry<String, File> entry : tempFiles.entrySet()) {
-				String tempPath = entry.getKey();
-				File tempF = entry.getValue();
-				try {
-					File newFile = ic.convertFile(tempF, dstFolder);
-					if (newFile != null) {
-						File newFile2 = new File(newFile.getParent(), StringUtil.replaceExt(tempPath.toLowerCase(), StringUtil.getExtension(newFile.getName())));
-						newFile2.getParentFile().mkdirs();
-						newFile.renameTo(newFile2);
-					}
-				} finally {
-					if (tempF != file) tempF.delete();
-				}
-			}
+         tempFiles.entrySet().forEach((entry) -> {
+            String tempPath = entry.getKey();
+            File tempF = entry.getValue();
+            try {
+               File newFile = ic.convertFile(tempF, dstFolder);
+               if (newFile != null) {
+                  File newFile2 = new File(newFile.getParent(), StringUtil.replaceExt(tempPath.toLowerCase(), StringUtil.getExtension(newFile.getName())));
+                  newFile2.getParentFile().mkdirs();
+                  newFile.renameTo(newFile2);
+               }
+            } finally {
+               if (tempF != file) tempF.delete();
+            }
+         });
 		}
 	}
 	

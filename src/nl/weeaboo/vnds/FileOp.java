@@ -5,6 +5,6 @@ import java.io.IOException;
 
 public interface FileOp {
 
-	public void execute(String relpath, File file) throws IOException;
-	
+   public void execute(String relpath, File file) throws IOException;
+
 }

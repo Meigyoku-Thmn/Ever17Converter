@@ -30,7 +30,7 @@ public enum StrOpcode {
 	private static Map<Integer, StrOpcode> idLookup;	
 	public static StrOpcode get(int id) {
 		if (idLookup == null) {
-			idLookup = new HashMap<Integer, StrOpcode>();
+			idLookup = new HashMap<>();
 			for (StrOpcode op : values()) {
 				idLookup.put(op.id, op);
 			}
@@ -42,7 +42,7 @@ public enum StrOpcode {
 	private static Map<String, StrOpcode> nameLookup;	
 	public static StrOpcode get(String name) {
 		if (nameLookup == null) {
-			nameLookup = new HashMap<String, StrOpcode>();
+			nameLookup = new HashMap<>();
 			for (StrOpcode op : values()) {
 				nameLookup.put(op.toString(), op);
 			}
