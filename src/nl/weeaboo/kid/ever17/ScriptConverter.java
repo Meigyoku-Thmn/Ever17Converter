@@ -367,6 +367,8 @@ public class ScriptConverter {
                      } catch (RuntimeException re) {
                         Log.w("Exception while decoding opcode (" + op + ") " + pos, re);
                      }
+                  } else {
+                     var a = 1;
                   }
                }
             }
