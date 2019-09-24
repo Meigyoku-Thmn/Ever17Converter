@@ -1,0 +1,13 @@
+{
+   "name": "fridaprj",
+   "version": "1.0.0",
+   "description": "",
+   "main": "mod.js",
+   "scripts": {},
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "frida": "^12.7.4",
+      "node-watch": "^0.6.3"
+   }
+}

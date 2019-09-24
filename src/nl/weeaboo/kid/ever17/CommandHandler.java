@@ -253,19 +253,19 @@ public class CommandHandler {
             scanner.skip("\\s*\\(.*?\\)");
             String varname = KIDUtil.getVarname(scanner.next());
             String operator = scanner.next();
-         switch (operator) {
-            case ":=":
-               operator = "=";
-               break;
-            case "+=":
-               operator = "+";
-               break;
-            case "-=":
-               operator = "-";
-               break;
-            default:
-               break;
-         }
+            switch (operator) {
+               case ":=":
+                  operator = "=";
+                  break;
+               case "+=":
+                  operator = "+";
+                  break;
+               case "-=":
+                  operator = "-";
+                  break;
+               default:
+                  break;
+            }
             scanner.skip("\\s*\\(.*?\\)");
 
             String value = resolveVar(scanner.next());
@@ -495,7 +495,7 @@ public class CommandHandler {
             scanner.skip("\\s*->");
             int val = scanner.nextInt();
             String target = KIDUtil.getLabel(Integer.parseInt(scanner.next(), 16));
-            
+
             onGoto(target);
             return String.format("if %s == %d\n\tgoto %s\nfi\n", switchVarname, val, target);
          default:

@@ -1,0 +1,40 @@
+removeBG(expr a1, expr a2, expr a3)
+   "gỡ bỏ" bg
+   a1 = 1 -> đổi sang bg màu trắng
+   a1 = 0 -> đổi sang bg màu đen
+   a2 và a3 quyết định loại transition?
+end()
+   null statement
+   thực tế trong game không hề có lệnh null, cần điều tra thêm...
+delay(expr a1)
+   delay trong vòng a1 frame hình trên giây, trong Visual Novel này thì 1 giây có 60 frame
+showTextbox()
+   hiển thị textbox
+hideTextbox()
+   ẩn textbox
+playSFX(string fileName, expr a1, expr volume)
+   play sfx
+   nếu fileName có chữ "l" ở cuối thì tức là sfx dùng để lặp liên tục
+   a1: ?? (game sử dụng 0 và 1)
+   volume: âm lượng
+stopSFX()
+   tắt sfx
+waitForSFX()
+   chờ cho sfx kết thúc
+   tuy nhiên nếu đắng sau lệnh này không có 0x10 thì đây không phải là lệnh waitForSFX (!!!)
+goto(short offset)
+   chính là lệnh waitForSFX nếu đằng sau không có 0x10
+   nhảy 'vô điều kiện' tới 1 địa điểm trong script hiện hành
+playBGM(expr num, expr volume)
+   play nhạc nền, tên file nhạc nền: String.format("bgm%02d", num)
+stopBGM()
+   dừng nhạc nền hiện hành
+jump(string fileName)
+   lệnh nhảy 'vô điều kiện' tới file script có tên là fileName
+
+
+sau nhiều lần đặt giả thuyết và suy luận, tôi kết luận game này có ít nhất 4 tập lệnh (!!!)
+- tập lệnh 0x00
+- tập lệnh 0x10
+- tập lệnh 0xfe (có thể?)
+- tập lệnh text

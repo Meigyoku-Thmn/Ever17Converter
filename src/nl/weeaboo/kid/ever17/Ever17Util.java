@@ -27,7 +27,7 @@ public final class Ever17Util {
          int b = buf.get() & 0xFF;
          int nil = buf.get();
          if (nil != 0) {
-            Log.v("I thought exprs ended with 0x00, but got: " + nil);
+            Log.v("  [Unknown] I thought exprs ended with 0x00, but got: " + nil);
          }
 
          if (b == 0 && nil == 0) {
@@ -41,23 +41,23 @@ public final class Ever17Util {
          int b = buf.get() & 0xFF;
 
          if (b != 0) {
-            Log.v(String.format("I don't really know what to do with 2-byte constants: %02x %02x", arg0, b));
+            Log.v(String.format("  [Unknown] I don't really know what to do with 2-byte constants: %02x %02x", arg0, b));
          }
 
          int nil = buf.get();
          if (nil != 0) {
-            Log.v("I thought exprs ended with 0x00, but got: " + nil);
+            Log.v("  [Unknown] I thought exprs ended with 0x00, but got: " + nil);
          }
 
          return "" + a;
       } else if (arg0 == 0x28) {
          int arg1 = buf.get();
          if (arg1 != 0x0a) {
-            Log.v("I thought 0x28 is always followed by 0x0a, but got: " + arg1);
+            Log.v("  [Unknown] I thought 0x28 is always followed by 0x0a, but got: " + arg1);
          }
          return readExpr(buf);
       } else {
-         Log.v("What kind of expr is this? " + arg0);
+         Log.v("  [Unknown] What kind of expr is this? " + arg0);
          return "" + arg0;
       }
    }
@@ -66,7 +66,7 @@ public final class Ever17Util {
       if (varname.startsWith("v_")) {
          varname = varname.substring(2);
       } else {
-         Log.w("Error in isGlobal, varnames should always start with \"v_\"");
+         Log.w("  [Unknown] Error in isGlobal, varnames should always start with \"v_\"");
       }
 
       int num = Integer.parseInt(varname, 16);

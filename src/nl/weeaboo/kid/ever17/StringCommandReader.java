@@ -86,7 +86,7 @@ public class StringCommandReader {
    protected String parseChoiceOption() {
       int marker = read();
       if (marker != 0x0B) {
-         Log.v("Expected choice-option's marker to be: " + 0x0B + ", but got: " + marker);
+         Log.v("     [Unknown Text] Expected choice-option's marker to be: " + 0x0B + ", but got: " + marker);
       }
 
       StringBuilder temp = new StringBuilder();
@@ -99,7 +99,7 @@ public class StringCommandReader {
             int op = read();
             int arg3 = read();
             if (op != 0x14) {
-               Log.v("Unknown operator in choice option cond: " + op);
+               Log.v("     [Unknown Text] Unknown operator in choice option cond: " + op);
             }
 
             temp.append(String.format("{%s (%02x %02x %02x) %02x %02x (%02x)}",
@@ -179,13 +179,13 @@ public class StringCommandReader {
       if (c == 0x81) {
          int c2 = read();
          if (c2 != 0x44) {
-            Log.v("What I though was a period turns out not to be: " + c2);
+            Log.v("     [Unknown Text] What I though was a period turns out not to be: " + c2);
          }
          return ".";
       } else if (c == 0x87) {
          int c2 = read();
          if (c2 != 0x4C) {
-            Log.v("What I though was an emdash turns out not to be: " + c2);
+            Log.v("     [Unknown Text] What I though was an emdash turns out not to be: " + c2);
          }
          return "--";
       }

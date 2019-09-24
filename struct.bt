@@ -1,0 +1,58 @@
+LittleEndian();
+
+char     magic[4] <format=hex, bgcolor=cRed>;
+int      textTableOffset <format=hex, bgcolor=cLtBlue>;
+int      graphicsTableOffset <format=hex, bgcolor=cYellow>;
+
+union {
+   int  headerSize <hidden=true>;
+   int  at[(headerSize - 12) / 4] <format=hex, bgcolor=cBlue >;
+} jumpTable;
+
+FSeek(textTableOffset);
+local int textTableLen = (graphicsTableOffset - textTableOffset) / 4;
+int textTable[textTableLen] <bgcolor=cLtGreen, format=hex>;
+
+FSeek(graphicsTableOffset);
+local int graphicsTableBytes = (textTableLen > 0 ? textTable[0] : FileSize()) - graphicsTableOffset;
+int graphicsTable[graphicsTableBytes / 4] <bgcolor=cPurple, format=hex>;
+
+FSeek(jumpTable.at[0]);
+byte  bytecode[textTableOffset - FTell()] <bgcolor=cDkYellow, format=hex>;
+
+struct {
+   if (textTableLen != 0) {
+      FSeek(textTable[0]);
+      local int i;
+      for (i = 0; i < textTableLen; i++) {
+         if (i + 1 != textTableLen)
+            struct {
+               byte data[textTable[i + 1] - textTable[i]];
+            } at;
+         else
+            struct {
+               if (graphicsTableBytes != 0)
+                  byte data[graphicsTable[0] - textTable[i]];
+               else byte data[FileSize() - textTable[i]];
+            } at;
+      }
+   }
+} textGroup;
+
+struct {
+   if (graphicsTableBytes != 0) {
+      FSeek(graphicsTable[0]);
+      local int a;
+      local int graphicsTableLen = graphicsTableBytes / 4;
+      for (a = 0; a < graphicsTableLen; a++) {
+         if (a + 1 != graphicsTableLen)
+            struct {
+               char data[graphicsTable[a + 1] - graphicsTable[a]];
+            } at;
+         else
+            struct {
+               char data[FileSize() - graphicsTable[a]];
+            } at;
+      }
+   }
+} graphicsGroup;

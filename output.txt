@@ -1,0 +1,329 @@
+ant -f C:\\Ever17Converter -Dnb.internal.action.name=run run
+init:
+Deleting: C:\Ever17Converter\build\built-jar.properties
+deps-jar:
+Updating property file: C:\Ever17Converter\build\built-jar.properties
+Compiling 3 source files to C:\Ever17Converter\build\classes
+compile:
+run:
+[Info] Converting script: .\script\op00 - Copy.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+  [Warn] Graphics coverage not covered all images! (154/159)
+[Info] Converting script: .\script\op00.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+  [Warn] Graphics coverage not covered all images! (154/159)
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\s_1a.scr
+  [Unknown] Unsupported opcode: 39 (57)
+  [Unknown] Unsupported opcode: 3b (59)
+  [Unknown] Unsupported opcode: 3c (60)
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Warn] Graphics coverage not covered all images! (120/123)
+[Info] Converting script: .\script\s_1a2.scr
+     [Unknown Text] What I though was a period turns out not to be: 64
+[Info] Converting script: .\script\s_1b.scr
+  [Unknown] Unsupported opcode: 43 (67)
+  [Warn] Graphics coverage not covered all images! (334/345)
+[Info] Converting script: .\script\s_1c.scr
+  [Unknown] Invalid jump in waitForSFX: 10494
+  [Warn] Graphics coverage not covered all images! (207/212)
+[Info] Converting script: .\script\s_2a.scr
+  [Unknown] What kind of expr is this? 51
+  [Unknown] Unexpected val in 179
+  [Unknown] Invalid jump in waitForSFX: 4096
+  [Unknown] What kind of expr is this? 51
+  [Unknown] Unexpected val in 179
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 4863
+  [Unknown] What kind of expr is this? 51
+  [Unknown] Unexpected val in 179
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Warn] Text coverage not covered all texts! (242/243)
+  [Warn] Graphics coverage not covered all images! (204/207)
+[Info] Converting script: .\script\s_2b.scr
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+[Info] Converting script: .\script\s_2c.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\sc1a.scr
+[Info] Converting script: .\script\sc1b.scr
+[Info] Converting script: .\script\s_2d.scr
+  [Warn] Graphics coverage not covered all images! (289/295)
+[Info] Converting script: .\script\sc1c.scr
+[Info] Converting script: .\script\sc1d.scr
+[Info] Converting script: .\script\sc2a.scr
+  [Warn] Graphics coverage not covered all images! (72/74)
+[Info] Converting script: .\script\s_3a.scr
+[Info] Converting script: .\script\sc2b.scr
+[Info] Converting script: .\script\s_3b.scr
+[Info] Converting script: .\script\s_3c.scr
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Unknown] Unsupported opcode: 43 (67)
+  [Unknown] Unsupported opcode: 15 (21)
+  [Warn] Graphics coverage not covered all images! (102/107)
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\s_3d.scr
+  [Unknown] Invalid jump in waitForSFX: 10494
+  [Unknown] Unsupported opcode: 43 (67)
+[Info] Converting script: .\script\sc2c.scr
+[Info] Converting script: .\script\s_3e.scr
+[Info] Converting script: .\script\t_1a.scr
+  [Unknown] Unsupported opcode: 39 (57)
+  [Unknown] Unsupported opcode: 3b (59)
+  [Unknown] Unsupported opcode: 3c (60)
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+[Info] Converting script: .\script\sc2d.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\sy4a.scr
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+     [Unknown Text] What I though was an emdash turns out not to be: 75
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+     [Unknown Text] What I though was an emdash turns out not to be: 74
+[Info] Converting script: .\script\t_1b.scr
+  [Warn] Graphics coverage not covered all images! (214/219)
+[Info] Converting script: .\script\sy4b.scr
+  [Warn] Graphics coverage not covered all images! (88/89)
+[Info] Converting script: .\script\sc2e.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\sc2f.scr
+  [Unknown] What kind of expr is this? 224
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\ss4a.scr
+  [Unknown] Unsupported opcode: 15 (21)
+  [Warn] Graphics coverage not covered all images! (127/128)
+[Info] Converting script: .\script\sy5a.scr
+     [Unknown Text] What I though was a period turns out not to be: 73
+[Info] Converting script: .\script\ss5a.scr
+  [Unknown] Unsupported opcode: 08 (8)
+  [Unknown] Unsupported opcode: 09 (9)
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Unsupported opcode: 43 (67)
+[Info] Converting script: .\script\t_1c.scr
+  [Warn] Graphics coverage not covered all images! (203/205)
+[Info] Converting script: .\script\ss6a.scr
+  [Unknown] Unsupported opcode: 08 (8)
+  [Unknown] Unsupported opcode: 09 (9)
+  [Unknown] Unsupported opcode: 43 (67)
+  [Warn] Graphics coverage not covered all images! (57/60)
+[Info] Converting script: .\script\sy6a.scr
+  [Unknown] Unsupported opcode: 43 (67)
+  [Warn] Graphics coverage not covered all images! (127/128)
+[Info] Converting script: .\script\ss7a.scr
+  [Warn] Graphics coverage not covered all images! (13/15)
+[Info] Converting script: .\script\ssbd.scr
+  [Unknown] What kind of expr is this? 224
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\t_2a.scr
+  [Warn] Graphics coverage not covered all images! (165/167)
+[Info] Converting script: .\script\sy6b.scr
+  [Unknown] Unsupported opcode: 39 (57)
+  [Unknown] Unsupported opcode: 3b (59)
+  [Unknown] Unsupported opcode: 3c (60)
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+[Info] Converting script: .\script\ssep.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+  [Warn] Graphics coverage not covered all images! (31/32)
+Unsupported command: unknown37
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\sy7a.scr
+  [Warn] Graphics coverage not covered all images! (61/66)
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\t_2b.scr
+[Info] Converting script: .\script\y_ed.scr
+     [Unknown Text] What I though was a period turns out not to be: 81
+     [Unknown Text] What I though was a period turns out not to be: 66
+  [Unknown] Unsupported opcode: 39 (57)
+  [Unknown] Unsupported opcode: 3b (59)
+  [Unknown] Unsupported opcode: 3c (60)
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpectedly came across a weird opcode (0) during a _switch
+  [Unknown] Unexpected subop in _switch, expected 39, got 0
+  [Unknown] Unexpected subop in _switch, expected 39, got 10
+  [Unknown] What kind of expr is this? 1
+  [Unknown] Invalid jump in switch case: 2605
+  [Unknown] Unsupported opcode: 3a (58)
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+  [Unknown] Unsupported opcode: 2b (43)
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+Unsupported command: unknown37
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+Unknown switch subcommand: 00
+Unknown switch subcommand: 0a
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\yc3a.scr
+  [Unknown] What kind of expr is this? 224
+  [Unknown] Text table index is out of bounds: 65535
+  [Warn] Graphics coverage not covered all images! (143/144)
+[Info] Converting script: .\script\sybd.scr
+[Info] Converting script: .\script\syep.scr
+Unsupported command: unknown37
+[Info] Converting script: .\script\t_2c.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\t_2d.scr
+  [Warn] Graphics coverage not covered all images! (183/188)
+[Info] Converting script: .\script\t_3a.scr
+  [Warn] Graphics coverage not covered all images! (162/165)
+[Info] Converting script: .\script\t_3b.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\t_3c.scr
+  [Warn] Graphics coverage not covered all images! (74/75)
+[Info] Converting script: .\script\t_4a.scr
+[Info] Converting script: .\script\tc2a.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\t_4b.scr
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\t_ep.scr
+  [Unknown] Unsupported opcode: 2b (43)
+  [Warn] Graphics coverage not covered all images! (3/6)
+Unsupported command: unknown37
+[Info] Converting script: .\script\t_4c.scr
+  [Warn] Graphics coverage not covered all images! (166/167)
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\t_5a.scr
+[Info] Converting script: .\script\t_5b.scr
+  [Warn] Graphics coverage not covered all images! (95/96)
+[Info] Converting script: .\script\t_5c.scr
+  [Warn] Graphics coverage not covered all images! (144/146)
+[Info] Converting script: .\script\t_5d.scr
+  [Warn] Graphics coverage not covered all images! (56/57)
+Setting a workitem's graphics state multiple times
+Setting a workitem's music state multiple times
+[Info] Converting script: .\script\t_6a.scr
+  [Warn] Graphics coverage not covered all images! (191/193)
+[Info] Converting script: .\script\t_6b.scr
+  [Unknown] Unsupported opcode: 15 (21)
+  [Warn] Graphics coverage not covered all images! (152/154)
+[Info] Converting script: .\script\t_bd.scr
+[Info] Converting script: .\script\tc1a.scr
+     [Unknown Text] Unknown operator in choice option cond: 116
+     [Unknown Text] Unknown operator in choice option cond: 32
+[Info] Converting script: .\script\tc1d.scr
+[Info] Converting script: .\script\tt6a.scr
+  [Warn] Graphics coverage not covered all images! (203/209)
+[Info] Converting script: .\script\yc3a2.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\tc1b.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: .\script\tl6a.scr
+  [Unknown] Unsupported opcode: 15 (21)
+  [Warn] Graphics coverage not covered all images! (149/156)
+[Info] Converting script: .\script\tt7a.scr
+[Info] Converting script: .\script\tl7a.scr
+  [Unknown] Unsupported opcode: 15 (21)
+  [Warn] Graphics coverage not covered all images! (37/43)
+[Info] Converting script: .\script\yc3b.scr
+  [Unknown] Unsupported opcode: 15 (21)
+  [Warn] Graphics coverage not covered all images! (87/88)
+[Info] Converting script: .\script\tc1c.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: .\script\yc4a.scr
+  [Unknown] Unsupported opcode: 15 (21)
+[Info] Converting script: .\script\tc2b.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: .\script\yc4b.scr
+  [Unknown] Unsupported opcode: 43 (67)
+[Info] Converting script: .\script\yc5a.scr
+[Info] Converting script: .\script\yc5b.scr
+  [Unknown] Unsupported opcode: 43 (67)
+  [Warn] Graphics coverage not covered all images! (85/86)
+[Info] Converting script: .\script\yc6a.scr
+  [Warn] Graphics coverage not covered all images! (169/171)
+[Info] Converting script: .\script\yc6b.scr
+  [Unknown] Unsupported opcode: 43 (67)
+  [Warn] Graphics coverage not covered all images! (99/101)
+[Info] Converting script: .\script\yc7a.scr
+  [Unknown] Unsupported opcode: 43 (67)
+  [Warn] Graphics coverage not covered all images! (80/83)
+[Info] Converting script: .\script\yc7b.scr
+  [Unknown] Unsupported opcode: 39 (57)
+  [Unknown] Unsupported opcode: 3b (59)
+  [Unknown] Unsupported opcode: 3c (60)
+  [Unknown] Unexpected val in 16
+  [Unknown] Invalid jump in gotoif: 6400
+[Info] Converting script: .\script\ycep.scr
+  [Unknown] What kind of expr is this? 190
+  [Unknown] What kind of expr is this? 112
+  [Unknown] What kind of expr is this? 190
+  [Unknown] What kind of expr is this? 112
+  [Warn] Graphics coverage not covered all images! (100/116)
+Unsupported command: unknown37
+BUILD SUCCESSFUL (total time: 10 seconds)
