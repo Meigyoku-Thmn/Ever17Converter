@@ -69,7 +69,8 @@ public class ScriptConverter {
    private Set<Integer> textCoveragePool = new HashSet<>();
    private Set<Integer> imageCoveragePool = new HashSet<>();
 
-   private boolean shouldPrintAllBytecode = true;
+   private String currentFileName = "";
+   private int currentOpcodeOffset = 0;
 
    public ScriptConverter(File srcF, File dstF) {
       this.srcScreenSize = new Dim(800, 600);
@@ -176,6 +177,7 @@ public class ScriptConverter {
       }
 
       Log.v("[Info] Converting script: " + wi.getFile());
+      currentFileName = wi.getFile().getName();
 
       GraphicsState gstate;
       if (wi.getGraphicsState() != null) {
@@ -335,6 +337,7 @@ public class ScriptConverter {
          boolean commandMode = false;
          while (in.hasRemaining()) {
             pout.printf("[%08x] ", in.position());
+            currentOpcodeOffset = in.position();
 
             pos = dstF.getName() + ":" + Integer.toHexString(in.position());
             int opcode = in.get() & 0xFF;

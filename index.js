@@ -69,7 +69,11 @@ var metadata = {};
       }
    }
 })().catch(e => console.error(e));
-
+/** 
+ * @param {frida.Session} session 
+ * @param {frida.SignalHandler} event 
+ * @returns {frida.Script}
+ */
 async function loadScript(session, event = () => { }) {
    let script = await session.createScript(modScriptContent, { name: modPath, runtime: 'v8' });
    script.message.connect(event);
