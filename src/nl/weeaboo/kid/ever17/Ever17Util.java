@@ -11,6 +11,16 @@ public final class Ever17Util {
    }
 
    public static String readExpr(ByteBuffer buf) {
+      return readExpr(buf, -1);
+   }
+
+   public static String readExpr(ByteBuffer buf, int lastPosition) {
+
+      var _position = "";
+      if (lastPosition > 0) {
+         _position = String.format(" at %08x", lastPosition);
+      }
+      
       int arg0 = buf.get() & 0xFF;
       if (arg0 == 0xC0) {
          int mode = arg0;
@@ -27,7 +37,7 @@ public final class Ever17Util {
          int b = buf.get() & 0xFF;
          int nil = buf.get();
          if (nil != 0) {
-            Log.v("  [Unknown] I thought exprs ended with 0x00, but got: " + nil);
+            Log.v("  [Unknown] I thought exprs ended with 0x00, but got: " + nil + _position);
          }
 
          if (b == 0 && nil == 0) {
@@ -41,23 +51,23 @@ public final class Ever17Util {
          int b = buf.get() & 0xFF;
 
          if (b != 0) {
-            Log.v(String.format("  [Unknown] I don't really know what to do with 2-byte constants: %02x %02x", arg0, b));
+            Log.v(String.format("  [Unknown] I don't really know what to do with 2-byte constants: %02x %02x%s", arg0, b, _position));
          }
 
          int nil = buf.get();
          if (nil != 0) {
-            Log.v("  [Unknown] I thought exprs ended with 0x00, but got: " + nil);
+            Log.v("  [Unknown] I thought exprs ended with 0x00, but got: " + nil + _position);
          }
 
          return "" + a;
       } else if (arg0 == 0x28) {
          int arg1 = buf.get();
          if (arg1 != 0x0a) {
-            Log.v("  [Unknown] I thought 0x28 is always followed by 0x0a, but got: " + arg1);
+            Log.v("  [Unknown] I thought 0x28 is always followed by 0x0a, but got: " + arg1 + _position);
          }
          return readExpr(buf);
       } else {
-         Log.v("  [Unknown] What kind of expr is this? " + arg0);
+         Log.v("  [Unknown] What kind of expr is this? " + arg0 + _position);
          return "" + arg0;
       }
    }

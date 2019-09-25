@@ -1,18 +1,22 @@
 package nl.weeaboo.vnds;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.logging.ConsoleHandler;
+import java.util.logging.FileHandler;
 import java.util.logging.Formatter;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public final class Log {
 
    private static final Logger INSTANCE;
    private static Handler handler;
+   private static Handler fileHandler;
 
    static {
       INSTANCE = Logger.getLogger("nl.weeaboo.vnds");
@@ -26,14 +30,24 @@ public final class Log {
       return INSTANCE;
    }
 
-   public static void initDefaultHandler() {
-      if (handler != null) {
-         INSTANCE.removeHandler(handler);
-      }
+   public static void EnableFileHandler(String filePath) throws IOException {
+      DisableFileHandler();
+      fileHandler = new FileHandler(filePath, true);
+      fileHandler.setLevel(Level.ALL);
+      fileHandler.setFormatter(getFormatter());
+      INSTANCE.addHandler(fileHandler);
+   }
 
-      handler = new ConsoleHandler();
-      handler.setLevel(Level.ALL);
-      handler.setFormatter(new Formatter() {
+   public static void DisableFileHandler() {
+      if (fileHandler != null) {
+         INSTANCE.removeHandler(fileHandler);
+         fileHandler.close();
+         fileHandler = null;
+      }
+   }
+
+   private static Formatter getFormatter() {
+      return new Formatter() {
          @Override
          public String format(LogRecord record) {
             StringWriter sw = new StringWriter();
@@ -50,7 +64,17 @@ public final class Log {
             }
             return sw.toString();
          }
-      });
+      };
+   }
+
+   public static void initDefaultHandler() {
+      if (handler != null) {
+         INSTANCE.removeHandler(handler);
+      }
+
+      handler = new ConsoleHandler();
+      handler.setLevel(Level.ALL);
+      handler.setFormatter(getFormatter());
       INSTANCE.addHandler(handler);
    }
 

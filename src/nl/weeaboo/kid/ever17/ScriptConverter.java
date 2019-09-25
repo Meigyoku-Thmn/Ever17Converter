@@ -156,6 +156,9 @@ public class ScriptConverter {
          }
       });
 
+      PrintWriter pw = new PrintWriter("./output.txt");
+      pw.close();
+
       while (!workQueue.isEmpty()) {
          convertFile(workQueue.peek());
       }
@@ -163,7 +166,7 @@ public class ScriptConverter {
       generateGlueScripts(scriptF);
       resUsed.save(dstF);
 
-      try ( PrintStream pout = new PrintStream(new File(dstF, "logic.txt"), "UTF-8")) {
+      try (PrintStream pout = new PrintStream(new File(dstF, "logic.txt"), "UTF-8")) {
          Collections.sort(_logicBuffer);
          _logicBuffer.forEach((line) -> {
             pout.println(line);
@@ -175,7 +178,7 @@ public class ScriptConverter {
       if (!workQueue.remove(wi)) {
          return null;
       }
-
+      Log.EnableFileHandler("./output.txt");
       Log.v("[Info] Converting script: " + wi.getFile());
       currentFileName = wi.getFile().getName();
 
@@ -251,6 +254,8 @@ public class ScriptConverter {
          input.limit(input.capacity());
       }
 
+      Log.DisableFileHandler();
+
       //Compile
       File _dstF = new File(scriptF, stripExtension(wi.getRelpath()) + ".scr");
       assemble(commandHandler, decF, _dstF);
@@ -264,10 +269,10 @@ public class ScriptConverter {
 
    protected final void assemble(CommandHandler ch, File srcF, File dstF)
            throws IOException {
-      try ( PrintWriter out = new PrintWriter(dstF, "UTF-8")) {
+      try (PrintWriter out = new PrintWriter(dstF, "UTF-8")) {
          Pattern decPattern = Pattern.compile("\\[(\\S*?)\\]\\s*(.*?):\\s*(.*)");
 
-         try ( BufferedReader in = new BufferedReader(new InputStreamReader(
+         try (BufferedReader in = new BufferedReader(new InputStreamReader(
                  new FileInputStream(srcF), "UTF-8"))) {
             int lineNum = 0;
 
@@ -332,14 +337,14 @@ public class ScriptConverter {
    protected void decode(ByteBuffer in, File dstF) throws IOException {
       textCoveragePool.clear();
       imageCoveragePool.clear();
-      try ( PrintWriter pout = new PrintWriter(dstF, "UTF-8")) {
+      try (PrintWriter pout = new PrintWriter(dstF, "UTF-8")) {
 
          boolean commandMode = false;
          while (in.hasRemaining()) {
             pout.printf("[%08x] ", in.position());
+            pos = dstF.getName() + ":" + Integer.toHexString(in.position());
             currentOpcodeOffset = in.position();
 
-            pos = dstF.getName() + ":" + Integer.toHexString(in.position());
             int opcode = in.get() & 0xFF;
             int lastPosition = in.position();
             Function<Float, String> getRemainingByteCodes = (_unused) -> {
@@ -357,7 +362,11 @@ public class ScriptConverter {
                        .collect(Collectors.joining(" "));
             };
 
-            pout.printf("%02x", opcode);
+            if (WorkArounder.make(currentOpcodeOffset, currentFileName, in, jumpTable, pout)) {
+               continue;
+            } else {
+               pout.printf("%02x", opcode);
+            }
 
             if (commandMode) {
                commandMode = false;
@@ -365,7 +374,7 @@ public class ScriptConverter {
                Opcode op = Opcode.get(opcode);
                if (op == null) {
                   if (unsupportedOpCodes.add(opcode)) {
-                     Log.v(String.format("  [Unknown] Unsupported opcode: %02x (%d)", opcode, opcode));
+                     Log.v(String.format("  [Unknown] Unsupported opcode: %02x (%d) at %08x", opcode, opcode, currentOpcodeOffset));
                   }
                   pout.printf(": unsupported %d ", opcode);
                } else {
@@ -535,7 +544,7 @@ public class ScriptConverter {
                str = readText(input, textTable[index]);
                textCoveragePool.add(index);
             } else {
-               Log.v("  [Unknown] Text table index is out of bounds: " + index);
+               Log.v("  [Unknown] Text table index is out of bounds at " + String.format("%08x", currentOpcodeOffset) + ": " + index);
             }
             return String.format("%s %02x\n%s\n", op, index, str);
          }
@@ -581,7 +590,7 @@ public class ScriptConverter {
                int v2 = read();
                val = String.format("%d", 256 * (v - 0xa0) + v2);
             } else {
-               Log.v(String.format("  [Unknown] Unexpected val in %s", v));
+               Log.v(String.format("  [Unknown] Unexpected val in %s at %08x", v, currentOpcodeOffset));
                val = "00";
             }
 
@@ -591,7 +600,7 @@ public class ScriptConverter {
             if (jumpTableIndex >= 0 && jumpTableIndex < jumpTable.length) {
                jumpTarget = jumpTable[jumpTableIndex];
             } else {
-               Log.v("  [Unknown] Invalid jump in " + op + ": " + jumpTableIndex);
+               Log.v("  [Unknown] Invalid jump in " + op + " at " + String.format("%08x", currentOpcodeOffset) + ": " + jumpTableIndex);
             }
 
             String result = String.format("%s %d (%02x %02x %02x) %02x "
@@ -613,7 +622,7 @@ public class ScriptConverter {
             //Conditional?
             int condOp2 = peek();
             if (condOp2 != Opcode._switch3.id) {
-               Log.v("  [Unknown] Unexpectedly came across a weird opcode (" + condOp2 + ") during a " + op);
+               Log.v("  [Unknown] Unexpectedly came across a weird opcode (" + condOp2 + ") during a " + op + " at " + String.format("%08x", currentOpcodeOffset));
             }
 
             StringBuilder varopBuffer = new StringBuilder();
@@ -637,7 +646,7 @@ public class ScriptConverter {
             while (peek() != 0x26) {
                int subop = read();
                if (subop != 0x27) {
-                  Log.v("  [Unknown] Unexpected subop in " + op + ", expected " + 0x27 + ", got " + subop);
+                  Log.v("  [Unknown] Unexpected subop in " + op + ", expected " + 0x27 + ", got " + subop + " at " + String.format("%08x", currentOpcodeOffset));
                }
 
                String subarg0 = readExpr();
@@ -646,7 +655,7 @@ public class ScriptConverter {
                if (jumpTableIndex >= 0 && jumpTableIndex < jumpTable.length) {
                   jumpTarget = jumpTable[jumpTableIndex];
                } else {
-                  Log.v("  [Unknown] Invalid jump in switch case: " + jumpTableIndex);
+                  Log.v("  [Unknown] Invalid jump in switch case at " + String.format("%08x", currentOpcodeOffset) + ": " + jumpTableIndex);
                }
                sb.append(String.format("%02x -> %s %08x (%08x)\n", subop, subarg0, jumpTarget, jumpTableIndex));
 
@@ -700,7 +709,7 @@ public class ScriptConverter {
                   jumpTarget = jumpTable[jumpTableIndex];
                   return String.format("goto %08x (%08x)", jumpTarget, jumpTableIndex);
                } else {
-                  Log.v("  [Unknown] Invalid jump in " + op + ": " + jumpTableIndex);
+                  Log.v("  [Unknown] Invalid jump in " + op + " at " + String.format("%08x", currentOpcodeOffset) + ": " + jumpTableIndex);
                }
 
                input.reset();
@@ -751,7 +760,7 @@ public class ScriptConverter {
          }
          default:
             if (op.args > 0) {
-               Log.w(String.format("  [Unknown] Unhandled opcode (%02x) with %d args", op.id, op.args));
+               Log.w(String.format("  [Unknown] Unhandled opcode (%02x) with %d args at %08x", op.id, op.args, currentOpcodeOffset));
             }
             return null;
       }
@@ -791,7 +800,7 @@ public class ScriptConverter {
    }
 
    protected String readExpr() {
-      return Ever17Util.readExpr(input);
+      return Ever17Util.readExpr(input, currentOpcodeOffset);
    }
 
    protected String getVaropOperator(int c) {
