@@ -34,6 +34,7 @@ public enum Opcode {
    overlayImage(0x27, 1),
    _switch3(0x28, 1),
    unknown37(0x37, 2),
+   playMovie(0x39, 1),
    specialEffectImage(0x40, 8),
    tweenZoom(0x41, 5),
    specialEffect(0x45, 2),

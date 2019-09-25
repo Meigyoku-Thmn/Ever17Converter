@@ -3,7 +3,6 @@
 [[Resetting music state]]
   [Warn] Graphics coverage not covered all images! (154/159)
 [Info] Converting script: .\script\s_1a.scr
-  [Unknown] Unsupported opcode: 39 (57) at 00000989
   [Unknown] Unsupported opcode: 3b (59) at 00000992
   [Unknown] Unsupported opcode: 3c (60) at 0000099c
   [Unknown] Unexpected val in 16 at 000009b6
@@ -15,7 +14,6 @@
   [Unknown] Unsupported opcode: 43 (67) at 00001d8c
   [Warn] Graphics coverage not covered all images! (334/345)
 [Info] Converting script: .\script\s_1c.scr
-  [Unknown] Invalid jump in waitForSFX at 00001257: 10494
   [Warn] Graphics coverage not covered all images! (207/212)
 [Info] Converting script: .\script\s_2a.scr
   [Unknown] What kind of expr is this? 51 at 00000190
@@ -49,7 +47,6 @@
 [Info] Converting script: .\script\sc2a.scr
   [Warn] Graphics coverage not covered all images! (72/74)
 [Info] Converting script: .\script\s_3d.scr
-  [Unknown] Invalid jump in waitForSFX at 00000736: 10494
   [Unknown] Unsupported opcode: 43 (67) at 000007d8
 [Info] Converting script: .\script\sc2b.scr
 [Info] Converting script: .\script\s_3b.scr
@@ -61,7 +58,6 @@
   [Unknown] Unsupported opcode: 15 (21) at 0000021a
   [Warn] Graphics coverage not covered all images! (127/128)
 [Info] Converting script: .\script\t_1a.scr
-  [Unknown] Unsupported opcode: 39 (57) at 0000062d
   [Unknown] Unsupported opcode: 3b (59) at 00000636
   [Unknown] Unsupported opcode: 3c (60) at 00000640
   [Unknown] Unexpected val in 16 at 0000065a
@@ -125,7 +121,6 @@
 [Info] Converting script: .\script\t_2a.scr
   [Warn] Graphics coverage not covered all images! (165/167)
 [Info] Converting script: .\script\sy6b.scr
-  [Unknown] Unsupported opcode: 39 (57) at 00001133
   [Unknown] Unsupported opcode: 3b (59) at 0000113c
   [Unknown] Unsupported opcode: 3c (60) at 00001146
   [Unknown] Unexpected val in 16 at 00001160
@@ -137,7 +132,6 @@
 [Info] Converting script: .\script\y_ed.scr
      [Unknown Text] What I though was a period turns out not to be: 81
      [Unknown Text] What I though was a period turns out not to be: 66
-  [Unknown] Unsupported opcode: 39 (57) at 0000024c
   [Unknown] Unsupported opcode: 3b (59) at 00000257
   [Unknown] Unsupported opcode: 3c (60) at 00000261
   [Unknown] Unexpected val in 16 at 0000027b
@@ -259,7 +253,6 @@
   [Unknown] Unsupported opcode: 43 (67) at 000003a4
   [Warn] Graphics coverage not covered all images! (80/83)
 [Info] Converting script: .\script\yc7b.scr
-  [Unknown] Unsupported opcode: 39 (57) at 00000a48
   [Unknown] Unsupported opcode: 3b (59) at 00000a52
   [Unknown] Unsupported opcode: 3c (60) at 00000a5c
   [Unknown] Unexpected val in 16 at 00000a76

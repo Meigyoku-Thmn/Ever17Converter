@@ -166,7 +166,7 @@ public class ScriptConverter {
       generateGlueScripts(scriptF);
       resUsed.save(dstF);
 
-      try (PrintStream pout = new PrintStream(new File(dstF, "logic.txt"), "UTF-8")) {
+      try ( PrintStream pout = new PrintStream(new File(dstF, "logic.txt"), "UTF-8")) {
          Collections.sort(_logicBuffer);
          _logicBuffer.forEach((line) -> {
             pout.println(line);
@@ -269,10 +269,10 @@ public class ScriptConverter {
 
    protected final void assemble(CommandHandler ch, File srcF, File dstF)
            throws IOException {
-      try (PrintWriter out = new PrintWriter(dstF, "UTF-8")) {
+      try ( PrintWriter out = new PrintWriter(dstF, "UTF-8")) {
          Pattern decPattern = Pattern.compile("\\[(\\S*?)\\]\\s*(.*?):\\s*(.*)");
 
-         try (BufferedReader in = new BufferedReader(new InputStreamReader(
+         try ( BufferedReader in = new BufferedReader(new InputStreamReader(
                  new FileInputStream(srcF), "UTF-8"))) {
             int lineNum = 0;
 
@@ -337,7 +337,7 @@ public class ScriptConverter {
    protected void decode(ByteBuffer in, File dstF) throws IOException {
       textCoveragePool.clear();
       imageCoveragePool.clear();
-      try (PrintWriter pout = new PrintWriter(dstF, "UTF-8")) {
+      try ( PrintWriter pout = new PrintWriter(dstF, "UTF-8")) {
 
          boolean commandMode = false;
          while (in.hasRemaining()) {
@@ -700,9 +700,9 @@ public class ScriptConverter {
             return String.format("%s %s %s %s %s %s", op, x, y, w, h, duration);
          }
          case waitForSFX: {
-            if (peek() != 0x10) {
-               input.mark();
-
+            input.position(input.position() - 2);
+            if (input.get() != 0x10) {
+               input.position(input.position() + 1);
                int jumpTableIndex = readShort();
                int jumpTarget = 0xFFFFFFFF;
                if (jumpTableIndex >= 0 && jumpTableIndex < jumpTable.length) {
@@ -710,10 +710,10 @@ public class ScriptConverter {
                   return String.format("goto %08x (%08x)", jumpTarget, jumpTableIndex);
                } else {
                   Log.v("  [Unknown] Invalid jump in " + op + " at " + String.format("%08x", currentOpcodeOffset) + ": " + jumpTableIndex);
+                  return String.format("goto %08x (%08x)", jumpTarget, jumpTableIndex);
                }
-
-               input.reset();
             }
+            input.position(input.position() + 1);
             return String.format("%s", op);
          }
          case varop: {
@@ -724,6 +724,24 @@ public class ScriptConverter {
             String operator = getVaropOperator(readShort());
             int arg4 = read();
             String arg5 = readExpr();
+
+            if (arg0 == 0x28 && arg1 == 0x0a && arg2 == 0xa2) {
+               switch (arg3) {
+                  case 0x44:
+                     return "setNumberOfFlash " + arg5;
+                  case 0x43:
+                     return "setFlashBrightness " + arg5;
+                  case 0x13:
+                     if (arg5.equals("1")) {
+                        return "turnOnFullscreenTextMode";
+                     }
+                     else if (arg5.equals("0")) {
+                        return "turnOffFullscreenTextMode";
+                     }
+                  default:
+                     break;
+               }
+            }
 
             String result = String.format("%s (%02x %02x %02x) %02x %s (%02x) %s",
                     op, arg0, arg1, arg2, arg3, operator, arg4, arg5);
@@ -745,8 +763,14 @@ public class ScriptConverter {
             return String.format("%s %08x %s", op, arg0, filename);
          }
 
+         case unknown20: {
+            String arg0 = readExpr();
+            if (arg0.equals("46")) {
+               return "triggerFlash";
+            }
+            return String.format("%s %s", op, arg0);
+         }
          case delay:
-         case unknown20:
          case unknown21:
          case scriptLocationId:
          case unknown46: {
@@ -757,6 +781,10 @@ public class ScriptConverter {
             String arg0 = readExpr();
             String arg1 = readExpr();
             return String.format("%s %s %s", op, arg0, arg1);
+         }
+         case playMovie: {
+            String fileName = readCString();
+            return String.format("%s %s", op, fileName);
          }
          default:
             if (op.args > 0) {
