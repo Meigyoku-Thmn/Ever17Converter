@@ -37,18 +37,6 @@ Interceptor.replace(ReadBytesTarget, new NativeCallback(function (_fileName, _bu
             return ReadBytes(_fileName, _buffer, _fileOffset, _readSize);
          }
          _buffer.writeByteArray(buffer);
-         if (fileMetadata.fileName == "op00.scr") {
-            let random = Math.random();
-            MemoryAccessMonitor.disable();
-            MemoryAccessMonitor.enable({ base: _buffer, size: _readSize, }, {
-               onAccess: (details) => {
-                  console.log(details.operation + " " + random);
-                  console.log('from ' + details.from)
-                  console.log('rangeIndex ' + details.rangeIndex)
-               }
-            });
-         }
-
          console.log("UnitName: " + fileMetadata.fileName);
          return true;
       }

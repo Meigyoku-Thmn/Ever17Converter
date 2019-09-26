@@ -27,18 +27,18 @@ public enum Opcode {
    chapterCutin(0x1D, 2),
    delay(0x1E, 1),
    clock(0x1F, 2),
-   unknown20(0x20, 1),
-   unknown21(0x21, 1),
+   openAnim(0x20, 1),
+   closeAnim(0x21, 1),
    scriptLocationId(0x24, 1), //Uniquely identifies a line in a script
    _switch(0x26, 1),
    overlayImage(0x27, 1),
    _switch3(0x28, 1),
-   unknown37(0x37, 2),
+   unlockCG(0x37, 2),
    playMovie(0x39, 1),
    specialEffectImage(0x40, 8),
    tweenZoom(0x41, 5),
    specialEffect(0x45, 2),
-   unknown46(0x46, 1),
+   setDialogBoxColor(0x46, 1),
    varop(0xFE, 0),
    text(0xFF, 1);
 

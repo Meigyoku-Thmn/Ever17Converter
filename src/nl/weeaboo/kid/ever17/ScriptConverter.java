@@ -725,19 +725,42 @@ public class ScriptConverter {
             int arg4 = read();
             String arg5 = readExpr();
 
-            if (arg0 == 0x28 && arg1 == 0x0a && arg2 == 0xa2) {
-               switch (arg3) {
-                  case 0x44:
-                     return "setNumberOfFlash " + arg5;
-                  case 0x43:
-                     return "setFlashBrightness " + arg5;
-                  case 0x13:
-                     if (arg5.equals("1")) {
-                        return "turnOnFullscreenTextMode";
+            // hardcode workaround
+            if (arg0 == 0x28 && arg1 == 0x0a) {
+               switch (arg2) {
+                  case 0xa2:
+                     switch (arg3) {
+                        case 0x38:
+                           return "setKomoreType " + arg5;
+                        case 0x44:
+                           return "setNumberOfFlash " + arg5;
+                        case 0x43:
+                           return "setFlashBrightness " + arg5;
+                        case 0x13:
+                           if (arg5.equals("1")) {
+                              return "turnOnFullscreenTextMode";
+                           } else if (arg5.equals("0")) {
+                              return "turnOffFullscreenTextMode";
+                           }
+                           break;
+                        case 0x45:
+                           return "setMapCommentSlotToDisplay " + arg5;
+                        case 0x46:
+                           return "pickMapCommentByIndex " + arg5;
+                        case 0x4a:
+                           return "pickMapCommentByIndex2 " + arg5;
+                        default:
+                           break;
                      }
-                     else if (arg5.equals("0")) {
-                        return "turnOffFullscreenTextMode";
+                     break;
+                  case 0xa4:
+                     switch (arg3) {
+                        case 0xfa:
+                           return "setSceneTitleByIndex " + arg5;
+                        default:
+                           break;
                      }
+                     break;
                   default:
                      break;
                }
@@ -755,26 +778,97 @@ public class ScriptConverter {
             imageCoveragePool.add(imageIndex);
             return String.format("%s %08x %s", op, arg0, filename);
          }
-         case unknown37: {
+         case unlockCG: {
             int arg0 = readInt();
             int imageIndex = readShort();
             String filename = readText(input, graphicsTable[imageIndex]);
             imageCoveragePool.add(imageIndex);
-            return String.format("%s %08x %s", op, arg0, filename);
+            return String.format("%s %s", op, filename);
          }
 
-         case unknown20: {
+         case openAnim: {
+            // this seems to be an instruction to show overlay anim
             String arg0 = readExpr();
-            if (arg0.equals("46")) {
-               return "triggerFlash";
+            // hardcode workaround
+            switch (arg0) {
+               case "4":
+                  return "shakeScreenHard";
+               case "5":
+                  return "shakeScreen";
+               case "12":
+                  return "openShakeScreenAnim";
+               case "19":
+                  return "showFog2";
+               case "27":
+                  return "showKomoreAnim";
+               case "32":
+                  return "showFilter2";
+               case "41":
+                  return "openSnowFallingAnim";
+               case "44":
+                  return "showDimOverlay";
+               case "45":
+                  return "showDimInAndOutAnim";
+               case "46":
+                  return "triggerFlash";
+               case "48":
+                  return "openMapCommentAnim";
+               case "49":
+                  return "show_map_root_image_blinking_Anim";
+               case "18":
+                  return "openCherryBlossomAnim";
+               default:
+                  break;
             }
             return String.format("%s %s", op, arg0);
          }
-         case delay:
-         case unknown21:
-         case scriptLocationId:
-         case unknown46: {
+         case closeAnim: {
+            // this seems to be an instruction to close anim
             String arg0 = readExpr();
+            switch (arg0) {
+               case "0":
+                  return "closeFog2";
+               case "7":
+                  return "closeKomoreAnim";
+               case "11":
+                  return "closeShakeScreenAnim";
+               case "12":
+                  return "closeCherryBlossomAnim";
+               case "13":
+                  return "closeDimInAndOutAndFilterAnim";
+               case "14":
+                  return "closeSnowFallingAnim";
+               case "15":
+                  return "closeMapIndicatorAnim";
+               case "16":
+                  return "closeDimOverlay";
+            }
+            return String.format("%s %s", op, arg0);
+         }
+         case delay: {
+            String arg0 = readExpr();
+            if (arg0.equals("VAR_c1_34464_0")) {
+               return "waitForClick";
+            }
+            return String.format("%s %s", op, arg0);
+         }
+         case scriptLocationId: {
+            String arg0 = readExpr();
+            return String.format("%s %s", op, arg0);
+         }
+         case setDialogBoxColor: {
+            String arg0 = readExpr();
+            switch (arg0) {
+               case "2":
+                  arg0 = "gray";
+                  break;
+               case "0":
+                  arg0 = "blue";
+                  break;
+               case "1":
+                  arg0 = "green";
+                  break;
+            }
             return String.format("%s %s", op, arg0);
          }
          case specialEffect: {

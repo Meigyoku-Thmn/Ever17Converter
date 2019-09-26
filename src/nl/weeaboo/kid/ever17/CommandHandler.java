@@ -334,9 +334,9 @@ public class CommandHandler {
 
          case scriptLocationId:
          case choiceId:
-         case unknown20:
-         case unknown21:
-         case unknown46: {
+         case openAnim:
+         case closeAnim:
+         case setDialogBoxColor: {
             return "#" + line;
          }
          default:

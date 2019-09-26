@@ -153,24 +153,29 @@ public class StringCommandReader {
       }
 
       if (!spacesBetweenWords) {
-         if (c == 0x01) {
-            return "";
-         }
-         if (c == 0x02) {
-            return "";
-         }
-         if (c == 0x10) {
-            return "";
+         switch (c) {
+            case 0x01:
+               return "";
+            case 0x02:
+               return "";
+            case 0x10:
+               return "";
+            default:
+               break;
          }
       } else {
-         if (c == 0x01) {
-            c = ' ';  //Newline
-         }
-         if (c == 0x02) {
-            c = ' ';  //Wait click
-         }
-         if (c == 0x10) {
-            c = ' ';  //Append text
+         switch (c) {
+            case 0x01:
+               c = ' ';  //Newline
+               break;
+            case 0x02:
+               c = ' ';  //Wait click
+               break;
+            case 0x10:
+               c = ' ';  //Append text
+               break;
+            default:
+               break;
          }
       }
       if (c == 0x03) {
