@@ -794,7 +794,10 @@ public class ScriptConverter {
             imageCoveragePool.add(imageIndex);
             return String.format("%s %s", op, filename);
          }
-
+         case playVoice: {
+            String fileName = readCString();
+            return String.format("%s %s", op, fileName);
+         }
          case openAnim: {
             // this seems to be an instruction to show overlay anim
             String arg0 = readExpr();
@@ -888,6 +891,22 @@ public class ScriptConverter {
          case playMovie: {
             String fileName = readCString();
             return String.format("%s %s", op, fileName);
+         }
+         case unknown09:
+         case unknown3a:
+         case unknown3c: {
+            return op.toString();
+         }
+         case unknown15: {
+            String arg0 = readExpr();
+            String arg1 = readExpr();
+            return String.format("%s %s %s", op, arg0, arg1);
+         }
+         case unknown2b:
+         case unknown3b:
+         case unknown43: {
+            String arg0 = readExpr();
+            return String.format("%s %s", op, arg0);
          }
          default:
             if (op.args > 0) {

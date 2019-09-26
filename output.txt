@@ -2,14 +2,11 @@
 [[Resetting graphics state]]
 [[Resetting music state]]
 [Info] Converting script: .\script\s_1a.scr
-  [Unknown] Unsupported opcode: 3b (59) at 00000992
-  [Unknown] Unsupported opcode: 3c (60) at 0000099c
   [Unknown] Unexpected val in 16 at 000009b6
   [Unknown] Invalid jump in gotoif at 000009b6: 6400
 [Info] Converting script: .\script\s_1a2.scr
      [Unknown Text] What I though was a period turns out not to be: 64
 [Info] Converting script: .\script\s_1b.scr
-  [Unknown] Unsupported opcode: 43 (67) at 00001d8c
 [Info] Converting script: .\script\s_1c.scr
 [Info] Converting script: .\script\s_2a.scr
   [Unknown] What kind of expr is this? 51 at 00000190
@@ -24,7 +21,6 @@
   [Unknown] Text table index is out of bounds at 00001819: 65535
 [Info] Converting script: .\script\sc1a.scr
 [Info] Converting script: .\script\s_2c.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000582
 [Info] Converting script: .\script\s_2d.scr
 [Info] Converting script: .\script\sc1b.scr
 [Info] Converting script: .\script\sc1c.scr
@@ -35,11 +31,8 @@
   [Unknown] Text table index is out of bounds at 00000635: 65535
   [Unknown] What kind of expr is this? 224 at 0000069c
   [Unknown] Text table index is out of bounds at 000006a5: 65535
-  [Unknown] Unsupported opcode: 43 (67) at 00000839
-  [Unknown] Unsupported opcode: 15 (21) at 00000e98
 [Info] Converting script: .\script\sc2a.scr
 [Info] Converting script: .\script\s_3d.scr
-  [Unknown] Unsupported opcode: 43 (67) at 000007d8
 [Info] Converting script: .\script\sc2b.scr
 [Info] Converting script: .\script\s_3b.scr
 [Info] Converting script: .\script\sc2c.scr
@@ -47,30 +40,20 @@
   [Unknown] What kind of expr is this? 224 at 0000060e
 [Info] Converting script: .\script\s_3e.scr
 [Info] Converting script: .\script\ss4a.scr
-  [Unknown] Unsupported opcode: 15 (21) at 0000021a
 [Info] Converting script: .\script\t_1a.scr
-  [Unknown] Unsupported opcode: 3b (59) at 00000636
-  [Unknown] Unsupported opcode: 3c (60) at 00000640
   [Unknown] Unexpected val in 16 at 0000065a
   [Unknown] Invalid jump in gotoif at 0000065a: 6400
   [Unknown] Unexpected val in 16 at 00000a48
   [Unknown] Invalid jump in gotoif at 00000a48: 6400
 [Info] Converting script: .\script\sc2d.scr
-  [Unknown] Unsupported opcode: 15 (21) at 000000e3
 [Info] Converting script: .\script\ss5a.scr
-  [Unknown] Unsupported opcode: 08 (8) at 0000006a
-  [Unknown] Unsupported opcode: 09 (9) at 00000073
   [Unknown] What kind of expr is this? 224 at 000000d5
-  [Unknown] Unsupported opcode: 43 (67) at 00000895
 [Info] Converting script: .\script\sc2e.scr
 [[Resetting graphics state]]
 [[Resetting music state]]
   [Unknown] What kind of expr is this? 224 at 000001d2
   [Unknown] Text table index is out of bounds at 000001db: 65535
 [Info] Converting script: .\script\ss6a.scr
-  [Unknown] Unsupported opcode: 08 (8) at 000002bb
-  [Unknown] Unsupported opcode: 09 (9) at 000002c4
-  [Unknown] Unsupported opcode: 43 (67) at 000004ad
 [Info] Converting script: .\script\t_1b.scr
 [Info] Converting script: .\script\ss7a.scr
 [Info] Converting script: .\script\ssbd.scr
@@ -101,11 +84,8 @@
 [Info] Converting script: .\script\sy5a.scr
      [Unknown Text] What I though was a period turns out not to be: 73
 [Info] Converting script: .\script\sy6a.scr
-  [Unknown] Unsupported opcode: 43 (67) at 000007ce
 [Info] Converting script: .\script\t_2a.scr
 [Info] Converting script: .\script\sy6b.scr
-  [Unknown] Unsupported opcode: 3b (59) at 0000113c
-  [Unknown] Unsupported opcode: 3c (60) at 00001146
   [Unknown] Unexpected val in 16 at 00001160
   [Unknown] Invalid jump in gotoif at 00001160: 6400
 [Info] Converting script: .\script\sy7a.scr
@@ -114,8 +94,6 @@
 [Info] Converting script: .\script\y_ed.scr
      [Unknown Text] What I though was a period turns out not to be: 81
      [Unknown Text] What I though was a period turns out not to be: 66
-  [Unknown] Unsupported opcode: 3b (59) at 00000257
-  [Unknown] Unsupported opcode: 3c (60) at 00000261
   [Unknown] Unexpected val in 16 at 0000027b
   [Unknown] Invalid jump in gotoif at 0000027b: 6400
   [Unknown] Unexpected val in 16 at 00000317
@@ -141,7 +119,6 @@
   [Unknown] Unexpected subop in _switch, expected 39, got 10 at 00000960
   [Unknown] What kind of expr is this? 1 at 00000960
   [Unknown] Invalid jump in switch case at 00000960: 2605
-  [Unknown] Unsupported opcode: 3a (58) at 00000979
   [Unknown] Unexpected val in 16 at 00000a0b
   [Unknown] Invalid jump in gotoif at 00000a0b: 6400
   [Unknown] Unexpected val in 16 at 00000b1e
@@ -156,9 +133,7 @@
   [Unknown] Invalid jump in gotoif at 00000dc0: 6400
   [Unknown] Unexpected val in 16 at 00000e54
   [Unknown] Invalid jump in gotoif at 00000e54: 6400
-  [Unknown] Unsupported opcode: 2b (43) at 00000f22
 [Info] Converting script: .\script\t_2c.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000719
 [Info] Converting script: .\script\syep.scr
 [Info] Converting script: .\script\yc3a.scr
   [Unknown] What kind of expr is this? 224 at 00000bfa
@@ -166,9 +141,7 @@
 [Info] Converting script: .\script\t_2d.scr
 [Info] Converting script: .\script\t_3a.scr
 [Info] Converting script: .\script\t_3b.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000c40
 [Info] Converting script: .\script\yc3a2.scr
-  [Unknown] Unsupported opcode: 15 (21) at 000001c1
 [Info] Converting script: .\script\t_3c.scr
 [Info] Converting script: .\script\t_4a.scr
 [Info] Converting script: .\script\t_4b.scr
@@ -180,13 +153,9 @@
 [Info] Converting script: .\script\t_5d.scr
 [Info] Converting script: .\script\t_6a.scr
 [Info] Converting script: .\script\tc2a.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000133
 [Info] Converting script: .\script\yc3b.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000485
 [Info] Converting script: .\script\t_6b.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000b32
 [Info] Converting script: .\script\t_ep.scr
-  [Unknown] Unsupported opcode: 2b (43) at 000000e7
 [Info] Converting script: .\script\t_bd.scr
 [Info] Converting script: .\script\tc1b.scr
 [[Resetting graphics state]]
@@ -198,26 +167,17 @@
 [[Resetting graphics state]]
 [[Resetting music state]]
 [Info] Converting script: .\script\tl6a.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000dc4
 [Info] Converting script: .\script\tt6a.scr
 [Info] Converting script: .\script\yc4a.scr
-  [Unknown] Unsupported opcode: 15 (21) at 00000295
 [Info] Converting script: .\script\tl7a.scr
-  [Unknown] Unsupported opcode: 15 (21) at 000004a0
 [Info] Converting script: .\script\tt7a.scr
 [Info] Converting script: .\script\yc4b.scr
-  [Unknown] Unsupported opcode: 43 (67) at 000005a4
 [Info] Converting script: .\script\yc5a.scr
 [Info] Converting script: .\script\yc5b.scr
-  [Unknown] Unsupported opcode: 43 (67) at 00000363
 [Info] Converting script: .\script\yc6a.scr
 [Info] Converting script: .\script\yc6b.scr
-  [Unknown] Unsupported opcode: 43 (67) at 000007a6
 [Info] Converting script: .\script\yc7a.scr
-  [Unknown] Unsupported opcode: 43 (67) at 000003a4
 [Info] Converting script: .\script\yc7b.scr
-  [Unknown] Unsupported opcode: 3b (59) at 00000a52
-  [Unknown] Unsupported opcode: 3c (60) at 00000a5c
   [Unknown] Unexpected val in 16 at 00000a76
   [Unknown] Invalid jump in gotoif at 00000a76: 6400
 [Info] Converting script: .\script\ycep.scr
