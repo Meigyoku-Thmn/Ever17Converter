@@ -429,6 +429,13 @@ public class ScriptConverter {
          }
          if (imageCoveragePool.size() < graphicsTable.length) {
             Log.v("  [Warn] Graphics coverage not covered all images! (" + imageCoveragePool.size() + "/" + graphicsTable.length + ")");
+            List<String> unusedImages = new ArrayList();
+            for (var i = 0; i < graphicsTable.length; i++) {
+               if (!imageCoveragePool.contains(i)) {
+                  unusedImages.add(readText(input, graphicsTable[i]));
+               }
+            }
+            Log.v("  [Warn] Unused images: " + String.join(" ", unusedImages));
          }
       }
    }
@@ -672,6 +679,7 @@ public class ScriptConverter {
             int arg0 = readInt();
             int imageIndex = readShort();
             String filename = readText(input, graphicsTable[imageIndex]);
+            imageCoveragePool.add(imageIndex);
             String arg2 = readExpr();
             String arg3 = readExpr();
 
@@ -688,6 +696,7 @@ public class ScriptConverter {
             String arg7 = readExpr();
 
             String filename = readText(input, graphicsTable[imageIndex]);
+            imageCoveragePool.add(imageIndex);
             return String.format("%s %08x %s %s %s %s %s %s %s", op, arg0, filename,
                     arg2, arg3, arg4, arg5, arg6, arg7);
          }

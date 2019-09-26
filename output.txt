@@ -1,20 +1,16 @@
 [Info] Converting script: .\script\op00.scr
 [[Resetting graphics state]]
 [[Resetting music state]]
-  [Warn] Graphics coverage not covered all images! (154/159)
 [Info] Converting script: .\script\s_1a.scr
   [Unknown] Unsupported opcode: 3b (59) at 00000992
   [Unknown] Unsupported opcode: 3c (60) at 0000099c
   [Unknown] Unexpected val in 16 at 000009b6
   [Unknown] Invalid jump in gotoif at 000009b6: 6400
-  [Warn] Graphics coverage not covered all images! (120/123)
 [Info] Converting script: .\script\s_1a2.scr
      [Unknown Text] What I though was a period turns out not to be: 64
 [Info] Converting script: .\script\s_1b.scr
   [Unknown] Unsupported opcode: 43 (67) at 00001d8c
-  [Warn] Graphics coverage not covered all images! (334/345)
 [Info] Converting script: .\script\s_1c.scr
-  [Warn] Graphics coverage not covered all images! (207/212)
 [Info] Converting script: .\script\s_2a.scr
   [Unknown] What kind of expr is this? 51 at 00000190
   [Unknown] What kind of expr is this? 51 at 00000273
@@ -23,7 +19,6 @@
   [Unknown] Text table index is out of bounds at 00000ac6: 65535
   [Unknown] What kind of expr is this? 224 at 00000b15
   [Unknown] Text table index is out of bounds at 00000b1e: 65535
-  [Warn] Graphics coverage not covered all images! (204/207)
 [Info] Converting script: .\script\s_2b.scr
   [Unknown] What kind of expr is this? 224 at 00001810
   [Unknown] Text table index is out of bounds at 00001819: 65535
@@ -31,7 +26,6 @@
 [Info] Converting script: .\script\s_2c.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000582
 [Info] Converting script: .\script\s_2d.scr
-  [Warn] Graphics coverage not covered all images! (289/295)
 [Info] Converting script: .\script\sc1b.scr
 [Info] Converting script: .\script\sc1c.scr
 [Info] Converting script: .\script\s_3a.scr
@@ -43,9 +37,7 @@
   [Unknown] Text table index is out of bounds at 000006a5: 65535
   [Unknown] Unsupported opcode: 43 (67) at 00000839
   [Unknown] Unsupported opcode: 15 (21) at 00000e98
-  [Warn] Graphics coverage not covered all images! (102/107)
 [Info] Converting script: .\script\sc2a.scr
-  [Warn] Graphics coverage not covered all images! (72/74)
 [Info] Converting script: .\script\s_3d.scr
   [Unknown] Unsupported opcode: 43 (67) at 000007d8
 [Info] Converting script: .\script\sc2b.scr
@@ -56,7 +48,6 @@
 [Info] Converting script: .\script\s_3e.scr
 [Info] Converting script: .\script\ss4a.scr
   [Unknown] Unsupported opcode: 15 (21) at 0000021a
-  [Warn] Graphics coverage not covered all images! (127/128)
 [Info] Converting script: .\script\t_1a.scr
   [Unknown] Unsupported opcode: 3b (59) at 00000636
   [Unknown] Unsupported opcode: 3c (60) at 00000640
@@ -80,17 +71,13 @@
   [Unknown] Unsupported opcode: 08 (8) at 000002bb
   [Unknown] Unsupported opcode: 09 (9) at 000002c4
   [Unknown] Unsupported opcode: 43 (67) at 000004ad
-  [Warn] Graphics coverage not covered all images! (57/60)
 [Info] Converting script: .\script\t_1b.scr
-  [Warn] Graphics coverage not covered all images! (214/219)
 [Info] Converting script: .\script\ss7a.scr
-  [Warn] Graphics coverage not covered all images! (13/15)
 [Info] Converting script: .\script\ssbd.scr
   [Unknown] What kind of expr is this? 224 at 00000152
 [Info] Converting script: .\script\ssep.scr
 [[Resetting graphics state]]
 [[Resetting music state]]
-  [Warn] Graphics coverage not covered all images! (31/32)
 [Info] Converting script: .\script\sy4a.scr
   [Unknown] What kind of expr is this? 224 at 00000e98
   [Unknown] Text table index is out of bounds at 00000ea1: 65535
@@ -110,23 +97,18 @@
      [Unknown Text] Unknown operator in choice option cond: 116
      [Unknown Text] Unknown operator in choice option cond: 32
 [Info] Converting script: .\script\sy4b.scr
-  [Warn] Graphics coverage not covered all images! (88/89)
 [Info] Converting script: .\script\t_1c.scr
-  [Warn] Graphics coverage not covered all images! (203/205)
 [Info] Converting script: .\script\sy5a.scr
      [Unknown Text] What I though was a period turns out not to be: 73
 [Info] Converting script: .\script\sy6a.scr
   [Unknown] Unsupported opcode: 43 (67) at 000007ce
-  [Warn] Graphics coverage not covered all images! (127/128)
 [Info] Converting script: .\script\t_2a.scr
-  [Warn] Graphics coverage not covered all images! (165/167)
 [Info] Converting script: .\script\sy6b.scr
   [Unknown] Unsupported opcode: 3b (59) at 0000113c
   [Unknown] Unsupported opcode: 3c (60) at 00001146
   [Unknown] Unexpected val in 16 at 00001160
   [Unknown] Invalid jump in gotoif at 00001160: 6400
 [Info] Converting script: .\script\sy7a.scr
-  [Warn] Graphics coverage not covered all images! (61/66)
 [Info] Converting script: .\script\t_2b.scr
 [Info] Converting script: .\script\sybd.scr
 [Info] Converting script: .\script\y_ed.scr
@@ -181,42 +163,30 @@
 [Info] Converting script: .\script\yc3a.scr
   [Unknown] What kind of expr is this? 224 at 00000bfa
   [Unknown] Text table index is out of bounds at 00000c03: 65535
-  [Warn] Graphics coverage not covered all images! (143/144)
 [Info] Converting script: .\script\t_2d.scr
-  [Warn] Graphics coverage not covered all images! (183/188)
 [Info] Converting script: .\script\t_3a.scr
-  [Warn] Graphics coverage not covered all images! (162/165)
 [Info] Converting script: .\script\t_3b.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000c40
 [Info] Converting script: .\script\yc3a2.scr
   [Unknown] Unsupported opcode: 15 (21) at 000001c1
 [Info] Converting script: .\script\t_3c.scr
-  [Warn] Graphics coverage not covered all images! (74/75)
 [Info] Converting script: .\script\t_4a.scr
 [Info] Converting script: .\script\t_4b.scr
 [Info] Converting script: .\script\tc1d.scr
 [Info] Converting script: .\script\t_4c.scr
-  [Warn] Graphics coverage not covered all images! (166/167)
 [Info] Converting script: .\script\t_5a.scr
 [Info] Converting script: .\script\t_5b.scr
-  [Warn] Graphics coverage not covered all images! (95/96)
 [Info] Converting script: .\script\t_5c.scr
-  [Warn] Graphics coverage not covered all images! (144/146)
 [Info] Converting script: .\script\t_5d.scr
-  [Warn] Graphics coverage not covered all images! (56/57)
 [Info] Converting script: .\script\t_6a.scr
-  [Warn] Graphics coverage not covered all images! (191/193)
 [Info] Converting script: .\script\tc2a.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000133
 [Info] Converting script: .\script\yc3b.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000485
-  [Warn] Graphics coverage not covered all images! (87/88)
 [Info] Converting script: .\script\t_6b.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000b32
-  [Warn] Graphics coverage not covered all images! (152/154)
 [Info] Converting script: .\script\t_ep.scr
   [Unknown] Unsupported opcode: 2b (43) at 000000e7
-  [Warn] Graphics coverage not covered all images! (3/6)
 [Info] Converting script: .\script\t_bd.scr
 [Info] Converting script: .\script\tc1b.scr
 [[Resetting graphics state]]
@@ -229,29 +199,22 @@
 [[Resetting music state]]
 [Info] Converting script: .\script\tl6a.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000dc4
-  [Warn] Graphics coverage not covered all images! (149/156)
 [Info] Converting script: .\script\tt6a.scr
-  [Warn] Graphics coverage not covered all images! (203/209)
 [Info] Converting script: .\script\yc4a.scr
   [Unknown] Unsupported opcode: 15 (21) at 00000295
 [Info] Converting script: .\script\tl7a.scr
   [Unknown] Unsupported opcode: 15 (21) at 000004a0
-  [Warn] Graphics coverage not covered all images! (37/43)
 [Info] Converting script: .\script\tt7a.scr
 [Info] Converting script: .\script\yc4b.scr
   [Unknown] Unsupported opcode: 43 (67) at 000005a4
 [Info] Converting script: .\script\yc5a.scr
 [Info] Converting script: .\script\yc5b.scr
   [Unknown] Unsupported opcode: 43 (67) at 00000363
-  [Warn] Graphics coverage not covered all images! (85/86)
 [Info] Converting script: .\script\yc6a.scr
-  [Warn] Graphics coverage not covered all images! (169/171)
 [Info] Converting script: .\script\yc6b.scr
   [Unknown] Unsupported opcode: 43 (67) at 000007a6
-  [Warn] Graphics coverage not covered all images! (99/101)
 [Info] Converting script: .\script\yc7a.scr
   [Unknown] Unsupported opcode: 43 (67) at 000003a4
-  [Warn] Graphics coverage not covered all images! (80/83)
 [Info] Converting script: .\script\yc7b.scr
   [Unknown] Unsupported opcode: 3b (59) at 00000a52
   [Unknown] Unsupported opcode: 3c (60) at 00000a5c
@@ -262,4 +225,3 @@
   [Unknown] What kind of expr is this? 112 at 000001ed
   [Unknown] What kind of expr is this? 190 at 0000028f
   [Unknown] What kind of expr is this? 112 at 0000028f
-  [Warn] Graphics coverage not covered all images! (100/116)
