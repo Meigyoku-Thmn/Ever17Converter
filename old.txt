@@ -1,0 +1,15 @@
+//byteCode        argc  haveTxtAfter nameArgPos function
+00              : 0 :     0 :         -1 :     null
+01              : 0 :     0 :         -1 :     NewLine
+02              : 0 :     0 :         -1 :     WaitPlayerClick
+03              : 0 :     0 :         -1 :     ClearText
+10              : 1 :     0 :         -1 :     Next
+04              : 3 :     0 :         -1 :     Append
+05,80,0,0       : 0 :     1 :         -1 :     AppendText
+0B,00           : 2 :     0 :         -1 :     PlotSelection1
+0B,01           : 0 :     1 :         -1 :     Option1
+0B,02,28,0A,A4  : 3 :     1 :         -1 :     Option2
+0D              : 1 :     0 :          0 :     LoadVoiceFile
+0E              : 0 :     0 :         -1 :     NewTextBox
+0C              : 0 :     1 :         -1 :     AutoClick
+11,03           : 0 :     0 :         -1 :     BigChar0

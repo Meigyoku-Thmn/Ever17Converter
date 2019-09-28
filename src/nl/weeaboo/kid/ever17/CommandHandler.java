@@ -415,7 +415,7 @@ public class CommandHandler {
       StrOpcode op = StrOpcode.get(cmd);
       if (op != null) {
          switch (op) {
-            case clearText: {
+            case appendText: {
                return "";
             }
             case sound: {
@@ -426,10 +426,10 @@ public class CommandHandler {
             case waitForSound: {
                return ""; //Ignore
             }
-            case textboxColor: {
+            case delay: {
                return "#" + line;
             }
-            case unknownE: {
+            case marker: {
                return "#" + line;
             }
             case choice: {
@@ -461,18 +461,18 @@ public class CommandHandler {
 
                return c.toString();
             }
-            case appendText: {
+            case nextPage: {
                return ""; //return "#" + line;
             }
-            case unknown11: {
+            case bigChar: {
                return "";
             }
             default:
-               Log.v("Unsupported str-command: " + cmd);
+//               Log.v("Unsupported str-command: " + cmd);
                return "#" + line;
          }
       } else {
-         Log.v("Unknown str-command: " + cmd);
+//         Log.v("Unknown str-command: " + cmd);
       }
       return "#" + line;
    }

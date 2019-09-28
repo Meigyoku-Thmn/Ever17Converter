@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
@@ -51,7 +52,6 @@ public class ScriptConverter {
    protected final Set<Integer> unsupportedOpCodes;
    protected final ResourcesUsed resUsed;
 
-   private final String encoding;
    private final ImageInsets imageInsets;
    private final PriorityQueue<WorkItem> workQueue;
    private final Dim targetImageSize;
@@ -77,10 +77,7 @@ public class ScriptConverter {
       this.srcF = srcF;
       this.dstF = dstF;
 
-      boolean isJapanese = false;
-
-      encoding = "SJIS";
-      stringCommandReader = new StringCommandReader(encoding, !isJapanese);
+      stringCommandReader = new StringCommandReader();
 
       FileExts exts;
       try {
@@ -946,7 +943,7 @@ public class ScriptConverter {
    }
 
    protected String readCString() {
-      return KIDUtil.readCString(input, encoding);
+      return KIDUtil.readCString(input);
    }
 
    protected String readExpr() {
@@ -1011,7 +1008,7 @@ public class ScriptConverter {
       }
    }
 
-   protected String readText(ByteBuffer buf) {
+   protected String readText(ByteBuffer buf) throws UnsupportedEncodingException {
       return stringCommandReader.parse(buf);
    }
 

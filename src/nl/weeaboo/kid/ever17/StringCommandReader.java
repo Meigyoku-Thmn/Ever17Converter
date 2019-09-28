@@ -1,5 +1,6 @@
 package nl.weeaboo.kid.ever17;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 
 import nl.weeaboo.kid.KIDUtil;
@@ -7,28 +8,22 @@ import nl.weeaboo.vnds.Log;
 
 public class StringCommandReader {
 
-   private final String inputEncoding;
-   private final boolean spacesBetweenWords;
-
    private ByteBuffer input;
    private final StringBuilder output;
 
-   public StringCommandReader(String inputEncoding, boolean spacesBetweenWords) {
-      this.inputEncoding = inputEncoding;
-      this.spacesBetweenWords = spacesBetweenWords;
-
+   public StringCommandReader() {
       output = new StringBuilder();
    }
 
    //Functions
-   public String parse(ByteBuffer in) {
+   public String parse(ByteBuffer in) throws UnsupportedEncodingException {
       setInput(in);
       parse();
 
       return output.toString();
    }
 
-   public void parse() {
+   public void parse() throws UnsupportedEncodingException {
       output.delete(0, output.length());
 
       int c;
@@ -40,11 +35,17 @@ public class StringCommandReader {
          } else {
             c = read();
             switch (op) {
-               case textboxColor:
-                  output.append(String.format("{%s %08x}", op, readInt()));
+               case waitForClick:
+                  output.append(String.format("{%s}", op));
                   break;
                case clearText:
+                  output.append(String.format("{%s}", op));
+                  break;
+               case delay:
                   output.append(String.format("{%s %s}", op, readExpr()));
+                  break;
+               case appendText:
+                  output.append(String.format("{%s}", op, readExpr()));
                   break;
                case sound:
                   output.append(String.format("{%s %s}", op, readCString()));
@@ -66,14 +67,15 @@ public class StringCommandReader {
                   break OUTER;
                }
                //pout.printf("{%s}", op);
-               case unknownE:
+               case marker:
+                  output.append(String.format("{%s}", op));
                   break;
-               case appendText: {
+               case nextPage: {
                   int arg0 = read();
                   output.append(String.format("{%s %02x}", op, arg0));
                   break;
                }
-               case unknown11:
+               case bigChar:
                   output.append(String.format("{%s}", op));
                   break;
                default:
@@ -83,34 +85,39 @@ public class StringCommandReader {
       }
    }
 
-   protected String parseChoiceOption() {
+   protected String parseChoiceOption() throws UnsupportedEncodingException {
       int marker = read();
       if (marker != 0x0B) {
          Log.v("     [Unknown Text] Expected choice-option's marker to be: " + 0x0B + ", but got: " + marker);
       }
 
-      StringBuilder temp = new StringBuilder();
-      while (peek() != 0x0B && peek() != 0x00) {
-         if (peek() == 0x28) {
-            int arg0 = read();
-            int arg1 = read();
-            int arg2 = read();
-            int varname = read();
-            int op = read();
-            int arg3 = read();
-            if (op != 0x14) {
-               Log.v("     [Unknown Text] Unknown operator in choice option cond: " + op);
-            }
+      int type = read();
 
-            temp.append(String.format("{%s (%02x %02x %02x) %02x %02x (%02x)}",
-                    "cond", arg0, arg1, arg2, varname, op, arg3));
-         } else {
-            String c = readChar();
-            c = c.replace("\n", " ");
+      StringBuilder temp = new StringBuilder();
+      if (type == 1) {
+         var c = readChar();
+         while (!c.equals("\n")) {
             temp.append(c);
+            c = readChar();
+         }
+      } else if (type == 2) {
+         int arg0 = read();
+         int arg1 = read();
+         int arg2 = read();
+         int varname = read();
+         int op = read();
+         int arg3 = read();
+         if (op != 0x14) {
+            Log.v("     [Unknown Text] Unknown operator in choice option cond: " + op);
+         }
+         temp.append(String.format("{%s (%02x %02x %02x) %02x %02x (%02x)}",
+                 "cond", arg0, arg1, arg2, varname, op, arg3));
+         var c = readChar();
+         while (!c.equals("\n")) {
+            temp.append(c);
+            c = readChar();
          }
       }
-
       return temp.toString();
    }
 
@@ -136,63 +143,17 @@ public class StringCommandReader {
 
    private final byte[] readCharTemp = new byte[4];
 
-   protected String readChar() {
+   protected String readChar() throws UnsupportedEncodingException {
       int c = read();
+      if (c == 0x01) {
+         return "\n";
+      }
 
       int numBytes = 1;
-      if (inputEncoding.equals("SJIS")) {
-         if ((c >= 0x81 && c <= 0x9f) || (c >= 0xe0 && c <= 0xef)) {
-            numBytes = 2;
-         }
-      } else if (inputEncoding.equals("UTF-8")) {
-         if (c >= 0xc2 && c <= 0xef) {
-            numBytes = 3;
-         } else if (c >= 0xf0) {
-            numBytes = 4;
-         }
-      }
-
-      if (!spacesBetweenWords) {
-         switch (c) {
-            case 0x01:
-               return "";
-            case 0x02:
-               return "";
-            case 0x10:
-               return "";
-            default:
-               break;
-         }
-      } else {
-         switch (c) {
-            case 0x01:
-               c = ' ';  //Newline
-               break;
-            case 0x02:
-               c = ' ';  //Wait click
-               break;
-            case 0x10:
-               c = ' ';  //Append text
-               break;
-            default:
-               break;
-         }
-      }
-      if (c == 0x03) {
-         c = '\n'; //New page
-      }
-      if (c == 0x81) {
-         int c2 = read();
-         if (c2 != 0x44) {
-            Log.v("     [Unknown Text] What I though was a period turns out not to be: " + c2);
-         }
-         return ".";
-      } else if (c == 0x87) {
-         int c2 = read();
-         if (c2 != 0x4C) {
-            Log.v("     [Unknown Text] What I though was an emdash turns out not to be: " + c2);
-         }
-         return "--";
+      // Ever17 JP Edition and Ever1 US Edition are all using SJIS encoding
+//      if (inputEncoding.equals("SJIS")) {
+      if ((c >= 0x80 && c <= 0xa0) || (c >= 0xe0 && c <= 0xef)) {
+         numBytes = 2;
       }
 
       readCharTemp[0] = (byte) c;
@@ -200,11 +161,27 @@ public class StringCommandReader {
          readCharTemp[n] = (byte) read();
       }
 
-      return new String(readCharTemp, 0, numBytes);
+      var rs = new String(readCharTemp, 0, numBytes, "MS932");
+      switch (rs) {
+         case "⑩":
+            rs = "ä";
+            break;
+         case "⑪":
+            rs = "ö";
+            break;
+         case "⑫":
+            rs = "ü";
+            break;
+         case "⑬":
+            rs = "—"; // long dash
+            break;
+      }
+
+      return rs;
    }
 
    private String readCString() {
-      return KIDUtil.readCString(input, inputEncoding);
+      return KIDUtil.readCString(input);
    }
 
    private String readExpr() {

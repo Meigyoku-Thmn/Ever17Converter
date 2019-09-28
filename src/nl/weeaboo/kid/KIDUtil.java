@@ -10,13 +10,13 @@ public final class KIDUtil {
    }
 
    //Functions
-   public static String readCString(ByteBuffer buf, int pos, String encoding) {
+   public static String readCString(ByteBuffer buf, int pos) {
       int oldlimit = buf.limit();
       int oldpos = buf.position();
       try {
          buf.limit(buf.capacity());
          buf.position(pos);
-         return readCString(buf, encoding);
+         return readCString(buf);
       } finally {
          buf.position(oldpos);
          buf.limit(oldlimit);
@@ -27,10 +27,9 @@ public final class KIDUtil {
     * Reads a null-terminated UTF-8 string
     *
     * @param buf
-    * @param encoding
     * @return
     */
-   public static String readCString(ByteBuffer buf, String encoding) {
+   public static String readCString(ByteBuffer buf) {
       byte[] temp = new byte[256];
       int tempIndex = 0;
 
@@ -49,16 +48,16 @@ public final class KIDUtil {
          temp[tempIndex++] = b;
       }
 
-      return makeString(temp, 0, tempIndex, encoding);
+      return makeString(temp, 0, tempIndex);
    }
 
-   public static String makeString(byte[] bytes, String encoding) {
-      return makeString(bytes, 0, bytes.length, encoding);
+   public static String makeString(byte[] bytes) {
+      return makeString(bytes, 0, bytes.length);
    }
 
-   public static String makeString(byte[] bytes, int off, int len, String encoding) {
+   public static String makeString(byte[] bytes, int off, int len) {
       try {
-         return new String(bytes, off, len, encoding);
+         return new String(bytes, off, len, "MS932");
       } catch (UnsupportedEncodingException e) {
          return new String(bytes, off, len);
       }

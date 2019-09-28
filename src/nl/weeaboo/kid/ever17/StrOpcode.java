@@ -6,14 +6,16 @@ import java.util.Map;
 
 public enum StrOpcode {
 
-	textboxColor(0x4, 1),
-	clearText(0x5, 2),
+   waitForClick(0x2),
+   clearText(0x3),
+	delay(0x4, 1),
+	appendText(0x5, 2),
 	choice(0xB, 1),
 	waitForSound(0xC, 0),
 	sound(0xD, 0),
-	unknownE(0xE, 0),
-	appendText(0x10, 1),
-	unknown11(0x11, 0);
+	marker(0xE, 0),
+	nextPage(0x10, 1),
+	bigChar(0x11, 0);
 	
 	public final int id;
 	public final int args;

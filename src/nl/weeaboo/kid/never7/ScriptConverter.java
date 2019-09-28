@@ -800,7 +800,7 @@ public class ScriptConverter extends WorkManager {
    }
 
    protected String readCString() {
-      return KIDUtil.readCString(input, encoding);
+      return KIDUtil.readCString(input);
    }
 
    protected String readExpr() {
