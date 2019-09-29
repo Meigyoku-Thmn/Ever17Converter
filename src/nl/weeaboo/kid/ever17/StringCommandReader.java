@@ -163,16 +163,31 @@ public class StringCommandReader {
 
       var rs = new String(readCharTemp, 0, numBytes, "MS932");
       switch (rs) {
-         case "⑩":
+         case "①": // Circled Number One
+            rs = "{💧💧}";
+            break;
+         case "②": // Circled Number Two
+            rs = "❤️";
+            break;
+         case "③": // Circled Number Three
+            rs = "💢";
+            break;
+         case "④": // Circled Number Four
+            rs = "💦";
+            break;
+         case "⑤": // Circled Number Five
+            rs = "★";
+            break;
+         case "⑩": // Circled Number Ten
             rs = "ä";
             break;
-         case "⑪":
+         case "⑪": // Circled Number Eleven
             rs = "ö";
             break;
-         case "⑫":
+         case "⑫": // Circled Number Twelve
             rs = "ü";
             break;
-         case "⑬":
+         case "⑬": // Circled Number Thirteen
             rs = "—"; // long dash
             break;
       }
