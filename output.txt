@@ -11,13 +11,7 @@
   [Unknown] What kind of expr is this? 51 at 00000190
   [Unknown] What kind of expr is this? 51 at 00000273
   [Unknown] What kind of expr is this? 51 at 000002cf
-  [Unknown] What kind of expr is this? 224 at 00000abd
-  [Unknown] Text table index is out of bounds at 00000ac6: 65535
-  [Unknown] What kind of expr is this? 224 at 00000b15
-  [Unknown] Text table index is out of bounds at 00000b1e: 65535
 [Info] Converting script: .\script\s_2b.scr
-  [Unknown] What kind of expr is this? 224 at 00001810
-  [Unknown] Text table index is out of bounds at 00001819: 65535
 [Info] Converting script: .\script\sc1a.scr
 [Info] Converting script: .\script\s_2c.scr
 [Info] Converting script: .\script\s_2d.scr
@@ -26,17 +20,12 @@
 [Info] Converting script: .\script\s_3a.scr
 [Info] Converting script: .\script\sc1d.scr
 [Info] Converting script: .\script\s_3c.scr
-  [Unknown] What kind of expr is this? 224 at 0000062c
-  [Unknown] Text table index is out of bounds at 00000635: 65535
-  [Unknown] What kind of expr is this? 224 at 0000069c
-  [Unknown] Text table index is out of bounds at 000006a5: 65535
 [Info] Converting script: .\script\sc2a.scr
 [Info] Converting script: .\script\s_3d.scr
 [Info] Converting script: .\script\sc2b.scr
 [Info] Converting script: .\script\s_3b.scr
 [Info] Converting script: .\script\sc2c.scr
 [Info] Converting script: .\script\sc2f.scr
-  [Unknown] What kind of expr is this? 224 at 0000060e
 [Info] Converting script: .\script\s_3e.scr
 [Info] Converting script: .\script\ss4a.scr
 [Info] Converting script: .\script\t_1a.scr
@@ -46,27 +35,17 @@
   [Unknown] Invalid jump in gotoif at 00000a48: 6400
 [Info] Converting script: .\script\sc2d.scr
 [Info] Converting script: .\script\ss5a.scr
-  [Unknown] What kind of expr is this? 224 at 000000d5
 [Info] Converting script: .\script\sc2e.scr
 [[Resetting graphics state]]
 [[Resetting music state]]
-  [Unknown] What kind of expr is this? 224 at 000001d2
-  [Unknown] Text table index is out of bounds at 000001db: 65535
 [Info] Converting script: .\script\ss6a.scr
 [Info] Converting script: .\script\t_1b.scr
 [Info] Converting script: .\script\ss7a.scr
 [Info] Converting script: .\script\ssbd.scr
-  [Unknown] What kind of expr is this? 224 at 00000152
 [Info] Converting script: .\script\ssep.scr
 [[Resetting graphics state]]
 [[Resetting music state]]
 [Info] Converting script: .\script\sy4a.scr
-  [Unknown] What kind of expr is this? 224 at 00000e98
-  [Unknown] Text table index is out of bounds at 00000ea1: 65535
-  [Unknown] What kind of expr is this? 224 at 00000f39
-  [Unknown] Text table index is out of bounds at 00000f42: 65535
-  [Unknown] What kind of expr is this? 224 at 00000f71
-  [Unknown] Text table index is out of bounds at 00000f7a: 65535
 [Info] Converting script: .\script\tc1a.scr
 [Info] Converting script: .\script\sy4b.scr
 [Info] Converting script: .\script\t_1c.scr
@@ -122,8 +101,6 @@
 [Info] Converting script: .\script\t_2c.scr
 [Info] Converting script: .\script\syep.scr
 [Info] Converting script: .\script\yc3a.scr
-  [Unknown] What kind of expr is this? 224 at 00000bfa
-  [Unknown] Text table index is out of bounds at 00000c03: 65535
 [Info] Converting script: .\script\t_2d.scr
 [Info] Converting script: .\script\t_3a.scr
 [Info] Converting script: .\script\t_3b.scr
@@ -167,7 +144,3 @@
   [Unknown] Unexpected val in 16 at 00000a76
   [Unknown] Invalid jump in gotoif at 00000a76: 6400
 [Info] Converting script: .\script\ycep.scr
-  [Unknown] What kind of expr is this? 190 at 000001ed
-  [Unknown] What kind of expr is this? 112 at 000001ed
-  [Unknown] What kind of expr is this? 190 at 0000028f
-  [Unknown] What kind of expr is this? 112 at 0000028f

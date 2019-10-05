@@ -42,7 +42,7 @@ public enum Opcode {
    unknown3a(0x3a, 0),
    unknown3b(0x3b, 1),
    unknown3c(0x3c, 0),
-   specialEffectImage(0x40, 8),
+   bgloadCrop(0x40, 8),
    tweenZoom(0x41, 5),
    unknown43(0x43, 1),
    specialEffect(0x45, 2),

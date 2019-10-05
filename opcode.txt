@@ -1,0 +1,46 @@
+# blocking command: lệnh có tính chất chờ (chờ một cái gì đó ví dụ chờ hiệu ứng kết thúc, chờ âm thanh kết thúc)
+# fast forward skip tất cả transition anim và voice, nhưng không skip sfx và music
+jump(string fileName)
+   lệnh nhảy 'vô điều kiện' tới file script có tên là fileName
+   lệnh này "có thể" cancel SFX, cần tìm hiểu thêm
+playBGM(expr num, expr volume)
+   play nhạc nền, tên file nhạc nền: String.format("bgm%02d", num)
+   cancel hết toàn bộ sfx hiện hành
+   lệnh này có thể đc dùng như một dấu hiệu nhận biết chuyển scene
+stopBGM()
+   dừng nhạc nền hiện hành
+playSFX(string fileName, expr a1, expr volume)
+   play sfx
+   nếu fileName có chữ "l" ở cuối thì tức là sfx dùng để lặp liên tục
+   a1: ?? (game sử dụng 0 và 1) => có thể bỏ qua
+   volume: âm lượng
+   lệnh sau sẽ cancel hiệu quả của lệnh trước, ngoại trừ trường hợp lệnh trước là loop
+   nếu lệnh sau là loop thì sẽ cancel lệnh trước nếu lệnh trước cũng là loop (đây là phỏng đoán, chứ trong game không xảy ra trường hợp này)
+   thường thì đã là lệnh loop thì bắt buộc phải dùng stopSFX để cancel
+   nếu không phải loop thì lệnh này cũng sẽ bị cancel trong một số trường hợp khác
+stopSFX()
+   tắt sfx, kể cả loop sfx
+waitForSFX()
+   chờ cho sfx kết thúc, không hoạt động với loop sfx
+   luôn luôn cancel sfx sau khi hết lệnh
+   blocking command
+playVoice(string fileName)
+   play voice file
+   blocking command, luôn luôn tự cancel sau khi hết lệnh
+unknown09()
+   không rõ, luôn theo sau lệnh playVoice, có thể bỏ qua
+
+removeBG(expr a1, expr a2, expr a3)
+   "gỡ bỏ" bg
+   a1 = 1 -> đổi sang bg màu trắng
+   a1 = 0 -> đổi sang bg màu đen
+   a2 và a3 quyết định loại transition?
+delay(expr a1)
+   delay trong vòng a1 frame hình trên giây, trong Visual Novel này thì 1 giây có 60 frame
+showTextbox()
+   hiển thị textbox
+hideTextbox()
+   ẩn textbox
+goto(short offset)
+   chính là lệnh waitForSFX nếu đằng sau không có 0x10
+   nhảy 'vô điều kiện' tới 1 địa điểm trong script hiện hành

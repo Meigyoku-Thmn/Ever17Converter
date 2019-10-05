@@ -118,7 +118,7 @@ public class CommandHandler {
             gstate.setBackground(filename, -1);
             return "";
          }
-         case specialEffectImage: {
+         case bgloadCrop: {
             int unknown1 = scanner.nextInt();
             String filename = scanner.next();
             String unknown2 = scanner.next();

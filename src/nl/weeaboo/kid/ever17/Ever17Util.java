@@ -20,7 +20,7 @@ public final class Ever17Util {
       if (lastPosition > 0) {
          _position = String.format(" at %08x", lastPosition);
       }
-      
+
       int arg0 = buf.get() & 0xFF;
       if (arg0 == 0xC0) {
          int mode = arg0;
@@ -46,6 +46,21 @@ public final class Ever17Util {
             return KIDUtil.getVarname(String.format("%02x", a));
          }
          return String.format("CONST_%02x_%02x_%02x", m, a, b);
+      } else if (arg0 >= 0xB0 && arg0 <= 0xBF) {
+         int m = arg0;
+         int a = buf.get() & 0xFF;
+         int b = buf.get() & 0xFF;
+         int nil = buf.get();
+         if (nil != 0) {
+            Log.v("  [Unknown] I thought negative exprs ended with 0x00, but got: " + nil + _position);
+         }
+
+         if (b == 0 && nil == 0) {
+            return Integer.toString(256 * (m - 0xBF) + (a - 0x100));
+         } else if (m == 0xB4) {
+            return KIDUtil.getVarname(String.format("%02x", a));
+         }
+         return String.format("CONST_%02x_%02x_%02x", m, a, b);
       } else if (arg0 >= 0x80 && arg0 <= 0x8F) {
          int a = arg0 - 0x80; //Constant
          int b = buf.get() & 0xFF;
@@ -61,11 +76,22 @@ public final class Ever17Util {
 
          return "" + a;
       } else if (arg0 == 0x28) {
-         int arg1 = buf.get();
+         int arg1 = buf.get() & 0xFF;
          if (arg1 != 0x0a) {
             Log.v("  [Unknown] I thought 0x28 is always followed by 0x0a, but got: " + arg1 + _position);
          }
          return readExpr(buf);
+      } else if (arg0 == 0xe0) {
+         int rColor = buf.get() & 0xFF;
+         int gColor = buf.get() & 0xFF;
+         int bColor = buf.get() & 0xFF;
+         int null1 = buf.get();
+         int null2 = buf.get();
+         int null3 = buf.get();
+         if (null1 != 0 || null2 != 0 || null3 != 0) {
+            Log.v("  [Unknown] I thought 0xe0 color code is always ended by three 0x00, at " + _position);
+         }
+         return String.format("rgb(%s,%s,%s)", rColor, gColor, bColor);
       } else {
          Log.v("  [Unknown] What kind of expr is this? " + arg0 + _position);
          return "" + arg0;

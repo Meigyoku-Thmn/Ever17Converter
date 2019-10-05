@@ -682,7 +682,7 @@ public class ScriptConverter {
 
             return String.format("%s %08x %s %s %s", op, arg0, filename, arg2, arg3);
          }
-         case specialEffectImage: {
+         case bgloadCrop: {
             int arg0 = readInt();
             int imageIndex = readShort();
             String arg2 = readExpr();
