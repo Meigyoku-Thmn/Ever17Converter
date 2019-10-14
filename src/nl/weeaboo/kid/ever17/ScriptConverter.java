@@ -523,14 +523,14 @@ public class ScriptConverter {
                     op, arg0, filename1, arg1, filename2, arg2, filename3,
                     arg3, arg4, arg5, arg6);
          }
-         case multiremoveFG2: {
+         case multiremoveFG: {
             int arg0 = read();
             int arg1 = read();
             int arg2 = read();
             String arg3 = readExpr();
             return String.format("%s %02x %02x %02x %s", op, arg0, arg1, arg2, arg3);
          }
-         case multiremoveFG3: {
+         case setFGLayerOrder: {
             String arg0 = readExpr();
             String arg1 = readExpr();
             String arg2 = readExpr();

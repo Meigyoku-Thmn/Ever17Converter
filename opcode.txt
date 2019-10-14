@@ -6,7 +6,6 @@ jump(string fileName)
 playBGM(expr num, expr volume)
    play nhạc nền, tên file nhạc nền: String.format("bgm%02d", num)
    cancel hết toàn bộ sfx hiện hành
-   lệnh này có thể đc dùng như một dấu hiệu nhận biết chuyển scene
 stopBGM()
    dừng nhạc nền hiện hành
 playSFX(string fileName, expr a1, expr volume)
@@ -29,12 +28,46 @@ playVoice(string fileName)
    blocking command, luôn luôn tự cancel sau khi hết lệnh
 unknown09()
    không rõ, luôn theo sau lệnh playVoice, có thể bỏ qua
+gotoif(...)
+   sẽ viết docs sau
+bgload(int padding, string bgname, expr a1, expr a2)
+   nạp bg
+   blocking command, chạy hiệu ứng transition tùy thuộc vào a1 và a2 (đã được viết doc riêng)
+   nếu có textbox đang hiển thị thì sẽ tự động phát sinh lệnh hideTextbox trước khi chính nó thực thi
+   một số bgload có gây hiệu ứng ambient light cho fg, vốn được hardcode trong game exe
+removeBG(expr mode, expr a1, expr a2)
+   gỡ bỏ bg
+   mode = 1 => đổi sang nền trắng, mode = 0 => đổi sang nền đen
+   blocking command, chạy hiệu ứng transition tùy thuộc vào a1 và a2 (đã được viết doc riêng)
+fgload(expr id, int padding, string fgname, expr dx, expr useTransitionAnim) 
+   nạp fg thế chỗ vào fg trước đó dựa trên id, nếu không có thì nạp fg và đăng kí id
+   id chỉ nằm trong {1, 2, 4}, mặc định số nhỏ thì fg ưu tiên nằm trên, số lớn thì fg ưu tiên nằm dưới
+   blocking command, chạy hiệu ứng transition
+   fg hiện lên có tọa độ trục hoành là dx, pivot point là chính giữa nv theo chiều ngang
+   tọa độ trục tung luôn luôn là mép dưới màn hình, pivot point cũng là mép dưới nv
+   tọa độ tính theo độ phân giải 640 px chiều ngang, sau đó được upscale lên độ phân giải 800 px
+   useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
+   useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
+removeFG(expr id, expr useTransitionAnim)
+   gỡ bỏ fg trước đó dựa trên id
+   blocking command, chạy hiệu ứng transition
+   useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
+   useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
+multifgload2(expr id1, expr id2, int padding1, string fgname1, int padding2, string fgname2, expr dx1, expr dx2, expr useTransitionAnim)
+   như fgload nhưng cho 2 fg cùng một lúc
+   blocking command
+multiremoveFG(byte unk1, byte unk2, byte padding, expr useTransitionAnim)
+   multiremoveFG 87 04 00 3 // remove 1 2 4
+   multiremoveFG 83 04 00 3 // remove 1 2
+   multiremoveFG 85 04 00 3 // remove 1 4
+   multiremoveFG 86 04 00 0 // remove 2 4
+   blocking command, chạy hiệu ứng transition   
+   useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
+   useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
+setFGLayerOrder(expr a1, expr a2, expr a3)
+   sắp xếp lại thứ tự render của các fg, cần tìm hiểu thêm
 
-removeBG(expr a1, expr a2, expr a3)
-   "gỡ bỏ" bg
-   a1 = 1 -> đổi sang bg màu trắng
-   a1 = 0 -> đổi sang bg màu đen
-   a2 và a3 quyết định loại transition?
+
 delay(expr a1)
    delay trong vòng a1 frame hình trên giây, trong Visual Novel này thì 1 giây có 60 frame
 showTextbox()

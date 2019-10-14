@@ -1,15 +1,15 @@
 <Query Kind="Statements" />
 
 var fileList = Directory.GetFiles(@"C:\Ever17Converter\output\_generated\script", "*.dec");
-var pattern = new Regex(@"playSFX \w+ (\w+) \w+");
+var pattern = new Regex(@"unknown15 \w+ \w+");
 var map = new Dictionary<string, int>();
 var count = 0;
 foreach (var filePath in fileList) {
 	 var fileContent = File.ReadAllText(filePath);
 	 foreach (Match match in pattern.Matches(fileContent)) {
-	    int cnt;
-		string str = "playSFX " + @"\w+ " + match.Groups[1].ToString() + @" \w+";
-	 	if (map.TryGetValue(str, out cnt)) {
+		string str = $@"";
+		str = match.ToString();
+	 	if (map.TryGetValue(str, out int cnt)) {
 	 		map[str] = cnt + 1;
 		}
 		else {
