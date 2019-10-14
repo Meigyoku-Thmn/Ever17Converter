@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const frida = require("frida");
 var watch = require('node-watch');
 var modPath = "mod.js"
@@ -59,6 +60,7 @@ var metadata = {};
             console.log('Received GetUnitData message');
             try {
                let unitBuf = fs.readFileSync("script/" + message.payload.unitName);
+               injectBufferByConfig(unitBuf, message.payload.unitName)
                script.post({ type: "UnitData" }, unitBuf);
             }
             catch (e) {
@@ -78,4 +80,29 @@ async function loadScript(session, event = () => { }) {
    let script = await session.createScript(modScriptContent, { name: modPath, runtime: 'v8' });
    script.message.connect(event);
    return script;
+}
+
+/**
+ * @param {Buffer} buf 
+ * @param {string} name 
+ * @returns {void}
+ */
+function injectBufferByConfig(buf, name) {
+   // please don't use characters outside ascii table, this is just for reverse engineering
+   delete require.cache[require.resolve('./scr_mod.json')];
+   let config = require("./scr_mod.json");
+   let entryPoint = buf.readUInt32LE(12);
+   let hookName = config.fileRedirect[name];
+   if (!(hookName == null || typeof hookName != 'string'  || (hookName = hookName.trim()).length == 0))  {
+      hookName = path.basename(hookName, ".scr").toUpperCase();
+      buf.writeUInt8(0x10, entryPoint);
+      buf.writeUInt8(0x01, entryPoint + 1);
+      buf.write(hookName, entryPoint + 2, 'utf8')
+      buf.writeUInt8(0x00, entryPoint + 2 + hookName.length);
+   }
+   let newEntryPoint = config.entryPointRedirect[name];
+   newEntryPoint = parseInt(newEntryPoint);
+   if (!(Number.isNaN(newEntryPoint))) {
+      buf.writeUInt32LE(newEntryPoint, 12);
+   }
 }

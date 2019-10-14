@@ -1,0 +1,8 @@
+{
+   "fileRedirect": {
+      "op00.scr": "s_1a.scr"
+   },
+   "entryPointRedirect": {
+      "s_1a.scr": "0x000001e1"
+   }
+}
