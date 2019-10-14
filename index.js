@@ -105,4 +105,15 @@ function injectBufferByConfig(buf, name) {
    if (!(Number.isNaN(newEntryPoint))) {
       buf.writeUInt32LE(newEntryPoint, 12);
    }
+   // too lazy to check for error
+   let overwriteArr = config.overwrite[name];
+   if (overwriteArr != null && Array.isArray(overwriteArr)) {
+      overwriteArr.forEach(item => {
+         let offset = parseInt(item.offset) + parseInt(item.shift);
+         let byteArr = item.content.split(' ').filter(e => e.trim().length > 0).map(e => parseInt(e, 16));
+         byteArr.forEach((e, i) => {
+            buf.writeUInt8(e, offset + i);
+         });
+      })
+   }
 }

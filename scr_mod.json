@@ -3,6 +3,13 @@
       "op00.scr": "s_1a.scr"
    },
    "entryPointRedirect": {
-      "s_1a.scr": "0x000001e1"
+      "sd_1ddda.scr": "0x000001e1"
+   },
+   "overwrite": {
+      "s_1a.scr": [{
+         "offset": "0x00001819",
+         "shift": "0",
+         "content": "55 68 65 20 6E 65 78"
+      }]
    }
 }
