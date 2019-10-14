@@ -1,15 +1,29 @@
 {
    "fileRedirect": {
-      "op00.scr": "s_1a.scr"
+      "op00.scr": "s_2a.scr"
    },
    "entryPointRedirect": {
-      "sd_1ddda.scr": "0x000001e1"
+      "s_1bd.scr": "0x00000b30"
    },
    "overwrite": {
-      "s_1a.scr": [{
-         "offset": "0x00001819",
-         "shift": "0",
-         "content": "55 68 65 20 6E 65 78"
-      }]
+      "s_2a.scr": [
+         {
+            "offset": "0x000005e0",
+            "shift": "0",
+            "content": "12 81 00 00 82 00 00 00 00 00 00 1c 00 00 00 00 00 1d 00 a0 80 00 00 a0 80 00 00 83 00 00"
+         }
+      ],
+      "s_2b.scr": [
+         {
+            "offset": "0x00000b5f",
+            "shift": "0",
+            "content": "14 82 00 00 81 00 00 80 00 00"
+         },
+         {
+            "offset": "0x00000b48",
+            "shift": "0",
+            "content": "0f 82 00 00 00 00 00 00 5c 00 a0 da 00 00 83 00 00"
+         }
+      ]
    }
 }

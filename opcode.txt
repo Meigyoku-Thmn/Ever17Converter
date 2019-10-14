@@ -34,7 +34,7 @@ bgload(int padding, string bgname, expr a1, expr a2)
    nạp bg
    blocking command, chạy hiệu ứng transition tùy thuộc vào a1 và a2 (đã được viết doc riêng)
    nếu có textbox đang hiển thị thì sẽ tự động phát sinh lệnh hideTextbox trước khi chính nó thực thi
-   một số bgload có gây hiệu ứng ambient light cho fg, vốn được hardcode trong game exe
+   một số bg có gây hiệu ứng ambient light cho fg, bg nào có ambient light thì đều được hardcode trong game exe
 removeBG(expr mode, expr a1, expr a2)
    gỡ bỏ bg
    mode = 1 => đổi sang nền trắng, mode = 0 => đổi sang nền đen
@@ -65,8 +65,16 @@ multiremoveFG(byte unk1, byte unk2, byte padding, expr useTransitionAnim)
    useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
    useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
 setFGLayerOrder(expr a1, expr a2, expr a3)
-   sắp xếp lại thứ tự render của các fg, cần tìm hiểu thêm
-
+   sắp xếp lại thứ tự render của các fg
+   setFGLayerOrder 0 1 2 // render 4 => 2 => 1 (mặc định)
+   setFGLayerOrder 0 2 1 // render 2 => 4 => 1
+   setFGLayerOrder 1 0 2 // render 4 => 1 => 2
+   setFGLayerOrder 1 2 0 // render 1 => 4 => 2
+   setFGLayerOrder 2 0 1 // render 2 => 1 => 4
+   setFGLayerOrder 2 1 0 // render 1 => 2 => 4
+   setFGLayerOrder 0 1 255 // render 4 => 2 => 1 
+   setFGLayerOrder 1 0 255 // không quan trọng vì trong trường hợp này fg nv không đè nhau
+   TODO: check bug fg render order cho s_2a đến s_2b
 
 delay(expr a1)
    delay trong vòng a1 frame hình trên giây, trong Visual Novel này thì 1 giây có 60 frame
