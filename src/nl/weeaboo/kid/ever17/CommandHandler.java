@@ -196,11 +196,11 @@ public class CommandHandler {
             return gstate.maybeFlush();
          }
          case multiremoveFG: {
-            gstate.clearSprites(); //Whatever, it'll remove all sprites 99% of the time anyway
+            gstate.clearSprites();
             return gstate.maybeFlush();
          }
-         case setFGLayerOrder: {
-            gstate.clearSprites(); //Whatever, it'll remove all sprites 99% of the time anyway
+         case setFGOrder_Unk: {
+            gstate.clearSprites();
             return gstate.maybeFlush();
          }
          case overlayImage: {

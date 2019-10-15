@@ -10,6 +10,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
@@ -255,7 +256,7 @@ public class ScriptConverter {
 
       //Compile
       File _dstF = new File(scriptF, stripExtension(wi.getRelpath()) + ".scr");
-      assemble(commandHandler, decF, _dstF);
+      assemble(commandHandler, decF, _dstF, true);
 
       if (deleteTempFiles) {
          decF.delete();
@@ -264,9 +265,9 @@ public class ScriptConverter {
       return _dstF;
    }
 
-   protected final void assemble(CommandHandler ch, File srcF, File dstF)
+   protected final void assemble(CommandHandler ch, File srcF, File dstF, boolean activeBlackHole)
            throws IOException {
-      try ( PrintWriter out = new PrintWriter(dstF, "UTF-8")) {
+      try ( PrintWriter out = activeBlackHole ? new PrintWriter(Writer.nullWriter()) : new PrintWriter(dstF, "UTF-8")) {
          Pattern decPattern = Pattern.compile("\\[(\\S*?)\\]\\s*(.*?):\\s*(.*)");
 
          try ( BufferedReader in = new BufferedReader(new InputStreamReader(
@@ -528,12 +529,43 @@ public class ScriptConverter {
             int arg1 = read();
             int arg2 = read();
             String arg3 = readExpr();
+            String interpretedFuncName = arg3.equals("3") ? "multiremoveFG_Anim" : "multiremoveFG_Sta";
+            switch (arg0) {
+               case 0x87:
+                  return String.format("%s 1 2 4", interpretedFuncName);
+               case 0x83:
+                  return String.format("%s 1 2 0", interpretedFuncName);
+               case 0x85:
+                  return String.format("%s 1 4 0", interpretedFuncName);
+               case 0x86:
+                  return String.format("%s 2 4 0", interpretedFuncName);
+               default:
+                  break;
+            }
             return String.format("%s %02x %02x %02x %s", op, arg0, arg1, arg2, arg3);
          }
-         case setFGLayerOrder: {
+         case setFGOrder_Unk: {
             String arg0 = readExpr();
             String arg1 = readExpr();
             String arg2 = readExpr();
+            String combinedStr = arg0 + ' ' + arg1 + ' ' + arg2;
+            String interpretedFuncName = "setFGOrder";
+            switch (combinedStr) {
+               case "0 1 2":
+                  return String.format("%s 4 2 1", interpretedFuncName);
+               case "0 2 1":
+                  return String.format("%s 2 4 1", interpretedFuncName);
+               case "1 0 2":
+                  return String.format("%s 4 1 2", interpretedFuncName);
+               case "1 2 0":
+                  return String.format("%s 1 4 2", interpretedFuncName);
+               case "2 0 1":
+                  return String.format("%s 2 1 4", interpretedFuncName);
+               case "2 1 0":
+                  return String.format("%s 1 2 4", interpretedFuncName);
+               default:
+                  break;
+            }
             return String.format("%s %s %s %s", op, arg0, arg1, arg2);
          }
          case clock: {
@@ -797,6 +829,7 @@ public class ScriptConverter {
          }
          case openAnim: {
             // this seems to be an instruction to show overlay anim
+            // some case has seperate param instruction
             String arg0 = readExpr();
             // hardcode workaround
             switch (arg0) {
@@ -833,6 +866,7 @@ public class ScriptConverter {
          }
          case closeAnim: {
             // this seems to be an instruction to close anim
+            // some case has seperate param instruction
             String arg0 = readExpr();
             switch (arg0) {
                case "0":
@@ -894,9 +928,21 @@ public class ScriptConverter {
          case unknown3c: {
             return op.toString();
          }
-         case unknown15: {
+         case makeFGSomething: {
             String arg0 = readExpr();
             String arg1 = readExpr();
+            String targetId = arg0.equals("0") ? "1" : "2";
+            switch (arg1) {
+               case "8":
+                  return String.format("%s %s", "makeFGTransparent", targetId);
+               case "16":
+               case "15":
+                  return String.format("%s %s", "makeFGNormal", targetId);
+               case "17":
+                  return String.format("%s %s", "makeFGHasYellowAmbient", targetId);
+               default:
+                  break;
+            }
             return String.format("%s %s %s", op, arg0, arg1);
          }
          case unknown2b:
