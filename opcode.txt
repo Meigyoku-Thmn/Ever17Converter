@@ -143,8 +143,8 @@ scriptLocationId(expr a1)
 _switch() và _switch3()
    sẽ viết docs sau
 
-overlayImage(int padding, string bgname, expr a1, expr a2)
-   tương tự lệnh bgload nhưng không clear fg và không clear hiệu ứng fg
+bgload_keepFg(int padding, string bgname, expr a1, expr a2)
+   tương tự lệnh bgload nhưng không clear fg và không clear hiệu ứng fg, không ẩn textbox
 
 unknown2b()
    không quan trọng

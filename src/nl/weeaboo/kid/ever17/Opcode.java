@@ -34,7 +34,7 @@ public enum Opcode {
    closeAnim(0x21, 1),
    scriptLocationId(0x24, 1), //Uniquely identifies a line in a script
    _switch(0x26, 1),
-   overlayImage(0x27, 1),
+   bgload_keepFg(0x27, 1),
    _switch3(0x28, 1),
    unknown2b(0x2b, 1),
    unlockCG(0x37, 2),

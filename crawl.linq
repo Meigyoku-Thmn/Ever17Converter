@@ -1,7 +1,7 @@
 <Query Kind="Statements" />
 
 var fileList = Directory.GetFiles(@"C:\Ever17Converter\output\_generated\script", "*.dec");
-var pattern = new Regex(@"l_unk05 \w+");
+var pattern = new Regex(@"specialEffect \w+ \w+");
 var map = new Dictionary<string, int>();
 var count = 0;
 foreach (var filePath in fileList) {

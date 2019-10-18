@@ -203,7 +203,7 @@ public class CommandHandler {
             gstate.clearSprites();
             return gstate.maybeFlush();
          }
-         case overlayImage: {
+         case bgload_keepFg: {
             int a1 = Integer.parseInt(scanner.next(), 16); //Maybe a tint-color?
             String filename = gstate.toBackgroundFilename(scanner.next());
             resUsed.setBackgroundUsed(filename);

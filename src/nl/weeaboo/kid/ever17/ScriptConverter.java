@@ -757,7 +757,7 @@ public class ScriptConverter {
 
             return sb.toString();
          }
-         case overlayImage: {
+         case bgload_keepFg: {
             int arg0 = readInt();
             int imageIndex = readShort();
             String filename = readText(input, graphicsTable[imageIndex]);
