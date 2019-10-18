@@ -2,6 +2,8 @@
 [[Resetting graphics state]]
 [[Resetting music state]]
 [Info] Converting script: .\script\s_1a.scr
+  [Unknown] What kind of expr is this? 0 at 000009a7
+  [Unknown] What kind of expr is this? 0 at 000009b3
   [Unknown] Unexpected val in 16 at 000009b6
   [Unknown] Invalid jump in gotoif at 000009b6: 6400
 [Info] Converting script: .\script\s_1a2.scr
@@ -59,6 +61,8 @@
 [Info] Converting script: .\script\t_2b.scr
 [Info] Converting script: .\script\sybd.scr
 [Info] Converting script: .\script\y_ed.scr
+  [Unknown] What kind of expr is this? 0 at 0000026c
+  [Unknown] What kind of expr is this? 0 at 00000278
   [Unknown] Unexpected val in 16 at 0000027b
   [Unknown] Invalid jump in gotoif at 0000027b: 6400
   [Unknown] Unexpected val in 16 at 00000317

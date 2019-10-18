@@ -78,6 +78,12 @@ public enum Opcode {
    //Fast lookup from String to Opcode
    private static Map<String, Opcode> nameLookup;
 
+   public static Map<Integer, String> rest = Map.of(
+      0x05, "unSkippableDelay",
+      0x27, "fadeOutSpecialEffect",
+      0x28, "l_unk28"
+   );
+
    public static Opcode get(String name) {
       if (nameLookup == null) {
          nameLookup = new HashMap<>();

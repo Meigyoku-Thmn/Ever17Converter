@@ -9,6 +9,9 @@ playBGM(expr num, expr volume)
    play nhạc nền, tên file nhạc nền: String.format("bgm%02d", num)
    cancel hết toàn bộ sfx hiện hành
 
+waitForClick()
+   chờ input
+
 stopBGM()
    dừng nhạc nền hiện hành
 
@@ -168,6 +171,28 @@ unknown43()
 
 specialEffect()
    đang tìm hiểu
+   specialEffect 0 0          83 
+   specialEffect 0 1          71 
+   specialEffect 1 0           1 
+   specialEffect 1 1          18 
+   specialEffect 12 0        214 
+   specialEffect 12 1         47 
+   specialEffect 18 0         70 
+   specialEffect 18 1         22 
+   specialEffect 2 0           2 
+   specialEffect 2 1           3 
+   specialEffect 24 0         43 
+   specialEffect 24 1         17 
+   specialEffect 3 0           6 
+   specialEffect 3 1          48 
+   specialEffect 36 0          5 
+   specialEffect 36 1          1 
+   specialEffect 4 1           2 
+   specialEffect 48 0          1 
+   specialEffect 6 0         157 
+   specialEffect 6 1          38 
+   specialEffect 9 1           1 
+
 
 setDialogBoxColor(string colorName)
    đổi màu cho dialog box

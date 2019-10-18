@@ -395,15 +395,19 @@ public class ScriptConverter {
                   commandMode = true;
                } else {
                   Opcode op = Opcode.get(opcode);
-                  if (op == Opcode.end
+                  if ((op == Opcode.end
                           || op == Opcode.waitForSFX
                           || op == Opcode.gotoif
                           || op == Opcode._switch
                           || op == Opcode.varop
-                          || op == Opcode.text) {
+                          || op == Opcode.text) || Opcode.rest.containsKey(opcode)) {
                      String result = null;
                      try {
-                        result = decodeOp(op);
+                        if (Opcode.rest.containsKey(opcode)) {
+                           result = decodeOpRest(opcode);
+                        } else {
+                           result = decodeOp(op);
+                        }
                         var remaining = getRemainingByteCodes.apply(1.0f);
                         pout.print(remaining.length() == 0 ? remaining : (" " + remaining));
                         pout.print(": ");
@@ -411,7 +415,7 @@ public class ScriptConverter {
                            pout.print(result);
                         }
                      } catch (RuntimeException re) {
-                        Log.w("  [Error] Exception while decoding opcode (" + op + ") " + pos, re);
+                        Log.w("  [Error] Exception while decoding opcode (" + (op == null ? opcode : op) + ") " + pos, re);
                      }
                   } else {
                      pout.print(": unsupported");
@@ -437,11 +441,24 @@ public class ScriptConverter {
          }
       }
    }
+   
+   protected String decodeOpRest(int opcode) {
+      switch (opcode) {
+         case 0x05:
+            String arg0 = readExpr();
+            return String.format("%s %s", Opcode.rest.get(opcode), arg0);
+         case 0x27:
+            int a1 = read();
+            int a2 = read();
+            return String.format("%s", Opcode.rest.get(opcode));
+      }
+      return "unkOp";
+   }
 
    protected String decodeOp(Opcode op) throws IOException {
       switch (op) {
          case end: {
-            return String.format("%s", op);
+            return null;
          }
          case removeFG: {
             String arg0 = readExpr();
@@ -766,10 +783,19 @@ public class ScriptConverter {
             // hardcode workaround
             if (arg0 == 0x28 && arg1 == 0x0a) {
                switch (arg2) {
+                  case 0xa0:
+                     switch (arg3) {
+                        case 0xab:
+                           return "setSpecialEffectFadeOutDuration " + arg5;
+                        default:
+                           break;                           
+                     }
                   case 0xa2:
                      switch (arg3) {
                         case 0x38:
                            return "setKomoreType " + arg5;
+                        case 0x3a:
+                           return "setChangePerspectiveDirection " + arg5;
                         case 0x44:
                            return "setNumberOfFlash " + arg5;
                         case 0x43:
@@ -853,6 +879,8 @@ public class ScriptConverter {
                   return "showDimInAndOutAnim";
                case "46":
                   return "triggerFlash";
+               case "47":
+                  return "triggerChangePerspectiveAnim";
                case "48":
                   return "openMapCommentAnim";
                case "49":
