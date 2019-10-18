@@ -2,10 +2,6 @@
 [[Resetting graphics state]]
 [[Resetting music state]]
 [Info] Converting script: .\script\s_1a.scr
-  [Unknown] What kind of expr is this? 0 at 000009a7
-  [Unknown] What kind of expr is this? 0 at 000009b3
-  [Unknown] Unexpected val in 16 at 000009b6
-  [Unknown] Invalid jump in gotoif at 000009b6: 6400
 [Info] Converting script: .\script\s_1a2.scr
 [Info] Converting script: .\script\s_1b.scr
 [Info] Converting script: .\script\s_1c.scr
@@ -31,10 +27,6 @@
 [Info] Converting script: .\script\s_3e.scr
 [Info] Converting script: .\script\ss4a.scr
 [Info] Converting script: .\script\t_1a.scr
-  [Unknown] Unexpected val in 16 at 0000065a
-  [Unknown] Invalid jump in gotoif at 0000065a: 6400
-  [Unknown] Unexpected val in 16 at 00000a48
-  [Unknown] Invalid jump in gotoif at 00000a48: 6400
 [Info] Converting script: .\script\sc2d.scr
 [Info] Converting script: .\script\ss5a.scr
 [Info] Converting script: .\script\sc2e.scr
@@ -55,53 +47,10 @@
 [Info] Converting script: .\script\sy6a.scr
 [Info] Converting script: .\script\t_2a.scr
 [Info] Converting script: .\script\sy6b.scr
-  [Unknown] Unexpected val in 16 at 00001160
-  [Unknown] Invalid jump in gotoif at 00001160: 6400
 [Info] Converting script: .\script\sy7a.scr
 [Info] Converting script: .\script\t_2b.scr
 [Info] Converting script: .\script\sybd.scr
 [Info] Converting script: .\script\y_ed.scr
-  [Unknown] What kind of expr is this? 0 at 0000026c
-  [Unknown] What kind of expr is this? 0 at 00000278
-  [Unknown] Unexpected val in 16 at 0000027b
-  [Unknown] Invalid jump in gotoif at 0000027b: 6400
-  [Unknown] Unexpected val in 16 at 00000317
-  [Unknown] Invalid jump in gotoif at 00000317: 6400
-  [Unknown] Unexpected val in 16 at 000003d5
-  [Unknown] Invalid jump in gotoif at 000003d5: 6400
-  [Unknown] Unexpected val in 16 at 00000466
-  [Unknown] Invalid jump in gotoif at 00000466: 6400
-  [Unknown] Unexpected val in 16 at 0000057d
-  [Unknown] Invalid jump in gotoif at 0000057d: 6400
-  [Unknown] Unexpected val in 16 at 0000060e
-  [Unknown] Invalid jump in gotoif at 0000060e: 6400
-  [Unknown] Unexpected val in 16 at 000006a2
-  [Unknown] Invalid jump in gotoif at 000006a2: 6400
-  [Unknown] Unexpected val in 16 at 00000733
-  [Unknown] Invalid jump in gotoif at 00000733: 6400
-  [Unknown] Unexpected val in 16 at 0000084a
-  [Unknown] Invalid jump in gotoif at 0000084a: 6400
-  [Unknown] Unexpected val in 16 at 000008db
-  [Unknown] Invalid jump in gotoif at 000008db: 6400
-  [Unknown] Unexpectedly came across a weird opcode (0) during a _switch at 00000960
-  [Unknown] Unexpected subop in _switch, expected 39, got 0 at 00000960
-  [Unknown] Unexpected subop in _switch, expected 39, got 10 at 00000960
-  [Unknown] What kind of expr is this? 1 at 00000960
-  [Unknown] Invalid jump in switch case at 00000960: 2605
-  [Unknown] Unexpected val in 16 at 00000a0b
-  [Unknown] Invalid jump in gotoif at 00000a0b: 6400
-  [Unknown] Unexpected val in 16 at 00000b1e
-  [Unknown] Invalid jump in gotoif at 00000b1e: 6400
-  [Unknown] Unexpected val in 16 at 00000bb2
-  [Unknown] Invalid jump in gotoif at 00000bb2: 6400
-  [Unknown] Unexpected val in 16 at 00000c51
-  [Unknown] Invalid jump in gotoif at 00000c51: 6400
-  [Unknown] Unexpected val in 16 at 00000d2c
-  [Unknown] Invalid jump in gotoif at 00000d2c: 6400
-  [Unknown] Unexpected val in 16 at 00000dc0
-  [Unknown] Invalid jump in gotoif at 00000dc0: 6400
-  [Unknown] Unexpected val in 16 at 00000e54
-  [Unknown] Invalid jump in gotoif at 00000e54: 6400
 [Info] Converting script: .\script\t_2c.scr
 [Info] Converting script: .\script\syep.scr
 [Info] Converting script: .\script\yc3a.scr
@@ -145,6 +94,4 @@
 [Info] Converting script: .\script\yc6b.scr
 [Info] Converting script: .\script\yc7a.scr
 [Info] Converting script: .\script\yc7b.scr
-  [Unknown] Unexpected val in 16 at 00000a76
-  [Unknown] Invalid jump in gotoif at 00000a76: 6400
 [Info] Converting script: .\script\ycep.scr

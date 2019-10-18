@@ -81,7 +81,13 @@ public enum Opcode {
    public static Map<Integer, String> rest = Map.of(
       0x05, "unSkippableDelay",
       0x27, "fadeOutSpecialEffect",
-      0x28, "l_unk28"
+      0x28, "l_unk28",
+      0x19, "l_unk19",
+      0x12, "l_unk12",
+      0x13, "l_unk13",
+      0x06, "l_unk06",
+      0x0d, "l_unk0d",
+      0x15, "l_unk15"
    );
 
    public static Opcode get(String name) {

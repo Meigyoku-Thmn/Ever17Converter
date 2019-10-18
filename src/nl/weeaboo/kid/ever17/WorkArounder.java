@@ -5,6 +5,21 @@ import java.nio.ByteBuffer;
 
 public class WorkArounder {
 
+   public static String collectASpecialGotoIfThatNotActuallyGotoIf(ByteBuffer buf, int lastPos) {
+      var bkOffset = buf.position();
+      var a1 = buf.get() & 0xFF;
+      var a2 = buf.get() & 0xFF;
+      var a3 = buf.get() & 0xFF;
+      var a4 = buf.get() & 0xFF;
+      if (!(a1 == 0x10 && a2 == 0x3a && a3 == 0x00 && a4 == 0x19)) {
+         buf.position(bkOffset);
+         return null;
+      }
+      var a5 = Ever17Util.readExpr(buf, lastPos);
+      var a6 = Ever17Util.readExpr(buf, lastPos);
+      return "notActuallyGotoIfUnk";
+   }
+
    public static Boolean make(int offset, String fileName, ByteBuffer buf, int[] jumpTable, PrintWriter out) {
       var rs = true;
       buf.position(offset);

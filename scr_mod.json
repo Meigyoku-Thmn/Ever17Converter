@@ -1,16 +1,16 @@
 {
    "fileRedirect": {
-      "op0dd0.scr": "sc2b.scr"
+      "op00.scr": "s_1a2.scr"
    },
    "entryPointRedirect": {
-      "op0dfdf0.scr": "0x00000284"
+      "s_1a2.scr": "0x00000175"
    },
    "overwrite": {
-      "op00.scr": [
+      "op0sss0.scr": [
          {
             "offset": "0x00000158",
             "shift": "0",
-            "content": "fe 28 0a a0 ab 14 14 00 c0 ff"
+            "content": "fe 28 0a a0 ab 14 14 00 c0 78"
          }
       ]
    }

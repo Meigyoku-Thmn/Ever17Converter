@@ -164,7 +164,7 @@ public class ScriptConverter {
       generateGlueScripts(scriptF);
       resUsed.save(dstF);
 
-      try ( PrintStream pout = new PrintStream(new File(dstF, "logic.txt"), "UTF-8")) {
+      try (PrintStream pout = new PrintStream(new File(dstF, "logic.txt"), "UTF-8")) {
          Collections.sort(_logicBuffer);
          _logicBuffer.forEach((line) -> {
             pout.println(line);
@@ -267,10 +267,10 @@ public class ScriptConverter {
 
    protected final void assemble(CommandHandler ch, File srcF, File dstF, boolean activeBlackHole)
            throws IOException {
-      try ( PrintWriter out = activeBlackHole ? new PrintWriter(Writer.nullWriter()) : new PrintWriter(dstF, "UTF-8")) {
+      try (PrintWriter out = activeBlackHole ? new PrintWriter(Writer.nullWriter()) : new PrintWriter(dstF, "UTF-8")) {
          Pattern decPattern = Pattern.compile("\\[(\\S*?)\\]\\s*(.*?):\\s*(.*)");
 
-         try ( BufferedReader in = new BufferedReader(new InputStreamReader(
+         try (BufferedReader in = new BufferedReader(new InputStreamReader(
                  new FileInputStream(srcF), "UTF-8"))) {
             int lineNum = 0;
 
@@ -335,7 +335,7 @@ public class ScriptConverter {
    protected void decode(ByteBuffer in, File dstF) throws IOException {
       textCoveragePool.clear();
       imageCoveragePool.clear();
-      try ( PrintWriter pout = new PrintWriter(dstF, "UTF-8")) {
+      try (PrintWriter pout = new PrintWriter(dstF, "UTF-8")) {
 
          boolean commandMode = false;
          while (in.hasRemaining()) {
@@ -441,16 +441,50 @@ public class ScriptConverter {
          }
       }
    }
-   
+
    protected String decodeOpRest(int opcode) {
       switch (opcode) {
-         case 0x05:
+         case 0x05: {
             String arg0 = readExpr();
             return String.format("%s %s", Opcode.rest.get(opcode), arg0);
-         case 0x27:
+         }
+         case 0x27: {
             int a1 = read();
             int a2 = read();
             return String.format("%s", Opcode.rest.get(opcode));
+         }
+         case 0x28: {
+            return Opcode.rest.get(opcode);
+         }
+         case 0x19: {
+            String arg0 = readExpr();
+            String arg1 = readExpr();
+            return String.format("%s %s %s", Opcode.rest.get(opcode), arg0, arg1);
+         }
+         case 0x12: {
+            String arg0 = readExpr();
+            return String.format("%s %s", Opcode.rest.get(opcode), arg0);
+         }
+         case 0x13: {
+            String arg0 = readExpr();
+            return String.format("%s %s", Opcode.rest.get(opcode), arg0);
+         }
+         case 0x15: {  
+            int arg0 = read();
+            String arg1 = readExpr();
+            String arg2 = readExpr();
+            int arg3 = readShort();
+            return String.format("%s %s %s %s", Opcode.rest.get(opcode), arg0, arg1, arg2, arg3);
+         }
+         case 0x6: {
+            return Opcode.rest.get(opcode);
+         }
+         case 0x0d: {
+            String arg0 = readExpr();
+            int arg1 = read();
+            int arg2 = read();
+            return String.format("%s %s %02x %02x", Opcode.rest.get(opcode), arg0, arg1, arg2);
+         }
       }
       return "unkOp";
    }
@@ -624,7 +658,7 @@ public class ScriptConverter {
          case stopSFX: {
             return "stopSFX";
          }
-         case gotoif: {
+         case gotoif: {        
             int arg0 = read();
             int arg1 = read();
             int arg2 = read();
@@ -643,6 +677,8 @@ public class ScriptConverter {
                int v2 = read();
                val = String.format("%d", 256 * (v - 0xa0) + v2);
             } else {
+               var wkarRs = WorkArounder.collectASpecialGotoIfThatNotActuallyGotoIf(input, currentOpcodeOffset);
+               if (wkarRs != null) return wkarRs;
                Log.v(String.format("  [Unknown] Unexpected val in %s at %08x", v, currentOpcodeOffset));
                val = "00";
             }
@@ -788,7 +824,7 @@ public class ScriptConverter {
                         case 0xab:
                            return "setSpecialEffectFadeOutDuration " + arg5;
                         default:
-                           break;                           
+                           break;
                      }
                   case 0xa2:
                      switch (arg3) {
