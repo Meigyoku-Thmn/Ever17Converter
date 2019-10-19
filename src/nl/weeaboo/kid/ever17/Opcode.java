@@ -45,7 +45,7 @@ public enum Opcode {
    bgloadCrop(0x40, 8),
    tweenZoom(0x41, 5),
    unknown43(0x43, 1),
-   specialEffect(0x45, 2),
+   monoColorOverlay(0x45, 2),
    setDialogBoxColor(0x46, 1),
    varop(0xFE, 0),
    text(0xFF, 1);
@@ -80,7 +80,7 @@ public enum Opcode {
 
    public static Map<Integer, String> rest = Map.of(
       0x05, "unSkippableDelay",
-      0x27, "fadeOutSpecialEffect",
+      0x27, "fadeOutMonoColorOverlay",
       0x28, "l_unk28",
       0x19, "l_unk19",
       0x12, "l_unk12",

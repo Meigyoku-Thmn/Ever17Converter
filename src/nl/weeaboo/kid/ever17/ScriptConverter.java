@@ -822,7 +822,7 @@ public class ScriptConverter {
                   case 0xa0:
                      switch (arg3) {
                         case 0xab:
-                           return "setSpecialEffectFadeOutDuration " + arg5;
+                           return "setMonoColorOverlayFadeOutDuration " + arg5;
                         default:
                            break;
                      }
@@ -978,7 +978,7 @@ public class ScriptConverter {
             }
             return String.format("%s %s", op, arg0);
          }
-         case specialEffect: {
+         case monoColorOverlay: {
             String arg0 = readExpr();
             String arg1 = readExpr();
             return String.format("%s %s %s", op, arg0, arg1);

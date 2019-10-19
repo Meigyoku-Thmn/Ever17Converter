@@ -275,7 +275,7 @@ public class CommandHandler {
                return "setvar " + varname + " " + operator + " " + value;
             }
          }
-         case specialEffect: {
+         case monoColorOverlay: {
             int type = scanner.nextInt();
             int unknown = scanner.nextInt();
             if (type == 3) {

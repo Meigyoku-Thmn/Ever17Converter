@@ -169,30 +169,11 @@ tweenZoom(expr x, expr y, expr hx, expr hy, expr duration)
 unknown43()
    không quan trọng
 
-specialEffect()
-   đang tìm hiểu
-   specialEffect 0 0          83 
-   specialEffect 0 1          71 
-   specialEffect 1 0           1 
-   specialEffect 1 1          18 
-   specialEffect 12 0        214 
-   specialEffect 12 1         47 
-   specialEffect 18 0         70 
-   specialEffect 18 1         22 
-   specialEffect 2 0           2 
-   specialEffect 2 1           3 
-   specialEffect 24 0         43 
-   specialEffect 24 1         17 
-   specialEffect 3 0           6 
-   specialEffect 3 1          48 
-   specialEffect 36 0          5 
-   specialEffect 36 1          1 
-   specialEffect 4 1           2 
-   specialEffect 48 0          1 
-   specialEffect 6 0         157 
-   specialEffect 6 1          38 
-   specialEffect 9 1           1 
-
+monoColorOverlay(expr a1, expr a2)
+   biến đổi cả screen trừ textbox sang màu nào đó
+   blocking command
+   a2 = 0 => màu đen, a2 = 1 => màu trắng
+   a1 có lẽ là fade in duration tính theo số frame
 
 setDialogBoxColor(string colorName)
    đổi màu cho dialog box
