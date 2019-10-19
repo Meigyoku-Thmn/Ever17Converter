@@ -93,7 +93,9 @@ public final class Ever17Util {
          }
          return String.format("rgb(%s,%s,%s)", rColor, gColor, bColor);
       } else {
-         Log.v("  [Unknown] What kind of expr is this? " + arg0 + _position);
+         if (!WorkArounder.canSuppressVaropError(arg0)) {
+            Log.v("  [Unknown] What kind of expr is this? " + arg0 + _position);
+         }
          return "" + arg0;
       }
    }

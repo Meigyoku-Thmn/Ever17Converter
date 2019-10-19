@@ -1,12 +1,12 @@
 {
    "fileRedirect": {
-      "op00.scr": "s_2b.scr"
+      "op200.scr": "s_2b.scr"
    },
    "entryPointRedirect": {
-      "s_2b.scr": "0x00000ee9"
+      "s_22b.scr": "0x00000ee9"
    },
    "overwrite": {
-      "s_2b.scr": [
+      "s_22b.scr": [
          {
             "offset": "0x00000f2b",
             "shift": "0",

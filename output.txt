@@ -6,9 +6,6 @@
 [Info] Converting script: .\script\s_1b.scr
 [Info] Converting script: .\script\s_1c.scr
 [Info] Converting script: .\script\s_2a.scr
-  [Unknown] What kind of expr is this? 51 at 00000190
-  [Unknown] What kind of expr is this? 51 at 00000273
-  [Unknown] What kind of expr is this? 51 at 000002cf
 [Info] Converting script: .\script\s_2b.scr
 [Info] Converting script: .\script\sc1a.scr
 [Info] Converting script: .\script\s_2c.scr

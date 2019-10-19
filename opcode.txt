@@ -170,7 +170,7 @@ unknown43()
    không quan trọng
 
 monoColorOverlay(expr a1, expr a2)
-   biến đổi cả screen trừ textbox sang màu nào đó
+   đắp một overlay có màu lên mọi thứ trừ textbox
    blocking command
    a2 = 0 => màu đen, a2 = 1 => màu trắng
    a1 có lẽ là fade in duration tính theo số frame

@@ -5,6 +5,11 @@ import java.nio.ByteBuffer;
 
 public class WorkArounder {
 
+   public static boolean canSuppressVaropError(int arg0) {
+      if (arg0 == 51) return true;
+      return false;
+   }
+   
    public static String collectASpecialGotoIfThatNotActuallyGotoIf(ByteBuffer buf, int lastPos) {
       var bkOffset = buf.position();
       var a1 = buf.get() & 0xFF;
