@@ -1,0 +1,188 @@
+# blocking command: lệnh có tính chất chờ (chờ một cái gì đó ví dụ chờ hiệu ứng kết thúc, chờ âm thanh kết thúc)
+# fast forward skip tất cả transition anim và voice, nhưng không skip sfx và music
+# khi bạn load 1 tài nguyên (và vào 1 slot nếu là fg), nếu tài nguyên đó đã được load rồi và đang được hiển thị/play thì lệnh đó coi như là no-op
+
+jump(string fileName)
+   lệnh nhảy 'vô điều kiện' tới file script có tên là fileName
+
+playBGM(expr num, expr volume)
+   play nhạc nền, tên file nhạc nền: String.format("bgm%02d", num)
+   cancel hết toàn bộ sfx hiện hành
+
+waitForClick()
+   chờ input
+
+stopBGM()
+   dừng nhạc nền hiện hành
+
+playSFX(string fileName, expr a1, expr volume)
+   play sfx
+   nếu fileName có chữ "l" ở cuối thì tức là sfx dùng để lặp liên tục
+   a1: ?? (game sử dụng 0 và 1) => có thể bỏ qua
+   volume: âm lượng
+   lệnh sau sẽ cancel hiệu quả của lệnh trước, ngoại trừ trường hợp lệnh trước là loop
+   nếu lệnh sau là loop thì sẽ cancel lệnh trước nếu lệnh trước cũng là loop (đây là phỏng đoán, chứ trong game không xảy ra trường hợp này)
+   thường thì đã là lệnh loop thì bắt buộc phải dùng stopSFX để cancel
+   nếu không phải loop thì lệnh này cũng sẽ bị cancel trong một số trường hợp khác
+
+stopSFX()
+   tắt sfx, kể cả loop sfx
+
+waitForSFX()
+   chờ cho sfx kết thúc, không hoạt động với loop sfx
+   luôn luôn cancel sfx sau khi hết lệnh
+   blocking command
+
+playVoice(string fileName)
+   play voice file
+   blocking command, luôn luôn tự cancel sau khi hết lệnh
+
+unknown09()
+   không rõ, luôn theo sau lệnh playVoice, có thể bỏ qua
+
+gotoif(...)
+   sẽ viết docs sau
+
+bgload(int padding, string bgname, expr a1, expr a2)
+   nạp bg
+   blocking command, chạy hiệu ứng transition tùy thuộc vào a1 và a2 (đã được viết doc riêng)
+   nếu có textbox đang hiển thị thì sẽ tự động phát sinh lệnh hideTextbox trước khi chính nó thực thi
+   một số bg có gây hiệu ứng ambient light cho fg, bg nào có ambient light thì đều được hardcode trong game exe
+   clear toàn bộ fg cùng với hiệu ứng fg
+
+removeBG(expr mode, expr a1, expr a2)
+   gỡ bỏ bg
+   mode = 1 => đổi sang nền trắng, mode = 0 => đổi sang nền đen
+   blocking command, chạy hiệu ứng transition tùy thuộc vào a1 và a2 (đã được viết doc riêng)
+
+fgload(expr id, int padding, string fgname, expr dx, expr useTransitionAnim) 
+   nạp fg thế chỗ vào fg trước đó dựa trên id, nếu không có thì nạp fg và đăng kí id
+   id chỉ nằm trong {1, 2, 4}, mặc định số nhỏ thì fg ưu tiên nằm trên, số lớn thì fg ưu tiên nằm dưới
+   blocking command, chạy hiệu ứng transition
+   fg hiện lên có tọa độ trục hoành là dx, pivot point là chính giữa nv theo chiều ngang
+   tọa độ trục tung luôn luôn là mép dưới màn hình, pivot point cũng là mép dưới nv
+   tọa độ tính theo độ phân giải 640 px chiều ngang, sau đó được upscale lên độ phân giải 800 px
+   useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
+   useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
+   
+removeFG(expr id, expr useTransitionAnim)
+   gỡ bỏ fg trước đó dựa trên id
+   vô hiệu hóa toàn bộ hiệu ứng của slot fg
+   blocking command, chạy hiệu ứng transition
+   useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
+   useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
+
+multifgload2(expr id1, expr id2, int padding1, string fgname1, int padding2, string fgname2, expr dx1, expr dx2, expr useTransitionAnim)
+   như fgload nhưng cho 2 fg cùng một lúc
+   blocking command
+
+multiremoveFG(byte unk1, byte unk2, byte padding, expr useTransitionAnim)
+   multiremoveFG_Anim(int id1, int id2, int id3)
+      gỡ bỏ fg dựa trên id, nếu một id nào đó bằng 0 thì không tính id đó
+      cớ sử dụng hiệu ứng transition
+   multiremoveFG_Sta(int id1, int id2, int id3)
+      như trên nhưng không sử dụng hiệu ứng chuyển
+   vô hiệu hóa toàn bộ hiệu ứng của slot fg
+   blocking command, chạy hiệu ứng transition   
+   useTransitionAnim = 3 => có sử dụng hiệu ứng chuyển
+   useTransitionAnim = 0 => không sử dụng hiệu ứng chuyển
+
+setFGOrder_Unk(expr a1, expr a2, expr a3)
+   sắp xếp lại thứ tự render của các fg
+   thứ tự mặc định là 4 => 2 => 1
+   setFGOrder(int id1, int id2, int id3)
+      sắp xếp lại thứ tự render của các fg theo thứ tự lần lượt là id1 => id2 => id3
+   setFGOrder_Unk 0 1 255 // render 4 => 2 => 1 
+   setFGOrder_Unk 1 0 255 // không quan trọng vì trong trường hợp này fg nv không đè nhau
+   TODO: check bug fg render order cho s_2a đến s_2b
+
+makeFGSomething(expr a1, expr a2)
+   makeFGTransparent(int id)
+      làm cho fg có id trở nên trong suốt
+   makeFGHasYellowAmbient(int id)
+      làm cho fg có id có hiệu ứng ambient light vàng
+   makeFGNormal(int id)
+      làm cho fg có id trở lại bình thường
+
+multifgload3(int padding1, string fgname1, int padding2, string fgname2, int padding3, string fgname3, expr dx1, expr dx2, expr dx3, expr useTransitionAnim)
+   như fgload nhưng cho 3 fg cùng một lúc, id theo thứ tự lần lượt là 1, 2, 4
+   blocking command
+
+hideTextbox()
+   ẩn textbox
+   blocking command
+
+showTextbox()
+   hiển thị textbox
+   blocking command
+
+choiceId()
+   lệnh không quan trọng
+
+chapterCutin(int padding, string chapterName)
+   hiển thị animation biểu thị tên của chapter (tính theo ngày trong game), debug để biết chi tiết
+   blocking command, bấm chuột 2 lần để skip dần, lần 1 để hiển thị tên chương, lần 2 để kết thúc animation
+   
+delay(expr a1)
+   delay trong vòng a1 frame hình trên giây, trong Visual Novel này thì 1 giây có 60 frame
+   blocking command
+
+clock(string clockString)
+   hiển thị đồng hồ với dòng chữ biểu thị là clockString, overlay sẽ tự biến mất sau một khoảng thời gian ngắn, debug để biết thêm chi tiết
+
+openAnim(expr a1)
+   unknown
+   tham khảo java source code
+
+closeAnim(expr a1)
+   tham khảo java source code
+
+scriptLocationId(expr a1)
+   không quan trọng
+
+_switch() và _switch3()
+   sẽ viết docs sau
+
+bgload_keepFg(int padding, string bgname, expr a1, expr a2)
+   tương tự lệnh bgload nhưng không clear fg và không clear hiệu ứng fg, không ẩn textbox
+
+unknown2b()
+   không quan trọng
+
+unlockCG(string CGName)
+   mở khóa cg, không quan trọng vì sẽ được implement bằng cách khác
+
+playMovie(string movieName)
+   trình chiếu video
+   blocking command
+
+unknown3a(), unknown3b() và unknown3c()
+   không quan trọng
+
+bgloadCrop(int padding, string bgname, expr a1, expr a2, expr x, expr y, expr hx, expr hy)
+   như lệnh bgload nhưng còn có tác dụng crop ảnh, hx và hy thuộc tập hợp số nguyên, nếu hx và hy là số âm thì có thể tạo hiệu ứng ảnh đảo ngược
+
+tweenZoom(expr x, expr y, expr hx, expr hy, expr duration)
+   chuyển trạng thái bg hiện tại sang trạng thái crop trong "duration" frame, transition là linear anim
+   blocking command
+
+unknown43()
+   không quan trọng
+
+monoColorOverlay(expr a1, expr a2)
+   đắp một overlay có màu lên mọi thứ trừ textbox
+   blocking command
+   a2 = 0 => màu đen, a2 = 1 => màu trắng
+   a1 có lẽ là fade in duration tính theo số frame
+
+setDialogBoxColor(string colorName)
+   đổi màu cho dialog box
+
+varop()
+   đang tìm hiểu
+
+text(short id)
+   nhảy vào strcode thep id, xem opcode2.txt để biết thêm chi tiết
+
+goto(short offset)
+   nhảy 'vô điều kiện' tới 1 địa điểm trong script hiện hành
