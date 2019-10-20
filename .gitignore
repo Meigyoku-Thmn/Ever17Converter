@@ -1,17 +1,3 @@
-#ant specific
-dist/
-build/
-bin/
-
-#netbeans specific
-core
-nbproject/*
-!nbproject/project.properties
-!nbproject/project.xml
-
-#java specific
-*.class
-
 #general swap/backup files
 *.so
 *.log
@@ -23,3 +9,4 @@ nbproject/*
 
 output/
 node_modules/
+/nbproject/private/
