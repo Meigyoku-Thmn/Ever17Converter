@@ -1,0 +1,94 @@
+[Info] Converting script: ..\base_script\en\op00.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: ..\base_script\en\s_1a.scr
+[Info] Converting script: ..\base_script\en\s_1a2.scr
+[Info] Converting script: ..\base_script\en\s_1b.scr
+[Info] Converting script: ..\base_script\en\s_1c.scr
+[Info] Converting script: ..\base_script\en\s_2a.scr
+[Info] Converting script: ..\base_script\en\s_2b.scr
+[Info] Converting script: ..\base_script\en\sc1a.scr
+[Info] Converting script: ..\base_script\en\s_2c.scr
+[Info] Converting script: ..\base_script\en\s_2d.scr
+[Info] Converting script: ..\base_script\en\sc1b.scr
+[Info] Converting script: ..\base_script\en\sc1c.scr
+[Info] Converting script: ..\base_script\en\s_3a.scr
+[Info] Converting script: ..\base_script\en\sc1d.scr
+[Info] Converting script: ..\base_script\en\s_3c.scr
+[Info] Converting script: ..\base_script\en\sc2a.scr
+[Info] Converting script: ..\base_script\en\s_3d.scr
+[Info] Converting script: ..\base_script\en\sc2b.scr
+[Info] Converting script: ..\base_script\en\s_3b.scr
+[Info] Converting script: ..\base_script\en\sc2c.scr
+[Info] Converting script: ..\base_script\en\sc2f.scr
+[Info] Converting script: ..\base_script\en\s_3e.scr
+[Info] Converting script: ..\base_script\en\ss4a.scr
+[Info] Converting script: ..\base_script\en\t_1a.scr
+[Info] Converting script: ..\base_script\en\sc2d.scr
+[Info] Converting script: ..\base_script\en\ss5a.scr
+[Info] Converting script: ..\base_script\en\sc2e.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: ..\base_script\en\ss6a.scr
+[Info] Converting script: ..\base_script\en\t_1b.scr
+[Info] Converting script: ..\base_script\en\ss7a.scr
+[Info] Converting script: ..\base_script\en\ssbd.scr
+[Info] Converting script: ..\base_script\en\ssep.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: ..\base_script\en\sy4a.scr
+[Info] Converting script: ..\base_script\en\tc1a.scr
+[Info] Converting script: ..\base_script\en\sy4b.scr
+[Info] Converting script: ..\base_script\en\t_1c.scr
+[Info] Converting script: ..\base_script\en\sy5a.scr
+[Info] Converting script: ..\base_script\en\sy6a.scr
+[Info] Converting script: ..\base_script\en\t_2a.scr
+[Info] Converting script: ..\base_script\en\sy6b.scr
+[Info] Converting script: ..\base_script\en\sy7a.scr
+[Info] Converting script: ..\base_script\en\t_2b.scr
+[Info] Converting script: ..\base_script\en\sybd.scr
+[Info] Converting script: ..\base_script\en\y_ed.scr
+[Info] Converting script: ..\base_script\en\t_2c.scr
+[Info] Converting script: ..\base_script\en\syep.scr
+[Info] Converting script: ..\base_script\en\yc3a.scr
+[Info] Converting script: ..\base_script\en\t_2d.scr
+[Info] Converting script: ..\base_script\en\t_3a.scr
+[Info] Converting script: ..\base_script\en\t_3b.scr
+[Info] Converting script: ..\base_script\en\yc3a2.scr
+[Info] Converting script: ..\base_script\en\t_3c.scr
+[Info] Converting script: ..\base_script\en\t_4a.scr
+[Info] Converting script: ..\base_script\en\t_4b.scr
+[Info] Converting script: ..\base_script\en\tc1d.scr
+[Info] Converting script: ..\base_script\en\t_4c.scr
+[Info] Converting script: ..\base_script\en\t_5a.scr
+[Info] Converting script: ..\base_script\en\t_5b.scr
+[Info] Converting script: ..\base_script\en\t_5c.scr
+[Info] Converting script: ..\base_script\en\t_5d.scr
+[Info] Converting script: ..\base_script\en\t_6a.scr
+[Info] Converting script: ..\base_script\en\tc2a.scr
+[Info] Converting script: ..\base_script\en\yc3b.scr
+[Info] Converting script: ..\base_script\en\t_6b.scr
+[Info] Converting script: ..\base_script\en\t_ep.scr
+[Info] Converting script: ..\base_script\en\t_bd.scr
+[Info] Converting script: ..\base_script\en\tc1b.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: ..\base_script\en\tc1c.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: ..\base_script\en\tc2b.scr
+[[Resetting graphics state]]
+[[Resetting music state]]
+[Info] Converting script: ..\base_script\en\tl6a.scr
+[Info] Converting script: ..\base_script\en\tt6a.scr
+[Info] Converting script: ..\base_script\en\yc4a.scr
+[Info] Converting script: ..\base_script\en\tl7a.scr
+[Info] Converting script: ..\base_script\en\tt7a.scr
+[Info] Converting script: ..\base_script\en\yc4b.scr
+[Info] Converting script: ..\base_script\en\yc5a.scr
+[Info] Converting script: ..\base_script\en\yc5b.scr
+[Info] Converting script: ..\base_script\en\yc6a.scr
+[Info] Converting script: ..\base_script\en\yc6b.scr
+[Info] Converting script: ..\base_script\en\yc7a.scr
+[Info] Converting script: ..\base_script\en\yc7b.scr
+[Info] Converting script: ..\base_script\en\ycep.scr

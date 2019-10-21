@@ -6,8 +6,7 @@ import java.nio.ByteBuffer;
 public class WorkArounder {
 
    public static boolean canSuppressVaropError(int arg0) {
-      if (arg0 == 51) return true;
-      return false;
+      return arg0 == 51;
    }
    
    public static String collectASpecialGotoIfThatNotActuallyGotoIf(ByteBuffer buf, int lastPos) {

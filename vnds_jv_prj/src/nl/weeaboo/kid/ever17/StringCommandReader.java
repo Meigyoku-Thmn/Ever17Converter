@@ -150,7 +150,7 @@ public class StringCommandReader {
       }
 
       int numBytes = 1;
-      // Ever17 JP Edition and Ever1 US Edition are all using SJIS encoding
+      // Ever17 JP Edition and Ever17 US Edition are all using SJIS encoding
 //      if (inputEncoding.equals("SJIS")) {
       if ((c >= 0x80 && c <= 0xa0) || (c >= 0xe0 && c <= 0xef)) {
          numBytes = 2;

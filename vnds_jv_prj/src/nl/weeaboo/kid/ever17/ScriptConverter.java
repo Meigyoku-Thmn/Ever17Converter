@@ -154,7 +154,7 @@ public class ScriptConverter {
          }
       });
 
-      PrintWriter pw = new PrintWriter("./output.txt");
+      PrintWriter pw = new PrintWriter("../output.txt");
       pw.close();
 
       while (!workQueue.isEmpty()) {
@@ -176,7 +176,7 @@ public class ScriptConverter {
       if (!workQueue.remove(wi)) {
          return null;
       }
-      Log.EnableFileHandler("./output.txt");
+      Log.EnableFileHandler("../output.txt");
       Log.v("[Info] Converting script: " + wi.getFile());
       currentFileName = wi.getFile().getName();
 
@@ -474,7 +474,7 @@ public class ScriptConverter {
             String arg1 = readExpr();
             String arg2 = readExpr();
             int arg3 = readShort();
-            return String.format("%s %s %s %s", Opcode.rest.get(opcode), arg0, arg1, arg2, arg3);
+            return String.format("%s %s %s %s %s", Opcode.rest.get(opcode), arg0, arg1, arg2, arg3);
          }
          case 0x6: {
             return Opcode.rest.get(opcode);
@@ -826,6 +826,7 @@ public class ScriptConverter {
                         default:
                            break;
                      }
+                     break;
                   case 0xa2:
                      switch (arg3) {
                         case 0x38:
