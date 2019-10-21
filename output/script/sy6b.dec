@@ -1,4 +1,4 @@
-﻿[0000009a]10: 
+[0000009a]10: 
 [0000009b]18: hideTextbox
 [0000009c]10: 
 [0000009d]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
@@ -584,7 +584,7 @@ using the familiar pen.{waitForClick}{clearText}
 [000004f5]10: 
 [000004f6]19: showTextbox
 [000004f7]ff 26 00: text 26
-{marker}{appendText}{nextPage x2}Zero dimension.{nextPage x2}
+{marker}{appendText}{nextPage 00}Zero dimension.{nextPage 01}
 
 
 [000004fa]10: 
@@ -596,7 +596,7 @@ using the familiar pen.{waitForClick}{clearText}
 area.{waitForClick}
 {appendText}It is depicted using coordinates.{waitForClick}
 {appendText}Or we might call it 'nothingness,' or even 
-zero.{waitForClick}{nextPage x2}
+zero.{waitForClick}{nextPage 04}
 
 [000004ff]10: 
 [00000500]18: hideTextbox
@@ -605,7 +605,7 @@ zero.{waitForClick}{nextPage x2}
 [0000050f]10: 
 [00000510]19: showTextbox
 [00000511]ff 28 00: text 28
-{marker}{appendText}{nextPage x2}One dimension.{nextPage x2}
+{marker}{appendText}{nextPage 00}One dimension.{nextPage 01}
 
 
 [00000514]10: 
@@ -616,7 +616,7 @@ zero.{waitForClick}{nextPage x2}
 straight line.{waitForClick}
 {appendText}In other words, a cross section of 
 a straight line is a point.{waitForClick}
-{appendText}One way of indicating this is through length.{waitForClick}{nextPage x2}
+{appendText}One way of indicating this is through length.{waitForClick}{nextPage 04}
 
 [00000519]10: 
 [0000051a]18: hideTextbox
@@ -627,7 +627,7 @@ a straight line is a point.{waitForClick}
 [00000537]10: 
 [00000538]19: showTextbox
 [00000539]ff 2a 00: text 2a
-{marker}{appendText}{nextPage x2}Two dimension.{nextPage x2}
+{marker}{appendText}{nextPage 00}Two dimension.{nextPage 01}
 
 
 [0000053c]10: 
@@ -639,7 +639,7 @@ this is a flat world.{waitForClick}
 {appendText}In other words, a cross section of a plane, or 
 flat world, is a straight line.{waitForClick}
 {appendText}This is indicated using two concepts...length 
-and width.{waitForClick}{nextPage x2}
+and width.{waitForClick}{nextPage 04}
 
 [00000541]10: 
 [00000542]18: hideTextbox
@@ -650,7 +650,7 @@ and width.{waitForClick}{nextPage x2}
 [0000055f]10: 
 [00000560]19: showTextbox
 [00000561]ff 2c 00: text 2c
-{marker}{appendText}{nextPage x2}Three dimension.{nextPage x2}
+{marker}{appendText}{nextPage 00}Three dimension.{nextPage 01}
 
 
 [00000564]10: 
@@ -662,7 +662,7 @@ it is the three-dimensional world.{waitForClick}
 {appendText}In other words, a cross section of the solid 
 world is a plane or flat surface.{waitForClick}
 {appendText}This is depicted using three 
-concepts...length, width and height.{waitForClick}{nextPage x2}
+concepts...length, width and height.{waitForClick}{nextPage 04}
 
 [00000569]10: 
 [0000056a]18: hideTextbox
@@ -675,7 +675,7 @@ area in space composed of length, width and
 height.{waitForClick}
 {appendText}(By depicting length, width and height 
 on x, y, and z axis one axis adds a 
-vertical element to the other two.){waitForClick}{nextPage x2}
+vertical element to the other two.){waitForClick}{nextPage 04}
 
 [00000570]10: 
 [00000571]18: hideTextbox
@@ -686,7 +686,7 @@ vertical element to the other two.){waitForClick}{nextPage x2}
 
 
 
-{appendText}{delay 0}                     And...{waitForClick}{nextPage x2}
+{appendText}{delay 0}                     And...{waitForClick}{nextPage 04}
 
 [00000577]10: 
 [00000578]18: hideTextbox
@@ -701,14 +701,14 @@ is no longer just space, it is
 called space-time.{waitForClick}
 {appendText}One of the x, y, z and t axis adds a vertical 
 element, crossing perpendicularly to the other 
-three.{waitForClick}{nextPage x2}
+three.{waitForClick}{nextPage 04}
 
 [0000058c]10: 
 [0000058d]18: hideTextbox
 [0000058e]10: 
 [0000058f]19: showTextbox
 [00000590]ff 31 00: text 31
-{marker}{appendText}{nextPage x2}Four dimension.{nextPage x2}
+{marker}{appendText}{nextPage 00}Four dimension.{nextPage 01}
 
 
 [00000593]10: 
@@ -720,7 +720,7 @@ a world of space and time.{waitForClick}
 {appendText}In other words a cross section of space-time 
 is three-dimensional.{waitForClick}
 {appendText}Four dimensions are depicted using four 
-concepts...length, width, height and time.{waitForClick}{nextPage x2}
+concepts...length, width, height and time.{waitForClick}{nextPage 04}
 
 [00000598]10: 
 [00000599]18: hideTextbox
@@ -1729,7 +1729,7 @@ Control Room.{waitForClick}
 {appendText}Some of them even thought it might be a trap.{waitForClick}
 {appendText}Of course, that was what I thought at 
 first, too.{waitForClick}
-{appendText}My skeptical mind wanted to ask, "Why now...?"{waitForClick}{nextPage x2}
+{appendText}My skeptical mind wanted to ask, "Why now...?"{waitForClick}{nextPage 04}
 
 [00000d23]10: 
 [00000d24]18: hideTextbox
@@ -1741,7 +1741,7 @@ played on us, but we had no other choice but
 to go along with it.{waitForClick}
 {appendText}There were only a few hours left until LeMU 
 imploded.{waitForClick}
-{appendText}There were no other options left for us.{waitForClick}{nextPage x2}
+{appendText}There were no other options left for us.{waitForClick}{nextPage 04}
 
 [00000d2a]10: 
 [00000d2b]18: hideTextbox

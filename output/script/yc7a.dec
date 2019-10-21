@@ -1,4 +1,4 @@
-﻿[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000021]fe 28 0a a4 b1 14 14 00 87 00 00: varop (28 0a a4) b1 := (00) 7
 [0000002c]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
 [00000037]fe 28 0a a4 fa 14 14 00 a0 78 00 00: setSceneTitleByIndex 120
@@ -379,7 +379,7 @@ it, and input it.{waitForClick}
 {appendText}I had no feelings.{waitForClick}
 {appendText}Feelings seemed to me, to be something people 
 give out in response to the world, as a way 
-of igniting change in their surroundings.{waitForClick}{nextPage x2}
+of igniting change in their surroundings.{waitForClick}{nextPage 04}
 
 [00000465]10: 
 [00000466]18: hideTextbox
@@ -400,7 +400,7 @@ with the world.{waitForClick}
 {appendText}Therefore, even if I were to have had 
 emotions, there was nothing I could do with 
 them.{waitForClick}
-{appendText}The only thing I could do was to watch...{waitForClick}{nextPage x2}
+{appendText}The only thing I could do was to watch...{waitForClick}{nextPage 04}
 
 [00000485]10: 
 [00000486]18: hideTextbox
@@ -419,7 +419,7 @@ feelings or thought—it was completely
 isolated, completely removed.{waitForClick}
 {appendText}The passage of time had condensed down to one 
 moment, and that had exploded in front of me.{waitForClick}
-{appendText}I had seen everything in one instant.{waitForClick}{nextPage x2}
+{appendText}I had seen everything in one instant.{waitForClick}{nextPage 04}
 
 [000004a0]10: 
 [000004a1]18: hideTextbox
@@ -443,7 +443,7 @@ moment, and that had exploded in front of me.{waitForClick}
 [000004e8]ff 1d 00: text 1d
 {marker}{appendText}One instant...{waitForClick}
 {appendText}Standing still in a world where time had 
-stopped, I saw everything.{waitForClick}{nextPage x2}
+stopped, I saw everything.{waitForClick}{nextPage 04}
 
 [000004eb]10: 
 [000004ec]18: hideTextbox
@@ -573,7 +573,7 @@ fluttered in the water as if they were petals
 falling from a flower...{waitForClick}
 {appendText}Letting out its final breath, LeMU spewed out 
 fine air bubbles into the sea, which flowed 
-gently in the current...{waitForClick}{nextPage x2}
+gently in the current...{waitForClick}{nextPage 04}
 
 [0000066e]10: 
 [0000066f]18: hideTextbox
@@ -588,7 +588,7 @@ glittered from the sunlight coming from above.{waitForClick}
 view, the sinking shadow of the brutal 
 wreckage could be seen...{waitForClick}
 {appendText}Paradise sank into dark blue darkness, 
-raising a spine chilling death-cry.{waitForClick}{nextPage x2}
+raising a spine chilling death-cry.{waitForClick}{nextPage 04}
 
 [00000675]10: 
 [00000676]18: hideTextbox
@@ -1289,7 +1289,7 @@ you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
 {appendText}{delay 0}                  Who...am I?{waitForClick}
 {appendText}{delay 0}               You are...Hokuto.{waitForClick}
 {appendText}{delay 0}              I am not...Hokuto...{waitForClick}
-{appendText}{delay 0}         I am not Hokuto.... I am...me.{waitForClick}{nextPage x2}
+{appendText}{delay 0}         I am not Hokuto.... I am...me.{waitForClick}{nextPage 04}
 
 [00000ab7]10: 
 [00000ab8]18: hideTextbox
@@ -1300,7 +1300,7 @@ you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
 {appendText}{delay 0}              Yes...I remember...{waitForClick}
 {appendText}{delay 0}                I am....I am me.{waitForClick}
 {appendText}{delay 0}        I have...watched...your world...
-{appendText}{delay 0}          For...so long...watching...{waitForClick}{nextPage x2}
+{appendText}{delay 0}          For...so long...watching...{waitForClick}{nextPage 04}
 
 [00000abe]10: 
 [00000abf]18: hideTextbox
@@ -1320,7 +1320,7 @@ you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
 [00000acf]10: 
 [00000ad0]19: showTextbox
 [00000ad1]ff 50 00: text 50
-{appendText}{delay 0}               {nextPage x2}Blick...Winkel...{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}               {nextPage 00}Blick...Winkel...{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000ad4]10: 
 [00000ad5]18: hideTextbox
@@ -1761,7 +1761,7 @@ Pipi had taken with his eyes.{waitForClick}
 {appendText}That was the first time that she realized the 
 truth...{waitForClick}
 {appendText}That left behind at the bottom of the ocean 
-in the research facility was a single girl...{waitForClick}{nextPage x2}
+in the research facility was a single girl...{waitForClick}{nextPage 04}
 
 [00000e6d]10: 
 [00000e6e]18: hideTextbox
@@ -1780,7 +1780,7 @@ in the research facility was a single girl...{waitForClick}{nextPage x2}
 [00000eda]19: showTextbox
 [00000edb]ff 68 00: text 68
 {marker}{appendText}That girl was...Coco.{waitForClick}
-{appendText}'It was Coco Yagami,' Yubiseiharukana said.{waitForClick}{nextPage x2}
+{appendText}'It was Coco Yagami,' Yubiseiharukana said.{waitForClick}{nextPage 04}
 
 [00000ede]10: 
 [00000edf]18: hideTextbox

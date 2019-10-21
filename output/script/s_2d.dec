@@ -1,4 +1,4 @@
-﻿[0000008a]10: 
+[0000008a]10: 
 [0000008b]46 80 00 00: setDialogBoxColor blue
 [0000008f]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [0000009a]fe 28 0a a4 b1 14 14 00 82 00 00: varop (28 0a a4) b1 := (00) 2
@@ -2049,7 +2049,7 @@ elevator.{waitForClick}{clearText}{marker}{sound S2C287}{appendText}[You]
 
 
 
-{appendText}{delay 0}                  <Can stomp>{waitForClick}{nextPage x2}
+{appendText}{delay 0}                  <Can stomp>{waitForClick}{nextPage 04}
 
 [0000165c]10: 
 [0000165d]18: hideTextbox
@@ -2414,7 +2414,7 @@ go back!"{waitForClick}{clearText}{marker}{appendText}[Kid]
 
 
 
-{appendText}{delay 0}                  <Can stomp>{waitForClick}{nextPage x2}
+{appendText}{delay 0}                  <Can stomp>{waitForClick}{nextPage 04}
 
 [00001a43]10: 
 [00001a44]18: hideTextbox

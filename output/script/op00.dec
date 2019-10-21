@@ -1,4 +1,4 @@
-﻿[00000055]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000055]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000060]fe 28 0a a4 b1 14 14 00 81 00 00: varop (28 0a a4) b1 := (00) 1
 [0000006b]fe 28 0a a4 b2 14 14 00 81 00 00: varop (28 0a a4) b2 := (00) 1
 [00000076]10: 
@@ -1802,7 +1802,7 @@ Lemuria.{delay 30}{waitForClick}
 {appendText}According to the British zoologist, Sclater,
 the Lemurian Continent preceded the existence
 of islands scattered throughout the Indian
-Ocean.{waitForClick}{nextPage x2}
+Ocean.{waitForClick}{nextPage 04}
 
 [0000102c]10: 
 [0000102d]18: hideTextbox
@@ -1818,7 +1818,7 @@ adopting the British geologist Brandford's
 hypothesis.{delay 30}{waitForClick}{appendText}He named this continent Lemuria.{delay 30}{waitForClick}
 {appendText}Moreover, the German zoologist, Haeckel,
 contended that this continent was the origin of
-mankind.{waitForClick}{nextPage x2}
+mankind.{waitForClick}{nextPage 04}
 
 [00001033]10: 
 [00001034]18: hideTextbox

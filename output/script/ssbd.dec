@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]46 80 00 00: setDialogBoxColor blue
 [0000001b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000026]fe 28 0a a4 b1 14 14 00 87 00 00: varop (28 0a a4) b1 := (00) 7
@@ -192,26 +192,26 @@ across my vision...{waitForClick}{clearText}
 [000001ad]10: 
 [000001ae]19: showTextbox
 [000001af]ff 0a 00: text 0a
-{marker}{appendText}{delay 0}       {nextPage x2}It was no good. I couldn't see...{nextPage x2}{delay 60}
-{appendText}{delay 0}    {nextPage x2}I wasn't sure if I were heading upward.{nextPage x2}{delay 60}
-{appendText}{delay 0}            {nextPage x2}Or maybe downward...{nextPage x2}{delay 60}
-{appendText}{delay 0}{nextPage x2}In my right arm, Sara felt cold, nearly frozen.{nextPage x2}{delay 60}
-{appendText}{delay 0}         {nextPage x2}I didn't think I'd make it...{nextPage x2}{delay 60}
-{appendText}{delay 0}           {nextPage x2}My arms refused to move...{nextPage x2}{delay 60}
-{appendText}{delay 0}                 {nextPage x2}And my legs...{nextPage x2}{delay 60}
-{appendText}{delay 0}               {nextPage x2}I took Sara and...{nextPage x2}{delay 60}{nextPage x2}
+{marker}{appendText}{delay 0}       {nextPage 00}It was no good. I couldn't see...{nextPage 01}{delay 60}
+{appendText}{delay 0}    {nextPage 00}I wasn't sure if I were heading upward.{nextPage 01}{delay 60}
+{appendText}{delay 0}            {nextPage 00}Or maybe downward...{nextPage 01}{delay 60}
+{appendText}{delay 0}{nextPage 00}In my right arm, Sara felt cold, nearly frozen.{nextPage 01}{delay 60}
+{appendText}{delay 0}         {nextPage 00}I didn't think I'd make it...{nextPage 01}{delay 60}
+{appendText}{delay 0}           {nextPage 00}My arms refused to move...{nextPage 01}{delay 60}
+{appendText}{delay 0}                 {nextPage 00}And my legs...{nextPage 01}{delay 60}
+{appendText}{delay 0}               {nextPage 00}I took Sara and...{nextPage 01}{delay 60}{nextPage 04}
 
 [000001b2]10: 
 [000001b3]18: hideTextbox
 [000001b4]10: 
 [000001b5]19: showTextbox
 [000001b6]ff 0b 00: text 0b
-{marker}{appendText}{delay 0}                     {nextPage x2}*GULP*{nextPage x2}{delay 60}
-{appendText}{delay 0}           {nextPage x2}I couldn't take anymore...{nextPage x2}{delay 60}
-{appendText}{delay 0}              {nextPage x2}I swallowed water...{nextPage x2}{delay 60}
-{appendText}{delay 0}                 {nextPage x2}*GULP* *COUGH*{nextPage x2}{delay 60}
-{appendText}{delay 0}        {nextPage x2}My consciousness was slipping...{nextPage x2}{delay 60}
-{appendText}{delay 0}            {nextPage x2}My body had no power...{nextPage x2}{delay 60}{nextPage x2}
+{marker}{appendText}{delay 0}                     {nextPage 00}*GULP*{nextPage 01}{delay 60}
+{appendText}{delay 0}           {nextPage 00}I couldn't take anymore...{nextPage 01}{delay 60}
+{appendText}{delay 0}              {nextPage 00}I swallowed water...{nextPage 01}{delay 60}
+{appendText}{delay 0}                 {nextPage 00}*GULP* *COUGH*{nextPage 01}{delay 60}
+{appendText}{delay 0}        {nextPage 00}My consciousness was slipping...{nextPage 01}{delay 60}
+{appendText}{delay 0}            {nextPage 00}My body had no power...{nextPage 01}{delay 60}{nextPage 04}
 
 [000001b9]10: 
 [000001ba]18: hideTextbox
@@ -222,16 +222,16 @@ across my vision...{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}                    {nextPage x2}{bigChar}{clearText}Sara...{nextPage x2}{delay 99}{nextPage x2}
+{appendText}{delay 0}                    {nextPage 00}{bigChar}{clearText}Sara...{nextPage 01}{delay 99}{nextPage 04}
 
 [000001c0]10: 
 [000001c1]18: hideTextbox
 [000001c2]10: 
 [000001c3]19: showTextbox
 [000001c4]ff 0d 00: text 0d
-{marker}{appendText}{delay 0}               {nextPage x2}I'm sorry Sara...{nextPage x2}{delay 60}
-{appendText}{delay 0}           {nextPage x2}I...just couldn't quite...{nextPage x2}{delay 60}
-{appendText}{delay 0}            {nextPage x2}...seem to save Sara...{nextPage x2}{delay 60}{nextPage x2}
+{marker}{appendText}{delay 0}               {nextPage 00}I'm sorry Sara...{nextPage 01}{delay 60}
+{appendText}{delay 0}           {nextPage 00}I...just couldn't quite...{nextPage 01}{delay 60}
+{appendText}{delay 0}            {nextPage 00}...seem to save Sara...{nextPage 01}{delay 60}{nextPage 04}
 
 [000001c7]10: 
 [000001c8]18: hideTextbox
@@ -242,7 +242,7 @@ across my vision...{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}                    {nextPage x2}{bigChar}{clearText}Sara...{nextPage x2}{delay 90}{delay 60}{nextPage x2}
+{appendText}{delay 0}                    {nextPage 00}{bigChar}{clearText}Sara...{nextPage 01}{delay 90}{delay 60}{nextPage 04}
 
 [000001ce]10: 
 [000001cf]18: hideTextbox
@@ -253,8 +253,8 @@ across my vision...{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}           {nextPage x2}The darkness enveloped me, 
-{appendText}{delay 0}       stealing away my consciousness...{nextPage x2}{delay 90}{delay 90}{nextPage x2}
+{appendText}{delay 0}           {nextPage 00}The darkness enveloped me, 
+{appendText}{delay 0}       stealing away my consciousness...{nextPage 01}{delay 90}{delay 90}{nextPage 04}
 
 [000001d5]10: 
 [000001d6]18: hideTextbox

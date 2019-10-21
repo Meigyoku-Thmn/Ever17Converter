@@ -1,4 +1,4 @@
-﻿[0000001e]10: 
+[0000001e]10: 
 [0000001f]0d 81 00 00 80 00 00 80 00 00: removeBG 1 0 0
 [00000029]10: 
 [0000002a]20 a0 2c 00 00: showDimOverlay
@@ -17,8 +17,8 @@
 {marker}{appendText}
 
 
-{appendText}{delay 0}             {nextPage x2}——May 7, 2034 (Sun){nextPage x2}{waitForClick}
-{appendText}{delay 0}               {nextPage x2}Time——11:17 a.m.{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}             {nextPage 00}——May 7, 2034 (Sun){nextPage 01}{waitForClick}
+{appendText}{delay 0}               {nextPage 00}Time——11:17 a.m.{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000070]10: 
 [00000071]18: hideTextbox
@@ -40,7 +40,7 @@
 
 
 
-{appendText}{delay 0}            {nextPage x2}'——Takeshi Kuranari——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}            {nextPage 00}'——Takeshi Kuranari——'{nextPage 01}{waitForClick}
 
 [000000c1]fe 28 0a a2 38 14 14 00 80 00 00: setKomoreType 0
 [000000cc]10: 
@@ -54,7 +54,7 @@
 [000000f7]10: 
 [000000f8]19: showTextbox
 [000000f9]ff 02 00: text 02
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [000000fc]10: 
 [000000fd]18: hideTextbox
@@ -206,7 +206,7 @@ questions..."{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}            {nextPage x2}'——Tsugumi Komachi——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}            {nextPage 00}'——Tsugumi Komachi——'{nextPage 01}{waitForClick}
 
 [00000226]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [00000230]27 00 00: fadeOutMonoColorOverlay
@@ -215,7 +215,7 @@ questions..."{waitForClick}{clearText}
 [00000239]10: 
 [0000023a]19: showTextbox
 [0000023b]ff 0e 00: text 0e
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [0000023e]10: 
 [0000023f]18: hideTextbox
@@ -378,7 +378,7 @@ movements using both of his front paws...{waitForClick}{clearText}{marker}{sound
 
 
 
-{appendText}{delay 0}             {nextPage x2}'——Sara Matsunaga——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}             {nextPage 00}'——Sara Matsunaga——'{nextPage 01}{waitForClick}
 
 [000003b1]10: 
 [000003b2]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
@@ -391,7 +391,7 @@ movements using both of his front paws...{waitForClick}{clearText}{marker}{sound
 [000003de]10: 
 [000003df]19: showTextbox
 [000003e0]ff 19 00: text 19
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [000003e3]10: 
 [000003e4]18: hideTextbox
@@ -495,7 +495,7 @@ at the front page headline.{waitForClick}{clearText}
 {marker}{appendText}'Leiblich Pharmaceutical, responsible for 
 outbreak of Tief Blau virus!?'{waitForClick}
 {appendText}'Compulsory investigation to begin in a day or 
-two.'{waitForClick}{nextPage x2}
+two.'{waitForClick}{nextPage 04}
 
 [000004b0]10: 
 [000004b1]18: hideTextbox
@@ -508,7 +508,7 @@ which has ravaged the world since 2017,{waitForClick}
 pharmaceutical giant Leiblich Pharmaceutical{waitForClick}
 {appendText}when a whistleblower from the Japanese-German 
 joint-managed research facility came forward 
-earlier this week.{waitForClick}{nextPage x2}
+earlier this week.{waitForClick}{nextPage 04}
 
 [000004b7]10: 
 [000004b8]18: hideTextbox
@@ -519,7 +519,7 @@ earlier this week.{waitForClick}{nextPage x2}
 Police Department is expected to open a 
 criminal investigation{waitForClick}
 {appendText}that will focus on Leiblich's branch offices 
-as well as related research facilities.{waitForClick}{nextPage x2}
+as well as related research facilities.{waitForClick}{nextPage 04}
 
 [000004be]10: 
 [000004bf]18: hideTextbox
@@ -532,7 +532,7 @@ the purpose of manufacturing a biological
 weapon.{waitForClick}
 {appendText}An outbreak of the virus is rumored to have 
 occurred in their research facility around 
-May 1, 2017.{waitForClick}{nextPage x2}
+May 1, 2017.{waitForClick}{nextPage 04}
 
 [000004c5]10: 
 [000004c6]18: hideTextbox
@@ -550,7 +550,7 @@ institute has not yet been confirmed.{waitForClick}
 including charges that it wrongfully detained 
 citizens for the purpose of human 
 experiments, have been raised and are to be 
-investigated.{waitForClick}{nextPage x2}
+investigated.{waitForClick}{nextPage 04}
 
 [000004cc]10: 
 [000004cd]18: hideTextbox
@@ -561,7 +561,7 @@ investigated.{waitForClick}{nextPage x2}
 these allegations and reported incident, the 
 Metropolitan Police Department is requesting 
 cooperation from authorities in Germany, where 
-Leiblich's head office is located.{waitForClick}{nextPage x2}
+Leiblich's head office is located.{waitForClick}{nextPage 04}
 
 [000004d3]10: 
 [000004d4]18: hideTextbox
@@ -679,7 +679,7 @@ to think about that, mother!?"{waitForClick}{clearText}{marker}{appendText}[You'
 
 
 
-{appendText}{delay 0}         {nextPage x2}'——Yubiseiharukana Tanaka——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}         {nextPage 00}'——Yubiseiharukana Tanaka——'{nextPage 01}{waitForClick}
 
 [000005f1]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [000005fb]27 00 00: fadeOutMonoColorOverlay
@@ -688,7 +688,7 @@ to think about that, mother!?"{waitForClick}{clearText}{marker}{appendText}[You'
 [00000604]10: 
 [00000605]19: showTextbox
 [00000606]ff 30 00: text 30
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [00000609]10: 
 [0000060a]18: hideTextbox
@@ -883,7 +883,7 @@ research facility - everything - was locked away."{waitForClick}{clearText}
 [0000076d]19: showTextbox
 [0000076e]ff 3b 00: text 3b
 {marker}{appendText}And the press only reported that it was 'A 
-deadly virus of unknown origin.'{waitForClick}{nextPage x2}
+deadly virus of unknown origin.'{waitForClick}{nextPage 04}
 
 [00000771]10: 
 [00000772]18: hideTextbox
@@ -899,7 +899,7 @@ infecting others.{waitForClick}
 {appendText}So while the TB virus spread rapidly for a 
 time, by 2019, two years after the accident, 
 the pace and scale of the disease's 
-destruction gradually waned.{waitForClick}{nextPage x2}
+destruction gradually waned.{waitForClick}{nextPage 04}
 
 [00000778]10: 
 [00000779]18: hideTextbox
@@ -910,7 +910,7 @@ destruction gradually waned.{waitForClick}{nextPage x2}
 {appendText}The number of people that the virus killed 
 is said to have reached several tens of 
 thousands.{waitForClick}
-{appendText}And...{waitForClick}{nextPage x2}
+{appendText}And...{waitForClick}{nextPage 04}
 
 [0000077f]10: 
 [00000780]18: hideTextbox
@@ -923,7 +923,7 @@ TB and it robbed her of her life.{waitForClick}
 {appendText}My sadness, anger and hatred, all came 
 together then.{waitForClick}
 {appendText}I swore that I would get revenge on 
-Leiblich...{waitForClick}{nextPage x2}
+Leiblich...{waitForClick}{nextPage 04}
 
 [00000786]10: 
 [00000787]18: hideTextbox
@@ -939,7 +939,7 @@ Ryogo Kaburaki.{waitForClick}
 {appendText}We have spent every moment for the last 17 
 years preparing for this.{waitForClick}
 {appendText}Yes...it was the only thing that I've lived 
-for up until now.{waitForClick}{nextPage x2}
+for up until now.{waitForClick}{nextPage 04}
 
 [0000078d]10: 
 [0000078e]18: hideTextbox
@@ -956,7 +956,7 @@ do...{waitForClick}
 {appendText}There was no other way that we, who were 
 living in this dimension, could go back in 
 time...{waitForClick}
-{appendText}.................................{waitForClick}{nextPage x2}
+{appendText}.................................{waitForClick}{nextPage 04}
 
 [00000794]10: 
 [00000795]18: hideTextbox
@@ -965,7 +965,7 @@ time...{waitForClick}
 [00000798]ff 41 00: text 41
 {marker}{appendText}That was how the whole plan had been set in 
 motion.{waitForClick}
-{appendText}All toward May 1, 2034.{waitForClick}{nextPage x2}
+{appendText}All toward May 1, 2034.{waitForClick}{nextPage 04}
 
 [0000079b]10: 
 [0000079c]18: hideTextbox
@@ -1037,7 +1037,7 @@ me..."{waitForClick}{clearText}{marker}{appendText}She whispered this quietly in
 
 
 
-{appendText}{delay 0}         {nextPage x2}'——Yubiseiakikana Tanaka——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}         {nextPage 00}'——Yubiseiakikana Tanaka——'{nextPage 01}{waitForClick}
 
 [00000835]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [0000083f]27 00 00: fadeOutMonoColorOverlay
@@ -1046,7 +1046,7 @@ me..."{waitForClick}{clearText}{marker}{appendText}She whispered this quietly in
 [00000848]10: 
 [00000849]19: showTextbox
 [0000084a]ff 46 00: text 46
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [0000084d]10: 
 [0000084e]18: hideTextbox
@@ -1144,7 +1144,7 @@ archaeology when I go to college..."{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}                 {nextPage x2}'——Hokuto——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}                 {nextPage 00}'——Hokuto——'{nextPage 01}{waitForClick}
 
 [000008e6]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [000008f0]27 00 00: fadeOutMonoColorOverlay
@@ -1153,7 +1153,7 @@ archaeology when I go to college..."{waitForClick}{clearText}
 [000008f9]10: 
 [000008fa]19: showTextbox
 [000008fb]ff 4d 00: text 4d
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [000008fe]10: 
 [000008ff]18: hideTextbox
@@ -1343,7 +1343,7 @@ out."{waitForClick}{clearText}{marker}{sound CEP144}{appendText}[Hokuto]
 
 
 
-{appendText}{delay 0}             {nextPage x2}'——Ryogo Kaburaki——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}             {nextPage 00}'——Ryogo Kaburaki——'{nextPage 01}{waitForClick}
 
 [00000a38]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [00000a42]27 00 00: fadeOutMonoColorOverlay
@@ -1352,7 +1352,7 @@ out."{waitForClick}{clearText}{marker}{sound CEP144}{appendText}[Hokuto]
 [00000a4b]10: 
 [00000a4c]19: showTextbox
 [00000a4d]ff 5b 00: text 5b
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [00000a50]10: 
 [00000a51]18: hideTextbox
@@ -1504,7 +1504,7 @@ was shining right in front of me.{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}            '——Sora Akanegasaki——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}            '——Sora Akanegasaki——'{nextPage 01}{waitForClick}
 
 [00000b3b]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [00000b45]27 00 00: fadeOutMonoColorOverlay
@@ -1513,7 +1513,7 @@ was shining right in front of me.{waitForClick}{clearText}
 [00000b4e]10: 
 [00000b4f]19: showTextbox
 [00000b50]ff 65 00: text 65
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [00000b53]10: 
 [00000b54]18: hideTextbox
@@ -1871,7 +1871,7 @@ little...!"{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}              {nextPage x2}'——Coco Yagami——'{nextPage x2}{waitForClick}
+{appendText}{delay 0}              {nextPage 00}'——Coco Yagami——'{nextPage 01}{waitForClick}
 
 [00000df0]fe 28 0a a0 ab 14 14 00 c0 35: setMonoColorOverlayFadeOutDuration VAR_c0_53
 [00000dfa]27 00 00: fadeOutMonoColorOverlay
@@ -1880,7 +1880,7 @@ little...!"{waitForClick}{clearText}
 [00000e03]10: 
 [00000e04]19: showTextbox
 [00000e05]ff 81 00: text 81
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [00000e08]10: 
 [00000e09]18: hideTextbox
@@ -2038,19 +2038,19 @@ world...{waitForClick}{clearText}{marker}{appendText}How far do I go?{waitForCli
 {marker}{appendText}
 
 
-{appendText}{delay 0}               {nextPage x2}'I am seeing now.'{nextPage x2}{waitForClick}
+{appendText}{delay 0}               {nextPage 00}'I am seeing now.'{nextPage 01}{waitForClick}
 
 
 [0000104f]10: 
 [00001050]19: showTextbox
 [00001051]ff 8d 00: text 8d
-{appendText}{delay 0}             {nextPage x2}'I am being seen now.'{nextPage x2}{waitForClick}
+{appendText}{delay 0}             {nextPage 00}'I am being seen now.'{nextPage 01}{waitForClick}
 
 
 [00001054]10: 
 [00001055]19: showTextbox
 [00001056]ff 8e 00: text 8e
-{appendText}{delay 0}             {nextPage x2}'You are seeing now.'{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}             {nextPage 00}'You are seeing now.'{nextPage 01}{waitForClick}{nextPage 04}
 
 [00001059]10: 
 [0000105a]18: hideTextbox
@@ -2060,8 +2060,8 @@ world...{waitForClick}{clearText}{marker}{appendText}How far do I go?{waitForCli
 {marker}{appendText}
 
 
-{appendText}{nextPage x2}               'And you are...'{nextPage x2}{waitForClick}
-{appendText}{nextPage x2}        'Surely being seen by someone.'{nextPage x2}{waitForClick}
+{appendText}{nextPage 00}               'And you are...'{nextPage 01}{waitForClick}
+{appendText}{nextPage 00}        'Surely being seen by someone.'{nextPage 01}{waitForClick}
 
 [00001060]10: 
 [00001061]45 a0 18 00 00 81 00 00: monoColorOverlay 24 1
@@ -2071,7 +2071,7 @@ world...{waitForClick}{clearText}{marker}{appendText}How far do I go?{waitForCli
 [0000107a]10: 
 [0000107b]19: showTextbox
 [0000107c]ff 90 00: text 90
-{appendText}{nextPage x2}
+{appendText}{nextPage 04}
 
 [0000107f]10: 
 [00001080]18: hideTextbox

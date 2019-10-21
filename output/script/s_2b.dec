@@ -1,4 +1,4 @@
-﻿[00000086]00: 
+[00000086]00: 
 [00000087]0a 01 28 0a a4 b3 14 0c 01 81 01 00 0b 00: gotoif 1 (28 0a a4) b3 == (01) 1 (0001) -> 0000104c (0000000b)
 [00000095]10: 
 [00000096]24 a0 53 00 00: scriptLocationId 83
@@ -2339,7 +2339,7 @@ anyway."{waitForClick}{clearText}{marker}{appendText}Saying that, You pointed to
 eyes were enough for gauging the distance to 
 a point or focusing on something.{waitForClick}
 {appendText}But what would it be like if we really used 
-to have three eyes?{waitForClick}{nextPage x2}
+to have three eyes?{waitForClick}{nextPage 04}
 
 [000014a9]10: 
 [000014aa]18: hideTextbox
@@ -2351,7 +2351,7 @@ to have three eyes?{waitForClick}{nextPage x2}
 three eyes.{waitForClick}
 {appendText}Early species of primitive reptiles...{waitForClick}
 {appendText}Like the tuatara lizard that still has a 
-third eye on the top of its head.{waitForClick}{nextPage x2}
+third eye on the top of its head.{waitForClick}{nextPage 04}
 
 [000014b0]10: 
 [000014b1]18: hideTextbox
@@ -2373,7 +2373,7 @@ secretion and balance based on light.{waitForClick}
 {appendText}An eye on the crest of one's head would stare 
 straight up. It seemed safe to say that it 
 would sense the difference in light between 
-day and night.{waitForClick}{nextPage x2}
+day and night.{waitForClick}{nextPage 04}
 
 [000014bc]10: 
 [000014bd]18: hideTextbox
@@ -2390,7 +2390,7 @@ cerebrum and we lost our ability to sense
 light directly.{waitForClick}
 {appendText}Therefore we had two light sensitive eyeballs, 
 one on each side, instead.{waitForClick}
-{appendText}This lost third eye was called a 'pineal body.'{waitForClick}{nextPage x2}
+{appendText}This lost third eye was called a 'pineal body.'{waitForClick}{nextPage 04}
 
 [000014c3]10: 
 [000014c4]18: hideTextbox
@@ -2401,7 +2401,7 @@ one on each side, instead.{waitForClick}
 was responsible for secreting hormones that 
 helped carve out our 24-hour rhythm.{waitForClick}
 {appendText}What we called our internal clocks existed 
-because of this pineal body. {waitForClick}{nextPage x2}
+because of this pineal body. {waitForClick}{nextPage 04}
 
 [000014ca]10: 
 [000014cb]18: hideTextbox

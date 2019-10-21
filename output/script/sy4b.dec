@@ -1,4 +1,4 @@
-﻿[00000036]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000036]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000041]fe 28 0a a4 b1 14 14 00 84 00 00: varop (28 0a a4) b1 := (00) 4
 [0000004c]fe 28 0a a4 b2 14 14 00 84 00 00: varop (28 0a a4) b2 := (00) 4
 [00000057]10: 
@@ -35,7 +35,7 @@ for You.{waitForClick}{clearText}
 [000000bd]19: showTextbox
 [000000be]ff 01 00: text 01
 {marker}{appendText}I realized there were six things I knew 
-for sure.{waitForClick}{nextPage x2}
+for sure.{waitForClick}{nextPage 04}
 
 [000000c1]10: 
 [000000c2]18: hideTextbox
@@ -47,7 +47,7 @@ died 34 years before.{waitForClick}
 {appendText}2. And You's mother, Yukie Tanaka, had died 15 
 years before.{waitForClick}
 {appendText}3. You had heard from her mother that Yoichi 
-had disappeared 17 years before.{waitForClick}{nextPage x2}
+had disappeared 17 years before.{waitForClick}{nextPage 04}
 
 [000000c8]10: 
 [000000c9]18: hideTextbox
@@ -59,7 +59,7 @@ archaeology at LeMU.{waitForClick}
 {appendText}5. From the written records of A and B, I knew 
 that Yoichi and Yukie had a daughter.{waitForClick}
 {appendText}6. Last, both of her parents' deaths had 
-something to do with the Tief Blau Virus.{waitForClick}{nextPage x2}
+something to do with the Tief Blau Virus.{waitForClick}{nextPage 04}
 
 [000000cf]10: 
 [000000d0]18: hideTextbox
@@ -451,7 +451,7 @@ wrong with me."{waitForClick}{clearText}{marker}{appendText}Finally You lifted h
 [000003ce]ff 1e 00: text 1e
 {marker}{appendText}Finally it was time to start deducing things.{waitForClick}
 {appendText}We decided to start breaking things down with 
-the things that were clear.{waitForClick}{nextPage x2}
+the things that were clear.{waitForClick}{nextPage 04}
 
 [000003d1]10: 
 [000003d2]18: hideTextbox
@@ -468,7 +468,7 @@ had ravaged the world in the past.{waitForClick}
 than 30 years before.{waitForClick}
 {appendText}So, time-wise there was nothing strange if her 
 father had died of TB 34 years ago and her 
-mother died 15 years ago.{waitForClick}{nextPage x2}
+mother died 15 years ago.{waitForClick}{nextPage 04}
 
 [000003e6]10: 
 [000003e7]18: hideTextbox
@@ -478,7 +478,7 @@ mother died 15 years ago.{waitForClick}{nextPage x2}
 {marker}{appendText}Furthermore, the world was now free of TB, 
 and a decade earlier the World Health 
 Organization had officially declared 
-the disease eradicated.{waitForClick}{nextPage x2}
+the disease eradicated.{waitForClick}{nextPage 04}
 
 [000003ed]10: 
 [000003ee]18: hideTextbox
@@ -494,7 +494,7 @@ was born.{waitForClick}
 {appendText}She said she had just seen her face just the 
 other day, but she was supposed to have died 
 15 years before.{waitForClick}
-{appendText}We figured that there were four possibilities.{waitForClick}{nextPage x2}
+{appendText}We figured that there were four possibilities.{waitForClick}{nextPage 04}
 
 [000003f4]10: 
 [000003f5]18: hideTextbox
@@ -510,7 +510,7 @@ disappeared 17 years before.{waitForClick}
 {appendText}3. Yoichi had died 34 years before, but Yukie 
 was still alive and well.{waitForClick}
 {appendText}4.Yoichi had died 34 years before and Yukie 15 
-years before.{waitForClick}{nextPage x2}
+years before.{waitForClick}{nextPage 04}
 
 [000003fb]10: 
 [000003fc]18: hideTextbox
@@ -521,7 +521,7 @@ years before.{waitForClick}{nextPage x2}
 fiction.{waitForClick}
 {appendText}It was incredibly confusing.{waitForClick}
 {appendText}We decided to consider the possibilities one 
-by one.{waitForClick}{nextPage x2}
+by one.{waitForClick}{nextPage 04}
 
 [00000402]10: 
 [00000403]18: hideTextbox
@@ -537,7 +537,7 @@ of information about Yoichi's death){waitForClick}
 {appendText}C. What You's mom had told her (The only 
 source of information about Yoichi's 
 disappearance){waitForClick}
-{appendText}D. The existence of You's mom{waitForClick}{nextPage x2}
+{appendText}D. The existence of You's mom{waitForClick}{nextPage 04}
 
 [00000409]10: 
 [0000040a]18: hideTextbox
@@ -554,7 +554,7 @@ file, it looked like Yukie's death was
 indeed a fact.{waitForClick}
 {appendText}We set aside the question of whether she were 
 actually You's real mother for the time 
-being...{waitForClick}{nextPage x2}
+being...{waitForClick}{nextPage 04}
 
 [0000041e]10: 
 [0000041f]18: hideTextbox
@@ -567,7 +567,7 @@ possibilities two and four.{waitForClick}
 disappeared 17 years before. However, Yukie 
 had passed away 15 years before.'{waitForClick}
 {appendText}'4. Yoichi had died 34 years before and Yukie 
-15 years before.'{waitForClick}{nextPage x2}
+15 years before.'{waitForClick}{nextPage 04}
 
 [00000425]10: 
 [00000426]18: hideTextbox
@@ -585,7 +585,7 @@ Yoichi's disappearance would drop dramatically.{waitForClick}
 {appendText}That would strongly boost the possibility that 
 the fourth theory was right.{waitForClick}
 {appendText}'4. Yoichi had died 34 years before and Yukie 
-15 years before.'{waitForClick}{nextPage x2}
+15 years before.'{waitForClick}{nextPage 04}
 
 [0000042c]10: 
 [0000042d]18: hideTextbox
@@ -1074,7 +1074,7 @@ medicine, painkillers and vitamins.{waitForClick}{clearText}
 {marker}{appendText}It turned to night.{waitForClick}
 {appendText}Dinnertime rolled around.{waitForClick}
 {appendText}Just like always, we filled our empty bellies 
-with chicken sandwiches made by Takeshi.{waitForClick}{nextPage x2}
+with chicken sandwiches made by Takeshi.{waitForClick}{nextPage 04}
 
 [0000090a]10: 
 [0000090b]18: hideTextbox
@@ -1088,7 +1088,7 @@ park's rest area.{waitForClick}
 a picnic mood.{waitForClick}
 {appendText}The blanket was from a shop stocking them on 
 the same floor. {waitForClick}
-{appendText}So it had LeMU's Myumyun label printed on it.{waitForClick}{nextPage x2}
+{appendText}So it had LeMU's Myumyun label printed on it.{waitForClick}{nextPage 04}
 
 [00000911]10: 
 [00000912]18: hideTextbox
@@ -1102,7 +1102,7 @@ smiling just the same.{waitForClick}
 kiosk.{waitForClick}
 {appendText}You wasn't around.{waitForClick}
 {appendText}She didn't feel well and was resting in the 
-infirmary.{waitForClick}{nextPage x2}
+infirmary.{waitForClick}{nextPage 04}
 
 [00000918]10: 
 [00000919]18: hideTextbox
@@ -1118,7 +1118,7 @@ and started munching a sandwich.{waitForClick}
 Tsugumi just ignored him.{waitForClick}
 {appendText}She simply sat there eating and drinking 
 by herself.{waitForClick}
-{appendText}I stared at her absentmindedly.{waitForClick}{nextPage x2}
+{appendText}I stared at her absentmindedly.{waitForClick}{nextPage 04}
 
 [0000091f]10: 
 [00000920]18: hideTextbox
@@ -1133,7 +1133,7 @@ by herself.{waitForClick}
 [00000927]19: showTextbox
 [00000928]ff 54 00: text 54
 {appendText}I wondered if I were still stuck on those 
-words.{waitForClick}{nextPage x2}
+words.{waitForClick}{nextPage 04}
 
 [0000092b]10: 
 [0000092c]18: hideTextbox
@@ -1144,7 +1144,7 @@ words.{waitForClick}{nextPage x2}
 
 
 {sound S3D025}{appendText}{delay 0}                 On the 7th...{waitForClick}
-{sound S3D026}{appendText}{delay 0}                 You will die.{waitForClick}{nextPage x2}
+{sound S3D026}{appendText}{delay 0}                 You will die.{waitForClick}{nextPage 04}
 
 [00000932]10: 
 [00000933]18: hideTextbox
@@ -1155,7 +1155,7 @@ words.{waitForClick}{nextPage x2}
 alone.{waitForClick}
 {appendText}I wondered what she was thinking about just 
 then.{waitForClick}
-{appendText}I was mulling that when...{waitForClick}{nextPage x2}
+{appendText}I was mulling that when...{waitForClick}{nextPage 04}
 
 [00000939]10: 
 [0000093a]18: hideTextbox

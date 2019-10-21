@@ -1,4 +1,4 @@
-﻿[00000036]10: 
+[00000036]10: 
 [00000037]46 80 00 00: setDialogBoxColor blue
 [0000003b]fe 28 0a a4 fa 14 14 00 a0 31 00 00: setSceneTitleByIndex 49
 [00000047]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
@@ -450,7 +450,7 @@ in that bed...{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{cl
 {appendText}Then we rode an egg-shaped elevator up 
 two floors.{waitForClick}
 {appendText}Before I had met You, I had been 
-in a small park.{waitForClick}{nextPage x2}
+in a small park.{waitForClick}{nextPage 04}
 
 [000003c1]10: 
 [000003c2]18: hideTextbox
@@ -461,12 +461,12 @@ in a small park.{waitForClick}{nextPage x2}
 {appendText}I was...waiting for someone.{waitForClick}
 {appendText}Who? Who was I waiting for?{waitForClick}
 {appendText}
-{appendText}{nextPage x2}I didn't know.{nextPage x2}{waitForClick}
+{appendText}{nextPage 00}I didn't know.{nextPage 01}{waitForClick}
 {appendText}
 {appendText}My memory was a fog and thinking about events 
 after that my mind just seemed to cloud over.{waitForClick}
 {appendText}I shook my head several times trying to clear 
-it and concentrate.{waitForClick}{nextPage x2}
+it and concentrate.{waitForClick}{nextPage 04}
 
 [000003c8]10: 
 [000003c9]18: hideTextbox
@@ -477,7 +477,7 @@ it and concentrate.{waitForClick}{nextPage x2}
 {appendText}Why had I come to LeMU?{waitForClick}
 {appendText}Did I come alone? Or was I with someone else?{waitForClick}
 {appendText}What was I doing before I came to LeMU?{waitForClick}
-{appendText}How had I arrived at this amusement park?{waitForClick}{nextPage x2}
+{appendText}How had I arrived at this amusement park?{waitForClick}{nextPage 04}
 
 [000003cf]10: 
 [000003d0]18: hideTextbox
@@ -1533,7 +1533,7 @@ together.{waitForClick}{clearText}{marker}{appendText}It was a glob that would d
 
 
 
-{appendText}{delay 0}                {nextPage x2}possibly be...?{nextPage x2}{delay 60}{nextPage x2}
+{appendText}{delay 0}                {nextPage 00}possibly be...?{nextPage 01}{delay 60}{nextPage 04}
 
 [00000e65]10: 
 [00000e66]18: hideTextbox

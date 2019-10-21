@@ -1,4 +1,4 @@
-﻿[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000051]fe 28 0a a4 b1 14 14 00 86 00 00: varop (28 0a a4) b1 := (00) 6
 [0000005c]fe 28 0a a4 b2 14 14 00 86 00 00: varop (28 0a a4) b2 := (00) 6
 [00000067]10: 
@@ -1104,7 +1104,7 @@ rest area.{delay 30}{waitForClick}
 {appendText}The Kid and I distributed the snacks and 
 drinks to everyone.{delay 30}{waitForClick}
 {appendText}It was then that You volunteered to provide 
-some entertainment.{waitForClick}{nextPage x2}
+some entertainment.{waitForClick}{nextPage 04}
 
 [00000ad8]10: 
 [00000ad9]18: hideTextbox
@@ -1120,7 +1120,7 @@ and stomped her feet on the stage...{delay 30}{waitForClick}
 projections of rainbows.{delay 30}{waitForClick}
 {appendText}The rainbow-colored bubbles that floated from 
 the water surface through the air were 
-particularly pretty.{waitForClick}{nextPage x2}
+particularly pretty.{waitForClick}{nextPage 04}
 
 [00000adf]10: 
 [00000ae0]18: hideTextbox
@@ -1133,7 +1133,7 @@ dropped her hamster in her skirt pocket only
 to have it reappear in her breast pocket.{delay 30}{waitForClick}
 {appendText}That really impressed the crowd. {delay 30}{waitForClick}
 {appendText}Although I knew about her hamster, Chami, many 
-didn't even know Tsugumi kept a pet.{waitForClick}{nextPage x2}
+didn't even know Tsugumi kept a pet.{waitForClick}{nextPage 04}
 
 [00000ae6]10: 
 [00000ae7]18: hideTextbox
@@ -1142,7 +1142,7 @@ didn't even know Tsugumi kept a pet.{waitForClick}{nextPage x2}
 [00000aea]ff 62 00: text 62
 {marker}{appendText}Then Kid and I performed a comedy skit.{delay 30}{waitForClick}
 {appendText}We pulled out one-liners and impromptu gags 
-which got huge laughter from everyone.{waitForClick}{nextPage x2}
+which got huge laughter from everyone.{waitForClick}{nextPage 04}
 
 [00000aed]10: 
 [00000aee]18: hideTextbox

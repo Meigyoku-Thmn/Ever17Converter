@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]46 80 00 00: setDialogBoxColor blue
 [0000001b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000026]fe 28 0a a4 b1 14 14 00 86 00 00: varop (28 0a a4) b1 := (00) 6
@@ -716,7 +716,7 @@ gathered around the table.{waitForClick}{clearText}
 from LeMU.{waitForClick}
 {appendText}1. Use the elevator in the central area{waitForClick}
 {appendText}2. Climb one of the complex's 12 sets of 
-emergency stairs.{waitForClick}{nextPage x2}
+emergency stairs.{waitForClick}{nextPage 04}
 
 [000004d8]10: 
 [000004d9]18: hideTextbox
@@ -729,7 +729,7 @@ we couldn't be certain that it would move.{waitForClick}
 {appendText}We still didn't know the cause of that either.{waitForClick}
 {appendText}The emergency stairs were also filled with 
 water from the second floor so they were 
-impassable.{waitForClick}{nextPage x2}
+impassable.{waitForClick}{nextPage 04}
 
 [000004df]10: 
 [000004e0]18: hideTextbox
@@ -744,7 +744,7 @@ purge it of seawater.{waitForClick}
 {appendText}But at that moment we weren't able to operate 
 the fan from inside LeMU.{waitForClick}
 {appendText}And like the elevators, we still had no 
-idea why.{waitForClick}{nextPage x2}
+idea why.{waitForClick}{nextPage 04}
 
 [000004e6]10: 
 [000004e7]18: hideTextbox
@@ -758,7 +758,7 @@ had been cut off.{waitForClick}
 {appendText}And swimming our way to freedom was out of the 
 question.{waitForClick}
 {appendText}The water pressure and other problems made 
-that suicidal.{waitForClick}{nextPage x2}
+that suicidal.{waitForClick}{nextPage 04}
 
 [000004ed]10: 
 [000004ee]18: hideTextbox
@@ -775,7 +775,7 @@ trapped and there were no signs help was
 coming.{waitForClick}
 {appendText}So we knew that we had to exclude a miracle 
 rescue from our options.{waitForClick}
-{appendText}No...from the beginning...{waitForClick}{nextPage x2}
+{appendText}No...from the beginning...{waitForClick}{nextPage 04}
 
 [000004f4]10: 
 [000004f5]18: hideTextbox
@@ -791,7 +791,7 @@ people couldn't get near LeMU.{waitForClick}
 {appendText}Or...{waitForClick}
 {appendText}Maybe someone had intentionally sealed us in.{waitForClick}
 {appendText}So we came up with three steps we should 
-focus on.{waitForClick}{nextPage x2}
+focus on.{waitForClick}{nextPage 04}
 
 [000004fb]10: 
 [000004fc]18: hideTextbox
@@ -800,7 +800,7 @@ focus on.{waitForClick}{nextPage x2}
 [000004ff]ff 2c 00: text 2c
 {marker}{appendText}A. Restoring communications with the outside.{waitForClick}
 {appendText}But this was only relevant if the people on 
-the outside were willing to cooperate.{waitForClick}{nextPage x2}
+the outside were willing to cooperate.{waitForClick}{nextPage 04}
 
 [00000502]10: 
 [00000503]18: hideTextbox
@@ -810,7 +810,7 @@ the outside were willing to cooperate.{waitForClick}{nextPage x2}
 {marker}{appendText}B. Find another way to drain the water from 
 the complex other than the high-pressure fan.{waitForClick}
 {appendText}But according to Sora there was no other way 
-to do this.{waitForClick}{nextPage x2}
+to do this.{waitForClick}{nextPage 04}
 
 [00000509]10: 
 [0000050a]18: hideTextbox
@@ -823,7 +823,7 @@ a submarine.{waitForClick}
 {appendText}But according to Sora's information there 
 were no longer any left at LeMU.{waitForClick}
 {appendText}She had said that they all had been used 
-during the evacuation on May 1.{waitForClick}{nextPage x2}
+during the evacuation on May 1.{waitForClick}{nextPage 04}
 
 [00000510]10: 
 [00000511]18: hideTextbox
@@ -835,7 +835,7 @@ during the evacuation on May 1.{waitForClick}{nextPage x2}
 
 
 {appendText}{delay 0}                    Final conclusion—
-{appendText}{delay 0}   'Current prognosis for escape: hopeless.'{waitForClick}{nextPage x2}
+{appendText}{delay 0}   'Current prognosis for escape: hopeless.'{waitForClick}{nextPage 04}
 
 [00000517]10: 
 [00000518]18: hideTextbox
@@ -848,7 +848,7 @@ method that only she knew about.{waitForClick}
 {appendText}If it did in fact exist...{waitForClick}
 {appendText}And there was a way that all six of us could 
 escape...{waitForClick}
-{appendText}Then that would be our only hope.{waitForClick}{nextPage x2}
+{appendText}Then that would be our only hope.{waitForClick}{nextPage 04}
 
 [0000051e]10: 
 [0000051f]18: hideTextbox

@@ -1,4 +1,4 @@
-﻿[00000042]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000042]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [0000004d]fe 28 0a a4 b1 14 14 00 84 00 00: varop (28 0a a4) b1 := (00) 4
 [00000058]fe 28 0a a4 b2 14 14 00 84 00 00: varop (28 0a a4) b2 := (00) 4
 [00000063]10: 
@@ -1497,7 +1497,7 @@ ladder.{waitForClick}{clearText}
 [00000dd1]ff 78 00: text 78
 {marker}{appendText}My toes reached the bottom of the ladder.{delay 30}{waitForClick}
 {appendText}I let go of the ladder and leapt into the 
-emergency corridor.{waitForClick}{nextPage x2}
+emergency corridor.{waitForClick}{nextPage 04}
 
 [00000dd4]10: 
 [00000dd5]18: hideTextbox
@@ -1510,7 +1510,7 @@ emergency corridor.{waitForClick}{nextPage x2}
 {appendText}It was like swimming in ice water.{delay 30}{waitForClick}
 {appendText}The water here was much colder than the water 
 higher up.{delay 30}{waitForClick}
-{appendText}I had greatly miscalculated.{waitForClick}{nextPage x2}
+{appendText}I had greatly miscalculated.{waitForClick}{nextPage 04}
 
 [00000dec]10: 
 [00000ded]18: hideTextbox
@@ -1525,7 +1525,7 @@ miscalculated.{delay 30}{waitForClick}
 either side and this part of the corridor was 
 straight.{delay 30}{waitForClick}
 {appendText}But that was all I could see.  I knew nothing 
-of what was beyond that.{waitForClick}{nextPage x2}
+of what was beyond that.{waitForClick}{nextPage 04}
 
 [00000df3]10: 
 [00000df4]18: hideTextbox
@@ -1540,7 +1540,7 @@ forward.{delay 30}{waitForClick}
 need to go?{delay 30}{waitForClick}
 {appendText}I had no way of guessing.{delay 30}{waitForClick}
 {appendText}I didn't even know if I was swimming in the 
-right direction.{waitForClick}{nextPage x2}
+right direction.{waitForClick}{nextPage 04}
 
 [00000dfa]10: 
 [00000dfb]18: hideTextbox
@@ -1557,7 +1557,7 @@ fear spreading through my body.{delay 30}{waitForClick}
 {appendText}As afraid as I was, I was able to consider 
 dying quite calmly.{delay 30}{waitForClick}
 {appendText}I was caught in the illusion that I was 
-sinking, farther and farther down.{waitForClick}{nextPage x2}
+sinking, farther and farther down.{waitForClick}{nextPage 04}
 
 [00000e07]10: 
 [00000e08]18: hideTextbox
@@ -1567,7 +1567,7 @@ sinking, farther and farther down.{waitForClick}{nextPage x2}
 {marker}{appendText}The darkness penetrated to my very core.{delay 30}{waitForClick}
 {appendText}The shadow of death crept through my whole 
 body...{delay 30}{waitForClick}
-{appendText}Eroding my every cell...{waitForClick}{nextPage x2}
+{appendText}Eroding my every cell...{waitForClick}{nextPage 04}
 
 [00000e0e]10: 
 [00000e0f]18: hideTextbox
@@ -1590,7 +1590,7 @@ a spot of light.{delay 30}{waitForClick}
 {appendText}My vision was cloudy and I couldn't judge the 
 distance.{delay 30}{waitForClick}
 {appendText}I was reaching my limit. No, I had probably 
-already exceeded it.{waitForClick}{nextPage x2}
+already exceeded it.{waitForClick}{nextPage 04}
 
 [00000e2b]10: 
 [00000e2c]18: hideTextbox
@@ -1614,7 +1614,7 @@ light is right - {delay 30}{waitForClick}
 {appendText}My hand grabbed the ladder.{delay 30}{waitForClick}
 {appendText}I wasted no time in fixing the rope on the 
 hook.{delay 30}{waitForClick}
-{appendText}I pulled myself upwards.{waitForClick}{nextPage x2}
+{appendText}I pulled myself upwards.{waitForClick}{nextPage 04}
 
 [00000e48]10: 
 [00000e49]18: hideTextbox

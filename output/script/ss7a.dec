@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]46 80 00 00: setDialogBoxColor blue
 [0000001b]fe 28 0a a4 fa 14 14 00 a0 65 00 00: setSceneTitleByIndex 101
 [00000027]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
@@ -62,7 +62,7 @@ relationship.{waitForClick}
 {appendText}But now that we knew that we were brother and 
 sister, it felt like things had been reversed.{waitForClick}
 {appendText}Now Sara was relying on me...like when 
-we were kids.{waitForClick}{nextPage x2}
+we were kids.{waitForClick}{nextPage 04}
 
 [000000a9]10: 
 [000000aa]18: hideTextbox
@@ -152,7 +152,7 @@ that way before.{waitForClick}
 {appendText}Leiblich had written me off early on.{waitForClick}
 {appendText}I figured that it was probably because the 
 only special power I had was seeing infrared 
-light.{waitForClick}{nextPage x2}
+light.{waitForClick}{nextPage 04}
 
 [00000110]10: 
 [00000111]18: hideTextbox
@@ -166,7 +166,7 @@ hacker.{waitForClick}
 {appendText}It was probably only the beginning.{waitForClick}
 {appendText}After I had left the institute, Sara must have 
 lived under constant observation and undergone 
-experiments.{waitForClick}{nextPage x2}
+experiments.{waitForClick}{nextPage 04}
 
 [00000117]10: 
 [00000118]18: hideTextbox

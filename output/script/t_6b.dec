@@ -1,4 +1,4 @@
-﻿[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000051]fe 28 0a a4 b1 14 14 00 86 00 00: varop (28 0a a4) b1 := (00) 6
 [0000005c]fe 28 0a a4 b2 14 14 00 86 00 00: varop (28 0a a4) b2 := (00) 6
 [00000067]10: 
@@ -657,9 +657,9 @@ institute in order to study them.{delay 30}{waitForClick}
 [00000634]10: 
 [00000635]19: showTextbox
 [00000636]ff 39 00: text 39
-{appendText}Institute f・r Biologische Forschung.{delay 30}{waitForClick}
+{appendText}Institute f�r Biologische Forschung.{delay 30}{waitForClick}
 {appendText}Translated it means the Institute for 
-Biological Research.{waitForClick}{nextPage x2}
+Biological Research.{waitForClick}{nextPage 04}
 
 [00000639]10: 
 [0000063a]18: hideTextbox
@@ -675,7 +675,7 @@ front.{delay 30}{waitForClick}
 managers of LeMU and were able to come and go 
 as they pleased.{delay 30}{waitForClick}
 {appendText}That way, nobody would suspect that there was 
-actually a research facility.{waitForClick}{nextPage x2}
+actually a research facility.{waitForClick}{nextPage 04}
 
 [00000640]10: 
 [00000641]18: hideTextbox
@@ -689,7 +689,7 @@ could get pretty much all the money they
 needed to run the research facility...{delay 30}{waitForClick}
 {appendText}So Leiblich Pharmaceutical continued to carry 
 out research into bacteria and viruses on the 
-bottom of the ocean...357 feet under water.{waitForClick}{nextPage x2}
+bottom of the ocean...357 feet under water.{waitForClick}{nextPage 04}
 
 [00000647]10: 
 [00000648]18: hideTextbox
@@ -1553,7 +1553,7 @@ quickly...!){waitForClick}{clearText}
 [00000f1e]19: showTextbox
 [00000f1f]ff 86 00: text 86
 {marker}{sound T6B136A}{appendText}[Announcement]
-"ﾖffnen Sie {waitForSound}{sound T6B136B}{appendText}die T・r von HIMMEL"{waitForClick}{clearText}
+"ﾖffnen Sie {waitForSound}{sound T6B136B}{appendText}die T�r von HIMMEL"{waitForClick}{clearText}
 
 [00000f22]10: 
 [00000f23]19: showTextbox
@@ -2290,7 +2290,7 @@ at LeMU.{waitForClick}{clearText}
 were a few computer terminals there.{waitForClick}
 {appendText}Operating the terminals, we were able to scan 
 through some of the information left there.{waitForClick}
-{appendText}There was some information about Tief Blau—{waitForClick}{nextPage x2}
+{appendText}There was some information about Tief Blau—{waitForClick}{nextPage 04}
 
 [0000156a]10: 
 [0000156b]18: hideTextbox
@@ -2312,7 +2312,7 @@ nasal cavity, the skin, as well as the
 alimentary canal, and has a high probability 
 of dying.{waitForClick}
 {appendText}Death rate after contracting the disease: 
-over 85%.{waitForClick}{nextPage x2}
+over 85%.{waitForClick}{nextPage 04}
 
 [00001576]10: 
 [00001577]18: hideTextbox
@@ -2322,7 +2322,7 @@ over 85%.{waitForClick}{nextPage x2}
 {marker}{appendText}Symptoms first appear similar that of a 
 common cold, and while they may temporarily 
 improve, the patient's condition will again 
-rapidly deteriorate, resulting in hemorrhaging.{waitForClick}{nextPage x2}
+rapidly deteriorate, resulting in hemorrhaging.{waitForClick}{nextPage 04}
 
 [0000157d]10: 
 [0000157e]18: hideTextbox
@@ -2337,7 +2337,7 @@ rapidly deteriorate, resulting in hemorrhaging.{waitForClick}{nextPage x2}
 [00001586]ff bc 00: text bc
 {appendText}.........{waitForClick}
 {appendText}After that point all the data was corrupted 
-and it was not clear what else was written.{waitForClick}{nextPage x2}
+and it was not clear what else was written.{waitForClick}{nextPage 04}
 
 [00001589]10: 
 [0000158a]18: hideTextbox
@@ -2350,7 +2350,7 @@ interesting information by accident.{waitForClick}
 {appendText}"IBF Visitor Registry: Coco Yagami"{waitForClick}
 {appendText}Coco's name had been listed.{waitForClick}
 {appendText}Looking further into the file was what seemed 
-like a personal memo written by somebody.{waitForClick}{nextPage x2}
+like a personal memo written by somebody.{waitForClick}{nextPage 04}
 
 [00001590]10: 
 [00001591]18: hideTextbox
@@ -2362,7 +2362,7 @@ in a while.'{waitForClick}
 {appendText}'Her school is on vacation, so she has a 
 10-day break.'{waitForClick}
 {appendText}'I've been trapped for so long in this tin 
-can doing virus research that I'm jealous....'{waitForClick}{nextPage x2}
+can doing virus research that I'm jealous....'{waitForClick}{nextPage 04}
 
 [00001597]10: 
 [00001598]18: hideTextbox
@@ -2378,7 +2378,7 @@ but I wonder how long it's been since we've
 actually seen each other?'{waitForClick}
 {appendText}'I'll just be happy if she hasn't forgotten 
 what I look like.'{waitForClick}
-{appendText}'T.Y'{waitForClick}{nextPage x2}
+{appendText}'T.Y'{waitForClick}{nextPage 04}
 
 [0000159e]10: 
 [0000159f]18: hideTextbox
@@ -2389,7 +2389,7 @@ what I look like.'{waitForClick}
 initials of Mr. Yagami, Coco's dad.{waitForClick}
 {appendText}Which meant that Coco had been to IBF once 
 before May 1.{waitForClick}
-{appendText}To meet her father...{waitForClick}{nextPage x2}
+{appendText}To meet her father...{waitForClick}{nextPage 04}
 
 [000015a5]10: 
 [000015a6]18: hideTextbox

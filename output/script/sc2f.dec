@@ -1,4 +1,4 @@
-﻿[00000036]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000036]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000041]fe 28 0a a4 b1 14 14 00 82 00 00: varop (28 0a a4) b1 := (00) 2
 [0000004c]fe 28 0a a4 b2 14 14 00 82 00 00: varop (28 0a a4) b2 := (00) 2
 [00000057]10: 
@@ -642,8 +642,8 @@ know who I was....{waitForClick}{clearText}{marker}{appendText}Where....was the 
 {marker}{appendText}
 
 
-{appendText}{delay 0}                 {nextPage x2}Who...are you?{nextPage x2}{delay 60}
-{appendText}{delay 0}                  {nextPage x2}Who...am I?{nextPage x2}{delay 60}{nextPage x2}
+{appendText}{delay 0}                 {nextPage 00}Who...are you?{nextPage 01}{delay 60}
+{appendText}{delay 0}                  {nextPage 00}Who...am I?{nextPage 01}{delay 60}{nextPage 04}
 
 [0000063a]10: 
 [0000063b]18: hideTextbox
@@ -666,8 +666,8 @@ know who I was....{waitForClick}{clearText}{marker}{appendText}Where....was the 
 {marker}{appendText}
 
 
-{appendText}{delay 0}                 {nextPage x2}Who...are you?{nextPage x2}{delay 60}
-{appendText}{delay 0}                  {nextPage x2}Who...am I?{nextPage x2}{delay 60}{nextPage x2}
+{appendText}{delay 0}                 {nextPage 00}Who...are you?{nextPage 01}{delay 60}
+{appendText}{delay 0}                  {nextPage 00}Who...am I?{nextPage 01}{delay 60}{nextPage 04}
 
 [00000662]10: 
 [00000663]18: hideTextbox
@@ -715,8 +715,8 @@ white darkness becoming me.{waitForClick}{clearText}{marker}{appendText}I was no
 {marker}{appendText}
 
 
-{appendText}{delay 0}                 {nextPage x2}Who...are you?{nextPage x2}{delay 60}
-{appendText}{delay 0}                  {nextPage x2}Who...am I?{nextPage x2}{delay 60}{nextPage x2}
+{appendText}{delay 0}                 {nextPage 00}Who...are you?{nextPage 01}{delay 60}
+{appendText}{delay 0}                  {nextPage 00}Who...am I?{nextPage 01}{delay 60}{nextPage 04}
 
 [000006c2]10: 
 [000006c3]18: hideTextbox

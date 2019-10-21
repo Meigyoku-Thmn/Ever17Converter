@@ -1,4 +1,4 @@
-﻿[00000022]10: 
+[00000022]10: 
 [00000023]46 80 00 00: setDialogBoxColor blue
 [00000027]fe 28 0a a4 fa 14 14 00 a0 5e 00 00: setSceneTitleByIndex 94
 [00000033]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
@@ -64,7 +64,7 @@ again and again.{waitForClick}{clearText}{marker}{appendText}Who...who was it...
 
 
 {sound S5A002}{appendText}{delay 0}                 You ran away!{waitForSound}
-{sound S5A003}{appendText}{delay 0}     You left that kid and ran away alone!{waitForSound}{nextPage x2}
+{sound S5A003}{appendText}{delay 0}     You left that kid and ran away alone!{waitForSound}{nextPage 04}
 
 [0000010f]10: 
 [00000110]18: hideTextbox
@@ -274,7 +274,7 @@ why I asked."{waitForClick}{clearText}{marker}{sound S5A009}{appendText}[Sara]
 
 {appendText}{delay 0}             (As if I would know!?){waitForClick}
 {appendText}{delay 0}         (Flailing around like that...){waitForClick}
-{appendText}{delay 0}    (Anyone would think you were drowning!){waitForClick}{nextPage x2}
+{appendText}{delay 0}    (Anyone would think you were drowning!){waitForClick}{nextPage 04}
 
 [000002fa]10: 
 [000002fb]18: hideTextbox
@@ -336,7 +336,7 @@ found a swimsuit in the changing room."{waitForClick}{clearText}
 Sara was decked out like a LeMU employee in a 
 one-piece swimsuit.{waitForClick}
 {appendText}I wondered why I hadn't noticed...{waitForClick}
-{appendText}I blushed with embarrassment.{waitForClick}{nextPage x2}
+{appendText}I blushed with embarrassment.{waitForClick}{nextPage 04}
 
 [00000380]10: 
 [00000381]18: hideTextbox
@@ -348,7 +348,7 @@ one-piece swimsuit.{waitForClick}
 more of a stretch to imagine her swimming than 
 drowning.{waitForClick}
 {appendText}Besides, the medicine was still affecting me...{waitForClick}
-{appendText}I was making up all kinds of excuses.{waitForClick}{nextPage x2}
+{appendText}I was making up all kinds of excuses.{waitForClick}{nextPage 04}
 
 [00000387]10: 
 [00000388]18: hideTextbox
@@ -788,7 +788,7 @@ in a swimsuit."{waitForClick}{clearText}{marker}{sound S5A078}{appendText}[Sara]
 {appendText}Truthfully though, Sara was something in a 
 swimsuit.{waitForClick}
 {appendText}But I couldn't tell her that.{waitForClick}
-{appendText}I didn't want her to get bigheaded.{waitForClick}{nextPage x2}
+{appendText}I didn't want her to get bigheaded.{waitForClick}{nextPage 04}
 
 [000006ad]10: 
 [000006ae]18: hideTextbox
@@ -1329,11 +1329,11 @@ seen. {waitForClick}{clearText}
 [00000bd9]10: 
 [00000bda]19: showTextbox
 [00000bdb]ff 59 00: text 59
-{marker}{appendText}{sound S3B105}{appendText}{delay 0}                {nextPage x2}Yeah, I promise.{nextPage x2}{waitForSound}
-{sound S3B106}{appendText}{delay 0}            {nextPage x2}To wait like a good girl.
-{appendText}{delay 0}          Until you come for me...{nextPage x2}{waitForSound}
-{sound S3B107}{appendText}{delay 0}        {nextPage x2}I'll wait...like a good girl...{nextPage x2}{waitForSound}
-{sound S3B108}{appendText}{delay 0}            {nextPage x2}I'll wait....forever...{nextPage x2}{waitForSound}{nextPage x2}
+{marker}{appendText}{sound S3B105}{appendText}{delay 0}                {nextPage 00}Yeah, I promise.{nextPage 01}{waitForSound}
+{sound S3B106}{appendText}{delay 0}            {nextPage 00}To wait like a good girl.
+{appendText}{delay 0}          Until you come for me...{nextPage 01}{waitForSound}
+{sound S3B107}{appendText}{delay 0}        {nextPage 00}I'll wait...like a good girl...{nextPage 01}{waitForSound}
+{sound S3B108}{appendText}{delay 0}            {nextPage 00}I'll wait....forever...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000bde]10: 
 [00000bdf]18: hideTextbox
@@ -1398,7 +1398,7 @@ seen. {waitForClick}{clearText}
 everyone...{waitForClick}
 {appendText}But it seemed like I wasn't the only one.{waitForClick}
 {appendText}The late start pushed our breakfast time back 
-later than always.{waitForClick}{nextPage x2}
+later than always.{waitForClick}{nextPage 04}
 
 [00000cc0]10: 
 [00000cc1]18: hideTextbox
@@ -2097,10 +2097,10 @@ something..."{waitForClick}{clearText}{marker}{appendText}I was sure I'd heard s
 [00001307]19: showTextbox
 [00001308]ff 9c 00: text 9c
 {marker}{appendText}
-{sound T5B019}{appendText}{delay 0}                    {nextPage x2}Carving.{nextPage x2}{waitForSound}
+{sound T5B019}{appendText}{delay 0}                    {nextPage 00}Carving.{nextPage 01}{waitForSound}
 {appendText}
 
-{sound T5B020}{appendText}{delay 0}               {nextPage x2}Chiseling away...{nextPage x2}{waitForSound}{nextPage x2}
+{sound T5B020}{appendText}{delay 0}               {nextPage 00}Chiseling away...{nextPage 01}{waitForSound}{nextPage 04}
 
 [0000130b]10: 
 [0000130c]18: hideTextbox
@@ -2131,7 +2131,7 @@ something..."{waitForClick}{clearText}{marker}{appendText}I was sure I'd heard s
 
 
 
-{sound T5B021}{appendText}{delay 0}     {nextPage x2}Cutting scars into this stone statue.{nextPage x2}{waitForSound}{nextPage x2}
+{sound T5B021}{appendText}{delay 0}     {nextPage 00}Cutting scars into this stone statue.{nextPage 01}{waitForSound}{nextPage 04}
 
 [0000134c]10: 
 [0000134d]18: hideTextbox
@@ -2304,7 +2304,7 @@ on the statue.{waitForClick}{clearText}{marker}{appendText}Without thinking I bl
 {marker}{appendText}
 
 
-{sound T5B048}{appendText}{delay 0}                      {nextPage x2}Okay{nextPage x2}{waitForSound}{nextPage x2}
+{sound T5B048}{appendText}{delay 0}                      {nextPage 00}Okay{nextPage 01}{waitForSound}{nextPage 04}
 
 [000014a8]10: 
 [000014a9]18: hideTextbox
@@ -2357,7 +2357,7 @@ to think of ways to escape...{waitForClick}
 ways to get out of our difficult situation.{waitForClick}
 {appendText}But it all was it vain. We made no 
 breakthroughs...{waitForClick}
-{appendText}The evening of the fifth rolled around.{waitForClick}{nextPage x2}
+{appendText}The evening of the fifth rolled around.{waitForClick}{nextPage 04}
 
 [00001538]10: 
 [00001539]18: hideTextbox

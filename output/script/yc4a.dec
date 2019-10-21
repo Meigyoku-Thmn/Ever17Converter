@@ -1,4 +1,4 @@
-﻿[00000066]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000066]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000071]fe 28 0a a4 b1 14 14 00 84 00 00: varop (28 0a a4) b1 := (00) 4
 [0000007c]fe 28 0a a4 b2 14 14 00 84 00 00: varop (28 0a a4) b2 := (00) 4
 [00000087]10: 
@@ -1411,7 +1411,7 @@ Room, I had kind of sensed it.{waitForClick}
 {appendText}Maybe I had already known it when I saved 
 Sara from the elevator.{waitForClick}
 {appendText}Maybe I had just pretended not to realize, 
-when in fact I really had...{waitForClick}{nextPage x2}
+when in fact I really had...{waitForClick}{nextPage 04}
 
 [00000bcc]10: 
 [00000bcd]18: hideTextbox
@@ -1427,7 +1427,7 @@ really "me."{waitForClick}
 {appendText}I knew I had to find out the truth, from the 
 moment I'd seen the pendant in the Whale 
 Room, especially after I noticing it had a 
-missing piece.{waitForClick}{nextPage x2}
+missing piece.{waitForClick}{nextPage 04}
 
 [00000bd3]10: 
 [00000bd4]18: hideTextbox
@@ -1440,7 +1440,7 @@ started wondering if I was her brother.{waitForClick}
 {appendText}Looking back on it, there were many times she 
 might have hinted at it.{waitForClick}
 {appendText}But all those moments had seemed to me that 
-she was half-joking.{waitForClick}{nextPage x2}
+she was half-joking.{waitForClick}{nextPage 04}
 
 [00000bda]10: 
 [00000bdb]18: hideTextbox
@@ -1453,7 +1453,7 @@ when I saw the image in the hologram.{waitForClick}
 nobody else could...{waitForClick}
 {appendText}But still, both Sara and I weren't certain 
 when we had been in the Whale Room.{waitForClick}
-{appendText}We needed definite proof.{waitForClick}{nextPage x2}
+{appendText}We needed definite proof.{waitForClick}{nextPage 04}
 
 [00000be1]10: 
 [00000be2]18: hideTextbox
@@ -1468,7 +1468,7 @@ from my thumb....{waitForClick}
 operation, so we decided to wake up You.{waitForClick}
 {appendText}At first You had no idea what we were talking 
 about, but as soon as she understood the 
-situation, she willingly agreed to help.{waitForClick}{nextPage x2}
+situation, she willingly agreed to help.{waitForClick}{nextPage 04}
 
 [00000be8]10: 
 [00000be9]18: hideTextbox
@@ -1482,7 +1482,7 @@ pendant exactly.{waitForClick}
 infrared light, an image of the same man in 
 the pendant came up.{waitForClick}
 {appendText}According to Sora, unlike a regular picture, a 
-hologram 'shows the whole image in a part'.{waitForClick}{nextPage x2}
+hologram 'shows the whole image in a part'.{waitForClick}{nextPage 04}
 
 [00000bef]10: 
 [00000bf0]18: hideTextbox
@@ -1496,7 +1496,7 @@ it.... {waitForClick}
 generate the whole image even from a tiny 
 piece.{waitForClick}
 {appendText}That is one of the special properties of a 
-hologram.{waitForClick}{nextPage x2}
+hologram.{waitForClick}{nextPage 04}
 
 [00000bf6]10: 
 [00000bf7]18: hideTextbox
@@ -1513,7 +1513,7 @@ called "infrared."{waitForClick}
 {appendText}Normal humans can't see light in this range.{waitForClick}
 {appendText}If you were able to see infrared, you would 
 be able to sense the temperature of an object 
-without actually touching it.{waitForClick}{nextPage x2}
+without actually touching it.{waitForClick}{nextPage 04}
 
 [00000bfd]10: 
 [00000bfe]18: hideTextbox
@@ -1528,7 +1528,7 @@ emitted from warmer objects, and weaker light
 from objects with a lower temperature.{waitForClick}
 {appendText}By sensing those things, you can tell the 
 location and shape of an object in the 
-darkness.{waitForClick}{nextPage x2}
+darkness.{waitForClick}{nextPage 04}
 
 [00000c04]10: 
 [00000c05]18: hideTextbox
@@ -1552,7 +1552,7 @@ darkness.{waitForClick}
 [00000c21]19: showTextbox
 [00000c22]ff 69 00: text 69
 {appendText}That was why I had been able to notice the 
-Generator Room door was hot.{waitForClick}{nextPage x2}
+Generator Room door was hot.{waitForClick}{nextPage 04}
 
 [00000c25]10: 
 [00000c26]18: hideTextbox
@@ -1564,7 +1564,7 @@ Generator Room door was hot.{waitForClick}{nextPage x2}
 {appendText}That was why I had noticed heat emanating 
 from the generating room door, and that was 
 why I had mistaken the light from the 
-inverter unit as moonlight.{waitForClick}{nextPage x2}
+inverter unit as moonlight.{waitForClick}{nextPage 04}
 
 [00000c30]10: 
 [00000c31]18: hideTextbox
@@ -1576,7 +1576,7 @@ inverter unit as moonlight.{waitForClick}{nextPage x2}
 {marker}{appendText}That was why Sara and I were able to see the 
 3D image in the pendant, which nobody else 
 could see.{waitForClick}
-{appendText}Why did we have this ability? I had no idea.{waitForClick}{nextPage x2}
+{appendText}Why did we have this ability? I had no idea.{waitForClick}{nextPage 04}
 
 [00000c3b]10: 
 [00000c3c]18: hideTextbox
@@ -1589,7 +1589,7 @@ ability passed on genetically.{waitForClick}
 possible that Sara and I had the same parents.{waitForClick}
 {appendText}That's when it became almost certain that 
 Sara and I were brother and sister, but 
-still...something seemed to be missing.{waitForClick}{nextPage x2}
+still...something seemed to be missing.{waitForClick}{nextPage 04}
 
 [00000c42]10: 
 [00000c43]18: hideTextbox
@@ -1598,7 +1598,7 @@ still...something seemed to be missing.{waitForClick}{nextPage x2}
 [00000c46]ff 6d 00: text 6d
 {marker}{appendText}We took a DNA test with the repaired L-MRI.{waitForClick}
 {appendText}The result showed that Sara and I were blood 
-relatives with a 99.99999% certainty.{waitForClick}{nextPage x2}
+relatives with a 99.99999% certainty.{waitForClick}{nextPage 04}
 
 [00000c49]10: 
 [00000c4a]18: hideTextbox
@@ -1611,7 +1611,7 @@ childhood started to flood back.{waitForClick}
 {appendText}They rocked me like an explosion.{waitForClick}
 {appendText}All of the memories that had been the dammed 
 up flooded out at once, their bombardment 
-rendering me unconscious again.{waitForClick}{nextPage x2}
+rendering me unconscious again.{waitForClick}{nextPage 04}
 
 [00000c50]10: 
 [00000c51]18: hideTextbox
@@ -1623,7 +1623,7 @@ to me.{waitForClick}
 {appendText}Sara...my one and only sister....{waitForClick}
 {appendText}We were fraternal twins....{waitForClick}
 {appendText}I recalled the bittersweet memories of the 
-days we had spent together.{waitForClick}{nextPage x2}
+days we had spent together.{waitForClick}{nextPage 04}
 
 [00000c57]10: 
 [00000c58]18: hideTextbox

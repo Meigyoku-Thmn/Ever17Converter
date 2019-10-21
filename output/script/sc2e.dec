@@ -1,4 +1,4 @@
-﻿[00000016]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
+[00000016]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
 [00000021]fe 28 0a a4 b1 14 14 00 80 00 00: varop (28 0a a4) b1 := (00) 0
 [0000002c]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
 [00000037]fe 28 0a a4 fa 14 14 00 a0 69 00 00: setSceneTitleByIndex 105
@@ -140,9 +140,9 @@ Room...{waitForClick}{clearText}
 [00000206]ff 08 00: text 08
 {marker}{appendText}
 
-{appendText}{delay 0}                  {nextPage x2}I...I...I...{nextPage x2}{waitForClick}
-{appendText}{delay 0}                 {nextPage x2}I...am here...{nextPage x2}{waitForClick}
-{appendText}{delay 0}         {nextPage x2}I have been here...forever...{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}                  {nextPage 00}I...I...I...{nextPage 01}{waitForClick}
+{appendText}{delay 0}                 {nextPage 00}I...am here...{nextPage 01}{waitForClick}
+{appendText}{delay 0}         {nextPage 00}I have been here...forever...{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000209]10: 
 [0000020a]18: hideTextbox
@@ -368,7 +368,7 @@ my memory.{waitForClick}
 {appendText}I didn't know my name, age, address, or even 
 why I was here.{waitForClick}
 {appendText}The person who had looked after me had been 
-You.{waitForClick}{nextPage x2}
+You.{waitForClick}{nextPage 04}
 
 [00000411]10: 
 [00000412]18: hideTextbox
@@ -381,7 +381,7 @@ through the complex searching for an exit.{waitForClick}
 and barely escaped death. Then we found Sara 
 and rescued her from the elevator...{waitForClick}
 {appendText}Oh, and I remembered that I had blurted out 
-something crazy...{waitForClick}{nextPage x2}
+something crazy...{waitForClick}{nextPage 04}
 
 [00000418]10: 
 [00000419]18: hideTextbox
@@ -509,7 +509,7 @@ contemplate escape routes.{waitForClick}
 displaying bizarre numbers for the 
 number of people in LeMU.{waitForClick}
 {appendText}I had another experience similar to the one 
-with Sara.{waitForClick}{nextPage x2}
+with Sara.{waitForClick}{nextPage 04}
 
 [00000596]10: 
 [00000597]18: hideTextbox
@@ -670,7 +670,7 @@ was an RSD-generated image...{waitForClick}{clearText}
 phenomena...premonitions.{waitForClick}
 {appendText}
 {appendText}And there was an even more unbelievable scene 
-that I had stumbled upon.{waitForClick}{nextPage x2}
+that I had stumbled upon.{waitForClick}{nextPage 04}
 
 [00000761]10: 
 [00000762]18: hideTextbox
@@ -767,7 +767,7 @@ where we had spent the night.{waitForClick}
 before I had laid down and started thinking 
 this all out.{waitForClick}
 {appendText}After a sudden blackout, we went to fix the 
-generator.{waitForClick}{nextPage x2}
+generator.{waitForClick}{nextPage 04}
 
 [0000084f]10: 
 [00000850]18: hideTextbox
@@ -874,7 +874,7 @@ kick the can in the dark.{waitForClick}
 {appendText}Takeshi was 'it' again and again, but finally 
 my turn came.{waitForClick}
 {appendText}I had found everyone, one after another, 
-in the dark...{waitForClick}{nextPage x2}
+in the dark...{waitForClick}{nextPage 04}
 
 [00000950]10: 
 [00000951]18: hideTextbox
@@ -885,7 +885,7 @@ in the dark...{waitForClick}{nextPage x2}
 can being kicked rang out through the 
 Conference Room...{waitForClick}
 {appendText}And just that moment I had felt that 
-something was not right.{waitForClick}{nextPage x2}
+something was not right.{waitForClick}{nextPage 04}
 
 [00000957]10: 
 [00000958]18: hideTextbox

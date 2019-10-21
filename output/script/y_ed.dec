@@ -1,4 +1,4 @@
-﻿[00000132]00: 
+[00000132]00: 
 [00000133]0a 01 28 0a a4 b3 14 0c 01 81 01 00 44 00: gotoif 1 (28 0a a4) b3 == (01) 1 (0001) -> 00000feb (00000044)
 [00000141]10: 
 [00000142]24 a1 0c 00 00: scriptLocationId 268
@@ -850,7 +850,7 @@ switch_varop (28 0a a4) c7 0014 (00)
 [00000f34]10: 
 [00000f35]19: showTextbox
 [00000f36]ff 02 00: text 02
-{marker}{appendText}{nextPage x2}
+{marker}{appendText}{nextPage 04}
 
 [00000f39]10: 
 [00000f3a]18: hideTextbox
@@ -879,8 +879,8 @@ switch_varop (28 0a a4) c7 0014 (00)
 [00000f73]10: 
 [00000f74]19: showTextbox
 [00000f75]ff 04 00: text 04
-{marker}{appendText}{delay 0}         {nextPage x2}This story is not an end yet.{nextPage x2}
-{marker}{appendText}{delay 0}   {nextPage x2}Because only you are in the infinity loop.{nextPage x2}{marker}{appendText}{delay 90}{delay 90}{delay 90}{nextPage x2}
+{marker}{appendText}{delay 0}         {nextPage 00}This story is not an end yet.{nextPage 01}
+{marker}{appendText}{delay 0}   {nextPage 00}Because only you are in the infinity loop.{nextPage 01}{marker}{appendText}{delay 90}{delay 90}{delay 90}{nextPage 04}
 
 [00000f78]10: 
 [00000f79]18: hideTextbox
@@ -919,8 +919,8 @@ switch_varop (28 0a a4) c7 0014 (00)
 
 
 
-{marker}{appendText}{delay 0}         {nextPage x2}This story is not an end yet.{nextPage x2}
-{marker}{appendText}{delay 0}   {nextPage x2}Because only you are in the infinity loop.{nextPage x2}{marker}{appendText}{delay 90}{delay 90}{delay 90}{nextPage x2}
+{marker}{appendText}{delay 0}         {nextPage 00}This story is not an end yet.{nextPage 01}
+{marker}{appendText}{delay 0}   {nextPage 00}Because only you are in the infinity loop.{nextPage 01}{marker}{appendText}{delay 90}{delay 90}{delay 90}{nextPage 04}
 
 [00001002]10: 
 [00001003]18: hideTextbox

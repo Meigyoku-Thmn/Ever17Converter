@@ -1,4 +1,4 @@
-﻿[0000001a]10: 
+[0000001a]10: 
 [0000001b]46 80 00 00: setDialogBoxColor blue
 [0000001f]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
 [0000002a]fe 28 0a a4 b1 14 14 00 80 00 00: varop (28 0a a4) b1 := (00) 0
@@ -277,7 +277,7 @@ you would like to ask?"{waitForClick}{clearText}{marker}{appendText}[Kid]
 [00000215]19: showTextbox
 [00000216]ff 0b 00: text 0b
 {marker}{appendText}After a while, we asked Dr. Tanaka question 
-after question.{waitForClick}{nextPage x2}
+after question.{waitForClick}{nextPage 04}
 
 [00000219]10: 
 [0000021a]18: hideTextbox
@@ -291,7 +291,7 @@ after question.{waitForClick}{nextPage x2}
 {appendText}...What had happened in my past?{waitForClick}
 {appendText}...Did the girl I'd seen really exist? 
 Who was she?{waitForClick}
-{appendText}...What had happened in You's past?{waitForClick}{nextPage x2}
+{appendText}...What had happened in You's past?{waitForClick}{nextPage 04}
 
 [00000220]10: 
 [00000221]18: hideTextbox
@@ -306,7 +306,7 @@ poem password?{waitForClick}
 {appendText}...What was Blick Winkel?{waitForClick}
 {appendText}...What was the connection between the 
 TB virus and the accident?{waitForClick}
-{appendText}And...{waitForClick}{nextPage x2}
+{appendText}And...{waitForClick}{nextPage 04}
 
 [00000227]10: 
 [00000228]18: hideTextbox
@@ -316,7 +316,7 @@ TB virus and the accident?{waitForClick}
 {marker}{appendText}What was 'the third eye?'{waitForClick}
 {appendText}...............{waitForClick}
 {appendText}.........{waitForClick}
-{appendText}......{waitForClick}{nextPage x2}
+{appendText}......{waitForClick}{nextPage 04}
 
 [0000022e]10: 
 [0000022f]18: hideTextbox
@@ -327,7 +327,7 @@ TB virus and the accident?{waitForClick}
 
 
 
-{appendText}{delay 0}           It was a long, long story.{waitForClick}{nextPage x2}
+{appendText}{delay 0}           It was a long, long story.{waitForClick}{nextPage 04}
 
 [00000235]10: 
 [00000236]18: hideTextbox
@@ -436,7 +436,7 @@ and even the color of her heart.{waitForClick}{clearText}{marker}{appendText}I c
 [00000318]10: 
 [00000319]19: showTextbox
 [0000031a]ff 13 00: text 13
-{marker}{appendText}{nextPage x2}
+{marker}{appendText}{nextPage 04}
 
 [0000031d]10: 
 [0000031e]18: hideTextbox

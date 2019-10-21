@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]46 80 00 00: setDialogBoxColor blue
 [0000001b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000026]fe 28 0a a4 b1 14 14 00 83 00 00: varop (28 0a a4) b1 := (00) 3
@@ -1014,7 +1014,7 @@ wall.{waitForClick}{clearText}
 
 
 
-{sound S3B087}{appendText}{delay 0}                {nextPage x2}Ouch....ouch...{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B087}{appendText}{delay 0}                {nextPage 00}Ouch....ouch...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000a73]10: 
 [00000a74]18: hideTextbox
@@ -1046,7 +1046,7 @@ darkness.{waitForClick}{clearText}{marker}{appendText}And then I heard...{waitFo
 
 
 
-{sound S3B088}{appendText}{delay 0}             {nextPage x2}Shut up! Quit whining!{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B088}{appendText}{delay 0}             {nextPage 00}Shut up! Quit whining!{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000ab1]10: 
 [00000ab2]18: hideTextbox
@@ -1072,7 +1072,7 @@ concrete and was crying even harder.{waitForClick}{clearText}
 
 
 
-{sound S3B089}{appendText}{delay 0}                {nextPage x2}Owwww! It hurts!{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B089}{appendText}{delay 0}                {nextPage 00}Owwww! It hurts!{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000ad9]10: 
 [00000ada]18: hideTextbox
@@ -1083,7 +1083,7 @@ concrete and was crying even harder.{waitForClick}{clearText}
 
 
 
-{sound S3B090}{appendText}{delay 0}               {nextPage x2}Help....Someone...{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B090}{appendText}{delay 0}               {nextPage 00}Help....Someone...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000ae0]10: 
 [00000ae1]18: hideTextbox
@@ -1108,8 +1108,8 @@ head.{waitForClick}{clearText}
 
 
 
-{sound S3B091}{appendText}{delay 0}              {nextPage x2}I'm sorry, I'm sorry -
-{appendText}{delay 0}         I'm sorry, I'm sorry, I'm sorry -{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B091}{appendText}{delay 0}              {nextPage 00}I'm sorry, I'm sorry -
+{appendText}{delay 0}         I'm sorry, I'm sorry, I'm sorry -{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000b08]10: 
 [00000b09]18: hideTextbox
@@ -1159,7 +1159,7 @@ floor jumped back into my mind.{waitForClick}{clearText}
 
 
 
-{sound S3B092}{appendText}{delay 0}                {nextPage x2}Ouch...Owwwww...{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B092}{appendText}{delay 0}                {nextPage 00}Ouch...Owwwww...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000b72]10: 
 [00000b73]18: hideTextbox
@@ -1185,7 +1185,7 @@ it felt heavy and strange on the skin.{waitForClick}{clearText}
 
 
 
-{sound S3B093}{appendText}{delay 0}                   {nextPage x2}Help me...{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B093}{appendText}{delay 0}                   {nextPage 00}Help me...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000b9a]10: 
 [00000b9b]18: hideTextbox
@@ -1209,7 +1209,7 @@ it felt heavy and strange on the skin.{waitForClick}{clearText}
 
 
 
-{sound S3B094}{appendText}{delay 0}               {nextPage x2}Help...help me...{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B094}{appendText}{delay 0}               {nextPage 00}Help...help me...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000bc2]10: 
 [00000bc3]18: hideTextbox
@@ -1336,7 +1336,7 @@ girl's voice.{waitForClick}{clearText}
 
 {sound S3B104}{appendText}{delay 0}       You bought happiness for yourself. 
 {appendText}{delay 0}     You traded it for that girl's life... 
-{appendText}{delay 0}                A, HA, HA, HA...{waitForSound}{nextPage x2}
+{appendText}{delay 0}                A, HA, HA, HA...{waitForSound}{nextPage 04}
 
 [00000c87]10: 
 [00000c88]18: hideTextbox
@@ -1374,7 +1374,7 @@ no...no...no...no...no...no...no."{waitForClick}{clearText}
 
 
 
-{sound S3B105}{appendText}{delay 0}                {nextPage x2}Yeah, I promise.{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B105}{appendText}{delay 0}                {nextPage 00}Yeah, I promise.{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000cda]10: 
 [00000cdb]18: hideTextbox
@@ -1385,7 +1385,7 @@ no...no...no...no...no...no...no."{waitForClick}{clearText}
 
 
 
-{sound S3B106}{appendText}{delay 0} {nextPage x2}To wait like a good kid until you come for me.{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B106}{appendText}{delay 0} {nextPage 00}To wait like a good kid until you come for me.{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000ce1]10: 
 [00000ce2]18: hideTextbox
@@ -1396,7 +1396,7 @@ no...no...no...no...no...no...no."{waitForClick}{clearText}
 
 
 
-{sound S3B107}{appendText}{delay 0}        {nextPage x2}I'll wait...like a good girl....{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B107}{appendText}{delay 0}        {nextPage 00}I'll wait...like a good girl....{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000ce8]10: 
 [00000ce9]18: hideTextbox
@@ -1407,7 +1407,7 @@ no...no...no...no...no...no...no."{waitForClick}{clearText}
 
 
 
-{sound S3B108}{appendText}{delay 0}            {nextPage x2}I'll wait....forever...{nextPage x2}{waitForSound}{nextPage x2}
+{sound S3B108}{appendText}{delay 0}            {nextPage 00}I'll wait....forever...{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000cef]10: 
 [00000cf0]18: hideTextbox

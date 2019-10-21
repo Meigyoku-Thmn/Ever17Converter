@@ -1,4 +1,4 @@
-﻿[0000001e]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[0000001e]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000029]fe 28 0a a4 b1 14 14 00 86 00 00: varop (28 0a a4) b1 := (00) 6
 [00000034]fe 28 0a a4 b2 14 14 00 86 00 00: varop (28 0a a4) b2 := (00) 6
 [0000003f]10: 
@@ -2699,7 +2699,7 @@ area before me.{delay 30}{waitForClick}
 {appendText}I wondered how many more feet it was, but my 
 body remembered.{delay 30}{waitForClick}
 {appendText}Even if I closed my eyes, I knew I could make 
-it there.{waitForClick}{nextPage x2}
+it there.{waitForClick}{nextPage 04}
 
 [00001753]10: 
 [00001754]18: hideTextbox
@@ -2715,7 +2715,7 @@ afraid of...{delay 30}{waitForClick}
 {appendText}I would take the darkness inside of me, and 
 make it my own...{delay 30}{waitForClick}
 {appendText}That's why I wasn't afraid.{delay 30}{waitForClick}
-{appendText}There was nothing to be afraid of.{waitForClick}{nextPage x2}
+{appendText}There was nothing to be afraid of.{waitForClick}{nextPage 04}
 
 [0000175a]10: 
 [0000175b]18: hideTextbox

@@ -1,4 +1,4 @@
-﻿[00000072]00: 
+[00000072]00: 
 [00000073]0a 01 28 0a a4 b3 14 0c 01 81 01 00 17 00: gotoif 1 (28 0a a4) b3 == (01) 1 (0001) -> 00002436 (00000017)
 [00000081]10: 
 [00000082]24 a0 39 00 00: scriptLocationId 57
@@ -1493,7 +1493,7 @@ to provide an answer.{waitForClick}
 {appendText}
 {appendText}That was it. I'd lost my memory when I fell 
 into the pond at the rest area!{waitForClick}
-{appendText}That had to be it.{waitForClick}{nextPage x2}
+{appendText}That had to be it.{waitForClick}{nextPage 04}
 
 [00000f33]10: 
 [00000f34]18: hideTextbox
@@ -1505,7 +1505,7 @@ into the pond at the rest area!{waitForClick}
 {appendText}So that tumble into the pond was the line 
 between my memory and non-memory.{waitForClick}
 {appendText}
-{delay 30}{appendText}{nextPage x2}My consciousness was cut off at that moment.{nextPage x2}{delay 60}{nextPage x2}
+{delay 30}{appendText}{nextPage 00}My consciousness was cut off at that moment.{nextPage 01}{delay 60}{nextPage 04}
 
 [00000f3a]10: 
 [00000f3b]18: hideTextbox
@@ -2955,7 +2955,7 @@ were two key points.{waitForClick}
 {appendText}1: The reason for the complex blackout was 
 unclear.{waitForClick}
 {appendText}2: The reason for the drop in air pressure 
-was that we had sprung a leak.{waitForClick}{nextPage x2}
+was that we had sprung a leak.{waitForClick}{nextPage 04}
 
 [00001d36]10: 
 [00001d37]18: hideTextbox

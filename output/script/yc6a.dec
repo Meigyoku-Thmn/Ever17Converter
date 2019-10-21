@@ -1,4 +1,4 @@
-﻿[0000001a]10: 
+[0000001a]10: 
 [0000001b]18: hideTextbox
 [0000001c]10: 
 [0000001d]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
@@ -669,7 +669,7 @@ feverish.{waitForClick}{clearText}{marker}{appendText}Just then...{waitForClick}
 [000005c3]19: showTextbox
 [000005c4]ff 2a 00: text 2a
 {marker}{sound C6A018A}{appendText}[Announcement]
-"ﾖffnen Sie {waitForSound}{sound C6A018B}{appendText}die T・r von HIMMEL"{waitForClick}{clearText}
+"ﾖffnen Sie {waitForSound}{sound C6A018B}{appendText}die T�r von HIMMEL"{waitForClick}{clearText}
 
 [000005c7]10: 
 [000005c8]0f 81 00 00 00 00 00 00 22 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA01ADM 128 3
@@ -1265,7 +1265,7 @@ nobody stationed at them.{waitForClick}
 some of the information there.{waitForClick}
 {appendText}They were searching for any information that 
 they could use, and finally came across 
-something interesting.{waitForClick}{nextPage x2}
+something interesting.{waitForClick}{nextPage 04}
 
 [00000b22]10: 
 [00000b23]18: hideTextbox
@@ -1276,7 +1276,7 @@ something interesting.{waitForClick}{nextPage x2}
 {appendText}Coco's name was listed in the corner of a 
 business log.{waitForClick}
 {appendText}Looking further into the file, there seemed 
-to be a personal memo written by somebody.{waitForClick}{nextPage x2}
+to be a personal memo written by somebody.{waitForClick}{nextPage 04}
 
 [00000b29]10: 
 [00000b2a]18: hideTextbox
@@ -1289,7 +1289,7 @@ in a while.'{waitForClick}
 {appendText}'Her school is on vacation, so she has a 
 10-day break.'{waitForClick}
 {appendText}'I've been trapped for so long in this tin 
-can doing virus research that I'm jealous....'{waitForClick}{nextPage x2}
+can doing virus research that I'm jealous....'{waitForClick}{nextPage 04}
 
 [00000b30]10: 
 [00000b31]18: hideTextbox
@@ -1304,7 +1304,7 @@ saying she would.'{waitForClick}
 but I wonder how long it's been since we've 
 actually seen each other?'{waitForClick}
 {appendText}'I'll just be happy if she hasn't forgotten 
-what I look like.'{waitForClick}{nextPage x2}
+what I look like.'{waitForClick}{nextPage 04}
 
 [00000b37]10: 
 [00000b38]18: hideTextbox
@@ -1313,7 +1313,7 @@ what I look like.'{waitForClick}{nextPage x2}
 [00000b3b]ff 63 00: text 63
 {marker}{appendText}Which meant that Coco had been to visit IBF 
 once before May 1st.{waitForClick}
-{appendText}To see her father...{waitForClick}{nextPage x2}
+{appendText}To see her father...{waitForClick}{nextPage 04}
 
 [00000b3e]10: 
 [00000b3f]18: hideTextbox
@@ -1323,7 +1323,7 @@ once before May 1st.{waitForClick}
 {marker}{appendText}"Postscript—"{waitForClick}
 {appendText}'It seems like T.Y.'s daughter is working 
 part-time here at LeMU. I'm still not sure if 
-I should tell him or...'{waitForClick}{nextPage x2}
+I should tell him or...'{waitForClick}{nextPage 04}
 
 [00000b45]10: 
 [00000b46]18: hideTextbox
@@ -1332,7 +1332,7 @@ I should tell him or...'{waitForClick}{nextPage x2}
 [00000b49]ff 65 00: text 65
 {marker}{appendText}After that point all the data was corrupted, 
 making it impossible to check what else had 
-been written.{waitForClick}{nextPage x2}
+been written.{waitForClick}{nextPage 04}
 
 [00000b4c]10: 
 [00000b4d]18: hideTextbox

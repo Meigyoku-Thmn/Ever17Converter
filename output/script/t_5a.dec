@@ -1,4 +1,4 @@
-﻿[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000051]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
 [0000005c]fe 28 0a a4 b2 14 14 00 85 00 00: varop (28 0a a4) b2 := (00) 5
 [00000067]10: 
@@ -37,7 +37,7 @@
 {appendText}I could find nothing by which to judge 
 distance.{delay 30}{waitForClick}
 {appendText}I searched for light, but couldn't even see 
-the movement of my body.{waitForClick}{nextPage x2}
+the movement of my body.{waitForClick}{nextPage 04}
 
 [000000f3]10: 
 [000000f4]18: hideTextbox
@@ -51,7 +51,7 @@ the movement of my body.{waitForClick}{nextPage x2}
 {appendText}And so I fell.{delay 30}{waitForClick}
 {appendText}I fell.{delay 30}{waitForClick}
 {appendText}Deeper and deeper, I sank into the void.{delay 30}{waitForClick}
-{appendText}Further and further.{waitForClick}{nextPage x2}
+{appendText}Further and further.{waitForClick}{nextPage 04}
 
 [00000100]10: 
 [00000101]18: hideTextbox
@@ -68,7 +68,7 @@ the movement of my body.{waitForClick}{nextPage x2}
 coming toward me.{delay 30}{waitForClick}
 {appendText}It approached me at a terrifying speed.{delay 30}{waitForClick}
 {appendText}But there was no sound.{delay 30}{waitForClick}
-{appendText}Yet it was creeping closer and closer.{waitForClick}{nextPage x2}
+{appendText}Yet it was creeping closer and closer.{waitForClick}{nextPage 04}
 
 [00000126]10: 
 [00000127]18: hideTextbox
@@ -81,7 +81,7 @@ coming toward me.{delay 30}{waitForClick}
 {appendText}It seeped completely into me.{delay 30}{waitForClick}
 {appendText}It was strange, but there was no feel to it.{delay 30}{waitForClick}
 {appendText}The blackness invaded and settled inside me.{delay 30}{waitForClick}
-{appendText}It overtook me, never to part again.{waitForClick}{nextPage x2}
+{appendText}It overtook me, never to part again.{waitForClick}{nextPage 04}
 
 [0000012d]10: 
 [0000012e]18: hideTextbox
@@ -95,7 +95,7 @@ coming toward me.{delay 30}{waitForClick}
 {appendText}(My body, becoming the darkness itself...){delay 30}{waitForClick}
 {appendText}The void was endless, it had no ceiling.{delay 30}{waitForClick}
 {appendText}Nothing existed to cover it.{delay 30}{waitForClick}
-{appendText}It was an abyss.{waitForClick}{nextPage x2}
+{appendText}It was an abyss.{waitForClick}{nextPage 04}
 
 [0000013a]10: 
 [0000013b]18: hideTextbox
@@ -115,7 +115,7 @@ coming toward me.{delay 30}{waitForClick}
 {appendText}Everyone dies.{delay 30}{waitForClick}
 {appendText}I was dying.{delay 30}{waitForClick}
 {appendText}I was dead.{delay 30}{waitForClick}
-{appendText}Death.{waitForClick}{nextPage x2}
+{appendText}Death.{waitForClick}{nextPage 04}
 
 [00000162]10: 
 [00000163]18: hideTextbox
@@ -822,7 +822,7 @@ continuous, linear, cohesive individual.{delay 30}{waitForClick}
 'me' running around in elementary school and 
 finally, the 'me' sitting there...they were 
 all the same organism called 'Kuranari 
-Takeshi.'{waitForClick}{nextPage x2}
+Takeshi.'{waitForClick}{nextPage 04}
 
 [000006f1]10: 
 [000006f2]18: hideTextbox
@@ -834,7 +834,7 @@ exist?{delay 30}{waitForClick}
 {appendText}In the past, people thought the soul existed 
 in a person's heart.{delay 30}{waitForClick}
 {appendText}Descartes believed the soul inhabited the 
-pineal gland in the brain.{waitForClick}{nextPage x2}
+pineal gland in the brain.{waitForClick}{nextPage 04}
 
 [000006f8]10: 
 [000006f9]18: hideTextbox
@@ -850,7 +850,7 @@ no longer 'Kuranari Takeshi?'{delay 30}{waitForClick}
 {appendText}Thoughts? Senses? Emotions? Sensations? 
 Character? Values?{delay 30}{waitForClick}
 {appendText}All of those things were nothing but functions 
-of the organ called the brain.{waitForClick}{nextPage x2}
+of the organ called the brain.{waitForClick}{nextPage 04}
 
 [000006ff]10: 
 [00000700]18: hideTextbox
@@ -864,7 +864,7 @@ molecules than the 'me' there.{delay 30}{waitForClick}
 younger 'me' was entirely different than my 
 older 'me.'{delay 30}{waitForClick}
 {appendText}Cells die and are replaced daily.{delay 30}{waitForClick}
-{appendText}Every cell that is replaced will also die.{waitForClick}{nextPage x2}
+{appendText}Every cell that is replaced will also die.{waitForClick}{nextPage 04}
 
 [00000706]10: 
 [00000707]18: hideTextbox
@@ -879,7 +879,7 @@ exact same molecules five years before, or
 five years hence. {delay 30}{waitForClick}
 {appendText}But a human body was different.{delay 30}{waitForClick}
 {appendText}The cells of 'me' five years ago were not the 
-same as the cells of 'me' then.{waitForClick}{nextPage x2}
+same as the cells of 'me' then.{waitForClick}{nextPage 04}
 
 [0000070d]10: 
 [0000070e]18: hideTextbox
@@ -889,7 +889,7 @@ same as the cells of 'me' then.{waitForClick}{nextPage x2}
 {marker}{appendText}Even so, the 'me' of five years before and the 
 'me' then were definitely the same.{delay 30}{waitForClick}
 {appendText}Then, just what was it that defined 'me'?{delay 30}{waitForClick}
-{appendText}And where did that 'me' exist...?{waitForClick}{nextPage x2}
+{appendText}And where did that 'me' exist...?{waitForClick}{nextPage 04}
 
 [00000714]10: 
 [00000715]18: hideTextbox

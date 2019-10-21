@@ -1,4 +1,4 @@
-﻿[00000036]10: 
+[00000036]10: 
 [00000037]46 80 00 00: setDialogBoxColor blue
 [0000003b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000046]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
@@ -496,7 +496,7 @@ time..."{waitForClick}{clearText}{marker}{sound Y5A067}{appendText}[You]
 
 
 
-{appendText}{delay 0}              'Life readings: 7'{waitForClick}{nextPage x2}
+{appendText}{delay 0}              'Life readings: 7'{waitForClick}{nextPage 04}
 
 [00000381]10: 
 [00000382]18: hideTextbox
@@ -574,7 +574,7 @@ good mornings as if everything were normal.{waitForClick}
 {appendText}It seemed like she wanted to act as if things 
 were the same as always in front of everybody 
 else.{waitForClick}
-{appendText}So I did my best to follow suit.{waitForClick}{nextPage x2}
+{appendText}So I did my best to follow suit.{waitForClick}{nextPage 04}
 
 [0000040b]10: 
 [0000040c]18: hideTextbox
@@ -1241,7 +1241,7 @@ and sleep.{waitForClick}
 {appendText}It wasn't that I was feeling ill.{waitForClick}
 {appendText}It was simply that I was not getting enough 
 sleep. I wanted some quality rest.{waitForClick}
-{appendText}I slept so deeply that I didn't even dream...{waitForClick}{nextPage x2}
+{appendText}I slept so deeply that I didn't even dream...{waitForClick}{nextPage 04}
 
 [0000094d]10: 
 [0000094e]18: hideTextbox
@@ -1249,7 +1249,7 @@ sleep. I wanted some quality rest.{waitForClick}
 [00000950]19: showTextbox
 [00000951]ff 5a 00: text 5a
 {marker}{appendText}When I awoke it was already around evening.{waitForClick}
-{appendText}There was a memo by the bed.{waitForClick}{nextPage x2}
+{appendText}There was a memo by the bed.{waitForClick}{nextPage 04}
 
 [00000954]10: 
 [00000955]18: hideTextbox
@@ -1270,7 +1270,7 @@ the last couple days.{waitForClick}
 [0000095d]ff 5c 00: text 5c
 {appendText}
 {appendText}Judging from the signature, it seemed that 
-You had left it.{waitForClick}{nextPage x2}
+You had left it.{waitForClick}{nextPage 04}
 
 [00000960]10: 
 [00000961]18: hideTextbox
@@ -1674,7 +1674,7 @@ to the infirmary.{waitForClick}{clearText}
 {appendText}The odd things going on.{waitForClick}
 {appendText}Things I couldn't figure out.{waitForClick}
 {appendText}Things I needed to find out.{waitForClick}
-{appendText}Things I needed to decide.{waitForClick}{nextPage x2}
+{appendText}Things I needed to decide.{waitForClick}{nextPage 04}
 
 [00000d61]10: 
 [00000d62]18: hideTextbox
@@ -1685,7 +1685,7 @@ to the infirmary.{waitForClick}{clearText}
 about all rushed in to my mind at once, making 
 it a confused mess.{waitForClick}
 {appendText}I couldn't help thinking...and 
-worrying...about things.{waitForClick}{nextPage x2}
+worrying...about things.{waitForClick}{nextPage 04}
 
 [00000d68]10: 
 [00000d69]18: hideTextbox
@@ -1698,7 +1698,7 @@ wasn't You's father?{waitForClick}
 {appendText}Then who was her real father?{waitForClick}
 {appendText}Was the woman that died 15 years before really 
 You's mother?{waitForClick}
-{appendText}If not, then who was?{waitForClick}{nextPage x2}
+{appendText}If not, then who was?{waitForClick}{nextPage 04}
 
 [00000d6f]10: 
 [00000d70]18: hideTextbox
@@ -1713,7 +1713,7 @@ Sara for her?{waitForClick}
 {appendText}Why had I even lost my memory in the 
 first place?{waitForClick}
 {appendText}What had happened to me in my past?{waitForClick}
-{appendText}What did Tsugumi know about all of this?{waitForClick}{nextPage x2}
+{appendText}What did Tsugumi know about all of this?{waitForClick}{nextPage 04}
 
 [00000d76]10: 
 [00000d77]18: hideTextbox
@@ -1723,7 +1723,7 @@ first place?{waitForClick}
 {marker}{appendText}And...{waitForClick}
 {appendText}Why were we all trapped in LeMU?{waitForClick}
 {appendText}Was it just an accident?{waitForClick}
-{appendText}Or something else...{waitForClick}{nextPage x2}
+{appendText}Or something else...{waitForClick}{nextPage 04}
 
 [00000d7d]10: 
 [00000d7e]18: hideTextbox

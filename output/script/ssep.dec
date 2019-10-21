@@ -1,4 +1,4 @@
-﻿[00000022]10: 
+[00000022]10: 
 [00000023]46 80 00 00: setDialogBoxColor blue
 [00000027]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000032]fe 28 0a a4 b1 14 14 00 87 00 00: varop (28 0a a4) b1 := (00) 7
@@ -162,7 +162,7 @@ impossible...{waitForClick}{clearText}
 
 {appendText}{delay 0}           Even Sora could be wrong.{waitForClick}
 {appendText}
-{appendText}{delay 0}         We were able to swim it, Sora.{waitForClick}{nextPage x2}
+{appendText}{delay 0}         We were able to swim it, Sora.{waitForClick}{nextPage 04}
 
 [000001ef]10: 
 [000001f0]18: hideTextbox
@@ -176,7 +176,7 @@ the blackout...?{waitForClick}
 {appendText}
 {appendText}No. Sora was RSD-generated.{waitForClick}
 {appendText}She wasn't human.{waitForClick}
-{appendText}She couldn't die.{waitForClick}{nextPage x2}
+{appendText}She couldn't die.{waitForClick}{nextPage 04}
 
 [000001f6]10: 
 [000001f7]18: hideTextbox

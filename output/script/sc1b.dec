@@ -1,4 +1,4 @@
-﻿[0000001d]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[0000001d]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000028]fe 28 0a a4 b1 14 14 00 81 00 00: varop (28 0a a4) b1 := (00) 1
 [00000033]fe 28 0a a4 b2 14 14 00 81 00 00: varop (28 0a a4) b2 := (00) 1
 [0000003e]10: 
@@ -756,7 +756,7 @@ I could know.{waitForClick}
 I have heard that...?{waitForClick}
 {appendText}It was like one memory had broken free from 
 the frozen iceberg of my past...{waitForClick}
-{appendText}I was confused by the memory's image...{waitForClick}{nextPage x2}
+{appendText}I was confused by the memory's image...{waitForClick}{nextPage 04}
 
 [00000791]10: 
 [00000792]18: hideTextbox

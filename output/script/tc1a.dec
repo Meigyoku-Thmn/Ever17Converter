@@ -1,4 +1,4 @@
-﻿[0000002a]10: 
+[0000002a]10: 
 [0000002b]19: showTextbox
 [0000002c]ff 00 00: text 00
 {marker}{sound C1T000}{appendText}[Girl]

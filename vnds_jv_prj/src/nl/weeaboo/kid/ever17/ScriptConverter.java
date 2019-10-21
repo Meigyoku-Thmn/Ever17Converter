@@ -177,7 +177,7 @@ public class ScriptConverter {
          return null;
       }
       Log.EnableFileHandler("../output.txt");
-      Log.v("[Info] Converting script: " + wi.getFile());
+      Log.v("[Info] Converting script: " + wi.getFile().getName());
       currentFileName = wi.getFile().getName();
 
       GraphicsState gstate;
@@ -339,7 +339,7 @@ public class ScriptConverter {
 
          boolean commandMode = false;
          while (in.hasRemaining()) {
-            pout.printf("[%08x] ", in.position());
+            pout.printf("[%08x]", in.position());
             pos = dstF.getName() + ":" + Integer.toHexString(in.position());
             currentOpcodeOffset = in.position();
 

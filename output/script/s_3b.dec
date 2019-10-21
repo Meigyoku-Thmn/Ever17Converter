@@ -1,4 +1,4 @@
-﻿[000000da]10: 
+[000000da]10: 
 [000000db]46 80 00 00: setDialogBoxColor blue
 [000000df]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [000000ea]fe 28 0a a4 b1 14 14 00 83 00 00: varop (28 0a a4) b1 := (00) 3
@@ -854,7 +854,7 @@ with evolution."{waitForClick}{clearText}
 eyes were enough for gauging the distance to a 
 point or focusing on something.{waitForClick}
 {appendText}But what would it be like if we really used to 
-have three eyes?{waitForClick}{nextPage x2}
+have three eyes?{waitForClick}{nextPage 04}
 
 [000006d1]10: 
 [000006d2]18: hideTextbox
@@ -866,7 +866,7 @@ have three eyes?{waitForClick}{nextPage x2}
 eyes.{waitForClick}
 {appendText}Early species of primitive reptiles...{waitForClick}
 {appendText}Like the tuatara lizard that still has a third 
-eye on the top of its head.{waitForClick}{nextPage x2}
+eye on the top of its head.{waitForClick}{nextPage 04}
 
 [000006d8]10: 
 [000006d9]18: hideTextbox
@@ -883,7 +883,7 @@ secretion and balance based on the light.{waitForClick}
 {appendText}An eye on the crest of one's head would stare 
 straight up. It seemed safe to say that it 
 would sense the difference in light between 
-day and night.{waitForClick}{nextPage x2}
+day and night.{waitForClick}{nextPage 04}
 
 [000006df]10: 
 [000006e0]18: hideTextbox
@@ -907,7 +907,7 @@ cerebrum and we lost our ability to sense
 light directly.{waitForClick}
 {appendText}Therefore we had two light sensitive eyeballs, 
 one on each side, instead.{waitForClick}
-{appendText}This lost third eye was called a 'pineal body.'{waitForClick}{nextPage x2}
+{appendText}This lost third eye was called a 'pineal body.'{waitForClick}{nextPage 04}
 
 [000006ed]10: 
 [000006ee]18: hideTextbox
@@ -918,7 +918,7 @@ one on each side, instead.{waitForClick}
 was responsible for secreting hormones that 
 helped carve out our 24-hour rhythm.{waitForClick}
 {appendText}What we called our internal clocks existed 
-because of this pineal body.{waitForClick}{nextPage x2}
+because of this pineal body.{waitForClick}{nextPage 04}
 
 [000006f4]10: 
 [000006f5]18: hideTextbox
@@ -1311,16 +1311,16 @@ console.{waitForClick}{clearText}{marker}{appendText}[Kid]
 [000009fc]10: 
 [000009fd]19: showTextbox
 [000009fe]ff 60 00: text 60
-{marker}{sound S3A422}{appendText}{nextPage x2}I sneaked into her research room before coming 
-here.{nextPage x2}{waitForSound}
-{sound S3A423}{appendText}{nextPage x2}I was looking for clues about my father of 
-course.{nextPage x2}{waitForSound}
-{sound S3A424}{appendText}{nextPage x2}When I went in, I saw that her computer was on.{nextPage x2}{waitForSound}
-{sound S3A425}{appendText}{nextPage x2}Looking at it I saw that there was a text file 
-entitled 'Password.'{nextPage x2}{waitForSound}
-{sound S3A426}{appendText}{nextPage x2}When I opened it, it was only one line...{nextPage x2}{waitForSound}
-{sound S3A427}{appendText}{nextPage x2}There was some Japanese sentence typed inside 
-it.{nextPage x2}{waitForClick}{nextPage x2}
+{marker}{sound S3A422}{appendText}{nextPage 00}I sneaked into her research room before coming 
+here.{nextPage 01}{waitForSound}
+{sound S3A423}{appendText}{nextPage 00}I was looking for clues about my father of 
+course.{nextPage 01}{waitForSound}
+{sound S3A424}{appendText}{nextPage 00}When I went in, I saw that her computer was on.{nextPage 01}{waitForSound}
+{sound S3A425}{appendText}{nextPage 00}Looking at it I saw that there was a text file 
+entitled 'Password.'{nextPage 01}{waitForSound}
+{sound S3A426}{appendText}{nextPage 00}When I opened it, it was only one line...{nextPage 01}{waitForSound}
+{sound S3A427}{appendText}{nextPage 00}There was some Japanese sentence typed inside 
+it.{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000a01]10: 
 [00000a02]18: hideTextbox
@@ -1368,10 +1368,10 @@ it.{nextPage x2}{waitForClick}{nextPage x2}
 [00000a71]10: 
 [00000a72]19: showTextbox
 [00000a73]ff 64 00: text 64
-{marker}{sound S3A431}{appendText}{nextPage x2}I tried to take a note of it before I was 
-found out.{nextPage x2}{waitForSound}{sound S3A432}{appendText}{nextPage x2}But I didn't see a pen or anything around.{nextPage x2}{waitForSound}
-{sound S3A433}{appendText}{nextPage x2}And there were no disks or anything that I 
-could copy it to.{nextPage x2}{waitForClick}{nextPage x2}
+{marker}{sound S3A431}{appendText}{nextPage 00}I tried to take a note of it before I was 
+found out.{nextPage 01}{waitForSound}{sound S3A432}{appendText}{nextPage 00}But I didn't see a pen or anything around.{nextPage 01}{waitForSound}
+{sound S3A433}{appendText}{nextPage 00}And there were no disks or anything that I 
+could copy it to.{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000a76]10: 
 [00000a77]18: hideTextbox
@@ -1402,13 +1402,13 @@ to myself by e-mail..."{waitForClick}{clearText}
 [00000ac4]10: 
 [00000ac5]19: showTextbox
 [00000ac6]ff 66 00: text 66
-{marker}{sound S3A435}{appendText}{nextPage x2}But I was in a rush and didn't think about it 
-then.{nextPage x2}{waitForSound}
-{sound S3A436}{appendText}{nextPage x2}Suddenly, I thought that I'd try to print it 
-out...{nextPage x2}{waitForSound}
-{sound S3A437}{appendText}{nextPage x2}As soon it stopped printing my mom came back.{nextPage x2}{waitForSound}
-{sound S3A438}{appendText}{nextPage x2}I snatched the paper that was in the tray and 
-jammed it in my pocket.{nextPage x2}{waitForClick}{nextPage x2}
+{marker}{sound S3A435}{appendText}{nextPage 00}But I was in a rush and didn't think about it 
+then.{nextPage 01}{waitForSound}
+{sound S3A436}{appendText}{nextPage 00}Suddenly, I thought that I'd try to print it 
+out...{nextPage 01}{waitForSound}
+{sound S3A437}{appendText}{nextPage 00}As soon it stopped printing my mom came back.{nextPage 01}{waitForSound}
+{sound S3A438}{appendText}{nextPage 00}I snatched the paper that was in the tray and 
+jammed it in my pocket.{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000ac9]10: 
 [00000aca]18: hideTextbox

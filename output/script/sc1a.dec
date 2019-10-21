@@ -1,4 +1,4 @@
-﻿[00000029]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000029]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000034]fe 28 0a a4 b1 14 14 00 81 00 00: varop (28 0a a4) b1 := (00) 1
 [0000003f]fe 28 0a a4 b2 14 14 00 81 00 00: varop (28 0a a4) b2 := (00) 1
 [0000004a]10: 
@@ -144,7 +144,7 @@ instant.{waitForClick}{clearText}
 {appendText}
 {appendText}Yes. I was sure. Her name was Sara Matsunaga.{waitForClick}
 {appendText}But...how...{waitForClick}
-{appendText}How did I know her name?{waitForClick}{nextPage x2}
+{appendText}How did I know her name?{waitForClick}{nextPage 04}
 
 [0000019b]10: 
 [0000019c]18: hideTextbox

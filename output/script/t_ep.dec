@@ -1,4 +1,4 @@
-﻿[00000016]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
+[00000016]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
 [00000021]fe 28 0a a4 b1 14 14 00 80 00 00: varop (28 0a a4) b1 := (00) 0
 [0000002c]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
 [00000037]10: 
@@ -53,7 +53,7 @@
 [000000f0]10: 
 [000000f1]19: showTextbox
 [000000f2]ff 01 00: text 01
-{appendText}{delay 0}           {nextPage x2}Eine Geschichte setzt auf{nextPage x2}
+{appendText}{delay 0}           {nextPage 00}Eine Geschichte setzt auf{nextPage 01}
 
 
 [000000f5]10: 
@@ -63,7 +63,7 @@
 [00000109]10: 
 [0000010a]19: showTextbox
 [0000010b]ff 02 00: text 02
-{appendText}{delay 0}                {nextPage x2}1 Mai,2034 fort.{nextPage x2}
+{appendText}{delay 0}                {nextPage 00}1 Mai,2034 fort.{nextPage 01}
 
 [0000010e]10: 
 [0000010f]1e a0 b4 00 00: delay 180
@@ -81,7 +81,7 @@
 [00000153]10: 
 [00000154]19: showTextbox
 [00000155]ff 03 00: text 03
-{marker}{appendText}{delay 90}{delay 90}{nextPage x2}
+{marker}{appendText}{delay 90}{delay 90}{nextPage 04}
 
 [00000158]10: 
 [00000159]18: hideTextbox

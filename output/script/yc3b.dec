@@ -1,4 +1,4 @@
-﻿[00000036]10: 
+[00000036]10: 
 [00000037]18: hideTextbox
 [00000038]10: 
 [00000039]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
@@ -35,7 +35,7 @@
 precisely because we didn't have any objective.{waitForClick}
 {appendText}It wasn't that anyone had said we would meet 
 there, somehow it had just become our meeting 
-place and hangout.{waitForClick}{nextPage x2}
+place and hangout.{waitForClick}{nextPage 04}
 
 [000000c3]10: 
 [000000c4]18: hideTextbox
@@ -52,7 +52,7 @@ they thought I looked better.{waitForClick}
 heard from Sara.{waitForClick}
 {appendText}They asked why I had gone crazy when I saw 
 the mirror - but I avoided giving a clear-cut 
-answer.{waitForClick}{nextPage x2}
+answer.{waitForClick}{nextPage 04}
 
 [000000ca]10: 
 [000000cb]18: hideTextbox
@@ -63,7 +63,7 @@ answer.{waitForClick}{nextPage x2}
 understand a situation as complex as that by 
 telling them the real reason.{waitForClick}
 {appendText}It appeared that Takeshi and Sora were 
-satisfied with my evasive explanation.{waitForClick}{nextPage x2}
+satisfied with my evasive explanation.{waitForClick}{nextPage 04}
 
 [000000d1]10: 
 [000000d2]18: hideTextbox
@@ -79,7 +79,7 @@ satisfied with my evasive explanation.{waitForClick}{nextPage x2}
 because we didn't have any objective.{waitForClick}
 {appendText}It wasn't that anyone had said we would meet 
 there, somehow it had just become our meeting 
-place and hangout.{waitForClick}{nextPage x2}
+place and hangout.{waitForClick}{nextPage 04}
 
 [000000dc]10: 
 [000000dd]18: hideTextbox
@@ -96,7 +96,7 @@ they thought I looked better.{waitForClick}
 heard from Sara.{waitForClick}
 {appendText}They asked why I had gone crazy when I saw 
 the mirror ? but I avoided giving a clear-cut 
-answer.{waitForClick}{nextPage x2}
+answer.{waitForClick}{nextPage 04}
 
 [000000e3]10: 
 [000000e4]18: hideTextbox
@@ -107,7 +107,7 @@ answer.{waitForClick}{nextPage x2}
 understand a situation as complex as that by 
 telling them the real reason.{waitForClick}
 {appendText}It appeared that Takeshi and Sora were 
-satisfied with my evasive explanation.{waitForClick}{nextPage x2}
+satisfied with my evasive explanation.{waitForClick}{nextPage 04}
 
 [000000ea]10: 
 [000000eb]18: hideTextbox
@@ -124,7 +124,7 @@ seen and why do whales strand themselves on
 the beach in groups....{waitForClick}
 {appendText}And what was the truth behind the 
 assassination of JFK, as well as, which 
-whether forks or chopsticks were better.{waitForClick}{nextPage x2}
+whether forks or chopsticks were better.{waitForClick}{nextPage 04}
 
 [000000f5]10: 
 [000000f6]18: hideTextbox
@@ -139,7 +139,7 @@ the silly.{waitForClick}
 mouths moving.{waitForClick}
 {appendText}I didn't participate much in the 
 conversation. I just kind of nodded from time 
-to time and laughed along with everyone.{waitForClick}{nextPage x2}
+to time and laughed along with everyone.{waitForClick}{nextPage 04}
 
 [000000fc]10: 
 [000000fd]18: hideTextbox
@@ -158,7 +158,7 @@ since she didn't open her mouth once.{waitForClick}
 [00000103]10: 
 [00000104]19: showTextbox
 [00000105]ff 09 00: text 09
-{appendText}It was Tsugumi.{waitForClick}{nextPage x2}
+{appendText}It was Tsugumi.{waitForClick}{nextPage 04}
 
 [00000108]10: 
 [00000109]18: hideTextbox
@@ -175,7 +175,7 @@ shouldn't come to where had everyone
 gathered, but of course I couldn't say that 
 to her.{waitForClick}
 {appendText}Tsugumi glanced at me at a rate of once every 
-two minutes.{waitForClick}{nextPage x2}
+two minutes.{waitForClick}{nextPage 04}
 
 [0000010f]10: 
 [00000110]18: hideTextbox
@@ -192,7 +192,7 @@ two minutes was totally at odds with those
 words, and seemed like a sign saying 'speak 
 with me.'{waitForClick}
 {appendText}Her glances unnerved me, and I was unable to 
-focus my attention on the conversation.{waitForClick}{nextPage x2}
+focus my attention on the conversation.{waitForClick}{nextPage 04}
 
 [00000116]10: 
 [00000117]18: hideTextbox
@@ -206,7 +206,7 @@ down.{waitForClick}
 {appendText}Finally the talking ground to a halt 
 completely.{waitForClick}
 {appendText}Five hours had passed since we had come to the 
-Conference Room.{waitForClick}{nextPage x2}
+Conference Room.{waitForClick}{nextPage 04}
 
 [0000011d]10: 
 [0000011e]18: hideTextbox

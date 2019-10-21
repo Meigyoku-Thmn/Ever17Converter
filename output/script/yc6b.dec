@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]18: hideTextbox
 [00000018]10: 
 [00000019]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
@@ -21,7 +21,7 @@ extracted the antibodies, and gave shots to
 Takeshi, You, and the young Kaburaki.{waitForClick}
 {appendText}They weren't able to give Coco a shot, 
 because she was still in the pod undergoing 
-treatment.{waitForClick}{nextPage x2}
+treatment.{waitForClick}{nextPage 04}
 
 [00000053]10: 
 [00000054]18: hideTextbox
@@ -32,7 +32,7 @@ treatment.{waitForClick}{nextPage x2}
 could leave.{waitForClick}
 {appendText}They made another dose of antibodies for when 
 Coco was ready, and put it in the equipment 
-storage container on the desk.{waitForClick}{nextPage x2}
+storage container on the desk.{waitForClick}{nextPage 04}
 
 [0000005a]10: 
 [0000005b]18: hideTextbox
@@ -48,7 +48,7 @@ worn out, on their beds.{waitForClick}
 and went back to LeMU.{waitForClick}
 {appendText}'I'm going to go get Chami, and bring him 
 back' - were the words she left him with.{waitForClick}
-{appendText}Takeshi nodded weakly, and closed his eyes.{waitForClick}{nextPage x2}
+{appendText}Takeshi nodded weakly, and closed his eyes.{waitForClick}{nextPage 04}
 
 [00000061]10: 
 [00000062]18: hideTextbox
@@ -541,7 +541,7 @@ into the water.{waitForClick}
 {appendText}In order to reach the corridor connecting to 
 the infirmary... Takeshi dove.{waitForClick}
 {appendText}At this point, there was no way to access it 
-without swimming.{waitForClick}{nextPage x2}
+without swimming.{waitForClick}{nextPage 04}
 
 [00000532]10: 
 [00000533]18: hideTextbox
@@ -555,7 +555,7 @@ point, but Takeshi turned off the light and
 kept swimming in total darkness.{waitForClick}
 {appendText}He swam. And kept swimming.{waitForClick}
 {appendText}Takeshi propelled himself forward as though 
-possessed.{waitForClick}{nextPage x2}
+possessed.{waitForClick}{nextPage 04}
 
 [00000539]10: 
 [0000053a]18: hideTextbox
@@ -568,7 +568,7 @@ way that he moved.{waitForClick}
 surrounding him, progressing steadily forward.{waitForClick}
 {appendText}He was being reckless, perhaps even acting 
 insane...but he was willing to sacrifice it 
-all for what he was convinced he had to do.{waitForClick}{nextPage x2}
+all for what he was convinced he had to do.{waitForClick}{nextPage 04}
 
 [00000540]10: 
 [00000541]18: hideTextbox
@@ -580,7 +580,7 @@ pressure could defeat the power of his faith
 and courage of that conviction.{waitForClick}
 {appendText}He kept swimming on and on strongly, 
 purposefully.{waitForClick}
-{appendText}Heading for the light...{waitForClick}{nextPage x2}
+{appendText}Heading for the light...{waitForClick}{nextPage 04}
 
 [00000547]10: 
 [00000548]18: hideTextbox

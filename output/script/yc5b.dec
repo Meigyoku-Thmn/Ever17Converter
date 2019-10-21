@@ -1,4 +1,4 @@
-﻿[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000021]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
 [0000002c]fe 28 0a a4 b2 14 14 00 85 00 00: varop (28 0a a4) b2 := (00) 5
 [00000037]10: 
@@ -337,7 +337,7 @@ met a gentleman.{waitForClick}
 the gentlemen came to trust one another, and 
 became very close.{waitForClick}
 {appendText}It was a close relationship, like the bond 
-between a parent and a child....{waitForClick}{nextPage x2}
+between a parent and a child....{waitForClick}{nextPage 04}
 
 [000003a8]10: 
 [000003a9]18: hideTextbox
@@ -353,7 +353,7 @@ from the father she had never known.{waitForClick}
 to her age.{waitForClick}
 {appendText}When he found out about You's illness, he 
 felt as much sympathy as he would have for 
-his own daughter.{waitForClick}{nextPage x2}
+his own daughter.{waitForClick}{nextPage 04}
 
 [000003af]10: 
 [000003b0]18: hideTextbox
@@ -366,7 +366,7 @@ joined by a strong feeling like love.{waitForClick}
 day confessed her fear, her despair and agony 
 to him.{waitForClick}
 {appendText}With a serious look on his face, the 
-gentleman said - {waitForClick}{nextPage x2}
+gentleman said - {waitForClick}{nextPage 04}
 
 [000003b6]10: 
 [000003b7]18: hideTextbox
@@ -382,7 +382,7 @@ gentleman said - {waitForClick}{nextPage x2}
 [000003bf]ff 13 00: text 13
 {appendText}His name was Shigezo Morino.{waitForClick}
 {appendText}Doctor Morino was a world authority in genetic 
-engineering.{waitForClick}{nextPage x2}
+engineering.{waitForClick}{nextPage 04}
 
 [000003c2]10: 
 [000003c3]18: hideTextbox
@@ -391,7 +391,7 @@ engineering.{waitForClick}{nextPage x2}
 [000003c6]ff 14 00: text 14
 {marker}{appendText}In November of that year...{waitForClick}
 {appendText}After making up her mind, Yubiseiharukana 
-visited the doctor's lab.{waitForClick}{nextPage x2}
+visited the doctor's lab.{waitForClick}{nextPage 04}
 
 [000003c9]10: 
 [000003ca]18: hideTextbox
@@ -402,7 +402,7 @@ visited the doctor's lab.{waitForClick}{nextPage x2}
 {appendText}"The first is immortality of the body."{waitForClick}
 {appendText}"The second is immortality of the memory."{waitForClick}
 {appendText}"The third is genetic immortality."{waitForClick}
-{appendText}"How would you like to try the third kind?"{waitForClick}{nextPage x2}
+{appendText}"How would you like to try the third kind?"{waitForClick}{nextPage 04}
 
 [000003d0]10: 
 [000003d1]18: hideTextbox
@@ -411,7 +411,7 @@ visited the doctor's lab.{waitForClick}{nextPage x2}
 [000003d4]ff 16 00: text 16
 {marker}{appendText}The doctor presented this extraordinary plan 
 to her with the calmness of a scientist, his 
-tone matter-of-fact.{waitForClick}{nextPage x2}
+tone matter-of-fact.{waitForClick}{nextPage 04}
 
 [000003d7]10: 
 [000003d8]18: hideTextbox
@@ -423,7 +423,7 @@ rather being something you were born with."{waitForClick}
 {appendText}"So, if you choose the third option..."{waitForClick}
 {appendText}"You don't have to worry about passing the 
 condition onto your 'children'."{waitForClick}
-{appendText}"There is nothing for you to worry about."{waitForClick}{nextPage x2}
+{appendText}"There is nothing for you to worry about."{waitForClick}{nextPage 04}
 
 [000003de]10: 
 [000003df]18: hideTextbox
@@ -437,7 +437,7 @@ of death.{waitForClick}
 against her misfortune, all the while clawing 
 at her chest in agony. {waitForClick}
 {appendText}She had given up on life, and was no more 
-than an empty shell.{waitForClick}{nextPage x2}
+than an empty shell.{waitForClick}{nextPage 04}
 
 [000003e5]10: 
 [000003e6]18: hideTextbox
@@ -451,7 +451,7 @@ of thinking gradually changed.{waitForClick}
 {appendText}'If I only have a few more years to live, I 
 at least want to leave something of myself 
 behind in this world.'{waitForClick}
-{appendText}Her tenacity for life defied imagination.{waitForClick}{nextPage x2}
+{appendText}Her tenacity for life defied imagination.{waitForClick}{nextPage 04}
 
 [000003ec]10: 
 [000003ed]18: hideTextbox
@@ -459,7 +459,7 @@ behind in this world.'{waitForClick}
 [000003ef]19: showTextbox
 [000003f0]ff 1a 00: text 1a
 {marker}{appendText}She finally made the decision.{waitForClick}
-{appendText}She chose the third option.{waitForClick}{nextPage x2}
+{appendText}She chose the third option.{waitForClick}{nextPage 04}
 
 [000003f3]10: 
 [000003f4]18: hideTextbox
@@ -483,7 +483,7 @@ behind in this world.'{waitForClick}
 her own cells implanted in her own ovaries, 
 which then began to grow in her womb.{waitForClick}
 {appendText}Of course, Doctor Morino performed the surgery.{waitForClick}
-{appendText}She was pregnant with her 'new self'.{waitForClick}{nextPage x2}
+{appendText}She was pregnant with her 'new self'.{waitForClick}{nextPage 04}
 
 [00000429]10: 
 [0000042a]18: hideTextbox
@@ -503,7 +503,7 @@ which then began to grow in her womb.{waitForClick}
 [0000045e]19: showTextbox
 [0000045f]ff 1c 00: text 1c
 {marker}{appendText}Nine months later - September 22, 2015.{waitForClick}
-{appendText}Yubiseiharukana safely gave birth.{waitForClick}{nextPage x2}
+{appendText}Yubiseiharukana safely gave birth.{waitForClick}{nextPage 04}
 
 [00000462]10: 
 [00000463]18: hideTextbox
@@ -514,7 +514,7 @@ which then began to grow in her womb.{waitForClick}
 [00000474]ff 1d 00: text 1d
 {marker}{sound C5A330}{appendText}"My baby!"{waitForClick}
 {sound C5A331}{appendText}"You are my sister."{waitForClick}
-{sound C5A332}{appendText}"You are... me, myself."{waitForClick}{nextPage x2}
+{sound C5A332}{appendText}"You are... me, myself."{waitForClick}{nextPage 04}
 
 [00000477]10: 
 [00000478]18: hideTextbox
@@ -528,7 +528,7 @@ of her heart, and gave her a name. {waitForClick}
 Yubiseiharukana's daughter.{waitForClick}
 {appendText}And at the same time, they not only were 
 mother and daughter, but also shared the same 
-genetic design, just like twins.{waitForClick}{nextPage x2}
+genetic design, just like twins.{waitForClick}{nextPage 04}
 
 [0000047e]10: 
 [0000047f]18: hideTextbox
@@ -541,7 +541,7 @@ from being so close to death?{waitForClick}
 {appendText}But...still....{waitForClick}
 {appendText}Look at the lively face of the newborn child!{waitForClick}
 {appendText}Look at how pure its smile is! How bright 
-its new life shines!{waitForClick}{nextPage x2}
+its new life shines!{waitForClick}{nextPage 04}
 
 [00000485]10: 
 [00000486]18: hideTextbox
@@ -555,7 +555,7 @@ believe that the baby was a tragedy?{waitForClick}
 to want life?{waitForClick}
 {appendText}The baby smiled happily. Sometimes it cried.{waitForClick}
 {appendText}As if it were asking - 'Is it a sin to be 
-alive?'{waitForClick}{nextPage x2}
+alive?'{waitForClick}{nextPage 04}
 
 [0000048c]10: 
 [0000048d]18: hideTextbox
@@ -579,7 +579,7 @@ alive?'{waitForClick}{nextPage x2}
 Kyumeikan Women's College, had started 
 working part-time at LeMU during the holidays.{waitForClick}
 {appendText}She wanted to find a clue about her father, 
-Yoichi, who had gone missing 17 years before.{waitForClick}{nextPage x2}
+Yoichi, who had gone missing 17 years before.{waitForClick}{nextPage 04}
 
 [000004c5]10: 
 [000004c6]18: hideTextbox
@@ -593,7 +593,7 @@ You didn't believe it.{waitForClick}
 alive somewhere.{waitForClick}
 {appendText}She had left her one-year-old daughter, 
 Yubiseiakikana, with her mother, so she was 
-not worried about her.{waitForClick}{nextPage x2}
+not worried about her.{waitForClick}{nextPage 04}
 
 [000004cc]10: 
 [000004cd]18: hideTextbox
@@ -607,7 +607,7 @@ longer escape the fate, which awaited her.{waitForClick}
 {appendText}There was only one thing left that she wanted 
 to do.{waitForClick}
 {appendText}Before she died, she wanted to find out 
-whether her father was still alive.{waitForClick}{nextPage x2}
+whether her father was still alive.{waitForClick}{nextPage 04}
 
 [000004d3]10: 
 [000004d4]18: hideTextbox
@@ -624,7 +624,7 @@ Doctor's attempts to stop her, and had come
 to LeMU.{waitForClick}
 {appendText}She wanted to find out about her father....{waitForClick}
 {appendText}What had happened 17 years ago? She wanted to 
-reveal the truth....{waitForClick}{nextPage x2}
+reveal the truth....{waitForClick}{nextPage 04}
 
 [000004da]10: 
 [000004db]18: hideTextbox
@@ -1200,7 +1200,7 @@ forgiven.{waitForClick}{clearText}{marker}{appendText}There was no me, nor Sara,
 {appendText}The men from the Leiblich were waiting for 
 Tsugumi when she got to the floating island.{waitForClick}
 {appendText}Tsugumi, a carrier of the Cure Virus....{waitForClick}
-{appendText}To them she was a valuable sample...{waitForClick}{nextPage x2}
+{appendText}To them she was a valuable sample...{waitForClick}{nextPage 04}
 
 [0000099c]10: 
 [0000099d]18: hideTextbox
@@ -1213,7 +1213,7 @@ could see their dark wet tongues.{waitForClick}
 the reek of their excitement.{waitForClick}
 {appendText}Like the smell of men lusting after flesh....{waitForClick}
 {appendText}It was a fetid stench, greasy and rotten.{waitForClick}
-{appendText}For it was Tsugumi's body that they were after.{waitForClick}{nextPage x2}
+{appendText}For it was Tsugumi's body that they were after.{waitForClick}{nextPage 04}
 
 [000009a3]10: 
 [000009a4]18: hideTextbox
@@ -1225,7 +1225,7 @@ perform human experiments under the pretext
 of 'Making the ultimate human dream come true.'{waitForClick}
 {appendText}By using Tsugumi's body, they were planning 
 to gain knowledge, fame and fortune.{waitForClick}
-{appendText}That was indeed their desire.{waitForClick}{nextPage x2}
+{appendText}That was indeed their desire.{waitForClick}{nextPage 04}
 
 [000009aa]10: 
 [000009ab]18: hideTextbox
@@ -1239,7 +1239,7 @@ that threatened to spill forth, making
 Tsugumi sick to her stomach.{waitForClick}
 {appendText}Some of the others in his entourage licked 
 their lips...swallowing their saliva like 
-dogs gone mad with the hunt.{waitForClick}{nextPage x2}
+dogs gone mad with the hunt.{waitForClick}{nextPage 04}
 
 [000009b1]10: 
 [000009b2]18: hideTextbox
@@ -1253,7 +1253,7 @@ ground, breaking into a run.{waitForClick}
 {appendText}She ran across the wide surface of the huge 
 artificial island, desperately scaling the 
 high surrounding fence and fled into the 
-nearby foliage.{waitForClick}{nextPage x2}
+nearby foliage.{waitForClick}{nextPage 04}
 
 [000009c3]10: 
 [000009c4]18: hideTextbox
@@ -1265,7 +1265,7 @@ nearby foliage.{waitForClick}{nextPage x2}
 {marker}{appendText}Their cacophony of screams and angry cursing 
 faded behind her.{waitForClick}
 {appendText}Tsugumi hid and waited until nightfall.{waitForClick}
-{appendText}She held a single hamster to her chest....{waitForClick}{nextPage x2}
+{appendText}She held a single hamster to her chest....{waitForClick}{nextPage 04}
 
 [000009d8]10: 
 [000009d9]18: hideTextbox
@@ -1282,7 +1282,7 @@ faded behind her.{waitForClick}
 [00000a06]ff 48 00: text 48
 {marker}{appendText}At night -{waitForClick}
 {appendText}A supply-carrying vessel slipped out of the 
-floating island's port.{waitForClick}{nextPage x2}
+floating island's port.{waitForClick}{nextPage 04}
 
 [00000a09]10: 
 [00000a0a]18: hideTextbox
@@ -1298,7 +1298,7 @@ them.'{waitForClick}
 {appendText}Although she wasn't a criminal, she avoided 
 people, preferring to hide in the darkness. 
 All the while threatened by ominous feelings 
-of being hunted. {waitForClick}{nextPage x2}
+of being hunted. {waitForClick}{nextPage 04}
 
 [00000a10]10: 
 [00000a11]18: hideTextbox
@@ -1315,7 +1315,7 @@ different town, wandering in the darkness....{waitForClick}
 eaves, pipes pouring into the ocean and even 
 in public restrooms.{waitForClick}
 {appendText}It was an endless cycle of running. She never 
-had a second's peace.{waitForClick}{nextPage x2}
+had a second's peace.{waitForClick}{nextPage 04}
 
 [00000a22]10: 
 [00000a23]18: hideTextbox
@@ -1330,7 +1330,7 @@ match....{waitForClick}
 {appendText}Information regarding Tsugumi had spread 
 through the national police network, it was 
 only a matter of time before Leiblich would 
-find her.{waitForClick}{nextPage x2}
+find her.{waitForClick}{nextPage 04}
 
 [00000a29]10: 
 [00000a2a]18: hideTextbox
@@ -1344,7 +1344,7 @@ continue to hide in back alleys.{waitForClick}
 {appendText}She hated Leiblich.{waitForClick}
 {appendText}They had destroyed everything Tsugumi had 
 cared about, and made her life a living 
-hell...what's more.... {waitForClick}{nextPage x2}
+hell...what's more.... {waitForClick}{nextPage 04}
 
 [00000a30]10: 
 [00000a31]18: hideTextbox
@@ -1356,7 +1356,7 @@ life...Takeshi Kuranari.{waitForClick}
 {appendText}She wanted to get revenge on Leiblich with 
 every fiber of her being.{waitForClick}
 {appendText}Tsugumi came to hate this world, and her heart 
-became even more hardened to it.{waitForClick}{nextPage x2}
+became even more hardened to it.{waitForClick}{nextPage 04}
 
 [00000a37]10: 
 [00000a38]18: hideTextbox
@@ -1368,7 +1368,7 @@ became even more hardened to it.{waitForClick}{nextPage x2}
 {marker}{appendText}Two months had passed. It was summertime.{waitForClick}
 {appendText}All of a sudden she began feeling sick....{waitForClick}
 {appendText}She knew she had stopped menstruating, but she 
-didn't want to think about the possibility.{waitForClick}{nextPage x2}
+didn't want to think about the possibility.{waitForClick}{nextPage 04}
 
 [00000a4c]10: 
 [00000a4d]18: hideTextbox
@@ -1380,7 +1380,7 @@ well-known in the back streets.{waitForClick}
 {appendText}Tsugumi was pregnant.{waitForClick}
 {appendText}She was sure it was Takeshi's baby. She'd 
 never been with anyone else.{waitForClick}
-{appendText}She was pregnant....{waitForClick}{nextPage x2}
+{appendText}She was pregnant....{waitForClick}{nextPage 04}
 
 [00000a53]10: 
 [00000a54]18: hideTextbox
@@ -1397,7 +1397,7 @@ the highway.{waitForClick}
 {appendText}She touched her stomach.{waitForClick}
 {appendText}She felt a sense of awe and joy, at the fact 
 there was life growing in her stomach, and 
-that it was connected to her.{waitForClick}{nextPage x2}
+that it was connected to her.{waitForClick}{nextPage 04}
 
 [00000a5a]10: 
 [00000a5b]18: hideTextbox
@@ -1411,7 +1411,7 @@ on her stomach....{waitForClick}
 {appendText}Realizing that Takeshi's babies were inside 
 her, she couldn't stop crying.{waitForClick}
 {appendText}They might have only been only an inch big at 
-that time....{waitForClick}{nextPage x2}
+that time....{waitForClick}{nextPage 04}
 
 [00000a61]10: 
 [00000a62]18: hideTextbox
@@ -1425,7 +1425,7 @@ that surrounded them....{waitForClick}
 wasn't her who bore the children, but it was 
 actually they who bore her.'{waitForClick}
 {appendText}Everything that she was, she poured into her 
-two babies.{waitForClick}{nextPage x2}
+two babies.{waitForClick}{nextPage 04}
 
 [00000a68]10: 
 [00000a69]18: hideTextbox
@@ -1438,7 +1438,7 @@ the other way around.{waitForClick}
 everything for the two tiny lives.{waitForClick}
 {appendText}Love was a concept to her, but if love could 
 be brought into physical form, to her, it 
-seemed it must be the babies in her stomach.{waitForClick}{nextPage x2}
+seemed it must be the babies in her stomach.{waitForClick}{nextPage 04}
 
 [00000a6f]10: 
 [00000a70]18: hideTextbox
@@ -1450,7 +1450,7 @@ seemed it must be the babies in her stomach.{waitForClick}{nextPage x2}
 {appendText}Before long, the hatred she had felt towards 
 everything had disappeared without a trace.{waitForClick}
 {appendText}For the first time, Tsugumi felt as though 
-there were a higher power guiding her life.{waitForClick}{nextPage x2}
+there were a higher power guiding her life.{waitForClick}{nextPage 04}
 
 [00000a76]10: 
 [00000a77]18: hideTextbox
@@ -1465,7 +1465,7 @@ there were a higher power guiding her life.{waitForClick}{nextPage x2}
 {marker}{appendText}Seven months later. January 21, 2018.{waitForClick}
 {appendText}Tsugumi was suddenly struck with contractions.{waitForClick}
 {appendText}When they came, the back alley doctor had gone 
-somewhere.{waitForClick}{nextPage x2}
+somewhere.{waitForClick}{nextPage 04}
 
 [00000a99]10: 
 [00000a9a]18: hideTextbox
@@ -1478,7 +1478,7 @@ identification. Most importantly she had no
 money...{waitForClick}
 {appendText}When he found out that she couldn't pay, the 
 doctor beat Tsugumi as though she were a 
-stray animal.{waitForClick}{nextPage x2}
+stray animal.{waitForClick}{nextPage 04}
 
 [00000aa0]10: 
 [00000aa1]18: hideTextbox
@@ -1491,7 +1491,7 @@ born in an old boat shack.{waitForClick}
 could not tell whether she lived there or was 
 just sleeping there temporally.{waitForClick}
 {appendText}It was this old woman who helped Tsugumi 
-through the birth.{waitForClick}{nextPage x2}
+through the birth.{waitForClick}{nextPage 04}
 
 [00000aa7]10: 
 [00000aa8]18: hideTextbox
@@ -1506,7 +1506,7 @@ gently rinsed the babies in a tin basin.{waitForClick}
 with only a thin towel between her and a 
 hardwood floor.{waitForClick}
 {appendText}Tsugumi's eyes gazed unfocused out a nearby 
-window.{waitForClick}{nextPage x2}
+window.{waitForClick}{nextPage 04}
 
 [00000aae]10: 
 [00000aaf]18: hideTextbox
@@ -1526,7 +1526,7 @@ window.{waitForClick}{nextPage x2}
 girl...which one'll ya hold first?'{waitForClick}
 {appendText}The illegal doctor had told her, so she was 
 expecting twins, but she never imagined that 
-they would be fraternal. {waitForClick}{nextPage x2}
+they would be fraternal. {waitForClick}{nextPage 04}
 
 [00000ad6]10: 
 [00000ad7]18: hideTextbox
@@ -1539,7 +1539,7 @@ they would be fraternal. {waitForClick}{nextPage x2}
 them to her chest.{waitForClick}
 {appendText}'Not to worry, my deary. I boiled them cloth 
 and the scissors what cut their cord in hot 
-water good, I did.'{waitForClick}{nextPage x2}
+water good, I did.'{waitForClick}{nextPage 04}
 
 [00000add]10: 
 [00000ade]18: hideTextbox
@@ -1553,7 +1553,7 @@ water good, I did.'{waitForClick}{nextPage x2}
 been born safely.{waitForClick}
 {appendText}'Thank you....'{waitForClick}
 {appendText}And these last words were directed toward the 
-deep darkness beyond the window.{waitForClick}{nextPage x2}
+deep darkness beyond the window.{waitForClick}{nextPage 04}
 
 [00000ae4]10: 
 [00000ae5]18: hideTextbox
@@ -1562,7 +1562,7 @@ deep darkness beyond the window.{waitForClick}{nextPage x2}
 [00000ae8]ff 5c 00: text 5c
 {marker}{appendText}The snow was falling.{waitForClick}
 {appendText}The two babies pressed to Tsugumi's chest 
-with eyes closed, let out small yawns.{waitForClick}{nextPage x2}
+with eyes closed, let out small yawns.{waitForClick}{nextPage 04}
 
 [00000aeb]10: 
 [00000aec]18: hideTextbox
@@ -1587,7 +1587,7 @@ thoughts were turned to the possibility.{waitForClick}
 {appendText}'If they got infected by Cure while they were 
 inside of me....'{waitForClick}
 {appendText}'And if their DNA was altered just like me....'{waitForClick}
-{appendText}Tsugumi visited the illegal doctor.{waitForClick}{nextPage x2}
+{appendText}Tsugumi visited the illegal doctor.{waitForClick}{nextPage 04}
 
 [00000b23]10: 
 [00000b24]18: hideTextbox
@@ -1609,7 +1609,7 @@ human would belong to 'Primates Anthropoidea
 Hominoidea Hominidae Homo Genus Sapiens.'{waitForClick}
 {appendText}Tsugumi, whose DNA information was altered by 
 the Cure Virus, was not a pure human anymore, 
-but rather a subspecies of it.{waitForClick}{nextPage x2}
+but rather a subspecies of it.{waitForClick}{nextPage 04}
 
 [00000b62]10: 
 [00000b63]18: hideTextbox
@@ -1620,7 +1620,7 @@ but rather a subspecies of it.{waitForClick}{nextPage x2}
 now....'{waitForClick}
 {appendText}'Now any kids who were born from 'Takeshi, 
 the Homo Sapiens' and 'Tsugumi, the Cure' 
-would technically be 'hybrids.''{waitForClick}{nextPage x2}
+would technically be 'hybrids.''{waitForClick}{nextPage 04}
 
 [00000b69]10: 
 [00000b6a]18: hideTextbox
@@ -1636,7 +1636,7 @@ affect your two 'little hybrids' there.'{waitForClick}
 some of the unique functions scientists have 
 discovered, such as 'regenerating telomeres' 
 and 'regenerative healing' are inherited 
-recessively.'{waitForClick}{nextPage x2}
+recessively.'{waitForClick}{nextPage 04}
 
 [00000b70]10: 
 [00000b71]18: hideTextbox
@@ -1651,7 +1651,7 @@ children born from a 'type AA father' and a
 dominantly, and type O factors are inherited 
 recessively.'{waitForClick}
 {appendText}'In order for a child's blood type to be 
-'type O'....'{waitForClick}{nextPage x2}
+'type O'....'{waitForClick}{nextPage 04}
 
 [00000b77]10: 
 [00000b78]18: hideTextbox
@@ -1664,7 +1664,7 @@ recessively.'{waitForClick}
 {appendText}'...it can only be one of the above, meaning 
 that BOTH the parents gotta add that type 'O' 
 factor to the genetic milkshake.'{waitForClick}
-{appendText}'Same goes for the Cure Virus.'{waitForClick}{nextPage x2}
+{appendText}'Same goes for the Cure Virus.'{waitForClick}{nextPage 04}
 
 [00000b7e]10: 
 [00000b7f]18: hideTextbox
@@ -1676,7 +1676,7 @@ and 'Cure' will...'{waitForClick}
 {appendText}'...all be 'Sapiens-Cure,' and inherit the 
 dominant physical traits of both.'{waitForClick}
 {appendText}'For them rug rats to become full-blooded 
-'Cure.'....'{waitForClick}{nextPage x2}
+'Cure.'....'{waitForClick}{nextPage 04}
 
 [00000b85]10: 
 [00000b86]18: hideTextbox
@@ -1687,7 +1687,7 @@ dominant physical traits of both.'{waitForClick}
 'Sapiens Cure x Cure', or 'Sapiens Cure x 
 Sapiens Cure.'...'{waitForClick}
 {appendText}'...any of those combinations, meaning that 
-both parents have to be part or all Cure.'{waitForClick}{nextPage x2}
+both parents have to be part or all Cure.'{waitForClick}{nextPage 04}
 
 [00000b8c]10: 
 [00000b8d]18: hideTextbox
@@ -1698,7 +1698,7 @@ both parents have to be part or all Cure.'{waitForClick}{nextPage x2}
 born from a 'pure Sapiens' and 'pure Cure...''{waitForClick}
 {appendText}'They'll have the same physical traits as a 
 pure human, and won't possess the Cure traits 
-like perpetual youth.'{waitForClick}{nextPage x2}
+like perpetual youth.'{waitForClick}{nextPage 04}
 
 [00000b93]10: 
 [00000b94]18: hideTextbox
@@ -1713,7 +1713,7 @@ Tsugumi had brought, and laughed again.{waitForClick}
 Leiblich's laboratory staff in the past, 
 since he knew so much about the Cure Virus.{waitForClick}
 {appendText}But he didn't seem to be one of them. Tsugumi 
-figured she could trust him.{waitForClick}{nextPage x2}
+figured she could trust him.{waitForClick}{nextPage 04}
 
 [00000b9a]10: 
 [00000b9b]18: hideTextbox
@@ -1723,7 +1723,7 @@ figured she could trust him.{waitForClick}{nextPage x2}
 {marker}{appendText}Among outcasts, there is an unspoken law: You 
 don't go nosing around in other people's pasts.{waitForClick}
 {appendText}Tsugumi didn't ask him anything more, and he 
-didn't demand to know about her either.{waitForClick}{nextPage x2}
+didn't demand to know about her either.{waitForClick}{nextPage 04}
 
 [00000ba1]10: 
 [00000ba2]18: hideTextbox
@@ -1745,7 +1745,7 @@ together with the two babies.{waitForClick}
 {appendText}Of course Chami was there as well.{waitForClick}
 {appendText}It was a quiet, rustic little coastal town.{waitForClick}
 {appendText}It wasn't a city or tourist town, no fishing 
-or farming...nothing...just a dreary port town.{waitForClick}{nextPage x2}
+or farming...nothing...just a dreary port town.{waitForClick}{nextPage 04}
 
 [00000bd2]10: 
 [00000bd3]18: hideTextbox
@@ -1761,7 +1761,7 @@ after that she would spend time with the
 babies.{waitForClick}
 {appendText}Her wages were very low and of course they 
 were poor. She couldn't even afford 
-disposable diapers.{waitForClick}{nextPage x2}
+disposable diapers.{waitForClick}{nextPage 04}
 
 [00000bd9]10: 
 [00000bda]18: hideTextbox
@@ -1776,7 +1776,7 @@ babies were growing healthily.{waitForClick}
 {appendText}Their life was a peaceful one, and although 
 they were poor, the poverty didn't threaten 
 them. They were content.{waitForClick}
-{appendText}The three of them were always smiling.{waitForClick}{nextPage x2}
+{appendText}The three of them were always smiling.{waitForClick}{nextPage 04}
 
 [00000be0]10: 
 [00000be1]18: hideTextbox
@@ -1788,7 +1788,7 @@ Chammiii...'{waitForClick}
 {appendText}They were already beginning to talk.{waitForClick}
 {appendText}The boy had starting walking a few steps at a 
 time. The was girl able to stand, barely, as 
-she held onto things.{waitForClick}{nextPage x2}
+she held onto things.{waitForClick}{nextPage 04}
 
 [00000be7]10: 
 [00000be8]18: hideTextbox
@@ -1801,7 +1801,7 @@ one-year-old.{waitForClick}
 {appendText}The boy, it seemed, grew faster physically 
 and the girl grew faster intellectually.{waitForClick}
 {appendText}Tsugumi tenderly watched over their cute 
-gestures. She was filled with happiness.{waitForClick}{nextPage x2}
+gestures. She was filled with happiness.{waitForClick}{nextPage 04}
 
 [00000bee]10: 
 [00000bef]18: hideTextbox
@@ -1818,7 +1818,7 @@ gestures. She was filled with happiness.{waitForClick}{nextPage x2}
 [00000c1c]ff 6d 00: text 6d
 {marker}{appendText}May 7, 2019.{waitForClick}
 {appendText}The two babies were 15 months old. {waitForClick}
-{appendText}Tsugumi had taken them to the beach.{waitForClick}{nextPage x2}
+{appendText}Tsugumi had taken them to the beach.{waitForClick}{nextPage 04}
 
 [00000c1f]10: 
 [00000c20]18: hideTextbox
@@ -1829,7 +1829,7 @@ gestures. She was filled with happiness.{waitForClick}{nextPage x2}
 getting back up over and over.{waitForClick}
 {appendText}The girl was sitting by the water putting her 
 hands in the waves....{waitForClick}
-{appendText}She was giggling saying 'Cooold...so cold....'{waitForClick}{nextPage x2}
+{appendText}She was giggling saying 'Cooold...so cold....'{waitForClick}{nextPage 04}
 
 [00000c26]10: 
 [00000c27]18: hideTextbox
@@ -1845,7 +1845,7 @@ Takeshi's last words to her.{waitForClick}
 {appendText}'I'm not going to die.'  After saying that, 
 he sunk to the bottom of the ocean, 
 protecting the woman he loved, protecting the 
-children right in front of her.{waitForClick}{nextPage x2}
+children right in front of her.{waitForClick}{nextPage 04}
 
 [00000c2d]10: 
 [00000c2e]18: hideTextbox
@@ -1858,7 +1858,7 @@ to the ocean.{waitForClick}
 up hope.{waitForClick}
 {appendText}'No...He must be alive somewhere. He's a man 
 of his word.'{waitForClick}
-{appendText}Just then.{waitForClick}{nextPage x2}
+{appendText}Just then.{waitForClick}{nextPage 04}
 
 [00000c34]10: 
 [00000c35]18: hideTextbox
@@ -1872,7 +1872,7 @@ their shin, but for a one-year-old baby, it
 was as big as tsunami.{waitForClick}
 {appendText}The girl disappeared in a splash of water and 
 was sucked out into the ocean like a piece of 
-driftwood by the tide.{waitForClick}{nextPage x2}
+driftwood by the tide.{waitForClick}{nextPage 04}
 
 [00000c3b]10: 
 [00000c3c]18: hideTextbox
@@ -1887,7 +1887,7 @@ unbelievable happened.{waitForClick}
 months old, jumped into the water and saved 
 the girl.  {waitForClick}
 {appendText}Hardly able to believe what she had seen, 
-Tsugumi rushed toward them.{waitForClick}{nextPage x2}
+Tsugumi rushed toward them.{waitForClick}{nextPage 04}
 
 [00000c42]10: 
 [00000c43]18: hideTextbox
@@ -1897,7 +1897,7 @@ Tsugumi rushed toward them.{waitForClick}{nextPage x2}
 {marker}{appendText}She carried them to dry sand.{waitForClick}
 {appendText}The girl started crying.{waitForClick}
 {appendText}The boy, seemingly unaware of what had 
-happened, looked at his sister crying.{waitForClick}{nextPage x2}
+happened, looked at his sister crying.{waitForClick}{nextPage 04}
 
 [00000c49]10: 
 [00000c4a]18: hideTextbox
@@ -1907,7 +1907,7 @@ happened, looked at his sister crying.{waitForClick}{nextPage x2}
 {marker}{appendText}A few seconds later...he fell over as all his 
 strength had left him.{waitForClick}
 {appendText}That night, both of them came down with a 
-high fever.{waitForClick}{nextPage x2}
+high fever.{waitForClick}{nextPage 04}
 
 [00000c50]10: 
 [00000c51]18: hideTextbox
@@ -1927,7 +1927,7 @@ passed since the birth.{waitForClick}
 {appendText}All of that time in the past year and a half 
 had been filled with happiness.{waitForClick}
 {appendText}Nothing special had happened...and that was 
-why it had been so peaceful....{waitForClick}{nextPage x2}
+why it had been so peaceful....{waitForClick}{nextPage 04}
 
 [00000c81]10: 
 [00000c82]18: hideTextbox
@@ -1953,7 +1953,7 @@ hardly take her eyes off of him for a second.{waitForClick}
 Chami) in his mouth....{waitForClick}
 {appendText}Any electric appliance that he touched seemed 
 to break, and he wouldn't stop jamming metal 
-wires into the outlets.{waitForClick}{nextPage x2}
+wires into the outlets.{waitForClick}{nextPage 04}
 
 [00000cc9]10: 
 [00000cca]18: hideTextbox
@@ -1969,7 +1969,7 @@ stop fussing...{waitForClick}
 {appendText}And no matter how much Tsugumi warned her, she 
 wouldn't stop playing with her brother's hair.{waitForClick}
 {appendText}And she would always demand for 'More Chami! 
-More Chami!'{waitForClick}{nextPage x2}
+More Chami!'{waitForClick}{nextPage 04}
 
 [00000cd0]10: 
 [00000cd1]18: hideTextbox
@@ -1979,7 +1979,7 @@ More Chami!'{waitForClick}{nextPage x2}
 {marker}{appendText}Those days were filled with being buffeted 
 about by her two rambunctious children....{waitForClick}
 {appendText}But no matter how challenging, even those 
-days were filled with happiness.{waitForClick}{nextPage x2}
+days were filled with happiness.{waitForClick}{nextPage 04}
 
 [00000cd7]10: 
 [00000cd8]18: hideTextbox
@@ -1993,7 +1993,7 @@ cuddled up on a thin mattress. {waitForClick}
 {appendText}Talking in their sleep, the two babies sought 
 their mother's touch. {waitForClick}
 {appendText}Looking down at their sweet innocent gestures, 
-Tsugumi felt bliss she had never know.{waitForClick}{nextPage x2}
+Tsugumi felt bliss she had never know.{waitForClick}{nextPage 04}
 
 [00000cde]10: 
 [00000cdf]18: hideTextbox
@@ -2011,7 +2011,7 @@ Tsugumi felt bliss she had never know.{waitForClick}{nextPage x2}
 [00000d12]19: showTextbox
 [00000d13]ff 7a 00: text 7a
 {marker}{appendText}One day.{waitForClick}
-{appendText}Her peaceful world was shattered to bits.{waitForClick}{nextPage x2}
+{appendText}Her peaceful world was shattered to bits.{waitForClick}{nextPage 04}
 
 [00000d16]10: 
 [00000d17]18: hideTextbox
@@ -2026,7 +2026,7 @@ had forgotten to watch out for 'them.'{waitForClick}
 {appendText}She didn't know how they had found out, but 
 they had somehow gathered information and 
 showed up without warning. {waitForClick}
-{appendText}Them...the people from Leiblich....{waitForClick}{nextPage x2}
+{appendText}Them...the people from Leiblich....{waitForClick}{nextPage 04}
 
 [00000d2b]10: 
 [00000d2c]18: hideTextbox
@@ -2040,7 +2040,7 @@ babies and her hamster as she fled.{waitForClick}
 {appendText}It was obvious to Tsugumi that eventually 
 Leiblich would hunt them down.{waitForClick}
 {appendText}As they continued running, Tsugumi thought to 
-herself. {waitForClick}{nextPage x2}
+herself. {waitForClick}{nextPage 04}
 
 [00000d32]10: 
 [00000d33]18: hideTextbox
@@ -2053,7 +2053,7 @@ really be happiness for the two children?'{waitForClick}
 {appendText}'And it would be too hard on them to keep 
 moving from town to town.'{waitForClick}
 {appendText}'Besides...if we ever get caught, what would 
-they do to my children at Leiblich?'{waitForClick}{nextPage x2}
+they do to my children at Leiblich?'{waitForClick}{nextPage 04}
 
 [00000d39]10: 
 [00000d3a]18: hideTextbox
@@ -2061,7 +2061,7 @@ they do to my children at Leiblich?'{waitForClick}{nextPage x2}
 [00000d3c]19: showTextbox
 [00000d3d]ff 7e 00: text 7e
 {marker}{appendText}'It's too dangerous for them to be with me....'{waitForClick}
-{appendText}Tsugumi made up her mind.{waitForClick}{nextPage x2}
+{appendText}Tsugumi made up her mind.{waitForClick}{nextPage 04}
 
 [00000d40]10: 
 [00000d41]18: hideTextbox
@@ -2075,7 +2075,7 @@ and decided to leave them there.{waitForClick}
 couldn't have understood.{waitForClick}
 {appendText}With no other option, she left the pendant 
 she had kept with her, making a wish as she 
-gave it.{waitForClick}{nextPage x2}
+gave it.{waitForClick}{nextPage 04}
 
 [00000d47]10: 
 [00000d48]18: hideTextbox
@@ -2088,7 +2088,7 @@ you, I promise.'{waitForClick}
 the two children just stared at their mother 
 crying.{waitForClick}
 {appendText}Weeping bitter tears, Tsugumi looked back many 
-times as she walked away.{waitForClick}{nextPage x2}
+times as she walked away.{waitForClick}{nextPage 04}
 
 [00000d4e]10: 
 [00000d4f]18: hideTextbox
@@ -2106,7 +2106,7 @@ at her face in puzzlement.{waitForClick}
 {appendText}But even Chami's cute gestures could do 
 little to ease Tsugumi's broken heart.{waitForClick}
 {appendText}She spent many nights in the depth of despair, 
-crying in her sorrow.{waitForClick}{nextPage x2}
+crying in her sorrow.{waitForClick}{nextPage 04}
 
 [00000d71]10: 
 [00000d72]18: hideTextbox
@@ -2120,7 +2120,7 @@ orphanage, the children were already gone.{waitForClick}
 {appendText}No more than an empty husk...{waitForClick}
 {appendText}Until that day, until that very moment....{waitForClick}
 {appendText}Tsugumi had kept searching for her children....{waitForClick}
-{appendText}Wandering through darkness.{waitForClick}{nextPage x2}
+{appendText}Wandering through darkness.{waitForClick}{nextPage 04}
 
 [00000d78]10: 
 [00000d79]18: hideTextbox

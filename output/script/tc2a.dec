@@ -1,4 +1,4 @@
-﻿[0000004e]10: 
+[0000004e]10: 
 [0000004f]19: showTextbox
 [00000050]ff 00 00: text 00
 {marker}{sound C2T000}{appendText}[Sora]

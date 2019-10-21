@@ -1,4 +1,4 @@
-﻿[0000001e]10: 
+[0000001e]10: 
 [0000001f]18: hideTextbox
 [00000020]10: 
 [00000021]03 8b 00 00 a0 64 00 00: playBGM 11 100
@@ -588,7 +588,7 @@ scans of Coco and Takeshi.{waitForClick}{clearText}
 {marker}{appendText}The world in 2017.{waitForClick}
 {appendText}A laboratory at the bottom of the ocean.{waitForClick}
 {appendText}All that remained there was a 'perspective'.{waitForClick}
-{appendText}Hokuto and I started to think.{waitForClick}{nextPage x2}
+{appendText}Hokuto and I started to think.{waitForClick}{nextPage 04}
 
 [000002ff]10: 
 [00000300]18: hideTextbox
@@ -606,7 +606,7 @@ so often that the boundary between Hokuto and
 myself had started to become very vague.{waitForClick}
 {appendText}Our consciousness had gotten muddy, tangled 
 and intertwined. We were close to a state of 
-fusion.{waitForClick}{nextPage x2}
+fusion.{waitForClick}{nextPage 04}
 
 [0000030f]10: 
 [00000310]18: hideTextbox
@@ -619,7 +619,7 @@ beginning.{waitForClick}
 {appendText}My thoughts were the same as Hokuto's, and 
 Hokuto's thoughts were the same as mine....{waitForClick}
 {appendText}'Being me' and 'being Hokuto' wasn't all that 
-different.{waitForClick}{nextPage x2}
+different.{waitForClick}{nextPage 04}
 
 [00000316]10: 
 [00000317]18: hideTextbox
@@ -632,7 +632,7 @@ continue to be one....{waitForClick}
 {appendText}But it wasn't the time to be engrossed in such 
 thoughts.{waitForClick}
 {appendText}Our consciousness flew up to the floating 
-island.{waitForClick}{nextPage x2}
+island.{waitForClick}{nextPage 04}
 
 [0000031d]10: 
 [0000031e]18: hideTextbox

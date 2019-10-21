@@ -1,4 +1,4 @@
-﻿[00000052]00: 
+[00000052]00: 
 [00000053]0a 01 28 0a a4 b3 14 0c 01 81 01 00 06 00: gotoif 1 (28 0a a4) b3 == (01) 1 (0001) -> 00000291 (00000006)
 [00000061]10: 
 [00000062]24 a0 93 00 00: scriptLocationId 147
@@ -1385,7 +1385,7 @@ than with old memories.{delay 30}{waitForClick}
 person has no memories at all, it is called 
 'complete amnesia,' but in instances in which 
 some memories can be recalled it is called 
-'partial amnesia.'{waitForClick}{nextPage x2}
+'partial amnesia.'{waitForClick}{nextPage 04}
 
 [00000da2]10: 
 [00000da3]18: hideTextbox
@@ -1401,7 +1401,7 @@ prior to the impairment, this is called
 retrograde amnesia. An instance in which 
 memory impairment is significant and 
 continues after consciousness is restored is 
-known as 'anterograde amnesia.'{waitForClick}{nextPage x2}
+known as 'anterograde amnesia.'{waitForClick}{nextPage 04}
 
 [00000da9]10: 
 [00000daa]18: hideTextbox
@@ -1420,7 +1420,7 @@ history family or friends...{delay 30}{waitForClick}
 {appendText}And is often a reaction to incidents too hard 
 to endure, which incite an unconscious desire 
 to escape, forget or repress these 
-experiences or events.{waitForClick}{nextPage x2}
+experiences or events.{waitForClick}{nextPage 04}
 
 [00000db0]10: 
 [00000db1]18: hideTextbox
@@ -1432,7 +1432,7 @@ physically, and a person's brain functioning
 remains normal.{delay 30}{waitForClick}
 {appendText}People found wandering in this state are 
 often taken in or seek help from authorities, 
-such as the police.{waitForClick}{nextPage x2}
+such as the police.{waitForClick}{nextPage 04}
 
 [00000db7]10: 
 [00000db8]18: hideTextbox
@@ -1446,7 +1446,7 @@ marriage or financial difficulties, are the
 most typical victims. However, this illness 
 can be used as a cover for criminal 
 activities and it can be difficult to detect 
-the difference.{waitForClick}{nextPage x2}
+the difference.{waitForClick}{nextPage 04}
 
 [00000dbe]10: 
 [00000dbf]18: hideTextbox
@@ -1464,7 +1464,7 @@ life amnesia. Memories are usually restored
 gradually beginning with older ones and 
 treatment methods include psychiatric care, 
 and hypnosis both narcotic and naturally 
-induced.{waitForClick}{nextPage x2}
+induced.{waitForClick}{nextPage 04}
 
 [00000dc5]10: 
 [00000dc6]18: hideTextbox
@@ -1703,7 +1703,7 @@ had used at the entrance to the park.{waitForClick}{clearText}
 {marker}{appendText}12:45 p.m.{delay 30}{waitForClick}
 {appendText}Suddenly a blackout occurred - cause unknown.{delay 30}{waitForClick}
 {appendText}Next, the emergency alarms began ringing - 
-the cause of this was also unknown.{waitForClick}{nextPage x2}
+the cause of this was also unknown.{waitForClick}{nextPage 04}
 
 [0000104b]10: 
 [0000104c]18: hideTextbox
@@ -1714,7 +1714,7 @@ the cause of this was also unknown.{waitForClick}{nextPage x2}
 {appendText}The Insel null elevator shifted to its 
 emergency power source and an evacuation 
 order was issued for the entire complex. 
-Employees and visitors evacuated the premises. {waitForClick}{nextPage x2}
+Employees and visitors evacuated the premises. {waitForClick}{nextPage 04}
 
 [00001052]10: 
 [00001053]18: hideTextbox
@@ -1728,7 +1728,7 @@ It is highly probable that they are
 experiencing serious decompression sickness 
 at this moment.{delay 30}{waitForClick}
 {appendText}The emergency corridor to the outside was 
-left open for several minutes.{waitForClick}{nextPage x2}
+left open for several minutes.{waitForClick}{nextPage 04}
 
 [00001059]10: 
 [0000105a]18: hideTextbox
@@ -1741,7 +1741,7 @@ disrupted the air pressure balance inside the
 complex and the devices responsible for 
 adjusting the air pressure encountered 
 problems. The complex started automatically 
-pulling in air from the outside.{waitForClick}{nextPage x2}
+pulling in air from the outside.{waitForClick}{nextPage 04}
 
 [00001060]10: 
 [00001061]18: hideTextbox
@@ -1754,7 +1754,7 @@ pressure escaped.{delay 30}{waitForClick}
 {appendText}Apparently helium, which is lighter that 
 oxygen or nitrogen, leaked out first. {delay 30}{waitForClick}
 {appendText}Air pressure in the complex dropped to 1 
-atmosphere, the same as the level outside.{waitForClick}{nextPage x2}
+atmosphere, the same as the level outside.{waitForClick}{nextPage 04}
 
 [00001067]10: 
 [00001068]18: hideTextbox
@@ -1772,7 +1772,7 @@ specifications, meaning that as long as the
 internal air pressure was the same level or 
 higher than the outside water pressure, it 
 was designed not to collapse.{delay 30}{waitForClick}
-{appendText}Which meant...{waitForClick}{nextPage x2}
+{appendText}Which meant...{waitForClick}{nextPage 04}
 
 [0000106e]10: 
 [0000106f]18: hideTextbox
@@ -1788,7 +1788,7 @@ under the pressure, thus resulting in flooding.{delay 30}{waitForClick}
 {appendText}Subsequently, to minimize the damage from the 
 flooding, the emergency watertight doors had 
 automatically shut.{delay 30}{waitForClick}
-{appendText}Which brought us up to speed.{waitForClick}{nextPage x2}
+{appendText}Which brought us up to speed.{waitForClick}{nextPage 04}
 
 [00001075]10: 
 [00001076]18: hideTextbox

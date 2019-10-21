@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]46 80 00 00: setDialogBoxColor blue
 [0000001b]fe 28 0a a4 fa 14 14 00 a0 5c 00 00: setSceneTitleByIndex 92
 [00000027]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
@@ -113,7 +113,7 @@ I had of what whale skin would feel like.{waitForClick}{clearText}
 
 {appendText}Not having a memory was mysterious in a way.{waitForClick}
 {appendText}Normal and abnormal, common sense and nonsense 
-were all dictated by memory.{waitForClick}{nextPage x2}
+were all dictated by memory.{waitForClick}{nextPage 04}
 
 [00000114]10: 
 [00000115]18: hideTextbox
@@ -126,7 +126,7 @@ front of me...{waitForClick}
 {appendText}And he said, 'I'm your father,' then, well, I 
 probably wouldn't believe him.{waitForClick}
 {appendText}Because in this life I had never met a cross 
-between a sea otter and a person...{waitForClick}{nextPage x2}
+between a sea otter and a person...{waitForClick}{nextPage 04}
 
 [0000011b]10: 
 [0000011c]18: hideTextbox
@@ -138,7 +138,7 @@ know for sure if I had ever met a sea otter
 person...{waitForClick}
 {appendText}Thinking of it that way...{waitForClick}
 {appendText}It was amazing to me that I could be so 
-logical.{waitForClick}{nextPage x2}
+logical.{waitForClick}{nextPage 04}
 
 [00000122]10: 
 [00000123]18: hideTextbox
@@ -151,7 +151,7 @@ in a drawer in my brain somewhere.{waitForClick}
 {appendText}Only the number of drawers that I could open 
 was limited.{waitForClick}
 {appendText}I had no idea where the drawers from before 
-May 1st were packed away.{waitForClick}{nextPage x2}
+May 1st were packed away.{waitForClick}{nextPage 04}
 
 [00000129]10: 
 [0000012a]18: hideTextbox
@@ -162,7 +162,7 @@ May 1st were packed away.{waitForClick}{nextPage x2}
 {appendText}There was someone opening my drawers...{waitForClick}
 {appendText}And he or she was judging whether what was 
 happening was normal or abnormal, common sense 
-or nonsense.{waitForClick}{nextPage x2}
+or nonsense.{waitForClick}{nextPage 04}
 
 [00000130]10: 
 [00000131]18: hideTextbox
@@ -176,7 +176,7 @@ or nonsense.{waitForClick}{nextPage x2}
 [00000137]10: 
 [00000138]19: showTextbox
 [00000139]ff 0a 00: text 0a
-{appendText}The treasure in the safe didn't belong to me...{waitForClick}{nextPage x2}
+{appendText}The treasure in the safe didn't belong to me...{waitForClick}{nextPage 04}
 
 [0000013c]10: 
 [0000013d]18: hideTextbox
@@ -340,7 +340,7 @@ expression were extremely clear.{waitForClick}{clearText}{marker}{appendText}I i
 hologram into pendants or key chains or any 
 other object that a person wanted.{waitForClick}
 {appendText}On LeMU there were even a number of these 
-machines.{waitForClick}{nextPage x2}
+machines.{waitForClick}{nextPage 04}
 
 [00000287]10: 
 [00000288]18: hideTextbox

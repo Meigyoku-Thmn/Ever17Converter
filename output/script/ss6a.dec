@@ -1,4 +1,4 @@
-﻿[0000001e]10: 
+[0000001e]10: 
 [0000001f]46 80 00 00: setDialogBoxColor blue
 [00000023]fe 28 0a a4 fa 14 14 00 a0 62 00 00: setSceneTitleByIndex 98
 [0000002f]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
@@ -21,12 +21,12 @@ singing.{waitForClick}{clearText}
 [00000070]19: showTextbox
 [00000071]ff 01 00: text 01
 {marker}{appendText}
-{sound S6A000}{appendText}{delay 0}      {nextPage x2}Moon sprite shouldering a long bow.{nextPage x2}{waitForSound}
-{sound S6A001}{appendText}{delay 0}            {nextPage x2}Waiting inside a dream.{nextPage x2}{waitForSound}
-{sound S6A002}{appendText}{delay 0}         {nextPage x2}Tonight a story by moonlight.{nextPage x2}{waitForSound}
-{sound S6A009}{appendText}{delay 0}         {nextPage x2}Hoping the wait will be short.{nextPage x2}{waitForSound}
-{sound S6A004}{appendText}{delay 0}           {nextPage x2}Sleeping curled and snug.{nextPage x2}{waitForSound}
-{sound S6A005}{appendText}{delay 0}           {nextPage x2}Sleeping in mother's arms.{nextPage x2}{waitForSound}{nextPage x2}
+{sound S6A000}{appendText}{delay 0}      {nextPage 00}Moon sprite shouldering a long bow.{nextPage 01}{waitForSound}
+{sound S6A001}{appendText}{delay 0}            {nextPage 00}Waiting inside a dream.{nextPage 01}{waitForSound}
+{sound S6A002}{appendText}{delay 0}         {nextPage 00}Tonight a story by moonlight.{nextPage 01}{waitForSound}
+{sound S6A009}{appendText}{delay 0}         {nextPage 00}Hoping the wait will be short.{nextPage 01}{waitForSound}
+{sound S6A004}{appendText}{delay 0}           {nextPage 00}Sleeping curled and snug.{nextPage 01}{waitForSound}
+{sound S6A005}{appendText}{delay 0}           {nextPage 00}Sleeping in mother's arms.{nextPage 01}{waitForSound}{nextPage 04}
 
 [00000074]10: 
 [00000075]18: hideTextbox
@@ -34,13 +34,13 @@ singing.{waitForClick}{clearText}
 [00000077]19: showTextbox
 [00000078]ff 02 00: text 02
 {marker}{appendText}
-{sound S6A006}{appendText}{delay 0}    {nextPage x2}Water sprite lifting a pair of paddles.{nextPage x2}{waitForSound}
-{sound S6A007}{appendText}{delay 0}            {nextPage x2}Waiting inside a dream.{nextPage x2}{waitForSound}
-{sound S6A008}{appendText}{delay 0}          {nextPage x2}Tonight the whirlpool demon, 
-{appendText}{delay 0}               waiting for a boat{nextPage x2}{waitForSound}
-{sound S6A009}{appendText}{delay 0}         {nextPage x2}Hoping the wait will be short.{nextPage x2}{waitForSound}
-{sound S6A010}{appendText}{delay 0}          {nextPage x2}Rock, rock, rocked to sleep.{nextPage x2}{waitForSound}
-{sound S6A011}{appendText}{delay 0}     {nextPage x2}Sleeping, sleeping held by the ocean.{nextPage x2}{waitForSound}{nextPage x2}
+{sound S6A006}{appendText}{delay 0}    {nextPage 00}Water sprite lifting a pair of paddles.{nextPage 01}{waitForSound}
+{sound S6A007}{appendText}{delay 0}            {nextPage 00}Waiting inside a dream.{nextPage 01}{waitForSound}
+{sound S6A008}{appendText}{delay 0}          {nextPage 00}Tonight the whirlpool demon, 
+{appendText}{delay 0}               waiting for a boat{nextPage 01}{waitForSound}
+{sound S6A009}{appendText}{delay 0}         {nextPage 00}Hoping the wait will be short.{nextPage 01}{waitForSound}
+{sound S6A010}{appendText}{delay 0}          {nextPage 00}Rock, rock, rocked to sleep.{nextPage 01}{waitForSound}
+{sound S6A011}{appendText}{delay 0}     {nextPage 00}Sleeping, sleeping held by the ocean.{nextPage 01}{waitForSound}{nextPage 04}
 
 [0000007b]10: 
 [0000007c]18: hideTextbox
@@ -525,7 +525,7 @@ bullies had left.{waitForClick}{clearText}{marker}{appendText}Sara came and held
 
 
 
-{appendText}{delay 0}              {nextPage x2}Even though I lost.{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}              {nextPage 00}Even though I lost.{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000412]10: 
 [00000413]18: hideTextbox
@@ -646,12 +646,12 @@ sure. Okay?"{waitForClick}{clearText}{marker}{sound S6A067}{appendText}[Sara]
 [00000553]19: showTextbox
 [00000554]ff 27 00: text 27
 {marker}{appendText}
-{appendText}{delay 0}                {nextPage x2}I had promised.{nextPage x2}{delay 60}
-{appendText}{delay 0}           {nextPage x2}That was how things were.{nextPage x2}{delay 60}
-{appendText}{delay 0}           {nextPage x2}Back then I had promised.{nextPage x2}{delay 60}
-{appendText}{delay 0}         {nextPage x2}I had promised to go get her.{nextPage x2}{delay 60}
-{appendText}{delay 0}              {nextPage x2}But...I hadn't gone.{nextPage x2}{delay 60}
-{appendText}{delay 0}                 {nextPage x2}I couldn't go.{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}                {nextPage 00}I had promised.{nextPage 01}{delay 60}
+{appendText}{delay 0}           {nextPage 00}That was how things were.{nextPage 01}{delay 60}
+{appendText}{delay 0}           {nextPage 00}Back then I had promised.{nextPage 01}{delay 60}
+{appendText}{delay 0}         {nextPage 00}I had promised to go get her.{nextPage 01}{delay 60}
+{appendText}{delay 0}              {nextPage 00}But...I hadn't gone.{nextPage 01}{delay 60}
+{appendText}{delay 0}                 {nextPage 00}I couldn't go.{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000557]10: 
 [00000558]18: hideTextbox
@@ -689,7 +689,7 @@ cold moonlight shined.{waitForClick}{clearText}
 
 
 
-{appendText}{delay 0}        {nextPage x2}I couldn't keep...my promise...{nextPage x2}{waitForClick}{nextPage x2}
+{appendText}{delay 0}        {nextPage 00}I couldn't keep...my promise...{nextPage 01}{waitForClick}{nextPage 04}
 
 [00000581]10: 
 [00000582]18: hideTextbox
@@ -728,7 +728,7 @@ hopelessness. {waitForClick}{clearText}{marker}{appendText}And utter despair. {w
 
 {appendText}{delay 0}         There was nothing I could do!{waitForClick}
 {appendText}{delay 0}        I didn't have any other choice!{waitForClick}
-{appendText}{delay 0}          What else could I have done?{waitForClick}{nextPage x2}
+{appendText}{delay 0}          What else could I have done?{waitForClick}{nextPage 04}
 
 [000005da]10: 
 [000005db]18: hideTextbox
@@ -964,7 +964,7 @@ from recent events.{waitForClick}
 {appendText}I knew my age, address and phone number...{waitForClick}
 {appendText}I also remembered my foster mother and father.{waitForClick}
 {appendText}Still...there was just one crucial thing that 
-I couldn't remember.{waitForClick}{nextPage x2}
+I couldn't remember.{waitForClick}{nextPage 04}
 
 [000007d8]10: 
 [000007d9]18: hideTextbox
@@ -976,7 +976,7 @@ I couldn't remember.{waitForClick}{nextPage x2}
 {appendText}{delay 0}                   My name...{waitForClick}
 {appendText}{delay 0}               What was my name?{waitForClick}
 {appendText}{delay 0}               What was I called?{waitForClick}
-{appendText}{delay 0}                 I didn't know.{waitForClick}{nextPage x2}
+{appendText}{delay 0}                 I didn't know.{waitForClick}{nextPage 04}
 
 [000007df]10: 
 [000007e0]18: hideTextbox

@@ -1,4 +1,4 @@
-﻿[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000021]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
 [0000002c]fe 28 0a a4 b2 14 14 00 85 00 00: varop (28 0a a4) b2 := (00) 5
 [00000037]10: 
@@ -1418,7 +1418,7 @@ hospital.{waitForClick}
 {appendText}Kate stood on the left side of the room and 
 Robert stood on the right.{waitForClick}
 {appendText}Kate slipped out of her white uniform and 
-hung it on the closet door.{waitForClick}{nextPage x2}
+hung it on the closet door.{waitForClick}{nextPage 04}
 
 [00000976]10: 
 [00000977]18: hideTextbox
@@ -1433,7 +1433,7 @@ his boxers.{waitForClick}
 was lean and muscled.{waitForClick}
 {appendText}Kate put on the silk pajamas she had bought 
 for the occasion.{waitForClick}
-{appendText}Still naked, Robert turned off the light.{waitForClick}{nextPage x2}
+{appendText}Still naked, Robert turned off the light.{waitForClick}{nextPage 04}
 
 [0000097d]10: 
 [0000097e]18: hideTextbox
@@ -1447,7 +1447,7 @@ to the left...{waitForClick}
 {appendText}And they jumped into the bed, and...slept.{waitForClick}
 {appendText}Oh, by the way, Kate was sleeping in the 
 night duty room, and Robert was sleeping in 
-his room at home.{waitForClick}{nextPage x2}
+his room at home.{waitForClick}{nextPage 04}
 
 [00000984]10: 
 [00000985]18: hideTextbox
@@ -1465,7 +1465,7 @@ his room at home.{waitForClick}{nextPage x2}
 {marker}{appendText}"Hey, what's with the face?"{waitForClick}
 {appendText}"Haaa, I bet you were imagining something 
 dirty, weren't you!"{waitForClick}
-{appendText}That was the punch line.{waitForClick}{nextPage x2}
+{appendText}That was the punch line.{waitForClick}{nextPage 04}
 
 [000009b0]10: 
 [000009b1]18: hideTextbox
@@ -1798,7 +1798,7 @@ time."{waitForClick}{clearText}{marker}{sound T5A118}{appendText}[Tsugumi]
 {marker}{appendText}'The Cure virus.'{waitForClick}
 {appendText}The Cure virus was a type of retro-virus.{waitForClick}
 {appendText}Like many retro-viruses, the Cure virus was 
-not contagious across species.  {waitForClick}{nextPage x2}
+not contagious across species.  {waitForClick}{nextPage 04}
 
 [00000d05]10: 
 [00000d06]18: hideTextbox
@@ -1811,7 +1811,7 @@ of the virus.{waitForClick}
 {appendText}There are variants, such as the 
 monkey-specific Cure, the rat-specific Cure...{waitForClick}
 {appendText}But from here on out, we will only be 
-referring to the Human strain.{waitForClick}{nextPage x2}
+referring to the Human strain.{waitForClick}{nextPage 04}
 
 [00000d0c]10: 
 [00000d0d]18: hideTextbox
@@ -1825,7 +1825,7 @@ re-inject that DNA into the host's genes.{waitForClick}
 host's blueprint.{waitForClick}
 {appendText}Infected cells, which go on processing 
 proteins as usual, then unwittingly reproduce 
-the virus.{waitForClick}{nextPage x2}
+the virus.{waitForClick}{nextPage 04}
 
 [00000d13]10: 
 [00000d14]18: hideTextbox
@@ -1839,7 +1839,7 @@ cells.{waitForClick}
 {appendText}Normally, when cancer cells develop in a 
 body...{waitForClick}
 {appendText}The body repulses them with the 'p53' 
-function located on the 17th chromosome.{waitForClick}{nextPage x2}
+function located on the 17th chromosome.{waitForClick}{nextPage 04}
 
 [00000d1a]10: 
 [00000d1b]18: hideTextbox
@@ -1854,7 +1854,7 @@ gene...{waitForClick}
 damaged DNA, thus earning its name 'the 
 anti-cancer gene.'{waitForClick}
 {appendText}The Cure virus mutates this 'p53' gene as 
-well, rendering it useless.{waitForClick}{nextPage x2}
+well, rendering it useless.{waitForClick}{nextPage 04}
 
 [00000d21]10: 
 [00000d22]18: hideTextbox
@@ -1866,7 +1866,7 @@ throughout the body uncontested.{waitForClick}
 {appendText}Then, once all the DNA code is rewritten, the 
 host literally becomes a new species.{waitForClick}
 {appendText}A new species - we'll just call it the Cure 
-species here.{waitForClick}{nextPage x2}
+species here.{waitForClick}{nextPage 04}
 
 [00000d28]10: 
 [00000d29]18: hideTextbox
@@ -1876,7 +1876,7 @@ species here.{waitForClick}{nextPage x2}
 {marker}{appendText}The Cure species body is endowed with the 
 following unique characteristics:{waitForClick}
 {appendText}1.  Self-regeneration of the telomeres.{waitForClick}
-{appendText}2. Great improvement in self-healing.{waitForClick}{nextPage x2}
+{appendText}2. Great improvement in self-healing.{waitForClick}{nextPage 04}
 
 [00000d2f]10: 
 [00000d30]18: hideTextbox
@@ -1890,7 +1890,7 @@ become shorter with every replication.{waitForClick}
 telomere gets so short that the cell can no 
 longer divide.{waitForClick}
 {appendText}So telomeres are like the bus tickets of cell 
-division - once you spend them, they're gone.{waitForClick}{nextPage x2}
+division - once you spend them, they're gone.{waitForClick}{nextPage 04}
 
 [00000d36]10: 
 [00000d37]18: hideTextbox
@@ -1906,7 +1906,7 @@ already have been spent.{waitForClick}
 to continue, thereby eliminating aging and 
 weakening.{waitForClick}
 {appendText}Having said all that, this is not a 
-particularly unusual phenomenon.{waitForClick}{nextPage x2}
+particularly unusual phenomenon.{waitForClick}{nextPage 04}
 
 [00000d3d]10: 
 [00000d3e]18: hideTextbox
@@ -1918,7 +1918,7 @@ cells, and even in most cancer cells, there
 is rarely a shortage of telomeres.{waitForClick}
 {appendText}In that sense, it is not impossible to say 
 that the Cure virus 'turns every cell in the 
-body cancerous.'{waitForClick}{nextPage x2}
+body cancerous.'{waitForClick}{nextPage 04}
 
 [00000d44]10: 
 [00000d45]18: hideTextbox
@@ -1932,7 +1932,7 @@ with the process of self-healing.{waitForClick}
 of cell generation is greatly increased...{waitForClick}
 {appendText}And it is believed that this is what so 
 dramatically shortens the time required to 
-heal after an illness or injury.{waitForClick}{nextPage x2}
+heal after an illness or injury.{waitForClick}{nextPage 04}
 
 [00000d4b]10: 
 [00000d4c]18: hideTextbox
@@ -1948,7 +1948,7 @@ constitution extremely vulnerable to
 ultraviolet rays.{waitForClick}
 {appendText}The DNA cells in the skin quickly are damaged 
 or grow malignant when exposed to the sun for 
-any duration.{waitForClick}{nextPage x2}
+any duration.{waitForClick}{nextPage 04}
 
 [00000d52]10: 
 [00000d53]18: hideTextbox
@@ -1961,7 +1961,7 @@ gene, damaged DNA is let die or repaired...{waitForClick}
 {appendText}It was possible to use another gene to 
 produce an enzyme to perform the same 
 function as 'p53,' but alas, this solution 
-proved to be limited.{waitForClick}{nextPage x2}
+proved to be limited.{waitForClick}{nextPage 04}
 
 [00000d59]10: 
 [00000d5a]18: hideTextbox
@@ -1972,7 +1972,7 @@ proved to be limited.{waitForClick}{nextPage x2}
 ultraviolet rays, and can only venture 
 outside at night.{waitForClick}
 {appendText}The infrared-ray vision was developed to make 
-up for this shortcoming.{waitForClick}{nextPage x2}
+up for this shortcoming.{waitForClick}{nextPage 04}
 
 [00000d60]10: 
 [00000d61]18: hideTextbox

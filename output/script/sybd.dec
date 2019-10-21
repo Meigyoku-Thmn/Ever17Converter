@@ -1,4 +1,4 @@
-﻿[00000016]10: 
+[00000016]10: 
 [00000017]18: hideTextbox
 [00000018]10: 
 [00000019]45 8c 00 00 80 00 00: monoColorOverlay 12 0
@@ -65,8 +65,8 @@ breathing looked labored.{waitForClick}{clearText}
 {marker}{appendText}
 
 
-{sound Y4A061}{appendText}{delay 0}                    {nextPage x2}Promise?{nextPage x2}{waitForClick}
-{appendText}{delay 0}                {nextPage x2}Yeah, I promise.{nextPage x2}{waitForClick}{nextPage x2}
+{sound Y4A061}{appendText}{delay 0}                    {nextPage 00}Promise?{nextPage 01}{waitForClick}
+{appendText}{delay 0}                {nextPage 00}Yeah, I promise.{nextPage 01}{waitForClick}{nextPage 04}
 
 [000000c2]10: 
 [000000c3]18: hideTextbox
