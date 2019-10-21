@@ -9,6 +9,9 @@ namespace converter {
    internal class Opcode {
       public readonly int id;
       public readonly int args;
+      public readonly string name;
+
+      public override string ToString() => name;
 
       public static readonly Opcode end = new Opcode(0x0, 0);
       public static readonly Opcode jump = new Opcode(0x1, 1);
@@ -56,9 +59,17 @@ namespace converter {
       public static readonly Opcode text = new Opcode(0xFF, 1);
 
       private Opcode(int id) : this(id, 0) { }
-      private Opcode(int id, int args) {
+      private Opcode(int id, int args, string name = null) {
          this.id = id;
          this.args = args;
+         this.name = name;
+      }
+
+      static Opcode() {
+         foreach (var opField in Values()) {
+            var op = opField.GetValue(null) as Opcode;
+            opField.SetValue(null, new Opcode(op.id, op.args, opField.Name));
+         }
       }
 
       public static Dictionary<int, string> rest = new Dictionary<int, string>() {
@@ -73,11 +84,10 @@ namespace converter {
          { 0x15, "l_unk15" }
       };
 
-      private static IEnumerable<Opcode> Values() {
+      private static IEnumerable<FieldInfo> Values() {
          return typeof(Opcode)
             .GetFields(BindingFlags.Public | BindingFlags.Static)
             .Where(e => e.FieldType == typeof(Opcode))
-            .Select(e => (Opcode)e.GetValue(null))
             ;
       }
 
@@ -86,11 +96,13 @@ namespace converter {
       public static Opcode Get(int id) {
          if (idLookup == null) {
             idLookup = new Dictionary<int, Opcode>();
-            foreach (Opcode op in Values()) {
+            foreach (FieldInfo opField in Values()) {
+               var op = opField.GetValue(null) as Opcode;
                idLookup.Add(op.id, op);
             }
          }
-         return idLookup[id];
+         idLookup.TryGetValue(id, out Opcode opcode);
+         return opcode;
       }
 
       //Fast lookup from String to Opcode
@@ -98,11 +110,13 @@ namespace converter {
       public static Opcode Get(string name) {
          if (nameLookup == null) {
             nameLookup = new Dictionary<string, Opcode>();
-            foreach (Opcode op in Values()) {
+            foreach (FieldInfo opField in Values()) {
+               var op = opField.GetValue(null) as Opcode;
                nameLookup.Add(op.ToString(), op);
             }
          }
-         return nameLookup[name];
+         nameLookup.TryGetValue(name, out Opcode opcode);
+         return opcode;
       }
    }
 }

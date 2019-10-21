@@ -9,6 +9,9 @@ namespace converter {
    internal class StrOpcode {
       public readonly int id;
       public readonly int args;
+      public readonly string name;
+
+      public override string ToString() => name;
 
       public static readonly StrOpcode waitForClick = new StrOpcode(0x2);
       public static readonly StrOpcode clearText = new StrOpcode(0x3);
@@ -22,16 +25,23 @@ namespace converter {
       public static readonly StrOpcode bigChar = new StrOpcode(0x11, 0);
 
       private StrOpcode(int id) : this(id, 0) { }
-      private StrOpcode(int id, int args) {
+      private StrOpcode(int id, int args, string name = null) {
          this.id = id;
          this.args = args;
+         this.name = name;
       }
 
-      private static IEnumerable<StrOpcode> Values() {
+      static StrOpcode() {
+         foreach (var opField in Values()) {
+            var op = opField.GetValue(null) as StrOpcode;
+            opField.SetValue(null, new StrOpcode(op.id, op.args, opField.Name));
+         }
+      }
+
+      private static IEnumerable<FieldInfo> Values() {
          return typeof(StrOpcode)
             .GetFields(BindingFlags.Public | BindingFlags.Static)
             .Where(e => e.FieldType == typeof(StrOpcode))
-            .Select(e => (StrOpcode)e.GetValue(null))
             ;
       }
 
@@ -40,11 +50,13 @@ namespace converter {
       public static StrOpcode Get(int id) {
          if (idLookup == null) {
             idLookup = new Dictionary<int, StrOpcode>();
-            foreach (StrOpcode op in Values()) {
+            foreach (FieldInfo opField in Values()) {
+               var op = opField.GetValue(null) as StrOpcode;
                idLookup.Add(op.id, op);
             }
          }
-         return idLookup[id];
+         idLookup.TryGetValue(id, out StrOpcode strOpcode);
+         return strOpcode;
       }
 
       //Fast lookup from String to StrOpcode
@@ -52,11 +64,13 @@ namespace converter {
       public static StrOpcode Get(string name) {
          if (nameLookup == null) {
             nameLookup = new Dictionary<string, StrOpcode>();
-            foreach (StrOpcode op in Values()) {
+            foreach (FieldInfo opField in Values()) {
+               var op = opField.GetValue(null) as StrOpcode;
                nameLookup.Add(op.ToString(), op);
             }
          }
-         return nameLookup[name];
+         nameLookup.TryGetValue(name, out StrOpcode strOpcode);
+         return strOpcode;
       }
    }
 }

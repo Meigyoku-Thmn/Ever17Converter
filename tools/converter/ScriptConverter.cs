@@ -15,10 +15,6 @@ namespace converter {
             var sc = new ScriptConverter(scriptFile, dstFolder);
             sc.ConvertFolder();
          }
-         catch (Exception e) {
-            Log.Close();
-            throw e;
-         }
          finally {
             Log.Close();
          }
@@ -58,7 +54,11 @@ namespace converter {
       }
 
       public void ConvertFolder() {
-         var scriptFiles = srcF.GetFiles("*.scr", SearchOption.TopDirectoryOnly);
+         var scriptFiles = srcF
+            .GetFiles("*.scr", SearchOption.TopDirectoryOnly)
+            .Where(e => e.Name != "startup.scr" && e.Name != "system.scr")
+            .OrderBy(e => e.Name)
+            ;
          foreach (var scriptFile in scriptFiles) {
             ConvertFile(scriptFile);
          }
@@ -67,6 +67,7 @@ namespace converter {
       protected void ConvertFile(FileInfo file) {
          Log.Write("[Info] Converting script: " + file.Name);
          currentFileName = file.Name;
+         unsupportedOpCodes.Clear();
          input = new BinaryReader(new MemoryStream(File.ReadAllBytes(file.FullName)));
          input.BaseStream.SetUpPolyfill(limit: input.BaseStream.Length);
 
@@ -147,14 +148,14 @@ namespace converter {
                   continue;
                }
                else {
-                  pout.Write("{0:2x}", opcode);
+                  pout.Write("{0:x2}", opcode);
                }
                if (commandMode) {
                   commandMode = false;
                   Opcode op = Opcode.Get(opcode);
                   if (op == null) {
                      if (unsupportedOpCodes.Add(opcode)) {
-                        Log.Write(string.Format("  [Unknown] Unsupported opcode: {0:2x} ({1}) at {2:8x}", opcode, opcode, currentOpcodeOffset));
+                        Log.Write(string.Format("  [Unknown] Unsupported opcode: {0:x2} ({1}) at {2:x8}", opcode, opcode, currentOpcodeOffset));
                      }
                      pout.Write(": unsupported {0} ", opcode);
                   }
@@ -273,7 +274,7 @@ namespace converter {
                   string arg0 = ReadExpr();
                   int arg1 = Read();
                   int arg2 = Read();
-                  return string.Format("{0} {1} {2:2x} {3:2x}", Opcode.rest[opcode], arg0, arg1, arg2);
+                  return string.Format("{0} {1} {2:x2} {3:x2}", Opcode.rest[opcode], arg0, arg1, arg2);
                }
          }
          return "unkOp";
@@ -301,7 +302,7 @@ namespace converter {
             string filename = ReadText(input, graphicsTable[imageIndex]);
             imageCoveragePool.Add(imageIndex);
 
-            return string.Format("bgload {0:8x} {1} {2} {3}",
+            return string.Format("bgload {0:x8} {1} {2} {3}",
                     arg0, filename, num1, num2);
          }
          else if (op == Opcode.removeBG) {
@@ -320,7 +321,7 @@ namespace converter {
             string filename = ReadText(input, graphicsTable[imageIndex]);
             imageCoveragePool.Add(imageIndex);
 
-            return string.Format("fgload {0} {1:8x} {2} {3} {4}",
+            return string.Format("fgload {0} {1:x8} {2} {3} {4}",
                     num1, arg0, filename, x, num3);
          }
          else if (op == Opcode.multifgload2) {
@@ -338,7 +339,7 @@ namespace converter {
             imageCoveragePool.Add(imageIndex1);
             string filename2 = ReadText(input, graphicsTable[imageIndex2]);
             imageCoveragePool.Add(imageIndex2);
-            return string.Format("{0} {1} {2} {3:8x} {4} {5:8x} {6} {7} {8} {9}",
+            return string.Format("{0} {1} {2} {3:x8} {4} {5:x8} {6} {7} {8} {9}",
                     op, arg0, arg1, arg2, filename1, arg4, filename2, x1, x2, arg8);
          }
          else if (op == Opcode.multifgload3) {
@@ -359,7 +360,7 @@ namespace converter {
             imageCoveragePool.Add(imageIndex2);
             string filename3 = ReadText(input, graphicsTable[imageIndex3]);
             imageCoveragePool.Add(imageIndex3);
-            return string.Format("{0} {1:8x} {2} {3:8x} {4} {5:8x} {6} {7} {8} {9} {10}",
+            return string.Format("{0} {1:x8} {2} {3:x8} {4} {5:x8} {6} {7} {8} {9} {10}",
                     op, arg0, filename1, arg1, filename2, arg2, filename3,
                     arg3, arg4, arg5, arg6);
          }
@@ -379,7 +380,7 @@ namespace converter {
                case 0x86:
                   return $"{interpretedFuncName} 2 4 0";
             }
-            return string.Format("{0} {1:2x} {2:2x} {3:2x} {4}", op, arg0, arg1, arg2, arg3);
+            return string.Format("{0} {1:x2} {2:x2} {3:x2} {4}", op, arg0, arg1, arg2, arg3);
          }
          else if (op == Opcode.setFGOrder_Unk) {
             string arg0 = ReadExpr();
@@ -417,9 +418,9 @@ namespace converter {
             }
             else {
                Log.Write("  [Unknown] Text table index is out of bounds at " 
-                  + string.Format("{0:8x}", currentOpcodeOffset) + ": " + index);
+                  + string.Format("{0:x8}", currentOpcodeOffset) + ": " + index);
             }
-            return string.Format("{0} {1:2x}\n{2}\n", op, index, str);
+            return string.Format("{0} {1:x2}\n{2}\n", op, index, str);
          }
          else if (op == Opcode.hideTextbox) {
             return "hideTextbox";
@@ -467,7 +468,7 @@ namespace converter {
             else {
                var wkarRs = WorkAround.CollectASpecialGotoIfThatNotActuallyGotoIf(input, currentOpcodeOffset);
                if (wkarRs != null) return wkarRs;
-               Log.Write(string.Format("  [Unknown] Unexpected val in {0} at {1:8x}", v, currentOpcodeOffset));
+               Log.Write(string.Format("  [Unknown] Unexpected val in {0} at {1:x8}", v, currentOpcodeOffset));
                val = "00";
             }
 
@@ -478,11 +479,11 @@ namespace converter {
                jumpTarget = (uint)jumpTable[jumpTableIndex];
             }
             else {
-               Log.Write("  [Unknown] Invalid jump in " + op + " at " + string.Format("{0:8x}", currentOpcodeOffset) + ": " + jumpTableIndex);
+               Log.Write("  [Unknown] Invalid jump in " + op + " at " + string.Format("{0:x8}", currentOpcodeOffset) + ": " + jumpTableIndex);
             }
 
-            string result = string.Format("{0} {1} ({2:2x} {3:2x} {4:2x}) {5:2x} "
-                    + "{6} ({7:2x}) {8} ({9:4x}) -> {10:8x} ({11:8x})",
+            string result = string.Format("{0} {1} ({2:x2} {3:x2} {4:x2}) {5:x2} "
+                    + "{6} ({7:x2}) {8} ({9:x4}) -> {10:x8} ({11:x8})",
                     op, arg0, arg1, arg2, arg3, var, @operator,
                     arg4, val, arg7, jumpTarget, jumpTableIndex);
             return result;
@@ -499,7 +500,7 @@ namespace converter {
             //Conditional?
             int condOp2 = Peek();
             if (condOp2 != Opcode._switch3.id) {
-               Log.Write($"  [Unknown] Unexpectedly came across a weird opcode ({condOp2}) during a {op} at " + string.Format("{0:8x}", currentOpcodeOffset));
+               Log.Write($"  [Unknown] Unexpectedly came across a weird opcode ({condOp2}) during a {op} at " + string.Format("{0:x8}", currentOpcodeOffset));
             }
 
             StringBuilder varopBuffer = new StringBuilder();
@@ -513,7 +514,7 @@ namespace converter {
 
                int nil = Read();
 
-               varopBuffer.Append(string.Format("({0:2x} {1:2x} {2:2x}) {3:2x} {4:4x} ({5:2x})",
+               varopBuffer.Append(string.Format("({0:x2} {1:x2} {2:x2}) {3:x2} {4:x4} ({5:x2})",
                        arg0, arg1, arg2, var, @operator, nil));
             }
             
@@ -524,7 +525,7 @@ namespace converter {
             while (Peek() != 0x26) {
                int subop = Read();
                if (subop != 0x27) {
-                  Log.Write($"  [Unknown] Unexpected subop in {op}, expected 0x27, got {subop} at " + string.Format("{0:8x}", currentOpcodeOffset));
+                  Log.Write($"  [Unknown] Unexpected subop in {op}, expected 0x27, got {subop} at " + string.Format("{0:x8}", currentOpcodeOffset));
                }
 
                string subarg0 = ReadExpr();
@@ -534,9 +535,9 @@ namespace converter {
                   jumpTarget = (uint)jumpTable[jumpTableIndex];
                }
                else {
-                  Log.Write("  [Unknown] Invalid jump in switch case at " + string.Format("{0:8x}", currentOpcodeOffset) + ": " + jumpTableIndex);
+                  Log.Write("  [Unknown] Invalid jump in switch case at " + string.Format("{0:x8}", currentOpcodeOffset) + ": " + jumpTableIndex);
                }
-               sb.Append(string.Format("{0:2x} -> {1} {2:8x} ({3:8x})\n", subop, subarg0, jumpTarget, jumpTableIndex));
+               sb.Append(string.Format("{0:x2} -> {1} {2:x8} ({3:x8})\n", subop, subarg0, jumpTarget, jumpTableIndex));
 
                if (Peek() == 0) {
                   Read();
@@ -556,7 +557,7 @@ namespace converter {
             string arg2 = ReadExpr();
             string arg3 = ReadExpr();
 
-            return string.Format("{0} {1:8x} {2} {3} {4}", op, arg0, filename, arg2, arg3);
+            return string.Format("{0} {1:x8} {2} {3} {4}", op, arg0, filename, arg2, arg3);
          }
          else if (op == Opcode.bgloadCrop) {
             int arg0 = ReadInt();
@@ -570,7 +571,7 @@ namespace converter {
 
             string filename = ReadText(input, graphicsTable[imageIndex]);
             imageCoveragePool.Add(imageIndex);
-            return string.Format("{0} {1:8x} {2} {3} {4} {5} {6} {7} {8}", op, arg0, filename,
+            return string.Format("{0} {1:x8} {2} {3} {4} {5} {6} {7} {8}", op, arg0, filename,
                     arg2, arg3, arg4, arg5, arg6, arg7);
          }
          else if (op == Opcode.tweenZoom) {
@@ -589,11 +590,11 @@ namespace converter {
                uint jumpTarget = 0xFFFFFFFF;
                if (jumpTableIndex >= 0 && jumpTableIndex < jumpTable.Length) {
                   jumpTarget = (uint)jumpTable[jumpTableIndex];
-                  return string.Format("goto {0:8x} ({1:8x})", jumpTarget, jumpTableIndex);
+                  return string.Format("goto {0:x8} ({1:x8})", jumpTarget, jumpTableIndex);
                }
                else {
-                  Log.Write($"  [Unknown] Invalid jump in {op} at " + string.Format("{0:8x}", currentOpcodeOffset) + ": " + jumpTableIndex);
-                  return string.Format("goto {0:8x} ({1:8x})", jumpTarget, jumpTableIndex);
+                  Log.Write($"  [Unknown] Invalid jump in {op} at " + string.Format("{0:x8}", currentOpcodeOffset) + ": " + jumpTableIndex);
+                  return string.Format("goto {0:x8} ({1:x8})", jumpTarget, jumpTableIndex);
                }
             }
             input.BaseStream.Position += 1;
@@ -652,7 +653,7 @@ namespace converter {
                }
             }
 
-            string result = string.Format("{0} ({1:2x} {2:2x} {3:2x}) {4:2x} {5} ({6:2x}) {7}",
+            string result = string.Format("{0} ({1:x2} {2:x2} {3:x2}) {4:x2} {5} ({6:x2}) {7}",
                     op, arg0, arg1, arg2, arg3, @operator, arg4, arg5);
             return result;
          }
@@ -661,7 +662,7 @@ namespace converter {
             int imageIndex = ReadShort();
             string filename = ReadText(input, graphicsTable[imageIndex]);
             imageCoveragePool.Add(imageIndex);
-            return string.Format("{0} {1:8x} {2}", op, arg0, filename);
+            return string.Format("{0} {1:x8} {2}", op, arg0, filename);
          }
          else if (op == Opcode.unlockCG) {
             int arg0 = ReadInt();
@@ -799,7 +800,7 @@ namespace converter {
          else {
             if (op.args > 0) {
                Log.Write(string.Format(
-                  "  [Unknown] Unhandled opcode ({0:2x}) with {1} args at {2:8x}", 
+                  "  [Unknown] Unhandled opcode ({0:x2}) with {1} args at {2:x8}", 
                   op.id, op.args, currentOpcodeOffset));
             }
             return null;
@@ -842,7 +843,7 @@ namespace converter {
                return "+=";
          }
 
-         return string.Format("{0:4x}", c);
+         return string.Format("{0:x4}", c);
       }
 
       protected string GetComparisonOperator(int c) {
@@ -861,7 +862,7 @@ namespace converter {
                return "> ";
          }
 
-         return string.Format("{0:4x}", c);
+         return string.Format("{0:x4}", c);
       }
 
 

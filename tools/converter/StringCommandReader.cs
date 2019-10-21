@@ -34,7 +34,7 @@ namespace converter {
                   output.Append($"{{{op}}}");
                }
                else if (op == StrOpcode.clearText) {
-                  output.Append("{{{op}}}");
+                  output.Append($"{{{op}}}");
                }
                else if (op == StrOpcode.delay) {
                   output.Append($"{{{op} {ReadExpr()}}}");
@@ -51,7 +51,7 @@ namespace converter {
                else if (op == StrOpcode.choice) {
                   int arg0 = Read();
                   int arg1 = ReadShort();
-                  output.Append(string.Format("{{{0} {1:2x} {2:4x} ", op, arg0, arg1));
+                  output.Append(string.Format("{{{0} {1:x2} {2:x4} ", op, arg0, arg1));
                   while (Peek() != 0) {
                      string option = ParseChoiceOption();
                      output.Append('|');
@@ -66,7 +66,7 @@ namespace converter {
                }
                else if (op == StrOpcode.nextPage) {
                   int arg0 = Read();
-                  output.Append(string.Format("{{{0} {1:2x}}}", op, arg0));
+                  output.Append(string.Format("{{{0} {1:x2}}}", op, arg0));
                }
                else if (op == StrOpcode.bigChar) {
                   output.Append($"{{{op}}}");
@@ -101,7 +101,7 @@ OUTER:;
             if (op != 0x14) {
                Log.Write("     [Unknown Text] Unknown operator in choice option cond: " + op);
             }
-            temp.Append(string.Format("{{{0} ({1:2x} {2:2x} {3:2x}) {4:2x} {5:2x} ({6:2x})}}",
+            temp.Append(string.Format("{{{0} ({1:x2} {2:x2} {3:x2}) {4:x2} {5:x2} ({6:x2})}}",
                     "cond", arg0, arg1, arg2, varname, op, arg3));
             var c = ReadChar();
             while (c != "\n") {

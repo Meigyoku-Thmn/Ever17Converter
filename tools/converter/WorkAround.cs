@@ -34,24 +34,24 @@ namespace converter {
             for (var a = 0; a < 12; a++) {
                var dump = buf.ReadByte();
                if (a + 1 != 12) {
-                  outp.Write("{x2} ", dump);
+                  outp.Write("{0:x2} ", dump);
                }
                else {
-                  outp.Write("{x2}", dump);
+                  outp.Write("{0:x2}", dump);
                }
             }
             outp.Write(": ");
             outp.WriteLine("random " + numOfRandom);
             for (var i = 0; i < numOfRandom; i++) {
-               outp.Write("{8x}", buf.BaseStream.Position);
+               outp.Write("{0:x8}", buf.BaseStream.Position);
                for (var a = 0; a < 5; a++) {
                   var dump = buf.ReadByte();
-                  outp.Write(" {2x}", dump);
+                  outp.Write(" {0:x2}", dump);
                }
                outp.Write(": ");
                var jumpTableIndex = buf.ReadInt16();
                var jumpTarget = jumpTable[jumpTableIndex];
-               outp.WriteLine("jumpIfRandomIs " + i + string.Format(" {0:8x} ({1:8x})", jumpTarget, jumpTableIndex));
+               outp.WriteLine("jumpIfRandomIs " + i + string.Format(" {0:x8} ({1:x8})", jumpTarget, jumpTableIndex));
             }
          }
          else {
