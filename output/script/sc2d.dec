@@ -1,0 +1,299 @@
+﻿[00000022]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[0000002d]fe 28 0a a4 b1 14 14 00 82 00 00: varop (28 0a a4) b1 := (00) 2
+[00000038]fe 28 0a a4 b2 14 14 00 82 00 00: varop (28 0a a4) b2 := (00) 2
+[00000043]10: 
+[00000044]0f 81 00 00 00 00 00 00 00 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADM 320 3
+[00000055]10: 
+[00000056]19: showTextbox
+[00000057]ff 00 00: text 00
+{marker}{sound C2S218}{appendText}[Sora]
+"Someone sees me."{waitForClick}{clearText}{marker}{sound C2S219}{appendText}[Sora]
+"That action allows me to manifest myself for 
+the first time."{waitForClick}{clearText}{marker}{sound C2S220}{appendText}[Sora]
+"On that eye, that visual point."{waitForClick}{clearText}{marker}{sound C2S221}{appendText}[Sora]
+"That someone's eye actually creates me."{waitForClick}{clearText}{marker}{sound C2S222}{appendText}[Sora]
+"Kid..."{waitForClick}{clearText}{marker}{sound C2S223}{appendText}[Sora]
+"When you close your eyes, I disappear."{waitForClick}
+
+[0000005a]ff 01 00: text 01
+{appendText}{choice 00 0018 |Try it|Don't do anything}
+
+[0000005d]10: 
+[0000005e]1a a4 b3 00 00 a0 18 00 00: choiceId 1203 24
+[00000067]00: 
+[00000068]26 28 0a a4 b3 14 00 00 27 80 00 00 02 00 00 27 81 00 00 01 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 000000c5 (00000002)
+27 -> 1 0000007d (00000001)
+
+[0000007d]10: 
+[0000007e]19: showTextbox
+[0000007f]ff 02 00: text 02
+{marker}{appendText}[Kid]
+"..."{waitForClick}{clearText}{marker}{appendText}I didn't say or do anything.{waitForClick}{clearText}{marker}{appendText}No, it would be better to say that I couldn't 
+say or do anything.{waitForClick}{clearText}
+
+[00000082]10: 
+[00000083]18: hideTextbox
+[00000084]10: 
+[00000085]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[0000008c]10: 
+[0000008d]04: stopBGM
+[0000008e]10: 
+[0000008f]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000099]10: 
+[0000009a]05 53 45 30 30 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE00_01 0 100
+[000000aa]fe 28 0a a0 ab 14 14 00 c0 12: setMonoColorOverlayFadeOutDuration VAR_c0_18
+[000000b4]27 00 00: fadeOutMonoColorOverlay
+[000000b7]00: 
+[000000b8]05 85 00 00: unSkippableDelay 5
+[000000bc]10: 
+[000000bd]19: showTextbox
+[000000be]ff 03 00: text 03
+{marker}{appendText}Eventually we reached the Conference Room.{waitForClick}{clearText}{marker}{appendText}Sora's face was one big smile.{waitForClick}{clearText}{marker}{appendText}But somewhere in her smile seemed a hint of 
+sadness.{waitForClick}{clearText}{marker}{appendText}At least...it appeared that way to me.{waitForClick}{clearText}
+
+[000000c1]00: 
+[000000c2]07 03 00: goto 00000241 (00000003)
+[000000c5]fe 28 0a a4 ba 14 17 00 81 00 00: varop (28 0a a4) ba += (00) 1
+[000000d0]10: 
+[000000d1]19: showTextbox
+[000000d2]ff 04 00: text 04
+{marker}{appendText}[Kid]
+"When I close my eyes...?"{waitForClick}{clearText}{marker}{appendText}I decided to test it and covered my eyes with 
+one hand.{waitForClick}{clearText}
+
+[000000d5]10: 
+[000000d6]14 81 00 00 80 00 00 82 00 00: setFGOrder 4 1 2
+[000000e0]10: 
+[000000e1]18: hideTextbox
+[000000e2]10: 
+[000000e3]15 81 00 00 88 00 00: makeFGTransparent 2
+[000000ea]10: 
+[000000eb]0f 82 00 00 00 00 00 00 01 00 a1 40 00 00 83 00 00: fgload 2 00000000 SO01ADM 320 3
+[000000fc]10: 
+[000000fd]10 81 00 00 83 00 00: removeFG 1 3
+[00000104]10: 
+[00000105]1e a0 3c 00 00: delay 60
+[0000010a]10: 
+[0000010b]10 82 00 00 83 00 00: removeFG 2 3
+[00000112]10: 
+[00000113]15 81 00 00 a0 10 00 00: makeFGNormal 2
+[0000011b]10: 
+[0000011c]19: showTextbox
+[0000011d]ff 05 00: text 05
+{marker}{appendText}Instantly, Sora vanished.{waitForClick}{clearText}{marker}{appendText}If Sora did exist, I should have been able to 
+see her head above my hand and her feet below.{waitForClick}{clearText}{marker}{appendText}But Sora wasn't there.{waitForClick}{clearText}{marker}{appendText}My hand kept the laser from reaching my eye, 
+so I couldn't see Sora.{waitForClick}{clearText}{marker}{appendText}Something about it made her seem fragile and 
+temporary. It scared me.{waitForClick}{clearText}{marker}{appendText}I quickly put down my hand.{waitForClick}{clearText}
+
+[00000120]10: 
+[00000121]14 80 00 00 81 00 00 82 00 00: setFGOrder 4 2 1
+[0000012b]10: 
+[0000012c]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO09ADM 320 3
+[0000013d]10: 
+[0000013e]19: showTextbox
+[0000013f]ff 06 00: text 06
+{marker}{appendText}Her beautiful image appeared without a sound.{waitForClick}{clearText}{marker}{appendText}She smiled gently.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sora...?"{waitForClick}{clearText}{marker}{sound C2S224}{appendText}[Sora]
+"Yes...?"{waitForClick}{clearText}{marker}{appendText}There was no real meaning in my question.{waitForClick}{clearText}{marker}{appendText}Maybe it was just that I wanted to see whether 
+or not she would answer me.{waitForClick}{clearText}{marker}{appendText}Given her fragile existence, there seemed to 
+be a danger that she might slip away at any 
+moment...{waitForClick}{clearText}{marker}{appendText}I was uneasy about it, and at the same time 
+felt a sort of awe about the mystery of it.{waitForClick}{clearText}{marker}{appendText}I felt drawn to her.{waitForClick}{clearText}
+
+[00000142]10: 
+[00000143]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO08ADM 320 3
+[00000154]10: 
+[00000155]19: showTextbox
+[00000156]ff 07 00: text 07
+{marker}{sound C2S225}{appendText}[Sora]
+"Is there anything else? Please don't stare at 
+me like that."{waitForClick}{clearText}{marker}{appendText}Sora was blushing.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh...no. Nothing else."{waitForClick}{clearText}{marker}{appendText}Sora pinched her lips closed, as if she were 
+slightly embarrassed.{waitForClick}{clearText}
+
+[00000159]10: 
+[0000015a]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADM 320 3
+[0000016b]10: 
+[0000016c]19: showTextbox
+[0000016d]ff 08 00: text 08
+{marker}{sound C2S226}{appendText}[Sora]
+"By the way, Kid..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah?"{waitForClick}{clearText}{marker}{sound C2S227}{appendText}[Sora]
+"Kid...have you ever seen the moon?"{waitForClick}{clearText}{marker}{appendText}The question came out of nowhere.{waitForClick}{clearText}{marker}{appendText}My mind switched tracks and starting looking 
+for an appropriate answer.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Uh...the moon, huh...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't suppose this is a question I should 
+have to think about, but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But having lost my memory and all..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I can't say for sure that I've seen it."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But...I know what the moon is...and I'm 
+pretty sure that I have seen it."{waitForClick}{clearText}{marker}{sound C2S228}{appendText}[Sora]
+"I see."{waitForClick}{clearText}
+
+[00000170]10: 
+[00000171]19: showTextbox
+[00000172]ff 09 00: text 09
+{marker}{sound C2S229}{appendText}[Sora]
+"Well, now let's say that you have seen a full 
+moon."{waitForClick}{clearText}
+
+[00000175]10: 
+[00000176]19: showTextbox
+[00000177]ff 0a 00: text 0a
+{marker}{sound C2S230}{appendText}[Sora]
+"And let's say that you closed your eyes. 
+Do you think that moon would still be there?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ha, ha. That's easy."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Of course it would."{waitForClick}{clearText}
+
+[0000017a]10: 
+[0000017b]19: showTextbox
+[0000017c]ff 0b 00: text 0b
+{marker}{sound C2S231}{appendText}[Sora]
+"And how about if everyone in the world closed 
+their eyes all at the same time?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't know what you are getting at, but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Even if everyone in the world closed their 
+eyes, the moon wouldn't disappear."{waitForClick}{clearText}
+
+[0000017f]10: 
+[00000180]19: showTextbox
+[00000181]ff 0c 00: text 0c
+{marker}{sound C2S232}{appendText}[Sora]
+"Really?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes."{waitForClick}{clearText}{marker}{sound C2S233}{appendText}[Sora]
+"How can you be sure?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Just open your eyes and you can tell, right?"{waitForClick}{clearText}
+
+[00000184]10: 
+[00000185]19: showTextbox
+[00000186]ff 0d 00: text 0d
+{marker}{sound C2S234}{appendText}[Sora]
+"That goes against the purpose of this 
+exercise."{waitForClick}{clearText}
+
+[00000189]10: 
+[0000018a]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO05ADM 320 3
+[0000019b]10: 
+[0000019c]19: showTextbox
+[0000019d]ff 0e 00: text 0e
+{marker}{sound C2S235}{appendText}[Sora]
+"My question was whether there is anyway of 
+measuring whether or not the moon exists, if 
+someone closes their eyes."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"?"{waitForClick}{clearText}{marker}{sound C2S236}{appendText}[Sora]
+"When you close your eyes, do you think 
+this world still exists?"{waitForClick}{clearText}
+
+[000001a0]10: 
+[000001a1]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO10ADM 320 3
+[000001b2]10: 
+[000001b3]19: showTextbox
+[000001b4]ff 0f 00: text 0f
+{marker}{sound C2S237}{appendText}[Sora]
+"What if I told you that not only myself, but 
+all of LeMU was nothing but an RSD ?generated 
+illusion.....what would you do then?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Huh?"{waitForClick}{clearText}{marker}{sound C2S238}{appendText}[Sora]
+"Can you prove that the walls, the ceiling and 
+all of the scenery that you are witnessing 
+actually exist?"{waitForClick}{clearText}{marker}{appendText}(Is everything I'm looking at...is it 
+RSD...???){waitForClick}{clearText}{marker}{appendText}I panicked, glancing around at my surroundings.{waitForClick}{clearText}
+
+[000001b7]10: 
+[000001b8]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO09ADM 320 3
+[000001c9]10: 
+[000001ca]19: showTextbox
+[000001cb]ff 10 00: text 10
+{marker}{sound C2S239}{appendText}[Sora]
+"Ha, ha, I'm sorry, I was only joking."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That was a joke?"{waitForClick}{clearText}
+
+[000001ce]10: 
+[000001cf]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO02ADM 320 3
+[000001e0]10: 
+[000001e1]19: showTextbox
+[000001e2]ff 11 00: text 11
+{marker}{sound C2S240}{appendText}[Sora]
+"Yes, LeMU really does exist."{waitForClick}{clearText}{marker}{sound C2S241}{appendText}[Sora]
+"You sounded so full of confidence when you 
+answered...I thought I would tease you just 
+a bit."{waitForClick}{clearText}{marker}{appendText}Sora giggled, covering her mouth.{waitForClick}{clearText}
+
+[000001e5]10: 
+[000001e6]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO10ADM 320 3
+[000001f7]10: 
+[000001f8]19: showTextbox
+[000001f9]ff 12 00: text 12
+{marker}{sound C2S242}{appendText}[Sora]
+"However, I can say this..."{waitForClick}{clearText}{marker}{sound C2S243}{appendText}[Sora]
+"For humans to know the world around them they 
+must use one of their five senses."{waitForClick}{clearText}{marker}{sound C2S244}{appendText}[Sora]
+"If they lose all of these, they lose the 
+ability to tell whether this world exists, 
+or not."{waitForClick}{clearText}{marker}{sound C2S245}{appendText}[Sora]
+"Another way of putting it might be to say 
+that the perspective is in the eye of the 
+beholder."{waitForClick}{clearText}{marker}{sound C2S246}{appendText}[Sora]
+"In this instance, I don't mean just sight, 
+but hearing, smell, taste , touch ? all of 
+the senses."{waitForClick}{clearText}
+
+[000001fc]10: 
+[000001fd]0f 81 00 00 00 00 00 00 0a 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO05ADM 320 3
+[0000020e]10: 
+[0000020f]19: showTextbox
+[00000210]ff 13 00: text 13
+{marker}{sound C2S247}{appendText}[Sora]
+"The point at which we perceive the world ? 
+that is perspective."{waitForClick}{clearText}{marker}{sound C2S248}{appendText}[Sora]
+"And I..."{waitForClick}{clearText}
+
+[00000213]10: 
+[00000214]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO09ADM 320 3
+[00000225]10: 
+[00000226]19: showTextbox
+[00000227]ff 14 00: text 14
+{marker}{sound C2S249}{appendText}[Sora]
+"I...I am the same as the moon."{waitForClick}{clearText}{marker}{sound C2S250}{appendText}[Sora]
+"Do you understand?"{waitForClick}{clearText}{marker}{appendText}I felt like I had been able to get the gist of 
+what she meant.{waitForClick}{clearText}{marker}{appendText}Still...I didn't know exactly what she 
+meant by...'I am the same as the moon.'{waitForClick}{clearText}{marker}{appendText}I mustered an image of a silvery blue moon, 
+its light piercing through the dark night.{waitForClick}{clearText}{marker}{appendText}(I see...that's what she means.){waitForClick}{clearText}{marker}{appendText}The answer came to me surprisingly quickly.{waitForClick}{clearText}{marker}{appendText}The moon didn't bark like a dog, it didn't 
+smell, and it didn't taste tart like an 
+apple ? at least not as far as I knew.{waitForClick}{clearText}{marker}{appendText}The only way to be sure of the existence of 
+the moon was through its small gravitational 
+pull and its blue-white light.{waitForClick}{clearText}{marker}{appendText}Thinking of it in that way, the mysterious 
+charm of the moon and its transience were 
+things that Sora shared.{waitForClick}{clearText}{marker}{appendText}I believed the moon was there, so it was 
+there...{waitForClick}{clearText}{marker}{appendText}I believed that Sora was there, and 
+she was there...{waitForClick}{clearText}{marker}{appendText}Maybe that was what Sora wanted to say.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah. I understand."{waitForClick}{clearText}{marker}{appendText}That was what I answered.{waitForClick}{clearText}
+
+[0000022a]10: 
+[0000022b]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO08ADM 320 3
+[0000023c]10: 
+[0000023d]19: showTextbox
+[0000023e]ff 15 00: text 15
+{marker}{appendText}Sora's eyes lit up and her cheeks wrinkled 
+into a big smile.{waitForClick}{clearText}{marker}{appendText}And, it may have been my imagination, but from 
+somewhere I thought I smelled the tart scent 
+of an apple.{waitForClick}{clearText}
+
+[00000241]10: 
+[00000242]18: hideTextbox
+[00000243]10: 
+[00000244]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[0000024b]10: 
+[0000024c]04: stopBGM
+[0000024d]10: 
+[0000024e]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000258]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000262]27 00 00: fadeOutMonoColorOverlay
+[00000265]00: 
+[00000266]05 83 00 00: unSkippableDelay 3
+[0000026a]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000275]10: 
+[00000276]01 53 5f 32 44 00: jump S_2D

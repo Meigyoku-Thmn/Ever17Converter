@@ -1,0 +1,922 @@
+﻿[00000029]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000034]fe 28 0a a4 b1 14 14 00 81 00 00: varop (28 0a a4) b1 := (00) 1
+[0000003f]fe 28 0a a4 b2 14 14 00 81 00 00: varop (28 0a a4) b2 := (00) 1
+[0000004a]10: 
+[0000004b]0f 82 00 00 00 00 00 00 00 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA08ADM 512 3
+[0000005c]10: 
+[0000005d]19: showTextbox
+[0000005e]ff 00 00: text 00
+{marker}{sound C1S000}{appendText}[Mayo]
+"No. I was all alone."{waitForClick}{clearText}
+
+[00000061]10: 
+[00000062]0f 81 00 00 00 00 00 00 01 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU07BWM 128 3
+[00000073]10: 
+[00000074]19: showTextbox
+[00000075]ff 01 00: text 01
+{marker}{sound C1S001}{appendText}[Mayo]
+"There was nobody..."{waitForClick}
+
+[00000078]ff 02 00: text 02
+{appendText}{choice 00 0009 |Was that right...?|Really?}
+
+[0000007b]10: 
+[0000007c]1a a4 b3 00 00 89 00 00: choiceId 1203 9
+[00000084]00: 
+[00000085]26 28 0a a4 b3 14 00 00 27 80 00 00 01 00 00 27 81 00 00 02 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 0000009a (00000001)
+27 -> 1 000000ad (00000002)
+
+[0000009a]fe 28 0a a4 b3 14 14 00 81 00 00: varop (28 0a a4) b3 := (00) 1
+[000000a5]10: 
+[000000a6]01 53 5f 31 41 32 00: jump S_1A2
+[000000ad]fe 28 0a a4 ba 14 17 00 81 00 00: varop (28 0a a4) ba += (00) 1
+[000000b8]10: 
+[000000b9]19: showTextbox
+[000000ba]ff 03 00: text 03
+{marker}{appendText}[Kid]
+"Really?"{waitForClick}{clearText}{marker}{sound C1S002}{appendText}[Mayo]
+"Yeah..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You're sure there was nobody else there?"{waitForClick}{clearText}
+
+[000000bd]10: 
+[000000be]0f 82 00 00 00 00 00 00 02 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA04ADM 512 3
+[000000cf]10: 
+[000000d0]19: showTextbox
+[000000d1]ff 04 00: text 04
+{marker}{sound C1S003}{appendText}[Mayo]
+"I said there was nobody there."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Even in the elevator next to you?"{waitForClick}{clearText}
+
+[000000d4]10: 
+[000000d5]0f 82 00 00 00 00 00 00 03 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA05ADM 512 3
+[000000e6]10: 
+[000000e7]19: showTextbox
+[000000e8]ff 05 00: text 05
+{marker}{sound C1S004}{appendText}[Mayo]
+"No. I don't think there was anybody riding 
+in it."{waitForClick}{clearText}{marker}{sound C1S005}{appendText}[Mayo]
+"I was shouting for help the whole time and 
+nobody answered me."{waitForClick}{clearText}{marker}{appendText}I wondered why not. The voice that I had heard 
+a little bit ago was grating on my mind.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I just want to make sure one more time..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara, there was really no one riding 
+in the elevator except for you?"{waitForClick}{clearText}
+
+[000000eb]10: 
+[000000ec]12 81 00 00 82 00 00 00 00 00 00 04 00 00 00 00 00 05 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU06BWM 00000000 SA06ADM 128 512 3
+[0000010a]10: 
+[0000010b]19: showTextbox
+[0000010c]ff 06 00: text 06
+{marker}{sound C1S006}{appendText}[Sara]
+"Uh..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So there was somebody?"{waitForClick}{clearText}{marker}{sound C1S007}{appendText}[Sara]
+"N-no...there wasn't, but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But...?"{waitForClick}{clearText}
+
+[0000010f]10: 
+[00000110]0f 82 00 00 00 00 00 00 06 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA03ADM 512 3
+[00000121]10: 
+[00000122]19: showTextbox
+[00000123]ff 07 00: text 07
+{marker}{sound C1S008}{appendText}[Sara]
+"Why...?"{waitForClick}{clearText}{marker}{sound C1S009}{appendText}[Sara]
+"...How...how do you know?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"?"{waitForClick}{clearText}{marker}{sound C1S010}{appendText}[Sara]
+"My..."{waitForClick}{clearText}{marker}{sound C1S011}{appendText}[Sara]
+"My...name..."{waitForClick}{clearText}
+
+[00000126]10: 
+[00000127]04: stopBGM
+[00000128]10: 
+[00000129]19: showTextbox
+[0000012a]ff 08 00: text 08
+{marker}{appendText}[Kid]
+"N-name...?"{waitForClick}{clearText}
+
+[0000012d]10: 
+[0000012e]0f 81 00 00 00 00 00 00 07 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU05BWM 128 3
+[0000013f]10: 
+[00000140]19: showTextbox
+[00000141]ff 09 00: text 09
+{marker}{sound C1S012}{appendText}[You]
+"What? Oh, that's right. We haven't told you 
+Mayo's real name..."{waitForClick}{clearText}{marker}{appendText}That instant, my vision shook crazily.{waitForClick}{clearText}
+
+[00000144]10: 
+[00000145]03 a0 10 00 00 a0 64 00 00: playBGM 16 100
+[0000014e]10: 
+[0000014f]19: showTextbox
+[00000150]ff 0a 00: text 0a
+{marker}{appendText}Something spine-chilling was squirming in the 
+core of my body.{waitForClick}{clearText}{marker}{appendText}The feeling spread through my network of 
+nerves to the far corners of my body in an 
+instant.{waitForClick}{clearText}
+
+[00000153]10: 
+[00000154]0f 82 00 00 00 00 00 00 08 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA04ADM 512 3
+[00000165]10: 
+[00000166]19: showTextbox
+[00000167]ff 0b 00: text 0b
+{marker}{sound C1S013}{appendText}[Sara]
+"Hey! I asked you why!"{waitForClick}{clearText}
+
+[0000016a]10: 
+[0000016b]0f 82 00 00 00 00 00 00 09 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA05ADM 512 3
+[0000017c]10: 
+[0000017d]19: showTextbox
+[0000017e]ff 0c 00: text 0c
+{marker}{sound C1S014}{appendText}[Sara]
+"Do...do you know...me?"{waitForClick}{clearText}
+
+[00000181]10: 
+[00000182]18: hideTextbox
+[00000183]10: 
+[00000184]20 a0 2c 00 00: showDimOverlay
+[00000189]10: 
+[0000018a]18: hideTextbox
+[0000018b]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000196]10: 
+[00000197]19: showTextbox
+[00000198]ff 0d 00: text 0d
+{marker}{appendText}Sara Matsunaga.{waitForClick}
+{appendText}
+{appendText}Yes. I was sure. Her name was Sara Matsunaga.{waitForClick}
+{appendText}But...how...{waitForClick}
+{appendText}How did I know her name?{waitForClick}{nextPage x2}
+
+[0000019b]10: 
+[0000019c]18: hideTextbox
+[0000019d]10: 
+[0000019e]18: hideTextbox
+[0000019f]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[000001aa]10: 
+[000001ab]21 a0 10 00 00: closeDimOverlay
+[000001b0]10: 
+[000001b1]18: hideTextbox
+[000001b2]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[000001bd]10: 
+[000001be]19: showTextbox
+[000001bf]ff 0e 00: text 0e
+{marker}{appendText}[Kid]
+"I don't know...I really don't know..."{waitForClick}{clearText}{marker}{appendText}I cradled my head and shook it several times.{waitForClick}{clearText}
+
+[000001c2]10: 
+[000001c3]0f 82 00 00 00 00 00 00 0a 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA04ADM 512 3
+[000001d4]10: 
+[000001d5]19: showTextbox
+[000001d6]ff 0f 00: text 0f
+{marker}{sound C1S015}{appendText}[Sara]
+"What is this?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't know..."{waitForClick}{clearText}{marker}{sound C1S016}{appendText}[Sara]
+"If you don't know, then I don't know!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I dunno...I dunno...I dunno..."{waitForClick}{clearText}{marker}{sound C1S017}{appendText}[Sara]
+"Hey! Answer me!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound C1S018}{appendText}[Sara]
+"How do you know me?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[000001d9]10: 
+[000001da]0f 82 00 00 00 00 00 00 0b 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA05ADM 512 3
+[000001eb]10: 
+[000001ec]19: showTextbox
+[000001ed]ff 10 00: text 10
+{marker}{sound C1S019}{appendText}[Sara]
+"Who..."{waitForClick}{clearText}
+
+[000001f0]10: 
+[000001f1]0f 82 00 00 00 00 00 00 0c 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA03ADM 512 3
+[00000202]10: 
+[00000203]19: showTextbox
+[00000204]ff 11 00: text 11
+{marker}{sound C1S020}{appendText}[Sara]
+"...Who are you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I said I don't know!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't know myself! I don't know!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why do....I....know...your name...?"{waitForClick}{clearText}{marker}{appendText}My temples started to throb.{waitForClick}{clearText}{marker}{appendText}The power drained from my body.{waitForClick}{clearText}{marker}{appendText}I crumpled on the spot as if I had been sucked 
+dry of energy.{waitForClick}{clearText}
+
+[00000207]10: 
+[00000208]0f 81 00 00 00 00 00 00 0d 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU06BWM 128 3
+[00000219]10: 
+[0000021a]19: showTextbox
+[0000021b]ff 12 00: text 12
+{marker}{sound C1S021}{appendText}[You]
+"W-wait...not another one of your fits!?"{waitForClick}{clearText}
+
+[0000021e]10: 
+[0000021f]0f 81 00 00 00 00 00 00 0e 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU03BWM 128 3
+[00000230]10: 
+[00000231]19: showTextbox
+[00000232]ff 13 00: text 13
+{marker}{sound C1S022}{appendText}[You]
+"Gimme a break. Geez..."{waitForClick}{clearText}{marker}{appendText}You's voice sounded far away.{waitForClick}{clearText}
+
+[00000235]10: 
+[00000236]0f 82 00 00 00 00 00 00 0f 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA13ADM 512 3
+[00000247]10: 
+[00000248]19: showTextbox
+[00000249]ff 14 00: text 14
+{marker}{sound C1S023}{appendText}[Sara]
+"Fits?"{waitForClick}{clearText}
+
+[0000024c]10: 
+[0000024d]0f 81 00 00 00 00 00 00 10 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU17BWM 128 3
+[0000025e]10: 
+[0000025f]19: showTextbox
+[00000260]ff 15 00: text 15
+{marker}{sound C1S024}{appendText}[You]
+"He's..."{waitForClick}{clearText}{marker}{sound C1S025}{appendText}[You]
+"...lost his memory."{waitForClick}{clearText}
+
+[00000263]10: 
+[00000264]0f 82 00 00 00 00 00 00 11 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA06ADM 512 3
+[00000275]10: 
+[00000276]19: showTextbox
+[00000277]ff 16 00: text 16
+{marker}{sound C1S026}{appendText}[Sara]
+"Lost...his...memory?"{waitForClick}{clearText}{marker}{sound C1S027}{appendText}[You]
+"Yup."{waitForClick}{clearText}{marker}{sound C1S028}{appendText}[You]
+"No matter how much you ask him, he doesn't 
+remember..."{waitForClick}{clearText}{marker}{sound C1S029}{appendText}[You]
+"If you try to make him remember, then..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ooohhh...arggghhh...."{waitForClick}{clearText}
+
+[0000027a]10: 
+[0000027b]0f 81 00 00 00 00 00 00 12 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU07BWM 128 3
+[0000028c]10: 
+[0000028d]19: showTextbox
+[0000028e]ff 17 00: text 17
+{marker}{sound C1S030}{appendText}[You]
+"See? He gets like this."{waitForClick}{clearText}
+
+[00000291]10: 
+[00000292]0f 82 00 00 00 00 00 00 13 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA03ADM 512 3
+[000002a3]10: 
+[000002a4]19: showTextbox
+[000002a5]ff 18 00: text 18
+{marker}{appendText}[Sara]
+"........."{waitForClick}{clearText}
+
+[000002a8]10: 
+[000002a9]0f 81 00 00 00 00 00 00 14 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU04BWM 128 3
+[000002ba]10: 
+[000002bb]19: showTextbox
+[000002bc]ff 19 00: text 19
+{marker}{sound C1S031}{appendText}[You]
+"Now stand up! Get a hold of yourself!"{waitForClick}{clearText}
+
+[000002bf]10: 
+[000002c0]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[000002c7]10: 
+[000002c8]19: showTextbox
+[000002c9]ff 1a 00: text 1a
+{marker}{appendText}You grabbed both of my shoulders and stood 
+me up.{waitForClick}{clearText}
+
+[000002cc]10: 
+[000002cd]0f 81 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05BWL 320 3
+[000002de]10: 
+[000002df]19: showTextbox
+[000002e0]ff 1b 00: text 1b
+{marker}{sound C1S032}{appendText}[You]
+"Listen. Listen good. Look at me..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[000002e3]10: 
+[000002e4]0f 81 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07BWL 320 3
+[000002f5]10: 
+[000002f6]19: showTextbox
+[000002f7]ff 1c 00: text 1c
+{marker}{sound C1S033}{appendText}[You]
+"I think you have lost touch with who you are, 
+and it scares you."{waitForClick}{clearText}{marker}{sound C1S034}{appendText}[You]
+"Because you have no memory...because you 
+have no past..."{waitForClick}{clearText}{marker}{sound C1S035}{appendText}[You]
+"You've lost your past and feel like you've 
+lost yourself...you are afraid..."{waitForClick}{clearText}
+
+[000002fa]10: 
+[000002fb]0f 81 00 00 00 00 00 00 17 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BWL 320 3
+[0000030c]10: 
+[0000030d]19: showTextbox
+[0000030e]ff 1d 00: text 1d
+{marker}{sound C1S036}{appendText}[You]
+"But you know what? There is nothing to be 
+afraid of."{waitForClick}{clearText}{marker}{sound C1S037}{appendText}[You]
+"You are right here, right now."{waitForClick}{clearText}{marker}{sound C1S038}{appendText}[You]
+"Standing right in front of me."{waitForClick}{clearText}{marker}{sound C1S039}{appendText}[You]
+"No matter what happens, there is no way you 
+are just going to disappear."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[00000311]10: 
+[00000312]19: showTextbox
+[00000313]ff 1e 00: text 1e
+{marker}{sound C1S040}{appendText}[You]
+"Okay? Look me in the eyes, alright?"{waitForClick}{clearText}{marker}{sound C1S041}{appendText}[You]
+"That's better..."{waitForClick}{clearText}
+
+[00000316]10: 
+[00000317]0f 81 00 00 00 00 00 00 18 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02BWL 320 3
+[00000328]10: 
+[00000329]19: showTextbox
+[0000032a]ff 1f 00: text 1f
+{marker}{sound C1S042}{appendText}[You]
+"Now try to smile."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...What?"{waitForClick}{clearText}
+
+[0000032d]10: 
+[0000032e]0f 81 00 00 00 00 00 00 19 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BWL 320 3
+[0000033f]10: 
+[00000340]19: showTextbox
+[00000341]ff 20 00: text 20
+{marker}{sound C1S043}{appendText}[You]
+"Just, smile..."{waitForClick}{clearText}{marker}{appendText}I made a conscious effort to move my cheek 
+muscles.{waitForClick}{clearText}
+
+[00000344]10: 
+[00000345]0f 81 00 00 00 00 00 00 1a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU08BWL 320 3
+[00000356]10: 
+[00000357]19: showTextbox
+[00000358]ff 21 00: text 21
+{marker}{sound C1S044}{appendText}[You]
+"No, no, no. More. Like say....'Cheeeeeeese.'"{waitForClick}{clearText}{marker}{appendText}I put more effort into moving the muscles 
+in my face.{waitForClick}{clearText}
+
+[0000035b]10: 
+[0000035c]0f 81 00 00 00 00 00 00 1b 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BWL 320 3
+[0000036d]10: 
+[0000036e]19: showTextbox
+[0000036f]ff 22 00: text 22
+{marker}{sound C1S045}{appendText}[You]
+"That's a pretty forced grin, but...I guess 
+it's good enough."{waitForClick}{clearText}{marker}{sound C1S046}{appendText}[You]
+"How's that? I'll bet you've forgotten to 
+worry about your past, right?"{waitForClick}
+
+[00000372]ff 23 00: text 23
+{appendText}{choice 00 000b |Yeah|Nope}
+
+[00000375]10: 
+[00000376]1a a4 b3 00 00 8b 00 00: choiceId 1203 11
+[0000037e]00: 
+[0000037f]26 28 0a a4 b3 14 00 00 27 80 00 00 03 00 00 27 81 00 00 04 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 00000394 (00000003)
+27 -> 1 000003b9 (00000004)
+
+[00000394]10: 
+[00000395]19: showTextbox
+[00000396]ff 24 00: text 24
+{marker}{appendText}[Kid]
+"Yeah..."{waitForClick}{clearText}{marker}{appendText}I answered You.{waitForClick}{clearText}
+
+[00000399]10: 
+[0000039a]19: showTextbox
+[0000039b]ff 25 00: text 25
+{marker}{sound C1S047}{appendText}[You]
+"See? The past isn't important."{waitForClick}{clearText}{marker}{sound C1S048}{appendText}[You]
+"What is important is whether or not you can 
+smile right now..."{waitForClick}{clearText}{marker}{sound C1S049}{appendText}[You]
+"That is proof of your existence..."{waitForClick}{clearText}{marker}{sound C1S050}{appendText}[You]
+"So you have to smile."{waitForClick}{clearText}
+
+[0000039e]10: 
+[0000039f]0f 81 00 00 00 00 00 00 1c 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02BWL 320 3
+[000003b0]10: 
+[000003b1]19: showTextbox
+[000003b2]ff 26 00: text 26
+{marker}{sound C1S051}{appendText}[You]
+"I know you are better at smiling than that."{waitForClick}{clearText}{marker}{appendText}Enticed by You's smile, my own cheeks started 
+to loosen naturally.{waitForClick}{clearText}{marker}{appendText}You gently touched my hair...{waitForClick}{clearText}{marker}{appendText}It was as if her hand sucked the pain away.{waitForClick}{clearText}
+
+[000003b5]00: 
+[000003b6]07 05 00: goto 000005ac (00000005)
+[000003b9]10: 
+[000003ba]19: showTextbox
+[000003bb]ff 27 00: text 27
+{marker}{appendText}[Kid]
+"Nope...."{waitForClick}{clearText}
+
+[000003be]10: 
+[000003bf]0f 81 00 00 00 00 00 00 1d 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07BWL 320 3
+[000003d0]10: 
+[000003d1]19: showTextbox
+[000003d2]ff 28 00: text 28
+{marker}{appendText}[Kid]
+"It's not your problem so it's easy for you 
+to say that..."{waitForClick}{clearText}
+
+[000003d5]10: 
+[000003d6]0f 81 00 00 00 00 00 00 1e 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05BWL 320 3
+[000003e7]10: 
+[000003e8]19: showTextbox
+[000003e9]ff 29 00: text 29
+{marker}{sound C1S052}{appendText}[You]
+"But at least you've gotten better so that you 
+can talk."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound C1S053}{appendText}[You]
+"And do you know why?"{waitForClick}{clearText}
+
+[000003ec]10: 
+[000003ed]0f 81 00 00 00 00 00 00 1f 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BWL 320 3
+[000003fe]10: 
+[000003ff]19: showTextbox
+[00000400]ff 2a 00: text 2a
+{marker}{sound C1S054}{appendText}[You]
+"You can speak because you are aware of 
+this moment, right now."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Right now?"{waitForClick}{clearText}{marker}{sound C1S055}{appendText}[You]
+"People have no choice but to live in the 
+moment."{waitForClick}{clearText}{marker}{sound C1S056}{appendText}[You]
+"The past and the future are simply an 
+illusion..."{waitForClick}{clearText}
+
+[00000403]10: 
+[00000404]0f 81 00 00 00 00 00 00 20 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05BWL 320 3
+[00000415]10: 
+[00000416]19: showTextbox
+[00000417]ff 2b 00: text 2b
+{marker}{sound C1S057}{appendText}[You]
+"Trying to grab that empty image is...it's 
+meaningless."{waitForClick}{clearText}
+
+[0000041a]10: 
+[0000041b]0f 81 00 00 00 00 00 00 21 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BWL 320 3
+[0000042c]10: 
+[0000042d]19: showTextbox
+[0000042e]ff 2c 00: text 2c
+{marker}{sound C1S058}{appendText}[You]
+"So right now you should just smile as if you 
+don't care."{waitForClick}{clearText}
+
+[00000431]10: 
+[00000432]0f 81 00 00 00 00 00 00 22 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02BWL 320 3
+[00000443]10: 
+[00000444]19: showTextbox
+[00000445]ff 2d 00: text 2d
+{marker}{sound C1S059}{appendText}[You]
+"Smile."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[00000448]10: 
+[00000449]18: hideTextbox
+[0000044a]10: 
+[0000044b]0f 81 00 00 00 00 00 00 23 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU04BWL 320 3
+[0000045c]10: 
+[0000045d]03 a0 12 00 00 a0 64 00 00: playBGM 18 100
+[00000466]10: 
+[00000467]19: showTextbox
+[00000468]ff 2e 00: text 2e
+{marker}{sound C1S060}{appendText}[You]
+"Now smile!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I can't JUST smile..."{waitForClick}{clearText}
+
+[0000046b]10: 
+[0000046c]0f 81 00 00 00 00 00 00 24 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05BWL 320 3
+[0000047d]10: 
+[0000047e]19: showTextbox
+[0000047f]ff 2f 00: text 2f
+{marker}{sound C1S061}{appendText}[You]
+"If you don't smile...then I'll put my finger 
+up Mayo's nose."{waitForClick}{clearText}{marker}{sound C1S062}{appendText}[Sara]
+"...Huh?"{waitForClick}{clearText}
+
+[00000482]10: 
+[00000483]10 81 00 00 83 00 00: removeFG 1 3
+[0000048a]10: 
+[0000048b]12 81 00 00 82 00 00 00 00 00 00 25 00 00 00 00 00 26 00 a0 b0 00 00 a1 d0 00 00 83 00 00: multifgload2 1 2 00000000 YU02BWM 00000000 SA08ADM 176 464 3
+[000004a9]10: 
+[000004aa]19: showTextbox
+[000004ab]ff 30 00: text 30
+{marker}{sound C1S063}{appendText}[You]
+"I'll put finger in that gooey pit..."{waitForClick}{clearText}{marker}{appendText}As she talked, You did exactly as she said.{waitForClick}{clearText}
+
+[000004ae]10: 
+[000004af]0f 82 00 00 00 00 00 00 27 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA06ADM 464 3
+[000004c0]10: 
+[000004c1]19: showTextbox
+[000004c2]ff 31 00: text 31
+{marker}{sound C1S064}{appendText}[Sara]
+"W-wait! Stop! Nakkyu!"{waitForClick}{clearText}{marker}{sound C1S065}{appendText}[You]
+"Pick, pick...goooooey..."{waitForClick}{clearText}
+
+[000004c5]10: 
+[000004c6]0f 82 00 00 00 00 00 00 28 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA03ADM 464 3
+[000004d7]10: 
+[000004d8]19: showTextbox
+[000004d9]ff 32 00: text 32
+{marker}{sound C1S066}{appendText}[Sara]
+"Hey...hey! Nakkyu...Nakkyu..."{waitForClick}{clearText}{marker}{sound C1S067}{appendText}[Sara]
+"Nakkyu...your finger's in my nose..."{waitForClick}{clearText}{marker}{sound C1S068}{appendText}[You]
+"Pickity, pickity...."{waitForClick}{clearText}
+
+[000004dc]10: 
+[000004dd]0f 82 00 00 00 00 00 00 29 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA01ADM 464 3
+[000004ee]10: 
+[000004ef]19: showTextbox
+[000004f0]ff 33 00: text 33
+{marker}{sound C1S069}{appendText}[Sara]
+"And now Nakkyu and I become one..."*{waitForClick}{clearText}{marker}{sound C1S070}{appendText}[You]
+"Goooooeeey..."{waitForClick}{clearText}
+
+[000004f3]10: 
+[000004f4]0f 82 00 00 00 00 00 00 2a 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA14ADM 464 3
+[00000505]10: 
+[00000506]19: showTextbox
+[00000507]ff 34 00: text 34
+{marker}{sound C1S071}{appendText}[Sara]
+"...Wait, just what do you think you are 
+doing?"{waitForClick}{clearText}
+
+[0000050a]10: 
+[0000050b]05 53 45 30 35 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE05_01 0 100
+[0000051b]00: 
+[0000051c]0d 81 00 00 4c 01: l_unk0d 1 4c 01
+[00000522]10: 
+[00000523]0f 81 00 00 00 00 00 00 2b 00 a0 b0 00 00 80 00 00: fgload 1 00000000 YU08BWM 176 0
+[00000534]10: 
+[00000535]19: showTextbox
+[00000536]ff 35 00: text 35
+{marker}{appendText}Whack!{waitForClick}{clearText}{marker}{appendText}Sara smacked You.{waitForClick}{clearText}{marker}{appendText}Watching that scene, my cheeks just naturally 
+relaxed.{waitForClick}{clearText}
+
+[00000539]10: 
+[0000053a]0f 81 00 00 00 00 00 00 2c 00 a0 b0 00 00 83 00 00: fgload 1 00000000 YU09BWM 176 3
+[0000054b]10: 
+[0000054c]19: showTextbox
+[0000054d]ff 36 00: text 36
+{marker}{sound C1S072}{appendText}[You]
+"Ha! He smiled, he smiled!"{waitForClick}{clearText}
+
+[00000550]10: 
+[00000551]0f 82 00 00 00 00 00 00 2d 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA09ADM 464 3
+[00000562]10: 
+[00000563]19: showTextbox
+[00000564]ff 37 00: text 37
+{marker}{sound C1S073}{appendText}[Sara]
+"He is! He is! A, HA, HA, HA!"{waitForClick}{clearText}
+
+[00000567]10: 
+[00000568]0f 82 00 00 00 00 00 00 2e 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA04ADM 464 3
+[00000579]10: 
+[0000057a]19: showTextbox
+[0000057b]ff 38 00: text 38
+{marker}{sound C1S074}{appendText}[Sara]
+"...But - do you think I'm happy about this?"{waitForClick}{clearText}
+
+[0000057e]10: 
+[0000057f]0f 82 00 00 00 00 00 00 2f 00 a1 d0 00 00 83 00 00: fgload 2 00000000 SA05ADM 464 3
+[00000590]10: 
+[00000591]19: showTextbox
+[00000592]ff 39 00: text 39
+{marker}{sound C1S075}{appendText}[Sara]
+"What are you thinking? Sticking your finger 
+in somebody's nose...geez."{waitForClick}{clearText}
+
+[00000595]10: 
+[00000596]0f 81 00 00 00 00 00 00 30 00 a0 b0 00 00 83 00 00: fgload 1 00000000 YU08BWM 176 3
+[000005a7]10: 
+[000005a8]19: showTextbox
+[000005a9]ff 3a 00: text 3a
+{marker}{sound C1S076}{appendText}[You]
+"Hee, hee, hee."{waitForClick}{clearText}{marker}{appendText}As I was watching their exchange, at some 
+point the pain in my head had also eased.{waitForClick}{clearText}{marker}{appendText}It was a 'painful' exchange in a different 
+meaning of the word, but...{waitForClick}{clearText}
+
+[000005ac]10: 
+[000005ad]18: hideTextbox
+[000005ae]10: 
+[000005af]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000005b6]10: 
+[000005b7]04: stopBGM
+[000005b8]10: 
+[000005b9]1e a0 1e 00 00: delay 30
+[000005be]10: 
+[000005bf]0c 00 00 00 00 31 00 86 00 00 82 00 00: bgload 00000000 BG26B3R 6 2
+[000005cc]10: 
+[000005cd]03 81 00 00 a0 64 00 00: playBGM 1 100
+[000005d5]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[000005df]27 00 00: fadeOutMonoColorOverlay
+[000005e2]00: 
+[000005e3]05 a0 19 00 00: unSkippableDelay 25
+[000005e8]10: 
+[000005e9]1f a0 11 00 00 a0 31 00 00: clock 17:49
+[000005f2]10: 
+[000005f3]19: showTextbox
+[000005f4]ff 3b 00: text 3b
+{marker}{appendText}After I had calmed down again, we went to find 
+an exit.{waitForClick}{clearText}{marker}{appendText}Of course, Sara couldn't hide her surprise at 
+what had happened to the inside of the complex.{waitForClick}{clearText}
+
+[000005f7]10: 
+[000005f8]0f 81 00 00 00 00 00 00 32 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA06ADM 320 3
+[00000609]10: 
+[0000060a]19: showTextbox
+[0000060b]ff 3c 00: text 3c
+{marker}{sound S1A292}{appendText}[Sara]
+"What is this?"{waitForClick}{clearText}{marker}{sound S1A293}{appendText}[Sara]
+"Why is everything wet?"{waitForClick}{clearText}
+
+[0000060e]10: 
+[0000060f]0f 81 00 00 00 00 00 00 33 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA05ADM 320 3
+[00000620]10: 
+[00000621]19: showTextbox
+[00000622]ff 3d 00: text 3d
+{marker}{sound S1A294}{appendText}[Sara]
+"And there isn't anyone around..."{waitForClick}{clearText}
+
+[00000625]10: 
+[00000626]10 81 00 00 83 00 00: removeFG 1 3
+[0000062d]10: 
+[0000062e]19: showTextbox
+[0000062f]ff 3e 00: text 3e
+{marker}{appendText}As we walked, You explained to Sara the 
+sequence of events to that point.{waitForClick}{clearText}{marker}{appendText}'You was working at LeMU on a part-time basis.'{waitForClick}{clearText}{marker}{appendText}'I collapsed at the kiosk.'{waitForClick}{clearText}{marker}{appendText}'The warning alarm sounded, everyone 
+disappeared from LeMU and the 
+flooding started.'{waitForClick}{clearText}{marker}{appendText}Stunned, Sara listened to You.{waitForClick}{clearText}{marker}{appendText}A while after You had finished the story...{waitForClick}{clearText}{marker}{appendText}As if she had just thought of it, You blurted 
+out suddenly - {waitForClick}{clearText}
+
+[00000632]10: 
+[00000633]12 81 00 00 82 00 00 00 00 00 00 34 00 00 00 00 00 35 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU07BWM 00000000 SA01ADM 128 512 3
+[00000651]10: 
+[00000652]19: showTextbox
+[00000653]ff 3f 00: text 3f
+{marker}{sound C1S077}{appendText}[You]
+"But you know what is really strange..."{waitForClick}{clearText}
+
+[00000656]10: 
+[00000657]0f 82 00 00 00 00 00 00 36 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA06ADM 512 3
+[00000668]10: 
+[00000669]19: showTextbox
+[0000066a]ff 40 00: text 40
+{marker}{sound C1S078}{appendText}[Sara]
+"What?"{waitForClick}{clearText}{marker}{sound C1S079}{appendText}[You]
+"What this kid was just saying..."{waitForClick}{clearText}{marker}{sound C1S080}{appendText}[You]
+"I mean, Mayo, you don't remember him from 
+anywhere, right?"{waitForClick}{clearText}
+
+[0000066d]10: 
+[0000066e]0f 82 00 00 00 00 00 00 37 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA08ADM 512 3
+[0000067f]10: 
+[00000680]19: showTextbox
+[00000681]ff 41 00: text 41
+{marker}{sound C1S081}{appendText}[Sara]
+"Right..."{waitForClick}{clearText}
+
+[00000684]10: 
+[00000685]0f 81 00 00 00 00 00 00 38 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU05BWM 128 3
+[00000696]10: 
+[00000697]19: showTextbox
+[00000698]ff 42 00: text 42
+{marker}{sound C1S082}{appendText}[You]
+"But he knew your name..."{waitForClick}{clearText}{marker}{sound C1S083}{appendText}[You]
+"So that means that somewhere in his lost 
+memory there is some information stored 
+about you, right?"{waitForClick}{clearText}
+
+[0000069b]10: 
+[0000069c]0f 81 00 00 00 00 00 00 39 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU07BWM 128 3
+[000006ad]10: 
+[000006ae]19: showTextbox
+[000006af]ff 43 00: text 43
+{marker}{sound C1S084}{appendText}[You]
+"I wonder why."{waitForClick}{clearText}
+
+[000006b2]10: 
+[000006b3]0f 82 00 00 00 00 00 00 3a 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA03ADM 512 3
+[000006c4]10: 
+[000006c5]19: showTextbox
+[000006c6]ff 44 00: text 44
+{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[000006c9]10: 
+[000006ca]0f 81 00 00 00 00 00 00 3b 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU03BWM 128 3
+[000006db]10: 
+[000006dc]19: showTextbox
+[000006dd]ff 45 00: text 45
+{marker}{sound C1S085}{appendText}[You]
+"If it were the other way around, it'd make 
+sense."{waitForClick}{clearText}
+
+[000006e0]10: 
+[000006e1]0f 82 00 00 00 00 00 00 3c 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA08ADM 512 3
+[000006f2]10: 
+[000006f3]19: showTextbox
+[000006f4]ff 46 00: text 46
+{marker}{sound C1S086}{appendText}[You]
+"If you knew something about him...but he had 
+forgotten you because of amnesia..."{waitForClick}{clearText}{marker}{sound C1S087}{appendText}[You]
+"That would make sense to me..."{waitForClick}{clearText}
+
+[000006f7]10: 
+[000006f8]0f 81 00 00 00 00 00 00 3d 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU01BWM 128 3
+[00000709]10: 
+[0000070a]19: showTextbox
+[0000070b]ff 47 00: text 47
+{marker}{sound C1S088}{appendText}[You]
+"But this is like going backward on a one-way 
+street." {waitForClick}{clearText}
+
+[0000070e]10: 
+[0000070f]0f 82 00 00 00 00 00 00 3e 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA05ADM 512 3
+[00000720]10: 
+[00000721]19: showTextbox
+[00000722]ff 48 00: text 48
+{marker}{sound C1S089}{appendText}[Sara]
+"One-way street, huh...?"{waitForClick}{clearText}
+
+[00000725]10: 
+[00000726]0f 82 00 00 00 00 00 00 3f 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA06ADM 512 3
+[00000737]10: 
+[00000738]19: showTextbox
+[00000739]ff 49 00: text 49
+{marker}{sound C1S090}{appendText}[Sara]
+"Oh, I know! This is probably what happened."{waitForClick}{clearText}
+
+[0000073c]10: 
+[0000073d]0f 81 00 00 00 00 00 00 40 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU07BWM 128 3
+[0000074e]10: 
+[0000074f]19: showTextbox
+[00000750]ff 4a 00: text 4a
+{marker}{sound C1S091}{appendText}[You]
+"?"{waitForClick}{clearText}
+
+[00000753]10: 
+[00000754]0f 82 00 00 00 00 00 00 41 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA02ADM 512 3
+[00000765]10: 
+[00000766]19: showTextbox
+[00000767]ff 4b 00: text 4b
+{marker}{sound C1S092}{appendText}[Sara]
+"This kid probably used to be a big Sara 
+Matsunaga fan!"{waitForClick}{clearText}{marker}{sound C1S093}{appendText}[Sara]
+"I'll bet I never noticed him, but he used to 
+watch me from a distance, like from the 
+shadows."{waitForClick}{clearText}{marker}{sound C1S094}{appendText}[Sara]
+"That would explain it completely."{waitForClick}{clearText}
+
+[0000076a]10: 
+[0000076b]0f 81 00 00 00 00 00 00 42 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU03BWM 128 3
+[0000077c]10: 
+[0000077d]19: showTextbox
+[0000077e]ff 4c 00: text 4c
+{marker}{sound C1S095}{appendText}[You]
+"You're saying he is a stalker?"{waitForClick}{clearText}
+
+[00000781]10: 
+[00000782]0f 82 00 00 00 00 00 00 43 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA01ADM 512 3
+[00000793]10: 
+[00000794]19: showTextbox
+[00000795]ff 4d 00: text 4d
+{marker}{sound C1S096}{appendText}[Sara]
+"Yup. That's exactly it."{waitForClick}{clearText}
+
+[00000798]10: 
+[00000799]0f 82 00 00 00 00 00 00 44 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA02ADM 512 3
+[000007aa]10: 
+[000007ab]19: showTextbox
+[000007ac]ff 4e 00: text 4e
+{marker}{sound C1S097}{appendText}[Sara]
+"Hey. Is that it? Did you used to stalk her?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Just because I lost my memory, don't go 
+making one up for me!"{waitForClick}{clearText}
+
+[000007af]10: 
+[000007b0]0f 82 00 00 00 00 00 00 45 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA05ADM 512 3
+[000007c1]10: 
+[000007c2]19: showTextbox
+[000007c3]ff 4f 00: text 4f
+{marker}{sound C1S098}{appendText}[Sara]
+"Am I wrong?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes!"{waitForClick}{clearText}
+
+[000007c6]10: 
+[000007c7]0f 81 00 00 00 00 00 00 46 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU05BWM 128 3
+[000007d8]10: 
+[000007d9]19: showTextbox
+[000007da]ff 50 00: text 50
+{marker}{sound C1S099}{appendText}[You]
+"Mayo, I'll only ask you one more time..." {waitForClick}{clearText}{marker}{sound C1S100}{appendText}[You]
+"Are you really sure that you don't remember 
+seeing this kid before?"{waitForClick}{clearText}{marker}{sound C1S101}{appendText}[Sara]
+"Remember him...?"{waitForClick}{clearText}
+
+[000007dd]10: 
+[000007de]0f 82 00 00 00 00 00 00 47 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA08ADM 512 3
+[000007ef]10: 
+[000007f0]19: showTextbox
+[000007f1]ff 51 00: text 51
+{marker}{sound C1S102}{appendText}[Sara]
+"Hmmm...hmmm..."{waitForClick}{clearText}{marker}{appendText}Sara brought her face close to me and stared 
+at me.{waitForClick}{clearText}{marker}{appendText}I could almost feel her breath.{waitForClick}{clearText}
+
+[000007f4]10: 
+[000007f5]0f 82 00 00 00 00 00 00 48 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA05ADM 512 3
+[00000806]10: 
+[00000807]19: showTextbox
+[00000808]ff 52 00: text 52
+{marker}{sound C1S103}{appendText}[Sara]
+"Well now that you mention it..."{waitForClick}{clearText}
+
+[0000080b]10: 
+[0000080c]04: stopBGM
+[0000080d]10: 
+[0000080e]19: showTextbox
+[0000080f]ff 53 00: text 53
+{marker}{appendText}[Kid]
+"Huh?"{waitForClick}{clearText}
+
+[00000812]10: 
+[00000813]0f 81 00 00 00 00 00 00 49 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU06BWM 128 3
+[00000824]10: 
+[00000825]19: showTextbox
+[00000826]ff 54 00: text 54
+{marker}{sound C1S104}{appendText}[You]
+"Huh?"{waitForClick}{clearText}
+
+[00000829]10: 
+[0000082a]0f 82 00 00 00 00 00 00 4a 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA02ADM 512 3
+[0000083b]10: 
+[0000083c]19: showTextbox
+[0000083d]ff 55 00: text 55
+{marker}{sound C1S105}{appendText}[Sara]
+"No...I'm kidding...I'm just joking."{waitForClick}{clearText}
+
+[00000840]10: 
+[00000841]0f 82 00 00 00 00 00 00 4b 00 a2 00 00 00 83 00 00: fgload 2 00000000 SA17ADM 512 3
+[00000852]10: 
+[00000853]19: showTextbox
+[00000854]ff 56 00: text 56
+{marker}{sound C1S106}{appendText}[Sara]
+"There's no reason I should remember him."{waitForClick}{clearText}
+
+[00000857]10: 
+[00000858]0f 81 00 00 00 00 00 00 4c 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU07BWM 128 3
+[00000869]10: 
+[0000086a]19: showTextbox
+[0000086b]ff 57 00: text 57
+{marker}{appendText}'No reason???{waitForClick}{clearText}{marker}{appendText}I wondered what she meant by that.{waitForClick}{clearText}{marker}{appendText}I thought that maybe she really did know who 
+I was.{waitForClick}{clearText}{marker}{appendText}My heart started to pound again.{waitForClick}{clearText}{marker}{appendText}I remembered when I had seen Sara for the 
+first time a little bit ago.{waitForClick}{clearText}
+
+[0000086e]10: 
+[0000086f]18: hideTextbox
+[00000870]10: 
+[00000871]45 a0 12 00 00 81 00 00: monoColorOverlay 18 1
+[00000879]10: 
+[0000087a]0c 00 00 00 00 4d 00 86 00 00 82 00 00: bgload 00000000 EV_SA01A 6 2
+[00000887]10: 
+[00000888]20 a0 20 00 00: showFilter2
+[0000088d]00: 
+[0000088e]05 81 00 00: unSkippableDelay 1
+[00000892]fe 28 0a a0 ab 14 14 00 c0 13: setMonoColorOverlayFadeOutDuration VAR_c0_19
+[0000089c]27 00 00: fadeOutMonoColorOverlay
+[0000089f]00: 
+[000008a0]05 86 00 00: unSkippableDelay 6
+[000008a4]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[000008af]10: 
+[000008b0]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[000008b4]10: 
+[000008b5]19: showTextbox
+[000008b6]ff 58 00: text 58
+{marker}{appendText}I had felt something along the lines of 
+nostalgia.{waitForClick}{clearText}{marker}{appendText}For some reason, I felt that I had witnessed 
+the same scene somewhere before.{waitForClick}{clearText}{marker}{appendText}Maybe I had met her in the past after all.{waitForClick}{clearText}{marker}{appendText}But I couldn't be sure of it.{waitForClick}{clearText}{marker}{appendText}Even if I did know a name, or even feel 
+nostalgic...it wasn't in my memory.{waitForClick}{clearText}
+
+[000008b9]10: 
+[000008ba]18: hideTextbox
+[000008bb]10: 
+[000008bc]20 a0 20 00 00: showFilter2
+[000008c1]00: 
+[000008c2]05 81 00 00: unSkippableDelay 1
+[000008c6]10: 
+[000008c7]45 a0 12 00 00 81 00 00: monoColorOverlay 18 1
+[000008cf]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[000008da]10: 
+[000008db]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[000008df]10: 
+[000008e0]0c 00 00 00 00 4e 00 86 00 00 82 00 00: bgload 00000000 BG26B3R 6 2
+[000008ed]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000008f7]27 00 00: fadeOutMonoColorOverlay
+[000008fa]00: 
+[000008fb]05 8a 00 00: unSkippableDelay 10
+[000008ff]10: 
+[00000900]19: showTextbox
+[00000901]ff 59 00: text 59
+{marker}{appendText}Sara's smile felt far away, so that no matter 
+how much I reached out for it, I would never 
+be able to touch it.{waitForClick}{clearText}
+
+[00000904]10: 
+[00000905]18: hideTextbox
+[00000906]10: 
+[00000907]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[0000090f]fe 28 0a a4 b3 14 14 00 82 00 00: varop (28 0a a4) b3 := (00) 2
+[0000091a]10: 
+[0000091b]01 53 5f 31 41 32 00: jump S_1A2
+[00000922]00: 
+[00000923]00: 

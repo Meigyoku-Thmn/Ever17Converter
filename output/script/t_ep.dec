@@ -1,0 +1,112 @@
+﻿[00000016]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
+[00000021]fe 28 0a a4 b1 14 14 00 80 00 00: varop (28 0a a4) b1 := (00) 0
+[0000002c]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
+[00000037]10: 
+[00000038]46 81 00 00: setDialogBoxColor green
+[0000003c]10: 
+[0000003d]03 a0 16 00 00 a0 64 00 00: playBGM 22 100
+[00000046]10: 
+[00000047]27 00 00 00 00 00 00 80 00 00 81 00 00: bgload_keepFg 00000000 kuro_bg 0 1
+[00000054]10: 
+[00000055]1e a0 1e 00 00: delay 30
+[0000005a]fe 28 0a a2 3a 14 14 00 82 00 00: setChangePerspectiveDirection 2
+[00000065]10: 
+[00000066]20 a0 2f 00 00: triggerChangePerspectiveAnim
+[0000006b]00: 
+[0000006c]05 a0 1e 00 00: unSkippableDelay 30
+[00000071]10: 
+[00000072]45 83 00 00 81 00 00: monoColorOverlay 3 1
+[00000079]10: 
+[0000007a]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[00000081]10: 
+[00000082]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[0000008c]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000096]27 00 00: fadeOutMonoColorOverlay
+[00000099]00: 
+[0000009a]05 83 00 00: unSkippableDelay 3
+[0000009e]10: 
+[0000009f]46 82 00 00: setDialogBoxColor gray
+[000000a3]10: 
+[000000a4]1e a0 b4 00 00: delay 180
+[000000a9]10: 
+[000000aa]0c 00 00 00 00 01 00 80 00 00 80 00 00: bgload 00000000 EV_CO03D 0 0
+[000000b7]fe 28 0a a4 fa 14 14 00 a0 30 00 00: setSceneTitleByIndex 48
+[000000c3]00: 
+[000000c4]28: l_unk28
+[000000c5]10: 
+[000000c6]18: hideTextbox
+[000000c7]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[000000d2]10: 
+[000000d3]0c 00 00 00 00 02 00 80 00 00 80 00 00: bgload 00000000 EV_CO03A 0 0
+[000000e0]10: 
+[000000e1]20 a0 2c 00 00: showDimOverlay
+[000000e6]10: 
+[000000e7]2b 86 00 00: unknown2b 6
+[000000eb]10: 
+[000000ec]19: showTextbox
+[000000ed]ff 00 00: text 00
+{marker}{appendText}
+
+
+
+
+[000000f0]10: 
+[000000f1]19: showTextbox
+[000000f2]ff 01 00: text 01
+{appendText}{delay 0}           {nextPage x2}Eine Geschichte setzt auf{nextPage x2}
+
+
+[000000f5]10: 
+[000000f6]1e a0 b4 00 00: delay 180
+[000000fb]10: 
+[000000fc]27 00 00 00 00 03 00 80 00 00 80 00 00: bgload_keepFg 00000000 EV_CO11A 0 0
+[00000109]10: 
+[0000010a]19: showTextbox
+[0000010b]ff 02 00: text 02
+{appendText}{delay 0}                {nextPage x2}1 Mai,2034 fort.{nextPage x2}
+
+[0000010e]10: 
+[0000010f]1e a0 b4 00 00: delay 180
+[00000114]10: 
+[00000115]27 00 00 00 00 04 00 80 00 00 80 00 00: bgload_keepFg 00000000 EV_CO11B 0 0
+[00000122]10: 
+[00000123]1e a0 b4 00 00: delay 180
+[00000128]10: 
+[00000129]05 53 45 31 30 5f 32 39 00 80 00 00 a0 64 00 00: playSFX SE10_29 0 100
+[00000139]10: 
+[0000013a]45 a0 24 00 00 80 00 00: monoColorOverlay 36 0
+[00000142]fe 28 0a a0 ac 14 14 00 81 00 00: varop (28 0a a0) ac := (00) 1
+[0000014d]10: 
+[0000014e]21 a0 10 00 00: closeDimOverlay
+[00000153]10: 
+[00000154]19: showTextbox
+[00000155]ff 03 00: text 03
+{marker}{appendText}{delay 90}{delay 90}{nextPage x2}
+
+[00000158]10: 
+[00000159]18: hideTextbox
+[0000015a]10: 
+[0000015b]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000165]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000016f]27 00 00: fadeOutMonoColorOverlay
+[00000172]00: 
+[00000173]05 83 00 00: unSkippableDelay 3
+[00000177]10: 
+[00000178]18: hideTextbox
+[00000179]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000184]10: 
+[00000185]1e a0 b4 00 00: delay 180
+[0000018a]10: 
+[0000018b]1e a0 b4 00 00: delay 180
+[00000190]10: 
+[00000191]06: stopSFX
+[00000192]10: 
+[00000193]04: stopBGM
+[00000194]fe 28 0a a4 11 14 14 00 81 00 00: varop (28 0a a4) 11 := (00) 1
+[0000019f]10: 
+[000001a0]37 00 00 00 00 05 00: unlockCG POST16
+[000001a7]00: 
+[000001a8]12 a0 11 00 00: l_unk12 17
+[000001ad]00: 
+[000001ae]06: l_unk06
+[000001af]00: 

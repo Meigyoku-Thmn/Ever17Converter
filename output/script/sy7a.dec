@@ -1,0 +1,1339 @@
+﻿[00000016]10: 
+[00000017]46 80 00 00: setDialogBoxColor blue
+[0000001b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000026]fe 28 0a a4 b1 14 14 00 87 00 00: varop (28 0a a4) b1 := (00) 7
+[00000031]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
+[0000003c]10: 
+[0000003d]18: hideTextbox
+[0000003e]10: 
+[0000003f]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000046]10: 
+[00000047]04: stopBGM
+[00000048]10: 
+[00000049]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000053]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000005d]27 00 00: fadeOutMonoColorOverlay
+[00000060]00: 
+[00000061]05 83 00 00: unSkippableDelay 3
+[00000065]fe 28 0a a4 fa 14 14 00 a0 57 00 00: setSceneTitleByIndex 87
+[00000071]00: 
+[00000072]28: l_unk28
+[00000073]10: 
+[00000074]1f 81 00 00 a0 27 00 00: clock 1:39
+[0000007c]10: 
+[0000007d]19: showTextbox
+[0000007e]ff 00 00: text 00
+{marker}{appendText}Daybreak. The date had changed to Sunday, 
+May 7.{waitForClick}{clearText}{marker}{appendText}Since that time, we hadn't slept at all.{waitForClick}{clearText}{marker}{appendText}I was starting to feel badly again.{waitForClick}{clearText}{marker}{appendText}A headache, dizziness, nausea and coldness 
+felt like they were seeping from deep 
+in the core of my body.{waitForClick}{clearText}{marker}{appendText}I felt a dull, severe fatigue sweep over 
+me...I was only half-conscious.{waitForClick}{clearText}{marker}{appendText}Exhaustion...I had reached my limit.{waitForClick}{clearText}{marker}{appendText}But I tried to keep my energy 
+from being sapped away.{waitForClick}{clearText}{marker}{appendText}Surrounded by darkness...and endless fear, we 
+had fought our way this far...{waitForClick}{clearText}{marker}{appendText}And there was no sign that 
+things were going to get better.{waitForClick}{clearText}{marker}{appendText}Communication lines with the 
+outside were still down.{waitForClick}{clearText}{marker}{appendText}And...{waitForClick}{clearText}{marker}{appendText}We had yet to find a clue leading to possible 
+escape.{waitForClick}{clearText}
+
+[00000081]10: 
+[00000082]18: hideTextbox
+[00000083]10: 
+[00000084]03 84 00 00 a0 64 00 00: playBGM 4 100
+[0000008c]10: 
+[0000008d]0c 00 00 00 00 00 00 80 00 00 82 00 00: bgload 00000000 BG11A1 0 2
+[0000009a]10: 
+[0000009b]19: showTextbox
+[0000009c]ff 01 00: text 01
+{marker}{appendText}You remained distant and spacey. {waitForClick}{clearText}{marker}{appendText}Our optimistic leader that helped us through 
+the days of distress was nowhere to be seen.{waitForClick}{clearText}{marker}{appendText}Someone had to save her...{waitForClick}{clearText}{marker}{appendText}But who?{waitForClick}{clearText}{marker}{appendText}Of course, it was up to me.{waitForClick}{clearText}{marker}{appendText}At this point, I was the only person who could 
+help her.{waitForClick}{clearText}{marker}{appendText}Yet still...{waitForClick}{clearText}
+
+[0000009f]10: 
+[000000a0]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2
+[000000aa]10: 
+[000000ab]19: showTextbox
+[000000ac]ff 02 00: text 02
+{marker}{sound Y4A061}{appendText}[You]
+"Promise?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah, I promise."{waitForClick}{clearText}
+
+[000000af]10: 
+[000000b0]0c 00 00 00 00 01 00 80 00 00 82 00 00: bgload 00000000 BG11A1 0 2
+[000000bd]10: 
+[000000be]19: showTextbox
+[000000bf]ff 03 00: text 03
+{marker}{appendText}The memory of that pledge remained stark in my 
+mind.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Uh, Sora...?"{waitForClick}{clearText}
+
+[000000c2]10: 
+[000000c3]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADM 320 3
+[000000d4]10: 
+[000000d5]19: showTextbox
+[000000d6]ff 04 00: text 04
+{marker}{sound Y7A000}{appendText}[Sora]
+"Yes, what can I do for you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm sorry to ask, but could you leave me 
+alone with You for a second?"{waitForClick}{clearText}{marker}{sound Y7A001}{appendText}[Sora]
+"Certainly."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"When we're done I'll call you."{waitForClick}{clearText}{marker}{sound Y7A002}{appendText}[Sora]
+"Okay."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm really sorry."{waitForClick}{clearText}{marker}{sound Y7A003}{appendText}[Sora]
+"Please, don't worry about it."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Thanks."{waitForClick}{clearText}
+
+[000000d9]10: 
+[000000da]10 81 00 00 83 00 00: removeFG 1 3
+[000000e1]10: 
+[000000e2]18: hideTextbox
+[000000e3]10: 
+[000000e4]04: stopBGM
+[000000e5]10: 
+[000000e6]19: showTextbox
+[000000e7]ff 05 00: text 05
+{marker}{appendText}Sora vanished.{waitForClick}{clearText}{marker}{appendText}All traces of her completely disappeared.{waitForClick}{clearText}{marker}{appendText}Sora, who had no dimensional limits, had 
+removed herself from our field of vision.{waitForClick}{clearText}{marker}{appendText}Now then...{waitForClick}{clearText}{marker}{appendText}Before continuing, I went to set the coffee 
+machine to make fresh coffee.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You? You're drinking coffee, right?"{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}Ignoring her lack of response, I set it to 
+prepare two cups.{waitForClick}{clearText}{marker}{appendText}Then I sat down beside her.{waitForClick}{clearText}
+
+[000000ea]10: 
+[000000eb]18: hideTextbox
+[000000ec]10: 
+[000000ed]03 a0 13 00 00 a0 64 00 00: playBGM 19 100
+[000000f6]10: 
+[000000f7]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13ADM 320 3
+[00000108]10: 
+[00000109]19: showTextbox
+[0000010a]ff 06 00: text 06
+{marker}{appendText}[Kid]
+"About your mother...I mean, I don't know what 
+to say but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't you think you it's important to talk 
+things over with her?"{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"There may have been some reason why she did 
+what she did..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look, she did say she'd explain everything 
+once you're back on the floating island."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So..."{waitForClick}{clearText}
+
+[0000010d]10: 
+[0000010e]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADM 320 3
+[0000011f]10: 
+[00000120]19: showTextbox
+[00000121]ff 07 00: text 07
+{marker}{sound Y7A004}{appendText}[You]
+"How dare you say that...like you know how 
+this feels."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound Y7A005}{appendText}[You]
+"There's nothing left for me to say to her."{waitForClick}{clearText}{marker}{sound Y7A006}{appendText}[You]
+"Besides, it doesn't matter anymore..."{waitForClick}{clearText}{marker}{sound Y7A007}{appendText}[You]
+"I don't care what happens..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look, we've still got to find a way to escape 
+this place...somehow."{waitForClick}{clearText}{marker}{sound Y7A008}{appendText}[You]
+"Yeah, why?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Because I made you a promise."{waitForClick}{clearText}{marker}{sound Y7A009}{appendText}[You]
+"How are you going to keep it? Do you have 
+some great plan to get us out of here?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well that's...what I want to figure out..."{waitForClick}{clearText}
+
+[00000124]10: 
+[00000125]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13ADM 320 3
+[00000136]10: 
+[00000137]19: showTextbox
+[00000138]ff 08 00: text 08
+{marker}{sound Y7A010}{appendText}[You]
+"I bet..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look, we have to survive."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You, over these last seven days, I've learned 
+so much from you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"In so many ways I can't even begin to count."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But out of everything I've learned from you, 
+the most important thing is..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"How to live."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You have to live life to the fullest - that's 
+what you've taught me."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So I want to put that lesson into practice."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I want to live! To the fullest, to the end!"{waitForClick}{clearText}{marker}{appendText}It was a heartfelt plea.{waitForClick}{clearText}{marker}{sound Y7A011}{appendText}[You]
+"Listen, Kid..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah?"{waitForClick}{clearText}{marker}{sound Y7A012}{appendText}[You]
+"What does it mean... to live, anyway?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well, living means..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"To learn and to know, I think."{waitForClick}{clearText}{marker}{appendText}A child is born in innocence...gains knowledge 
+through the years...only to forget it all when 
+it is old...and dies. {waitForClick}{clearText}{marker}{appendText}Over the previous seven days, my life had been 
+filled with things that I had learned.{waitForClick}{clearText}{marker}{appendText}From amnesia and emptiness my life began.{waitForClick}{clearText}{marker}{appendText}But looking back over the last seven days, 
+there was one more thing...{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I also think that to live also means...to 
+lose something."{waitForClick}{clearText}{marker}{appendText}They say "nothing ventured, nothing gained," 
+but to gain something you must lose something.{waitForClick}{clearText}{marker}{appendText}Like me losing the past by losing my memory.{waitForClick}{clearText}{marker}{appendText}Even though I had lost much...I had also 
+gained...{waitForClick}{clearText}{marker}{sound Y7A013}{appendText}[You]
+"To learn? To lose something?"{waitForClick}{clearText}
+
+[0000013b]10: 
+[0000013c]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03ADM 320 3
+[0000014d]10: 
+[0000014e]19: showTextbox
+[0000014f]ff 09 00: text 09
+{marker}{sound Y7A014}{appendText}[You]
+"So you're saying, that we live only to get 
+hurt?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Maybe. I don't know."{waitForClick}{clearText}
+
+[00000152]10: 
+[00000153]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU17ADM 320 3
+[00000164]10: 
+[00000165]19: showTextbox
+[00000166]ff 0a 00: text 0a
+{marker}{sound Y7A015}{appendText}[You]
+"Well..."{waitForClick}{clearText}{marker}{sound Y7A016}{appendText}[You]
+"If living means to be hurt..."{waitForClick}{clearText}{marker}{sound Y7A017}{appendText}[You]
+"Then I've had enough..."{waitForClick}{clearText}{marker}{sound Y7A018}{appendText}[You]
+"I've had more than my share of hurt."{waitForClick}{clearText}{marker}{sound Y7A019}{appendText}[You]
+"And I've had enough of life...so..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"H-hey, wait a second!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What are you trying to say, You...!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You're not saying you want to die...?"{waitForClick}{clearText}{marker}{appendText}[You]
+"............"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"............"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You can't be serious! What the hell's that 
+all about!?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I can't believe you're saying that! It's not 
+like you at all!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What happened to the You a little while 
+ago... who was so ready to get out of here? 
+What happened to that You?"{waitForClick}{clearText}{marker}{appendText}[You]
+".........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Come on, what gives...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What came over you all of a sudden...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why do you think you were born anyway...!?"{waitForClick}{clearText}
+
+[00000169]10: 
+[0000016a]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03ADM 320 3
+[0000017b]10: 
+[0000017c]19: showTextbox
+[0000017d]ff 0b 00: text 0b
+{marker}{sound Y7A020}{appendText}[You]
+"Stop it..."{waitForClick}{clearText}{marker}{sound Y7A021}{appendText}[You]
+"Would you stop with the stupid, two-bit 
+sermon... "{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No, it's you who's talking stupid..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"All this selfish crap, as if your life 
+belongs only to you!"{waitForClick}{clearText}
+
+[00000180]10: 
+[00000181]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU04ADM 320 3
+[00000192]10: 
+[00000193]19: showTextbox
+[00000194]ff 0c 00: text 0c
+{marker}{sound Y7A022}{appendText}[You]
+"That's not what I was thinking!"{waitForClick}{clearText}{marker}{sound Y7A023}{appendText}[You]
+"I don't think that, it's just..."{waitForClick}{clearText}{marker}{sound Y7A024}{appendText}[You]
+"All this time, the mother who I thought 
+brought me into this world...she's gone."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But that other lady said she was your real 
+mother."{waitForClick}{clearText}{marker}{sound Y7A025}{appendText}[You]
+"Well she's obviously lying!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"How do you know?"{waitForClick}{clearText}
+
+[00000197]10: 
+[00000198]0f 81 00 00 00 00 00 00 0a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADM 320 3
+[000001a9]10: 
+[000001aa]19: showTextbox
+[000001ab]ff 0d 00: text 0d
+{marker}{sound Y7A026}{appendText}[You]
+"Because..."{waitForClick}{clearText}
+
+[000001ae]10: 
+[000001af]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13ADM 320 3
+[000001c0]10: 
+[000001c1]19: showTextbox
+[000001c2]ff 0e 00: text 0e
+{marker}{sound Y7A027}{appendText}[You]
+"...she's been lying to me from the start..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't you think that's a little pointless 
+right now?"{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I mean, you do understand, don't you...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That until you hear her side of the 
+story...you can't go jumping to conclusions."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I think you should live the best life you 
+can, for all the people around you who care 
+about you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"For your mother...and for Sara and Takeshi as 
+well..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And for me..."{waitForClick}{clearText}
+
+[000001c5]10: 
+[000001c6]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADM 320 3
+[000001d7]10: 
+[000001d8]19: showTextbox
+[000001d9]ff 0f 00: text 0f
+{marker}{sound Y7A028}{appendText}[You]
+"...For you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I said it before, but there's so much that 
+I've learned from you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm so very grateful to you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Really."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You, you're a friend, a guardian, a 
+teacher... "{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And..."{waitForClick}{clearText}{marker}{appendText}[You]
+"......"{waitForClick}{clearText}{marker}{appendText}I walked back to the coffee machine and poured 
+two cups of coffee.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You said earlier that you've already lived 
+enough, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But I don't think it's enough."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Because I think there is still stuff you need 
+to learn."{waitForClick}{clearText}{marker}{sound Y7A029}{appendText}[You]
+"...you mean about my mother?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's one thing, yes."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"By the way, how much sugar do you take?"{waitForClick}{clearText}
+
+[000001dc]10: 
+[000001dd]0f 81 00 00 00 00 00 00 0d 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07ADM 320 3
+[000001ee]10: 
+[000001ef]19: showTextbox
+[000001f0]ff 10 00: text 10
+{marker}{sound Y7A030}{appendText}[You]
+"Ah, I..."{waitForClick}{clearText}{marker}{appendText}Not listening, I added two spoonfuls.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I was thinking...don't you think sugar in 
+coffee reminds you of something?"{waitForClick}{clearText}{marker}{sound Y7A031}{appendText}[You]
+"??"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You know, something that life depends on."{waitForClick}{clearText}
+
+[000001f3]10: 
+[000001f4]19: showTextbox
+[000001f5]ff 11 00: text 11
+{marker}{sound Y7A032}{appendText}[You]
+"Huh...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Do you have any idea?"{waitForClick}{clearText}{marker}{sound Y7A033}{appendText}[You]
+"I guess not."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"See...that's two things? Things you don't 
+know that you should learn."{waitForClick}{clearText}
+
+[000001f8]10: 
+[000001f9]19: showTextbox
+[000001fa]ff 12 00: text 12
+{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Makes you want to know, doesn't it?"{waitForClick}{clearText}{marker}{sound Y7A034}{appendText}[You]
+"A little...I guess."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well, if we get out of here alive, I'll tell 
+you what it is."{waitForClick}{clearText}{marker}{appendText}I added milk and sugar and carried the two 
+cups over.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"There you go."{waitForClick}{clearText}
+
+[000001fd]10: 
+[000001fe]0f 81 00 00 00 00 00 00 0e 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[0000020f]10: 
+[00000210]19: showTextbox
+[00000211]ff 13 00: text 13
+{marker}{sound Y7A035}{appendText}[You]
+"...Thanks."{waitForClick}{clearText}{marker}{appendText}You took the cup and silently sipped from it.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"How does it taste?"{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}Were my feelings...{waitForClick}{clearText}{marker}{appendText}...Finally getting across to her?{waitForClick}{clearText}
+
+[00000214]10: 
+[00000215]19: showTextbox
+[00000216]ff 14 00: text 14
+{marker}{sound Y7A036}{appendText}[You]
+"It's...very sweet."{waitForClick}{clearText}{marker}{appendText}She had a clear gentle smile, like the sun 
+shining just after a rain.{waitForClick}{clearText}
+
+[00000219]10: 
+[0000021a]18: hideTextbox
+[0000021b]10: 
+[0000021c]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[00000224]10: 
+[00000225]04: stopBGM
+[00000226]10: 
+[00000227]1e a0 78 00 00: delay 120
+[0000022c]10: 
+[0000022d]03 8e 00 00 a0 64 00 00: playBGM 14 100
+[00000235]10: 
+[00000236]0c 00 00 00 00 0f 00 86 00 00 82 00 00: bgload 00000000 BG11A1 6 2
+[00000243]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000024d]27 00 00: fadeOutMonoColorOverlay
+[00000250]00: 
+[00000251]05 a0 12 00 00: unSkippableDelay 18
+[00000256]fe 28 0a a4 fa 14 14 00 a0 58 00 00: setSceneTitleByIndex 88
+[00000262]00: 
+[00000263]28: l_unk28
+[00000264]10: 
+[00000265]1f 82 00 00 a0 15 00 00: clock 2:21
+[0000026d]10: 
+[0000026e]19: showTextbox
+[0000026f]ff 15 00: text 15
+{marker}{appendText}I called Sora back into the room. All 
+survivors remaining inside the park were 
+now present.{waitForClick}{clearText}{marker}{appendText}The three of us began to discuss new 
+strategies.{waitForClick}{clearText}{marker}{appendText}The walls of LeMU would only hold two more 
+hours at most.{waitForClick}{clearText}{marker}{appendText}Our last possible escape route had been shut 
+off, filling with floodwater just a few hours 
+earlier.{waitForClick}{clearText}{marker}{appendText}All hope of communicating with the outside was 
+gone.{waitForClick}{clearText}{marker}{appendText}The situation had become so desperate that I 
+could no longer expect You or Sora to find an 
+escape route.{waitForClick}{clearText}{marker}{sound Y7A037}{appendText}[You]
+"Isn't there anything we can do...?"{waitForClick}{clearText}{marker}{appendText}You lifted the coffee cup to her lips as she 
+spoke.{waitForClick}{clearText}{marker}{appendText}Her cup now contained only black coffee. 
+She had refilled it herself.{waitForClick}{clearText}{marker}{appendText}Watching her drink I went to take a sip from 
+my own cup, but found it empty.{waitForClick}{clearText}{marker}{appendText}To pour myself more, I walked back to the 
+coffee machine.{waitForClick}{clearText}{marker}{appendText}The machine...was an interesting contraption 
+with a lower chamber containing boiling water 
+heated from an alcohol lamp.{waitForClick}{clearText}{marker}{appendText}The steam from the boiling water was siphoned 
+into the upper chamber through a central pipe. {waitForClick}{clearText}{marker}{appendText}Siphon...{waitForClick}{clearText}{marker}{appendText}Siphon......{waitForClick}{clearText}{marker}{appendText}Siphon.........{waitForClick}{clearText}
+
+[00000272]10: 
+[00000273]04: stopBGM
+[00000274]10: 
+[00000275]19: showTextbox
+[00000276]ff 16 00: text 16
+{marker}{appendText}[Kid]
+"I got it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sora? Could you show me that cross-sectional 
+diagram again!"{waitForClick}{clearText}
+
+[00000279]10: 
+[0000027a]0c 00 00 00 00 10 00 80 00 00 82 00 00: bgload 00000000 MAP06A 0 2
+[00000287]10: 
+[00000288]03 8f 00 00 a0 64 00 00: playBGM 15 100
+[00000290]10: 
+[00000291]19: showTextbox
+[00000292]ff 17 00: text 17
+{marker}{appendText}[Kid]
+"What's this perpendicular line coming 
+straight down from the floating island?"{waitForClick}{clearText}{marker}{sound Y7A038}{appendText}[Sora]
+"It's an emergency stairwell."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This area wasn't dry earlier...?"{waitForClick}{clearText}{marker}{sound Y7A039}{appendText}[Sora]
+"No, but I was able to drain it yesterday 
+so..."{waitForClick}{clearText}{marker}{sound Y7A040}{appendText}[Sora]
+"When the flooding started, the watertight 
+doors in the emergency stairwell automatically 
+closed."{waitForClick}{clearText}{marker}{sound Y7A041}{appendText}[Sora]
+"Therefore, the emergency stairs did not allow 
+water in after it had finished draining."{waitForClick}{clearText}{marker}{sound Y7A042}{appendText}[Sora]
+"It was thanks to the safety doors closing 
+automatically that Takeshi, Sara and Tsugumi 
+survived."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"How far is it from this room to the emergency 
+stairwell?"{waitForClick}{clearText}
+
+[00000295]10: 
+[00000296]27 00 00 00 00 11 00 80 00 00 82 00 00: bgload_keepFg 00000000 MAP06B 0 2
+[000002a3]10: 
+[000002a4]19: showTextbox
+[000002a5]ff 18 00: text 18
+{marker}{sound Y7A043}{appendText}[Sora]
+"Approximately 240 feet."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Really...... 240 feet...huh...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I just want to confirm this but...if you were 
+to climb those emergency stairs, you could 
+escape up to the floating island, right?"{waitForClick}{clearText}{marker}{sound Y7A044}{appendText}[Sora]
+"That is correct."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And...the safety doors to the emergency 
+stairwell can be opened manually..."{waitForClick}{clearText}{marker}{sound Y7A045}{appendText}[Sora]
+"It is possible."{waitForClick}{clearText}{marker}{sound Y7A046}{appendText}[You]
+"S-slow down Kid! What are you saying?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What I'm saying is..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"To escape by going through the emergency 
+stairwell...maybe..."{waitForClick}{clearText}{marker}{sound Y7A047}{appendText}[You]
+"There you go again! Coming up with another 
+stupid idea!"{waitForClick}{clearText}{marker}{sound Y7A048}{appendText}[You]
+"Look right here!"{waitForClick}{clearText}{marker}{sound Y7A049}{appendText}[You]
+"Can't you see the blue color there?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So?"{waitForClick}{clearText}{marker}{sound Y7A050}{appendText}[You]
+"That means the corridor leading to the 
+emergency stairs is totally under water!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah, I know that."{waitForClick}{clearText}{marker}{sound Y7A051}{appendText}[You]
+"Come on! You can't be serious..."{waitForClick}{clearText}{marker}{sound Y7A052}{appendText}[You]
+"There's no way you're thinking about swimming 
+there, are you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ah...I think that's the first time I've ever 
+heard you make a mistake."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I wasn't going to say that."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"There's no way I can swim 240 feet under 
+water!"{waitForClick}{clearText}{marker}{sound Y7A053}{appendText}[You]
+"Well, how do you expect to reach the 
+emergency stairs then?"{waitForClick}{clearText}
+
+[000002a8]10: 
+[000002a9]27 00 00 00 00 12 00 80 00 00 82 00 00: bgload_keepFg 00000000 MAP06C 0 2
+[000002b6]10: 
+[000002b7]19: showTextbox
+[000002b8]ff 19 00: text 19
+{marker}{appendText}[Kid]
+"First, let's call the emergency stairwell 
+that connects to the floating island, 
+'Staircase A'."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Then lets call the Sector 4 emergency 
+stairwell here, 'Staircase B'..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And the emergency corridor connecting to 
+'Staircase A' will be 'Corridor C.'"{waitForClick}{clearText}{marker}{sound Y7A054}{appendText}[You]
+"And?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The point is, we need to drain the water 
+out of the corridor, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Once that's done we could just skip our 
+way to 'Staircase A.'"{waitForClick}{clearText}{marker}{sound Y7A055}{appendText}[You]
+"You say it as if it is the easiest thing 
+in the world, but... there's no way we can 
+do it if you ask me."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We can do it!"{waitForClick}{clearText}{marker}{sound Y7A056}{appendText}[You]
+"Yeah, how?"{waitForClick}{clearText}{marker}{sound Y7A057}{appendText}[You]
+"First of all, there isn't anywhere to drain 
+the floodwater in 'Corridor C.'"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But there IS a place."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The dry area in Sector 4."{waitForClick}{clearText}{marker}{sound Y7A058}{appendText}[You]
+"*sigh*... Are you really that dumb?"{waitForClick}{clearText}{marker}{sound Y7A059}{appendText}[You]
+"Water only flows from high to low with the 
+help of gravity."{waitForClick}{clearText}{marker}{sound Y7A060}{appendText}[You]
+"This is the third time you've made me say 
+that."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know, I know."{waitForClick}{clearText}{marker}{sound Y7A061}{appendText}[You]
+"So why do you keep up this stupid argument..."{waitForClick}{clearText}{marker}{sound Y7A062}{appendText}[You]
+"What? Are you thinking about scooping out all 
+that water with a bucket?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Not scooping it out."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Just the opposite."{waitForClick}{clearText}{marker}{sound Y7A063}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We're going to release the floodwater from 
+Sector 8!"{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[000002bb]10: 
+[000002bc]0c 00 00 00 00 13 00 80 00 00 82 00 00: bgload 00000000 BG11A1 0 2
+[000002c9]10: 
+[000002ca]0f 81 00 00 00 00 00 00 14 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[000002db]10: 
+[000002dc]19: showTextbox
+[000002dd]ff 1a 00: text 1a
+{marker}{sound Y7A064}{appendText}[You]
+"Kid...can I ask you one simple little 
+question?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sure."{waitForClick}{clearText}{marker}{sound Y7A065}{appendText}[You]
+"Wouldn't doing that put this Security Office 
+and the entire surrounding area completely 
+under water...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's right."{waitForClick}{clearText}
+
+[000002e0]10: 
+[000002e1]0f 81 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU17ADM 320 3
+[000002f2]10: 
+[000002f3]19: showTextbox
+[000002f4]ff 1b 00: text 1b
+{marker}{sound Y7A066}{appendText}[You]
+"*sigh*...I should have noticed the warning 
+signs..."{waitForClick}{clearText}
+
+[000002f7]10: 
+[000002f8]0f 81 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[00000309]10: 
+[0000030a]19: showTextbox
+[0000030b]ff 1c 00: text 1c
+{marker}{sound Y7A067}{appendText}[You]
+"It's okay. There, there, Kid..."{waitForClick}{clearText}{marker}{sound Y7A068}{appendText}[You]
+"There's nothing to worry about now..."{waitForClick}{clearText}{marker}{sound Y7A069}{appendText}[You]
+"Everything's going to be okay..."{waitForClick}{clearText}{marker}{sound Y7A070}{appendText}[You]
+"I'll take care of you..."{waitForClick}{clearText}{marker}{sound Y7A071}{appendText}[You]
+"Now be a good little boy..."{waitForClick}{clearText}{marker}{appendText}You started patting my head.{waitForClick}{clearText}{marker}{appendText}I snapped with anger.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Alright then! I'll prove it to you!"{waitForClick}{clearText}
+
+[0000030e]10: 
+[0000030f]18: hideTextbox
+[00000310]10: 
+[00000311]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000318]10: 
+[00000319]10 81 00 00 80 00 00: removeFG 1 0
+[00000320]10: 
+[00000321]19: showTextbox
+[00000322]ff 1d 00: text 1d
+{marker}{appendText}I dashed out and ran to the warehouse.{waitForClick}{clearText}{marker}{appendText}I found a bucket and a clear plastic hose, and 
+drilled a hole in the bucket.{waitForClick}{clearText}{marker}{appendText}Sticking the hose into the hole, I used duct 
+tape to wrap and seal it.{waitForClick}{clearText}{marker}{appendText}I then hunted up two more buckets.{waitForClick}{clearText}{marker}{appendText}With the goods in hand, I returned to the 
+Security Office.{waitForClick}{clearText}
+
+[00000325]10: 
+[00000326]0c 00 00 00 00 17 00 86 00 00 82 00 00: bgload 00000000 IT02A 6 2
+[00000333]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000033d]27 00 00: fadeOutMonoColorOverlay
+[00000340]00: 
+[00000341]05 8a 00 00: unSkippableDelay 10
+[00000345]10: 
+[00000346]19: showTextbox
+[00000347]ff 1e 00: text 1e
+{marker}{sound Y7A072}{appendText}[You]
+"Huh? What's...that...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's something I threw together to test my 
+idea."{waitForClick}{clearText}{marker}{sound Y7A073}{appendText}[You]
+"I don't get it. What does that thing have 
+to do with what we were talking about?"{waitForClick}{clearText}
+
+[0000034a]10: 
+[0000034b]27 00 00 00 00 18 00 80 00 00 82 00 00: bgload_keepFg 00000000 IT02E 0 2
+[00000358]10: 
+[00000359]19: showTextbox
+[0000035a]ff 1f 00: text 1f
+{marker}{appendText}[Kid]
+"Listen. First, this bucket up here, the one 
+with the hose stuck in it...it represents 
+Sector 8 where we are, okay?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Next, the hose part that's filled with water 
+represents Corridor C leading to Staircase A."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Finally, the bucket set down low represents 
+the fourth block on the third floor. And the 
+empty hose part hanging down to it is 
+Staircase B."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Just to let you know, the bent hose part 
+represents the connecting the corridor joining 
+up Corridor C with Staircase B, okay?"{waitForClick}{clearText}{marker}{sound Y7A074}{appendText}[You]
+"Uh...okay."{waitForClick}{clearText}{marker}{sound Y7A075}{appendText}[You]
+"I got you so far...so then what?"{waitForClick}{clearText}
+
+[0000035d]10: 
+[0000035e]27 00 00 00 00 19 00 80 00 00 82 00 00: bgload_keepFg 00000000 IT02A 0 2
+[0000036b]10: 
+[0000036c]19: showTextbox
+[0000036d]ff 20 00: text 20
+{marker}{appendText}[Kid]
+"Before I show you, I want to make sure of one 
+thing. If we drain the water filling the hose 
+here, then we can move safely to the emergency 
+stairs, right?"{waitForClick}{clearText}{marker}{sound Y7A076}{appendText}[You]
+"Yeah, I guess."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Alright! Let the draining begin!"{waitForClick}{clearText}{marker}{sound Y7A077}{appendText}[You]
+"????"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Remember what I said earlier?"{waitForClick}{clearText}{marker}{sound Y7A078}{appendText}[You]
+"I think you said...'We're going to release 
+the floodwater from Sector 8, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So let's release it."{waitForClick}{clearText}
+
+[00000370]10: 
+[00000371]0c 00 00 00 00 1a 00 80 00 00 82 00 00: bgload 00000000 IT02B 0 2
+[0000037e]10: 
+[0000037f]19: showTextbox
+[00000380]ff 21 00: text 21
+{marker}{appendText}Next, I began to pour water into the top 
+bucket from a second bucket, which I had 
+filled with water from the corridor.{waitForClick}{clearText}
+
+[00000383]10: 
+[00000384]18: hideTextbox
+[00000385]10: 
+[00000386]05 53 45 30 32 5f 31 32 00 80 00 00 a0 64 00 00: playSFX SE02_12 0 100
+[00000396]10: 
+[00000397]19: showTextbox
+[00000398]ff 22 00: text 22
+{marker}{appendText}Glug, glug, glug...{waitForClick}{clearText}{marker}{appendText}In no time at all, the top bucket was full.{waitForClick}{clearText}
+
+[0000039b]10: 
+[0000039c]0c 00 00 00 00 1b 00 80 00 00 82 00 00: bgload 00000000 IT02C 0 2
+[000003a9]10: 
+[000003aa]06: stopSFX
+[000003ab]10: 
+[000003ac]19: showTextbox
+[000003ad]ff 23 00: text 23
+{marker}{appendText}Next, the water from the top bucket flowed 
+down the hose, pushing the air out of the hose 
+and flowing into the lower bucket.{waitForClick}{clearText}
+
+[000003b0]10: 
+[000003b1]0c 00 00 00 00 1c 00 80 00 00 82 00 00: bgload 00000000 IT02D 0 2
+[000003be]10: 
+[000003bf]19: showTextbox
+[000003c0]ff 24 00: text 24
+{marker}{appendText}Before long...all the water was drained.{waitForClick}{clearText}{marker}{appendText}Except for a negligible amount left in the 
+hose, all the water from the top bucket 
+drained completely to the lower bucket. {waitForClick}{clearText}
+
+[000003c3]10: 
+[000003c4]0c 00 00 00 00 1d 00 80 00 00 82 00 00: bgload 00000000 BG11A1 0 2
+[000003d1]10: 
+[000003d2]19: showTextbox
+[000003d3]ff 25 00: text 25
+{marker}{appendText}[Kid]
+"And that's how it works."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This is how a siphon works."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Okay, let's prove this one more time by 
+looking at the map."{waitForClick}{clearText}
+
+[000003d6]10: 
+[000003d7]0c 00 00 00 00 1e 00 80 00 00 82 00 00: bgload 00000000 MAP06C 0 2
+[000003e4]10: 
+[000003e5]19: showTextbox
+[000003e6]ff 26 00: text 26
+{marker}{appendText}[Kid]
+"The walls of Staircase A, Staircase B, 
+Corridor C, and the area in Sector 4 are all 
+intact without cracks or damage."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So we can assume that all these areas are 
+protected from outside seawater."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Isn't that right, Sora?"{waitForClick}{clearText}{marker}{sound Y7A079}{appendText}[Sora]
+"Yes."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What will happen if we simultaneously open 
+all the watertight doors in this submerged 
+area in Sector 8 of Zweite stock...this room 
+without any cracks or damage...?"{waitForClick}{clearText}{marker}{sound Y7A080}{appendText}[You]
+"So an enormous amount of water is going to 
+flow into Corridor C?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And then, what next?"{waitForClick}{clearText}{marker}{sound Y7A081}{appendText}[You]
+"The water accumulated in Corridor C will 
+drain into the dry area in Sector 4?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And then what will happen?"{waitForClick}{clearText}{marker}{sound Y7A082}{appendText}[You]
+"Probably something like your experiment just 
+now..."{waitForClick}{clearText}{marker}{sound Y7A083}{appendText}[You]
+"All the water in Corridor C, as well as 
+Sector 8, will flow into Sector 4, I guess."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yep, that's the plan."{waitForClick}{clearText}{marker}{sound Y7A084}{appendText}[You]
+"But do you really think it'll work?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's a hell of a lot better than nothing."{waitForClick}{clearText}{marker}{appendText}[Kid]
+" I'm pretty sure it'll work."{waitForClick}{clearText}
+
+[000003e9]10: 
+[000003ea]18: hideTextbox
+[000003eb]10: 
+[000003ec]45 a0 24 00 00 80 00 00: monoColorOverlay 36 0
+[000003f4]10: 
+[000003f5]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[000003ff]10: 
+[00000400]04: stopBGM
+[00000401]10: 
+[00000402]05 53 45 30 32 5f 30 37 00 81 00 00 a0 64 00 00: playSFX SE02_07 1 100
+[00000412]10: 
+[00000413]07: waitForSFX
+[00000414]10: 
+[00000415]19: showTextbox
+[00000416]ff 27 00: text 27
+{marker}{appendText}And then...{waitForClick}{clearText}
+
+[00000419]10: 
+[0000041a]03 8b 00 00 a0 64 00 00: playBGM 11 100
+[00000422]10: 
+[00000423]0c 00 00 00 00 1f 00 86 00 00 82 00 00: bgload 00000000 BG11A1 6 2
+[00000430]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000043a]27 00 00: fadeOutMonoColorOverlay
+[0000043d]00: 
+[0000043e]05 a0 12 00 00: unSkippableDelay 18
+[00000443]10: 
+[00000444]1f 83 00 00 a0 28 00 00: clock 3:40
+[0000044c]10: 
+[0000044d]19: showTextbox
+[0000044e]ff 28 00: text 28
+{marker}{appendText}[Kid]
+"Are you ready to go?"{waitForClick}{clearText}
+
+[00000451]10: 
+[00000452]12 81 00 00 82 00 00 00 00 00 00 20 00 00 00 00 00 21 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SO01ADM 00000000 YU01ADM 128 512 3
+[00000470]10: 
+[00000471]19: showTextbox
+[00000472]ff 29 00: text 29
+{marker}{sound Y7A085}{appendText}[You]
+"Sure."{waitForClick}{clearText}{marker}{appendText}According to the color-coded map on the 
+monitor, Zweite stock's Sector 8 and Corridor 
+C had changed to green.{waitForClick}{clearText}{marker}{appendText}The color green meant it was a dry area.{waitForClick}{clearText}{marker}{appendText}Meaning the drainage...had worked perfectly.{waitForClick}{clearText}{marker}{sound Y7A086}{appendText}[Sora]
+"There is very little time left before the 
+estimated implosion time. You must hurry."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah, we know."{waitForClick}{clearText}{marker}{sound Y7A087}{appendText}[Sora]
+"Well, be careful."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What about you, Sora? You're not coming?"{waitForClick}{clearText}
+
+[00000475]10: 
+[00000476]12 81 00 00 82 00 00 00 00 00 00 22 00 00 00 00 00 23 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SO03ADM 00000000 YU03ADM 128 512 3
+[00000494]10: 
+[00000495]19: showTextbox
+[00000496]ff 2a 00: text 2a
+{marker}{sound Y7A088}{appendText}[You]
+"Listen Kid. Sora.... She can't leave LeMU."{waitForClick}{clearText}{marker}{appendText}[Sora]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...What?"{waitForClick}{clearText}{marker}{sound Y7A089}{appendText}[Sora]
+"Have you forgotten? I am an RSD-generated 
+image.... I'm just a computer program."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound Y7A090}{appendText}[Sora]
+"I am not able to join you."{waitForClick}{clearText}{marker}{sound Y7A091}{appendText}[Sora]
+"So I wanted to say goodbye and wish you the 
+best of luck."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sora..."{waitForClick}{clearText}
+
+[00000499]10: 
+[0000049a]12 81 00 00 82 00 00 00 00 00 00 24 00 00 00 00 00 25 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SO01ADM 00000000 YU11ADM 128 512 3
+[000004b8]10: 
+[000004b9]19: showTextbox
+[000004ba]ff 2b 00: text 2b
+{marker}{sound Y7A092}{appendText}[Sora]
+"Every encounter must have a parting."{waitForClick}{clearText}{marker}{sound Y7A093}{appendText}[Sora]
+"And even if I accompanied you as far as the 
+floating island, we would eventually have to 
+say goodbye there."{waitForClick}{clearText}{marker}{sound Y7A094}{appendText}[Sora]
+"In my case, the parting comes a little 
+earlier than with everyone else."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But..."{waitForClick}{clearText}{marker}{sound Y7A095}{appendText}[Sora]
+"Kid, think about it like this. When you go to 
+visit a friend's house..."{waitForClick}{clearText}{marker}{sound Y7A096}{appendText}[Sora]
+"When it's time to leave, the friend may see 
+you to the door, but the friend can't 
+accompany you home, right?"{waitForClick}{clearText}{marker}{sound Y7A097}{appendText}[Sora]
+"This place..."{waitForClick}{clearText}{marker}{sound Y7A098}{appendText}[Sora]
+"LeMU is...my home."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We'll meet again, won't we?"{waitForClick}{clearText}
+
+[000004bd]10: 
+[000004be]19: showTextbox
+[000004bf]ff 2c 00: text 2c
+{marker}{sound Y7A099}{appendText}[Sora]
+"Yes."{waitForClick}{clearText}{marker}{sound Y7A100}{appendText}[Sora]
+"I am here, and I am also elsewhere at the 
+same time."{waitForClick}{clearText}{marker}{sound Y7A101}{appendText}[Sora]
+"Even if the 'me' here disappears, the 'me' 
+there will still go on existing."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't talk about disappearing."{waitForClick}{clearText}{marker}{sound Y7A102}{appendText}[Sora]
+"Heh, heh. This is merely an example, you see."{waitForClick}{clearText}{marker}{sound Y7A103}{appendText}[Sora]
+"Don't worry. I'm sure that, yourself, 
+You and I will meet again."{waitForClick}{clearText}{marker}{sound Y7A104}{appendText}[Sora]
+"And it may be sooner than you think..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Do you promise?"{waitForClick}{clearText}{marker}{sound Y7A105}{appendText}[Sora]
+"Yes."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's a promise then?"{waitForClick}{clearText}{marker}{sound Y7A106}{appendText}[Sora]
+"Yes, it's a promise."{waitForClick}{clearText}{marker}{appendText}Looking over Sora's shoulder at the monitor, I 
+could see the number of life readings 
+displayed there.{waitForClick}{clearText}
+
+[000004c2]10: 
+[000004c3]18: hideTextbox
+[000004c4]10: 
+[000004c5]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[000004cc]10: 
+[000004cd]13 83 04 00 80 00 00: multiremoveFG_Sta 1 2 0
+[000004d4]10: 
+[000004d5]0c 00 00 00 00 26 00 86 00 00 82 00 00: bgload 00000000 IT04B 6 2
+[000004e2]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000004ec]27 00 00: fadeOutMonoColorOverlay
+[000004ef]00: 
+[000004f0]05 8a 00 00: unSkippableDelay 10
+[000004f4]10: 
+[000004f5]1e a0 78 00 00: delay 120
+[000004fa]10: 
+[000004fb]18: hideTextbox
+[000004fc]10: 
+[000004fd]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000505]10: 
+[00000506]0c 00 00 00 00 27 00 86 00 00 82 00 00: bgload 00000000 BG25A3 6 2
+[00000513]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000051d]27 00 00: fadeOutMonoColorOverlay
+[00000520]00: 
+[00000521]05 a0 12 00 00: unSkippableDelay 18
+[00000526]10: 
+[00000527]19: showTextbox
+[00000528]ff 2d 00: text 2d
+{marker}{appendText}You and I opened the Security Room doors and 
+exited into the corridor.{waitForClick}{clearText}{marker}{appendText}Giving a wave to the smiling Sora as she saw 
+us off, we climbed the stairs to the emergency 
+corridor.{waitForClick}{clearText}
+
+[0000052b]10: 
+[0000052c]0c 00 00 00 00 28 00 80 00 00 82 00 00: bgload 00000000 BG27A3 0 2
+[00000539]10: 
+[0000053a]19: showTextbox
+[0000053b]ff 2e 00: text 2e
+{marker}{appendText}We then walked down Corridor C, which was no 
+longer flooded.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, I was just thinking but..."{waitForClick}{clearText}
+
+[0000053e]10: 
+[0000053f]0f 81 00 00 00 00 00 00 29 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07ADM 320 3
+[00000550]10: 
+[00000551]19: showTextbox
+[00000552]ff 2f 00: text 2f
+{marker}{sound Y7A107}{appendText}[You]
+"What about?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Surely Sora isn't planning to take 
+responsibility for the accident by dying 
+here..."{waitForClick}{clearText}
+
+[00000555]10: 
+[00000556]0f 81 00 00 00 00 00 00 2a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[00000567]10: 
+[00000568]19: showTextbox
+[00000569]ff 30 00: text 30
+{marker}{sound Y7A108}{appendText}[You]
+"Don't be stupid...Sora doesn't plan to 
+sacrifice herself."{waitForClick}{clearText}{marker}{sound Y7A109}{appendText}[You]
+"Sora, you know, is different from us."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No way! Sora's not..."{waitForClick}{clearText}
+
+[0000056c]10: 
+[0000056d]0f 81 00 00 00 00 00 00 2b 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU11ADM 320 3
+[0000057e]10: 
+[0000057f]19: showTextbox
+[00000580]ff 31 00: text 31
+{marker}{sound Y7A110}{appendText}[You]
+"Umm...I don't mean it that way, umm..."{waitForClick}{clearText}
+
+[00000583]10: 
+[00000584]0f 81 00 00 00 00 00 00 2c 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[00000595]10: 
+[00000596]19: showTextbox
+[00000597]ff 32 00: text 32
+{marker}{sound Y7A111}{appendText}[You]
+"Anyway, what you're worried about isn't going 
+to happen to her."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"How can you be so sure?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Maybe that's the way Leiblich programmed her?"{waitForClick}{clearText}
+
+[0000059a]10: 
+[0000059b]0f 81 00 00 00 00 00 00 2d 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07ADM 320 3
+[000005ac]10: 
+[000005ad]19: showTextbox
+[000005ae]ff 33 00: text 33
+{marker}{sound Y7A112}{appendText}[You]
+"...*sigh* Here we go again..."{waitForClick}{clearText}
+
+[000005b1]10: 
+[000005b2]0f 81 00 00 00 00 00 00 2e 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[000005c3]10: 
+[000005c4]19: showTextbox
+[000005c5]ff 34 00: text 34
+{marker}{sound Y7A113}{appendText}[You]
+"Listen, this is what I heard from Mayo, 
+but..."{waitForClick}{clearText}{marker}{sound Y7A114}{appendText}[You]
+"Before, when she was hacking the source data, 
+Mayo said she rewrote one line of code."{waitForClick}{clearText}{marker}{sound Y7A115}{appendText}[You]
+"In Sora's programming there is a priority 
+list of preferential actions. Mayo rewrote 
+one of these."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What was that?"{waitForClick}{clearText}{marker}{sound Y7A116}{appendText}[You]
+"She must protect above all else...herself. "{waitForClick}{clearText}{marker}{sound Y7A117}{appendText}[You]
+"She must value herself most."{waitForClick}{clearText}
+
+[000005c8]10: 
+[000005c9]18: hideTextbox
+[000005ca]10: 
+[000005cb]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[000005d3]10: 
+[000005d4]19: showTextbox
+[000005d5]ff 35 00: text 35
+{marker}{appendText}At last we arrived at the door leading to the 
+emergency stairs.{waitForClick}{clearText}{marker}{sound Y7A118}{appendText}[You]
+"Alright, I'm going to open it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Okay."{waitForClick}{clearText}{marker}{appendText}You put her hand on the door's handle.{waitForClick}{clearText}{marker}{sound Y7A119}{appendText}[You]
+"Come on! Help me turn it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh...right."{waitForClick}{clearText}{marker}{appendText}Together we gripped the handle.{waitForClick}{clearText}{marker}{appendText}It was then that it happened!{waitForClick}{clearText}
+
+[000005d8]10: 
+[000005d9]18: hideTextbox
+[000005da]10: 
+[000005db]04: stopBGM
+[000005dc]10: 
+[000005dd]05 53 45 30 38 5f 30 35 00 80 00 00 a0 64 00 00: playSFX SE08_05 0 100
+[000005ed]10: 
+[000005ee]19: showTextbox
+[000005ef]ff 36 00: text 36
+{marker}{appendText}Claaaaang...{waitForClick}{clearText}{marker}{appendText}A sudden metallic sound resounded behind us.{waitForClick}{clearText}{marker}{appendText}I turned around quickly.{waitForClick}{clearText}
+
+[000005f2]10: 
+[000005f3]18: hideTextbox
+[000005f4]10: 
+[000005f5]06: stopSFX
+[000005f6]10: 
+[000005f7]03 a0 18 00 00 a0 64 00 00: playBGM 24 100
+[00000600]10: 
+[00000601]19: showTextbox
+[00000602]ff 37 00: text 37
+{marker}{appendText}[Kid]
+"Ah!"{waitForClick}{clearText}{marker}{appendText}At the end of the corridor...stood the girl.{waitForClick}{clearText}{marker}{appendText}Our eyes met.{waitForClick}{clearText}{marker}{appendText}And then a name flashed in my mind, as clear 
+as a bell.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Coco!"{waitForClick}{clearText}{marker}{sound Y7A120}{appendText}[You]
+"Huh!?"{waitForClick}{clearText}{marker}{sound Y7A121}{appendText}[You]
+"Coco...who's Coco!?"{waitForClick}{clearText}{marker}{appendText}Turning on her heels, Coco ran off in the 
+other direction.{waitForClick}{clearText}{marker}{appendText}I turned to chase after her.{waitForClick}{clearText}{marker}{appendText}But You grabbed my arm, holding me back.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"C'mon, let go!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"There's still someone here!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We can't just leave her here!"{waitForClick}{clearText}{marker}{sound Y7A122}{appendText}[You]
+"You're just imagining things! Forget about 
+it!"{waitForClick}{clearText}{marker}{appendText}The walls began to creak and groan.{waitForClick}{clearText}{marker}{appendText}Here and there, water began to leak in.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Cocoooo!"{waitForClick}{clearText}{marker}{sound Y7A123}{appendText}[You]
+"Kid! Stop!"{waitForClick}{clearText}
+
+[00000605]10: 
+[00000606]0c 00 00 00 00 2f 00 86 00 00 82 00 00: bgload 00000000 BG28A3R 6 2
+[00000613]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000061d]27 00 00: fadeOutMonoColorOverlay
+[00000620]00: 
+[00000621]05 8a 00 00: unSkippableDelay 10
+[00000625]10: 
+[00000626]19: showTextbox
+[00000627]ff 38 00: text 38
+{marker}{appendText}Tearing myself away from You's grasp, I ran 
+after the girl.{waitForClick}{clearText}{marker}{appendText}You came dashing after me.{waitForClick}{clearText}{marker}{appendText}Through the voice alternator came Sora's 
+warning voice.{waitForClick}{clearText}{marker}{sound Y7A124}{appendText}[Sora]
+"The pressure on the partitions has increased 
+beyond their limit!"{waitForClick}{clearText}{marker}{sound Y7A125}{appendText}[Sora]
+"You must return quickly!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No way!"{waitForClick}{clearText}{marker}{sound Y7A126}{appendText}[You]
+"How long!? How much longer will they hold?"{waitForClick}{clearText}{marker}{sound Y7A127}{appendText}[Sora]
+"10 to 15 minutes!"{waitForClick}{clearText}{marker}{sound Y7A128}{appendText}[Sora]
+"But there is no way to be sure. The wall 
+could collapse at any moment!"{waitForClick}{clearText}{marker}{appendText}For one instant, I saw the back of the girl.{waitForClick}{clearText}{marker}{appendText}She continued to running down the corridor.{waitForClick}{clearText}{marker}{appendText}With all my strength, I burst after her.{waitForClick}{clearText}
+
+[0000062a]10: 
+[0000062b]18: hideTextbox
+[0000062c]10: 
+[0000062d]05 53 45 30 31 5f 30 34 00 80 00 00 a0 64 00 00: playSFX SE01_04 0 100
+[0000063d]10: 
+[0000063e]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000645]10: 
+[00000646]0c 00 00 00 00 30 00 86 00 00 82 00 00: bgload 00000000 BG28A4R 6 2
+[00000653]10: 
+[00000654]06: stopSFX
+[00000655]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000065f]27 00 00: fadeOutMonoColorOverlay
+[00000662]00: 
+[00000663]05 a0 12 00 00: unSkippableDelay 18
+[00000668]10: 
+[00000669]19: showTextbox
+[0000066a]ff 39 00: text 39
+{marker}{appendText}The main building lights flickered and went 
+out, but were replaced by dim emergency lights.{waitForClick}{clearText}{marker}{appendText}With the help of the pale lights I kept up 
+chase.{waitForClick}{clearText}
+
+[0000066d]10: 
+[0000066e]0c 00 00 00 00 31 00 80 00 00 82 00 00: bgload 00000000 BG29A2 0 2
+[0000067b]10: 
+[0000067c]19: showTextbox
+[0000067d]ff 3a 00: text 3a
+{marker}{appendText}I bounded down the emergency staircase...{waitForClick}{clearText}
+
+[00000680]10: 
+[00000681]0c 00 00 00 00 32 00 80 00 00 82 00 00: bgload 00000000 BG26B4R 0 2
+[0000068e]10: 
+[0000068f]19: showTextbox
+[00000690]ff 3b 00: text 3b
+{marker}{appendText}And burst out onto a normal corridor.{waitForClick}{clearText}{marker}{appendText}I ran and ran with all my power.{waitForClick}{clearText}
+
+[00000693]10: 
+[00000694]18: hideTextbox
+[00000695]10: 
+[00000696]05 53 45 30 31 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE01_00 0 100
+[000006a6]10: 
+[000006a7]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[000006af]10: 
+[000006b0]0c 00 00 00 00 33 00 86 00 00 82 00 00: bgload 00000000 BG30B2 6 2
+[000006bd]10: 
+[000006be]06: stopSFX
+[000006bf]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000006c9]27 00 00: fadeOutMonoColorOverlay
+[000006cc]00: 
+[000006cd]05 a0 12 00 00: unSkippableDelay 18
+[000006d2]10: 
+[000006d3]19: showTextbox
+[000006d4]ff 3c 00: text 3c
+{marker}{appendText}I ran to the end of the narrow corridor, in 
+front of a small door.{waitForClick}{clearText}{marker}{appendText}It was there that I caught up to her.{waitForClick}{clearText}
+
+[000006d7]10: 
+[000006d8]0c 00 00 00 00 34 00 80 00 00 82 00 00: bgload 00000000 EV_CO11A 0 2
+[000006e5]10: 
+[000006e6]19: showTextbox
+[000006e7]ff 3d 00: text 3d
+{marker}{appendText}She stood with her back to the door.{waitForClick}{clearText}{marker}{appendText}I had caught her.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Come on, we're going together!"{waitForClick}{clearText}{marker}{appendText}The girl shook her head.{waitForClick}{clearText}{marker}{appendText}Inching forward, I pressed close to her.{waitForClick}{clearText}{marker}{appendText}But to my surprise...!{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Huh!?"{waitForClick}{clearText}
+
+[000006ea]10: 
+[000006eb]19: showTextbox
+[000006ec]ff 3e 00: text 3e
+{marker}{appendText}After a moment...{delay 0}
+
+[000006ef]10: 
+[000006f0]27 00 00 00 00 35 00 80 00 00 81 00 00: bgload_keepFg 00000000 EV_CO11B 0 1
+[000006fd]10: 
+[000006fe]19: showTextbox
+[000006ff]ff 3f 00: text 3f
+{appendText}As if being absorbed into the door, the girl 
+disappeared...{waitForClick}{clearText}
+
+[00000702]10: 
+[00000703]0c 00 00 00 00 36 00 80 00 00 82 00 00: bgload 00000000 BG30B2 0 2
+[00000710]10: 
+[00000711]19: showTextbox
+[00000712]ff 40 00: text 40
+{marker}{appendText}Out of breath, You closed in on me.{waitForClick}{clearText}
+
+[00000715]10: 
+[00000716]0f 81 00 00 00 00 00 00 37 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03ADM 320 3
+[00000727]10: 
+[00000728]19: showTextbox
+[00000729]ff 41 00: text 41
+{marker}{sound Y7A129}{appendText}[You]
+"Whew! I finally caught up with you..."{waitForClick}{clearText}
+
+[0000072c]10: 
+[0000072d]0f 81 00 00 00 00 00 00 38 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07ADM 320 3
+[0000073e]10: 
+[0000073f]19: showTextbox
+[00000740]ff 42 00: text 42
+{marker}{sound Y7A130}{appendText}[You]
+"And? What about the girl, or whatever?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"............"{waitForClick}{clearText}
+
+[00000743]10: 
+[00000744]10 81 00 00 83 00 00: removeFG 1 3
+[0000074b]10: 
+[0000074c]19: showTextbox
+[0000074d]ff 43 00: text 43
+{marker}{appendText}I stood there as if in a trance.{waitForClick}{clearText}{marker}{appendText}Coming back to myself, I tried to open the 
+door to HIMMEL.{waitForClick}{clearText}{marker}{appendText}But the door wouldn't budge.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sora! Open this door!"{waitForClick}{clearText}{marker}{sound Y7A131}{appendText}[Sora]
+"That is impossible. That door is out of 
+my jurisdiction."{waitForClick}{clearText}{marker}{appendText}I pounded on the door.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Coco—!"{waitForClick}{clearText}
+
+[00000750]10: 
+[00000751]18: hideTextbox
+[00000752]10: 
+[00000753]05 53 45 30 32 5f 30 37 00 80 00 00 a0 64 00 00: playSFX SE02_07 0 100
+[00000763]10: 
+[00000764]19: showTextbox
+[00000765]ff 44 00: text 44
+{marker}{appendText}Ssssssss—!{waitForClick}{clearText}{marker}{appendText}From the surface of the walls, water began to 
+gush in.{waitForClick}{clearText}{marker}{sound Y7A132}{appendText}[Sora]
+"Less than five minutes left! They won't hold 
+much longer!"{waitForClick}{clearText}{marker}{sound Y7A133}{appendText}[Announcement]
+"Emergency warning...all patrons in the 
+park...and all staff...are advised to evacuate 
+immediately."{waitForClick}{clearText}{marker}{sound Y7A134}{appendText}[Announcement]
+"Five minutes...until...implosion."{waitForClick}{clearText}{marker}{appendText}The announcement repeated itself in German, 
+French, and Japanese.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Damn it! Open up! Open this door!!"{waitForClick}{clearText}
+
+[00000768]10: 
+[00000769]18: hideTextbox
+[0000076a]10: 
+[0000076b]05 53 45 30 30 5f 31 35 00 80 00 00 a0 64 00 00: playSFX SE00_15 0 100
+[0000077b]10: 
+[0000077c]19: showTextbox
+[0000077d]ff 45 00: text 45
+{marker}{appendText}Boom! Boom! Boom! I struck with my fists.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Open up—————!!"{waitForClick}{clearText}{marker}{sound Y7A135}{appendText}[You]
+"Listen, Kid, you've got to snap out of it!"{waitForClick}{clearText}{marker}{sound Y7A136}{appendText}[You]
+"Wake up!!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ugh...!!"{waitForClick}{clearText}
+
+[00000780]10: 
+[00000781]06: stopSFX
+[00000782]10: 
+[00000783]19: showTextbox
+[00000784]ff 46 00: text 46
+{marker}{appendText}I pounded fiercely against the door again with 
+my clinched fists.{waitForClick}{clearText}{marker}{appendText}But no matter how hard I tried, it was in vain.{waitForClick}{clearText}{marker}{appendText}(Is she just...just my imagination?){waitForClick}{clearText}{marker}{appendText}(...if I keep this up, what's going to happen 
+to You...?){waitForClick}{clearText}{marker}{appendText}I thought that You would die if I don't do 
+something!{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[00000787]10: 
+[00000788]18: hideTextbox
+[00000789]10: 
+[0000078a]04: stopBGM
+[0000078b]10: 
+[0000078c]0f 81 00 00 00 00 00 00 39 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03ADM 320 3
+[0000079d]10: 
+[0000079e]19: showTextbox
+[0000079f]ff 47 00: text 47
+{marker}{sound Y7A137}{appendText}[You]
+"Kid...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm so sorry...You."{waitForClick}{clearText}{marker}{appendText}I strained to speak, squeezing out my words.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"OKAY, LET'S GO!"{waitForClick}{clearText}{marker}{appendText}I reached out my hand to You.{waitForClick}{clearText}
+
+[000007a2]10: 
+[000007a3]0f 81 00 00 00 00 00 00 3a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[000007b4]10: 
+[000007b5]19: showTextbox
+[000007b6]ff 48 00: text 48
+{marker}{sound Y7A138}{appendText}[You]
+"Whew, finally..."{waitForClick}{clearText}{marker}{appendText}You gave my hand a squeeze back.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[000007b9]10: 
+[000007ba]10 81 00 00 83 00 00: removeFG 1 3
+[000007c1]10: 
+[000007c2]19: showTextbox
+[000007c3]ff 49 00: text 49
+{marker}{appendText}One last time, I looked back at the door...{waitForClick}{clearText}{marker}{appendText}And then turned and ran with all my might.{waitForClick}{clearText}{marker}{appendText}We sprinted as hard as our legs would carry us.{waitForClick}{clearText}{marker}{appendText}Splashing through the water as it gushed like 
+a waterfall, I ran with everything I had, 
+You's hand gripped tightly in mine.{waitForClick}{clearText}{marker}{sound Y7A139}{appendText}[Announcement]
+"Three minutes...until...implosion."{waitForClick}{clearText}
+
+[000007c6]10: 
+[000007c7]03 8a 00 00 a0 64 00 00: playBGM 10 100
+[000007cf]10: 
+[000007d0]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[000007da]10: 
+[000007db]19: showTextbox
+[000007dc]ff 4a 00: text 4a
+{marker}{appendText}Bounding up the emergency stairs, we reached 
+Zweite Stock.{waitForClick}{clearText}
+
+[000007df]10: 
+[000007e0]0c 00 00 00 00 3b 00 80 00 00 82 00 00: bgload 00000000 BG27A4 0 2
+[000007ed]10: 
+[000007ee]19: showTextbox
+[000007ef]ff 4b 00: text 4b
+{marker}{appendText}We ran hard down the emergency corridor.{waitForClick}{clearText}{marker}{sound Y7A140}{appendText}[Announcement]
+"Two minutes...until...implosion."{waitForClick}{clearText}{marker}{appendText}We applied our strength together and pushed 
+open the emergency stairwell door.{waitForClick}{clearText}
+
+[000007f2]10: 
+[000007f3]0c 00 00 00 00 3c 00 80 00 00 82 00 00: bgload 00000000 BG29A2 0 2
+[00000800]10: 
+[00000801]19: showTextbox
+[00000802]ff 4c 00: text 4c
+{marker}{appendText}Closing the door tightly, we then headed up 
+the long set of stairs.{waitForClick}{clearText}{marker}{sound Y7A141}{appendText}[Announcement]
+"One minute...until...implosion."{waitForClick}{clearText}{marker}{appendText}In the distance the sign read Erste boden. 
+First floor!{waitForClick}{clearText}{marker}{appendText}Just 50 more feet!{waitForClick}{clearText}{marker}{sound Y7A142}{appendText}[Announcement]
+"Thirty seconds..."{waitForClick}{clearText}{marker}{sound Y7A143}{appendText}[Announcement]
+"Twenty seconds..."{waitForClick}{clearText}{marker}{sound Y7A144}{appendText}[Announcement]
+"Ten,Nine,Eight,Seven..."{waitForClick}{clearText}{marker}{appendText}We ran toward the final door...{waitForClick}{clearText}
+
+[00000805]10: 
+[00000806]18: hideTextbox
+[00000807]10: 
+[00000808]05 53 45 30 34 5f 30 33 00 80 00 00 a0 64 00 00: playSFX SE04_03 0 100
+[00000818]10: 
+[00000819]19: showTextbox
+[0000081a]ff 4d 00: text 4d
+{marker}{appendText}Clink, clank. Clink, clank.{waitForClick}{clearText}{marker}{appendText}The door...the door would not open!{waitForClick}{clearText}{marker}{sound Y7A145}{appendText}[Announcement]
+"Six,Five,Four,Three"{waitForClick}{clearText}{marker}{sound Y7A146}{appendText}[Announcement]
+"...Two...One......"{waitForClick}{clearText}
+
+[0000081d]10: 
+[0000081e]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[00000828]10: 
+[00000829]06: stopSFX
+[0000082a]10: 
+[0000082b]05 53 45 30 37 5f 31 32 00 80 00 00 a0 64 00 00: playSFX SE07_12 0 100
+[0000083b]10: 
+[0000083c]19: showTextbox
+[0000083d]ff 4e 00: text 4e
+{marker}{appendText}Grrrrrrrr...groannnnnnnnnnn!{waitForClick}{clearText}{marker}{appendText}The darkness was pierced by a ferocious 
+sound...{waitForClick}{clearText}{marker}{appendText}Like the roar of a dragon.{waitForClick}{clearText}{marker}{appendText}Or possibly...the last agonizing cry before 
+death.{waitForClick}{clearText}
+
+[00000840]10: 
+[00000841]18: hideTextbox
+[00000842]10: 
+[00000843]04: stopBGM
+[00000844]10: 
+[00000845]07: waitForSFX
+[00000846]10: 
+[00000847]06: stopSFX
+[00000848]10: 
+[00000849]1e a0 f0 00 00: delay 240
+[0000084e]10: 
+[0000084f]03 a0 14 00 00 a0 64 00 00: playBGM 20 100
+[00000858]fe 28 0a a4 fa 14 14 00 a0 59 00 00: setSceneTitleByIndex 89
+[00000864]10: 
+[00000865]1d 00 00 00 00 3d 00: chapterCutin 00000000 cal_507
+[0000086c]10: 
+[0000086d]0c 00 00 00 00 3e 00 80 00 00 80 00 00: bgload 00000000 BG38A1 0 0
+[0000087a]10: 
+[0000087b]19: showTextbox
+[0000087c]ff 4f 00: text 4f
+{marker}{appendText}On the floating island!{waitForClick}{clearText}{marker}{appendText}The morning sun stained the sky, land and 
+ocean...{waitForClick}{clearText}{marker}{appendText}It was the first time we had laid eyes on the 
+blue sky and bright sunlight in seven days!{waitForClick}{clearText}
+
+[0000087f]10: 
+[00000880]0c 00 00 00 00 3f 00 80 00 00 82 00 00: bgload 00000000 BG39A1 0 2
+[0000088d]10: 
+[0000088e]1f 85 00 00 a0 24 00 00: clock 5:36
+[00000896]10: 
+[00000897]19: showTextbox
+[00000898]ff 50 00: text 50
+{marker}{appendText}In the distance, Sara and Takeshi played 
+together.{waitForClick}{clearText}{marker}{appendText}It appeared as if they were pretending to 
+swordfight with a couple of sticks.{waitForClick}{clearText}{marker}{appendText}Apparently, Takeshi had been routed by Sara's 
+sword.{waitForClick}{clearText}{marker}{appendText}I gazed dreamily at the two as they played.{waitForClick}{clearText}{marker}{appendText}Tsugumi was nowhere to be seen. After the 
+escape, she had disappeared.{waitForClick}{clearText}{marker}{appendText}And as for You...?{waitForClick}{clearText}
+
+[0000089b]10: 
+[0000089c]0c 00 00 00 00 40 00 80 00 00 82 00 00: bgload 00000000 EV_YU13A 0 2
+[000008a9]10: 
+[000008aa]19: showTextbox
+[000008ab]ff 51 00: text 51
+{marker}{appendText}She sat beside me, gazing at the morning sun. {waitForClick}{clearText}{marker}{appendText}Her eyes misted with tears...{waitForClick}{clearText}{marker}{appendText}It was her first time to see the sun in seven 
+days.{waitForClick}{clearText}{marker}{appendText}Long shadows, from her figure and mine, 
+cast at length behind us.{waitForClick}{clearText}{marker}{appendText}Yes, we had successfully escaped from that 
+water entrenched labyrinth.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I kept my promise...don't you think?"{waitForClick}{clearText}{marker}{appendText}I turned and asked You.{waitForClick}{clearText}{marker}{sound Y7A147}{appendText}[You]
+"Well, the first one at least."{waitForClick}{clearText}{marker}{appendText}You kept her gaze on the rising sun as she 
+answered.{waitForClick}{clearText}{marker}{appendText}The first one...{waitForClick}{clearText}{marker}{appendText}...To protect her.{waitForClick}{clearText}{marker}{appendText}And the second?{waitForClick}{clearText}{marker}{sound Y7A148}{appendText}[You]
+"The thing that reminds you about life, sugar 
+in coffee."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ah...that..."{waitForClick}{clearText}{marker}{sound Y7A149}{appendText}[You]
+"The thing that life depends on, didn't you 
+say?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Uh, huh."{waitForClick}{clearText}{marker}{sound Y7A150}{appendText}[You]
+"You promised to tell me."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Okay, in that case let me ask you. What are 
+some things on which life depends?"{waitForClick}{clearText}{marker}{sound Y7A151}{appendText}[You]
+"Water, air, food, housing, 
+clothing...money..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Okay, what else?"{waitForClick}{clearText}{marker}{sound Y7A152}{appendText}[You]
+"Knowledge, maybe."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well, I guess there's that, too."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Humans can't live forever in innocence, 
+though."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"To live comfortably, humans also need certain 
+impurities, things that are granted by 
+knowledge."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I guess you could compare those things with 
+the milk you put in coffee."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But there's one more thing..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Like the sugar in coffee, we need one more 
+thing..."{waitForClick}{clearText}{marker}{sound Y7A153}{appendText}[You]
+"What could it be?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"How does sugar taste?"{waitForClick}{clearText}{marker}{sound Y7A154}{appendText}[You]
+"Sweet."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's a wonderful taste, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So humans...can never live entirely alone."{waitForClick}{clearText}{marker}{sound Y7A155}{appendText}[You]
+"????"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You still don't get it?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"People can only know sweetness when they join 
+together..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Love."{waitForClick}{clearText}
+
+[000008ae]10: 
+[000008af]0c 00 00 00 00 41 00 80 00 00 82 00 00: bgload 00000000 IMG05B 0 2
+[000008bc]10: 
+[000008bd]19: showTextbox
+[000008be]ff 52 00: text 52
+{marker}{appendText}You then squeezed my right hand.{waitForClick}{clearText}{marker}{appendText}And I pulled her close to me.{waitForClick}{clearText}{marker}{appendText}You buried her face in my chest.{waitForClick}{clearText}{marker}{appendText}From You's long hair I could smell her 
+fragrance.{waitForClick}{clearText}{marker}{appendText}The fragrance of sunlight.{waitForClick}{clearText}{marker}{sound Y7A036}{appendText}[You]
+"It is sweet...isn't it."{waitForClick}{clearText}{marker}{appendText}The sun, my sun, which was clear and fresh, 
+flowing with brilliance...{waitForClick}{clearText}{marker}{appendText}Tinged with sweetness the smell of spring 
+enveloped us completely.{waitForClick}{clearText}
+
+[000008c1]10: 
+[000008c2]18: hideTextbox
+[000008c3]10: 
+[000008c4]45 a0 30 00 00 80 00 00: monoColorOverlay 48 0
+[000008cc]10: 
+[000008cd]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000008d7]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000008e1]27 00 00: fadeOutMonoColorOverlay
+[000008e4]00: 
+[000008e5]05 83 00 00: unSkippableDelay 3
+[000008e9]10: 
+[000008ea]04: stopBGM
+[000008eb]fe 28 0a a4 c7 14 14 00 82 00 00: varop (28 0a a4) c7 := (00) 2
+[000008f6]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000901]10: 
+[00000902]01 59 5f 45 44 00: jump Y_ED

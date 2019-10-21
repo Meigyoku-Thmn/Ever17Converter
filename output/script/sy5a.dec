@@ -1,0 +1,1772 @@
+﻿[00000036]10: 
+[00000037]46 80 00 00: setDialogBoxColor blue
+[0000003b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000046]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
+[00000051]fe 28 0a a4 b2 14 14 00 85 00 00: varop (28 0a a4) b2 := (00) 5
+[0000005c]10: 
+[0000005d]0c 00 00 00 00 00 00 80 00 00 82 00 00: bgload 00000000 BG04B1 0 2
+[0000006a]fe 28 0a a4 fa 14 14 00 a0 4d 00 00: setSceneTitleByIndex 77
+[00000076]00: 
+[00000077]28: l_unk28
+[00000078]10: 
+[00000079]1f 80 00 00 83 00 00: clock 0:3
+[00000080]10: 
+[00000081]19: showTextbox
+[00000082]ff 00 00: text 00
+{marker}{appendText}The Lemurian Ruins.{waitForClick}{clearText}{marker}{appendText}Just like I had the day before, I visited 
+the ruins.{waitForClick}{clearText}{marker}{appendText}I figured I would find You there.{waitForClick}{clearText}{marker}{appendText}It felt like I had traveled through time and 
+opened the door to an ancient time.{waitForClick}{clearText}{marker}{appendText}Speaking of time travel...{waitForClick}{clearText}{marker}{appendText}You had scoffed at it, but I still hadn't 
+given up on the theory.{waitForClick}{clearText}{marker}{appendText}It was the only one that made sense to me.{waitForClick}{clearText}{marker}{appendText}There was no other way to explain things.{waitForClick}{clearText}
+
+[00000085]10: 
+[00000086]18: hideTextbox
+[00000087]10: 
+[00000088]03 85 00 00 a0 64 00 00: playBGM 5 100
+[00000090]10: 
+[00000091]0c 00 00 00 00 01 00 80 00 00 82 00 00: bgload 00000000 BG40B1 0 2
+[0000009e]10: 
+[0000009f]19: showTextbox
+[000000a0]ff 01 00: text 01
+{marker}{appendText}I entered the ruins.{waitForClick}{clearText}{marker}{appendText}I continued through the maze-like passages.{waitForClick}{clearText}{marker}{appendText}Trying not to get lost, I wracked my memory...{waitForClick}{clearText}{marker}{appendText}Fortunately, I remembered the path I'd taken 
+the day before.{waitForClick}{clearText}{marker}{appendText}It was still fresh in my mind.{waitForClick}{clearText}{marker}{appendText}It was like I had been through the area 
+dozens of times.{waitForClick}{clearText}{marker}{appendText}Finally...{waitForClick}{clearText}{marker}{sound Y5A000}{appendText}[You]
+"Hey there."{waitForClick}{clearText}
+
+[000000a3]10: 
+[000000a4]0c 00 00 00 00 02 00 80 00 00 82 00 00: bgload 00000000 EV_YU03C 0 2
+[000000b1]10: 
+[000000b2]19: showTextbox
+[000000b3]ff 02 00: text 02
+{marker}{appendText}I found You.{waitForClick}{clearText}{marker}{appendText}She was in the same spot as the day before - 
+the Sun Temple.{waitForClick}{clearText}{marker}{appendText}And she was sitting on the same obelisk, 
+sitting hugging her knees.{waitForClick}{clearText}{marker}{appendText}I sat down next to her.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Do you feel better now?"{waitForClick}{clearText}{marker}{sound Y5A001}{appendText}[You]
+"Yeah. Thanks to you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's good to hear."{waitForClick}{clearText}{marker}{sound Y5A002}{appendText}[You]
+"You did a good job of finding this place 
+again."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It was the only place I could think of."{waitForClick}{clearText}{marker}{sound Y5A003}{appendText}[You]
+"That's not what I mean...I mean you 
+remembered the route here."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What are you talking about? You called me 
+here, right?"{waitForClick}{clearText}{marker}{sound Y5A004}{appendText}[You]
+"That's right."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't tell me, you thought that I wouldn't 
+find my way back!"{waitForClick}{clearText}{marker}{sound Y5A005}{appendText}[You]
+"Well, yeah."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound Y5A006}{appendText}[You]
+"I'm kidding. It's a joke!"{waitForClick}{clearText}{marker}{sound Y5A007}{appendText}[You]
+"To tell you the truth, I just wanted to test 
+you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Test? Me?"{waitForClick}{clearText}
+
+[000000b6]10: 
+[000000b7]0c 00 00 00 00 03 00 80 00 00 82 00 00: bgload 00000000 EV_YU03A 0 2
+[000000c4]10: 
+[000000c5]19: showTextbox
+[000000c6]ff 03 00: text 03
+{marker}{sound Y5A008}{appendText}[You]
+"Yup."{waitForClick}{clearText}{marker}{sound Y5A009}{appendText}[You]
+"I wanted to see if you could navigate the 
+labyrinth, slay the evil dragon and rescue the 
+princess held captive here."{waitForClick}{clearText}{marker}{sound Y5A010}{appendText}[You]
+"To see whether the hero would show up or not."{waitForClick}{clearText}{marker}{sound Y5A011}{appendText}[You]
+"I wanted to test the knight in shining armor."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You...you heard that from Sara, right?"{waitForClick}{clearText}
+
+[000000c9]10: 
+[000000ca]0c 00 00 00 00 04 00 80 00 00 82 00 00: bgload 00000000 EV_YU03C 0 2
+[000000d7]10: 
+[000000d8]19: showTextbox
+[000000d9]ff 04 00: text 04
+{marker}{sound Y5A012}{appendText}[You]
+"Right."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And you are supposed to be the princess?"{waitForClick}{clearText}{marker}{sound Y5A013}{appendText}[You]
+"Well, I don't want to sound to full of 
+myself, but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm going back."{waitForClick}{clearText}{marker}{appendText}I stood up.{waitForClick}{clearText}
+
+[000000dc]10: 
+[000000dd]0c 00 00 00 00 05 00 80 00 00 82 00 00: bgload 00000000 EV_YU03B 0 2
+[000000ea]10: 
+[000000eb]19: showTextbox
+[000000ec]ff 05 00: text 05
+{marker}{sound Y5A014}{appendText}[You]
+"Oh! You're mean! What? I'm not good enough 
+for you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's not it at all. I just can't handle 
+this kind of game right now."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm completely worn out. And I've got this 
+broken arm."{waitForClick}{clearText}
+
+[000000ef]10: 
+[000000f0]0c 00 00 00 00 06 00 80 00 00 82 00 00: bgload 00000000 EV_YU03A 0 2
+[000000fd]10: 
+[000000fe]19: showTextbox
+[000000ff]ff 06 00: text 06
+{marker}{sound Y5A015}{appendText}[You]
+"Oh, your arm..."{waitForClick}{clearText}{marker}{appendText}You belatedly noticed my arm...{waitForClick}{clearText}
+
+[00000102]10: 
+[00000103]0c 00 00 00 00 07 00 80 00 00 82 00 00: bgload 00000000 BG40B1 0 2
+[00000110]10: 
+[00000111]19: showTextbox
+[00000112]ff 07 00: text 07
+{marker}{appendText}Standing, I went to return on the road that 
+I had used in coming.{waitForClick}{clearText}{marker}{appendText}But You came after me.{waitForClick}{clearText}
+
+[00000115]10: 
+[00000116]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU04BDS 320 3
+[00000127]10: 
+[00000128]19: showTextbox
+[00000129]ff 08 00: text 08
+{marker}{sound Y5A016}{appendText}[You]
+"Hey, I said wait just a second!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Leave me alone! If all you want to do is talk 
+about your stupid fantasies, I'd rather get 
+some sleep."{waitForClick}{clearText}
+
+[0000012c]10: 
+[0000012d]10 81 00 00 83 00 00: removeFG 1 3
+[00000134]10: 
+[00000135]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03BDM 320 3
+[00000146]10: 
+[00000147]19: showTextbox
+[00000148]ff 09 00: text 09
+{marker}{sound Y5A017}{appendText}[You]
+"You got hurt... trying to help me..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[0000014b]10: 
+[0000014c]0f 81 00 00 00 00 00 00 0a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BDM 320 3
+[0000015d]10: 
+[0000015e]19: showTextbox
+[0000015f]ff 0a 00: text 0a
+{marker}{sound Y5A018}{appendText}[You]
+"It's a battle scar you can be proud of."{waitForClick}{clearText}{marker}{appendText}(She just won't give up...){waitForClick}{clearText}{marker}{appendText}As I was about to complain...{waitForClick}{clearText}{marker}{appendText}You gently laid her hand on my hard cast.{waitForClick}{clearText}
+
+[00000162]10: 
+[00000163]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03BDM 320 3
+[00000174]10: 
+[00000175]19: showTextbox
+[00000176]ff 0b 00: text 0b
+{marker}{sound Y5A019}{appendText}[You]
+"Does it still hurt?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Only a little."{waitForClick}{clearText}{marker}{appendText}I lied.{waitForClick}{clearText}{marker}{appendText}Thanks to the medicine it didn't really hurt 
+at all.{waitForClick}{clearText}
+
+[00000179]10: 
+[0000017a]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BDM 320 3
+[0000018b]10: 
+[0000018c]19: showTextbox
+[0000018d]ff 0c 00: text 0c
+{marker}{sound Y5A020}{appendText}[You]
+"You want me to cast a spell on it for you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"A spell?"{waitForClick}{clearText}{marker}{sound Y5A021}{appendText}[You]
+"Yup. I learned it straight from my mom. It's 
+guaranteed to work."{waitForClick}{clearText}{marker}{sound Y5A022}{appendText}[You]
+"It's my way of saying I'm sorry."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}You put both her hands on my cast, gently, as 
+if enveloping it and gently started rubbing it.{waitForClick}{clearText}{marker}{appendText}I just stood there.{waitForClick}{clearText}{marker}{appendText}I could feel the heat from her palms through 
+the cast.{waitForClick}{clearText}{marker}{appendText}As she gently stroked my arm, You started 
+whispering.{waitForClick}{clearText}{marker}{sound Y5A023}{appendText}[You]
+"Chichin puipui, pain, pain go fly away! To a 
+galaxy far, far away..."{waitForClick}{clearText}
+
+[00000190]10: 
+[00000191]18: hideTextbox
+[00000192]10: 
+[00000193]1e a0 3c 00 00: delay 60
+[00000198]10: 
+[00000199]19: showTextbox
+[0000019a]ff 0d 00: text 0d
+{marker}{appendText}[Kid]
+"...Chichin puipui?"{waitForClick}{clearText}{marker}{sound Y5A024}{appendText}[You]
+"How is it? The pain stopped, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...A galaxy far, far away?"{waitForClick}{clearText}
+
+[0000019d]10: 
+[0000019e]0f 81 00 00 00 00 00 00 0d 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05BDM 320 3
+[000001af]10: 
+[000001b0]19: showTextbox
+[000001b1]ff 0e 00: text 0e
+{marker}{sound Y5A025}{appendText}[You]
+"W-what? You gotta problem with the charm?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ha...hee, hee...nope...nope...heeeee..."{waitForClick}{clearText}{marker}{appendText}All of the sudden, I had a wild urge to laugh.{waitForClick}{clearText}{marker}{appendText}It was something I never thought I'd hear come 
+out of You's mouth.{waitForClick}{clearText}{marker}{appendText}And it tickled incredibly.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah...it looks like you completely fixed it."{waitForClick}{clearText}{marker}{appendText}My irritation vanished.{waitForClick}{clearText}
+
+[000001b4]10: 
+[000001b5]0f 81 00 00 00 00 00 00 0e 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02BDM 320 3
+[000001c6]10: 
+[000001c7]19: showTextbox
+[000001c8]ff 0f 00: text 0f
+{marker}{sound Y5A026}{appendText}[You]
+"Oh, good. I hoped I would!"{waitForClick}{clearText}{marker}{appendText}We decided to go back to the hall.{waitForClick}{clearText}
+
+[000001cb]10: 
+[000001cc]0f 81 00 00 00 00 00 00 0f 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU11BDM 320 3
+[000001dd]10: 
+[000001de]19: showTextbox
+[000001df]ff 10 00: text 10
+{marker}{sound Y5A027}{appendText}[You]
+"I'm glad that you came."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Huh?"{waitForClick}{clearText}
+
+[000001e2]10: 
+[000001e3]0f 81 00 00 00 00 00 00 10 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BDM 320 3
+[000001f4]10: 
+[000001f5]19: showTextbox
+[000001f6]ff 11 00: text 11
+{marker}{sound Y5A028}{appendText}[You]
+"That you made your way through the labyrinth 
+to find me."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound Y5A029}{appendText}[You]
+"Now all you have to do is rescue the 
+princess. Right, white knight?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You just don't quit..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Alright then, I guess I am off to dispose of 
+some evil dragon."{waitForClick}{clearText}{marker}{appendText}Finally I understand.{waitForClick}{clearText}{marker}{appendText}The evil dragon that was holding You...{waitForClick}{clearText}{marker}{appendText}...It was You's past.{waitForClick}{clearText}{marker}{appendText}And she needed to be saved.{waitForClick}{clearText}
+
+[000001f9]10: 
+[000001fa]20 a0 2c 00 00: showDimOverlay
+[000001ff]10: 
+[00000200]19: showTextbox
+[00000201]ff 12 00: text 12
+{marker}{sound Y4A483}{appendText}[Sara]
+"Listen...no matter how much a girl pretends 
+to be strong, she is always waiting for 
+the guy."{waitForClick}{clearText}
+
+[00000204]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[0000020f]10: 
+[00000210]21 a0 10 00 00: closeDimOverlay
+[00000215]10: 
+[00000216]19: showTextbox
+[00000217]ff 13 00: text 13
+{marker}{appendText}I thought maybe even for me.{waitForClick}{clearText}
+
+[0000021a]10: 
+[0000021b]0f 81 00 00 00 00 00 00 11 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02BDM 320 3
+[0000022c]10: 
+[0000022d]19: showTextbox
+[0000022e]ff 14 00: text 14
+{marker}{sound Y5A030}{appendText}[You]
+"Alright, now let's restart our detective 
+work!"{waitForClick}{clearText}{marker}{appendText}Suddenly, I noticed a tart, refreshing aroma 
+tickling my nose mixed, cutting through the 
+mildew smell of the ruins.{waitForClick}{clearText}{marker}{appendText}It was the scent of not yet ripened fruit.{waitForClick}{clearText}{marker}{appendText}It was familiar...it smelled like the sun 
+in spring.{waitForClick}{clearText}
+
+[00000231]10: 
+[00000232]18: hideTextbox
+[00000233]10: 
+[00000234]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[0000023b]10: 
+[0000023c]10 81 00 00 80 00 00: removeFG 1 0
+[00000243]10: 
+[00000244]0c 00 00 00 00 12 00 86 00 00 82 00 00: bgload 00000000 EV_YU03A 6 2
+[00000251]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000025b]27 00 00: fadeOutMonoColorOverlay
+[0000025e]00: 
+[0000025f]05 8a 00 00: unSkippableDelay 10
+[00000263]10: 
+[00000264]19: showTextbox
+[00000265]ff 15 00: text 15
+{marker}{appendText}We decided to reorganize the information 
+we had.{waitForClick}{clearText}{marker}{appendText}We thought about the data we had on 
+her parents.{waitForClick}{clearText}{marker}{appendText}Sora's files had You's mother, Yukie Tanaka as 
+dying 15 years ago.{waitForClick}{clearText}{marker}{appendText}The company LAN had a chat log that had You's 
+father, Yoichi Tanaka, as dying 34 years ago.{waitForClick}{clearText}{marker}{appendText}However, You's mom had told her that her 
+father had gone missing 17 years before.{waitForClick}{clearText}{marker}{appendText}There were pictures and movies, but they 
+could not be completely trusted as reliable. 
+You had even said so herself.{waitForClick}{clearText}{marker}{appendText}And what was most suspicious...{waitForClick}{clearText}{marker}{appendText}...was the lady who You had always thought 
+of as her mom.{waitForClick}{clearText}{marker}{appendText}From what we could gather, the death of her 
+parents Yoichi and Yukie were facts.{waitForClick}{clearText}{marker}{appendText}That meant that her mother - or the lady who 
+called herself that - could have been lying 
+all along.{waitForClick}{clearText}{marker}{appendText}...Based on all of the information, we 
+narrowed it down to the two most likely 
+possibilities.{waitForClick}{clearText}{marker}{appendText}'4.Yoichi had died 34 years before and Yukie 
+15 years before.'{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, I bet this is what happened."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Assuming that your mom and dad did die is a 
+fact, then the person working at LeMU..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I mean the person that you thought was your 
+mom up to now, isn't your mom, but..."{waitForClick}{clearText}{marker}{sound Y5A031}{appendText}[You]
+"A foster parent?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Then your real dad could have died 34 years 
+ago and your mom 15 years ago."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So somebody that took pity on the orphaned 
+daughter, took you in and raised you..."{waitForClick}{clearText}
+
+[00000268]10: 
+[00000269]0c 00 00 00 00 13 00 80 00 00 82 00 00: bgload 00000000 EV_YU03B 0 2
+[00000276]10: 
+[00000277]19: showTextbox
+[00000278]ff 16 00: text 16
+{marker}{sound Y5A032}{appendText}[You]
+"But...that's impossible."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why?"{waitForClick}{clearText}{marker}{sound Y5A033}{appendText}[You]
+"Because Yoichi Tanaka isn't my real father."{waitForClick}{clearText}{marker}{sound Y5A034}{appendText}[You]
+"I mean it has to be true."{waitForClick}{clearText}{marker}{sound Y5A035}{appendText}[You]
+"He died 34 years ago, right?"{waitForClick}{clearText}{marker}{sound Y5A036}{appendText}[You]
+"And I was born 18 years ago."{waitForClick}{clearText}{marker}{sound Y5A037}{appendText}[You]
+"To be precise, I was born on September 22, 19 
+years ago."{waitForClick}{clearText}{marker}{sound Y5A038}{appendText}[You]
+"In either case, my father would have had to 
+have been alive until December of 
+20 years ago."{waitForClick}{clearText}{marker}{appendText}I figured that was an area I didn't really 
+know much about, so I held my tongue...{waitForClick}{clearText}{marker}{appendText}But she was right. It did sound fishy.{waitForClick}{clearText}{marker}{appendText}The question was how to fill in the 
+missing years...{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No way..."{waitForClick}{clearText}
+
+[0000027b]10: 
+[0000027c]0c 00 00 00 00 14 00 80 00 00 82 00 00: bgload 00000000 EV_YU03A 0 2
+[00000289]10: 
+[0000028a]19: showTextbox
+[0000028b]ff 17 00: text 17
+{marker}{sound Y5A039}{appendText}[You]
+"What?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Uh...nothing."{waitForClick}{clearText}
+
+[0000028e]10: 
+[0000028f]0c 00 00 00 00 15 00 80 00 00 82 00 00: bgload 00000000 EV_YU03B 0 2
+[0000029c]10: 
+[0000029d]19: showTextbox
+[0000029e]ff 18 00: text 18
+{marker}{sound Y5A040}{appendText}[You]
+"What? Tell me? You can't start to say 
+something and stop like that."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't think this could ever happen, but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What if you were actually 33-years-old..."{waitForClick}{clearText}
+
+[000002a1]10: 
+[000002a2]0c 00 00 00 00 16 00 80 00 00 82 00 00: bgload 00000000 EV_YU03C 0 2
+[000002af]10: 
+[000002b0]19: showTextbox
+[000002b1]ff 19 00: text 19
+{marker}{sound Y5A041}{appendText}[You]
+"Kyaaa, ha, ha! Me? 33?"{waitForClick}{clearText}{marker}{sound Y5A042}{appendText}[You]
+"You think with my skin I look like I could be 
+in my 30s?"{waitForClick}
+
+[000002b4]ff 1a 00: text 1a
+{appendText}{choice 00 0022 |You look it|You don't look it}
+
+[000002b7]10: 
+[000002b8]1a a4 b3 00 00 a0 22 00 00: choiceId 1203 34
+[000002c1]00: 
+[000002c2]26 28 0a a4 b3 14 00 00 27 80 00 00 01 00 00 27 81 00 00 02 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 000002d7 (00000001)
+27 -> 1 000002ef (00000002)
+
+[000002d7]10: 
+[000002d8]19: showTextbox
+[000002d9]ff 1b 00: text 1b
+{marker}{appendText}[Kid]
+"You look it."{waitForClick}{clearText}
+
+[000002dc]10: 
+[000002dd]0c 00 00 00 00 17 00 80 00 00 82 00 00: bgload 00000000 EV_YU03B 0 2
+[000002ea]10: 
+[000002eb]19: showTextbox
+[000002ec]ff 1c 00: text 1c
+{marker}{sound Y5A043}{appendText}[You]
+"Whaaaaat?"{waitForClick}{clearText}
+
+[000002ef]10: 
+[000002f0]19: showTextbox
+[000002f1]ff 1d 00: text 1d
+{marker}{appendText}[Kid]
+"You don't look it."{waitForClick}{clearText}
+
+[000002f4]00: 
+[000002f5]0a 01 28 0a a4 b3 14 0d 01 80 01 00 03 00: gotoif 1 (28 0a a4) b3 != (01) 0 (0001) -> 00000317 (00000003)
+[00000303]10: 
+[00000304]24 a0 24 00 00: scriptLocationId 36
+[00000309]10: 
+[0000030a]0c 00 00 00 00 18 00 80 00 00 82 00 00: bgload 00000000 EV_YU03C 0 2
+[00000317]10: 
+[00000318]19: showTextbox
+[00000319]ff 1e 00: text 1e
+{marker}{sound Y5A044}{appendText}[You]
+"Right?"{waitForClick}{clearText}{marker}{sound Y5A045}{appendText}[You]
+"Now, jokes aside..."{waitForClick}{clearText}
+
+[0000031c]10: 
+[0000031d]0c 00 00 00 00 19 00 80 00 00 82 00 00: bgload 00000000 EV_YU03A 0 2
+[0000032a]10: 
+[0000032b]19: showTextbox
+[0000032c]ff 1f 00: text 1f
+{marker}{sound Y5A046}{appendText}[You]
+"If I were 33-years-old, that would mean 
+there was 15 year gap in my memory."{waitForClick}{clearText}{marker}{sound Y5A047}{appendText}[You]
+"Where in the world could those 15 years 
+have gone?"{waitForClick}{clearText}{marker}{sound Y5A048}{appendText}[You]
+"I've never had amnesia like you, don't 
+remember being abducted by aliens and haven't 
+had any Rip Van Winkle like experiences 
+either."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}(Rip Van what...?){waitForClick}{clearText}{marker}{sound Y5A049}{appendText}[You]
+"That would mean when I was 12, I was 
+really 27?"{waitForClick}{clearText}{marker}{sound Y5A050}{appendText}[You]
+"That couldn't be, right?"{waitForClick}{clearText}{marker}{sound Y5A051}{appendText}[You]
+"Or that when I was five, I was actually 20. 
+That's even more impossible."{waitForClick}{clearText}{marker}{sound Y5A052}{appendText}[You]
+"In the 18 years and seven months of my life 
+I've never once felt a gap of 15 years."{waitForClick}{clearText}{marker}{appendText}(A 15 year gap...?){waitForClick}{clearText}{marker}{appendText}[Kid]
+"Listen. Sorry to stop you, but let's get 
+back on topic..."{waitForClick}{clearText}{marker}{sound Y5A053}{appendText}[You]
+"?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You were just talking about Rip Van Winkle, 
+right?"{waitForClick}{clearText}{marker}{sound Y5A054}{appendText}[You]
+"And?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"He falls asleep and..."{waitForClick}{clearText}{marker}{sound Y5A055}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}(Rip Van Winkle...he falls asleep...and when 
+he returns home...){waitForClick}{clearText}{marker}{appendText}(When he returns home...){waitForClick}{clearText}{marker}{appendText}[Kid]
+"I got it! I got it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This is probably what happened."{waitForClick}{clearText}
+
+[0000032f]10: 
+[00000330]0c 00 00 00 00 1a 00 80 00 00 82 00 00: bgload 00000000 EV_YU03B 0 2
+[0000033d]10: 
+[0000033e]19: showTextbox
+[0000033f]ff 20 00: text 20
+{marker}{sound Y5A056}{appendText}[You]
+"You probably traveled through time!"{waitForClick}{clearText}{marker}{sound Y5A057}{appendText}[You]
+"...Would you stop talking about these stupid 
+theories of yours?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But it would explain everything!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Somewhere along the line, maybe when you were 
+small before you can even remember, I'll bet 
+you jumped 15 years into the future."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You were probably really born 33 years ago..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That would mean that if Yoichi died 34 years 
+ago it all makes sense."{waitForClick}{clearText}{marker}{sound Y5A058}{appendText}[You]
+"Geez...how many times are you going to have 
+to say that before you are satisfied?"{waitForClick}{clearText}{marker}{sound Y5A059}{appendText}[You]
+"Time travel is a physical impossibility."{waitForClick}{clearText}{marker}{sound Y5A060}{appendText}[You]
+"Just like...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Water flows downhill..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"BUT, if you use a siphon, you can move water 
+up hill!"{waitForClick}{clearText}{marker}{sound Y5A061}{appendText}[You]
+"That's not what I mean."{waitForClick}{clearText}{marker}{sound Y5A062}{appendText}[You]
+"It's just an example, an analogy..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But...but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But you're not the only one that experienced 
+time travel!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I...I did too..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But my time travel was different..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And I think it is probably the reason that 
+I get premonitions about things."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I was trapped here in LeMU before."{waitForClick}{clearText}{marker}{sound Y5A063}{appendText}[You]
+"How can you be so sure about it?"{waitForClick}{clearText}{marker}{sound Y5A064}{appendText}[You]
+"How can you be so absolutely confident about 
+it?"{waitForClick}{clearText}{marker}{sound Y5A065}{appendText}[You]
+"Even if...IF..."{waitForClick}{clearText}{marker}{sound Y5A066}{appendText}[You]
+"Just suppose that you did travel through 
+time..."{waitForClick}{clearText}{marker}{sound Y5A067}{appendText}[You]
+"Where is the other Kid, the other you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The other me?"{waitForClick}{clearText}
+
+[00000342]10: 
+[00000343]18: hideTextbox
+[00000344]10: 
+[00000345]45 86 00 00 81 00 00: monoColorOverlay 6 1
+[0000034c]10: 
+[0000034d]20 a0 2c 00 00: showDimOverlay
+[00000352]10: 
+[00000353]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[0000035d]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000367]27 00 00: fadeOutMonoColorOverlay
+[0000036a]00: 
+[0000036b]05 83 00 00: unSkippableDelay 3
+[0000036f]10: 
+[00000370]18: hideTextbox
+[00000371]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[0000037c]10: 
+[0000037d]19: showTextbox
+[0000037e]ff 21 00: text 21
+{marker}{appendText}
+
+
+
+{appendText}{delay 0}              'Life readings: 7'{waitForClick}{nextPage x2}
+
+[00000381]10: 
+[00000382]18: hideTextbox
+[00000383]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[0000038e]10: 
+[0000038f]21 a0 10 00 00: closeDimOverlay
+[00000394]10: 
+[00000395]0c 00 00 00 00 1b 00 80 00 00 81 00 00: bgload 00000000 EV_YU03B 0 1
+[000003a2]10: 
+[000003a3]18: hideTextbox
+[000003a4]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[000003af]10: 
+[000003b0]19: showTextbox
+[000003b1]ff 22 00: text 22
+{marker}{appendText}I remembered on the night of May 1, when the 
+numbers for the life scan kept changing. {waitForClick}{clearText}{marker}{sound Y5A068}{appendText}[You]
+"Yes, the other you."{waitForClick}{clearText}{marker}{sound Y5A069}{appendText}[You]
+"You're saying that you have been repeating 
+the several days of being trapped here, right?"{waitForClick}{clearText}{marker}{sound Y5A070}{appendText}[You]
+"If so, then the past you should be here as 
+well."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's...uh...I..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know! Only my memory is going back 
+through time!"{waitForClick}{clearText}{marker}{sound Y5A071}{appendText}[You]
+"Even though you forgot everything?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's exactly why I've lost my memory!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Normally anything like a memory going back 
+through time would defy common sense."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But this time common sense is being defied..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"My brain couldn't deal with the situation and 
+started to panic. So it tried to logically 
+explain or deal with the situation."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And so it erased all of my memories."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound Y5A072}{appendText}[You]
+"Uh...I don't mean to take the air out of you 
+after your enthusiastic speech, but..."{waitForClick}{clearText}{marker}{sound Y5A073}{appendText}[You]
+"We don't call that logical."{waitForClick}{clearText}{marker}{sound Y5A074}{appendText}[You]
+"I'm pretty sure the word is pathological. And 
+sometimes they add the word delusional for 
+good measure."{waitForClick}{clearText}
+
+[000003b4]10: 
+[000003b5]0d 80 00 00 80 00 00 81 00 00: removeBG 0 0 1
+[000003bf]10: 
+[000003c0]04: stopBGM
+[000003c1]10: 
+[000003c2]19: showTextbox
+[000003c3]ff 23 00: text 23
+{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}So the day ended without us finding any 
+answers.{waitForClick}{clearText}
+
+[000003c6]10: 
+[000003c7]18: hideTextbox
+[000003c8]fe 28 0a a4 fa 14 14 00 a0 4e 00 00: setSceneTitleByIndex 78
+[000003d4]10: 
+[000003d5]1e a0 3c 00 00: delay 60
+[000003da]10: 
+[000003db]1d 00 00 00 00 1c 00: chapterCutin 00000000 cal_505
+[000003e2]10: 
+[000003e3]03 81 00 00 a0 64 00 00: playBGM 1 100
+[000003eb]10: 
+[000003ec]0c 00 00 00 00 1d 00 80 00 00 82 00 00: bgload 00000000 IMG01A 0 2
+[000003f9]10: 
+[000003fa]18: hideTextbox
+[000003fb]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000406]10: 
+[00000407]19: showTextbox
+[00000408]ff 24 00: text 24
+{marker}{appendText}The next morning -{waitForClick}
+{appendText}Everybody slept in.{waitForClick}
+{appendText}It looked like everyone was pretty beat.{waitForClick}
+{appendText}When You and I saw each other we exchanged 
+good mornings as if everything were normal.{waitForClick}
+{appendText}It seemed like she wanted to act as if things 
+were the same as always in front of everybody 
+else.{waitForClick}
+{appendText}So I did my best to follow suit.{waitForClick}{nextPage x2}
+
+[0000040b]10: 
+[0000040c]18: hideTextbox
+[0000040d]10: 
+[0000040e]0c 00 00 00 00 1e 00 80 00 00 82 00 00: bgload 00000000 BG21B1 0 2
+[0000041b]10: 
+[0000041c]18: hideTextbox
+[0000041d]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000428]10: 
+[00000429]1f 88 00 00 a0 25 00 00: clock 8:37
+[00000431]10: 
+[00000432]19: showTextbox
+[00000433]ff 25 00: text 25
+{marker}{appendText}Sleeping in made breakfast later than usual.{waitForClick}{clearText}{marker}{appendText}Sora had put in a request and we were going to 
+have another picnic.{waitForClick}{clearText}{marker}{appendText}She really seemed to enjoy them.{waitForClick}{clearText}{marker}{appendText}We spread out the same Myumyun blanket near 
+the rest area.{waitForClick}{clearText}
+
+[00000436]10: 
+[00000437]0c 00 00 00 00 1f 00 80 00 00 82 00 00: bgload 00000000 BG07B1 0 2
+[00000444]10: 
+[00000445]19: showTextbox
+[00000446]ff 26 00: text 26
+{marker}{appendText}I went to go check on the trap that we had set 
+the night before, while everyone was 
+preparing, just in case we'd caught something.{waitForClick}{clearText}{marker}{appendText}But just as I got to where we'd set it, I saw 
+Takeshi breaking down the trap.{waitForClick}{clearText}
+
+[00000449]10: 
+[0000044a]0f 81 00 00 00 00 00 00 20 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB08ADS 320 3
+[0000045b]10: 
+[0000045c]19: showTextbox
+[0000045d]ff 27 00: text 27
+{marker}{appendText}[Kid]
+"Huh? You're cleaning it up?"{waitForClick}{clearText}{marker}{appendText}Takeshi nodded silently.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Meaning...that...?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}Takeshi's shoulders slumped and he let out 
+a big sigh.{waitForClick}{clearText}{marker}{appendText}He looked so pathetic...I couldn't say 
+anything else.{waitForClick}{clearText}
+
+[00000460]10: 
+[00000461]18: hideTextbox
+[00000462]10: 
+[00000463]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[0000046a]10: 
+[0000046b]04: stopBGM
+[0000046c]10: 
+[0000046d]10 81 00 00 80 00 00: removeFG 1 0
+[00000474]10: 
+[00000475]0c 00 00 00 00 21 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[00000482]10: 
+[00000483]03 a0 12 00 00 a0 64 00 00: playBGM 18 100
+[0000048c]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000496]27 00 00: fadeOutMonoColorOverlay
+[00000499]00: 
+[0000049a]05 8a 00 00: unSkippableDelay 10
+[0000049e]10: 
+[0000049f]19: showTextbox
+[000004a0]ff 28 00: text 28
+{marker}{appendText}When we had finally got everything ready, 
+Tsugumi appeared out of nowhere.{waitForClick}{clearText}{marker}{appendText}She again plopped herself down on the sheet 
+and started munching away.{waitForClick}{clearText}{marker}{appendText}I didn't know if Takeshi had matured over 
+night, but he held his tongue, though it was 
+clear he was in a sulky mood.{waitForClick}{clearText}{marker}{appendText}Sara and Tsugumi didn't look at each other. It 
+seemed like they were ignoring each other.{waitForClick}{clearText}{marker}{appendText}Apparently they still weren't getting along.{waitForClick}{clearText}{marker}{appendText}But everybody tried to make the best of it, 
+eating, chatting and having fun.{waitForClick}{clearText}
+
+[000004a3]10: 
+[000004a4]12 81 00 00 84 00 00 00 00 00 00 22 00 00 00 00 00 23 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 4 00000000 SA01ADM 00000000 YU01BDM 128 512 3
+[000004c2]10: 
+[000004c3]19: showTextbox
+[000004c4]ff 29 00: text 29
+{marker}{sound Y5A075}{appendText}[Sara]
+"Rock, paper, scissors!"{waitForClick}{clearText}{marker}{sound Y5A076}{appendText}[Sara]
+"Ready go!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I lost again!"{waitForClick}{clearText}{marker}{sound Y5A077}{appendText}[You]
+"Kid, you're terrible at this. What is that? 
+Sixteen losses in a row?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Weird..."{waitForClick}{clearText}{marker}{sound Y5A078}{appendText}[You]
+"You're too nice. You have to just throw out 
+what you feel - rock, paper or scissors."{waitForClick}{clearText}{marker}{sound Y5A079}{appendText}[Sara]
+"He's the gullible type."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I am not. I'm trying to win."{waitForClick}{clearText}{marker}{sound Y5A080}{appendText}[You]
+"Rock, paper, scissors. Ready go!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Dang it!"{waitForClick}{clearText}{marker}{appendText}I just kept losing.{waitForClick}{clearText}{marker}{sound Y5A081}{appendText}[You]
+"Could be, that with your amnesia, your 
+ability to make decisions isn't so good 
+right now."{waitForClick}{clearText}{marker}{sound Y5A082}{appendText}[You]
+"Don't get too caught up with the trivial 
+things that you can't control."{waitForClick}{clearText}{marker}{sound Y5A083}{appendText}[You]
+"You need to be strong. Make up your own mind. 
+Or you'll just end up following everybody else."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know..."{waitForClick}{clearText}{marker}{sound Y5A084}{appendText}[You]
+"That being as it is..."{waitForClick}{clearText}
+
+[000004c7]10: 
+[000004c8]12 81 00 00 84 00 00 00 00 00 00 24 00 00 00 00 00 25 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 4 00000000 SA02ADM 00000000 YU02BDM 128 512 3
+[000004e6]10: 
+[000004e7]19: showTextbox
+[000004e8]ff 2a 00: text 2a
+{marker}{sound Y5A085}{appendText}[Sara]
+"Time for the LOSER'S PENALTY!"{waitForClick}{clearText}{marker}{sound Y5A086}{appendText}[You]
+"Hand over your sandwich."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"..."{waitForClick}{clearText}{marker}{appendText}Silently, I held out my sandwich.{waitForClick}{clearText}{marker}{sound Y5A087}{appendText}[Sara]
+"All righty!"{waitForClick}{clearText}
+
+[000004eb]10: 
+[000004ec]13 85 04 00 83 00 00: multiremoveFG_Anim 1 4 0
+[000004f3]10: 
+[000004f4]19: showTextbox
+[000004f5]ff 2b 00: text 2b
+{marker}{appendText}She squeezed a ton of mustard on to 
+my sandwich.{waitForClick}{clearText}{marker}{appendText}The penalty was mustard. And my sandwich was 
+already drenched in the stuff.{waitForClick}{clearText}{marker}{appendText}My mouth felt like it was on fire before 
+I even took a bite.{waitForClick}{clearText}{marker}{appendText}...Maybe thanks to that exchange, I was able 
+to get through the whole thing without 
+thinking about it too much.{waitForClick}{clearText}{marker}{appendText}Suddenly, someone cut across my field of 
+vision.{waitForClick}{clearText}{marker}{appendText}It was Tsugumi.{waitForClick}{clearText}{marker}{appendText}Tsugumi was walking toward Takeshi. 
+She extended her hand.{waitForClick}{clearText}
+
+[000004f8]10: 
+[000004f9]12 81 00 00 82 00 00 00 00 00 00 26 00 00 00 00 00 27 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 TU15ADM 00000000 KB14ADM 128 512 3
+[00000517]10: 
+[00000518]19: showTextbox
+[00000519]ff 2c 00: text 2c
+{marker}{sound Y5A088}{appendText}[Takeshi]
+"Huh? What's with the hand?"{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"..."{waitForClick}{clearText}{marker}{sound Y5A089}{appendText}[Takeshi]
+"You're like a dog. Shake girl."{waitForClick}{clearText}{marker}{sound Y5A090}{appendText}[Takeshi]
+"And you'll probably say 'don't make fun 
+of me!'"{waitForClick}{clearText}
+
+[0000051c]10: 
+[0000051d]0f 81 00 00 00 00 00 00 28 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU18ADM 128 3
+[0000052e]10: 
+[0000052f]19: showTextbox
+[00000530]ff 2d 00: text 2d
+{marker}{sound Y5A091}{appendText}[Tsugumi]
+"You're really dumb, you know that?"{waitForClick}{clearText}{marker}{sound Y5A092}{appendText}[Sora]
+"Are you trying to say that you want another 
+helping?"{waitForClick}{clearText}
+
+[00000533]10: 
+[00000534]0f 81 00 00 00 00 00 00 29 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU15ADM 128 3
+[00000545]10: 
+[00000546]19: showTextbox
+[00000547]ff 2e 00: text 2e
+{marker}{appendText}Tsugumi nodded at Sora's extra explanation.{waitForClick}{clearText}{marker}{appendText}She had already wolfed down her first one.{waitForClick}{clearText}{marker}{sound Y5A093}{appendText}[Takeshi]
+"Hey...you've gotta lot of nerve...you only 
+show your face at meal time and now you're 
+demanding seconds..."{waitForClick}{clearText}
+
+[0000054a]10: 
+[0000054b]0f 82 00 00 00 00 00 00 2a 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB11ADM 512 3
+[0000055c]10: 
+[0000055d]19: showTextbox
+[0000055e]ff 2f 00: text 2f
+{marker}{sound Y5A094}{appendText}[Takeshi]
+"Well, I suppose..."{waitForClick}{clearText}{marker}{sound Y5A095}{appendText}[Tsugumi]
+"So do you have more or not?"{waitForClick}{clearText}{marker}{sound Y5A096}{appendText}[Takeshi]
+"I do. I thought you might want more so 
+I made a SPECIAL one for you."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Special?"{waitForClick}{clearText}{marker}{appendText}I had a bad feeling about the whole thing.{waitForClick}{clearText}{marker}{sound Y5A097}{appendText}[Takeshi]
+"Eat this. And no leftovers."{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"..."{waitForClick}{clearText}{marker}{appendText}Tsugumi took the sandwich without saying 
+anything.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"..."{waitForClick}{clearText}{marker}{appendText}Takeshi stared at Tsugumi as she took 
+the wrap off of the sandwich.{waitForClick}{clearText}
+
+[00000561]10: 
+[00000562]0f 81 00 00 00 00 00 00 2b 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU18ADM 128 3
+[00000573]10: 
+[00000574]19: showTextbox
+[00000575]ff 30 00: text 30
+{marker}{sound Y5A098}{appendText}[Tsugumi]
+"...What?"{waitForClick}{clearText}
+
+[00000578]10: 
+[00000579]0f 82 00 00 00 00 00 00 2c 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB12ADM 512 3
+[0000058a]10: 
+[0000058b]19: showTextbox
+[0000058c]ff 31 00: text 31
+{marker}{sound Y5A099}{appendText}[Takeshi]
+"Nothing. It's just that you're so beautiful. 
+I can't take my eyes off of you even when 
+you're just removing a sandwich wrapper..."{waitForClick}{clearText}{marker}{sound Y5A100}{appendText}[Tsugumi]
+"Your stupidity is terminal."{waitForClick}{clearText}{marker}{sound Y5A101}{appendText}[Tsugumi]
+"Maybe if you died 50 times it would help."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"..."{waitForClick}{clearText}{marker}{appendText}I thought Takeshi would get angry.{waitForClick}{clearText}{marker}{appendText}But he was just grinning as he watched Tsugumi 
+start in on her sandwich.{waitForClick}{clearText}{marker}{appendText}Something was definitely not right here. 
+I sucked in my breath and watched.{waitForClick}{clearText}{marker}{appendText}Tsugumi bit into the sandwich.{waitForClick}{clearText}{marker}{appendText}Munch.{waitForClick}{clearText}{marker}{appendText}Chomp. Chew.{waitForClick}{clearText}
+
+[0000058f]10: 
+[00000590]0f 81 00 00 00 00 00 00 2d 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU15ADM 128 3
+[000005a1]10: 
+[000005a2]19: showTextbox
+[000005a3]ff 32 00: text 32
+{marker}{sound Y5A102}{appendText}[Tsugumi]
+"Hmmm?"{waitForClick}{clearText}
+
+[000005a6]10: 
+[000005a7]0f 82 00 00 00 00 00 00 2e 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB12ADM 512 3
+[000005b8]10: 
+[000005b9]19: showTextbox
+[000005ba]ff 33 00: text 33
+{marker}{sound Y5A103}{appendText}[Takeshi]
+"Hee, heee..."{waitForClick}{clearText}{marker}{sound Y5A104}{appendText}[Takeshi]
+"Fwaaa, ha, ha, ha, ha, ha..."{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"..."{waitForClick}{clearText}{marker}{sound Y5A105}{appendText}[Takeshi]
+"It's got quite a flavor, huh? That 
+sandwich...ha, ha,ha..."{waitForClick}{clearText}{marker}{appendText}Takeshi laughed so hard he cried.{waitForClick}{clearText}{marker}{sound Y5A106}{appendText}[Takeshi]
+"It's packed with mustard, Tabasco, pepper, 
+sage, nutmeg, cinnamon, mint and a dose of 
+curry powder..."{waitForClick}{clearText}{marker}{sound Y5A107}{appendText}[Takeshi]
+"For good measure I added a dose of 
+mayonnaise, ketchup, sugar, salt, soy sauce, 
+vinegar and vanilla..."{waitForClick}{clearText}{marker}{sound Y5A108}{appendText}[Takeshi]
+"And...what else? Oh, I forget..."{waitForClick}{clearText}{marker}{sound Y5A109}{appendText}[Takeshi]
+"Anyway, I threw in every ingredient and spice 
+that I could find. It's my secret 34 
+ingredient sauce."{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"..."{waitForClick}{clearText}{marker}{sound Y5A110}{appendText}[You]
+"H...hey! That's just too cruel!"{waitForClick}{clearText}{marker}{sound Y5A111}{appendText}[Sara]
+"Yeah...!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's going too far, Takeshi!"{waitForClick}{clearText}
+
+[000005bd]10: 
+[000005be]0f 82 00 00 00 00 00 00 2f 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB04ADM 512 3
+[000005cf]10: 
+[000005d0]19: showTextbox
+[000005d1]ff 34 00: text 34
+{marker}{sound Y5A112}{appendText}[Takeshi]
+"Shut up! I'm the cook here."{waitForClick}{clearText}{marker}{sound Y5A113}{appendText}[Sora]
+"Tsugumi...I highly recommend inducing 
+vomiting immediately...!"{waitForClick}{clearText}{marker}{sound Y5A114}{appendText}[Sora]
+"Get water quickly! N...no...we'll need 
+medicine first...!"{waitForClick}{clearText}
+
+[000005d4]10: 
+[000005d5]0f 82 00 00 00 00 00 00 30 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB11ADM 512 3
+[000005e6]10: 
+[000005e7]19: showTextbox
+[000005e8]ff 35 00: text 35
+{marker}{sound Y5A115}{appendText}[Takeshi]
+"She'll be fine. She'll get the runs, 
+but she won't die."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's not something you should do to a girl."{waitForClick}{clearText}{marker}{appendText}I went to grab Takeshi with my left hand.{waitForClick}{clearText}
+
+[000005eb]10: 
+[000005ec]0f 81 00 00 00 00 00 00 31 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU01ADM 128 3
+[000005fd]10: 
+[000005fe]19: showTextbox
+[000005ff]ff 36 00: text 36
+{marker}{sound Y5A116}{appendText}[Tsugumi]
+"Wait. I'm fine."{waitForClick}{clearText}{marker}{appendText}Tsugumi mumbled this, stopping us.{waitForClick}{clearText}
+
+[00000602]10: 
+[00000603]0f 82 00 00 00 00 00 00 32 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB14ADM 512 3
+[00000614]10: 
+[00000615]19: showTextbox
+[00000616]ff 37 00: text 37
+{marker}{sound Y5A117}{appendText}[Takeshi]
+"Huh, well aren't you tough!"{waitForClick}{clearText}{marker}{sound Y5A118}{appendText}[Tsugumi]
+"I'm perfectly fine."{waitForClick}{clearText}
+
+[00000619]10: 
+[0000061a]0f 82 00 00 00 00 00 00 33 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB12ADM 512 3
+[0000062b]10: 
+[0000062c]19: showTextbox
+[0000062d]ff 38 00: text 38
+{marker}{sound Y5A119}{appendText}[Takeshi]
+"But it still tastes terrible, right? Right? 
+Tell the truth."{waitForClick}{clearText}
+
+[00000630]10: 
+[00000631]0f 81 00 00 00 00 00 00 34 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU16ADM 128 3
+[00000642]10: 
+[00000643]19: showTextbox
+[00000644]ff 39 00: text 39
+{marker}{sound Y5A120}{appendText}[Tsugumi]
+"I'm totally fine..."{waitForClick}{clearText}
+
+[00000647]10: 
+[00000648]04: stopBGM
+[00000649]10: 
+[0000064a]19: showTextbox
+[0000064b]ff 3a 00: text 3a
+{marker}{sound Y5A121}{appendText}[Tsugumi]
+"It tastes kind of like pizza."{waitForClick}{clearText}
+
+[0000064e]10: 
+[0000064f]0f 82 00 00 00 00 00 00 35 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB11ADM 512 3
+[00000660]10: 
+[00000661]19: showTextbox
+[00000662]ff 3b 00: text 3b
+{marker}{appendText}[Kid]
+"........"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Sara]
+"..............."{waitForClick}{clearText}{marker}{appendText}[Sora]
+"..............."{waitForClick}{clearText}
+
+[00000665]10: 
+[00000666]03 a0 12 00 00 a0 64 00 00: playBGM 18 100
+[0000066f]10: 
+[00000670]19: showTextbox
+[00000671]ff 3c 00: text 3c
+{marker}{appendText}What?{waitForClick}{clearText}
+
+[00000674]10: 
+[00000675]0f 82 00 00 00 00 00 00 36 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB13ADM 512 3
+[00000686]10: 
+[00000687]19: showTextbox
+[00000688]ff 3d 00: text 3d
+{marker}{sound Y5A122}{appendText}[Takeshi]
+"What did you just say? What's it taste like?"{waitForClick}{clearText}{marker}{sound Y5A123}{appendText}[Tsugumi]
+"Pizza."{waitForClick}{clearText}{marker}{sound Y5A124}{appendText}[Takeshi]
+"Are you serious?"{waitForClick}{clearText}{marker}{appendText}Tsugumi nodded.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{sound Y5A125}{appendText}[Tsugumi]
+"Munch, munch..."{waitForClick}{clearText}
+
+[0000068b]10: 
+[0000068c]0f 82 00 00 00 00 00 00 37 00 a2 00 00 00 83 00 00: fgload 2 00000000 KB14ADM 512 3
+[0000069d]10: 
+[0000069e]19: showTextbox
+[0000069f]ff 3e 00: text 3e
+{marker}{sound Y5A126}{appendText}[Takeshi]
+"Hey...let me see that! That can't be!"{waitForClick}{clearText}
+
+[000006a2]10: 
+[000006a3]0f 81 00 00 00 00 00 00 38 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU02ADM 128 3
+[000006b4]10: 
+[000006b5]10 82 00 00 83 00 00: removeFG 2 3
+[000006bc]10: 
+[000006bd]19: showTextbox
+[000006be]ff 3f 00: text 3f
+{marker}{appendText}Takeshi went to grab the sandwich, but Tsugumi 
+was too quick for him. Not only that, Takeshi 
+caught his foot and fell to the floor.{waitForClick}{clearText}{marker}{appendText}In that instant, Tsugumi polished off the 
+sandwich.{waitForClick}{clearText}{marker}{sound Y5A127}{appendText}[Tsugumi]
+"Thanks for the sandwich."{waitForClick}{clearText}{marker}{sound Y5A128}{appendText}[Tsugumi]
+"You made it specially for me, right?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+".................."{waitForClick}{clearText}{marker}{appendText}So the event ended with Tsugumi turning the 
+tables on Takeshi.{waitForClick}{clearText}
+
+[000006c1]10: 
+[000006c2]18: hideTextbox
+[000006c3]10: 
+[000006c4]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000006cb]10: 
+[000006cc]04: stopBGM
+[000006cd]10: 
+[000006ce]1e a0 78 00 00: delay 120
+[000006d3]10: 
+[000006d4]0c 00 00 00 00 39 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[000006e1]10: 
+[000006e2]03 82 00 00 a0 64 00 00: playBGM 2 100
+[000006ea]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000006f4]27 00 00: fadeOutMonoColorOverlay
+[000006f7]00: 
+[000006f8]05 8a 00 00: unSkippableDelay 10
+[000006fc]10: 
+[000006fd]1f 89 00 00 a0 13 00 00: clock 9:19
+[00000705]10: 
+[00000706]19: showTextbox
+[00000707]ff 40 00: text 40
+{marker}{appendText}I ended up cleaning the area up afterward.{waitForClick}{clearText}{marker}{appendText}I separated the cans and sandwich wrappers 
+and put them in garbage bags.{waitForClick}{clearText}{marker}{appendText}You and Sara helped.{waitForClick}{clearText}{marker}{appendText}Takeshi said he was going to start getting 
+ready for lunch and headed to the kiosk.{waitForClick}{clearText}{marker}{appendText}Sora said she had to do some maintenance 
+on LeMMIH and left for the Control Room.{waitForClick}{clearText}{marker}{appendText}Tsugumi disappeared to somewhere unknown.{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}But something happened when I was picking up 
+garbage.{waitForClick}{clearText}
+
+[0000070a]10: 
+[0000070b]04: stopBGM
+[0000070c]10: 
+[0000070d]19: showTextbox
+[0000070e]ff 41 00: text 41
+{marker}{sound T5B003}{appendText}[??]
+"Hello there!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Huh?"{waitForClick}{clearText}
+
+[00000711]10: 
+[00000712]12 81 00 00 84 00 00 00 00 00 00 3a 00 00 00 00 00 3b 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 4 00000000 SA06ADM 00000000 YU06BDM 128 512 3
+[00000730]10: 
+[00000731]19: showTextbox
+[00000732]ff 42 00: text 42
+{marker}{sound Y5A129}{appendText}[You]
+"What? What's the matter?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Nothing..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Did somebody just call out?"{waitForClick}{clearText}{marker}{sound Y5A130}{appendText}[You]
+"What?"{waitForClick}{clearText}{marker}{sound Y5A131}{appendText}[Sara]
+"Nobody said anything."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Really? Must be my imagination..."{waitForClick}{clearText}
+
+[00000735]10: 
+[00000736]0f 81 00 00 00 00 00 00 3c 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA05ADM 128 3
+[00000747]10: 
+[00000748]19: showTextbox
+[00000749]ff 43 00: text 43
+{marker}{sound Y5A132}{appendText}[Sara]
+"I'll bet you're just trying to find a way 
+to get out of helping."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm not. It's not that at all."{waitForClick}{clearText}
+
+[0000074c]10: 
+[0000074d]0f 84 00 00 00 00 00 00 3d 00 a2 00 00 00 83 00 00: fgload 4 00000000 YU03BDM 512 3
+[0000075e]10: 
+[0000075f]19: showTextbox
+[00000760]ff 44 00: text 44
+{marker}{sound Y5A133}{appendText}[You]
+"You hearing your mystery voices again?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well, I..."{waitForClick}{clearText}{marker}{sound Y5A134}{appendText}[You]
+"Please, don't do that again. Get a hold of 
+yourself already."{waitForClick}{clearText}{marker}{sound Y5A135}{appendText}[You]
+"I know you're tired, but..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[00000763]10: 
+[00000764]13 85 04 00 83 00 00: multiremoveFG_Anim 1 4 0
+[0000076b]10: 
+[0000076c]19: showTextbox
+[0000076d]ff 45 00: text 45
+{marker}{appendText}We started picking up garbage again.{waitForClick}{clearText}{marker}{appendText}We finally finished with the trash, folded the 
+blanket and were done cleaning up.{waitForClick}{clearText}
+
+[00000770]10: 
+[00000771]12 81 00 00 84 00 00 00 00 00 00 3e 00 00 00 00 00 3f 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 4 00000000 SA01ADM 00000000 YU01BDM 128 512 3
+[0000078f]10: 
+[00000790]19: showTextbox
+[00000791]ff 46 00: text 46
+{marker}{sound Y5A136}{appendText}[You]
+"Now we'll just sweep the area."{waitForClick}{clearText}{marker}{sound Y5A137}{appendText}[You]
+"Mayo. Can you do me a favor and get me a 
+broom and dustpan? I think they are at the 
+kiosk."{waitForClick}{clearText}{marker}{sound Y5A138}{appendText}[Sara]
+"Roger that!"{waitForClick}{clearText}
+
+[00000794]10: 
+[00000795]13 85 04 00 83 00 00: multiremoveFG_Anim 1 4 0
+[0000079c]10: 
+[0000079d]19: showTextbox
+[0000079e]ff 47 00: text 47
+{marker}{appendText}Sara set out for the kiosk.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I was just thinking. This must be a nightmare 
+for the people that clean this place."{waitForClick}{clearText}
+
+[000007a1]10: 
+[000007a2]0f 81 00 00 00 00 00 00 40 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BDM 320 3
+[000007b3]10: 
+[000007b4]19: showTextbox
+[000007b5]ff 48 00: text 48
+{marker}{sound Y5A139}{appendText}[You]
+"It would be if 'people' had to do it."{waitForClick}{clearText}{marker}{sound Y5A140}{appendText}[You]
+"But LeMMIH usually uses a cleaning robot that 
+automatically cleans the whole complex."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Wow."{waitForClick}{clearText}{marker}{sound Y5A141}{appendText}[You]
+"Well, what with the accident and all, 
+I imagine the robot is a rusted pile of 
+junk metal at the bottom of the ocean right 
+about now."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'll bet."{waitForClick}{clearText}{marker}{sound T5B017}{appendText}[??]
+"Heave ho, heave ho!"{waitForClick}{clearText}{marker}{appendText}(...What?){waitForClick}{clearText}{marker}{appendText}I...I was hearing voices again.{waitForClick}{clearText}{marker}{sound Y5A142}{appendText}[You]
+"Thinking about it, I guess that LeMU is just 
+one massive pile of scrap metal."{waitForClick}{clearText}{marker}{sound Y5A143}{appendText}[You]
+"I suppose it's just of matter of how it's 
+destroyed..."{waitForClick}{clearText}
+
+[000007b8]10: 
+[000007b9]0f 81 00 00 00 00 00 00 41 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU06BDM 320 3
+[000007ca]10: 
+[000007cb]19: showTextbox
+[000007cc]ff 49 00: text 49
+{marker}{sound Y5A144}{appendText}[You]
+"What? What's the matter?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Um..."{waitForClick}{clearText}{marker}{sound Y5A145}{appendText}[You]
+"You're not...not again?"{waitForClick}{clearText}
+
+[000007cf]10: 
+[000007d0]03 8d 00 00 a0 64 00 00: playBGM 13 100
+[000007d8]10: 
+[000007d9]19: showTextbox
+[000007da]ff 4a 00: text 4a
+{marker}{appendText}[Kid]
+"..."{waitForClick}{clearText}
+
+[000007dd]10: 
+[000007de]0f 81 00 00 00 00 00 00 42 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07BDM 320 3
+[000007ef]10: 
+[000007f0]19: showTextbox
+[000007f1]ff 4b 00: text 4b
+{marker}{sound Y5A146}{appendText}[You]
+"Oh...alright. You've done enough. Just go to 
+the infirmary or somewhere and rest."{waitForClick}{clearText}{marker}{sound Y5A147}{appendText}[You]
+"You've got a serious condition of 
+something..."{waitForClick}{clearText}{marker}{appendText}I was sure I'd heard something...{waitForClick}{clearText}{marker}{appendText}This time, I was sure it wasn't my imagination.{waitForClick}{clearText}{marker}{sound T5B019}{appendText}[??]
+"I'm carving."{waitForClick}{clearText}{marker}{sound T5B020}{appendText}[??]
+"Can't you see. I'm carving..."{waitForClick}{clearText}{marker}{appendText}(See, I really can hear something.){waitForClick}{clearText}{marker}{sound T5B021}{appendText}[??]
+"I'm etching some marks into the stone."{waitForClick}{clearText}{marker}{appendText}(...Stone statue?){waitForClick}{clearText}
+
+[000007f4]10: 
+[000007f5]10 81 00 00 83 00 00: removeFG 1 3
+[000007fc]10: 
+[000007fd]19: showTextbox
+[000007fe]ff 4c 00: text 4c
+{marker}{appendText}I looked around the four stone statues at the 
+edge of the open area.{waitForClick}{clearText}{marker}{appendText}And there....{waitForClick}{clearText}
+
+[00000801]10: 
+[00000802]0c 00 00 00 00 43 00 80 00 00 82 00 00: bgload 00000000 EV_CO19C 0 2
+[0000080f]10: 
+[00000810]19: showTextbox
+[00000811]ff 4d 00: text 4d
+{marker}{appendText}Atop the pedestal of a stone statue was a girl.{waitForClick}{clearText}{marker}{appendText}She was standing there next to the figure as 
+if clinging to the statue.{waitForClick}{clearText}{marker}{appendText}(Oh！ It's that girl...){waitForClick}{clearText}{marker}{appendText}It was the girl that I had seen and who had 
+then vanished on the first day.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look, You! Right there!"{waitForClick}{clearText}
+
+[00000814]10: 
+[00000815]0c 00 00 00 00 44 00 80 00 00 82 00 00: bgload 00000000 BG21B1 0 2
+[00000822]10: 
+[00000823]0f 81 00 00 00 00 00 00 45 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05BDM 320 3
+[00000834]10: 
+[00000835]19: showTextbox
+[00000836]ff 4e 00: text 4e
+{marker}{sound Y5A148}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look! Over on that statue!"{waitForClick}{clearText}{marker}{sound Y5A149}{appendText}[You]
+"What about the statue?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look! That stone statue! There's a girl 
+there! See?"{waitForClick}{clearText}
+
+[00000839]10: 
+[0000083a]0f 81 00 00 00 00 00 00 46 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07BDM 320 3
+[0000084b]10: 
+[0000084c]19: showTextbox
+[0000084d]ff 4f 00: text 4f
+{marker}{sound Y5A150}{appendText}[You]
+"Huh? I don't see anybody."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Not there! Over there!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, forget it! I'll go call to her!"{waitForClick}{clearText}{marker}{sound Y5A151}{appendText}[You]
+"Kid!"{waitForClick}{clearText}
+
+[00000850]10: 
+[00000851]10 81 00 00 83 00 00: removeFG 1 3
+[00000858]10: 
+[00000859]19: showTextbox
+[0000085a]ff 50 00: text 50
+{marker}{appendText}I sprinted toward the stone statue.{waitForClick}{clearText}{marker}{appendText}(What could the girl be doing up there?){waitForClick}{clearText}{marker}{sound T5B023}{appendText}[??]
+"Well, it's because..."{waitForClick}{clearText}{marker}{sound T5B024}{appendText}[??]
+"I was feeling lonesome."{waitForClick}{clearText}{marker}{appendText}Lonesome?{waitForClick}{clearText}{marker}{sound T5B025}{appendText}[??]
+"And anyway, I was..."{waitForClick}{clearText}{marker}{sound T5B026}{appendText}[??]
+"...feeling sad..."{waitForClick}{clearText}{marker}{appendText}Sad?{waitForClick}{clearText}{marker}{appendText}(What is she talking about?){waitForClick}{clearText}{marker}{sound T5B043}{appendText}[??]
+"And next..."{waitForClick}{clearText}{marker}{sound T5B044}{appendText}[??]
+"Uh oh!"{waitForClick}{clearText}{marker}{appendText}Just then the girl lost her balance, falling 
+from her awkward place on the pedestal.{waitForClick}{clearText}
+
+[0000085d]10: 
+[0000085e]0c 00 00 00 00 47 00 80 00 00 82 00 00: bgload 00000000 EV_CO19D 0 2
+[0000086b]10: 
+[0000086c]19: showTextbox
+[0000086d]ff 51 00: text 51
+{marker}{appendText}[Kid]
+"L-look out!"{waitForClick}{clearText}{marker}{appendText}I ran toward her.{waitForClick}{clearText}{marker}{appendText}The water caught on my feet and sprayed 
+everywhere as I ran all out to where she was.{waitForClick}{clearText}{marker}{appendText}(Will I make it?){waitForClick}{clearText}
+
+[00000870]10: 
+[00000871]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[0000087b]10: 
+[0000087c]19: showTextbox
+[0000087d]ff 52 00: text 52
+{marker}{appendText}I closed my eyes, mustered all of my 
+power and sprinted.{waitForClick}{clearText}{marker}{appendText}I threw out my free left hand to where the 
+girl would be falling to catch her.{waitForClick}{clearText}
+
+[00000880]10: 
+[00000881]18: hideTextbox
+[00000882]10: 
+[00000883]05 53 45 30 32 5f 30 32 00 80 00 00 a0 64 00 00: playSFX SE02_02 0 100
+[00000893]10: 
+[00000894]19: showTextbox
+[00000895]ff 53 00: text 53
+{marker}{appendText}Splash!{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}I didn't feel anything.{waitForClick}{clearText}{marker}{appendText}I thought maybe I hadn't reached her in time.{waitForClick}{clearText}{marker}{appendText}Scared, I opened my eyes.{waitForClick}{clearText}
+
+[00000898]10: 
+[00000899]18: hideTextbox
+[0000089a]10: 
+[0000089b]06: stopSFX
+[0000089c]10: 
+[0000089d]0c 00 00 00 00 48 00 80 00 00 82 00 00: bgload 00000000 BG21B1 0 2
+[000008aa]10: 
+[000008ab]19: showTextbox
+[000008ac]ff 54 00: text 54
+{marker}{appendText}(...What?){waitForClick}{clearText}{marker}{appendText}There was no one in my arms.{waitForClick}{clearText}{marker}{appendText}Or even around me.{waitForClick}{clearText}{marker}{appendText}Only the water sloshing about gently around me.{waitForClick}{clearText}{marker}{sound Y5A152}{appendText}[You]
+"Hey, are you alright? It looks like you took 
+a pretty nasty spill..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"..."{waitForClick}{clearText}
+
+[000008af]10: 
+[000008b0]0c 00 00 00 00 49 00 80 00 00 80 00 00: bgload 00000000 IT05E 0 0
+[000008bd]10: 
+[000008be]19: showTextbox
+[000008bf]ff 55 00: text 55
+{marker}{appendText}I looked above me.{waitForClick}{clearText}{marker}{appendText}Of course there was no one on the pedestal 
+supporting the statue.{waitForClick}{clearText}{marker}{appendText}Without saying anything, I got up and went 
+behind the statue.{waitForClick}{clearText}
+
+[000008c2]10: 
+[000008c3]0c 00 00 00 00 4a 00 80 00 00 80 00 00: bgload 00000000 IT05F 0 0
+[000008d0]10: 
+[000008d1]19: showTextbox
+[000008d2]ff 56 00: text 56
+{marker}{appendText}There were scratches in the statue.{waitForClick}{clearText}{marker}{appendText}There were deep notches that looked like they 
+had been carved there by something hard and 
+sharp.{waitForClick}{clearText}{marker}{appendText}They were the shape of people.{waitForClick}{clearText}{marker}{appendText}Really simple looking like stick people.{waitForClick}{clearText}{marker}{appendText}At the end of each stick was a little round 
+face...{waitForClick}{clearText}{marker}{appendText}There were six in all.{waitForClick}{clearText}{marker}{appendText}Looking closer, I saw that next to the people 
+figures were two carvings of animals that I'd 
+never seen.{waitForClick}{clearText}
+
+[000008d5]10: 
+[000008d6]0c 00 00 00 00 4b 00 80 00 00 80 00 00: bgload 00000000 IT05E 0 0
+[000008e3]10: 
+[000008e4]19: showTextbox
+[000008e5]ff 57 00: text 57
+{marker}{appendText}I looked up at the statue.{waitForClick}{clearText}{marker}{appendText}The statue was pointing diagonal and 
+up...toward the east.{waitForClick}{clearText}
+
+[000008e8]10: 
+[000008e9]0c 00 00 00 00 4c 00 80 00 00 82 00 00: bgload 00000000 BG21B1 0 2
+[000008f6]10: 
+[000008f7]19: showTextbox
+[000008f8]ff 58 00: text 58
+{marker}{sound Y5A153}{appendText}[Sara]
+"Hey, what are you two doing?"{waitForClick}{clearText}{marker}{sound Y5A154}{appendText}[You]
+"That's a good question..."{waitForClick}{clearText}{marker}{appendText}I ignored them and gently touched the 
+carvings on the statue.{waitForClick}{clearText}{marker}{appendText}Without thinking I blurted out - {waitForClick}{clearText}{marker}{appendText}[Kid]
+"Watch your step, okay?"{waitForClick}{clearText}{marker}{sound T5B048}{appendText}[??]
+"Okay!"{waitForClick}{clearText}{marker}{appendText}That answer could have been my imagination 
+that time...{waitForClick}{clearText}
+
+[000008fb]10: 
+[000008fc]18: hideTextbox
+[000008fd]10: 
+[000008fe]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[00000908]10: 
+[00000909]04: stopBGM
+[0000090a]10: 
+[0000090b]1e a0 78 00 00: delay 120
+[00000910]10: 
+[00000911]03 83 00 00 a0 64 00 00: playBGM 3 100
+[00000919]10: 
+[0000091a]20 a0 2c 00 00: showDimOverlay
+[0000091f]10: 
+[00000920]0c 00 00 00 00 4d 00 80 00 00 82 00 00: bgload 00000000 BG09A1 0 2
+[0000092d]10: 
+[0000092e]18: hideTextbox
+[0000092f]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[0000093a]fe 28 0a a4 fa 14 14 00 a0 4f 00 00: setSceneTitleByIndex 79
+[00000946]00: 
+[00000947]28: l_unk28
+[00000948]10: 
+[00000949]19: showTextbox
+[0000094a]ff 59 00: text 59
+{marker}{appendText}After that I decided to go to the infirmary 
+and sleep.{waitForClick}
+{appendText}It wasn't that I was feeling ill.{waitForClick}
+{appendText}It was simply that I was not getting enough 
+sleep. I wanted some quality rest.{waitForClick}
+{appendText}I slept so deeply that I didn't even dream...{waitForClick}{nextPage x2}
+
+[0000094d]10: 
+[0000094e]18: hideTextbox
+[0000094f]10: 
+[00000950]19: showTextbox
+[00000951]ff 5a 00: text 5a
+{marker}{appendText}When I awoke it was already around evening.{waitForClick}
+{appendText}There was a memo by the bed.{waitForClick}{nextPage x2}
+
+[00000954]10: 
+[00000955]18: hideTextbox
+[00000956]10: 
+[00000957]19: showTextbox
+[00000958]ff 5b 00: text 5b
+{marker}{appendText}'We will be in the Conference Room until 
+dinner.{waitForClick}
+{appendText}If you wake up by then, please come along.{waitForClick}
+{appendText}I'm sorry for making you hang out with me 
+the last couple days.{waitForClick}
+{appendText}Please make sure that you get enough rest.{waitForClick}
+{appendText}You'{waitForClick}
+
+
+[0000095b]10: 
+[0000095c]19: showTextbox
+[0000095d]ff 5c 00: text 5c
+{appendText}
+{appendText}Judging from the signature, it seemed that 
+You had left it.{waitForClick}{nextPage x2}
+
+[00000960]10: 
+[00000961]18: hideTextbox
+[00000962]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[0000096d]10: 
+[0000096e]21 a0 10 00 00: closeDimOverlay
+[00000973]10: 
+[00000974]18: hideTextbox
+[00000975]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000980]10: 
+[00000981]19: showTextbox
+[00000982]ff 5d 00: text 5d
+{marker}{appendText}I got out of bed, stretched and left the room.{waitForClick}{clearText}
+
+[00000985]10: 
+[00000986]0c 00 00 00 00 4e 00 80 00 00 82 00 00: bgload 00000000 BG26A3L 0 2
+[00000993]10: 
+[00000994]1f a0 10 00 00 a0 16 00 00: clock 16:22
+[0000099d]10: 
+[0000099e]19: showTextbox
+[0000099f]ff 5e 00: text 5e
+{marker}{appendText}I started walking in the direction opposite 
+of the Conference Room.{waitForClick}{clearText}{marker}{appendText}I decided to take a walk around the complex 
+for fun.{waitForClick}{clearText}
+
+[000009a2]10: 
+[000009a3]0c 00 00 00 00 4f 00 80 00 00 82 00 00: bgload 00000000 BG23A1 0 2
+[000009b0]10: 
+[000009b1]0c 00 00 00 00 50 00 80 00 00 82 00 00: bgload 00000000 BG24A1 0 2
+[000009be]10: 
+[000009bf]05 53 45 30 30 5f 30 32 00 80 00 00 a0 64 00 00: playSFX SE00_02 0 100
+[000009cf]10: 
+[000009d0]19: showTextbox
+[000009d1]ff 5f 00: text 5f
+{marker}{appendText}I got into EI.{waitForClick}{clearText}{marker}{appendText}I thought that it might make for a good 
+change of pace to walk around a floor 
+I hadn't spent much time on.{waitForClick}{clearText}{marker}{appendText}...That was my thinking.{waitForClick}{clearText}
+
+[000009d4]10: 
+[000009d5]0c 00 00 00 00 51 00 80 00 00 82 00 00: bgload 00000000 BG24A2 0 2
+[000009e2]10: 
+[000009e3]06: stopSFX
+[000009e4]10: 
+[000009e5]05 53 45 30 30 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE00_00 0 100
+[000009f5]10: 
+[000009f6]05 53 45 30 30 5f 30 32 00 80 00 00 a0 64 00 00: playSFX SE00_02 0 100
+[00000a06]10: 
+[00000a07]0c 00 00 00 00 52 00 80 00 00 82 00 00: bgload 00000000 BG23B1 0 2
+[00000a14]10: 
+[00000a15]06: stopSFX
+[00000a16]10: 
+[00000a17]19: showTextbox
+[00000a18]ff 60 00: text 60
+{marker}{appendText}I got off on the flooded third floor.{waitForClick}{clearText}{marker}{appendText}I wondered where I should go...{waitForClick}{clearText}{marker}{appendText}I looked around, thinking.{waitForClick}{clearText}
+
+[00000a1b]10: 
+[00000a1c]04: stopBGM
+[00000a1d]10: 
+[00000a1e]19: showTextbox
+[00000a1f]ff 61 00: text 61
+{marker}{appendText}...It was then that it happened.{waitForClick}{clearText}{marker}{appendText}I saw 'the girl' again!{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh!"{waitForClick}{clearText}{marker}{appendText}I saw her small figure cutting across 
+the corridor.{waitForClick}{clearText}{marker}{appendText}I was sure of it.{waitForClick}{clearText}{marker}{appendText}It was that girl!{waitForClick}{clearText}{marker}{appendText}I chased after her.{waitForClick}{clearText}
+
+[00000a22]10: 
+[00000a23]04: stopBGM
+[00000a24]10: 
+[00000a25]03 8b 00 00 a0 64 00 00: playBGM 11 100
+[00000a2d]10: 
+[00000a2e]0c 00 00 00 00 53 00 80 00 00 82 00 00: bgload 00000000 BG26B3L 0 2
+[00000a3b]10: 
+[00000a3c]19: showTextbox
+[00000a3d]ff 62 00: text 62
+{marker}{appendText}Her skirt shook back and forth as she walked 
+further and further away.{waitForClick}{clearText}{marker}{appendText}It was almost as if she were trying to get 
+away from me.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey! Wait a minute!"{waitForClick}{clearText}{marker}{appendText}She might not have heard me and she didn't 
+show any sign of stopping.{waitForClick}{clearText}{marker}{appendText}I wondered what it was all about.{waitForClick}{clearText}{marker}{appendText}This girl that kept appearing out of nowhere 
+and then disappearing.{waitForClick}{clearText}{marker}{appendText}This girl that didn't register on LeMMIH's 
+bio scan.{waitForClick}{clearText}{marker}{appendText}No, she had registered once...{waitForClick}{clearText}
+
+[00000a40]10: 
+[00000a41]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2
+[00000a4b]10: 
+[00000a4c]19: showTextbox
+[00000a4d]ff 63 00: text 63
+{marker}{appendText}'Life readings: 7'{waitForClick}{clearText}
+
+[00000a50]10: 
+[00000a51]0c 00 00 00 00 54 00 80 00 00 82 00 00: bgload 00000000 BG26B3L 0 2
+[00000a5e]10: 
+[00000a5f]19: showTextbox
+[00000a60]ff 64 00: text 64
+{marker}{appendText}But the more I thought about it, the stranger 
+everything seemed.{waitForClick}{clearText}{marker}{appendText}She only appeared in front of me and we hardly 
+communicated...{waitForClick}{clearText}{marker}{appendText}Well, I couldn't worry about it. I knew it 
+wouldn't help.{waitForClick}{clearText}{marker}{appendText}It was something that I could only solve by 
+asking her directly.{waitForClick}{clearText}
+
+[00000a63]10: 
+[00000a64]0c 00 00 00 00 55 00 80 00 00 82 00 00: bgload 00000000 BG25B3 0 2
+[00000a71]10: 
+[00000a72]19: showTextbox
+[00000a73]ff 65 00: text 65
+{marker}{appendText}She headed into the Cosmic Whale Room.{waitForClick}{clearText}{marker}{appendText}I followed in soon after her.{waitForClick}{clearText}
+
+[00000a76]10: 
+[00000a77]18: hideTextbox
+[00000a78]10: 
+[00000a79]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000a80]10: 
+[00000a81]0c 00 00 00 00 56 00 86 00 00 82 00 00: bgload 00000000 BG05A1 6 2
+[00000a8e]10: 
+[00000a8f]04: stopBGM
+[00000a90]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000a9a]27 00 00: fadeOutMonoColorOverlay
+[00000a9d]00: 
+[00000a9e]05 8a 00 00: unSkippableDelay 10
+[00000aa2]10: 
+[00000aa3]19: showTextbox
+[00000aa4]ff 66 00: text 66
+{marker}{appendText}The room was dimly lit.{waitForClick}{clearText}{marker}{appendText}A massive whale floated like a majestic 
+phantasm, in the cosmic room.{waitForClick}{clearText}{marker}{appendText}The girl was in the middle of the room.{waitForClick}{clearText}
+
+[00000aa7]10: 
+[00000aa8]03 a0 16 00 00 a0 64 00 00: playBGM 22 100
+[00000ab1]10: 
+[00000ab2]19: showTextbox
+[00000ab3]ff 67 00: text 67
+{marker}{appendText}She was facing away from me, sitting and 
+hugging her knees.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I finally...caught up..."{waitForClick}{clearText}{marker}{appendText}I approached her as I caught my breath.{waitForClick}{clearText}{marker}{appendText}...I heard singing.{waitForClick}{clearText}{marker}{appendText}It sounded like phrases from a children's song.{waitForClick}{clearText}{marker}{sound Y5A155}{appendText}[??]
+"Moon sprite...shouldering a...long bow."{waitForClick}{clearText}{marker}{sound Y5A156}{appendText}[??]
+"Waiting inside a dream."{waitForClick}{clearText}{marker}{appendText}I felt like...{waitForClick}{clearText}{marker}{appendText}I had heard the lyrics somewhere before.{waitForClick}{clearText}
+
+[00000ab6]00: 
+[00000ab7]0a 01 28 0a a4 e3 14 0c 01 80 01 00 06 00: gotoif 1 (28 0a a4) e3 == (01) 0 (0001) -> 00000ad4 (00000006)
+[00000ac5]10: 
+[00000ac6]24 a0 25 00 00: scriptLocationId 37
+[00000acb]10: 
+[00000acc]19: showTextbox
+[00000acd]ff 68 00: text 68
+{marker}{appendText}And recently...{waitForClick}{clearText}
+
+[00000ad0]00: 
+[00000ad1]07 08 00: goto 00000ad9 (00000008)
+[00000ad4]10: 
+[00000ad5]19: showTextbox
+[00000ad6]ff 69 00: text 69
+{marker}{appendText}Somewhere, I was sure...{waitForClick}{clearText}{marker}{appendText}In the distant, distant past...{waitForClick}{clearText}
+
+[00000ad9]10: 
+[00000ada]19: showTextbox
+[00000adb]ff 6a 00: text 6a
+{marker}{appendText}I wondered if it was my missing memory that 
+was making me feel that way...?{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, you."{waitForClick}{clearText}{marker}{appendText}Her shoulders jumped with shock and she 
+stopped singing.{waitForClick}{clearText}
+
+[00000ade]10: 
+[00000adf]0f 81 00 00 00 00 00 00 57 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO01ADM 320 3
+[00000af0]10: 
+[00000af1]19: showTextbox
+[00000af2]ff 6b 00: text 6b
+{marker}{appendText}Slowly, she turned back to look at me.{waitForClick}{clearText}{marker}{appendText}It was the girl after all.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why do you run away from me?"{waitForClick}{clearText}{marker}{appendText}[??]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, well. I guess it doesn't matter."{waitForClick}{clearText}{marker}{appendText}It really did matter to me, but since I had 
+finally been able to confront the girl, 
+I felt a surge of relief.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well, why don't we go where everyone else is?"{waitForClick}{clearText}{marker}{appendText}I held out my hand as I said this.{waitForClick}{clearText}{marker}{appendText}Finally, she stood up and spoke.{waitForClick}{clearText}
+
+[00000af5]10: 
+[00000af6]19: showTextbox
+[00000af7]ff 6c 00: text 6c
+{marker}{sound Y5A158}{appendText}[??]
+"Brother..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...What?"{waitForClick}{clearText}{marker}{appendText}[??]
+"........."{waitForClick}{clearText}{marker}{appendText}The girl just stared at my face.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"L...let's go!"{waitForClick}{clearText}
+
+[00000afa]10: 
+[00000afb]10 81 00 00 83 00 00: removeFG 1 3
+[00000b02]10: 
+[00000b03]19: showTextbox
+[00000b04]ff 6d 00: text 6d
+{marker}{appendText}I took her hand and tugged it as I began 
+to walk.{waitForClick}{clearText}{marker}{appendText}The inside of my mind was churning...{waitForClick}{clearText}{marker}{appendText}It was because of what she had just said.{waitForClick}{clearText}{marker}{appendText}Inside of me it felt like another me was 
+screaming.{waitForClick}{clearText}{marker}{appendText}...That was how I felt.{waitForClick}{clearText}
+
+[00000b07]10: 
+[00000b08]18: hideTextbox
+[00000b09]10: 
+[00000b0a]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000b12]10: 
+[00000b13]04: stopBGM
+[00000b14]10: 
+[00000b15]1e a0 78 00 00: delay 120
+[00000b1a]10: 
+[00000b1b]0c 00 00 00 00 58 00 86 00 00 82 00 00: bgload 00000000 BG17A1 6 2
+[00000b28]10: 
+[00000b29]19: showTextbox
+[00000b2a]ff 6e 00: text 6e
+{marker}{appendText}[Kid]
+"I found another girl!"{waitForClick}{clearText}
+
+[00000b2d]10: 
+[00000b2e]18: hideTextbox
+[00000b2f]10: 
+[00000b30]05 53 45 30 30 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE00_01 0 100
+[00000b40]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000b4a]27 00 00: fadeOutMonoColorOverlay
+[00000b4d]00: 
+[00000b4e]05 8a 00 00: unSkippableDelay 10
+[00000b52]10: 
+[00000b53]19: showTextbox
+[00000b54]ff 6f 00: text 6f
+{marker}{appendText}I burst into the Conference Room as 
+I shouted this.{waitForClick}{clearText}{marker}{appendText}Of course, I was still leading the girl 
+by the hand.{waitForClick}{clearText}{marker}{appendText}Everyone turned to look at me at once.{waitForClick}{clearText}
+
+[00000b57]10: 
+[00000b58]12 81 00 00 82 00 00 00 00 00 00 59 00 00 00 00 00 5a 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU06BDM 00000000 TU06ADM 128 512 3
+[00000b76]10: 
+[00000b77]19: showTextbox
+[00000b78]ff 70 00: text 70
+{marker}{sound Y5A159}{appendText}[Tsugumi]
+"Huh?"{waitForClick}{clearText}{marker}{sound Y5A160}{appendText}[You]
+"Another what?"{waitForClick}{clearText}
+
+[00000b7b]10: 
+[00000b7c]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000b83]10: 
+[00000b84]12 81 00 00 82 00 00 00 00 00 00 5b 00 00 00 00 00 5c 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 KB07ADM 00000000 SO06ADM 128 512 3
+[00000ba2]10: 
+[00000ba3]19: showTextbox
+[00000ba4]ff 71 00: text 71
+{marker}{sound Y5A161}{appendText}[Takeshi]
+"Who are you talking about?"{waitForClick}{clearText}{marker}{sound Y5A162}{appendText}[Sora]
+"Are you talking about...THAT girl?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah. I found her in the Cosmic Whale Room 
+and brought her here."{waitForClick}{clearText}
+
+[00000ba7]10: 
+[00000ba8]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000baf]10: 
+[00000bb0]12 81 00 00 82 00 00 00 00 00 00 5d 00 00 00 00 00 5e 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU07BDM 00000000 TU06ADM 128 512 3
+[00000bce]10: 
+[00000bcf]19: showTextbox
+[00000bd0]ff 72 00: text 72
+{marker}{appendText}[Tsugumi]
+"........."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}
+
+[00000bd3]10: 
+[00000bd4]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000bdb]10: 
+[00000bdc]12 81 00 00 82 00 00 00 00 00 00 5f 00 00 00 00 00 60 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 KB07ADM 00000000 SO07ADM 128 512 3
+[00000bfa]10: 
+[00000bfb]19: showTextbox
+[00000bfc]ff 73 00: text 73
+{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}[Sora]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"W...what's the matter with everyone?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why aren't you surprised?"{waitForClick}{clearText}
+
+[00000bff]10: 
+[00000c00]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000c07]10: 
+[00000c08]12 81 00 00 82 00 00 00 00 00 00 61 00 00 00 00 00 62 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU07BDM 00000000 TU07ADM 128 512 3
+[00000c26]10: 
+[00000c27]19: showTextbox
+[00000c28]ff 74 00: text 74
+{marker}{sound Y5A163}{appendText}[Tsugumi]
+"Maybe you better rest for a while."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}{marker}{sound Y5A164}{appendText}[??]
+"Hey, hey!"{waitForClick}{clearText}
+
+[00000c2b]10: 
+[00000c2c]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000c33]10: 
+[00000c34]19: showTextbox
+[00000c35]ff 75 00: text 75
+{marker}{appendText}The girl was tugging at my sleeve.{waitForClick}{clearText}{marker}{appendText}I turned to look at her.{waitForClick}{clearText}{marker}{appendText}But...{waitForClick}{clearText}{marker}{appendText}The girl that I had brought back was...{waitForClick}{clearText}
+
+[00000c38]10: 
+[00000c39]03 84 00 00 a0 64 00 00: playBGM 4 100
+[00000c41]10: 
+[00000c42]0f 81 00 00 00 00 00 00 63 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA05ADM 320 3
+[00000c53]10: 
+[00000c54]19: showTextbox
+[00000c55]ff 76 00: text 76
+{marker}{sound Y5A165}{appendText}[Sara]
+"What are you doing...dragging me here all 
+of the sudden?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"S-Sara...?"{waitForClick}{clearText}{marker}{sound Y5A166}{appendText}[Sara]
+"???"{waitForClick}{clearText}{marker}{appendText}I looked back at everyone.{waitForClick}{clearText}
+
+[00000c58]10: 
+[00000c59]10 81 00 00 83 00 00: removeFG 1 3
+[00000c60]10: 
+[00000c61]12 81 00 00 82 00 00 00 00 00 00 64 00 00 00 00 00 65 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU07BDM 00000000 TU06ADM 128 512 3
+[00000c7f]10: 
+[00000c80]19: showTextbox
+[00000c81]ff 77 00: text 77
+{marker}{appendText}[Kid]
+"T-this isn't right! I swear, I saw her!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We were walking here hand-in-hand. It wasn't 
+Sara..."{waitForClick}{clearText}
+
+[00000c84]10: 
+[00000c85]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000c8c]10: 
+[00000c8d]12 81 00 00 82 00 00 00 00 00 00 66 00 00 00 00 00 67 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SO17ADM 00000000 SA11ADM 128 512 3
+[00000cab]10: 
+[00000cac]19: showTextbox
+[00000cad]ff 78 00: text 78
+{marker}{sound Y5A167}{appendText}[Sora]
+"Is that right? Sara?"{waitForClick}{clearText}{marker}{sound Y5A168}{appendText}[Sara]
+"No. I didn't see anybody else."{waitForClick}{clearText}{marker}{sound Y5A169}{appendText}[Sara]
+"The Kid just suddenly grabbed my hand..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara...why are you lying...?"{waitForClick}{clearText}
+
+[00000cb0]10: 
+[00000cb1]12 81 00 00 82 00 00 00 00 00 00 68 00 00 00 00 00 69 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SO03ADM 00000000 SA04ADM 128 512 3
+[00000ccf]10: 
+[00000cd0]19: showTextbox
+[00000cd1]ff 79 00: text 79
+{marker}{sound Y5A170}{appendText}[Sara]
+"Huh? What're you talking about? You're 
+the one that's lying?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"W-what...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The girl was in the Whale Room...she was 
+sitting down hugging her knees."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"She was singing some kind of phrases to 
+a kid's song."{waitForClick}{clearText}{marker}{sound Y5A171}{appendText}[Sara]
+"I'm telling you that was me!"{waitForClick}{clearText}{marker}{appendText}Sara was red-faced and shouting.{waitForClick}{clearText}{marker}{sound Y5A172}{appendText}[Sara]
+"You don't have to tell everybody about it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[00000cd4]10: 
+[00000cd5]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[00000cdc]10: 
+[00000cdd]19: showTextbox
+[00000cde]ff 7a 00: text 7a
+{marker}{appendText}(Geez, what's with her...?){waitForClick}{clearText}{marker}{appendText}(What's going on here...){waitForClick}{clearText}
+
+[00000ce1]10: 
+[00000ce2]0f 81 00 00 00 00 00 00 6a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03BDM 320 3
+[00000cf3]10: 
+[00000cf4]19: showTextbox
+[00000cf5]ff 7b 00: text 7b
+{marker}{sound Y5A173}{appendText}[You]
+"Oh my!"{waitForClick}{clearText}{marker}{appendText}You groaned as she slapped her forehead 
+with her hand.{waitForClick}{clearText}{marker}{sound Y5A174}{appendText}[You]
+"Kid? Just forget about everything else and 
+get some rest."{waitForClick}{clearText}{marker}{sound Y5A175}{appendText}[You]
+"I'll bring you some dinner later."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"..............."{waitForClick}{clearText}
+
+[00000cf8]10: 
+[00000cf9]0f 81 00 00 00 00 00 00 6b 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13BDM 320 3
+[00000d0a]10: 
+[00000d0b]19: showTextbox
+[00000d0c]ff 7c 00: text 7c
+{marker}{sound Y5A176}{appendText}[You]
+"What is going on with this guy...?"{waitForClick}{clearText}
+
+[00000d0f]10: 
+[00000d10]18: hideTextbox
+[00000d11]10: 
+[00000d12]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[00000d1a]10: 
+[00000d1b]10 81 00 00 80 00 00: removeFG 1 0
+[00000d22]10: 
+[00000d23]19: showTextbox
+[00000d24]ff 7d 00: text 7d
+{marker}{appendText}I thought about a lot of things as I plodded 
+to the infirmary.{waitForClick}{clearText}
+
+[00000d27]10: 
+[00000d28]18: hideTextbox
+[00000d29]10: 
+[00000d2a]0c 00 00 00 00 6c 00 86 00 00 82 00 00: bgload 00000000 BG25A3 6 2
+[00000d37]10: 
+[00000d38]20 a0 2c 00 00: showDimOverlay
+[00000d3d]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000d47]27 00 00: fadeOutMonoColorOverlay
+[00000d4a]00: 
+[00000d4b]05 8a 00 00: unSkippableDelay 10
+[00000d4f]10: 
+[00000d50]18: hideTextbox
+[00000d51]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000d5c]10: 
+[00000d5d]19: showTextbox
+[00000d5e]ff 7e 00: text 7e
+{marker}{appendText}Things leading to that point.{waitForClick}
+{appendText}Things to come.{waitForClick}
+{appendText}The odd things going on.{waitForClick}
+{appendText}Things I couldn't figure out.{waitForClick}
+{appendText}Things I needed to find out.{waitForClick}
+{appendText}Things I needed to decide.{waitForClick}{nextPage x2}
+
+[00000d61]10: 
+[00000d62]18: hideTextbox
+[00000d63]10: 
+[00000d64]19: showTextbox
+[00000d65]ff 7f 00: text 7f
+{marker}{appendText}Everything I had been trying to avoid thinking 
+about all rushed in to my mind at once, making 
+it a confused mess.{waitForClick}
+{appendText}I couldn't help thinking...and 
+worrying...about things.{waitForClick}{nextPage x2}
+
+[00000d68]10: 
+[00000d69]18: hideTextbox
+[00000d6a]10: 
+[00000d6b]19: showTextbox
+[00000d6c]ff 80 00: text 80
+{marker}{appendText}About You.{waitForClick}
+{appendText}What if the man who had died 34 years before 
+wasn't You's father?{waitForClick}
+{appendText}Then who was her real father?{waitForClick}
+{appendText}Was the woman that died 15 years before really 
+You's mother?{waitForClick}
+{appendText}If not, then who was?{waitForClick}{nextPage x2}
+
+[00000d6f]10: 
+[00000d70]18: hideTextbox
+[00000d71]10: 
+[00000d72]19: showTextbox
+[00000d73]ff 81 00: text 81
+{marker}{appendText}About me.{waitForClick}
+{appendText}Why did I keep having premonitions of 
+the future? What did it mean?{waitForClick}
+{appendText}Who was the girl? Why had I mistaken 
+Sara for her?{waitForClick}
+{appendText}Why had I even lost my memory in the 
+first place?{waitForClick}
+{appendText}What had happened to me in my past?{waitForClick}
+{appendText}What did Tsugumi know about all of this?{waitForClick}{nextPage x2}
+
+[00000d76]10: 
+[00000d77]18: hideTextbox
+[00000d78]10: 
+[00000d79]19: showTextbox
+[00000d7a]ff 82 00: text 82
+{marker}{appendText}And...{waitForClick}
+{appendText}Why were we all trapped in LeMU?{waitForClick}
+{appendText}Was it just an accident?{waitForClick}
+{appendText}Or something else...{waitForClick}{nextPage x2}
+
+[00000d7d]10: 
+[00000d7e]18: hideTextbox
+[00000d7f]10: 
+[00000d80]18: hideTextbox
+[00000d81]10: 
+[00000d82]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000d89]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000d94]10: 
+[00000d95]21 a0 10 00 00: closeDimOverlay
+[00000d9a]10: 
+[00000d9b]0c 00 00 00 00 6d 00 86 00 00 82 00 00: bgload 00000000 IMG01A 6 2
+[00000da8]10: 
+[00000da9]18: hideTextbox
+[00000daa]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000db5]10: 
+[00000db6]1e a0 78 00 00: delay 120
+[00000dbb]10: 
+[00000dbc]04: stopBGM
+[00000dbd]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000dc7]27 00 00: fadeOutMonoColorOverlay
+[00000dca]00: 
+[00000dcb]05 a0 12 00 00: unSkippableDelay 18
+[00000dd0]10: 
+[00000dd1]1f a0 14 00 00 a0 13 00 00: clock 20:19
+[00000dda]10: 
+[00000ddb]19: showTextbox
+[00000ddc]ff 83 00: text 83
+{marker}{appendText}A few hours later, the installation started to 
+flood again.{waitForClick}{clearText}
+
+[00000ddf]10: 
+[00000de0]19: showTextbox
+[00000de1]ff 84 00: text 84
+{marker}{appendText}'Dritte stock - from the partition to the 
+Cosmic Whale was submerged.'{waitForClick}{clearText}{marker}{appendText}'Casualties: None'{waitForClick}{clearText}{marker}{appendText}'Flooding to other rooms: None'{waitForClick}{clearText}{marker}{appendText}'Chance of damage spreading: None...'{waitForClick}{clearText}{marker}{appendText}Sora's voice conveyed the situation over the 
+intercom in a matter-of-fact tone.{waitForClick}{clearText}{marker}{appendText}The Cosmic Whale Room...{waitForClick}{clearText}{marker}{appendText}I had been there until just shortly before the 
+flooding.{waitForClick}{clearText}{marker}{appendText}But somehow it felt like some event that 
+had taken place thousands of miles away.{waitForClick}{clearText}{marker}{appendText}I covered my head with the blanket, 
+closed my eyes and tried to sleep.{waitForClick}{clearText}{marker}{appendText}I tried to search.{waitForClick}{clearText}{marker}{appendText}...For the world I should be in.{waitForClick}{clearText}{marker}{appendText}...For the place I should return to.{waitForClick}{clearText}{marker}{appendText}...And for myself.{waitForClick}{clearText}
+
+[00000de4]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000def]10: 
+[00000df0]01 53 59 36 41 00: jump SY6A
+[00000df6]00: 
+[00000df7]00: 

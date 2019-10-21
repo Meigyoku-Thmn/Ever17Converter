@@ -1,0 +1,288 @@
+﻿[00000016]10: 
+[00000017]46 80 00 00: setDialogBoxColor blue
+[0000001b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000026]fe 28 0a a4 b1 14 14 00 87 00 00: varop (28 0a a4) b1 := (00) 7
+[00000031]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
+[0000003c]fe 28 0a a4 fa 14 14 00 a0 66 00 00: setSceneTitleByIndex 102
+[00000048]10: 
+[00000049]0c 00 00 00 00 00 00 80 00 00 81 00 00: bgload 00000000 EV_SA12A 0 1
+[00000056]10: 
+[00000057]03 a0 13 00 00 a0 64 00 00: playBGM 19 100
+[00000060]00: 
+[00000061]28: l_unk28
+[00000062]10: 
+[00000063]19: showTextbox
+[00000064]ff 00 00: text 00
+{marker}{appendText}[Kid]
+"Sara!"{waitForClick}{clearText}{marker}{appendText}I swam up next to Sara.{waitForClick}{clearText}{marker}{sound SBD000}{appendText}[Sara]
+"Y-you're...alright..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Are you okay, Sara?"{waitForClick}{clearText}{marker}{sound SBD001}{appendText}[Sara]
+"Yeah...I'm alright."{waitForClick}{clearText}{marker}{appendText}She smiled weakly.{waitForClick}{clearText}{marker}{appendText}She was spent and unsteady on her feet.{waitForClick}{clearText}{marker}{sound SBD002}{appendText}[Sara]
+"Why...why did you come back?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I came back to get you of course!"{waitForClick}{clearText}{marker}{sound SBD003}{appendText}[Sara]
+"To get me...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sure. I promised, didn't I...?"{waitForClick}{clearText}
+
+[00000067]10: 
+[00000068]0c 00 00 00 00 01 00 80 00 00 82 00 00: bgload 00000000 EV_SA12C 0 2
+[00000075]10: 
+[00000076]19: showTextbox
+[00000077]ff 01 00: text 01
+{marker}{sound SBD004}{appendText}[Sara]
+"I see...you finally...came to get me..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh...I'm so sorry, Sara."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I...I know I made you wait such a 
+long time..."{waitForClick}{clearText}{marker}{sound SBD005}{appendText}[Sara]
+"No...it's alright."{waitForClick}{clearText}{marker}{sound SBD006}{appendText}[Sara]
+"I mean you came and everything..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara...why did you come back...?"{waitForClick}{clearText}
+
+[0000007a]10: 
+[0000007b]0c 00 00 00 00 02 00 80 00 00 82 00 00: bgload 00000000 EV_SA12A 0 2
+[00000088]10: 
+[00000089]19: showTextbox
+[0000008a]ff 02 00: text 02
+{marker}{sound SBD007}{appendText}[Sara]
+"Uh...to...um..."{waitForClick}{clearText}{marker}{sound SBD008}{appendText}[Sara]
+"To get...this..."{waitForClick}{clearText}{marker}{appendText}Saying that, Sara removed the fragment 
+that was embedded in my finger.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's..."{waitForClick}{clearText}{marker}{sound SBD009}{appendText}[Sara]
+"I forgot...this..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You came back...for that...?"{waitForClick}{clearText}{marker}{sound SBD010}{appendText}[Sara]
+"Because...this is proof of how you looked 
+after me..."{waitForClick}{clearText}{marker}{sound SBD011}{appendText}[Sara]
+"I felt like...if this disappeared...then my 
+connection to you...would be gone..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara..."{waitForClick}{clearText}{marker}{sound SBD012}{appendText}[Sara]
+"I'm sorry...I got you...involved in this 
+mess."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara, it's okay."{waitForClick}{clearText}{marker}{sound SBD013}{appendText}[Sara]
+"I'm so sorry..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's alright. I only came...to keep 
+my promise."{waitForClick}{clearText}{marker}{sound SBD014}{appendText}[Sara]
+"Th...thank you..."{waitForClick}{clearText}{marker}{appendText}I desperately tried to prop up Sara to keep 
+her from sinking. {waitForClick}{clearText}
+
+[0000008d]10: 
+[0000008e]0c 00 00 00 00 03 00 80 00 00 82 00 00: bgload 00000000 EV_SA12B 0 2
+[0000009b]10: 
+[0000009c]19: showTextbox
+[0000009d]ff 03 00: text 03
+{marker}{sound SBD015}{appendText}[Sara]
+"I'm sorry...I can't keep...up...anymore..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara, hold on!"{waitForClick}{clearText}{marker}{sound SBD016}{appendText}[Sara]
+"I'm sorry...so sorry..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara, hang on! Fight Sara!"{waitForClick}{clearText}{marker}{sound SBD017}{appendText}[Sara]
+"For...some reason...I'm dizzy..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara!"{waitForClick}{clearText}{marker}{appendText}I remembered that the air pressure here was 
+compressed to 4.5 atmospheres because of the 
+water pressure.{waitForClick}{clearText}{marker}{appendText}Sara had probably gotten oxygen poisoning from 
+breathing the oxygen-heavy air.{waitForClick}{clearText}{marker}{appendText}That compounded with the fatigue from treading 
+water in the cold seawater...{waitForClick}{clearText}{marker}{appendText}The combination had probably rapidly robbed 
+Sara of her strength.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara, hang in there!"{waitForClick}{clearText}{marker}{sound SBD018}{appendText}[Sara]
+"I...I'll...try"{waitForClick}{clearText}{marker}{sound SBD019}{appendText}[Sara]
+"But...my body...won't move anymore..."{waitForClick}{clearText}{marker}{appendText}I didn't know what to do.{waitForClick}{clearText}{marker}{appendText}And I'd finally found Sara.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Anyway, let's head for the emergency 
+corridor!"{waitForClick}{clearText}{marker}{appendText}Before the water hadn't flooded into the 
+emergency corridor.{waitForClick}{clearText}{marker}{appendText}If we could just get there...{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Listen, Sara!"{waitForClick}{clearText}{marker}{appendText}I grabbed the weakened Sara and tried to dive 
+under water.{waitForClick}{clearText}{marker}{appendText}It was then that it happened{waitForClick}{clearText}
+
+[000000a0]10: 
+[000000a1]18: hideTextbox
+[000000a2]10: 
+[000000a3]04: stopBGM
+[000000a4]10: 
+[000000a5]05 53 45 30 36 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE06_01 0 100
+[000000b5]10: 
+[000000b6]20 85 00 00: shakeScreen
+[000000ba]10: 
+[000000bb]05 53 45 30 36 5f 30 32 00 80 00 00 a0 64 00 00: playSFX SE06_02 0 100
+[000000cb]10: 
+[000000cc]19: showTextbox
+[000000cd]ff 04 00: text 04
+{marker}{appendText}Screeeeeeeeeeeeeeeech!{waitForClick}{clearText}{marker}{appendText}A metallic scream echoed through LeMU as a 
+shock wracked the structure.{waitForClick}{clearText}{marker}{appendText}At the same time, the flow of the water 
+increased dramatically.{waitForClick}{clearText}{marker}{appendText}The shock shook Sara loose from my grasp.{waitForClick}{clearText}{marker}{appendText}I hurriedly struggled to lift her up.{waitForClick}{clearText}{marker}{sound SBD020}{appendText}[Sara]
+"Cough...cough..."{waitForClick}{clearText}{marker}{sound SBD021}{appendText}[Sara]
+"Pant, pant, pant..."{waitForClick}{clearText}{marker}{appendText}It looked like she had swallowed some water.{waitForClick}{clearText}{marker}{appendText}Her breathing was labored...{waitForClick}{clearText}{marker}{appendText}What should I do...what could I do...?{waitForClick}{clearText}
+
+[000000d0]10: 
+[000000d1]05 53 45 30 36 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE06_01 0 100
+[000000e1]10: 
+[000000e2]20 85 00 00: shakeScreen
+[000000e6]10: 
+[000000e7]05 53 45 30 36 5f 30 32 00 80 00 00 a0 64 00 00: playSFX SE06_02 0 100
+[000000f7]10: 
+[000000f8]19: showTextbox
+[000000f9]ff 05 00: text 05
+{marker}{appendText}With a dull groan, LeMU tilted causing the 
+water to ripple.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hang on Sara! Just hang on!"{waitForClick}{clearText}{marker}{appendText}I called to Sara as I desperately floated in 
+the waves on the surface.{waitForClick}{clearText}{marker}{sound SBD022}{appendText}[Sara]
+"I'm sorry...so sorry."{waitForClick}{clearText}{marker}{sound SBD023}{appendText}[Sara]
+"My body...it won't move..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No! Sara! Hang on!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We've finally found each other!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara! Open your eyes! Sara!"{waitForClick}{clearText}
+
+[000000fc]10: 
+[000000fd]03 a0 15 00 00 a0 64 00 00: playBGM 21 100
+[00000106]10: 
+[00000107]0c 00 00 00 00 04 00 80 00 00 82 00 00: bgload 00000000 EV_SA12C 0 2
+[00000114]10: 
+[00000115]19: showTextbox
+[00000116]ff 06 00: text 06
+{marker}{sound SBD024}{appendText}[Sara]
+"Brother..."{waitForClick}{clearText}{marker}{sound SBD025}{appendText}[Sara]
+"Thanks for...coming back...thank you..."{waitForClick}{clearText}{marker}{appendText}Sara's body went limp.{waitForClick}{clearText}{marker}{appendText}I swore inside my mind.{waitForClick}{clearText}{marker}{appendText}Why, why, why?{waitForClick}{clearText}{marker}{appendText}I wondered if there was no way that I could 
+save Sara?{waitForClick}{clearText}{marker}{appendText}I took a big breath and, holding Sara, dove 
+under water.{waitForClick}{clearText}
+
+[00000119]10: 
+[0000011a]0d 80 00 00 80 00 00 81 00 00: removeBG 0 0 1
+[00000124]10: 
+[00000125]19: showTextbox
+[00000126]ff 07 00: text 07
+{marker}{appendText}I meant to get us out of LeMU.{waitForClick}{clearText}{marker}{appendText}If I let us stick around, we would have been 
+crushed.{waitForClick}{clearText}{marker}{appendText}The irregular shocks continued and the sounds 
+of metal on metal echoed harshly.{waitForClick}{clearText}{marker}{appendText}LeMU was already mostly filled with water.{waitForClick}{clearText}{marker}{appendText}I ducked into a crack running down the wall 
+that was just big enough and slipped outside. {waitForClick}{clearText}
+
+[00000129]10: 
+[0000012a]0c 00 00 00 00 05 00 80 00 00 82 00 00: bgload 00000000 EV_SA13D 0 2
+[00000137]10: 
+[00000138]19: showTextbox
+[00000139]ff 08 00: text 08
+{marker}{appendText}There the sprawling darkness of the ocean 
+surrounded me.{waitForClick}{clearText}{marker}{appendText}My only hope was the light piercing through 
+the water from above.{waitForClick}{clearText}{marker}{appendText}Clutching Sara, I swam toward it.{waitForClick}{clearText}{marker}{appendText}But swimming with my injured arm and holding a 
+limp Sara was nearly impossible.{waitForClick}{clearText}{marker}{appendText}The water pressure constricted my chest, 
+forcing out my air.{waitForClick}{clearText}{marker}{appendText}But I kept swimming.{waitForClick}{clearText}{marker}{appendText}My body was screaming for air.{waitForClick}{clearText}
+
+[0000013c]fe 28 0a a2 41 14 14 00 8d 00 00: varop (28 0a a2) 41 := (00) 13
+[00000147]fe 28 0a a2 42 14 14 00 87 00 00: varop (28 0a a2) 42 := (00) 7
+[00000152]fe 28 0a a2 50 14 14 00 e0 f0 f0 f0 00 00 00: varop (28 0a a2) 50 := (00) rgb(240,240,240)
+[00000161]10: 
+[00000162]20 a0 2d 00 00: showDimInAndOutAnim
+[00000167]10: 
+[00000168]19: showTextbox
+[00000169]ff 09 00: text 09
+{marker}{appendText}My eyes clouded. Flashes of white light darted 
+across my vision...{waitForClick}{clearText}
+
+[0000016c]10: 
+[0000016d]18: hideTextbox
+[0000016e]10: 
+[0000016f]1e a0 3c 00 00: delay 60
+[00000174]10: 
+[00000175]45 a0 18 00 00 81 00 00: monoColorOverlay 24 1
+[0000017d]10: 
+[0000017e]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[00000182]10: 
+[00000183]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[0000018d]10: 
+[0000018e]18: hideTextbox
+[0000018f]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[0000019a]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000001a4]27 00 00: fadeOutMonoColorOverlay
+[000001a7]00: 
+[000001a8]05 a0 12 00 00: unSkippableDelay 18
+[000001ad]10: 
+[000001ae]19: showTextbox
+[000001af]ff 0a 00: text 0a
+{marker}{appendText}{delay 0}       {nextPage x2}It was no good. I couldn't see...{nextPage x2}{delay 60}
+{appendText}{delay 0}    {nextPage x2}I wasn't sure if I were heading upward.{nextPage x2}{delay 60}
+{appendText}{delay 0}            {nextPage x2}Or maybe downward...{nextPage x2}{delay 60}
+{appendText}{delay 0}{nextPage x2}In my right arm, Sara felt cold, nearly frozen.{nextPage x2}{delay 60}
+{appendText}{delay 0}         {nextPage x2}I didn't think I'd make it...{nextPage x2}{delay 60}
+{appendText}{delay 0}           {nextPage x2}My arms refused to move...{nextPage x2}{delay 60}
+{appendText}{delay 0}                 {nextPage x2}And my legs...{nextPage x2}{delay 60}
+{appendText}{delay 0}               {nextPage x2}I took Sara and...{nextPage x2}{delay 60}{nextPage x2}
+
+[000001b2]10: 
+[000001b3]18: hideTextbox
+[000001b4]10: 
+[000001b5]19: showTextbox
+[000001b6]ff 0b 00: text 0b
+{marker}{appendText}{delay 0}                     {nextPage x2}*GULP*{nextPage x2}{delay 60}
+{appendText}{delay 0}           {nextPage x2}I couldn't take anymore...{nextPage x2}{delay 60}
+{appendText}{delay 0}              {nextPage x2}I swallowed water...{nextPage x2}{delay 60}
+{appendText}{delay 0}                 {nextPage x2}*GULP* *COUGH*{nextPage x2}{delay 60}
+{appendText}{delay 0}        {nextPage x2}My consciousness was slipping...{nextPage x2}{delay 60}
+{appendText}{delay 0}            {nextPage x2}My body had no power...{nextPage x2}{delay 60}{nextPage x2}
+
+[000001b9]10: 
+[000001ba]18: hideTextbox
+[000001bb]10: 
+[000001bc]19: showTextbox
+[000001bd]ff 0c 00: text 0c
+{marker}{appendText}
+
+
+
+{appendText}{delay 0}                    {nextPage x2}{bigChar}{clearText}Sara...{nextPage x2}{delay 99}{nextPage x2}
+
+[000001c0]10: 
+[000001c1]18: hideTextbox
+[000001c2]10: 
+[000001c3]19: showTextbox
+[000001c4]ff 0d 00: text 0d
+{marker}{appendText}{delay 0}               {nextPage x2}I'm sorry Sara...{nextPage x2}{delay 60}
+{appendText}{delay 0}           {nextPage x2}I...just couldn't quite...{nextPage x2}{delay 60}
+{appendText}{delay 0}            {nextPage x2}...seem to save Sara...{nextPage x2}{delay 60}{nextPage x2}
+
+[000001c7]10: 
+[000001c8]18: hideTextbox
+[000001c9]10: 
+[000001ca]19: showTextbox
+[000001cb]ff 0e 00: text 0e
+{marker}{appendText}
+
+
+
+{appendText}{delay 0}                    {nextPage x2}{bigChar}{clearText}Sara...{nextPage x2}{delay 90}{delay 60}{nextPage x2}
+
+[000001ce]10: 
+[000001cf]18: hideTextbox
+[000001d0]10: 
+[000001d1]19: showTextbox
+[000001d2]ff 0f 00: text 0f
+{marker}{appendText}
+
+
+
+{appendText}{delay 0}           {nextPage x2}The darkness enveloped me, 
+{appendText}{delay 0}       stealing away my consciousness...{nextPage x2}{delay 90}{delay 90}{nextPage x2}
+
+[000001d5]10: 
+[000001d6]18: hideTextbox
+[000001d7]10: 
+[000001d8]18: hideTextbox
+[000001d9]10: 
+[000001da]1e a0 3c 00 00: delay 60
+[000001df]10: 
+[000001e0]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[000001e8]10: 
+[000001e9]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000001f3]10: 
+[000001f4]18: hideTextbox
+[000001f5]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000200]10: 
+[00000201]04: stopBGM
+[00000202]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000020c]27 00 00: fadeOutMonoColorOverlay
+[0000020f]00: 
+[00000210]05 83 00 00: unSkippableDelay 3
+[00000214]10: 
+[00000215]1e a0 78 00 00: delay 120
+[0000021a]fe 28 0a a4 18 14 14 00 81 00 00: varop (28 0a a4) 18 := (00) 1
+[00000225]fe 28 0a a4 1b 14 14 00 81 00 00: varop (28 0a a4) 1b := (00) 1
+[00000230]fe 28 0a a4 c7 14 14 00 86 00 00: varop (28 0a a4) c7 := (00) 6
+[0000023b]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000246]10: 
+[00000247]01 59 5f 45 44 00: jump Y_ED
+[0000024d]00: 
+[0000024e]00: 
+[0000024f]00: 

@@ -1,0 +1,466 @@
+﻿[0000001a]10: 
+[0000001b]46 80 00 00: setDialogBoxColor blue
+[0000001f]fe 28 0a a4 b0 14 14 00 80 00 00: varop (28 0a a4) b0 := (00) 0
+[0000002a]fe 28 0a a4 b1 14 14 00 80 00 00: varop (28 0a a4) b1 := (00) 0
+[00000035]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
+[00000040]10: 
+[00000041]1e a0 f0 00 00: delay 240
+[00000046]10: 
+[00000047]45 a0 18 00 00 81 00 00: monoColorOverlay 24 1
+[0000004f]10: 
+[00000050]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[0000005a]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000064]27 00 00: fadeOutMonoColorOverlay
+[00000067]00: 
+[00000068]05 83 00 00: unSkippableDelay 3
+[0000006c]fe 28 0a a4 fa 14 14 00 a0 5b 00 00: setSceneTitleByIndex 91
+[00000078]00: 
+[00000079]28: l_unk28
+[0000007a]10: 
+[0000007b]19: showTextbox
+[0000007c]ff 00 00: text 00
+{marker}{appendText}Two years later...{waitForClick}{clearText}
+
+[0000007f]10: 
+[00000080]18: hideTextbox
+[00000081]10: 
+[00000082]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[00000089]10: 
+[0000008a]05 53 45 31 30 5f 32 36 00 81 00 00 a0 64 00 00: playSFX SE10_26 1 100
+[0000009a]10: 
+[0000009b]07: waitForSFX
+[0000009c]10: 
+[0000009d]05 53 45 30 39 5f 30 31 4c 00 80 00 00 a0 64 00 00: playSFX SE09_01L 0 100
+[000000ae]fe 28 0a a2 38 14 14 00 80 00 00: setKomoreType 0
+[000000b9]10: 
+[000000ba]20 a0 1b 00 00: showKomoreAnim
+[000000bf]10: 
+[000000c0]0c 00 00 00 00 00 00 86 00 00 82 00 00: bgload 00000000 EV_YU11A 6 2
+[000000cd]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000000d7]27 00 00: fadeOutMonoColorOverlay
+[000000da]00: 
+[000000db]05 a0 12 00 00: unSkippableDelay 18
+[000000e0]10: 
+[000000e1]19: showTextbox
+[000000e2]ff 01 00: text 01
+{marker}{sound YEP000}{appendText}[You]
+"Wow, this is great weather"{waitForClick}{clearText}{marker}{appendText}You and I were riding on a boat.{waitForClick}{clearText}{marker}{appendText}The infinitely deep, blue ocean spread as far 
+as we could see.{waitForClick}{clearText}{marker}{appendText}A clear blue sky unfolded above us.{waitForClick}{clearText}{marker}{appendText}There was a pair of seagulls flying overhead.{waitForClick}{clearText}{marker}{appendText}The sea breeze whipped at us little strongly, 
+and You used her hand to hold her hair in 
+check.{waitForClick}{clearText}{marker}{appendText}She had recently started to grow her hair out.{waitForClick}{clearText}{marker}{appendText}Somehow it seemed that she might have been 
+starting to look like her mom 'her.'{waitForClick}{clearText}{marker}{appendText}That and...she seemed to have become a bit 
+more easygoing and ladylike...{waitForClick}{clearText}{marker}{sound YEP001}{appendText}[You]
+"So how is college going?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's alright I guess."{waitForClick}{clearText}{marker}{appendText}Yes. I had somehow gotten into college and 
+was in my first year.{waitForClick}{clearText}{marker}{appendText}Of course, I was going to a different school 
+than You, so we never had a chance to meet 
+on campus.{waitForClick}{clearText}{marker}{sound YEP002}{appendText}[You]
+"Why on earth did you decide to major in 
+archaeology?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You really want to know?"{waitForClick}{clearText}{marker}{sound YEP003}{appendText}[You]
+"That's why I'm asking."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You know, it might be better if you didn't 
+ask."{waitForClick}{clearText}{marker}{sound YEP004}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You still sure you want to know?"{waitForClick}{clearText}{marker}{sound YEP005}{appendText}[You]
+"W-well..."{waitForClick}{clearText}{marker}{sound YEP006}{appendText}[You]
+"Then I won't ask."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Alright. I won't tell."{waitForClick}{clearText}{marker}{sound YEP007}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{sound YEP008}{appendText}[You]
+"Why? Tell me!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But...you just said you weren't going to ask."{waitForClick}{clearText}{marker}{sound YEP009}{appendText}[You]
+"That's because you said I probably 
+shouldn't..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This is too confusing..."{waitForClick}{clearText}{marker}{sound YEP010}{appendText}[You]
+"You're the one who made this conversation 
+confusing."{waitForClick}{clearText}{marker}{sound YEP011}{appendText}[You]
+"Anyway, I guess I'll listen to your 
+reasoning."{waitForClick}{clearText}{marker}{appendText}There she went changing her mind again.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You can really be twisted sometimes."{waitForClick}{clearText}{marker}{sound YEP012}{appendText}[You]
+"Come on, say I'm pure at heart!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What are you talking about? If you were, 
+then I'd be..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound YEP013}{appendText}[You]
+"Huh? You would be...what? Then you'd be 'the 
+pure-hearted Kid?'"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey...stop it."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm not like I used to be..."{waitForClick}{clearText}{marker}{appendText}But after that, I was reluctant to speak.{waitForClick}{clearText}{marker}{appendText}I wondered if I really was different from the 
+person I was at that time.{waitForClick}{clearText}{marker}{appendText}...Probably I was.{waitForClick}{clearText}{marker}{appendText}Since then, no inexplicable, mysterious 
+things had happened to me.{waitForClick}{clearText}{marker}{appendText}I couldn't predict things any more.{waitForClick}{clearText}{marker}{appendText}I had gotten my memory back.{waitForClick}{clearText}{marker}{appendText}...Or maybe, maybe I was the same.{waitForClick}{clearText}{marker}{appendText}Maybe I was the same as ever.{waitForClick}{clearText}{marker}{appendText}I knew that people learned, got hurt, and lost 
+things... and that they change as they 
+live life.{waitForClick}{clearText}{marker}{appendText}But my basic nature hadn't changed.{waitForClick}{clearText}{marker}{appendText}Some things change. Some things never did.{waitForClick}{clearText}{marker}{appendText}I was still 'me'...but myself in the past was 
+different...{waitForClick}{clearText}{marker}{appendText}If I had to explain it, I might say that it 
+was like 'me in another world....'{waitForClick}{clearText}{marker}{appendText}Maybe that was it.{waitForClick}{clearText}{marker}{sound YEP014}{appendText}[You]
+"You're right. You are not like you used 
+to be."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"?"{waitForClick}{clearText}{marker}{sound YEP015}{appendText}[You]
+"Well, for one thing you got so tall." {waitForClick}{clearText}{marker}{appendText}She stood on her tiptoes and raised her 
+hand over my head.{waitForClick}{clearText}{marker}{appendText}I had grown a head taller over the two years.{waitForClick}{clearText}{marker}{sound YEP016}{appendText}[You]
+"So, are you going to tell me or not?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}{marker}{sound YEP017}{appendText}[You]
+"About the reason you majored in archaeology."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Alright...it's because..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I want to know myself better."{waitForClick}{clearText}{marker}{sound YEP018}{appendText}[You]
+"To know yourself?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"To know more about myself at that time..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"At that time, I thought that it would be best 
+to major in archaeology, the same as you, 
+to better understand the weird stuff that 
+was happening to me."{waitForClick}{clearText}{marker}{sound YEP019}{appendText}[You]
+"You're not going to..."{waitForClick}{clearText}{marker}{sound YEP020}{appendText}[You]
+"Study the third eye?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I sure am."{waitForClick}{clearText}{marker}{appendText}[You]
+"............"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I told you..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It was probably better that you don't ask."{waitForClick}{clearText}{marker}{sound YEP021}{appendText}[You]
+"You haven't changed...a bit, I mean..."{waitForClick}{clearText}{marker}{sound YEP022}{appendText}[You]
+"Nope...you haven't changed at all."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...You, neither."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That reminds me. Your clothes are..."{waitForClick}{clearText}{marker}{sound YEP023}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The same ones you wore then, right?"{waitForClick}{clearText}{marker}{sound YEP024}{appendText}[You]
+"Yeah...right."{waitForClick}{clearText}{marker}{appendText}There was a thin black stain on hem of her 
+jacket that had remained.{waitForClick}{clearText}{marker}{appendText}It was a memorable stain.{waitForClick}{clearText}{marker}{appendText}Our memory....{waitForClick}{clearText}{marker}{appendText}I started to think as I gazed at the ocean.{waitForClick}{clearText}{marker}{appendText}I thought about the time when I met You.{waitForClick}{clearText}{marker}{appendText}About those unforgettable seven days...{waitForClick}{clearText}{marker}{appendText}But I should talk about the things that 
+happened after that.{waitForClick}{clearText}{marker}{appendText}After that...{waitForClick}{clearText}
+
+[000000e5]10: 
+[000000e6]18: hideTextbox
+[000000e7]10: 
+[000000e8]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[000000ef]10: 
+[000000f0]21 87 00 00: closeKomoreAnim
+[000000f4]10: 
+[000000f5]06: stopSFX
+[000000f6]10: 
+[000000f7]0c 00 00 00 00 01 00 86 00 00 82 00 00: bgload 00000000 BG38A2 6 2
+[00000104]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000010e]27 00 00: fadeOutMonoColorOverlay
+[00000111]00: 
+[00000112]05 a0 12 00 00: unSkippableDelay 18
+[00000117]10: 
+[00000118]1e a0 3c 00 00: delay 60
+[0000011d]10: 
+[0000011e]0c 00 00 00 00 02 00 80 00 00 81 00 00: bgload 00000000 BG39A2 0 1
+[0000012b]10: 
+[0000012c]19: showTextbox
+[0000012d]ff 02 00: text 02
+{marker}{appendText}For some time, we just stood there enjoying 
+the sunshine on the floating island.{waitForClick}{clearText}{marker}{appendText}The sun looked extremely bright after a week 
+without it. Its rays were warm.{waitForClick}{clearText}{marker}{appendText}At that moment...{waitForClick}{clearText}{marker}{appendText}Someone patted me on the shoulder.{waitForClick}{clearText}{marker}{appendText}I turned back and...{waitForClick}{clearText}{marker}{appendText}There was...{waitForClick}{clearText}
+
+[00000130]10: 
+[00000131]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO02ADL 320 3
+[00000142]10: 
+[00000143]19: showTextbox
+[00000144]ff 03 00: text 03
+{marker}{sound YEP025}{appendText}[Sora]
+"Good morning."{waitForClick}{clearText}
+
+[00000147]10: 
+[00000148]03 88 00 00 a0 64 00 00: playBGM 8 100
+[00000150]10: 
+[00000151]19: showTextbox
+[00000152]ff 04 00: text 04
+{marker}{appendText}[Kid]
+"...So-So-So-Sora!?"{waitForClick}{clearText}{marker}{sound YEP026}{appendText}[Sora]
+"I promised you that I would see you again 
+soon, didn't I?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Bu-but...why are you here?"{waitForClick}{clearText}
+
+[00000155]10: 
+[00000156]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADL 320 3
+[00000167]10: 
+[00000168]19: showTextbox
+[00000169]ff 05 00: text 05
+{marker}{sound YEP027}{appendText}[Sora]
+"Am I bothering you?"{waitForClick}{clearText}{marker}{sound YEP028}{appendText}[You]
+"No, not all! I'm glad to see you again."{waitForClick}{clearText}
+
+[0000016c]10: 
+[0000016d]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO08ADL 320 3
+[0000017e]10: 
+[0000017f]19: showTextbox
+[00000180]ff 06 00: text 06
+{marker}{appendText}Hearing that, Sora smiled gently.{waitForClick}{clearText}{marker}{appendText}I exchanged a handshake with Sora when 
+I met her again.{waitForClick}{clearText}
+
+[00000183]10: 
+[00000184]0c 00 00 00 00 06 00 80 00 00 82 00 00: bgload 00000000 IMG05A 0 2
+[00000191]10: 
+[00000192]19: showTextbox
+[00000193]ff 07 00: text 07
+{marker}{appendText}I looked up at the sky above.{waitForClick}{clearText}{marker}{appendText}The clear blue sky seemed to spread on forever.{waitForClick}{clearText}{marker}{sound YEP029}{appendText}[Sora]
+"Dr. Tanaka is waiting for you."{waitForClick}{clearText}{marker}{sound YEP030}{appendText}[Sora]
+"Please come over here..."{waitForClick}{clearText}
+
+[00000196]10: 
+[00000197]18: hideTextbox
+[00000198]10: 
+[00000199]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[000001a0]10: 
+[000001a1]04: stopBGM
+[000001a2]10: 
+[000001a3]0c 00 00 00 00 07 00 86 00 00 82 00 00: bgload 00000000 EV_YU14A 6 2
+[000001b0]fe 28 0a a2 38 14 14 00 81 00 00: setKomoreType 1
+[000001bb]10: 
+[000001bc]20 a0 1b 00 00: showKomoreAnim
+[000001c1]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000001cb]27 00 00: fadeOutMonoColorOverlay
+[000001ce]00: 
+[000001cf]05 a0 12 00 00: unSkippableDelay 18
+[000001d4]10: 
+[000001d5]19: showTextbox
+[000001d6]ff 08 00: text 08
+{marker}{appendText}[Kid]
+"Oh, you are..."{waitForClick}{clearText}{marker}{appendText}The person called Dr. Tanaka that appeared in 
+front of us was the woman I'd seen on the 
+monitor...{waitForClick}{clearText}{marker}{appendText}It was the person who had claimed to be 
+You's mother.{waitForClick}{clearText}{marker}{sound YEP031}{appendText}[You]
+"M...mother..."{waitForClick}{clearText}{marker}{sound YEP032}{appendText}[Dr. Tanaka]
+"You...I'm so happy you're alive..."{waitForClick}{clearText}{marker}{sound YEP033}{appendText}[You]
+"Why are you...?"{waitForClick}{clearText}{marker}{sound YEP034}{appendText}[Dr. Tanaka]
+"I promised that I would tell you everything 
+when you got to the floating island, right?"{waitForClick}{clearText}{marker}{appendText}[You]
+"..............."{waitForClick}{clearText}{marker}{sound YEP035}{appendText}[Dr. Tanaka]
+"It's been a long time..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}{marker}{appendText}I wondered if she were talking to me.{waitForClick}{clearText}{marker}{appendText}It seemed like it was the first time that 
+I'd met her...{waitForClick}{clearText}{marker}{appendText}Or had I met her in the past...?{waitForClick}{clearText}{marker}{sound YEP036}{appendText}[Dr. Tanaka]
+"What's wrong? Is there something that 
+you would like to ask?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Y-yes! I have tons of things I want to ask."{waitForClick}{clearText}{marker}{sound YEP037}{appendText}[Dr. Tanaka]
+"Fine. Don't worry, I'll tell you everything."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"All right, then.... F-first I want to..."{waitForClick}{clearText}{marker}{sound YEP038}{appendText}[You]
+"Hold on!"{waitForClick}{clearText}{marker}{sound YEP039}{appendText}[You]
+"Wait just a minute..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...You?"{waitForClick}{clearText}{marker}{sound YEP040}{appendText}[You]
+"First, there is something I have to ask."{waitForClick}{clearText}{marker}{sound YEP041}{appendText}[You]
+"Is that alright?"{waitForClick}{clearText}{marker}{sound YEP042}{appendText}[Dr. Tanaka]
+"Go ahead."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{sound YEP043}{appendText}[You]
+"You said...that you're not my real mother."{waitForClick}{clearText}{marker}{sound YEP044}{appendText}[You]
+"You also said that I was your child."{waitForClick}{clearText}{marker}{appendText}[Dr. Tanaka]
+"........."{waitForClick}{clearText}{marker}{sound YEP045}{appendText}[You]
+"There is only one thing I want to ask."{waitForClick}{clearText}{marker}{sound YEP046}{appendText}[You]
+"Are you...my real 'mother'?"{waitForClick}{clearText}
+
+[000001d9]10: 
+[000001da]0c 00 00 00 00 08 00 80 00 00 82 00 00: bgload 00000000 EV_YU14B 0 2
+[000001e7]10: 
+[000001e8]19: showTextbox
+[000001e9]ff 09 00: text 09
+{marker}{appendText}[Dr. Tanaka]
+"..............."{waitForClick}{clearText}{marker}{appendText}Dr. Tanaka looked down.{waitForClick}{clearText}{marker}{appendText}She twisted her lips sadly.{waitForClick}{clearText}{marker}{sound YEP047}{appendText}[You]
+"Which is it?"{waitForClick}{clearText}{marker}{appendText}I wonder why You would ask such a thing.{waitForClick}{clearText}{marker}{appendText}She should've already known the answer...{waitForClick}{clearText}{marker}{sound YEP048}{appendText}[Dr. Tanaka]
+"...I am You..."{waitForClick}{clearText}{marker}{sound YEP049}{appendText}[You]
+"...What?"{waitForClick}{clearText}
+
+[000001ec]10: 
+[000001ed]0c 00 00 00 00 09 00 80 00 00 82 00 00: bgload 00000000 EV_YU14A 0 2
+[000001fa]10: 
+[000001fb]19: showTextbox
+[000001fc]ff 0a 00: text 0a
+{marker}{sound YEP050}{appendText}[Dr. Tanaka]
+"I can say this for certain now..."{waitForClick}{clearText}{marker}{sound YEP051}{appendText}[Dr. Tanaka]
+"I am...your..."{waitForClick}{clearText}{marker}{sound YEP052}{appendText}[Dr. Tanaka]
+"''Mother'.... You..."{waitForClick}{clearText}{marker}{appendText}She stared You in the eye as she said this. {waitForClick}{clearText}{marker}{sound YEP053}{appendText}[You]
+"...Mother..."{waitForClick}{clearText}{marker}{appendText}".................."{waitForClick}{clearText}
+
+[000001ff]10: 
+[00000200]18: hideTextbox
+[00000201]10: 
+[00000202]20 a0 2c 00 00: showDimOverlay
+[00000207]10: 
+[00000208]18: hideTextbox
+[00000209]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000214]10: 
+[00000215]19: showTextbox
+[00000216]ff 0b 00: text 0b
+{marker}{appendText}After a while, we asked Dr. Tanaka question 
+after question.{waitForClick}{nextPage x2}
+
+[00000219]10: 
+[0000021a]18: hideTextbox
+[0000021b]10: 
+[0000021c]19: showTextbox
+[0000021d]ff 0c 00: text 0c
+{marker}{appendText}...How did we get trapped?{waitForClick}
+{appendText}...Was it an accident or not?{waitForClick}
+{appendText}...Why could I predict things?{waitForClick}
+{appendText}...Why did I lose my memory?{waitForClick}
+{appendText}...What had happened in my past?{waitForClick}
+{appendText}...Did the girl I'd seen really exist? 
+Who was she?{waitForClick}
+{appendText}...What had happened in You's past?{waitForClick}{nextPage x2}
+
+[00000220]10: 
+[00000221]18: hideTextbox
+[00000222]10: 
+[00000223]19: showTextbox
+[00000224]ff 0d 00: text 0d
+{marker}{appendText}...Did You's father and mother really die?{waitForClick}
+{appendText}...If so, then who was she, 
+this...'Dr. Tanaka?'{waitForClick}
+{appendText}...What was the meaning of the Haiku 
+poem password?{waitForClick}
+{appendText}...What was Blick Winkel?{waitForClick}
+{appendText}...What was the connection between the 
+TB virus and the accident?{waitForClick}
+{appendText}And...{waitForClick}{nextPage x2}
+
+[00000227]10: 
+[00000228]18: hideTextbox
+[00000229]10: 
+[0000022a]19: showTextbox
+[0000022b]ff 0e 00: text 0e
+{marker}{appendText}What was 'the third eye?'{waitForClick}
+{appendText}...............{waitForClick}
+{appendText}.........{waitForClick}
+{appendText}......{waitForClick}{nextPage x2}
+
+[0000022e]10: 
+[0000022f]18: hideTextbox
+[00000230]10: 
+[00000231]19: showTextbox
+[00000232]ff 0f 00: text 0f
+{marker}{appendText}
+
+
+
+{appendText}{delay 0}           It was a long, long story.{waitForClick}{nextPage x2}
+
+[00000235]10: 
+[00000236]18: hideTextbox
+[00000237]10: 
+[00000238]45 a0 18 00 00 81 00 00: monoColorOverlay 24 1
+[00000240]10: 
+[00000241]21 87 00 00: closeKomoreAnim
+[00000245]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000250]10: 
+[00000251]21 a0 10 00 00: closeDimOverlay
+[00000256]10: 
+[00000257]04: stopBGM
+[00000258]10: 
+[00000259]1e a0 78 00 00: delay 120
+[0000025e]10: 
+[0000025f]05 53 45 30 39 5f 30 31 4c 00 80 00 00 a0 64 00 00: playSFX SE09_01L 0 100
+[00000270]10: 
+[00000271]0c 00 00 00 00 0a 00 86 00 00 82 00 00: bgload 00000000 EV_YU11A 6 2
+[0000027e]fe 28 0a a2 38 14 14 00 80 00 00: setKomoreType 0
+[00000289]10: 
+[0000028a]20 a0 1b 00 00: showKomoreAnim
+[0000028f]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000299]27 00 00: fadeOutMonoColorOverlay
+[0000029c]00: 
+[0000029d]05 a0 19 00 00: unSkippableDelay 25
+[000002a2]10: 
+[000002a3]18: hideTextbox
+[000002a4]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[000002af]10: 
+[000002b0]19: showTextbox
+[000002b1]ff 10 00: text 10
+{marker}{sound YEP054}{appendText}[You]
+"You're thinking about the things that 
+happened then, aren't you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Huh? Yeah..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, You?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Do you know the proverb 'Water flows and 
+people live'?"{waitForClick}{clearText}{marker}{sound YEP055}{appendText}[You]
+"?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Water flows from high to lower places..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But the flow, its path has an infinite 
+number of possibilities."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"People live...means that like the water, 
+there are infinite ways for life to flow."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's what it means."{waitForClick}{clearText}{marker}{sound YEP056}{appendText}[You]
+"Hmmmm."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"If life has infinite possibilities, there 
+might be another me somewhere who has a 
+different history from me in the present."{waitForClick}{clearText}{marker}{sound YEP057}{appendText}[You]
+"Somewhere?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah, say, beyond this broad sky..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Beyond this limitless universe..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"There should be another universe..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Another me in another universe..."{waitForClick}{clearText}{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I was thinking about that other me."{waitForClick}{clearText}{marker}{sound YEP058}{appendText}[You]
+"Another universe, huh?"{waitForClick}{clearText}{marker}{sound YEP059}{appendText}[You]
+"Hey, if there is another universe like 
+you say..."{waitForClick}{clearText}{marker}{sound YEP060}{appendText}[You]
+"Is there another pair of us in the that other 
+world dating like us now?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sure there is."{waitForClick}{clearText}{marker}{sound YEP061}{appendText}[You]
+"How can you tell?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I can tell because I can."{waitForClick}{clearText}{marker}{sound YEP062}{appendText}[You]
+"???"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You see, if I do this..."{waitForClick}{clearText}
+
+[000002b4]10: 
+[000002b5]18: hideTextbox
+[000002b6]10: 
+[000002b7]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[000002be]10: 
+[000002bf]21 87 00 00: closeKomoreAnim
+[000002c3]10: 
+[000002c4]0c 00 00 00 00 0b 00 86 00 00 82 00 00: bgload 00000000 EV_YU12A 6 2
+[000002d1]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000002db]27 00 00: fadeOutMonoColorOverlay
+[000002de]00: 
+[000002df]05 a0 12 00 00: unSkippableDelay 18
+[000002e4]10: 
+[000002e5]19: showTextbox
+[000002e6]ff 11 00: text 11
+{marker}{appendText}I drew You close and kissed her. {waitForClick}{clearText}{marker}{appendText}We were surrounded by the spring sun, clouds 
+floating in the sky, the rippling ocean and 
+the song of seagulls.{waitForClick}{clearText}{marker}{appendText}I felt everything about You through her skin.{waitForClick}{clearText}{marker}{appendText}Her warmth, her scent, her touch, heartbeat 
+and even the color of her heart.{waitForClick}{clearText}{marker}{appendText}I could see through You completely then.{waitForClick}{clearText}{marker}{appendText}It was exactly...the third eye.{waitForClick}{clearText}{marker}{appendText}Ultimate wisdom.{waitForClick}{clearText}{marker}{appendText}Yes, if I do this...{waitForClick}{clearText}
+
+[000002e9]10: 
+[000002ea]0c 00 00 00 00 0c 00 80 00 00 82 00 00: bgload 00000000 EV_YU12B 0 2
+[000002f7]10: 
+[000002f8]18: hideTextbox
+[000002f9]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000304]10: 
+[00000305]19: showTextbox
+[00000306]ff 12 00: text 12
+{marker}{appendText}
+
+
+
+{appendText}{delay 0}         Then we could transcend time.{delay 90}
+
+[00000309]10: 
+[0000030a]1e a0 78 00 00: delay 120
+[0000030f]10: 
+[00000310]45 a0 24 00 00 80 00 00: monoColorOverlay 36 0
+[00000318]10: 
+[00000319]19: showTextbox
+[0000031a]ff 13 00: text 13
+{marker}{appendText}{nextPage x2}
+
+[0000031d]10: 
+[0000031e]18: hideTextbox
+[0000031f]10: 
+[00000320]06: stopSFX
+[00000321]10: 
+[00000322]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[0000032c]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000336]27 00 00: fadeOutMonoColorOverlay
+[00000339]00: 
+[0000033a]05 83 00 00: unSkippableDelay 3
+[0000033e]fe 28 0a a4 14 14 14 00 81 00 00: varop (28 0a a4) 14 := (00) 1
+[00000349]10: 
+[0000034a]37 00 00 00 00 0d 00: unlockCG POST08
+[00000351]10: 
+[00000352]37 00 00 00 00 0e 00: unlockCG POST13
+[00000359]fe 28 0a a4 25 14 14 00 81 00 00: varop (28 0a a4) 25 := (00) 1
+[00000364]00: 
+[00000365]0a 01 28 0a a4 17 14 0c 01 80 01 00 01 00: gotoif 1 (28 0a a4) 17 == (01) 0 (0001) -> 00000381 (00000001)
+[00000373]10: 
+[00000374]24 a0 31 00 00: scriptLocationId 49
+[00000379]10: 
+[0000037a]37 00 00 00 00 0f 00: unlockCG POST02
+[00000381]fe 28 0a a4 b3 14 14 00 81 00 00: varop (28 0a a4) b3 := (00) 1
+[0000038c]10: 
+[0000038d]01 59 5f 45 44 00: jump Y_ED
+[00000393]00: 

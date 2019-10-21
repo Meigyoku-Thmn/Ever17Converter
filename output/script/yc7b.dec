@@ -1,0 +1,1910 @@
+﻿[0000001e]10: 
+[0000001f]18: hideTextbox
+[00000020]10: 
+[00000021]03 8b 00 00 a0 64 00 00: playBGM 11 100
+[00000029]10: 
+[0000002a]0c 00 00 00 00 00 00 80 00 00 82 00 00: bgload 00000000 EV_CO08A 0 2
+[00000037]10: 
+[00000038]19: showTextbox
+[00000039]ff 00 00: text 00
+{marker}{appendText}Kicking up his feet, Takeshi screamed to the 
+void. {waitForClick}{clearText}{marker}{sound C7A261}{appendText}[Takeshi]
+"Hey, what am I supposed to do...? "{waitForClick}{clearText}{marker}{sound C7A262}{appendText}[Kid]
+"Can't you escape by swimming through the 
+pool?"{waitForClick}{clearText}{marker}{appendText}Hokuto answered.{waitForClick}{clearText}{marker}{sound C7A263}{appendText}[Takeshi]
+"Idiot!"{waitForClick}{clearText}{marker}{sound C7A264}{appendText}[Takeshi]
+"It's 357 feet under the water down here!"{waitForClick}{clearText}{marker}{sound C7A265}{appendText}[Takeshi]
+"Coco and I won't be able to hold our breath 
+that long."{waitForClick}{clearText}{marker}{sound C7A266}{appendText}[Takeshi]
+"Besides, in order to surface, we have to 
+decompress slowly as we go up."{waitForClick}{clearText}{marker}{sound C7A267}{appendText}[Takeshi]
+"It's 12.5 atmospheres down here."{waitForClick}{clearText}{marker}{sound C7A268}{appendText}[Takeshi]
+"And the ocean surface is 1 atmosphere."{waitForClick}{clearText}{marker}{sound C7A269}{appendText}[Takeshi]
+"There's no way we can survive, unless we get 
+ourselves decompressed."{waitForClick}{clearText}{marker}{sound C7A270}{appendText}[Kid]
+"How about the elevator?"{waitForClick}{clearText}{marker}{sound C7A271}{appendText}[Takeshi]
+"It's been cut off."{waitForClick}{clearText}{marker}{sound C7A272}{appendText}[Takeshi]
+"The elevator tubes were destroyed a long 
+time ago."{waitForClick}{clearText}{marker}{sound C7A273}{appendText}[Takeshi]
+"There's no way to go up."{waitForClick}{clearText}{marker}{sound C7A274}{appendText}[Kid]
+"Well, let's go to the examination room!"{waitForClick}{clearText}{marker}{sound C7A275}{appendText}[Takeshi]
+"I know that..."{waitForClick}{clearText}
+
+[0000003c]10: 
+[0000003d]18: hideTextbox
+[0000003e]10: 
+[0000003f]05 53 45 30 31 5f 30 34 00 80 00 00 a0 64 00 00: playSFX SE01_04 0 100
+[0000004f]10: 
+[00000050]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000057]10: 
+[00000058]0c 00 00 00 00 01 00 86 00 00 82 00 00: bgload 00000000 BG34A1 6 2
+[00000065]10: 
+[00000066]05 53 45 30 30 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE00_01 0 100
+[00000076]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000080]27 00 00: fadeOutMonoColorOverlay
+[00000083]00: 
+[00000084]05 8a 00 00: unSkippableDelay 10
+[00000088]10: 
+[00000089]19: showTextbox
+[0000008a]ff 01 00: text 01
+{marker}{appendText}Takeshi ran into the examination room.{waitForClick}{clearText}{marker}{appendText}He hit the control panel and closed the door.{waitForClick}{clearText}{marker}{appendText}Strangely, there was no sign of flooding 
+inside IBF.{waitForClick}{clearText}{marker}{appendText}There was no sound of running water and the 
+tremors had stopped for the time being. {waitForClick}{clearText}{marker}{appendText}But there was still no time to relax.{waitForClick}{clearText}{marker}{appendText}Coco's body was fast reaching its limit.{waitForClick}{clearText}{marker}{appendText}Takeshi laid Coco down on the bed.{waitForClick}{clearText}{marker}{appendText}He ran towards the side of the desk at the 
+corner of the room.{waitForClick}{clearText}{marker}{appendText}He opened the one of the storage bins, and 
+grabbed something. {waitForClick}{clearText}{marker}{appendText}Something...it was the 'antibodies for Tief 
+Blau' taken from Tsugumi.{waitForClick}{clearText}{marker}{appendText}Coco hadn't been inoculated with it yet.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}Without a word, Takeshi gave Coco the 
+antibodies.{waitForClick}{clearText}{marker}{appendText}Coco, had long passed the stage of suffering 
+and lay there looking limp.{waitForClick}{clearText}{marker}{sound C7A276}{appendText}[Takeshi]
+"Come on...do the trick...."{waitForClick}{clearText}{marker}{appendText}Takeshi threw the empty syringe away and held 
+on to Coco's hand as she lay there.{waitForClick}{clearText}
+
+[0000008d]10: 
+[0000008e]18: hideTextbox
+[0000008f]10: 
+[00000090]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000097]10: 
+[00000098]04: stopBGM
+[00000099]10: 
+[0000009a]19: showTextbox
+[0000009b]ff 02 00: text 02
+{marker}{appendText}.................{waitForClick}{clearText}{marker}{appendText}...........{waitForClick}{clearText}{marker}{appendText}......{waitForClick}{clearText}
+
+[0000009e]10: 
+[0000009f]18: hideTextbox
+[000000a0]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000000aa]27 00 00: fadeOutMonoColorOverlay
+[000000ad]00: 
+[000000ae]05 a0 12 00 00: unSkippableDelay 18
+[000000b3]10: 
+[000000b4]19: showTextbox
+[000000b5]ff 03 00: text 03
+{marker}{appendText}A while had passed, but Coco's condition 
+didn't seem to be improving.{waitForClick}{clearText}{marker}{appendText}As a matter of fact, it seemed to be getting 
+worse.{waitForClick}{clearText}
+
+[000000b8]10: 
+[000000b9]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA04AWM 320 3
+[000000ca]10: 
+[000000cb]19: showTextbox
+[000000cc]ff 04 00: text 04
+{marker}{sound C7A277}{appendText}[Takeshi]
+"Oh, come on! How come it isn't working!"{waitForClick}{clearText}{marker}{appendText}Takeshi banged the wall.{waitForClick}{clearText}{marker}{sound C7A278}{appendText}[Kid]
+"Coco was infected a few days earlier than 
+you, dad."{waitForClick}{clearText}{marker}{sound C7A279}{appendText}[Kid]
+"So her disease has been progressing for that 
+much longer than everyone else...."{waitForClick}{clearText}{marker}{sound C7A280}{appendText}[Takeshi]
+"Damn it, we can't just sit here and wait...."{waitForClick}{clearText}{marker}{sound C7A281}{appendText}[Takeshi]
+"Besides, we've got to find a way to escape."{waitForClick}{clearText}{marker}{sound C7A282}{appendText}[Takeshi]
+"I just need to think of something...."{waitForClick}{clearText}
+
+[000000cf]10: 
+[000000d0]05 53 45 30 36 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE06_01 0 100
+[000000e0]10: 
+[000000e1]10 81 00 00 83 00 00: removeFG 1 3
+[000000e8]10: 
+[000000e9]19: showTextbox
+[000000ea]ff 05 00: text 05
+{marker}{appendText}Takeshi paced around the room with his head 
+down.{waitForClick}{clearText}{marker}{appendText}Occasionally, heavy noises echoed from the 
+ceiling.{waitForClick}{clearText}{marker}{appendText}Takeshi listened to the noises.{waitForClick}{clearText}{marker}{appendText}And then....{waitForClick}{clearText}{marker}{appendText}Takeshi, looking as if he had just realized 
+something, whispered to himself.{waitForClick}{clearText}
+
+[000000ed]10: 
+[000000ee]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA01AWM 320 3
+[000000ff]10: 
+[00000100]19: showTextbox
+[00000101]ff 06 00: text 06
+{marker}{sound C7A284}{appendText}[Takeshi]
+"I heard an announcement earlier, before 
+Tsugumi and I escaped."{waitForClick}{clearText}{marker}{sound C7A285}{appendText}[Takeshi]
+"The announcement said something like 'if you 
+are not out in a few minutes, you're gonna be 
+crushed.'"{waitForClick}{clearText}{marker}{sound C7A286}{appendText}[Takeshi]
+"But this place is still standing. Why is 
+that?"{waitForClick}{clearText}{marker}{sound C7A287}{appendText}[Kid]
+"I don't know why either...."{waitForClick}{clearText}{marker}{sound C7A288}{appendText}[Kid]
+"But...maybe...."{waitForClick}{clearText}{marker}{sound C7A289}{appendText}[Takeshi]
+"Maybe...what?"{waitForClick}{clearText}{marker}{sound C7A290}{appendText}[Kid]
+"That announcement might have been about LeMU 
+imploding."{waitForClick}{clearText}{marker}{sound C7A291}{appendText}[Kid]
+"But, think about it..."{waitForClick}{clearText}{marker}{sound C7A292}{appendText}[Kid]
+"This laboratory has been built so that the 
+atmosphere on the inside and outside are 
+equal."{waitForClick}{clearText}{marker}{sound C7A293}{appendText}[Kid]
+"Since they're still balanced, it probably 
+won't implode as easily...."{waitForClick}{clearText}{marker}{appendText}That must have been it.{waitForClick}{clearText}{marker}{appendText}If you leave the cap on an empty plastic 
+bottle, even if you come back years later, 
+the air will still be trapped inside.{waitForClick}{clearText}{marker}{appendText}Which meant that the laboratory should be 
+safe...{waitForClick}{clearText}{marker}{appendText}Unless extreme force was added from 
+somewhere.... {waitForClick}{clearText}{marker}{appendText}...such as a giant piece of partition from 
+LeMU falling on it....{waitForClick}{clearText}{marker}{appendText}Although he didn't seem to be fully convinced. {waitForClick}{clearText}{marker}{appendText}Takeshi nodded upon hearing Hokuto's 
+explanation.{waitForClick}{clearText}{marker}{appendText}By accepting the explanation, he was probably 
+trying to clear one of the many problems 
+facing him at the moment.{waitForClick}{clearText}
+
+[00000104]10: 
+[00000105]18: hideTextbox
+[00000106]10: 
+[00000107]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[0000010f]10: 
+[00000110]1e a0 3c 00 00: delay 60
+[00000115]10: 
+[00000116]03 a0 18 00 00 a0 64 00 00: playBGM 24 100
+[0000011f]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000129]27 00 00: fadeOutMonoColorOverlay
+[0000012c]00: 
+[0000012d]05 8a 00 00: unSkippableDelay 10
+[00000131]10: 
+[00000132]19: showTextbox
+[00000133]ff 07 00: text 07
+{marker}{appendText}As time progressed Coco's condition got worse 
+and worse. {waitForClick}{clearText}
+
+[00000136]10: 
+[00000137]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA04AWM 320 3
+[00000148]10: 
+[00000149]05 53 45 30 35 5f 30 32 00 80 00 00 a0 64 00 00: playSFX SE05_02 0 100
+[00000159]10: 
+[0000015a]19: showTextbox
+[0000015b]ff 08 00: text 08
+{marker}{sound C7A294}{appendText}[Takeshi]
+"Damn it! Why is this all happening? Why!? 
+Why!? Why!?"{waitForClick}{clearText}{marker}{appendText}Takeshi kicked the wall.{waitForClick}{clearText}{marker}{sound C7A295}{appendText}[Kid]
+"Well, dad...you should have given her the 
+antibody earlier...."{waitForClick}{clearText}{marker}{sound C7A296}{appendText}[Takeshi]
+"Huh? It's a little late for that now, isn't 
+it!"{waitForClick}{clearText}{marker}{sound C7A297}{appendText}[Takeshi]
+"Besides, Coco was in the pod under pressure 
+at that time!"{waitForClick}{clearText}{marker}{sound C7A298}{appendText}[Takeshi]
+"I couldn't just open up the lid!"{waitForClick}{clearText}{marker}{sound C7A299}{appendText}[Kid]
+"But...you could've given her a shot without 
+opening the lid."{waitForClick}{clearText}{marker}{sound C7A300}{appendText}[Kid]
+"Because You said...."{waitForClick}{clearText}
+
+[0000015e]10: 
+[0000015f]45 86 00 00 81 00 00: monoColorOverlay 6 1
+[00000166]10: 
+[00000167]19: showTextbox
+[00000168]ff 09 00: text 09
+{marker}{sound T6B219}{appendText}[You]
+"It seems that this pod can also do laser 
+disinfecting as well as simple surgery, in 
+addition to the oxygen treatment."{waitForClick}{clearText}{marker}{sound T6B220}{appendText}[You]
+"And depending on how you use it, even 
+cryogenic suspension..."{waitForClick}{clearText}
+
+[0000016b]10: 
+[0000016c]0c 00 00 00 00 05 00 80 00 00 82 00 00: bgload 00000000 BG34A1 0 2
+[00000179]10: 
+[0000017a]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 80 00 00: fgload 1 00000000 TA01AWM 320 0
+[0000018b]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000195]27 00 00: fadeOutMonoColorOverlay
+[00000198]00: 
+[00000199]05 8a 00 00: unSkippableDelay 10
+[0000019d]10: 
+[0000019e]19: showTextbox
+[0000019f]ff 0a 00: text 0a
+{marker}{sound C7A301}{appendText}[Kid]
+"Since it has so many other functions, it 
+probably should be able to give an 
+injection...."{waitForClick}{clearText}{marker}{sound C7A302}{appendText}[Takeshi]
+"But You didn't say a word about 'being able 
+to give shots without opening the lid', did 
+she?"{waitForClick}{clearText}{marker}{sound C7A303}{appendText}[Takeshi]
+"And if she didn't mention it, it must not be 
+possible...."{waitForClick}{clearText}{marker}{sound C7A304}{appendText}[Takeshi]
+"Besides, neither you nor I have any idea 
+what this device can do."{waitForClick}{clearText}{marker}{sound C7A305}{appendText}[Takeshi]
+"What's cryogenic suspension anyway?"{waitForClick}{clearText}{marker}{sound C7A306}{appendText}[Kid]
+"It's like hibernation."{waitForClick}{clearText}{marker}{appendText}Hokuto answered as if anyone would know.{waitForClick}{clearText}{marker}{sound C7A307}{appendText}[Takeshi]
+"Hibernation?"{waitForClick}{clearText}{marker}{sound C7A308}{appendText}[Takeshi]
+"You mean...like bears do in the winter?"{waitForClick}{clearText}{marker}{sound C7A309}{appendText}[Kid]
+"Yeah."{waitForClick}{clearText}{marker}{sound C7A310}{appendText}[Kid]
+"I'm pretty sure that cryogenic suspension 
+means you can artificially induce hibernation."{waitForClick}{clearText}{marker}{sound C7A311}{appendText}[Kid]
+"It keeps human body temperature low, around 
+40 degrees Fahrenheit, and reduces your 
+heartbeat and breathing to the absolute 
+minimum...."{waitForClick}{clearText}{marker}{sound C7A312}{appendText}[Kid]
+"That way it increases your metabolic 
+efficiency and conserves as much energy as 
+possible."{waitForClick}{clearText}{marker}{sound C7A313}{appendText}[Takeshi]
+"I see...."{waitForClick}{clearText}{marker}{sound C7A314}{appendText}[Takeshi]
+"Hey I wonder why they have it here...."{waitForClick}{clearText}
+
+[000001a2]10: 
+[000001a3]04: stopBGM
+[000001a4]10: 
+[000001a5]19: showTextbox
+[000001a6]ff 0b 00: text 0b
+{marker}{appendText}In the middle of saying this Takeshi stopped 
+suddenly.{waitForClick}{clearText}{marker}{appendText}At the same time, Hokuto's thoughts stopped, 
+too. {waitForClick}{clearText}{marker}{appendText}And then, they screamed out at the same time.{waitForClick}{clearText}{marker}{sound C7A315}{appendText}[Takeshi]
+"I got it! We'll put her in cryogenic 
+suspension!"{waitForClick}{clearText}{marker}{sound C7A316}{appendText}[Kid]
+"I got it! We can put her in cryogenic 
+suspension!"{waitForClick}{clearText}
+
+[000001a9]10: 
+[000001aa]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA02AWM 320 3
+[000001bb]10: 
+[000001bc]19: showTextbox
+[000001bd]ff 0c 00: text 0c
+{marker}{sound C7A317}{appendText}[Takeshi]
+"If it her body temperature is kept low, 
+it'll slow down the rate of the virus 
+infection too, right?"{waitForClick}{clearText}{marker}{sound C7A318}{appendText}[Kid]
+"Yeah!"{waitForClick}{clearText}{marker}{sound C7A319}{appendText}[Takeshi]
+"Alright! All we need now is a little more 
+time. If we have time, I'm sure it'll work... "{waitForClick}{clearText}{marker}{sound C7A320}{appendText}[Kid]
+"If we can slow down that virus even for a 
+minute, or a second...it'll be better than 
+nothing."{waitForClick}{clearText}{marker}{sound C7A321}{appendText}[Takeshi]
+"Alright, then..."{waitForClick}{clearText}
+
+[000001c0]10: 
+[000001c1]18: hideTextbox
+[000001c2]10: 
+[000001c3]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000001ca]10: 
+[000001cb]19: showTextbox
+[000001cc]ff 0d 00: text 0d
+{marker}{appendText}Takeshi carried the frail Coco and set her 
+into the pod.{waitForClick}{clearText}{marker}{appendText}Then he started flipping through the manual at 
+full-speed, skimming it.{waitForClick}{clearText}{marker}{appendText}It didn't seem too difficult to set up.{waitForClick}{clearText}{marker}{appendText}Takeshi, unlike his usual self, manipulated 
+the computer terminal swiftly and smoothly.{waitForClick}{clearText}{marker}{appendText}Then....{waitForClick}{clearText}{marker}{appendText}All that was left was to turn on the switch.{waitForClick}{clearText}
+
+[000001cf]10: 
+[000001d0]18: hideTextbox
+[000001d1]10: 
+[000001d2]0c 00 00 00 00 08 00 86 00 00 82 00 00: bgload 00000000 EV_CO10A 6 2
+[000001df]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000001e9]27 00 00: fadeOutMonoColorOverlay
+[000001ec]00: 
+[000001ed]05 8a 00 00: unSkippableDelay 10
+[000001f1]10: 
+[000001f2]19: showTextbox
+[000001f3]ff 0e 00: text 0e
+{marker}{appendText}Coco was asleep in the pod.{waitForClick}{clearText}{marker}{appendText}Takeshi reached out his hand to the switch 
+that would close the lid.{waitForClick}{clearText}{marker}{appendText}A split second before he flipped the 
+switch...Coco quietly opened her eyes. {waitForClick}{clearText}
+
+[000001f6]10: 
+[000001f7]0c 00 00 00 00 09 00 80 00 00 82 00 00: bgload 00000000 EV_CO10C 0 2
+[00000204]10: 
+[00000205]19: showTextbox
+[00000206]ff 0f 00: text 0f
+{marker}{sound C7A322}{appendText}[Coco]
+"Who is that...?"{waitForClick}{clearText}{marker}{sound C7A323}{appendText}[Takeshi]
+"What?"{waitForClick}{clearText}{marker}{sound C7A324}{appendText}[Coco]
+"Who's standing behind you, Takepyon...?"{waitForClick}{clearText}{marker}{sound C7A325}{appendText}[Takeshi]
+"Behind me?"{waitForClick}{clearText}{marker}{appendText}Takeshi looked back.{waitForClick}{clearText}{marker}{appendText}Hokuto was there.{waitForClick}{clearText}{marker}{sound C7A326}{appendText}[Takeshi]
+"Can you see him, Coco?"{waitForClick}{clearText}{marker}{sound C7A327}{appendText}[Coco]
+"Yeah, I do...."{waitForClick}{clearText}{marker}{sound C7A328}{appendText}[Kid]
+"Coco...it's me, Hokuto."{waitForClick}{clearText}{marker}{sound C7A329}{appendText}[Coco]
+"Hokuto...."{waitForClick}{clearText}{marker}{sound C7A330}{appendText}[Coco]
+"Hokuto is your name...?"{waitForClick}{clearText}{marker}{sound C7A331}{appendText}[Coco]
+"Can I call you Hokutan...?"{waitForClick}{clearText}{marker}{appendText}The Coco of this time didn't seem to know 
+Hokuto yet.{waitForClick}{clearText}{marker}{appendText}So who was the phantom girl that I had been 
+seeing...?{waitForClick}{clearText}{marker}{sound C7A332}{appendText}[Takeshi]
+"Hokuto...."{waitForClick}{clearText}{marker}{sound C7A333}{appendText}[Takeshi]
+"Is that your name?"{waitForClick}{clearText}{marker}{sound C7A334}{appendText}[Kid]
+"Uh-huh."{waitForClick}{clearText}{marker}{sound C7A335}{appendText}[Takeshi]
+"Really."{waitForClick}{clearText}{marker}{sound C7A336}{appendText}[Takeshi]
+"Coco?"{waitForClick}{clearText}{marker}{sound C7A337}{appendText}[Takeshi]
+"I can't see him, but this guy Hokuto helped 
+us, you know."{waitForClick}{clearText}{marker}{sound C7A338}{appendText}[Coco]
+"Hokutan...."{waitForClick}{clearText}{marker}{sound C7A339}{appendText}[Coco]
+"Thank you...."{waitForClick}{clearText}{marker}{sound C7A340}{appendText}[Coco]
+"And...."{waitForClick}{clearText}{marker}{sound C7A341}{appendText}[Coco]
+"And...the other person...you...."{waitForClick}{clearText}{marker}{sound C7A342}{appendText}[Coco]
+"Thank...you...."{waitForClick}{clearText}{marker}{sound C7A343}{appendText}[Takeshi]
+"Other person? There's someone else?"{waitForClick}{clearText}{marker}{sound C7A344}{appendText}[Coco]
+"Yeah, there is...."{waitForClick}{clearText}{marker}{sound C7A345}{appendText}[Coco]
+"I can see him...behind Hokutan.... "{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}Silence filled the room.{waitForClick}{clearText}{marker}{appendText}The room temperature felt suddenly lower, for 
+some reason.{waitForClick}{clearText}{marker}{appendText}Coco....{waitForClick}{clearText}{marker}{appendText}Coco was...looking at me. {waitForClick}{clearText}{marker}{appendText}Just me....{waitForClick}{clearText}{marker}{appendText}Into my eyes....{waitForClick}{clearText}
+
+[00000209]10: 
+[0000020a]03 a0 13 00 00 a0 64 00 00: playBGM 19 100
+[00000213]10: 
+[00000214]19: showTextbox
+[00000215]ff 10 00: text 10
+{marker}{appendText}[BW]
+"Are you talking about me?"{waitForClick}{clearText}{marker}{appendText}Feeling flustered, I gathered up my courage 
+and spoke up.{waitForClick}{clearText}{marker}{sound C7A346}{appendText}[Coco]
+"Yes, you."{waitForClick}{clearText}{marker}{sound C7A347}{appendText}[Coco]
+"We finally meet....?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"...Huh?"{waitForClick}{clearText}{marker}{sound C7A348}{appendText}[Coco]
+"I don't know Hokutan, but...."{waitForClick}{clearText}{marker}{sound C7A349}{appendText}[Coco]
+"But I sure know you...."{waitForClick}{clearText}{marker}{sound C7A350}{appendText}[Coco]
+"Because...."{waitForClick}{clearText}{marker}{sound C7A351}{appendText}[Coco]
+"Because...all this time...you've been 
+watching over me, haven't you?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}{marker}{sound C7A352}{appendText}[Coco]
+"Mister 4th dimension...."{waitForClick}{clearText}{marker}{sound C7A353}{appendText}[Coco]
+"Blick Winkel...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}{marker}{sound C7A354}{appendText}[Coco]
+"Let's play chicks some time again."{waitForClick}{clearText}{marker}{sound C7A355}{appendText}[Coco]
+"We go piyo-piyo...piyo-piyo...."{waitForClick}{clearText}{marker}{sound C7A356}{appendText}[Takeshi]
+"Coco...I was the one...."{waitForClick}{clearText}{marker}{sound C7A357}{appendText}[Coco]
+"Hee."{waitForClick}{clearText}{marker}{appendText}Coco's cheeks eased up a little. {waitForClick}{clearText}{marker}{sound C7A358}{appendText}[Coco]
+"I don't think you knew it, Takepyon, but...."{waitForClick}{clearText}{marker}{sound C7A359}{appendText}[Coco]
+"I didn't just play with you, I also was 
+playing with him."{waitForClick}{clearText}{marker}{sound C7A360}{appendText}[Coco]
+"Huh? Isn't that right?"{waitForClick}{clearText}{marker}{appendText}Coco was asking me.{waitForClick}{clearText}{marker}{appendText}[BW]
+"Uh-huh...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I might have been watching over Coco for all 
+this time."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I've been watching over you...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I wanted to get closer to you, too."{waitForClick}{clearText}{marker}{appendText}[BW]
+"But it was probably...not possible...."{waitForClick}{clearText}{marker}{sound C7A361}{appendText}[Coco]
+"Hee, hee...."{waitForClick}{clearText}{marker}{sound C7A362}{appendText}[Coco]
+"So... you're the one who told me that you 
+liked me then?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Yes, I suppose it was...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"...I suppose it was...."{waitForClick}{clearText}{marker}{appendText}Coco and I looked at each other.{waitForClick}{clearText}{marker}{appendText}We were staring at each other....{waitForClick}{clearText}{marker}{appendText}Our eyes filled with passion...{waitForClick}{clearText}{marker}{appendText}I felt as though my existence would evaporate 
+any second.{waitForClick}{clearText}{marker}{sound C7A363}{appendText}[Coco]
+"What's going to happen to me?"{waitForClick}{clearText}{marker}{appendText}All of a sudden, a dark shadow had covered 
+Coco's eyes.{waitForClick}{clearText}{marker}{sound C7A364}{appendText}[Coco]
+"Am I...going to die? "{waitForClick}{clearText}{marker}{appendText}[BW]
+"Don't be silly! There's no way you are going 
+to die!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"No matter what, I'll save your life, Coco!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I won't let you die!"{waitForClick}{clearText}{marker}{appendText}Excitedly I appealed to her.{waitForClick}{clearText}{marker}{appendText}Although she looked to be in some pain....{waitForClick}{clearText}{marker}{appendText}Coco smiled at me happily....{waitForClick}{clearText}{marker}{appendText}My heart seemed that it would surely melt....{waitForClick}{clearText}{marker}{sound C7A365}{appendText}[Takeshi]
+"Coco...so that's how it is, okay....?"{waitForClick}{clearText}{marker}{sound C7A366}{appendText}[Takeshi]
+"We're going to save you no matter what."{waitForClick}{clearText}{marker}{sound C7A367}{appendText}[Takeshi]
+"So just relax. I want you to rest now...."{waitForClick}{clearText}{marker}{appendText}As he was saying this, Takeshi went to close 
+the pod.{waitForClick}{clearText}{marker}{sound C7A368}{appendText}[Coco]
+"Wait!"{waitForClick}{clearText}{marker}{sound C7A369}{appendText}[Coco]
+"What's going to happen?"{waitForClick}{clearText}{marker}{sound C7A370}{appendText}[Takeshi]
+"You are going to sleep for a while, just 
+like a cuddly bear."{waitForClick}{clearText}{marker}{sound C7A371}{appendText}[Coco]
+"No...."{waitForClick}{clearText}{marker}{sound C7A372}{appendText}[Coco]
+"Please...don't leave me...."{waitForClick}{clearText}{marker}{sound C7A373}{appendText}[Coco]
+"Don't go anywhere...."{waitForClick}{clearText}{marker}{sound C7A374}{appendText}[Coco]
+"Don't leave me alone...."{waitForClick}{clearText}{marker}{sound C7A375}{appendText}[Takeshi]
+"We're not going to leave you alone, will we?"{waitForClick}{clearText}{marker}{sound C7A376}{appendText}[Takeshi]
+"We're going to stay right here."{waitForClick}{clearText}{marker}{sound C7A377}{appendText}[Coco]
+"You're lying...."{waitForClick}{clearText}{marker}{sound C7A378}{appendText}[Coco]
+"I don't believe you...."{waitForClick}{clearText}{marker}{sound C7A379}{appendText}[Takeshi]
+"Quit being so stubborn!"{waitForClick}{clearText}{marker}{sound C7A380}{appendText}[Takeshi]
+"If we leave you like this you're going 
+to...you're going to.... "{waitForClick}{clearText}{marker}{sound C7A381}{appendText}[Coco]
+"No...no...no...."{waitForClick}{clearText}{marker}{sound C7A382}{appendText}[Coco]
+"I don't want to...."{waitForClick}{clearText}{marker}{sound C7A383}{appendText}[Coco]
+"I don't want to be all by myself. I'll be 
+too lonely."{waitForClick}{clearText}{marker}{sound C7A384}{appendText}[Coco]
+"I'm scared...I'm...so, so scared...."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}{marker}{sound C7A385}{appendText}[Coco]
+"Takepyon, will you...."{waitForClick}{clearText}{marker}{sound C7A386}{appendText}[Coco]
+"Lie down...and...sleep next to me?"{waitForClick}{clearText}{marker}{sound C7A387}{appendText}[Takeshi]
+"There's no way...."{waitForClick}{clearText}{marker}{sound C7A388}{appendText}[Takeshi]
+"This pod is...."{waitForClick}{clearText}{marker}{appendText}Takeshi stopped in the middle of what he was 
+saying.{waitForClick}{clearText}{marker}{appendText}He looked up at the ceiling, then to the 
+monitor on the wall, and finally to the pod 
+next to Coco.{waitForClick}{clearText}{marker}{sound C7A389}{appendText}[Takeshi]
+"Alright, how about this then?"{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}{marker}{sound C7A390}{appendText}[Takeshi]
+"I'll sleep in the pod next to you."{waitForClick}{clearText}{marker}{sound C7A391}{appendText}[Takeshi]
+"How's that? You won't be lonely anymore, 
+right?"{waitForClick}{clearText}{marker}{appendText}Coco looked back and forth between Takeshi 
+and me. {waitForClick}{clearText}{marker}{appendText}She had a worried look on her face....{waitForClick}{clearText}{marker}{appendText}And stared at us with eyes that seemed about 
+to burst into tears.{waitForClick}{clearText}{marker}{sound C7A392}{appendText}[Coco]
+"Really...?"{waitForClick}{clearText}{marker}{sound C7A393}{appendText}[Coco]
+"You aren't lying...?"{waitForClick}{clearText}{marker}{sound C7A394}{appendText}[Takeshi]
+"Of course not."{waitForClick}{clearText}{marker}{sound C7A395}{appendText}[Coco]
+"You promise....?"{waitForClick}{clearText}{marker}{sound C7A396}{appendText}[Coco]
+"You won't leave me and go?"{waitForClick}{clearText}{marker}{sound C7A397}{appendText}[Takeshi]
+"I wouldn't do that, of course I won't go."{waitForClick}{clearText}{marker}{sound C7A398}{appendText}[Coco]
+"Alright then...."{waitForClick}{clearText}{marker}{sound C7A399}{appendText}[Coco]
+"I trust you, Takepyon."{waitForClick}{clearText}{marker}{sound C7A400}{appendText}[Takeshi]
+"That's a good girl."{waitForClick}{clearText}{marker}{appendText}Takeshi petted Coco's head.{waitForClick}{clearText}{marker}{sound C7A401}{appendText}[Takeshi]
+"Okay, I'm going to close it now, okay Coco?"{waitForClick}{clearText}{marker}{sound C7A402}{appendText}[Coco]
+"Uh, uh-huh...."{waitForClick}{clearText}{marker}{appendText}Takeshi turned on the switch.{waitForClick}{clearText}{marker}{appendText}The lid of the pod slowly went down.{waitForClick}{clearText}{marker}{sound C7A403}{appendText}[Coco]
+"Hey?"{waitForClick}{clearText}{marker}{sound C7A404}{appendText}[Coco]
+"Before I go to sleep, will you listen to my 
+request?"{waitForClick}{clearText}{marker}{sound C7A405}{appendText}[Takeshi]
+"Request?"{waitForClick}{clearText}{marker}{sound C7A406}{appendText}[Coco]
+"I wasn't talking to you, Takepyon...."{waitForClick}{clearText}{marker}{appendText}Coco's eyes were pointing towards me. {waitForClick}{clearText}{marker}{appendText}[BW]
+"M-me?"{waitForClick}{clearText}{marker}{sound C7A407}{appendText}[Coco]
+"Yes."{waitForClick}{clearText}{marker}{sound C7A408}{appendText}[Coco]
+"Well, um...I...."{waitForClick}{clearText}{marker}{sound C7A409}{appendText}[Coco]
+"I want to see you."{waitForClick}{clearText}{marker}{appendText}[BW]
+"...What?"{waitForClick}{clearText}{marker}{sound C7A410}{appendText}[Coco]
+"I want to see you again."{waitForClick}{clearText}{marker}{sound C7A411}{appendText}[Coco]
+"I want to see you and talk with you more. "{waitForClick}{clearText}{marker}{appendText}[BW]
+"Uh-huh,"{waitForClick}{clearText}{marker}{sound C7A412}{appendText}[Coco]
+"I think that I...."{waitForClick}{clearText}{marker}{sound C7A413}{appendText}[Coco]
+"I might just...."{waitForClick}{clearText}{marker}{sound C7A414}{appendText}[Coco]
+"It's just that I...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}{marker}{sound C7A415}{appendText}[Coco]
+"Oh...."{waitForClick}{clearText}{marker}{sound C7A416}{appendText}[Coco]
+"I can't say it...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}{marker}{sound C7A417}{appendText}[Coco]
+"But will you promise me?"{waitForClick}{clearText}{marker}{sound C7A418}{appendText}[Coco]
+"That...you and I will...see each other again 
+someday?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Yes"{waitForClick}{clearText}{marker}{sound C7A419}{appendText}[Coco]
+"I'll be...waiting...."{waitForClick}{clearText}{marker}{sound C7A420}{appendText}[Coco]
+"I'll wait for you no matter what...."{waitForClick}{clearText}{marker}{sound C7A421}{appendText}[Coco]
+"You'll...come...get me...?"{waitForClick}{clearText}{marker}{sound C7A422}{appendText}[Coco]
+"Promise?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Yes, I promise."{waitForClick}{clearText}{marker}{appendText}The space between the lid and the pod itself 
+was almost gone.{waitForClick}{clearText}{marker}{appendText}I could barely see Coco through the narrow 
+slit....{waitForClick}{clearText}{marker}{appendText}Coco faced towards me and whispered one last 
+thing in her tiny voice. {waitForClick}{clearText}{marker}{sound C7A423}{appendText}[Coco]
+"Well, good night...."{waitForClick}{clearText}{marker}{sound C7A424}{appendText}[Coco]
+"Brother...."{waitForClick}{clearText}
+
+[00000218]10: 
+[00000219]05 53 45 30 30 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE00_00 0 100
+[00000229]10: 
+[0000022a]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2
+[00000234]10: 
+[00000235]19: showTextbox
+[00000236]ff 11 00: text 11
+{marker}{appendText}'Brother!?' Before I could say anything in 
+reply, the lid had closed.{waitForClick}{clearText}{marker}{appendText}The sound of compressing air filled the 
+room....{waitForClick}{clearText}{marker}{appendText}The low whir of the motor....{waitForClick}{clearText}{marker}{appendText}With a light metallic ring, the pod shut 
+completely.{waitForClick}{clearText}{marker}{appendText}Takeshi pushed another switch attached to the 
+pod's chassis.{waitForClick}{clearText}{marker}{appendText}The cryogenic suspension function was 
+activated.{waitForClick}{clearText}{marker}{appendText}There were small sounds, as though gas were 
+leaking out.{waitForClick}{clearText}{marker}{appendText}The pod slowly cooled down, humming with a 
+slight vibration.{waitForClick}{clearText}
+
+[00000239]10: 
+[0000023a]0c 00 00 00 00 0a 00 80 00 00 82 00 00: bgload 00000000 BG34A1 0 2
+[00000247]10: 
+[00000248]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA01AWM 320 3
+[00000259]10: 
+[0000025a]19: showTextbox
+[0000025b]ff 12 00: text 12
+{marker}{sound C7A425}{appendText}[Takeshi]
+"Well then...."{waitForClick}{clearText}{marker}{sound C7A426}{appendText}[Takeshi]
+"Hey! Something Winkel! You still there?"{waitForClick}{clearText}{marker}{sound C7A427}{appendText}[Kid]
+"What is it, Dad?"{waitForClick}{clearText}{marker}{sound C7A428}{appendText}[Takeshi]
+"Oh, it's you, Hokuto...."{waitForClick}{clearText}
+
+[0000025e]10: 
+[0000025f]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA03AWM 320 3
+[00000270]10: 
+[00000271]19: showTextbox
+[00000272]ff 13 00: text 13
+{marker}{sound C7A429}{appendText}[Takeshi]
+"You guys are confusing me...."{waitForClick}{clearText}{marker}{sound C7A430}{appendText}[Takeshi]
+"You and that Winkel guy are two different 
+people, right?"{waitForClick}{clearText}{marker}{sound C7A431}{appendText}[Takeshi]
+"Or you are from the 4th dimension, too, 
+Hokuto?"{waitForClick}{clearText}{marker}{sound C7A432}{appendText}[Kid]
+"No, I'm just borrowing his perspective for 
+now."{waitForClick}{clearText}
+
+[00000275]10: 
+[00000276]0f 81 00 00 00 00 00 00 0d 00 a1 40 00 00 83 00 00: fgload 1 00000000 TA01AWM 320 3
+[00000287]10: 
+[00000288]19: showTextbox
+[00000289]ff 14 00: text 14
+{marker}{sound C7A433}{appendText}[Takeshi]
+"Really...."{waitForClick}{clearText}{marker}{sound C7A434}{appendText}[Takeshi]
+"I mean, I still don't get it at all...but I 
+don't suppose it matters."{waitForClick}{clearText}{marker}{appendText}Saying this Takeshi sank his body into an 
+empty pod.{waitForClick}{clearText}{marker}{appendText}The pod next to Coco's.{waitForClick}{clearText}
+
+[0000028c]10: 
+[0000028d]0c 00 00 00 00 0e 00 80 00 00 82 00 00: bgload 00000000 EV_ET03B 0 2
+[0000029a]10: 
+[0000029b]19: showTextbox
+[0000029c]ff 15 00: text 15
+{marker}{sound C7A435}{appendText}[Kid]
+"What!? Dad, what're you going to do!?"{waitForClick}{clearText}{marker}{sound C7A436}{appendText}[Takeshi]
+"What do you think...there's nothing else can 
+I do, right?"{waitForClick}{clearText}{marker}{sound C7A437}{appendText}[Takeshi]
+"I made her a promise, you know...."{waitForClick}{clearText}{marker}{sound C7A438}{appendText}[Kid]
+"So you're going to...!?"{waitForClick}{clearText}{marker}{sound C7A439}{appendText}[Takeshi]
+"Yep, that's right."{waitForClick}{clearText}{marker}{sound C7A440}{appendText}[Takeshi]
+"It doesn't look like there's a way to escape, 
+anyway."{waitForClick}{clearText}{marker}{sound C7A441}{appendText}[Takeshi]
+"We'll just have to wait for the second 
+rescue team to arrive...."{waitForClick}{clearText}{marker}{sound C7A442}{appendText}[Takeshi]
+"But it'll just be a waste of energy to wait 
+here doing nothing, so...."{waitForClick}{clearText}{marker}{sound C7A443}{appendText}[Takeshi]
+"I might as well get some sleep."{waitForClick}{clearText}{marker}{sound C7A444}{appendText}[Kid]
+"D-dad! Wait a second!"{waitForClick}{clearText}{marker}{sound C7A445}{appendText}[Takeshi]
+"No."{waitForClick}{clearText}{marker}{sound C7A446}{appendText}[Takeshi]
+"I'm tired."{waitForClick}{clearText}{marker}{sound C7A447}{appendText}[Takeshi]
+"I'm really, REALLY tired...."{waitForClick}{clearText}{marker}{appendText}Takeshi stretched his arm from where he lay, 
+and flicked the switch for both closing the 
+lid and starting the cryogenic suspension at 
+the same time.{waitForClick}{clearText}{marker}{appendText}The lid started to close....{waitForClick}{clearText}{marker}{appendText}Quietly....{waitForClick}{clearText}{marker}{appendText}Steadily....{waitForClick}{clearText}{marker}{sound C7A448}{appendText}[Takeshi]
+"Alright, Hokuto...."{waitForClick}{clearText}{marker}{sound C7A449}{appendText}[Takeshi]
+"I'm counting on you...."{waitForClick}{clearText}{marker}{sound C7A450}{appendText}[Kid]
+"Dad!"{waitForClick}{clearText}{marker}{sound C7A451}{appendText}[Takeshi]
+"Oh, hey, one more thing."{waitForClick}{clearText}{marker}{sound C7A452}{appendText}[Kid]
+"???"{waitForClick}{clearText}{marker}{sound C7A453}{appendText}[Takeshi]
+"Quit calling me 'dad,' will you?"{waitForClick}{clearText}{marker}{sound C7A454}{appendText}[Kid]
+"Well...I can't help it...."{waitForClick}{clearText}{marker}{sound C7A455}{appendText}[Kid]
+"I'm your son...."{waitForClick}{clearText}{marker}{sound C7A456}{appendText}[Takeshi]
+"No, no, that's not what I mean."{waitForClick}{clearText}{marker}{sound C7A457}{appendText}[Takeshi]
+"If you call me 'dad', why don't you say it a 
+little more elegantly."{waitForClick}{clearText}{marker}{sound C7A458}{appendText}[Takeshi]
+"Call me 'father,' okay? 'Father.'"{waitForClick}{clearText}{marker}{sound C7A459}{appendText}[Takeshi]
+"You got it?"{waitForClick}{clearText}{marker}{appendText}Hokuto took a deep breath trying to say 
+something.{waitForClick}{clearText}{marker}{appendText}But before he could say it, the lid of the 
+pod had shut.{waitForClick}{clearText}
+
+[0000029f]10: 
+[000002a0]05 53 45 30 30 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE00_00 0 100
+[000002b0]10: 
+[000002b1]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2
+[000002bb]10: 
+[000002bc]19: showTextbox
+[000002bd]ff 16 00: text 16
+{marker}{appendText}A familiar hissing sound echoed in the room.{waitForClick}{clearText}{marker}{appendText}The cryogenic suspension had activated.{waitForClick}{clearText}{marker}{appendText}The pod cooled down with small vibrations.{waitForClick}{clearText}{marker}{appendText}..............{waitForClick}{clearText}{marker}{appendText}Just in case, Hokuto and I checked the monitor.{waitForClick}{clearText}{marker}{appendText}The cryogenic suspension in the two pods was 
+functioning properly.{waitForClick}{clearText}{marker}{appendText}There were no signs of abnormality in the bio 
+scans of Coco and Takeshi.{waitForClick}{clearText}
+
+[000002c0]10: 
+[000002c1]18: hideTextbox
+[000002c2]10: 
+[000002c3]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[000002cb]10: 
+[000002cc]04: stopBGM
+[000002cd]10: 
+[000002ce]0c 00 00 00 00 0f 00 86 00 00 82 00 00: bgload 00000000 IMG02A 6 2
+[000002db]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000002e5]27 00 00: fadeOutMonoColorOverlay
+[000002e8]00: 
+[000002e9]05 8a 00 00: unSkippableDelay 10
+[000002ed]10: 
+[000002ee]18: hideTextbox
+[000002ef]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[000002fa]10: 
+[000002fb]19: showTextbox
+[000002fc]ff 17 00: text 17
+{marker}{appendText}The world in 2017.{waitForClick}
+{appendText}A laboratory at the bottom of the ocean.{waitForClick}
+{appendText}All that remained there was a 'perspective'.{waitForClick}
+{appendText}Hokuto and I started to think.{waitForClick}{nextPage x2}
+
+[000002ff]10: 
+[00000300]18: hideTextbox
+[00000301]10: 
+[00000302]03 8f 00 00 a0 64 00 00: playBGM 15 100
+[0000030a]10: 
+[0000030b]19: showTextbox
+[0000030c]ff 18 00: text 18
+{marker}{appendText}'Oh yeah! We gotta let everyone know Coco and 
+Takeshi are here in IBF!'{waitForClick}
+{appendText}I'm not sure whether it was I or Hokuto who 
+thought this. {waitForClick}
+{appendText}Maybe it was because we had switched places 
+so often that the boundary between Hokuto and 
+myself had started to become very vague.{waitForClick}
+{appendText}Our consciousness had gotten muddy, tangled 
+and intertwined. We were close to a state of 
+fusion.{waitForClick}{nextPage x2}
+
+[0000030f]10: 
+[00000310]18: hideTextbox
+[00000311]10: 
+[00000312]19: showTextbox
+[00000313]ff 19 00: text 19
+{marker}{appendText}Or maybe....{waitForClick}
+{appendText}We might have been that way ever since the 
+beginning.{waitForClick}
+{appendText}My thoughts were the same as Hokuto's, and 
+Hokuto's thoughts were the same as mine....{waitForClick}
+{appendText}'Being me' and 'being Hokuto' wasn't all that 
+different.{waitForClick}{nextPage x2}
+
+[00000316]10: 
+[00000317]18: hideTextbox
+[00000318]10: 
+[00000319]19: showTextbox
+[0000031a]ff 1a 00: text 1a
+{marker}{appendText}We had been one since long ago, and would 
+continue to be one....{waitForClick}
+{appendText}That thought just went through my mind.{waitForClick}
+{appendText}But it wasn't the time to be engrossed in such 
+thoughts.{waitForClick}
+{appendText}Our consciousness flew up to the floating 
+island.{waitForClick}{nextPage x2}
+
+[0000031d]10: 
+[0000031e]18: hideTextbox
+[0000031f]10: 
+[00000320]45 86 00 00 81 00 00: monoColorOverlay 6 1
+[00000327]10: 
+[00000328]0c 00 00 00 00 10 00 86 00 00 82 00 00: bgload 00000000 BG38A2 6 2
+[00000335]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000033f]27 00 00: fadeOutMonoColorOverlay
+[00000342]00: 
+[00000343]05 a0 12 00 00: unSkippableDelay 18
+[00000348]10: 
+[00000349]18: hideTextbox
+[0000034a]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000355]10: 
+[00000356]19: showTextbox
+[00000357]ff 1b 00: text 1b
+{marker}{appendText}A miniature submarine was floating on the 
+ocean surface.{waitForClick}{clearText}{marker}{appendText}Swaying in the waves and being teased along 
+by time, it left a carefree trail in the deep 
+blue ocean.{waitForClick}{clearText}{marker}{appendText}I searched inside of it, but Tsugumi had 
+already disappeared.{waitForClick}{clearText}{marker}{appendText}She must be somewhere on the floating 
+island....{waitForClick}{clearText}{marker}{appendText}I expanded my sight and looked down at the 
+entire artificial island.{waitForClick}{clearText}{marker}{appendText}I saw someone....{waitForClick}{clearText}{marker}{appendText}But it wasn't Tsugumi.{waitForClick}{clearText}{marker}{appendText}It was Yubiseiharukana.{waitForClick}{clearText}{marker}{appendText}Hokuto and I flew down near her side.{waitForClick}{clearText}
+
+[0000035a]10: 
+[0000035b]0c 00 00 00 00 11 00 80 00 00 82 00 00: bgload 00000000 BG39A2 0 2
+[00000368]10: 
+[00000369]19: showTextbox
+[0000036a]ff 1c 00: text 1c
+{marker}{appendText}Walking along with Yubiseiharukana was Pipi.{waitForClick}{clearText}{marker}{appendText}He was soaking wet.{waitForClick}{clearText}{marker}{appendText}Which meant that it must have been...'right 
+after You had picked up Pipi from the ocean 
+surface.'{waitForClick}{clearText}{marker}{appendText}She was walking down the trail attended by a 
+few men who seemed to be staff members of LeMU.{waitForClick}{clearText}{marker}{appendText}She was walking towards a helicopter {waitForClick}{clearText}{marker}{appendText}She was probably on her way to a large 
+hospital or something. {waitForClick}{clearText}{marker}{appendText}She looked surprisingly healthy. She was 
+walking steadily without support.{waitForClick}{clearText}{marker}{appendText}Although she seemed in a dark mood, at least 
+her health seemed fine.{waitForClick}{clearText}{marker}{appendText}The antibodies must have worked, just like 
+with Takeshi.{waitForClick}{clearText}{marker}{appendText}Anyway, I needed to tell her what had 
+happened to Takeshi and Coco!{waitForClick}{clearText}{marker}{sound C7A460}{appendText}[Kid]
+"You! You!"{waitForClick}{clearText}{marker}{appendText}It was Hokuto who shouted at her.{waitForClick}{clearText}
+
+[0000036d]10: 
+[0000036e]0f 81 00 00 00 00 00 00 12 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13ADM 320 3
+[0000037f]10: 
+[00000380]19: showTextbox
+[00000381]ff 1d 00: text 1d
+{marker}{sound C7A461}{appendText}[You'haru']
+"W-who is it...?"{waitForClick}{clearText}{marker}{appendText}Caught off guard, she glanced all around.{waitForClick}{clearText}{marker}{appendText}The staff members darted skeptical looks at 
+her, when she started talking to herself all 
+of a sudden.{waitForClick}{clearText}{marker}{sound C7A462}{appendText}[Kid]
+"It's me!"{waitForClick}{clearText}{marker}{sound C7A463}{appendText}[You'haru']
+"Who is...this 'me?'"{waitForClick}{clearText}{marker}{appendText}There was no way she could have known Hokuto.{waitForClick}{clearText}{marker}{appendText}Hokuto hadn't even been born in this world....{waitForClick}{clearText}{marker}{appendText}And she wouldn't have believed us if we had 
+told her 'we're talking to you from 17 years 
+in the future.'{waitForClick}{clearText}{marker}{appendText}Hokuto told her.{waitForClick}{clearText}{marker}{sound C7A464}{appendText}[Kid]
+"Look, there's something I want you tell you."{waitForClick}{clearText}{marker}{sound C7A465}{appendText}[Kid]
+"So listen to me carefully."{waitForClick}{clearText}{marker}{sound C7A466}{appendText}[Kid]
+"Actually...."{waitForClick}{clearText}{marker}{appendText}Hokuto told her that Coco and Takeshi had 
+been left in the laboratory, and that they 
+were under cryogenic suspension in the pods.{waitForClick}{clearText}
+
+[00000384]10: 
+[00000385]0f 81 00 00 00 00 00 00 13 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU14ADM 320 3
+[00000396]10: 
+[00000397]19: showTextbox
+[00000398]ff 1e 00: text 1e
+{marker}{sound C7A467}{appendText}[You'haru']
+"Oh my god! It can't be...."{waitForClick}{clearText}{marker}{sound C7A468}{appendText}[Kid]
+"So you have to help them right away, okay!?"{waitForClick}{clearText}{marker}{sound C7A469}{appendText}[You'haru']
+"Are you serious!?"{waitForClick}{clearText}{marker}{sound C7A470}{appendText}[Kid]
+"Totally!"{waitForClick}{clearText}{marker}{sound C7A471}{appendText}[Kid]
+"Coco and Takeshi weren't on the sub that 
+rescued you."{waitForClick}{clearText}{marker}{sound C7A472}{appendText}[Kid]
+"And the only others who were rescued were 
+Tsugumi and Kaburaki...."{waitForClick}{clearText}
+
+[0000039b]10: 
+[0000039c]0f 81 00 00 00 00 00 00 14 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13ADM 320 3
+[000003ad]10: 
+[000003ae]19: showTextbox
+[000003af]ff 1f 00: text 1f
+{marker}{sound PIPI_04}{appendText}[Pipi]
+"Bow-wow!"{waitForClick}{clearText}{marker}{appendText}Pipi looked at Hokuto and me, and gave a loud 
+bark.{waitForClick}{clearText}{marker}{sound C7A473}{appendText}[Kid]
+"Oh, yeah! Pipi!"{waitForClick}{clearText}{marker}{sound C7A474}{appendText}[Kid]
+"Pipi...had a disc in his mouth, didn't he?"{waitForClick}{clearText}{marker}{sound C7A475}{appendText}[You'haru']
+"Uh-huh...you mean the terabyte disc, right?"{waitForClick}{clearText}{marker}{sound C7A476}{appendText}[Kid]
+"That's right, Sora's data and her memories 
+are in it...."{waitForClick}{clearText}{marker}{sound C7A477}{appendText}[Kid]
+"What else, um...."{waitForClick}{clearText}
+
+[000003b2]10: 
+[000003b3]0f 81 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU14ADM 320 3
+[000003c4]10: 
+[000003c5]19: showTextbox
+[000003c6]ff 20 00: text 20
+{marker}{sound C7A478}{appendText}[You'haru']
+"W-wait a minute!"{waitForClick}{clearText}{marker}{sound C7A479}{appendText}[You'haru']
+"Where on earth are you now!?"{waitForClick}{clearText}{marker}{sound C7A480}{appendText}[Kid]
+"That doesn't really matter."{waitForClick}{clearText}{marker}{sound C7A481}{appendText}[Kid]
+"You have to believe me!"{waitForClick}{clearText}
+
+[000003c9]10: 
+[000003ca]0f 81 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU18ADM 320 3
+[000003db]10: 
+[000003dc]19: showTextbox
+[000003dd]ff 21 00: text 21
+{marker}{sound C7A482}{appendText}[You'haru']
+"How am I supposed to do that...?"{waitForClick}{clearText}{marker}{sound C7A483}{appendText}[You'haru']
+"What is this...am I hearing things?"{waitForClick}{clearText}{marker}{sound C7A484}{appendText}[Kid]
+"No, you are not!"{waitForClick}{clearText}{marker}{sound C7A485}{appendText}[Kid]
+"Seriously, Takeshi and Coco are...."{waitForClick}{clearText}{marker}{sound PIPI_01}{appendText}[Pipi]
+"Bow!"{waitForClick}{clearText}{marker}{appendText}Pipi started barking again.{waitForClick}{clearText}{marker}{sound C7A486}{appendText}[Kid]
+"Oh, oh, I know!"{waitForClick}{clearText}{marker}{sound C7A487}{appendText}[Kid]
+"Pipi! Pipi must have seen it!"{waitForClick}{clearText}{marker}{sound C7A488}{appendText}[Kid]
+"Pipi saw Coco collapsed in the hallway."{waitForClick}{clearText}{marker}{sound C7A489}{appendText}[Kid]
+"There's gotta be some image data of that 
+saved in Pipi's memory."{waitForClick}{clearText}{marker}{sound C7A490}{appendText}[Kid]
+"Can you play it back?"{waitForClick}{clearText}{marker}{appendText}[You'haru']
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[000003e0]10: 
+[000003e1]0f 81 00 00 00 00 00 00 17 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU17ADM 320 3
+[000003f2]10: 
+[000003f3]19: showTextbox
+[000003f4]ff 22 00: text 22
+{marker}{appendText}[You'haru']
+".................."{waitForClick}{clearText}{marker}{appendText}[Kid]
+".................."{waitForClick}{clearText}{marker}{appendText}She dropped her head down as if deep in 
+thought, closed her eyes and massaged her 
+temples with her fingertips.{waitForClick}{clearText}{marker}{appendText}After seeming distressed in this manner for a 
+while, she must have reached a conclusion. 
+You looked up in different direction and 
+spoke. {waitForClick}{clearText}
+
+[000003f7]10: 
+[000003f8]0f 81 00 00 00 00 00 00 18 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU18ADM 320 3
+[00000409]10: 
+[0000040a]19: showTextbox
+[0000040b]ff 23 00: text 23
+{marker}{sound C7A491}{appendText}[You'haru']
+"Alright...."{waitForClick}{clearText}{marker}{sound C7A492}{appendText}[You'haru']
+"I have no idea who you are, but I'll see 
+what I can do."{waitForClick}{clearText}{marker}{sound C7A493}{appendText}[Kid]
+"Thank you, You."{waitForClick}{clearText}{marker}{sound C7A494}{appendText}[Kid]
+"I'm counting on you. It's about time I get 
+back to where I came from."{waitForClick}{clearText}{marker}{sound C7A495}{appendText}[You'haru']
+"Where did you come from?"{waitForClick}{clearText}{marker}{sound C7A496}{appendText}[Kid]
+"You wouldn't believe me, but...."{waitForClick}{clearText}{marker}{sound C7A497}{appendText}[Kid]
+"It's...17 years into the future...."{waitForClick}{clearText}
+
+[0000040e]10: 
+[0000040f]18: hideTextbox
+[00000410]10: 
+[00000411]45 a0 12 00 00 81 00 00: monoColorOverlay 18 1
+[00000419]10: 
+[0000041a]04: stopBGM
+[0000041b]10: 
+[0000041c]10 81 00 00 80 00 00: removeFG 1 0
+[00000423]10: 
+[00000424]0c 00 00 00 00 19 00 80 00 00 82 00 00: bgload 00000000 IMG05A 0 2
+[00000431]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000043b]27 00 00: fadeOutMonoColorOverlay
+[0000043e]00: 
+[0000043f]05 8a 00 00: unSkippableDelay 10
+[00000443]fe 28 0a a4 fa 14 14 00 a0 7b 00 00: setSceneTitleByIndex 123
+[0000044f]00: 
+[00000450]28: l_unk28
+[00000451]10: 
+[00000452]19: showTextbox
+[00000453]ff 24 00: text 24
+{marker}{appendText}Hokuto and I went back to the world of 2034.{waitForClick}{clearText}{marker}{appendText}Surprisingly, the future had been completely 
+altered!{waitForClick}{clearText}{marker}{appendText}Takeshi was there. So was Coco.{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana was here, as was 
+Yubiseiakikana.{waitForClick}{clearText}{marker}{appendText}Tsugumi was there along with Sara.{waitForClick}{clearText}{marker}{appendText}Sora was there. Kaburaki was there.{waitForClick}{clearText}{marker}{appendText}And so was Hokuto.{waitForClick}{clearText}{marker}{appendText}They were chatting happily in a circle.{waitForClick}{clearText}{marker}{appendText}I didn't know what had happened, but...I was 
+just relieved.... {waitForClick}{clearText}{marker}{appendText}The future had been altered....{waitForClick}{clearText}
+
+[00000456]10: 
+[00000457]04: stopBGM
+[00000458]10: 
+[00000459]19: showTextbox
+[0000045a]ff 25 00: text 25
+{marker}{appendText}But how did it happen...?{waitForClick}{clearText}{marker}{appendText}I supposed Yubiseiharukana had kept her 
+promise with Hokuto, so Coco and Takeshi were 
+rescued immediately afterwards.{waitForClick}{clearText}{marker}{appendText}In this version of history, Takeshi hadn't 
+died 17 years ago, but was still alive and 
+well.{waitForClick}{clearText}{marker}{appendText}So in this world, Tsugumi didn't have to send 
+Hokuto and Sara to the institution.{waitForClick}{clearText}{marker}{appendText}In this version of the future, Hokuto and 
+Sara didn't have to be separated.{waitForClick}{clearText}{marker}{appendText}Besides....{waitForClick}{clearText}{marker}{appendText}I understood that the incident in 2034 was 
+planned so that I, Blick Winkel would come 
+into existence.{waitForClick}{clearText}{marker}{appendText}It was planned to have me descend in this 
+world so that the past would be altered, and 
+that Coco and Takeshi would be saved. {waitForClick}{clearText}{marker}{appendText}But...in this history, Coco and Takeshi had 
+already been rescued safely 17 years ago.{waitForClick}{clearText}{marker}{appendText}Therefore, there was no longer any way to 
+grab my attention and make me appear in this 
+world.{waitForClick}{clearText}{marker}{appendText}So, Yubiseiharukana didn't have to come up 
+with an outrageous plan to 'trap everyone at 
+LeMU.'{waitForClick}{clearText}{marker}{appendText}Which meant that the incident, starting on 
+May 1st 2034 hadn't taken place in this 
+history.{waitForClick}{clearText}{marker}{appendText}None of them had been trapped in LeMU.{waitForClick}{clearText}{marker}{appendText}Which meant that Yubiseiharukana had no 
+reason to lie to Yubiseiakikana.{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana must have told 
+Yubiseiakikana the truth in this history.{waitForClick}{clearText}{marker}{appendText}So they were all able to spend their lives 
+peacefully from 2017 until now. {waitForClick}{clearText}{marker}{appendText}They all had lived safely with time just 
+passing by peacefully and slowly....{waitForClick}{clearText}{marker}{appendText}And that was what I was seeing right then.{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}
+
+[0000045d]10: 
+[0000045e]03 8d 00 00 a0 64 00 00: playBGM 13 100
+[00000466]10: 
+[00000467]19: showTextbox
+[00000468]ff 26 00: text 26
+{marker}{appendText}Hey, but wait a second....{waitForClick}{clearText}{marker}{appendText}I needed to think a little more about this.{waitForClick}{clearText}{marker}{appendText}In 2017, Takeshi and Coco were saved by 
+Yubiseiharukana's action.{waitForClick}{clearText}{marker}{appendText}So if the time passed by peacefully, 
+eventually it would be the year 2034.{waitForClick}{clearText}{marker}{appendText}There wouldn't be any accident.{waitForClick}{clearText}{marker}{appendText}I, Blick Winkel, wouldn't appear.{waitForClick}{clearText}{marker}{appendText}What would happen then?{waitForClick}{clearText}{marker}{appendText}Hokuto in this world wouldn't talk to Takeshi 
+in the past (which is 2017).{waitForClick}{clearText}{marker}{appendText}In the past that I know....{waitForClick}{clearText}{marker}{appendText}Hokuto had funneled his raw, untamed 'force', 
+and had shouted to Takeshi's body lying on 
+the bottom of the ocean.{waitForClick}{clearText}{marker}{appendText}'Dad! Daad! Don't you die on me!'{waitForClick}{clearText}{marker}{appendText}But in the past retraced from this future, 
+Takeshi had never heard his son's scream.{waitForClick}{clearText}{marker}{appendText}That meant....{waitForClick}{clearText}{marker}{appendText}Takeshi would have long decomposed on the 
+bottom of the ocean....{waitForClick}{clearText}{marker}{appendText}Since Takeshi hadn't come back to life, Coco 
+would have been left in the hallway, and....{waitForClick}{clearText}{marker}{appendText}Both of them would die.{waitForClick}{clearText}{marker}{appendText}Because the incident in 2017 had already 
+taken place as a historical fact.{waitForClick}{clearText}{marker}{appendText}Which meant that even in the past connected 
+directly to this world, the incident in 2017 
+wouldn't have been avoided.{waitForClick}{clearText}{marker}{appendText}Therefore this world could never be possible.{waitForClick}{clearText}{marker}{appendText}It could never exist! It was a paradox!{waitForClick}{clearText}{marker}{appendText}If this world could exist, this question would 
+naturally arise. {waitForClick}{clearText}{marker}{appendText}"Who had saved Takeshi who is alive here 
+today?"{waitForClick}{clearText}{marker}{appendText}Was it Hokuto from a different future...?{waitForClick}{clearText}{marker}{appendText}Was it that Hokuto from a world where there 
+had been an accident in 2034...who had saved 
+Takeshi...?{waitForClick}{clearText}{marker}{appendText}No...that was not possible....{waitForClick}{clearText}{marker}{appendText}Because in order for the incident to take 
+place in 2034.... {waitForClick}{clearText}{marker}{appendText}The condition must be that 'Takeshi could not 
+be saved in 2017.'{waitForClick}{clearText}{marker}{appendText}Which meant:{waitForClick}{clearText}{marker}{appendText}In order for Takeshi to come back to life at 
+the bottom of the ocean, the events had to 
+take place in 2034.{waitForClick}{clearText}{marker}{appendText}And in order for Coco to go under cryogenic 
+suspension, the events had to take place in 
+2034!{waitForClick}{clearText}{marker}{appendText}Therefore, this peaceful world could never 
+exist!{waitForClick}{clearText}{marker}{appendText}Just as I reached this conclusion....{waitForClick}{clearText}
+
+[0000046b]10: 
+[0000046c]0c 00 00 00 00 1a 00 80 00 00 82 00 00: bgload 00000000 IMG04A 0 2
+[00000479]fe 28 0a a2 41 14 14 00 a0 4f 00 00: varop (28 0a a2) 41 := (00) 79
+[00000485]fe 28 0a a2 42 14 14 00 84 00 00: varop (28 0a a2) 42 := (00) 4
+[00000490]fe 28 0a a2 50 14 14 00 80 00 00: varop (28 0a a2) 50 := (00) 0
+[0000049b]10: 
+[0000049c]20 a0 2d 00 00: showDimInAndOutAnim
+[000004a1]10: 
+[000004a2]19: showTextbox
+[000004a3]ff 27 00: text 27
+{marker}{appendText}Takeshi, who was cheerfully talking with 
+everyone suddenly started to decompose with a 
+horrible sound.{waitForClick}{clearText}{marker}{appendText}His skin became soggy and peeled off by itself.{waitForClick}{clearText}{marker}{appendText}His exposed muscle fibers became dark and 
+putrid, their surface flaking away.{waitForClick}{clearText}{marker}{appendText}His cells started to dissolve and run like mud 
+dripping to the ground.{waitForClick}{clearText}{marker}{appendText}His abdomen burst open spilling his internal 
+organs.  {waitForClick}{clearText}{marker}{appendText}His hair fell out in chunks, exposing the 
+white skull underneath....{waitForClick}{clearText}{marker}{appendText}All that was left were white bones with 
+pieces of red flesh stuck to them.{waitForClick}{clearText}{marker}{appendText}Eventually, even his skeleton collapsed with 
+a dry sound.{waitForClick}{clearText}{marker}{appendText}And at the same time, Coco disappeared 
+without a sound.{waitForClick}{clearText}
+
+[000004a6]10: 
+[000004a7]18: hideTextbox
+[000004a8]10: 
+[000004a9]45 86 00 00 81 00 00: monoColorOverlay 6 1
+[000004b0]10: 
+[000004b1]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[000004b5]10: 
+[000004b6]0c 00 00 00 00 1b 00 86 00 00 82 00 00: bgload 00000000 BG39A2 6 2
+[000004c3]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000004cd]27 00 00: fadeOutMonoColorOverlay
+[000004d0]00: 
+[000004d1]05 8a 00 00: unSkippableDelay 10
+[000004d5]10: 
+[000004d6]19: showTextbox
+[000004d7]ff 28 00: text 28
+{marker}{appendText}Confused, Hokuto and I flew back to 2017.{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana was still standing in the 
+same place.{waitForClick}{clearText}{marker}{sound C7A498}{appendText}[Kid]
+"You! You!"{waitForClick}{clearText}
+
+[000004da]10: 
+[000004db]0f 81 00 00 00 00 00 00 1c 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU14ADM 320 3
+[000004ec]10: 
+[000004ed]19: showTextbox
+[000004ee]ff 29 00: text 29
+{marker}{sound C7A499}{appendText}[You'haru']
+"W-what!? You just disappeared and now you're 
+back again....?"{waitForClick}{clearText}{marker}{sound C7A500}{appendText}[You'haru']
+"Don't tell me it was only a joke or 
+something."{waitForClick}{clearText}{marker}{sound C7A501}{appendText}[Kid]
+"I won't."{waitForClick}{clearText}{marker}{sound C7A502}{appendText}[Kid]
+"It was real. I'm telling the truth."{waitForClick}{clearText}{marker}{sound C7A503}{appendText}[Kid]
+"Takeshi and Coco are sleeping in the capsule 
+pods right now."{waitForClick}{clearText}{marker}{sound C7A504}{appendText}[Kid]
+"But...but...."{waitForClick}{clearText}{marker}{sound C7A505}{appendText}[Kid]
+"You can't rescue them!"{waitForClick}{clearText}{marker}{sound C7A506}{appendText}[You'haru']
+"What!? Why is that!?"{waitForClick}{clearText}{marker}{sound C7A507}{appendText}[Kid]
+"It's...it's because...."{waitForClick}{clearText}
+
+[000004f1]10: 
+[000004f2]0f 81 00 00 00 00 00 00 1d 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU13ADM 320 3
+[00000503]10: 
+[00000504]19: showTextbox
+[00000505]ff 2a 00: text 2a
+{marker}{appendText}[You'haru']
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[You'haru']
+".................."{waitForClick}{clearText}{marker}{appendText}[Kid]
+".................."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Ah! I cannot stand it any longer!"{waitForClick}{clearText}{marker}{appendText}I pushed away Hokuto's consciousness and 
+jumped to the front.{waitForClick}{clearText}{marker}{appendText}[BW]
+"You have to wait for 17 years!"{waitForClick}{clearText}{marker}{appendText}I told her that before anything else.{waitForClick}{clearText}{marker}{appendText}[BW]
+"17 years from now, I will reappear before 
+you, I promise!"{waitForClick}{clearText}{marker}{appendText}[You'haru']
+"???"{waitForClick}{clearText}{marker}{appendText}Puckering out her lips and You cocked her 
+head to the side.{waitForClick}{clearText}{marker}{appendText}[BW]
+"Just, listen carefully to what I am going to 
+tell you."{waitForClick}{clearText}{marker}{appendText}I explained to her about the following.{waitForClick}{clearText}
+
+[00000508]10: 
+[00000509]19: showTextbox
+[0000050a]ff 2b 00: text 2b
+{marker}{appendText}[BW]
+"'17 years from now, I will reappear to you 
+all.'"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I just told you that, right?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"But in order for me to reappear, you will 
+need to trick me. "{waitForClick}{clearText}{marker}{appendText}[BW]
+"So what I am asking you to do is, trick me 
+17 years from now!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Trick me into falsely believing that it is 
+the year 2017 again."{waitForClick}{clearText}{marker}{appendText}[BW]
+"When that happens, I will still be the third 
+eye, Blick Winkel, and that will cause me to 
+reveal myself."{waitForClick}{clearText}{marker}{appendText}[BW]
+"And unless I reveal myself, neither Takeshi 
+nor Coco will be saved."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Because in order to restore life to Takeshi, 
+who sank to the bottom of the ocean, I will 
+need to appear as myself and go back to the 
+year 2017."{waitForClick}{clearText}{marker}{appendText}[BW]
+"If I do not appear myself, Takeshi is going 
+to rot at the bottom of the ocean."{waitForClick}{clearText}{marker}{appendText}[BW]
+"And if Takeshi fails to reach the 
+laboratory, Coco will be left in the 
+hallway...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Both of them will die."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Do you get it?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"So, no matter what happens, you need to stay 
+away from IBF until 17 years from now!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"If you save Takeshi and Coco now, the events 
+in 2034 will fail to take place."{waitForClick}{clearText}{marker}{appendText}[BW]
+"And if that happens, I will not appear...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"If I do not appear, then I will be unable to 
+save Takeshi and Coco in 2017...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Which will form a time paradox and Takeshi 
+and Coco will disappear."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I'll repeat it again, okay?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"In order for me to appear in the year 2034, 
+you MUST NOT rescue Takeshi and Coco now."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I know it is painful, but that is the only 
+way...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"..........................."{waitForClick}{clearText}{marker}{appendText}[BW]
+"And...as for the way to trick me...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Well, how can I explain...? You will need a 
+bit of preparation."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Although it should not be too difficult."{waitForClick}{clearText}{marker}{appendText}[BW]
+"You certainly have enough time...17 years, 
+actually...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"So it should not be impossible."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I will tell you what to do...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Are you ready?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"The day to act on the plan will be on 
+Monday, May 1, 2034."{waitForClick}{clearText}{marker}{appendText}[BW]
+"First, Sara will be visiting LeMU for a 
+school event on that day."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Sara is Tsugumi's daughter who will be born 
+next January."{waitForClick}{clearText}{marker}{appendText}[BW]
+"She is actually a twin, and her twin 
+brother's name is Hokuto...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"But due to unavoidable circumstances, 
+Tsugumi, Sara and Hokuto will be separated."{waitForClick}{clearText}{marker}{appendText}[BW]
+"So you could probably just tell Tsugumi 'you 
+will be reunited with your son and daughter 
+at LeMU.'"{waitForClick}{clearText}{marker}{appendText}[BW]
+"If you tell her that, Tsugumi will come to 
+LeMU for sure...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Next, you can also invite Hokuto in the same 
+way."{waitForClick}{clearText}{marker}{appendText}[BW]
+"If you tell him 'you will meet your mother 
+and sister', he will also come, alone."{waitForClick}{clearText}{marker}{appendText}[BW]
+"You must also have your daughter, 
+Yubiseiakikana, work as LeMU attendant just 
+as you did."{waitForClick}{clearText}{marker}{appendText}[BW]
+"If you coach her, you could lead her in that 
+direction, right?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"And you must not tell anything to Sora."{waitForClick}{clearText}{marker}{appendText}[BW]
+"It is best that you erase her memories of the 
+incident in 2017."{waitForClick}{clearText}{marker}{appendText}[BW]
+"There is nothing to worry about because all 
+the backup memories are saved in the terabyte 
+disc."{waitForClick}{clearText}{marker}{appendText}[BW]
+"And finally...you will need the cooperation 
+of young Kaburaki."{waitForClick}{clearText}{marker}{appendText}[BW]
+"17 years from now, Kaburaki must look and act 
+absolutely like Takeshi Kuranari."{waitForClick}{clearText}{marker}{appendText}[BW]
+"So he must begin training to look and act 
+just like Takeshi."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Do not worry. He will catch on in 17 years."{waitForClick}{clearText}{marker}{appendText}[BW]
+"These six people are required for the plan."{waitForClick}{clearText}{marker}{appendText}[BW]
+"All you have to do is...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Simply throw them all together into LeMU on 
+May 1, 2034, and have an accident similar to 
+the one in 2017."{waitForClick}{clearText}{marker}{appendText}[BW]
+"If you can arrange this, things will work 
+out by themselves."{waitForClick}{clearText}{marker}{appendText}[BW]
+"The time in question will be one week from 
+the 1st to the 7th."{waitForClick}{clearText}{marker}{appendText}[BW]
+"For these seven days, you must not interfere 
+with them."{waitForClick}{clearText}{marker}{appendText}[BW]
+"No matter what kind of crisis happens. 
+Understood?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"They will survive by themselves."{waitForClick}{clearText}{marker}{appendText}[BW]
+"And...should I show no sign of reappearing 
+by 9 p.m. on the 6th...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Then I ask of you to rescue them all...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Is that clear? Will you do what I just told 
+you? You must not forget."{waitForClick}{clearText}{marker}{appendText}[BW]
+"On May 1, 2034, you are going to trick me. 
+Understood?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Oh...wait...I mean not 'me' to be 
+exact...it's actually 'Hokuto'...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I want you to trick Hokuto."{waitForClick}{clearText}{marker}{appendText}[BW]
+"You must trick him so that he will believe 
+it is the year 2017."{waitForClick}{clearText}{marker}{appendText}[BW]
+"..........................."{waitForClick}{clearText}{marker}{appendText}[BW]
+"17 years from now, without remembering why, 
+I might ask you something like..."{waitForClick}{clearText}{marker}{appendText}[BW]
+"'Why have you called me here?'"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Then I want you to answer this way."{waitForClick}{clearText}{marker}{appendText}[BW]
+"'I only followed your directions.'"{waitForClick}{clearText}{marker}{appendText}[BW]
+"...That is all."{waitForClick}{clearText}{marker}{appendText}[BW]
+"It was kind of lengthy, but...do you 
+understand? You got it, right?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I need you to understand this...."{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana was surprisingly accepting.{waitForClick}{clearText}{marker}{appendText}As if overwhelmed by my enthusiasm, she kept 
+nodding her head.{waitForClick}{clearText}{marker}{appendText}But I was still worried...about whether she 
+truly understood everything.{waitForClick}{clearText}{marker}{appendText}Explaining to her again in more detail, I 
+repeated the same words almost as if I were 
+trying to hypnotize her.{waitForClick}{clearText}{marker}{appendText}It took several more hours for her to 
+precisely capture the whole picture.{waitForClick}{clearText}{marker}{appendText}Hokuto and I made sure that she understood 
+one last time. Then we left her.{waitForClick}{clearText}
+
+[0000050d]10: 
+[0000050e]18: hideTextbox
+[0000050f]10: 
+[00000510]45 86 00 00 81 00 00: monoColorOverlay 6 1
+[00000517]10: 
+[00000518]04: stopBGM
+[00000519]10: 
+[0000051a]0c 00 00 00 00 1e 00 86 00 00 82 00 00: bgload 00000000 EV_YU14A 6 2
+[00000527]fe 28 0a a2 38 14 14 00 81 00 00: setKomoreType 1
+[00000532]10: 
+[00000533]20 a0 1b 00 00: showKomoreAnim
+[00000538]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000542]27 00 00: fadeOutMonoColorOverlay
+[00000545]00: 
+[00000546]05 8a 00 00: unSkippableDelay 10
+[0000054a]fe 28 0a a4 fa 14 14 00 a0 7c 00 00: setSceneTitleByIndex 124
+[00000556]00: 
+[00000557]28: l_unk28
+[00000558]10: 
+[00000559]19: showTextbox
+[0000055a]ff 2c 00: text 2c
+{marker}{appendText}The world in 2034 had returned to normal. {waitForClick}{clearText}{marker}{appendText}Hokuto and I were still confronting 
+Yubiseiharukana.{waitForClick}{clearText}{marker}{appendText}She kept her mouth closed as if she had 
+spoken about everything.{waitForClick}{clearText}{marker}{appendText}You (Yubiseiakikana) stood next to her also 
+wordless.{waitForClick}{clearText}{marker}{appendText}In the cold silence, I tried to reorganize in 
+my mind what had happened so far, and started 
+wondering....{waitForClick}{clearText}{marker}{appendText}'Why am I here?'{waitForClick}{clearText}{marker}{appendText}I found the answer easily.{waitForClick}{clearText}{marker}{appendText}'I have appeared because I was tricked by 
+myself from the past.'{waitForClick}{clearText}
+
+[0000055d]10: 
+[0000055e]03 8f 00 00 a0 64 00 00: playBGM 15 100
+[00000566]10: 
+[00000567]19: showTextbox
+[00000568]ff 2d 00: text 2d
+{marker}{appendText}I mean....{waitForClick}{clearText}{marker}{appendText}The mastermind behind the incident in 2034 
+was no one else other than myself.{waitForClick}{clearText}{marker}{appendText}In 2017, I had told You to trick me, and 
+therefore I appeared in the world in 2034, 
+having been tricked by myself.{waitForClick}{clearText}{marker}{appendText}Thanks to the strength of Hokuto's appeal, 
+Takeshi had come back to life and saved Coco, 
+helped her into the pod and activated the 
+cryogenic suspension.{waitForClick}{clearText}{marker}{appendText}So...that was what happened....{waitForClick}{clearText}{marker}{appendText}That moment, when Hokuto had shouted out 
+'Dad!' at the dark bottom of the ocean.... {waitForClick}{clearText}{marker}{appendText}Everything had happened for the sake of that 
+moment....{waitForClick}{clearText}{marker}{appendText}It had taken 17 years, going back in time, in 
+order to bring the dead back to life....{waitForClick}{clearText}{marker}{appendText}That was everything.{waitForClick}{clearText}{marker}{appendText}Coco and Takeshi were still sleeping 357 feet 
+under the ocean.{waitForClick}{clearText}{marker}{appendText}(So I need to get there!){waitForClick}{clearText}{marker}{appendText}In order to save them!{waitForClick}{clearText}
+
+[0000056b]10: 
+[0000056c]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2
+[00000576]10: 
+[00000577]21 87 00 00: closeKomoreAnim
+[0000057b]10: 
+[0000057c]19: showTextbox
+[0000057d]ff 2e 00: text 2e
+{marker}{appendText}Before I realized it, I was already sprinting 
+across the island.{waitForClick}{clearText}
+
+[00000580]10: 
+[00000581]0c 00 00 00 00 1f 00 80 00 00 82 00 00: bgload 00000000 BG38A2 0 2
+[0000058e]10: 
+[0000058f]19: showTextbox
+[00000590]ff 2f 00: text 2f
+{marker}{appendText}I ran on the grass and jumped into the deep 
+brush.{waitForClick}{clearText}{marker}{appendText}Dodging the branches, slicing through the 
+wind, I ran like an arrow released.{waitForClick}{clearText}{marker}{appendText}As I pumped my legs I thought....{waitForClick}{clearText}{marker}{appendText}(How can I get to the bottom of the ocean...?){waitForClick}{clearText}{marker}{appendText}I cut through the woods as I was thinking.{waitForClick}{clearText}{marker}{appendText}I sprinted over the curving arch of a bridge, 
+and reached the docks, the harbor for the 
+floating island.{waitForClick}{clearText}{marker}{appendText}I looked around and didn't see anything that 
+resembled a mini-sub.{waitForClick}{clearText}{marker}{appendText}As I tried to catch my breath, I walked 
+around the docks.{waitForClick}{clearText}{marker}{appendText}I noticed there were broken pieces of rock in 
+the middle of the open area.{waitForClick}{clearText}{marker}{appendText}All of the pieces scattered around were huge.{waitForClick}{clearText}{marker}{appendText}They were as big as my whole body.{waitForClick}{clearText}{marker}{appendText}The surface of the rocks had a refined 
+smoothness.{waitForClick}{clearText}{marker}{appendText}Looking closely, I found that some letters 
+were carved on it.{waitForClick}{clearText}{marker}{appendText}'Wher' 'abov' 'sky' There were meaningless 
+letters jumbled on the pieces of rock near me.{waitForClick}{clearText}{marker}{appendText}There were letters on the other pieces.{waitForClick}{clearText}{marker}{appendText}I put the pieces together and tried to guess 
+the original sentence.{waitForClick}{clearText}
+
+[00000593]10: 
+[00000594]0c 00 00 00 00 20 00 80 00 00 82 00 00: bgload 00000000 IT06B 0 2
+[000005a1]10: 
+[000005a2]19: showTextbox
+[000005a3]ff 30 00: text 30
+{marker}{appendText}It said...'Where' 'is' 'Heaven?'{waitForClick}{clearText}{marker}{appendText}'Above the' 'sky, and' 'at your feet....'{waitForClick}{clearText}{marker}{appendText}[BW]
+"It's a stone monument...."{waitForClick}{clearText}{marker}{appendText}I whispered.{waitForClick}{clearText}{marker}{appendText}The monument must have fallen down for some 
+reason and had broken into pieces.{waitForClick}{clearText}{marker}{appendText}Was it due to the tremor from the accident?{waitForClick}{clearText}{marker}{appendText}Or had it been the passengers, who in a state 
+of panic had rushed towards the docks and 
+knocked it over?{waitForClick}{clearText}{marker}{appendText}I had no idea what the cause was.{waitForClick}{clearText}{marker}{appendText}I picked up one of the smaller pieces.{waitForClick}{clearText}{marker}{appendText}[BW]
+"Oh...it's heavy...."{waitForClick}{clearText}{marker}{appendText}It was probably as heavy as Coco.{waitForClick}{clearText}
+
+[000005a6]10: 
+[000005a7]0c 00 00 00 00 21 00 80 00 00 82 00 00: bgload 00000000 BG39A2 0 2
+[000005b4]10: 
+[000005b5]19: showTextbox
+[000005b6]ff 31 00: text 31
+{marker}{appendText}And then....{waitForClick}{clearText}{marker}{appendText}A thought just hit me.{waitForClick}{clearText}{marker}{appendText}'If I jump into the ocean holding this piece 
+of rock in my arms....'{waitForClick}{clearText}{marker}{appendText}Before I had time to think it over, my feet 
+were starting to move already.{waitForClick}{clearText}{marker}{appendText}I ran hard towards the ocean....{waitForClick}{clearText}{marker}{appendText}The moment I reached my maximum speed, I 
+kicked off the ground with all my strength.{waitForClick}{clearText}{marker}{appendText}My body flew in the air....{waitForClick}{clearText}{marker}{appendText}I jumped high over the fence....{waitForClick}{clearText}{marker}{appendText}The blue water surface swayed below my eyes....{waitForClick}{clearText}{marker}{appendText}I splashed into the ocean holding the heavy 
+piece of stone.{waitForClick}{clearText}{marker}{appendText}The letters on the piece said...'Heaven'....{waitForClick}{clearText}{marker}{appendText}Holding 'Heaven' tightly to my chest, I 
+plummeted into the darkness.{waitForClick}{clearText}
+
+[000005b9]10: 
+[000005ba]18: hideTextbox
+[000005bb]10: 
+[000005bc]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000005c3]10: 
+[000005c4]0c 00 00 00 00 22 00 86 00 00 82 00 00: bgload 00000000 IMG06A 6 2
+[000005d1]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000005db]27 00 00: fadeOutMonoColorOverlay
+[000005de]00: 
+[000005df]05 8a 00 00: unSkippableDelay 10
+[000005e3]10: 
+[000005e4]19: showTextbox
+[000005e5]ff 32 00: text 32
+{marker}{appendText}As I sank deeper and deeper, it felt as if I 
+were running fast with the wind against my 
+face.{waitForClick}{clearText}{marker}{appendText}The seawater pressed hard on my eardrums.{waitForClick}{clearText}{marker}{appendText}Unable to pop my ears because I held 'heaven' 
+in my arms...{waitForClick}{clearText}{marker}{appendText}I simply endured the pain.{waitForClick}{clearText}{marker}{appendText}Water pressure, incredibly high, squeezed my 
+body.{waitForClick}{clearText}{marker}{appendText}It felt as if my joints were about to snap 
+into pieces.{waitForClick}{clearText}{marker}{appendText}My chest felt as though it would be crushed.{waitForClick}{clearText}{marker}{appendText}Deeper, deeper, deeper....{waitForClick}{clearText}{marker}{appendText}The deeper I went, the more the water pressure 
+rose....{waitForClick}{clearText}{marker}{appendText}My lungs could not stand it.{waitForClick}{clearText}{marker}{appendText}I decided to open my mouth.{waitForClick}{clearText}{marker}{appendText}[BW]
+"Blub."{waitForClick}{clearText}{marker}{appendText}The air in my lungs came out and a large 
+amount of water poured into them.{waitForClick}{clearText}{marker}{appendText}I automatically gagged and started to choke.{waitForClick}{clearText}{marker}{appendText}Even then cold seawater filled my windpipe.{waitForClick}{clearText}{marker}{appendText}As my lungs filled up with water, I felt 
+despair welling up inside of me.{waitForClick}{clearText}{marker}{appendText}How far had I gone?{waitForClick}{clearText}{marker}{appendText}I looked up, and saw the water surface far 
+above.{waitForClick}{clearText}{marker}{appendText}I couldn't go back now.{waitForClick}{clearText}{marker}{appendText}I looked below.{waitForClick}{clearText}{marker}{appendText}I couldn't see anything.{waitForClick}{clearText}{marker}{appendText}There was only the blue-black darkness.{waitForClick}{clearText}{marker}{appendText}I couldn't see the bottom of the ocean yet.{waitForClick}{clearText}{marker}{appendText}No matter how fast I sank, 357 feet was still 
+very long.{waitForClick}{clearText}{marker}{appendText}I went deeper and deeper, but scenery was 
+unchanged.{waitForClick}{clearText}{marker}{appendText}The darkness...darkness...darkness...a world 
+covered in darkness....{waitForClick}{clearText}{marker}{appendText}It occurred to me...that I might....{waitForClick}{clearText}{marker}{appendText}I might just be swallowed by some deep ocean 
+trench and keep falling forever. I began to 
+feel desperate.{waitForClick}{clearText}{marker}{appendText}The only positive thing was that somehow the 
+pain had disappeared....{waitForClick}{clearText}{marker}{appendText}I felt that my conscious mind could still be 
+clear, as the sense of pain had numbed.{waitForClick}{clearText}{marker}{appendText}I realized that for the first time in my life.{waitForClick}{clearText}{marker}{appendText}Hey, wait....{waitForClick}{clearText}{marker}{appendText}To begin with, the body I was in belonged not 
+to me but to Hokuto....{waitForClick}{clearText}{marker}{appendText}Thinking about that I felt guilty.{waitForClick}{clearText}{marker}{appendText}(I need to return it in one piece....){waitForClick}{clearText}{marker}{appendText}I couldn't see the bottom yet.{waitForClick}{clearText}{marker}{appendText}My brain was running out of oxygen and I 
+started to lose consciousness.{waitForClick}{clearText}{marker}{appendText}My limbs were numb.{waitForClick}{clearText}{marker}{appendText}The numbness soon turned into spasms.{waitForClick}{clearText}{marker}{appendText}Against my will, my limbs started to go wild.{waitForClick}{clearText}{marker}{appendText}I almost dropped 'heaven'.{waitForClick}{clearText}{marker}{appendText}I quickly pulled it close to me and held it 
+tighter to my chest.{waitForClick}{clearText}{marker}{appendText}Going deeper, deeper and deeper....{waitForClick}{clearText}{marker}{appendText}I must have looked like a priest at an 
+exorcism gone wrong, possessed by an evil 
+spirit, my whole body twitching wildly.{waitForClick}{clearText}{marker}{appendText}Clonk.{waitForClick}{clearText}{marker}{appendText}I hit a rock surface and had stopped going 
+down.{waitForClick}{clearText}
+
+[000005e8]10: 
+[000005e9]18: hideTextbox
+[000005ea]10: 
+[000005eb]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000005f2]10: 
+[000005f3]0c 00 00 00 00 23 00 86 00 00 82 00 00: bgload 00000000 BG33A2 6 2
+[00000600]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000060a]27 00 00: fadeOutMonoColorOverlay
+[0000060d]00: 
+[0000060e]05 8a 00 00: unSkippableDelay 10
+[00000612]10: 
+[00000613]19: showTextbox
+[00000614]ff 33 00: text 33
+{marker}{appendText}Splash!{waitForClick}{clearText}{marker}{appendText}I burst forth from the water surface with 
+great force.{waitForClick}{clearText}{marker}{appendText}Putting my face above the pool, I started 
+coughing hard trying to expel all of the 
+seawater in my lungs.{waitForClick}{clearText}{marker}{appendText}I grabbed the rim of the pool.{waitForClick}{clearText}{marker}{appendText}I took a deep, deep breath.{waitForClick}{clearText}{marker}{appendText}I coughed hard as I was breathing in and 
+chucked up a large amount of water. {waitForClick}{clearText}{marker}{appendText}I repeated that a few times.{waitForClick}{clearText}{marker}{appendText}I now really understood the suffering Takeshi 
+had gone through.{waitForClick}{clearText}{marker}{appendText}I crawled up weakly onto the floor.{waitForClick}{clearText}{marker}{appendText}[BW]
+"Whew...."{waitForClick}{clearText}{marker}{appendText}But there was no time to relax.{waitForClick}{clearText}{marker}{appendText}I started running towards the examination room.{waitForClick}{clearText}
+
+[00000617]10: 
+[00000618]18: hideTextbox
+[00000619]10: 
+[0000061a]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000621]10: 
+[00000622]1e a0 3c 00 00: delay 60
+[00000627]10: 
+[00000628]04: stopBGM
+[00000629]10: 
+[0000062a]0c 00 00 00 00 24 00 86 00 00 82 00 00: bgload 00000000 BG34A1 6 2
+[00000637]10: 
+[00000638]05 53 45 30 30 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE00_01 0 100
+[00000648]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000652]27 00 00: fadeOutMonoColorOverlay
+[00000655]00: 
+[00000656]05 a0 12 00 00: unSkippableDelay 18
+[0000065b]10: 
+[0000065c]19: showTextbox
+[0000065d]ff 34 00: text 34
+{marker}{appendText}It had been 17 years since I had last been 
+there.{waitForClick}{clearText}{marker}{appendText}I felt the heaviness of all the past years, 
+as I smelled the stale odor in the room.{waitForClick}{clearText}{marker}{appendText}The paint on the capsule pod had partially 
+peeled off and the surface of it was rough 
+and weathered.{waitForClick}{clearText}{marker}{appendText}Manipulating the computer terminal I checked 
+on the status of the pods.{waitForClick}{clearText}{marker}{appendText}Both Coco and Takeshi were safe.{waitForClick}{clearText}{marker}{appendText}Under cryogenic suspension their body 
+temperatures had been kept at about 40 
+degrees Fahrenheit, with their heartrates and 
+breathing reduced to only a few times a 
+minute. They seemed to be in good health.{waitForClick}{clearText}{marker}{appendText}The cryogenic suspension device seemed to have 
+worked properly without a single glitch for 17 
+years.{waitForClick}{clearText}{marker}{appendText}I deactivated the hibernation program for 
+both of the pods.{waitForClick}{clearText}
+
+[00000660]10: 
+[00000661]18: hideTextbox
+[00000662]10: 
+[00000663]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[0000066a]10: 
+[0000066b]19: showTextbox
+[0000066c]ff 35 00: text 35
+{marker}{appendText}..............{waitForClick}{clearText}{marker}{appendText}...........{waitForClick}{clearText}{marker}{appendText}........{waitForClick}{clearText}
+
+[0000066f]10: 
+[00000670]18: hideTextbox
+[00000671]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000067b]27 00 00: fadeOutMonoColorOverlay
+[0000067e]00: 
+[0000067f]05 8a 00 00: unSkippableDelay 10
+[00000683]10: 
+[00000684]19: showTextbox
+[00000685]ff 36 00: text 36
+{marker}{appendText}Finally....{waitForClick}{clearText}{marker}{appendText}Coco and Takeshi were set to awaken at 
+anytime.{waitForClick}{clearText}{marker}{appendText}First, I opened Coco's pod. {waitForClick}{clearText}
+
+[00000688]10: 
+[00000689]05 53 45 30 30 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE00_00 0 100
+[00000699]10: 
+[0000069a]0c 00 00 00 00 25 00 80 00 00 82 00 00: bgload 00000000 EV_CO10B 0 2
+[000006a7]10: 
+[000006a8]19: showTextbox
+[000006a9]ff 37 00: text 37
+{marker}{appendText}[BW]
+"Coco...."{waitForClick}{clearText}
+
+[000006ac]10: 
+[000006ad]0c 00 00 00 00 26 00 80 00 00 82 00 00: bgload 00000000 EV_CO07A 0 2
+[000006ba]10: 
+[000006bb]19: showTextbox
+[000006bc]ff 38 00: text 38
+{marker}{appendText}[BW]
+"Coco...."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Coco...."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Coco!"{waitForClick}{clearText}
+
+[000006bf]10: 
+[000006c0]03 a0 14 00 00 a0 64 00 00: playBGM 20 100
+[000006c9]10: 
+[000006ca]0c 00 00 00 00 27 00 80 00 00 82 00 00: bgload 00000000 EV_CO07B 0 2
+[000006d7]10: 
+[000006d8]19: showTextbox
+[000006d9]ff 39 00: text 39
+{marker}{sound C7A508}{appendText}[Coco]
+"Um..umm...."{waitForClick}{clearText}{marker}{sound C7A509}{appendText}[Coco]
+"Who is it...?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"It's me, Coco."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I came to save you...."{waitForClick}{clearText}{marker}{sound C7A510}{appendText}[Coco]
+"Um...."{waitForClick}{clearText}{marker}{sound C7A511}{appendText}[Coco]
+"You...came...?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Yes."{waitForClick}{clearText}{marker}{appendText}[BW]
+"I kept my promise, didn't I?"{waitForClick}{clearText}{marker}{sound C7A512}{appendText}[Coco]
+"The promise...."{waitForClick}{clearText}{marker}{sound C7A513}{appendText}[Coco]
+"...The promise...."{waitForClick}{clearText}{marker}{sound C7A514}{appendText}[Coco]
+"...The promise...?"{waitForClick}{clearText}{marker}{appendText}Coco rubbed her eyelids and blinked repeatedly.{waitForClick}{clearText}{marker}{sound C7A515}{appendText}[Coco]
+"Oh...."{waitForClick}{clearText}{marker}{sound C7A516}{appendText}[Coco]
+"Ah...!"{waitForClick}{clearText}{marker}{sound C7A517}{appendText}[Coco]
+"Ahhh...!!"{waitForClick}{clearText}{marker}{sound C7A518}{appendText}[Coco]
+"I knew it!"{waitForClick}{clearText}{marker}{sound C7A519}{appendText}[Coco]
+"So you DID come to save me!"{waitForClick}{clearText}
+
+[000006dc]10: 
+[000006dd]0c 00 00 00 00 28 00 80 00 00 82 00 00: bgload 00000000 EV_CO20A 0 2
+[000006ea]10: 
+[000006eb]19: showTextbox
+[000006ec]ff 3a 00: text 3a
+{marker}{appendText}Coco jumped up and hugged me.{waitForClick}{clearText}{marker}{appendText}Oh wait, was it actually Hokuto who she had 
+hugged...?{waitForClick}{clearText}{marker}{appendText}Was it me...or was it Hokuto...?{waitForClick}{clearText}{marker}{appendText}Was it Hokuto who wasn't me...or was it me 
+who wasn't Hokuto...?{waitForClick}{clearText}{marker}{appendText}I did not fully understand...but still....{waitForClick}{clearText}{marker}{appendText}I hugged Coco tightly, too.{waitForClick}{clearText}
+
+[000006ef]10: 
+[000006f0]19: showTextbox
+[000006f1]ff 3b 00: text 3b
+{marker}{sound C7A520}{appendText}[Coco]
+"You know, I've been waiting for you sooooo 
+long!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I know."{waitForClick}{clearText}{marker}{sound C7A521}{appendText}[Coco]
+"I've been waiting for you so, so, so long!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I know."{waitForClick}{clearText}{marker}{sound C7A522}{appendText}[Coco]
+"I knew you would come and get me."{waitForClick}{clearText}{marker}{sound C7A523}{appendText}[Coco]
+"I wanted to see you so bad...."{waitForClick}{clearText}{marker}{sound C7A524}{appendText}[Coco]
+"I just...had to see you again...."{waitForClick}{clearText}{marker}{sound C7A525}{appendText}[Coco]
+"My brother...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"Uh, uh-huh...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"But you see, Coco...?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I'm not your brother, actually...."{waitForClick}{clearText}{marker}{sound C7A526}{appendText}[Coco]
+"Oh, that's alright."{waitForClick}{clearText}{marker}{sound C7A527}{appendText}[Coco]
+"A girl who doesn't have a brother could call 
+someone who is like a brother, 'brother!'"{waitForClick}{clearText}{marker}{appendText}[BW]
+"Where is that written?"{waitForClick}{clearText}{marker}{sound C7A528}{appendText}[Coco]
+"It's not written anywhere."{waitForClick}{clearText}
+
+[000006f4]10: 
+[000006f5]19: showTextbox
+[000006f6]ff 3c 00: text 3c
+{marker}{sound C7A529}{appendText}[Coco]
+"I just decided it!"{waitForClick}{clearText}
+
+[000006f9]10: 
+[000006fa]0c 00 00 00 00 29 00 80 00 00 82 00 00: bgload 00000000 BG34A1 0 2
+[00000707]10: 
+[00000708]0f 81 00 00 00 00 00 00 2a 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO01ADL 320 3
+[00000719]10: 
+[0000071a]19: showTextbox
+[0000071b]ff 3d 00: text 3d
+{marker}{appendText}Coco stepped away from me.{waitForClick}{clearText}{marker}{appendText}Coco and I stared at each other as if we were 
+drawn to each other.{waitForClick}{clearText}{marker}{sound C7A530}{appendText}[Coco]
+"Hey? It's strange...."{waitForClick}{clearText}{marker}{sound C7A531}{appendText}[Coco]
+"I thought I had so many things to talk to 
+you about when I finally see you, but...."{waitForClick}{clearText}{marker}{sound C7A532}{appendText}[Coco]
+"I don't know why, but...."{waitForClick}{clearText}{marker}{sound C7A533}{appendText}[Coco]
+"I get all tounge-tied...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}{marker}{sound C7A534}{appendText}[Coco]
+"Oh, but one thing...."{waitForClick}{clearText}{marker}{sound C7A535}{appendText}[Coco]
+"Can I tell you something I couldn't tell you 
+before? "{waitForClick}{clearText}{marker}{appendText}[BW]
+"Sure."{waitForClick}{clearText}{marker}{sound C7A536}{appendText}[Coco]
+"Well,"{waitForClick}{clearText}{marker}{sound C7A537}{appendText}[Coco]
+"I...."{waitForClick}{clearText}{marker}{sound C7A538}{appendText}[Coco]
+"I think you'll be surprised, but...."{waitForClick}{clearText}{marker}{sound C7A539}{appendText}[Coco]
+"You might not believe me, but...."{waitForClick}{clearText}{marker}{sound C7A540}{appendText}[Coco]
+"I...."{waitForClick}{clearText}{marker}{sound C7A541}{appendText}[Coco]
+"Well, I...."{waitForClick}{clearText}
+
+[0000071e]10: 
+[0000071f]0f 81 00 00 00 00 00 00 2b 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO02ADL 320 3
+[00000730]10: 
+[00000731]19: showTextbox
+[00000732]ff 3e 00: text 3e
+{marker}{sound C7A542}{appendText}[Coco]
+"I might have fallen in love with you."{waitForClick}{clearText}{marker}{appendText}'What!?'{waitForClick}{clearText}{marker}{appendText}My heart skipped a few beats.{waitForClick}{clearText}{marker}{appendText}[BW]
+"Well, but...."{waitForClick}{clearText}{marker}{appendText}[BW]
+"But I still.......ah...."{waitForClick}{clearText}
+
+[00000735]10: 
+[00000736]0f 81 00 00 00 00 00 00 2c 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO03ADL 320 3
+[00000747]10: 
+[00000748]19: showTextbox
+[00000749]ff 3f 00: text 3f
+{marker}{sound C7A543}{appendText}[Coco]
+"For 17 years...."{waitForClick}{clearText}{marker}{sound C7A544}{appendText}[Coco]
+"For 17 years...."{waitForClick}{clearText}{marker}{sound C7A545}{appendText}[Coco]
+"I've been waiting for you, brother."{waitForClick}{clearText}{marker}{sound C7A546}{appendText}[Coco]
+"I've known about you since 17 years ago, you 
+see?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"........."{waitForClick}{clearText}
+
+[0000074c]10: 
+[0000074d]0f 81 00 00 00 00 00 00 2d 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO02ADL 320 3
+[0000075e]10: 
+[0000075f]19: showTextbox
+[00000760]ff 40 00: text 40
+{marker}{sound C7A547}{appendText}[Coco]
+"You've been watching over me this whole 
+time, too."{waitForClick}{clearText}{marker}{sound C7A548}{appendText}[Coco]
+"But, I've been watching you, too...."{waitForClick}{clearText}{marker}{appendText}It all started to make sense to me....{waitForClick}{clearText}{marker}{appendText}Coco and I had been sharing the same time....{waitForClick}{clearText}{marker}{appendText}I must have been sharing experiences with Coco 
+through Takeshi's point of view....  {waitForClick}{clearText}{marker}{appendText}I had always been by Coco's side....{waitForClick}{clearText}
+
+[00000763]10: 
+[00000764]0f 81 00 00 00 00 00 00 2e 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO03ADL 320 3
+[00000775]10: 
+[00000776]19: showTextbox
+[00000777]ff 41 00: text 41
+{marker}{sound C7A549}{appendText}[Coco]
+"Would it be so bad if I fell in love with 
+you?"{waitForClick}{clearText}{marker}{appendText}[BW]
+"I don't think so, really...."{waitForClick}{clearText}
+
+[0000077a]10: 
+[0000077b]0f 81 00 00 00 00 00 00 2f 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO02ADL 320 3
+[0000078c]10: 
+[0000078d]19: showTextbox
+[0000078e]ff 42 00: text 42
+{marker}{sound C7A550}{appendText}[Coco]
+"Well then!"{waitForClick}{clearText}{marker}{sound C7A551}{appendText}[Coco]
+"It's decided!"{waitForClick}{clearText}{marker}{sound C7A552}{appendText}[Coco]
+"From now on, you and I are sweethearts, okay?"{waitForClick}{clearText}
+
+[00000791]10: 
+[00000792]10 81 00 00 83 00 00: removeFG 1 3
+[00000799]10: 
+[0000079a]19: showTextbox
+[0000079b]ff 43 00: text 43
+{marker}{appendText}[BW]
+"...What...?"{waitForClick}{clearText}
+
+[0000079e]10: 
+[0000079f]19: showTextbox
+[000007a0]ff 44 00: text 44
+{marker}{appendText}Before I got a chance to ask her back, Coco 
+jumped into my arms again.{waitForClick}{clearText}{marker}{appendText}Coco had regained all her strength.{waitForClick}{clearText}{marker}{appendText}Maybe the antibody had kicked in while she 
+was under cryogenic suspension.{waitForClick}{clearText}{marker}{appendText}Whatever it was...I was relieved....{waitForClick}{clearText}{marker}{appendText}My heart was filled with waves of happiness.{waitForClick}{clearText}
+
+[000007a3]10: 
+[000007a4]19: showTextbox
+[000007a5]ff 45 00: text 45
+{marker}{appendText}It had taken me a while, but it was finally 
+Takeshi's turn.{waitForClick}{clearText}{marker}{appendText}I gave the body back over to Hokuto, since I 
+wanted them to have a family moment. {waitForClick}{clearText}
+
+[000007a8]10: 
+[000007a9]05 53 45 30 30 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE00_00 0 100
+[000007b9]10: 
+[000007ba]0c 00 00 00 00 30 00 80 00 00 82 00 00: bgload 00000000 EV_ET03A 0 2
+[000007c7]10: 
+[000007c8]19: showTextbox
+[000007c9]ff 46 00: text 46
+{marker}{appendText}Hokuto opened Takeshi's pod.{waitForClick}{clearText}{marker}{sound C7A553}{appendText}[Kid]
+"Dad!"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{sound C7A554}{appendText}[Kid]
+"Dad!"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{sound C7A555}{appendText}[Kid]
+"Dad! Wake up!"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{sound C7A556}{appendText}[Kid]
+"Faaaather!"{waitForClick}{clearText}
+
+[000007cc]10: 
+[000007cd]0c 00 00 00 00 31 00 80 00 00 82 00 00: bgload 00000000 EV_ET03B 0 2
+[000007da]10: 
+[000007db]19: showTextbox
+[000007dc]ff 47 00: text 47
+{marker}{sound C7A557}{appendText}[Takeshi]
+"...Um!?"{waitForClick}{clearText}{marker}{appendText}All the sudden, Takeshi opened his eyes. {waitForClick}{clearText}{marker}{sound C7A558}{appendText}[Takeshi]
+"Wh-where...? Is this...?"{waitForClick}{clearText}{marker}{appendText}He looked around confused.{waitForClick}{clearText}{marker}{appendText}Takeshi realized that Hokuto's face was in 
+front of him, and said.{waitForClick}{clearText}{marker}{sound C7A559}{appendText}[Takeshi]
+"W-who on....?"{waitForClick}{clearText}{marker}{sound C7A560}{appendText}[Takeshi]
+"Earth're you...?"{waitForClick}{clearText}{marker}{sound C7A561}{appendText}[Kid]
+"It's me, dad!"{waitForClick}{clearText}{marker}{appendText}Takeshi took a close look at Hokuto's face.{waitForClick}{clearText}{marker}{appendText}He looked over Hokuto's whole body.{waitForClick}{clearText}{marker}{appendText}He closed his eyes tightly and started 
+banging his forehead with his palm.{waitForClick}{clearText}{marker}{appendText}He opened his eyes and glared at the 
+examination room wall.{waitForClick}{clearText}{marker}{appendText}Then, Takeshi gasped as if he realized 
+something and looked at Hokuto again.{waitForClick}{clearText}{marker}{sound C7A562}{appendText}[Takeshi]
+"So...you're that...'Hokuto?'"{waitForClick}{clearText}{marker}{sound C7A563}{appendText}[Kid]
+"That's right, it's me, dad!"{waitForClick}{clearText}{marker}{sound C7A564}{appendText}[Kid]
+"Dad! Dad! I've missed you so much!"{waitForClick}{clearText}{marker}{sound C7A565}{appendText}[Kid]
+"Daaaaad...."{waitForClick}{clearText}{marker}{appendText}Raising his voice like a child, Hokuto rubbed 
+his face against Takeshi's chest. {waitForClick}{clearText}{marker}{sound C7A566}{appendText}[Takeshi]
+"Hey hey hey...wait a sec, Hokuto...."{waitForClick}{clearText}{marker}{appendText}Takeshi pushed back Hokuto.{waitForClick}{clearText}{marker}{sound C7A567}{appendText}[Takeshi]
+"Take it easy, will you? Alright?"{waitForClick}{clearText}{marker}{appendText}Takeshi tapped Hokuto on the back....{waitForClick}{clearText}{marker}{sound C7A568}{appendText}[Kid]
+"???"{waitForClick}{clearText}
+
+[000007df]10: 
+[000007e0]0c 00 00 00 00 32 00 80 00 00 82 00 00: bgload 00000000 BG34A1 0 2
+[000007ed]10: 
+[000007ee]19: showTextbox
+[000007ef]ff 48 00: text 48
+{marker}{appendText}Takeshi raised himself and stretched his legs 
+outside the pod.{waitForClick}{clearText}{marker}{appendText}Coco rushed at him.{waitForClick}{clearText}
+
+[000007f2]10: 
+[000007f3]12 81 00 00 82 00 00 00 00 00 00 33 00 00 00 00 00 34 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 TA01AWM 00000000 CO12ADM 128 512 3
+[00000811]10: 
+[00000812]19: showTextbox
+[00000813]ff 49 00: text 49
+{marker}{sound C7A569}{appendText}[Coco]
+"Takepyon!"{waitForClick}{clearText}{marker}{appendText}Coco hastily jumped at Takeshi and hugged him.{waitForClick}{clearText}
+
+[00000816]10: 
+[00000817]0f 81 00 00 00 00 00 00 35 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA16AWM 128 3
+[00000828]10: 
+[00000829]19: showTextbox
+[0000082a]ff 4a 00: text 4a
+{marker}{sound C7A570}{appendText}[Takeshi]
+"Hey, Coco! You look all better now!"{waitForClick}{clearText}
+
+[0000082d]10: 
+[0000082e]0f 82 00 00 00 00 00 00 36 00 a2 00 00 00 83 00 00: fgload 2 00000000 CO11ADM 512 3
+[0000083f]10: 
+[00000840]19: showTextbox
+[00000841]ff 4b 00: text 4b
+{marker}{sound C7A571}{appendText}[Coco]
+"Uh-huh, I don't have a single sore spot!"{waitForClick}{clearText}{marker}{sound C7A572}{appendText}[Takeshi]
+"That's great...looks like the plan worked out 
+beautifully, didn't it?"{waitForClick}{clearText}{marker}{sound C7A573}{appendText}[Takeshi]
+"That's just so great!"{waitForClick}{clearText}{marker}{sound C7A574}{appendText}[Kid]
+"Dad! Dad!"{waitForClick}{clearText}{marker}{appendText}Hokuto jumped at Takeshi and hugged him just 
+like Coco.{waitForClick}{clearText}
+
+[00000844]10: 
+[00000845]0f 81 00 00 00 00 00 00 37 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA04AWM 128 3
+[00000856]10: 
+[00000857]19: showTextbox
+[00000858]ff 4c 00: text 4c
+{marker}{sound C7A575}{appendText}[Takeshi]
+"Whoah, stop it now!"{waitForClick}{clearText}{marker}{appendText}Takeshi forcefully peeled him away...{waitForClick}{clearText}{marker}{sound C7A576}{appendText}[Kid]
+"W-why!? Why don't you want me to hug you!?"{waitForClick}{clearText}
+
+[0000085b]10: 
+[0000085c]0f 81 00 00 00 00 00 00 38 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA01AWM 128 3
+[0000086d]10: 
+[0000086e]19: showTextbox
+[0000086f]ff 4d 00: text 4d
+{marker}{sound C7A577}{appendText}[Takeshi]
+"Before I answer that question, there's 
+something I want to ask you."{waitForClick}{clearText}{marker}{sound C7A578}{appendText}[Kid]
+"What is it?"{waitForClick}{clearText}{marker}{sound C7A579}{appendText}[Takeshi]
+"How long have I been sleeping?"{waitForClick}{clearText}{marker}{sound C7A580}{appendText}[Takeshi]
+"A day? Two days?"{waitForClick}{clearText}{marker}{sound C7A581}{appendText}[Takeshi]
+"Oh man, I didn't sleep for...a week did I?"{waitForClick}{clearText}
+
+[00000872]10: 
+[00000873]0f 82 00 00 00 00 00 00 39 00 a2 00 00 00 83 00 00: fgload 2 00000000 CO06ADM 512 3
+[00000884]10: 
+[00000885]19: showTextbox
+[00000886]ff 4e 00: text 4e
+{marker}{sound C7A582}{appendText}[Kid]
+"...Um..."{waitForClick}{clearText}{marker}{sound C7A583}{appendText}[Coco]
+"...Huh?"{waitForClick}{clearText}
+
+[00000889]10: 
+[0000088a]0f 81 00 00 00 00 00 00 3a 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA03AWM 128 3
+[0000089b]10: 
+[0000089c]19: showTextbox
+[0000089d]ff 4f 00: text 4f
+{marker}{sound C7A584}{appendText}[Takeshi]
+"Ugh...."{waitForClick}{clearText}{marker}{sound C7A585}{appendText}[Takeshi]
+"Guessing from your reaction... it's been 
+more than a week...?"{waitForClick}{clearText}
+
+[000008a0]10: 
+[000008a1]0f 82 00 00 00 00 00 00 3b 00 a2 00 00 00 83 00 00: fgload 2 00000000 CO07ADM 512 3
+[000008b2]10: 
+[000008b3]19: showTextbox
+[000008b4]ff 50 00: text 50
+{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}
+
+[000008b7]10: 
+[000008b8]0f 81 00 00 00 00 00 00 3c 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA02AWM 128 3
+[000008c9]10: 
+[000008ca]19: showTextbox
+[000008cb]ff 51 00: text 51
+{marker}{sound C7A586}{appendText}[Takeshi]
+"A month?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}
+
+[000008ce]10: 
+[000008cf]0f 81 00 00 00 00 00 00 3d 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA03AWM 128 3
+[000008e0]10: 
+[000008e1]19: showTextbox
+[000008e2]ff 52 00: text 52
+{marker}{sound C7A587}{appendText}[Takeshi]
+"Th-three months, then...maybe?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"........."{waitForClick}{clearText}{marker}{sound C7A588}{appendText}[Takeshi]
+"Y-you gotta be kidding......."{waitForClick}{clearText}{marker}{sound C7A589}{appendText}[Takeshi]
+"You mean, I've slept past summer and into 
+autumn...?"{waitForClick}{clearText}{marker}{appendText}Hokuto and Coco closed their eyes and shook 
+their heads.{waitForClick}{clearText}{marker}{sound C7A590}{appendText}[Coco]
+"Today is Sunday, May 7th...."{waitForClick}{clearText}{marker}{sound C7A591}{appendText}[Kid]
+"The last day of the holiday."{waitForClick}{clearText}
+
+[000008e5]10: 
+[000008e6]0f 81 00 00 00 00 00 00 3e 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA02AWM 128 3
+[000008f7]10: 
+[000008f8]19: showTextbox
+[000008f9]ff 53 00: text 53
+{marker}{sound C7A592}{appendText}[Takeshi]
+"FWA, HA, HA, HA!"{waitForClick}{clearText}{marker}{sound C7A593}{appendText}[Takeshi]
+"Whew, c'mon, you had me scared for a second 
+there...."{waitForClick}{clearText}{marker}{sound C7A594}{appendText}[Takeshi]
+"So it's only been a few hours since then...."{waitForClick}{clearText}{marker}{appendText}Hokuto and Coco looked at each other, nodded 
+and said.{waitForClick}{clearText}{marker}{sound C7A595}{appendText}[Kid]
+"Dad? I don't want you to panic, alright?"{waitForClick}{clearText}
+
+[000008fc]10: 
+[000008fd]0f 82 00 00 00 00 00 00 3f 00 a2 00 00 00 83 00 00: fgload 2 00000000 CO14ADM 512 3
+[0000090e]10: 
+[0000090f]19: showTextbox
+[00000910]ff 54 00: text 54
+{marker}{sound C7A596}{appendText}[Coco]
+"Just calm down and listen...."{waitForClick}{clearText}
+
+[00000913]10: 
+[00000914]0f 81 00 00 00 00 00 00 40 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA17AWM 128 3
+[00000925]10: 
+[00000926]19: showTextbox
+[00000927]ff 55 00: text 55
+{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}
+
+[0000092a]10: 
+[0000092b]0f 81 00 00 00 00 00 00 41 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA03AWM 128 3
+[0000093c]10: 
+[0000093d]19: showTextbox
+[0000093e]ff 56 00: text 56
+{marker}{sound C7A597}{appendText}[Kid]
+"Well, actually...."{waitForClick}{clearText}
+
+[00000941]10: 
+[00000942]0f 81 00 00 00 00 00 00 42 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA17AWM 128 3
+[00000953]10: 
+[00000954]19: showTextbox
+[00000955]ff 57 00: text 57
+{marker}{sound C7A598}{appendText}[Coco]
+"Takepyon...."{waitForClick}{clearText}
+
+[00000958]10: 
+[00000959]0f 81 00 00 00 00 00 00 43 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA03AWM 128 3
+[0000096a]10: 
+[0000096b]19: showTextbox
+[0000096c]ff 58 00: text 58
+{marker}{sound C7A599}{appendText}[Kid]
+"You have been...."{waitForClick}{clearText}
+
+[0000096f]10: 
+[00000970]0f 81 00 00 00 00 00 00 44 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA17AWM 128 3
+[00000981]10: 
+[00000982]19: showTextbox
+[00000983]ff 59 00: text 59
+{marker}{sound C7A600}{appendText}[Coco]
+"Sleeping for...."{waitForClick}{clearText}
+
+[00000986]10: 
+[00000987]18: hideTextbox
+[00000988]10: 
+[00000989]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[00000990]10: 
+[00000991]10 81 00 00 80 00 00: removeFG 1 0
+[00000998]10: 
+[00000999]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[000009a3]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000009ad]27 00 00: fadeOutMonoColorOverlay
+[000009b0]00: 
+[000009b1]05 83 00 00: unSkippableDelay 3
+[000009b5]10: 
+[000009b6]19: showTextbox
+[000009b7]ff 5a 00: text 5a
+{marker}{sound C7A601}{appendText}[Takeshi]
+"Wh, what, what...?"{waitForClick}{clearText}{marker}{sound C7A602}{appendText}[Takeshi]
+"17 yeeeeaaaaarrrrrrssss!?"{waitForClick}{clearText}
+
+[000009ba]10: 
+[000009bb]18: hideTextbox
+[000009bc]10: 
+[000009bd]0c 00 00 00 00 45 00 80 00 00 82 00 00: bgload 00000000 IMG06A 0 2
+[000009ca]10: 
+[000009cb]19: showTextbox
+[000009cc]ff 5b 00: text 5b
+{marker}{appendText}After a while....{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana took a small submersible to 
+pick us up at IBF pool.{waitForClick}{clearText}{marker}{appendText}Inside the mini-sub she scolded Hokuto...{waitForClick}{clearText}{marker}{sound C7A603}{appendText}[You'haru']
+"You've got to be out of your mind to dive 
+into the ocean like that"{waitForClick}{clearText}{marker}{sound C7A604}{appendText}[You'haru']
+"I mean, 357 feet...."{waitForClick}{clearText}{marker}{sound C7A605}{appendText}[You'haru']
+"Don't you know, Hokuto? In this world, 
+there's this wonderful and safe vessel for 
+going under water called a 'submarine.'"{waitForClick}{clearText}{marker}{sound C7A606}{appendText}[You'haru']
+"Why didn't you just let me know?"{waitForClick}{clearText}{marker}{sound C7A607}{appendText}[You'haru']
+"You are so stupid! Pure foolishness! You 
+must be the dumbest guy in history!"{waitForClick}{clearText}{marker}{sound C7A608}{appendText}[You'haru']
+"It must come from your father's side of the 
+family...yeah...."{waitForClick}{clearText}{marker}{appendText}She kept picking on Hokuto until they reached 
+the surface.{waitForClick}{clearText}{marker}{appendText}Hokuto must have been thinking -{waitForClick}{clearText}{marker}{appendText}'It wasn't really me who decided to jump into 
+the ocean....'{waitForClick}{clearText}
+
+[000009cf]10: 
+[000009d0]0c 00 00 00 00 46 00 80 00 00 82 00 00: bgload 00000000 BG39A2 0 2
+[000009dd]10: 
+[000009de]19: showTextbox
+[000009df]ff 5c 00: text 5c
+{marker}{appendText}The whole time, Takeshi still hadn't accepted 
+the fact that he had been sleeping for 17 
+years.{waitForClick}{clearText}{marker}{appendText}No matter how many times they tried to 
+explain, he just wouldn't listen. {waitForClick}{clearText}{marker}{appendText}Therefore, Takeshi still couldn't believe that 
+Hokuto was truly his son.{waitForClick}{clearText}
+
+[000009e2]10: 
+[000009e3]0c 00 00 00 00 47 00 80 00 00 82 00 00: bgload 00000000 EV_CO14A 0 2
+[000009f0]10: 
+[000009f1]19: showTextbox
+[000009f2]ff 5d 00: text 5d
+{marker}{appendText}Under the bright sunlight, Takeshi, Coco, 
+Hokuto, and Pipi were hanging around.{waitForClick}{clearText}{marker}{sound C7A609}{appendText}[Takeshi]
+"Good morning."{waitForClick}{clearText}{marker}{sound C7A610}{appendText}[Takeshi]
+"Those are such nice words...."{waitForClick}{clearText}{marker}{sound C7A611}{appendText}[Takeshi]
+"They make me feel like getting up and doing 
+my best."{waitForClick}{clearText}{marker}{sound C7A612}{appendText}[Coco]
+"Yeah, I agree."{waitForClick}{clearText}{marker}{sound C7A613}{appendText}[Coco]
+"Okay then, I'll say it too...."{waitForClick}{clearText}{marker}{sound C7A614}{appendText}[Coco]
+"Good morning, Takepyon."{waitForClick}{clearText}{marker}{sound C7A615}{appendText}[Takeshi]
+"Good morning, Coco."{waitForClick}{clearText}{marker}{sound C7A616}{appendText}[Kid]
+"Well, me too...."{waitForClick}{clearText}{marker}{sound C7A617}{appendText}[Kid]
+"Good morning, dad."{waitForClick}{clearText}{marker}{sound C7A618}{appendText}[Takeshi]
+"Good morning, son...."{waitForClick}{clearText}{marker}{sound C7A619}{appendText}[Takeshi]
+"...Son!? ...I DON'T have a son!"{waitForClick}{clearText}{marker}{sound C7A620}{appendText}[Kid]
+"You've got a daughter, too."{waitForClick}{clearText}{marker}{sound C7A621}{appendText}[Takeshi]
+"Hey, don't start adding kids like that!"{waitForClick}{clearText}{marker}{sound C7A622}{appendText}[Takeshi]
+"So are you telling me I'm the father of two 
+children at my age?"{waitForClick}{clearText}{marker}{sound C7A623}{appendText}[Kid]
+"That's right."{waitForClick}{clearText}{marker}{sound C7A624}{appendText}[Kid]
+"And it's true whether you like it or not...."{waitForClick}{clearText}{marker}{sound C7A625}{appendText}[Kid]
+"Right, Coco?"{waitForClick}{clearText}{marker}{sound C7A626}{appendText}[Coco]
+"Right, Hokutan?"{waitForClick}{clearText}{marker}{sound C7A627}{appendText}[Kid]
+"Nya, ha, ha, ha, ha, ha, ha!"{waitForClick}{clearText}{marker}{sound C7A628}{appendText}[Coco]
+"Kya, ha, ha, ha, ha, ha, ha!"{waitForClick}{clearText}{marker}{appendText}Listening to their cheerful laughter, I 
+thought to myself....{waitForClick}{clearText}{marker}{appendText}'I should be going back to where I came from.'{waitForClick}{clearText}{marker}{appendText}As I began to fade I heard only their happy 
+voices behind me.{waitForClick}{clearText}{marker}{sound C7A629}{appendText}[Coco]
+"Hey, Takepyon, Takepyon!"{waitForClick}{clearText}{marker}{sound C7A630}{appendText}[Takeshi]
+"Huh?"{waitForClick}{clearText}{marker}{sound C7A631}{appendText}[Coco]
+"I've got a new brother!"{waitForClick}{clearText}{marker}{sound C7A632}{appendText}[Takeshi]
+"A new brother?"{waitForClick}{clearText}{marker}{sound C7A633}{appendText}[Coco]
+"Uh-huh, he's actually my brother and my 
+boyfriend at the same time...."{waitForClick}{clearText}{marker}{sound C7A634}{appendText}[Takeshi]
+"Reeeally, well good for you."{waitForClick}{clearText}{marker}{sound PIPI_04}{appendText}[Pipi]
+"Bow-wow!"{waitForClick}{clearText}{marker}{sound C7A635}{appendText}[Kid]
+"Hey, dad! Dad!"{waitForClick}{clearText}{marker}{sound C7A636}{appendText}[Takeshi]
+"I told you NOT to call me dad!"{waitForClick}{clearText}{marker}{sound C7A637}{appendText}[Kid]
+"How about father, then?"{waitForClick}{clearText}{marker}{sound C7A638}{appendText}[Takeshi]
+"Don't call me that either!"{waitForClick}{clearText}{marker}{sound C7A639}{appendText}[Kid]
+"Why not? You told me to call you father 
+before...."{waitForClick}{clearText}{marker}{sound C7A640}{appendText}[Takeshi]
+"Well that just slipped out of my mouth...."{waitForClick}{clearText}{marker}{sound PIPI_04}{appendText}[Pipi]
+"Bow-wow!"{waitForClick}{clearText}{marker}{sound C7A641}{appendText}[Coco]
+"Hey, Takepyon, Takepyon!"{waitForClick}{clearText}{marker}{sound C7A642}{appendText}[Takeshi]
+"What's that?"{waitForClick}{clearText}{marker}{sound C7A643}{appendText}[Coco]
+"Pu-pu-ku-pu! Pu-pu-ku-pu!"{waitForClick}{clearText}{marker}{sound C7A644}{appendText}[Takeshi]
+"You're not making any sense!"{waitForClick}{clearText}{marker}{sound C7A645}{appendText}[Kid]
+"Hey, dad! Dad!"{waitForClick}{clearText}{marker}{sound C7A646}{appendText}[Takeshi]
+"What is it now!?"{waitForClick}{clearText}{marker}{sound C7A647}{appendText}[Kid]
+"Chuwa-chuwa-chuwa-chuwa!"{waitForClick}{clearText}{marker}{sound C7A648}{appendText}[Takeshi]
+"You too, huh!?"{waitForClick}{clearText}{marker}{sound PIPI_09}{appendText}[Pipi]
+"Bow-wow! Bow-wow!"{waitForClick}{clearText}{marker}{sound C7A649}{appendText}[Takeshi]
+"What's up, Pipi?"{waitForClick}{clearText}{marker}{sound PIPI_19}{appendText}[Pipi]
+"Awoooooooooo!"{waitForClick}{clearText}{marker}{sound C7A650}{appendText}[Takeshi]
+"You just wanted to howl!"{waitForClick}{clearText}{marker}{sound C7A651}{appendText}[Coco]
+"Takepiyo! Takepiyo!"{waitForClick}{clearText}{marker}{sound C7A652}{appendText}[Takeshi]
+"Hey, stop changing my nickname!"{waitForClick}{clearText}{marker}{sound C7A653}{appendText}[Coco]
+"Coco's short comedy! If Coco were a monster!"{waitForClick}{clearText}{marker}{sound C7A654}{appendText}[Coco]
+"Grrr, grrr, I'm a monster! Thump, thump, 
+thump! I'm going to destroy everything! Grrrr!"{waitForClick}{clearText}{marker}{sound C7A655}{appendText}[Takeshi]
+"Where's the punchline?"{waitForClick}{clearText}{marker}{sound C7A656}{appendText}[Kid]
+"My grandfather's son, my grandmother's son!"{waitForClick}{clearText}{marker}{sound C7A657}{appendText}[Takeshi]
+"That's so confusing!"{waitForClick}{clearText}{marker}{sound C7A658}{appendText}[Kid]
+"Hokutan's comedy sketch! If I became a 12th 
+grader,"{waitForClick}{clearText}{marker}{sound C7A901}{appendText}[Kid]
+"Since I've made it all the way to 12th 
+grade, I'll try my best not to forget to 
+bring stuff to school. {waitForClick}{clearText}{sound C7A902}{appendText}[Kid]
+Since I always seem to forget my protractor, 
+I'll do my best to remember it."{waitForClick}{clearText}{marker}{sound C7A660}{appendText}[Takeshi]
+"That's a resolution, not comedy! Well, do 
+your best! Don't you forget it, ya hear?"{waitForClick}{clearText}{marker}{sound PIPI_09}{appendText}[Pipi]
+"Bow-wow! Bow-wow!"{waitForClick}{clearText}{marker}{sound C7A661}{appendText}[Takeshi]
+"What's with you this time, Pipi?"{waitForClick}{clearText}{marker}{sound PIPI_19}{appendText}[Pipi]
+"Awoooooooooooooo!"{waitForClick}{clearText}{marker}{sound C7A662}{appendText}[Takeshi]
+"Let me guess, just wanted to howl again, 
+huh...."{waitForClick}{clearText}{marker}{sound C7A663}{appendText}[Coco]
+"Takepyon! Takepyon!"{waitForClick}{clearText}{marker}{sound C7A664}{appendText}[Takeshi]
+"What is it now...?"{waitForClick}{clearText}{marker}{sound C7A665}{appendText}[Coco]
+"I want to play cater-pi-llarrrr, I want to 
+play cater-pi-llarrrr, I want to play 
+cater-pi-llarrrr!"{waitForClick}{clearText}{marker}{sound C7A666}{appendText}[Takeshi]
+"Well, go ahead. No one's stopping you?"{waitForClick}{clearText}{marker}{sound C7A667}{appendText}[Kid]
+"Dad! Mom!"{waitForClick}{clearText}{marker}{sound C7A668}{appendText}[Takeshi]
+"What, am I BOTH now...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound C7A669}{appendText}[Takeshi]
+"Look if you can't think of anything to say, 
+don't say anything!"{waitForClick}{clearText}{marker}{sound PIPI_09}{appendText}[Pipi]
+"Bow-wow! Bow-wow!"{waitForClick}{clearText}{marker}{sound C7A670}{appendText}[Takeshi]
+"You're just going to howl again...."{waitForClick}{clearText}{marker}{sound PIPI_17}{appendText}[Pipi]
+"Awoo."{waitForClick}{clearText}{marker}{sound C7A671}{appendText}[Takeshi]
+"Oh, it's shorter now. Say that's kind of new."{waitForClick}{clearText}{marker}{sound C7A672}{appendText}[Coco]
+"Takepyon! Takepyon!"{waitForClick}{clearText}{marker}{sound C7A673}{appendText}[Takeshi]
+"So what is it?"{waitForClick}{clearText}{marker}{sound C7A674}{appendText}[Coco]
+"Pu-pu-ku-pu! Pu-pu-ku-pu!"{waitForClick}{clearText}{marker}{sound C7A675}{appendText}[Takeshi]
+"There you go again...."{waitForClick}{clearText}{marker}{appendText}I decided to leave as I was hearing their 
+happy voices.{waitForClick}{clearText}{marker}{sound C7A676}{appendText}[Coco]
+"Oh! Wait a minute! Brother!"{waitForClick}{clearText}{marker}{appendText}[BW]
+"...What?"{waitForClick}{clearText}{marker}{sound C7A677}{appendText}[Coco]
+"Can I see you again?"{waitForClick}{clearText}{marker}{sound C7A678}{appendText}[Coco]
+"I know I'll see you again. No matter what."{waitForClick}{clearText}{marker}{sound C7A679}{appendText}[Coco]
+"I believe in you...."{waitForClick}{clearText}{marker}{sound C7A680}{appendText}[Coco]
+"Because you know something?"{waitForClick}{clearText}{marker}{sound C7A681}{appendText}[Coco]
+"You and me are both from the sun, right?"{waitForClick}{clearText}{marker}{sound C7A682}{appendText}[Coco]
+"We can use psychic power."{waitForClick}{clearText}{marker}{sound C7A683}{appendText}[Coco]
+"Okay? So believe in me, too."{waitForClick}{clearText}{marker}{sound C7A684}{appendText}[Coco]
+"Your world and my world are connected."{waitForClick}{clearText}{marker}{sound C7A685}{appendText}[Coco]
+"Our two worlds are...going to be united...."{waitForClick}{clearText}{marker}{sound C7A686}{appendText}[Coco]
+"And at the intersection, there is a 
+perspective...."{waitForClick}{clearText}{marker}{sound C7A687}{appendText}[Coco]
+"I'll always be with you, brother...."{waitForClick}{clearText}{marker}{sound C7A688}{appendText}[Coco]
+"Okay, so I'll see you then!"{waitForClick}{clearText}{marker}{sound C7A689}{appendText}[Coco]
+"Brother!"{waitForClick}{clearText}
+
+[000009f5]10: 
+[000009f6]18: hideTextbox
+[000009f7]10: 
+[000009f8]45 a0 24 00 00 80 00 00: monoColorOverlay 36 0
+[00000a00]10: 
+[00000a01]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000a0b]10: 
+[00000a0c]1e a0 3c 00 00: delay 60
+[00000a11]10: 
+[00000a12]04: stopBGM
+[00000a13]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000a1d]27 00 00: fadeOutMonoColorOverlay
+[00000a20]00: 
+[00000a21]05 83 00 00: unSkippableDelay 3
+[00000a25]00: 
+[00000a26]05 83 00 00: unSkippableDelay 3
+[00000a2a]00: 
+[00000a2b]19 80 00 00 83 00 00: l_unk19 0 3
+[00000a32]00: 
+[00000a33]19 81 00 00 83 00 00: l_unk19 1 3
+[00000a3a]00: 
+[00000a3b]19 82 00 00 83 00 00: l_unk19 2 3
+[00000a42]00: 
+[00000a43]05 81 00 00: unSkippableDelay 1
+[00000a47]10: 
+[00000a48]39 4d 4f 56 5f 45 4e 44 00: playMovie MOV_END
+[00000a51]10: 
+[00000a52]3b 81 00 00: unknown3b 1
+[00000a56]00: 
+[00000a57]05 81 00 00: unSkippableDelay 1
+[00000a5b]10: 
+[00000a5c]3c: unknown3c
+[00000a5d]00: 
+[00000a5e]15 01 a1 00 00 00 81 00 00 02 00: l_unk15 1 256 1 2
+[00000a69]00: 
+[00000a6a]15 01 a0 20 00 00 81 00 00 02 00: l_unk15 1 32 1 2
+[00000a75]00: 
+[00000a76]0a 01 2d 0a 87 14 00 01 00 10 3a 00 19 80 00 00 84 00 00: notActuallyGotoIfUnk
+[00000a89]00: 
+[00000a8a]19 81 00 00 84 00 00: l_unk19 1 4
+[00000a91]00: 
+[00000a92]19 82 00 00 84 00 00: l_unk19 2 4
+[00000a99]00: 
+[00000a9a]05 81 00 00: unSkippableDelay 1
+[00000a9e]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000aa9]10: 
+[00000aaa]01 59 43 45 50 00: jump YCEP

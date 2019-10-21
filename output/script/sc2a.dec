@@ -1,0 +1,829 @@
+﻿[00000055]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000060]fe 28 0a a4 b1 14 14 00 82 00 00: varop (28 0a a4) b1 := (00) 2
+[0000006b]fe 28 0a a4 b2 14 14 00 82 00 00: varop (28 0a a4) b2 := (00) 2
+[00000076]10: 
+[00000077]19: showTextbox
+[00000078]ff 00 00: text 00
+{marker}{sound C2S005}{appendText}[You]
+"Anyway, let's go looking for 
+Takeshi and Tsugumi."{waitForClick}{clearText}
+
+[0000007b]10: 
+[0000007c]0f 81 00 00 00 00 00 00 00 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA08ADM 128 3
+[0000008d]10: 
+[0000008e]19: showTextbox
+[0000008f]ff 01 00: text 01
+{marker}{sound C2S006}{appendText}[Sara]
+"And Sora...?"{waitForClick}{clearText}
+
+[00000092]00: 
+[00000093]0a 01 28 0a a4 f0 14 0d 01 80 01 00 04 00: gotoif 1 (28 0a a4) f0 != (01) 0 (0001) -> 00000113 (00000004)
+[000000a1]10: 
+[000000a2]24 8b 00 00: scriptLocationId 11
+[000000a6]10: 
+[000000a7]0f 82 00 00 00 00 00 00 01 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU07ADM 512 3
+[000000b8]10: 
+[000000b9]19: showTextbox
+[000000ba]ff 02 00: text 02
+{marker}{sound C2S007}{appendText}[You]
+"Sora is..."{waitForClick}{clearText}{marker}{sound C2S008}{appendText}[You]
+"...Let's not worry about her for now."{waitForClick}{clearText}
+
+[000000bd]10: 
+[000000be]0f 81 00 00 00 00 00 00 02 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA06ADM 128 3
+[000000cf]10: 
+[000000d0]19: showTextbox
+[000000d1]ff 03 00: text 03
+{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}
+
+[000000d4]10: 
+[000000d5]0f 82 00 00 00 00 00 00 03 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU05ADM 512 3
+[000000e6]10: 
+[000000e7]19: showTextbox
+[000000e8]ff 04 00: text 04
+{marker}{sound C2S009}{appendText}[You]
+"I'll tell you later. Looking for those two 
+is the top priority right now."{waitForClick}{clearText}
+
+[000000eb]10: 
+[000000ec]10 82 00 00 83 00 00: removeFG 2 3
+[000000f3]10: 
+[000000f4]19: showTextbox
+[000000f5]ff 05 00: text 05
+{marker}{appendText}You started running.{waitForClick}{clearText}
+
+[000000f8]10: 
+[000000f9]0f 81 00 00 00 00 00 00 04 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA08ADM 128 3
+[0000010a]10: 
+[0000010b]19: showTextbox
+[0000010c]ff 06 00: text 06
+{marker}{appendText}Sara and I followed her without knowing what 
+was going on.{waitForClick}{clearText}
+
+[0000010f]00: 
+[00000110]07 05 00: goto 00000172 (00000005)
+[00000113]10: 
+[00000114]0f 82 00 00 00 00 00 00 05 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU07ADM 512 3
+[00000125]10: 
+[00000126]19: showTextbox
+[00000127]ff 07 00: text 07
+{marker}{sound C2S010}{appendText}[You]
+"Mayo? We're in the middle of a blackout now."{waitForClick}{clearText}
+
+[0000012a]10: 
+[0000012b]0f 81 00 00 00 00 00 00 06 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA05ADM 128 3
+[0000013c]10: 
+[0000013d]19: showTextbox
+[0000013e]ff 08 00: text 08
+{marker}{sound C2S011}{appendText}[Sara]
+"So what?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, I see..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sora's brain is AI, and her body is made by 
+RSD."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Which means...if the power is down then, Sora 
+can't appear."{waitForClick}{clearText}
+
+[00000141]10: 
+[00000142]12 81 00 00 82 00 00 00 00 00 00 07 00 00 00 00 00 08 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SA01ADM 00000000 YU01ADM 128 512 3
+[00000160]10: 
+[00000161]19: showTextbox
+[00000162]ff 09 00: text 09
+{marker}{sound C2S012}{appendText}[You]
+"That's right."{waitForClick}{clearText}
+
+[00000165]10: 
+[00000166]10 82 00 00 83 00 00: removeFG 2 3
+[0000016d]10: 
+[0000016e]19: showTextbox
+[0000016f]ff 0a 00: text 0a
+{marker}{appendText}Saying that, You started running.{waitForClick}{clearText}{marker}{appendText}I took Sara by the hand and followed after You.{waitForClick}{clearText}
+
+[00000172]10: 
+[00000173]18: hideTextbox
+[00000174]10: 
+[00000175]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[0000017c]10: 
+[0000017d]04: stopBGM
+[0000017e]10: 
+[0000017f]0c 00 00 00 00 09 00 86 00 00 82 00 00: bgload 00000000 BG26B4L 6 2
+[0000018c]10: 
+[0000018d]03 84 00 00 a0 64 00 00: playBGM 4 100
+[00000195]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000019f]27 00 00: fadeOutMonoColorOverlay
+[000001a2]00: 
+[000001a3]05 8a 00 00: unSkippableDelay 10
+[000001a7]10: 
+[000001a8]19: showTextbox
+[000001a9]ff 0b 00: text 0b
+{marker}{appendText}I didn't know where Takeshi and Tsugumi were.{waitForClick}{clearText}{marker}{appendText}And I couldn't imagine that they would be just 
+wandering around during this crisis.{waitForClick}{clearText}{marker}{appendText}So where would they go first?{waitForClick}{clearText}
+
+[000001ac]10: 
+[000001ad]0c 00 00 00 00 0a 00 80 00 00 82 00 00: bgload 00000000 BG15B2 0 2
+[000001ba]10: 
+[000001bb]1f 86 00 00 a0 22 00 00: clock 6:34
+[000001c3]10: 
+[000001c4]19: showTextbox
+[000001c5]ff 0c 00: text 0c
+{marker}{appendText}—The Control Room{waitForClick}{clearText}{marker}{appendText}I couldn't think of anywhere else.{waitForClick}{clearText}{marker}{appendText}The power was out, so the door didn't open 
+automatically.{waitForClick}{clearText}{marker}{appendText}You pulled the lever next to the door 
+and opened it manually.{waitForClick}{clearText}
+
+[000001c8]10: 
+[000001c9]0c 00 00 00 00 0b 00 80 00 00 81 00 00: bgload 00000000 BG16A2 0 1
+[000001d6]10: 
+[000001d7]19: showTextbox
+[000001d8]ff 0d 00: text 0d
+{marker}{appendText}The three of us went inside...{waitForClick}{clearText}
+
+[000001db]10: 
+[000001dc]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU04ADM 320 3
+[000001ed]10: 
+[000001ee]19: showTextbox
+[000001ef]ff 0e 00: text 0e
+{marker}{sound C2S013}{appendText}[You]
+"Takeshi! Tsugumi! If you are here, answer me!"{waitForClick}{clearText}{marker}{appendText}You called into the darkness.{waitForClick}{clearText}
+
+[000001f2]00: 
+[000001f3]0a 01 28 0a a4 f0 14 0d 01 80 01 00 08 00: gotoif 1 (28 0a a4) f0 != (01) 0 (0001) -> 0000021c (00000008)
+[00000201]10: 
+[00000202]24 8c 00 00: scriptLocationId 12
+[00000206]10: 
+[00000207]19: showTextbox
+[00000208]ff 0f 00: text 0f
+{marker}{appendText}I wondered why she only called out for Takeshi 
+and Tsugumi.{waitForClick}{clearText}
+
+[0000020b]10: 
+[0000020c]10 81 00 00 83 00 00: removeFG 1 3
+[00000213]10: 
+[00000214]19: showTextbox
+[00000215]ff 10 00: text 10
+{marker}{appendText}[Kid]
+"Sora! Sora!"{waitForClick}{clearText}{marker}{appendText}I called to Sora but there was no answer.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sora should have been here. 
+I wonder where she could have gone."{waitForClick}{clearText}
+
+[00000218]00: 
+[00000219]07 0a 00: goto 0000022e (0000000a)
+[0000021c]10: 
+[0000021d]19: showTextbox
+[0000021e]ff 11 00: text 11
+{marker}{appendText}[Kid]
+"Hello!"{waitForClick}{clearText}{marker}{sound C2S014}{appendText}[Sara]
+"Takeshi! Tsugumi!"{waitForClick}{clearText}
+
+[00000221]10: 
+[00000222]10 81 00 00 83 00 00: removeFG 1 3
+[00000229]10: 
+[0000022a]19: showTextbox
+[0000022b]ff 12 00: text 12
+{marker}{appendText}There was no answer.{waitForClick}{clearText}
+
+[0000022e]10: 
+[0000022f]19: showTextbox
+[00000230]ff 13 00: text 13
+{marker}{appendText}You had picked up a flashlight at some point.{waitForClick}{clearText}{marker}{appendText}I thought that maybe she had found it 
+somewhere in the Control Room.{waitForClick}{clearText}{marker}{appendText}You turned on it...{waitForClick}{clearText}{marker}{appendText}A round, white light appeared on the wall.{waitForClick}{clearText}{marker}{appendText}You shined the flashlight right and left, 
+lighting up all corners of the room.{waitForClick}{clearText}{marker}{appendText}The electricity was completely out.{waitForClick}{clearText}{marker}{appendText}Like an abandoned castle, 
+there was no sign of warmth left.{waitForClick}{clearText}{marker}{appendText}There was clearly nobody there.{waitForClick}{clearText}
+
+[00000233]10: 
+[00000234]0f 81 00 00 00 00 00 00 0d 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA05ADM 320 3
+[00000245]10: 
+[00000246]19: showTextbox
+[00000247]ff 14 00: text 14
+{marker}{sound C2S015}{appendText}[Sara]
+"It doesn't seem...like there is 
+anyone here..."{waitForClick}{clearText}
+
+[0000024a]10: 
+[0000024b]0c 00 00 00 00 0e 00 80 00 00 82 00 00: bgload 00000000 BG15B2 0 2
+[00000258]10: 
+[00000259]19: showTextbox
+[0000025a]ff 15 00: text 15
+{marker}{appendText}We left the room.{waitForClick}{clearText}
+
+[0000025d]10: 
+[0000025e]0f 81 00 00 00 00 00 00 0f 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[0000026f]10: 
+[00000270]19: showTextbox
+[00000271]ff 16 00: text 16
+{marker}{sound C2S016}{appendText}[You]
+"Can you carry this?"{waitForClick}{clearText}
+
+[00000274]10: 
+[00000275]10 81 00 00 83 00 00: removeFG 1 3
+[0000027c]10: 
+[0000027d]19: showTextbox
+[0000027e]ff 17 00: text 17
+{marker}{appendText}You handed me the flashlight and shut the 
+Control Room door.{waitForClick}{clearText}{marker}{appendText}Just then...{waitForClick}{clearText}
+
+[00000281]10: 
+[00000282]05 53 45 30 31 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE01_00 0 100
+[00000292]10: 
+[00000293]19: showTextbox
+[00000294]ff 18 00: text 18
+{marker}{appendText}Splash, splash, splash...{waitForClick}{clearText}{marker}{appendText}We heard the sounds of someone running 
+toward us through water.{waitForClick}{clearText}{marker}{appendText}After a short while, two figures emerged from 
+the darkness.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, Takeshi!"{waitForClick}{clearText}{marker}{sound C2S017}{appendText}[Sara]
+"Tsugumi!"{waitForClick}{clearText}{marker}{appendText}Takeshi and Tsugumi approached, walking 
+through water.{waitForClick}{clearText}
+
+[00000297]00: 
+[00000298]0a 01 28 0a a4 f0 14 0d 01 80 01 00 0e 00: gotoif 1 (28 0a a4) f0 != (01) 0 (0001) -> 000004ae (0000000e)
+[000002a6]10: 
+[000002a7]24 8d 00 00: scriptLocationId 13
+[000002ab]10: 
+[000002ac]06: stopSFX
+[000002ad]10: 
+[000002ae]16 00 00 00 00 10 00 00 00 00 00 11 00 00 00 00 00 12 00 a0 80 00 00 a2 00 00 00 a1 40 00 00 83 00 00: multifgload3 00000000 SA03ADS 00000000 TU05ADS 00000000 KB01ADS 128 512 320 3
+[000002d0]10: 
+[000002d1]19: showTextbox
+[000002d2]ff 19 00: text 19
+{marker}{appendText}[Kid]
+"Hey, have you seen Sora?"{waitForClick}{clearText}
+
+[000002d5]10: 
+[000002d6]0f 84 00 00 00 00 00 00 13 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB07ADS 320 3
+[000002e7]10: 
+[000002e8]19: showTextbox
+[000002e9]ff 1a 00: text 1a
+{marker}{sound C2S018}{appendText}[Takeshi]
+"I thought she was in the Control Room."{waitForClick}{clearText}{marker}{sound C2S019}{appendText}[Sara]
+"It was empty..."{waitForClick}{clearText}
+
+[000002ec]10: 
+[000002ed]0f 84 00 00 00 00 00 00 14 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB06ADS 320 3
+[000002fe]10: 
+[000002ff]19: showTextbox
+[00000300]ff 1b 00: text 1b
+{marker}{sound C2S020}{appendText}[Takeshi]
+"Really?"{waitForClick}{clearText}
+
+[00000303]10: 
+[00000304]10 84 00 00 83 00 00: removeFG 4 3
+[0000030b]10: 
+[0000030c]19: showTextbox
+[0000030d]ff 1c 00: text 1c
+{marker}{appendText}Takeshi used the manual lever to open the door.{waitForClick}{clearText}{marker}{appendText}Takeshi looked inside...{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Do you want a flashlight?"{waitForClick}{clearText}
+
+[00000310]10: 
+[00000311]0f 84 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB01ADS 320 3
+[00000322]10: 
+[00000323]19: showTextbox
+[00000324]ff 1d 00: text 1d
+{marker}{sound C2S021}{appendText}[Takeshi]
+"Yeah. Thanks."{waitForClick}{clearText}
+
+[00000327]10: 
+[00000328]10 84 00 00 83 00 00: removeFG 4 3
+[0000032f]10: 
+[00000330]19: showTextbox
+[00000331]ff 1e 00: text 1e
+{marker}{appendText}Takeshi took the flashlight, turned it on and 
+went into the room.{waitForClick}{clearText}{marker}{appendText}.....................{waitForClick}{clearText}
+
+[00000334]10: 
+[00000335]0f 84 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB05ADS 320 3
+[00000346]10: 
+[00000347]19: showTextbox
+[00000348]ff 1f 00: text 1f
+{marker}{sound C2S022}{appendText}[Takeshi]
+"Geez...Where would Sora go at a time like 
+this?"{waitForClick}{clearText}{marker}{appendText}Takeshi said that when he emerged from the 
+Control Room.{waitForClick}{clearText}
+
+[0000034b]10: 
+[0000034c]10 82 00 00 83 00 00: removeFG 2 3
+[00000353]10: 
+[00000354]0f 82 00 00 00 00 00 00 17 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU01ADS 512 3
+[00000365]10: 
+[00000366]19: showTextbox
+[00000367]ff 20 00: text 20
+{marker}{sound C2S023}{appendText}[You]
+"So...what are we going to do?"{waitForClick}{clearText}{marker}{appendText}You said it with her hands on her hips. 
+She appeared calm.{waitForClick}{clearText}{marker}{appendText}It had been a series of strange things 
+happening since the day before...{waitForClick}{clearText}{marker}{appendText}Maybe we were all completely used to it. 
+In any case, none of us were freaking out.{waitForClick}{clearText}
+
+[0000036a]10: 
+[0000036b]0f 81 00 00 00 00 00 00 18 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA05ADS 128 3
+[0000037c]10: 
+[0000037d]19: showTextbox
+[0000037e]ff 21 00: text 21
+{marker}{sound C2S024}{appendText}[Sara]
+"Anyway..."{waitForClick}{clearText}{marker}{sound C2S025}{appendText}[Sara]
+"All we can do is split up and look for Sora." {waitForClick}{clearText}
+
+[00000381]10: 
+[00000382]0f 81 00 00 00 00 00 00 19 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA07ADS 128 3
+[00000393]10: 
+[00000394]19: showTextbox
+[00000395]ff 22 00: text 22
+{marker}{sound C2S026}{appendText}[Sara]
+"Without Sora, we won't know 
+why there's been this blackout..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah. Sora knows more about 
+LeMU than anyone."{waitForClick}{clearText}
+
+[00000398]10: 
+[00000399]0f 82 00 00 00 00 00 00 1a 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU05ADS 512 3
+[000003aa]10: 
+[000003ab]19: showTextbox
+[000003ac]ff 23 00: text 23
+{marker}{sound C2S027}{appendText}[You]
+"Uh...Sora..."{waitForClick}{clearText}
+
+[000003af]10: 
+[000003b0]0f 84 00 00 00 00 00 00 1b 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB07ADS 320 3
+[000003c1]10: 
+[000003c2]19: showTextbox
+[000003c3]ff 24 00: text 24
+{marker}{sound C2S028}{appendText}[You]
+"Sora..."{waitForClick}{clearText}
+
+[000003c6]10: 
+[000003c7]0f 81 00 00 00 00 00 00 1c 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA08ADS 128 3
+[000003d8]10: 
+[000003d9]19: showTextbox
+[000003da]ff 25 00: text 25
+{marker}{sound C2S029}{appendText}[Sara]
+"?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"?"{waitForClick}{clearText}{marker}{sound C2S030}{appendText}[Takeshi]
+"?"{waitForClick}{clearText}
+
+[000003dd]10: 
+[000003de]0f 82 00 00 00 00 00 00 1d 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU03ADS 512 3
+[000003ef]10: 
+[000003f0]19: showTextbox
+[000003f1]ff 26 00: text 26
+{marker}{sound C2S031}{appendText}[You]
+"Maybe it's time..."{waitForClick}{clearText}
+
+[000003f4]10: 
+[000003f5]0f 82 00 00 00 00 00 00 1e 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU07ADS 512 3
+[00000406]10: 
+[00000407]19: showTextbox
+[00000408]ff 27 00: text 27
+{marker}{sound C2S032}{appendText}[You]
+"Since it has come to this, I'll tell you..."{waitForClick}{clearText}{marker}{sound C2S033}{appendText}[You]
+"I don't think we'll find Sora, even if we 
+look."{waitForClick}{clearText}
+
+[0000040b]10: 
+[0000040c]12 81 00 00 84 00 00 00 00 00 00 1f 00 00 00 00 00 20 00 a0 80 00 00 a1 40 00 00 83 00 00: multifgload2 1 4 00000000 SA06ADS 00000000 KB06ADS 128 320 3
+[0000042a]10: 
+[0000042b]19: showTextbox
+[0000042c]ff 28 00: text 28
+{marker}{sound C2S034}{appendText}[Sara]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}{marker}{sound C2S035}{appendText}[Takeshi]
+"Why not?"{waitForClick}{clearText}
+
+[0000042f]10: 
+[00000430]0f 82 00 00 00 00 00 00 21 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU05ADS 512 3
+[00000441]10: 
+[00000442]19: showTextbox
+[00000443]ff 29 00: text 29
+{marker}{sound C2S036}{appendText}[You]
+"I can't tell you the reason."{waitForClick}{clearText}{marker}{sound C2S037}{appendText}[You]
+"That's something that you should hear from 
+Sora herself..."{waitForClick}{clearText}
+
+[00000446]10: 
+[00000447]0f 81 00 00 00 00 00 00 22 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA05ADS 128 3
+[00000458]10: 
+[00000459]19: showTextbox
+[0000045a]ff 2a 00: text 2a
+{marker}{sound C2S038}{appendText}[Sara]
+"???"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"???"{waitForClick}{clearText}
+
+[0000045d]10: 
+[0000045e]0f 84 00 00 00 00 00 00 23 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB08ADS 320 3
+[0000046f]10: 
+[00000470]19: showTextbox
+[00000471]ff 2b 00: text 2b
+{marker}{sound C2S039}{appendText}[Takeshi]
+"???"{waitForClick}{clearText}
+
+[00000474]10: 
+[00000475]0f 82 00 00 00 00 00 00 24 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU01ADS 512 3
+[00000486]10: 
+[00000487]19: showTextbox
+[00000488]ff 2c 00: text 2c
+{marker}{sound C2S040}{appendText}[You]
+"Anyway, just take my word for it."{waitForClick}{clearText}{marker}{sound C2S041}{appendText}[You]
+"You don't have to worry. Sora is just fine."{waitForClick}{clearText}{marker}{sound C2S042}{appendText}[You]
+"And she will come back for sure."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Come back?"{waitForClick}{clearText}{marker}{appendText}You didn't answer my question.{waitForClick}{clearText}
+
+[0000048b]10: 
+[0000048c]10 84 00 00 83 00 00: removeFG 4 3
+[00000493]10: 
+[00000494]0f 84 00 00 00 00 00 00 25 00 a1 40 00 00 83 00 00: fgload 4 00000000 TU01ADS 320 3
+[000004a5]10: 
+[000004a6]19: showTextbox
+[000004a7]ff 2d 00: text 2d
+{marker}{sound C2S043}{appendText}[Tsugumi]
+"Alright..."{waitForClick}{clearText}{marker}{sound C2S044}{appendText}[Tsugumi]
+"So, what are you going to do?"{waitForClick}{clearText}
+
+[000004aa]00: 
+[000004ab]07 0f 00: goto 00000558 (0000000f)
+[000004ae]10: 
+[000004af]06: stopSFX
+[000004b0]10: 
+[000004b1]16 00 00 00 00 26 00 00 00 00 00 27 00 00 00 00 00 28 00 a0 80 00 00 a2 00 00 00 a1 40 00 00 83 00 00: multifgload3 00000000 KB05ADS 00000000 YU05ADS 00000000 TU05ADS 128 512 320 3
+[000004d3]10: 
+[000004d4]19: showTextbox
+[000004d5]ff 2e 00: text 2e
+{marker}{sound C2S045}{appendText}[Takeshi]
+"Hey, are you all right? Everybody's okay?"{waitForClick}{clearText}
+
+[000004d8]10: 
+[000004d9]0f 84 00 00 00 00 00 00 29 00 a1 40 00 00 83 00 00: fgload 4 00000000 TU07ADS 320 3
+[000004ea]10: 
+[000004eb]19: showTextbox
+[000004ec]ff 2f 00: text 2f
+{marker}{sound C2S046}{appendText}[Tsugumi]
+"It's only a blackout. You worry too much..."{waitForClick}{clearText}
+
+[000004ef]10: 
+[000004f0]0f 81 00 00 00 00 00 00 2a 00 a0 80 00 00 83 00 00: fgload 1 00000000 KB07ADS 128 3
+[00000501]10: 
+[00000502]19: showTextbox
+[00000503]ff 30 00: text 30
+{marker}{sound C2S047}{appendText}[Takeshi]
+"But...Sora's missing!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's a blackout, so Sora is..."{waitForClick}{clearText}{marker}{sound C2S048}{appendText}[Takeshi]
+"Yeah, I know that..."{waitForClick}{clearText}{marker}{sound C2S049}{appendText}[Takeshi]
+"I know that, but...let's see..."{waitForClick}{clearText}
+
+[00000506]10: 
+[00000507]0f 81 00 00 00 00 00 00 2b 00 a0 80 00 00 83 00 00: fgload 1 00000000 KB03ADS 128 3
+[00000518]10: 
+[00000519]19: showTextbox
+[0000051a]ff 31 00: text 31
+{marker}{sound C2S050}{appendText}[Takeshi]
+"If this blackout goes on, don't you think 
+that Sora might never appear again?"{waitForClick}{clearText}
+
+[0000051d]10: 
+[0000051e]0f 82 00 00 00 00 00 00 2c 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU01ADS 512 3
+[0000052f]10: 
+[00000530]19: showTextbox
+[00000531]ff 32 00: text 32
+{marker}{sound C2S051}{appendText}[You]
+"That is something you don't have to worry 
+about."{waitForClick}{clearText}{marker}{sound C2S052}{appendText}[You]
+"I've got an idea."{waitForClick}{clearText}
+
+[00000534]10: 
+[00000535]12 81 00 00 84 00 00 00 00 00 00 2d 00 00 00 00 00 2e 00 a0 80 00 00 a1 40 00 00 83 00 00: multifgload2 1 4 00000000 KB08ADS 00000000 TU01ADS 128 320 3
+[00000553]10: 
+[00000554]19: showTextbox
+[00000555]ff 33 00: text 33
+{marker}{sound C2S053}{appendText}[Tsugumi]
+"...An idea?"{waitForClick}{clearText}
+
+[00000558]10: 
+[00000559]0f 82 00 00 00 00 00 00 2f 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU05ADS 512 3
+[0000056a]10: 
+[0000056b]19: showTextbox
+[0000056c]ff 34 00: text 34
+{marker}{sound C2S054}{appendText}[You]
+"I think we should try the Generator Room..."{waitForClick}{clearText}
+
+[0000056f]00: 
+[00000570]0a 01 28 0a a4 f0 14 0c 01 80 01 00 10 00: gotoif 1 (28 0a a4) f0 == (01) 0 (0001) -> 0000058b (00000010)
+[0000057e]10: 
+[0000057f]24 8e 00 00: scriptLocationId 14
+[00000583]10: 
+[00000584]10 81 00 00 83 00 00: removeFG 1 3
+[0000058b]10: 
+[0000058c]0f 81 00 00 00 00 00 00 30 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA08ADS 128 3
+[0000059d]10: 
+[0000059e]19: showTextbox
+[0000059f]ff 35 00: text 35
+{marker}{sound C2S055}{appendText}[Sara]
+"The Generator Room?"{waitForClick}{clearText}{marker}{sound C2S056}{appendText}[You]
+"I figure that the cause of this blackout is 
+trouble in the Generator Room."{waitForClick}{clearText}{marker}{appendText}That reminded me of something Sora had said 
+the day before...{waitForClick}{clearText}{marker}{appendText}LeMU didn't receive any power from the 
+outside, but had an in-house generating 
+system.{waitForClick}{clearText}{marker}{appendText}It draws hot water from a thermal seafloor 
+vent and operates the generator using this 
+heat.{waitForClick}{clearText}
+
+[000005a2]10: 
+[000005a3]0f 82 00 00 00 00 00 00 31 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU01ADS 512 3
+[000005b4]10: 
+[000005b5]19: showTextbox
+[000005b6]ff 36 00: text 36
+{marker}{sound C2S057}{appendText}[You]
+"Tsugumi, you'll come along, won't you?"{waitForClick}{clearText}
+
+[000005b9]10: 
+[000005ba]0f 84 00 00 00 00 00 00 32 00 a1 40 00 00 83 00 00: fgload 4 00000000 TU05ADS 320 3
+[000005cb]10: 
+[000005cc]19: showTextbox
+[000005cd]ff 37 00: text 37
+{marker}{sound C2S058}{appendText}[Tsugumi]
+"Sorry, but I'm not up for it."{waitForClick}{clearText}
+
+[000005d0]10: 
+[000005d1]12 81 00 00 82 00 00 00 00 00 00 33 00 00 00 00 00 34 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SA06ADS 00000000 YU06ADS 128 512 3
+[000005ef]10: 
+[000005f0]19: showTextbox
+[000005f1]ff 38 00: text 38
+{marker}{sound C2S059}{appendText}[You]
+"What?"{waitForClick}{clearText}
+
+[000005f4]10: 
+[000005f5]0f 84 00 00 00 00 00 00 35 00 a1 40 00 00 83 00 00: fgload 4 00000000 TU08ADS 320 3
+[00000606]10: 
+[00000607]19: showTextbox
+[00000608]ff 39 00: text 39
+{marker}{sound C2S060}{appendText}[Tsugumi]
+"I'm not going."{waitForClick}{clearText}{marker}{sound C2S061}{appendText}[Tsugumi]
+"If you want to go, be my guest."{waitForClick}{clearText}
+
+[0000060b]10: 
+[0000060c]10 84 00 00 83 00 00: removeFG 4 3
+[00000613]10: 
+[00000614]19: showTextbox
+[00000615]ff 3a 00: text 3a
+{marker}{appendText}After saying that, Tsugumi left.{waitForClick}{clearText}{marker}{appendText}It didn't look like it would be any use 
+calling after her.{waitForClick}{clearText}
+
+[00000618]10: 
+[00000619]0f 84 00 00 00 00 00 00 36 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB05ADS 320 3
+[0000062a]10: 
+[0000062b]19: showTextbox
+[0000062c]ff 3b 00: text 3b
+{marker}{sound C2S062}{appendText}[Takeshi]
+"Geez. I have no clue what is going 
+on in that girl's head."{waitForClick}{clearText}
+
+[0000062f]10: 
+[00000630]0f 82 00 00 00 00 00 00 37 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU05ADS 512 3
+[00000641]10: 
+[00000642]19: showTextbox
+[00000643]ff 3c 00: text 3c
+{marker}{sound C2S063}{appendText}[You]
+"Oh well. The four of us will have to go."{waitForClick}{clearText}
+
+[00000646]10: 
+[00000647]0f 81 00 00 00 00 00 00 38 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA01ADS 128 3
+[00000658]10: 
+[00000659]19: showTextbox
+[0000065a]ff 3d 00: text 3d
+{marker}{sound C2S064}{appendText}[Sara]
+"Nakkyu, where is the Generator Room?"{waitForClick}{clearText}{marker}{sound C2S065}{appendText}[You]
+"The Generator Room is here - in Dritte stock."{waitForClick}{clearText}
+
+[0000065d]10: 
+[0000065e]0f 84 00 00 00 00 00 00 39 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB02ADS 320 3
+[0000066f]10: 
+[00000670]19: showTextbox
+[00000671]ff 3e 00: text 3e
+{marker}{sound C2S066}{appendText}[Takeshi]
+"Okay! Let's hop to it, everybody!"{waitForClick}{clearText}
+
+[00000674]10: 
+[00000675]10 84 00 00 83 00 00: removeFG 4 3
+[0000067c]10: 
+[0000067d]19: showTextbox
+[0000067e]ff 3f 00: text 3f
+{marker}{appendText}Takeshi started walking toward the corridor.{waitForClick}{clearText}
+
+[00000681]10: 
+[00000682]0f 82 00 00 00 00 00 00 3a 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU04ADS 512 3
+[00000693]10: 
+[00000694]19: showTextbox
+[00000695]ff 40 00: text 40
+{marker}{sound C2S067}{appendText}[You]
+"Hey Takeshi, where do you think you are 
+going?"{waitForClick}{clearText}
+
+[00000698]10: 
+[00000699]12 81 00 00 84 00 00 00 00 00 00 3b 00 00 00 00 00 3c 00 a0 80 00 00 a1 40 00 00 83 00 00: multifgload2 1 4 00000000 SA08ADS 00000000 KB07ADS 128 320 3
+[000006b7]10: 
+[000006b8]19: showTextbox
+[000006b9]ff 41 00: text 41
+{marker}{sound C2S068}{appendText}[Takeshi]
+"Where? To the Generator Room of course. It 
+was your idea to start with, right?"{waitForClick}{clearText}{marker}{sound C2S069}{appendText}[You]
+"And? How were you thinking of going there?"{waitForClick}{clearText}
+
+[000006bc]10: 
+[000006bd]0f 84 00 00 00 00 00 00 3d 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB05ADS 320 3
+[000006ce]10: 
+[000006cf]19: showTextbox
+[000006d0]ff 42 00: text 42
+{marker}{sound C2S070}{appendText}[Takeshi]
+"Huh? By walking through the corridors, 
+dummy."{waitForClick}{clearText}
+
+[000006d3]10: 
+[000006d4]0f 82 00 00 00 00 00 00 3e 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU07ADS 512 3
+[000006e5]10: 
+[000006e6]19: showTextbox
+[000006e7]ff 43 00: text 43
+{marker}{sound C2S071}{appendText}[You]
+"Oh please...you really don't get anything, 
+do you?"{waitForClick}{clearText}
+
+[000006ea]10: 
+[000006eb]12 81 00 00 84 00 00 00 00 00 00 3f 00 00 00 00 00 40 00 a0 80 00 00 a1 40 00 00 83 00 00: multifgload2 1 4 00000000 SA05ADS 00000000 KB06ADS 128 320 3
+[00000709]10: 
+[0000070a]19: showTextbox
+[0000070b]ff 44 00: text 44
+{marker}{sound C2S072}{appendText}[Takeshi]
+"Huh? What's that suppose to mean?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, You. I don't think I get it either..."{waitForClick}{clearText}{marker}{sound C2S073}{appendText}[Sara]
+"Me neither."{waitForClick}{clearText}
+
+[0000070e]10: 
+[0000070f]0f 82 00 00 00 00 00 00 41 00 a2 00 00 00 83 00 00: fgload 2 00000000 YU05ADS 512 3
+[00000720]10: 
+[00000721]19: showTextbox
+[00000722]ff 45 00: text 45
+{marker}{sound C2S074}{appendText}[You]
+"You guys don't remember the map of LeMU we 
+saw yesterday?"{waitForClick}{clearText}
+
+[00000725]10: 
+[00000726]0f 84 00 00 00 00 00 00 42 00 a1 40 00 00 83 00 00: fgload 4 00000000 KB01ADS 320 3
+[00000737]10: 
+[00000738]19: showTextbox
+[00000739]ff 46 00: text 46
+{marker}{sound C2S075}{appendText}[Takeshi]
+"Map? Map...map..."{waitForClick}{clearText}
+
+[0000073c]10: 
+[0000073d]18: hideTextbox
+[0000073e]10: 
+[0000073f]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[00000746]10: 
+[00000747]0c 00 00 00 00 43 00 80 00 00 83 00 00: bgload 00000000 MAP3F_A1 0 3
+[00000754]00: 
+[00000755]12 a1 00 00 00: l_unk12 256
+[0000075a]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000764]27 00 00: fadeOutMonoColorOverlay
+[00000767]00: 
+[00000768]05 8a 00 00: unSkippableDelay 10
+[0000076c]fe 28 0a a2 45 14 14 00 81 00 00: setMapCommentSlotToDisplay 1
+[00000777]fe 28 0a a2 4a 14 14 00 86 00 00: pickMapCommentByIndex2 6
+[00000782]10: 
+[00000783]20 a0 30 00 00: openMapCommentAnim
+[00000788]10: 
+[00000789]1e c1 a0 86 00 00: waitForClick
+[0000078f]10: 
+[00000790]19: showTextbox
+[00000791]ff 47 00: text 47
+{marker}{sound C2S076}{appendText}[Sara]
+"Oh...you mean the three story map that 
+was split into two areas?" {waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, that's right..."{waitForClick}{clearText}{marker}{sound C2S077}{appendText}[You]
+"You remember it too, Takeshi?"{waitForClick}{clearText}
+
+[00000794]10: 
+[00000795]18: hideTextbox
+[00000796]fe 28 0a a2 45 14 14 00 80 00 00: setMapCommentSlotToDisplay 0
+[000007a1]fe 28 0a a2 46 14 14 00 87 00 00: pickMapCommentByIndex 7
+[000007ac]10: 
+[000007ad]20 a0 30 00 00: openMapCommentAnim
+[000007b2]10: 
+[000007b3]1e c1 a0 86 00 00: waitForClick
+[000007b9]10: 
+[000007ba]19: showTextbox
+[000007bb]ff 48 00: text 48
+{marker}{sound C2S078}{appendText}[Takeshi]
+"I can't say I remember it exactly...but 
+kinda, yeah."{waitForClick}{clearText}
+
+[000007be]10: 
+[000007bf]21 8f 00 00: closeMapIndicatorAnim
+[000007c3]10: 
+[000007c4]27 00 00 00 00 44 00 80 00 00 83 00 00: bgload_keepFg 00000000 MAP3F_A1 0 3
+[000007d1]00: 
+[000007d2]05 81 00 00: unSkippableDelay 1
+[000007d6]10: 
+[000007d7]19: showTextbox
+[000007d8]ff 49 00: text 49
+{marker}{sound C2S079}{appendText}[You]
+"And what was between those two areas?"{waitForClick}{clearText}{marker}{sound C2S080}{appendText}[Takeshi]
+"Between them? How am I supposed to know...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hmmm...I don't think that there was anything."{waitForClick}{clearText}
+
+[000007db]10: 
+[000007dc]18: hideTextbox
+[000007dd]10: 
+[000007de]20 a0 31 00 00: show_map_root_image_blinking_Anim
+[000007e3]10: 
+[000007e4]20 a0 31 00 00: show_map_root_image_blinking_Anim
+[000007e9]10: 
+[000007ea]1e c1 a0 86 00 00: waitForClick
+[000007f0]10: 
+[000007f1]19: showTextbox
+[000007f2]ff 4a 00: text 4a
+{marker}{sound C2S081}{appendText}[You]
+"Bingo."{waitForClick}{clearText}{marker}{sound C2S082}{appendText}[You]
+"Meaning what?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The two areas are divided by a block which 
+is now under water...?"{waitForClick}{clearText}{marker}{sound C2S083}{appendText}[You]
+"And?"{waitForClick}{clearText}{marker}{sound C2S084}{appendText}[Sara]
+"We can't go directly from the Control Room 
+area to the Generator Room area."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Besides that, the emergency stairs of one of 
+those areas was also flooded..."{waitForClick}{clearText}
+
+[000007f5]10: 
+[000007f6]21 8f 00 00: closeMapIndicatorAnim
+[000007fa]10: 
+[000007fb]19: showTextbox
+[000007fc]ff 4b 00: text 4b
+{marker}{sound C2S085}{appendText}[You]
+"So what?"{waitForClick}{clearText}{marker}{sound C2S086}{appendText}[Takeshi]
+"I got it..."{waitForClick}{clearText}{marker}{sound C2S087}{appendText}[Takeshi]
+"To get to the Generator Room's area, 
+we have to access the second floor..."{waitForClick}{clearText}
+
+[000007ff]10: 
+[00000800]0c 00 00 00 00 45 00 80 00 00 83 00 00: bgload 00000000 MAP2F_A1 0 3
+[0000080d]10: 
+[0000080e]19: showTextbox
+[0000080f]ff 4c 00: text 4c
+{marker}{sound C2S088}{appendText}[Takeshi]
+"And the only way we can do that is 
+by using the neutral buoyancy elevator."{waitForClick}{clearText}
+
+[00000812]10: 
+[00000813]18: hideTextbox
+[00000814]fe 28 0a a2 45 14 14 00 80 00 00: setMapCommentSlotToDisplay 0
+[0000081f]fe 28 0a a2 46 14 14 00 84 00 00: pickMapCommentByIndex 4
+[0000082a]10: 
+[0000082b]20 a0 30 00 00: openMapCommentAnim
+[00000830]10: 
+[00000831]1e c1 a0 86 00 00: waitForClick
+[00000837]10: 
+[00000838]19: showTextbox
+[00000839]ff 4d 00: text 4d
+{marker}{sound C2S089}{appendText}[You]
+"Correct."{waitForClick}{clearText}{marker}{sound C2S090}{appendText}[You]
+"So, we have to go to..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"To the entrance to the neutral buoyancy 
+elevator."{waitForClick}{clearText}
+
+[0000083c]10: 
+[0000083d]21 8f 00 00: closeMapIndicatorAnim
+[00000841]10: 
+[00000842]27 00 00 00 00 46 00 80 00 00 83 00 00: bgload_keepFg 00000000 MAP2F_A1 0 3
+[0000084f]00: 
+[00000850]05 81 00 00: unSkippableDelay 1
+[00000854]10: 
+[00000855]19: showTextbox
+[00000856]ff 4e 00: text 4e
+{marker}{sound C2S091}{appendText}[You]
+"That's right."{waitForClick}{clearText}
+
+[00000859]10: 
+[0000085a]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[00000864]00: 
+[00000865]13 a1 00 00 00: l_unk13 256
+[0000086a]10: 
+[0000086b]0c 00 00 00 00 47 00 80 00 00 82 00 00: bgload 00000000 BG15B2 0 2
+[00000878]10: 
+[00000879]12 81 00 00 82 00 00 00 00 00 00 48 00 00 00 00 00 49 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 SA02ADM 00000000 YU01ADM 128 512 3
+[00000897]10: 
+[00000898]19: showTextbox
+[00000899]ff 4f 00: text 4f
+{marker}{sound C2S092}{appendText}[You]
+"Now that you've got it...let's get going!"{waitForClick}{clearText}{marker}{sound C2S093}{appendText}[Sara]
+"Okey-dokey!"{waitForClick}{clearText}
+
+[0000089c]10: 
+[0000089d]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[000008a4]10: 
+[000008a5]19: showTextbox
+[000008a6]ff 50 00: text 50
+{marker}{appendText}Sara took a bizarre kung fu pose and 
+started spinning like a top.{waitForClick}{clearText}{marker}{appendText}But I had no clue what she was trying to do.{waitForClick}{clearText}
+
+[000008a9]10: 
+[000008aa]18: hideTextbox
+[000008ab]10: 
+[000008ac]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000008b3]10: 
+[000008b4]04: stopBGM
+[000008b5]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[000008c0]10: 
+[000008c1]01 53 5f 32 42 00: jump S_2B
+[000008c7]00: 

@@ -1,0 +1,797 @@
+﻿[0000002a]10: 
+[0000002b]19: showTextbox
+[0000002c]ff 00 00: text 00
+{marker}{sound C1T000}{appendText}[Girl]
+"It doesn't do us any good just standing 
+around here, how about you take us somewhere?"{waitForClick}{clearText}{marker}{sound C1T001}{appendText}[Park staff]
+"Certainly. There is a relatively safe place 
+nearby. I will take you there..."{waitForClick}{clearText}{marker}{appendText}(RELATIVELY safe...?){waitForClick}{clearText}{marker}{appendText}That was about the same as saying that 
+everywhere else was dangerous.{waitForClick}{clearText}
+
+[0000002f]10: 
+[00000030]0c 00 00 00 00 00 00 80 00 00 82 00 00: bgload 00000000 BG26A3L 0 2
+[0000003d]10: 
+[0000003e]19: showTextbox
+[0000003f]ff 01 00: text 01
+{marker}{appendText}We turned around and started heading back the 
+corridor we'd been washed down. {waitForClick}{clearText}{marker}{appendText}I looked at a panel and finally realized that 
+we were in Zweite stock—basement level two.{waitForClick}{clearText}{marker}{appendText}A short time later...{waitForClick}{clearText}{marker}{appendText}After walking a few dozen feet a strange sound 
+caught my attention.{waitForClick}{clearText}
+
+[00000042]10: 
+[00000043]18: hideTextbox
+[00000044]10: 
+[00000045]05 53 45 30 30 5f 31 33 00 80 00 00 a0 5a 00 00: playSFX SE00_13 0 90
+[00000055]10: 
+[00000056]19: showTextbox
+[00000057]ff 02 00: text 02
+{marker}{appendText}Bam, bam, bam...{waitForClick}
+
+[0000005a]ff 03 00: text 03
+{appendText}{choice 00 0071 |(That could be my imagination, but...)|(Did I just hear something?)}
+
+[0000005d]10: 
+[0000005e]1a a4 b3 00 00 a0 71 00 00: choiceId 1203 113
+[00000067]00: 
+[00000068]26 28 0a a4 b3 14 00 00 27 80 00 00 01 00 00 27 81 00 00 02 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 0000007d (00000001)
+27 -> 1 000000b8 (00000002)
+
+[0000007d]10: 
+[0000007e]19: showTextbox
+[0000007f]ff 04 00: text 04
+{marker}{appendText}(That sounded like a pounding noise...?){waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hey, did you just hear something?"{waitForClick}{clearText}
+
+[00000082]10: 
+[00000083]0f 81 00 00 00 00 00 00 01 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO03ADM 320 3
+[00000094]10: 
+[00000095]19: showTextbox
+[00000096]ff 05 00: text 05
+{marker}{sound C1T005}{appendText}[Park staff]
+"Sure you aren't imagining things?"{waitForClick}{clearText}{marker}{sound C1T006}{appendText}[Park staff]
+"Due to all of the water pressure here at 
+LeMU, it isn't uncommon for the metal 
+partitions to rattle occasionally."{waitForClick}{clearText}
+
+[00000099]10: 
+[0000009a]10 81 00 00 83 00 00: removeFG 1 3
+[000000a1]10: 
+[000000a2]19: showTextbox
+[000000a3]ff 06 00: text 06
+{marker}{appendText}Yeah. It must have just been my imagination.{waitForClick}{clearText}{marker}{appendText}Maybe it was just like Sora said, and LeMU's 
+partitions were only creaking.{waitForClick}{clearText}{marker}{appendText}Shaking it off, we kept trudging forward.{waitForClick}{clearText}
+
+[000000a6]fe 28 0a a4 b3 14 14 00 81 00 00: varop (28 0a a4) b3 := (00) 1
+[000000b1]10: 
+[000000b2]01 54 5f 31 42 00: jump T_1B
+[000000b8]fe 28 0a a4 ba 14 17 00 81 00 00: varop (28 0a a4) ba += (00) 1
+[000000c3]10: 
+[000000c4]19: showTextbox
+[000000c5]ff 07 00: text 07
+{marker}{appendText}[Takeshi]
+"Hey, did you just hear something?"{waitForClick}{clearText}{marker}{appendText}I stopped and asked the two of them.{waitForClick}{clearText}
+
+[000000c8]10: 
+[000000c9]12 81 00 00 82 00 00 00 00 00 00 02 00 00 00 00 00 03 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 TU06ADM 00000000 SO06ADM 128 512 3
+[000000e7]10: 
+[000000e8]19: showTextbox
+[000000e9]ff 08 00: text 08
+{marker}{sound C1T002}{appendText}[Girl]
+"?"{waitForClick}{clearText}{marker}{sound C1T003}{appendText}[Park staff]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"You didn't just hear a kind of pounding 
+noise?"{waitForClick}{clearText}{marker}{sound C1T004}{appendText}[Girl]
+"No."{waitForClick}{clearText}
+
+[000000ec]10: 
+[000000ed]0f 82 00 00 00 00 00 00 04 00 a2 00 00 00 83 00 00: fgload 2 00000000 SO03ADM 512 3
+[000000fe]10: 
+[000000ff]19: showTextbox
+[00000100]ff 09 00: text 09
+{marker}{sound C1T005}{appendText}[Park staff]
+"Are you sure you aren't mistaken?"{waitForClick}{clearText}{marker}{sound C1T006}{appendText}[Park staff]
+"Due to all of the water pressure here at 
+LeMU, it isn't uncommon for the metal 
+partitions to rattle occasionally."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Nah, it didn't sound like that."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"It sounded like someone pounding on something 
+with their hand."{waitForClick}{clearText}{marker}{sound C1T007}{appendText}[Girl]
+"?"{waitForClick}{clearText}{marker}{sound C1T008}{appendText}[Park staff]
+"?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"I'm going to go check."{waitForClick}{clearText}
+
+[00000103]10: 
+[00000104]0f 82 00 00 00 00 00 00 05 00 a2 00 00 00 83 00 00: fgload 2 00000000 SO10ADM 512 3
+[00000115]10: 
+[00000116]19: showTextbox
+[00000117]ff 0a 00: text 0a
+{marker}{sound C1T009}{appendText}[Park staff]
+"Alright, we'll go with you."{waitForClick}{clearText}{marker}{appendText}The girl didn't say anything. She just 
+silently tagged along with us.{waitForClick}{clearText}
+
+[0000011a]10: 
+[0000011b]18: hideTextbox
+[0000011c]10: 
+[0000011d]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000124]10: 
+[00000125]13 83 04 00 80 00 00: multiremoveFG_Sta 1 2 0
+[0000012c]10: 
+[0000012d]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000137]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000141]27 00 00: fadeOutMonoColorOverlay
+[00000144]00: 
+[00000145]05 83 00 00: unSkippableDelay 3
+[00000149]10: 
+[0000014a]0c 00 00 00 00 06 00 80 00 00 82 00 00: bgload 00000000 BG03A1 0 2
+[00000157]10: 
+[00000158]19: showTextbox
+[00000159]ff 0b 00: text 0b
+{marker}{appendText}—In front of the Jellyfish Gondola.{waitForClick}{clearText}
+
+[0000015c]10: 
+[0000015d]18: hideTextbox
+[0000015e]10: 
+[0000015f]05 53 45 30 30 5f 31 33 00 80 00 00 a0 5a 00 00: playSFX SE00_13 0 90
+[0000016f]10: 
+[00000170]19: showTextbox
+[00000171]ff 0c 00: text 0c
+{marker}{appendText}Bam, bam, bam....bam, bam, bam, bam{waitForClick}{clearText}
+
+[00000174]10: 
+[00000175]05 53 45 30 30 5f 31 33 00 80 00 00 a0 5a 00 00: playSFX SE00_13 0 90
+[00000185]10: 
+[00000186]19: showTextbox
+[00000187]ff 0d 00: text 0d
+{marker}{appendText}[Takeshi]
+"There. You can hear it, right?"{waitForClick}{clearText}
+
+[0000018a]10: 
+[0000018b]12 81 00 00 82 00 00 00 00 00 00 07 00 00 00 00 00 08 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 TU03ADM 00000000 SO03ADM 128 512 3
+[000001a9]10: 
+[000001aa]19: showTextbox
+[000001ab]ff 0e 00: text 0e
+{marker}{sound C1T010}{appendText}[Park staff]
+"Yeah..."{waitForClick}{clearText}{marker}{sound C1T011}{appendText}[Girl]
+"So there's someone else trapped here too...?"{waitForClick}{clearText}{marker}{appendText}We strained our ears to find where the sound 
+was coming from.{waitForClick}{clearText}{marker}{appendText}It seemed to come from the elevator area right 
+behind us.{waitForClick}{clearText}
+
+[000001ae]10: 
+[000001af]18: hideTextbox
+[000001b0]10: 
+[000001b1]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[000001b8]10: 
+[000001b9]05 53 45 30 31 5f 30 34 00 80 00 00 a0 64 00 00: playSFX SE01_04 0 100
+[000001c9]10: 
+[000001ca]19: showTextbox
+[000001cb]ff 0f 00: text 0f
+{marker}{appendText}The three of us, myself and the other two 
+girls, ran as fast as we could over to the 
+area.{waitForClick}{clearText}
+
+[000001ce]10: 
+[000001cf]0c 00 00 00 00 09 00 80 00 00 82 00 00: bgload 00000000 BG22A3 0 2
+[000001dc]10: 
+[000001dd]05 53 45 30 30 5f 31 33 00 80 00 00 a0 5f 00 00: playSFX SE00_13 0 95
+[000001ed]10: 
+[000001ee]19: showTextbox
+[000001ef]ff 10 00: text 10
+{marker}{sound C1T012}{appendText}[??]
+"Heeey! Somebodyyyy!"{waitForClick}{clearText}{marker}{sound C1T013}{appendText}[??]
+"Somebodyyyy!"{waitForClick}{clearText}{marker}{sound C1T014}{appendText}[??]
+"Is anyone thereee?"{waitForClick}{clearText}{marker}{sound C1T015}{appendText}[??]
+"Anyooooone?"{waitForClick}{clearText}{marker}{appendText}Two female voices were coming from inside the 
+elevator.{waitForClick}{clearText}
+
+[000001f2]10: 
+[000001f3]12 81 00 00 82 00 00 00 00 00 00 0a 00 00 00 00 00 0b 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 TU01ADM 00000000 SO10ADM 128 512 3
+[00000211]10: 
+[00000212]19: showTextbox
+[00000213]ff 11 00: text 11
+{marker}{appendText}The three of us looked at each other and 
+nodded.{waitForClick}{clearText}
+
+[00000216]10: 
+[00000217]13 83 04 00 83 00 00: multiremoveFG_Anim 1 2 0
+[0000021e]10: 
+[0000021f]19: showTextbox
+[00000220]ff 12 00: text 12
+{marker}{appendText}[Takeshi]
+"Hey! Can you hear us!?"{waitForClick}{clearText}{marker}{sound C1T016}{appendText}[??]
+"Ah! Y-y-yeah! I can hear you!"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hang on! We'll get you out!"{waitForClick}{clearText}{marker}{sound C1T017}{appendText}[??]
+"Please!"{waitForClick}{clearText}{marker}{sound C1T018}{appendText}[??]
+"Aah... Thank goodness..."{waitForClick}{clearText}{marker}{sound C1T019}{appendText}[??]
+"I didn't think anyone would come to help..."{waitForClick}{clearText}{marker}{appendText}The voice that had answered seemed to be in 
+good spirits.{waitForClick}{clearText}{marker}{appendText}Whoever it was didn't sound like they were 
+weak, or injured.{waitForClick}{clearText}{marker}{appendText}I placed both of my hands firmly on the door 
+and pried it apart with all my strength.{waitForClick}{clearText}
+
+[00000223]10: 
+[00000224]18: hideTextbox
+[00000225]10: 
+[00000226]05 53 45 30 30 5f 31 30 00 80 00 00 a0 64 00 00: playSFX SE00_10 0 100
+[00000236]10: 
+[00000237]19: showTextbox
+[00000238]ff 13 00: text 13
+{marker}{appendText}The door opened.{waitForClick}{clearText}
+
+[0000023b]10: 
+[0000023c]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[00000246]10: 
+[00000247]06: stopSFX
+[00000248]10: 
+[00000249]19: showTextbox
+[0000024a]ff 14 00: text 14
+{marker}{appendText}On the other side of the door there 
+was...nothing.{waitForClick}{clearText}{marker}{appendText}The lift (or at least the part people ride in) 
+hadn't stopped directly on the floor.{waitForClick}{clearText}{marker}{appendText}I looked down at my feet.{waitForClick}{clearText}{marker}{appendText}I spotted a circular floor, slightly below in 
+the darkness.{waitForClick}{clearText}{marker}{appendText}No. I realized that wasn't the floor, it was 
+the roof of the trapped elevator.{waitForClick}{clearText}{marker}{appendText}It was a little more than six feet, from where 
+I was standing{waitForClick}{clearText}{marker}{appendText}Next, I....{waitForClick}
+
+[0000024d]ff 15 00: text 15
+{appendText}{choice 00 0073 |I stepped forward|Looked up}
+
+[00000250]10: 
+[00000251]1a a4 b3 00 00 a0 73 00 00: choiceId 1203 115
+[0000025a]00: 
+[0000025b]26 28 0a a4 b3 14 00 00 27 80 00 00 03 00 00 27 81 00 00 04 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 00000270 (00000003)
+27 -> 1 00000279 (00000004)
+
+[00000270]10: 
+[00000271]19: showTextbox
+[00000272]ff 16 00: text 16
+{marker}{appendText}I stepped forward.{waitForClick}{clearText}{marker}{appendText}And fell...{waitForClick}{clearText}{marker}{appendText}I should have known.{waitForClick}{clearText}
+
+[00000275]00: 
+[00000276]07 05 00: goto 0000027e (00000005)
+[00000279]10: 
+[0000027a]19: showTextbox
+[0000027b]ff 17 00: text 17
+{marker}{appendText}I looked up.{waitForClick}{clearText}{marker}{appendText}Thick pipes extended vertically with what 
+looked like four rails attached to their side.{waitForClick}{clearText}{marker}{appendText}It seemed that the elevator used these rails 
+to move up and down.{waitForClick}{clearText}{marker}{appendText}Come to think of it, I didn't see any trace of 
+cables or wires that you might expect in an 
+elevator.{waitForClick}{clearText}{marker}{appendText}Which meant that the elevator wasn't using 
+pulleys to go up and down...{waitForClick}{clearText}{marker}{appendText}Craning my head to get a better look, I gazed 
+further up the shaft to see where the pipe 
+went.{waitForClick}{clearText}{marker}{appendText}There wasn't any lighting, but enough light 
+poured through from behind me, that I could 
+get a vague sense of the outline.{waitForClick}{clearText}{marker}{appendText}The pipes ended partway up, as did the rails.{waitForClick}{clearText}{marker}{appendText}Where they ended they were covered by some 
+kind of heavy partition.{waitForClick}{clearText}{marker}{appendText}(Partition....?){waitForClick}{clearText}{marker}{appendText}(Maybe it's a watertight door...?){waitForClick}{clearText}{marker}{appendText}A section of the pipe had been closed off to 
+probably to prevent seawater from flooding in.{waitForClick}{clearText}{marker}{appendText}I didn't notice anything else.{waitForClick}{clearText}{marker}{appendText}Not even a ladder attached to the wall.{waitForClick}{clearText}{marker}{appendText}Meaning...{waitForClick}{clearText}{marker}{appendText}(The only way down is to jump...){waitForClick}{clearText}{marker}{appendText}I leapt out into the void.{waitForClick}{clearText}
+
+[0000027e]10: 
+[0000027f]19: showTextbox
+[00000280]ff 18 00: text 18
+{marker}{appendText}Landing impressively...{waitForClick}{clearText}{marker}{appendText}...at least, that was my INTENTION...{waitForClick}{clearText}
+
+[00000283]10: 
+[00000284]18: hideTextbox
+[00000285]10: 
+[00000286]05 53 45 30 31 5f 30 38 00 80 00 00 a0 64 00 00: playSFX SE01_08 0 100
+[00000296]10: 
+[00000297]19: showTextbox
+[00000298]ff 19 00: text 19
+{marker}{appendText}—WHAM!{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Agh!"{waitForClick}{clearText}{marker}{appendText}I struck my knee painfully.{waitForClick}{clearText}{marker}{sound C1T020}{appendText}[??]
+"Are you alriiight?"{waitForClick}{clearText}{marker}{appendText}I heard a voice from below.{waitForClick}{clearText}{marker}{sound C1T021}{appendText}[Park staff]
+"Did you hurt yourself?"{waitForClick}{clearText}{marker}{appendText}And then a voice from above......{waitForClick}{clearText}{marker}{appendText}Looking up, from the other side of the square 
+frame of the elevator doors, the female park 
+employee had a worried expression on her face. {waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Yeah, sure, I'm fine, just fine..."{waitForClick}{clearText}{marker}{appendText}I replied, while rubbing my knee.{waitForClick}{clearText}{marker}{appendText}It had been a long time since I'd jumped down 
+from a height greater than my own.{waitForClick}{clearText}{marker}{appendText}Maybe not since elementary school.{waitForClick}{clearText}{marker}{appendText}And as I stood there thinking that...{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hold on. I'll get you out of there."{waitForClick}{clearText}{marker}{sound C1T022}{appendText}[??]
+"Okaaaay."{waitForClick}{clearText}{marker}{appendText}I opened up the small door set into the 
+ceiling of the elevator.{waitForClick}{clearText}
+
+[0000029b]10: 
+[0000029c]18: hideTextbox
+[0000029d]10: 
+[0000029e]05 53 45 30 30 5f 30 39 00 80 00 00 a0 64 00 00: playSFX SE00_09 0 100
+[000002ae]10: 
+[000002af]04: stopBGM
+[000002b0]10: 
+[000002b1]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2
+[000002bb]10: 
+[000002bc]03 89 00 00 a0 64 00 00: playBGM 9 100
+[000002c4]10: 
+[000002c5]0c 00 00 00 00 0c 00 80 00 00 81 00 00: bgload 00000000 EV_CO02A 0 1
+[000002d2]10: 
+[000002d3]19: showTextbox
+[000002d4]ff 1a 00: text 1a
+{marker}{sound C1T023}{appendText}[??]
+"Oh, thank you so much!"{waitForClick}{clearText}{marker}{appendText}I looked to the girl inside{waitForClick}{clearText}{marker}{appendText}Her face was one big smile. She was clearly 
+happy she was about to be freed.{waitForClick}{clearText}{marker}{appendText}(Huh?){waitForClick}{clearText}{marker}{appendText}(I think I've seen this girl...somewhere 
+before...){waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Ah!"{waitForClick}{clearText}{marker}{sound C1T024}{appendText}[??]
+"Ah!"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"You're that girl from before!"{waitForClick}{clearText}{marker}{sound C1T025}{appendText}[??]
+"You're that guy from before!"{waitForClick}{clearText}{marker}{appendText}The girl and I pointed at each other and froze.{waitForClick}{clearText}{marker}{sound PIPI_01}{appendText}[??]
+"Woof!"{waitForClick}{clearText}{marker}{appendText}I spotted the scruffy face of a dog circling 
+around her feet.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Popo..."{waitForClick}{clearText}{marker}{sound C1T026}{appendText}[??]
+"His name's not 'Popo'..."{waitForClick}{clearText}{marker}{sound C1T027}{appendText}[Coco]
+"This little guy's name is Pipi, and my name's 
+Coco.... Try not to mix them up, okay?"{waitForClick}{clearText}{marker}{appendText}Pipi and Coco...{waitForClick}{clearText}{marker}{appendText}That's right...{waitForClick}{clearText}{marker}{appendText}This was the dog that had clamped onto that 
+mascot Myumyun's tail, up at the floating 
+island, and his owner.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"But...what are you doing here?"{waitForClick}{clearText}{marker}{sound C1T028}{appendText}[Coco]
+"Well what do you expect me to say to that...?"{waitForClick}{clearText}{marker}{sound C1T029}{appendText}[Coco]
+"I was trying to go to one of the lower 
+levels, and all of a sudden this 
+escalator stopped, and..."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"It isn't an escalator, it's an elevator, 
+alright?"{waitForClick}{clearText}{marker}{sound C1T030}{appendText}[Coco]
+"Ha, ha, oops.... I mean evelator, okay?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"No, NOT e-ve-lator, E-LE-VA-TOR."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"If you're on a moving staircase, that's 
+called an escalator, and if you're in 
+a box that goes up and DOWN, now that's 
+an elevator. Try not to mix them up."{waitForClick}{clearText}{marker}{appendText}[Coco]
+"......"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"......"{waitForClick}{clearText}{marker}{sound C1T031}{appendText}[Coco]
+"Does it really matter?"{waitForClick}{clearText}{marker}{sound C1T032}{appendText}[Coco]
+"Anyways, I don't know why, but all of a 
+sudden I was trapped in this box."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Really..."{waitForClick}{clearText}{marker}{appendText}It had been the same with me.{waitForClick}{clearText}{marker}{appendText}It had only been a little earlier that I had 
+been trapped in another elevator...{waitForClick}{clearText}{marker}{sound C1T033}{appendText}[Coco]
+"Hey?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hmmm?"{waitForClick}{clearText}{marker}{sound C1T034}{appendText}[Coco]
+"I'd kind of like to get out of here...soon..."{waitForClick}{clearText}{marker}{appendText}Coco gave me an imploring look.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Oh, aah, I'm sorry."{waitForClick}{clearText}{marker}{appendText}I said that and got down on my stomach 
+from atop the elevator.{waitForClick}{clearText}{marker}{appendText}I leaned down from the small hole, and stuck 
+my hand out to Coco.{waitForClick}{clearText}{marker}{sound C1T035}{appendText}[Coco]
+"Please, help Pipi first."{waitForClick}{clearText}{marker}{appendText}Coco held up Pipi to me, stretching as far as 
+she could to make him reach.{waitForClick}{clearText}{marker}{appendText}I grabbed onto Pipi's front legs and pulled 
+him out from the hole in the ceiling.{waitForClick}{clearText}{marker}{sound PIPI_08}{appendText}[Pipi]
+"*whine*... *whine*...."{waitForClick}{clearText}{marker}{appendText}Pipi sniffed for my scent.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Okay, next it's your turn, Coco."{waitForClick}{clearText}{marker}{appendText}I stuck out my hand again.{waitForClick}{clearText}
+
+[000002d7]10: 
+[000002d8]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[000002e8]10: 
+[000002e9]19: showTextbox
+[000002ea]ff 1b 00: text 1b
+{marker}{sound C1T036}{appendText}[Coco]
+"Aia! Wah! Ayah!"{waitForClick}{clearText}{marker}{appendText}Coco jumped over and over, reaching out for my 
+hand.{waitForClick}{clearText}{marker}{appendText}But... Either she was too short, or just 
+had a terrible jump, because she didn't 
+even reach my fingertips.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hey, that reminds me..."{waitForClick}{clearText}{marker}{appendText}From the position I was in, arms hanging down, 
+I looked around the elevator.{waitForClick}{clearText}{marker}{appendText}I realized that nobody was in there but Coco. 
+There was no mistake.{waitForClick}{clearText}{marker}{appendText}(Huh? That's strange...){waitForClick}{clearText}{marker}{appendText}(I could have sworn I heard two people in 
+there...){waitForClick}{clearText}
+
+[000002ed]10: 
+[000002ee]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[000002fe]10: 
+[000002ff]19: showTextbox
+[00000300]ff 1c 00: text 1c
+{marker}{sound C1T037}{appendText}[Coco]
+"Aaii! Haiya! Awwww, just a little bit 
+further..."{waitForClick}{clearText}{marker}{appendText}Coco was still jumping.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hey, Coco?"{waitForClick}{clearText}{marker}{sound C1T038}{appendText}[Coco]
+"Yeah?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Pipi can't speak, uh, English, right?"{waitForClick}{clearText}{marker}{sound C1T039}{appendText}[Coco]
+"Of course not!"{waitForClick}{clearText}{marker}{sound C1T040}{appendText}[Coco]
+"He only speaks Piplish!"{waitForClick}{clearText}{marker}{sound PIPI_04}{appendText}[Pipi]
+"Woof woof!"{waitForClick}{clearText}{marker}{appendText}Pipi barked into my ear.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"That's what I thought..."{waitForClick}{clearText}{marker}{sound C1T041}{appendText}[Coco]
+"...Why do you ask?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Uh, well earlier? I could have sworn I heard 
+two voices coming from this elevator..."{waitForClick}{clearText}{marker}{sound C1T042}{appendText}[Coco]
+"Two?"{waitForClick}{clearText}{marker}{sound C1T043}{appendText}[Coco]
+"This whole time it's only been Pipi and me in 
+here."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Uhhh.... Yeah, I can tell that from looking."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Maybe the next elevator over?"{waitForClick}{clearText}{marker}{appendText}Coco looked puzzled.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Oh, well. Whatever."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Anyway, before I take care of that, we gotta 
+get you out of here."{waitForClick}{clearText}{marker}{appendText}Coco started jumping again.{waitForClick}{clearText}
+
+[00000303]10: 
+[00000304]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[00000314]10: 
+[00000315]19: showTextbox
+[00000316]ff 1d 00: text 1d
+{marker}{sound C1T044}{appendText}[Coco]
+"Toriiyaa!"{waitForClick}{clearText}
+
+[00000319]10: 
+[0000031a]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[0000032a]10: 
+[0000032b]19: showTextbox
+[0000032c]ff 1e 00: text 1e
+{marker}{sound C1T045}{appendText}[Coco]
+"Uuuriya!"{waitForClick}{clearText}
+
+[0000032f]10: 
+[00000330]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[00000340]10: 
+[00000341]19: showTextbox
+[00000342]ff 1f 00: text 1f
+{marker}{sound C1T046}{appendText}[Coco]
+"Eeeiii!"{waitForClick}{clearText}
+
+[00000345]10: 
+[00000346]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[00000356]10: 
+[00000357]19: showTextbox
+[00000358]ff 20 00: text 20
+{marker}{sound C1T047}{appendText}[Coco]
+"Yaah!"{waitForClick}{clearText}
+
+[0000035b]10: 
+[0000035c]05 53 45 31 30 5f 30 36 00 80 00 00 a0 5f 00 00: playSFX SE10_06 0 95
+[0000036c]10: 
+[0000036d]19: showTextbox
+[0000036e]ff 21 00: text 21
+{marker}{sound C1T048}{appendText}[Coco]
+"Waachooo!"{waitForClick}{clearText}{marker}{appendText}..........{waitForClick}{clearText}{marker}{appendText}.......{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}
+
+[00000371]10: 
+[00000372]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[0000037c]10: 
+[0000037d]0c 00 00 00 00 0d 00 80 00 00 82 00 00: bgload 00000000 BG22A3 0 2
+[0000038a]10: 
+[0000038b]1f a0 10 00 00 a0 24 00 00: clock 16:36
+[00000394]10: 
+[00000395]0f 81 00 00 00 00 00 00 0e 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO02ADM 320 3
+[000003a6]10: 
+[000003a7]19: showTextbox
+[000003a8]ff 22 00: text 22
+{marker}{sound C1T049}{appendText}[Coco]
+"Wheeew! That was close."{waitForClick}{clearText}{marker}{sound C1T050}{appendText}[Coco]
+"Thank you so much."{waitForClick}{clearText}{marker}{appendText}Coco shook my hand profusely.{waitForClick}{clearText}{marker}{sound C1T051}{appendText}[Coco]
+"Um, by the way? Who are these people...?"{waitForClick}{clearText}{marker}{appendText}Coco looked back and forth between the faces 
+of the female park employee, and the girl in 
+black clothing.{waitForClick}{clearText}
+
+[000003ab]10: 
+[000003ac]10 81 00 00 83 00 00: removeFG 1 3
+[000003b3]10: 
+[000003b4]14 82 00 00 81 00 00 80 00 00: setFGOrder 1 2 4
+[000003be]10: 
+[000003bf]16 00 00 00 00 0f 00 00 00 00 00 10 00 00 00 00 00 11 00 a0 80 00 00 a1 40 00 00 a2 00 00 00 83 00 00: multifgload3 00000000 TU17ADS 00000000 CO15ADS 00000000 SO11ADS 128 320 512 3
+[000003e1]10: 
+[000003e2]19: showTextbox
+[000003e3]ff 23 00: text 23
+{marker}{sound C1T052}{appendText}[Sora]
+"My name is Sora Akanegasaki."{waitForClick}{clearText}{marker}{sound C1T053}{appendText}[Sora]
+"Do you remember me?"{waitForClick}{clearText}
+
+[000003e6]10: 
+[000003e7]0f 82 00 00 00 00 00 00 12 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO16ADS 320 3
+[000003f8]10: 
+[000003f9]19: showTextbox
+[000003fa]ff 24 00: text 24
+{marker}{sound C1T054}{appendText}[Coco]
+"Aaah! You're that lady who was giving 
+explanations at the entrance!"{waitForClick}{clearText}{marker}{sound C1T055}{appendText}[Sora]
+"Yes."{waitForClick}{clearText}
+
+[000003fd]10: 
+[000003fe]0f 82 00 00 00 00 00 00 13 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO15ADS 320 3
+[0000040f]10: 
+[00000410]19: showTextbox
+[00000411]ff 25 00: text 25
+{marker}{sound C1T056}{appendText}[Coco]
+"Ummm, uuuuhhh, my name is..."{waitForClick}{clearText}{marker}{sound C1T057}{appendText}[Sora]
+"I know."{waitForClick}{clearText}
+
+[00000414]10: 
+[00000415]0f 84 00 00 00 00 00 00 14 00 a2 00 00 00 83 00 00: fgload 4 00000000 SO12ADS 512 3
+[00000426]10: 
+[00000427]19: showTextbox
+[00000428]ff 26 00: text 26
+{marker}{sound C1T058}{appendText}[Sora]
+"Coco Yagami, correct?"{waitForClick}{clearText}
+
+[0000042b]10: 
+[0000042c]0f 82 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO06ADS 320 3
+[0000043d]10: 
+[0000043e]19: showTextbox
+[0000043f]ff 27 00: text 27
+{marker}{sound C1T059}{appendText}[Coco]
+"Huh? How'd you know?"{waitForClick}{clearText}{marker}{sound C1T060}{appendText}[Sora]
+"Because you were so enthusiastic when you 
+replied to me, 'I'M CO-CO YA-GA-MI!'"{waitForClick}{clearText}
+
+[00000442]10: 
+[00000443]0f 82 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO16ADS 320 3
+[00000454]10: 
+[00000455]19: showTextbox
+[00000456]ff 28 00: text 28
+{marker}{sound C1T061}{appendText}[Coco]
+"Oh, yeah..."{waitForClick}{clearText}{marker}{sound C1T062}{appendText}[Coco]
+"You remembered?"{waitForClick}{clearText}{marker}{sound C1T063}{appendText}[Sora]
+"I have a good memory."{waitForClick}{clearText}{marker}{sound C1T064}{appendText}[Sora]
+"I also remember your dog's name. Pipi, wasn't 
+it?"{waitForClick}{clearText}{marker}{sound PIPI_01}{appendText}[Pipi]
+"Woof!"{waitForClick}{clearText}
+
+[00000459]10: 
+[0000045a]0f 82 00 00 00 00 00 00 17 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO11ADS 320 3
+[0000046b]10: 
+[0000046c]19: showTextbox
+[0000046d]ff 29 00: text 29
+{marker}{sound C1T065}{appendText}[Coco]
+"And...you are...?"{waitForClick}{clearText}{marker}{appendText}Coco turned to the girl in black clothing.{waitForClick}{clearText}
+
+[00000470]10: 
+[00000471]0f 81 00 00 00 00 00 00 18 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU15ADS 128 3
+[00000482]10: 
+[00000483]19: showTextbox
+[00000484]ff 2a 00: text 2a
+{marker}{appendText}[Girl]
+"........."{waitForClick}{clearText}
+
+[00000487]10: 
+[00000488]19: showTextbox
+[00000489]ff 2b 00: text 2b
+{marker}{sound PIPI_11}{appendText}[Pipi]
+"Woof woof! Woof!"{waitForClick}{clearText}{marker}{appendText}Shaking his tail excitedly, for some reason 
+Pipi latched on to the girl's skirt. {waitForClick}{clearText}
+
+[0000048c]10: 
+[0000048d]0f 82 00 00 00 00 00 00 19 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO06ADS 320 3
+[0000049e]10: 
+[0000049f]19: showTextbox
+[000004a0]ff 2c 00: text 2c
+{marker}{sound C1T067}{appendText}[Coco]
+"Huh?"{waitForClick}{clearText}{marker}{sound C1T068}{appendText}[Coco]
+"Um, wait a second...you wouldn't happen to 
+be...that person who was wearing the Lemur 
+costume?"{waitForClick}{clearText}{marker}{appendText}[Girl]
+"........."{waitForClick}{clearText}{marker}{sound C1T069}{appendText}[Coco]
+"Hey, you are, aren't you."{waitForClick}{clearText}
+
+[000004a3]10: 
+[000004a4]0f 82 00 00 00 00 00 00 1a 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO12ADS 320 3
+[000004b5]10: 
+[000004b6]19: showTextbox
+[000004b7]ff 2d 00: text 2d
+{marker}{sound C1T070}{appendText}[Coco]
+"I know it! You've got to be!"{waitForClick}{clearText}{marker}{sound C1T071}{appendText}[Coco]
+"I remember your voice!"{waitForClick}{clearText}
+
+[000004ba]10: 
+[000004bb]0f 81 00 00 00 00 00 00 1b 00 a0 80 00 00 83 00 00: fgload 1 00000000 TU17ADS 128 3
+[000004cc]10: 
+[000004cd]19: showTextbox
+[000004ce]ff 2e 00: text 2e
+{marker}{sound C1T072}{appendText}[Girl]
+"Whatever. I don't really care about that, but 
+can you do something about this mutt?"{waitForClick}{clearText}{marker}{appendText}The girl dropped her cutting gaze to Pipi who 
+was busily gnawing on the edge of her skirt.{waitForClick}{clearText}
+
+[000004d1]10: 
+[000004d2]10 82 00 00 83 00 00: removeFG 2 3
+[000004d9]10: 
+[000004da]19: showTextbox
+[000004db]ff 2f 00: text 2f
+{marker}{sound C1T073}{appendText}[Coco]
+"Ah, aah, I'm sorry."{waitForClick}{clearText}{marker}{appendText}Coco scooped up Pipi, and rapped him lightly 
+on the head.{waitForClick}{clearText}
+
+[000004de]10: 
+[000004df]0f 82 00 00 00 00 00 00 1c 00 a1 40 00 00 83 00 00: fgload 2 00000000 CO02ADS 320 3
+[000004f0]10: 
+[000004f1]19: showTextbox
+[000004f2]ff 30 00: text 30
+{marker}{sound C1T074}{appendText}[Coco]
+"Bad dog, you know better than to do that."{waitForClick}{clearText}{marker}{sound PIPI_07}{appendText}[Pipi]
+"*whine* *whimper*..."{waitForClick}{clearText}
+
+[000004f5]10: 
+[000004f6]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[000004fd]10: 
+[000004fe]14 80 00 00 81 00 00 82 00 00: setFGOrder 4 2 1
+[00000508]10: 
+[00000509]19: showTextbox
+[0000050a]ff 31 00: text 31
+{marker}{appendText}[Takeshi]
+"Hey? How about my name? You don't want to 
+know?"{waitForClick}{clearText}{marker}{appendText}I asked, as I twirled Pipi's tail around my 
+finger. {waitForClick}{clearText}
+
+[0000050d]10: 
+[0000050e]0f 81 00 00 00 00 00 00 1d 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO02ADM 320 3
+[0000051f]10: 
+[00000520]19: showTextbox
+[00000521]ff 32 00: text 32
+{marker}{sound C1T075}{appendText}[Coco]
+"I already know what it is."{waitForClick}{clearText}{marker}{sound C1T076}{appendText}[Coco]
+"Takeshi Kuranari...right?"{waitForClick}{clearText}{marker}{appendText}Coco said this with a grin on her face.{waitForClick}{clearText}{marker}{appendText}(Huh? When did I introduce myself?){waitForClick}{clearText}{marker}{appendText}It bugged me that she knew, but...{waitForClick}{clearText}{marker}{appendText}...oh well.{waitForClick}{clearText}{marker}{appendText}It wasn't really a big deal...{waitForClick}{clearText}
+
+[00000524]10: 
+[00000525]0f 81 00 00 00 00 00 00 1e 00 a1 40 00 00 83 00 00: fgload 1 00000000 CO01ADM 320 3
+[00000536]10: 
+[00000537]19: showTextbox
+[00000538]ff 33 00: text 33
+{marker}{sound C1T077}{appendText}[Coco]
+"By the way...I've got something I want to 
+ask..."{waitForClick}{clearText}{marker}{sound C1T078}{appendText}[Sora]
+"?"{waitForClick}{clearText}{marker}{sound C1T079}{appendText}[Girl]
+"?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"?"{waitForClick}{clearText}{marker}{sound C1T080}{appendText}[Coco]
+"Where did everyone else go?"{waitForClick}{clearText}
+
+[0000053b]10: 
+[0000053c]18: hideTextbox
+[0000053d]10: 
+[0000053e]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000545]10: 
+[00000546]10 81 00 00 83 00 00: removeFG 1 3
+[0000054d]10: 
+[0000054e]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000558]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000562]27 00 00: fadeOutMonoColorOverlay
+[00000565]00: 
+[00000566]05 83 00 00: unSkippableDelay 3
+[0000056a]10: 
+[0000056b]04: stopBGM
+[0000056c]10: 
+[0000056d]03 84 00 00 a0 64 00 00: playBGM 4 100
+[00000575]10: 
+[00000576]0c 00 00 00 00 1f 00 80 00 00 82 00 00: bgload 00000000 BG25A3 0 2
+[00000583]10: 
+[00000584]19: showTextbox
+[00000585]ff 34 00: text 34
+{marker}{appendText}While we were walking, Sora gave Coco a brief 
+explanation of the chain of events leading up 
+to here.{waitForClick}{clearText}{marker}{appendText}The power failure. The alarms going off.{waitForClick}{clearText}{marker}{appendText}How we all failed to get out in time.{waitForClick}{clearText}{marker}{appendText}And of course the flooding. Everything.{waitForClick}{clearText}{marker}{sound C1T081}{appendText}[Coco]
+"F-flooooding!?"{waitForClick}{clearText}{marker}{sound C1T082}{appendText}[Coco]
+"You mean, water from the ocean came gushing 
+into LeMU!?"{waitForClick}{clearText}{marker}{appendText}Taken off guard, Coco looked as if she'd been 
+gut-punched.{waitForClick}{clearText}{marker}{appendText}But it wasn't surprising.{waitForClick}{clearText}{marker}{appendText}Not many people would calmly reply 'Oh, 
+really,' when notified they had just missed a 
+massive flood.{waitForClick}{clearText}{marker}{appendText}Actually, the fact that our group was able to 
+act as calmly as it did seemed fairly unusual.{waitForClick}{clearText}{marker}{appendText}Humans may be surprisingly resilient animals.{waitForClick}{clearText}{marker}{appendText}When one's life was on the line, people who 
+had the ability to keep levelheaded and think 
+the situation through to the next step.{waitForClick}{clearText}{marker}{appendText}From time immemorial, only people with these 
+traits survived to see their children and 
+children's children.{waitForClick}{clearText}{marker}{appendText}It occurred to me then.{waitForClick}{clearText}{marker}{appendText}And at the same time, for some reason my chest 
+was pounding as I looked at the three girls.{waitForClick}{clearText}{marker}{appendText}(I'm the only guy here. The rest are girls){waitForClick}{clearText}{marker}{appendText}(So, I can't mess things up. I've got to keep 
+it together no matter what){waitForClick}{clearText}{marker}{appendText}(As the only man here, it's my responsibility 
+to protect the three of them){waitForClick}{clearText}{marker}{appendText}It was a simple, old-fashioned, and maybe 
+moldy, petrified way of thinking. But at that 
+moment, it was simply how I felt.{waitForClick}{clearText}{marker}{appendText}Men protect women—{waitForClick}{clearText}{marker}{appendText}I was able to keep rational precisely because 
+that sense of righteousness drove my actions 
+to an almost embarrassing degree.{waitForClick}{clearText}
+
+[00000588]10: 
+[00000589]0c 00 00 00 00 20 00 80 00 00 82 00 00: bgload 00000000 BG02A1 0 2
+[00000596]10: 
+[00000597]19: showTextbox
+[00000598]ff 35 00: text 35
+{marker}{appendText}While I was thinking about these trivial 
+things, we'd changed location completely.{waitForClick}{clearText}{marker}{appendText}—The Dolphin Carousel.{waitForClick}{clearText}{marker}{appendText}Suddenly...{waitForClick}{clearText}
+
+[0000059b]10: 
+[0000059c]18: hideTextbox
+[0000059d]10: 
+[0000059e]04: stopBGM
+[0000059f]10: 
+[000005a0]0f 81 00 00 00 00 00 00 21 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO06ADM 320 3
+[000005b1]10: 
+[000005b2]19: showTextbox
+[000005b3]ff 36 00: text 36
+{marker}{sound C1T083}{appendText}[Sora]
+"Ah!"{waitForClick}{clearText}{marker}{appendText}Sora raised her voice in alarm.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"What is it?"{waitForClick}{clearText}
+
+[000005b6]10: 
+[000005b7]0f 81 00 00 00 00 00 00 22 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO10ADM 320 3
+[000005c8]10: 
+[000005c9]19: showTextbox
+[000005ca]ff 37 00: text 37
+{marker}{sound C1T084}{appendText}[Sora]
+"Someone's coming this way."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"...What?"{waitForClick}{clearText}
+
+[000005cd]10: 
+[000005ce]10 81 00 00 83 00 00: removeFG 1 3
+[000005d5]10: 
+[000005d6]18: hideTextbox
+[000005d7]10: 
+[000005d8]03 83 00 00 a0 64 00 00: playBGM 3 100
+[000005e0]10: 
+[000005e1]0f 81 00 00 00 00 00 00 23 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU17BDM 320 3
+[000005f2]10: 
+[000005f3]19: showTextbox
+[000005f4]ff 38 00: text 38
+{marker}{sound T1B005}{appendText}[Park staff]
+"*Sigh*"{waitForClick}{clearText}{marker}{sound T1B006}{appendText}[Park staff]
+"For a while I wondered what 
+was going to happen to us, but..." {waitForClick}{clearText}{marker}{appendText}It was one of the female employees that I'd 
+met once before.{waitForClick}{clearText}
+
+[000005f7]10: 
+[000005f8]0f 81 00 00 00 00 00 00 24 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU15BDM 320 3
+[00000609]10: 
+[0000060a]19: showTextbox
+[0000060b]ff 39 00: text 39
+{marker}{sound T1B007}{appendText}[Park staff]
+"I'm glad we survived..."{waitForClick}{clearText}
+
+[0000060e]10: 
+[0000060f]0f 81 00 00 00 00 00 00 25 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU06BDM 320 3
+[00000620]10: 
+[00000621]19: showTextbox
+[00000622]ff 3a 00: text 3a
+{marker}{sound T1B008}{appendText}[Park staff]
+"Hey, aren't you...?"{waitForClick}{clearText}{marker}{appendText}The girl finally noticed us.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"I didn't think there'd be anybody 
+else here."{waitForClick}{clearText}
+
+[00000625]10: 
+[00000626]0f 81 00 00 00 00 00 00 26 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01BDM 320 3
+[00000637]10: 
+[00000638]19: showTextbox
+[00000639]ff 3b 00: text 3b
+{marker}{sound T1B009}{appendText}[Park staff]
+"Yeah. How are you?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"About as good as I look, I suppose."{waitForClick}{clearText}{marker}{sound T1B010}{appendText}[Park staff]
+"Seems like you had a rough 
+time of it, too..."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Hey, lucky guess..."{waitForClick}{clearText}{marker}{appendText}Relaxing a bit, I returned her smile.{waitForClick}{clearText}
+
+[0000063c]10: 
+[0000063d]10 81 00 00 83 00 00: removeFG 1 3
+[00000644]10: 
+[00000645]19: showTextbox
+[00000646]ff 3c 00: text 3c
+{marker}{appendText}Behind her was someone else.{waitForClick}{clearText}
+
+[00000649]10: 
+[0000064a]12 81 00 00 82 00 00 00 00 00 00 27 00 00 00 00 00 28 00 a0 80 00 00 a2 00 00 00 83 00 00: multifgload2 1 2 00000000 YU01BDM 00000000 KA09ADM 128 512 3
+[00000668]10: 
+[00000669]19: showTextbox
+[0000066a]ff 3d 00: text 3d
+{marker}{sound T1B013}{appendText}[Kid]
+"......"{waitForClick}{clearText}{marker}{appendText}It was that kid who we'd taken to the 
+infirmary.{waitForClick}{clearText}{marker}{appendText}His expression looked darker somehow.{waitForClick}{clearText}{marker}{appendText}If he'd become super upbeat all of the sudden 
+that would have been weird too, but...{waitForClick}{clearText}{marker}{appendText}For some reason it bothered me.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Is something wrong with him? 
+He doesn't look so hot."{waitForClick}{clearText}
+
+[0000066d]10: 
+[0000066e]0f 81 00 00 00 00 00 00 29 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU17BDM 128 3
+[0000067f]10: 
+[00000680]19: showTextbox
+[00000681]ff 3e 00: text 3e
+{marker}{sound T1B014}{appendText}[Park staff]
+"Oh, he's, a bit..."{waitForClick}{clearText}{marker}{appendText}The attendant hesitated.{waitForClick}{clearText}
+
+[00000684]10: 
+[00000685]0f 81 00 00 00 00 00 00 2a 00 a0 80 00 00 83 00 00: fgload 1 00000000 YU15BDM 128 3
+[00000696]10: 
+[00000697]19: showTextbox
+[00000698]ff 3f 00: text 3f
+{marker}{sound T1B015}{appendText}[Park staff]
+"By the way..."{waitForClick}{clearText}{marker}{sound T1B016}{appendText}[Park staff]
+"Hey, Sora, do you have any idea what our 
+situation is?"{waitForClick}{clearText}{marker}{appendText}The girl asked Sora.{waitForClick}{clearText}
+
+[0000069b]10: 
+[0000069c]10 82 00 00 83 00 00: removeFG 2 3
+[000006a3]10: 
+[000006a4]0f 82 00 00 00 00 00 00 2b 00 a2 00 00 00 83 00 00: fgload 2 00000000 SO03ADM 512 3
+[000006b5]10: 
+[000006b6]19: showTextbox
+[000006b7]ff 40 00: text 40
+{marker}{sound T1B017}{appendText}[Sora]
+"Well, the communication lines are down.... 
+I've been investigating ways to restore our 
+connection, but it's going to take some time."{waitForClick}{clearText}
+
+[000006ba]fe 28 0a a4 b3 14 14 00 82 00 00: varop (28 0a a4) b3 := (00) 2
+[000006c5]10: 
+[000006c6]01 54 5f 31 42 00: jump T_1B

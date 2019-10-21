@@ -1,0 +1,510 @@
+﻿[00000022]10: 
+[00000023]46 80 00 00: setDialogBoxColor blue
+[00000027]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000032]fe 28 0a a4 b1 14 14 00 87 00 00: varop (28 0a a4) b1 := (00) 7
+[0000003d]fe 28 0a a4 b2 14 14 00 80 00 00: varop (28 0a a4) b2 := (00) 0
+[00000048]fe 28 0a a4 fa 14 14 00 a0 67 00 00: setSceneTitleByIndex 103
+[00000054]10: 
+[00000055]0d 80 00 00 80 00 00 80 00 00: removeBG 0 0 0
+[0000005f]10: 
+[00000060]05 53 45 30 39 5f 30 31 4c 00 80 00 00 a0 5a 00 00: playSFX SE09_01L 0 90
+[00000071]00: 
+[00000072]28: l_unk28
+[00000073]10: 
+[00000074]19: showTextbox
+[00000075]ff 00 00: text 00
+{marker}{appendText}I heard a low, mechanical sound from far away.{waitForClick}{clearText}{marker}{appendText}The breeze passed through the trees leaves 
+making them rustle. {waitForClick}{clearText}{marker}{appendText}The same wind gently caressed my cheeks. {waitForClick}{clearText}{marker}{appendText}...............{waitForClick}{clearText}{marker}{appendText}Wind?{waitForClick}{clearText}{marker}{appendText}Rustling leaves?{waitForClick}{clearText}{marker}{appendText}I opened my eyes slowly.{waitForClick}{clearText}
+
+[00000078]10: 
+[00000079]18: hideTextbox
+[0000007a]10: 
+[0000007b]45 a0 12 00 00 81 00 00: monoColorOverlay 18 1
+[00000083]10: 
+[00000084]40 00 00 00 00 00 00 86 00 00 82 00 00 80 00 00 80 00 00 80 00 00 80 00 00: bgloadCrop 00000000 BG39A3 6 2 0 0 0 0
+[0000009d]fe 28 0a a0 ab 14 14 00 c0 2e: setMonoColorOverlayFadeOutDuration VAR_c0_46
+[000000a7]27 00 00: fadeOutMonoColorOverlay
+[000000aa]00: 
+[000000ab]05 a0 21 00 00: unSkippableDelay 33
+[000000b0]10: 
+[000000b1]19: showTextbox
+[000000b2]ff 01 00: text 01
+{marker}{appendText}I didn't know where I was for a moment.{waitForClick}{clearText}{marker}{appendText}Had there been a place like this in LeMU?{waitForClick}{clearText}
+
+[000000b5]10: 
+[000000b6]0c 00 00 00 00 01 00 80 00 00 81 00 00: bgload 00000000 IMG05C 0 1
+[000000c3]10: 
+[000000c4]19: showTextbox
+[000000c5]ff 02 00: text 02
+{marker}{appendText}I looked up.{waitForClick}{clearText}{marker}{appendText}There was no ceiling.{waitForClick}{clearText}{marker}{appendText}There was just a sprawling, starry sky.{waitForClick}{clearText}{marker}{appendText}It was not like a fake sky like in the Cosmic 
+Whale Room, but a sky that felt broad and 
+infinite.{waitForClick}{clearText}
+
+[000000c8]10: 
+[000000c9]0c 00 00 00 00 02 00 80 00 00 81 00 00: bgload 00000000 BG39A3 0 1
+[000000d6]10: 
+[000000d7]19: showTextbox
+[000000d8]ff 03 00: text 03
+{marker}{appendText}I was....on the ground.{waitForClick}{clearText}{marker}{appendText}More precisely, I was on the floating island, 
+Insel null.{waitForClick}{clearText}{marker}{appendText}Yes, I had...no, we had swam to it...{waitForClick}{clearText}{marker}{appendText}The nearly 100 feet from Zweite stock to the 
+surface...{waitForClick}{clearText}{marker}{appendText}Somehow, I had climbed into the emergency 
+entrance of Insel null holding Sara, 
+unconscious in my arms.{waitForClick}{clearText}{marker}{appendText}I remembered checking to see if Sara was 
+alright.{waitForClick}{clearText}{marker}{appendText}After that, I probably fainted from fatigue 
+and a lack of oxygen.{waitForClick}{clearText}{marker}{appendText}I awoke up with a start, looked around and was 
+relieved to see Sara lying down next to me.{waitForClick}{clearText}{marker}{appendText}Her chest rose and fell faintly. I could hear 
+the regular sound of her breathing.{waitForClick}{clearText}{marker}{appendText}I looked around again.{waitForClick}{clearText}{marker}{appendText}I checked around the edge of Insel null, which 
+was a lush park.{waitForClick}{clearText}{marker}{appendText}I could see the administration center, hotel 
+and a tower of light behind the trees.{waitForClick}{clearText}{marker}{appendText}It was still dark, so it didn't seem I'd been 
+unconscious very long.{waitForClick}{clearText}{marker}{appendText}Maybe about an hour or so...{waitForClick}{clearText}{marker}{appendText}I was...impressed that we had been able to 
+swim all the way to the surface...{waitForClick}{clearText}{marker}{appendText}I went over it again in my head.{waitForClick}{clearText}{marker}{appendText}Suddenly, a conversation in the Control Room 
+with Sara came to my mind.{waitForClick}{clearText}
+
+[000000db]10: 
+[000000dc]18: hideTextbox
+[000000dd]10: 
+[000000de]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[000000e5]10: 
+[000000e6]06: stopSFX
+[000000e7]10: 
+[000000e8]0c 00 00 00 00 03 00 86 00 00 82 00 00: bgload 00000000 BG16A1 6 2
+[000000f5]10: 
+[000000f6]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 80 00 00: fgload 1 00000000 SO05ADM 320 0
+[00000107]10: 
+[00000108]20 a0 20 00 00: showFilter2
+[0000010d]00: 
+[0000010e]05 81 00 00: unSkippableDelay 1
+[00000112]fe 28 0a a0 ab 14 14 00 c0 13: setMonoColorOverlayFadeOutDuration VAR_c0_19
+[0000011c]27 00 00: fadeOutMonoColorOverlay
+[0000011f]00: 
+[00000120]05 86 00 00: unSkippableDelay 6
+[00000124]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[0000012f]10: 
+[00000130]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[00000134]10: 
+[00000135]19: showTextbox
+[00000136]ff 04 00: text 04
+{marker}{sound S1C046}{appendText}[Sora]
+"Please imagine a 15-story building."{waitForClick}{clearText}{marker}{sound S1C047}{appendText}[Sora]
+"Or five three-story school buildings 
+stacked vertically upon each other."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Five schools stacked..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No way. I couldn't swim that."{waitForClick}{clearText}
+
+[00000139]10: 
+[0000013a]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADM 320 3
+[0000014b]10: 
+[0000014c]19: showTextbox
+[0000014d]ff 05 00: text 05
+{marker}{sound S1C048}{appendText}[Sora]
+"Well, then how about a ten-story building?"{waitForClick}{clearText}{marker}{sound S1C049}{appendText}[Sora]
+"A depth of 100 feet...that is the 
+depth of Zweite stock."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"100 feet..."{waitForClick}{clearText}
+
+[00000150]10: 
+[00000151]18: hideTextbox
+[00000152]10: 
+[00000153]20 a0 20 00 00: showFilter2
+[00000158]00: 
+[00000159]05 81 00 00: unSkippableDelay 1
+[0000015d]10: 
+[0000015e]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[00000165]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000170]10: 
+[00000171]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[00000175]10: 
+[00000176]0c 00 00 00 00 06 00 86 00 00 82 00 00: bgload 00000000 BG39A3 6 2
+[00000183]10: 
+[00000184]05 53 45 30 39 5f 30 31 4c 00 80 00 00 a0 5f 00 00: playSFX SE09_01L 0 95
+[00000195]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[0000019f]27 00 00: fadeOutMonoColorOverlay
+[000001a2]00: 
+[000001a3]05 a0 19 00 00: unSkippableDelay 25
+[000001a8]10: 
+[000001a9]19: showTextbox
+[000001aa]ff 06 00: text 06
+{marker}{appendText}How had I responded to Sora...?{waitForClick}{clearText}
+
+[000001ad]00: 
+[000001ae]0a 01 28 0a a4 e0 14 0d 01 80 01 00 01 00: gotoif 1 (28 0a a4) e0 != (01) 0 (0001) -> 000001cb (00000001)
+[000001bc]10: 
+[000001bd]24 a0 1d 00 00: scriptLocationId 29
+[000001c2]10: 
+[000001c3]19: showTextbox
+[000001c4]ff 07 00: text 07
+{marker}{appendText}I remembered. I had said it was impossible.{waitForClick}{clearText}{marker}{appendText}Sora said I was being rational.{waitForClick}{clearText}
+
+[000001c7]00: 
+[000001c8]07 02 00: goto 000001d0 (00000002)
+[000001cb]10: 
+[000001cc]19: showTextbox
+[000001cd]ff 08 00: text 08
+{marker}{appendText}Hadn't I said that I thought I could swim it?{waitForClick}{clearText}{marker}{appendText}Sora talked about the pressure and said it was 
+impossible...{waitForClick}{clearText}
+
+[000001d0]10: 
+[000001d1]19: showTextbox
+[000001d2]ff 09 00: text 09
+{marker}{appendText}But...{waitForClick}{clearText}
+
+[000001d5]10: 
+[000001d6]18: hideTextbox
+[000001d7]10: 
+[000001d8]20 a0 2c 00 00: showDimOverlay
+[000001dd]10: 
+[000001de]18: hideTextbox
+[000001df]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[000001ea]10: 
+[000001eb]19: showTextbox
+[000001ec]ff 0a 00: text 0a
+{marker}{appendText}
+
+{appendText}{delay 0}           Even Sora could be wrong.{waitForClick}
+{appendText}
+{appendText}{delay 0}         We were able to swim it, Sora.{waitForClick}{nextPage x2}
+
+[000001ef]10: 
+[000001f0]18: hideTextbox
+[000001f1]10: 
+[000001f2]19: showTextbox
+[000001f3]ff 0b 00: text 0b
+{marker}{appendText}...That reminded me...I wondered what had 
+happened to Sora.{waitForClick}
+{appendText}Has she suffered the equivalent of death from 
+the blackout...?{waitForClick}
+{appendText}
+{appendText}No. Sora was RSD-generated.{waitForClick}
+{appendText}She wasn't human.{waitForClick}
+{appendText}She couldn't die.{waitForClick}{nextPage x2}
+
+[000001f6]10: 
+[000001f7]18: hideTextbox
+[000001f8]10: 
+[000001f9]18: hideTextbox
+[000001fa]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000205]10: 
+[00000206]21 a0 10 00 00: closeDimOverlay
+[0000020b]10: 
+[0000020c]18: hideTextbox
+[0000020d]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000218]10: 
+[00000219]19: showTextbox
+[0000021a]ff 0c 00: text 0c
+{marker}{appendText}I knew that, but I had been with her for such 
+a long time.{waitForClick}{clearText}{marker}{appendText}And Sora was...how could I describe it? 
+She was so...human...{waitForClick}{clearText}{marker}{appendText}I felt a blunt sense of sadness - as if I had 
+lost a close friend.{waitForClick}{clearText}
+
+[0000021d]10: 
+[0000021e]06: stopSFX
+[0000021f]10: 
+[00000220]19: showTextbox
+[00000221]ff 0d 00: text 0d
+{marker}{sound SEP000}{appendText}[Sara]
+"Uh, ummmm..."{waitForClick}{clearText}{marker}{appendText}Sara's voice pulled me back to reality.{waitForClick}{clearText}{marker}{appendText}This was not the time to be thinking about 
+such things.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara...Sara?"{waitForClick}{clearText}{marker}{appendText}I shook Sara's shoulder gently.{waitForClick}{clearText}{marker}{sound SEP001}{appendText}[Sara]
+"Uh, ummm, ah..."{waitForClick}{clearText}{marker}{appendText}Sara opened her eyes slightly.{waitForClick}{clearText}{marker}{sound SEP002}{appendText}[Sara]
+"B...bro?"{waitForClick}{clearText}{marker}{appendText}Soon her eyes opened widely.{waitForClick}{clearText}{marker}{appendText}Sara hurriedly sat up.{waitForClick}{clearText}
+
+[00000224]10: 
+[00000225]18: hideTextbox
+[00000226]10: 
+[00000227]03 a0 14 00 00 a0 64 00 00: playBGM 20 100
+[00000230]10: 
+[00000231]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA03AWL 320 3
+[00000242]10: 
+[00000243]19: showTextbox
+[00000244]ff 0e 00: text 0e
+{marker}{sound SEP003}{appendText}[Sara]
+"Where are we...?"{waitForClick}{clearText}{marker}{appendText}Sara didn't seem to understand the situation.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara, this is Insel null."{waitForClick}{clearText}
+
+[00000247]10: 
+[00000248]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA08AWL 320 3
+[00000259]10: 
+[0000025a]19: showTextbox
+[0000025b]ff 0f 00: text 0f
+{marker}{sound SEP004}{appendText}[Sara]
+"So...so we..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We're safe now. We made it."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Over 100 feet from Zweite stock..."{waitForClick}{clearText}
+
+[0000025e]10: 
+[0000025f]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA01AWL 320 3
+[00000270]10: 
+[00000271]19: showTextbox
+[00000272]ff 10 00: text 10
+{marker}{sound SEP005}{appendText}[Sara]
+"Are we...still alive...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes. We are alive. You are and I am, too."{waitForClick}{clearText}
+
+[00000275]10: 
+[00000276]0f 81 00 00 00 00 00 00 0a 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA09AWL 320 3
+[00000287]10: 
+[00000288]19: showTextbox
+[00000289]ff 11 00: text 11
+{marker}{sound SEP006}{appendText}[Sara]
+"We did it! We did it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah, Sara. We did it. We survived."{waitForClick}{clearText}{marker}{sound SEP007}{appendText}[Sara]
+"Yeah...Thank you, brother."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I told you to trust me."{waitForClick}{clearText}
+
+[0000028c]10: 
+[0000028d]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA02AWL 320 3
+[0000029e]10: 
+[0000029f]19: showTextbox
+[000002a0]ff 12 00: text 12
+{marker}{sound SEP008}{appendText}[Sara]
+"Yes, you did."{waitForClick}{clearText}{marker}{appendText}Sara smiled.{waitForClick}{clearText}
+
+[000002a3]10: 
+[000002a4]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA06AWL 320 3
+[000002b5]10: 
+[000002b6]19: showTextbox
+[000002b7]ff 13 00: text 13
+{marker}{appendText}She suddenly put her hand on her chest.{waitForClick}{clearText}{marker}{appendText}She was probably touching the pendant under 
+her shirt, checking to make sure it was still 
+there.{waitForClick}{clearText}
+
+[000002ba]10: 
+[000002bb]0f 81 00 00 00 00 00 00 0d 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA01AWL 320 3
+[000002cc]10: 
+[000002cd]19: showTextbox
+[000002ce]ff 14 00: text 14
+{marker}{appendText}Looking relieved, she pulled the pendant out 
+and grasped it in her hand.{waitForClick}{clearText}{marker}{sound SEP009}{appendText}[Sara]
+"Thank you..."{waitForClick}{clearText}{marker}{appendText}Sara whispered softly.{waitForClick}{clearText}{marker}{appendText}I knew that the pendant was an irreplaceable 
+lucky charm for Sara.{waitForClick}{clearText}{marker}{appendText}Her face suddenly clouded over as she spoke.{waitForClick}{clearText}
+
+[000002d1]10: 
+[000002d2]0f 81 00 00 00 00 00 00 0e 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA03AWL 320 3
+[000002e3]10: 
+[000002e4]19: showTextbox
+[000002e5]ff 15 00: text 15
+{marker}{sound SEP010}{appendText}[Sara]
+"Hey, brother...what about Nakkyu, Takeshi and 
+the others?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I think they are alright."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"By the time I turned back, they'd already 
+climbed fairly high."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"If they kept going, they should've reached 
+the surface."{waitForClick}{clearText}
+
+[000002e8]10: 
+[000002e9]0f 81 00 00 00 00 00 00 0f 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA02AWL 320 3
+[000002fa]10: 
+[000002fb]19: showTextbox
+[000002fc]ff 16 00: text 16
+{marker}{sound SEP011}{appendText}[Sara]
+"Really? That's good to hear."{waitForClick}{clearText}{marker}{appendText}Sara looked relieved.{waitForClick}{clearText}
+
+[000002ff]10: 
+[00000300]0f 81 00 00 00 00 00 00 10 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA03AWL 320 3
+[00000311]10: 
+[00000312]19: showTextbox
+[00000313]ff 17 00: text 17
+{marker}{sound SEP012}{appendText}[Sara]
+"We can't stay here forever..."{waitForClick}{clearText}{marker}{appendText}We had made it to the surface safely, but Sara 
+didn't look very well.{waitForClick}{clearText}{marker}{appendText}Was she worried about being taken back to 
+Leiblich after all?{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, Sara..."{waitForClick}{clearText}
+
+[00000316]10: 
+[00000317]0f 81 00 00 00 00 00 00 11 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA08AWL 320 3
+[00000328]10: 
+[00000329]19: showTextbox
+[0000032a]ff 18 00: text 18
+{marker}{sound SEP013}{appendText}[Sara]
+"What?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Let's just keep running. Let's run away."{waitForClick}{clearText}{marker}{sound SEP014}{appendText}[Sara]
+"Run away?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes. From them...I mean, from Leiblich."{waitForClick}{clearText}
+
+[0000032d]10: 
+[0000032e]0f 81 00 00 00 00 00 00 12 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA10AWL 320 3
+[0000033f]10: 
+[00000340]19: showTextbox
+[00000341]ff 19 00: text 19
+{marker}{sound SEP015}{appendText}[Sara]
+"No...it's impossible..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It is possible."{waitForClick}{clearText}{marker}{sound SEP016}{appendText}[Sara]
+"How can you say that?"{waitForClick}{clearText}{marker}{sound SEP017}{appendText}[Sara]
+"You know about them, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Think about it, Sara."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This island has to be in utter chaos."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Right? LeMU flooded and the whole complex is 
+totally destroyed..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And since You and the others got out, this 
+place should be in major confusion, right?"{waitForClick}{clearText}
+
+[00000344]10: 
+[00000345]0f 81 00 00 00 00 00 00 13 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA03AWL 320 3
+[00000356]10: 
+[00000357]19: showTextbox
+[00000358]ff 1a 00: text 1a
+{marker}{sound SEP018}{appendText}[Sara]
+"Y..yeah, I suppose..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"They'll be telling everyone how we were left 
+behind in LeMU."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And for You and the others it's the truth."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"If Leiblich has their doubts and tries to 
+look into them, that's as far as they can 
+investigate."{waitForClick}{clearText}
+
+[0000035b]10: 
+[0000035c]0f 81 00 00 00 00 00 00 14 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA01AWL 320 3
+[0000036d]10: 
+[0000036e]19: showTextbox
+[0000036f]ff 1b 00: text 1b
+{marker}{sound SEP019}{appendText}[Sara]
+"Right..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So right now, everyone - including Leiblich 
+people ? will be turning their attention to 
+LeMU and looking under the ocean."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"They might actually think that we are already 
+dead..."{waitForClick}{clearText}{marker}{sound SEP020}{appendText}[Sara]
+"Yes, that's true!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Now is..."{waitForClick}{clearText}
+
+[00000372]10: 
+[00000373]0f 81 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA02AWL 320 3
+[00000384]10: 
+[00000385]19: showTextbox
+[00000386]ff 1c 00: text 1c
+{marker}{sound SEP021}{appendText}[Sara]
+"It's our chance, isn't it?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Right now. Now is the chance we've been 
+waiting for."{waitForClick}{clearText}
+
+[00000389]10: 
+[0000038a]0f 81 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA09AWL 320 3
+[0000039b]10: 
+[0000039c]19: showTextbox
+[0000039d]ff 1d 00: text 1d
+{marker}{sound SEP022}{appendText}[Sara]
+"You are so incredible, brother!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We're already here, so it is impossible for 
+them to find us in LeMU."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And if they don't find us in LeMU..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"They will expand their search for us to the 
+sea around this area."{waitForClick}{clearText}
+
+[000003a0]10: 
+[000003a1]0f 81 00 00 00 00 00 00 17 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA01AWL 320 3
+[000003b2]10: 
+[000003b3]19: showTextbox
+[000003b4]ff 1e 00: text 1e
+{marker}{sound SEP023}{appendText}[Sara]
+"Right."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"They might suspect that we died and the 
+current carried us off somewhere..."{waitForClick}{clearText}{marker}{sound SEP024}{appendText}[Sara]
+"In the meantime, if we hide somewhere, they 
+shouldn't be able to follow us, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah, I'm not sure if we can pull it all off 
+that easily..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But we'll still have plenty of head start 
+before they figure out the truth."{waitForClick}{clearText}
+
+[000003b7]10: 
+[000003b8]0f 81 00 00 00 00 00 00 18 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA02AWL 320 3
+[000003c9]10: 
+[000003ca]19: showTextbox
+[000003cb]ff 1f 00: text 1f
+{marker}{sound SEP025}{appendText}[Sara]
+"Yeah, right!"{waitForClick}{clearText}
+
+[000003ce]10: 
+[000003cf]0f 81 00 00 00 00 00 00 19 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA03AWL 320 3
+[000003e0]10: 
+[000003e1]19: showTextbox
+[000003e2]ff 20 00: text 20
+{marker}{sound SEP026}{appendText}[Sara]
+"Oh...but..."{waitForClick}{clearText}{marker}{appendText}Suddenly, Sara looked down.{waitForClick}{clearText}{marker}{sound SEP027}{appendText}[Sara]
+"But...how are we going to escape from this 
+island?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What?"{waitForClick}{clearText}{marker}{sound SEP028}{appendText}[Sara]
+"I mean, we can't escape without a way off of 
+this island, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yeah...that's..."{waitForClick}{clearText}
+
+[000003e5]10: 
+[000003e6]0f 81 00 00 00 00 00 00 1a 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA01AWL 320 3
+[000003f7]10: 
+[000003f8]19: showTextbox
+[000003f9]ff 21 00: text 21
+{marker}{sound SEP029}{appendText}[Sara]
+"That's?"{waitForClick}{clearText}{marker}{appendText}Sara looked at me as if she was full of 
+confidence in me.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Uh...ah...well..."{waitForClick}{clearText}{marker}{appendText}She had me. I hadn't thought about that.{waitForClick}{clearText}{marker}{appendText}I thought we would be alright if could just 
+make it to the surface....{waitForClick}{clearText}{marker}{appendText}[Sara]
+"..."{waitForClick}{clearText}{marker}{appendText}I desperately tried to think of something.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know! I've got it!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"There should be all kinds of people around 
+right now that aren't normally here, like 
+construction workers and technical staff."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So, ships and helicopters should come and go 
+frequently."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"First of all...we find some clothes and 
+change."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Especially your uniform...it really stands 
+out." {waitForClick}{clearText}{marker}{sound SEP030}{appendText}[Sara]
+"Oh...you're right."{waitForClick}{clearText}{marker}{appendText}Sara looked herself over again.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And...if we can't get aboard a helicopter, 
+then we can sneak onto some ship and get to 
+some port..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And after that we're going to be all right!"{waitForClick}{clearText}
+
+[000003fc]10: 
+[000003fd]0f 81 00 00 00 00 00 00 1b 00 a1 40 00 00 83 00 00: fgload 1 00000000 SA02AWL 320 3
+[0000040e]10: 
+[0000040f]19: showTextbox
+[00000410]ff 22 00: text 22
+{marker}{sound SEP031}{appendText}[Sara]
+"You really are great! You really thought this 
+through."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Uh...no...well, er, sure."{waitForClick}{clearText}{marker}{appendText}Sara's was innocently happy.{waitForClick}{clearText}{marker}{appendText}I thought to myself that I could fight to 
+protect her smile with my life.{waitForClick}{clearText}{marker}{appendText}I thought that would be my mission.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Let's go, Sara."{waitForClick}{clearText}
+
+[00000413]10: 
+[00000414]0c 00 00 00 00 1c 00 80 00 00 82 00 00: bgload 00000000 EV_SA15A 0 2
+[00000421]10: 
+[00000422]19: showTextbox
+[00000423]ff 23 00: text 23
+{marker}{appendText}I held out my left hand to Sara.{waitForClick}{clearText}{marker}{appendText}Sara reached out to me hesitantly.{waitForClick}{clearText}{marker}{appendText}I held her hand tight and squeezed it tight.{waitForClick}{clearText}{marker}{appendText}The warmth of her soft hand spread to mine.{waitForClick}{clearText}{marker}{appendText}For an instant, the memory of Sara holding my 
+thumb flashed across my mind.{waitForClick}{clearText}{marker}{appendText}That fragment in my hand...that shard had 
+helped me retrieve my memory and rediscover 
+the bond between Sara and me.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Let's go, Sara."{waitForClick}{clearText}{marker}{sound SEP032}{appendText}[Sara]
+"Okay, brother."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"We're going to be free!"{waitForClick}{clearText}{marker}{sound SEP033}{appendText}[Sara]
+"Free..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes, free!"{waitForClick}{clearText}{marker}{sound SEP034}{appendText}[Sara]
+"Yeah!"{waitForClick}{clearText}{marker}{appendText}I would never leave Sara again.{waitForClick}{clearText}{marker}{appendText}I would protect Sara no matter what.{waitForClick}{clearText}{marker}{appendText}We started running...{waitForClick}{clearText}{marker}{appendText}Toward freedom...{waitForClick}{clearText}
+
+[00000426]10: 
+[00000427]0d 80 00 00 80 00 00 80 00 00: removeBG 0 0 0
+[00000431]10: 
+[00000432]1e a0 5a 00 00: delay 90
+[00000437]10: 
+[00000438]04: stopBGM
+[00000439]10: 
+[0000043a]1e a0 78 00 00: delay 120
+[0000043f]fe 28 0a a4 17 14 14 00 81 00 00: varop (28 0a a4) 17 := (00) 1
+[0000044a]10: 
+[0000044b]37 00 00 00 00 1d 00: unlockCG POST05
+[00000452]10: 
+[00000453]37 00 00 00 00 1e 00: unlockCG POST07
+[0000045a]fe 28 0a a4 28 14 14 00 81 00 00: varop (28 0a a4) 28 := (00) 1
+[00000465]00: 
+[00000466]0a 01 28 0a a4 14 14 0c 01 80 01 00 03 00: gotoif 1 (28 0a a4) 14 == (01) 0 (0001) -> 00000482 (00000003)
+[00000474]10: 
+[00000475]24 a0 1e 00 00: scriptLocationId 30
+[0000047a]10: 
+[0000047b]37 00 00 00 00 1f 00: unlockCG POST02
+[00000482]fe 28 0a a4 b3 14 14 00 81 00 00: varop (28 0a a4) b3 := (00) 1
+[0000048d]10: 
+[0000048e]01 59 5f 45 44 00: jump Y_ED

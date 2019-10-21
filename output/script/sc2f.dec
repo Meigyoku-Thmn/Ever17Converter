@@ -1,0 +1,764 @@
+﻿[00000036]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000041]fe 28 0a a4 b1 14 14 00 82 00 00: varop (28 0a a4) b1 := (00) 2
+[0000004c]fe 28 0a a4 b2 14 14 00 82 00 00: varop (28 0a a4) b2 := (00) 2
+[00000057]10: 
+[00000058]0c 00 00 00 00 00 00 80 00 00 81 00 00: bgload 00000000 BG09A2 0 1
+[00000065]10: 
+[00000066]1f a0 17 00 00 a0 2d 00 00: clock 23:45
+[0000006f]00: 
+[00000070]0a 01 28 0a a4 ba 14 0c 01 85 01 00 03 00: gotoif 1 (28 0a a4) ba == (01) 5 (0001) -> 00000097 (00000003)
+[0000007e]10: 
+[0000007f]24 a0 15 00 00: scriptLocationId 21
+[00000084]fe 28 0a a4 fa 14 14 00 a0 69 00 00: setSceneTitleByIndex 105
+[00000090]00: 
+[00000091]28: l_unk28
+[00000092]10: 
+[00000093]19: showTextbox
+[00000094]ff 00 00: text 00
+{marker}{appendText}In the infirmary...{waitForClick}{clearText}{marker}{appendText}Deciding to sleep was fine, but where to sleep?{waitForClick}{clearText}{marker}{appendText}There were four legitimate beds in the dry 
+areas.{waitForClick}{clearText}{marker}{appendText}There was one in the compression chamber, 
+two in the infirmary and an examination 
+table there as well.{waitForClick}{clearText}{marker}{appendText}Tsugumi was AWOL, Sora didn't need sleep, 
+so there were exactly four of us.{waitForClick}{clearText}{marker}{appendText}Takeshi had been relegated to the compression 
+chamber as a potential danger to the women.{waitForClick}{clearText}{marker}{appendText}You and Sara had said that since they were 
+vulnerable young women they would take the 
+two beds.{waitForClick}{clearText}{marker}{appendText}So I...got stuck on the hard examination table.{waitForClick}{clearText}
+
+[00000097]10: 
+[00000098]18: hideTextbox
+[00000099]10: 
+[0000009a]03 a0 12 00 00 a0 61 00 00: playBGM 18 97
+[000000a3]10: 
+[000000a4]0f 81 00 00 00 00 00 00 01 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADL 320 3
+[000000b5]10: 
+[000000b6]19: showTextbox
+[000000b7]ff 01 00: text 01
+{marker}{sound C2S251}{appendText}[Takeshi]
+"Hey...Kid..."{waitForClick}{clearText}{marker}{sound C2S252}{appendText}[Takeshi]
+"Kid..."{waitForClick}{clearText}
+
+[000000ba]10: 
+[000000bb]19: showTextbox
+[000000bc]ff 02 00: text 02
+{marker}{sound C2S253}{appendText}[Takeshi]
+"You asleep already?"{waitForClick}{clearText}{marker}{appendText}Takeshi was shaking me.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'd wake up even if I were asleep with you 
+shaking me that hard."{waitForClick}{clearText}
+
+[000000bf]10: 
+[000000c0]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB08ADL 320 3
+[000000d1]10: 
+[000000d2]19: showTextbox
+[000000d3]ff 03 00: text 03
+{marker}{sound C2S254}{appendText}[Takeshi]
+"So? Which is? You awake or asleep?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It should be obvious."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm sleeping like a log..."{waitForClick}{clearText}
+
+[000000d6]10: 
+[000000d7]18: hideTextbox
+[000000d8]10: 
+[000000d9]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[000000e0]10: 
+[000000e1]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000000eb]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000000f5]27 00 00: fadeOutMonoColorOverlay
+[000000f8]00: 
+[000000f9]05 83 00 00: unSkippableDelay 3
+[000000fd]10: 
+[000000fe]19: showTextbox
+[000000ff]ff 04 00: text 04
+{marker}{appendText}I closed my eyes.{waitForClick}{clearText}{marker}{sound C2S255}{appendText}[Takeshi]
+"Hey, come on, don't be like that."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"..."{waitForClick}{clearText}{marker}{sound C2S256}{appendText}[Takeshi]
+"I can't sleep..."{waitForClick}{clearText}
+
+[00000102]10: 
+[00000103]18: hideTextbox
+[00000104]10: 
+[00000105]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[0000010c]10: 
+[0000010d]0c 00 00 00 00 03 00 86 00 00 82 00 00: bgload 00000000 BG09A2 6 2
+[0000011a]10: 
+[0000011b]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 80 00 00: fgload 1 00000000 KB03ADL 320 0
+[0000012c]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000136]27 00 00: fadeOutMonoColorOverlay
+[00000139]00: 
+[0000013a]05 8a 00 00: unSkippableDelay 10
+[0000013e]10: 
+[0000013f]19: showTextbox
+[00000140]ff 05 00: text 05
+{marker}{appendText}[Kid]
+"Last night you seemed like you were 
+sleeping FINE!"{waitForClick}{clearText}{marker}{sound C2S257}{appendText}[Takeshi]
+"But I'm all alone in this tiny little cramped 
+space."{waitForClick}{clearText}{marker}{sound C2S258}{appendText}[Takeshi]
+"It's like being cooped up in a coffin. 
+It makes me feel..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's the same place you were snoring away 
+last night!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You could sleep in a coffin. You could sleep 
+in a cup of coffee."{waitForClick}{clearText}
+
+[00000143]10: 
+[00000144]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB02ADL 320 3
+[00000155]10: 
+[00000156]19: showTextbox
+[00000157]ff 06 00: text 06
+{marker}{sound C2S259}{appendText}[Takeshi]
+"Hey, that almost rhymes or something..."{waitForClick}{clearText}
+
+[0000015a]10: 
+[0000015b]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADL 320 3
+[0000016c]10: 
+[0000016d]19: showTextbox
+[0000016e]ff 07 00: text 07
+{marker}{sound C2S260}{appendText}[Takeshi]
+"Coffin and coffee..."{waitForClick}{clearText}{marker}{sound C2S261}{appendText}[Takeshi]
+"'Coffee has caffeine in it. That wakes 
+you up.'"{waitForClick}{clearText}{marker}{sound C2S262}{appendText}[Takeshi]
+"'So there's no way a normal person could 
+catch a wink in a cup of coffee...'"{waitForClick}{clearText}{marker}{sound C2S263}{appendText}[Takeshi]
+"'But...caffeine wouldn't phase a big lunk 
+like that Takeshi. He'd sleep like a baby.'"{waitForClick}{clearText}{marker}{sound C2S264}{appendText}[Takeshi]
+"Is that what you are trying to say with that 
+almost rhyme of yours?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Stupid."{waitForClick}{clearText}
+
+[00000171]10: 
+[00000172]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB04ADL 320 3
+[00000183]10: 
+[00000184]19: showTextbox
+[00000185]ff 08 00: text 08
+{marker}{sound C2S265}{appendText}[Takeshi]
+"Ha! Is that any way to talk to your elders?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm going to sleep."{waitForClick}{clearText}
+
+[00000188]10: 
+[00000189]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB03ADL 320 3
+[0000019a]10: 
+[0000019b]19: showTextbox
+[0000019c]ff 09 00: text 09
+{marker}{sound C2S266}{appendText}[Takeshi]
+"Hey! Come on K-I-D!...Stay up with me a bit!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Good night."{waitForClick}{clearText}
+
+[0000019f]10: 
+[000001a0]10 81 00 00 83 00 00: removeFG 1 3
+[000001a7]10: 
+[000001a8]19: showTextbox
+[000001a9]ff 0a 00: text 0a
+{marker}{appendText}I turned away from him.{waitForClick}{clearText}{marker}{appendText}Tug, tug, tug...{waitForClick}{clearText}
+
+[000001ac]10: 
+[000001ad]18: hideTextbox
+[000001ae]10: 
+[000001af]05 53 45 30 35 5f 31 30 00 80 00 00 a0 5a 00 00: playSFX SE05_10 0 90
+[000001bf]10: 
+[000001c0]20 84 00 00: shakeScreenHard
+[000001c4]10: 
+[000001c5]19: showTextbox
+[000001c6]ff 0b 00: text 0b
+{marker}{appendText}Thud!{waitForClick}{clearText}{marker}{appendText}Takeshi had pulled me off of the examination 
+table.{waitForClick}{clearText}
+
+[000001c9]10: 
+[000001ca]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADL 320 3
+[000001db]10: 
+[000001dc]19: showTextbox
+[000001dd]ff 0c 00: text 0c
+{marker}{appendText}[Kid]
+"Hey, what are you doing? I'll sue you!"{waitForClick}{clearText}
+
+[000001e0]10: 
+[000001e1]0f 81 00 00 00 00 00 00 0a 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB02ADL 320 3
+[000001f2]10: 
+[000001f3]19: showTextbox
+[000001f4]ff 0d 00: text 0d
+{marker}{sound C2S267}{appendText}[Takeshi]
+"Come on, take it easy. Calm down..."{waitForClick}{clearText}{marker}{sound C2S268}{appendText}[Takeshi]
+"Let's have a drink. Y'know, man-to-man..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No thanks!"{waitForClick}{clearText}
+
+[000001f7]10: 
+[000001f8]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB04ADL 320 3
+[00000209]10: 
+[0000020a]19: showTextbox
+[0000020b]ff 0e 00: text 0e
+{marker}{sound C2S269}{appendText}[Takeshi]
+"My thoughts exactly!"{waitForClick}{clearText}{marker}{sound C2S270}{appendText}[Takeshi]
+"Yuck, yuck, yuck, yuck, yuckity, yuck!"{waitForClick}{clearText}
+
+[0000020e]10: 
+[0000020f]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB03ADL 320 3
+[00000220]10: 
+[00000221]19: showTextbox
+[00000222]ff 0f 00: text 0f
+{marker}{sound C2S271}{appendText}[Takeshi]
+"I'm nothing without you, Kid!"{waitForClick}{clearText}
+
+[00000225]10: 
+[00000226]10 81 00 00 83 00 00: removeFG 1 3
+[0000022d]10: 
+[0000022e]04: stopBGM
+[0000022f]10: 
+[00000230]19: showTextbox
+[00000231]ff 10 00: text 10
+{marker}{appendText}And then...{waitForClick}{clearText}
+
+[00000234]10: 
+[00000235]05 53 45 30 30 5f 31 30 00 80 00 00 a0 64 00 00: playSFX SE00_10 0 100
+[00000245]10: 
+[00000246]0c 00 00 00 00 0d 00 80 00 00 82 00 00: bgload 00000000 EV_YU18A 0 2
+[00000253]10: 
+[00000254]1e a0 3c 00 00: delay 60
+[00000259]10: 
+[0000025a]19: showTextbox
+[0000025b]ff 11 00: text 11
+{marker}{sound C2S272}{appendText}[You]
+"Be quiet!"{waitForClick}{clearText}{marker}{sound C2S273}{appendText}[You]
+"Cut it out the two of you! Just go to sleep!"{waitForClick}{clearText}{marker}{appendText}You, lying in the bed next to me, had snapped.{waitForClick}{clearText}{marker}{appendText}She sat upright, a strange light emanating 
+from her.{waitForClick}{clearText}{marker}{sound C2S274}{appendText}[Takeshi]
+"Oh, sorry for causing such a ruckus milady..."{waitForClick}{clearText}
+
+[0000025e]10: 
+[0000025f]18: hideTextbox
+[00000260]10: 
+[00000261]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[00000268]10: 
+[00000269]19: showTextbox
+[0000026a]ff 12 00: text 12
+{marker}{appendText}I walked out of the room with Takeshi's hand 
+pushing me from behind.{waitForClick}{clearText}
+
+[0000026d]10: 
+[0000026e]05 53 45 30 30 5f 30 33 00 80 00 00 a0 5f 00 00: playSFX SE00_03 0 95
+[0000027e]10: 
+[0000027f]03 a0 12 00 00 a0 61 00 00: playBGM 18 97
+[00000288]10: 
+[00000289]0c 00 00 00 00 0e 00 80 00 00 82 00 00: bgload 00000000 BG08A1 0 2
+[00000296]10: 
+[00000297]0f 81 00 00 00 00 00 00 0f 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADL 320 3
+[000002a8]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000002b2]27 00 00: fadeOutMonoColorOverlay
+[000002b5]00: 
+[000002b6]05 8a 00 00: unSkippableDelay 10
+[000002ba]10: 
+[000002bb]19: showTextbox
+[000002bc]ff 13 00: text 13
+{marker}{sound C2S275}{appendText}[Takeshi]
+"Hey, for now...why don't we hit the kiosk 
+and get some beers." {waitForClick}{clearText}
+
+[000002bf]10: 
+[000002c0]10 81 00 00 83 00 00: removeFG 1 3
+[000002c7]10: 
+[000002c8]19: showTextbox
+[000002c9]ff 14 00: text 14
+{marker}{appendText}Takeshi started walking.{waitForClick}{clearText}{marker}{appendText}I stayed where I was.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Is there beer in LeMU?"{waitForClick}{clearText}{marker}{sound C2S276}{appendText}[Takeshi]
+"Uh, I don't think it was for sale, but it was 
+stashed in the back of the fridge."{waitForClick}{clearText}{marker}{sound C2S277}{appendText}[Takeshi]
+"I figure some worker hid it in there..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But...I can't drink beer."{waitForClick}{clearText}
+
+[000002cc]10: 
+[000002cd]0f 81 00 00 00 00 00 00 10 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB07ADM 320 3
+[000002de]10: 
+[000002df]19: showTextbox
+[000002e0]ff 15 00: text 15
+{marker}{sound C2S278}{appendText}[Takeshi]
+"Huh? Why not?"{waitForClick}{clearText}{marker}{appendText}I stopped and turned around.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm not old enough."{waitForClick}{clearText}{marker}{sound C2S279}{appendText}[Takeshi]
+"So what?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Underage means you can't drink alcohol. It's 
+the law."{waitForClick}{clearText}
+
+[000002e3]10: 
+[000002e4]0f 81 00 00 00 00 00 00 11 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB08ADM 320 3
+[000002f5]10: 
+[000002f6]19: showTextbox
+[000002f7]ff 16 00: text 16
+{marker}{sound C2S280}{appendText}[Takeshi]
+"So, what are you saying, you don't want 
+to 'go break any laws there' boy scout?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Y-yeah..."{waitForClick}{clearText}{marker}{sound C2S281}{appendText}[Takeshi]
+"But you ate sandwiches and cola, right? 
+And you didn't pay a cent."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's...because I had to survive..."{waitForClick}{clearText}
+
+[000002fa]10: 
+[000002fb]0f 81 00 00 00 00 00 00 12 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB13ADM 320 3
+[0000030c]10: 
+[0000030d]19: showTextbox
+[0000030e]ff 17 00: text 17
+{marker}{sound C2S282}{appendText}[Takeshi]
+"Yuck, yuck...YUCK!"{waitForClick}{clearText}
+
+[00000311]10: 
+[00000312]0f 81 00 00 00 00 00 00 13 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB04ADM 320 3
+[00000323]10: 
+[00000324]19: showTextbox
+[00000325]ff 18 00: text 18
+{marker}{sound C2S283}{appendText}[Takeshi]
+"I bet you're the kind of kid that'll nark 
+on the kid next to you in class if he's 
+passing notes to his friends."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I...I am not..."{waitForClick}{clearText}
+
+[00000328]10: 
+[00000329]0f 81 00 00 00 00 00 00 14 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB08ADM 320 3
+[0000033a]10: 
+[0000033b]19: showTextbox
+[0000033c]ff 19 00: text 19
+{marker}{sound C2S284}{appendText}[Takeshi]
+"You don't know if you are or not, 'cause you 
+don't got any memory."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[0000033f]10: 
+[00000340]0f 81 00 00 00 00 00 00 15 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB05ADM 320 3
+[00000351]10: 
+[00000352]19: showTextbox
+[00000353]ff 1a 00: text 1a
+{marker}{sound C2S285}{appendText}[Takeshi]
+"Oh, alright, alright."{waitForClick}{clearText}{marker}{sound C2S286}{appendText}[Takeshi]
+"You can drink cream soda then."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why cream soda?"{waitForClick}{clearText}
+
+[00000356]10: 
+[00000357]0f 81 00 00 00 00 00 00 16 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB02ADM 320 3
+[00000368]10: 
+[00000369]19: showTextbox
+[0000036a]ff 1b 00: text 1b
+{marker}{sound C2S287}{appendText}[Takeshi]
+"Because you're just a wittle baby!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm not a baby!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm 16..."{waitForClick}{clearText}
+
+[0000036d]10: 
+[0000036e]0f 81 00 00 00 00 00 00 17 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADM 320 3
+[0000037f]10: 
+[00000380]19: showTextbox
+[00000381]ff 1c 00: text 1c
+{marker}{sound C2S288}{appendText}[Takeshi]
+"Ha, ha! Sixteen, huh?"{waitForClick}{clearText}{marker}{sound C2S289}{appendText}[Takeshi]
+"Sixteen...old enough to lead a whole gang of 
+snot-nosed brats on your own."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Stop it."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sixteen is still underage, but I'm not a kid 
+anymore."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm still not an adult, but I'm not a kid 
+anymore...that's what I am."{waitForClick}{clearText}
+
+[00000384]10: 
+[00000385]0f 81 00 00 00 00 00 00 18 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB07ADM 320 3
+[00000396]10: 
+[00000397]19: showTextbox
+[00000398]ff 1d 00: text 1d
+{marker}{sound C2S290}{appendText}[Takeshi]
+"Just WHAT about you is more than a kid?"{waitForClick}{clearText}{marker}{sound C2S291}{appendText}[Takeshi]
+"Kid...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm...going back to bed."{waitForClick}{clearText}
+
+[0000039b]10: 
+[0000039c]0f 81 00 00 00 00 00 00 19 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB02ADM 320 3
+[000003ad]10: 
+[000003ae]19: showTextbox
+[000003af]ff 1e 00: text 1e
+{marker}{sound C2S292}{appendText}[Takeshi]
+"Liar, liar pants on fire!"{waitForClick}{clearText}{marker}{sound C2S293}{appendText}[Takeshi]
+"Right, right! Because you're a BIG boy... 
+all grown up...nya, nya, nya..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"..."{waitForClick}{clearText}
+
+[000003b2]10: 
+[000003b3]0f 81 00 00 00 00 00 00 1a 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB06ADM 320 3
+[000003c4]10: 
+[000003c5]19: showTextbox
+[000003c6]ff 1f 00: text 1f
+{marker}{sound C2S294}{appendText}[Takeshi]
+"What? Hey! Hold on a sec!"{waitForClick}{clearText}
+
+[000003c9]10: 
+[000003ca]0f 81 00 00 00 00 00 00 1b 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB03ADM 320 3
+[000003db]10: 
+[000003dc]19: showTextbox
+[000003dd]ff 20 00: text 20
+{marker}{sound C2S295}{appendText}[Takeshi]
+"Kid...you got no memory, right?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"R-right..."{waitForClick}{clearText}{marker}{sound C2S296}{appendText}[Takeshi]
+"So...how do you know that you're 16?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Because...because..."{waitForClick}{clearText}
+
+[000003e0]10: 
+[000003e1]18: hideTextbox
+[000003e2]10: 
+[000003e3]04: stopBGM
+[000003e4]10: 
+[000003e5]19: showTextbox
+[000003e6]ff 21 00: text 21
+{marker}{appendText}[Kid]
+"I...I dunno...why..."{waitForClick}{clearText}{marker}{appendText}As I mumbled I unconsciously held open the 
+palm of my right hand.{waitForClick}{clearText}{marker}{appendText}I stared absently at the palm of my hand.{waitForClick}{clearText}{marker}{appendText}I still didn't have any idea what had happened 
+to my finger.{waitForClick}{clearText}{marker}{appendText}There was no doubt that I had said I was 16.{waitForClick}{clearText}{marker}{appendText}But I couldn't be sure I was right.{waitForClick}{clearText}{marker}{appendText}I wondered if I was really that age - if I 
+could believe my words.{waitForClick}{clearText}
+
+[000003e9]10: 
+[000003ea]0f 81 00 00 00 00 00 00 1c 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADM 320 3
+[000003fb]10: 
+[000003fc]19: showTextbox
+[000003fd]ff 22 00: text 22
+{marker}{sound C2S297}{appendText}[Takeshi]
+"Well, whatever."{waitForClick}{clearText}{marker}{sound C2S298}{appendText}[Takeshi]
+"Anyway, it's good that you remembered your 
+age..."{waitForClick}{clearText}{marker}{sound C2S299}{appendText}[Takeshi]
+"Proof that you're slowly getting your 
+memory back."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}{marker}{sound C2S300}{appendText}[Takeshi]
+"Hmmmm, 16, huh?"{waitForClick}{clearText}
+
+[00000400]10: 
+[00000401]0f 81 00 00 00 00 00 00 1d 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB02ADM 320 3
+[00000412]10: 
+[00000413]19: showTextbox
+[00000414]ff 23 00: text 23
+{marker}{sound C2S301}{appendText}[Takeshi]
+"So my guess wasn't that far off, huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Huh?"{waitForClick}{clearText}
+
+[00000417]10: 
+[00000418]0f 81 00 00 00 00 00 00 1e 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADM 320 3
+[00000429]10: 
+[0000042a]19: showTextbox
+[0000042b]ff 24 00: text 24
+{marker}{sound C2S302}{appendText}[Takeshi]
+"Yesterday I guessed, right? I said you were 
+around 14 or 15."{waitForClick}{clearText}{marker}{sound C2S303}{appendText}[Takeshi]
+"I suppose someone like you could be 16.... 
+Could be possible enough..."{waitForClick}{clearText}
+
+[0000042e]10: 
+[0000042f]03 a0 10 00 00 a0 64 00 00: playBGM 16 100
+[00000438]10: 
+[00000439]19: showTextbox
+[0000043a]ff 25 00: text 25
+{marker}{appendText}(Could be...?){waitForClick}{clearText}{marker}{appendText}(Could be? What's that supposed to mean?){waitForClick}{clearText}{marker}{appendText}I looked at my arms, my legs and my whole body 
+as if to check.{waitForClick}{clearText}{marker}{appendText}And lastly I touched my hands to my face...{waitForClick}{clearText}
+
+[0000043d]10: 
+[0000043e]0f 81 00 00 00 00 00 00 1f 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB07ADM 320 3
+[0000044f]10: 
+[00000450]19: showTextbox
+[00000451]ff 26 00: text 26
+{marker}{sound C2S304}{appendText}[Takeshi]
+"What?"{waitForClick}{clearText}
+
+[00000454]10: 
+[00000455]0f 81 00 00 00 00 00 00 20 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB06ADM 320 3
+[00000466]10: 
+[00000467]19: showTextbox
+[00000468]ff 27 00: text 27
+{marker}{sound C2S305}{appendText}[Takeshi]
+"Don't tell me you..."{waitForClick}{clearText}{marker}{sound C2S306}{appendText}[Takeshi]
+"You didn't forget your own face, did ya?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...face ...?"{waitForClick}{clearText}
+
+[0000046b]10: 
+[0000046c]18: hideTextbox
+[0000046d]10: 
+[0000046e]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[00000475]10: 
+[00000476]05 53 45 30 30 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE00_01 0 100
+[00000486]10: 
+[00000487]0c 00 00 00 00 21 00 86 00 00 82 00 00: bgload 00000000 BG12A1 6 2
+[00000494]fe 28 0a a0 ab 14 14 00 c0 13: setMonoColorOverlayFadeOutDuration VAR_c0_19
+[0000049e]27 00 00: fadeOutMonoColorOverlay
+[000004a1]00: 
+[000004a2]05 86 00 00: unSkippableDelay 6
+[000004a6]10: 
+[000004a7]19: showTextbox
+[000004a8]ff 28 00: text 28
+{marker}{appendText}I put all my power into opening the door.{waitForClick}{clearText}{marker}{appendText}The room had a high ceiling...and I ran toward 
+the mirror on the room's far wall.{waitForClick}{clearText}
+
+[000004ab]10: 
+[000004ac]05 53 45 30 35 5f 31 31 00 80 00 00 a0 64 00 00: playSFX SE05_11 0 100
+[000004bc]10: 
+[000004bd]19: showTextbox
+[000004be]ff 29 00: text 29
+{marker}{appendText}Bam!{waitForClick}{clearText}{marker}{appendText}My leg caught on the bench and I crashed to 
+the floor.{waitForClick}{clearText}{marker}{appendText}I lifted my head slowly.{waitForClick}{clearText}{marker}{appendText}The mirror was right in front of me.{waitForClick}{clearText}{marker}{appendText}And I was inside it.{waitForClick}{clearText}{marker}{appendText}I looked at me.{waitForClick}{clearText}
+
+[000004c1]10: 
+[000004c2]18: hideTextbox
+[000004c3]10: 
+[000004c4]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[000004cb]10: 
+[000004cc]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000004d6]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000004e0]27 00 00: fadeOutMonoColorOverlay
+[000004e3]00: 
+[000004e4]05 83 00 00: unSkippableDelay 3
+[000004e8]10: 
+[000004e9]19: showTextbox
+[000004ea]ff 2a 00: text 2a
+{marker}{appendText}For some reason, all of the sudden I felt 
+scared. I squeezed my eyes shut and looked 
+down.{waitForClick}{clearText}{marker}{appendText}I willed my legs to stand me up.{waitForClick}{clearText}{marker}{appendText}My knees shook. I stumbled two or three steps.{waitForClick}{clearText}{marker}{appendText}I put my hand on the locker to keep myself 
+from falling. I tried to walk...{waitForClick}{clearText}{marker}{appendText}It was as if the mirror were sucking 
+me...toward it...{waitForClick}{clearText}{marker}{appendText}I put both hands on the mirror.{waitForClick}{clearText}
+
+[000004ed]10: 
+[000004ee]18: hideTextbox
+[000004ef]10: 
+[000004f0]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[000004f7]10: 
+[000004f8]0c 00 00 00 00 22 00 86 00 00 82 00 00: bgload 00000000 BG12A1 6 2
+[00000505]10: 
+[00000506]20 a0 2c 00 00: showDimOverlay
+[0000050b]fe 28 0a a2 4f 14 14 00 80 00 00: varop (28 0a a2) 4f := (00) 0
+[00000516]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[00000521]fe 28 0a a2 3c 14 14 00 c1 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_c1_0_6
+[0000052e]fe 28 0a a2 3d 14 14 00 81 00 00: varop (28 0a a2) 3d := (00) 1
+[00000539]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[00000544]fe 28 0a a2 3f 14 14 00 c2 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c2_0_6
+[00000551]fe 28 0a a2 40 14 14 00 82 00 00: varop (28 0a a2) 40 := (00) 2
+[0000055c]10: 
+[0000055d]20 8c 00 00: openShakeScreenAnim
+[00000561]fe 28 0a a0 ab 14 14 00 c0 2e: setMonoColorOverlayFadeOutDuration VAR_c0_46
+[0000056b]27 00 00: fadeOutMonoColorOverlay
+[0000056e]00: 
+[0000056f]05 a0 21 00 00: unSkippableDelay 33
+[00000574]10: 
+[00000575]19: showTextbox
+[00000576]ff 2b 00: text 2b
+{marker}{appendText}Both of my eyes were slightly open, but 
+I wasn't able to raise my face yet.{waitForClick}{clearText}{marker}{appendText}I was facing me and both of us had our hands 
+facing each other.{waitForClick}{clearText}{marker}{appendText}I could only see his body.{waitForClick}{clearText}{marker}{appendText}His legs quivered. His palms shook. The mirror 
+rattled as it shook.{waitForClick}{clearText}{marker}{appendText}I took a breath.{waitForClick}{clearText}
+
+[00000579]10: 
+[0000057a]18: hideTextbox
+[0000057b]10: 
+[0000057c]21 8b 00 00: closeShakeScreenAnim
+[00000580]10: 
+[00000581]04: stopBGM
+[00000582]10: 
+[00000583]19: showTextbox
+[00000584]ff 2c 00: text 2c
+{marker}{appendText}My shaking stopped.{waitForClick}{clearText}{marker}{appendText}At that moment, sound suddenly disappeared.{waitForClick}{clearText}{marker}{appendText}I didn't move.{waitForClick}{clearText}{marker}{appendText}The other 'me' didn't move either.{waitForClick}{clearText}{marker}{appendText}I waited for him to move.{waitForClick}{clearText}{marker}{appendText}I looked up ever so slightly.{waitForClick}{clearText}
+
+[00000587]10: 
+[00000588]18: hideTextbox
+[00000589]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000594]10: 
+[00000595]21 a0 10 00 00: closeDimOverlay
+[0000059a]10: 
+[0000059b]19: showTextbox
+[0000059c]ff 2d 00: text 2d
+{marker}{appendText}I saw a whole other world behind his back.{waitForClick}{clearText}{marker}{appendText}A bench lay knocked over...and clothing was 
+scattered everywhere...{waitForClick}{clearText}{marker}{appendText}Someone was standing on the other side of the 
+open door.{waitForClick}{clearText}{marker}{sound C2S307}{appendText}[Takeshi]
+"Hey, Kid!"{waitForClick}{clearText}{marker}{sound C2S308}{appendText}[Takeshi]
+"What's up with you? Running off like that..."{waitForClick}{clearText}
+
+[0000059f]10: 
+[000005a0]0f 81 00 00 00 00 00 00 23 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB06ADS 320 3
+[000005b1]10: 
+[000005b2]19: showTextbox
+[000005b3]ff 2e 00: text 2e
+{marker}{appendText}I turned around.{waitForClick}{clearText}{marker}{appendText}Takeshi stood with one hand on the door.{waitForClick}{clearText}
+
+[000005b6]10: 
+[000005b7]0f 81 00 00 00 00 00 00 24 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB07ADS 320 3
+[000005c8]10: 
+[000005c9]19: showTextbox
+[000005ca]ff 2f 00: text 2f
+{marker}{sound C2S309}{appendText}[Takeshi]
+"...A mirror?"{waitForClick}{clearText}
+
+[000005cd]10: 
+[000005ce]10 81 00 00 83 00 00: removeFG 1 3
+[000005d5]10: 
+[000005d6]19: showTextbox
+[000005d7]ff 30 00: text 30
+{marker}{appendText}His voice made me want to look.{waitForClick}{clearText}{marker}{appendText}I turned my eyes around looking...{waitForClick}{clearText}{marker}{appendText}Inside the massive mirror...{waitForClick}{clearText}
+
+[000005da]10: 
+[000005db]03 a0 11 00 00 a0 64 00 00: playBGM 17 100
+[000005e4]10: 
+[000005e5]0c 00 00 00 00 25 00 80 00 00 81 00 00: bgload 00000000 EV_ET01A 0 1
+[000005f2]10: 
+[000005f3]19: showTextbox
+[000005f4]ff 31 00: text 31
+{marker}{appendText}'The face of some kid' who I didn't know was 
+staring back at me.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Ah...aaaahh...."{waitForClick}{clearText}{marker}{appendText}He screamed as if it were the end of the world.{waitForClick}{clearText}{marker}{appendText}His face contorted in a way that chilled my 
+spine. He clutched at his hair.{waitForClick}{clearText}{marker}{appendText}His body shook, wracked with convulsions.{waitForClick}{clearText}{marker}{sound C2S310}{appendText}[Takeshi]
+"Wh-what is it? What's going on! Kid!!!"{waitForClick}{clearText}{marker}{appendText}He put his fingernails on his cheek then 
+scratched harshly the flesh around his neck. 
+His neck jutted forward, drooping downward 
+and his tongue hung out.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No...no...no..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No...no...no...no...no...... 
+no...no...no...no..."{waitForClick}{clearText}{marker}{sound C2S311}{appendText}[Takeshi]
+"What is it? What's wrong?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This...this...this..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's not me..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's not me..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's not me..."{waitForClick}{clearText}{marker}{sound C2S312}{appendText}[Takeshi]
+"What's not you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"AAAaaah....ohhhhhh....."{waitForClick}{clearText}{marker}{sound C2S313}{appendText}[Takeshi]
+"Damn...what am I supposed to do!?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No...no...no..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's not me...it's not me...it's not me..."{waitForClick}{clearText}{marker}{sound C2S314}{appendText}[Takeshi]
+"J-just hold on!"{waitForClick}{clearText}{marker}{sound C2S315}{appendText}[Takeshi]
+"I'll go get everyone!"{waitForClick}{clearText}{marker}{appendText}I didn't know who the 'me' was in the other 
+side of the mirror.{waitForClick}{clearText}{marker}{appendText}It wasn't the face of the Kid that I knew.{waitForClick}{clearText}{marker}{appendText}It wasn't the sick color of his skin, or his 
+bloodshot eyes or the way his tongue hung 
+limply.{waitForClick}{clearText}{marker}{appendText}His whole appearance was completely different 
+than anything I had in my memory of myself.{waitForClick}{clearText}{marker}{appendText}He wasn't me.{waitForClick}{clearText}{marker}{appendText}No...I wasn't him.{waitForClick}{clearText}{marker}{appendText}Who was he...?{waitForClick}{clearText}{marker}{appendText}Who in the world was I...?{waitForClick}{clearText}{marker}{appendText}The me that was standing there didn't 
+know who I was....{waitForClick}{clearText}{marker}{appendText}Where....was the real me...?{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Who...are you?"{waitForClick}{clearText}{marker}{appendText}I asked him...and he asked me.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Who...am I?"{waitForClick}{clearText}{marker}{appendText}I asked me and he asked he.{waitForClick}{clearText}
+
+[000005f7]fe 28 0a a2 41 14 14 00 a0 15 00 00: varop (28 0a a2) 41 := (00) 21
+[00000603]fe 28 0a a2 42 14 14 00 84 00 00: varop (28 0a a2) 42 := (00) 4
+[0000060e]fe 28 0a a2 50 14 14 00 e0 f0 f0 f0 00 00 00: varop (28 0a a2) 50 := (00) rgb(240,240,240)
+[0000061d]10: 
+[0000061e]20 a0 2d 00 00: showDimInAndOutAnim
+[00000623]10: 
+[00000624]19: showTextbox
+[00000625]ff 32 00: text 32
+{marker}{appendText}I was confused and losing touch with reality.{waitForClick}{clearText}
+
+[00000628]10: 
+[00000629]18: hideTextbox
+[0000062a]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000635]10: 
+[00000636]19: showTextbox
+[00000637]ff 33 00: text 33
+{marker}{appendText}
+
+
+{appendText}{delay 0}                 {nextPage x2}Who...are you?{nextPage x2}{delay 60}
+{appendText}{delay 0}                  {nextPage x2}Who...am I?{nextPage x2}{delay 60}{nextPage x2}
+
+[0000063a]10: 
+[0000063b]18: hideTextbox
+[0000063c]10: 
+[0000063d]18: hideTextbox
+[0000063e]10: 
+[0000063f]18: hideTextbox
+[00000640]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[0000064b]10: 
+[0000064c]19: showTextbox
+[0000064d]ff 34 00: text 34
+{marker}{appendText}Someone whispered in my ear.{waitForClick}{clearText}{marker}{appendText}I didn't know if it were me or him...{waitForClick}{clearText}
+
+[00000650]10: 
+[00000651]18: hideTextbox
+[00000652]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[0000065d]10: 
+[0000065e]19: showTextbox
+[0000065f]ff 35 00: text 35
+{marker}{appendText}
+
+
+{appendText}{delay 0}                 {nextPage x2}Who...are you?{nextPage x2}{delay 60}
+{appendText}{delay 0}                  {nextPage x2}Who...am I?{nextPage x2}{delay 60}{nextPage x2}
+
+[00000662]10: 
+[00000663]18: hideTextbox
+[00000664]10: 
+[00000665]18: hideTextbox
+[00000666]10: 
+[00000667]18: hideTextbox
+[00000668]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000673]10: 
+[00000674]19: showTextbox
+[00000675]ff 36 00: text 36
+{marker}{appendText}My eyes clouded over and I couldn't see 
+clearly.{waitForClick}{clearText}{marker}{appendText}His body swung back and forth like a pendulum, 
+finally disappearing from my sight.{waitForClick}{clearText}
+
+[00000678]10: 
+[00000679]18: hideTextbox
+[0000067a]10: 
+[0000067b]45 a0 18 00 00 81 00 00: monoColorOverlay 24 1
+[00000683]10: 
+[00000684]21 8d 00 00: closeDimInAndOutAndFilterAnim
+[00000688]10: 
+[00000689]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00000693]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000069d]27 00 00: fadeOutMonoColorOverlay
+[000006a0]00: 
+[000006a1]05 83 00 00: unSkippableDelay 3
+[000006a5]10: 
+[000006a6]19: showTextbox
+[000006a7]ff 37 00: text 37
+{marker}{appendText}Pure white darkness drifted, floating.{waitForClick}{clearText}{marker}{appendText}But it wasn't me or him floating but both 
+me and him.{waitForClick}{clearText}{marker}{appendText}I lost sight of where I ended and the world 
+began.{waitForClick}{clearText}{marker}{appendText}I had lost all sense of everything. I had no 
+way to confirm my existence.{waitForClick}{clearText}{marker}{appendText}I just let myself drift.{waitForClick}{clearText}{marker}{appendText}Like a baby floating in the womb...{waitForClick}{clearText}{marker}{appendText}Dissolving...{waitForClick}{clearText}{marker}{appendText}Dissolving...dissolving...dissolving...{waitForClick}{clearText}{marker}{appendText}I dissolved into pure white darkness, the pure 
+white darkness becoming me.{waitForClick}{clearText}{marker}{appendText}I was nowhere.{waitForClick}{clearText}{marker}{appendText}The me that was nowhere, was everywhere.{waitForClick}{clearText}{marker}{appendText}So...where...was the real me...?{waitForClick}{clearText}
+
+[000006aa]10: 
+[000006ab]18: hideTextbox
+[000006ac]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[000006b7]10: 
+[000006b8]20 a0 2c 00 00: showDimOverlay
+[000006bd]10: 
+[000006be]19: showTextbox
+[000006bf]ff 38 00: text 38
+{marker}{appendText}
+
+
+{appendText}{delay 0}                 {nextPage x2}Who...are you?{nextPage x2}{delay 60}
+{appendText}{delay 0}                  {nextPage x2}Who...am I?{nextPage x2}{delay 60}{nextPage x2}
+
+[000006c2]10: 
+[000006c3]18: hideTextbox
+[000006c4]10: 
+[000006c5]18: hideTextbox
+[000006c6]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[000006d1]10: 
+[000006d2]21 a0 10 00 00: closeDimOverlay
+[000006d7]10: 
+[000006d8]18: hideTextbox
+[000006d9]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[000006e4]10: 
+[000006e5]19: showTextbox
+[000006e6]ff 39 00: text 39
+{marker}{appendText}And the whispering voice disappeared, 
+swallowed by the dark light.{waitForClick}{clearText}
+
+[000006e9]10: 
+[000006ea]18: hideTextbox
+[000006eb]10: 
+[000006ec]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[000006f4]10: 
+[000006f5]04: stopBGM
+[000006f6]10: 
+[000006f7]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000701]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000070b]27 00 00: fadeOutMonoColorOverlay
+[0000070e]00: 
+[0000070f]05 83 00 00: unSkippableDelay 3
+[00000713]10: 
+[00000714]1e a0 78 00 00: delay 120
+[00000719]00: 
+[0000071a]0a 01 28 0a a4 ba 14 0d 01 85 01 00 07 00: gotoif 1 (28 0a a4) ba != (01) 5 (0001) -> 0000074b (00000007)
+[00000728]10: 
+[00000729]24 a0 16 00 00: scriptLocationId 22
+[0000072e]fe 28 0a a4 b3 14 14 00 81 00 00: varop (28 0a a4) b3 := (00) 1
+[00000739]fe 28 0a a4 f2 14 14 00 81 00 00: varop (28 0a a4) f2 := (00) 1
+[00000744]10: 
+[00000745]01 59 43 33 41 00: jump YC3A
+[0000074b]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000756]10: 
+[00000757]01 59 43 33 41 00: jump YC3A
+[0000075d]00: 
+[0000075e]00: 
+[0000075f]00: 

@@ -1,0 +1,2621 @@
+﻿[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000021]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
+[0000002c]fe 28 0a a4 b2 14 14 00 85 00 00: varop (28 0a a4) b2 := (00) 5
+[00000037]10: 
+[00000038]18: hideTextbox
+[00000039]10: 
+[0000003a]45 a0 18 00 00 80 00 00: monoColorOverlay 24 0
+[00000042]10: 
+[00000043]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[0000004d]10: 
+[0000004e]04: stopBGM
+[0000004f]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000059]27 00 00: fadeOutMonoColorOverlay
+[0000005c]00: 
+[0000005d]05 83 00 00: unSkippableDelay 3
+[00000061]10: 
+[00000062]18: hideTextbox
+[00000063]fe 28 0a a2 3a 14 14 00 81 00 00: setChangePerspectiveDirection 1
+[0000006e]10: 
+[0000006f]20 a0 2f 00 00: triggerChangePerspectiveAnim
+[00000074]00: 
+[00000075]05 a0 1e 00 00: unSkippableDelay 30
+[0000007a]10: 
+[0000007b]45 83 00 00 81 00 00: monoColorOverlay 3 1
+[00000082]10: 
+[00000083]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[0000008a]10: 
+[0000008b]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00000095]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000009f]27 00 00: fadeOutMonoColorOverlay
+[000000a2]00: 
+[000000a3]05 83 00 00: unSkippableDelay 3
+[000000a7]10: 
+[000000a8]46 80 00 00: setDialogBoxColor blue
+[000000ac]10: 
+[000000ad]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[000000b4]10: 
+[000000b5]0c 00 00 00 00 00 00 86 00 00 82 00 00: bgload 00000000 EV_ET02B 6 2
+[000000c2]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000000cc]27 00 00: fadeOutMonoColorOverlay
+[000000cf]00: 
+[000000d0]05 a0 12 00 00: unSkippableDelay 18
+[000000d5]10: 
+[000000d6]03 8d 00 00 a0 64 00 00: playBGM 13 100
+[000000de]fe 28 0a a4 fa 14 14 00 a0 74 00 00: setSceneTitleByIndex 116
+[000000ea]00: 
+[000000eb]28: l_unk28
+[000000ec]10: 
+[000000ed]1f 89 00 00 a0 11 00 00: clock 9:17
+[000000f5]10: 
+[000000f6]19: showTextbox
+[000000f7]ff 00 00: text 00
+{marker}{appendText}The hologram pendant.{waitForClick}{clearText}{marker}{appendText}I thought back to the image in Sara's hologram 
+pendant.{waitForClick}{clearText}{marker}{appendText}(That means...the image in the pendant...was 
+of a DIFFERENT Takeshi Kuranari....){waitForClick}{clearText}{marker}{appendText}(And Tsugumi...has infrared vision, like Sara 
+and me.){waitForClick}{clearText}{marker}{appendText}(Which means....which means...){waitForClick}{clearText}{marker}{appendText}(Both Sara and my parents were....){waitForClick}{clearText}
+
+[000000fa]10: 
+[000000fb]18: hideTextbox
+[000000fc]10: 
+[000000fd]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000104]10: 
+[00000105]0c 00 00 00 00 01 00 86 00 00 82 00 00: bgload 00000000 BG16A1 6 2
+[00000112]10: 
+[00000113]12 81 00 00 82 00 00 00 00 00 00 02 00 00 00 00 00 03 00 a0 80 00 00 a2 00 00 00 80 00 00: multifgload2 1 2 00000000 TU06ADM 00000000 SO07ADM 128 512 0
+[00000131]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000013b]27 00 00: fadeOutMonoColorOverlay
+[0000013e]00: 
+[0000013f]05 8a 00 00: unSkippableDelay 10
+[00000143]10: 
+[00000144]19: showTextbox
+[00000145]ff 01 00: text 01
+{marker}{sound C5A317}{appendText}[Tsugumi]
+"What is it?"{waitForClick}{clearText}{marker}{sound C5A318}{appendText}[Sora]
+"Are you all right, Kid?"{waitForClick}{clearText}{marker}{sound C5A319}{appendText}[Sora]
+"You don't look so good...."{waitForClick}{clearText}{marker}{appendText}I shook my head and shivered as I stepped 
+slowly backwards.{waitForClick}{clearText}{marker}{appendText}My back bumped against the wall.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It can't be...."{waitForClick}{clearText}{marker}{sound C5A320}{appendText}[Tsugumi]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No! No! No!"{waitForClick}{clearText}
+
+[00000148]10: 
+[00000149]18: hideTextbox
+[0000014a]10: 
+[0000014b]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000152]10: 
+[00000153]13 83 04 00 80 00 00: multiremoveFG_Sta 1 2 0
+[0000015a]10: 
+[0000015b]19: showTextbox
+[0000015c]ff 02 00: text 02
+{marker}{appendText}I let out a cry that was almost a scream.{waitForClick}{clearText}{marker}{appendText}Swinging around, I opened the door, and ran 
+out of the Control Room.{waitForClick}{clearText}
+
+[0000015f]10: 
+[00000160]05 53 45 30 30 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE00_00 0 100
+[00000170]10: 
+[00000171]19: showTextbox
+[00000172]ff 03 00: text 03
+{marker}{appendText}I wanted get as far away as I could.{waitForClick}{clearText}{marker}{appendText}I wanted to find a place where no one could 
+find me.{waitForClick}{clearText}
+
+[00000175]10: 
+[00000176]19: showTextbox
+[00000177]ff 04 00: text 04
+{marker}{appendText}I pounded up the emergency stairs.{waitForClick}{clearText}
+
+[0000017a]10: 
+[0000017b]19: showTextbox
+[0000017c]ff 05 00: text 05
+{marker}{appendText}I ran forward in a dark haze.{waitForClick}{clearText}{marker}{appendText}I ran as if I could escape the fear that 
+threatened to overwhelm me....{waitForClick}{clearText}{marker}{appendText}Further and further away....{waitForClick}{clearText}{marker}{appendText}But in this confined space, there was nowhere 
+I could run away to.{waitForClick}{clearText}{marker}{appendText}Eventually I reached the end of the corridor.{waitForClick}{clearText}
+
+[0000017f]10: 
+[00000180]0c 00 00 00 00 04 00 86 00 00 82 00 00: bgload 00000000 BG03A1 6 2
+[0000018d]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000197]27 00 00: fadeOutMonoColorOverlay
+[0000019a]00: 
+[0000019b]05 a0 12 00 00: unSkippableDelay 18
+[000001a0]10: 
+[000001a1]19: showTextbox
+[000001a2]ff 06 00: text 06
+{marker}{appendText}And ended up in front of the Jellyfish 
+Gondola - {waitForClick}{clearText}{marker}{appendText}There was no way past the closed flood doors.{waitForClick}{clearText}{marker}{appendText}I stood in front of a decorated arch.{waitForClick}{clearText}{marker}{appendText}The gondola had to be somewhere beyond the 
+gates, which were veiled in darkness.{waitForClick}{clearText}{marker}{appendText}In the gondola, Tsugumi and the real 
+Takeshi....{waitForClick}{clearText}{marker}{appendText}(It's impossible!){waitForClick}{clearText}{marker}{appendText}I tried to purge the thought from my mind.{waitForClick}{clearText}{marker}{appendText}But the suspicion mercilessly attacked my 
+brain until I could no longer think straight.{waitForClick}{clearText}{marker}{appendText}The battle between denial and acceptance...I 
+writhed in pain, sinking further into a 
+trench of despair.{waitForClick}{clearText}{marker}{appendText}In my mind, there was only one possibility.{waitForClick}{clearText}{marker}{appendText}I was almost convinced of the certainty of it.{waitForClick}{clearText}{marker}{appendText}On the other hand, I hated the possibility so 
+much that I wanted with all of my heart to 
+reject it.{waitForClick}{clearText}{marker}{appendText}I put my hand on my chest, breathing in 
+deeply, and I tried to calm my thoughts.{waitForClick}{clearText}{marker}{appendText}If it was true that Tsugumi had infrared 
+vision....{waitForClick}{clearText}{marker}{appendText}And if the incident I witnessed in the 
+Jellyfish Gondola really did happen....{waitForClick}{clearText}{marker}{appendText}The Takeshi and Tsugumi who had existed in 
+the other world....{waitForClick}{clearText}{marker}{appendText}Would be....{waitForClick}{clearText}{marker}{appendText}Sara's and my parents.{waitForClick}{clearText}{marker}{appendText}(No! It can't be!){waitForClick}{clearText}{marker}{appendText}I was once again overwhelmed by feelings of 
+denial.{waitForClick}{clearText}{marker}{appendText}Sara and I were 16.{waitForClick}{clearText}{marker}{appendText}If Tsugumi had given birth to us, then it 
+would have been 16 years ago....{waitForClick}{clearText}
+
+[000001a5]10: 
+[000001a6]18: hideTextbox
+[000001a7]10: 
+[000001a8]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[000001af]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000001b9]27 00 00: fadeOutMonoColorOverlay
+[000001bc]00: 
+[000001bd]05 a0 12 00 00: unSkippableDelay 18
+[000001c2]10: 
+[000001c3]19: showTextbox
+[000001c4]ff 07 00: text 07
+{marker}{appendText}[Kid]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}I suddenly felt as if I had been hit by 
+lightning.{waitForClick}{clearText}{marker}{appendText}My head was filled with a blinding light.{waitForClick}{clearText}{marker}{appendText}Suddenly kicking off the floor, I broke into 
+a run.{waitForClick}{clearText}
+
+[000001c7]10: 
+[000001c8]18: hideTextbox
+[000001c9]10: 
+[000001ca]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[000001d1]10: 
+[000001d2]0c 00 00 00 00 05 00 86 00 00 82 00 00: bgload 00000000 BG26A3L 6 2
+[000001df]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000001e9]27 00 00: fadeOutMonoColorOverlay
+[000001ec]00: 
+[000001ed]05 8a 00 00: unSkippableDelay 10
+[000001f1]10: 
+[000001f2]19: showTextbox
+[000001f3]ff 08 00: text 08
+{marker}{appendText}It was 2017 now, so 16 years ago would have 
+been 2001.{waitForClick}{clearText}{marker}{appendText}The world I had seen was 2000....{waitForClick}{clearText}{marker}{appendText}Wait a minute....{waitForClick}{clearText}{marker}{appendText}What if....{waitForClick}{clearText}{marker}{appendText}If this year wasn't 2017....{waitForClick}{clearText}
+
+[000001f6]10: 
+[000001f7]18: hideTextbox
+[000001f8]10: 
+[000001f9]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000200]10: 
+[00000201]0c 00 00 00 00 06 00 86 00 00 82 00 00: bgload 00000000 BG11A1 6 2
+[0000020e]10: 
+[0000020f]05 53 45 30 30 5f 30 31 00 80 00 00 a0 64 00 00: playSFX SE00_01 0 100
+[0000021f]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000229]27 00 00: fadeOutMonoColorOverlay
+[0000022c]00: 
+[0000022d]05 8a 00 00: unSkippableDelay 10
+[00000231]10: 
+[00000232]19: showTextbox
+[00000233]ff 09 00: text 09
+{marker}{appendText}I opened the door of the Security Office and 
+stumbled into the room.{waitForClick}{clearText}{marker}{appendText}As I suspected, I found You there.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You!"{waitForClick}{clearText}{marker}{appendText}Breathing heavily, I approached You.{waitForClick}{clearText}
+
+[00000236]10: 
+[00000237]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU06ADM 320 3
+[00000248]10: 
+[00000249]19: showTextbox
+[0000024a]ff 0a 00: text 0a
+{marker}{sound C5A321}{appendText}[You]
+"Wh-what is it? All of a sudden!?"{waitForClick}{clearText}{marker}{sound C5A322}{appendText}[You]
+"What is it? ...What's wrong?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"This year...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What...year is it?"{waitForClick}{clearText}
+
+[0000024d]10: 
+[0000024e]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07ADM 320 3
+[0000025f]10: 
+[00000260]19: showTextbox
+[00000261]ff 0b 00: text 0b
+{marker}{sound C5A323}{appendText}[You]
+"Huh?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Just answer me!"{waitForClick}{clearText}{marker}{appendText}You blinked slowly, her mouth half-open.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Well?"{waitForClick}{clearText}{marker}{appendText}I glared at You, and pressed her for an answer.{waitForClick}{clearText}{marker}{appendText}A little overwhelmed by my enthusiasm, You 
+seemed a bit disconcerted.{waitForClick}{clearText}
+
+[00000264]10: 
+[00000265]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADM 320 3
+[00000276]10: 
+[00000277]19: showTextbox
+[00000278]ff 0c 00: text 0c
+{marker}{sound C5A324}{appendText}[You]
+"On the standard calendar...."{waitForClick}{clearText}{marker}{sound C5A325}{appendText}[You]
+"20...."{waitForClick}{clearText}{marker}{sound C5A326}{appendText}[You]
+"...34. Why?"{waitForClick}{clearText}
+
+[0000027b]10: 
+[0000027c]18: hideTextbox
+[0000027d]10: 
+[0000027e]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000285]10: 
+[00000286]10 81 00 00 80 00 00: removeFG 1 0
+[0000028d]10: 
+[0000028e]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000298]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000002a2]27 00 00: fadeOutMonoColorOverlay
+[000002a5]00: 
+[000002a6]05 83 00 00: unSkippableDelay 3
+[000002aa]10: 
+[000002ab]04: stopBGM
+[000002ac]10: 
+[000002ad]18: hideTextbox
+[000002ae]fe 28 0a a2 3a 14 14 00 80 00 00: setChangePerspectiveDirection 0
+[000002b9]10: 
+[000002ba]20 a0 2f 00 00: triggerChangePerspectiveAnim
+[000002bf]00: 
+[000002c0]05 a0 1e 00 00: unSkippableDelay 30
+[000002c5]10: 
+[000002c6]45 83 00 00 81 00 00: monoColorOverlay 3 1
+[000002cd]10: 
+[000002ce]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[000002d5]10: 
+[000002d6]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[000002e0]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000002ea]27 00 00: fadeOutMonoColorOverlay
+[000002ed]00: 
+[000002ee]05 83 00 00: unSkippableDelay 3
+[000002f2]10: 
+[000002f3]46 81 00 00: setDialogBoxColor green
+[000002f7]10: 
+[000002f8]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[000002ff]10: 
+[00000300]0c 00 00 00 00 0a 00 86 00 00 82 00 00: bgload 00000000 BG11A1 6 2
+[0000030d]10: 
+[0000030e]0f 81 00 00 00 00 00 00 0b 00 a1 40 00 00 80 00 00: fgload 1 00000000 YU07ADM 320 0
+[0000031f]10: 
+[00000320]03 a0 15 00 00 a0 5f 00 00: playBGM 21 95
+[00000329]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000333]27 00 00: fadeOutMonoColorOverlay
+[00000336]00: 
+[00000337]05 a0 12 00 00: unSkippableDelay 18
+[0000033c]10: 
+[0000033d]1f 8c 00 00 a0 24 00 00: clock 12:36
+[00000345]10: 
+[00000346]19: showTextbox
+[00000347]ff 0d 00: text 0d
+{marker}{appendText}[Takeshi]
+"It's 2017...."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"So 2013 was four years ago?"{waitForClick}{clearText}{marker}{appendText}I said to You.{waitForClick}{clearText}{marker}{appendText}You and I were alone in the Security Office....{waitForClick}{clearText}{marker}{appendText}All the sudden You had asked me to come see 
+her, and had started talking about what had 
+happened in 2013.{waitForClick}{clearText}{marker}{appendText}No, I probably had seen it coming.{waitForClick}{clearText}{marker}{appendText}Just before she had spoken to me, You had 
+hinted indirectly that she had changed her 
+mind and needed someone to confide in.{waitForClick}{clearText}{marker}{appendText}Her expression was solemn, like a nun about 
+to seek redemption.{waitForClick}{clearText}{marker}{appendText}You's eyes were empty of emotion.{waitForClick}{clearText}{marker}{appendText}And at the same time, her gaze showed an 
+unconditional compassion: impartial, demanding 
+nothing, asking nothing.{waitForClick}{clearText}{marker}{appendText}After a short while....{waitForClick}{clearText}{marker}{sound C5A327}{appendText}[You]
+"That's right."{waitForClick}{clearText}{marker}{sound C5A328}{appendText}[You]
+"It was four years ago...."{waitForClick}{clearText}{marker}{sound C5A329}{appendText}[You]
+"When I was 14."{waitForClick}{clearText}{marker}{appendText}You began quietly to tell her story....{waitForClick}{clearText}
+
+[0000034a]10: 
+[0000034b]18: hideTextbox
+[0000034c]10: 
+[0000034d]20 a0 2c 00 00: showDimOverlay
+[00000352]10: 
+[00000353]19: showTextbox
+[00000354]ff 0e 00: text 0e
+{marker}{appendText}Yubiseiharukana had a serious heart condition.{waitForClick}{clearText}{marker}{appendText}She hadn't been born with it.{waitForClick}{clearText}{marker}{appendText}In 2013, when she was 14, she suddenly had 
+fallen ill.{waitForClick}{clearText}{marker}{appendText}One day, You had suddenly collapsed.{waitForClick}{clearText}{marker}{appendText}She was examined at the hospital and the 
+doctor told her...{waitForClick}{clearText}{marker}{appendText}[Doctor]
+"This is very hard for me to tell you, so I 
+want you to please listen calmly."{waitForClick}{clearText}{marker}{appendText}[Doctor]
+"You have a very serious heart condition."{waitForClick}{clearText}{marker}{appendText}[Doctor]
+"It's unclear whether you'll even make it to 
+the end of high school."{waitForClick}{clearText}{marker}{appendText}This meant that she only had three or four 
+more years to live.{waitForClick}{clearText}{marker}{appendText}A transplant was out of the question. And 
+even with treatment, she would only suffer 
+and they couldn't guarantee her a cure.{waitForClick}{clearText}{marker}{appendText}There was no way left for her to survive.{waitForClick}{clearText}{marker}{appendText}She had received a death sentence.{waitForClick}{clearText}{marker}{appendText}[Doctor]
+"But medical treatment is advancing daily."{waitForClick}{clearText}{marker}{appendText}[Doctor]
+"In a few years, we may still find a cure."{waitForClick}{clearText}{marker}{appendText}[Doctor]
+"So don't give up. You have to fight this 
+illness."{waitForClick}{clearText}{marker}{appendText}With the doctor's hollow consolation, 
+emptiness took over her mind.{waitForClick}{clearText}
+
+[00000357]10: 
+[00000358]18: hideTextbox
+[00000359]10: 
+[0000035a]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000362]10: 
+[00000363]43 a0 61 00 00: unknown43 97
+[00000368]10: 
+[00000369]10 81 00 00 80 00 00: removeFG 1 0
+[00000370]10: 
+[00000371]0c 00 00 00 00 0c 00 86 00 00 82 00 00: bgload 00000000 IMG06A 6 2
+[0000037e]10: 
+[0000037f]43 a0 64 00 00: unknown43 100
+[00000384]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000038e]27 00 00: fadeOutMonoColorOverlay
+[00000391]00: 
+[00000392]05 8a 00 00: unSkippableDelay 10
+[00000396]10: 
+[00000397]18: hideTextbox
+[00000398]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[000003a3]10: 
+[000003a4]19: showTextbox
+[000003a5]ff 0f 00: text 0f
+{marker}{appendText}2014.{waitForClick}
+{appendText}Her fear of her approaching death was growing.{waitForClick}
+{appendText}One day, while she was at the hospital, she 
+met a gentleman.{waitForClick}
+{appendText}Through the course of their meetings, she and 
+the gentlemen came to trust one another, and 
+became very close.{waitForClick}
+{appendText}It was a close relationship, like the bond 
+between a parent and a child....{waitForClick}{nextPage x2}
+
+[000003a8]10: 
+[000003a9]18: hideTextbox
+[000003aa]10: 
+[000003ab]19: showTextbox
+[000003ac]ff 10 00: text 10
+{marker}{appendText}Between a father and a daughter.{waitForClick}
+{appendText}Yubiseiharukana had grown up without knowing a 
+father's warmth.{waitForClick}
+{appendText}Perhaps she was seeking from him the love 
+from the father she had never known.{waitForClick}
+{appendText}As for the gentleman, he had a daughter close 
+to her age.{waitForClick}
+{appendText}When he found out about You's illness, he 
+felt as much sympathy as he would have for 
+his own daughter.{waitForClick}{nextPage x2}
+
+[000003af]10: 
+[000003b0]18: hideTextbox
+[000003b1]10: 
+[000003b2]19: showTextbox
+[000003b3]ff 11 00: text 11
+{marker}{appendText}They were close like a parent and a child, 
+joined by a strong feeling like love.{waitForClick}
+{appendText}Having built up a trust, Yubiseiharukana one 
+day confessed her fear, her despair and agony 
+to him.{waitForClick}
+{appendText}With a serious look on his face, the 
+gentleman said - {waitForClick}{nextPage x2}
+
+[000003b6]10: 
+[000003b7]18: hideTextbox
+[000003b8]10: 
+[000003b9]19: showTextbox
+[000003ba]ff 12 00: text 12
+{marker}{appendText}"Come to my lab."{waitForClick}
+{appendText}
+
+
+[000003bd]10: 
+[000003be]19: showTextbox
+[000003bf]ff 13 00: text 13
+{appendText}His name was Shigezo Morino.{waitForClick}
+{appendText}Doctor Morino was a world authority in genetic 
+engineering.{waitForClick}{nextPage x2}
+
+[000003c2]10: 
+[000003c3]18: hideTextbox
+[000003c4]10: 
+[000003c5]19: showTextbox
+[000003c6]ff 14 00: text 14
+{marker}{appendText}In November of that year...{waitForClick}
+{appendText}After making up her mind, Yubiseiharukana 
+visited the doctor's lab.{waitForClick}{nextPage x2}
+
+[000003c9]10: 
+[000003ca]18: hideTextbox
+[000003cb]10: 
+[000003cc]19: showTextbox
+[000003cd]ff 15 00: text 15
+{marker}{appendText}"There are three types of immortality."{waitForClick}
+{appendText}"The first is immortality of the body."{waitForClick}
+{appendText}"The second is immortality of the memory."{waitForClick}
+{appendText}"The third is genetic immortality."{waitForClick}
+{appendText}"How would you like to try the third kind?"{waitForClick}{nextPage x2}
+
+[000003d0]10: 
+[000003d1]18: hideTextbox
+[000003d2]10: 
+[000003d3]19: showTextbox
+[000003d4]ff 16 00: text 16
+{marker}{appendText}The doctor presented this extraordinary plan 
+to her with the calmness of a scientist, his 
+tone matter-of-fact.{waitForClick}{nextPage x2}
+
+[000003d7]10: 
+[000003d8]18: hideTextbox
+[000003d9]10: 
+[000003da]19: showTextbox
+[000003db]ff 17 00: text 17
+{marker}{appendText}"Your heart problem was acquired after birth, 
+rather being something you were born with."{waitForClick}
+{appendText}"So, if you choose the third option..."{waitForClick}
+{appendText}"You don't have to worry about passing the 
+condition onto your 'children'."{waitForClick}
+{appendText}"There is nothing for you to worry about."{waitForClick}{nextPage x2}
+
+[000003de]10: 
+[000003df]18: hideTextbox
+[000003e0]10: 
+[000003e1]19: showTextbox
+[000003e2]ff 18 00: text 18
+{marker}{appendText}Ever since being told that she would die, she 
+had been terrified at the approaching shadow 
+of death.{waitForClick}
+{appendText}Not a night would go by that she didn't rail 
+against her misfortune, all the while clawing 
+at her chest in agony. {waitForClick}
+{appendText}She had given up on life, and was no more 
+than an empty shell.{waitForClick}{nextPage x2}
+
+[000003e5]10: 
+[000003e6]18: hideTextbox
+[000003e7]10: 
+[000003e8]19: showTextbox
+[000003e9]ff 19 00: text 19
+{marker}{appendText}But this day, she was suddenly able to see a 
+glimmer of hope.{waitForClick}
+{appendText}The doctor's words convinced her, and her way 
+of thinking gradually changed.{waitForClick}
+{appendText}'If I only have a few more years to live, I 
+at least want to leave something of myself 
+behind in this world.'{waitForClick}
+{appendText}Her tenacity for life defied imagination.{waitForClick}{nextPage x2}
+
+[000003ec]10: 
+[000003ed]18: hideTextbox
+[000003ee]10: 
+[000003ef]19: showTextbox
+[000003f0]ff 1a 00: text 1a
+{marker}{appendText}She finally made the decision.{waitForClick}
+{appendText}She chose the third option.{waitForClick}{nextPage x2}
+
+[000003f3]10: 
+[000003f4]18: hideTextbox
+[000003f5]10: 
+[000003f6]18: hideTextbox
+[000003f7]10: 
+[000003f8]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000003ff]10: 
+[00000400]10 81 00 00 80 00 00: removeFG 1 0
+[00000407]10: 
+[00000408]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000412]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000041c]27 00 00: fadeOutMonoColorOverlay
+[0000041f]00: 
+[00000420]05 8a 00 00: unSkippableDelay 10
+[00000424]10: 
+[00000425]19: showTextbox
+[00000426]ff 1b 00: text 1b
+{marker}{appendText}One month later. December, 2014.{waitForClick}
+{appendText}Yubiseiharukana had the nucleus from one of 
+her own cells implanted in her own ovaries, 
+which then began to grow in her womb.{waitForClick}
+{appendText}Of course, Doctor Morino performed the surgery.{waitForClick}
+{appendText}She was pregnant with her 'new self'.{waitForClick}{nextPage x2}
+
+[00000429]10: 
+[0000042a]18: hideTextbox
+[0000042b]10: 
+[0000042c]18: hideTextbox
+[0000042d]10: 
+[0000042e]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000435]10: 
+[00000436]10 81 00 00 80 00 00: removeFG 1 0
+[0000043d]10: 
+[0000043e]0c 00 00 00 00 0d 00 86 00 00 82 00 00: bgload 00000000 IMG05A 6 2
+[0000044b]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000455]27 00 00: fadeOutMonoColorOverlay
+[00000458]00: 
+[00000459]05 8a 00 00: unSkippableDelay 10
+[0000045d]10: 
+[0000045e]19: showTextbox
+[0000045f]ff 1c 00: text 1c
+{marker}{appendText}Nine months later - September 22, 2015.{waitForClick}
+{appendText}Yubiseiharukana safely gave birth.{waitForClick}{nextPage x2}
+
+[00000462]10: 
+[00000463]18: hideTextbox
+[00000464]10: 
+[00000465]0c 00 00 00 00 0e 00 80 00 00 80 00 00: bgload 00000000 EV_YU16A 0 0
+[00000472]10: 
+[00000473]19: showTextbox
+[00000474]ff 1d 00: text 1d
+{marker}{sound C5A330}{appendText}"My baby!"{waitForClick}
+{sound C5A331}{appendText}"You are my sister."{waitForClick}
+{sound C5A332}{appendText}"You are... me, myself."{waitForClick}{nextPage x2}
+
+[00000477]10: 
+[00000478]18: hideTextbox
+[00000479]10: 
+[0000047a]19: showTextbox
+[0000047b]ff 1e 00: text 1e
+{marker}{appendText}Yubiseiharukana loved the new child with all 
+of her heart, and gave her a name. {waitForClick}
+{appendText}She called her Yubiseiakikana.{waitForClick}
+{appendText}That's right, Yubiseiakikana was 
+Yubiseiharukana's daughter.{waitForClick}
+{appendText}And at the same time, they not only were 
+mother and daughter, but also shared the same 
+genetic design, just like twins.{waitForClick}{nextPage x2}
+
+[0000047e]10: 
+[0000047f]18: hideTextbox
+[00000480]10: 
+[00000481]19: showTextbox
+[00000482]ff 1f 00: text 1f
+{marker}{appendText}What a twist of fate....{waitForClick}
+{appendText}Did she do it out of the madness that comes 
+from being so close to death?{waitForClick}
+{appendText}But...still....{waitForClick}
+{appendText}Look at the lively face of the newborn child!{waitForClick}
+{appendText}Look at how pure its smile is! How bright 
+its new life shines!{waitForClick}{nextPage x2}
+
+[00000485]10: 
+[00000486]18: hideTextbox
+[00000487]10: 
+[00000488]19: showTextbox
+[00000489]ff 20 00: text 20
+{marker}{appendText}Could anyone watch something as simple as its 
+earnest attempts to grab something, and 
+believe that the baby was a tragedy?{waitForClick}
+{appendText}Was it a sin to create a life? Was it a sin 
+to want life?{waitForClick}
+{appendText}The baby smiled happily. Sometimes it cried.{waitForClick}
+{appendText}As if it were asking - 'Is it a sin to be 
+alive?'{waitForClick}{nextPage x2}
+
+[0000048c]10: 
+[0000048d]18: hideTextbox
+[0000048e]10: 
+[0000048f]18: hideTextbox
+[00000490]10: 
+[00000491]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000498]10: 
+[00000499]10 81 00 00 80 00 00: removeFG 1 0
+[000004a0]10: 
+[000004a1]0c 00 00 00 00 0f 00 86 00 00 82 00 00: bgload 00000000 BG38A2 6 2
+[000004ae]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000004b8]27 00 00: fadeOutMonoColorOverlay
+[000004bb]00: 
+[000004bc]05 8a 00 00: unSkippableDelay 10
+[000004c0]10: 
+[000004c1]19: showTextbox
+[000004c2]ff 21 00: text 21
+{marker}{appendText}Monday, May 1, 2017.{waitForClick}
+{appendText}Yubiseiharukana, who was now a student at 
+Kyumeikan Women's College, had started 
+working part-time at LeMU during the holidays.{waitForClick}
+{appendText}She wanted to find a clue about her father, 
+Yoichi, who had gone missing 17 years before.{waitForClick}{nextPage x2}
+
+[000004c5]10: 
+[000004c6]18: hideTextbox
+[000004c7]10: 
+[000004c8]19: showTextbox
+[000004c9]ff 22 00: text 22
+{marker}{appendText}Her mother, Yukie, kept telling her, 'Your 
+father fell into the ocean and drowned,' but 
+You didn't believe it.{waitForClick}
+{appendText}She held on to the hope that he was still 
+alive somewhere.{waitForClick}
+{appendText}She had left her one-year-old daughter, 
+Yubiseiakikana, with her mother, so she was 
+not worried about her.{waitForClick}{nextPage x2}
+
+[000004cc]10: 
+[000004cd]18: hideTextbox
+[000004ce]10: 
+[000004cf]19: showTextbox
+[000004d0]ff 23 00: text 23
+{marker}{appendText}Yubiseiharukana's heart had almost reached its 
+limit.{waitForClick}
+{appendText}She had given birth safely, but could no 
+longer escape the fate, which awaited her.{waitForClick}
+{appendText}There was only one thing left that she wanted 
+to do.{waitForClick}
+{appendText}Before she died, she wanted to find out 
+whether her father was still alive.{waitForClick}{nextPage x2}
+
+[000004d3]10: 
+[000004d4]18: hideTextbox
+[000004d5]10: 
+[000004d6]19: showTextbox
+[000004d7]ff 24 00: text 24
+{marker}{appendText}The father who had disappeared when she was a 
+year old....{waitForClick}
+{appendText}She had looked at his photo until it had 
+become ragged and torn, but had no memories 
+of his warmth, or ever having been held by him.{waitForClick}
+{appendText}For that reason she waved off all of the 
+Doctor's attempts to stop her, and had come 
+to LeMU.{waitForClick}
+{appendText}She wanted to find out about her father....{waitForClick}
+{appendText}What had happened 17 years ago? She wanted to 
+reveal the truth....{waitForClick}{nextPage x2}
+
+[000004da]10: 
+[000004db]18: hideTextbox
+[000004dc]10: 
+[000004dd]18: hideTextbox
+[000004de]10: 
+[000004df]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000004e6]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[000004f1]10: 
+[000004f2]21 a0 10 00 00: closeDimOverlay
+[000004f7]10: 
+[000004f8]0c 00 00 00 00 10 00 86 00 00 82 00 00: bgload 00000000 BG11A1 6 2
+[00000505]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[0000050f]27 00 00: fadeOutMonoColorOverlay
+[00000512]00: 
+[00000513]05 8a 00 00: unSkippableDelay 10
+[00000517]10: 
+[00000518]18: hideTextbox
+[00000519]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000524]10: 
+[00000525]19: showTextbox
+[00000526]ff 25 00: text 25
+{marker}{appendText}As her story ended, You reached for a file 
+that was on the control panel.{waitForClick}{clearText}{marker}{appendText}She opened it, and silently passed it to me....{waitForClick}{clearText}
+
+[00000529]10: 
+[0000052a]0c 00 00 00 00 11 00 80 00 00 82 00 00: bgload 00000000 EV_YU16A 0 2
+[00000537]10: 
+[00000538]19: showTextbox
+[00000539]ff 26 00: text 26
+{marker}{appendText}[Takeshi]
+"So the baby was...."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"WAS your child?"{waitForClick}{clearText}
+
+[0000053c]10: 
+[0000053d]0c 00 00 00 00 12 00 80 00 00 82 00 00: bgload 00000000 BG11A1 0 2
+[0000054a]10: 
+[0000054b]0f 81 00 00 00 00 00 00 13 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADM 320 3
+[0000055c]10: 
+[0000055d]19: showTextbox
+[0000055e]ff 27 00: text 27
+{marker}{appendText}[You]
+"........."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Which means you were lying to me...."{waitForClick}{clearText}{marker}{sound C5A333}{appendText}[You]
+"It wasn't...a lie...."{waitForClick}{clearText}{marker}{sound C5A334}{appendText}[You]
+"She is my daughter...."{waitForClick}{clearText}{marker}{sound C5A335}{appendText}[You]
+"But she's also my twin sister...."{waitForClick}{clearText}{marker}{sound C5A336}{appendText}[You]
+"And...."{waitForClick}{clearText}{marker}{sound C5A337}{appendText}[You]
+"She's another me...."{waitForClick}{clearText}{marker}{sound C5A338}{appendText}[You]
+"She is...myself...."{waitForClick}{clearText}{marker}{appendText}I didn't know what to say.{waitForClick}{clearText}{marker}{sound C5A339}{appendText}[You]
+"This was my sin...."{waitForClick}{clearText}{marker}{sound C5A340}{appendText}[You]
+"I know I'll never be forgiven, and will 
+never be able to atone for it...."{waitForClick}{clearText}{marker}{sound C5A341}{appendText}[You]
+"But...."{waitForClick}{clearText}
+
+[00000561]10: 
+[00000562]0f 81 00 00 00 00 00 00 14 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[00000573]10: 
+[00000574]19: showTextbox
+[00000575]ff 28 00: text 28
+{marker}{sound C5A342}{appendText}[You]
+"Like I told you, I have no regrets."{waitForClick}{clearText}{marker}{sound C5A343}{appendText}[You]
+"I'm glad I had her...."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{sound C5A344}{appendText}[You]
+"I'll never forget the moment that new life 
+was created."{waitForClick}{clearText}{marker}{sound C5A345}{appendText}[You]
+"It was...such an unbelievably happy 
+moment...."{waitForClick}{clearText}{marker}{sound C5A346}{appendText}[You]
+"The first time she said, 'Mama... Mama....'"{waitForClick}{clearText}{marker}{sound C5A347}{appendText}[You]
+"I...I can't explain it...."{waitForClick}{clearText}{marker}{sound C5A348}{appendText}[You]
+"It was more than a precious feeling, or 
+love, or that good fortune had come my 
+way...I felt as if I were wrapped in light...."{waitForClick}{clearText}{marker}{sound C5A349}{appendText}[You]
+"I don't care if I burn in hell."{waitForClick}{clearText}{marker}{sound C5A350}{appendText}[You]
+"I don't care if I burn in the fires of hell 
+for thousands, millions of years...."{waitForClick}{clearText}{marker}{sound C5A351}{appendText}[You]
+"But...I knew I wanted to protect...my 
+daughter....no matter what."{waitForClick}{clearText}{marker}{sound C5A352}{appendText}[You]
+"I didn't want her to suffer...."{waitForClick}{clearText}{marker}{sound C5A353}{appendText}[You]
+"Her smile is so beautiful...."{waitForClick}{clearText}{marker}{sound C5A354}{appendText}[You]
+"Her tiny hands are so cute...."{waitForClick}{clearText}{marker}{sound C5A355}{appendText}[You]
+"She is everything to me...."{waitForClick}{clearText}{marker}{sound C5A356}{appendText}[You]
+"She is irreplaceable...."{waitForClick}{clearText}{marker}{sound C5A357}{appendText}[You]
+"Besides, none of this is her fault."{waitForClick}{clearText}{marker}{sound C5A358}{appendText}[You]
+"She was welcomed to this world...just like 
+any other soul born who comes here."{waitForClick}{clearText}{marker}{sound C5A359}{appendText}[You]
+"But at the same time...the moment I gave 
+birth to her...I died."{waitForClick}{clearText}{marker}{sound C5A360}{appendText}[You]
+"It was as if I no longer existed...."{waitForClick}{clearText}{marker}{sound C5A361}{appendText}[You]
+"You see...."{waitForClick}{clearText}{marker}{sound C5A362}{appendText}[You]
+"I gave all my life, my existence, to my 
+child...."{waitForClick}{clearText}
+
+[00000578]10: 
+[00000579]0c 00 00 00 00 15 00 80 00 00 81 00 00: bgload 00000000 EV_YU16A 0 1
+[00000586]10: 
+[00000587]19: showTextbox
+[00000588]ff 29 00: text 29
+{marker}{appendText}You showed me the photograph again.{waitForClick}{clearText}{marker}{appendText}The baby in the picture was reaching out, 
+trying to grab something.{waitForClick}{clearText}
+
+[0000058b]10: 
+[0000058c]18: hideTextbox
+[0000058d]10: 
+[0000058e]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000596]10: 
+[00000597]10 81 00 00 80 00 00: removeFG 1 0
+[0000059e]10: 
+[0000059f]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000005a9]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000005b3]27 00 00: fadeOutMonoColorOverlay
+[000005b6]00: 
+[000005b7]05 83 00 00: unSkippableDelay 3
+[000005bb]10: 
+[000005bc]04: stopBGM
+[000005bd]10: 
+[000005be]18: hideTextbox
+[000005bf]fe 28 0a a2 3a 14 14 00 81 00 00: setChangePerspectiveDirection 1
+[000005ca]10: 
+[000005cb]20 a0 2f 00 00: triggerChangePerspectiveAnim
+[000005d0]00: 
+[000005d1]05 a0 1e 00 00: unSkippableDelay 30
+[000005d6]10: 
+[000005d7]45 83 00 00 81 00 00: monoColorOverlay 3 1
+[000005de]10: 
+[000005df]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[000005e6]10: 
+[000005e7]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[000005f1]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000005fb]27 00 00: fadeOutMonoColorOverlay
+[000005fe]00: 
+[000005ff]05 83 00 00: unSkippableDelay 3
+[00000603]10: 
+[00000604]46 80 00 00: setDialogBoxColor blue
+[00000608]10: 
+[00000609]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[00000610]10: 
+[00000611]0c 00 00 00 00 16 00 86 00 00 82 00 00: bgload 00000000 BG11A1 6 2
+[0000061e]10: 
+[0000061f]0f 81 00 00 00 00 00 00 17 00 a1 40 00 00 80 00 00: fgload 1 00000000 YU04ADM 320 0
+[00000630]10: 
+[00000631]03 8d 00 00 a0 64 00 00: playBGM 13 100
+[00000639]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000643]27 00 00: fadeOutMonoColorOverlay
+[00000646]00: 
+[00000647]05 8a 00 00: unSkippableDelay 10
+[0000064b]fe 28 0a a4 fa 14 14 00 a0 75 00 00: setSceneTitleByIndex 117
+[00000657]00: 
+[00000658]28: l_unk28
+[00000659]10: 
+[0000065a]1f 89 00 00 a0 1d 00 00: clock 9:29
+[00000662]10: 
+[00000663]19: showTextbox
+[00000664]ff 2a 00: text 2a
+{marker}{sound C5A363}{appendText}[You]
+"Hey! Hello—, are you listening to me?"{waitForClick}{clearText}{marker}{appendText}You grabbed my shoulders and shook me.{waitForClick}{clearText}
+
+[00000667]10: 
+[00000668]0f 81 00 00 00 00 00 00 18 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU07ADM 320 3
+[00000679]10: 
+[0000067a]19: showTextbox
+[0000067b]ff 2b 00: text 2b
+{marker}{sound C5A364}{appendText}[You]
+"What's the matter with you? Kid?"{waitForClick}{clearText}{marker}{sound C5A365}{appendText}[You]
+"You can't possibly have forgotten what year 
+it is?"{waitForClick}{clearText}{marker}{appendText}Her words made no impression on me.{waitForClick}{clearText}{marker}{appendText}(What on earth....){waitForClick}{clearText}{marker}{appendText}My mouth was dry, and the palm of my clenched 
+fist was drenched with sweat.{waitForClick}{clearText}{marker}{appendText}(First of all....){waitForClick}{clearText}{marker}{appendText}I began to think things through.{waitForClick}{clearText}{marker}{appendText}The You that I knew...the You standing in 
+front of me, Yubi'aki'kana, was born on 22nd 
+of September, 2015.{waitForClick}{clearText}{marker}{appendText}Her mother was Yubisei'haru'kana.{waitForClick}{clearText}{marker}{appendText}That meant....{waitForClick}{clearText}{marker}{appendText}This was now 2034, 17 years after 
+Yubiseiharukana's time in 2017....{waitForClick}{clearText}{marker}{appendText}No, but wait....{waitForClick}{clearText}{marker}{appendText}What about the date on that mail?{waitForClick}{clearText}{marker}{appendText}It had been received on 02/07/19.{waitForClick}{clearText}{marker}{appendText}My voice came out strangled.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's 2034 now...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yukie died 15 years ago...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Which would have been in 2019...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But the date on that says on...'02/07/19'...."{waitForClick}{clearText}
+
+[0000067e]10: 
+[0000067f]0f 81 00 00 00 00 00 00 19 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADM 320 3
+[00000690]10: 
+[00000691]19: showTextbox
+[00000692]ff 2c 00: text 2c
+{marker}{sound C5A366}{appendText}[You]
+"Oh, that?"{waitForClick}{clearText}{marker}{sound C5A367}{appendText}[You]
+"You were worried about that?"{waitForClick}{clearText}{marker}{appendText}You laughed.{waitForClick}{clearText}{marker}{sound C5A368}{appendText}[You]
+"Well, I can understand why you might make 
+that mistake...."{waitForClick}{clearText}{marker}{sound C5A369}{appendText}[You]
+"Do you see?"{waitForClick}{clearText}{marker}{sound C5A370}{appendText}[You]
+"The date on that mail was written in the 
+German style."{waitForClick}{clearText}{marker}{sound C5A371}{appendText}[You]
+"Not the Japanese order of year/month/day, but 
+month/day/year."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So are you telling me that...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That wasn't the July 19, 2002...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It was February, 7 2019...?"{waitForClick}{clearText}{marker}{appendText}You nodded.{waitForClick}{clearText}{marker}{sound C5A372}{appendText}[You]
+"Any other questions?"{waitForClick}{clearText}{marker}{appendText}I shook my head weakly, and trudged out of the 
+Security Office.{waitForClick}{clearText}
+
+[00000695]10: 
+[00000696]18: hideTextbox
+[00000697]10: 
+[00000698]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[0000069f]10: 
+[000006a0]10 81 00 00 80 00 00: removeFG 1 0
+[000006a7]10: 
+[000006a8]0c 00 00 00 00 1a 00 86 00 00 82 00 00: bgload 00000000 BG26A3L 6 2
+[000006b5]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000006bf]27 00 00: fadeOutMonoColorOverlay
+[000006c2]00: 
+[000006c3]05 8a 00 00: unSkippableDelay 10
+[000006c7]10: 
+[000006c8]19: showTextbox
+[000006c9]ff 2d 00: text 2d
+{marker}{appendText}I had figured out the relationship between 
+You and her mother, but wondered whether I 
+should tell her.{waitForClick}{clearText}{marker}{appendText}(No, it's probably better that I don't. 
+That's better for You in the long run.){waitForClick}{clearText}{marker}{appendText}But first, I had to take care of my own 
+problems.{waitForClick}{clearText}{marker}{appendText}There was somewhere I had to go.{waitForClick}{clearText}
+
+[000006cc]10: 
+[000006cd]18: hideTextbox
+[000006ce]10: 
+[000006cf]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000006d6]10: 
+[000006d7]0c 00 00 00 00 1b 00 86 00 00 82 00 00: bgload 00000000 BG05A1 6 2
+[000006e4]10: 
+[000006e5]12 81 00 00 82 00 00 00 00 00 00 1c 00 00 00 00 00 1d 00 a0 80 00 00 a2 00 00 00 80 00 00: multifgload2 1 2 00000000 SA04ADM 00000000 TU18ADM 128 512 0
+[00000703]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[0000070d]27 00 00: fadeOutMonoColorOverlay
+[00000710]00: 
+[00000711]05 a0 12 00 00: unSkippableDelay 18
+[00000716]10: 
+[00000717]1f 89 00 00 a0 29 00 00: clock 9:41
+[0000071f]10: 
+[00000720]19: showTextbox
+[00000721]ff 2e 00: text 2e
+{marker}{sound C5A373}{appendText}[Sara]
+"What is it?"{waitForClick}{clearText}{marker}{sound C5A374}{appendText}[Sara]
+"What did you bring me here for?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I wanted to...talk to you guys alone...."{waitForClick}{clearText}
+
+[00000724]10: 
+[00000725]0f 81 00 00 00 00 00 00 1e 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA05ADM 128 3
+[00000736]10: 
+[00000737]19: showTextbox
+[00000738]ff 2f 00: text 2f
+{marker}{sound C5A375}{appendText}[Sara]
+"About what?"{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"........."{waitForClick}{clearText}{marker}{appendText}Tsugumi was silent. She seemed to be afraid 
+of something.{waitForClick}{clearText}{marker}{appendText}Tsugumi perhaps already sensed what I was 
+going to say.{waitForClick}{clearText}{marker}{appendText}Her eyes gazed around, wildly.{waitForClick}{clearText}{marker}{sound C5A376}{appendText}[Sara]
+"Is it important?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Yes, very."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's something I don't want the others to 
+hear...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Wait, I don't mind if they hear it, but I 
+wanted you and Tsugumi to know first."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"So that's why I asked you to come over here."{waitForClick}{clearText}{marker}{sound C5A377}{appendText}[Sara]
+"Hmmmm."{waitForClick}{clearText}{marker}{sound C5A378}{appendText}[Sara]
+"So, what's so important?"{waitForClick}{clearText}{marker}{appendText}Hadn't Sara noticed anything?{waitForClick}{clearText}{marker}{appendText}Her blank, unguarded expression....{waitForClick}{clearText}{marker}{appendText}She had to have noticed something.{waitForClick}{clearText}{marker}{appendText}The May 1st, after Sara met Tsugumi for the 
+first time, she had looked totally dazed.{waitForClick}{clearText}{marker}{appendText}Surely, Sara had sensed something.{waitForClick}{clearText}{marker}{appendText}To be standing there calmly, she had to be in 
+denial.{waitForClick}{clearText}{marker}{appendText}Reason was telling her that what she suspected 
+couldn't be true.{waitForClick}{clearText}{marker}{appendText}The coincidence of meeting her mother again 
+was probably too much for Sara to believe.{waitForClick}{clearText}{marker}{sound C5A379}{appendText}[Sara]
+"Well, are you going to say anything? Could 
+you hurry up...?"{waitForClick}{clearText}{marker}{appendText}Sara urged me to get to the point.{waitForClick}{clearText}{marker}{appendText}Tsugumi said nothing, but her breathing 
+seemed a little rough.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara? Could you lend me your pendant and 
+lighter for a moment?"{waitForClick}{clearText}{marker}{sound C5A380}{appendText}[Sara]
+"Alright."{waitForClick}{clearText}{marker}{appendText}She took them out of her pocket and gave them 
+to me.{waitForClick}{clearText}
+
+[0000073b]10: 
+[0000073c]18: hideTextbox
+[0000073d]10: 
+[0000073e]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000745]10: 
+[00000746]13 83 04 00 80 00 00: multiremoveFG_Sta 1 2 0
+[0000074d]10: 
+[0000074e]0c 00 00 00 00 1f 00 86 00 00 82 00 00: bgload 00000000 EV_ET02A 6 2
+[0000075b]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000765]27 00 00: fadeOutMonoColorOverlay
+[00000768]00: 
+[00000769]05 8a 00 00: unSkippableDelay 10
+[0000076d]10: 
+[0000076e]19: showTextbox
+[0000076f]ff 30 00: text 30
+{marker}{appendText}-Shick.{waitForClick}{clearText}{marker}{appendText}I struck a flame, illuminating the pendant.{waitForClick}{clearText}
+
+[00000772]10: 
+[00000773]0c 00 00 00 00 20 00 80 00 00 82 00 00: bgload 00000000 EV_ET02B 0 2
+[00000780]10: 
+[00000781]19: showTextbox
+[00000782]ff 31 00: text 31
+{marker}{appendText}Takeshi.......{waitForClick}{clearText}{marker}{appendText}This was...the real Takeshi Kuranari....{waitForClick}{clearText}
+
+[00000785]10: 
+[00000786]18: hideTextbox
+[00000787]10: 
+[00000788]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[0000078f]10: 
+[00000790]0c 00 00 00 00 21 00 86 00 00 82 00 00: bgload 00000000 BG05A1 6 2
+[0000079d]10: 
+[0000079e]12 81 00 00 82 00 00 00 00 00 00 22 00 00 00 00 00 23 00 a0 80 00 00 a2 00 00 00 80 00 00: multifgload2 1 2 00000000 SA05ADM 00000000 TU18ADM 128 512 0
+[000007bc]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000007c6]27 00 00: fadeOutMonoColorOverlay
+[000007c9]00: 
+[000007ca]05 8a 00 00: unSkippableDelay 10
+[000007ce]10: 
+[000007cf]19: showTextbox
+[000007d0]ff 32 00: text 32
+{marker}{appendText}I held the pendant and the flame closer to 
+Tsugumi.{waitForClick}{clearText}{marker}{appendText}Tsugumi kept her head down, refusing to look 
+up at the pendant.{waitForClick}{clearText}{marker}{appendText}Her brow was furrowed, and she was biting her 
+lip.{waitForClick}{clearText}{marker}{appendText}Her arms pressed tightly to her sides....{waitForClick}{clearText}{marker}{appendText}Her clenched fists were shaking.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Look closer...."{waitForClick}{clearText}{marker}{appendText}I whispered to her.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You've seen this pendant before...haven't 
+you?"{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's Takeshi."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The real Takeshi Kuranari is right here!"{waitForClick}{clearText}
+
+[000007d3]10: 
+[000007d4]0f 82 00 00 00 00 00 00 24 00 a2 00 00 00 83 00 00: fgload 2 00000000 TU15ADM 512 3
+[000007e5]10: 
+[000007e6]19: showTextbox
+[000007e7]ff 33 00: text 33
+{marker}{appendText}The moment I said these words, Tsugumi's eyes 
+flew open.{waitForClick}{clearText}{marker}{appendText}Stripped of expression, she wore a face like a 
+mask...only her eyes burned with a fierce 
+light.{waitForClick}{clearText}
+
+[000007ea]10: 
+[000007eb]0f 81 00 00 00 00 00 00 25 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA06ADM 128 3
+[000007fc]10: 
+[000007fd]19: showTextbox
+[000007fe]ff 34 00: text 34
+{marker}{sound C5A381}{appendText}[Sara]
+"W-wait just a minute! What are you talking 
+about?"{waitForClick}{clearText}{marker}{sound C5A382}{appendText}[Sara]
+"Takeshi...you mean Takeshi!?"{waitForClick}{clearText}{marker}{sound C5A383}{appendText}[Sara]
+"Takeshi's...the one in this pendant!?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Umm, no..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The Takeshi we know isn't really 'Takeshi.'"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I think he's lying to us."{waitForClick}{clearText}
+
+[00000801]10: 
+[00000802]0f 81 00 00 00 00 00 00 26 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA08ADM 128 3
+[00000813]10: 
+[00000814]19: showTextbox
+[00000815]ff 35 00: text 35
+{marker}{sound C5A384}{appendText}[Sara]
+".........?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The real Takeshi...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The real Takeshi Kuranari...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Is your and my...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Father...."{waitForClick}{clearText}
+
+[00000818]10: 
+[00000819]0f 82 00 00 00 00 00 00 27 00 a2 00 00 00 83 00 00: fgload 2 00000000 TU05ADM 512 3
+[0000082a]10: 
+[0000082b]19: showTextbox
+[0000082c]ff 36 00: text 36
+{marker}{appendText}Tsugumi closed her eyes.{waitForClick}{clearText}{marker}{appendText}She breathed out a long sigh.{waitForClick}{clearText}{marker}{appendText}I could see the tension leave Tsugumi's body. {waitForClick}{clearText}
+
+[0000082f]10: 
+[00000830]0f 81 00 00 00 00 00 00 28 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA05ADM 128 3
+[00000841]10: 
+[00000842]19: showTextbox
+[00000843]ff 37 00: text 37
+{marker}{sound C5A385}{appendText}[Sara]
+"Hey, what's this all about?"{waitForClick}{clearText}{marker}{sound C5A386}{appendText}[Sara]
+"Explain what's happening...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"All right."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"But before I do, I want to check 
+something...."{waitForClick}{clearText}
+
+[00000846]10: 
+[00000847]18: hideTextbox
+[00000848]10: 
+[00000849]04: stopBGM
+[0000084a]10: 
+[0000084b]19: showTextbox
+[0000084c]ff 38 00: text 38
+{marker}{appendText}I hesitated about what to say next.{waitForClick}{clearText}{marker}{appendText}I looked above my head.{waitForClick}{clearText}{marker}{appendText}The sky was full of stars.{waitForClick}{clearText}{marker}{appendText}The single whale twisted and floated through 
+space.{waitForClick}{clearText}{marker}{appendText}(Whale, where do you go all by yourself?){waitForClick}{clearText}{marker}{appendText}(Will you meet someone special one day?){waitForClick}{clearText}{marker}{appendText}Snap.{waitForClick}{clearText}{marker}{appendText}I extinguished the lighter.{waitForClick}{clearText}{marker}{appendText}I gripped the pendant and the lighter in my 
+hand.{waitForClick}{clearText}{marker}{appendText}Tsugumi's outline was hazy in the dark....{waitForClick}{clearText}{marker}{appendText}She was....{waitForClick}{clearText}{marker}{appendText}our....{waitForClick}{clearText}{marker}{appendText}long sought-after....{waitForClick}{clearText}
+
+[0000084f]10: 
+[00000850]03 a0 15 00 00 a0 64 00 00: playBGM 21 100
+[00000859]10: 
+[0000085a]19: showTextbox
+[0000085b]ff 39 00: text 39
+{marker}{appendText}[Kid]
+"Mother...."{waitForClick}{clearText}{marker}{appendText}When I called out to her, warm tears ran down 
+my cheeks.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You are our mother...aren't you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara's and my mother...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Mother...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You are, aren't you...?"{waitForClick}{clearText}
+
+[0000085e]10: 
+[0000085f]0f 81 00 00 00 00 00 00 29 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA06ADM 128 3
+[00000870]10: 
+[00000871]19: showTextbox
+[00000872]ff 3a 00: text 3a
+{marker}{sound C5A387}{appendText}[Sara]
+"...What!?"{waitForClick}{clearText}
+
+[00000875]10: 
+[00000876]0f 82 00 00 00 00 00 00 2a 00 a2 00 00 00 83 00 00: fgload 2 00000000 TU18ADM 512 3
+[00000887]10: 
+[00000888]19: showTextbox
+[00000889]ff 3b 00: text 3b
+{marker}{appendText}Tsugumi slowly opened her eyes.{waitForClick}{clearText}
+
+[0000088c]10: 
+[0000088d]0f 82 00 00 00 00 00 00 2b 00 a2 00 00 00 83 00 00: fgload 2 00000000 TU13ADM 512 3
+[0000089e]10: 
+[0000089f]19: showTextbox
+[000008a0]ff 3c 00: text 3c
+{marker}{appendText}She looked at Sara and me.{waitForClick}{clearText}{marker}{appendText}I could see the tears in her eyes.{waitForClick}{clearText}
+
+[000008a3]10: 
+[000008a4]0f 81 00 00 00 00 00 00 2c 00 a0 80 00 00 83 00 00: fgload 1 00000000 SA17ADM 128 3
+[000008b5]10: 
+[000008b6]19: showTextbox
+[000008b7]ff 3d 00: text 3d
+{marker}{appendText}[Kid]
+"Mother, please say something...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't blame you...for anything...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I've waited for you...for so long...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I've been waiting for you...."{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"........."{waitForClick}{clearText}{marker}{appendText}[Sara]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Say something!"{waitForClick}{clearText}{marker}{appendText}I screamed at her.{waitForClick}{clearText}{marker}{appendText}Sara clung to my arm.{waitForClick}{clearText}{marker}{appendText}Shaking her head, she buried her face in my 
+chest.{waitForClick}{clearText}{marker}{appendText}Her thin body was shaking.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't just stand there, say something!"{waitForClick}{clearText}{marker}{appendText}Holding Sara tightly, I stepped forward.{waitForClick}{clearText}
+
+[000008ba]10: 
+[000008bb]0f 82 00 00 00 00 00 00 2d 00 a2 00 00 00 83 00 00: fgload 2 00000000 TU14ADM 512 3
+[000008cc]10: 
+[000008cd]19: showTextbox
+[000008ce]ff 3e 00: text 3e
+{marker}{sound C5A388}{appendText}[Tsugumi]
+"No...."{waitForClick}{clearText}{marker}{sound C5A389}{appendText}[Tsugumi]
+"I'm not...your mother...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't you lie to me!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know everything!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Seventeen years ago, there was another 
+accident just like this one, here at LeMU."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You and Takeshi became a couple...."{waitForClick}{clearText}
+
+[000008d1]10: 
+[000008d2]0f 82 00 00 00 00 00 00 2e 00 a2 00 00 00 83 00 00: fgload 2 00000000 TU13ADM 512 3
+[000008e3]10: 
+[000008e4]19: showTextbox
+[000008e5]ff 3f 00: text 3f
+{marker}{appendText}Tsugumi was crying huge tears.{waitForClick}{clearText}{marker}{appendText}Tsugumi tried to stop them.{waitForClick}{clearText}{marker}{appendText}Her breath was ragged, and came out in hiccups.{waitForClick}{clearText}{marker}{appendText}Her face twisted as she struggled to keep 
+control of her emotions.{waitForClick}{clearText}{marker}{appendText}Tears welled in her eyes and rolled down her 
+cheeks.{waitForClick}{clearText}{marker}{sound C5A390}{appendText}[Tsugumi]
+"Yes...that's right...."{waitForClick}{clearText}{marker}{sound C5A391}{appendText}[Tsugumi]
+"You're right...."{waitForClick}{clearText}{marker}{sound C5A392}{appendText}[Tsugumi]
+"I gave birth to you...."{waitForClick}{clearText}{marker}{sound C5A393}{appendText}[Tsugumi]
+"But..."{waitForClick}{clearText}{marker}{sound C5A394}{appendText}[Tsugumi]
+"I have no right...to be called 'Mother'...."{waitForClick}{clearText}{marker}{sound C5A395}{appendText}[Tsugumi]
+"You have...a real mother...don't you?"{waitForClick}{clearText}{marker}{sound C5A396}{appendText}[Tsugumi]
+"Someone who took care of you...?"{waitForClick}{clearText}{marker}{sound C5A397}{appendText}[Tsugumi]
+"I...I...wasn't able to protect you both...."{waitForClick}{clearText}{marker}{sound C5A398}{appendText}[Tsugumi]
+"I couldn't take care of you...."{waitForClick}{clearText}{marker}{sound C5A399}{appendText}[Tsugumi]
+"I pretty much abandoned you...."{waitForClick}{clearText}{marker}{sound C5A400}{appendText}[Tsugumi]
+"I left you...and walked away."{waitForClick}{clearText}{marker}{sound C5A401}{appendText}[Tsugumi]
+"I'm terrible...And I don't expect you to be 
+able to forgive me...."{waitForClick}{clearText}{marker}{sound C5A402}{appendText}[Tsugumi]
+"That's why I... "{waitForClick}{clearText}{marker}{sound C5A403}{appendText}[Tsugumi]
+"I'm not your mother...."{waitForClick}{clearText}{marker}{sound C5A404}{appendText}[Tsugumi]
+"Please...don't call me 'mother'."{waitForClick}{clearText}{marker}{sound C5A405}{appendText}[Tsugumi]
+"Please don't...."{waitForClick}{clearText}{marker}{appendText}Tsugumi put her head in her hands, and sobbed.{waitForClick}{clearText}{marker}{appendText}At that moment...{waitForClick}{clearText}{marker}{sound C5A406}{appendText}[Sara]
+"Mama...."{waitForClick}{clearText}{marker}{sound C5A407}{appendText}[Sara]
+"...Mama...."{waitForClick}{clearText}{marker}{sound C5A408}{appendText}[Sara]
+"MAMA!"{waitForClick}{clearText}
+
+[000008e8]10: 
+[000008e9]18: hideTextbox
+[000008ea]10: 
+[000008eb]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000008f2]10: 
+[000008f3]13 83 04 00 80 00 00: multiremoveFG_Sta 1 2 0
+[000008fa]10: 
+[000008fb]0c 00 00 00 00 2f 00 86 00 00 82 00 00: bgload 00000000 EV_TU18A 6 2
+[00000908]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000912]27 00 00: fadeOutMonoColorOverlay
+[00000915]00: 
+[00000916]05 a0 12 00 00: unSkippableDelay 18
+[0000091b]10: 
+[0000091c]19: showTextbox
+[0000091d]ff 40 00: text 40
+{marker}{appendText}Sara tore her self away from me, and flew into 
+Tsugumi's arms.{waitForClick}{clearText}{marker}{appendText}Following her lead, I clung to Tsugumi and 
+cried as well. {waitForClick}{clearText}{marker}{appendText}The first thing I noticed was her familiar 
+smell.{waitForClick}{clearText}{marker}{appendText}I breathed in her scent deeply.{waitForClick}{clearText}{marker}{appendText}Covered in tears, wallowing in the warmth, I 
+felt as if I had regained everything I had 
+ever lost.{waitForClick}{clearText}{marker}{appendText}The three of us held each other tightly, 
+relishing the touch of one another, entwined 
+our hearts became one.{waitForClick}{clearText}{marker}{appendText}We were no longer our individual selves, but 
+one collective identity.{waitForClick}{clearText}{marker}{appendText}There were no boundaries between us.{waitForClick}{clearText}{marker}{appendText}My whole being was filled with warmth...{waitForClick}{clearText}{marker}{appendText}Beside me, Sara's cheeks were wet with tears.{waitForClick}{clearText}{marker}{appendText}Tsugumi was soft, and her skin was sweet and 
+sticky...{waitForClick}{clearText}{marker}{appendText}I recalled the long-forgotten memories of my 
+mother's smell.{waitForClick}{clearText}{marker}{appendText}It wasn't exactly the same feeling as 
+nostalgia.{waitForClick}{clearText}{marker}{appendText}It was primitive, something instinctive...a 
+sweetness that had been wired directly into my 
+brain.{waitForClick}{clearText}{marker}{sound C5A409}{appendText}[Sara]
+"Mama...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Mother...."{waitForClick}{clearText}{marker}{appendText}As if in response, Tsugumi pulled us closer, 
+gripping us with a fierce determination.{waitForClick}{clearText}{marker}{appendText}She buried her face in Sara's and my hair, 
+drew us close, and stroked the back of our 
+heads.{waitForClick}{clearText}{marker}{sound C5A410}{appendText}[Tsugumi]
+"I'm sorry...."{waitForClick}{clearText}{marker}{sound C5A411}{appendText}[Tsugumi]
+"I'm so, so sorry...."{waitForClick}{clearText}{marker}{appendText}Tsugumi's voice was choked up.{waitForClick}{clearText}{marker}{sound C5A412}{appendText}[Tsugumi]
+"I can't ask you...to forgive me...."{waitForClick}{clearText}{marker}{sound C5A413}{appendText}[Tsugumi]
+"I...I...."{waitForClick}{clearText}{marker}{sound C5A414}{appendText}[Tsugumi]
+"I never...once forgot about you...."{waitForClick}{clearText}{marker}{sound C5A415}{appendText}[Tsugumi]
+"All...this...time...."{waitForClick}{clearText}{marker}{sound C5A416}{appendText}[Tsugumi]
+"I have wanted to see you...."{waitForClick}{clearText}{marker}{sound C5A417}{appendText}[Tsugumi]
+"Find you...and apologize...."{waitForClick}{clearText}{marker}{sound C5A418}{appendText}[Sara]
+"It's alright...."{waitForClick}{clearText}{marker}{sound C5A419}{appendText}[Sara]
+"Mama...."{waitForClick}{clearText}{marker}{sound C5A420}{appendText}[Sara]
+"You don't need to apologize...."{waitForClick}{clearText}{marker}{sound C5A421}{appendText}[Sara]
+"I...it's enough just to...be with you..."{waitForClick}{clearText}{marker}{appendText}As we held onto each other, we understood 
+everything.{waitForClick}{clearText}{marker}{appendText}Sara and I accepted everything, understood and 
+forgave.{waitForClick}{clearText}{marker}{appendText}Reasons weren't important.{waitForClick}{clearText}{marker}{appendText}At that moment, a quiet peace filled us...{waitForClick}{clearText}{marker}{appendText}It was enough.{waitForClick}{clearText}{marker}{appendText}We didn't require anything else.{waitForClick}{clearText}{marker}{appendText}I relaxed, and leaned against my mother.{waitForClick}{clearText}{marker}{appendText}She was warm.{waitForClick}{clearText}{marker}{appendText}I closed my eyes, and was intoxicated by her 
+warmth.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Mother...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...Mother...."{waitForClick}{clearText}
+
+[00000920]10: 
+[00000921]18: hideTextbox
+[00000922]10: 
+[00000923]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[0000092a]10: 
+[0000092b]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00000935]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000093f]27 00 00: fadeOutMonoColorOverlay
+[00000942]00: 
+[00000943]05 83 00 00: unSkippableDelay 3
+[00000947]10: 
+[00000948]19: showTextbox
+[00000949]ff 41 00: text 41
+{marker}{appendText}A cozy slumber....{waitForClick}{clearText}{marker}{appendText}A soft breeze under the May sunshine....{waitForClick}{clearText}{marker}{appendText}Peace....{waitForClick}{clearText}{marker}{appendText}It was like floating on the calm ocean....{waitForClick}{clearText}{marker}{appendText}Swaying comfortably....{waitForClick}{clearText}{marker}{appendText}Cuddled up together....{waitForClick}{clearText}{marker}{appendText}before I knew it I had stopped crying...{waitForClick}{clearText}{marker}{appendText}All I could hear was...just our calm breathing 
+and...{waitForClick}{clearText}{marker}{appendText}My mother's heartbeat....{waitForClick}{clearText}{marker}{appendText}Thump, thump...Thump, thump...Thump, thump.{waitForClick}{clearText}{marker}{appendText}I was alive.{waitForClick}{clearText}{marker}{appendText}Or maybe I had just been born. {waitForClick}{clearText}{marker}{appendText}Thump, thump...Thump, thump...Thump, thump.{waitForClick}{clearText}{marker}{appendText}Everything was affirmed and accepted and 
+forgiven.{waitForClick}{clearText}{marker}{appendText}There was no me, nor Sara, nor Tsugumi....{waitForClick}{clearText}{marker}{appendText}There was only one life connected together....{waitForClick}{clearText}{marker}{appendText}Just one single soul.{waitForClick}{clearText}
+
+[0000094c]10: 
+[0000094d]18: hideTextbox
+[0000094e]10: 
+[0000094f]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000957]10: 
+[00000958]04: stopBGM
+[00000959]10: 
+[0000095a]0c 00 00 00 00 30 00 86 00 00 82 00 00: bgload 00000000 BG38A2 6 2
+[00000967]10: 
+[00000968]20 a0 2c 00 00: showDimOverlay
+[0000096d]10: 
+[0000096e]03 a0 16 00 00 a0 5f 00 00: playBGM 22 95
+[00000977]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000981]27 00 00: fadeOutMonoColorOverlay
+[00000984]00: 
+[00000985]05 a0 19 00 00: unSkippableDelay 25
+[0000098a]10: 
+[0000098b]18: hideTextbox
+[0000098c]fe 28 0a a2 13 14 14 00 81 00 00: turnOnFullscreenTextMode
+[00000997]10: 
+[00000998]19: showTextbox
+[00000999]ff 42 00: text 42
+{marker}{appendText}In the year 2017, May 7th, 11 a.m.{waitForClick}
+{appendText}The men from the Leiblich were waiting for 
+Tsugumi when she got to the floating island.{waitForClick}
+{appendText}Tsugumi, a carrier of the Cure Virus....{waitForClick}
+{appendText}To them she was a valuable sample...{waitForClick}{nextPage x2}
+
+[0000099c]10: 
+[0000099d]18: hideTextbox
+[0000099e]10: 
+[0000099f]19: showTextbox
+[000009a0]ff 43 00: text 43
+{marker}{appendText}Their eyes glaring, and mouths half open, she 
+could see their dark wet tongues.{waitForClick}
+{appendText}It was almost possible for Tsugumi to smell 
+the reek of their excitement.{waitForClick}
+{appendText}Like the smell of men lusting after flesh....{waitForClick}
+{appendText}It was a fetid stench, greasy and rotten.{waitForClick}
+{appendText}For it was Tsugumi's body that they were after.{waitForClick}{nextPage x2}
+
+[000009a3]10: 
+[000009a4]18: hideTextbox
+[000009a5]10: 
+[000009a6]19: showTextbox
+[000009a7]ff 44 00: text 44
+{marker}{appendText}What they wanted was nothing more that to 
+perform human experiments under the pretext 
+of 'Making the ultimate human dream come true.'{waitForClick}
+{appendText}By using Tsugumi's body, they were planning 
+to gain knowledge, fame and fortune.{waitForClick}
+{appendText}That was indeed their desire.{waitForClick}{nextPage x2}
+
+[000009aa]10: 
+[000009ab]18: hideTextbox
+[000009ac]10: 
+[000009ad]19: showTextbox
+[000009ae]ff 45 00: text 45
+{marker}{appendText}'We've been waiting for you.' One of them 
+took a deep bow.{waitForClick}
+{appendText}Behind his veneer of politeness, was an evil 
+that threatened to spill forth, making 
+Tsugumi sick to her stomach.{waitForClick}
+{appendText}Some of the others in his entourage licked 
+their lips...swallowing their saliva like 
+dogs gone mad with the hunt.{waitForClick}{nextPage x2}
+
+[000009b1]10: 
+[000009b2]18: hideTextbox
+[000009b3]10: 
+[000009b4]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[000009be]10: 
+[000009bf]19: showTextbox
+[000009c0]ff 46 00: text 46
+{marker}{appendText}That instant, Tsugumi kicked hard off the 
+ground, breaking into a run.{waitForClick}
+{appendText}She ran across the wide surface of the huge 
+artificial island, desperately scaling the 
+high surrounding fence and fled into the 
+nearby foliage.{waitForClick}{nextPage x2}
+
+[000009c3]10: 
+[000009c4]18: hideTextbox
+[000009c5]10: 
+[000009c6]0c 00 00 00 00 31 00 80 00 00 82 00 00: bgload 00000000 BG39A2 0 2
+[000009d3]10: 
+[000009d4]19: showTextbox
+[000009d5]ff 47 00: text 47
+{marker}{appendText}Their cacophony of screams and angry cursing 
+faded behind her.{waitForClick}
+{appendText}Tsugumi hid and waited until nightfall.{waitForClick}
+{appendText}She held a single hamster to her chest....{waitForClick}{nextPage x2}
+
+[000009d8]10: 
+[000009d9]18: hideTextbox
+[000009da]10: 
+[000009db]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[000009e3]10: 
+[000009e4]0c 00 00 00 00 32 00 86 00 00 82 00 00: bgload 00000000 BG38A3 6 2
+[000009f1]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000009fb]27 00 00: fadeOutMonoColorOverlay
+[000009fe]00: 
+[000009ff]05 a0 12 00 00: unSkippableDelay 18
+[00000a04]10: 
+[00000a05]19: showTextbox
+[00000a06]ff 48 00: text 48
+{marker}{appendText}At night -{waitForClick}
+{appendText}A supply-carrying vessel slipped out of the 
+floating island's port.{waitForClick}{nextPage x2}
+
+[00000a09]10: 
+[00000a0a]18: hideTextbox
+[00000a0b]10: 
+[00000a0c]19: showTextbox
+[00000a0d]ff 49 00: text 49
+{marker}{appendText}Tsugumi had stowed away on the vessel, hiding 
+herself among the cargo. She was headed to the 
+mainland.{waitForClick}
+{appendText}From that moment on, Tsugumi's life was 
+consumed with one thought 'how to escape from 
+them.'{waitForClick}
+{appendText}Although she wasn't a criminal, she avoided 
+people, preferring to hide in the darkness. 
+All the while threatened by ominous feelings 
+of being hunted. {waitForClick}{nextPage x2}
+
+[00000a10]10: 
+[00000a11]18: hideTextbox
+[00000a12]10: 
+[00000a13]0d 80 00 00 80 00 00 81 00 00: removeBG 0 0 1
+[00000a1d]10: 
+[00000a1e]19: showTextbox
+[00000a1f]ff 4a 00: text 4a
+{marker}{appendText}Nothing changed after she safely made it to 
+land.{waitForClick}
+{appendText}Every few weeks she moved from a town to a 
+different town, wandering in the darkness....{waitForClick}
+{appendText}She slept under bridges, under back street 
+eaves, pipes pouring into the ocean and even 
+in public restrooms.{waitForClick}
+{appendText}It was an endless cycle of running. She never 
+had a second's peace.{waitForClick}{nextPage x2}
+
+[00000a22]10: 
+[00000a23]18: hideTextbox
+[00000a24]10: 
+[00000a25]19: showTextbox
+[00000a26]ff 4b 00: text 4b
+{marker}{appendText}She couldn't turn to the police.{waitForClick}
+{appendText}She had no place to live, her identity was 
+uncertain, and her age and appearance didn't 
+match....{waitForClick}
+{appendText}The police would only doubt her.{waitForClick}
+{appendText}Information regarding Tsugumi had spread 
+through the national police network, it was 
+only a matter of time before Leiblich would 
+find her.{waitForClick}{nextPage x2}
+
+[00000a29]10: 
+[00000a2a]18: hideTextbox
+[00000a2b]10: 
+[00000a2c]19: showTextbox
+[00000a2d]ff 4c 00: text 4c
+{marker}{appendText}Leiblich's influence even extended to national 
+politics.{waitForClick}
+{appendText}There was nothing else for Tsugumi to do but 
+continue to hide in back alleys.{waitForClick}
+{appendText}She hated Leiblich.{waitForClick}
+{appendText}They had destroyed everything Tsugumi had 
+cared about, and made her life a living 
+hell...what's more.... {waitForClick}{nextPage x2}
+
+[00000a30]10: 
+[00000a31]18: hideTextbox
+[00000a32]10: 
+[00000a33]19: showTextbox
+[00000a34]ff 4d 00: text 4d
+{marker}{appendText}They had taken away the love of her 
+life...Takeshi Kuranari.{waitForClick}
+{appendText}She wanted to get revenge on Leiblich with 
+every fiber of her being.{waitForClick}
+{appendText}Tsugumi came to hate this world, and her heart 
+became even more hardened to it.{waitForClick}{nextPage x2}
+
+[00000a37]10: 
+[00000a38]18: hideTextbox
+[00000a39]10: 
+[00000a3a]0c 00 00 00 00 33 00 80 00 00 82 00 00: bgload 00000000 IMG06A 0 2
+[00000a47]10: 
+[00000a48]19: showTextbox
+[00000a49]ff 4e 00: text 4e
+{marker}{appendText}Two months had passed. It was summertime.{waitForClick}
+{appendText}All of a sudden she began feeling sick....{waitForClick}
+{appendText}She knew she had stopped menstruating, but she 
+didn't want to think about the possibility.{waitForClick}{nextPage x2}
+
+[00000a4c]10: 
+[00000a4d]18: hideTextbox
+[00000a4e]10: 
+[00000a4f]19: showTextbox
+[00000a50]ff 4f 00: text 4f
+{marker}{appendText}She went to visit an illegal doctor who was 
+well-known in the back streets.{waitForClick}
+{appendText}Tsugumi was pregnant.{waitForClick}
+{appendText}She was sure it was Takeshi's baby. She'd 
+never been with anyone else.{waitForClick}
+{appendText}She was pregnant....{waitForClick}{nextPage x2}
+
+[00000a53]10: 
+[00000a54]18: hideTextbox
+[00000a55]10: 
+[00000a56]19: showTextbox
+[00000a57]ff 50 00: text 50
+{marker}{appendText}At night, she went to the deserted coastal 
+area of a small, nearby town.{waitForClick}
+{appendText}There were nothing but printing factories and 
+abandoned houses.{waitForClick}
+{appendText}Unsure if it was a river or the ocean, she 
+sat on a boat dock, looking at a neon sign by 
+the highway.{waitForClick}
+{appendText}She touched her stomach.{waitForClick}
+{appendText}She felt a sense of awe and joy, at the fact 
+there was life growing in her stomach, and 
+that it was connected to her.{waitForClick}{nextPage x2}
+
+[00000a5a]10: 
+[00000a5b]18: hideTextbox
+[00000a5c]10: 
+[00000a5d]19: showTextbox
+[00000a5e]ff 51 00: text 51
+{marker}{appendText}The neon light glittered and flickered off of 
+the water's surface.{waitForClick}
+{appendText}Tsugumi looked at the lights...with her hands 
+on her stomach....{waitForClick}
+{appendText}Realizing that Takeshi's babies were inside 
+her, she couldn't stop crying.{waitForClick}
+{appendText}They might have only been only an inch big at 
+that time....{waitForClick}{nextPage x2}
+
+[00000a61]10: 
+[00000a62]18: hideTextbox
+[00000a63]10: 
+[00000a64]19: showTextbox
+[00000a65]ff 52 00: text 52
+{marker}{appendText}But the survival of the two babies 
+outstripped the needs of the mother's body 
+that surrounded them....{waitForClick}
+{appendText}Tsugumi almost had the illusion that 'it 
+wasn't her who bore the children, but it was 
+actually they who bore her.'{waitForClick}
+{appendText}Everything that she was, she poured into her 
+two babies.{waitForClick}{nextPage x2}
+
+[00000a68]10: 
+[00000a69]18: hideTextbox
+[00000a6a]10: 
+[00000a6b]19: showTextbox
+[00000a6c]ff 53 00: text 53
+{marker}{appendText}She felt that she was part of the babies, not 
+the other way around.{waitForClick}
+{appendText}I was then that Tsugumi decided to sacrifice 
+everything for the two tiny lives.{waitForClick}
+{appendText}Love was a concept to her, but if love could 
+be brought into physical form, to her, it 
+seemed it must be the babies in her stomach.{waitForClick}{nextPage x2}
+
+[00000a6f]10: 
+[00000a70]18: hideTextbox
+[00000a71]10: 
+[00000a72]19: showTextbox
+[00000a73]ff 54 00: text 54
+{marker}{appendText}That was it, love was growing in her stomach.{waitForClick}
+{appendText}Takeshi and Tsugumi's babies....{waitForClick}
+{appendText}Before long, the hatred she had felt towards 
+everything had disappeared without a trace.{waitForClick}
+{appendText}For the first time, Tsugumi felt as though 
+there were a higher power guiding her life.{waitForClick}{nextPage x2}
+
+[00000a76]10: 
+[00000a77]18: hideTextbox
+[00000a78]10: 
+[00000a79]0d 80 00 00 80 00 00 80 00 00: removeBG 0 0 0
+[00000a83]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000a8e]10: 
+[00000a8f]21 a0 10 00 00: closeDimOverlay
+[00000a94]10: 
+[00000a95]19: showTextbox
+[00000a96]ff 55 00: text 55
+{marker}{appendText}Seven months later. January 21, 2018.{waitForClick}
+{appendText}Tsugumi was suddenly struck with contractions.{waitForClick}
+{appendText}When they came, the back alley doctor had gone 
+somewhere.{waitForClick}{nextPage x2}
+
+[00000a99]10: 
+[00000a9a]18: hideTextbox
+[00000a9b]10: 
+[00000a9c]19: showTextbox
+[00000a9d]ff 56 00: text 56
+{marker}{appendText}She visited a nearby clinic.  {waitForClick}
+{appendText}She had no medical insurance, no 
+identification. Most importantly she had no 
+money...{waitForClick}
+{appendText}When he found out that she couldn't pay, the 
+doctor beat Tsugumi as though she were a 
+stray animal.{waitForClick}{nextPage x2}
+
+[00000aa0]10: 
+[00000aa1]18: hideTextbox
+[00000aa2]10: 
+[00000aa3]19: showTextbox
+[00000aa4]ff 57 00: text 57
+{marker}{appendText}With nowhere else to go, the two babies were 
+born in an old boat shack.{waitForClick}
+{appendText}An old woman was living there, but Tsugumi 
+could not tell whether she lived there or was 
+just sleeping there temporally.{waitForClick}
+{appendText}It was this old woman who helped Tsugumi 
+through the birth.{waitForClick}{nextPage x2}
+
+[00000aa7]10: 
+[00000aa8]18: hideTextbox
+[00000aa9]10: 
+[00000aaa]19: showTextbox
+[00000aab]ff 58 00: text 58
+{marker}{appendText}'Ooh how precious, so precious...you done a 
+fine job, deary.'{waitForClick}
+{appendText}The old lady repeated this many times, as she 
+gently rinsed the babies in a tin basin.{waitForClick}
+{appendText}The sweat-covered Tsugumi was lying down, 
+with only a thin towel between her and a 
+hardwood floor.{waitForClick}
+{appendText}Tsugumi's eyes gazed unfocused out a nearby 
+window.{waitForClick}{nextPage x2}
+
+[00000aae]10: 
+[00000aaf]18: hideTextbox
+[00000ab0]10: 
+[00000ab1]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[00000ab8]10: 
+[00000ab9]20 a0 29 00 00: openSnowFallingAnim
+[00000abe]fe 28 0a a0 ab 14 14 00 c0 3d: setMonoColorOverlayFadeOutDuration VAR_c0_61
+[00000ac8]27 00 00: fadeOutMonoColorOverlay
+[00000acb]00: 
+[00000acc]05 a0 30 00 00: unSkippableDelay 48
+[00000ad1]10: 
+[00000ad2]19: showTextbox
+[00000ad3]ff 59 00: text 59
+{marker}{appendText}Snow was falling outside.{waitForClick}
+{appendText}'How darling...yes a precious boy-child and a 
+girl...which one'll ya hold first?'{waitForClick}
+{appendText}The illegal doctor had told her, so she was 
+expecting twins, but she never imagined that 
+they would be fraternal. {waitForClick}{nextPage x2}
+
+[00000ad6]10: 
+[00000ad7]18: hideTextbox
+[00000ad8]10: 
+[00000ad9]19: showTextbox
+[00000ada]ff 5a 00: text 5a
+{marker}{appendText}A bit surprised, she said...{waitForClick}
+{appendText}'Both at the same time.... '{waitForClick}
+{appendText}Wrapped in an old cloth, Tsugumi gently held 
+them to her chest.{waitForClick}
+{appendText}'Not to worry, my deary. I boiled them cloth 
+and the scissors what cut their cord in hot 
+water good, I did.'{waitForClick}{nextPage x2}
+
+[00000add]10: 
+[00000ade]18: hideTextbox
+[00000adf]10: 
+[00000ae0]19: showTextbox
+[00000ae1]ff 5b 00: text 5b
+{marker}{appendText}'Thank you.'{waitForClick}
+{appendText}Tsugumi thanked her.{waitForClick}
+{appendText}'Thank you...thank you very much....'{waitForClick}
+{appendText}She gave thanks for the two lives who had 
+been born safely.{waitForClick}
+{appendText}'Thank you....'{waitForClick}
+{appendText}And these last words were directed toward the 
+deep darkness beyond the window.{waitForClick}{nextPage x2}
+
+[00000ae4]10: 
+[00000ae5]18: hideTextbox
+[00000ae6]10: 
+[00000ae7]19: showTextbox
+[00000ae8]ff 5c 00: text 5c
+{marker}{appendText}The snow was falling.{waitForClick}
+{appendText}The two babies pressed to Tsugumi's chest 
+with eyes closed, let out small yawns.{waitForClick}{nextPage x2}
+
+[00000aeb]10: 
+[00000aec]18: hideTextbox
+[00000aed]10: 
+[00000aee]45 a0 18 00 00 81 00 00: monoColorOverlay 24 1
+[00000af6]10: 
+[00000af7]21 8e 00 00: closeSnowFallingAnim
+[00000afb]10: 
+[00000afc]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00000b06]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000b10]27 00 00: fadeOutMonoColorOverlay
+[00000b13]00: 
+[00000b14]05 8a 00 00: unSkippableDelay 10
+[00000b18]10: 
+[00000b19]20 a0 2c 00 00: showDimOverlay
+[00000b1e]10: 
+[00000b1f]19: showTextbox
+[00000b20]ff 5d 00: text 5d
+{marker}{appendText}The Cure Virus.{waitForClick}
+{appendText}Soon after she had given birth, Tsugumi's 
+thoughts were turned to the possibility.{waitForClick}
+{appendText}'If they got infected by Cure while they were 
+inside of me....'{waitForClick}
+{appendText}'And if their DNA was altered just like me....'{waitForClick}
+{appendText}Tsugumi visited the illegal doctor.{waitForClick}{nextPage x2}
+
+[00000b23]10: 
+[00000b24]18: hideTextbox
+[00000b25]10: 
+[00000b26]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[00000b2d]10: 
+[00000b2e]40 00 00 00 00 34 00 86 00 00 82 00 00 a1 90 00 00 80 00 00 a1 90 00 00 a1 2c 00 00: bgloadCrop 00000000 EV_YU10A 6 2 400 0 400 300
+[00000b4a]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000b54]27 00 00: fadeOutMonoColorOverlay
+[00000b57]00: 
+[00000b58]05 a0 12 00 00: unSkippableDelay 18
+[00000b5d]10: 
+[00000b5e]19: showTextbox
+[00000b5f]ff 5e 00: text 5e
+{marker}{appendText}'Don't worry about it.' He explained 
+laughing...{waitForClick}
+{appendText}According to taxonomic classification, a pure 
+human would belong to 'Primates Anthropoidea 
+Hominoidea Hominidae Homo Genus Sapiens.'{waitForClick}
+{appendText}Tsugumi, whose DNA information was altered by 
+the Cure Virus, was not a pure human anymore, 
+but rather a subspecies of it.{waitForClick}{nextPage x2}
+
+[00000b62]10: 
+[00000b63]18: hideTextbox
+[00000b64]10: 
+[00000b65]19: showTextbox
+[00000b66]ff 5f 00: text 5f
+{marker}{appendText}'Let's just call you subspecies 'Cure' for 
+now....'{waitForClick}
+{appendText}'Now any kids who were born from 'Takeshi, 
+the Homo Sapiens' and 'Tsugumi, the Cure' 
+would technically be 'hybrids.''{waitForClick}{nextPage x2}
+
+[00000b69]10: 
+[00000b6a]18: hideTextbox
+[00000b6b]10: 
+[00000b6c]19: showTextbox
+[00000b6d]ff 60 00: text 60
+{marker}{appendText}'Now, by the way I guess I should tell you 
+that the Cure Virus only infects pure humans, 
+the 'Homo Sapiens.''{waitForClick}
+{appendText}'So, there's no way the Cure Virus possibly 
+affect your two 'little hybrids' there.'{waitForClick}
+{appendText}'While not much is know about the Cure Virus, 
+some of the unique functions scientists have 
+discovered, such as 'regenerating telomeres' 
+and 'regenerative healing' are inherited 
+recessively.'{waitForClick}{nextPage x2}
+
+[00000b70]10: 
+[00000b71]18: hideTextbox
+[00000b72]10: 
+[00000b73]19: showTextbox
+[00000b74]ff 61 00: text 61
+{marker}{appendText}'For blood types, without exception all 
+children born from a 'type AA father' and a 
+'type OO mother,' for instance, can only be 
+'type AO,' with a 'type A' predisposition.'{waitForClick}
+{appendText}'Why? Because type A factors are inherited 
+dominantly, and type O factors are inherited 
+recessively.'{waitForClick}
+{appendText}'In order for a child's blood type to be 
+'type O'....'{waitForClick}{nextPage x2}
+
+[00000b77]10: 
+[00000b78]18: hideTextbox
+[00000b79]10: 
+[00000b7a]19: showTextbox
+[00000b7b]ff 62 00: text 62
+{marker}{appendText}'...you'd have to have a mixture of either 
+'AO x AO', 'AO x BO', 'AO x OO', 'BO x BO', 
+'BO x OO', or 'OO x OO'....'{waitForClick}
+{appendText}'...it can only be one of the above, meaning 
+that BOTH the parents gotta add that type 'O' 
+factor to the genetic milkshake.'{waitForClick}
+{appendText}'Same goes for the Cure Virus.'{waitForClick}{nextPage x2}
+
+[00000b7e]10: 
+[00000b7f]18: hideTextbox
+[00000b80]10: 
+[00000b81]19: showTextbox
+[00000b82]ff 63 00: text 63
+{marker}{appendText}'Any child born from a pureblooded 'Sapiens' 
+and 'Cure' will...'{waitForClick}
+{appendText}'...all be 'Sapiens-Cure,' and inherit the 
+dominant physical traits of both.'{waitForClick}
+{appendText}'For them rug rats to become full-blooded 
+'Cure.'....'{waitForClick}{nextPage x2}
+
+[00000b85]10: 
+[00000b86]18: hideTextbox
+[00000b87]10: 
+[00000b88]19: showTextbox
+[00000b89]ff 64 00: text 64
+{marker}{appendText}'...the parents'd have be 'Cure x Cure', 
+'Sapiens Cure x Cure', or 'Sapiens Cure x 
+Sapiens Cure.'...'{waitForClick}
+{appendText}'...any of those combinations, meaning that 
+both parents have to be part or all Cure.'{waitForClick}{nextPage x2}
+
+[00000b8c]10: 
+[00000b8d]18: hideTextbox
+[00000b8e]10: 
+[00000b8f]19: showTextbox
+[00000b90]ff 65 00: text 65
+{marker}{appendText}'And since these two little critters were 
+born from a 'pure Sapiens' and 'pure Cure...''{waitForClick}
+{appendText}'They'll have the same physical traits as a 
+pure human, and won't possess the Cure traits 
+like perpetual youth.'{waitForClick}{nextPage x2}
+
+[00000b93]10: 
+[00000b94]18: hideTextbox
+[00000b95]10: 
+[00000b96]19: showTextbox
+[00000b97]ff 66 00: text 66
+{marker}{appendText}'So, you don't have nothing to worry about, 
+alright?' The doctor held up the two babies 
+Tsugumi had brought, and laughed again.{waitForClick}
+{appendText}Tsugumi didn't know his background.{waitForClick}
+{appendText}It was probable that he had been part of 
+Leiblich's laboratory staff in the past, 
+since he knew so much about the Cure Virus.{waitForClick}
+{appendText}But he didn't seem to be one of them. Tsugumi 
+figured she could trust him.{waitForClick}{nextPage x2}
+
+[00000b9a]10: 
+[00000b9b]18: hideTextbox
+[00000b9c]10: 
+[00000b9d]19: showTextbox
+[00000b9e]ff 67 00: text 67
+{marker}{appendText}Among outcasts, there is an unspoken law: You 
+don't go nosing around in other people's pasts.{waitForClick}
+{appendText}Tsugumi didn't ask him anything more, and he 
+didn't demand to know about her either.{waitForClick}{nextPage x2}
+
+[00000ba1]10: 
+[00000ba2]18: hideTextbox
+[00000ba3]10: 
+[00000ba4]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000bac]10: 
+[00000bad]0c 00 00 00 00 35 00 86 00 00 82 00 00: bgload 00000000 IMG06A 6 2
+[00000bba]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000bc4]27 00 00: fadeOutMonoColorOverlay
+[00000bc7]00: 
+[00000bc8]05 a0 19 00 00: unSkippableDelay 25
+[00000bcd]10: 
+[00000bce]19: showTextbox
+[00000bcf]ff 68 00: text 68
+{marker}{appendText}A year after giving birth.{waitForClick}
+{appendText}It was winter again.{waitForClick}
+{appendText}Tsugumi had rented a tiny room and lived 
+together with the two babies.{waitForClick}
+{appendText}Of course Chami was there as well.{waitForClick}
+{appendText}It was a quiet, rustic little coastal town.{waitForClick}
+{appendText}It wasn't a city or tourist town, no fishing 
+or farming...nothing...just a dreary port town.{waitForClick}{nextPage x2}
+
+[00000bd2]10: 
+[00000bd3]18: hideTextbox
+[00000bd4]10: 
+[00000bd5]19: showTextbox
+[00000bd6]ff 69 00: text 69
+{marker}{appendText}During the day, Tsugumi worked for next to 
+nothing at a sewing factory, while the babies 
+stayed at a daycare center.{waitForClick}
+{appendText}She spent every day, glued to a sewing 
+machine from early morning to 4 p.m., and 
+after that she would spend time with the 
+babies.{waitForClick}
+{appendText}Her wages were very low and of course they 
+were poor. She couldn't even afford 
+disposable diapers.{waitForClick}{nextPage x2}
+
+[00000bd9]10: 
+[00000bda]18: hideTextbox
+[00000bdb]10: 
+[00000bdc]19: showTextbox
+[00000bdd]ff 6a 00: text 6a
+{marker}{appendText}Tsugumi collected small scraps of cloth, 
+leftovers from the factory and sewed diapers 
+and clothes for the babies.{waitForClick}
+{appendText}Despite the harsh living conditions, the 
+babies were growing healthily.{waitForClick}
+{appendText}Their life was a peaceful one, and although 
+they were poor, the poverty didn't threaten 
+them. They were content.{waitForClick}
+{appendText}The three of them were always smiling.{waitForClick}{nextPage x2}
+
+[00000be0]10: 
+[00000be1]18: hideTextbox
+[00000be2]10: 
+[00000be3]19: showTextbox
+[00000be4]ff 6b 00: text 6b
+{marker}{appendText}'Momma...momma....' 'Oh... Chammiii, 
+Chammiii...'{waitForClick}
+{appendText}They were already beginning to talk.{waitForClick}
+{appendText}The boy had starting walking a few steps at a 
+time. The was girl able to stand, barely, as 
+she held onto things.{waitForClick}{nextPage x2}
+
+[00000be7]10: 
+[00000be8]18: hideTextbox
+[00000be9]10: 
+[00000bea]19: showTextbox
+[00000beb]ff 6c 00: text 6c
+{marker}{appendText}The girl had begun to speak 'Oh...Chammiii, 
+Chammiii....' which was very unusual for a 
+one-year-old.{waitForClick}
+{appendText}The boy, it seemed, grew faster physically 
+and the girl grew faster intellectually.{waitForClick}
+{appendText}Tsugumi tenderly watched over their cute 
+gestures. She was filled with happiness.{waitForClick}{nextPage x2}
+
+[00000bee]10: 
+[00000bef]18: hideTextbox
+[00000bf0]10: 
+[00000bf1]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000bf9]10: 
+[00000bfa]0c 00 00 00 00 36 00 86 00 00 82 00 00: bgload 00000000 EV_SA13D 6 2
+[00000c07]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000c11]27 00 00: fadeOutMonoColorOverlay
+[00000c14]00: 
+[00000c15]05 a0 19 00 00: unSkippableDelay 25
+[00000c1a]10: 
+[00000c1b]19: showTextbox
+[00000c1c]ff 6d 00: text 6d
+{marker}{appendText}May 7, 2019.{waitForClick}
+{appendText}The two babies were 15 months old. {waitForClick}
+{appendText}Tsugumi had taken them to the beach.{waitForClick}{nextPage x2}
+
+[00000c1f]10: 
+[00000c20]18: hideTextbox
+[00000c21]10: 
+[00000c22]19: showTextbox
+[00000c23]ff 6e 00: text 6e
+{marker}{appendText}The boy ran around the sand, falling and 
+getting back up over and over.{waitForClick}
+{appendText}The girl was sitting by the water putting her 
+hands in the waves....{waitForClick}
+{appendText}She was giggling saying 'Cooold...so cold....'{waitForClick}{nextPage x2}
+
+[00000c26]10: 
+[00000c27]18: hideTextbox
+[00000c28]10: 
+[00000c29]19: showTextbox
+[00000c2a]ff 6f 00: text 6f
+{marker}{appendText}Watching out over the flat surface of the 
+ocean, Tsugumi's thoughts turned to Takeshi.{waitForClick}
+{appendText}'So live! As long as you're alive, live! Don't 
+worry...I'm not going to die - those were 
+Takeshi's last words to her.{waitForClick}
+{appendText}It had been two years already.{waitForClick}
+{appendText}'I'm not going to die.'  After saying that, 
+he sunk to the bottom of the ocean, 
+protecting the woman he loved, protecting the 
+children right in front of her.{waitForClick}{nextPage x2}
+
+[00000c2d]10: 
+[00000c2e]18: hideTextbox
+[00000c2f]10: 
+[00000c30]19: showTextbox
+[00000c31]ff 70 00: text 70
+{marker}{appendText}'You fool, you're a liar.' Tsugumi whispered 
+to the ocean.{waitForClick}
+{appendText}But at the same time, she still hadn't given 
+up hope.{waitForClick}
+{appendText}'No...He must be alive somewhere. He's a man 
+of his word.'{waitForClick}
+{appendText}Just then.{waitForClick}{nextPage x2}
+
+[00000c34]10: 
+[00000c35]18: hideTextbox
+[00000c36]10: 
+[00000c37]19: showTextbox
+[00000c38]ff 71 00: text 71
+{marker}{appendText}A wave swallowed the girl, who had been 
+playing near the edge of the water.{waitForClick}
+{appendText}For an adult, it would hardly have reached 
+their shin, but for a one-year-old baby, it 
+was as big as tsunami.{waitForClick}
+{appendText}The girl disappeared in a splash of water and 
+was sucked out into the ocean like a piece of 
+driftwood by the tide.{waitForClick}{nextPage x2}
+
+[00000c3b]10: 
+[00000c3c]18: hideTextbox
+[00000c3d]10: 
+[00000c3e]19: showTextbox
+[00000c3f]ff 72 00: text 72
+{marker}{appendText}Tsugumi ran as hard as she could, held back 
+by the resistance of the sand.{waitForClick}
+{appendText}But before she could get there, something 
+unbelievable happened.{waitForClick}
+{appendText}The boy, who was only one year and three 
+months old, jumped into the water and saved 
+the girl.  {waitForClick}
+{appendText}Hardly able to believe what she had seen, 
+Tsugumi rushed toward them.{waitForClick}{nextPage x2}
+
+[00000c42]10: 
+[00000c43]18: hideTextbox
+[00000c44]10: 
+[00000c45]19: showTextbox
+[00000c46]ff 73 00: text 73
+{marker}{appendText}She carried them to dry sand.{waitForClick}
+{appendText}The girl started crying.{waitForClick}
+{appendText}The boy, seemingly unaware of what had 
+happened, looked at his sister crying.{waitForClick}{nextPage x2}
+
+[00000c49]10: 
+[00000c4a]18: hideTextbox
+[00000c4b]10: 
+[00000c4c]19: showTextbox
+[00000c4d]ff 74 00: text 74
+{marker}{appendText}A few seconds later...he fell over as all his 
+strength had left him.{waitForClick}
+{appendText}That night, both of them came down with a 
+high fever.{waitForClick}{nextPage x2}
+
+[00000c50]10: 
+[00000c51]18: hideTextbox
+[00000c52]10: 
+[00000c53]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000c5b]10: 
+[00000c5c]0c 00 00 00 00 37 00 86 00 00 82 00 00: bgload 00000000 IMG05A 6 2
+[00000c69]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000c73]27 00 00: fadeOutMonoColorOverlay
+[00000c76]00: 
+[00000c77]05 a0 19 00 00: unSkippableDelay 25
+[00000c7c]10: 
+[00000c7d]19: showTextbox
+[00000c7e]ff 75 00: text 75
+{marker}{appendText}It was summertime. A year and a half had 
+passed since the birth.{waitForClick}
+{appendText}All of that time in the past year and a half 
+had been filled with happiness.{waitForClick}
+{appendText}Nothing special had happened...and that was 
+why it had been so peaceful....{waitForClick}{nextPage x2}
+
+[00000c81]10: 
+[00000c82]18: hideTextbox
+[00000c83]10: 
+[00000c84]45 a0 12 00 00 81 00 00: monoColorOverlay 18 1
+[00000c8c]10: 
+[00000c8d]0c 00 00 00 00 38 00 86 00 00 82 00 00: bgload 00000000 EV_TU17A 6 2
+[00000c9a]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000ca5]10: 
+[00000ca6]21 a0 10 00 00: closeDimOverlay
+[00000cab]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000cb5]27 00 00: fadeOutMonoColorOverlay
+[00000cb8]00: 
+[00000cb9]05 a0 19 00 00: unSkippableDelay 25
+[00000cbe]10: 
+[00000cbf]20 a0 2c 00 00: showDimOverlay
+[00000cc4]10: 
+[00000cc5]19: showTextbox
+[00000cc6]ff 76 00: text 76
+{marker}{appendText}The boy was a wild one, and Tsugumi could 
+hardly take her eyes off of him for a second.{waitForClick}
+{appendText}He constantly was putting everything (even 
+Chami) in his mouth....{waitForClick}
+{appendText}Any electric appliance that he touched seemed 
+to break, and he wouldn't stop jamming metal 
+wires into the outlets.{waitForClick}{nextPage x2}
+
+[00000cc9]10: 
+[00000cca]18: hideTextbox
+[00000ccb]10: 
+[00000ccc]19: showTextbox
+[00000ccd]ff 77 00: text 77
+{marker}{appendText}The girl wasn't quite as much of a challenge, 
+since she moved about less, but still Tsugumi 
+had to put up with her stubbornness.{waitForClick}
+{appendText}She refused to eat things she didn't like, 
+and when she got in a bad mood, she wouldn't 
+stop fussing...{waitForClick}
+{appendText}And no matter how much Tsugumi warned her, she 
+wouldn't stop playing with her brother's hair.{waitForClick}
+{appendText}And she would always demand for 'More Chami! 
+More Chami!'{waitForClick}{nextPage x2}
+
+[00000cd0]10: 
+[00000cd1]18: hideTextbox
+[00000cd2]10: 
+[00000cd3]19: showTextbox
+[00000cd4]ff 78 00: text 78
+{marker}{appendText}Those days were filled with being buffeted 
+about by her two rambunctious children....{waitForClick}
+{appendText}But no matter how challenging, even those 
+days were filled with happiness.{waitForClick}{nextPage x2}
+
+[00000cd7]10: 
+[00000cd8]18: hideTextbox
+[00000cd9]10: 
+[00000cda]19: showTextbox
+[00000cdb]ff 79 00: text 79
+{marker}{appendText}At night, all three of them slept together 
+cuddled up on a thin mattress. {waitForClick}
+{appendText}'Momma...momma....'{waitForClick}
+{appendText}'Aaah...Chammiii, Chammmiii....'{waitForClick}
+{appendText}Talking in their sleep, the two babies sought 
+their mother's touch. {waitForClick}
+{appendText}Looking down at their sweet innocent gestures, 
+Tsugumi felt bliss she had never know.{waitForClick}{nextPage x2}
+
+[00000cde]10: 
+[00000cdf]18: hideTextbox
+[00000ce0]10: 
+[00000ce1]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[00000ce8]10: 
+[00000ce9]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000cf3]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000cfd]27 00 00: fadeOutMonoColorOverlay
+[00000d00]00: 
+[00000d01]05 a0 12 00 00: unSkippableDelay 18
+[00000d06]10: 
+[00000d07]0d 83 00 00 80 00 00 82 00 00: removeBG 3 0 2
+[00000d11]10: 
+[00000d12]19: showTextbox
+[00000d13]ff 7a 00: text 7a
+{marker}{appendText}One day.{waitForClick}
+{appendText}Her peaceful world was shattered to bits.{waitForClick}{nextPage x2}
+
+[00000d16]10: 
+[00000d17]18: hideTextbox
+[00000d18]10: 
+[00000d19]0c 00 00 00 00 39 00 80 00 00 82 00 00: bgload 00000000 IMG04A 0 2
+[00000d26]10: 
+[00000d27]19: showTextbox
+[00000d28]ff 7b 00: text 7b
+{marker}{appendText}It all happened so unexpectedly....{waitForClick}
+{appendText}Caught up in her life of happiness, Tsugumi 
+had forgotten to watch out for 'them.'{waitForClick}
+{appendText}She didn't know how they had found out, but 
+they had somehow gathered information and 
+showed up without warning. {waitForClick}
+{appendText}Them...the people from Leiblich....{waitForClick}{nextPage x2}
+
+[00000d2b]10: 
+[00000d2c]18: hideTextbox
+[00000d2d]10: 
+[00000d2e]19: showTextbox
+[00000d2f]ff 7c 00: text 7c
+{marker}{appendText}With no time to collect anything, all 
+Tsugumi could bring with her was her two 
+babies and her hamster as she fled.{waitForClick}
+{appendText}So they ran, but....{waitForClick}
+{appendText}It was obvious to Tsugumi that eventually 
+Leiblich would hunt them down.{waitForClick}
+{appendText}As they continued running, Tsugumi thought to 
+herself. {waitForClick}{nextPage x2}
+
+[00000d32]10: 
+[00000d33]18: hideTextbox
+[00000d34]10: 
+[00000d35]19: showTextbox
+[00000d36]ff 7d 00: text 7d
+{marker}{appendText}'Even if I could keep escaping, would it 
+really be happiness for the two children?'{waitForClick}
+{appendText}'They wouldn't be able to go to school.'{waitForClick}
+{appendText}'And it would be too hard on them to keep 
+moving from town to town.'{waitForClick}
+{appendText}'Besides...if we ever get caught, what would 
+they do to my children at Leiblich?'{waitForClick}{nextPage x2}
+
+[00000d39]10: 
+[00000d3a]18: hideTextbox
+[00000d3b]10: 
+[00000d3c]19: showTextbox
+[00000d3d]ff 7e 00: text 7e
+{marker}{appendText}'It's too dangerous for them to be with me....'{waitForClick}
+{appendText}Tsugumi made up her mind.{waitForClick}{nextPage x2}
+
+[00000d40]10: 
+[00000d41]18: hideTextbox
+[00000d42]10: 
+[00000d43]19: showTextbox
+[00000d44]ff 7f 00: text 7f
+{marker}{appendText}She researched an orphanage she could trust 
+and decided to leave them there.{waitForClick}
+{appendText}The two children were just too young...{waitForClick}
+{appendText}Even if Tsugumi had tried to explain, they 
+couldn't have understood.{waitForClick}
+{appendText}With no other option, she left the pendant 
+she had kept with her, making a wish as she 
+gave it.{waitForClick}{nextPage x2}
+
+[00000d47]10: 
+[00000d48]18: hideTextbox
+[00000d49]10: 
+[00000d4a]19: showTextbox
+[00000d4b]ff 80 00: text 80
+{marker}{appendText}'I will come back for you. I will come to get 
+you, I promise.'{waitForClick}
+{appendText}Being too young to understand the situation, 
+the two children just stared at their mother 
+crying.{waitForClick}
+{appendText}Weeping bitter tears, Tsugumi looked back many 
+times as she walked away.{waitForClick}{nextPage x2}
+
+[00000d4e]10: 
+[00000d4f]18: hideTextbox
+[00000d50]10: 
+[00000d51]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[00000d5b]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000d66]10: 
+[00000d67]21 a0 10 00 00: closeDimOverlay
+[00000d6c]10: 
+[00000d6d]19: showTextbox
+[00000d6e]ff 81 00: text 81
+{marker}{appendText}All she had now was Chami.{waitForClick}
+{appendText}From Tsugumi's chest pocket, Chami looked up 
+at her face in puzzlement.{waitForClick}
+{appendText}But even Chami's cute gestures could do 
+little to ease Tsugumi's broken heart.{waitForClick}
+{appendText}She spent many nights in the depth of despair, 
+crying in her sorrow.{waitForClick}{nextPage x2}
+
+[00000d71]10: 
+[00000d72]18: hideTextbox
+[00000d73]10: 
+[00000d74]19: showTextbox
+[00000d75]ff 82 00: text 82
+{marker}{appendText}A few years later.{waitForClick}
+{appendText}By the time Tsugumi went back to the 
+orphanage, the children were already gone.{waitForClick}
+{appendText}From that time on she had gone through life....{waitForClick}
+{appendText}No more than an empty husk...{waitForClick}
+{appendText}Until that day, until that very moment....{waitForClick}
+{appendText}Tsugumi had kept searching for her children....{waitForClick}
+{appendText}Wandering through darkness.{waitForClick}{nextPage x2}
+
+[00000d78]10: 
+[00000d79]18: hideTextbox
+[00000d7a]10: 
+[00000d7b]0c 00 00 00 00 3a 00 80 00 00 81 00 00: bgload 00000000 BG05A3 0 1
+[00000d88]10: 
+[00000d89]43 a0 64 00 00: unknown43 100
+[00000d8e]10: 
+[00000d8f]18: hideTextbox
+[00000d90]fe 28 0a a2 13 14 14 00 80 00 00: turnOffFullscreenTextMode
+[00000d9b]10: 
+[00000d9c]19: showTextbox
+[00000d9d]ff 83 00: text 83
+{marker}{appendText}Tsugumi finished telling her story and closed 
+her eyes gently.{waitForClick}{clearText}{marker}{appendText}She never once mentioned the names 'Hokuto' 
+or 'Sara' in the story.{waitForClick}{clearText}{marker}{appendText}Because those names weren't the names Tsugumi 
+had given them. {waitForClick}{clearText}{marker}{appendText}Someone else had named them 'Hokuto' and 
+'Sara'.{waitForClick}{clearText}
+
+[00000da0]10: 
+[00000da1]18: hideTextbox
+[00000da2]10: 
+[00000da3]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000dab]10: 
+[00000dac]04: stopBGM
+[00000dad]10: 
+[00000dae]19: showTextbox
+[00000daf]ff 84 00: text 84
+{marker}{appendText}..................{waitForClick}{clearText}{marker}{appendText}............{waitForClick}{clearText}{marker}{appendText}......{waitForClick}{clearText}
+
+[00000db2]10: 
+[00000db3]18: hideTextbox
+[00000db4]10: 
+[00000db5]0c 00 00 00 00 3b 00 86 00 00 82 00 00: bgload 00000000 BG25B3 6 2
+[00000dc2]10: 
+[00000dc3]03 83 00 00 a0 64 00 00: playBGM 3 100
+[00000dcb]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[00000dd5]27 00 00: fadeOutMonoColorOverlay
+[00000dd8]00: 
+[00000dd9]05 a0 19 00 00: unSkippableDelay 25
+[00000dde]10: 
+[00000ddf]1f 8e 00 00 a0 36 00 00: clock 14:54
+[00000de7]10: 
+[00000de8]19: showTextbox
+[00000de9]ff 85 00: text 85
+{marker}{appendText}I left Tsugumi and Sara.{waitForClick}{clearText}{marker}{appendText}If I could, I wanted to stay with them 
+forever, but it wasn't possible.{waitForClick}{clearText}{marker}{appendText}There were still many unsolved matters that I 
+needed to take care of.{waitForClick}{clearText}{marker}{appendText}Listening to Tsugumi's story had caused me to 
+suddenly remember something.{waitForClick}{clearText}{marker}{appendText}I had received a phone call before coming to 
+LeMU.{waitForClick}{clearText}{marker}{appendText}Over the phone, a voice had said to me. {waitForClick}{clearText}{marker}{appendText}'If you come to LeMU, you can see your mother 
+and sister.'{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, so that was it...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Before the accident took place, I had been 
+waiting for someone at the rest area."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It must have been my mother and Sara...."{waitForClick}{clearText}{marker}{appendText}Tsugumi must have been roped in to coming to 
+LeMU in the same way I was. {waitForClick}{clearText}{marker}{appendText}—wait, roped in!? {waitForClick}{clearText}{marker}{appendText}—What for...!?{waitForClick}{clearText}{marker}{appendText}I still didn't know the answer to that.{waitForClick}{clearText}{marker}{appendText}But I had some clues....{waitForClick}{clearText}{marker}{appendText}The voice on the phone had been male.{waitForClick}{clearText}{marker}{appendText}Without a doubt I knew whose voice it had been.{waitForClick}{clearText}{marker}{appendText}I ran to him.{waitForClick}{clearText}
+
+[00000dec]10: 
+[00000ded]18: hideTextbox
+[00000dee]10: 
+[00000def]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000df7]10: 
+[00000df8]04: stopBGM
+[00000df9]10: 
+[00000dfa]0c 00 00 00 00 3c 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[00000e07]10: 
+[00000e08]03 84 00 00 a0 64 00 00: playBGM 4 100
+[00000e10]10: 
+[00000e11]0f 81 00 00 00 00 00 00 3d 00 a1 40 00 00 80 00 00: fgload 1 00000000 KB07ADM 320 0
+[00000e22]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000e2c]27 00 00: fadeOutMonoColorOverlay
+[00000e2f]00: 
+[00000e30]05 8a 00 00: unSkippableDelay 10
+[00000e34]10: 
+[00000e35]19: showTextbox
+[00000e36]ff 86 00: text 86
+{marker}{appendText}[Kid]
+"You...you..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"You aren't Takeshi Kuranari!"{waitForClick}{clearText}{marker}{appendText}Barging into the rest area I demanded an 
+answer from the man in front of me.{waitForClick}{clearText}{marker}{appendText}I couldn't call him 'Takeshi' anymore.{waitForClick}{clearText}{marker}{appendText}This guy had been deceiving us the whole time.{waitForClick}{clearText}
+
+[00000e39]10: 
+[00000e3a]0f 81 00 00 00 00 00 00 3e 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB11ADM 320 3
+[00000e4b]10: 
+[00000e4c]19: showTextbox
+[00000e4d]ff 87 00: text 87
+{marker}{sound C5A422}{appendText}[Takeshi]
+"Look I don't have any clue what you're 
+talking about...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Don't play dumb!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know that the real Takeshi is Sara's and my 
+father!"{waitForClick}{clearText}
+
+[00000e50]10: 
+[00000e51]0f 81 00 00 00 00 00 00 3f 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB06ADM 320 3
+[00000e62]10: 
+[00000e63]19: showTextbox
+[00000e64]ff 88 00: text 88
+{marker}{sound C5A423}{appendText}[Takeshi]
+"Father? Me? You and Sara's?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"No, not you!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Sara and I are the children of Takeshi and 
+Tsugumi."{waitForClick}{clearText}
+
+[00000e67]10: 
+[00000e68]0f 81 00 00 00 00 00 00 40 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB07ADM 320 3
+[00000e79]10: 
+[00000e7a]19: showTextbox
+[00000e7b]ff 89 00: text 89
+{marker}{sound C5A424}{appendText}[Takeshi]
+"Wait, so Tsugumi and I...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I keep telling you, you're not Takeshi!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm talking about Takeshi from the other 
+world!"{waitForClick}{clearText}{marker}{sound C5A425}{appendText}[Takeshi]
+"Other world? What the heck's that supposed 
+to mean?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The world back in 2017!"{waitForClick}{clearText}
+
+[00000e7e]10: 
+[00000e7f]0f 81 00 00 00 00 00 00 41 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADM 320 3
+[00000e90]10: 
+[00000e91]19: showTextbox
+[00000e92]ff 8a 00: text 8a
+{marker}{sound C5A426}{appendText}[Takeshi]
+"Um...2017, huh...?"{waitForClick}{clearText}{marker}{sound C5A427}{appendText}[Takeshi]
+"And when were you born?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"On January 21, 16 years ago."{waitForClick}{clearText}{marker}{sound C5A428}{appendText}[Takeshi]
+"In what year?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"In 2018!"{waitForClick}{clearText}{marker}{sound C5A429}{appendText}[Takeshi]
+"I see."{waitForClick}{clearText}{marker}{sound C5A430}{appendText}[Takeshi]
+"So, how could you possibly know what 
+happened in 2017?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I dunno, I just do! What do you expect me to 
+do about it?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Besides, we're not talking about me now."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Who...who are you anyway!?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And why did you lie about the year 2017!?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Why are you pretending to be 'Takeshi 
+Kuranari!?'"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What was the reason you tried to trick us by 
+repeating the same incident as 17 years ago 
+and by using the same words!?"{waitForClick}{clearText}
+
+[00000e95]10: 
+[00000e96]0f 81 00 00 00 00 00 00 42 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB11ADM 320 3
+[00000ea7]10: 
+[00000ea8]19: showTextbox
+[00000ea9]ff 8b 00: text 8b
+{marker}{sound C5A431}{appendText}[Takeshi]
+"To trick you...to trick you, huh...?"{waitForClick}{clearText}
+
+[00000eac]10: 
+[00000ead]0f 81 00 00 00 00 00 00 43 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB01ADM 320 3
+[00000ebe]10: 
+[00000ebf]19: showTextbox
+[00000ec0]ff 8c 00: text 8c
+{marker}{sound C5A432}{appendText}[Takeshi]
+"Think twice, will you, Kid?"{waitForClick}{clearText}{marker}{sound C5A433}{appendText}[Takeshi]
+"For instance, if I was repeating the 
+incident in 2017,"{waitForClick}{clearText}{marker}{sound C5A434}{appendText}[Takeshi]
+"How could I possibly trick you who were born 
+in 2018?"{waitForClick}{clearText}{marker}{sound C5A435}{appendText}[Takeshi]
+"Practically speaking, it is impossible to 
+trick you into believing ''the same incident 
+from 17 years ago is taking place.'"{waitForClick}{clearText}{marker}{sound C5A436}{appendText}[Takeshi]
+"Do you get it?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[00000ec3]10: 
+[00000ec4]0f 81 00 00 00 00 00 00 44 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB05ADM 320 3
+[00000ed5]10: 
+[00000ed6]19: showTextbox
+[00000ed7]ff 8d 00: text 8d
+{marker}{sound C5A437}{appendText}[Takeshi]
+"Besides, how could you tell it was the same 
+incident?"{waitForClick}{clearText}{marker}{sound C5A438}{appendText}[Takeshi]
+"How could you tell that I'm using the same 
+phrase?"{waitForClick}{clearText}{marker}{sound C5A439}{appendText}[Takeshi]
+"How could you know the history before you 
+were even born!?"{waitForClick}{clearText}
+
+[00000eda]10: 
+[00000edb]0f 81 00 00 00 00 00 00 45 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB04ADM 320 3
+[00000eec]10: 
+[00000eed]19: showTextbox
+[00000eee]ff 8e 00: text 8e
+{marker}{sound C5A440}{appendText}[Takeshi]
+"Why don't you appear your true self?"{waitForClick}{clearText}{marker}{sound C5A441}{appendText}[Takeshi]
+"Who are you anyway!?"{waitForClick}{clearText}{marker}{appendText}Somehow, I couldn't say a word.{waitForClick}{clearText}{marker}{appendText}(Who am I anyway...?){waitForClick}{clearText}{marker}{appendText}The same question was repeated in my mind.{waitForClick}{clearText}
+
+[00000ef1]10: 
+[00000ef2]0f 81 00 00 00 00 00 00 46 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB11ADM 320 3
+[00000f03]10: 
+[00000f04]19: showTextbox
+[00000f05]ff 8f 00: text 8f
+{marker}{sound C5A442}{appendText}[Takeshi]
+"Oh, I see, when it comes to your story, you 
+clam up, huh...?"{waitForClick}{clearText}{marker}{sound C5A443}{appendText}[Takeshi]
+"Alright then."{waitForClick}{clearText}
+
+[00000f08]10: 
+[00000f09]0f 81 00 00 00 00 00 00 47 00 a1 40 00 00 83 00 00: fgload 1 00000000 KB08ADM 320 3
+[00000f1a]10: 
+[00000f1b]19: showTextbox
+[00000f1c]ff 90 00: text 90
+{marker}{sound C5A444}{appendText}[Takeshi]
+"I'll tell you my real name."{waitForClick}{clearText}{marker}{sound C5A445}{appendText}[Takeshi]
+"Yes, as you said, I am not Takeshi Kuranari."{waitForClick}{clearText}{marker}{sound C5A446}{appendText}[Takeshi]
+"My real name is...."{waitForClick}{clearText}{marker}{sound C5A447}{appendText}[Kaburaki]
+"Kaburaki."{waitForClick}{clearText}{marker}{sound C5A448}{appendText}[Kaburaki]
+"Ryogo Kaburaki."{waitForClick}{clearText}
+
+[00000f1f]10: 
+[00000f20]18: hideTextbox
+[00000f21]10: 
+[00000f22]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
+[00000f2a]10: 
+[00000f2b]10 81 00 00 80 00 00: removeFG 1 0
+[00000f32]10: 
+[00000f33]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000f3d]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000f47]27 00 00: fadeOutMonoColorOverlay
+[00000f4a]00: 
+[00000f4b]05 83 00 00: unSkippableDelay 3
+[00000f4f]10: 
+[00000f50]04: stopBGM
+[00000f51]10: 
+[00000f52]18: hideTextbox
+[00000f53]fe 28 0a a2 3a 14 14 00 80 00 00: setChangePerspectiveDirection 0
+[00000f5e]10: 
+[00000f5f]20 a0 2f 00 00: triggerChangePerspectiveAnim
+[00000f64]00: 
+[00000f65]05 a0 1e 00 00: unSkippableDelay 30
+[00000f6a]10: 
+[00000f6b]45 83 00 00 81 00 00: monoColorOverlay 3 1
+[00000f72]10: 
+[00000f73]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[00000f7a]10: 
+[00000f7b]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00000f85]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000f8f]27 00 00: fadeOutMonoColorOverlay
+[00000f92]00: 
+[00000f93]05 83 00 00: unSkippableDelay 3
+[00000f97]10: 
+[00000f98]46 81 00 00: setDialogBoxColor green
+[00000f9c]10: 
+[00000f9d]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[00000fa4]10: 
+[00000fa5]0c 00 00 00 00 48 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[00000fb2]10: 
+[00000fb3]0f 81 00 00 00 00 00 00 49 00 a1 40 00 00 80 00 00: fgload 1 00000000 KA07ADM 320 0
+[00000fc4]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000fce]27 00 00: fadeOutMonoColorOverlay
+[00000fd1]00: 
+[00000fd2]05 8a 00 00: unSkippableDelay 10
+[00000fd6]10: 
+[00000fd7]1f 8f 00 00 a0 13 00 00: clock 15:19
+[00000fdf]10: 
+[00000fe0]19: showTextbox
+[00000fe1]ff 91 00: text 91
+{marker}{sound C5A449}{appendText}[Kaburaki]
+"Ryogo Kaburaki."{waitForClick}{clearText}{marker}{sound C5A450}{appendText}[Kaburaki]
+"I just remembered my name...."{waitForClick}{clearText}{marker}{appendText}The Kid repeated it slowly.{waitForClick}{clearText}
+
+[00000fe4]10: 
+[00000fe5]0f 81 00 00 00 00 00 00 4a 00 a1 40 00 00 83 00 00: fgload 1 00000000 KA01ADM 320 3
+[00000ff6]10: 
+[00000ff7]19: showTextbox
+[00000ff8]ff 92 00: text 92
+{marker}{sound C5A451}{appendText}[Kaburaki]
+"Ryogo..., Ka...bu...ra...ki...."{waitForClick}{clearText}
+
+[00000ffb]10: 
+[00000ffc]19: showTextbox
+[00000ffd]ff 93 00: text 93
+{marker}{appendText}[Takeshi]
+"Ryogo Kaburaki...."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"So I see...."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Way to go."{waitForClick}{clearText}{marker}{appendText}I smiled and patted his head.{waitForClick}{clearText}{marker}{appendText}The young Kaburaki smiled shyly.... {waitForClick}{clearText}
+
+[00001000]10: 
+[00001001]0c 00 00 00 00 4b 00 80 00 00 82 00 00: bgload 00000000 IT05G 0 2
+[0000100e]10: 
+[0000100f]19: showTextbox
+[00001010]ff 94 00: text 94
+{marker}{appendText}Without a word, the young Kaburaki went 
+behind the statue and started scratching. {waitForClick}{clearText}{marker}{appendText}He had a screwdriver in his hand....{waitForClick}{clearText}{marker}{appendText}"Ryogo Kaburaki."{waitForClick}{clearText}{marker}{appendText}With thin sharp writing, The young Kaburaki 
+carved his name deeply into the statue.{waitForClick}{clearText}{marker}{appendText}He must have been pretty happy to have 
+remembered his name?{waitForClick}{clearText}{marker}{appendText}Or was it so that he wouldn't forget it 
+again...?{waitForClick}{clearText}{marker}{appendText}Although I didn't know the reason, he carved 
+his name into the statue.{waitForClick}{clearText}{marker}{appendText}He continued on....{waitForClick}{clearText}{marker}{appendText}Without stopping his hands, he also carved the 
+following letters.{waitForClick}{clearText}{marker}{appendText}"Coco Yagami"{waitForClick}{clearText}{marker}{appendText}"Yubiseiharukana Tanaka"{waitForClick}{clearText}{marker}{appendText}"Tsugumi Komachi"{waitForClick}{clearText}{marker}{appendText}"Sora Akanegasaki"{waitForClick}{clearText}{marker}{appendText}"Takeshi Kuranari"{waitForClick}{clearText}{marker}{appendText}"Pipi" and "Chami"{waitForClick}{clearText}
+
+[00001013]10: 
+[00001014]0c 00 00 00 00 4c 00 80 00 00 82 00 00: bgload 00000000 IT05H 0 2
+[00001021]10: 
+[00001022]19: showTextbox
+[00001023]ff 95 00: text 95
+{marker}{appendText}The young Kaburaki carved all of our names 
+who had been confined here.{waitForClick}{clearText}{marker}{appendText}He smiled happily after finishing up....{waitForClick}{clearText}{marker}{appendText}The statue kept silent with its hand on the 
+chest.... {waitForClick}{clearText}
+
+[00001026]10: 
+[00001027]18: hideTextbox
+[00001028]10: 
+[00001029]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00001030]10: 
+[00001031]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[0000103b]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00001045]27 00 00: fadeOutMonoColorOverlay
+[00001048]00: 
+[00001049]05 83 00 00: unSkippableDelay 3
+[0000104d]10: 
+[0000104e]04: stopBGM
+[0000104f]10: 
+[00001050]18: hideTextbox
+[00001051]fe 28 0a a2 3a 14 14 00 81 00 00: setChangePerspectiveDirection 1
+[0000105c]10: 
+[0000105d]20 a0 2f 00 00: triggerChangePerspectiveAnim
+[00001062]00: 
+[00001063]05 a0 1e 00 00: unSkippableDelay 30
+[00001068]10: 
+[00001069]45 83 00 00 81 00 00: monoColorOverlay 3 1
+[00001070]10: 
+[00001071]13 87 04 00 83 00 00: multiremoveFG_Anim 1 2 4
+[00001078]10: 
+[00001079]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00001083]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000108d]27 00 00: fadeOutMonoColorOverlay
+[00001090]00: 
+[00001091]05 83 00 00: unSkippableDelay 3
+[00001095]10: 
+[00001096]46 80 00 00: setDialogBoxColor blue
+[0000109a]10: 
+[0000109b]45 80 00 00 81 00 00: monoColorOverlay 0 1
+[000010a2]10: 
+[000010a3]03 84 00 00 a0 64 00 00: playBGM 4 100
+[000010ab]10: 
+[000010ac]0c 00 00 00 00 4d 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[000010b9]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[000010c3]27 00 00: fadeOutMonoColorOverlay
+[000010c6]00: 
+[000010c7]05 8a 00 00: unSkippableDelay 10
+[000010cb]10: 
+[000010cc]1f a0 10 00 00 a0 16 00 00: clock 16:22
+[000010d5]10: 
+[000010d6]19: showTextbox
+[000010d7]ff 96 00: text 96
+{marker}{appendText}That boy's name was also...Ryogo Kaburaki!?{waitForClick}{clearText}{marker}{appendText}Which meant that... the 'Kid from the 17 
+years ago' and...'this guy pretending to be 
+Takeshi' were...actually same person!?{waitForClick}{clearText}{marker}{appendText}He looked so young that it was hard to 
+believe it had been 17 years.{waitForClick}{clearText}{marker}{appendText}If the young Kaburaki was 15 years old, that 
+would make him 32 years old in this world.{waitForClick}{clearText}{marker}{appendText}But the Kaburaki I spoke to looked around 
+20... there was no way he could have been 
+over 30 years old.{waitForClick}{clearText}{marker}{appendText}Which meant...?{waitForClick}{clearText}{marker}{appendText}.................{waitForClick}{clearText}{marker}{appendText}Before I realized it, the man who called 
+himself Kaburaki had disappeared.{waitForClick}{clearText}{marker}{appendText}He had left a while before.{waitForClick}{clearText}{marker}{appendText}I'd been standing there lost in thought for 
+some time.{waitForClick}{clearText}{marker}{appendText}I remembered back to the scene in 2017, which 
+I had just witnessed earlier....{waitForClick}{clearText}
+
+[000010da]10: 
+[000010db]0c 00 00 00 00 4e 00 80 00 00 82 00 00: bgload 00000000 IT05A 0 2
+[000010e8]10: 
+[000010e9]19: showTextbox
+[000010ea]ff 97 00: text 97
+{marker}{appendText}I went around one of the statues, as if being 
+called over to it.{waitForClick}{clearText}
+
+[000010ed]10: 
+[000010ee]0c 00 00 00 00 4f 00 80 00 00 82 00 00: bgload 00000000 IT05B 0 2
+[000010fb]10: 
+[000010fc]19: showTextbox
+[000010fd]ff 98 00: text 98
+{marker}{appendText}On its back were carved childish stick figures.{waitForClick}{clearText}{marker}{appendText}Six human-like figures and two unfamiliar 
+animal shapes were drawn there.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"...What?"{waitForClick}{clearText}{marker}{appendText}I looked at the statue.{waitForClick}{clearText}{marker}{appendText}The statue pointed south.{waitForClick}{clearText}{marker}{appendText}[Kid]
+".........?"{waitForClick}{clearText}
+
+[00001100]10: 
+[00001101]0c 00 00 00 00 50 00 80 00 00 82 00 00: bgload 00000000 IT05C 0 2
+[0000110e]10: 
+[0000110f]19: showTextbox
+[00001110]ff 99 00: text 99
+{marker}{appendText}I looked at the back of other statues as well.{waitForClick}{clearText}
+
+[00001113]10: 
+[00001114]0c 00 00 00 00 51 00 80 00 00 82 00 00: bgload 00000000 IT05D 0 2
+[00001121]10: 
+[00001122]19: showTextbox
+[00001123]ff 9a 00: text 9a
+{marker}{appendText}Surprisingly, there were similar drawings on 
+the statue pointing to the sky.{waitForClick}{clearText}
+
+[00001126]10: 
+[00001127]0c 00 00 00 00 52 00 80 00 00 82 00 00: bgload 00000000 IT05G 0 2
+[00001134]10: 
+[00001135]1e a0 3c 00 00: delay 60
+[0000113a]10: 
+[0000113b]0c 00 00 00 00 53 00 80 00 00 82 00 00: bgload 00000000 IT05H 0 2
+[00001148]10: 
+[00001149]19: showTextbox
+[0000114a]ff 9b 00: text 9b
+{marker}{appendText}There were also six people's names and as 
+well as 'Pipi' and 'Chami' carved into the 
+statue which stood with its hand on its chest.{waitForClick}{clearText}
+
+[0000114d]10: 
+[0000114e]0c 00 00 00 00 54 00 80 00 00 82 00 00: bgload 00000000 IT05E 0 2
+[0000115b]10: 
+[0000115c]19: showTextbox
+[0000115d]ff 9c 00: text 9c
+{marker}{appendText}There was no writing on the statue pointing 
+east.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, just what is this supposed to mean!?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"What is up with this world anyway!?"{waitForClick}{clearText}
+
+[00001160]10: 
+[00001161]0c 00 00 00 00 55 00 80 00 00 82 00 00: bgload 00000000 BG21B1 0 2
+[0000116e]10: 
+[0000116f]19: showTextbox
+[00001170]ff 9d 00: text 9d
+{marker}{appendText}Puzzled and confused, my head felt like it 
+was about to explode.{waitForClick}{clearText}{marker}{appendText}I didn't know things that I was supposed to 
+know...I knew things that I wasn't supposed 
+to....{waitForClick}{clearText}{marker}{appendText}(That must be why my head is so confused.){waitForClick}{clearText}{marker}{appendText}(I still haven't recalled any of my memories.){waitForClick}{clearText}{marker}{appendText}Some parts of it had come back, but nothing 
+really important.{waitForClick}{clearText}{marker}{appendText}To begin with, I still didn't know what kind 
+of person this 'Hokuto' was.{waitForClick}{clearText}{marker}{appendText}And at the same time, I knew what I wasn't 
+supposed to know and I could see what I 
+wasn't supposed to see. {waitForClick}{clearText}{marker}{appendText}For instance, the world 17 years into the 
+past. {waitForClick}{clearText}{marker}{appendText}About the legend of Pygmalion, the Tief Blau 
+Virus, the Cure Virus, Pipi, and Chami....{waitForClick}{clearText}{marker}{appendText}I knew about all of them now.{waitForClick}{clearText}{marker}{appendText}I knew exactly what had happened during the 
+dramatic escape 17 years ago, and what had 
+happened on May 6th and 7th.{waitForClick}{clearText}{marker}{appendText}And the world in 2034.{waitForClick}{clearText}{marker}{appendText}I could sense even the different history 
+flows in this world.{waitForClick}{clearText}{marker}{appendText}I knew about escaping using the principle of a 
+siphon and about swimming to the ocean 
+surface from 104 feet under the water.{waitForClick}{clearText}{marker}{appendText}The third eye...Blick Winkel...those words 
+were clear in my head.{waitForClick}{clearText}{marker}{appendText}And...then....{waitForClick}{clearText}{marker}{appendText}I remembered running into Ms. Tanaka on the 
+floating island.{waitForClick}{clearText}{marker}{appendText}Or maybe more precisely I should say 'I could 
+see it' rather than 'remember it'.{waitForClick}{clearText}{marker}{appendText}Anyway, I saw her.{waitForClick}{clearText}{marker}{appendText}The woman who was called Ms. 
+Tanaka...Yubiseiakikana's mother....{waitForClick}{clearText}{marker}{appendText}Meaning, she was actually Yubiseiharukana.{waitForClick}{clearText}{marker}{appendText}Although their relationship defied the norm, 
+still Yubiseiharukana and Yubiseiakikana 
+were mother and daughter.{waitForClick}{clearText}{marker}{appendText}.................{waitForClick}{clearText}{marker}{appendText}Pieces of my thoughts scattered....{waitForClick}{clearText}{marker}{appendText}I tried gathering them and struggled to come 
+up with some kind of conclusion.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's 2034 now...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"And Coco was in 2017...."{waitForClick}{clearText}{marker}{appendText}I whispered to confirm the facts.{waitForClick}{clearText}{marker}{appendText}Yes, that's right, it was 2034 now....{waitForClick}{clearText}{marker}{appendText}That was why Tsugumi had been so suspicious 
+of us.{waitForClick}{clearText}{marker}{appendText}Because the same thing that had happened 17 
+years ago was repeating....{waitForClick}{clearText}{marker}{appendText}How about the others?{waitForClick}{clearText}{marker}{appendText}Since Yubiseiakikana had been one 17 years 
+ago, she couldn't possibly have known about 
+the incident.{waitForClick}{clearText}{marker}{appendText}And since Sara hadn't been born yet, she 
+wouldn't know either.{waitForClick}{clearText}{marker}{appendText}Sora, being AI, couldn't lie. And she didn't 
+seem to be lying either.{waitForClick}{clearText}{marker}{appendText}So that only left Kaburaki.{waitForClick}{clearText}{marker}{appendText}Did that mean Kaburaki was the mastermind 
+behind this whole incident in 2034?{waitForClick}{clearText}{marker}{appendText}No, wait....{waitForClick}{clearText}{marker}{appendText}There had been two others who had survived the 
+incident 17 years ago....{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana and Coco.{waitForClick}{clearText}{marker}{appendText}On May 6, 2017.{waitForClick}{clearText}{marker}{appendText}Kaburaki, Yubiseiharukana, and Coco who had 
+been infected with the Tief Blau Virus, had 
+been rescued by the mini-sub, which came to 
+the pool in IBF.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, wait...."{waitForClick}{clearText}{marker}{appendText}How did the three of them recover from the 
+virus after they'd been infected?{waitForClick}{clearText}{marker}{appendText}Because of the injection of antibodies made 
+from Tsugumi's blood...?{waitForClick}{clearText}{marker}{appendText}But Coco hadn't received the antibodies.{waitForClick}{clearText}{marker}{appendText}Because she had been under high-pressure 
+oxygen treatment in the capsule pod at the 
+time....{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Huh...?"{waitForClick}{clearText}{marker}{appendText}(No, no, even before that){waitForClick}{clearText}{marker}{appendText}(Yubiseiharukana suffered from 'critical 
+heart disease,' right?){waitForClick}{clearText}{marker}{appendText}(But Yubiseiharukana is still alive and well 
+now){waitForClick}{clearText}{marker}{appendText}[Kid]
+"What is going on here...?"{waitForClick}{clearText}{marker}{appendText}(Well I guess there's just one answer....){waitForClick}{clearText}{marker}{appendText}(It's the only explanation...){waitForClick}{clearText}{marker}{appendText}Yubiseiharukana and Kaburaki must have been 
+infected with the Cure Virus.{waitForClick}{clearText}{marker}{appendText}Their bodies must had repeated five years 
+worth of cell division, and when all their 
+DNA had been replaced, they stopped aging.{waitForClick}{clearText}{marker}{appendText}That must have been why they looked younger 
+than their real age.{waitForClick}{clearText}{marker}{appendText}And Yubiseiharukana's heart disease would 
+have been fixed by the Cure Virus. {waitForClick}{clearText}{marker}{appendText}[Kid]
+"But still...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Is that really what happened...?"{waitForClick}{clearText}{marker}{appendText}In a different history flow, Kaburaki 
+couldn't see the image in the pendant.{waitForClick}{clearText}{marker}{appendText}If he wasn't lying or acting, he must not have 
+possessed infrared vision.{waitForClick}{clearText}{marker}{appendText}And although I didn't have proof my instincts 
+told me Yubiseiharukana didn't possess 
+infrared vision, either.{waitForClick}{clearText}{marker}{appendText}Then again in the world of 2017....{waitForClick}{clearText}{marker}{appendText}Tsugumi had mentioned she was 'special' among 
+carriers of the Cure Virus.{waitForClick}{clearText}{marker}{appendText}Perhaps she was a rare example of DNA 
+replacement that had taken place safely over 
+the whole body.{waitForClick}{clearText}{marker}{appendText}That meant...?{waitForClick}{clearText}{marker}{appendText}Yubiseiharukana and Kaburaki were not 
+complete Cure, then?{waitForClick}{clearText}{marker}{appendText}But...it didn't seem to me that there could 
+be any such thing as an 'incomplete Cure'..... {waitForClick}{clearText}{marker}{appendText}[Kid]
+"Um...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"It's no use...."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I can't figure it out...."{waitForClick}{clearText}{marker}{appendText}But I still had far serious matter to deal 
+with.{waitForClick}{clearText}{marker}{appendText}I needed to think about this problem first.{waitForClick}{clearText}{marker}{appendText}The problem was....{waitForClick}{clearText}{marker}{appendText}'How was I able to sense incidents that had 
+taken place before I was born, or in separate 
+time continua?'{waitForClick}{clearText}{marker}{appendText}And....{waitForClick}{clearText}{marker}{appendText}'Why is the same accident as 17 years earlier 
+taking place again?'{waitForClick}{clearText}{marker}{appendText}It couldn't have been a coincidence. {waitForClick}{clearText}{marker}{appendText}Obviously someone had planned it.{waitForClick}{clearText}{marker}{appendText}There was only one clue....{waitForClick}{clearText}{marker}{appendText}Coco.{waitForClick}{clearText}{marker}{appendText}I wanted to see Coco.{waitForClick}{clearText}{marker}{appendText}I felt that Coco would know everything there 
+was to know about this incident.{waitForClick}{clearText}{marker}{appendText}But how could I find Coco who seemed to just 
+pop up randomly.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, I know...."{waitForClick}{clearText}{marker}{appendText}I had a sudden inspiration....{waitForClick}{clearText}{marker}{appendText}I had a hunch.{waitForClick}{clearText}{marker}{appendText}At this hour on the 5th....{waitForClick}{clearText}{marker}{appendText}Coco would show up....{waitForClick}{clearText}{marker}{appendText}In the Cosmic Whale Room....{waitForClick}{clearText}
+
+[00001173]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[0000117e]10: 
+[0000117f]01 59 43 36 41 00: jump YC6A
+[00001185]00: 
+[00001186]00: 
+[00001187]00: 

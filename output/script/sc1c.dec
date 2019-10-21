@@ -1,0 +1,226 @@
+﻿[0000001d]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000028]fe 28 0a a4 b1 14 14 00 81 00 00: varop (28 0a a4) b1 := (00) 1
+[00000033]fe 28 0a a4 b2 14 14 00 81 00 00: varop (28 0a a4) b2 := (00) 1
+[0000003e]10: 
+[0000003f]19: showTextbox
+[00000040]ff 00 00: text 00
+{marker}{appendText}I waited for the rest of the explanation.{waitForClick}{clearText}{marker}{appendText}But Sora didn't say anything more.{waitForClick}{clearText}{marker}{appendText}...I guess she was trying to say, 'Figure the 
+rest out yourself.'{waitForClick}{clearText}{marker}{appendText}I thought...{waitForClick}{clearText}
+
+[00000043]10: 
+[00000044]18: hideTextbox
+[00000045]10: 
+[00000046]20 a0 2c 00 00: showDimOverlay
+[0000004b]10: 
+[0000004c]19: showTextbox
+[0000004d]ff 01 00: text 01
+{marker}{appendText}I figured that if it were the Leiblich 
+Pharmaceutical Japanese-German joint venture 
+that had control of LeMU...{waitForClick}{clearText}{marker}{appendText}There had to be a reason that a pharmaceutical 
+company would build a theme park in a place 
+like this...{waitForClick}{clearText}{marker}{appendText}That reason and in-house power generation... 
+what could they have to do with each other...?{waitForClick}{clearText}{marker}{appendText}Power generation—thermal seafloor vents — the 
+first word that popped into my head was...{waitForClick}
+
+[00000050]ff 02 00: text 02
+{appendText}{choice 00 000f |Hot springs|Microorganisms}
+
+[00000053]10: 
+[00000054]1a a4 b3 00 00 8f 00 00: choiceId 1203 15
+[0000005c]00: 
+[0000005d]26 28 0a a4 b3 14 00 00 27 80 00 00 01 00 00 27 81 00 00 02 00: _switch
+switch_varop (28 0a a4) b3 0014 (00)
+27 -> 0 00000072 (00000001)
+27 -> 1 000000df (00000002)
+
+[00000072]10: 
+[00000073]19: showTextbox
+[00000074]ff 03 00: text 03
+{marker}{appendText}Hot springs.{waitForClick}{clearText}{marker}{appendText}Hot springs?{waitForClick}{clearText}{marker}{appendText}It seemed to me that a pharmaceutical company 
+and hot springs...would be totally unrelated...{waitForClick}{clearText}{marker}{appendText}No matter how much I thought about it, 
+I couldn't find a connection.{waitForClick}{clearText}
+
+[00000077]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[00000082]10: 
+[00000083]21 a0 10 00 00: closeDimOverlay
+[00000088]10: 
+[00000089]19: showTextbox
+[0000008a]ff 04 00: text 04
+{marker}{appendText}I decided to go ask Sora.{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hey, does that have anything to do with what 
+we were just talking about?"{waitForClick}{clearText}{marker}{appendText}Sora ignored my question and instead said...{waitForClick}{clearText}
+
+[0000008d]10: 
+[0000008e]0f 81 00 00 00 00 00 00 00 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO10ADM 320 3
+[0000009f]10: 
+[000000a0]19: showTextbox
+[000000a1]ff 05 00: text 05
+{marker}{sound S1C190}{appendText}[Sora]
+"Do you mind if I get back to work?"{waitForClick}{clearText}{marker}{appendText}It didn't look like the conversation would 
+lead anywhere.{waitForClick}{clearText}{marker}{appendText}So I gave up and went elsewhere.{waitForClick}{clearText}
+
+[000000a4]10: 
+[000000a5]18: hideTextbox
+[000000a6]10: 
+[000000a7]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000000ae]10: 
+[000000af]04: stopBGM
+[000000b0]10: 
+[000000b1]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000000bb]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000000c5]27 00 00: fadeOutMonoColorOverlay
+[000000c8]00: 
+[000000c9]05 83 00 00: unSkippableDelay 3
+[000000cd]fe 28 0a a4 b3 14 14 00 82 00 00: varop (28 0a a4) b3 := (00) 2
+[000000d8]10: 
+[000000d9]01 53 5f 31 43 00: jump S_1C
+[000000df]fe 28 0a a4 ba 14 17 00 81 00 00: varop (28 0a a4) ba += (00) 1
+[000000ea]10: 
+[000000eb]19: showTextbox
+[000000ec]ff 06 00: text 06
+{marker}{appendText}Microorganisms.{waitForClick}{clearText}{marker}{appendText}That was it! Microorganisms!{waitForClick}{clearText}{marker}{appendText}There were unique kinds of microorganisms 
+found around thermal seafloor vents that 
+weren't seen anywhere else.{waitForClick}{clearText}{marker}{appendText}That was why Leiblich Pharmaceuticals was 
+researching microorganisms on the seafloor...{waitForClick}{clearText}{marker}{appendText}'Himmel' - 'IBF' - 'High pressure oxygen 
+treatment device'{waitForClick}{clearText}{marker}{appendText}All these words that I had known flashed on to 
+the screen of my mind.{waitForClick}{clearText}{marker}{appendText}As usual, I had no idea why I knew them.{waitForClick}{clearText}{marker}{appendText}I had no idea about the reasons or causes 
+behind them, but I was convinced that 
+they were facts.{waitForClick}{clearText}
+
+[000000ef]fe 28 0a a0 ac 14 14 00 80 00 00: varop (28 0a a0) ac := (00) 0
+[000000fa]10: 
+[000000fb]21 a0 10 00 00: closeDimOverlay
+[00000100]10: 
+[00000101]19: showTextbox
+[00000102]ff 07 00: text 07
+{marker}{appendText}[Kid]
+"On the ocean floor...below LeMU...Leiblich 
+Pharmaceutical has a research lab, right?"{waitForClick}{clearText}{marker}{appendText}I said this straight out to Sora.{waitForClick}{clearText}
+
+[00000105]10: 
+[00000106]0f 81 00 00 00 00 00 00 01 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO06ADM 320 3
+[00000117]10: 
+[00000118]19: showTextbox
+[00000119]ff 08 00: text 08
+{marker}{sound C1S283}{appendText}[Sora]
+"H-how do...you...know about that?!"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I thought so..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Leiblich made IBF on the seafloor to research 
+germs and viruses."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The theme park was just a kind of cover..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"The researchers acted like staff members for 
+LeMU, going above the ocean and back down to 
+the seafloor."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"In that way, nobody would suspect that there 
+was a lab here."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Or it might have been a way of securing 
+capital."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Working in conjunction with a bustling 
+amusement park...you would never be short 
+of research funds."{waitForClick}{clearText}
+
+[0000011c]10: 
+[0000011d]19: showTextbox
+[0000011e]ff 09 00: text 09
+{marker}{appendText}[Kid]
+"I'm right, aren't I?"{waitForClick}{clearText}
+
+[00000121]10: 
+[00000122]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO03ADM 320 3
+[00000133]10: 
+[00000134]19: showTextbox
+[00000135]ff 0a 00: text 0a
+{marker}{sound C1S284}{appendText}[Sora]
+"Kid..."{waitForClick}{clearText}
+
+[00000138]10: 
+[00000139]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO07ADM 320 3
+[0000014a]10: 
+[0000014b]19: showTextbox
+[0000014c]ff 0b 00: text 0b
+{marker}{sound C1S285}{appendText}[Sora]
+"Exactly...who are you?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I don't even know myself..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"All I know is that I DO know these things..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know it all. Like a prophecy playing like a 
+film in my mind."{waitForClick}{clearText}
+
+[0000014f]10: 
+[00000150]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO04ADM 320 3
+[00000161]10: 
+[00000162]19: showTextbox
+[00000163]ff 0c 00: text 0c
+{marker}{sound C1S286}{appendText}[Sora]
+"You...you couldn't."{waitForClick}{clearText}{marker}{sound C1S287}{appendText}[Sora]
+"Are you lying to me?"{waitForClick}{clearText}
+
+[00000166]10: 
+[00000167]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO10ADM 320 3
+[00000178]10: 
+[00000179]19: showTextbox
+[0000017a]ff 0d 00: text 0d
+{marker}{sound C1S288}{appendText}[Sora]
+"Are...are you hiding something...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I'm not hiding a thing."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I am being completely open about it...about 
+everything I know...everything..."{waitForClick}{clearText}{marker}{appendText}[Sora]
+"........."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"........."{waitForClick}{clearText}
+
+[0000017d]10: 
+[0000017e]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADM 320 3
+[0000018f]10: 
+[00000190]19: showTextbox
+[00000191]ff 0e 00: text 0e
+{marker}{sound C1S289}{appendText}[Sora]
+"I see."{waitForClick}{clearText}{marker}{sound C1S290}{appendText}[Sora]
+"Anyway, I please forget about the 
+conversation we just had."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"I know. I won't tell anybody."{waitForClick}{clearText}
+
+[00000194]10: 
+[00000195]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO05ADM 320 3
+[000001a6]10: 
+[000001a7]19: showTextbox
+[000001a8]ff 0f 00: text 0f
+{marker}{sound C1S291}{appendText}[Sora]
+"That's not what I mean....I mean forget it."{waitForClick}{clearText}{marker}{sound C1S292}{appendText}[Sora]
+"There is no research station on the seafloor."{waitForClick}{clearText}{marker}{sound C1S293}{appendText}[Sora]
+"In the past there was, but it has been 
+closed."{waitForClick}{clearText}
+
+[000001ab]10: 
+[000001ac]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO03ADM 320 3
+[000001bd]10: 
+[000001be]19: showTextbox
+[000001bf]ff 10 00: text 10
+{marker}{sound C1S294}{appendText}[Sora]
+"Please...just pretend that is the truth."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Okay. I understand."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"If it is that important to you...then I will 
+forget it."{waitForClick}{clearText}
+
+[000001c2]10: 
+[000001c3]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO01ADM 320 3
+[000001d4]10: 
+[000001d5]19: showTextbox
+[000001d6]ff 11 00: text 11
+{marker}{sound C1S295}{appendText}[Sora]
+"Do you promise?"{waitForClick}{clearText}{marker}{appendText}I swore that I would. Then I left the Control 
+Room.{waitForClick}{clearText}
+
+[000001d9]10: 
+[000001da]18: hideTextbox
+[000001db]10: 
+[000001dc]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[000001e3]10: 
+[000001e4]04: stopBGM
+[000001e5]10: 
+[000001e6]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[000001f0]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000001fa]27 00 00: fadeOutMonoColorOverlay
+[000001fd]00: 
+[000001fe]05 83 00 00: unSkippableDelay 3
+[00000202]fe 28 0a a4 b3 14 14 00 82 00 00: varop (28 0a a4) b3 := (00) 2
+[0000020d]10: 
+[0000020e]01 53 5f 31 43 00: jump S_1C

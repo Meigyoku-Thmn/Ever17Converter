@@ -1,0 +1,17 @@
+﻿sound ~
+music ~
+setvar ~ ~
+text ~
+bgload title1.jpg
+text @Ever 17 VNDS
+text @VNDS Port: anonl
+music bgm21.mp3
+text !
+choice Start Game|Debug Mode
+if selected == 1
+    music ~
+    jump op00.scr
+fi
+if selected == 2
+    jump quickjump.scr
+fi

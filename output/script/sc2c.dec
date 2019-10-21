@@ -1,0 +1,300 @@
+﻿[00000026]fe 28 0a a4 fa 14 14 00 a0 3f 00 00: setSceneTitleByIndex 63
+[00000032]10: 
+[00000033]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[0000003d]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[00000047]27 00 00: fadeOutMonoColorOverlay
+[0000004a]00: 
+[0000004b]05 83 00 00: unSkippableDelay 3
+[0000004f]00: 
+[00000050]28: l_unk28
+[00000051]10: 
+[00000052]03 82 00 00 a0 64 00 00: playBGM 2 100
+[0000005a]10: 
+[0000005b]19: showTextbox
+[0000005c]ff 00 00: text 00
+{marker}{appendText}After that...{waitForClick}{clearText}{marker}{appendText}We gathered at the rest area, had a light meal 
+and chatted it up.{waitForClick}{clearText}{marker}{appendText}From beginning to end, Sora's explanation of 
+the RSD system dominated the conversation.{waitForClick}{clearText}{marker}{appendText}During the talking, I discovered something of 
+interest.{waitForClick}{clearText}{marker}{appendText}I learned that Sara was supposed to be amazing 
+when it came to computers.{waitForClick}{clearText}{marker}{appendText}Sara was floored the day before when she heard 
+that Sora was computer generated. But when 
+Sora gave her a technical explanation, she 
+was able to absorb it all without any problem.{waitForClick}{clearText}{marker}{appendText}You said this about Sara -{waitForClick}{clearText}
+
+[0000005f]10: 
+[00000060]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[00000067]10: 
+[00000068]0c 00 00 00 00 00 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[00000075]10: 
+[00000076]0f 81 00 00 00 00 00 00 01 00 a1 40 00 00 80 00 00: fgload 1 00000000 YU01ADL 320 0
+[00000087]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[00000091]27 00 00: fadeOutMonoColorOverlay
+[00000094]00: 
+[00000095]05 a0 12 00 00: unSkippableDelay 18
+[0000009a]10: 
+[0000009b]19: showTextbox
+[0000009c]ff 01 00: text 01
+{marker}{sound S2C062}{appendText}[You]
+"Mayo? She's a hacker."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Hacker?"{waitForClick}{clearText}
+
+[0000009f]10: 
+[000000a0]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU03ADL 320 3
+[000000b1]10: 
+[000000b2]19: showTextbox
+[000000b3]ff 02 00: text 02
+{marker}{sound S2C063}{appendText}[You]
+"Yeah. How should I explain this...I guess you 
+could say a computer expert of sorts."{waitForClick}{clearText}
+
+[000000b6]10: 
+[000000b7]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADL 320 3
+[000000c8]10: 
+[000000c9]19: showTextbox
+[000000ca]ff 03 00: text 03
+{marker}{sound S2C064}{appendText}[You]
+"Anyway, she knows everything about computers. 
+And she kicks butt when it comes to 
+programming, too."{waitForClick}{clearText}
+
+[000000cd]10: 
+[000000ce]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02ADL 320 3
+[000000df]10: 
+[000000e0]19: showTextbox
+[000000e1]ff 04 00: text 04
+{marker}{sound S2C065}{appendText}[You]
+"She writes programs for kicks. Just the other 
+day she got first place in some cracking 
+contest..."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Cracking contest?"{waitForClick}{clearText}
+
+[000000e4]10: 
+[000000e5]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADL 320 3
+[000000f6]10: 
+[000000f7]19: showTextbox
+[000000f8]ff 05 00: text 05
+{marker}{sound S2C066}{appendText}[You]
+"A contest to break codes. Just so you know, 
+it's not illegal."{waitForClick}{clearText}{marker}{sound S2C067}{appendText}[You]
+"It was sponsored by some company with code 
+technology. It was legal cracking to test the 
+security of its technology..."{waitForClick}{clearText}{marker}{sound S2C068}{appendText}[You]
+"The company has hackers attack their 
+algorithms."{waitForClick}{clearText}
+
+[000000fb]10: 
+[000000fc]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU08ADL 320 3
+[0000010d]10: 
+[0000010e]19: showTextbox
+[0000010f]ff 06 00: text 06
+{marker}{sound S2C069}{appendText}[You]
+"Just think of it as a decryption game 
+contest."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"Oh, so it's a game."{waitForClick}{clearText}
+
+[00000112]10: 
+[00000113]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU05ADL 320 3
+[00000124]10: 
+[00000125]19: showTextbox
+[00000126]ff 07 00: text 07
+{marker}{sound S2C077}{appendText}[You]
+"Just because you call it a game, I wouldn't 
+take it lightly."{waitForClick}{clearText}
+
+[00000129]10: 
+[0000012a]0f 81 00 00 00 00 00 00 08 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADL 320 3
+[0000013b]10: 
+[0000013c]19: showTextbox
+[0000013d]ff 08 00: text 08
+{marker}{sound S2C078}{appendText}[You]
+"There were engineers participating from all 
+over the world."{waitForClick}{clearText}{marker}{sound S2C079}{appendText}[You]
+"Winning it means that you are one of the 
+world's best hackers."{waitForClick}{clearText}
+
+[00000140]10: 
+[00000141]0f 81 00 00 00 00 00 00 09 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU02ADL 320 3
+[00000152]10: 
+[00000153]19: showTextbox
+[00000154]ff 09 00: text 09
+{marker}{sound S2C080}{appendText}[You]
+"You could even say THE best hacker."{waitForClick}{clearText}{marker}{appendText}[Kid]
+"THE BEST...?"{waitForClick}{clearText}{marker}{appendText}[Kid]
+"That's just way too incredible."{waitForClick}{clearText}
+
+[00000157]10: 
+[00000158]0f 81 00 00 00 00 00 00 0a 00 a1 40 00 00 83 00 00: fgload 1 00000000 YU01ADL 320 3
+[00000169]10: 
+[0000016a]19: showTextbox
+[0000016b]ff 0a 00: text 0a
+{marker}{sound S2C081}{appendText}[You]
+"I know."{waitForClick}{clearText}{marker}{sound S2C082}{appendText}[You]
+"When it comes to computers...she's just a 
+genius."{waitForClick}{clearText}
+
+[0000016e]10: 
+[0000016f]18: hideTextbox
+[00000170]10: 
+[00000171]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[00000178]10: 
+[00000179]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000183]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000018d]27 00 00: fadeOutMonoColorOverlay
+[00000190]00: 
+[00000191]05 83 00 00: unSkippableDelay 3
+[00000195]10: 
+[00000196]19: showTextbox
+[00000197]ff 0b 00: text 0b
+{marker}{appendText}That about rounded out the topic of RSD.{waitForClick}{clearText}{marker}{appendText}At the end of the conversation, Sora added the 
+following.{waitForClick}{clearText}
+
+[0000019a]10: 
+[0000019b]18: hideTextbox
+[0000019c]10: 
+[0000019d]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[000001a4]10: 
+[000001a5]0c 00 00 00 00 0b 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[000001b2]10: 
+[000001b3]0f 81 00 00 00 00 00 00 0c 00 a1 40 00 00 80 00 00: fgload 1 00000000 SO05ADM 320 0
+[000001c4]fe 28 0a a0 ab 14 14 00 c0 1f: setMonoColorOverlayFadeOutDuration VAR_c0_31
+[000001ce]27 00 00: fadeOutMonoColorOverlay
+[000001d1]00: 
+[000001d2]05 a0 12 00 00: unSkippableDelay 18
+[000001d7]10: 
+[000001d8]19: showTextbox
+[000001d9]ff 0c 00: text 0c
+{marker}{sound T2C227}{appendText}[Sora]
+"I..."{waitForClick}{clearText}
+
+[000001dc]10: 
+[000001dd]0f 81 00 00 00 00 00 00 0d 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO10ADM 320 3
+[000001ee]10: 
+[000001ef]19: showTextbox
+[000001f0]ff 0d 00: text 0d
+{marker}{sound T2C228}{appendText}[Sora]
+"I am only 'seen' when someone looks at me."{waitForClick}{clearText}
+
+[000001f3]10: 
+[000001f4]0f 81 00 00 00 00 00 00 0e 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO03ADM 320 3
+[00000205]10: 
+[00000206]19: showTextbox
+[00000207]ff 0e 00: text 0e
+{marker}{sound T2C229}{appendText}[Sora]
+"I mean, that I cease to exist 
+when no one is looking at me."{waitForClick}{clearText}
+
+[0000020a]10: 
+[0000020b]0f 81 00 00 00 00 00 00 0f 00 a1 40 00 00 83 00 00: fgload 1 00000000 SO05ADM 320 3
+[0000021c]10: 
+[0000021d]19: showTextbox
+[0000021e]ff 0f 00: text 0f
+{marker}{sound T2C230}{appendText}[Sora]
+"For example, if the five of you here all 
+closed your eyes at once..."{waitForClick}{clearText}{marker}{sound T2C231}{appendText}[Sora]
+"At that instant, I would cease to 
+exist anywhere."{waitForClick}{clearText}
+
+[00000221]10: 
+[00000222]18: hideTextbox
+[00000223]10: 
+[00000224]45 8c 00 00 80 00 00: monoColorOverlay 12 0
+[0000022b]10: 
+[0000022c]04: stopBGM
+[0000022d]10: 
+[0000022e]10 81 00 00 83 00 00: removeFG 1 3
+[00000235]10: 
+[00000236]1e a0 5a 00 00: delay 90
+[0000023b]10: 
+[0000023c]03 a0 13 00 00 a0 64 00 00: playBGM 19 100
+[00000245]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[0000024f]27 00 00: fadeOutMonoColorOverlay
+[00000252]00: 
+[00000253]05 a0 19 00 00: unSkippableDelay 25
+[00000258]10: 
+[00000259]19: showTextbox
+[0000025a]ff 10 00: text 10
+{marker}{appendText}After the discussion, I stayed in the rest 
+area alone.{waitForClick}{clearText}{marker}{appendText}It was a free time of sorts.{waitForClick}{clearText}{marker}{appendText}I imagined that everyone was walking around 
+LeMU, spending the time as they pleased.{waitForClick}{clearText}{marker}{appendText}We had decided when and where we would meet.{waitForClick}{clearText}{marker}{appendText}I didn't know what I should do with myself 
+until then.{waitForClick}{clearText}{marker}{appendText}I was bored stiff.{waitForClick}{clearText}{marker}{appendText}I looked down.{waitForClick}{clearText}{marker}{appendText}The floor was covered with a layer of water.{waitForClick}{clearText}{marker}{appendText}The lights in the ceiling were reflected in 
+the water.{waitForClick}{clearText}{marker}{appendText}It was like the cold light of the moon.{waitForClick}{clearText}{marker}{appendText}I poked my finger into the water.{waitForClick}{clearText}{marker}{appendText}Plop.{waitForClick}{clearText}{marker}{appendText}The water rippled and the surface shook.{waitForClick}{clearText}{marker}{appendText}The light in the water fragmented into 
+disarray...finally returning to its 
+original shapes.{waitForClick}{clearText}{marker}{appendText}I reached into to the water trying to grab 
+the light.{waitForClick}{clearText}{marker}{appendText}But...{waitForClick}{clearText}{marker}{appendText}I could only grab a little seawater...I 
+couldn't touch the light.{waitForClick}{clearText}{marker}{appendText}I tried again and again, but no matter how 
+I tried, I couldn't grab the moon.{waitForClick}{clearText}{marker}{appendText}The words that I had just heard from Sora cut 
+across my mind again.{waitForClick}{clearText}{marker}{sound T2C229}{appendText}[Sora]
+"I mean, that I cease to exist 
+when no one is looking at me."{waitForClick}{clearText}{marker}{appendText}I laid down on the bench and closed my eyes.{waitForClick}{clearText}
+
+[0000025d]10: 
+[0000025e]18: hideTextbox
+[0000025f]10: 
+[00000260]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[00000267]10: 
+[00000268]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
+[00000272]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[0000027c]27 00 00: fadeOutMonoColorOverlay
+[0000027f]00: 
+[00000280]05 83 00 00: unSkippableDelay 3
+[00000284]10: 
+[00000285]19: showTextbox
+[00000286]ff 11 00: text 11
+{marker}{appendText}I thought about Sora...{waitForClick}{clearText}{marker}{appendText}As I thought, my consciousness slipped into a 
+light sleep.{waitForClick}{clearText}{marker}{appendText}.......{waitForClick}{clearText}{marker}{appendText}....{waitForClick}{clearText}{marker}{appendText}...{waitForClick}{clearText}{marker}{appendText}It was actually more than a light sleep.{waitForClick}{clearText}{marker}{appendText}I continued my slumber.{waitForClick}{clearText}
+
+[00000289]10: 
+[0000028a]18: hideTextbox
+[0000028b]10: 
+[0000028c]45 80 00 00 80 00 00: monoColorOverlay 0 0
+[00000293]10: 
+[00000294]04: stopBGM
+[00000295]10: 
+[00000296]0c 00 00 00 00 10 00 86 00 00 82 00 00: bgload 00000000 BG21B1 6 2
+[000002a3]10: 
+[000002a4]0f 81 00 00 00 00 00 00 11 00 a1 40 00 00 80 00 00: fgload 1 00000000 SO01ADM 320 0
+[000002b5]fe 28 0a a0 ab 14 14 00 c0 26: setMonoColorOverlayFadeOutDuration VAR_c0_38
+[000002bf]27 00 00: fadeOutMonoColorOverlay
+[000002c2]00: 
+[000002c3]05 a0 19 00 00: unSkippableDelay 25
+[000002c8]10: 
+[000002c9]1f a0 12 00 00 a0 2b 00 00: clock 18:43
+[000002d2]10: 
+[000002d3]19: showTextbox
+[000002d4]ff 12 00: text 12
+{marker}{appendText}When I opened my eyes, there was Sora.{waitForClick}{clearText}
+
+[000002d7]10: 
+[000002d8]03 88 00 00 a0 64 00 00: playBGM 8 100
+[000002e0]10: 
+[000002e1]19: showTextbox
+[000002e2]ff 13 00: text 13
+{marker}{sound S2C116}{appendText}[Sora]
+"Kid, everyone is waiting for you."{waitForClick}{clearText}{marker}{appendText}Sora said it softly, peering down at me spread 
+out on the bench.{waitForClick}{clearText}{marker}{appendText}I was still half a sleep when Sora and I 
+started heading for the Conference Room 
+to meet everyone.{waitForClick}{clearText}
+
+[000002e5]10: 
+[000002e6]0c 00 00 00 00 12 00 80 00 00 82 00 00: bgload 00000000 BG25B3 0 2
+[000002f3]10: 
+[000002f4]19: showTextbox
+[000002f5]ff 14 00: text 14
+{marker}{appendText}I thought as I walked the corridors in a 
+stupor.{waitForClick}{clearText}{marker}{appendText}I remembered the words that Sora had said 
+before I slept - {waitForClick}{clearText}{marker}{appendText}"I mean, that I cease to exist 
+when no one is looking at me."{waitForClick}{clearText}{marker}{appendText}For some reason, I just could not shake those 
+words from my mind.{waitForClick}{clearText}{marker}{appendText}I asked Sora walking next to me why she had 
+said them.{waitForClick}{clearText}{marker}{appendText}And this is what she said...{waitForClick}{clearText}
+
+[000002f8]00: 
+[000002f9]0a 01 28 0a a4 ba 14 0c 01 85 01 00 03 00: gotoif 1 (28 0a a4) ba == (01) 5 (0001) -> 0000031f (00000003)
+[00000307]10: 
+[00000308]24 a0 11 00 00: scriptLocationId 17
+[0000030d]fe 28 0a a4 b3 14 14 00 81 00 00: varop (28 0a a4) b3 := (00) 1
+[00000318]10: 
+[00000319]01 53 5f 32 43 00: jump S_2C
+[0000031f]10: 
+[00000320]01 53 43 32 44 00: jump SC2D
+[00000326]00: 
+[00000327]00: 

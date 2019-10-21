@@ -1,0 +1,578 @@
+﻿[00000016]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+[00000021]fe 28 0a a4 b1 14 14 00 86 00 00: varop (28 0a a4) b1 := (00) 6
+[0000002c]fe 28 0a a4 b2 14 14 00 86 00 00: varop (28 0a a4) b2 := (00) 6
+[00000037]10: 
+[00000038]46 81 00 00: setDialogBoxColor green
+[0000003c]10: 
+[0000003d]03 a0 15 00 00 a0 64 00 00: playBGM 21 100
+[00000046]10: 
+[00000047]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2
+[00000051]fe 28 0a a4 fa 14 14 00 a0 2f 00 00: setSceneTitleByIndex 47
+[0000005d]00: 
+[0000005e]28: l_unk28
+[0000005f]10: 
+[00000060]19: showTextbox
+[00000061]ff 00 00: text 00
+{marker}{appendText}A few more hours later...{waitForClick}{clearText}{marker}{appendText}We'd tried everything.{waitForClick}{clearText}{marker}{appendText}There was nothing we else could do to get out 
+of here.{waitForClick}{clearText}{marker}{appendText}There were no paths left for us to take.{waitForClick}{clearText}{marker}{appendText}Hit by that reality, all of my remaining 
+strength drained away. All I could do was 
+watch the seconds on the clock slip by.{waitForClick}{clearText}{marker}{appendText}The kid's condition had gotten worse, and he 
+was sleeping in a capsule pod.{waitForClick}{clearText}{marker}{appendText}We had tried contacting the outside using the 
+communication lines.{waitForClick}{clearText}{marker}{appendText}But...{waitForClick}{clearText}{marker}{appendText}Nothing had changed since we were at LeMU. {waitForClick}{clearText}{marker}{appendText}All sonic, and electrical communications were 
+down.{waitForClick}{clearText}{marker}{appendText}Every once in a while, static would come 
+through the receiver from the outside.{waitForClick}{clearText}{marker}{appendText}Which meant that the lines were 
+functioning...but the computer's 
+communication software wasn't working.{waitForClick}{clearText}{marker}{appendText}We had been trapped here by Leiblich 
+Pharmaceutical to hide the existence of IBF 
+and its records from the outside world.{waitForClick}{clearText}{marker}{appendText}Our reality was a nightmare.{waitForClick}{clearText}{marker}{appendText}How I wished...{waitForClick}{clearText}{marker}{appendText}That it all had only been a long dream...{waitForClick}{clearText}{marker}{appendText}Thinking that, I closed my eyes slowly.{waitForClick}{clearText}
+
+[00000064]10: 
+[00000065]0c 00 00 00 00 00 00 80 00 00 82 00 00: bgload 00000000 BG34A1 0 2
+[00000072]10: 
+[00000073]05 53 45 30 36 5f 30 30 00 80 00 00 a0 5f 00 00: playSFX SE06_00 0 95
+[00000083]fe 28 0a a2 4f 14 14 00 a0 99 00 00: varop (28 0a a2) 4f := (00) 153
+[0000008f]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[0000009a]fe 28 0a a2 3c 14 14 00 c3 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_c3_0_6
+[000000a7]fe 28 0a a2 3d 14 14 00 81 00 00: varop (28 0a a2) 3d := (00) 1
+[000000b2]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[000000bd]fe 28 0a a2 3f 14 14 00 c3 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c3_0_6
+[000000ca]fe 28 0a a2 40 14 14 00 81 00 00: varop (28 0a a2) 40 := (00) 1
+[000000d5]10: 
+[000000d6]20 8c 00 00: openShakeScreenAnim
+[000000da]10: 
+[000000db]19: showTextbox
+[000000dc]ff 01 00: text 01
+{marker}{sound TBD000A}{appendText}[Announcement]
+"Three minutes {waitForSound}{sound TBD000B}{appendText}before implosion."{waitForClick}{clearText}
+
+[000000df]10: 
+[000000e0]19: showTextbox
+[000000e1]ff 02 00: text 02
+{marker}{appendText}An announcement grated mechanically from the 
+room's speakers.{waitForClick}{clearText}
+
+[000000e4]10: 
+[000000e5]05 53 45 30 36 5f 30 31 00 80 00 00 a0 5f 00 00: playSFX SE06_01 0 95
+[000000f5]10: 
+[000000f6]19: showTextbox
+[000000f7]ff 03 00: text 03
+{marker}{appendText}I could hear sharp metallic sounds echoing 
+from somewhere.{waitForClick}{clearText}{marker}{appendText}The walls creaked ominously and the floor 
+shook.{waitForClick}{clearText}
+
+[000000fa]10: 
+[000000fb]19: showTextbox
+[000000fc]ff 04 00: text 04
+{marker}{sound TBD001}{appendText}[Tsugumi]
+"Looks like...it's started."{waitForClick}{clearText}{marker}{appendText}Tsugumi looked at the ceiling, and murmured 
+this.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Started...?"{waitForClick}{clearText}{marker}{sound TBD002}{appendText}[Tsugumi]
+"Or I guess you could say, it's finished."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Finished..."{waitForClick}{clearText}{marker}{appendText}I looked up at the ceiling.{waitForClick}{clearText}
+
+[000000ff]10: 
+[00000100]05 53 45 30 36 5f 30 31 00 80 00 00 a0 5a 00 00: playSFX SE06_01 0 90
+[00000110]10: 
+[00000111]19: showTextbox
+[00000112]ff 05 00: text 05
+{marker}{appendText}And I couldn't see anything.{waitForClick}{clearText}{marker}{appendText}The heavy reverberations were coming from 
+somewhere far away in the water.{waitForClick}{clearText}
+
+[00000115]10: 
+[00000116]19: showTextbox
+[00000117]ff 06 00: text 06
+{marker}{sound TBD003}{appendText}[Tsugumi]
+"In the end..."{waitForClick}{clearText}{marker}{sound TBD004}{appendText}[Tsugumi]
+"It looks like this is my place."{waitForClick}{clearText}{marker}{appendText}Tsugumi let these words fall from her lips 
+without any expression.{waitForClick}{clearText}{marker}{sound TBD005}{appendText}[You]
+"Tsugumi...what are you talking about?"{waitForClick}{clearText}{marker}{sound TBD006}{appendText}[You]
+"Place? What place?"{waitForClick}{clearText}{marker}{appendText}From her spot on the floor, You raised her 
+head feebly.{waitForClick}{clearText}
+
+[0000011a]10: 
+[0000011b]19: showTextbox
+[0000011c]ff 07 00: text 07
+{marker}{sound TBD007}{appendText}[Tsugumi]
+"I've been searching for so long. Now I've 
+finally found it."{waitForClick}{clearText}{marker}{sound TBD008}{appendText}[Tsugumi]
+"This is my..."{waitForClick}{clearText}{marker}{sound TBD009}{appendText}[Tsugumi]
+"Place to die."{waitForClick}{clearText}
+
+[0000011f]10: 
+[00000120]0f 81 00 00 00 00 00 00 01 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU09ADM 320 3
+[00000131]10: 
+[00000132]19: showTextbox
+[00000133]ff 08 00: text 08
+{marker}{appendText}Tsugumi stood unsteadily.{waitForClick}{clearText}{marker}{appendText}She dragged...her right leg....{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Tsugumi, what happened to your...leg?"{waitForClick}{clearText}{marker}{sound TBD010}{appendText}[Tsugumi]
+"Oh, this?"{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"......"{waitForClick}{clearText}{marker}{appendText}Tsugumi looked at her leg as if it was the 
+first time that she had noticed.{waitForClick}{clearText}{marker}{sound TBD011}{appendText}[Tsugumi]
+"It really wasn't anything."{waitForClick}{clearText}{marker}{sound TBD012}{appendText}[Tsugumi]
+"I kept telling myself I couldn't die no 
+matter what..."{waitForClick}{clearText}{marker}{sound TBD013}{appendText}[Tsugumi]
+"But it looks like I was wrong again..."{waitForClick}{clearText}
+
+[00000136]10: 
+[00000137]18: hideTextbox
+[00000138]10: 
+[00000139]05 53 45 30 36 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE06_00 0 100
+[00000149]fe 28 0a a2 4f 14 14 00 a0 99 00 00: varop (28 0a a2) 4f := (00) 153
+[00000155]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[00000160]fe 28 0a a2 3c 14 14 00 c6 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_c6_0_6
+[0000016d]fe 28 0a a2 3d 14 14 00 82 00 00: varop (28 0a a2) 3d := (00) 2
+[00000178]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[00000183]fe 28 0a a2 3f 14 14 00 c6 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c6_0_6
+[00000190]fe 28 0a a2 40 14 14 00 82 00 00: varop (28 0a a2) 40 := (00) 2
+[0000019b]10: 
+[0000019c]20 8c 00 00: openShakeScreenAnim
+[000001a0]10: 
+[000001a1]19: showTextbox
+[000001a2]ff 09 00: text 09
+{marker}{sound TBD014A}{appendText}[Announcement]
+"Two minutes {waitForSound}{sound TBD014B}{appendText}before implosion". {waitForClick}{clearText}
+
+[000001a5]10: 
+[000001a6]10 81 00 00 83 00 00: removeFG 1 3
+[000001ad]10: 
+[000001ae]0f 81 00 00 00 00 00 00 02 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU09ADS 320 3
+[000001bf]10: 
+[000001c0]19: showTextbox
+[000001c1]ff 0a 00: text 0a
+{marker}{appendText}Dragging her leg, Tsugumi hobbled toward the 
+door.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Tsugumi..."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"W-wait!"{waitForClick}{clearText}
+
+[000001c4]10: 
+[000001c5]18: hideTextbox
+[000001c6]10: 
+[000001c7]10 81 00 00 83 00 00: removeFG 1 3
+[000001ce]10: 
+[000001cf]05 53 45 30 35 5f 31 31 00 80 00 00 a0 64 00 00: playSFX SE05_11 0 100
+[000001df]10: 
+[000001e0]20 85 00 00: shakeScreen
+[000001e4]10: 
+[000001e5]19: showTextbox
+[000001e6]ff 0b 00: text 0b
+{marker}{appendText}I tried to chase after her, but tripped 
+awkwardly.{waitForClick}{clearText}
+
+[000001e9]10: 
+[000001ea]18: hideTextbox
+[000001eb]10: 
+[000001ec]05 53 45 30 35 5f 31 31 00 80 00 00 a0 5f 00 00: playSFX SE05_11 0 95
+[000001fc]10: 
+[000001fd]20 84 00 00: shakeScreenHard
+[00000201]10: 
+[00000202]19: showTextbox
+[00000203]ff 0c 00: text 0c
+{marker}{appendText}My hands hit the floor. When I tried to 
+stand...I fell to the floor again.{waitForClick}{clearText}{marker}{appendText}My legs wouldn't move as I wanted.{waitForClick}{clearText}{marker}{appendText}Sprawled out on the floor, my whole body was 
+numb and I couldn't move.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"...!?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"W-what's happening...to me."{waitForClick}{clearText}{marker}{appendText}[You]
+"......"{waitForClick}{clearText}
+
+[00000206]10: 
+[00000207]0f 81 00 00 00 00 00 00 03 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU09ADS 320 3
+[00000218]10: 
+[00000219]19: showTextbox
+[0000021a]ff 0d 00: text 0d
+{marker}{appendText}[Tsugumi]
+"......"{waitForClick}{clearText}
+
+[0000021d]10: 
+[0000021e]05 53 45 30 32 5f 30 31 00 80 00 00 a0 5a 00 00: playSFX SE02_01 0 90
+[0000022e]10: 
+[0000022f]19: showTextbox
+[00000230]ff 0e 00: text 0e
+{marker}{appendText}[Takeshi]
+*cough*{waitForClick}{clearText}{marker}{appendText}I started coughing, suddenly, and put my hand 
+to my mouth.{waitForClick}{clearText}{marker}{appendText}Removing it slowly...{waitForClick}{clearText}{marker}{appendText}I noticed my palm was sticky with blood.{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Tsugumi...where are...you going?"{waitForClick}{clearText}
+
+[00000233]10: 
+[00000234]19: showTextbox
+[00000235]ff 0f 00: text 0f
+{marker}{appendText}My vision began to grow dim.{waitForClick}{clearText}{marker}{appendText}The distance separating us became distorted.{waitForClick}{clearText}{marker}{appendText}[Tsugumi]
+"......"{waitForClick}{clearText}
+
+[00000238]10: 
+[00000239]0f 81 00 00 00 00 00 00 04 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU05ADS 320 3
+[0000024a]10: 
+[0000024b]19: showTextbox
+[0000024c]ff 10 00: text 10
+{marker}{sound TBD015}{appendText}[Tsugumi]
+"Who knows...?"{waitForClick}{clearText}{marker}{appendText}Tsugumi tilted her head.{waitForClick}{clearText}
+
+[0000024f]10: 
+[00000250]0f 81 00 00 00 00 00 00 05 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU17ADS 320 3
+[00000261]10: 
+[00000262]19: showTextbox
+[00000263]ff 11 00: text 11
+{marker}{sound TBD016}{appendText}[Tsugumi]
+"Pretending to be friends wasn't so bad, 
+but..."{waitForClick}{clearText}{marker}{appendText}She opened up the flood hatch, and went into 
+the infirmary.{waitForClick}{clearText}
+
+[00000266]10: 
+[00000267]0f 81 00 00 00 00 00 00 06 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU10ADS 320 3
+[00000278]10: 
+[00000279]19: showTextbox
+[0000027a]ff 12 00: text 12
+{marker}{sound TBD017}{appendText}[Tsugumi]
+"This is probably the last time we'll see each 
+other."{waitForClick}{clearText}{marker}{appendText}Her outline seemed to flicker faintly.{waitForClick}{clearText}
+
+[0000027d]10: 
+[0000027e]0f 81 00 00 00 00 00 00 07 00 a1 40 00 00 83 00 00: fgload 1 00000000 TU02ADS 320 3
+[0000028f]10: 
+[00000290]19: showTextbox
+[00000291]ff 13 00: text 13
+{marker}{sound TBD018}{appendText}[Tsugumi]
+"Good-bye..."{waitForClick}{clearText}
+
+[00000294]10: 
+[00000295]10 81 00 00 83 00 00: removeFG 1 3
+[0000029c]10: 
+[0000029d]19: showTextbox
+[0000029e]ff 14 00: text 14
+{marker}{appendText}As Tsugumi walked down the hallway...I lost 
+sight of her.{waitForClick}{clearText}
+
+[000002a1]10: 
+[000002a2]05 53 45 30 30 5f 30 36 00 80 00 00 a0 5a 00 00: playSFX SE00_06 0 90
+[000002b2]10: 
+[000002b3]19: showTextbox
+[000002b4]ff 15 00: text 15
+{marker}{appendText}She closed the hatch from the outside.{waitForClick}{clearText}{marker}{appendText}She turned the handle so I knew that the door 
+was sealed.{waitForClick}{clearText}
+
+[000002b7]10: 
+[000002b8]18: hideTextbox
+[000002b9]10: 
+[000002ba]06: stopSFX
+[000002bb]10: 
+[000002bc]19: showTextbox
+[000002bd]ff 16 00: text 16
+{marker}{appendText}In that instant—{waitForClick}{clearText}
+
+[000002c0]10: 
+[000002c1]18: hideTextbox
+[000002c2]10: 
+[000002c3]05 53 45 30 32 5f 31 30 00 80 00 00 a0 64 00 00: playSFX SE02_10 0 100
+[000002d3]fe 28 0a a2 4f 14 14 00 80 00 00: varop (28 0a a2) 4f := (00) 0
+[000002de]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[000002e9]fe 28 0a a2 3c 14 14 00 cb 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_cb_0_6
+[000002f6]fe 28 0a a2 3d 14 14 00 87 00 00: varop (28 0a a2) 3d := (00) 7
+[00000301]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[0000030c]fe 28 0a a2 3f 14 14 00 c6 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c6_0_6
+[00000319]fe 28 0a a2 40 14 14 00 84 00 00: varop (28 0a a2) 40 := (00) 4
+[00000324]10: 
+[00000325]20 8c 00 00: openShakeScreenAnim
+[00000329]10: 
+[0000032a]1e a0 78 00 00: delay 120
+[0000032f]10: 
+[00000330]19: showTextbox
+[00000331]ff 17 00: text 17
+{marker}{appendText}I heard the terrible roar of water from the 
+passageway on the other side of the wall.{waitForClick}{clearText}{marker}{appendText}The watertight hatch groaned and buckled 
+under the tremendous force of the water, but 
+somehow withstood the pressure.{waitForClick}{clearText}
+
+[00000334]10: 
+[00000335]18: hideTextbox
+[00000336]10: 
+[00000337]19: showTextbox
+[00000338]ff 18 00: text 18
+{marker}{appendText}[Takeshi]
+"Tsu...Tsugumi...!!"{waitForClick}{clearText}{marker}{sound TBD019}{appendText}[You]
+"Tsugumi...!!"{waitForClick}{clearText}
+
+[0000033b]10: 
+[0000033c]18: hideTextbox
+[0000033d]10: 
+[0000033e]06: stopSFX
+[0000033f]fe 28 0a a2 4f 14 14 00 80 00 00: varop (28 0a a2) 4f := (00) 0
+[0000034a]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[00000355]fe 28 0a a2 3c 14 14 00 c2 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_c2_0_6
+[00000362]fe 28 0a a2 3d 14 14 00 81 00 00: varop (28 0a a2) 3d := (00) 1
+[0000036d]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[00000378]fe 28 0a a2 3f 14 14 00 c2 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c2_0_6
+[00000385]fe 28 0a a2 40 14 14 00 81 00 00: varop (28 0a a2) 40 := (00) 1
+[00000390]10: 
+[00000391]19: showTextbox
+[00000392]ff 19 00: text 19
+{marker}{sound TBD020A}{appendText}[Announcement]
+"One minute {waitForSound}{sound TBD020B}{appendText}before implosion."{waitForClick}{clearText}
+
+[00000395]10: 
+[00000396]05 53 45 30 33 5f 30 30 00 80 00 00 a0 64 00 00: playSFX SE03_00 0 100
+[000003a6]10: 
+[000003a7]19: showTextbox
+[000003a8]ff 1a 00: text 1a
+{marker}{appendText}Beeeeeeeeeeep......{waitForClick}{clearText}{marker}{appendText}The alarm from the pod's control panel started 
+shrieking a high-pitched warning.{waitForClick}{clearText}{marker}{appendText}I turned my head to look over at the source 
+of the noise.{waitForClick}{clearText}{marker}{appendText}The vital signs, which should had been 
+displayed on the monitor, were no longer 
+moving.{waitForClick}{clearText}
+
+[000003ab]10: 
+[000003ac]18: hideTextbox
+[000003ad]10: 
+[000003ae]21 8b 00 00: closeShakeScreenAnim
+[000003b2]10: 
+[000003b3]05 53 45 30 39 5f 30 30 4c 00 80 00 00 a0 5a 00 00: playSFX SE09_00L 0 90
+[000003c4]10: 
+[000003c5]19: showTextbox
+[000003c6]ff 1b 00: text 1b
+{marker}{sound TBD021}{appendText}[You]
+"Kid..."{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"Kid...no..."{waitForClick}{clearText}{marker}{appendText}The alarm wouldn't stop,{waitForClick}{clearText}{marker}{appendText}Its cold, flat tone, drowned out the silence.{waitForClick}{clearText}{marker}{appendText}The lines weren't moving. No heartbeat. No 
+breathing. Nothing.{waitForClick}{clearText}{marker}{sound TBD022}{appendText}[You]
+"It can't be..."{waitForClick}{clearText}{marker}{sound TBD023}{appendText}[You]
+"It's got to be wrong... "{waitForClick}{clearText}{marker}{sound TBD024}{appendText}[You]
+"Aaagh...."{waitForClick}{clearText}
+
+[000003c9]10: 
+[000003ca]18: hideTextbox
+[000003cb]10: 
+[000003cc]19: showTextbox
+[000003cd]ff 1c 00: text 1c
+{marker}{sound TBD025}{appendText}[You]
+"Somebody tell me this is all just a bad 
+joke..."{waitForClick}{clearText}{marker}{sound TBD026}{appendText}[You]
+"Takeshi..."{waitForClick}{clearText}{marker}{sound TBD027}{appendText}[You]
+"Tell me it's a lie..."{waitForClick}{clearText}{marker}{appendText}Lying flat on the floor, You started sobbing.{waitForClick}{clearText}
+
+[000003d0]10: 
+[000003d1]18: hideTextbox
+[000003d2]10: 
+[000003d3]05 53 45 30 39 5f 30 30 4c 00 80 00 00 a0 5f 00 00: playSFX SE09_00L 0 95
+[000003e4]fe 28 0a a2 4f 14 14 00 80 00 00: varop (28 0a a2) 4f := (00) 0
+[000003ef]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[000003fa]fe 28 0a a2 3c 14 14 00 c5 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_c5_0_6
+[00000407]fe 28 0a a2 3d 14 14 00 83 00 00: varop (28 0a a2) 3d := (00) 3
+[00000412]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[0000041d]fe 28 0a a2 3f 14 14 00 c5 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c5_0_6
+[0000042a]fe 28 0a a2 40 14 14 00 83 00 00: varop (28 0a a2) 40 := (00) 3
+[00000435]10: 
+[00000436]19: showTextbox
+[00000437]ff 1d 00: text 1d
+{marker}{appendText}The terrible roaring from overhead gradually 
+became louder.{waitForClick}{clearText}{marker}{appendText}It seemed as if the whole floor were trembling.{waitForClick}{clearText}{marker}{appendText}Ignoring the complaints from my body, I used 
+the rest of my strength to pull myself close 
+to You.{waitForClick}{clearText}{marker}{sound TBD028}{appendText}[You]
+"Takeshi...where are you...?"{waitForClick}{clearText}{marker}{appendText}[Takeshi]
+"I'm...here..."{waitForClick}{clearText}
+
+[0000043a]10: 
+[0000043b]18: hideTextbox
+[0000043c]10: 
+[0000043d]19: showTextbox
+[0000043e]ff 1e 00: text 1e
+{marker}{sound TBD029}{appendText}[You]
+"Where are you?"{waitForClick}{clearText}{marker}{sound TBD030}{appendText}[You]
+"Give me your hand..."{waitForClick}{clearText}{marker}{appendText}The floor was wet with blood.{waitForClick}{clearText}{marker}{appendText}I somehow slid my arm over to her.{waitForClick}{clearText}{marker}{appendText}Both of You's hands took my right hand, 
+closing around it gently.{waitForClick}{clearText}
+
+[00000441]10: 
+[00000442]0c 00 00 00 00 08 00 80 00 00 82 00 00: bgload 00000000 EV_YU15A 0 2
+[0000044f]10: 
+[00000450]19: showTextbox
+[00000451]ff 1f 00: text 1f
+{marker}{appendText}Her small hands were icy cold.{waitForClick}{clearText}
+
+[00000454]10: 
+[00000455]18: hideTextbox
+[00000456]10: 
+[00000457]19: showTextbox
+[00000458]ff 20 00: text 20
+{marker}{sound TBD031}{appendText}[You]
+"Takeshi..."{waitForClick}{clearText}{marker}{appendText}You came crawling over to me, pulling closer 
+the hand in her grasp.{waitForClick}{clearText}{marker}{appendText}She hugged my hand close and held it to her 
+chest.{waitForClick}{clearText}{marker}{appendText}Squeezing it closely, firmly.{waitForClick}{clearText}{marker}{appendText}The palm of my hand covered her chest.{waitForClick}{clearText}
+
+[0000045b]10: 
+[0000045c]18: hideTextbox
+[0000045d]10: 
+[0000045e]19: showTextbox
+[0000045f]ff 21 00: text 21
+{marker}{sound TBD032}{appendText}[You]
+"I hate this..."{waitForClick}{clearText}{marker}{sound TBD033}{appendText}[You]
+"It's so cold..."{waitForClick}{clearText}{marker}{sound TBD034}{appendText}[You]
+"I..."{waitForClick}{clearText}{marker}{sound TBD035}{appendText}[You]
+"I don't want to die..."{waitForClick}{clearText}
+
+[00000462]10: 
+[00000463]18: hideTextbox
+[00000464]10: 
+[00000465]19: showTextbox
+[00000466]ff 22 00: text 22
+{marker}{appendText}You's body was starting to shake.{waitForClick}{clearText}{marker}{appendText}I could tell from my hand pressed against her 
+that she was rapidly losing energy.{waitForClick}{clearText}
+
+[00000469]10: 
+[0000046a]19: showTextbox
+[0000046b]ff 23 00: text 23
+{marker}{sound TBD036}{appendText}[You]
+"Takeshiii...."{waitForClick}{clearText}{marker}{sound TBD037}{appendText}[You]
+"My heart..."{waitForClick}{clearText}{marker}{sound TBD038}{appendText}[You]
+"My heart...feels like it's going to burst..."{waitForClick}{clearText}{marker}{appendText}Her skin and clothes were freezing cold.{waitForClick}{clearText}{marker}{appendText}The only place where warmth remained was her 
+chest, where our hands were touching.{waitForClick}{clearText}{marker}{appendText}You's heart was beating so hard, it felt like 
+it would explode.{waitForClick}{clearText}
+
+[0000046e]10: 
+[0000046f]18: hideTextbox
+[00000470]10: 
+[00000471]19: showTextbox
+[00000472]ff 24 00: text 24
+{marker}{sound TBD039}{appendText}[You]
+"I'm scared..."{waitForClick}{clearText}{marker}{sound TBD040}{appendText}[You]
+"Help me..."{waitForClick}{clearText}{marker}{sound TBD041}{appendText}[You]
+"Help me Takeshi."{waitForClick}{clearText}{marker}{appendText}Her voice was getting hoarse, and she was 
+having trouble breathing.{waitForClick}{clearText}{marker}{appendText}I couldn't move anymore either.{waitForClick}{clearText}{marker}{appendText}I tried to breathe - to comfort her - but all 
+that came from my mouth were red drops of 
+blood.{waitForClick}{clearText}{marker}{appendText}Extending my fingers toward You, I ran them 
+over her body to check if she were still alive.{waitForClick}{clearText}
+
+[00000475]10: 
+[00000476]18: hideTextbox
+[00000477]10: 
+[00000478]19: showTextbox
+[00000479]ff 25 00: text 25
+{marker}{sound TBD042}{appendText}[You]
+"Aagh..."{waitForClick}{clearText}{marker}{sound TBD043}{appendText}[You]
+"It hurts..."{waitForClick}{clearText}{marker}{appendText}Her whole body was wracked with spasms,{waitForClick}{clearText}{marker}{appendText}Her frame bent, twitching backward...{waitForClick}{clearText}
+
+[0000047c]10: 
+[0000047d]18: hideTextbox
+[0000047e]10: 
+[0000047f]05 53 45 30 39 5f 30 30 4c 00 80 00 00 a0 5a 00 00: playSFX SE09_00L 0 90
+[00000490]10: 
+[00000491]19: showTextbox
+[00000492]ff 26 00: text 26
+{marker}{appendText}But soon, even her shaking became weaker.{waitForClick}{clearText}{marker}{appendText}She became colder and colder with each passing 
+moment.{waitForClick}{clearText}{marker}{appendText}Only her heart remained beating ferociously.{waitForClick}{clearText}{marker}{appendText}It sounded far away, as though it could 
+almost be my imagination.{waitForClick}{clearText}
+
+[00000495]10: 
+[00000496]18: hideTextbox
+[00000497]10: 
+[00000498]0c 00 00 00 00 09 00 80 00 00 82 00 00: bgload 00000000 EV_YU15B 0 2
+[000004a5]10: 
+[000004a6]19: showTextbox
+[000004a7]ff 27 00: text 27
+{marker}{sound TBD044}{appendText}[You]
+"Takeshi..."{waitForClick}{clearText}{marker}{sound TBD045}{appendText}[You]
+"You probably didn't...feel anything about me, 
+but..."{waitForClick}{clearText}{marker}{appendText}Her voice was devoid of strength.{waitForClick}{clearText}{marker}{appendText}A single tear followed these words.{waitForClick}{clearText}{marker}{sound TBD046}{appendText}[You]
+"But I...really liked...."{waitForClick}{clearText}
+
+[000004aa]10: 
+[000004ab]18: hideTextbox
+[000004ac]10: 
+[000004ad]19: showTextbox
+[000004ae]ff 28 00: text 28
+{marker}{appendText}You's heart made one last frantic burst.{waitForClick}{clearText}
+
+[000004b1]10: 
+[000004b2]18: hideTextbox
+[000004b3]10: 
+[000004b4]45 86 00 00 80 00 00: monoColorOverlay 6 0
+[000004bb]10: 
+[000004bc]21 8b 00 00: closeShakeScreenAnim
+[000004c0]fe 28 0a a2 4f 14 14 00 80 00 00: varop (28 0a a2) 4f := (00) 0
+[000004cb]fe 28 0a a2 3b 14 14 00 81 00 00: varop (28 0a a2) 3b := (00) 1
+[000004d6]fe 28 0a a2 3c 14 14 00 c1 00 00 06 00: varop (28 0a a2) 3c := (00) VAR_c1_0_6
+[000004e3]fe 28 0a a2 3d 14 14 00 81 00 00: varop (28 0a a2) 3d := (00) 1
+[000004ee]fe 28 0a a2 3e 14 14 00 82 00 00: varop (28 0a a2) 3e := (00) 2
+[000004f9]fe 28 0a a2 3f 14 14 00 c1 00 00 06 00: varop (28 0a a2) 3f := (00) VAR_c1_0_6
+[00000506]fe 28 0a a2 40 14 14 00 81 00 00: varop (28 0a a2) 40 := (00) 1
+[00000511]10: 
+[00000512]0c 00 00 00 00 0a 00 80 00 00 80 00 00: bgload 00000000 BG34A1 0 0
+[0000051f]fe 28 0a a0 ab 14 14 00 c0 17: setMonoColorOverlayFadeOutDuration VAR_c0_23
+[00000529]27 00 00: fadeOutMonoColorOverlay
+[0000052c]00: 
+[0000052d]05 8a 00 00: unSkippableDelay 10
+[00000531]10: 
+[00000532]19: showTextbox
+[00000533]ff 29 00: text 29
+{marker}{appendText}And after that—{waitForClick}{clearText}{marker}{appendText}I heard nothing.{waitForClick}{clearText}{marker}{appendText}The warmth of her hand was totally gone.{waitForClick}{clearText}{marker}{appendText}The beating of her heart lost forever.{waitForClick}{clearText}
+
+[00000536]10: 
+[00000537]05 53 45 31 30 5f 30 33 00 80 00 00 a0 64 00 00: playSFX SE10_03 0 100
+[00000547]10: 
+[00000548]0d 83 00 00 80 00 00 83 00 00: removeBG 3 0 3
+[00000552]10: 
+[00000553]0c 00 00 00 00 0b 00 80 00 00 82 00 00: bgload 00000000 IMG04A 0 2
+[00000560]10: 
+[00000561]19: showTextbox
+[00000562]ff 2a 00: text 2a
+{marker}{appendText}[Takeshi]
+"!!"{waitForClick}{clearText}{marker}{appendText}In that moment my vision went red.{waitForClick}{clearText}
+
+[00000565]10: 
+[00000566]18: hideTextbox
+[00000567]10: 
+[00000568]20 a0 2c 00 00: showDimOverlay
+[0000056d]10: 
+[0000056e]19: showTextbox
+[0000056f]ff 2b 00: text 2b
+{marker}{appendText}Panicking, I wiped my face with my hands{waitForClick}{clearText}{marker}{appendText}Red.{waitForClick}{clearText}{marker}{appendText}Everything was red......{waitForClick}{clearText}{marker}{appendText}I couldn't see anything{waitForClick}{clearText}{marker}{appendText}All I could feel was slippery warmth.{waitForClick}{clearText}{marker}{appendText}My face was pressed into the floor so hard 
+that I thought it would become part of it.{waitForClick}{clearText}
+
+[00000572]10: 
+[00000573]18: hideTextbox
+[00000574]10: 
+[00000575]45 8c 00 00 81 00 00: monoColorOverlay 12 1
+[0000057c]10: 
+[0000057d]0d 81 00 00 86 00 00 82 00 00: removeBG 1 6 2
+[00000587]fe 28 0a a0 ac 14 14 00 81 00 00: varop (28 0a a0) ac := (00) 1
+[00000592]10: 
+[00000593]21 a0 10 00 00: closeDimOverlay
+[00000598]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16
+[000005a2]27 00 00: fadeOutMonoColorOverlay
+[000005a5]00: 
+[000005a6]05 83 00 00: unSkippableDelay 3
+[000005aa]10: 
+[000005ab]19: showTextbox
+[000005ac]ff 2c 00: text 2c
+{marker}{appendText}My breathing had stopped.{waitForClick}{clearText}{marker}{appendText}I couldn't move.{waitForClick}{clearText}{marker}{appendText}I couldn't support myself.{waitForClick}{clearText}{marker}{appendText}The floor was cold and hard.{waitForClick}{clearText}{marker}{appendText}My body stiffened and became cold as well.{waitForClick}{clearText}{marker}{appendText}My consciousness faded, disappearing...{waitForClick}{clearText}{marker}{appendText}And...{waitForClick}{clearText}{marker}{appendText}From somewhere...{waitForClick}{clearText}
+
+[000005af]10: 
+[000005b0]18: hideTextbox
+[000005b1]10: 
+[000005b2]05 53 45 30 33 5f 30 36 00 80 00 00 a0 5a 00 00: playSFX SE03_06 0 90
+[000005c2]10: 
+[000005c3]04: stopBGM
+[000005c4]10: 
+[000005c5]19: showTextbox
+[000005c6]ff 2d 00: text 2d
+{marker}{appendText}The crackling sounds of the communication 
+lines faded away.{waitForClick}{clearText}
+
+[000005c9]10: 
+[000005ca]0c 00 00 00 00 0c 00 80 00 00 82 00 00: bgload 00000000 BG34A2 0 2
+[000005d7]10: 
+[000005d8]0d 80 00 00 80 00 00 80 00 00: removeBG 0 0 0
+[000005e2]10: 
+[000005e3]19: showTextbox
+[000005e4]ff 2e 00: text 2e
+{marker}{appendText}That was the last sound I heard.{waitForClick}{clearText}
+
+[000005e7]10: 
+[000005e8]18: hideTextbox
+[000005e9]10: 
+[000005ea]06: stopSFX
+[000005eb]10: 
+[000005ec]1e a0 b4 00 00: delay 180
+[000005f1]fe 28 0a a4 12 14 14 00 81 00 00: varop (28 0a a4) 12 := (00) 1
+[000005fc]fe 28 0a a4 c7 14 14 00 84 00 00: varop (28 0a a4) c7 := (00) 4
+[00000607]fe 28 0a a4 b3 14 14 00 80 00 00: varop (28 0a a4) b3 := (00) 0
+[00000612]10: 
+[00000613]01 59 5f 45 44 00: jump Y_ED
+[00000619]00: 
+[0000061a]00: 
+[0000061b]00: 
