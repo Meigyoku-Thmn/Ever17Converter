@@ -1,4 +1,4 @@
-[0000001a]10: 
+﻿[0000001a]10: 
 [0000001b]18: hideTextbox
 [0000001c]10: 
 [0000001d]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
@@ -669,7 +669,7 @@ feverish.{waitForClick}{clearText}{marker}{appendText}Just then...{waitForClick}
 [000005c3]19: showTextbox
 [000005c4]ff 2a 00: text 2a
 {marker}{sound C6A018A}{appendText}[Announcement]
-"ﾖffnen Sie {waitForSound}{sound C6A018B}{appendText}die T�r von HIMMEL"{waitForClick}{clearText}
+"Öffnen Sie {waitForSound}{sound C6A018B}{appendText}die Tür von HIMMEL"{waitForClick}{clearText}
 
 [000005c7]10: 
 [000005c8]0f 81 00 00 00 00 00 00 22 00 a0 80 00 00 83 00 00: fgload 1 00000000 TA01ADM 128 3

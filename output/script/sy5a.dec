@@ -1,4 +1,4 @@
-[00000036]10: 
+﻿[00000036]10: 
 [00000037]46 80 00 00: setDialogBoxColor blue
 [0000003b]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000046]fe 28 0a a4 b1 14 14 00 85 00 00: varop (28 0a a4) b1 := (00) 5
@@ -1087,7 +1087,7 @@ edge of the open area.{waitForClick}{clearText}{marker}{appendText}And there....
 [00000810]19: showTextbox
 [00000811]ff 4d 00: text 4d
 {marker}{appendText}Atop the pedestal of a stone statue was a girl.{waitForClick}{clearText}{marker}{appendText}She was standing there next to the figure as 
-if clinging to the statue.{waitForClick}{clearText}{marker}{appendText}(Oh！ It's that girl...){waitForClick}{clearText}{marker}{appendText}It was the girl that I had seen and who had 
+if clinging to the statue.{waitForClick}{clearText}{marker}{appendText}(Oh! It's that girl...){waitForClick}{clearText}{marker}{appendText}It was the girl that I had seen and who had 
 then vanished on the first day.{waitForClick}{clearText}{marker}{appendText}[Kid]
 "Look, You! Right there!"{waitForClick}{clearText}
 

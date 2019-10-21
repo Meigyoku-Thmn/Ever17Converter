@@ -1,4 +1,4 @@
-[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+﻿[00000046]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000051]fe 28 0a a4 b1 14 14 00 86 00 00: varop (28 0a a4) b1 := (00) 6
 [0000005c]fe 28 0a a4 b2 14 14 00 86 00 00: varop (28 0a a4) b2 := (00) 6
 [00000067]10: 
@@ -657,7 +657,7 @@ institute in order to study them.{delay 30}{waitForClick}
 [00000634]10: 
 [00000635]19: showTextbox
 [00000636]ff 39 00: text 39
-{appendText}Institute f�r Biologische Forschung.{delay 30}{waitForClick}
+{appendText}Institute für Biologische Forschung.{delay 30}{waitForClick}
 {appendText}Translated it means the Institute for 
 Biological Research.{waitForClick}{nextPage 04}
 
@@ -1553,7 +1553,7 @@ quickly...!){waitForClick}{clearText}
 [00000f1e]19: showTextbox
 [00000f1f]ff 86 00: text 86
 {marker}{sound T6B136A}{appendText}[Announcement]
-"ﾖffnen Sie {waitForSound}{sound T6B136B}{appendText}die T�r von HIMMEL"{waitForClick}{clearText}
+"Öffnen Sie {waitForSound}{sound T6B136B}{appendText}die Tür von HIMMEL"{waitForClick}{clearText}
 
 [00000f22]10: 
 [00000f23]19: showTextbox

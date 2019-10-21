@@ -1,4 +1,4 @@
-[00000016]10: 
+﻿[00000016]10: 
 [00000017]18: hideTextbox
 [00000018]10: 
 [00000019]45 a0 12 00 00 80 00 00: monoColorOverlay 18 0
@@ -830,7 +830,7 @@ forgotten..."{waitForClick}{clearText}
 [00000796]19: showTextbox
 [00000797]ff 3f 00: text 3f
 {marker}{appendText}The following words were written on the 
-monitor.{waitForClick}{clearText}{marker}{appendText}"Willkommener LeMMIH Login: T.Y"{waitForClick}{clearText}{marker}{appendText}"LM-RSDS-4913A Sora Akanegasaki"{waitForClick}{clearText}{marker}{appendText}"Aktenkopie wird vervollst舅digt."{waitForClick}{clearText}
+monitor.{waitForClick}{clearText}{marker}{appendText}"Willkommener LeMMIH Login: T.Y"{waitForClick}{clearText}{marker}{appendText}"LM-RSDS-4913A Sora Akanegasaki"{waitForClick}{clearText}{marker}{appendText}"Aktenkopie wird vervollständigt."{waitForClick}{clearText}
 
 [0000079a]10: 
 [0000079b]0d 81 00 00 80 00 00 82 00 00: removeBG 1 0 2

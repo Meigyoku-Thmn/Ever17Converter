@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace converter {
    class ScriptConverter {
+      static internal string InputEncoding = "shift_jis";
       static void Main(string[] args) {
          var scriptFile = new DirectoryInfo(args[0]);
          var dstFolder = new DirectoryInfo(args[1]);
+         InputEncoding = args.ElementAtOrDefault(2) ?? InputEncoding;
          try {
             Log.Open();
             var sc = new ScriptConverter(scriptFile, dstFolder);
@@ -40,11 +42,14 @@ namespace converter {
       private string currentFileName = "";
       private long currentOpcodeOffset = 0;
 
+      private string NewLine = "\r\n";
+
       public ScriptConverter(DirectoryInfo srcF, DirectoryInfo dstF) {
          this.srcF = srcF;
          this.dstF = dstF;
 
          stringCommandReader = new StringCommandReader();
+         stringCommandReader.SetNewLine(NewLine);
 
          scriptF = new DirectoryInfo(Path.Combine(dstF.FullName, "script"));
          scriptF.Create();
@@ -127,7 +132,8 @@ namespace converter {
       protected void Decode(BinaryReader inp, FileInfo dstF) {
          textCoveragePool.Clear();
          imageCoveragePool.Clear();
-         using (var pout = new StreamWriter(dstF.FullName, false, Encoding.UTF8)) {
+         using (var pout = new StreamWriter(dstF.FullName, false, new UTF8Encoding(true))) {
+            pout.NewLine = NewLine;
             bool commandMode = false;
             while (inp.BaseStream.HasRemaining()) {
                pout.Write("[{0:x8}]", inp.BaseStream.Position);
@@ -417,10 +423,10 @@ namespace converter {
                textCoveragePool.Add(index);
             }
             else {
-               Log.Write("  [Unknown] Text table index is out of bounds at " 
+               Log.Write("  [Unknown] Text table index is out of bounds at "
                   + string.Format("{0:x8}", currentOpcodeOffset) + ": " + index);
             }
-            return string.Format("{0} {1:x2}\n{2}\n", op, index, str);
+            return string.Format("{0} {1:x2}{3}{2}{3}", op, index, str, NewLine);
          }
          else if (op == Opcode.hideTextbox) {
             return "hideTextbox";
@@ -495,7 +501,7 @@ namespace converter {
          }
          else if (op == Opcode._switch) {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"{op}\n");
+            sb.Append($"{op}{NewLine}");
 
             //Conditional?
             int condOp2 = Peek();
@@ -517,9 +523,9 @@ namespace converter {
                varopBuffer.Append(string.Format("({0:x2} {1:x2} {2:x2}) {3:x2} {4:x4} ({5:x2})",
                        arg0, arg1, arg2, var, @operator, nil));
             }
-            
+
             sb.Append(varopBuffer);
-            sb.Append('\n');
+            sb.Append(NewLine);
 
             //Cases
             while (Peek() != 0x26) {
@@ -537,7 +543,7 @@ namespace converter {
                else {
                   Log.Write("  [Unknown] Invalid jump in switch case at " + string.Format("{0:x8}", currentOpcodeOffset) + ": " + jumpTableIndex);
                }
-               sb.Append(string.Format("{0:x2} -> {1} {2:x8} ({3:x8})\n", subop, subarg0, jumpTarget, jumpTableIndex));
+               sb.Append(string.Format("{0:x2} -> {1} {2:x8} ({3:x8}){4}", subop, subarg0, jumpTarget, jumpTableIndex, NewLine));
 
                if (Peek() == 0) {
                   Read();
@@ -800,7 +806,7 @@ namespace converter {
          else {
             if (op.args > 0) {
                Log.Write(string.Format(
-                  "  [Unknown] Unhandled opcode ({0:x2}) with {1} args at {2:x8}", 
+                  "  [Unknown] Unhandled opcode ({0:x2}) with {1} args at {2:x8}",
                   op.id, op.args, currentOpcodeOffset));
             }
             return null;

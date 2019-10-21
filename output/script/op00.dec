@@ -1,4 +1,4 @@
-[00000055]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
+﻿[00000055]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5
 [00000060]fe 28 0a a4 b1 14 14 00 81 00 00: varop (28 0a a4) b1 := (00) 1
 [0000006b]fe 28 0a a4 b2 14 14 00 81 00 00: varop (28 0a a4) b2 := (00) 1
 [00000076]10: 
@@ -2615,7 +2615,7 @@ wrong.{waitForClick}{clearText}{marker}{appendText}It was strange.{waitForClick}
 [0000185f]10: 
 [00001860]19: showTextbox
 [00001861]ff be 00: text be
-{marker}{appendText}(Who's this?){waitForClick}{clearText}{marker}{appendText}(Oh, it's her.){waitForClick}{clearText}{marker}{appendText}(We've finally met...){waitForClick}{clearText}{marker}{appendText}(I've been looking for you this whole time...){waitForClick}{clearText}{marker}{appendText}But his voice didn't reach her.{waitForClick}{clearText}{marker}{appendText}"————,—————"{waitForClick}{clearText}{marker}{appendText}"————"{waitForClick}{clearText}{marker}{appendText}"————————"{waitForClick}{clearText}{marker}{appendText}He couldn't hear her voice either.{waitForClick}{clearText}{marker}{appendText}No matter how much he tried...．{waitForClick}{clearText}{marker}{appendText}No sounds reached him now.{waitForClick}{clearText}{marker}{appendText}(Damn...what's going on...?){waitForClick}{clearText}
+{marker}{appendText}(Who's this?){waitForClick}{clearText}{marker}{appendText}(Oh, it's her.){waitForClick}{clearText}{marker}{appendText}(We've finally met...){waitForClick}{clearText}{marker}{appendText}(I've been looking for you this whole time...){waitForClick}{clearText}{marker}{appendText}But his voice didn't reach her.{waitForClick}{clearText}{marker}{appendText}"————,—————"{waitForClick}{clearText}{marker}{appendText}"————"{waitForClick}{clearText}{marker}{appendText}"————————"{waitForClick}{clearText}{marker}{appendText}He couldn't hear her voice either.{waitForClick}{clearText}{marker}{appendText}No matter how much he tried....{waitForClick}{clearText}{marker}{appendText}No sounds reached him now.{waitForClick}{clearText}{marker}{appendText}(Damn...what's going on...?){waitForClick}{clearText}
 
 [00001864]10: 
 [00001865]0d 80 00 00 80 00 00 82 00 00: removeBG 0 0 2

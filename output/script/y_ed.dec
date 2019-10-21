@@ -1,4 +1,4 @@
-[00000132]00: 
+﻿[00000132]00: 
 [00000133]0a 01 28 0a a4 b3 14 0c 01 81 01 00 44 00: gotoif 1 (28 0a a4) b3 == (01) 1 (0001) -> 00000feb (00000044)
 [00000141]10: 
 [00000142]24 a1 0c 00 00: scriptLocationId 268
@@ -24,7 +24,7 @@ switch_varop (28 0a a4) c7 0014 (00)
 [000001af]10: 
 [000001b0]19: showTextbox
 [000001b1]ff 00 00: text 00
-{marker}{appendText}ＬＲ＿Ａ００の値が正しくありません。{waitForClick}{clearText}
+{marker}{appendText}‚k‚qQ‚`‚O‚O‚Ì’l‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB{waitForClick}{clearText}
 
 [000001b4]fe 28 0a a4 08 14 14 00 81 00 00: varop (28 0a a4) 08 := (00) 1
 [000001bf]00: 

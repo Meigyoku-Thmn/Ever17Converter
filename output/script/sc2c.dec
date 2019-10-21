@@ -1,4 +1,4 @@
-[00000026]fe 28 0a a4 fa 14 14 00 a0 3f 00 00: setSceneTitleByIndex 63
+﻿[00000026]fe 28 0a a4 fa 14 14 00 a0 3f 00 00: setSceneTitleByIndex 63
 [00000032]10: 
 [00000033]0d 80 00 00 86 00 00 82 00 00: removeBG 0 6 2
 [0000003d]fe 28 0a a0 ab 14 14 00 c0 10: setMonoColorOverlayFadeOutDuration VAR_c0_16

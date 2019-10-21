@@ -9,6 +9,10 @@ namespace converter {
    class StringCommandReader {
       private BinaryReader input;
       private readonly StringBuilder output;
+      private string NewLine = Environment.NewLine;
+      public void SetNewLine(string newLine) {
+         NewLine = newLine;
+      }
       public StringCommandReader() {
          output = new StringBuilder();
       }
@@ -26,32 +30,34 @@ namespace converter {
          while ((c = Peek()) != 0) {
             StrOpcode op = StrOpcode.Get(c);
             if (op == null) {
-               output.Append(ReadChar());
+               var chr = ReadChar();
+               output.Append(chr == "\n" ? NewLine : chr);
             }
             else {
                c = Read();
                if (op == StrOpcode.waitForClick) {
-                  output.Append($"{{{op}}}");
+                  output.Append("{" + op + "}");
                }
                else if (op == StrOpcode.clearText) {
-                  output.Append($"{{{op}}}");
+                  output.Append("{" + op + "}");
                }
                else if (op == StrOpcode.delay) {
-                  output.Append($"{{{op} {ReadExpr()}}}");
+                  output.Append("{" + $"{op} {ReadExpr()}" + "}");
                }
                else if (op == StrOpcode.appendText) {
-                  output.Append(string.Format("{{{0}}}", op, ReadExpr()));
+                  ReadExpr();
+                  output.Append("{" + op + "}");
                }
                else if (op == StrOpcode.sound) {
-                  output.Append($"{{{op} {ReadCString()}}}");
+                  output.Append("{" + $"{op} {ReadCString()}" + "}");
                }
                else if (op == StrOpcode.waitForSound) {
-                  output.Append($"{{{op}}}");
+                  output.Append("{" + op + "}");
                }
                else if (op == StrOpcode.choice) {
                   int arg0 = Read();
                   int arg1 = ReadShort();
-                  output.Append(string.Format("{{{0} {1:x2} {2:x4} ", op, arg0, arg1));
+                  output.Append("{" + $"{op} {arg0:x2} {arg1:x4} ");
                   while (Peek() != 0) {
                      string option = ParseChoiceOption();
                      output.Append('|');
@@ -62,14 +68,14 @@ namespace converter {
                   goto OUTER;
                }
                else if (op == StrOpcode.marker) {
-                  output.Append($"{{{op}}}");
+                  output.Append("{" + $"{op}" + "}");
                }
                else if (op == StrOpcode.nextPage) {
                   int arg0 = Read();
-                  output.Append(string.Format("{{{0} {1:x2}}}", op, arg0));
+                  output.Append("{" + $"{op} {arg0:x2}" + "}");
                }
                else if (op == StrOpcode.bigChar) {
-                  output.Append($"{{{op}}}");
+                  output.Append("{" + $"{op}" + "}");
                }
             }
          }
@@ -101,8 +107,7 @@ OUTER:;
             if (op != 0x14) {
                Log.Write("     [Unknown Text] Unknown operator in choice option cond: " + op);
             }
-            temp.Append(string.Format("{{{0} ({1:x2} {2:x2} {3:x2}) {4:x2} {5:x2} ({6:x2})}}",
-                    "cond", arg0, arg1, arg2, varname, op, arg3));
+            temp.Append("{" + $"cond ({arg0:x2} {arg1:x2} {arg2:x2}) {varname:x2} {op:x2} ({arg3:x2})" + "}");
             var c = ReadChar();
             while (c != "\n") {
                temp.Append(c);
@@ -146,8 +151,8 @@ OUTER:;
          for (int n = 1; n < numBytes; n++) {
             readCharTemp[n] = (byte)Read();
          }
-         
-         var rs = Encoding.GetEncoding("shift_jis").GetString(readCharTemp, 0, numBytes);
+
+         var rs = Encoding.GetEncoding(ScriptConverter.InputEncoding).GetString(readCharTemp, 0, numBytes);
          switch (rs) {
             case "①": // Circled Number One
                rs = "{💧💧}";
@@ -165,16 +170,30 @@ OUTER:;
                rs = "★";
                break;
             case "⑩": // Circled Number Ten
+            case "‡I":
                rs = "ä";
                break;
             case "⑪": // Circled Number Eleven
+            case "‡J":
                rs = "ö";
                break;
             case "⑫": // Circled Number Twelve
+            case "‡K":
                rs = "ü";
                break;
             case "⑬": // Circled Number Thirteen
+            case "‡L":
                rs = "—"; // long dash
+               break;
+            // fallback cases, the English version do this too
+            case "\x0081D":
+               rs = ".";
+               break;
+            case "\x0081@":
+               rs = " ";
+               break;
+            case "\x0081I":
+               rs = "!";
                break;
          }
 

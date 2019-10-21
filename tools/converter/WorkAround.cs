@@ -43,7 +43,7 @@ namespace converter {
             outp.Write(": ");
             outp.WriteLine("random " + numOfRandom);
             for (var i = 0; i < numOfRandom; i++) {
-               outp.Write("{0:x8}", buf.BaseStream.Position);
+               outp.Write("[{0:x8}]", buf.BaseStream.Position);
                for (var a = 0; a < 5; a++) {
                   var dump = buf.ReadByte();
                   outp.Write(" {0:x2}", dump);

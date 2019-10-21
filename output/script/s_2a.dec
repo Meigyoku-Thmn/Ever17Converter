@@ -1,4 +1,4 @@
-[000000ae]10: 
+﻿[000000ae]10: 
 [000000af]46 80 00 00: setDialogBoxColor blue
 [000000b3]fe 28 0a a4 fa 14 14 00 a0 38 00 00: setSceneTitleByIndex 56
 [000000bf]fe 28 0a a4 b0 14 14 00 85 00 00: varop (28 0a a4) b0 := (00) 5

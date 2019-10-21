@@ -1,4 +1,4 @@
-[00000046]00: 
+﻿[00000046]00: 
 [00000047]0a 01 28 0a a4 b3 14 0c 01 81 01 00 06 00: gotoif 1 (28 0a a4) b3 == (01) 1 (0001) -> 00000829 (00000006)
 [00000055]10: 
 [00000056]24 a0 34 00 00: scriptLocationId 52
@@ -752,7 +752,7 @@ should be here."{waitForClick}{clearText}
 {marker}{appendText}While the two of them were talking, I decided
 to take a peek at the elevator that Mayo was
 stuck in.{waitForClick}{clearText}{marker}{appendText}I grabbed on to the entrance of the box and
-used my　momentum to pull myself up.{waitForClick}{clearText}{marker}{appendText}It was empty inside.{waitForClick}{clearText}{marker}{appendText}(I thought I heard two girls inside...){waitForClick}{clearText}{marker}{appendText}(I wonder if my mind was playing tricks on me.){waitForClick}{clearText}
+used my momentum to pull myself up.{waitForClick}{clearText}{marker}{appendText}It was empty inside.{waitForClick}{clearText}{marker}{appendText}(I thought I heard two girls inside...){waitForClick}{clearText}{marker}{appendText}(I wonder if my mind was playing tricks on me.){waitForClick}{clearText}
 
 [00000717]10: 
 [00000718]18: hideTextbox
