@@ -13,7 +13,7 @@ namespace converter {
          var dstFolder = new DirectoryInfo(args[1]);
          InputEncoding = args.ElementAtOrDefault(2) ?? InputEncoding;
          try {
-            Log.Open();
+            Log.Reset();
             var sc = new ScriptConverter(scriptFile, dstFolder);
             sc.ConvertFolder();
          }

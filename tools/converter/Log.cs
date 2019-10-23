@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace converter {
    internal static class Log {
       static StreamWriter log;
-      internal static void Open() {
+      internal static void Reset() {
+         Close();
          log = new StreamWriter("output.txt", false, Encoding.UTF8);
       }
       internal static void Close() {

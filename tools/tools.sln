@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "converter", "converter\converter.csproj", "{63B752F5-F206-42FD-AF7E-B06EDD3CFD96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extractor", "extractor\extractor.csproj", "{D94E22E2-EB0E-4201-9273-D9FB3FA07052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{63B752F5-F206-42FD-AF7E-B06EDD3CFD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63B752F5-F206-42FD-AF7E-B06EDD3CFD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63B752F5-F206-42FD-AF7E-B06EDD3CFD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94E22E2-EB0E-4201-9273-D9FB3FA07052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94E22E2-EB0E-4201-9273-D9FB3FA07052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94E22E2-EB0E-4201-9273-D9FB3FA07052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94E22E2-EB0E-4201-9273-D9FB3FA07052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
