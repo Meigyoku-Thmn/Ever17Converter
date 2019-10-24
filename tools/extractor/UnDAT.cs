@@ -8,11 +8,32 @@ using System.Threading.Tasks;
 namespace extractor {
    public class UnDAT {
       private UnDAT() { }
+      static readonly Item[] files = new Item[] {
+         new Item("bg.dat"),
+         new Item("bgm.dat"),
+         new Item("chara.dat"),
+         new Item("saver.dat", 2),
+         new Item("se.dat"),
+         new Item("system.dat"),
+         new Item("sysvoice.dat", 0),
+         new Item("voice.dat"),
+         new Item("wallpaper.dat", 1),
+      };
       static void Main(string[] args) {
          string src = args[0];
          string dst = args[1];
 
-         ExtractFolder(new DirectoryInfo(src), new DirectoryInfo(dst));
+         var srcAttr = File.GetAttributes(src);
+         if ((srcAttr & FileAttributes.Directory) != 0)
+            ExtractFolder(
+               new DirectoryInfo(src),
+               new DirectoryInfo(dst)
+            );
+         else Extract(
+            new FileInfo(src),
+            new DirectoryInfo(Path.Combine(dst, Path.GetFileNameWithoutExtension(src))),
+            files.FirstOrDefault(e => e.Name == Path.GetFileName(src))?.Mode ?? -1
+         );
       }
       private class Record {
          public readonly long offset;
@@ -23,16 +44,20 @@ namespace extractor {
             this.filename = filename;
          }
       }
-      public static void ExtractFolder(DirectoryInfo srcF, DirectoryInfo dstF, params string[] ignoreList) {
-
-         var files = srcF.GetFiles("*.dat", SearchOption.TopDirectoryOnly).ToList();
-         files.RemoveAll(e => ignoreList.Any(ignoredFile => ignoredFile == e.Name));
-
-         foreach (var file in files) {
-            Extract(file, new DirectoryInfo(Path.Combine(dstF.FullName, Path.GetFileNameWithoutExtension(file.Name))));
+      private class Item {
+         public readonly string Name;
+         public readonly int Mode;
+         public Item(string Name, int Mode = -1) {
+            this.Name = Name; this.Mode = Mode;
          }
       }
-      public static void Extract(FileInfo archive, DirectoryInfo dst) {
+      public static void ExtractFolder(DirectoryInfo srcF, DirectoryInfo dstF) {
+         foreach (var item in files) {
+            var file = new FileInfo(Path.Combine(srcF.FullName, item.Name));
+            Extract(file, new DirectoryInfo(Path.Combine(dstF.FullName, Path.GetFileNameWithoutExtension(file.Name))), item.Mode);
+         }
+      }
+      public static void Extract(FileInfo archive, DirectoryInfo dst, int decryptMode = -1) {
          dst.Create();
          using (var fin = archive.OpenRead()) {
             Record[] records;
@@ -41,7 +66,7 @@ namespace extractor {
                var lin = new BinaryReader(fin);
                int magic = lin.ReadInt32();
                if (magic != 0x004B4E4C) {
-                  throw new IOException($"Unknown archive format header: {magic:x8}");
+                  throw new IOException($"{archive.Name}: Unknown archive format header: {magic:x8}");
                }
                recordsL = lin.ReadUInt32();
                records = new Record[recordsL];
@@ -94,13 +119,40 @@ namespace extractor {
                      oc.Write(buf.GetBuffer(), 0, (int)buf.Length);
                      buf.Position = 0;
                   }
-                  else {
+                  else if (decryptMode < 0 || decryptMode > 2) {
                      channel.Position = off;
                      channel.CopyPartTo(oc, (int)len);
+                  }
+                  else {
+                     DecryptAndWriteData(channel, oc, off, (int)len, decryptMode, records[n].filename);
                   }
                }
             }
          }
+      }
+      // this decryption function relies on default number overflow behavior of C#
+      public static void DecryptAndWriteData(Stream src, Stream dst, long offset, int count, int mode, string srcName) {
+         var startOffset = 0;
+         if (mode == 1) startOffset = 4352;
+         else if (mode == 2) startOffset = 4096;
+         byte hash = 0;
+         foreach (var chr in Encoding.ASCII.GetBytes(srcName)) {
+            hash += chr;
+         }
+         var key = new byte[256];
+         key[0] = hash;
+         for (var keyIdx = 1; keyIdx < 256; keyIdx++) {
+            key[keyIdx] = (byte)(109 * key[keyIdx - 1] - 37);
+         }
+         var srcBuffer = new byte[count];
+         var srcLastPos = src.Position;
+         src.Position = offset;
+         src.Read(srcBuffer, 0, count);
+         for (var idx = 0; idx < 256; idx++) {
+            srcBuffer[startOffset + idx] -= key[idx];
+         }
+         dst.Write(srcBuffer, 0, count);
+         src.Position = srcLastPos;
       }
       public static void DecompressLND(MemoryStream @out, int uncompressedLength, BinaryReader din) {
          byte[] temp = new byte[16 << 10];
