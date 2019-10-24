@@ -70,6 +70,7 @@ namespace extractor {
             var channel = fin;
             Console.WriteLine($"Extracting {archive.Name} ({recordsL} files)");
             for (int n = 0; n < recordsL; n++) {
+               Console.WriteLine(records[n].filename);
                FileInfo file = new FileInfo(Path.Combine(dst.FullName, records[n].filename));
                file.Directory.Create();
                var lndHeader = new BinaryReader(new MemoryStream(16));
@@ -79,22 +80,23 @@ namespace extractor {
                   long len = records[n].length;
                   lndHeader.BaseStream.Position = 0;
                   channel.Position = off;
-                  channel.CopyTo(lndHeader.BaseStream, (int)lndHeader.BaseStream.Length);
+                  (lndHeader.BaseStream as MemoryStream).SetLength((lndHeader.BaseStream as MemoryStream).Capacity);
+                  channel.Read((lndHeader.BaseStream as MemoryStream).GetBuffer(), 0, (int)lndHeader.BaseStream.Length);
                   lndHeader.BaseStream.Position = 0;
                   if (lndHeader.ReadInt32() == 0x00646E6C) {
                      //LND compressed
                      lndHeader.BaseStream.Position = 8;
                      int ulen = lndHeader.ReadInt32();
-                     channel.Position = off + lndHeader.BaseStream.Length;
+                     channel.Position = off + (lndHeader.BaseStream as MemoryStream).Length;
                      var buf = new MemoryStream(ulen);
                      DecompressLND(buf, ulen, new BinaryReader(fin));
                      buf.Position = 0;
-                     buf.CopyTo(oc);
+                     oc.Write(buf.GetBuffer(), 0, (int)buf.Length);
                      buf.Position = 0;
                   }
                   else {
                      channel.Position = off;
-                     channel.CopyTo(oc, (int)len);
+                     channel.CopyPartTo(oc, (int)len);
                   }
                }
             }
