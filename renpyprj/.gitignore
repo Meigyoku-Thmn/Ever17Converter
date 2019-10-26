@@ -1,0 +1,14 @@
+log.txt
+errors.txt
+traceback.txt
+saves
+tmp
+cache
+env
+*.rpyc
+*.rpyb
+*.rpymc
+*.pyc
+*.pyo
+*~
+*.bak
