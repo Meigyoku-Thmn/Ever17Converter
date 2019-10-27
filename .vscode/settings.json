@@ -1,0 +1,23 @@
+{
+   "files.exclude": {
+      "**/*.rpyc": true,
+      "**/*.rpyb": true,
+      "**/*.rpymc": true,
+      "**/*.pyc": true,
+      "**/*.pyo": true,
+      "renpyprj/game/cache": true,
+      "renpyprj/game/saves": true,
+      "vnds_jv_prj/nbproject/private": true,
+      "vnds_jv_prj/nbproject/genfiles.properties": true,
+      "vnds_jv_prj/nbproject/build-impl.xml": true,
+      "vnds_jv_prj/build": true,
+      "vnds_jv_prj/dist": true,
+      "node_modules": true,
+      ".gitattributes": true,
+      "cs_tools/**/.vs": true,
+      "cs_tools/**/bin": true,
+      "cs_tools/**/obj": true,
+      "cs_tools/**/*.csproj.user": true,
+      "cs_tools/**/Properties": true,
+   }
+}

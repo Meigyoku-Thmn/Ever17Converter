@@ -3,7 +3,9 @@
    "version": "1.0.0",
    "description": "",
    "main": "mod.js",
-   "scripts": {},
+   "scripts": {
+      "rpy": "C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj"
+   },
    "author": "",
    "license": "ISC",
    "dependencies": {
