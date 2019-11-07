@@ -4,12 +4,16 @@
    "description": "",
    "main": "mod.js",
    "scripts": {
-      "rpy": "C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj"
+      "rpy": "C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj",
+      "rpy-dbg": "cross-env use_debug=true C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj"
    },
    "author": "",
    "license": "ISC",
    "dependencies": {
       "frida": "^12.7.4",
       "node-watch": "^0.6.3"
+   },
+   "devDependencies": {
+      "cross-env": "^6.0.3"
    }
 }
