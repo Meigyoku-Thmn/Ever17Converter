@@ -7,45 +7,42 @@ using System.Threading.Tasks;
 
 namespace extractor {
    class Program {
-      private class Item {
-         public readonly string Name;
-         public readonly int Mode;
-         public Item(string Name, int Mode = -1) {
-            this.Name = Name; this.Mode = Mode;
-         }
-      }
-      static readonly Item[] files = new Item[] {
-         new Item("bg.dat"),
-         new Item("bgm.dat"),
-         new Item("chara.dat"),
-         new Item("saver.dat", 2),
-         new Item("se.dat"),
-         new Item("system.dat"),
-         new Item("sysvoice.dat", 0),
-         new Item("voice.dat"),
-         new Item("wallpaper.dat", 1),
+      static readonly string[] defaultInputNames = new string[] {
+         "bg.dat",
+         "bgm.dat",
+         "chara.dat",
+         "saver.dat",
+         "se.dat",
+         "system.dat",
+         "sysvoice.dat",
+         "voice.dat",
+         "wallpaper.dat"
       };
       static void Main(string[] args) {
          string src = args[0];
          string dst = args[1];
 
          var srcAttr = File.GetAttributes(src);
-         if ((srcAttr & FileAttributes.Directory) != 0)
-            ExtractFolder(
-               new DirectoryInfo(src),
-               new DirectoryInfo(dst)
-            );
-         else DAT.Extract(
-            new FileInfo(src),
-            new DirectoryInfo(Path.Combine(dst, Path.GetFileNameWithoutExtension(src))),
-            files.FirstOrDefault(e => e.Name == Path.GetFileName(src))?.Mode ?? -1
-         );
+         var inputNames = defaultInputNames;
+         if ((srcAttr & FileAttributes.Directory) == 0) {
+            inputNames = new string[] { Path.GetFileName(src) };
+            src = Path.GetDirectoryName(src);
+         }
+         ExtractFolder(new DirectoryInfo(src), new DirectoryInfo(dst), inputNames);
       }
 
-      public static void ExtractFolder(DirectoryInfo srcF, DirectoryInfo dstF) {
-         foreach (var item in files) {
-            var file = new FileInfo(Path.Combine(srcF.FullName, item.Name));
-            DAT.Extract(file, new DirectoryInfo(Path.Combine(dstF.FullName, Path.GetFileNameWithoutExtension(file.Name))), item.Mode);
+      public static void ExtractFolder(DirectoryInfo srcF, DirectoryInfo dstF, string[] inputNames) {
+         foreach (var inputName in inputNames) {
+            using (var file = new FileInfo(Path.Combine(srcF.FullName, inputName)).OpenRead()) {
+               var outputDir = new DirectoryInfo(Path.Combine(dstF.FullName, Path.GetFileNameWithoutExtension(file.Name)));
+               outputDir.Create();
+               var records = LNK.ReadRecords(file);
+               foreach (var record in records) {
+                  var outputStream = LNK.ReadFile(file, record);
+                  using (var outputFile = new FileInfo(Path.Combine(outputDir.FullName, record.filename)).OpenWrite())
+                     outputFile.Write(outputStream.GetBuffer(), 0, (int)outputStream.Length);
+               }
+            }
          }
       }
    }

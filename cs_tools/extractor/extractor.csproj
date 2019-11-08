@@ -36,7 +36,7 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>extractor.DAT</StartupObject>
+    <StartupObject>extractor.LNK</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,7 +52,7 @@
     <Compile Include="LND.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="StreamExt.cs" />
-    <Compile Include="DAT.cs" />
+    <Compile Include="LNK.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
