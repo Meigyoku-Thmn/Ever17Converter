@@ -10,8 +10,8 @@ namespace extractor {
       public class Record {
          public readonly long offset;
          public readonly string filename;
-         public long length;
-         public bool compressed;
+         public readonly long length;
+         public readonly bool compressed;
          public Record(long offset, string filename, long length, bool compressed) {
             this.offset = offset;
             this.filename = filename;
@@ -19,11 +19,12 @@ namespace extractor {
             this.length = length;
          }
       }
-      public static Record[] ReadRecords(Stream inp) {
+      static readonly uint ExpectedMagic = Encoding.ASCII.GetBytes("LNK\0").ToUInt32();
+      public static Record[] ReadRecords(this Stream inp) {
          Record[] records;
          var lin = new BinaryReader(inp);
-         int magic = lin.ReadInt32();
-         if (magic != 0x004B4E4C) {
+         var magic = lin.ReadUInt32();
+         if (magic != ExpectedMagic) {
             throw new IOException($"Unknown archive format (Magic code: {magic:x8})");
          }
          uint recordsL = lin.ReadUInt32();
@@ -44,17 +45,18 @@ namespace extractor {
          }
          return records;
       }
-      public static MemoryStream ReadFile(Stream inp, Record record) {
+      public static MemoryStream ReadFile(this Stream inp, Record record) {
          inp.Position = record.offset;
          var outStream = new MemoryStream(new Func<byte[]>(() => {
             var buffer = new byte[record.length];
             inp.Read(buffer, 0, buffer.Length);
             return buffer;
-         })());         
+         })(), 0, (int)record.length, true, true);
          DecryptInPlace(outStream.GetBuffer(), record.filename);
          if (record.compressed)
-            return LND.Decompress(outStream);
-         else return outStream;
+            outStream = outStream.DecompressLND();
+         outStream.Position = 0;
+         return outStream;
       }
       // this decryption function relies on default number overflow behavior of C#
       static void DecryptInPlace(byte[] target, string targetName) {

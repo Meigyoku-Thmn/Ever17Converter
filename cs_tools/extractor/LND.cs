@@ -6,17 +6,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace extractor {
-   class LND {
-      public static MemoryStream Decompress(Stream inp) {
-         byte[] temp = new byte[16 << 10];
+   static class LND {
+      static readonly uint ExpectedMagic = Encoding.ASCII.GetBytes("lnd\0").ToUInt32();
+      public static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0) {
          var din = new BinaryReader(inp);
-         var magic = din.ReadUInt32();
-         if (magic != 0x00646E6C) throw new IOException($"This is not a LND Stream! (Magic code: {magic:x8})");
-         inp.Position += 4;
-         var uncompressedLength = din.ReadUInt32();
-         inp.Position += 4;
-         var @out = new MemoryStream(new byte[uncompressedLength]);
+         uint uncompressedLength;
+         if (_uncompressedLength == 0) {
+            var magic = din.ReadUInt32();
+            if (magic != ExpectedMagic) throw new IOException($"This is not a LND Stream! (Magic code: {magic:x8})");
+            inp.Position += 4;
+            uncompressedLength = din.ReadUInt32();
+            inp.Position += 4;
+         }
+         else uncompressedLength = _uncompressedLength;
+         var @out = new MemoryStream(new byte[uncompressedLength], 0, (int)uncompressedLength, true, true);
          int w = 0;
+         byte[] temp = new byte[16 << 10];
          while (w < uncompressedLength) {
             int b = din.ReadByte();
             if ((b & 0x80) != 0) {
@@ -74,6 +79,7 @@ namespace extractor {
                }
             }
          }
+         @out.Position = 0;
          return @out;
       }
    }

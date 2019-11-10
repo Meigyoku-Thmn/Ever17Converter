@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>extractor</RootNamespace>
     <AssemblyName>extractor</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -24,6 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,13 +35,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>extractor.LNK</StartupObject>
+    <StartupObject>extractor.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,11 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CPS.cs" />
+    <Compile Include="DirectBitmap.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="LND.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PRT.cs" />
     <Compile Include="StreamExt.cs" />
     <Compile Include="LNK.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WAF.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
