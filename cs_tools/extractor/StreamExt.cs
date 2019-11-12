@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace extractor {
    static class StreamExt {
+      // note: only for seekable stream
       public static bool HasLeft(this Stream @this) {
-         return @this.Position < @this.Length;
+         return @this.Position < @this.Length; 
       }
       public static void CopyPartTo(this Stream @this, Stream destination, int length) {
          if (length < 0) throw new ArgumentException("Length is negative!");

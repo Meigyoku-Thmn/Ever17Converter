@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="CPS.cs" />
     <Compile Include="DirectBitmap.cs" />
+    <Compile Include="FFMpeg.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="LND.cs" />
     <Compile Include="Program.cs" />
