@@ -9,7 +9,13 @@ using System.Threading.Tasks;
 
 namespace extractor {
    static class PRT {
+      static public void ToBMPFile() {
+         throw new NotImplementedException();
+      }
       static readonly uint ExpectedMagic = Encoding.ASCII.GetBytes("PRT\0").ToUInt32();
+      public static void ToPNGFile() {
+         throw new NotImplementedException();
+      }
       public static (MemoryStream, MemoryStream) ToPNG(this Stream inp, long length = -1) {
          var lastPos = inp.Position;
          var inb = new BinaryReader(inp);

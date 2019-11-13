@@ -59,7 +59,9 @@ namespace extractor {
                      outputStream = outputStream.ToWAV(outputStream.Length);
                      if (use_ffmpeg) {
                         outFileName = Path.GetFileNameWithoutExtension(outFileName) + ".ogg";
-                        outputStream = outputStream.ToOgg();
+                        //outputStream = outputStream.ToOgg();
+                        outputStream.ToOggFile(Path.Combine(outputDirName, outFileName));
+                        outputStream = null;
                      }
                      break;
                   case ".cps":
@@ -70,8 +72,9 @@ namespace extractor {
                      if (iniStream != null) iniFileName = Path.GetFileNameWithoutExtension(outFileName) + ".ini";
                      break;
                }
-               using (var outputFile = File.OpenWrite(Path.Combine(outputDirName, outFileName)))
-                  outputFile.Write(outputStream.GetBuffer(), 0, (int)outputStream.Length);
+               if (outputStream != null)
+                  using (var outputFile = File.OpenWrite(Path.Combine(outputDirName, outFileName)))
+                     outputFile.Write(outputStream.GetBuffer(), 0, (int)outputStream.Length);
                if (iniStream != null)
                   using (var outputFile = File.OpenWrite(Path.Combine(outputDirName, iniFileName)))
                      outputFile.Write(iniStream.GetBuffer(), 0, (int)iniStream.Length);

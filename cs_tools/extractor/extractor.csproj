@@ -57,6 +57,7 @@
     <Compile Include="FFMpeg.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="LND.cs" />
+    <Compile Include="PNGOptimizer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PRT.cs" />
     <Compile Include="StreamExt.cs" />
