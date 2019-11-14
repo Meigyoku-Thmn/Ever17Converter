@@ -34,6 +34,7 @@ namespace extractor {
          ExtractFolder(src, dst, inputNames);
       }
       static readonly bool use_ffmpeg = true;
+      static readonly bool use_png_optimizer = true;
       public static void ExtractFolder(string srcDirName, string dstDirName, string[] inputNames) {
          var s1 = Stopwatch.StartNew();
          foreach (var inputName in inputNames) {
@@ -50,34 +51,29 @@ namespace extractor {
                var subInputFileStream = File.OpenRead(Path.Combine(srcDirName, inputName));
                MemoryStream outputStream = subInputFileStream.ReadFile(record);
                subInputFileStream.Close();
-               MemoryStream iniStream = null;
-               string iniFileName = null;
                switch (ext) {
                   case ".waf":
                   case ".WAF":
-                     outFileName = Path.GetFileNameWithoutExtension(outFileName) + ".wav";
+                     outFileName = Path.ChangeExtension(outFileName, ".wav");
                      outputStream = outputStream.ToWAV(outputStream.Length);
                      if (use_ffmpeg) {
-                        outFileName = Path.GetFileNameWithoutExtension(outFileName) + ".ogg";
-                        //outputStream = outputStream.ToOgg();
+                        outFileName = Path.ChangeExtension(outFileName, ".ogg");
                         outputStream.ToOggFile(Path.Combine(outputDirName, outFileName));
-                        outputStream = null;
                      }
                      break;
                   case ".cps":
                   case ".CPS":
-                     outFileName = Path.GetFileNameWithoutExtension(outFileName) + ".png";
+                     outFileName = Path.ChangeExtension(outFileName, ".png");
                      outputStream = outputStream.ToPRT(outputStream.Length);
-                     (outputStream, iniStream) = outputStream.ToPNG(outputStream.Length);
-                     if (iniStream != null) iniFileName = Path.GetFileNameWithoutExtension(outFileName) + ".ini";
+                     var outName = Path.Combine(outputDirName, outFileName);
+                     outputStream.ToPNGFile(outName, outputStream.Length);
+                     if (use_png_optimizer) Optimizer.CompressPNG(outName);
+                     break;
+                  default:
+                     using (var outputFile = File.OpenWrite(Path.Combine(outputDirName, outFileName)))
+                        outputFile.Write(outputStream.GetBuffer(), 0, (int)outputStream.Length);
                      break;
                }
-               if (outputStream != null)
-                  using (var outputFile = File.OpenWrite(Path.Combine(outputDirName, outFileName)))
-                     outputFile.Write(outputStream.GetBuffer(), 0, (int)outputStream.Length);
-               if (iniStream != null)
-                  using (var outputFile = File.OpenWrite(Path.Combine(outputDirName, iniFileName)))
-                     outputFile.Write(iniStream.GetBuffer(), 0, (int)iniStream.Length);
             });
 
          }
