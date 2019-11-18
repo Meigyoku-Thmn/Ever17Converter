@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace extractor {
    static class PRT {
       static readonly uint ExpectedMagic = Encoding.ASCII.GetBytes("PRT\0").ToUInt32();
-      static (DirectBitmap image, MemoryStream ini) _ToPNG(this Stream inp, long length = -1) {
+      static (DirectBitmap image, MemoryStream ini) ToImage(this Stream inp, long length = -1) {
          var lastPos = inp.Position;
          var inb = new BinaryReader(inp);
          var magic = inb.ReadUInt32();
@@ -110,7 +110,7 @@ namespace extractor {
          return (image, iniStream);
       }
       public static void ToPNGFile(this Stream inp, string outName, long length = -1) {
-         var (image, iniStream) = inp._ToPNG(length);
+         var (image, iniStream) = inp.ToImage(length);
          image.Bitmap.Save(outName, ImageFormat.Png);
          image.Dispose();
          outName = Path.ChangeExtension(outName, ".ini");
@@ -119,7 +119,7 @@ namespace extractor {
                iniFile.Write(iniStream.GetBuffer(), 0, (int)iniStream.Length);
       }
       public static (MemoryStream, MemoryStream) ToPNG(this Stream inp, long length = -1) {
-         var (image, iniStream) = inp._ToPNG(length);
+         var (image, iniStream) = inp.ToImage(length);
          var outStream = new MemoryStream();
          image.Bitmap.Save(outStream, ImageFormat.Png);
          image.Dispose();
