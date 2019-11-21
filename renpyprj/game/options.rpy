@@ -1,5 +1,4 @@
 define config.name = _("Ever17 - the out of infinity - Renpy Port")
-define config.main_menu_music = "../../output/asset/bgm/bgm21.ogg"
 define menu_mask = "mask/menu.png"
 image black = "#000"
 image white = "#FFF"

@@ -7,6 +7,8 @@ style slider_label_text is pref_label_text:
    take drop_shadow
 style mute_all_button_text is check_button_text:
    take drop_shadow
+   
+image bg op = "system/op_bg.png"
 
 screen preferences():
    tag menu

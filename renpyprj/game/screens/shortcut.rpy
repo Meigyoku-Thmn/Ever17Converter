@@ -15,6 +15,29 @@ The time limit is quickly approaching. They all try to enjoy a "Last Supper." Ho
 The two were somehow able to survive and escape from IBF. But the submarine shuts down deep in the ocean. Takeshi makes up his mind that he must save Tsugumi.""",
 ]))
 
+image bg scut = "../../output/asset/system/scut_BG.png"
+define scut_menu_path = "../../output/asset/system/scut_menu.png"
+image fgmenu scut = scut_menu_path
+
+init python:
+   def get_scutmenu_list():
+      base_width, base_height = renpy.image_size(scut_menu_path)
+      width = base_width / 2
+      height = base_height / 36
+      def get_scutmenu_portion(idx, is_hightlight = False):
+         x = 0 if is_hightlight == True else width
+         y = height * idx
+         return x, y
+      scutmenu_button_list = []
+      for i in range(36):
+         x1, y1 = get_scutmenu_portion(i)
+         x2, y2 = get_scutmenu_portion(i, True)
+         button_img = Crop((x1, y1, width, height), "fgmenu scut")
+         button_img.hover_img = Crop((x2, y2, width, height), "fgmenu scut")
+         scutmenu_button_list.append(button_img)
+      return scutmenu_button_list
+   scutmenu_button_list = get_scutmenu_list()
+
 screen shortcut():   
    tag menu
    for key_name in ['mousedown_3', 'K_ESCAPE']:
