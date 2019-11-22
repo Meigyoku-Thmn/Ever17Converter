@@ -1,3 +1,5 @@
+init offset = -10
+
 define gui.show_name = False
 ## An accent color used throughout the interface to label and highlight text.
 define gui.accent_color = '#FFF'

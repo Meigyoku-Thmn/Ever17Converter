@@ -1,3 +1,5 @@
+init offset = -10
+
 define config.name = _("Ever17 - the out of infinity - Renpy Port")
 define menu_mask = "mask/menu.png"
 image black = "#000"

@@ -1,3 +1,5 @@
+init offset = -9
+
 init python:
    import pygame_sdl2 as pygame
    class TransparentKeyedImage(im.ImageBase):
