@@ -4,7 +4,7 @@ image logo kid = "../../output/asset/bg/kid_logo.png"
 image logo himeraki = "../../output/asset/bg/hirameki.png"
 
 label main_menu:
-   call screen screensaver
+   call screen sysvoice
    scene logo kid with Dissolve(0.2)
    pause 1.0
    scene logo himeraki with Dissolve(0.2)

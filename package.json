@@ -6,7 +6,8 @@
    "scripts": {
       "rpy": "C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj",
       "rpy-dbg": "cross-env use_debug=true C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj",
-      "e17": "C:/Home/Program^ File/Infinity^ Series/Ever17/ever17PC_us.exe"
+      "e17": "C:/Home/Program^ File/Infinity^ Series/Ever17/ever17PC_us.exe",
+      "clear-rpyc": "cd ./renpyprj/game && @del /Q /F /S *.rpyc 1>nul && cd ../.."
    },
    "author": "",
    "license": "ISC",
