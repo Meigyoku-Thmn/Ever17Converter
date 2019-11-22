@@ -1,6 +1,25 @@
 # warning: renpy don't use cascading style behavior like css, so you have to be explicit about styling in one way or another 
 
 image fgmenu title = "../../output/asset/system/titlemenu.png"
+define menu_mask = "mask/menu.png"
+# ramplen: see https://en.wikipedia.org/wiki/Power_of_two
+define menu_transition_in = ImageDissolve(menu_mask, 0.3, reverse=True, ramplen=64)
+define menu_transition_out = ImageDissolve(menu_mask, 0.3, reverse=True, ramplen=64)
+define menu_transition_wipe_out_in = MultipleTransition([
+   False, menu_transition_out,
+   "transparent", menu_transition_in,
+   True
+])
+define menu_transition_wipe_out_fade_in = MultipleTransition([
+   False, menu_transition_out,
+   "transparent", Dissolve(0.3),
+   True
+])
+define menu_transition_fade_out_wipe_in = MultipleTransition([
+   False, Dissolve(0.3),
+   "transparent", menu_transition_in,
+   True
+])
 
 define screen_menu_transition_wipe_out_in = { "screens" : menu_transition_wipe_out_in }
 define screen_menu_transition_wipe_out_fade_in = { "screens" : menu_transition_wipe_out_fade_in }
