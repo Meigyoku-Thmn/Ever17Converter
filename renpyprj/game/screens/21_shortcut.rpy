@@ -17,7 +17,6 @@ The two were somehow able to survive and escape from IBF. But the submarine shut
 
 image bg scut = "../../output/asset/system/scut_BG.png"
 define scut_menu_path = "../../output/asset/system/scut_menu.png"
-image fgmenu scut = scut_menu_path
 
 init python:
    def get_scutmenu_list():
@@ -32,25 +31,35 @@ init python:
       for i in range(36):
          x1, y1 = get_scutmenu_portion(i)
          x2, y2 = get_scutmenu_portion(i, True)
-         button_img = Crop((x1, y1, width, height), "fgmenu scut")
-         button_img.hover_img = Crop((x2, y2, width, height), "fgmenu scut")
+         button_img = Crop((x1, y1, width, height), scut_menu_path)
+         button_img.hover_img = Crop((x2, y2, width, height), scut_menu_path)
          scutmenu_button_list.append(button_img)
       return scutmenu_button_list
    scutmenu_button_list = get_scutmenu_list()
+
+style shortcut:
+   xoffset 32
+   yoffset 50
+   box_wrap True
+   spacing 8
+   box_wrap_spacing 32
+   ymaximum 361
+style scut_description:
+   properties style_props('drop_shadow', 'main_font')
+   xmaximum 715
+   color "#FFF"
+   size 23
+   xpos 40
+   ypos 436
 
 screen shortcut():   
    tag menu
    for key_name in ['mousedown_3', 'K_ESCAPE']:
       key key_name action Show("special_menu", transition=screen_menu_transition_fade_out_wipe_in)
    add "bg scut"
-   add "messwin03" yalign 1.0 alpha 0.65
+   add "messwin03" yalign 1.0 alpha persistent.textbox_opacity
    vbox:
-      xoffset 32
-      yoffset 50
-      box_wrap True
-      spacing 8
-      box_wrap_spacing 32
-      ymaximum 361
+      style 'shortcut'
       for i in range(32):
          $ scutmenu_button = scutmenu_button_list[i]
          imagebutton:
@@ -61,9 +70,4 @@ screen shortcut():
             action NullAction()
    default selected_index = -1
    text scut_descriptions.get(selected_index) or "":
-      style "drop_shadow"
-      xmaximum 715
-      color "#FFF"
-      size 25
-      xpos 40
-      ypos 435
+      style "scut_description"

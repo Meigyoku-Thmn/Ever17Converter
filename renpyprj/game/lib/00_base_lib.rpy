@@ -1,6 +1,33 @@
 init offset = -9
 
 init python:
+   # https://stackoverflow.com/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression
+   def merge_dicts(*dict_args):
+      """
+      Given any number of dicts, shallow copy and merge into a new dict,
+      precedence goes to key value pairs in latter dicts.
+      """
+      result = {}
+      for dictionary in dict_args:
+         result.update(dictionary)
+      return result
+   
+   def style_props(*args):
+      arr = []
+      for arg in args:
+         if isinstance(arg, dict): arr.append(arg)
+         elif isinstance(arg, Style): arr.append(arg.properties)
+         elif isinstance(arg, basestring): arr.extend(style[arg].properties)
+         else: raise ValueError('item is not a string, dict or Style')
+      return merge_dicts(*arr);
+
+init python:
+   def bgm(idx):
+      return "../../output/asset/bgm/bgm{0:02d}.ogg".format(idx)
+   def font(name):
+      return "fonts/{0}.ttf".format(name)
+
+init python:
    import pygame_sdl2 as pygame
    class TransparentKeyedImage(im.ImageBase):
       """

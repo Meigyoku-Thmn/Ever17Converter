@@ -9,20 +9,23 @@ init python:
       return screensaver_button_list
    screensaver_button_list = get_screensaver_menu_list()
 
+style screensaver:
+   xpos 8
+   ypos 56
+   box_wrap True
+   spacing 3
+   box_wrap_spacing 16
+   xmaximum 791
+
 screen screensaver():
    tag menu
    for key_name in ['mousedown_3', 'K_ESCAPE']:
       key key_name action Show("special_menu", transition=screen_menu_transition_fade_out_wipe_in)
    add "bg screensaver"
-   add "messwin03" yalign 1.0 alpha 0.65
+   add "messwin03" yalign 1.0 alpha persistent.textbox_opacity
    default selected_index = -1
    hbox:
-      xpos 8
-      ypos 56
-      box_wrap True
-      spacing 3
-      box_wrap_spacing 16
-      xmaximum 791
+      style 'screensaver'
       for i in range(0, 17):
          $ screensaver_button = screensaver_button_list[i]
          imagebutton:

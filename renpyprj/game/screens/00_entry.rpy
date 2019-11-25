@@ -21,12 +21,28 @@ define menu_transition_fade_out_wipe_in = MultipleTransition([
    True
 ])
 
-define screen_menu_transition_wipe_out_in = { "screens" : menu_transition_wipe_out_in }
-define screen_menu_transition_wipe_out_fade_in = { "screens" : menu_transition_wipe_out_fade_in }
-define screen_menu_transition_fade_out_wipe_in = { "screens" : menu_transition_fade_out_wipe_in}
+define screen_menu_transition_wipe_out_in = { "screens": menu_transition_wipe_out_in }
+define screen_menu_transition_wipe_out_fade_in = { "screens": menu_transition_wipe_out_fade_in }
+define screen_menu_transition_fade_out_wipe_in = { "screens": menu_transition_fade_out_wipe_in }
 
 style drop_shadow:
-   outlines [ (absolute(0), (1.0, 1.0, 1.0, 150), absolute(2), absolute(2)) ]
+   outlines [ (absolute(0), Color('#000', alpha=1.0), absolute(2), absolute(2)) ]
+style main_font:
+   font font("Cabin-Regular")
+style main_font_bold:
+   font font("Cabin-Bold")
+style main_font_italic:
+   font font("Cabin-Italic")
+style main_font_bolditalic:
+   font font("Cabin-BoldItalic")
+style main_font_medium:
+   font font("Cabin-Medium")
+style main_font_mediumitalic:
+   font font("Cabin-MediumItalic")
+style main_font_semibold:
+   font font("Cabin-SemiBold")
+style main_font_semibolditalic:
+   font font("Cabin-SemiBoldItalic")
 
 init python:
    def get_titlemenu_list():
