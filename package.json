@@ -7,7 +7,8 @@
       "rpy": "C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj",
       "rpy-dbg": "cross-env use_debug=true C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj",
       "e17": "C:/Home/Program^ File/Infinity^ Series/Ever17/ever17PC_us.exe",
-      "clear-rpyc": "cd ./renpyprj/game && del /Q /F /S *.rpyc 1>nul && cd ../.."
+      "clear-rpyc": "cd ./renpyprj/game && del /Q /F /S *.rpyc 1>nul && cd ../..",
+      "install-pydep": "C:/renpy/lib/windows-i686/python -m pip install --target renpyprj/game/python-packages -r requeriments.txt"
    },
    "author": "",
    "license": "ISC",

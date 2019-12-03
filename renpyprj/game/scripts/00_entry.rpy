@@ -18,6 +18,7 @@ init -6 python:
          raise SystemExit()
 
 label main_menu:
+   call screen album_chara(page=1)
    # scene logo kid with Dissolve(0.2)
    # pause 1.0
    # scene logo himeraki with Dissolve(0.2)

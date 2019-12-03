@@ -12,3 +12,4 @@ env
 *.pyo
 *~
 *.bak
+python-packages

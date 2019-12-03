@@ -1,6 +1,11 @@
 image bg sysvoice = "../../output/asset/system/sysvoice_bg.png"
 define sysvoice_menu_path = "../../output/asset/system/sysvoice_menu.png"
-image fgmenu sysvoice = TransparentKeyedImage(sysvoice_menu_path, key_color='green') 
+image fgmenu sysvoice = TransparentKeyedImage(sysvoice_menu_path, key_color='green')
+
+init python:
+   sysvoice_description = ""
+   with renpy.file("../../output/en_sysvoice_description.txt") as file:
+      sysvoice_description = file.read()
 
 init python:
    def get_sysvoice_menu_list():
@@ -27,6 +32,14 @@ style sysvoice:
    box_wrap_spacing 12
    xmaximum 732
 
+style sysvoice_description:
+   properties style_props('drop_shadow', 'main_font')
+   xmaximum 715
+   color "#FFF"
+   size 23
+   xpos 40
+   ypos 436
+
 screen sysvoice():
    tag menu
    for key_name in ['mousedown_3', 'K_ESCAPE']:
@@ -45,3 +58,5 @@ screen sysvoice():
             hovered SetScreenVariable("selected_index", i)
             unhovered SetScreenVariable("selected_index", -1)
             action NullAction()
+   text sysvoice_description:
+      style "sysvoice_description"

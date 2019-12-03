@@ -1,6 +1,21 @@
 init offset = -9
 
 init python:
+   from functools import wraps
+
+   def memoize(function):
+      cache = {}
+      @wraps(function)
+      def wrapper(*args):
+         if args in cache:
+            return cache[args]
+         else:
+            val = function(*args)
+            cache[args] = val
+            return val
+      return wrapper
+
+init python:
    # https://stackoverflow.com/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression
    def merge_dicts(*dict_args):
       """

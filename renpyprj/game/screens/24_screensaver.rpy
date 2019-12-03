@@ -1,6 +1,11 @@
 image bg screensaver = "../../output/asset/system/saver_bg.png"
 
 init python:
+   screensaver_description = ""
+   with renpy.file("../../output/en_screensaver_description.txt") as file:
+      screensaver_description = file.read()
+
+init python:
    def get_screensaver_menu_list():
       screensaver_button_list = []
       for i in range(1, 18):
@@ -16,6 +21,14 @@ style screensaver:
    spacing 3
    box_wrap_spacing 16
    xmaximum 791
+
+style screensaver_description:
+   properties style_props('drop_shadow', 'main_font')
+   xmaximum 715
+   color "#FFF"
+   size 23
+   xpos 40
+   ypos 436
 
 screen screensaver():
    tag menu
@@ -35,3 +48,5 @@ screen screensaver():
             hovered SetScreenVariable("selected_index", i)
             unhovered SetScreenVariable("selected_index", -1)
             action NullAction()
+   text screensaver_description:
+      style "screensaver_description"

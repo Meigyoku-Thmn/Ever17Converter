@@ -1,22 +1,11 @@
-define scut_descriptions = dict(enumerate([
-   """~May 1st Takeshi's Perspective~
-Takeshi escapes from the elevator, but there's no one to be found in LeMU. In order to escape the flooding, Takeshi goes with Tsugumi and Sora to the lower levels.""",
-   """~May 2nd Takeshi's Perspective~
-Takeshi moves into his second day at LeMU short on sleep. For some reason You and crew are in foul moods. Sora predicts the limits of LeMU's partitions. The power suddenly goes out.""",
-   """~May 3rd Takeshi's Perspective~
-"Nobody's come to save us yet, but I'm done being pessimistic"...is the sentiment for an instant, but a small mistake leads to an unexpected accident - and dangerous flooding.""",
-   """~May 4th Tsugumi Version~
-Takeshi goes to visit the injured Tsugumi. She tells him coldly, "I wanted to die." Takeshi explains to her the value of friends.""",
-   """~May 5th Tsugumi Version~
-Takeshi wakes up from a nightmare about death. The floor is eerily silent. At Tsugumi's request, Takeshi goes to the Jellyfish ride only to receive an unexpected confession...""",
-   """~May 6th Tsugumi Version~
-The time limit is quickly approaching. They all try to enjoy a "Last Supper." However, a new predicament arises. The key to their survival is in Himmel, or maybe IBF?""",
-   """~May 7th Tsugumi Version~
-The two were somehow able to survive and escape from IBF. But the submarine shuts down deep in the ocean. Takeshi makes up his mind that he must save Tsugumi.""",
-]))
-
 image bg scut = "../../output/asset/system/scut_BG.png"
 define scut_menu_path = "../../output/asset/system/scut_menu.png"
+
+init python:
+   import yaml
+   scut_descriptions = {}
+   with renpy.file("../../output/en_scut_descriptions.yaml") as file:
+      scut_descriptions = yaml.load(file, Loader=yaml.FullLoader)
 
 init python:
    def get_scutmenu_list():

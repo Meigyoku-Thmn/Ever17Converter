@@ -37,7 +37,7 @@ style preferences_slider_button_text:
 screen preferences():
    tag menu
    for key_name in ['mousedown_3', 'K_ESCAPE']:
-      key key_name action ShowMenu("main_menu")
+      key key_name action Show("main_menu", transition=screen_menu_transition_dissolve)
    add "bg op"
    add "messwin03" yalign 1.0 alpha persistent.textbox_opacity
    vbox:
