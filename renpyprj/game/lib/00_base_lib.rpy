@@ -1,8 +1,13 @@
 init offset = -9
 
 init python:
-   from functools import wraps
+   # https://goodcode.io/articles/python-dict-object/
+   class objectview(object):
+      def __init__(self, d):
+        self.__dict__ = d
 
+init python:
+   from functools import wraps
    def memoize(function):
       cache = {}
       @wraps(function)

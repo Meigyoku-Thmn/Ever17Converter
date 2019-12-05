@@ -4,9 +4,11 @@ image fgmenu title = "../../output/asset/system/titlemenu.png"
 define udlr_cursor_path = "../../output/asset/system/udlr_cur.png"
 image fgudlr cursor = TransparentKeyedImage(udlr_cursor_path, key_color='green')
 define menu_mask = "mask/menu.png"
+define disolve_duration = 0.2
+define wipe_duration = 0.3
 # ramplen: see https://en.wikipedia.org/wiki/Power_of_two
-define menu_transition_in = ImageDissolve(menu_mask, 0.3, reverse=True, ramplen=64)
-define menu_transition_out = ImageDissolve(menu_mask, 0.3, reverse=True, ramplen=64)
+define menu_transition_in = ImageDissolve(menu_mask, wipe_duration, reverse=True, ramplen=64)
+define menu_transition_out = ImageDissolve(menu_mask, wipe_duration, reverse=True, ramplen=64)
 define menu_transition_wipe_out_in = MultipleTransition([
    False, menu_transition_out,
    "transparent", menu_transition_in,
@@ -14,17 +16,17 @@ define menu_transition_wipe_out_in = MultipleTransition([
 ])
 define menu_transition_wipe_out_fade_in = MultipleTransition([
    False, menu_transition_out,
-   "transparent", Dissolve(0.3),
+   "transparent", Dissolve(disolve_duration),
    True
 ])
 define menu_transition_fade_out_wipe_in = MultipleTransition([
-   False, Dissolve(0.3),
+   False, Dissolve(disolve_duration),
    "transparent", menu_transition_in,
    True
 ])
 define menu_transition_fade_out_fade_in = MultipleTransition([
-   False, Dissolve(0.3),
-   "transparent", Dissolve(0.3),
+   False, Dissolve(disolve_duration),
+   "transparent", Dissolve(disolve_duration),
    True
 ])
 
@@ -32,7 +34,7 @@ define screen_menu_transition_wipe_out_in = { "screens": menu_transition_wipe_ou
 define screen_menu_transition_wipe_out_fade_in = { "screens": menu_transition_wipe_out_fade_in }
 define screen_menu_transition_fade_out_wipe_in = { "screens": menu_transition_fade_out_wipe_in }
 define screen_menu_transition_fade_out_fade_in = { "screens": menu_transition_fade_out_fade_in }
-define screen_menu_transition_dissolve = { "screens": Dissolve(0.3) }
+define screen_menu_transition_dissolve = { "screens": Dissolve(disolve_duration) }
 
 style drop_shadow:
    outlines [ (absolute(0), Color('#000', alpha=1.0), absolute(2), absolute(2)) ]

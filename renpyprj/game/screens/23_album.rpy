@@ -80,6 +80,9 @@ screen album():
 init python:
    def get_thumb_path(thumb_name):
       return "../../output/asset/system/" + thumb_name + ".png"
+   from collections import namedtuple
+   ImageInfo = namedtuple('ImageInfo', 'name artist_name scroll_axis')
+   ImageInfo.__new__.__defaults__ = (None,) * len(ImageInfo._fields)
    from odictliteral import odict
    you_list = odict[
       "sm_yu01a": ["ev_yu01a", "ev_yu01b"],
@@ -172,7 +175,7 @@ init python:
       "sm_co08a": ["ev_co08a", "ev_co08b"],
       "sm_co09a": ["ev_co09a", "ev_co09c"],
       "sm_co11a": ["ev_co11a", "ev_co11b"],
-      "sm_co18a": ["ev_co18a"],
+      "sm_co18a": [ImageInfo("ev_co18a", None, "horizontal")],
       "sm_co17a": ["ev_co17a", "ev_co17b"],
       "sm_co10a": ["ev_co10a"],
       "sm_co10b": ["ev_co10b", "ev_co10c"],
@@ -191,23 +194,23 @@ init python:
       "sm_co15a": ["ev_co15a", "ev_co15b", "ev_co15c", "ev_co15d", "ev_co15e", "ev_co15f"],
    ]
    other2_list = odict[
-      "smst01": [("post01", "Illustrated by Yuu Takigawa")],
-      "smst02": [("post02", "Illustrated by Yuu Takigawa")],
-      "smst03": [("post03", "Illustrated by Yuu Takigawa")],
-      "smst17": [("post17", "Illustrated by Yuu Takigawa")],
-      "smst05": [("post05", "Illustrated by Yuu Takigawa")],
-      "smst06": [("post06", "Illustrated by Yuu Takigawa")],
-      "smst07": [("post07", "Illustrated by Yuu Takigawa")],
-      "smst08": [("post08", "Illustrated by Yuu Takigawa")],
-      "smst13": [("post13", "Illustrated by Yuu Takigawa")],
-      "smst09": [("post09", "Illustrated by Yuu Takigawa")],
-      "smst10": [("post10", "Illustrated by Sousi Nakazato")],
-      "smst11": [("post11", "Illustrated by Sousi Nakazato")],
-      "smst12": [("post12", "Illustrated by Yuu Takigawa")],
-      "smst14": [("post14", "Illustrated by Rikuentai")],
-      "smst04": [("post04", "Illustrated by Yuu Takigawa")],
-      "smst16": [("post16", "Illustrated by Katuhiko Youki")],
-      "smst15": [("post15", "Illustrated by Yuu Takigawa")],
+      "smst01": [ImageInfo("post01", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst02": [ImageInfo("post02", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst03": [ImageInfo("post03", "Illustrated by Yuu Takigawa")],
+      "smst17": [ImageInfo("post17", "Illustrated by Yuu Takigawa")],
+      "smst05": [ImageInfo("post05", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst06": [ImageInfo("post06", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst07": [ImageInfo("post07", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst08": [ImageInfo("post08", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst13": [ImageInfo("post13", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst09": [ImageInfo("post09", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst10": [ImageInfo("post10", "Illustrated by Sousi Nakazato", "vertical")],
+      "smst11": [ImageInfo("post11", "Illustrated by Sousi Nakazato", "vertical")],
+      "smst12": [ImageInfo("post12", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst14": [ImageInfo("post14", "Illustrated by Rikuentai", "vertical")],
+      "smst04": [ImageInfo("post04", "Illustrated by Yuu Takigawa", "vertical")],
+      "smst16": [ImageInfo("post16", "Illustrated by Katuhiko Youki")],
+      "smst15": [ImageInfo("post15", "Illustrated by Yuu Takigawa", "vertical")],
    ]
    album_groups = [you_list, tsugumi_list, sora_list, sara_list, coco_list, other_list, other2_list]
 
@@ -259,15 +262,66 @@ screen album_chara(page):
 
 screen chara_slide_show(images, page):
    tag menu
+   default is_init_done = False
    default current_idx = 0
-   default GoBack = lambda p: Show("album_chara", transition=screen_menu_transition_dissolve, page=p)
-   for key_name in ['mousedown_3', 'K_ESCAPE']:
-      key key_name action GoBack(page)
-   key 'mousedown_1' action (SetScreenVariable('current_idx', current_idx + 1) if current_idx + 1 < len(images) else GoBack(page))
+   default stop_auto_scroll_anim = False
+   default man_xalign = 0.0
+   default man_yalign = 0.0
    python:
       image = images[current_idx]
       artist_name = "";
-      if isinstance(image, tuple): 
-         image = image[0]
-         artist_name = image[1]
-   add get_full_bg_path(image)
+      name = image;
+      scroll_axis = None
+      if isinstance(image, ImageInfo): 
+         name = image.name
+         artist_name = image.artist_name
+         scroll_axis = image.scroll_axis
+      bg_image = get_full_bg_path(name)
+      def capture_atl_align():
+         current_screen = renpy.current_screen(); s = objectview(current_screen.scope)
+         bg_image_atl = current_screen.child.children[-1]
+         s.man_xalign = bg_image_atl.xalign
+         s.man_yalign = bg_image_atl.yalign
+      def GoNext():
+         s = objectview(renpy.current_screen().scope)
+         if s.scroll_axis in ["vertical", "horizontal"] and s.stop_auto_scroll_anim == False:
+            return [Function(s.capture_atl_align), SetScreenVariable("stop_auto_scroll_anim", True)]
+         elif s.current_idx + 1 < len(s.images):
+            return [SetScreenVariable("stop_auto_scroll_anim", False), SetScreenVariable('current_idx', s.current_idx + 1)]
+         else:
+            return s.CloseSlideShow()
+      def CloseSlideShow():
+         s = objectview(renpy.current_screen().scope)
+         return Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)
+   key 'mousedown_1' action GoNext()   
+   for key_name in ['mousedown_3', 'K_ESCAPE']:
+      key key_name action CloseSlideShow()
+   for key_name in ['K_DOWN']:
+      key key_name action SetScreenVariable("man_yalign", man_yalign + 0.1)
+   add bg_image:
+      if (stop_auto_scroll_anim == False):
+         if scroll_axis == "vertical":
+            at transform:
+               pause disolve_duration
+               yalign 0.0
+               linear 0.8 yalign 1.0
+               linear 0.8 yalign 0.0
+               function (lambda a, b, c: SetScreenVariable("stop_auto_scroll_anim", True)())
+         elif scroll_axis == "horizontal":
+            at transform:
+               pause disolve_duration
+               xalign 0.0
+               linear 0.8 xalign 1.0
+               linear 0.8 xalign 0.0
+               function (lambda a, b, c: SetScreenVariable("stop_auto_scroll_anim", True)())
+      else:
+         xalign man_xalign
+         yalign man_yalign
+   if is_init_done == False:
+      python:
+         ori_event = renpy.current_screen().event
+         def event_hook(ev, x, y, st):
+            s = objectview(renpy.get_screen("chara_slide_show").scope)
+            return s.ori_event(ev, x, y, st)
+         renpy.current_screen().event = event_hook
+   $ is_init_done = True

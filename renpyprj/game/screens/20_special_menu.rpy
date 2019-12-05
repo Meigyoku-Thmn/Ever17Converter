@@ -1,10 +1,10 @@
 transform jukebox_special_menu_transition_wipe_out_fade_in(new_widget, old_widget):
    old_widget
    "transparent" with menu_transition_out
-   pause 0.3
+   pause disolve_duration
    function (lambda a, b, c: renpy.music.stop())
-   new_widget with Dissolve(0.3)
-   pause 0.3
+   new_widget with Dissolve(disolve_duration)
+   pause disolve_duration
 
 define screen_jukebox_special_menu_transition_wipe_out_fade_in = { "screens": jukebox_special_menu_transition_wipe_out_fade_in }
 
