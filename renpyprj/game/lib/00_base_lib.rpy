@@ -1,11 +1,33 @@
 init offset = -9
 
 init python:
+   # https://stackoverflow.com/questions/1969240/mapping-a-range-of-values-to-another
+   def make_linear_interpolater(left_min, left_max, right_min, right_max, use_clamp=False): 
+      # Figure out how 'wide' each range is  
+      leftSpan = left_max - left_min  
+      rightSpan = right_max - right_min  
+
+      # Compute the scale factor between left and right values 
+      scaleFactor = float(rightSpan) / float(leftSpan) 
+
+      # create interpolation function using pre-calculated scaleFactor
+      _range = [right_min, right_max]
+      _range.sort()
+      _min, _max = _range
+      def interp_fn(value):
+         rs = right_min + (value - left_min) * scaleFactor
+         if use_clamp == True:
+            rs = clamp(rs, _min, _max)
+         return rs
+
+      return interp_fn
+
+init python:
    # https://goodcode.io/articles/python-dict-object/
    class objectview(object):
       def __init__(self, d):
         self.__dict__ = d
-   
+
 init python:
    def clamp(value, _min, _max):
       return max(min(value, _max), _min)
