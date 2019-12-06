@@ -5,6 +5,10 @@ init python:
    class objectview(object):
       def __init__(self, d):
         self.__dict__ = d
+   
+init python:
+   def clamp(value, _min, _max):
+      return max(min(value, _max), _min)
 
 init python:
    from functools import wraps

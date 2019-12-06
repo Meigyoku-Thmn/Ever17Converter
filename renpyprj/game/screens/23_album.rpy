@@ -280,14 +280,14 @@ screen chara_slide_show(images, page):
       def capture_atl_align():
          current_screen = renpy.current_screen(); s = objectview(current_screen.scope)
          bg_image_atl = current_screen.child.children[-1]
-         s.man_xalign = bg_image_atl.xalign
-         s.man_yalign = bg_image_atl.yalign
+         s.man_xalign = bg_image_atl.xalign or 0.0
+         s.man_yalign = bg_image_atl.yalign or 0.0
       def GoNext():
          s = objectview(renpy.current_screen().scope)
          if s.scroll_axis in ["vertical", "horizontal"] and s.stop_auto_scroll_anim == False:
             return [Function(s.capture_atl_align), SetScreenVariable("stop_auto_scroll_anim", True)]
          elif s.current_idx + 1 < len(s.images):
-            return [SetScreenVariable("stop_auto_scroll_anim", False), SetScreenVariable('current_idx', s.current_idx + 1)]
+            return [SetScreenVariable("stop_auto_scroll_anim", False), SetScreenVariable('current_idx', s.current_idx + 1), SetScreenVariable("man_yalign", 0.0), SetScreenVariable("man_xalign", 0.0)]
          else:
             return s.CloseSlideShow()
       def CloseSlideShow():
@@ -296,8 +296,20 @@ screen chara_slide_show(images, page):
    key 'mousedown_1' action GoNext()   
    for key_name in ['mousedown_3', 'K_ESCAPE']:
       key key_name action CloseSlideShow()
-   for key_name in ['K_DOWN']:
-      key key_name action SetScreenVariable("man_yalign", man_yalign + 0.1)
+   default dragging = None   
+   default last_st = 0.0
+   python:
+      def ReleaseKeyEvent(key_name):
+         def _ReleaseKeyEvent():
+            s = objectview(renpy.current_screen().scope)
+            if (key_name.replace("keyup_", "") == s.dragging):
+               s.dragging = None
+               renpy.restart_interaction()
+         return _ReleaseKeyEvent
+   for key_name in ['K_DOWN', 'K_UP', 'K_LEFT', "K_RIGHT"]:
+      key key_name action [SetScreenVariable("dragging", key_name), SetScreenVariable("last_st", 0.0)]
+   for key_name in ['K_DOWN', 'K_UP', 'K_LEFT', "K_RIGHT"]:
+      key ("keyup_" + key_name) action ReleaseKeyEvent("keyup_" + key_name)
    add bg_image:
       if (stop_auto_scroll_anim == False):
          if scroll_axis == "vertical":
@@ -319,9 +331,31 @@ screen chara_slide_show(images, page):
          yalign man_yalign
    if is_init_done == False:
       python:
+         import pygame_sdl2 as pygame
          ori_event = renpy.current_screen().event
+         counter = 0
+         # I use this event function as an update function
          def event_hook(ev, x, y, st):
             s = objectview(renpy.get_screen("chara_slide_show").scope)
+            if ev.type == pygame.ACTIVEEVENT:
+               if (ev.state == 2 and ev.gain == 0): 
+                  s.dragging = None # stop dragging when window losts focus
+            if s.dragging is not None:
+               renpy.timeout(0.0)
+               if s.last_st != 0.0:
+                  delta_pos = 1.25 * (st - s.last_st)
+                  if s.dragging == "K_DOWN":
+                     s.man_yalign += delta_pos
+                  elif s.dragging == "K_UP":
+                     s.man_yalign -= delta_pos
+                  elif s.dragging == "K_LEFT":
+                     s.man_xalign -= delta_pos
+                  elif s.dragging == "K_RIGHT":
+                     s.man_xalign += delta_pos
+                  s.man_xalign = clamp(s.man_xalign, 0.0, 1.0)
+                  s.man_yalign = clamp(s.man_yalign, 0.0, 1.0)
+               s.last_st = st
+               renpy.restart_interaction()
             return s.ori_event(ev, x, y, st)
          renpy.current_screen().event = event_hook
    $ is_init_done = True
