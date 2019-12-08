@@ -19,5 +19,6 @@
       "cs_tools/**/obj": true,
       "cs_tools/**/*.csproj.user": true,
       "cs_tools/**/Properties": true,
-   }
+   },
+   "python.pythonPath": "C:\\Python27\\python.exe"
 }

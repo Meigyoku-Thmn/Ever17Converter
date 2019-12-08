@@ -4,6 +4,9 @@ define album_menu_path = "../../output/asset/system/album_menu.png"
 image fgmenu album = TransparentKeyedImage(album_menu_path, key_color='green')
 
 init python:
+   from lib.base_lib import make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient
+
+init python:
    album_description = "";
    with renpy.file("../../output/en_wallpaper_description.txt") as file:
       album_description = file.read()
@@ -260,8 +263,21 @@ screen album_chara(page):
             action Show("chara_slide_show", transition=screen_menu_transition_dissolve, 
                images=album_group[thumb_name], page=current_page)
 
+style artist_name_wrapper:
+   background "#000"
+   xalign 1.0
+   yalign 1.0
+   offset (-30, -10)
+
+style artist_name:
+   properties style_props('main_font')
+   color "#FFF"
+   size 23
+
 screen chara_slide_show(images, page):
    tag menu
+   default me = renpy.current_screen()
+   default s = objectview(me.scope)
    default is_init_done = False
    default current_idx = 0
    default stop_auto_scroll_anim = False
@@ -276,23 +292,25 @@ screen chara_slide_show(images, page):
          name = image.name
          artist_name = image.artist_name
          scroll_axis = image.scroll_axis
-      bg_image = get_full_bg_path(name)
-      def capture_atl_align():
-         current_screen = renpy.current_screen(); s = objectview(current_screen.scope)
-         bg_image_atl = current_screen.widgets['bg_wrapper'].child
-         s.man_xalign = bg_image_atl.xalign or 0.0
-         s.man_yalign = bg_image_atl.yalign or 0.0
-      def GoNext():
-         s = objectview(renpy.current_screen().scope)
-         if s.scroll_axis in ["vertical", "horizontal"] and s.stop_auto_scroll_anim == False:
-            return [Function(s.capture_atl_align), SetScreenVariable("stop_auto_scroll_anim", True)]
-         elif s.current_idx + 1 < len(s.images):
-            return [SetScreenVariable("stop_auto_scroll_anim", False), SetScreenVariable('current_idx', s.current_idx + 1), SetScreenVariable("man_yalign", 0.0), SetScreenVariable("man_xalign", 0.0)]
-         else:
-            return s.CloseSlideShow()
-      def CloseSlideShow():
-         s = objectview(renpy.current_screen().scope)
-         return Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)
+      bg_image = get_full_bg_path(name)   
+   if is_init_done == False:
+      python:
+         @partial_deco(me, s)
+         def capture_atl_align(me, s):
+            bg_image_atl = me.widgets['bg_wrapper'].child
+            s.man_xalign = bg_image_atl.xalign or 0.0
+            s.man_yalign = bg_image_atl.yalign or 0.0
+         @partial_deco(me, s)
+         def GoNext(me, s):
+            if s.scroll_axis in ["vertical", "horizontal"] and s.stop_auto_scroll_anim == False:
+               return [Function(s.capture_atl_align), SetScreenVariable("stop_auto_scroll_anim", True)]
+            elif s.current_idx + 1 < len(s.images):
+               return [SetScreenVariable("stop_auto_scroll_anim", False), SetScreenVariable('current_idx', s.current_idx + 1), SetScreenVariable("man_yalign", 0.0), SetScreenVariable("man_xalign", 0.0)]
+            else:
+               return s.CloseSlideShow()
+         @partial_deco(me, s)
+         def CloseSlideShow(me, s):
+            return Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)
    key 'mousedown_1' action GoNext()   
    for key_name in ['mousedown_3', 'K_ESCAPE']:
       key key_name action CloseSlideShow()
@@ -303,42 +321,43 @@ screen chara_slide_show(images, page):
    default last_scrolling_pos = 0.0
    default scroll_duration = 0.15
    default scroll_step = 0.1
-   python:
-      def ReleaseArrowKeyEvent(key_name):
-         s = objectview(renpy.current_screen().scope)
-         if (key_name.replace("keyup_", "") == s.dragging):
-            s.dragging = None
-      def ArrowKeyEvent(key_name):
-         s = objectview(renpy.current_screen().scope)
-         s.dragging = key_name
-         s.last_st = 0.0
-         s.scrolling = None
-      def ScrollWheelEvent(key_name):
-         current_screen = renpy.current_screen(); s = objectview(current_screen.scope)
-         scrolling = 0.0
-         if key_name == "mousedown_4":
-            scrolling -= s.scroll_step
-         elif key_name == "mousedown_5":
-            scrolling += s.scroll_step
-         if s.scrolling is not None:
-            if (s.scrolling * scrolling > 0):
-               scrolling += s.scrolling
-               s.last_scrolling_st = s.last_st
-               if s.scroll_axis == "vertical":                     
-                  s.last_scrolling_pos = s.man_yalign
-               elif s.scroll_axis == "horizontal":
-                  s.last_scrolling_pos = s.man_xalign
-               s.scroll_linear_intpl = make_linear_interpolater(
-                  s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
-                  s.last_scrolling_pos, s.last_scrolling_pos + scrolling,
-                  use_clamp=True
-               )
-         if s.scrolling is None or not (s.scrolling * scrolling > 0):
+   if is_init_done == False:
+      python:
+         @partial_deco(me, s)
+         def ReleaseArrowKeyEvent(me, s, key_name):
+            if (key_name.replace("keyup_", "") == s.dragging):
+               s.dragging = None
+         @partial_deco(me, s)
+         def ArrowKeyEvent(me, s, key_name):
+            s.dragging = key_name
             s.last_st = 0.0
-            s.last_scrolling_st = 0.0
-            s.last_scrolling_pos = 0.0
-         s.scrolling = scrolling
-         s.dragging = None
+            s.scrolling = None
+         @partial_deco(me, s)
+         def ScrollWheelEvent(me, s, key_name):
+            scrolling = 0.0
+            if key_name == "mousedown_4":
+               scrolling -= s.scroll_step
+            elif key_name == "mousedown_5":
+               scrolling += s.scroll_step
+            if s.scrolling is not None:
+               if (s.scrolling * scrolling > 0):
+                  scrolling += s.scrolling
+                  s.last_scrolling_st = s.last_st
+                  if s.scroll_axis == "vertical":                     
+                     s.last_scrolling_pos = s.man_yalign
+                  elif s.scroll_axis == "horizontal":
+                     s.last_scrolling_pos = s.man_xalign
+                  s.scroll_linear_intpl = make_linear_interpolater(
+                     s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
+                     s.last_scrolling_pos, s.last_scrolling_pos + scrolling,
+                     use_clamp=True
+                  )
+            if s.scrolling is None or not (s.scrolling * scrolling > 0):
+               s.last_st = 0.0
+               s.last_scrolling_st = 0.0
+               s.last_scrolling_pos = 0.0
+            s.scrolling = scrolling
+            s.dragging = None
    if stop_auto_scroll_anim == True:
       for key_name in ['K_DOWN', 'K_UP', 'K_LEFT', "K_RIGHT"]:
          key key_name action Function(ArrowKeyEvent, key_name)
@@ -367,19 +386,25 @@ screen chara_slide_show(images, page):
          else:
             xalign man_xalign
             yalign man_yalign
-   window:
-      background "#f00"
-      xsize 0.5
-      ysize 0.1
-      xalign man_yalign
+   predict False
    if is_init_done == False:
       python:
-         import pygame_sdl2 as pygame
-         ori_event = renpy.current_screen().event
+         pass
+         # artist_name_alpha_mask = Window(Text(artist_name, scope=s, style='artist_name'), style='artist_name_wrapper')
+         # artist_name_size = renpy.render(artist_name_alpha_mask, config.screen_width, config.screen_height, .0, .0).get_size()
+         # artist_name_fill = VerticalGradient("#F00", "#0F0", xysize=artist_name_size)
+         # artist_name_fill = Solid("#F00")
+         # artist_name_img = AlphaMask(artist_name_fill, artist_name_alpha_mask)
+   # if artist_name is not None and len(artist_name) > 0:
+      # add artist_name_fill
+   if is_init_done == False:
+      python:
+         ori_event = me.event
          scroll_linear_intpl = None
          # I use this event function as an update function
-         def event_hook(ev, x, y, st):
-            s = objectview(renpy.get_screen("chara_slide_show").scope)
+         @partial_deco(me, s)
+         def event_hook(me, s, ev, x, y, st):
+            import pygame_sdl2 as pygame
             if ev.type == pygame.ACTIVEEVENT:
                if (ev.state == 2 and ev.gain == 0): 
                   s.dragging = None # stop dragging and scrolling when window losts focus
@@ -430,5 +455,5 @@ screen chara_slide_show(images, page):
                s.last_st = st
                renpy.restart_interaction()
             return s.ori_event(ev, x, y, st)
-         renpy.current_screen().event = event_hook
+         me.event = event_hook
    $ is_init_done = True

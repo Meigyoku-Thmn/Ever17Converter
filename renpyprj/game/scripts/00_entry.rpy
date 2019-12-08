@@ -3,19 +3,8 @@ image bg title1 = "../../output/asset/bg/title1.png"
 image logo kid = "../../output/asset/bg/kid_logo.png"
 image logo himeraki = "../../output/asset/bg/hirameki.png"
 
-# test
-init -6 python:
-   def test():
-      import inspect
-      import traceback
-      import json
-      try:
-         print style.base_style.__getstate__()
-         # print json.dumps(merge_dicts(*abc.__getstate__()['properties']), indent=2)
-      except Exception:
-         print(traceback.format_exc())
-      finally:
-         raise SystemExit()
+init python:
+   from lib.base_lib import bgm
 
 label main_menu:
    call screen album_chara(page=1)

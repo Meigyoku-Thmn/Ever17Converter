@@ -1,4 +1,6 @@
 init offset = -10
+init python:
+   from lib.base_lib import TransparentKeyedImage
 default persistent.textbox_opacity = 0.5
 define config.fade_music = 0.5
 define config.name = _("Ever17 - the out of infinity - Renpy Port")

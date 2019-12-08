@@ -2,6 +2,9 @@ image bg jukebox = "../../output/asset/system/music_bg.png"
 define music_popup_path = "../../output/asset/system/music_popup.png"
 
 init python:
+   from lib.base_lib import bgm
+
+init python:
    def music_popup_items():
       base_width, base_height = renpy.image_size(music_popup_path)
       height = base_height / 2

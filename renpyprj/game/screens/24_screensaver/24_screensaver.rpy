@@ -1,6 +1,9 @@
 image bg screensaver = "../../output/asset/system/saver_bg.png"
 
 init python:
+   from lib.base_lib import style_props
+
+init python:
    screensaver_description = ""
    with renpy.file("../../output/en_screensaver_description.txt") as file:
       screensaver_description = file.read()
