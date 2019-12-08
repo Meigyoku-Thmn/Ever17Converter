@@ -5,6 +5,13 @@
    "version": "0.2.0",
    "configurations": [
       {
+         "name": "Python Attach",
+         "type": "python",
+         "request": "attach",
+         "port": 3000,
+         "host": "localhost",
+      },
+      {
          "type": "node",
          "request": "launch",
          "name": "Launch Program",

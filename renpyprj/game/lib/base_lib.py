@@ -4,7 +4,6 @@ from functools import wraps, partial
 Style = renpy.styledata.styleclass.Style
 style = renpy.store.style
 im = renpy.display.im
-
 # https://stackoverflow.com/questions/1969240/mapping-a-range-of-values-to-another
 def make_linear_interpolater(left_min, left_max, right_min, right_max, use_clamp=False): 
    # Figure out how 'wide' each range is
@@ -115,7 +114,7 @@ def _vertical(size, startcolor, endcolor):
    """
    size = (int(round(size[0])), int(round(size[1])))
    height = size[1]
-   bigSurf = pygame.Surface((1, height)).convert_alpha()
+   bigSurf = renpy.display.pgrender.surface((1, height), True)
    dd = 1.0 / height
    sr, sg, sb, sa = startcolor
    er, eg, eb, ea = endcolor
@@ -142,15 +141,13 @@ class VerticalGradient(renpy.display.core.Displayable):
 
    def __eq__(self, o):
       if not self._equals(o):
-            return False
+         return False
       return (self.startcolor == o.startcolor and self.endcolor == o.endcolor)
 
    def visit(self):
       return [ ]
 
    def render(self, width, height, st, at):
-      print "VerticalGradient"
-      print (width, height)
       width = max(self.style.xminimum, width)
       height = max(self.style.yminimum, height)
       rv = renpy.Render(width, height)

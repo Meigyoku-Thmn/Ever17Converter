@@ -264,10 +264,17 @@ screen album_chara(page):
                images=album_group[thumb_name], page=current_page)
 
 style artist_name_wrapper:
-   background "#000"
    xalign 1.0
    yalign 1.0
    offset (-30, -10)
+
+style artist_name_shadow:
+   properties style_props('main_font')
+   color "#000"
+   size 23
+   xalign 1.0
+   yalign 1.0
+   offset (-30 + 2, -10 + 2)
 
 style artist_name:
    properties style_props('main_font')
@@ -386,17 +393,17 @@ screen chara_slide_show(images, page):
          else:
             xalign man_xalign
             yalign man_yalign
-   predict False
-   if is_init_done == False:
+   if is_init_done == False and artist_name is not None and len(artist_name) > 0:
       python:
-         pass
-         # artist_name_alpha_mask = Window(Text(artist_name, scope=s, style='artist_name'), style='artist_name_wrapper')
-         # artist_name_size = renpy.render(artist_name_alpha_mask, config.screen_width, config.screen_height, .0, .0).get_size()
-         # artist_name_fill = VerticalGradient("#F00", "#0F0", xysize=artist_name_size)
-         # artist_name_fill = Solid("#F00")
-         # artist_name_img = AlphaMask(artist_name_fill, artist_name_alpha_mask)
-   # if artist_name is not None and len(artist_name) > 0:
-      # add artist_name_fill
+         artist_name_shadow = Text(artist_name, style='artist_name_shadow')
+         artist_name_alpha_mask = Text(artist_name, style='artist_name')
+         artist_name_size = renpy.render(artist_name_alpha_mask, config.screen_width, config.screen_height, .0, .0).get_size()
+         artist_name_size = (int(round(artist_name_size[0])), int(round(artist_name_size[1])))
+         artist_name_fill = VerticalGradient("#FFF", "#2170e4", xysize=artist_name_size)
+         artist_name_img = AlphaMask(artist_name_fill, artist_name_alpha_mask, style="artist_name_wrapper")
+   if artist_name is not None and len(artist_name) > 0:
+      add artist_name_shadow
+      add artist_name_img
    if is_init_done == False:
       python:
          ori_event = me.event
