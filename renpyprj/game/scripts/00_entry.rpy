@@ -4,7 +4,7 @@ image logo kid = "../../output/asset/bg/kid_logo.png"
 image logo himeraki = "../../output/asset/bg/hirameki.png"
 
 init python:
-   from lib.base_lib import bgm
+   from python import bgm
 
 label main_menu:
    call screen album_chara(page=1)

@@ -1,7 +1,7 @@
 image bg screensaver = "../../output/asset/system/saver_bg.png"
 
 init python:
-   from lib.base_lib import style_props
+   from python import style_props
 
 init python:
    screensaver_description = ""

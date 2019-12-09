@@ -3,7 +3,7 @@ define sysvoice_menu_path = "../../output/asset/system/sysvoice_menu.png"
 image fgmenu sysvoice = TransparentKeyedImage(sysvoice_menu_path, key_color='green')
 
 init python:
-   from lib.base_lib import style_props
+   from python import style_props
 
 init python:
    sysvoice_description = ""

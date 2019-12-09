@@ -2,7 +2,7 @@ image bg scut = "../../output/asset/system/scut_BG.png"
 define scut_menu_path = "../../output/asset/system/scut_menu.png"
 
 init python:
-   from lib.base_lib import style_props
+   from python import style_props
 
 init python:
    import yaml

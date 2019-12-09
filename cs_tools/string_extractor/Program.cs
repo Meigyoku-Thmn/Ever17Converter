@@ -146,7 +146,7 @@ namespace string_extractor {
          var system_voice_description_offset = 0x000472A4;
          target.BaseStream.Position = system_voice_description_offset;
          var system_voice_description = target.ReadNullTerminatedStr();
-         File.WriteAllText(Path.Combine(outputDirPath, "en_sysvoice_description.txt"), screensaver_description);
+         File.WriteAllText(Path.Combine(outputDirPath, "en_sysvoice_description.txt"), system_voice_description);
 
          var system_voice_line_pointers_offset = 0x00041520;
          target.BaseStream.Position = system_voice_line_pointers_offset;

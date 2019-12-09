@@ -1,7 +1,7 @@
 image bg op = "system/op_bg.png"
 
 init python:
-   from lib.base_lib import style_props
+   from python import style_props
 
 style preferences:
    xpos 130

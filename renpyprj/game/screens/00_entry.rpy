@@ -1,6 +1,6 @@
 # warning: renpy don't use cascading style behavior like css, so you have to be explicit about styling in one way or another
 init python:
-   from lib.base_lib import TransparentKeyedImage, font
+   from python import TransparentKeyedImage, font
 
 image fgmenu title = "../../output/asset/system/titlemenu.png"
 define udlr_cursor_path = "../../output/asset/system/udlr_cur.png"

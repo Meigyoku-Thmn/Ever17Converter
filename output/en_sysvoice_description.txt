@@ -1,1 +1,1 @@
-Select each screensaver and save. By right clicking on the saved file and selecting [Install] the file will be set as your screensaver. For more detailed information, please consult the online manual.
+Select the desired character and save. You can choose [All], to save all of the characters at once. This allows you to use the saved files for start-up sounds, etc. For more detailed information, please consult the online manual.

@@ -4,7 +4,8 @@ define album_menu_path = "../../output/asset/system/album_menu.png"
 image fgmenu album = TransparentKeyedImage(album_menu_path, key_color='green')
 
 init python:
-   from lib.base_lib import make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient
+   from python import make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient
+   from screens.python import DTextBuilder
 
 init python:
    album_description = "";
@@ -282,10 +283,10 @@ style artist_name:
    size 23
 
 screen chara_slide_show(images, page):
-   tag menu
+   default is_init_done = False
+   tag menu   
    default me = renpy.current_screen()
    default s = objectview(me.scope)
-   default is_init_done = False
    default current_idx = 0
    default stop_auto_scroll_anim = False
    default man_xalign = 0.0
@@ -393,14 +394,13 @@ screen chara_slide_show(images, page):
          else:
             xalign man_xalign
             yalign man_yalign
+   predict False
    if is_init_done == False and artist_name is not None and len(artist_name) > 0:
       python:
          artist_name_shadow = Text(artist_name, style='artist_name_shadow')
-         artist_name_alpha_mask = Text(artist_name, style='artist_name')
-         artist_name_size = renpy.render(artist_name_alpha_mask, config.screen_width, config.screen_height, .0, .0).get_size()
-         artist_name_size = (int(round(artist_name_size[0])), int(round(artist_name_size[1])))
-         artist_name_fill = VerticalGradient("#FFF", "#2170e4", xysize=artist_name_size)
-         artist_name_img = AlphaMask(artist_name_fill, artist_name_alpha_mask, style="artist_name_wrapper")
+         artist_name_img = (DTextBuilder(artist_name, style='artist_name')
+            .gradient_fill("#FFF", "#2170e4") 
+            .build(style="artist_name_wrapper"))
    if artist_name is not None and len(artist_name) > 0:
       add artist_name_shadow
       add artist_name_img
