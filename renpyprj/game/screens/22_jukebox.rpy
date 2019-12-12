@@ -81,6 +81,12 @@ screen jukebox():
                s.last_scrolling_st = 0.0
                s.last_scrolling_pos = 0
             s.scrolling = scrolling
+         @partial_deco(me, s)
+         def CorrectCropPosOnSelection(me, s):
+            pass
+         @partial_deco(me, s)
+         def Print(me, s, text):
+            print text
    fixed:
       style "music_list_wrapper"
       for key_name in ['mousedown_4', 'mousedown_5']:
@@ -98,7 +104,7 @@ screen jukebox():
                if selected_index == idx:
                   background HighlightItem
                focus_mask HighlightItem
-               action NullAction()
+               action Function(Print, "{0:02d}. ".format(idx + 1) + music_record['Name'])
    if is_init_done == False:
       python:
          ori_event = me.event

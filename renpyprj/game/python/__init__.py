@@ -22,6 +22,10 @@ def make_linear_interpolater(left_min, left_max, right_min, right_max, use_clamp
       if use_clamp == True:
          rs = clamp(rs, _min, _max)
       return rs
+   interp_fn.left_min = left_min
+   interp_fn.left_max = left_max
+   interp_fn.right_min = right_min
+   interp_fn.right_max = right_max
    return interp_fn
 
 def partial_deco(*args, **keywords):

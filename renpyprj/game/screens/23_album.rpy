@@ -327,6 +327,7 @@ screen chara_slide_show(images, page):
    default last_st = 0.0
    default last_scrolling_st = 0.0
    default last_scrolling_pos = 0.0
+   default start_scrolling_pos = 0.0
    default scroll_duration = 0.15
    default scroll_step = 0.1
    if is_init_done == False:
@@ -357,7 +358,7 @@ screen chara_slide_show(images, page):
                      s.last_scrolling_pos = s.man_xalign
                   s.scroll_linear_intpl = make_linear_interpolater(
                      s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
-                     s.last_scrolling_pos, s.last_scrolling_pos + scrolling,
+                     s.last_scrolling_pos, s.start_scrolling_pos + scrolling,
                      use_clamp=True
                   )
             if s.scrolling is None or not (s.scrolling * scrolling > 0):
@@ -441,7 +442,7 @@ screen chara_slide_show(images, page):
                      s.man_xalign = new_pos
                   s.man_xalign = clamp(s.man_xalign, 0.0, 1.0)
                   s.man_yalign = clamp(s.man_yalign, 0.0, 1.0)
-                  if new_pos == s.scrolling + s.last_scrolling_pos:
+                  if new_pos == s.scroll_linear_intpl.right_max:
                      s.scrolling = None
                      s.last_st = 0.0
                   else:
@@ -450,8 +451,10 @@ screen chara_slide_show(images, page):
                   s.last_scrolling_st = st
                   if s.scroll_axis == "vertical":                     
                      s.last_scrolling_pos = s.man_yalign
+                     s.start_scrolling_pos = s.man_yalign
                   elif s.scroll_axis == "horizontal":
                      s.last_scrolling_pos = s.man_xalign
+                     s.start_scrolling_pos = s.man_xalign
                   s.scroll_linear_intpl = make_linear_interpolater(
                      s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
                      s.last_scrolling_pos, s.last_scrolling_pos + s.scrolling,
