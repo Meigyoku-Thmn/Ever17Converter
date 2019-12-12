@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extractor", "extractor\extr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "string_extractor", "string_extractor\string_extractor.csproj", "{34D5093F-5CD0-435C-BC79-6B8095189730}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferenceMatte", "DifferenceMatte\DifferenceMatte.csproj", "{9377AE58-E813-443D-9BE9-3F8CAC673C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{34D5093F-5CD0-435C-BC79-6B8095189730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D5093F-5CD0-435C-BC79-6B8095189730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D5093F-5CD0-435C-BC79-6B8095189730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9377AE58-E813-443D-9BE9-3F8CAC673C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9377AE58-E813-443D-9BE9-3F8CAC673C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9377AE58-E813-443D-9BE9-3F8CAC673C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9377AE58-E813-443D-9BE9-3F8CAC673C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

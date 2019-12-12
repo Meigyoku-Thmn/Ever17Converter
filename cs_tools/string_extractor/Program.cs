@@ -7,6 +7,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using YamlDotNet.Core;
+using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.EventEmitters;
 
 namespace string_extractor {
    static class Program {
@@ -53,10 +56,28 @@ namespace string_extractor {
          public string Character;
          public List<string> Lines;
       }
+      public class MultilineScalarFlowStyleEmitter : ChainedEventEmitter {
+         public MultilineScalarFlowStyleEmitter(IEventEmitter nextEmitter) : base(nextEmitter) { }
+         public override void Emit(ScalarEventInfo eventInfo, IEmitter emitter) {
+            if (typeof(string).IsAssignableFrom(eventInfo.Source.Type)) {
+               string value = eventInfo.Source.Value as string;
+               if (!string.IsNullOrEmpty(value)) {
+                  bool isMultiLine = value.IndexOfAny(new char[] { '\r', '\n', '\x85', '\x2028', '\x2029' }) >= 0;
+                  if (isMultiLine) eventInfo = new ScalarEventInfo(eventInfo.Source) {
+                     Style = ScalarStyle.Literal
+                  };
+               }
+            }
+            nextEmitter.Emit(eventInfo, emitter);
+         }
+      }
 
       static readonly string ever17PC_us_sha256 = "39972B2084CD2C3AA9D9F02B3BB1222A0BFCFE7C922BD53FABD8401FBC9D55CF";
       static readonly long ever17PC_us_size = 368640;
       static void Main(string[] args) {
+         var serializer = new SerializerBuilder()
+            .WithEventEmitter(e => new MultilineScalarFlowStyleEmitter(e))
+            .Build();
          string targetPath = args[0];
          string outputDirPath = args[1];
          Directory.CreateDirectory(outputDirPath);
@@ -81,9 +102,11 @@ namespace string_extractor {
             scut_descriptions.Add(scut_description);
          }
          using (var outfile = new StreamWriter(File.Create(Path.Combine(outputDirPath, $"en_scut_descriptions.yaml")))) {
-            outfile.WriteLine("---");
+            var dict = new Dictionary<int, string>();
             foreach (var (scut_description, i) in scut_descriptions.Select((e, i) => (e, i)))
-               outfile.WriteLine($"{i}: |-\r\n {scut_description.Replace("\n", "\n ")}\r\n");
+               dict.Add(i, scut_description);
+            var yaml = serializer.Serialize(dict);
+            outfile.Write(yaml);
          }
 
          var jukebox_music_name_pointers_offset = 0x00040F58;
@@ -120,17 +143,22 @@ namespace string_extractor {
                }
             }
          }
-         using (var musicFile = new StreamWriter(File.Create(Path.Combine(outputDirPath, "en_jukebox_music.txt")))) {
-            foreach (var jukebox_music in jukebox_musics) {
-               musicFile.WriteLine(jukebox_music.Name);
-               musicFile.WriteLine($"{jukebox_music.Info1}|{jukebox_music.Info2}|{jukebox_music.Info3}".Trim());
-               foreach (var lyric in jukebox_music.Lyrics) {
-                  musicFile.WriteLine(lyric);
-               }
-               musicFile.WriteLine();
-               musicFile.WriteLine();
-               musicFile.WriteLine();
+         using (var musicFile = new StreamWriter(File.Create(Path.Combine(outputDirPath, "en_jukebox_music.yaml")))) {
+            var dict = Enumerable.Empty<int>().ToDictionary(x => x, x => new {
+               Name = "",
+               Infos = new string[0],
+               Lyrics = new List<string>(),
+            });
+            foreach (var (jukebox_music, i) in jukebox_musics.Select((e, i) => (e, i))) {
+               dict.Add(i, new {
+                  Name = jukebox_music.Name.Substring(4),
+                  Infos = new string[] { jukebox_music.Info1, jukebox_music.Info2, jukebox_music.Info3 }
+                     .Where(e => !string.IsNullOrEmpty(e)).ToArray(),
+                  Lyrics = jukebox_music.Lyrics,
+               });
             }
+            var yaml = serializer.Serialize(dict);
+            musicFile.Write(yaml);
          }
 
          var wallpaper_description_offset = 0x00046E9C;

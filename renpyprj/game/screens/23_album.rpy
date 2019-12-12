@@ -433,7 +433,6 @@ screen chara_slide_show(images, page):
                s.last_st = st
                renpy.restart_interaction()
             if s.scrolling is not None:
-               s.scroll_duration = 0.2
                if s.last_st != 0.0:
                   new_pos = s.scroll_linear_intpl(st)
                   if s.scroll_axis == "vertical":                     

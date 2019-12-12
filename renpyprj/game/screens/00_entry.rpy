@@ -40,6 +40,8 @@ define screen_menu_transition_dissolve = { "screens": Dissolve(disolve_duration)
 
 style drop_shadow:
    outlines [ (absolute(0), Color('#000', alpha=1.0), absolute(2), absolute(2)) ]
+style drop_shadow1:
+   outlines [ (absolute(0), Color('#000', alpha=1.0), absolute(1), absolute(1)) ]
 style main_font:
    font font("Cabin-Regular")
 style main_font_bold:
