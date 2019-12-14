@@ -376,7 +376,7 @@ screen chara_slide_show(images, page):
          def ArrowKeyEvent(me, s, key_name):
             s.dragging = key_name
             s.last_st = 0.0
-            s.is_scrolling = False
+            s.scroller.stop()
          @partial_rebind_deco(me, get_scope_view)
          def ScrollWheelEvent(me, s, key_name):
             s.dragging = None
@@ -404,7 +404,7 @@ screen chara_slide_show(images, page):
             if ev.type == pygame.ACTIVEEVENT:
                if (ev.state == 2 and ev.gain == 0): 
                   s.dragging = None
-                  s.is_scrolling = False
+                  s.scroller.stop()
             if s.dragging is not None:
                renpy.timeout(0.0)
                if s.last_st != 0.0:
