@@ -1,5 +1,6 @@
 import renpy.exports as renpy
 import pygame_sdl2 as pygame
+import types
 from functools import wraps, partial
 Style = renpy.styledata.styleclass.Style
 style = renpy.store.style
@@ -28,10 +29,24 @@ def make_linear_interpolater(left_min, left_max, right_min, right_max, use_clamp
    interp_fn.right_max = right_max
    return interp_fn
 
-def partial_deco(*args, **keywords):
+def partial_deco(*args, **kwargs):
    def _partial_deco(fn):
-      return partial(fn, *args, **keywords)
+      return partial(fn, *args, **kwargs)
    return _partial_deco
+
+def partial_rebind_deco(*args, **kwargs):
+   def map_args(arg):
+      if callable(arg): return arg()
+      return arg
+   def map_keywords(value):
+      return map_args(value)
+   def _partial_rebind_deco(fn):
+      def resolving_fn(*args, **kwargs):
+         args = map(map_args, args)
+         kwargs = {k: map_keywords(v) for k, v in kwargs.iteritems()}
+         return fn(*args, **kwargs)
+      return partial(resolving_fn, *args, **kwargs)
+   return _partial_rebind_deco
 
 def objectview(d, mappee=None, map={}):
    _map = map
@@ -41,7 +56,7 @@ def objectview(d, mappee=None, map={}):
          if name in _dict:
             _dict[name] = value
             if name in _map:
-               setattr(mappee, name, value)
+               setattr(mappee, _map[name], value)
          else: raise KeyError(name)
       def __getattribute__(self, name):
          return _dict[name]

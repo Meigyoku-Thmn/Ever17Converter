@@ -8,7 +8,7 @@ init python:
 
 label main_menu:
    # play music bgm(21)
-   call screen jukebox
+   call screen album
    # scene logo kid with Dissolve(0.2)
    # pause 1.0
    # scene logo himeraki with Dissolve(0.2)

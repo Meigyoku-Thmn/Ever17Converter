@@ -4,8 +4,8 @@ define album_menu_path = "../../output/asset/system/album_menu.png"
 image fgmenu album = TransparentKeyedImage(album_menu_path, key_color='green')
 
 init python:
-   from python import make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient
-   from screens.python import DTextBuilder
+   from python import make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient, partial_rebind_deco
+   from screens.python import DTextBuilder, SmoothScroller
 
 init python:
    album_description = "";
@@ -284,6 +284,7 @@ style artist_name:
 
 screen chara_slide_show(images, page):
    tag menu   
+   # state
    default is_init_done = False
    default me = renpy.current_screen()
    default s = objectview(me.scope)
@@ -291,80 +292,144 @@ screen chara_slide_show(images, page):
    default stop_auto_scroll_anim = False
    default man_xalign = 0.0
    default man_yalign = 0.0
-   python:
-      image = images[current_idx]
-      artist_name = "";
-      name = image;
-      scroll_axis = None
-      if isinstance(image, ImageInfo): 
-         name = image.name
-         artist_name = image.artist_name
-         scroll_axis = image.scroll_axis
-      bg_image = get_full_bg_path(name)   
+   default artist_name = ""
+   default scroll_axis = None
+   default bg_image = None
+   default dragging = None
+   default is_scrolling = False
+   default last_st = 0.0
+   default artist_name_shadow = None
+   default artist_name_img = None
+   default scroller = None
+
+   # functions
    if is_init_done == False:
       python:
-         @partial_deco(me, s)
+         @partial_deco(me)
+         def get_scope_view(me):
+            return me.scope['s']
+         @partial_rebind_deco(me, get_scope_view)
+         def prepare_scroller(me, s):
+            value_map = None
+            if s.scroll_axis == "vertical":
+               value_map = 'man_yalign'
+            elif s.scroll_axis == "horizontal":
+               value_map = 'man_xalign'
+            if s.scroll_axis is not None and value_map is not None:
+               s.scroller = SmoothScroller(scope=me.scope,
+                  num_type=float, step=0.1, duration=0.15, max_value=1.0,
+                  map={"value": value_map, "is_scrolling": "is_scrolling"})
+            else:
+               s.scroller = None
+         @partial_rebind_deco(me, get_scope_view)
+         def prepare_scope_mapping(me, s):
+            value_map = None
+            if s.scroll_axis == "vertical":
+               value_map = 'man_yalign'
+            elif s.scroll_axis == "horizontal":
+               value_map = 'man_xalign'
+            if value_map is not None:
+               me.scope['s'] = objectview(me.scope, mappee=s.scroller, map={value_map: 'value'})
+            else: 
+               me.scope['s'] = objectview(me.scope, mappee=s.scroller, map={value_map: 'value'})
+         @partial_rebind_deco(me, get_scope_view)
+         def prepare_image(me, s):
+            image = s.images[s.current_idx]
+            name = image
+            if isinstance(image, ImageInfo): 
+               name = image.name
+               s.artist_name = image.artist_name
+               s.scroll_axis = image.scroll_axis
+            s.bg_image = get_full_bg_path(name)
+         prepare_image()
+         prepare_scroller()
+         prepare_scope_mapping()
+         @partial_rebind_deco(me, get_scope_view)
          def capture_atl_align(me, s):
             bg_image_atl = me.widgets['bg_wrapper'].child
             s.man_xalign = bg_image_atl.xalign or 0.0
             s.man_yalign = bg_image_atl.yalign or 0.0
-         @partial_deco(me, s)
+         @partial_rebind_deco(me, get_scope_view)
          def GoNext(me, s):
             if s.scroll_axis in ["vertical", "horizontal"] and s.stop_auto_scroll_anim == False:
-               return [Function(s.capture_atl_align), SetScreenVariable("stop_auto_scroll_anim", True)]
+               s.capture_atl_align()
+               s.stop_auto_scroll_anim = True
             elif s.current_idx + 1 < len(s.images):
-               return [SetScreenVariable("stop_auto_scroll_anim", False), SetScreenVariable('current_idx', s.current_idx + 1), SetScreenVariable("man_yalign", 0.0), SetScreenVariable("man_xalign", 0.0)]
+               s.stop_auto_scroll_anim = False
+               s.current_idx = s.current_idx + 1
+               s.man_yalign = 0.0
+               s.man_xalign = 0.0
+               s.prepare_image()
+               s.prepare_scroller()
+               s.prepare_scope_mapping()
+               s.prepare_artist_name()
             else:
-               return s.CloseSlideShow()
-         @partial_deco(me, s)
+               s.CloseSlideShow()
+         @partial_rebind_deco(me, get_scope_view)
          def CloseSlideShow(me, s):
-            return Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)
-         @partial_deco(me, s)
+            Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)()
+         @partial_rebind_deco(me, get_scope_view)
          def ReleaseArrowKeyEvent(me, s, key_name):
             if (key_name.replace("keyup_", "") == s.dragging):
                s.dragging = None
-         @partial_deco(me, s)
+         @partial_rebind_deco(me, get_scope_view)
          def ArrowKeyEvent(me, s, key_name):
             s.dragging = key_name
             s.last_st = 0.0
-            s.scrolling = None
-         @partial_deco(me, s)
+            s.is_scrolling = False
+         @partial_rebind_deco(me, get_scope_view)
          def ScrollWheelEvent(me, s, key_name):
-            scrolling = 0.0
-            if key_name == "mousedown_4":
-               scrolling -= s.scroll_step
-            elif key_name == "mousedown_5":
-               scrolling += s.scroll_step
-            if s.scrolling is not None:
-               if (s.scrolling * scrolling > 0):
-                  scrolling += s.scrolling
-                  s.last_scrolling_st = s.last_st
-                  if s.scroll_axis == "vertical":                     
-                     s.last_scrolling_pos = s.man_yalign
-                  elif s.scroll_axis == "horizontal":
-                     s.last_scrolling_pos = s.man_xalign
-                  s.scroll_linear_intpl = make_linear_interpolater(
-                     s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
-                     s.last_scrolling_pos, s.start_scrolling_pos + scrolling,
-                     use_clamp=True
-                  )
-            if s.scrolling is None or not (s.scrolling * scrolling > 0):
-               s.last_st = 0.0
-               s.last_scrolling_st = 0.0
-               s.last_scrolling_pos = 0.0
-            s.scrolling = scrolling
             s.dragging = None
-   key 'mousedown_1' action GoNext()
+            scroller = s.scroller
+            scroller.use_wheel()
+            if key_name == "mousedown_4":
+               scroller.trigger(direction="back")
+            elif key_name == "mousedown_5":
+               scroller.trigger(direction="forward")
+         @partial_rebind_deco(me, get_scope_view)
+         def prepare_artist_name(me, s):
+            if s.artist_name is not None and len(s.artist_name) > 0:
+               s.artist_name_shadow = Text(s.artist_name, style='artist_name_shadow')
+               s.artist_name_img = (DTextBuilder(s.artist_name, style='artist_name')
+                  .gradient_fill("#FFF", "#2170e4") 
+                  .build(style="artist_name_wrapper"))
+            else:
+               s.artist_name_shadow = None
+               s.artist_name_img = None
+         prepare_artist_name()
+         ori_event = me.event
+         @partial_rebind_deco(me, get_scope_view)
+         def event_hook(me, s, ev, x, y, st):
+            import pygame_sdl2 as pygame
+            if ev.type == pygame.ACTIVEEVENT:
+               if (ev.state == 2 and ev.gain == 0): 
+                  s.dragging = None
+                  s.is_scrolling = False
+            if s.dragging is not None:
+               renpy.timeout(0.0)
+               if s.last_st != 0.0:
+                  delta_pos = 1.25 * (st - s.last_st)
+                  if s.dragging == "K_DOWN":
+                     s.man_yalign += delta_pos
+                  elif s.dragging == "K_UP":
+                     s.man_yalign -= delta_pos
+                  elif s.dragging == "K_LEFT":
+                     s.man_xalign -= delta_pos
+                  elif s.dragging == "K_RIGHT":
+                     s.man_xalign += delta_pos
+                  s.man_xalign = clamp(s.man_xalign, 0.0, 1.0)
+                  s.man_yalign = clamp(s.man_yalign, 0.0, 1.0)
+               s.last_st = st
+               renpy.restart_interaction()
+            if s.is_scrolling == True:
+               s.scroller.event(ev, x, y, st)
+            return s.ori_event(ev, x, y, st)
+         me.event = event_hook
+
+   # key mapping
+   key 'mousedown_1' action Function(GoNext)
    for key_name in ['mousedown_3', 'K_ESCAPE']:
-      key key_name action CloseSlideShow()
-   default dragging = None
-   default scrolling = None
-   default last_st = 0.0
-   default last_scrolling_st = 0.0
-   default last_scrolling_pos = 0.0
-   default start_scrolling_pos = 0.0
-   default scroll_duration = 0.15
-   default scroll_step = 0.1
+      key key_name action Function(CloseSlideShow)
    if stop_auto_scroll_anim == True:
       for key_name in ['K_DOWN', 'K_UP', 'K_LEFT', "K_RIGHT"]:
          key key_name action Function(ArrowKeyEvent, key_name)
@@ -372,10 +437,12 @@ screen chara_slide_show(images, page):
          key ("keyup_" + key_name) action Function(ReleaseArrowKeyEvent, "keyup_" + key_name)
       for key_name in ['mousedown_4', 'mousedown_5']:
          key key_name action Function(ScrollWheelEvent, key_name)
+
+   # interface
    fixed:
       id "bg_wrapper"
       add bg_image:
-         if (stop_auto_scroll_anim == False):
+         if stop_auto_scroll_anim == False:
             if scroll_axis == "vertical":
                at transform:
                   pause disolve_duration
@@ -393,73 +460,7 @@ screen chara_slide_show(images, page):
          else:
             xalign man_xalign
             yalign man_yalign
-   if is_init_done == False and artist_name is not None and len(artist_name) > 0:
-      python:
-         artist_name_shadow = Text(artist_name, style='artist_name_shadow')
-         artist_name_img = (DTextBuilder(artist_name, style='artist_name')
-            .gradient_fill("#FFF", "#2170e4") 
-            .build(style="artist_name_wrapper"))
    if artist_name is not None and len(artist_name) > 0:
       add artist_name_shadow
       add artist_name_img
-   if is_init_done == False:
-      python:
-         ori_event = me.event
-         scroll_linear_intpl = None
-         # I use this event function as an update function
-         @partial_deco(me, s)
-         def event_hook(me, s, ev, x, y, st):
-            import pygame_sdl2 as pygame
-            if ev.type == pygame.ACTIVEEVENT:
-               if (ev.state == 2 and ev.gain == 0): 
-                  s.dragging = None # stop dragging and scrolling when window losts focus
-                  s.scrolling = None
-            if s.dragging is not None:
-               renpy.timeout(0.0)
-               if s.last_st != 0.0:
-                  delta_pos = 1.25 * (st - s.last_st)
-                  if s.dragging == "K_DOWN":
-                     s.man_yalign += delta_pos
-                  elif s.dragging == "K_UP":
-                     s.man_yalign -= delta_pos
-                  elif s.dragging == "K_LEFT":
-                     s.man_xalign -= delta_pos
-                  elif s.dragging == "K_RIGHT":
-                     s.man_xalign += delta_pos
-                  s.man_xalign = clamp(s.man_xalign, 0.0, 1.0)
-                  s.man_yalign = clamp(s.man_yalign, 0.0, 1.0)
-               s.last_st = st
-               renpy.restart_interaction()
-            if s.scrolling is not None:
-               if s.last_st != 0.0:
-                  new_pos = s.scroll_linear_intpl(st)
-                  if s.scroll_axis == "vertical":                     
-                     s.man_yalign = new_pos
-                  elif s.scroll_axis == "horizontal":
-                     s.man_xalign = new_pos
-                  s.man_xalign = clamp(s.man_xalign, 0.0, 1.0)
-                  s.man_yalign = clamp(s.man_yalign, 0.0, 1.0)
-                  if new_pos == s.scroll_linear_intpl.right_max:
-                     s.scrolling = None
-                     s.last_st = 0.0
-                  else:
-                     renpy.timeout(0.0)
-               else:
-                  s.last_scrolling_st = st
-                  if s.scroll_axis == "vertical":                     
-                     s.last_scrolling_pos = s.man_yalign
-                     s.start_scrolling_pos = s.man_yalign
-                  elif s.scroll_axis == "horizontal":
-                     s.last_scrolling_pos = s.man_xalign
-                     s.start_scrolling_pos = s.man_xalign
-                  s.scroll_linear_intpl = make_linear_interpolater(
-                     s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
-                     s.last_scrolling_pos, s.last_scrolling_pos + s.scrolling,
-                     use_clamp=True
-                  )
-                  renpy.timeout(0.0)
-               s.last_st = st
-               renpy.restart_interaction()
-            return s.ori_event(ev, x, y, st)
-         me.event = event_hook
    $ is_init_done = True

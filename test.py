@@ -1,13 +1,27 @@
-def objectview(d, mappee=None, map={}):
-   _map = map
-   _dict = d
-   class _objectview(object):
-      def __setattr__(self, name, value):
-         if name in _dict:
-            _dict[name] = value
-            if name in _map:
-               setattr(mappee, name, value)
-         else: raise KeyError(name)
-      def __getattribute__(self, name):
-         return _dict[name]
-   return _objectview()
+from functools import partial
+
+def partial_deco(*args, **keywords):
+   def _partial_deco(fn):
+      return partial(fn, *args, **keywords)
+   return _partial_deco
+
+def partial_rebind_deco(*args, **keywords):
+   def map_args(arg):
+      if callable(arg): return arg()
+      return arg
+   def map_keywords(value):
+      return map_args(value)
+   def _partial_rebind_deco(fn):
+      def resolving_fn(*args, **keywords):
+         args = map(map_args, args)
+         keywords = {k: map_keywords(v) for k, v in keywords.iteritems()}
+         return fn(*args, **keywords)
+      return partial(resolving_fn, *args, **keywords)
+   return _partial_rebind_deco
+
+@partial_rebind_deco("Hello", lambda: 1)
+def abc(me, ccc):
+   print(me)
+   print(ccc)
+
+abc()

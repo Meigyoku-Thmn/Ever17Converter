@@ -45,7 +45,6 @@ style music_list_wrapper:
 
 screen jukebox():
    tag menu
-   predict False
    # State
    default is_init_done = False
    default me = renpy.current_screen()
@@ -82,14 +81,15 @@ screen jukebox():
          @partial_deco(me, s, scroller)
          def NavigateByArrowKey(me, s, scroller, key_name):
             scroller.stop()
-            scroll_key_name = ""
-            if s.hovered_index == -1:
-               s.hovered_index = scroller.value // (HighlightItem.crop[3] + 2)
-            elif key_name.endswith("K_DOWN"):
+            if key_name.endswith("K_DOWN"):
                scroll_key_name = "mousedown_5"
-               s.hovered_index += 1
             elif key_name.endswith("K_UP"):
                scroll_key_name = "mousedown_4"
+            if s.hovered_index == -1:
+               s.hovered_index = scroller.value // (HighlightItem.crop[3] + 2)
+            elif scroll_key_name == "mousedown_5":
+               s.hovered_index += 1
+            elif scroll_key_name == "mousedown_4":
                s.hovered_index -= 1
             if key_name.startswith("repeat_"):
                s.hovered_index = clamp(s.hovered_index, 0, len(jukebox_music) - 1)
