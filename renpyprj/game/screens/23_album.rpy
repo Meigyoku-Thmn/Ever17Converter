@@ -283,8 +283,8 @@ style artist_name:
    size 23
 
 screen chara_slide_show(images, page):
-   default is_init_done = False
    tag menu   
+   default is_init_done = False
    default me = renpy.current_screen()
    default s = objectview(me.scope)
    default current_idx = 0
@@ -319,19 +319,6 @@ screen chara_slide_show(images, page):
          @partial_deco(me, s)
          def CloseSlideShow(me, s):
             return Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)
-   key 'mousedown_1' action GoNext()   
-   for key_name in ['mousedown_3', 'K_ESCAPE']:
-      key key_name action CloseSlideShow()
-   default dragging = None
-   default scrolling = None
-   default last_st = 0.0
-   default last_scrolling_st = 0.0
-   default last_scrolling_pos = 0.0
-   default start_scrolling_pos = 0.0
-   default scroll_duration = 0.15
-   default scroll_step = 0.1
-   if is_init_done == False:
-      python:
          @partial_deco(me, s)
          def ReleaseArrowKeyEvent(me, s, key_name):
             if (key_name.replace("keyup_", "") == s.dragging):
@@ -367,6 +354,17 @@ screen chara_slide_show(images, page):
                s.last_scrolling_pos = 0.0
             s.scrolling = scrolling
             s.dragging = None
+   key 'mousedown_1' action GoNext()
+   for key_name in ['mousedown_3', 'K_ESCAPE']:
+      key key_name action CloseSlideShow()
+   default dragging = None
+   default scrolling = None
+   default last_st = 0.0
+   default last_scrolling_st = 0.0
+   default last_scrolling_pos = 0.0
+   default start_scrolling_pos = 0.0
+   default scroll_duration = 0.15
+   default scroll_step = 0.1
    if stop_auto_scroll_anim == True:
       for key_name in ['K_DOWN', 'K_UP', 'K_LEFT', "K_RIGHT"]:
          key key_name action Function(ArrowKeyEvent, key_name)
@@ -395,7 +393,6 @@ screen chara_slide_show(images, page):
          else:
             xalign man_xalign
             yalign man_yalign
-   predict False
    if is_init_done == False and artist_name is not None and len(artist_name) > 0:
       python:
          artist_name_shadow = Text(artist_name, style='artist_name_shadow')

@@ -3,6 +3,7 @@ define music_popup_path = "../../output/asset/system/music_popup.png"
 
 init python:
    from python import bgm, make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient
+   from screens.python import SmoothScroller
 
 
 init python:
@@ -29,6 +30,12 @@ style music_name_button_text:
    size 19
    xpos 7
    color "#FFF"
+style selected_music_name_text:
+   properties style_props('drop_shadow1', 'main_font')
+   size 19
+   color "#FFF"
+   ysize HighlightItem.crop[3]
+   pos (222, 78)
 style music_list:
    spacing 2
 style music_list_wrapper:
@@ -37,106 +44,132 @@ style music_list_wrapper:
    xysize (HighlightItem.crop[2], HighlightItem.crop[3] * 8 + 2 * 7)
 
 screen jukebox():
+   tag menu
+   predict False
+   # State
    default is_init_done = False
    default me = renpy.current_screen()
    default s = objectview(me.scope)
-   tag menu
-   for key_name in ['mousedown_3', 'K_ESCAPE']:
-      key key_name action [Play('music', bgm(21), loop=True), 
-         Show("special_menu", transition=screen_menu_transition_fade_out_wipe_in)]
-   add "bg jukebox"
-   add "messwin03" yalign 1.0 alpha persistent.textbox_opacity
-   add PlayButton xpos 168 ypos 76
-   default selected_index = -1
    default total_height = HighlightItem.crop[3] * len(jukebox_music) + 2 * (len(jukebox_music) - 1)
-   default scroll_limit_height = total_height - (HighlightItem.crop[3] * 8 + 2 * 7)   
-   default scrolling = None
-   default last_st = 0.0
-   default last_scrolling_st = 0.0
-   default last_scrolling_pos = 0
-   default scroll_duration = 0.15
-   default scroll_step = 50
+   default scroll_limit_height = total_height - (HighlightItem.crop[3] * 8 + 2 * 7)
+   default scroller = SmoothScroller(scope=me.scope,
+      num_type=int, step=50, duration=0.15, max_value=scroll_limit_height,
+      map={"value": 'man_ycrop', "is_scrolling": "is_scrolling"})
+   default selected_index = -1
+   default last_selected_index = -1
+   default hovered_index = -1
    default man_ycrop = 0
+   default is_scrolling = False
+
+   # Functions
    if is_init_done == False:
       python:
          @partial_deco(me, s)
-         def ScrollWheelEvent(me, s, key_name):
-            scrolling = 0
+         def OnGoBack(me, s):
+            if s.selected_index != -1:
+               s.selected_index = -1
+            else:
+               Play('music', bgm(21), loop=True)()
+               Show("special_menu", transition=screen_menu_transition_fade_out_wipe_in)()
+         @partial_deco(me, s, scroller)
+         def GetWhereToScrollByArrow(me, s, scroller):
+            item_pos = (HighlightItem.crop[3] + 2) * s.hovered_index
+            if item_pos < scroller.value:
+               return item_pos
+            elif item_pos > scroller.value + (HighlightItem.crop[3] * 7 + 2 * 7):
+               return (s.hovered_index - 7) * (HighlightItem.crop[3] + 2) 
+            return None
+         @partial_deco(me, s, scroller)
+         def NavigateByArrowKey(me, s, scroller, key_name):
+            scroller.stop()
+            scroll_key_name = ""
+            if s.hovered_index == -1:
+               s.hovered_index = scroller.value // (HighlightItem.crop[3] + 2)
+            elif key_name.endswith("K_DOWN"):
+               scroll_key_name = "mousedown_5"
+               s.hovered_index += 1
+            elif key_name.endswith("K_UP"):
+               scroll_key_name = "mousedown_4"
+               s.hovered_index -= 1
+            if key_name.startswith("repeat_"):
+               s.hovered_index = clamp(s.hovered_index, 0, len(jukebox_music) - 1)
+               where_to_scroll = s.GetWhereToScrollByArrow()
+               if where_to_scroll is not None: 
+                  scroller.value = where_to_scroll
+            else:
+               s.hovered_index = s.hovered_index % len(jukebox_music)          
+               where_to_scroll = s.GetWhereToScrollByArrow()
+               if where_to_scroll is not None:
+                  scroller.use_arrow(target_pos=where_to_scroll)
+                  if scroll_key_name == "mousedown_4":
+                     scroller.trigger(direction="back")
+                  elif scroll_key_name == "mousedown_5":
+                     scroller.trigger(direction="forward")
+         @partial_deco(scroller)
+         def NavigateByWheel(scroller, key_name):
+            if scroller.currently_scroll_by == "arrow":
+               scroller.stop()
+            scroller.use_wheel()
             if key_name == "mousedown_4":
-               scrolling -= s.scroll_step
+               scroller.trigger(direction="back")
             elif key_name == "mousedown_5":
-               scrolling += s.scroll_step
-            if s.scrolling is not None:
-               if (s.scrolling * scrolling > 0):
-                  scrolling += s.scrolling
-                  s.last_scrolling_st = s.last_st             
-                  s.last_scrolling_pos = s.man_ycrop
-                  s.scroll_linear_intpl = make_linear_interpolater(
-                     s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
-                     s.last_scrolling_pos, s.last_scrolling_pos + scrolling,
-                     use_clamp=True
-                  )
-            if s.scrolling is None or not (s.scrolling * scrolling > 0):
-               s.last_st = 0.0
-               s.last_scrolling_st = 0.0
-               s.last_scrolling_pos = 0
-            s.scrolling = scrolling
+               scroller.trigger(direction="forward")
          @partial_deco(me, s)
-         def CorrectCropPosOnSelection(me, s):
-            pass
+         def OnMusicSelect(me, s):
+            idx = s.hovered_index
+            music_record = jukebox_music[idx]
+            print "{0:02d}. ".format(idx + 1) + music_record['Name']
+            s.selected_index = idx
+            s.last_selected_index = idx
          @partial_deco(me, s)
-         def Print(me, s, text):
-            print text
+         def GetMusicFullName(me, s, index):
+            return "{0:02d}. ".format(index + 1) + jukebox_music[index]['Name']
+         ori_event = me.event
+         @partial_deco(me, s, scroller)
+         def event_hook(me, s, scroller, ev, x, y, st):
+            import pygame_sdl2 as pygame
+            if ev.type == pygame.ACTIVEEVENT:
+               if (ev.state == 2 and ev.gain == 0):
+                  scroller.stop()
+            scroller.event(ev, x, y, st)
+            return s.ori_event(ev, x, y, st)
+         me.event = event_hook
+
+   # Key mapping
+   for key_name in ['mousedown_3', 'K_ESCAPE']:
+      key key_name action Function(OnGoBack)      
+   if scroll_limit_height > 0: 
+      for key_name in ['mousedown_4', 'mousedown_5']:
+         key key_name action Function(NavigateByWheel, key_name)
+   for key_name in ['K_DOWN', 'K_UP', 'repeat_K_DOWN', 'repeat_K_UP']:
+      key key_name action Function(NavigateByArrowKey, key_name)
+   for key_name in config.keymap['input_enter']:
+      key key_name action Function(OnMusicSelect)
+
+   # Interface
+   add "bg jukebox"
+   add "messwin03" yalign 1.0 alpha persistent.textbox_opacity
+   if selected_index != -1:
+      add PlayButton xpos 168 ypos 76
+   else:
+      add StopButton xpos 168 ypos 76
+   if last_selected_index != -1:
+      text GetMusicFullName(last_selected_index) style "selected_music_name_text"
    fixed:
       style "music_list_wrapper"
-      for key_name in ['mousedown_4', 'mousedown_5']:
-         key key_name action Function(ScrollWheelEvent, key_name)
       vbox:
          at transform:
             crop (0, man_ycrop, HighlightItem.crop[2], HighlightItem.crop[3] * 8 + 2 * 7)
          style "music_list"
          for idx in range(len(jukebox_music)):
-            $ music_record = jukebox_music[idx]
-            textbutton "{0:02d}. ".format(idx + 1) + music_record['Name']:
+            textbutton GetMusicFullName(idx):
                style "music_name_button"
-               hovered SetScreenVariable("selected_index", idx)
-               unhovered SetScreenVariable("selected_index", -1)
-               if selected_index == idx:
+               keyboard_focus False
+               if is_scrolling == False:
+                  hovered SetScreenVariable("hovered_index", idx)
+               unhovered SetScreenVariable("hovered_index", -1)
+               if hovered_index == idx or selected_index == idx:
                   background HighlightItem
                focus_mask HighlightItem
-               action Function(Print, "{0:02d}. ".format(idx + 1) + music_record['Name'])
-   if is_init_done == False:
-      python:
-         ori_event = me.event
-         scroll_linear_intpl = None
-         # I use this event function as an update function
-         @partial_deco(me, s)
-         def event_hook(me, s, ev, x, y, st):
-            import pygame_sdl2 as pygame
-            if ev.type == pygame.ACTIVEEVENT:
-               if (ev.state == 2 and ev.gain == 0):
-                  s.scrolling = None
-            if s.scrolling is not None:
-               if s.last_st != 0.0:
-                  new_pos = int(round(s.scroll_linear_intpl(st)))
-                  s.man_ycrop = new_pos
-                  s.man_ycrop = clamp(s.man_ycrop, 0, s.scroll_limit_height)
-                  if new_pos == s.scrolling + s.last_scrolling_pos:
-                     s.scrolling = None
-                     s.last_st = 0.0
-                  else:
-                     renpy.timeout(0.0)
-               else:
-                  s.last_scrolling_st = st               
-                  s.last_scrolling_pos = s.man_ycrop
-                  s.scroll_linear_intpl = make_linear_interpolater(
-                     s.last_scrolling_st, s.last_scrolling_st + s.scroll_duration,
-                     s.last_scrolling_pos, s.last_scrolling_pos + s.scrolling,
-                     use_clamp=True
-                  )
-                  renpy.timeout(0.0)
-               s.last_st = st
-               renpy.restart_interaction()
-            return s.ori_event(ev, x, y, st)
-         me.event = event_hook
+               action Function(OnMusicSelect)
    $ is_init_done = True

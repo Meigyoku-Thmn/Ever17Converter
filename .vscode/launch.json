@@ -12,6 +12,13 @@
          "host": "localhost",
       },
       {
+         "name": "Python Run",
+         "type": "python",
+         "request": "launch",
+         "program": "${file}",
+         "console": "internalConsole"
+      },
+      {
          "type": "node",
          "request": "launch",
          "name": "Launch Program",
