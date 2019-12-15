@@ -259,7 +259,14 @@ namespace string_extractor {
             var scene_title = target.ReadNullTerminatedStr();
             scene_titles.Add(scene_title);
          }
-         File.WriteAllLines(Path.Combine(outputDirPath, "en_scene_titles.txt"), scene_titles);
+         using (var scene_titles_file = new StreamWriter(File.Create(Path.Combine(outputDirPath, "en_scene_titles.yaml")))) {
+            var dict = new Dictionary<int, string>();
+            foreach (var (scene_title, i) in scene_titles.Select((e, i) => (e, i))) {
+               dict.Add(i, scene_title);
+            }
+            var yaml = serializer.Serialize(dict);
+            scene_titles_file.Write(yaml);
+         }
          return;
          var test_pointers_offset = 0x0003EA78;
          target.BaseStream.Position = test_pointers_offset;

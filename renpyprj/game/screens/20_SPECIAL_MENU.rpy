@@ -15,4 +15,4 @@ screen special_menu():
       imagebutton idle Album_Wallpaper hover Album_Wallpaper.hover_img action Show("album", transition=screen_menu_transition_wipe_out_fade_in)
       imagebutton idle ScreenSaver hover ScreenSaver.hover_img action Show("screensaver", transition=screen_menu_transition_wipe_out_fade_in)
       imagebutton idle SystemVoice hover SystemVoice.hover_img action Show("sysvoice", transition=screen_menu_transition_wipe_out_fade_in)
-      imagebutton idle ClearList hover ClearList.hover_img action NullAction()
+      imagebutton idle ClearList hover ClearList.hover_img action Show("clearlist", transition=screen_menu_transition_wipe_out_fade_in)

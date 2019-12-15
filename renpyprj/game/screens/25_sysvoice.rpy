@@ -107,7 +107,7 @@ screen sysvoice_lines(index):
             if isinstance(data, types.DictType):
                items = map(
                   lambda (i, line): objectview({
-                     'text': data['Name'] + ' "' + line + '"',
+                     'text': data['Name'] + '  "' + line + '"',
                      'id': data['StartId'] + i
                   }), 
                   enumerate(data['Lines'])
@@ -116,7 +116,7 @@ screen sysvoice_lines(index):
                for _data in data:
                   items.extend(map(
                      lambda (i, line): objectview({
-                        'text': _data['Name'] + ' "' + line + '"',
+                        'text': _data['Name'] + '  "' + line + '"',
                         'id': _data['StartId'] + i
                      }), 
                      enumerate(_data['Lines'])
@@ -230,7 +230,7 @@ screen sysvoice_lines(index):
 
    # Interface
    add "bg sysvoice2"
-   text str(index + 1) + " / 6" style "album_page_number"
+   text str(index + 1) + " / 6" style "sysvoice_page_number"
    fixed:
       style "sysvoice_lines_wrapper"
       vbox:
