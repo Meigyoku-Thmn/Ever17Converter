@@ -213,14 +213,38 @@ namespace string_extractor {
             var splitPoint = system_voice_line.IndexOf(" ");
             var character = system_voice_line.Substring(0, splitPoint);
             if (character == "Youth") character = "Kid";
-            var line = system_voice_line.Substring(splitPoint + 1);
+            else if (character == "Tugumi") character = "Tsugumi";
+            var line = system_voice_line.Substring(splitPoint + 1).Replace("\"", "");
             if (system_voices.Count == 0 || system_voices.Last().Character != character)
                system_voices.Add(new VoiceInfo() { Character = character, Lines = new List<string>() { line } });
             else system_voices.Last().Lines.Add(line);
          }
-         foreach (var system_voice in system_voices) {
-            File.WriteAllLines(
-               Path.Combine(outputDirPath, $"en_system_voice_{system_voice.Character}.txt"), system_voice.Lines);
+         using (var system_voice_file = new StreamWriter(File.Create(Path.Combine(outputDirPath, "en_system_voices.yaml")))) {
+            var dict = new Dictionary<int, object>();
+            var StartId = 1;
+            foreach (var (system_voice, i) in system_voices.Select((e, i) => (e, i))) {
+               if (i >= 5) break;
+               dict.Add(i, new {
+                  Name = system_voice.Character,
+                  StartId = StartId,
+                  Lines = system_voice.Lines
+               });
+               StartId += system_voice.Lines.Count;
+            }
+            dict.Add(5, new List<object>() {
+               new {
+                  Name = system_voices[5].Character,
+                  StartId = StartId,
+                  Lines = system_voices[5].Lines
+               },
+               new {
+                  Name = system_voices[6].Character,
+                  StartId = StartId + system_voices[5].Lines.Count,
+                  Lines = system_voices[6].Lines
+               }
+            });
+            var yaml = serializer.Serialize(dict);
+            system_voice_file.Write(yaml);
          }
 
          var scene_title_pointers_offset = 0x000476C0;

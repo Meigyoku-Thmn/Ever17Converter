@@ -42,7 +42,6 @@ style music_list:
    spacing 2
 style music_list_wrapper:
    pos (190, 141)
-   background "#000"
    xysize (HighlightItem.crop[2], HighlightItem.crop[3] * 8 + 2 * 7)
 
 style jukebox_info:
@@ -60,7 +59,6 @@ style lyrics_shadow:
 
 screen jukebox():
    tag menu
-   predict False
    # State
    default is_init_done = False
    default me = renpy.current_screen()
@@ -251,7 +249,6 @@ screen jukebox():
                keyboard_focus False
                if is_scrolling == False:
                   hovered SetScreenVariable("hovered_index", idx)
-               # unhovered SetScreenVariable("hovered_index", -1)
                if hovered_index == idx or selected_index == idx:
                   background HighlightItem
                focus_mask HighlightItem

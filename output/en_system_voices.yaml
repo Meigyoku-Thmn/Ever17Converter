@@ -1,0 +1,195 @@
+0:
+  Name: You
+  StartId: 1
+  Lines:
+  - Booting up the system.
+  - Starting up! Are you ready?
+  - Good morning. How is today treating you?
+  - Shutting down the system.
+  - Are you quitting already? I'm going to miss you...
+  - Good night. You did a great job today.
+  - I'm emptying the trash.
+  - I'm really going to empty it. You sure it's okay?
+  - Oh, alriiiight. But just this once!
+  - You've got mail.
+  - Wo--w! You've got tons of mail!!
+  - I sent you a love letter. I hope you'll accept it.
+  - Message! Message! Sausage?
+  - Will you talk with me?...Come on, please?
+  - Error.
+  - No, no, that's no good!
+  - You sure you're up to this?
+  - I'll check.
+  - Are you sure?
+  - Can I ask you something?
+  - I am You! S-O- ...We'll always be together!
+  - Oooh! Thank you, thank you---! I'm feel all better now!!!
+  - Hey, hang in there! I'm rooting for you!
+  - Ha, ha, ha...I'm going to show you what happens when you make me ...
+  - When I'm with you, I feel safe...I wonder why that is?
+  - It's okay, I'll take care of you...you don't have to worry about ...
+1:
+  Name: Tsugumi
+  StartId: 27
+  Lines:
+  - Starting up the system.
+  - I'm starting it up, okay?
+  - Good morning. How're you feeling?
+  - Shutting down the system.
+  - I'm quitting, okay?
+  - You're done? Well, okay...
+  - I'll empty the trash.
+  - You should at least take out the garbage!
+  - You're going to format? Okay...
+  - You've got mail.
+  - There's mail.
+  - There's mail...Not for me though...
+  - You've got a message.
+  - There's a message.
+  - Someone's trying to contact you...Why not see ...
+  - There's an error.
+  - You can't do that.
+  - That's really dangerous.
+  - I'll check.
+  - What are you going to do?
+  - What do you want to do?
+  - T-thanks...Okay, I'll try.
+  - Well, you can try. I'll be rooting for you...
+  - I don't need the truth. Just give me the facts.
+  - There isn't a lot I need in this world. All I need is...you.
+  - I'm charming! And cute!
+  - I don't need your sympathy...I'll be happy if you ...
+2:
+  Name: Sora
+  StartId: 54
+  Lines:
+  - Starting up the system.
+  - Thank you for coming today. I hope you have fun.
+  - You're starting up the system? It's like, totally annoying.
+  - Shutting down the system.
+  - Thank you very much for visiting us. Come back again!
+  - Hmmm? Suit yourself, shut down if you want to.
+  - I'll empty the trash.
+  - Cleanliness is next to godliness.
+  - Are you telling me to empty your trash? Okay...I suppose so.
+  - There's some mail for you.
+  - There is a message waiting for you, siiiir.
+  - What? Mail? Hmm, maybe someone is asking you on a date.
+  - A message came for you.
+  - A guest is calling upon you, milord.
+  - What? A message? Tell me directly!
+  - Error.
+  - Wait! That's dangerous.
+  - Ha, ha, ha. It's an error. This sucks...
+  - I'll check.
+  - I'm terribly sorry...Please let me check on that.
+  - But, you sure you're cool?
+  - Have you...ever been in love?
+  - I'll show you all of me...If you want...
+  - Hang in there! I'm behind you!
+  - Please, look at me...So I'm free to be myself...
+  - Teach me something I don't know...okay teach?
+  - You're really cute. I'll help you as much as I can.
+3:
+  Name: Sara
+  StartId: 81
+  Lines:
+  - Starting up your system.
+  - 15 hours until start-up......Just kidding! It's ready to use!
+  - Start! Please...
+  - Shutting down the system.
+  - I'm shutting it down...do you want me to format?
+  - System down, ninja style!
+  - I emptied the trash.
+  - I threw out all the garbage.
+  - Science Ninja Magic Organization Technique!....Ooops? Did ...
+  - You've got some mail.
+  - Hey, there's some mail!
+  - Here's a secret message for you.
+  - You've got a message.
+  - Wow! It's a message!
+  - Sir, there's an intruder!
+  - Error!
+  - That's no good, Even I could figure it out!
+  - Hey! Wait!
+  - I'll check.
+  - What are you trying to do?
+  - Just what are you up to?
+  - Thank you...I feel better now. Yeah, okay, I'll try harder.
+  - Um, stick in there. I'm with you!
+  - I don't care what you say...that's not going to work...!
+  - There's no code I, Sara, can't crack!!!! Ha! Ha! ha!
+  - Science Ninja Magic - Personal appeal up!! Ho, ho, ho, with ...
+  - I've been waiting for so long, so long...for you.
+4:
+  Name: Coco
+  StartId: 108
+  Lines:
+  - Starting up the system.
+  - Gooooood Afternoooooon! Starting up!
+  - Goooood Mooooorniiiiing. It's meeeeee, Cooooocoooooo.
+  - Shutting down the system!
+  - So, uh, you're quitting?
+  - Good night. See you tomorrow!
+  - I'm emptying the trash.
+  - Toss, toss, toss this out!
+  - Tossing it out!
+  - Hey, there's some mail.
+  - Alright! We got some mail!
+  - A letter! A letter! I'm sooooo happy!
+  - There's a message.
+  - A message! My heart's beating so fast...
+  - A message has....arrived!
+  - There's a problem.
+  - Ummm, it says there's an error!
+  - That's a no no!
+  - I'll check.
+  - Huh? Whaaaat?
+  - Eh? What're we gonna do?
+  - Ribbit. Ribbit. Ribbit. RIBBIT?
+  - You want to hear a joke? Really? Okaaaaaay....
+  - Aaww come on! I'm going to anyway! Why not? I want toooooo!
+  - Want to see some suuuper magic?
+  - Thanks! I'll try my best!!
+  - You take care now. Hee hee. I'm behind you!
+5:
+- Name: Takeshi
+  StartId: 135
+  Lines:
+  - Starting up the system.
+  - Morning! Let's do our best today.
+  - System shut down.
+  - See ya. Hey, take care...
+  - Empty trash.
+  - Take out your own garbage...Geez...
+  - There's some mail here.
+  - It looks like there's some mail...Who's it from - you're honey?
+  - There's a message here.
+  - Messages? What a hassle.
+  - Error.
+  - What! Error!? Gimme a break!!
+  - I'll check.
+  - Hey, hey, what are you trying to do!?
+  - Don't worry, you'll find a way somehow. Hang in there, okay?
+  - Believing in miracles...It's totally important!
+  - The switch is going to go 'Click', yo.
+- Name: Kid
+  StartId: 152
+  Lines:
+  - Starting up the system.
+  - Looks like it's starting up.
+  - System shutting down.
+  - I guess it's quitting.
+  - Emptying the trash.
+  - Why do I have to do this...
+  - There's some mail here.
+  - Mail? What's this?
+  - There's a message here.
+  - Did someone call for me? Hey, anyone there?
+  - Error.
+  - Hmm, it's not working.
+  - I'll check.
+  - No Clue. What should we do?
+  - I'm not sure what you're up to...But, best of luck!
+  - I promise. I'll take care of you!
+  - What's wrong with a pure heart? Who cares...

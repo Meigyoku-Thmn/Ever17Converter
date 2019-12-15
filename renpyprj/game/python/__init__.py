@@ -96,7 +96,7 @@ def merge_dicts(*dict_args):
 def style_props(*args):
    arr = []
    for arg in args:
-      if isinstance(arg, dict): arr.append(arg)
+      if isinstance(arg, types.DictType): arr.append(arg)
       elif isinstance(arg, Style): arr.append(arg.properties)
       elif isinstance(arg, basestring): arr.extend(style[arg].properties)
       else: raise ValueError('item is not a string, dict or Style')
@@ -104,6 +104,8 @@ def style_props(*args):
 
 def bgm(idx):
    return "../../output/asset/bgm/bgm{0:02d}.ogg".format(idx)
+def sysvoice(idx):
+   return "../../output/asset/sysvoice/sys{0:03d}.wav".format(idx)
 def font(name):
    return "fonts/{0}.ttf".format(name)
 
