@@ -390,9 +390,9 @@ screen chara_slide_show(images, page):
          def prepare_artist_name(me, s):
             if s.artist_name is not None and len(s.artist_name) > 0:
                s.artist_name_shadow = Text(s.artist_name, style='artist_name_shadow')
-               s.artist_name_img = (DTextBuilder(s.artist_name, style='artist_name')
+               s.artist_name_img = (DTextBuilder(style='artist_name')
                   .gradient_fill("#FFF", "#2170e4") 
-                  .build(style="artist_name_wrapper"))
+                  .build(s.artist_name, style="artist_name_wrapper"))
             else:
                s.artist_name_shadow = None
                s.artist_name_img = None

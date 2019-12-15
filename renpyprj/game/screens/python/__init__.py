@@ -11,18 +11,17 @@ class DTextBuilder():
    use_gradient = False
    startcolor = None 
    endcolor = None 
-   def __init__(self, text, **properties):
-      self.text = text
+   def __init__(self, **properties):
       self.text_properties = properties
    def gradient_fill(self, startcolor, endcolor):
       self.use_gradient = True
       self.startcolor = startcolor
       self.endcolor = endcolor
       return self
-   def build(self, **properties):
+   def build(self, text, **properties):
       if self.use_gradient == False:
-         return Window(Text(self.text, **self.text_properties), **properties)
-      text_alpha = Text(self.text, **self.text_properties)
+         return Window(Text(text, **self.text_properties), **properties)
+      text_alpha = Text(text, **self.text_properties)
       text_size = renpy.render(text_alpha, config.screen_width, config.screen_height, .0, .0).get_size()
       text_size = (int(round(text_size[0])), int(round(text_size[1])))
       text_fill = VerticalGradient(self.startcolor, self.endcolor, xysize=text_size)
@@ -49,7 +48,7 @@ class SmoothScroller():
    last_st = 0.0
    scroll_interpolator = None
    currently_scroll_by = None
-   target_pos = 0.0
+   target_pos = None
 
    def __setattr__(self, name, value):
       if name in self.map:
@@ -60,7 +59,7 @@ class SmoothScroller():
       self.currently_scroll_by = "wheel"
    def use_arrow(self, target_pos):
       self.currently_scroll_by = "arrow"
-      self.target_pos = self.num_type(target_pos)
+      self.target_pos = self.num_type(target_pos) 
    def trigger(self, direction):
       scrolling_delta = self.num_type(0.0)
       if direction == "back":
@@ -113,3 +112,4 @@ class SmoothScroller():
       self.currently_scroll_by = None
       self.scrolling_delta = None
       self.last_st = 0.0
+      self.target_pos = None

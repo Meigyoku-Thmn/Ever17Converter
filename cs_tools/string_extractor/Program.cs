@@ -143,15 +143,35 @@ namespace string_extractor {
                }
             }
          }
+         foreach (var jukebox_music in jukebox_musics) {
+            string Beautify(string str) {
+               return str.Replace(": ", ":").Replace(", ", ",").Replace(":", ": ").Replace(",", ", ")
+                  .Replace("Ly, Mu:", "Lyrics, Music:")
+                  .Replace("Mu.Ar:", "Music, Arrange:")
+                  .Replace("Ar:", "Arrange:")
+                  .Replace("Ly:", "Lyrics:")
+                  ;
+            }
+            if (jukebox_music.Info1 != null) jukebox_music.Info1 = Beautify(jukebox_music.Info1);
+            if (jukebox_music.Info2 != null) jukebox_music.Info2 = Beautify(jukebox_music.Info2);
+            if (jukebox_music.Info3 != null) jukebox_music.Info3 = Beautify(jukebox_music.Info3);
+         }
          using (var musicFile = new StreamWriter(File.Create(Path.Combine(outputDirPath, "en_jukebox_music.yaml")))) {
             var dict = Enumerable.Empty<int>().ToDictionary(x => x, x => new {
                Name = "",
+               FileId = 0,
                Infos = new string[0],
                Lyrics = new List<string>(),
             });
             foreach (var (jukebox_music, i) in jukebox_musics.Select((e, i) => (e, i))) {
+               var FileId = (i <= 21) ? (i + 1) : (i + 2);
+               if (FileId == 26) FileId = 29;
+               else if (FileId == 27) FileId = 28;
+               else if (FileId == 28) FileId = 27;
+               else if (FileId == 29) FileId = 26;
                dict.Add(i, new {
                   Name = jukebox_music.Name.Substring(4),
+                  FileId = FileId,
                   Infos = new string[] { jukebox_music.Info1, jukebox_music.Info2, jukebox_music.Info3 }
                      .Where(e => !string.IsNullOrEmpty(e)).ToArray(),
                   Lyrics = jukebox_music.Lyrics,
