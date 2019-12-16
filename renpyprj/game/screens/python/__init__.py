@@ -54,7 +54,8 @@ class SmoothScroller():
       if name in self.map:
          self.scope[self.map[name]] = value
       self.__dict__[name] = value
-
+   def reset_value(self):
+      self.value = self.num_type(0.0)
    def use_wheel(self):
       self.currently_scroll_by = "wheel"
    def use_arrow(self, target_pos):
