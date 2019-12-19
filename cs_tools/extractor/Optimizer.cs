@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace extractor {
    class Optimizer {
-      static readonly string CvPath = @"C:/pingo/pingo.exe";
+      static readonly string CvPath = @"/pingo/pingo.exe";
       static public void CompressPNG(string inName, string outName = null) {
          if (outName == null) outName = inName;
          else {

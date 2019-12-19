@@ -27,7 +27,7 @@ class DTextBuilder():
       text_fill = VerticalGradient(self.startcolor, self.endcolor, xysize=text_size)
       return AlphaMask(text_fill, text_alpha, **properties)
 
-class SmoothScroller():
+class SmoothScroller(object):
    def __init__(self, scope, num_type, step, duration, max_value, map={}):
       self.map = map
       self.scope = scope
@@ -51,9 +51,19 @@ class SmoothScroller():
    target_pos = None
 
    def __setattr__(self, name, value):
-      if name in self.map:
-         self.scope[self.map[name]] = value
-      self.__dict__[name] = value
+      _map = super(SmoothScroller, self).__getattribute__('map')
+      if name in _map:
+         _scope = super(SmoothScroller, self).__getattribute__('scope')
+         _scope[_map[name]] = value
+      else:
+         super(SmoothScroller, self).__setattr__(name, value)
+   def __getattribute__(self, name):
+      _map = super(SmoothScroller, self).__getattribute__('map')
+      if name in _map:
+         _scope = super(SmoothScroller, self).__getattribute__('scope')
+         return _scope[_map[name]]
+      else:
+         return super(SmoothScroller, self).__getattribute__(name)
    def reset_value(self):
       self.value = self.num_type(0.0)
    def use_wheel(self):

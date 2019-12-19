@@ -8,7 +8,6 @@ init python:
 
 label main_menu:
    # play music bgm(21)
-   call screen clearlist
    # scene logo kid with Dissolve(0.2)
    # pause 1.0
    # scene logo himeraki with Dissolve(0.2)
@@ -20,8 +19,6 @@ label main_menu:
    scene bg title1 with Dissolve(0.2)
    play music bgm(21)
    call screen main_menu with menu_transition_in
-   $ print """This message should not appear, contact developer for support!
-   Search key: {AFEEE197-4A6B-42E2-AD34-26903A5FA987}"""
    $ renpy.quit()
 
 label splashscreen:

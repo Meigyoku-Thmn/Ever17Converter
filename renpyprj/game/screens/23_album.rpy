@@ -283,7 +283,7 @@ style artist_name:
    size 23
 
 screen chara_slide_show(images, page):
-   tag menu   
+   tag menu
    # state
    default is_init_done = False
    default me = renpy.current_screen()
@@ -305,10 +305,7 @@ screen chara_slide_show(images, page):
    # functions
    if is_init_done == False:
       python:
-         @partial_deco(me)
-         def get_scope_view(me):
-            return me.scope['s']
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def prepare_scroller(me, s):
             value_map = None
             if s.scroll_axis == "vertical":
@@ -321,18 +318,7 @@ screen chara_slide_show(images, page):
                   map={"value": value_map, "is_scrolling": "is_scrolling"})
             else:
                s.scroller = None
-         @partial_rebind_deco(me, get_scope_view)
-         def prepare_scope_mapping(me, s):
-            value_map = None
-            if s.scroll_axis == "vertical":
-               value_map = 'man_yalign'
-            elif s.scroll_axis == "horizontal":
-               value_map = 'man_xalign'
-            if value_map is not None:
-               me.scope['s'] = objectview(me.scope, mappee=s.scroller, map={value_map: 'value'})
-            else: 
-               me.scope['s'] = objectview(me.scope, mappee=s.scroller, map={value_map: 'value'})
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def prepare_image(me, s):
             image = s.images[s.current_idx]
             name = image
@@ -343,13 +329,12 @@ screen chara_slide_show(images, page):
             s.bg_image = get_full_bg_path(name)
          prepare_image()
          prepare_scroller()
-         prepare_scope_mapping()
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def capture_atl_align(me, s):
             bg_image_atl = me.widgets['bg_wrapper'].child
             s.man_xalign = bg_image_atl.xalign or 0.0
             s.man_yalign = bg_image_atl.yalign or 0.0
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def GoNext(me, s):
             if s.scroll_axis in ["vertical", "horizontal"] and s.stop_auto_scroll_anim == False:
                s.capture_atl_align()
@@ -361,23 +346,22 @@ screen chara_slide_show(images, page):
                s.man_xalign = 0.0
                s.prepare_image()
                s.prepare_scroller()
-               s.prepare_scope_mapping()
                s.prepare_artist_name()
             else:
                s.CloseSlideShow()
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def CloseSlideShow(me, s):
             Show("album_chara", transition=screen_menu_transition_dissolve, page=s.page)()
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def ReleaseArrowKeyEvent(me, s, key_name):
             if (key_name.replace("keyup_", "") == s.dragging):
                s.dragging = None
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def ArrowKeyEvent(me, s, key_name):
             s.dragging = key_name
             s.last_st = 0.0
             s.scroller.stop()
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def ScrollWheelEvent(me, s, key_name):
             s.dragging = None
             scroller = s.scroller
@@ -386,7 +370,7 @@ screen chara_slide_show(images, page):
                scroller.trigger(direction="back")
             elif key_name == "mousedown_5":
                scroller.trigger(direction="forward")
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def prepare_artist_name(me, s):
             if s.artist_name is not None and len(s.artist_name) > 0:
                s.artist_name_shadow = Text(s.artist_name, style='artist_name_shadow')
@@ -398,7 +382,7 @@ screen chara_slide_show(images, page):
                s.artist_name_img = None
          prepare_artist_name()
          ori_event = me.event
-         @partial_rebind_deco(me, get_scope_view)
+         @partial_deco(me, s)
          def event_hook(me, s, ev, x, y, st):
             import pygame_sdl2 as pygame
             if ev.type == pygame.ACTIVEEVENT:

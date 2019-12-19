@@ -10,7 +10,7 @@ namespace extractor {
    static class FFMpeg {
       // ffmpeg -y -i bgm06.wav -c:a libvorbis -q:a 5.0 bgm06.ogg
       // ffmpeg -y -i bgm06.wav -c:a libopus -compression_level 5 bgm06.opus
-      static readonly string CvPath = @"C:/ffmpeg/bin/ffmpeg.exe";
+      static readonly string CvPath = @"/ffmpeg/bin/ffmpeg.exe";
       public static void ToOggFile(this MemoryStream inp, string outName) {
          var proc = new Process {
             StartInfo = {

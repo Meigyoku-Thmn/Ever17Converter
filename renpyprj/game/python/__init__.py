@@ -53,16 +53,11 @@ def partial_rebind_deco(*args, **kwargs):
       return partial(resolving_fn, *args, **kwargs)
    return _partial_rebind_deco
 
-def objectview(d, mappee=None, map={}):
-   _map = map
+def objectview(d):
    _dict = d
    class _objectview(object):
       def __setattr__(self, name, value):
-         if name in _dict:
-            _dict[name] = value
-            if name in _map:
-               setattr(mappee, _map[name], value)
-         else: raise KeyError(name)
+         _dict[name] = value
       def __getattribute__(self, name):
          return _dict[name]
    return _objectview()
