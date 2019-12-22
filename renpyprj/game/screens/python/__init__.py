@@ -1,6 +1,7 @@
+from __future__ import unicode_literals
 import renpy.exports as renpy
 import pygame_sdl2 as pygame
-from renpy.defaultstore import config
+from renpy.defaultstore import config, Fixed
 from renpy.text.text import Text
 from renpy.display.layout import AlphaMask, Window
 from python import bgm, make_linear_interpolater, partial_deco, objectview, clamp, style_props, VerticalGradient
@@ -124,3 +125,6 @@ class SmoothScroller(object):
       self.scrolling_delta = None
       self.last_st = 0.0
       self.target_pos = None
+
+def init():
+   pass

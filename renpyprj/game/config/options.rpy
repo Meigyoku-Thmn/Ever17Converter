@@ -1,6 +1,12 @@
 init offset = -10
 init python:
    import setup_debug
+   setup_debug.init()
+   import python;
+   python.init()
+   import screens.python
+   screens.python.init()
+
    from python import TransparentKeyedImage
 default persistent.textbox_opacity = 0.5
 define config.fade_music = 0.5

@@ -1,8 +1,8 @@
+from __future__ import unicode_literals
 import renpy.exports as renpy
-if renpy.version(tuple=True) > (7, 3, 5, 606):
-   raise Exception("You are using a Renpy version which is newer than what I expected.")
 import sys
 import types
+
 def load_module(self, fullname):
 
    filename = self.translate(fullname, self.prefix)
@@ -35,5 +35,7 @@ def load_module(self, fullname):
    exec code in mod.__dict__
 
    return sys.modules[fullname]
-
-renpy.loader.RenpyImporter.load_module = load_module
+def init():
+   if renpy.version(tuple=True) != (7, 3, 5, 606):
+      raise Exception("You are using a Renpy version that is newer or older than what I expected. Please check.")
+   renpy.loader.RenpyImporter.load_module = load_module

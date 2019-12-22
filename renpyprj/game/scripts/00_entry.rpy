@@ -1,4 +1,4 @@
-﻿define e = Character("Eileen")
+﻿define e = Character("Eileen", what_layout='greedy')
 image bg title1 = "../../output/asset/bg/title1.png"
 image logo kid = "../../output/asset/bg/kid_logo.png"
 image logo himeraki = "../../output/asset/bg/hirameki.png"
@@ -29,6 +29,9 @@ label start:
    play music "../../output/asset/bgm/bgm06.ogg"
    scene bg room
    show eileen happy
-   e "You've created a new Ren'Py game."
+   e """You've created a new Ren'Py game. You've created a new Ren'Py game. You've created a new Ren'Py game.
+{center}You've created a new Ren'Py game.{/center}
+{right}You've created a new Ren'Py game.{/right}
+"""
    e "Once you add a story, pictures, and music, you can release it to the world!"
    return
