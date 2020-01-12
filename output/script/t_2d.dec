@@ -1311,7 +1311,7 @@ playing on the sly.{waitForClick}{clearText}{marker}{appendText}(She should've s
 [00000d5e]fe 28 0a a4 d2 14 14 00 81 00 00: varop (28 0a a4) d2 := (00) 1
 [00000d69]fe 28 0a a4 bb 14 14 00 80 00 00: varop (28 0a a4) bb := (00) 0
 [00000d74]ff 70 00: text 70
-{appendText}{choice 00 00a7 |{cond (28 0a a4) d0 14 (00)}Lemurian Ruins|{cond (28 0a a4) d1 14 (00)}Rest area|{cond (28 0a a4) d2 14 (00)}Chicken sandwich stand}
+{appendText}{choice 00 00a7 |[cond (28 0a a4) d0 14 (00)]Lemurian Ruins|[cond (28 0a a4) d1 14 (00)]Rest area|[cond (28 0a a4) d2 14 (00)]Chicken sandwich stand}
 
 [00000d77]10: 
 [00000d78]1a a4 b3 00 00 a0 a7 00 00: choiceId 1203 167

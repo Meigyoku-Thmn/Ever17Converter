@@ -662,7 +662,7 @@ corridors.{waitForClick}{clearText}
 {marker}{appendText}I thought I would go somewhere else.{waitForClick}
 
 [0000073a]ff 33 00: text 33
-{appendText}{choice 00 0044 |{cond (28 0a a4) d0 14 (00)}To the merry-go-round|{cond (28 0a a4) d1 14 (00)}To the Jellyfish Gondola|{cond (28 0a a4) d2 14 (00)}To the warehouse|{cond (28 0a a4) d3 14 (00)}To the Control Room|{cond (28 0a a4) d4 14 (00)}To the Security Office}
+{appendText}{choice 00 0044 |[cond (28 0a a4) d0 14 (00)]To the merry-go-round|[cond (28 0a a4) d1 14 (00)]To the Jellyfish Gondola|[cond (28 0a a4) d2 14 (00)]To the warehouse|[cond (28 0a a4) d3 14 (00)]To the Control Room|[cond (28 0a a4) d4 14 (00)]To the Security Office}
 
 [0000073d]10: 
 [0000073e]1a a4 b3 00 00 a0 44 00 00: choiceId 1203 68

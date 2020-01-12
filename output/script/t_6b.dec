@@ -982,7 +982,7 @@ we going to open that door?{waitForClick}
 [000008d5]fe 28 0a a4 d1 14 14 00 81 00 00: varop (28 0a a4) d1 := (00) 1
 [000008e0]fe 28 0a a4 d2 14 14 00 81 00 00: varop (28 0a a4) d2 := (00) 1
 [000008eb]ff 54 00: text 54
-{appendText}{choice 00 00d6 |{cond (28 0a a4) d0 14 (00)}Ask Sora.|{cond (28 0a a4) d1 14 (00)}Ask You.|{cond (28 0a a4) d2 14 (00)}Ask Tsugumi.}
+{appendText}{choice 00 00d6 |[cond (28 0a a4) d0 14 (00)]Ask Sora.|[cond (28 0a a4) d1 14 (00)]Ask You.|[cond (28 0a a4) d2 14 (00)]Ask Tsugumi.}
 
 [000008ee]10: 
 [000008ef]1a a4 b3 00 00 a0 d6 00 00: choiceId 1203 214

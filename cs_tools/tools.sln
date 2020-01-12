@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extractor", "extractor\extr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "string_extractor", "string_extractor\string_extractor.csproj", "{34D5093F-5CD0-435C-BC79-6B8095189730}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Js2Rpy", "Js2Rpy\Js2Rpy.csproj", "{30AE361D-6F6F-4087-8036-A31078D62129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanOutputScript", "CleanOutputScript\CleanOutputScript.csproj", "{0BBFFD15-E8C5-4E2B-88D1-AA601B6617FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{34D5093F-5CD0-435C-BC79-6B8095189730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D5093F-5CD0-435C-BC79-6B8095189730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D5093F-5CD0-435C-BC79-6B8095189730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30AE361D-6F6F-4087-8036-A31078D62129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AE361D-6F6F-4087-8036-A31078D62129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AE361D-6F6F-4087-8036-A31078D62129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AE361D-6F6F-4087-8036-A31078D62129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BBFFD15-E8C5-4E2B-88D1-AA601B6617FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBFFD15-E8C5-4E2B-88D1-AA601B6617FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBFFD15-E8C5-4E2B-88D1-AA601B6617FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBFFD15-E8C5-4E2B-88D1-AA601B6617FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

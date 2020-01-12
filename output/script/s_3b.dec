@@ -1565,7 +1565,7 @@ switch_varop (28 0a a4) b3 0014 (00)
 {marker}{appendText}(Could it be...?){waitForClick}{clearText}{marker}{appendText}I thought for a second.{waitForClick}
 
 [00000c63]ff 72 00: text 72
-{appendText}{choice 00 0067 |{cond (28 0a a4) d0 14 (00)}What if I turn it over...|{cond (28 0a a4) d1 14 (00)}What if I turn it upside down...|{cond (28 0a a4) d2 14 (00)}What if I heat it with a flame...|{cond (28 0a a4) d3 14 (00)}What if I rip it in two...|{cond (28 0a a4) d4 14 (00)}What if I tilt it...|{cond (28 0a a4) d5 14 (00)}What if I wad it up...}
+{appendText}{choice 00 0067 |[cond (28 0a a4) d0 14 (00)]What if I turn it over...|[cond (28 0a a4) d1 14 (00)]What if I turn it upside down...|[cond (28 0a a4) d2 14 (00)]What if I heat it with a flame...|[cond (28 0a a4) d3 14 (00)]What if I rip it in two...|[cond (28 0a a4) d4 14 (00)]What if I tilt it...|[cond (28 0a a4) d5 14 (00)]What if I wad it up...}
 
 [00000c66]10: 
 [00000c67]1a a4 b3 00 00 a0 67 00 00: choiceId 1203 103

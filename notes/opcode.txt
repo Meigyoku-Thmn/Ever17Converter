@@ -159,6 +159,7 @@ playMovie(string movieName)
 unknown3a(), unknown3b() và unknown3c()
    không quan trọng
 
+// bgload(int padding, string bgname, expr a1, expr a2)
 bgloadCrop(int padding, string bgname, expr a1, expr a2, expr x, expr y, expr hx, expr hy)
    như lệnh bgload nhưng còn có tác dụng crop ảnh, hx và hy thuộc tập hợp số nguyên, nếu hx và hy là số âm thì có thể tạo hiệu ứng ảnh đảo ngược
 

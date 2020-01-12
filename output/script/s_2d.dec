@@ -2807,7 +2807,7 @@ anyone.{waitForClick}{clearText}{marker}{appendText}(Well, I guess I'll go looki
 {marker}{appendText}I selected from the - {waitForClick}
 
 [00001f63]ff 0c 01: text 10c
-{appendText}{choice 00 005b |{cond (28 0a a4) d0 14 (00)}Central Control Room|{cond (28 0a a4) d1 14 (00)}Lemurian Ruins|{cond (28 0a a4) d2 14 (00)}Elevator Hall|{cond (28 0a a4) d3 14 (00)}Rest area|{cond (28 0a a4) d4 14 (00)}Kiosk|{cond (28 0a a4) d5 14 (00)}Conference Room}
+{appendText}{choice 00 005b |[cond (28 0a a4) d0 14 (00)]Central Control Room|[cond (28 0a a4) d1 14 (00)]Lemurian Ruins|[cond (28 0a a4) d2 14 (00)]Elevator Hall|[cond (28 0a a4) d3 14 (00)]Rest area|[cond (28 0a a4) d4 14 (00)]Kiosk|[cond (28 0a a4) d5 14 (00)]Conference Room}
 
 [00001f66]10: 
 [00001f67]1a a4 b3 00 00 a0 5b 00 00: choiceId 1203 91

@@ -21,17 +21,23 @@ label main_menu:
    call screen main_menu with menu_transition_in
    $ renpy.quit()
 
-label splashscreen:
+label splashscreen:  
    $ renpy.reset_physical_size()
    return
 
 label start:
    play music "../../output/asset/bgm/bgm06.ogg"
    scene bg room
-   show eileen happy
    e """You've created a new Ren'Py game. You've created a new Ren'Py game. You've created a new Ren'Py game.
 {center}You've created a new Ren'Py game.{/center}
 {right}You've created a new Ren'Py game.{/right}
 """
    e "Once you add a story, pictures, and music, you can release it to the world!"
+
+   window show
+   e "Put the 'window show'{w=1.0} at the very beginning of your script so that Renpy will read it.{nw}"
+   show eileen happy with { "master": Dissolve(1.0) }
+   extend "{w=1.0} So now you can add transitions to sprites without having the textbox vanish!"
+
+
    return

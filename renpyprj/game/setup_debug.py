@@ -18,19 +18,19 @@ def load_module(self, fullname):
    for encoding in [ "utf-8", "latin-1" ]:
 
       try:
-            fileObj = renpy.loader.load(filename)
-            source = fileObj.read().decode(encoding)
-            if source and source[0] == u'\ufeff':
-               source = source[1:]
-            source = source.encode("raw_unicode_escape")
+         fileObj = renpy.loader.load(filename)
+         source = fileObj.read().decode(encoding)
+         if source and source[0] == u'\ufeff':
+            source = source[1:]
+         source = source.encode("raw_unicode_escape")
 
-            source = source.replace("\r", "")
+         source = source.replace("\r", "")
 
-            code = compile(source, fileObj.name, 'exec', renpy.python.old_compile_flags, 1)
-            break
+         code = compile(source, fileObj.name, 'exec', renpy.python.old_compile_flags, 1)
+         break
       except:
-            if encoding == "latin-1":
-               raise
+         if encoding == "latin-1":
+            raise
 
    exec code in mod.__dict__
 

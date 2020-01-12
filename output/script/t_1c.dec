@@ -139,7 +139,7 @@ to visit first.{waitForClick}
 [0000025a]10: 
 [0000025b]24 a0 9e 00 00: scriptLocationId 158
 [00000260]ff 09 00: text 09
-{appendText}{choice 00 0087 |{cond (28 0a a4) d0 14 (00)}The Dolphin Merry-go-round|{cond (28 0a a4) d1 14 (00)}The souvenir shop|{cond (28 0a a4) d2 14 (00)}The Security Office}
+{appendText}{choice 00 0087 |[cond (28 0a a4) d0 14 (00)]The Dolphin Merry-go-round|[cond (28 0a a4) d1 14 (00)]The souvenir shop|[cond (28 0a a4) d2 14 (00)]The Security Office}
 
 [00000263]10: 
 [00000264]1a a4 b3 00 00 a0 87 00 00: choiceId 1203 135
@@ -855,7 +855,7 @@ said.{waitForClick}{clearText}{marker}{appendText}I wondered where I should hit 
 [00000702]10: 
 [00000703]24 a0 a2 00 00: scriptLocationId 162
 [00000708]ff 39 00: text 39
-{appendText}{choice 00 008a |{cond (28 0a a4) d0 14 (00)}The visitor elevator|{cond (28 0a a4) d1 14 (00)}The warehouse|{cond (28 0a a4) d2 14 (00)}The infirmary}
+{appendText}{choice 00 008a |[cond (28 0a a4) d0 14 (00)]The visitor elevator|[cond (28 0a a4) d1 14 (00)]The warehouse|[cond (28 0a a4) d2 14 (00)]The infirmary}
 
 [0000070b]10: 
 [0000070c]1a a4 b3 00 00 a0 8a 00 00: choiceId 1203 138

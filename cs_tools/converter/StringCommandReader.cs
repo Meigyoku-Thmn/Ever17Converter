@@ -107,7 +107,7 @@ OUTER:;
             if (op != 0x14) {
                Log.Write("     [Unknown Text] Unknown operator in choice option cond: " + op);
             }
-            temp.Append("{" + $"cond ({arg0:x2} {arg1:x2} {arg2:x2}) {varname:x2} {op:x2} ({arg3:x2})" + "}");
+            temp.Append($"[cond ({arg0:x2} {arg1:x2} {arg2:x2}) {varname:x2} {op:x2} ({arg3:x2})]");
             var c = ReadChar();
             while (c != "\n") {
                temp.Append(c);

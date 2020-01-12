@@ -28,7 +28,7 @@ sickness."{waitForClick}{clearText}{marker}{sound C1T098}{appendText}[You]
 [000000a4]07 02 00: goto 000000b2 (00000002)
 [000000a7]fe 28 0a a4 d0 14 14 00 80 00 00: varop (28 0a a4) d0 := (00) 0
 [000000b2]ff 01 00: text 01
-{appendText}{choice 00 0075 |Decompression sickness, what is that?|{cond (28 0a a4) d0 14 (00)}Is it really a decompression sickness?}
+{appendText}{choice 00 0075 |Decompression sickness, what is that?|[cond (28 0a a4) d0 14 (00)]Is it really a decompression sickness?}
 
 [000000b5]10: 
 [000000b6]1a a4 b3 00 00 a0 75 00 00: choiceId 1203 117
@@ -548,7 +548,7 @@ room. She had left just before the
 pressurization process had started.{waitForClick}{clearText}
 
 [00000596]ff 23 00: text 23
-{appendText}{choice 00 0077 |Where did Tsugumi go?|When was Sora going to sleep?|{cond (28 0a a4) d0 14 (00)}Maybe Coco had some other illness after all?}
+{appendText}{choice 00 0077 |Where did Tsugumi go?|When was Sora going to sleep?|[cond (28 0a a4) d0 14 (00)]Maybe Coco had some other illness after all?}
 
 [00000599]10: 
 [0000059a]1a a4 b3 00 00 a0 77 00 00: choiceId 1203 119
