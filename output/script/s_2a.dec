@@ -519,7 +519,7 @@ and hard-to-describe.{waitForClick}{clearText}
 [00000571]10: 
 [00000572]45 86 00 00 80 00 00: monoColorOverlay 6 0
 [00000579]10: 
-[0000057a]14 80 00 00 81 00 00 a0 ff 00 00: setFGOrder_Unk 0 1 255
+[0000057a]14 80 00 00 81 00 00 a0 ff 00 00: setFGOrder 4 2 1
 [00000585]10: 
 [00000586]0c 00 00 00 00 1a 00 86 00 00 82 00 00: bgload 00000000 BG10A1 6 2
 [00000593]10: 

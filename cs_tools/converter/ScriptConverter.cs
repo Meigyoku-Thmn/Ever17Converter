@@ -407,6 +407,8 @@ namespace converter {
                   return $"{interpretedFuncName} 2 1 4";
                case "2 1 0":
                   return $"{interpretedFuncName} 1 2 4";
+               case "0 1 255":
+                  return $"{interpretedFuncName} 4 2 1";
             }
             return $"{op} {arg0} {arg1} {arg2}";
          }
