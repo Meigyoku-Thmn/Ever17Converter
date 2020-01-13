@@ -3094,5 +3094,5 @@ unSkippableDelay(1);
 playMovie(`MOV_END`);
 unSkippableDelay(1);
 unSkippableDelay(1);
-g_b3 = 0;
+l_choice = 0;
 jump(`YCEP`);

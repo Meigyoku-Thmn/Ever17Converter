@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 45 });
 playBGM({ num: 19, volume: 100 });
@@ -2579,7 +2579,7 @@ text(() => {
    Narr`Trying to keep my calm, I responded to her.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000104f).if(g_0f == 0);
+if (g_tsugumi_gd_clear == 0) goto(lbl_0000104f);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3949,5 +3949,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 0;
+l_choice = 0;
 jump(`TL7A`);

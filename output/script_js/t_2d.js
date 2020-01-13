@@ -282,12 +282,12 @@ choice(
    `I'll pass`
    `I'm in`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000002fd);
    case 1: goto(lbl_00000327);
 }
 let lbl_000002fd;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -810,12 +810,12 @@ opened automatically.`;
    Narr`First, I thought I would head for the...`;
    waitForClick; 
 });
-g_bb = 0;
+l_bb = 0;
 choice(
    `Central Control Room`
    `Elevator hall`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000071e);
    case 1: goto(lbl_00000807);
 }
@@ -861,7 +861,7 @@ left the room.`;
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
 bgload({ name: `BG26B4L`, transition: 20 });
-goto(lbl_000007f3).if(g_bb == 0);
+if (l_bb == 0) goto(lbl_000007f3);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -870,7 +870,7 @@ text(() => {
 });
 goto(lbl_000008c0);
 let lbl_000007f3;
-g_bb = 1;
+l_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -920,7 +920,7 @@ was no sign of anything moving.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG26B4L`, transition: 20 });
-goto(lbl_000008ac).if(g_bb == 0);
+if (l_bb == 0) goto(lbl_000008ac);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -929,7 +929,7 @@ text(() => {
 });
 goto(lbl_000008c0);
 let lbl_000008ac;
-g_bb = 1;
+l_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1434,17 +1434,17 @@ text(() => {
    Narr`I thought about where I should start looking.`;
    waitForClick; 
 });
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
-g_bb = 0;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
+l_bb = 0;
 let lbl_00000d74;
 choice(
-   `Lemurian Ruins`.if(g_d0 != 0),
-   `Rest area`.if(g_d1 != 0),
-   `Chicken sandwich stand`.if(g_d2 != 0),
+   cond(l_d0 != 0)`Lemurian Ruins`,
+   cond(l_d1 != 0)`Rest area`,
+   cond(l_d2 != 0)`Chicken sandwich stand`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000d9e);
    case 1: goto(lbl_00000f0a);
    case 2: goto(lbl_0000118e);
@@ -1461,7 +1461,7 @@ bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG04B2`, transition: 20 });
-g_d0 = 0;
+l_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1590,10 +1590,10 @@ text(() => {
 hideTextbox();
 stopBGM();
 playBGM({ num: 13, volume: 100 });
-goto(lbl_00000ee8).if(g_bb == 0);
+if (l_bb == 0) goto(lbl_00000ee8);
 goto(lbl_000012d0);
 let lbl_00000ee8;
-g_bb = 1;
+l_bb = 1;
 bgload({ name: `BG25B4`, transition: 20 });
 showTextbox();
 text(() => {
@@ -1614,7 +1614,7 @@ bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG21B2`, transition: 20 });
-g_d1 = 0;
+l_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1865,10 +1865,10 @@ text(() => {
    Narr`    <I found the Kid, I stepped on the can.>`;
    waitForClick; clearText; 
 });
-goto(lbl_0000116c).if(g_bb == 0);
+if (l_bb == 0) goto(lbl_0000116c);
 goto(lbl_000012d0);
 let lbl_0000116c;
-g_bb = 1;
+l_bb = 1;
 bgload({ name: `BG25B4`, transition: 20 });
 showTextbox();
 text(() => {
@@ -1889,7 +1889,7 @@ bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG07B2`, transition: 20 });
-g_d2 = 0;
+l_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2121,10 +2121,10 @@ text(() => {
 hideTextbox();
 stopBGM();
 playBGM({ num: 13, volume: 100 });
-goto(lbl_000012ae).if(g_bb == 0);
+if (l_bb == 0) goto(lbl_000012ae);
 goto(lbl_000012d0);
 let lbl_000012ae;
-g_bb = 1;
+l_bb = 1;
 bgload({ name: `BG25B4`, transition: 20 });
 showTextbox();
 text(() => {
@@ -2134,9 +2134,9 @@ text(() => {
 });
 goto(lbl_00000d74);
 let lbl_000012d0;
-g_d0 = 0;
-g_d1 = 0;
-g_d2 = 0;
+l_d0 = 0;
+l_d1 = 0;
+l_d2 = 0;
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
@@ -2774,10 +2774,10 @@ text(() => {
    Narr`Kabing!`;
    waitForClick; clearText; 
 });
-goto(lbl_000018e4).if(g_f1 == 0);
-goto(lbl_000018e4).if(g_ba != 5);
+if (l_is_coco_route == 0) goto(lbl_000018e4);
+if (l_coco_point != 5) goto(lbl_000018e4);
 stopBGM();
-g_b3 = 0;
+l_choice = 0;
 jump(`SC2E`);
 let lbl_000018e4;
 multifgload3({ name1: `YU03ADS`, name2: `CO07ADS`, name3: `TU06ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
@@ -2885,5 +2885,5 @@ counting...`;
 });
 removeBG({ mode: BLACK, transition: 1 });
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_3A`);

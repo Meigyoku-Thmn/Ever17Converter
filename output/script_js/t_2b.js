@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG24A3`, transition: 20 });
@@ -208,7 +208,7 @@ choice(
 );
 bgload({ name: `BG24A3`, transition: 20 });
 fgload({ id: 1, name: `TU01AWM`, x: 320, useAnim: true });
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000222);
    case 1: goto(lbl_00000278);
 }
@@ -806,7 +806,7 @@ choice(
    `I know it`
    `I don't know it`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000006bd);
    case 1: goto(lbl_000006c6);
 }
@@ -1376,7 +1376,7 @@ choice(
    `About the air pressure of a Generator Room`
    `Why do you know so much about LeMU?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000a20);
    case 1: goto(lbl_00000a64);
 }
@@ -2633,5 +2633,5 @@ liked to sink down to the bottom of the ocean.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_2C`);

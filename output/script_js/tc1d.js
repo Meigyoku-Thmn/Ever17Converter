@@ -21,18 +21,18 @@ sickness."`;
    You`"Yeah, it could well be."`;
    waitForClick; 
 });
-g_d0 = 1;
-goto(lbl_000000a7).if(g_f1 == 0);
-goto(lbl_000000a7).if(g_ba != 1);
+l_d0 = 1;
+if (l_is_coco_route == 0) goto(lbl_000000a7);
+if (l_coco_point != 1) goto(lbl_000000a7);
 goto(lbl_000000b2);
 let lbl_000000a7;
-g_d0 = 0;
+l_d0 = 0;
 let lbl_000000b2;
 choice(
    `Decompression sickness, what is that?`
-   `Is it really a decompression sickness?`.if(g_d0 != 0),
+   cond(l_d0 != 0)`Is it really a decompression sickness?`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000000d5);
    case 1: goto(lbl_0000010c);
 }
@@ -84,8 +84,8 @@ her on my back.`;
 });
 goto(lbl_00000249);
 let lbl_0000010c;
-g_ee = 1;
-g_ba += 1;
+l_skeptical_about_coco_having_decompression_sickness = 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -297,7 +297,7 @@ text(() => {
 We can treat decompression sickness here."`;
    waitForClick; clearText; 
 });
-goto(lbl_000003bc).if(g_ee == 0);
+if (l_skeptical_about_coco_having_decompression_sickness == 0) goto(lbl_000003bc);
 showTextbox();
 text(() => {
    marker; sound(`C1T127`); appendText; 
@@ -568,14 +568,14 @@ delay({ interval: 30 });
 removeFG({ id: 1, useAnim: true });
 dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
-g_d0 = 1;
-goto(lbl_00000574).if(g_f1 == 0);
-goto(lbl_00000574).if(g_ee == 0);
-goto(lbl_00000574).if(g_ba != 2);
+l_d0 = 1;
+if (l_is_coco_route == 0) goto(lbl_00000574);
+if (l_skeptical_about_coco_having_decompression_sickness == 0) goto(lbl_00000574);
+if (l_coco_point != 2) goto(lbl_00000574);
 goto(lbl_00000591);
 let lbl_00000574;
-g_d0 = 0;
-g_b3 = 4;
+l_d0 = 0;
+l_choice = 4;
 jump(`T_1C`);
 let lbl_00000591;
 showTextbox();
@@ -595,15 +595,15 @@ pressurization process had started.`;
 choice(
    `Where did Tsugumi go?`
    `When was Sora going to sleep?`
-   `Maybe Coco had some other illness after all?`.if(g_d0 != 0),
+   cond(l_d0 != 0)`Maybe Coco had some other illness after all?`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000005c0);
    case 1: goto(lbl_0000069f);
    case 2: goto(lbl_000006b3);
 }
 let lbl_000005c0;
-g_b7 += 2;
+l_tsugumi_point += 2;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -709,7 +709,7 @@ heavier.`;
 });
 goto(lbl_000006c3);
 let lbl_0000069f;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -745,7 +745,7 @@ heavier and heavier.`;
 });
 goto(lbl_000006c3);
 let lbl_000006b3;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -802,5 +802,5 @@ text(() => {
 removeBG({ mode: BLACK, transition: 1 });
 stopSFX()
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_2A`);

@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setDialogBoxColor(GREEN);
 playBGM({ num: 1, volume: 100 });
 bgload({ name: `BG07B1`, transition: 20 });
@@ -1201,5 +1201,5 @@ life and seemed to be dancing about. `;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_4A`);

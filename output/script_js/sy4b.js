@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
@@ -179,7 +179,7 @@ text(() => {
    Kid`"I'm no hero and I'm sure not a knight."`;
    waitForClick; clearText; 
 });
-goto(lbl_000001d3).if(g_df == 0);
+if (l_wanted_to_be_called_prince == 0) goto(lbl_000001d3);
 fgload({ id: 1, name: `SA11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -425,7 +425,7 @@ So I don't have to prove it!"`;
    Kid`"And I thought you were strong."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000323).if(g_e3 != 0);
+if (l_chose_to_wait_there_in_2nd_day != 0) goto(lbl_00000323);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1776,5 +1776,5 @@ that You was waiting for me, I started walking.`;
    Narr`I figured it was probably...`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`SY5A`);

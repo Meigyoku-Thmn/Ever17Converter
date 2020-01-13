@@ -1,8 +1,8 @@
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 setDialogBoxColor(GREEN);
-goto(lbl_00000273).if(g_da == 0);
+if (l_da == 0) goto(lbl_00000273);
 bgload({ name: `BG07B1`, transition: 20 });
 playBGM({ num: 1, volume: 100 });
 setSceneTitle({ index: 26 });
@@ -988,7 +988,7 @@ hollow in the center.`;
    Narr`It looked like the nest of some small animal.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000719).if(g_ec == 0);
+if (l_went_outside_as_sora_suggests_in_3rd_day == 0) goto(lbl_00000719);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1751,7 +1751,7 @@ text(() => {
    Narr`Tsugumi stared me square in the face.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001018).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00001018);
 fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -2903,9 +2903,9 @@ let lbl_00001345;
 removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 delay({ interval: 120 });
-goto(lbl_00001385).if(g_da != 0);
+if (l_da != 0) goto(lbl_00001385);
 delay({ interval: 30 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_5A`);
 let lbl_00001385;
 bgload({ name: `BG06A1`, transition: 20 });
@@ -3092,7 +3092,7 @@ choice(
    `You go first`
    `Let's both say it at the same time`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000014df);
    case 1: goto(lbl_000014ff);
    case 2: goto(lbl_0000151f);
@@ -3154,7 +3154,7 @@ text(() => {
 });
 goto(lbl_00001546);
 let lbl_0000151f;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3786,5 +3786,5 @@ certain.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_5A`);

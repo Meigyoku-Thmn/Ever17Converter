@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 20 });
 chapterCutin({ name: `00000000` });
@@ -428,12 +428,12 @@ choice(
    `I'm sorry. I apologize`
    `I didn't say anything`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000306);
    case 1: goto(lbl_0000032d);
 }
 let lbl_00000306;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -565,11 +565,11 @@ was quiet.`;
 wasn't joking.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000038e).if(g_b7 > 9);
-goto(lbl_0000038e).if(g_ec == 0);
+if (l_tsugumi_point > 9) goto(lbl_0000038e);
+if (l_went_outside_as_sora_suggests_in_3rd_day == 0) goto(lbl_0000038e);
 goto(lbl_00000539);
 let lbl_0000038e;
-g_d9 = 1;
+l_d9 = 1;
 hideTextbox();
 stopBGM();
 showTextbox();
@@ -970,7 +970,7 @@ room, frozen, without movement.`;
 });
 goto(lbl_00000964);
 let lbl_00000539;
-g_da = 1;
+l_da = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1120,7 +1120,7 @@ text(() => {
    Narr`Sora smiled softly.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000630).if(g_e8 == 0);
+if (l_said_it_is_not_soras_fault == 0) goto(lbl_00000630);
 showTextbox();
 text(() => {
    marker; sound(`T4A085`); appendText; 
@@ -1437,7 +1437,7 @@ choice(
    `Yes`
    `No`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000778);
    case 1: goto(lbl_00000781);
 }
@@ -1566,7 +1566,7 @@ choice(
    `I can explain it`
    `I can't explain it`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000007e7);
    case 1: goto(lbl_00000862);
 }
@@ -2091,5 +2091,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_4B`);

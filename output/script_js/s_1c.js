@@ -1,10 +1,10 @@
-goto(lbl_000005fa).if(g_b3 == 1);
-goto(lbl_000011d2).if(g_b3 == 2);
-goto(lbl_000018ec).if(g_b3 == 3);
+if (l_choice == 1) goto(lbl_000005fa);
+if (l_choice == 2) goto(lbl_000011d2);
+if (l_choice == 3) goto(lbl_000018ec);
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 bgload({ name: `BG25A3`, transition: 20 });
 playBGM({ num: 3, volume: 100 });
 clock(`20:52`);
@@ -431,7 +431,7 @@ choice(
    `Even that would be impossible`
    `I might be able to handle that`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000004b3);
    case 1: goto(lbl_000004ea);
 }
@@ -466,7 +466,7 @@ text(() => {
 });
 goto(lbl_0000058d);
 let lbl_000004ea;
-g_e0 = 1;
+l_thought_you_can_swim_34_meters_regardless_water_pressure = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -654,24 +654,24 @@ text(() => {
    Narr`First...`;
    waitForClick; 
 });
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
-g_d3 = 1;
-g_d4 = 0;
-g_bb = 0;
-g_bc = 0;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
+l_d3 = 1;
+l_d4 = 0;
+l_bb = 0;
+l_bc = 0;
 goto(lbl_0000073a);
 let lbl_00000693;
-goto(lbl_000006c8).if(g_bb == 0);
-goto(lbl_000006c8).if(g_bc != 0);
-g_d4 = 1;
+if (l_bb == 0) goto(lbl_000006c8);
+if (l_bc != 0) goto(lbl_000006c8);
+l_d4 = 1;
 let lbl_000006c8;
-goto(lbl_00000735).if(g_d0 != 0);
-goto(lbl_00000735).if(g_d1 != 0);
-goto(lbl_00000735).if(g_d2 != 0);
-goto(lbl_00000735).if(g_d3 != 0);
-goto(lbl_00000735).if(g_d4 != 0);
+if (l_d0 != 0) goto(lbl_00000735);
+if (l_d1 != 0) goto(lbl_00000735);
+if (l_d2 != 0) goto(lbl_00000735);
+if (l_d3 != 0) goto(lbl_00000735);
+if (l_d4 != 0) goto(lbl_00000735);
 goto(lbl_00001538);
 let lbl_00000735;
 showTextbox();
@@ -682,18 +682,18 @@ text(() => {
 });
 let lbl_0000073a;
 choice(
-   `To the merry-go-round`.if(g_d0 != 0),
-   `To the Jellyfish Gondola`.if(g_d1 != 0),
-   `To the warehouse`.if(g_d2 != 0),
-   `To the Control Room`.if(g_d3 != 0),
-   `To the Security Office`.if(g_d4 != 0),
+   cond(l_d0 != 0)`To the merry-go-round`,
+   cond(l_d1 != 0)`To the Jellyfish Gondola`,
+   cond(l_d2 != 0)`To the warehouse`,
+   cond(l_d3 != 0)`To the Control Room`,
+   cond(l_d4 != 0)`To the Security Office`,
 );
 showTextbox();
 text(() => {
    marker; appendText; clearText; 
 });
 hideTextbox();
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000779);
    case 1: goto(lbl_00000b42);
    case 2: goto(lbl_00000d3b);
@@ -711,9 +711,9 @@ bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG02A1`, transition: 20 });
-g_e1 = 1;
-g_d0 = 0;
-g_bb = 1;
+l_e1 = 1;
+l_d0 = 0;
+l_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -771,7 +771,7 @@ text(() => {
    You`"Really?"`;
    waitForClick; clearText; 
 });
-goto(lbl_0000087b).if(g_e2 == 0);
+if (l_e2 == 0) goto(lbl_0000087b);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1237,8 +1237,8 @@ bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG03A1`, transition: 20 });
-g_d1 = 0;
-g_bb = 1;
+l_d1 = 0;
+l_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1301,8 +1301,8 @@ text(() => {
    Tsugumi`"So what?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000c5b).if(g_e1 != 0);
-goto(lbl_00000c5b).if(g_e2 != 0);
+if (l_e1 != 0) goto(lbl_00000c5b);
+if (l_e2 != 0) goto(lbl_00000c5b);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1448,9 +1448,9 @@ bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG25A3`, transition: 20 });
-g_e2 = 1;
-g_d2 = 0;
-g_bb = 1;
+l_e2 = 1;
+l_d2 = 0;
+l_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1519,7 +1519,7 @@ text(() => {
    Kid`"Alone?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000e8d).if(g_e1 == 0);
+if (l_e1 == 0) goto(lbl_00000e8d);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1609,8 +1609,8 @@ unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG16A1`, transition: 20 });
 playSFX({ name: `SE00_01`, a1: 0, volume: 100 });
-g_d3 = 0;
-g_bb = 1;
+l_d3 = 0;
+l_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1634,7 +1634,7 @@ accurately gauge the situation."`;
 normally be unthinkable."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001011).if(g_e1 == 0);
+if (l_e1 == 0) goto(lbl_00001011);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2011,8 +2011,8 @@ is pumped out and heat from that is used to
 operate generators."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001188).if(g_ba != 2);
-g_b3 = 0;
+if (l_coco_point != 2) goto(lbl_00001188);
+l_choice = 0;
 jump(`SC1C`);
 let lbl_00001188;
 showTextbox();
@@ -2077,8 +2077,8 @@ removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG11A1`, transition: 20 });
 playSFX({ name: `SE00_01`, a1: 1, volume: 100 });
 waitForSFX();
-g_d4 = 0;
-g_bc = 1;
+l_d4 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2547,8 +2547,8 @@ and hopped in.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG10A2`, transition: 20 });
-goto(lbl_000015dc).if(g_f1 == 0);
-g_b3 = 0;
+if (l_is_coco_route == 0) goto(lbl_000015dc);
+l_choice = 0;
 jump(`SC1D`);
 let lbl_000015dc;
 showTextbox();
@@ -3346,7 +3346,7 @@ text(() => {
 have gone.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001d1b).if(g_f0 != 0);
+if (l_know_sora_is_an_ai != 0) goto(lbl_00001d1b);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3386,5 +3386,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 90 });
-g_b3 = 0;
+l_choice = 0;
 jump(`S_2A`);

@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG21B1`, transition: 20 });
@@ -103,7 +103,7 @@ not...)`;
    Narr`What would I say to her if I met her?`;
    waitForClick; clearText; 
 });
-goto(lbl_0000018a).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000018a);
 removeBG({ mode: WHITE, transition: 2 });
 showFilter2();
 unSkippableDelay(1);
@@ -219,7 +219,7 @@ text(() => {
 her.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000268).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00000268);
 bgload({ name: `IT05A`, transition: 20 });
 goto(lbl_0000027a);
 let lbl_00000268;
@@ -484,7 +484,7 @@ little?"`;
    waitForClick; clearText; 
 });
 hideTextbox();
-goto(lbl_00000438).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00000438);
 bgload({ name: `IT05A`, transition: 20 });
 goto(lbl_0000044c);
 let lbl_00000438;
@@ -518,7 +518,7 @@ unusual animal figures beside the human form.`;
    Kid`"........."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000048c).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000048c);
 showTextbox();
 text(() => {
    marker; sound(`T5B034`); appendText; 
@@ -718,7 +718,7 @@ the Kid steadied each other.`;
 carving shapes.`;
    waitForClick; clearText; 
 });
-goto(lbl_000005b5).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000005b5);
 bgload({ name: `IT05A`, transition: 20 });
 showTextbox();
 text(() => {
@@ -739,7 +739,7 @@ silently, pointing at the ceiling.`;
 });
 let lbl_000005c8;
 hideTextbox();
-goto(lbl_000005f9).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000005f9);
 monoColorOverlay({ interval: 6, color: BLACK });
 bgload({ name: `IT05B`, transition: 20 });
 goto(lbl_00000615);
@@ -774,7 +774,7 @@ delay({ interval: 60 });
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `IMG01B`, transition: 20 });
 clock(`12:36`);
-goto(lbl_0000068d).if(g_da != 0);
+if (l_da != 0) goto(lbl_0000068d);
 setSceneTitle({ index: 32 });
 goto(lbl_0000069b);
 let lbl_0000068d;
@@ -832,13 +832,13 @@ choice(
    `The Infirmary?`
    `The Security Office?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000006dd);
    case 1: goto(lbl_000007d0);
    case 2: goto(lbl_00000933);
 }
 let lbl_000006dd;
-g_b8 += 1;
+l_sora_point += 1;
 bgload({ name: `BG15B1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -924,12 +924,12 @@ choice(
    `The Infirmary`
    `The Security Office`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000007d0);
    case 1: goto(lbl_00000933);
 }
 let lbl_000007d0;
-g_b7 += 1;
+l_tsugumi_point += 1;
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG08A1`, transition: 20 });
 showTextbox();
@@ -1034,7 +1034,7 @@ at all.`;
    Narr`...She was still supposed to be recuperating...`;
    waitForClick; clearText; 
 });
-goto(lbl_00000917).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00000917);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1410,7 +1410,7 @@ accessible."`;
    You`"Well, not exactly, really."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000c34).if(g_da == 0);
+if (l_da == 0) goto(lbl_00000c34);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1780,7 +1780,7 @@ Security Office.`;
    waitForClick; clearText; 
 });
 stopSFX()
-goto(lbl_00000d5b).if(g_da == 0);
+if (l_da == 0) goto(lbl_00000d5b);
 hideTextbox();
 stopBGM();
 bgload({ name: `BG25A1`, transition: 20 });
@@ -1823,5 +1823,5 @@ let lbl_00000d5b;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_5C`);

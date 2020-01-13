@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 setDialogBoxColor(GREEN);
 removeBG({ mode: WHITE, transition: 2 });
 playSFX({ name: `SE00_10`, a1: 0, volume: 100 });
@@ -982,5 +982,5 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-g_b3 = 0;
+l_choice = 0;
 jump(`T_1B`);

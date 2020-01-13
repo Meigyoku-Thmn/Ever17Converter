@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setDialogBoxColor(GREEN);
 playBGM({ num: 2, volume: 100 });
 bgload({ name: `IMG01A`, transition: 20 });
@@ -546,12 +546,12 @@ choice(
    `Don't go`
    `Go`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000434);
    case 1: goto(lbl_0000061e);
 }
 let lbl_00000434;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -867,8 +867,8 @@ exaggeratedly.`;
 });
 goto(lbl_00000e81);
 let lbl_0000061e;
-g_b8 += 1;
-g_ec = 1;
+l_sora_point += 1;
+l_went_outside_as_sora_suggests_in_3rd_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1402,7 +1402,7 @@ choice(
    `Yes`
    `No`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000a13);
    case 1: goto(lbl_00000a1c);
 }
@@ -1614,12 +1614,12 @@ choice(
    `Hear more`
    `Struggle`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000aa4);
    case 1: goto(lbl_00000ab8);
 }
 let lbl_00000aa4;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1793,7 +1793,7 @@ either."`;
    waitForClick; clearText; 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SO09ADM`, name2: `SO09ADM`, x1: 128, x2: 512, useAnim: true });
-goto(lbl_00000c05).if(g_b3 == 0);
+if (l_choice == 0) goto(lbl_00000c05);
 showTextbox();
 text(() => {
    marker; sound(`T3B176`); appendText; 
@@ -1812,7 +1812,7 @@ choice(
    `I don't know`
    `I do know`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000c2d);
    case 1: goto(lbl_00000cf0);
 }
@@ -2302,5 +2302,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_3C`);

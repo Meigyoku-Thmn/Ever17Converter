@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 setDialogBoxColor(GREEN);
 playBGM({ num: 2, volume: 100 });
 bgload({ name: `BG17A1`, transition: 0 });
@@ -325,7 +325,7 @@ text(() => {
 die. `;
    waitForClick; clearText; 
 });
-goto(lbl_000003b4).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000003b4);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -764,14 +764,14 @@ choice(
    `I was meeting Sora`
    `I went to the bathroom`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000691);
    case 1: goto(lbl_0000070a);
    case 2: goto(lbl_00000761);
 }
 let lbl_00000691;
-g_b7 += 1;
-g_ed = 1;
+l_tsugumi_point += 1;
+l_confessed_the_truth_in_4th_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -829,7 +829,7 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 goto(lbl_00000835);
 let lbl_0000070a;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -970,7 +970,7 @@ all sorts of things.`;
    Narr`And Sora...`;
    waitForClick; clearText; 
 });
-goto(lbl_00000858).if(g_da == 0);
+if (l_da == 0) goto(lbl_00000858);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1345,13 +1345,13 @@ choice(
    `Watch silently`
    `Voice disagreement`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000bbf);
    case 1: goto(lbl_00000bfb);
    case 2: goto(lbl_00000c0f);
 }
 let lbl_00000bbf;
-g_b8 += 1;
+l_sora_point += 1;
 playSFX({ name: `SE10_01`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
@@ -1379,7 +1379,7 @@ looking demure.`;
 });
 goto(lbl_00000c59);
 let lbl_00000bfb;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1556,7 +1556,7 @@ second floor.`;
 everyone agreed and headed upstairs.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000dad).if(g_ed == 0);
+if (l_confessed_the_truth_in_4th_day == 0) goto(lbl_00000dad);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2366,7 +2366,7 @@ text(() => {
 using EI, so if you just wait a little..."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000135f).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000135f);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2446,7 +2446,7 @@ leave the sector...)`;
    waitForClick; clearText; 
 });
 removeBG({ mode: WHITE, transition: 2 });
-goto(lbl_0000141e).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000141e);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2656,7 +2656,7 @@ text(() => {
    Narr`I pretended to be calm.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000156f).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000156f);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2897,7 +2897,7 @@ text(() => {
    Narr`She was trying to make a wall of words.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001750).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00001750);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2962,7 +2962,7 @@ reason for you to be here."`;
    Tsugumi`"So don't treat me like one of your gang."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001792).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00001792);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3044,7 +3044,7 @@ me sick."`;
    Takeshi`"......"`;
    waitForClick; clearText; 
 });
-goto(lbl_000017e4).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000017e4);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3092,7 +3092,7 @@ text(() => {
    Takeshi`"......"`;
    waitForClick; clearText; 
 });
-goto(lbl_0000184c).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000184c);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3437,10 +3437,10 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-goto(lbl_00001abc).if(g_da != 0);
+if (l_da != 0) goto(lbl_00001abc);
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_4C`);
 let lbl_00001abc;
 bgload({ name: `BG25B3`, transition: 20 });
@@ -4093,5 +4093,5 @@ talking like her original self...`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_4C`);

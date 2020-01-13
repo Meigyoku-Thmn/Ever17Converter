@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG07B1`, transition: 20 });
@@ -45,7 +45,7 @@ the sparkling rainbow.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_000000f6).if(g_da == 0);
+if (l_da == 0) goto(lbl_000000f6);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -318,7 +318,7 @@ walking slowly away.`;
    Narr`She was smiling so gently...`;
    waitForClick; clearText; 
 });
-goto(lbl_000002d6).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000002d6);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1035,12 +1035,12 @@ choice(
    `Hit the kid`
    `Don't hit him`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000086f);
    case 1: goto(lbl_000008dd);
 }
 let lbl_0000086f;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1100,7 +1100,7 @@ away slowly.`;
 removeFG({ id: 1, useAnim: true });
 goto(lbl_0000093c);
 let lbl_000008dd;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1158,8 +1158,8 @@ away slowly.`;
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
 let lbl_0000093c;
-goto(lbl_00000963).if(g_da == 0);
-g_b3 = 0;
+if (l_da == 0) goto(lbl_00000963);
+l_choice = 0;
 jump(`T_5D`);
 let lbl_00000963;
 showTextbox();
@@ -3339,5 +3339,5 @@ arms around my knees and we all went to sleep.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_6A`);

@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 94 });
-g_b0 = 0;
-g_b1 = 0;
-g_b2 = 0;
+l_b0 = 0;
+l_dayA = 0;
+l_dayB = 0;
 bgload({ name: `BG37A1`, transition: 10 });
 showTextbox();
 text(() => {
@@ -46,7 +46,7 @@ text(() => {
 });
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
-g_bf = 0;
+l_accumulator = 0;
 showDimOverlay();
 bgload({ name: `IMG04A`, transition: 26 });
 eff_41 = 38;
@@ -106,9 +106,9 @@ monoColorOverlay({ interval: 18, color: BLACK });
 delay({ interval: 120 });
 closeDimInAndOutAndFilterAnim();
 setSceneTitle({ index: 95 });
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 bgload({ name: `BG09A2`, transition: 26 });
 setMonoColorOverlayFadeOutDuration(18);
 fadeOutMonoColorOverlay();
@@ -563,7 +563,7 @@ choice(
    `Uh, I don't think so...`
    `I suppose...`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000444);
    case 1: goto(lbl_000004d6);
 }
@@ -3725,5 +3725,5 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 120 });
 stopBGM();
-g_b3 = 0;
+l_choice = 0;
 jump(`SS6A`);

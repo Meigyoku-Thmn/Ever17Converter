@@ -8,11 +8,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 hideTextbox();
 NVL_Mode();
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setSceneTitle({ index: 108 });
-goto(lbl_000000d7).if(g_ef == 1);
+if (l_went_with_sara_in_3rd_day == 1) goto(lbl_000000d7);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -713,7 +713,7 @@ choice(
    `I know about it`
    `I don't know about it`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000344);
    case 1: goto(lbl_0000034d);
 }
@@ -2856,5 +2856,5 @@ boy! But the rain can't get me!"`;
 day!"`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`YC4A`);

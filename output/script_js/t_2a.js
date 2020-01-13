@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 9 });
 chapterCutin({ name: `00000000` });
@@ -487,12 +487,12 @@ choice(
    `Talk to her`
    `Wait and see what she says`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000003f6);
    case 1: goto(lbl_00000457);
 }
 let lbl_000003f6;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1168,12 +1168,12 @@ choice(
    `Look for Tsugumi`
    `Go see Sora in the Control Room`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000008bc);
    case 1: goto(lbl_00000bfc);
 }
 let lbl_000008bc;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1597,8 +1597,8 @@ opening the door near the bottom of it..."`;
 });
 goto(lbl_00000e48);
 let lbl_00000bfc;
-g_b8 += 2;
-g_e9 = 1;
+l_sora_point += 2;
+l_decide_go_to_sora_in_2nd_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1937,7 +1937,7 @@ text(() => {
    Takeshi`"Oh, thanks."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000eb4).if(g_e9 == 0);
+if (l_decide_go_to_sora_in_2nd_day == 0) goto(lbl_00000eb4);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2612,12 +2612,12 @@ choice(
    `Help Tsugumi`
    `Look for Sora first`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000013c3);
    case 1: goto(lbl_00001431);
 }
 let lbl_000013c3;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2669,7 +2669,7 @@ kind of salute.`;
 });
 goto(lbl_000015a5);
 let lbl_00001431;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2848,5 +2848,5 @@ let lbl_000015a5;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_2B`);

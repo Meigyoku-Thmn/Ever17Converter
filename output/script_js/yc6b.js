@@ -2145,5 +2145,5 @@ any of this.)`;
    Narr`A new day was just waiting to begin...`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`YC7A`);

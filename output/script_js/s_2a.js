@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 56 });
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 bgload({ name: `BG10A2`, transition: 10 });
 playBGM({ num: 2, volume: 97 });
 clock(`1:39`);
@@ -82,15 +82,15 @@ text(() => {
 she said this.`;
    waitForClick; clearText; 
 });
-g_b3 = 51;
+l_choice = 51;
 random(7);
-jump(lbl_000001d6).ifRandomIs(0);
-jump(lbl_000001df).ifRandomIs(1);
-jump(lbl_000001e8).ifRandomIs(2);
-jump(lbl_000001f1).ifRandomIs(3);
-jump(lbl_000001fa).ifRandomIs(4);
-jump(lbl_00000203).ifRandomIs(5);
-jump(lbl_0000020c).ifRandomIs(6);
+ifRandomIs(0).jump(lbl_000001d6);
+ifRandomIs(1).jump(lbl_000001df);
+ifRandomIs(2).jump(lbl_000001e8);
+ifRandomIs(3).jump(lbl_000001f1);
+ifRandomIs(4).jump(lbl_000001fa);
+ifRandomIs(5).jump(lbl_00000203);
+ifRandomIs(6).jump(lbl_0000020c);
 let lbl_000001d6;
 showTextbox();
 text(() => {
@@ -203,11 +203,11 @@ text(() => {
    You`"Stop that...there's no way."`;
    waitForClick; clearText; 
 });
-g_b3 = 51;
+l_choice = 51;
 random(3);
-jump(lbl_0000029d).ifRandomIs(0);
-jump(lbl_000002a6).ifRandomIs(1);
-jump(lbl_000002af).ifRandomIs(2);
+ifRandomIs(0).jump(lbl_0000029d);
+ifRandomIs(1).jump(lbl_000002a6);
+ifRandomIs(2).jump(lbl_000002af);
 let lbl_0000029d;
 showTextbox();
 text(() => {
@@ -241,15 +241,15 @@ text(() => {
 about me!"`;
    waitForClick; clearText; 
 });
-g_b3 = 51;
+l_choice = 51;
 random(7);
-jump(lbl_00000315).ifRandomIs(0);
-jump(lbl_0000031e).ifRandomIs(1);
-jump(lbl_00000327).ifRandomIs(2);
-jump(lbl_00000330).ifRandomIs(3);
-jump(lbl_00000339).ifRandomIs(4);
-jump(lbl_00000342).ifRandomIs(5);
-jump(lbl_0000034b).ifRandomIs(6);
+ifRandomIs(0).jump(lbl_00000315);
+ifRandomIs(1).jump(lbl_0000031e);
+ifRandomIs(2).jump(lbl_00000327);
+ifRandomIs(3).jump(lbl_00000330);
+ifRandomIs(4).jump(lbl_00000339);
+ifRandomIs(5).jump(lbl_00000342);
+ifRandomIs(6).jump(lbl_0000034b);
 let lbl_00000315;
 showTextbox();
 text(() => {
@@ -1033,7 +1033,7 @@ playSFX({ name: `SE03_01`, a1: 0, volume: 100 });
 setNumberOfFlash(1);
 setFlashRGBColor(255, 255, 255);
 triggerFlash();
-g_bf = 0;
+l_accumulator = 0;
 tweenZoom({ x: 440, y: 170, hx: 400, hy: 300, duration: 40 });
 delay({ interval: 30 });
 playSFX({ name: `SE03_01`, a1: 0, volume: 100 });
@@ -1298,7 +1298,7 @@ Room trying to make contact with LeMMIH.`;
 was going.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000d7f).if(g_f0 != 0);
+if (l_know_sora_is_an_ai != 0) goto(lbl_00000d7f);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1502,7 +1502,7 @@ choice(
    `You`
    `A spoiled baby`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000f2a);
    case 1: goto(lbl_00000f8f);
    case 2: goto(lbl_00001022);
@@ -1901,7 +1901,7 @@ text(() => {
    You`"What about everybody else?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00001303).if(g_f0 != 0);
+if (l_know_sora_is_an_ai != 0) goto(lbl_00001303);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1928,8 +1928,8 @@ text(() => {
    Narr`Sara and I shook our heads in the darkness.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001346).if(g_f1 == 0);
-g_b3 = 0;
+if (l_is_coco_route == 0) goto(lbl_00001346);
+l_choice = 0;
 jump(`SC2A`);
 let lbl_00001346;
 showTextbox();
@@ -2625,5 +2625,5 @@ spinning like a top.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-g_b3 = 0;
+l_choice = 0;
 jump(`S_2B`);

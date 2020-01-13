@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 43 });
 playBGM({ num: 7, volume: 100 });
@@ -3686,7 +3686,7 @@ text(() => {
 lever on the side of the door.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001a3c).if(g_ec == 0);
+if (l_went_outside_as_sora_suggests_in_3rd_day == 0) goto(lbl_00001a3c);
 bgload({ name: `EV_SO07B`, transition: 20 });
 showTextbox();
 text(() => {
@@ -4159,5 +4159,5 @@ me in her tight embrace.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`TT7A`);

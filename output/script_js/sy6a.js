@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
 delay({ interval: 60 });
@@ -2669,5 +2669,5 @@ text(() => {
    Narr`This time she didn't come back.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`SY6B`);

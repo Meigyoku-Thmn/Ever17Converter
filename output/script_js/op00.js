@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 delay({ interval: 120 });
 removeBG({ mode: WHITE, transition: 2 });
 setSceneTitle({ index: 0 });
@@ -156,7 +156,7 @@ biting the animal from behind.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_ce = 0;
+l_ce = 0;
 tweenZoom({ x: 0, y: 0, hx: 680, hy: 510, duration: 60 });
 bgloadCrop({ name: `EV_CO16A`, transition: 20, x: 0, y: 0, hx: 680, hy: 510 });
 showTextbox();
@@ -174,7 +174,7 @@ something strange about her as well.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_ce = 0;
+l_ce = 0;
 tweenZoom({ x: 0, y: 0, hx: 800, hy: 600, duration: 60 });
 bgload({ name: `EV_CO16A`, transition: 26 });
 showTextbox();
@@ -613,7 +613,7 @@ instructions, he stepped into the building.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_ce = 0;
+l_ce = 0;
 tweenZoom({ x: 332, y: 185, hx: 200, hy: 150, duration: 45 });
 monoColorOverlay({ interval: 18, color: WHITE });
 removeBG({ mode: WHITE, transition: 62 });
@@ -1040,12 +1040,12 @@ choice(
    `Listen to the joke`
    `Listen to the staffer's explanation`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000765);
    case 1: goto(lbl_000007a5);
 }
 let lbl_00000765;
-g_dd = 1;
+l_listened_to_the_joke = 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP120`); appendText; 
@@ -1113,7 +1113,7 @@ text(() => {
 });
 goto(lbl_000007cc);
 let lbl_000007a5;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP138`); appendText; 
@@ -1252,7 +1252,7 @@ text(() => {
    Coco`"Huh? My voice?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000848).if(g_dd == 0);
+if (l_listened_to_the_joke == 0) goto(lbl_00000848);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2315,12 +2315,12 @@ choice(
    `It was the tanuki...`
    `No, forget it.`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000f54);
    case 1: goto(lbl_00001099);
 }
 let lbl_00000f54;
-g_de = 1;
+l_blamed_the_tanuki = 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP273`); appendText; 
@@ -2906,7 +2906,7 @@ text(() => {
    Narr`(It's that tanuki...)`;
    waitForClick; clearText; 
 });
-goto(lbl_00001331).if(g_de == 0);
+if (l_blamed_the_tanuki == 0) goto(lbl_00001331);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3359,13 +3359,13 @@ choice(
    `Just exactly who are YOU?`
    `Stay silent`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000016cf);
    case 1: goto(lbl_000016f6);
    case 2: goto(lbl_0000171d);
 }
 let lbl_000016cf;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP356`); appendText; 
@@ -3398,7 +3398,7 @@ text(() => {
 });
 goto(lbl_00001739);
 let lbl_000016f6;
-g_b7 += 2;
+l_tsugumi_point += 2;
 showTextbox();
 text(() => {
    marker; sound(`EOP363`); appendText; 
@@ -3812,7 +3812,7 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE01_04`, a1: 0, volume: 100 });
-g_ce = 0;
+l_ce = 0;
 tweenZoom({ x: 300, y: 250, hx: 200, hy: 150, duration: 60 });
 monoColorOverlay({ interval: 12, color: WHITE });
 removeBG({ mode: WHITE, transition: 62 });
@@ -4080,7 +4080,7 @@ choice(
    `I've got to find my friends`
    `Who am I`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00001e41);
    case 1: goto(lbl_00001e7e);
 }
@@ -4102,7 +4102,7 @@ closeKomoreAnim();
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 0;
+l_choice = 0;
 jump(`T_1A`);
 let lbl_00001e7e;
 setDialogBoxColor(BLUE);
@@ -4122,5 +4122,5 @@ closeKomoreAnim();
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 0;
+l_choice = 0;
 jump(`S_1A`);

@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
 removeBG({ mode: BLACK, transition: 62 });
@@ -4022,5 +4022,5 @@ pop up randomly.`;
    Narr`In the Cosmic Whale Room....`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`YC6A`);

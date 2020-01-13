@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 setDialogBoxColor(GREEN);
 playBGM({ num: 24, volume: 100 });
 eff_41 = 6;
@@ -8,7 +8,7 @@ eff_42 = 68;
 eff_50 = 0;
 showDimInAndOutAnim();
 bgload({ name: `IMG06A`, transition: 10 });
-goto(lbl_000000d3).if(g_da != 0);
+if (l_da != 0) goto(lbl_000000d3);
 setSceneTitle({ index: 29 });
 goto(lbl_000000e1);
 let lbl_000000d3;
@@ -452,12 +452,12 @@ choice(
    `Push the button`
    `Don't push the button`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000002f5);
    case 1: goto(lbl_0000031f);
 }
 let lbl_000002f5;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -618,7 +618,7 @@ choice(
    `I don't know`
    `I know`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000413);
    case 1: goto(lbl_00000433);
 }
@@ -919,7 +919,7 @@ gondola skirted its way along.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG36A1`, transition: 20 });
-goto(lbl_0000064a).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_0000064a);
 showTextbox();
 text(() => {
    marker; sound(`T5A040`); appendText; 
@@ -1366,7 +1366,7 @@ hideTextbox();
 AVL_Mode();
 removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
-goto(lbl_000007a8).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000007a8);
 bgload({ name: `EV_TU08A`, transition: 10 });
 showTextbox();
 text(() => {
@@ -2182,5 +2182,5 @@ the meal.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_5B`);

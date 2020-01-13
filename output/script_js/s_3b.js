@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setSceneTitle({ index: 68 });
 bgload({ name: `BG25B3`, transition: 26 });
 setMonoColorOverlayFadeOutDuration(31);
@@ -725,7 +725,7 @@ relative or something?"`;
 tense."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000054d).if(g_e3 != 0);
+if (l_chose_to_wait_there_in_2nd_day != 0) goto(lbl_0000054d);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -782,7 +782,7 @@ research?"`;
 to the ruins of the Lemurian continent."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000571).if(g_e3 == 0);
+if (l_chose_to_wait_there_in_2nd_day == 0) goto(lbl_00000571);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -860,7 +860,7 @@ researching something else."`;
    Kid`"Something else?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000590).if(g_e3 != 0);
+if (l_chose_to_wait_there_in_2nd_day != 0) goto(lbl_00000590);
 showTextbox();
 text(() => {
    marker; sound(`S3A365`); appendText; 
@@ -908,7 +908,7 @@ text(() => {
    Narr`Tap, tap, tap...`;
    waitForClick; clearText; 
 });
-goto(lbl_000005c9).if(g_e3 != 0);
+if (l_chose_to_wait_there_in_2nd_day != 0) goto(lbl_000005c9);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -973,7 +973,7 @@ instant and she popped her neck loudly.`;
 coffee.`;
    waitForClick; clearText; 
 });
-goto(lbl_000007a9).if(g_e3 == 0);
+if (l_chose_to_wait_there_in_2nd_day == 0) goto(lbl_000007a9);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1960,19 +1960,19 @@ passage that would help restore my memory.`;
    Narr`..........`;
    waitForClick; 
 });
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
-g_d3 = 1;
-g_d4 = 1;
-g_d5 = 1;
-g_bb = 0;
-g_bc = 0;
-g_bd = 0;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
+l_d3 = 1;
+l_d4 = 1;
+l_d5 = 1;
+l_bb = 0;
+l_bc = 0;
+l_bd = 0;
 goto(lbl_00000c3b);
 let lbl_00000bfe;
-goto(lbl_00000c36).if(g_bc != 0);
-goto(lbl_00000c36).if(g_bd != 0);
+if (l_bc != 0) goto(lbl_00000c36);
+if (l_bd != 0) goto(lbl_00000c36);
 bgload({ name: `IT03A`, transition: 20 });
 let lbl_00000c36;
 showTextbox();
@@ -1986,7 +1986,7 @@ choice(
    `I got it`
    `I don't get it`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000c5e);
    case 1: goto(lbl_00000e28);
 }
@@ -2000,14 +2000,14 @@ text(() => {
    waitForClick; 
 });
 choice(
-   `What if I turn it over...`.if(g_d0 != 0),
-   `What if I turn it upside down...`.if(g_d1 != 0),
-   `What if I heat it with a flame...`.if(g_d2 != 0),
-   `What if I rip it in two...`.if(g_d3 != 0),
-   `What if I tilt it...`.if(g_d4 != 0),
-   `What if I wad it up...`.if(g_d5 != 0),
+   cond(l_d0 != 0)`What if I turn it over...`,
+   cond(l_d1 != 0)`What if I turn it upside down...`,
+   cond(l_d2 != 0)`What if I heat it with a flame...`,
+   cond(l_d3 != 0)`What if I rip it in two...`,
+   cond(l_d4 != 0)`What if I tilt it...`,
+   cond(l_d5 != 0)`What if I wad it up...`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000ca2);
    case 1: goto(lbl_00000cd4);
    case 2: goto(lbl_00000d06);
@@ -2016,8 +2016,8 @@ switch (choice) {
    case 5: goto(lbl_00000df6);
 }
 let lbl_00000ca2;
-g_bb += 1;
-g_d0 = 0;
+l_bb += 1;
+l_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2051,8 +2051,8 @@ way."`;
 });
 goto(lbl_00000fb4);
 let lbl_00000cd4;
-g_bb += 1;
-g_d1 = 0;
+l_bb += 1;
+l_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2085,9 +2085,9 @@ way."`;
 });
 goto(lbl_00000fb4);
 let lbl_00000d06;
-g_bb += 1;
-g_d2 = 0;
-g_bc = 1;
+l_bb += 1;
+l_d2 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2136,8 +2136,8 @@ that way.`;
 });
 goto(lbl_00000fb4);
 let lbl_00000d30;
-g_bb += 1;
-g_d3 = 0;
+l_bb += 1;
+l_d3 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2182,7 +2182,7 @@ choice(
    `Tilt it a little vertically`
    `Tilt it almost completely vertical`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000d98);
    case 1: goto(lbl_00000daa);
    case 2: goto(lbl_00000dbc);
@@ -2202,7 +2202,7 @@ bgload({ name: `IT03F`, transition: 20 });
 stopBGM();
 goto(lbl_00000e84);
 let lbl_00000de2;
-g_bb += 1;
+l_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2225,8 +2225,8 @@ way."`;
 });
 goto(lbl_00000fb4);
 let lbl_00000df6;
-g_bb += 1;
-g_d5 = 0;
+l_bb += 1;
+l_d5 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2259,8 +2259,8 @@ way."`;
 });
 goto(lbl_00000fb4);
 let lbl_00000e28;
-g_bb += 1;
-g_bd = 1;
+l_bb += 1;
+l_bd = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2271,14 +2271,14 @@ text(() => {
    You`"So? Did you figure it out?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000fb4).if(g_bb >= 3);
+if (l_bb >= 3) goto(lbl_00000fb4);
 showTextbox();
 text(() => {
    marker; appendText; 
    Kid`"No...not yet."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000e7b).if(g_bb == 2);
+if (l_bb == 2) goto(lbl_00000e7b);
 showTextbox();
 text(() => {
    marker; sound(`S3A454`); appendText; 
@@ -2343,16 +2343,16 @@ two-dimensionally...?)`;
 let lbl_00000e80;
 goto(lbl_00000bfe);
 let lbl_00000e84;
-g_e5 = 1;
-goto(lbl_00000ed7).if(g_bb >= 2);
-goto(lbl_00000ec8).if(g_bb == 1);
-g_b6 += 3;
+l_e5 = 1;
+if (l_bb >= 2) goto(lbl_00000ed7);
+if (l_bb == 1) goto(lbl_00000ec8);
+l_you_point += 3;
 goto(lbl_00000ee2);
 let lbl_00000ec8;
-g_b6 += 2;
+l_you_point += 2;
 goto(lbl_00000ee2);
 let lbl_00000ed7;
-g_b6 += 1;
+l_you_point += 1;
 let lbl_00000ee2;
 delay({ interval: 60 });
 showTextbox();
@@ -2513,7 +2513,7 @@ information.`;
 });
 goto(lbl_000010cd);
 let lbl_00000fb4;
-goto(lbl_00000bfe).if(g_bb < 3);
+if (l_bb < 3) goto(lbl_00000bfe);
 bgload({ name: `BG11A1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -2756,7 +2756,7 @@ I guess."`;
    Narr`You shrugged exaggeratedly.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001232).if(g_e5 == 0);
+if (l_e5 == 0) goto(lbl_00001232);
 showTextbox();
 text(() => {
    marker; sound(`S3A500`); appendText; 
@@ -2832,5 +2832,5 @@ with no problems.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_b3 = 0;
+l_choice = 0;
 jump(`S_3D`);

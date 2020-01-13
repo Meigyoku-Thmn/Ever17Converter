@@ -1,8 +1,8 @@
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 setDialogBoxColor(GREEN);
-goto(lbl_00000091).if(g_da != 0);
+if (l_da != 0) goto(lbl_00000091);
 setSceneTitle({ index: 37 });
 goto(lbl_0000009d);
 let lbl_00000091;
@@ -330,7 +330,7 @@ LeMU's system...it should last for about two
 hours."`;
    waitForClick; clearText; 
 });
-goto(lbl_000002bc).if(g_da == 0);
+if (l_da == 0) goto(lbl_000002bc);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -496,7 +496,7 @@ its way."`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_000003ce).if(g_da == 0);
+if (l_da == 0) goto(lbl_000003ce);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1163,7 +1163,7 @@ text(() => {
    Coco`"Hey, is that you? Tsugumi?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000a30).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00000a30);
 fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -1527,7 +1527,7 @@ nothing.`;
 hideTextbox();
 stopBGM();
 delay({ interval: 60 });
-goto(lbl_00000d5e).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_00000d5e);
 playBGM({ num: 7, volume: 100 });
 showTextbox();
 text(() => {
@@ -2167,7 +2167,7 @@ the referee.`;
    Narr`...as You spoke.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001090).if(g_da == 0);
+if (l_da == 0) goto(lbl_00001090);
 showTextbox();
 text(() => {
    marker; sound(`T6A180`); appendText; 
@@ -3123,5 +3123,5 @@ text(() => {
 and rushed Coco to the infirmary.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_6B`);

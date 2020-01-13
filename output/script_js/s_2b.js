@@ -1,8 +1,8 @@
-goto(lbl_0000104c).if(g_b3 == 1);
+if (l_choice == 1) goto(lbl_0000104c);
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 setSceneTitle({ index: 59 });
 removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
@@ -180,7 +180,7 @@ choice(
    `I got it`
    `I don't understand`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000027d);
    case 1: goto(lbl_000002af);
 }
@@ -957,8 +957,8 @@ text(() => {
    Sara`"........."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000a43).if(g_ba != 4);
-g_b3 = 0;
+if (l_coco_point != 4) goto(lbl_00000a43);
+l_choice = 0;
 jump(`SC2B`);
 let lbl_00000a43;
 fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
@@ -974,7 +974,7 @@ choice(
    `I'll help You`
    `I'll wait here`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000a7d);
    case 1: goto(lbl_00000ce2);
 }
@@ -1251,7 +1251,7 @@ inside my mind.`;
 });
 goto(lbl_00000f95);
 let lbl_00000ce2;
-g_e3 = 1;
+l_chose_to_wait_there_in_2nd_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1703,7 +1703,7 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-goto(lbl_00001116).if(g_e3 == 0);
+if (l_chose_to_wait_there_in_2nd_day == 0) goto(lbl_00001116);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1925,7 +1925,7 @@ choice(
    `Keep arguing`
    `Give up`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000011d6);
    case 1: goto(lbl_000011df);
 }
@@ -3289,7 +3289,7 @@ window flickered to life.`;
    Sora`"Takeshi, You, Sara, Kid."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001aa0).if(g_f0 != 0);
+if (l_know_sora_is_an_ai != 0) goto(lbl_00001aa0);
 multifgload2({ id1: 1, id2: 2, name1: `YU02ADM`, name2: `KB04ADM`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
@@ -3537,9 +3537,9 @@ hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
 delay({ interval: 120 });
-goto(lbl_00001d35).if(g_f0 != 0);
-g_b3 = 0;
+if (l_know_sora_is_an_ai != 0) goto(lbl_00001d35);
+l_choice = 0;
 jump(`S_2C`);
 let lbl_00001d35;
-g_b3 = 0;
+l_choice = 0;
 jump(`SC2C`);

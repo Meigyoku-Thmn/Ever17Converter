@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 setSceneTitle({ index: 64 });
 delay({ interval: 120 });
 bgload({ name: `BG17A1`, transition: 10 });
@@ -980,7 +980,7 @@ choice(
    `I see.`
    `I don't get it.`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000b7f);
    case 1: goto(lbl_00000b88);
 }
@@ -1783,14 +1783,14 @@ choice(
    `Go with You`
    `Go with Sara and Sora`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000013ec);
    case 1: goto(lbl_00001676);
 }
 let lbl_000013ec;
 bgload({ name: `BG26B4L`, transition: 20 });
-g_b6 += 1;
-g_e4 = 1;
+l_you_point += 1;
+l_went_with_you_in_2nd_day = 1;
 playSFX({ name: `SE01_01`, a1: 0, volume: 100 });
 fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
@@ -2112,7 +2112,7 @@ too.`;
 goto(lbl_00001a59);
 let lbl_00001676;
 bgload({ name: `BG26B4R`, transition: 20 });
-g_b9 += 1;
+l_sara_point += 1;
 playSFX({ name: `SE01_01`, a1: 0, volume: 100 });
 multifgload2({ id1: 1, id2: 2, name1: `SA05ADM`, name2: `SO07ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
@@ -2799,34 +2799,34 @@ text(() => {
    Narr`I decided to head off to check some rooms.`;
    waitForClick; 
 });
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
-g_d3 = 1;
-g_d4 = 1;
-g_d5 = 0;
-g_bb = 0;
-g_bc = 0;
-g_bd = 0;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
+l_d3 = 1;
+l_d4 = 1;
+l_d5 = 0;
+l_bb = 0;
+l_bc = 0;
+l_bd = 0;
 goto(lbl_00001f63);
 let lbl_00001e3a;
-goto(lbl_00002482).if(g_bb == 3);
-goto(lbl_00001e84).if(g_bc == 0);
-goto(lbl_00001e84).if(g_bd != 0);
-g_d5 = 1;
+if (l_bb == 3) goto(lbl_00002482);
+if (l_bc == 0) goto(lbl_00001e84);
+if (l_bd != 0) goto(lbl_00001e84);
+l_d5 = 1;
 let lbl_00001e84;
-g_bf = 0;
-g_bf += v_d0;
-g_bf += v_d1;
-g_bf += v_d2;
-g_bf += v_d3;
-g_bf += v_d4;
-g_bf += v_d5;
-goto(lbl_00002482).if(g_bf == 0);
-goto(lbl_00001f55).if(g_bf == 1);
-goto(lbl_00001f5e).if(g_b3 == 0);
-goto(lbl_00001f5e).if(g_b3 == 1);
-goto(lbl_00001f5e).if(g_b3 == 3);
+l_accumulator = 0;
+l_accumulator += l_d0;
+l_accumulator += l_d1;
+l_accumulator += l_d2;
+l_accumulator += l_d3;
+l_accumulator += l_d4;
+l_accumulator += l_d5;
+if (l_accumulator == 0) goto(lbl_00002482);
+if (l_accumulator == 1) goto(lbl_00001f55);
+if (l_choice == 0) goto(lbl_00001f5e);
+if (l_choice == 1) goto(lbl_00001f5e);
+if (l_choice == 3) goto(lbl_00001f5e);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2851,19 +2851,19 @@ text(() => {
 });
 let lbl_00001f63;
 choice(
-   `Central Control Room`.if(g_d0 != 0),
-   `Lemurian Ruins`.if(g_d1 != 0),
-   `Elevator Hall`.if(g_d2 != 0),
-   `Rest area`.if(g_d3 != 0),
-   `Kiosk`.if(g_d4 != 0),
-   `Conference Room`.if(g_d5 != 0),
+   cond(l_d0 != 0)`Central Control Room`,
+   cond(l_d1 != 0)`Lemurian Ruins`,
+   cond(l_d2 != 0)`Elevator Hall`,
+   cond(l_d3 != 0)`Rest area`,
+   cond(l_d4 != 0)`Kiosk`,
+   cond(l_d5 != 0)`Conference Room`,
 );
 showTextbox();
 text(() => {
    marker; appendText; clearText; 
 });
 hideTextbox();
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000209a);
    case 1: goto(lbl_00001fa9);
    case 2: goto(lbl_000021b2);
@@ -2882,9 +2882,9 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG04B2`, transition: 20 });
-g_bb += 1;
-g_d1 = 0;
-g_bc = 1;
+l_bb += 1;
+l_d1 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2982,9 +2982,9 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG15B2`, transition: 20 });
-g_bb += 1;
-g_d0 = 0;
-g_bc = 1;
+l_bb += 1;
+l_d0 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3062,8 +3062,8 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG22B2`, transition: 20 });
-g_d2 = 0;
-g_bc = 1;
+l_d2 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3072,7 +3072,7 @@ text(() => {
    Narr`There was no sign of anyone.`;
    waitForClick; clearText; 
 });
-goto(lbl_00002259).if(g_e4 == 0);
+if (l_went_with_you_in_2nd_day == 0) goto(lbl_00002259);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3115,9 +3115,9 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG21B2`, transition: 20 });
-g_bb += 1;
-g_d3 = 0;
-g_bc = 1;
+l_bb += 1;
+l_d3 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3208,8 +3208,8 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG07B2`, transition: 20 });
-g_d4 = 0;
-g_bc = 1;
+l_d4 = 0;
+l_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3239,8 +3239,8 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG17A2`, transition: 20 });
-g_d5 = 0;
-g_bd = 1;
+l_d5 = 0;
+l_bd = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3583,9 +3583,9 @@ the can those times...`;
 hideTextbox();
 stopBGM();
 delay({ interval: 90 });
-goto(lbl_00002773).if(g_ba == 6);
-g_b3 = 0;
+if (l_coco_point == 6) goto(lbl_00002773);
+l_choice = 0;
 jump(`S_3A`);
 let lbl_00002773;
-g_b3 = 0;
+l_choice = 0;
 jump(`SC2F`);

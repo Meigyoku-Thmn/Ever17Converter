@@ -1,8 +1,8 @@
-goto(lbl_00000291).if(g_b3 == 1);
-goto(lbl_00000426).if(g_b3 == 2);
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+if (l_choice == 1) goto(lbl_00000291);
+if (l_choice == 2) goto(lbl_00000426);
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 setDialogBoxColor(GREEN);
 playBGM({ num: 4, volume: 100 });
 bgload({ name: `BG26A1R`, transition: 0 });
@@ -73,7 +73,7 @@ choice(
    `It's not your fault`
    `That's not important right now...`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000016f);
    case 1: goto(lbl_000001bd);
    case 2: goto(lbl_000001dc);
@@ -126,8 +126,8 @@ text(() => {
 });
 goto(lbl_0000021b);
 let lbl_000001bd;
-g_b8 += 2;
-g_e8 = 1;
+l_sora_point += 2;
+l_said_it_is_not_soras_fault = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -149,8 +149,8 @@ didn't mean to take it out on you..."`;
 });
 goto(lbl_0000021b);
 let lbl_000001dc;
-g_b7 += 1;
-g_b8 += 1;
+l_tsugumi_point += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -208,9 +208,9 @@ dry.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_00000279).if(g_1a == 0);
-g_f1 = 1;
-g_b3 = 0;
+if (g_coco_route_unlock == 0) goto(lbl_00000279);
+l_is_coco_route = 1;
+l_choice = 0;
 jump(`TC1A`);
 let lbl_00000279;
 showTextbox();
@@ -1127,7 +1127,7 @@ choice(
    `Thanks for helping back there`
    `What are you mad about?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000009d6);
    case 1: goto(lbl_00000a0d);
 }
@@ -1273,7 +1273,7 @@ choice(
    `...I thought that was something else.`
    `Assistant chief, huh?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000adc);
    case 1: goto(lbl_00000aed);
 }
@@ -1316,7 +1316,7 @@ and a junior in college. Thanks."`;
 removeFG({ id: 1, useAnim: true });
 goto(lbl_00000bb7);
 let lbl_00000aed;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1335,7 +1335,7 @@ but..."`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_00000b59).if(g_ba != 0);
+if (l_coco_point != 0) goto(lbl_00000b59);
 multifgload2({ id1: 1, id2: 2, name1: `SO01ADM`, name2: `CO11ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
@@ -3027,5 +3027,5 @@ floor was our one saving grace.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_1C`);

@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 setDialogBoxColor(GREEN);
 playBGM({ num: 1, volume: 100 });
 bgload({ name: `BG17A1`, transition: 20 });
@@ -114,7 +114,7 @@ choice(
    `Of course I know it`
    `I've never heard of it`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000018c);
    case 1: goto(lbl_0000026b);
 }
@@ -469,7 +469,7 @@ text(() => {
    Narr`There were two chicken sandwiches inside it.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000053a).if(g_e9 == 0);
+if (l_decide_go_to_sora_in_2nd_day == 0) goto(lbl_0000053a);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -562,7 +562,7 @@ text(() => {
 my question.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000616).if(g_e9 == 0);
+if (l_decide_go_to_sora_in_2nd_day == 0) goto(lbl_00000616);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -867,12 +867,12 @@ choice(
    `So what about it?`
    `I know! Don't say anything else!`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000824);
    case 1: goto(lbl_00000887);
 }
 let lbl_00000824;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2160,9 +2160,9 @@ and you all closed your eyes at once..."`;
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000116a).if(g_f1 == 0);
-goto(lbl_0000116a).if(g_ba != 3);
-g_b3 = 0;
+if (l_is_coco_route == 0) goto(lbl_0000116a);
+if (l_coco_point != 3) goto(lbl_0000116a);
+l_choice = 0;
 jump(`TC2A`);
 let lbl_0000116a;
 hideTextbox();
@@ -2243,5 +2243,5 @@ LeMU hovered silently in the darkness.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_2D`);

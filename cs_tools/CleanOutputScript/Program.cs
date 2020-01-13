@@ -30,6 +30,7 @@ namespace CleanOutputScript {
       static readonly Regex jsInvalidChar1 = new Regex(@"[/ \-']");
       static readonly Regex jsInvalidChar2 = new Regex(@"[\.]");
       static readonly Regex varop = new Regex(@".+? .+? (.+?)\) (.+?) (.+?) .+? (.+)");
+      static readonly Regex switch_varop = new Regex(@"^switch_varop \(28 0a a4\) (.+?) .+? \(00\)");
       static readonly CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("JScript");
       static readonly int indent = 3;
       static readonly string tab = new string(' ', indent);
@@ -42,6 +43,186 @@ namespace CleanOutputScript {
          }
          return input;
       }
+      static Program() {
+         SubstituteVar = SubstituteVar.Memoize();
+      }
+      static Func<string, string, (string var, Dictionary<string, string> @enum)> SubstituteVar = (type, var) => {
+         string rs = var;
+         Dictionary<string, string> @enum = new Dictionary<string, string>();
+         switch (type) {
+            case "g_":
+               switch (var) {
+                  case "08":
+                     rs = "you_gd_reach";
+                     break;
+                  case "09":
+                     rs = "_tsugumi_gd_clear";
+                     break;
+                  case "0f":
+                     rs = "tsugumi_gd_clear";
+                     break;
+                  case "10":
+                     rs = "_sora_gd_clear";
+                     break;
+                  case "11":
+                     rs = "takeshi_ep_reach";
+                     break;
+                  case "12":
+                     rs = "tsugumi_sora_bd_reach";
+                     break;
+                  case "19":
+                     rs = "coco_ep_reach";
+                     break;
+                  case "0a":
+                     rs = "sora_gd_clear";
+                     break;
+                  case "0b":
+                     rs = "sara_gd_reach";
+                     break;
+                  case "0c":
+                     rs = "_coco_ep_reach";
+                     break;
+                  case "13":
+                     rs = "_you_gd_clear";
+                     break;
+                  case "14":
+                     rs = "you_gd_clear";
+                     break;
+                  case "15":
+                     rs = "you_bd_clear";
+                     break;
+                  case "16":
+                     rs = "_sara_gd_clear";
+                     break;
+                  case "17":
+                     rs = "sara_gd_clear";
+                     break;
+                  case "18":
+                     rs = "sara_bd_clear";
+                     break;
+                  case "1a":
+                     rs = "coco_route_unlock";
+                     break;
+                  case "1b":
+                     rs = "kid_bd_reach";
+                     break;
+               }
+               break;
+            case "l_":
+               switch (var) {
+                  case "24":
+                     rs = "_coco_route_unlock";
+                     break;
+                  case "25":
+                     rs = "_you_ep_reach";
+                     break;
+                  case "28":
+                     rs = "_sara_ep_reach";
+                     break;
+                  case "b1":
+                     rs = "dayA";
+                     break;
+                  case "b2":
+                     rs = "dayB";
+                     break;
+                  case "b3":
+                     rs = "choice";
+                     break;
+                  case "b6":
+                     rs = "you_point";
+                     break;
+                  case "b7":
+                     rs = "tsugumi_point";
+                     break;
+                  case "b8":
+                     rs = "sora_point";
+                     break;
+                  case "b9":
+                     rs = "sara_point";
+                     break;
+                  case "ba":
+                     rs = "coco_point";
+                     break;
+                  case "bf":
+                     rs = "accumulator";
+                     break;
+                  case "c7":
+                     rs = "ending";
+                     @enum = new Dictionary<string, string>() {
+                        { "3", "`sara_gd`" }, { "6", "`sara_bd`" },
+                        { "2", "`you_gd`" }, { "5", "`you_bd`" },
+                        { "4", "`takeshi_bd`" },
+                        { "1", "`sora_gd`" }, { "0", "`tsugumi_gd`" },
+                     };
+                     break;
+                  case "d8":
+                     rs = "looked_for_you";
+                     break;
+                  case "db":
+                     rs = "repaired_with_sara";
+                     break;
+                  case "dd":
+                     rs = "listened_to_the_joke";
+                     break;
+                  case "de":
+                     rs = "blamed_the_tanuki";
+                     break;
+                  case "df":
+                     rs = "wanted_to_be_called_prince";
+                     break;
+                  case "e0":
+                     rs = "thought_you_can_swim_34_meters_regardless_water_pressure";
+                     break;
+                  case "e3":
+                     rs = "chose_to_wait_there_in_2nd_day";
+                     break;
+                  case "e4":
+                     rs = "went_with_you_in_2nd_day";
+                     break;
+                  case "e6":
+                     rs = "talked_to_you_about_her_father_in_6th_day";
+                     break;
+                  case "e8":
+                     rs = "said_it_is_not_soras_fault";
+                     break;
+                  case "e9":
+                     rs = "decide_go_to_sora_in_2nd_day";
+                     break;
+                  case "eb":
+                     rs = "made_the_pipe_steam_sounds_louder";
+                     break;
+                  case "ec":
+                     rs = "went_outside_as_sora_suggests_in_3rd_day";
+                     break;
+                  case "ed":
+                     rs = "confessed_the_truth_in_4th_day";
+                     break;
+                  case "ee":
+                     rs = "skeptical_about_coco_having_decompression_sickness";
+                     break;
+                  case "ef":
+                     rs = "went_with_sara_in_3rd_day";
+                     break;
+                  case "f0":
+                     rs = "know_sora_is_an_ai";
+                     break;
+                  case "f1":
+                     rs = "is_coco_route";
+                     break;
+                  case "f2":
+                     rs = "sc2f_clear";
+                     break;
+               }
+               break;
+            case "eff_":
+               break;
+            case "dimOff_":
+               break;
+            case "sys_":
+               break;
+         }
+         return (rs, @enum);
+      };
       static void Main(string[] args) {
          Directory.CreateDirectory(outputDirPath);
          var filePaths = Directory.GetFiles(inputDirPath, "*.dec", SearchOption.TopDirectoryOnly).OrderBy(e => e);
@@ -173,7 +354,7 @@ namespace CleanOutputScript {
                   var num = tokens[1];
                   var label = tokens[2];
                   usedLabelSet.Add(label);
-                  outputLines.Add($"jump(lbl_{label}).ifRandomIs({num});");
+                  outputLines.Add($"ifRandomIs({num}).jump(lbl_{label});");
                   break;
                }
                case "random": {
@@ -266,8 +447,24 @@ namespace CleanOutputScript {
                   var name = m.Groups[2].Value;
                   var op = m.Groups[3].Value;
                   var assignee = m.Groups[4].Value;
+                  if (assignee.StartsWith("v_")) {
+                     assignee = assignee.Substring(2);
+                     var num = Convert.ToUInt32(assignee, 16);
+                     string _type = "";
+                     if (num > 0 && num <= 0x1F)
+                        _type = "g_";
+                     else _type = "l_";
+                     var _subt = SubstituteVar(_type, assignee);
+                     assignee = _type + _subt.var;
+                  }
                   switch (type) {
-                     case "a4": type = "g_"; break;
+                     case "a4": {
+                        var num = Convert.ToUInt32(name, 16);
+                        if (num > 0 && num <= 0x1F)
+                           type = "g_";
+                        else type = "l_";
+                        break;
+                     }
                      case "a2": type = "eff_"; break;
                      case "a0": type = "dimOff_"; break;
                      case "a3": type = "sys_"; break;
@@ -277,7 +474,9 @@ namespace CleanOutputScript {
                      case ":=": op = "="; break;
                      case "+=": break;
                   }
-                  outputLines.Add($"{type}{name} {op} {assignee};");
+                  var subt = SubstituteVar(type, name);
+                  subt.@enum.TryGetValue(assignee, out string subt_assignee);
+                  outputLines.Add($"{type}{subt.var} {op} {(subt_assignee ?? assignee)};");
                   break;
                }
                case "delay": {
@@ -471,18 +670,29 @@ namespace CleanOutputScript {
                   break;
                }
                case "_switch": {
-                  i += 2;
+                  i += 1;
+                  var m = switch_varop.Match(lines[i]);
+                  if (m.Success == false)
+                     throw new InvalidSyntaxException($"Invalid _switch statement at line {inputLine + 1} of file '{filePath}'");
+                  var variable = m.Groups[1].Value;
+                  var num = Convert.ToUInt32(variable, 16);
+                  var type = "";
+                  if (num > 0 && num <= 0x1F) type = "g_";
+                  else type = "l_";
+                  var subt = SubstituteVar(type, variable);
+                  i += 1;
                   var texts = new List<string>();
                   while (lines[i].Trim() != "") {
                      var _tokens = lines[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                      var choice = _tokens[2];
+                     subt.@enum.TryGetValue(choice, out string subt_choice);
                      var label = _tokens[3];
-                     texts.Add($"{tab}case {choice}: goto(lbl_{label});");
+                     texts.Add($"{tab}case {subt_choice ?? choice}: goto(lbl_{label});");
                      usedLabelSet.Add(label);
                      i++;
                   }
                   var text = string.Join("\r\n", texts);
-                  outputLines.Add("switch (choice) {");
+                  outputLines.Add($"switch ({type}{subt.var}) {{");
                   outputLines.Add(text);
                   outputLines.Add("}");
                   break;
@@ -499,7 +709,13 @@ namespace CleanOutputScript {
                   var opposed_value = tokens[8];
                   var label = tokens[11];
                   usedLabelSet.Add(label);
-                  outputLines.Add($"goto(lbl_{label}).if(g_{variable} {comparision} {opposed_value});");
+                  var num = Convert.ToUInt32(variable, 16);
+                  var type = "";
+                  if (num > 0 && num <= 0x1F) type = "g_";
+                  else type = "l_";
+                  var subt = SubstituteVar(type, variable);
+                  subt.@enum.TryGetValue(opposed_value, out string subt_value);
+                  outputLines.Add($"if ({type}{subt.var} {comparision} {subt_value ?? opposed_value}) goto(lbl_{label});");
                   break;
                }
                case "shakeScreen": {
@@ -646,7 +862,12 @@ namespace CleanOutputScript {
                         innerText += tab + $"`{EscapeBackTick(selection)}`\r\n";
                      }
                      else {
-                        innerText += tab + $"`{EscapeBackTick(realSelection)}`.if(g_{variable} != 0),\r\n";
+                        var num = Convert.ToUInt32(variable, 16);
+                        var type = "";
+                        if (num > 0 && num <= 0x1F) type = "g_";
+                        else type = "l_";
+                        var subt = SubstituteVar(type, variable);
+                        innerText += tab + $"cond({type}{subt.var} != 0)`{EscapeBackTick(realSelection)}`,\r\n";
                      }
                   }
                   innerText = innerText.TrimEnd();

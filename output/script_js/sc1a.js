@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
@@ -19,15 +19,15 @@ choice(
    `Was that right...?`
    `Really?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000009a);
    case 1: goto(lbl_000000ad);
 }
 let lbl_0000009a;
-g_b3 = 1;
+l_choice = 1;
 jump(`S_1A2`);
 let lbl_000000ad;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -396,7 +396,7 @@ choice(
    `Yeah`
    `Nope`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000394);
    case 1: goto(lbl_000003b9);
 }
@@ -956,5 +956,5 @@ be able to touch it.`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
-g_b3 = 2;
+l_choice = 2;
 jump(`S_1A2`);

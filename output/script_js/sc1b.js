@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -13,7 +13,7 @@ choice(
    `'6'`
    `'5'`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000065);
    case 1: goto(lbl_000000e0);
 }
@@ -64,11 +64,11 @@ text(() => {
    Takeshi`"Securing is removing danger itself."`;
    waitForClick; clearText; 
 });
-g_b3 = 1;
+l_choice = 1;
 jump(`S_1B`);
 let lbl_000000e0;
-g_ba += 1;
-g_f0 = 1;
+l_coco_point += 1;
+l_know_sora_is_an_ai = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1594,5 +1594,5 @@ from the Control Room.`;
 silent.`;
    waitForClick; clearText; 
 });
-g_b3 = 1;
+l_choice = 1;
 jump(`S_1C`);

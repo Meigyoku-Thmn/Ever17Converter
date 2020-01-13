@@ -1,6 +1,6 @@
-g_b0 = 0;
-g_b1 = 0;
-g_b2 = 0;
+l_b0 = 0;
+l_dayA = 0;
+l_dayB = 0;
 setDialogBoxColor(GREEN);
 playBGM({ num: 22, volume: 100 });
 bgload_keepFg({ name: `KURO_BG`, transition: 10 });
@@ -74,5 +74,5 @@ delay({ interval: 180 });
 delay({ interval: 180 });
 stopSFX()
 stopBGM();
-g_11 = 1;
+g_takeshi_ep_reach = 1;
 unlockCG($`POST16`);

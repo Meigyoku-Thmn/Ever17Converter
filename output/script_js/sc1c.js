@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -38,7 +38,7 @@ choice(
    `Hot springs`
    `Microorganisms`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000072);
    case 1: goto(lbl_000000df);
 }
@@ -89,10 +89,10 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 2;
+l_choice = 2;
 jump(`S_1C`);
 let lbl_000000df;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -264,5 +264,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 2;
+l_choice = 2;
 jump(`S_1C`);

@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -61,8 +61,8 @@ text(() => {
    Narr`The girl's eyes were sad and moist.`;
    waitForClick; clearText; 
 });
-goto(lbl_000000ce).if(g_f0 == 0);
-goto(lbl_000000ce).if(g_ba != 3);
+if (l_know_sora_is_an_ai == 0) goto(lbl_000000ce);
+if (l_coco_point != 3) goto(lbl_000000ce);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -73,7 +73,7 @@ choice(
    `Ask her why she said that`
    `Take the girl out`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000000ce);
    case 1: goto(lbl_00000203);
 }
@@ -262,7 +262,7 @@ to me.`;
 });
 goto(lbl_000003e9);
 let lbl_00000203;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -640,7 +640,7 @@ than that, I was worried about her.`;
    Narr`Then I remembered the bio scan figure.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000527).if(g_f0 != 0);
+if (l_know_sora_is_an_ai != 0) goto(lbl_00000527);
 hideTextbox();
 monoColorOverlay({ interval: 12, color: WHITE });
 bgload({ name: `IT04E`, transition: 26 });
@@ -858,5 +858,5 @@ hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 delay({ interval: 60 });
 removeBG({ mode: BLACK, transition: 62 });
-g_b3 = 3;
+l_choice = 3;
 jump(`S_1C`);

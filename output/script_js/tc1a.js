@@ -42,7 +42,7 @@ choice(
    `(That could be my imagination, but...)`
    `(Did I just hear something?)`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000007d);
    case 1: goto(lbl_000000b8);
 }
@@ -80,10 +80,10 @@ partitions were only creaking.`;
    Narr`Shaking it off, we kept trudging forward.`;
    waitForClick; clearText; 
 });
-g_b3 = 1;
+l_choice = 1;
 jump(`T_1B`);
 let lbl_000000b8;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -295,7 +295,7 @@ choice(
    `I stepped forward`
    `Looked up`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000270);
    case 1: goto(lbl_00000279);
 }
@@ -1092,5 +1092,5 @@ I've been investigating ways to restore our
 connection, but it's going to take some time."`;
    waitForClick; clearText; 
 });
-g_b3 = 2;
+l_choice = 2;
 jump(`T_1B`);

@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setSceneTitle({ index: 71 });
 bgload({ name: `EV_SA13D`, transition: 10 });
 playBGM({ num: 2, volume: 100 });
@@ -12,7 +12,7 @@ text(() => {
 Room.`;
    waitForClick; clearText; 
 });
-goto(lbl_000000b4).if(g_db == 0);
+if (l_repaired_with_sara == 0) goto(lbl_000000b4);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -77,7 +77,7 @@ until then.`;
 infirmary scanning machine.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000010a).if(g_db != 0);
+if (l_repaired_with_sara != 0) goto(lbl_0000010a);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -737,7 +737,7 @@ sob.  `;
    Narr`Just like...`;
    waitForClick; clearText; 
 });
-goto(lbl_000006e2).if(g_db != 0);
+if (l_repaired_with_sara != 0) goto(lbl_000006e2);
 hideTextbox();
 delay({ interval: 120 });
 showTextbox();
@@ -770,7 +770,7 @@ them...`;
 was all about.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`S_3E`);
 let lbl_000006e2;
 showTextbox();
@@ -871,5 +871,5 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-g_b3 = 0;
+l_choice = 0;
 jump(`SS4A`);

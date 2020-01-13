@@ -1,7 +1,7 @@
-goto(lbl_000008d9).if(g_b3 == 1);
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+if (l_choice == 1) goto(lbl_000008d9);
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 hideTextbox();
 setChangePerspectiveDirection(FROM_LEFT);
 triggerChangePerspectiveAnim();
@@ -1163,9 +1163,9 @@ state of affairs..."`;
 stopBGM();
 goto(lbl_0000091d);
 let lbl_000008d9;
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
@@ -3299,5 +3299,5 @@ text(() => {
 animal and private.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`YC3A2`);

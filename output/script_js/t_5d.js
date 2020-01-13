@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 setDialogBoxColor(GREEN);
 showTextbox();
 text(() => {
@@ -848,7 +848,7 @@ choice(
    `Yes`
    `No`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000004b6);
    case 1: goto(lbl_000004bf);
 }
@@ -912,7 +912,7 @@ choice(
    `You have`
    `You haven't`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000004ec);
    case 1: goto(lbl_000004f5);
 }
@@ -2109,5 +2109,5 @@ arms around my knees and we all went to sleep.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_6A`);

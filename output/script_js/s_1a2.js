@@ -1,5 +1,5 @@
-goto(lbl_00000829).if(g_b3 == 1);
-goto(lbl_00000c6b).if(g_b3 == 2);
+if (l_choice == 1) goto(lbl_00000829);
+if (l_choice == 2) goto(lbl_00000c6b);
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
 delay({ interval: 30 });
@@ -948,12 +948,12 @@ choice(
    `Ask You`
    `Don't ask You`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000776);
    case 1: goto(lbl_00000832);
 }
 let lbl_00000776;
-g_b6 += 1;
+l_you_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -975,10 +975,10 @@ text(() => {
 looked back at Mayo.`;
    waitForClick; clearText; 
 });
-goto(lbl_000007fb).if(g_1a == 0);
-g_f1 = 1;
-goto(lbl_000007fb).if(g_f1 == 0);
-g_b3 = 0;
+if (g_coco_route_unlock == 0) goto(lbl_000007fb);
+l_is_coco_route = 1;
+if (l_is_coco_route == 0) goto(lbl_000007fb);
+l_choice = 0;
 jump(`SC1A`);
 let lbl_000007fb;
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
@@ -1646,12 +1646,12 @@ choice(
    `Try to contact the outside ...`
    `Look for other exits ...`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000e22);
    case 1: goto(lbl_00000e7b);
 }
 let lbl_00000e22;
-g_b6 += 1;
+l_you_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1935,5 +1935,5 @@ split up and started searching the complex.`;
 hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
 delay({ interval: 30 });
-g_b3 = 0;
+l_choice = 0;
 jump(`S_1B`);

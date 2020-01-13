@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -23,7 +23,7 @@ choice(
    `Try it`
    `Don't do anything`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000000c5);
    case 1: goto(lbl_0000007d);
 }
@@ -62,7 +62,7 @@ sadness.`;
 });
 goto(lbl_00000241);
 let lbl_000000c5;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -375,5 +375,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 0;
+l_choice = 0;
 jump(`S_2D`);

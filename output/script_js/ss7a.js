@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 101 });
-g_b0 = 5;
-g_b1 = 7;
-g_b2 = 0;
+l_b0 = 5;
+l_dayA = 7;
+l_dayB = 0;
 chapterCutin({ name: `00000000` });
 showTextbox();
 text(() => {
@@ -667,6 +667,6 @@ setMonoColorOverlayFadeOutDuration(46);
 fadeOutMonoColorOverlay();
 unSkippableDelay(33);
 delay({ interval: 90 });
-g_c7 = 3;
-g_b3 = 0;
+l_ending = `sara_gd`;
+l_choice = 0;
 jump(`Y_ED`);

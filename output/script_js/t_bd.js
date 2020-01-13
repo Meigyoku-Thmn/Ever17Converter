@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 setDialogBoxColor(GREEN);
 playBGM({ num: 21, volume: 100 });
 removeBG({ mode: BLACK, transition: 2 });
@@ -721,7 +721,7 @@ text(() => {
 hideTextbox();
 stopSFX()
 delay({ interval: 180 });
-g_12 = 1;
-g_c7 = 4;
-g_b3 = 0;
+g_tsugumi_sora_bd_reach = 1;
+l_ending = `takeshi_bd`;
+l_choice = 0;
 jump(`Y_ED`);

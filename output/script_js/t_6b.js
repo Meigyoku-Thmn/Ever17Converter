@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 setDialogBoxColor(GREEN);
 playSFX({ name: `SE00_00`, a1: 0, volume: 90 });
 bgload({ name: `BG09A1`, transition: 20 });
@@ -172,7 +172,7 @@ mortality rate."`;
    Narr`Tief Blau...?`;
    waitForClick; clearText; 
 });
-goto(lbl_000001b0).if(g_d9 == 0);
+if (l_d9 == 0) goto(lbl_000001b0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1127,25 +1127,25 @@ text(() => {
 we going to open that door?`;
    waitForClick; 
 });
-g_bb = 0;
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
+l_bb = 0;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
 let lbl_000008eb;
 choice(
-   `Ask Sora.`.if(g_d0 != 0),
-   `Ask You.`.if(g_d1 != 0),
-   `Ask Tsugumi.`.if(g_d2 != 0),
+   cond(l_d0 != 0)`Ask Sora.`,
+   cond(l_d1 != 0)`Ask You.`,
+   cond(l_d2 != 0)`Ask Tsugumi.`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000915);
    case 1: goto(lbl_00000b96);
    case 2: goto(lbl_00000d3c);
 }
 let lbl_00000915;
-g_b8 += 1;
-g_d0 = 0;
-g_bb += 1;
+l_sora_point += 1;
+l_d0 = 0;
+l_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1313,7 +1313,7 @@ text(() => {
 });
 removeFG({ id: 1, useAnim: true });
 makeFGNormal({ id: 1 });
-goto(lbl_00000eb7).if(g_bb > 1);
+if (l_bb > 1) goto(lbl_00000eb7);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1322,8 +1322,8 @@ text(() => {
 });
 goto(lbl_000008eb);
 let lbl_00000b96;
-g_d1 = 0;
-g_bb += 1;
+l_d1 = 0;
+l_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1472,7 +1472,7 @@ finger and went back to the first-aid kit.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_00000eb7).if(g_bb > 1);
+if (l_bb > 1) goto(lbl_00000eb7);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1481,9 +1481,9 @@ text(() => {
 });
 goto(lbl_000008eb);
 let lbl_00000d3c;
-g_b7 += 1;
-g_d2 = 0;
-g_bb += 1;
+l_tsugumi_point += 1;
+l_d2 = 0;
+l_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1638,7 +1638,7 @@ floor.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_00000eb7).if(g_bb > 1);
+if (l_bb > 1) goto(lbl_00000eb7);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1647,10 +1647,10 @@ text(() => {
 });
 goto(lbl_000008eb);
 let lbl_00000eb7;
-g_bb = 0;
-g_d0 = 0;
-g_d1 = 0;
-g_d2 = 0;
+l_bb = 0;
+l_d0 = 0;
+l_d1 = 0;
+l_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1749,7 +1749,7 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-g_ce = 0;
+l_ce = 0;
 monoColorOverlay({ interval: 4, color: WHITE });
 tweenZoom({ x: 320, y: 197, hx: 200, hy: 150, duration: 20 });
 playSFX({ name: `SE00_04`, a1: 1, volume: 100 });
@@ -1761,7 +1761,7 @@ setMonoColorOverlayFadeOutDuration(61);
 fadeOutMonoColorOverlay();
 unSkippableDelay(48);
 clock(`14:19`);
-g_ce = 0;
+l_ce = 0;
 tweenZoom({ x: 400, y: 0, hx: 800, hy: 600, duration: 120 });
 tweenZoom({ x: 240, y: 0, hx: 800, hy: 600, duration: 120 });
 bgloadCrop({ name: `BG31A1`, transition: 26, x: 240, y: 0, hx: 800, hy: 600 });
@@ -2025,12 +2025,12 @@ choice(
    `Alright, we're going!`
    `Wait just a second`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000011a7);
    case 1: goto(lbl_000011bb);
 }
 let lbl_000011a7;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2044,7 +2044,7 @@ nodded.`;
 });
 goto(lbl_0000123f);
 let lbl_000011bb;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3324,17 +3324,17 @@ almost May 6, 4:30 p.m.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-goto(lbl_000017f7).if(g_d9 != 0);
-goto(lbl_0000181f).if(g_da != 0);
+if (l_d9 != 0) goto(lbl_000017f7);
+if (l_da != 0) goto(lbl_0000181f);
 goto(lbl_00001846);
 let lbl_000017f7;
-goto(lbl_00001846).if(g_b7 < 17);
-g_b3 = 0;
+if (l_tsugumi_point < 17) goto(lbl_00001846);
+l_choice = 0;
 jump(`TT6A`);
 let lbl_0000181f;
-goto(lbl_00001846).if(g_b8 < 14);
-g_b3 = 0;
+if (l_sora_point < 14) goto(lbl_00001846);
+l_choice = 0;
 jump(`TL6A`);
 let lbl_00001846;
-g_b3 = 0;
+l_choice = 0;
 jump(`T_BD`);

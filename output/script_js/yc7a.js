@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 7;
-g_b2 = 0;
+l_b0 = 5;
+l_dayA = 7;
+l_dayB = 0;
 setSceneTitle({ index: 120 });
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
@@ -3356,5 +3356,5 @@ dashed across the floor.`;
    waitForClick; clearText; 
 });
 closeDimInAndOutAndFilterAnim();
-g_b3 = 0;
+l_choice = 0;
 jump(`YC7B`);

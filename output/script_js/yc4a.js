@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 removeBG({ mode: BLACK, transition: 62 });
@@ -108,7 +108,7 @@ safe. `;
 the cosmos.`;
    waitForClick; clearText; 
 });
-goto(lbl_000001ed).if(g_ef == 1);
+if (l_went_with_sara_in_3rd_day == 1) goto(lbl_000001ed);
 fgload({ id: 1, name: `SA05AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -299,7 +299,7 @@ least had the face of an 'earthling.'`;
    Narr`He looked like any ordinary, young man to me.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000235).if(g_ef == 1);
+if (l_went_with_sara_in_3rd_day == 1) goto(lbl_00000235);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -464,7 +464,7 @@ this hologram's image."`;
    Sara`"I THOUGHT I was the only who could see it."`;
    waitForClick; clearText; 
 });
-goto(lbl_000002da).if(g_ef == 1);
+if (l_went_with_sara_in_3rd_day == 1) goto(lbl_000002da);
 showTextbox();
 text(() => {
    marker; sound(`C4A041`); appendText; 
@@ -2079,7 +2079,7 @@ darkness.`;
 `;
    
 });
-goto(lbl_00000c2b).if(g_ef == 1);
+if (l_went_with_sara_in_3rd_day == 1) goto(lbl_00000c2b);
 showTextbox();
 text(() => {
    appendText; 
@@ -3506,5 +3506,5 @@ text(() => {
    You`"He...really...."`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`YC4B`);

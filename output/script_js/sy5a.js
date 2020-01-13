@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 5;
-g_b2 = 5;
+l_b0 = 5;
+l_dayA = 5;
+l_dayB = 5;
 bgload({ name: `BG04B1`, transition: 20 });
 setSceneTitle({ index: 77 });
 clock(`0:3`);
@@ -497,7 +497,7 @@ choice(
    `You look it`
    `You don't look it`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000002d7);
    case 1: goto(lbl_000002ef);
 }
@@ -522,7 +522,7 @@ text(() => {
    Kid`"You don't look it."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000317).if(g_b3 != 0);
+if (l_choice != 0) goto(lbl_00000317);
 bgload({ name: `EV_YU03C`, transition: 20 });
 let lbl_00000317;
 showTextbox();
@@ -1919,7 +1919,7 @@ hugging her knees.`;
    Narr`I had heard the lyrics somewhere before.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000ad4).if(g_e3 == 0);
+if (l_chose_to_wait_there_in_2nd_day == 0) goto(lbl_00000ad4);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2413,5 +2413,5 @@ closed my eyes and tried to sleep.`;
    Narr`...And for myself.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`SY6A`);

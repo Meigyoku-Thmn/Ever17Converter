@@ -3,9 +3,9 @@ monoColorOverlay({ interval: 18, color: BLACK });
 stopBGM();
 delay({ interval: 120 });
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 playBGM({ num: 19, volume: 100 });
 bgload({ name: `BG12A1`, transition: 26 });
 setMonoColorOverlayFadeOutDuration(31);
@@ -172,13 +172,13 @@ choice(
    `Lemuria`
    `You's past`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000001cf);
    case 1: goto(lbl_00000207);
    case 2: goto(lbl_0000023f);
 }
 let lbl_000001cf;
-g_e6 = 0;
+l_talked_to_you_about_her_father_in_6th_day = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -209,7 +209,7 @@ text(() => {
 });
 goto(lbl_00000273);
 let lbl_00000207;
-g_e6 = 0;
+l_talked_to_you_about_her_father_in_6th_day = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -246,7 +246,7 @@ to do."`;
 });
 goto(lbl_00000273);
 let lbl_0000023f;
-g_e6 = 1;
+l_talked_to_you_about_her_father_in_6th_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -295,7 +295,7 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 monoColorOverlay({ interval: 6, color: WHITE });
 bgload({ name: `BG12A1`, transition: 26 });
-goto(lbl_000002f7).if(g_e6 == 1);
+if (l_talked_to_you_about_her_father_in_6th_day == 1) goto(lbl_000002f7);
 fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: false });
 goto(lbl_00000309);
 let lbl_000002f7;
@@ -1015,7 +1015,7 @@ text(() => {
    You`"I don't want to think about the past!"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000677).if(g_e6 == 0);
+if (l_talked_to_you_about_her_father_in_6th_day == 0) goto(lbl_00000677);
 showTextbox();
 text(() => {
    marker; sound(`Y6A295`); appendText; 
@@ -1412,9 +1412,9 @@ kind of situation we're in right now?"`;
    You`"Don't you talk to me about my mom!"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000931).if(g_e5 == 0);
-goto(lbl_00000931).if(g_b6 < 7);
-g_e7 = 1;
+if (l_e5 == 0) goto(lbl_00000931);
+if (l_you_point < 7) goto(lbl_00000931);
+l_e7 = 1;
 showTextbox();
 text(() => {
    marker; sound(`Y6A323`); appendText; 
@@ -1493,7 +1493,7 @@ in LeMU.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG16A1`, transition: 20 });
-goto(lbl_00000c14).if(g_e7 == 0);
+if (l_e7 == 0) goto(lbl_00000c14);
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -2239,7 +2239,7 @@ choice(
    `Talk to Sora`
    `Talk to Sara`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000dac);
    case 1: goto(lbl_00000e28);
    case 2: goto(lbl_00000e5f);
@@ -3031,9 +3031,9 @@ reaching her brain....`;
 been extinguished from her eyes.`;
    waitForClick; clearText; 
 });
-goto(lbl_000013f5).if(g_e7 == 0);
-g_b3 = 0;
+if (l_e7 == 0) goto(lbl_000013f5);
+l_choice = 0;
 jump(`SY7A`);
 let lbl_000013f5;
-g_b3 = 0;
+l_choice = 0;
 jump(`SYBD`);

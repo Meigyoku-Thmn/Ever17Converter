@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 65 });
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 chapterCutin({ name: `00000000` });
 hideTextbox();
 monoColorOverlay({ interval: 6, color: BLACK });
@@ -1010,12 +1010,12 @@ choice(
    `I get it.`
    `I have no clue.`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000970);
    case 1: goto(lbl_000009bf);
 }
 let lbl_00000970;
-g_b6 += 1;
+l_you_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2340,7 +2340,7 @@ going off suddenly like that.`;
    Narr`An extra set of hands couldn't hurt...`;
    waitForClick; clearText; 
 });
-goto(lbl_0000139a).if(g_e3 == 0);
+if (l_chose_to_wait_there_in_2nd_day == 0) goto(lbl_0000139a);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2351,12 +2351,12 @@ choice(
    `Look for You`
    `Repairs with Sara`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000139a);
    case 1: goto(lbl_000012e9);
 }
 let lbl_000012e9;
-g_db = 1;
+l_repaired_with_sara = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2442,10 +2442,10 @@ people left in the room.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-g_b3 = 0;
+l_choice = 0;
 jump(`S_3C`);
 let lbl_0000139a;
-g_d8 = 1;
+l_looked_for_you = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2480,5 +2480,5 @@ I went.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-g_b3 = 0;
+l_choice = 0;
 jump(`S_3B`);

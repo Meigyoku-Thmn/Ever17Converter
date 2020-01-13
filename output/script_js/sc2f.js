@@ -1,9 +1,9 @@
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 bgload({ name: `BG09A2`, transition: 10 });
 clock(`23:45`);
-goto(lbl_00000097).if(g_ba == 5);
+if (l_coco_point == 5) goto(lbl_00000097);
 setSceneTitle({ index: 105 });
 showTextbox();
 text(() => {
@@ -919,10 +919,10 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 120 });
-goto(lbl_0000074b).if(g_ba != 5);
-g_b3 = 1;
-g_f2 = 1;
+if (l_coco_point != 5) goto(lbl_0000074b);
+l_choice = 1;
+l_sc2f_clear = 1;
 jump(`YC3A`);
 let lbl_0000074b;
-g_b3 = 0;
+l_choice = 0;
 jump(`YC3A`);

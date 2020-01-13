@@ -2,9 +2,9 @@ hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
 removeFG({ id: 1, useAnim: false });
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
@@ -1322,7 +1322,7 @@ choice(
    `6 ways?`
    `8 ways?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000837);
    case 1: goto(lbl_00000857);
 }
@@ -1344,7 +1344,7 @@ text(() => {
 });
 goto(lbl_0000087e);
 let lbl_00000857;
-g_b6 += 1;
+l_you_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3622,7 +3622,7 @@ choice(
    `It was because it was in English.`
    `It was because it had an umlaut.`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00001515);
    case 1: goto(lbl_0000151e);
 }
@@ -3804,5 +3804,5 @@ Sora disappeared into the display.`;
 went in search of You and the others.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`SY4B`);

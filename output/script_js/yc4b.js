@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
 removeBG({ mode: BLACK, transition: 62 });
@@ -1925,7 +1925,7 @@ choice(
    `Yes`
    `No`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000afa);
    case 1: goto(lbl_00000b03);
 }
@@ -2125,5 +2125,5 @@ text(() => {
    You`"...twin sister ..."`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`YC5A`);

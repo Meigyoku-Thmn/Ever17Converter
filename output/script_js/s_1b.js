@@ -1,8 +1,8 @@
-goto(lbl_00002436).if(g_b3 == 1);
+if (l_choice == 1) goto(lbl_00002436);
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 setSceneTitle({ index: 51 });
 bgload({ name: `BG26B3R`, transition: 26 });
 playBGM({ num: 4, volume: 100 });
@@ -420,12 +420,12 @@ choice(
    `Worry`
    `Don't worry`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000003fa);
    case 1: goto(lbl_0000048e);
 }
 let lbl_000003fa;
-g_b9 += 1;
+l_sara_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2097,7 +2097,7 @@ choice(
    `Kyosuke Watarase`
    `Prince`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000142c);
    case 1: goto(lbl_0000145d);
    case 2: goto(lbl_0000148e);
@@ -2213,7 +2213,7 @@ text(() => {
 });
 goto(lbl_000015bf);
 let lbl_00001583;
-g_df = 1;
+l_wanted_to_be_called_prince = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2521,7 +2521,7 @@ choice(
    `Why are you so angry?`
    `I haven't even introduced myself...`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000018fc);
    case 1: goto(lbl_0000191c);
 }
@@ -2933,7 +2933,7 @@ choice(
    `I get it`
    `Not really`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00001c35);
    case 1: goto(lbl_00001c9a);
 }
@@ -3830,8 +3830,8 @@ text(() => {
    Kid`"That's true, but..."`;
    waitForClick; clearText; 
 });
-goto(lbl_000023d2).if(g_ba != 1);
-g_b3 = 0;
+if (l_coco_point != 1) goto(lbl_000023d2);
+l_choice = 0;
 jump(`SC1B`);
 let lbl_000023d2;
 fgload({ id: 2, name: `KB08ADM`, x: 512, useAnim: true });
@@ -3926,5 +3926,5 @@ systems that were down back online.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_b3 = 0;
+l_choice = 0;
 jump(`S_1C`);

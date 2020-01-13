@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
 bgload({ name: `BG08A1`, transition: 20 });
 clock(`18:53`);
@@ -1602,5 +1602,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-g_b3 = 0;
+l_choice = 0;
 jump(`SY4A`);

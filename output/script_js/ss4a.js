@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 92 });
-g_b0 = 5;
-g_b1 = 4;
-g_b2 = 4;
+l_b0 = 5;
+l_dayA = 4;
+l_dayB = 4;
 bgload({ name: `BG26B1R`, transition: 10 });
 playBGM({ num: 16, volume: 100 });
 clock(`1:36`);
@@ -2219,5 +2219,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 90 });
-g_b3 = 0;
+l_choice = 0;
 jump(`SS5A`);

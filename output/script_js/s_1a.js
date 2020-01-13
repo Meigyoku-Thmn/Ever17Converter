@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 49 });
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 removeBG({ mode: WHITE, transition: 0 });
 showTextbox();
 text(() => {
@@ -293,12 +293,12 @@ choice(
    `Thanks`
    `No thanks`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000028f);
    case 1: goto(lbl_000002a3);
 }
 let lbl_0000028f;
-g_b6 += 1;
+l_you_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2597,12 +2597,12 @@ choice(
    `Ask`
    `Don't ask`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000122a);
    case 1: goto(lbl_00001255);
 }
 let lbl_0000122a;
-g_b6 += 1;
+l_you_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2774,5 +2774,5 @@ text(() => {
 down the stairs.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`S_1A2`);

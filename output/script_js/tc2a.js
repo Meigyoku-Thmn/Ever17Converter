@@ -15,23 +15,23 @@ the first time."`;
    Sora`"When you close your eyes, I disappear."`;
    waitForClick; 
 });
-g_d0 = 1;
-goto(lbl_0000008c).if(g_f1 == 0);
-goto(lbl_0000008c).if(g_ba != 3);
+l_d0 = 1;
+if (l_is_coco_route == 0) goto(lbl_0000008c);
+if (l_coco_point != 3) goto(lbl_0000008c);
 goto(lbl_00000097);
 let lbl_0000008c;
-g_d0 = 0;
+l_d0 = 0;
 let lbl_00000097;
 choice(
-   `Try it.`.if(g_d0 != 0),
+   cond(l_d0 != 0)`Try it.`,
    `......`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000000ba);
    case 1: goto(lbl_000000c9);
 }
 let lbl_000000ba;
-g_ba += 1;
+l_coco_point += 1;
 goto(lbl_0000012b);
 let lbl_000000c9;
 showTextbox();
@@ -411,8 +411,8 @@ the Lemurian Ruins. The door was open.`;
    Narr`I saw someone.`;
    waitForClick; clearText; 
 });
-goto(lbl_000003cd).if(g_f1 == 0);
-goto(lbl_000003cd).if(g_ba != 4);
+if (l_is_coco_route == 0) goto(lbl_000003cd);
+if (l_coco_point != 4) goto(lbl_000003cd);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -423,12 +423,12 @@ choice(
    `I was curious`
    `I didn't really care`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000003b9);
    case 1: goto(lbl_000003d2);
 }
 let lbl_000003b9;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -771,7 +771,7 @@ choice(
    `I'm living with my parents`
    `I live alone`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000063e);
    case 1: goto(lbl_00000647);
 }
@@ -983,5 +983,5 @@ let lbl_0000079c;
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_2D`);

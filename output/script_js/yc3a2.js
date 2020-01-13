@@ -140,7 +140,7 @@ choice(
    `Go see You in the Security Office`
    `Go to the warehouse with Sara`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000000fa);
    case 1: goto(lbl_000006a2);
 }
@@ -1187,7 +1187,7 @@ hidden in those seventeen syllables?`;
 });
 goto(lbl_00000b29);
 let lbl_000006a2;
-g_ef = 1;
+l_went_with_sara_in_3rd_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2007,5 +2007,5 @@ text(() => {
 });
 goto(lbl_00000b29);
 let lbl_00000b29;
-g_b3 = 0;
+l_choice = 0;
 jump(`YC3B`);

@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 15 });
 chapterCutin({ name: `00000000` });
@@ -725,7 +725,7 @@ choice(
    `Where'd you go this morning?`
    `Do you want another one?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000067c);
    case 1: goto(lbl_000006e1);
 }
@@ -800,7 +800,7 @@ worry about it."`;
 });
 goto(lbl_00000736);
 let lbl_000006e1;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1671,12 +1671,12 @@ choice(
    `Clockwise`
    `Counterclockwise`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000f5c);
    case 1: goto(lbl_00000f9f);
 }
 let lbl_00000f5c;
-g_eb = 1;
+l_made_the_pipe_steam_sounds_louder = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1701,7 +1701,7 @@ text(() => {
 });
 goto(lbl_00000fde);
 let lbl_00000f9f;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1738,12 +1738,12 @@ choice(
    `Clockwise`
    `Counterclockwise`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00001006);
    case 1: goto(lbl_00001048);
 }
 let lbl_00001006;
-g_b7 += 1;
+l_tsugumi_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1768,7 +1768,7 @@ weakened.`;
 });
 goto(lbl_00001086);
 let lbl_00001048;
-g_eb = 1;
+l_made_the_pipe_steam_sounds_louder = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1817,7 +1817,7 @@ right hand.`;
 });
 hideTextbox();
 stopSFX()
-goto(lbl_00001176).if(g_eb == 0);
+if (l_made_the_pipe_steam_sounds_louder == 0) goto(lbl_00001176);
 showTextbox();
 text(() => {
    marker; sound(`T3A135`); appendText; 
@@ -2929,5 +2929,5 @@ delay({ interval: 180 });
 removeBG({ mode: BLACK, transition: 2 });
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
-g_b3 = 0;
+l_choice = 0;
 jump(`T_3B`);

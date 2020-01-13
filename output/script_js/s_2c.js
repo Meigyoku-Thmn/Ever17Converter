@@ -1,8 +1,8 @@
-goto(lbl_000010e0).if(g_b3 == 1);
+if (l_choice == 1) goto(lbl_000010e0);
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 setSceneTitle({ index: 63 });
 bgload({ name: `BG17A1`, transition: 26 });
 playBGM({ num: 2, volume: 100 });
@@ -98,12 +98,12 @@ choice(
    `No problem`
    `I don't think so. `
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000012c);
    case 1: goto(lbl_00000140);
 }
 let lbl_0000012c;
-g_b9 += 1;
+l_sara_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1155,7 +1155,7 @@ choice(
    `What's a hacker?`
    `I know what a hacker is`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000a5f);
    case 1: goto(lbl_00000adb);
 }
@@ -2196,5 +2196,5 @@ sadness.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_b3 = 0;
+l_choice = 0;
 jump(`S_2D`);

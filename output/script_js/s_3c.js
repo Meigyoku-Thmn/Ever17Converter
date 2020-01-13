@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 3;
-g_b2 = 3;
+l_b0 = 5;
+l_dayA = 3;
+l_dayB = 3;
 setSceneTitle({ index: 69 });
 bgload({ name: `BG29A1`, transition: 26 });
 playBGM({ num: 3, volume: 100 });
@@ -2448,5 +2448,5 @@ move...at least to me.`;
 turning in his sleep.`;
    waitForClick; clearText; 
 });
-g_b3 = 0;
+l_choice = 0;
 jump(`S_3D`);

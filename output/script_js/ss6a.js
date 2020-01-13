@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 98 });
-g_b0 = 0;
-g_b1 = 0;
-g_b2 = 0;
+l_b0 = 0;
+l_dayA = 0;
+l_dayB = 0;
 removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
@@ -113,9 +113,9 @@ text(() => {
    nextPage(01); waitForSound; nextPage(04); 
 });
 hideTextbox();
-g_b0 = 5;
-g_b1 = 6;
-g_b2 = 6;
+l_b0 = 5;
+l_dayA = 6;
+l_dayB = 6;
 chapterCutin({ name: `00000000` });
 hideTextbox();
 monoColorOverlay({ interval: 6, color: BLACK });
@@ -1858,7 +1858,7 @@ choice(
    `Start with Dritte stock`
    `Start with Zweite stock`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000b9c);
    case 1: goto(lbl_00000d2c);
 }
@@ -2048,7 +2048,7 @@ the ceiling.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-g_b3 = 0;
+l_choice = 0;
 jump(`SSBD`);
 let lbl_00000d2c;
 showTextbox();
@@ -2151,5 +2151,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 90 });
-g_b3 = 0;
+l_choice = 0;
 jump(`SS7A`);

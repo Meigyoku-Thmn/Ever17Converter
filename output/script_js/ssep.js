@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-g_b0 = 5;
-g_b1 = 7;
-g_b2 = 0;
+l_b0 = 5;
+l_dayA = 7;
+l_dayB = 0;
 setSceneTitle({ index: 103 });
 removeBG({ mode: BLACK, transition: 0 });
 playSFX({ name: `SE09_01L`, a1: 0, volume: 90 });
@@ -159,7 +159,7 @@ text(() => {
    Narr`How had I responded to Sora...?`;
    waitForClick; clearText; 
 });
-goto(lbl_000001cb).if(g_e0 != 0);
+if (l_thought_you_can_swim_34_meters_regardless_water_pressure != 0) goto(lbl_000001cb);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -659,12 +659,12 @@ removeBG({ mode: BLACK, transition: 0 });
 delay({ interval: 90 });
 stopBGM();
 delay({ interval: 120 });
-g_17 = 1;
+g_sara_gd_clear = 1;
 unlockCG($`POST05`);
 unlockCG($`POST07`);
-g_28 = 1;
-goto(lbl_00000482).if(g_14 == 0);
+l__sara_ep_reach = 1;
+if (g_you_gd_clear == 0) goto(lbl_00000482);
 unlockCG($`POST02`);
 let lbl_00000482;
-g_b3 = 1;
+l_choice = 1;
 jump(`Y_ED`);

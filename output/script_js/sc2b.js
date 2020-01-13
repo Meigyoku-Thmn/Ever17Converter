@@ -1,6 +1,6 @@
-g_b0 = 5;
-g_b1 = 2;
-g_b2 = 2;
+l_b0 = 5;
+l_dayA = 2;
+l_dayB = 2;
 fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
@@ -15,7 +15,7 @@ choice(
    `I'll wait here`
    `Why don't we go together?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000093);
    case 1: goto(lbl_000002d0);
    case 2: goto(lbl_000005c8);
@@ -296,7 +296,7 @@ hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
 goto(lbl_00000c5a);
 let lbl_000002d0;
-g_e3 = 1;
+l_chose_to_wait_there_in_2nd_day = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -657,7 +657,7 @@ temperature inside had cooled enough.`;
 monoColorOverlay({ interval: 0, color: BLACK });
 goto(lbl_00000c5a);
 let lbl_000005c8;
-g_ba += 1;
+l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1172,7 +1172,7 @@ choice(
    `Tell them about Coco`
    `Not tell them about Coco`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000009f1);
    case 1: goto(lbl_00000bf5);
 }
@@ -1513,5 +1513,5 @@ hot steam.`;
 a fish out of water.`;
    waitForClick; clearText; 
 });
-g_b3 = 1;
+l_choice = 1;
 jump(`S_2B`);

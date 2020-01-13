@@ -1,10 +1,10 @@
-goto(lbl_0000046e).if(g_b3 == 1);
-goto(lbl_00000473).if(g_b3 == 2);
-goto(lbl_00001b06).if(g_b3 == 3);
-goto(lbl_00001e3c).if(g_b3 == 4);
-g_b0 = 5;
-g_b1 = 1;
-g_b2 = 1;
+if (l_choice == 1) goto(lbl_0000046e);
+if (l_choice == 2) goto(lbl_00000473);
+if (l_choice == 3) goto(lbl_00001b06);
+if (l_choice == 4) goto(lbl_00001e3c);
+l_b0 = 5;
+l_dayA = 1;
+l_dayB = 1;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG25A3`, transition: 20 });
@@ -126,27 +126,27 @@ in touch with the outside...)`;
 to visit first.`;
    waitForClick; 
 });
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
 let lbl_00000221;
-goto(lbl_00000260).if(g_d0 != 0);
-goto(lbl_00000260).if(g_d1 != 0);
-goto(lbl_000006a3).if(g_d2 == 0);
+if (l_d0 != 0) goto(lbl_00000260);
+if (l_d1 != 0) goto(lbl_00000260);
+if (l_d2 == 0) goto(lbl_000006a3);
 let lbl_00000260;
 choice(
-   `The Dolphin Merry-go-round`.if(g_d0 != 0),
-   `The souvenir shop`.if(g_d1 != 0),
-   `The Security Office`.if(g_d2 != 0),
+   cond(l_d0 != 0)`The Dolphin Merry-go-round`,
+   cond(l_d1 != 0)`The souvenir shop`,
+   cond(l_d2 != 0)`The Security Office`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_0000028a);
    case 1: goto(lbl_00000508);
    case 2: goto(lbl_0000062a);
 }
 let lbl_0000028a;
 bgload({ name: `BG02A2`, transition: 20 });
-g_d0 = 0;
+l_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -644,7 +644,7 @@ hideTextbox();
 goto(lbl_00000221);
 let lbl_00000508;
 bgload({ name: `BG06A1`, transition: 20 });
-g_d1 = 0;
+l_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -658,7 +658,7 @@ theme park goods.`;
 costume off of the kid.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000544).if(g_de == 0);
+if (l_blamed_the_tanuki == 0) goto(lbl_00000544);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -917,7 +917,7 @@ bgload({ name: `BG25A3`, transition: 20 });
 hideTextbox();
 goto(lbl_00000221);
 let lbl_0000062a;
-g_d2 = 0;
+l_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1119,26 +1119,26 @@ said.`;
    Narr`I wondered where I should hit next.`;
    waitForClick; 
 });
-g_d0 = 1;
-g_d1 = 1;
-g_d2 = 1;
+l_d0 = 1;
+l_d1 = 1;
+l_d2 = 1;
 let lbl_000006c9;
-goto(lbl_00000708).if(g_d0 != 0);
-goto(lbl_00000708).if(g_d1 != 0);
-goto(lbl_00000baa).if(g_d2 == 0);
+if (l_d0 != 0) goto(lbl_00000708);
+if (l_d1 != 0) goto(lbl_00000708);
+if (l_d2 == 0) goto(lbl_00000baa);
 let lbl_00000708;
 choice(
-   `The visitor elevator`.if(g_d0 != 0),
-   `The warehouse`.if(g_d1 != 0),
-   `The infirmary`.if(g_d2 != 0),
+   cond(l_d0 != 0)`The visitor elevator`,
+   cond(l_d1 != 0)`The warehouse`,
+   cond(l_d2 != 0)`The infirmary`,
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000732);
    case 1: goto(lbl_0000097a);
    case 2: goto(lbl_000009c1);
 }
 let lbl_00000732;
-g_d0 = 0;
+l_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1535,7 +1535,7 @@ text(() => {
 hideTextbox();
 goto(lbl_000006c9);
 let lbl_0000097a;
-g_d1 = 0;
+l_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1614,7 +1614,7 @@ hideTextbox();
 goto(lbl_000006c9);
 let lbl_000009c1;
 bgload({ name: `BG08A1`, transition: 20 });
-g_d2 = 0;
+l_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2151,13 +2151,13 @@ choice(
    `Satisfied with the explanation`
    `Unsatisfied with the explanation`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00000d80);
    case 1: goto(lbl_00000d9f);
 }
 let lbl_00000d80;
-g_b7 += 1;
-g_b8 += 1;
+l_tsugumi_point += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2559,7 +2559,7 @@ text(() => {
    Takeshi`"Ah! What a pain!"`;
    waitForClick; clearText; 
 });
-goto(lbl_000010bb).if(g_de == 0);
+if (l_blamed_the_tanuki == 0) goto(lbl_000010bb);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3020,7 +3020,7 @@ choice(
    `Hey, everybody makes mistakes`
    `It's not your fault, Sora`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_000016e7);
    case 1: goto(lbl_000016f8);
 }
@@ -3052,7 +3052,7 @@ the monitor.`;
 removeFG({ id: 1, useAnim: true });
 goto(lbl_0000175a);
 let lbl_000016f8;
-g_e8 = 1;
+l_said_it_is_not_soras_fault = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3546,9 +3546,9 @@ of the way and put her hands on the girl's
 shoulders.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001b06).if(g_f1 == 0);
-goto(lbl_00001b06).if(g_ba != 1);
-g_b3 = 0;
+if (l_is_coco_route == 0) goto(lbl_00001b06);
+if (l_coco_point != 1) goto(lbl_00001b06);
+l_choice = 0;
 jump(`TC1D`);
 let lbl_00001b06;
 multifgload2({ id1: 1, id2: 2, name1: `CO08ADM`, name2: `YU13BDM`, x1: 128, x2: 512, useAnim: true });
@@ -3912,12 +3912,12 @@ choice(
    `Where did she go?`
    `When was Sora going to sleep?`
 );
-switch (choice) {
+switch (l_choice) {
    case 0: goto(lbl_00001e64);
    case 1: goto(lbl_00001f3e);
 }
 let lbl_00001e64;
-g_b7 += 2;
+l_tsugumi_point += 2;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -4016,7 +4016,7 @@ had passed.`;
 });
 goto(lbl_00001f4e);
 let lbl_00001f3e;
-g_b8 += 1;
+l_sora_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -4064,5 +4064,5 @@ got heavier and heavier.`;
 removeBG({ mode: BLACK, transition: 1 });
 stopSFX()
 delay({ interval: 150 });
-g_b3 = 0;
+l_choice = 0;
 jump(`T_2A`);
