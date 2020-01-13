@@ -252,24 +252,19 @@ fgload({ id: 1, name: `SO10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`YBD000`); appendText; 
-   //Sora
    Sora`"The partition strength limits...have been 
 exceeded."`;
    waitForClick; clearText; marker; sound(`YBD001`); appendText; 
-   //Sora
    Sora`"Flooding has started on each floor."`;
    waitForClick; clearText; marker; sound(`YBD002`); appendText; 
-   //Sora
    Sora`"Flooding has begun in Sector 4 of Zweite 
 stock...implosion has begun in Sector 5 on the 
 same floor...in Sector 6..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora reporting the situation in a monotone.`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"......"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...What's wrong? What else?" `;
    waitForClick; clearText; 
 });
@@ -277,24 +272,18 @@ fgload({ id: 1, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`YBD003`); appendText; 
-   //Sora
    Sora`"No, I leave it at that...this report now 
 means nothing..."`;
    waitForClick; clearText; marker; sound(`YBD004`); appendText; 
-   //Sora
    Sora`"Flooding has started in this sector, too...it 
 won't be long until damage will appear here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I see......"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"How long do you think this will hold?"`;
    waitForClick; clearText; marker; sound(`YBD005`); appendText; 
-   //Sora
    Sora`"20 to 25 minutes......"`;
    waitForClick; clearText; marker; sound(`YBD006`); appendText; 
-   //Sora
    Sora`"But it could implode at any time."`;
    waitForClick; clearText; 
 });
@@ -334,22 +323,16 @@ fgload({ id: 1, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`YBD007`); appendText; 
-   //Sora
    Sora`"I couldn't save you two after all..."`;
    waitForClick; clearText; marker; sound(`YBD008`); appendText; 
-   //Sora
    Sora`"I am......really...truly...sorry..."`;
    waitForClick; clearText; marker; sound(`YBD009`); appendText; 
-   //Sora
    Sora`"...Truly...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't be.... It's not your fault."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I think you did a great job."`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"..."`;
    waitForClick; clearText; 
 });
@@ -364,7 +347,6 @@ fgload({ id: 1, name: `YU03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"You, this place isn't going to hold...let's 
 go."`;
    waitForClick; clearText; 
@@ -377,7 +359,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`She looked up powerlessly and nodded slightly.`;
    waitForClick; clearText; marker; sound(`YBD010`); appendText; 
-   //You
    You`"....Mmm."`;
    waitForClick; clearText; 
 });
@@ -392,19 +373,15 @@ fgload({ id: 1, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`YBD011`); appendText; 
-   //Sora
    Sora`"Where are you going?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't know.... Somewhere where we can 
 gain a little more time."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I intend to stake our lives on the 
 possibility that we would be rescued 
 until the very end."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I can't think of anything to do other than 
 that..."`;
    waitForClick; clearText; 
@@ -413,55 +390,42 @@ playSFX({ name: `SE06_02`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"I promised her......that I would protect 
 her no matter what."`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"......"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Where is the safest place left among 
 the floors?"`;
    waitForClick; clearText; marker; sound(`YBD012`); appendText; 
-   //Sora
    Sora`"That would be the Control Room on Dritte 
 stock, or......"`;
    waitForClick; clearText; marker; sound(`YBD013`); appendText; 
-   //Sora
    Sora`"But it is only a matter of a few dozen 
 minutes difference."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That's enough......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was going to leave the room...but I suddenly 
 stopped.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What are you going to do, Sora?"`;
    waitForClick; clearText; marker; sound(`YBD014`); appendText; 
-   //Sora
    Sora`"I will not be able to accompany you two 
 any more."`;
    waitForClick; clearText; marker; sound(`YBD015`); appendText; 
-   //Sora
    Sora`"Due to flooding, image broadcasting devices 
 in the complex have been significantly 
 damaged."`;
    waitForClick; clearText; marker; sound(`YBD016`); appendText; 
-   //Sora
    Sora`"The places I can appear are limited."`;
    waitForClick; clearText; marker; sound(`YBD017`); appendText; 
-   //Sora
    Sora`"But at the very least, I want to guide you 
 two to the Control Room via my audio 
 function."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Alright. Please do."`;
    waitForClick; clearText; marker; sound(`YBD018`); appendText; 
-   //Sora
    Sora`"Yes......"`;
    waitForClick; clearText; 
 });
@@ -479,7 +443,6 @@ from walls in spots.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The bulkheads squealed.`;
    waitForClick; clearText; marker; sound(`YBD019`); appendText; 
-   //Sora
    Sora`"I will guide you.... I will show you the 
 route to the Control Room which is still 
 safe..."`;
@@ -501,13 +464,11 @@ predicted should have passed long before.`;
    Narr`LeMU kept resisting to the end as if Sora was 
 willing it to protect us.`;
    waitForClick; clearText; marker; sound(`YBD020`); appendText; 
-   //You
    You`"*Pant*, *pant*, *pant*......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You gasped, suffering terribly as I carried 
 her on my back.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Be strong. Be patient. It's just a little 
 further..."`;
    waitForClick; clearText; marker; appendText; 
@@ -537,7 +498,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The vision of the little girl....`;
    waitForClick; clearText; marker; sound(`YBD021`); appendText; 
-   //You
    You`"...What...what's the matter...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She stood across the corridor.`;
@@ -547,10 +507,8 @@ text(() => {
    Narr`And then a name flashed in my mind, 
 as clear as a bell.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...Coco!"`;
    waitForClick; clearText; marker; sound(`YBD022`); appendText; 
-   //Sora
    Sora`"Kid, what is the matter?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Turning on her heels, Coco ran off 
@@ -558,10 +516,8 @@ in the other direction.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I chased after her, still carrying You.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Cocoooo!"`;
    waitForClick; clearText; marker; sound(`YBD023`); appendText; 
-   //Sora
    Sora`"Kid! Please come back! There is...!"`;
    waitForClick; clearText; 
 });
@@ -616,20 +572,16 @@ Himmel.`;
    waitForClick; clearText; marker; appendText; 
    Narr`But the door wouldn't budge.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sora! Open this door!"`;
    waitForClick; clearText; marker; sound(`Y7A131`); appendText; 
-   //Sora
    Sora`"It's impossible. That door is out of my 
 jurisdiction."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pounded on the door.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I know it...on the other side of this 
 door...!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You will be safe in there! Please! Open this 
 door!!!"`;
    waitForClick; clearText; 
@@ -767,27 +719,20 @@ unSkippableDelay(33);
 showTextbox();
 text(() => {
    marker; sound(`Y4A061`); appendText; 
-   //You
    You`"Promise?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, I promise."`;
    waitForClick; clearText; marker; sound(`Y4A062`); appendText; 
-   //You
    You`"And what if......you break it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I won't. I'll see that you're safe."`;
    waitForClick; clearText; marker; sound(`Y4A063`); appendText; 
-   //You
    You`"For sure? There's not even a 1 percent 
 chance you're wrong?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There is not even a 0.00000000000000001 
 percent possibility."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"......"`;
    waitForClick; clearText; 
 });
@@ -795,11 +740,9 @@ bgload({ name: `EV_YU03C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`Y4A064`); appendText; 
-   //You
    You`"Talk about promising more than 
 you can deliver..."`;
    waitForClick; clearText; marker; sound(`Y4A065`); appendText; 
-   //You
    You`"Oh well, I suppose I'll have to trust you."`;
    waitForClick; clearText; 
 });

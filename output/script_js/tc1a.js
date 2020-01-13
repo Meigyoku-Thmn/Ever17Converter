@@ -1,7 +1,6 @@
 showTextbox();
 text(() => {
    marker; sound(`C1T000`); appendText; 
-   //Girl
    Girl`"It doesn't do us any good just standing 
 around here, how about you take us somewhere?"`;
    waitForClick; clearText; marker; sound(`C1T001`); appendText; 
@@ -53,7 +52,6 @@ text(() => {
    marker; appendText; 
    Narr`(That sounded like a pounding noise...?)`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, did you just hear something?"`;
    waitForClick; clearText; 
 });
@@ -89,7 +87,6 @@ varop(`(28 0a a4) ba += (00) 1`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, did you just hear something?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I stopped and asked the two of them.`;
@@ -99,17 +96,14 @@ multifgload2({ id1: 1, id2: 2, name1: `TU06ADM`, name2: `SO06ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C1T002`); appendText; 
-   //Girl
    Girl`"?"`;
    waitForClick; clearText; marker; sound(`C1T003`); appendText; 
    //Park staff
    Park_staff`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You didn't just hear a kind of pounding 
 noise?"`;
    waitForClick; clearText; marker; sound(`C1T004`); appendText; 
-   //Girl
    Girl`"No."`;
    waitForClick; clearText; 
 });
@@ -125,20 +119,16 @@ text(() => {
 LeMU, it isn't uncommon for the metal 
 partitions to rattle occasionally."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Nah, it didn't sound like that."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It sounded like someone pounding on something 
 with their hand."`;
    waitForClick; clearText; marker; sound(`C1T007`); appendText; 
-   //Girl
    Girl`"?"`;
    waitForClick; clearText; marker; sound(`C1T008`); appendText; 
    //Park staff
    Park_staff`"?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm going to go check."`;
    waitForClick; clearText; 
 });
@@ -179,7 +169,6 @@ playSFX({ name: `SE00_13`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"There. You can hear it, right?"`;
    waitForClick; clearText; 
 });
@@ -190,7 +179,6 @@ text(() => {
    //Park staff
    Park_staff`"Yeah..."`;
    waitForClick; clearText; marker; sound(`C1T011`); appendText; 
-   //Girl
    Girl`"So there's someone else trapped here too...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`We strained our ears to find where the sound 
@@ -244,13 +232,11 @@ multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey! Can you hear us!?"`;
    waitForClick; clearText; marker; sound(`C1T016`); appendText; 
    //??
    Unk`"Ah! Y-y-yeah! I can hear you!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hang on! We'll get you out!"`;
    waitForClick; clearText; marker; sound(`C1T017`); appendText; 
    //??
@@ -391,7 +377,6 @@ text(() => {
    marker; appendText; 
    Narr`—WHAM!`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Agh!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I struck my knee painfully.`;
@@ -410,7 +395,6 @@ text(() => {
 frame of the elevator doors, the female park 
 employee had a worried expression on her face. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, sure, I'm fine, just fine..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I replied, while rubbing my knee.`;
@@ -422,7 +406,6 @@ from a height greater than my own.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And as I stood there thinking that...`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hold on. I'll get you out of there."`;
    waitForClick; clearText; marker; sound(`C1T022`); appendText; 
    //??
@@ -454,13 +437,11 @@ happy she was about to be freed.`;
    Narr`(I think I've seen this girl...somewhere 
 before...)`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ah!"`;
    waitForClick; clearText; marker; sound(`C1T024`); appendText; 
    //??
    Unk`"Ah!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You're that girl from before!"`;
    waitForClick; clearText; marker; sound(`C1T025`); appendText; 
    //??
@@ -474,13 +455,11 @@ before...)`;
    Narr`I spotted the scruffy face of a dog circling 
 around her feet.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Popo..."`;
    waitForClick; clearText; marker; sound(`C1T026`); appendText; 
    //??
    Unk`"His name's not 'Popo'..."`;
    waitForClick; clearText; marker; sound(`C1T027`); appendText; 
-   //Coco
    Coco`"This little guy's name is Pipi, and my name's 
 Coco.... Try not to mix them up, okay?"`;
    waitForClick; clearText; marker; appendText; 
@@ -492,47 +471,35 @@ Coco.... Try not to mix them up, okay?"`;
 mascot Myumyun's tail, up at the floating 
 island, and his owner.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But...what are you doing here?"`;
    waitForClick; clearText; marker; sound(`C1T028`); appendText; 
-   //Coco
    Coco`"Well what do you expect me to say to that...?"`;
    waitForClick; clearText; marker; sound(`C1T029`); appendText; 
-   //Coco
    Coco`"I was trying to go to one of the lower 
 levels, and all of a sudden this 
 escalator stopped, and..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It isn't an escalator, it's an elevator, 
 alright?"`;
    waitForClick; clearText; marker; sound(`C1T030`); appendText; 
-   //Coco
    Coco`"Ha, ha, oops.... I mean evelator, okay?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"No, NOT e-ve-lator, E-LE-VA-TOR."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"If you're on a moving staircase, that's 
 called an escalator, and if you're in 
 a box that goes up and DOWN, now that's 
 an elevator. Try not to mix them up."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"......"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"......"`;
    waitForClick; clearText; marker; sound(`C1T031`); appendText; 
-   //Coco
    Coco`"Does it really matter?"`;
    waitForClick; clearText; marker; sound(`C1T032`); appendText; 
-   //Coco
    Coco`"Anyways, I don't know why, but all of a 
 sudden I was trapped in this box."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Really..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It had been the same with me.`;
@@ -540,18 +507,14 @@ sudden I was trapped in this box."`;
    Narr`It had only been a little earlier that I had 
 been trapped in another elevator...`;
    waitForClick; clearText; marker; sound(`C1T033`); appendText; 
-   //Coco
    Coco`"Hey?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmmm?"`;
    waitForClick; clearText; marker; sound(`C1T034`); appendText; 
-   //Coco
    Coco`"I'd kind of like to get out of here...soon..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco gave me an imploring look.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, aah, I'm sorry."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I said that and got down on my stomach 
@@ -560,7 +523,6 @@ from atop the elevator.`;
    Narr`I leaned down from the small hole, and stuck 
 my hand out to Coco.`;
    waitForClick; clearText; marker; sound(`C1T035`); appendText; 
-   //Coco
    Coco`"Please, help Pipi first."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco held up Pipi to me, stretching as far as 
@@ -569,12 +531,10 @@ she could to make him reach.`;
    Narr`I grabbed onto Pipi's front legs and pulled 
 him out from the hole in the ceiling.`;
    waitForClick; clearText; marker; sound(`PIPI_08`); appendText; 
-   //Pipi
    Pipi`"*whine*... *whine*...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Pipi sniffed for my scent.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Okay, next it's your turn, Coco."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I stuck out my hand again.`;
@@ -584,7 +544,6 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T036`); appendText; 
-   //Coco
    Coco`"Aia! Wah! Ayah!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco jumped over and over, reaching out for my 
@@ -594,7 +553,6 @@ hand.`;
 had a terrible jump, because she didn't 
 even reach my fingertips.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, that reminds me..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`From the position I was in, arms hanging down, 
@@ -613,61 +571,45 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T037`); appendText; 
-   //Coco
    Coco`"Aaii! Haiya! Awwww, just a little bit 
 further..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco was still jumping.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, Coco?"`;
    waitForClick; clearText; marker; sound(`C1T038`); appendText; 
-   //Coco
    Coco`"Yeah?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Pipi can't speak, uh, English, right?"`;
    waitForClick; clearText; marker; sound(`C1T039`); appendText; 
-   //Coco
    Coco`"Of course not!"`;
    waitForClick; clearText; marker; sound(`C1T040`); appendText; 
-   //Coco
    Coco`"He only speaks Piplish!"`;
    waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   //Pipi
    Pipi`"Woof woof!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Pipi barked into my ear.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's what I thought..."`;
    waitForClick; clearText; marker; sound(`C1T041`); appendText; 
-   //Coco
    Coco`"...Why do you ask?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Uh, well earlier? I could have sworn I heard 
 two voices coming from this elevator..."`;
    waitForClick; clearText; marker; sound(`C1T042`); appendText; 
-   //Coco
    Coco`"Two?"`;
    waitForClick; clearText; marker; sound(`C1T043`); appendText; 
-   //Coco
    Coco`"This whole time it's only been Pipi and me in 
 here."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Uhhh.... Yeah, I can tell that from looking."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Maybe the next elevator over?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco looked puzzled.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, well. Whatever."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Anyway, before I take care of that, we gotta 
 get you out of here."`;
    waitForClick; clearText; marker; appendText; 
@@ -678,7 +620,6 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T044`); appendText; 
-   //Coco
    Coco`"Toriiyaa!"`;
    waitForClick; clearText; 
 });
@@ -686,7 +627,6 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T045`); appendText; 
-   //Coco
    Coco`"Uuuriya!"`;
    waitForClick; clearText; 
 });
@@ -694,7 +634,6 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T046`); appendText; 
-   //Coco
    Coco`"Eeeiii!"`;
    waitForClick; clearText; 
 });
@@ -702,7 +641,6 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T047`); appendText; 
-   //Coco
    Coco`"Yaah!"`;
    waitForClick; clearText; 
 });
@@ -710,7 +648,6 @@ playSFX({ name: `SE10_06`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    marker; sound(`C1T048`); appendText; 
-   //Coco
    Coco`"Waachooo!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`..........`;
@@ -727,15 +664,12 @@ fgload({ id: 1, name: `CO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T049`); appendText; 
-   //Coco
    Coco`"Wheeew! That was close."`;
    waitForClick; clearText; marker; sound(`C1T050`); appendText; 
-   //Coco
    Coco`"Thank you so much."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco shook my hand profusely.`;
    waitForClick; clearText; marker; sound(`C1T051`); appendText; 
-   //Coco
    Coco`"Um, by the way? Who are these people...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco looked back and forth between the faces 
@@ -749,10 +683,8 @@ multifgload3({ name1: `TU17ADS`, name2: `CO15ADS`, name3: `SO11ADS`, x1: 128, x2
 showTextbox();
 text(() => {
    marker; sound(`C1T052`); appendText; 
-   //Sora
    Sora`"My name is Sora Akanegasaki."`;
    waitForClick; clearText; marker; sound(`C1T053`); appendText; 
-   //Sora
    Sora`"Do you remember me?"`;
    waitForClick; clearText; 
 });
@@ -760,11 +692,9 @@ fgload({ id: 2, name: `CO16ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T054`); appendText; 
-   //Coco
    Coco`"Aaah! You're that lady who was giving 
 explanations at the entrance!"`;
    waitForClick; clearText; marker; sound(`C1T055`); appendText; 
-   //Sora
    Sora`"Yes."`;
    waitForClick; clearText; 
 });
@@ -772,10 +702,8 @@ fgload({ id: 2, name: `CO15ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T056`); appendText; 
-   //Coco
    Coco`"Ummm, uuuuhhh, my name is..."`;
    waitForClick; clearText; marker; sound(`C1T057`); appendText; 
-   //Sora
    Sora`"I know."`;
    waitForClick; clearText; 
 });
@@ -783,7 +711,6 @@ fgload({ id: 4, name: `SO12ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T058`); appendText; 
-   //Sora
    Sora`"Coco Yagami, correct?"`;
    waitForClick; clearText; 
 });
@@ -791,10 +718,8 @@ fgload({ id: 2, name: `CO06ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T059`); appendText; 
-   //Coco
    Coco`"Huh? How'd you know?"`;
    waitForClick; clearText; marker; sound(`C1T060`); appendText; 
-   //Sora
    Sora`"Because you were so enthusiastic when you 
 replied to me, 'I'M CO-CO YA-GA-MI!'"`;
    waitForClick; clearText; 
@@ -803,20 +728,15 @@ fgload({ id: 2, name: `CO16ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T061`); appendText; 
-   //Coco
    Coco`"Oh, yeah..."`;
    waitForClick; clearText; marker; sound(`C1T062`); appendText; 
-   //Coco
    Coco`"You remembered?"`;
    waitForClick; clearText; marker; sound(`C1T063`); appendText; 
-   //Sora
    Sora`"I have a good memory."`;
    waitForClick; clearText; marker; sound(`C1T064`); appendText; 
-   //Sora
    Sora`"I also remember your dog's name. Pipi, wasn't 
 it?"`;
    waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   //Pipi
    Pipi`"Woof!"`;
    waitForClick; clearText; 
 });
@@ -824,7 +744,6 @@ fgload({ id: 2, name: `CO11ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T065`); appendText; 
-   //Coco
    Coco`"And...you are...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco turned to the girl in black clothing.`;
@@ -834,14 +753,12 @@ fgload({ id: 1, name: `TU15ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`PIPI_11`); appendText; 
-   //Pipi
    Pipi`"Woof woof! Woof!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Shaking his tail excitedly, for some reason 
@@ -852,18 +769,14 @@ fgload({ id: 2, name: `CO06ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T067`); appendText; 
-   //Coco
    Coco`"Huh?"`;
    waitForClick; clearText; marker; sound(`C1T068`); appendText; 
-   //Coco
    Coco`"Um, wait a second...you wouldn't happen to 
 be...that person who was wearing the Lemur 
 costume?"`;
    waitForClick; clearText; marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; sound(`C1T069`); appendText; 
-   //Coco
    Coco`"Hey, you are, aren't you."`;
    waitForClick; clearText; 
 });
@@ -871,10 +784,8 @@ fgload({ id: 2, name: `CO12ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T070`); appendText; 
-   //Coco
    Coco`"I know it! You've got to be!"`;
    waitForClick; clearText; marker; sound(`C1T071`); appendText; 
-   //Coco
    Coco`"I remember your voice!"`;
    waitForClick; clearText; 
 });
@@ -882,7 +793,6 @@ fgload({ id: 1, name: `TU17ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T072`); appendText; 
-   //Girl
    Girl`"Whatever. I don't really care about that, but 
 can you do something about this mutt?"`;
    waitForClick; clearText; marker; appendText; 
@@ -894,7 +804,6 @@ removeFG({ id: 2, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T073`); appendText; 
-   //Coco
    Coco`"Ah, aah, I'm sorry."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco scooped up Pipi, and rapped him lightly 
@@ -905,10 +814,8 @@ fgload({ id: 2, name: `CO02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T074`); appendText; 
-   //Coco
    Coco`"Bad dog, you know better than to do that."`;
    waitForClick; clearText; marker; sound(`PIPI_07`); appendText; 
-   //Pipi
    Pipi`"*whine* *whimper*..."`;
    waitForClick; clearText; 
 });
@@ -917,7 +824,6 @@ setFGRenderOrder(4, 2, 1);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey? How about my name? You don't want to 
 know?"`;
    waitForClick; clearText; marker; appendText; 
@@ -929,10 +835,8 @@ fgload({ id: 1, name: `CO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T075`); appendText; 
-   //Coco
    Coco`"I already know what it is."`;
    waitForClick; clearText; marker; sound(`C1T076`); appendText; 
-   //Coco
    Coco`"Takeshi Kuranari...right?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco said this with a grin on her face.`;
@@ -950,20 +854,15 @@ fgload({ id: 1, name: `CO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T077`); appendText; 
-   //Coco
    Coco`"By the way...I've got something I want to 
 ask..."`;
    waitForClick; clearText; marker; sound(`C1T078`); appendText; 
-   //Sora
    Sora`"?"`;
    waitForClick; clearText; marker; sound(`C1T079`); appendText; 
-   //Girl
    Girl`"?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"?"`;
    waitForClick; clearText; marker; sound(`C1T080`); appendText; 
-   //Coco
    Coco`"Where did everyone else go?"`;
    waitForClick; clearText; 
 });
@@ -990,10 +889,8 @@ to here.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And of course the flooding. Everything.`;
    waitForClick; clearText; marker; sound(`C1T081`); appendText; 
-   //Coco
    Coco`"F-flooooding!?"`;
    waitForClick; clearText; marker; sound(`C1T082`); appendText; 
-   //Coco
    Coco`"You mean, water from the ocean came gushing 
 into LeMU!?"`;
    waitForClick; clearText; marker; appendText; 
@@ -1061,12 +958,10 @@ fgload({ id: 1, name: `SO06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T083`); appendText; 
-   //Sora
    Sora`"Ah!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora raised her voice in alarm.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What is it?"`;
    waitForClick; clearText; 
 });
@@ -1074,10 +969,8 @@ fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1T084`); appendText; 
-   //Sora
    Sora`"Someone's coming this way."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...What?"`;
    waitForClick; clearText; 
 });
@@ -1116,7 +1009,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The girl finally noticed us.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I didn't think there'd be anybody 
 else here."`;
    waitForClick; clearText; 
@@ -1128,14 +1020,12 @@ text(() => {
    //Park staff
    Park_staff`"Yeah. How are you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"About as good as I look, I suppose."`;
    waitForClick; clearText; marker; sound(`T1B010`); appendText; 
    //Park staff
    Park_staff`"Seems like you had a rough 
 time of it, too..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, lucky guess..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Relaxing a bit, I returned her smile.`;
@@ -1152,7 +1042,6 @@ multifgload2({ id1: 1, id2: 2, name1: `YU01BDM`, name2: `KA09ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T1B013`); appendText; 
-   //Kid
    Kid`"......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was that kid who we'd taken to the 
@@ -1165,7 +1054,6 @@ that would have been weird too, but...`;
    waitForClick; clearText; marker; appendText; 
    Narr`For some reason it bothered me.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Is something wrong with him? 
 He doesn't look so hot."`;
    waitForClick; clearText; 
@@ -1199,7 +1087,6 @@ fgload({ id: 2, name: `SO03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1B017`); appendText; 
-   //Sora
    Sora`"Well, the communication lines are down.... 
 I've been investigating ways to restore our 
 connection, but it's going to take some time."`;

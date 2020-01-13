@@ -37,7 +37,6 @@ hear, she was saying "I'm not getting enough
 vegetables. I'm just not getting enough 
 vegetables."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Say, where'd everybody else run off to?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`With ketchup smeared around her lips, Sara 
@@ -48,32 +47,24 @@ bgload({ name: `EV_SA16B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C3A171`); appendText; 
-   //Sara
    Sara`"Sora's in the Control Room. Nakkyu's in the 
 Security Office."`;
    waitForClick; clearText; marker; sound(`C3A172`); appendText; 
-   //Sara
    Sara`"As for Takeshi, I saw him riding the 
 merry-go-round, goofing off by himself."`;
    waitForClick; clearText; marker; sound(`C3A173`); appendText; 
-   //Sara
    Sara`"And as for Tsugumi, MIA, as usual."`;
    waitForClick; clearText; marker; sound(`C3A174`); appendText; 
-   //Sara
    Sara`"Now that the repairs on the warehouse are 
 finished, I guess everybody's taking a 
 breather."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hmm..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So what do you have planned next, Sara?"`;
    waitForClick; clearText; marker; sound(`C3A175`); appendText; 
-   //Sara
    Sara`"Nothing special really."`;
    waitForClick; clearText; marker; sound(`C3A176`); appendText; 
-   //Sara
    Sara`"Maybe I'll just sit here and wait to be 
 rescued while I eat this lettuce."`;
    waitForClick; clearText; 
@@ -85,7 +76,6 @@ text(() => {
    Narr`Sara kept munching the lettuce, making a 
 crunching sound as she bit into the core.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"By the way, Sara, what where you doing up 
 till now?"`;
    waitForClick; clearText; 
@@ -93,10 +83,8 @@ till now?"`;
 showTextbox();
 text(() => {
    marker; sound(`C3A177`); appendText; 
-   //Sara
    Sara`"Watching over you, Kid."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Watching over me?"`;
    waitForClick; clearText; 
 });
@@ -104,35 +92,28 @@ bgload({ name: `EV_SA16B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C3A178`); appendText; 
-   //Sara
    Sara`"Last night, after we carried you to the 
 infirmary, we all took turns watching you."`;
    waitForClick; clearText; marker; sound(`C3A179`); appendText; 
-   //Sara
    Sara`"We were worried you might suddenly go on a 
 rampage or something...so we took every 
 precaution."`;
    waitForClick; clearText; marker; sound(`C3A180`); appendText; 
-   //Sara
    Sara`"And until a minute ago, it was my turn to 
 watch."`;
    waitForClick; clearText; marker; sound(`C3A181`); appendText; 
-   //Sara
    Sara`"Except in the split second I turned my back 
 and you up and disappeared... "`;
    waitForClick; clearText; marker; sound(`C3A182`); appendText; 
-   //Sara
    Sara`"I wondered what was going on, and left the 
 infirmary to find you when..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"When you found me crying?"`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`C3A183`); appendText; 
-   //Sara
    Sara`"That's right."`;
    waitForClick; clearText; 
 });
@@ -148,12 +129,10 @@ leaf.`;
 ketchup smeared around Sara's mouth, dabbed it 
 on my lettuce and ate it.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What should I do next?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I muttered to myself.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Just sitting here's getting boring."`;
    waitForClick; clearText; 
 });
@@ -186,10 +165,8 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A184`); appendText; 
-   //Sara
    Sara`"Hey you? What are you looking at?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Can I hang out with you for awhile?"`;
    waitForClick; clearText; 
 });
@@ -197,7 +174,6 @@ fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A185`); appendText; 
-   //Sara
    Sara`"Yeah, sure. No problem."`;
    waitForClick; clearText; 
 });
@@ -205,7 +181,6 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A186`); appendText; 
-   //Sara
    Sara`"Might be good to show your face around. 
 Everyone's been worried about you."`;
    waitForClick; clearText; marker; appendText; 
@@ -389,7 +364,6 @@ showDimOverlay();
 showTextbox();
 text(() => {
    marker; sound(`C3A161`); appendText; 
-   //Sara
    Sara`"I would think that you'd just be relieved to 
 know, 'At least I have a normal face?'"`;
    waitForClick; clearText; 
@@ -417,7 +391,6 @@ false, or a mistaken memory.`;
    Narr`In that case, I wondered how a false memory 
 could creep into my mind.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Ah...!"`;
    waitForClick; clearText; 
 });
@@ -426,10 +399,8 @@ fgload({ id: 1, name: `KA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A187`); appendText; 
-   //Kid
    Kid`"Who...are...you?"`;
    waitForClick; clearText; marker; sound(`C3A188`); appendText; 
-   //Kid
    Kid`"Who...am...I?"`;
    waitForClick; clearText; 
 });
@@ -479,7 +450,6 @@ witnessed my own self.`;
    waitForClick; clearText; marker; appendText; 
    Narr`(But if he isn't me...who the is he?)`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"*sigh*..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`My head pounded with pain.`;
@@ -536,15 +506,12 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`You was sitting in her chair drinking coffee.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What are you doing here all by yourself?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked as I sat down beside her.`;
    waitForClick; clearText; marker; sound(`S3A295`); appendText; 
-   //You
    You`"I'm doing some research."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Research?"`;
    waitForClick; clearText; 
 });
@@ -552,29 +519,23 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A299`); appendText; 
-   //You
    You`"I told you before, right? About why I got 
 this job at LeMU..."`;
    waitForClick; clearText; marker; sound(`S3A300`); appendText; 
-   //You
    You`"I'm looking for clues about my father, who 
 disappeared."`;
    waitForClick; clearText; marker; sound(`S3A301`); appendText; 
-   //You
    You`"He went missing 17 years ago and I came 
 hoping to find a hint as to why."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I thought maybe I'd heard her mention it 
 before.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You said that the last place he was seen was 
 in LeMU, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh. Are you investigating that...?"`;
    waitForClick; clearText; marker; sound(`S3A302`); appendText; 
-   //You
    You`"Yes..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You nodded and shifted the cup to her other 
@@ -585,37 +546,27 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A303`); appendText; 
-   //You
    You`"Information about my father."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`S3A304`); appendText; 
-   //You
    You`"It was 17 years ago..."`;
    waitForClick; clearText; marker; sound(`S3A305`); appendText; 
-   //You
    You`"They say there was a big accident here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Accident?"`;
    waitForClick; clearText; marker; sound(`S3A306`); appendText; 
-   //You
    You`"I don't really know that much about it."`;
    waitForClick; clearText; marker; sound(`S3A307`); appendText; 
-   //You
    You`"Even looking at old news clippings, I wasn't 
 able to gather much information."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What do you mean?"`;
    waitForClick; clearText; marker; sound(`S3A308`); appendText; 
-   //You
    You`"The cause of the accident, specific damage, 
 what happened afterward...all the coverage was 
 vague..."`;
    waitForClick; clearText; marker; sound(`S3A309`); appendText; 
-   //You
    You`"I figure that the media didn't really know 
 the details about what happened either."`;
    waitForClick; clearText; 
@@ -624,30 +575,23 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A310`); appendText; 
-   //You
    You`"Somebody or something powerful clamped down 
 on information."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hmmm. That's interesting..."`;
    waitForClick; clearText; marker; sound(`S3A311`); appendText; 
-   //You
    You`"An accident 17 years ago shrouded in 
 mystery."`;
    waitForClick; clearText; marker; sound(`S3A312`); appendText; 
-   //You
    You`"And my father that disappeared 17 years 
 ago."`;
    waitForClick; clearText; marker; sound(`S3A313`); appendText; 
-   //You
    You`"He worked here until right before the 
 accident."`;
    waitForClick; clearText; marker; sound(`S3A314`); appendText; 
-   //You
    You`"I can guess about some of what happened from 
 what we already know..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You think that the accident had something to 
 do with the disappearance of your father...?"`;
    waitForClick; clearText; 
@@ -656,10 +600,8 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A315`); appendText; 
-   //You
    You`"That's right."`;
    waitForClick; clearText; marker; sound(`S3A316`); appendText; 
-   //You
    You`"I thought that here...that in LeMMIH there 
 would be some trace...that's why I came."`;
    waitForClick; clearText; 
@@ -668,7 +610,6 @@ fgload({ id: 1, name: `YU13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A317`); appendText; 
-   //You
    You`"But since I started working I haven't had 
 any time to look into it..."`;
    waitForClick; clearText; 
@@ -677,7 +618,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A318`); appendText; 
-   //You
    You`"I couldn't even get close to LeMMIH's 
 database."`;
    waitForClick; clearText; 
@@ -686,7 +626,6 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A319`); appendText; 
-   //You
    You`"I guess it makes sense. I was pretty naive."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The chair squeaked as You slumped back in it.`;
@@ -698,27 +637,20 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A320`); appendText; 
-   //You
    You`"But...but...you know what? Opportunity 
 knocked."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Opportunity..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You...you don't mean this accident?"`;
    waitForClick; clearText; marker; sound(`S3A321`); appendText; 
-   //You
    You`"Yup."`;
    waitForClick; clearText; marker; sound(`S3A322`); appendText; 
-   //You
    You`"Now I have access to LeMMIH."`;
    waitForClick; clearText; marker; sound(`S3A323`); appendText; 
-   //You
    You`"Thanks to the accident, I have been able to 
 get a step closer to my goal."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -726,13 +658,11 @@ fgload({ id: 1, name: `YU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A324`); appendText; 
-   //You
    You`"Well, I suppose it has also given me a chance 
 to live on the edge...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You joked as she shrugged her shoulders.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So? Did you find anything out?"`;
    waitForClick; clearText; 
 });
@@ -740,7 +670,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A333`); appendText; 
-   //You
    You`"That...that's the problem."`;
    waitForClick; clearText; 
 });
@@ -767,27 +696,21 @@ OS had begun to operate.`;
    Narr`Gazing at the new window, You began to explain 
 further.`;
    waitForClick; clearText; marker; sound(`S3A334`); appendText; 
-   //You
    You`"This is the authorization screen to connect 
 to the network."`;
    waitForClick; clearText; marker; sound(`S3A335`); appendText; 
-   //You
    You`"This is where the system assesses the user 
 for proper authorization."`;
    waitForClick; clearText; marker; sound(`S3A336`); appendText; 
-   //You
    You`"I'm attempting to connect to LeMMIH's C 
 level...meaning I'm trying to access 
 classified information."`;
    waitForClick; clearText; marker; sound(`S3A337`); appendText; 
-   //You
    You`"But if anyone could easily access important 
 data, it would be a security disaster, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Okay."`;
    waitForClick; clearText; marker; sound(`S3A338`); appendText; 
-   //You
    You`"That's why there is a screen where the 
 computer asks 'Hey, who's trying to look at 
 this?'"`;
@@ -798,24 +721,19 @@ the box for "Name."`;
    Narr`Inside the box were written the words, 'YUKIE 
 TANAKA.'`;
    waitForClick; clearText; marker; sound(`S3A339`); appendText; 
-   //You
    You`"Of course there is no way I could access the 
 system using my name, so I'm using someone 
 else's name to get me in."`;
    waitForClick; clearText; marker; sound(`S3A340`); appendText; 
-   //You
    You`"But anyone might think to try that, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I suppose so."`;
    waitForClick; clearText; marker; sound(`S3A341`); appendText; 
-   //You
    You`"Obviously the people who programmed this 
 aren't stupid. So to prevent false 
 authorization they use methods to check 
 identity."`;
    waitForClick; clearText; marker; sound(`S3A342`); appendText; 
-   //You
    You`"The screen then says, 'If you really are 
 YUKIE TANAKA, please show me your password.'"`;
    waitForClick; clearText; 
@@ -934,29 +852,23 @@ text(() => {
    marker; appendText; 
    Narr`Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, You?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked while watching her fingers dance 
 across the keyboard.`;
    waitForClick; clearText; marker; sound(`S3A347`); appendText; 
-   //You
    You`"Yes?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It may be a silly thing to ask, but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The thing that you are hung up on is the 
 password, right?"`;
    waitForClick; clearText; marker; sound(`S3A409`); appendText; 
-   //You
    You`"Right..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`And then to my surprise——suddenly words 
 started flying out of my mouth!`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The empty fall sky...A single cuckoo calls 
 out...Brings a chill to me."`;
    waitForClick; clearText; marker; appendText; 
@@ -974,7 +886,6 @@ I felt `;
    Narr`Before I could even think, I was driven by the 
 impulse to blurt the words out. `;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`".............................."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You's fingers stopped, her breathing stopped, 
@@ -992,18 +903,14 @@ bgload({ name: `IT03A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Look! It's written right here..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The empty fall sky...A single cuckoo calls 
 out...Brings a chill to me."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I bet this is the password you're looking 
 for."`;
    waitForClick; clearText; marker; sound(`S3A470`); appendText; 
-   //You
    You`"What! Let me see that!"`;
    waitForClick; clearText; 
 });
@@ -1014,11 +921,9 @@ text(() => {
    Narr`You bounced up from the chair and tore the 
 paper from my hand.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Lay the paper down and take a look at it from 
 an angle."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You should be able to see it."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Although the words were bursting out of my 
@@ -1033,10 +938,8 @@ fgload({ id: 1, name: `YU02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A471`); appendText; 
-   //You
    You`"You...you're right!"`;
    waitForClick; clearText; marker; sound(`S3A472`); appendText; 
-   //You
    You`"Amazing—! Really amazing, Kid!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You grabbed my hand and shook it happily.`;
@@ -1051,13 +954,11 @@ close in a big bear hug.`;
    Narr`It was a nice fit...a little too nice...I 
 struggled for air.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I...give up...give...mercy..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I almost felt dangerously excited by the 
 softness of her.`;
    waitForClick; clearText; marker; sound(`S3A473`); appendText; 
-   //You
    You`"We did it We did it Yeah"`;
    waitForClick; clearText; 
 });
@@ -1082,14 +983,11 @@ bgload({ name: `IT03F`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S3A474`); appendText; 
-   //You
    You`"I get it now. You can't see it from right 
 above it."`;
    waitForClick; clearText; marker; sound(`S3A475`); appendText; 
-   //You
    You`"But if you look from the side...I see it now."`;
    waitForClick; clearText; marker; sound(`S3A481`); appendText; 
-   //You
    You`"The empty fall sky...A single cuckoo calls 
 out...Brings a chill to me."`;
    waitForClick; clearText; 
@@ -1099,7 +997,6 @@ fgload({ id: 1, name: `YU02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A482`); appendText; 
-   //You
    You`"Alright! Let's try this for a password."`;
    waitForClick; clearText; 
 });
@@ -1124,7 +1021,6 @@ text(() => {
    marker; appendText; 
    Narr`Tap, tap, tap...`;
    waitForClick; clearText; marker; sound(`S3A483`); appendText; 
-   //You
    You`"The empty fall sky...A single cuckoo calls 
 out...Brings a chill to me. Okay then!"`;
    waitForClick; clearText; 
@@ -1164,12 +1060,10 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A494`); appendText; 
-   //You
    You`"Wh-what in the...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The screen went black.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What happened...?"`;
    waitForClick; clearText; 
 });
@@ -1177,7 +1071,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A495`); appendText; 
-   //You
    You`"I don't know but it looks like it 
 automatically shut down the authorization 
 screen..."`;
@@ -1216,7 +1109,6 @@ text(() => {
    Narr`"Access denied. Currently this name cannot be 
 logged in."`;
    waitForClick; clearText; marker; sound(`S3A496`); appendText; 
-   //You
    You`"What? ! What is this?!"`;
    waitForClick; clearText; 
 });
@@ -1235,7 +1127,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The result was the same.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What does this mean?"`;
    waitForClick; clearText; 
 });
@@ -1243,16 +1134,13 @@ fgload({ id: 1, name: `YU03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A497`); appendText; 
-   //You
    You`"Maybe I entered the wrong password too many 
 times and it activated some kind of 
 protection."`;
    waitForClick; clearText; marker; sound(`S3A498`); appendText; 
-   //You
    You`"In other words, LeMMIH has completely denied 
 access to my mom's name."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So..."`;
    waitForClick; clearText; 
 });
@@ -1260,11 +1148,9 @@ fgload({ id: 1, name: `YU13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S3A499`); appendText; 
-   //You
    You`"So we'll have to give up for the time being, 
 I guess."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; 
 });
@@ -1312,7 +1198,6 @@ warehouse.)`;
 flooded the warehouse? I wanted to see for 
 myself.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara?"`;
    waitForClick; clearText; 
 });
@@ -1320,13 +1205,10 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A189`); appendText; 
-   //Sara
    Sara`"Yeah?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Think you could join me for a bit...?"`;
    waitForClick; clearText; marker; sound(`C3A190`); appendText; 
-   //Sara
    Sara`"Okay, but..."`;
    waitForClick; clearText; 
 });
@@ -1334,14 +1216,12 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A191`); appendText; 
-   //Sara
    Sara`"Do you mind waiting until I'm through with my 
 lettuce?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara spoke with her face still covered in 
 ketchup.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sure."`;
    waitForClick; clearText; 
 });
@@ -1354,7 +1234,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`While waiting I asked her a question.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So tell me...why ketchup and not dressing?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her answer was straightforward.`;
@@ -1364,10 +1243,8 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A192`); appendText; 
-   //Sara
    Sara`"Because I like tomatoes."`;
    waitForClick; clearText; marker; sound(`C3A193`); appendText; 
-   //Sara
    Sara`"They taste like the sun, don't you think?"`;
    waitForClick; clearText; 
 });
@@ -1391,7 +1268,6 @@ just cover our shoes...`;
    Narr`Around the room lay pipes, many of which look 
 to have been recently welded to repair damage.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So there really was some kind of flooding 
 here..."`;
    waitForClick; clearText; 
@@ -1400,42 +1276,31 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A194`); appendText; 
-   //Sara
    Sara`"Huh? Didn't you believe me when I told 
 you...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Of course I believed you, but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There's a difference between hearing 
 something and seeing it for yourself...I 
 mean...there's way more impact."`;
    waitForClick; clearText; marker; sound(`C3A195`); appendText; 
-   //Sara
    Sara`"Impact?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You know, the impact from realizing I saw 
 this all in a dream."`;
    waitForClick; clearText; marker; sound(`C3A196`); appendText; 
-   //Sara
    Sara`"Like a premonition..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well, I don't know if I could really call it 
 a premonition or not, but..."`;
    waitForClick; clearText; marker; sound(`C3A197`); appendText; 
-   //Sara
    Sara`"?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I mean, Tsugumi didn't get hurt, right?"`;
    waitForClick; clearText; marker; sound(`C3A198`); appendText; 
-   //Sara
    Sara`"Yeah."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And besides..."`;
    waitForClick; clearText; 
 });
@@ -1453,15 +1318,12 @@ it but...one thing was different.`;
 stacked high, but now it was stacked on the 
 floor.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"In my dream, the warehouse was completely 
 submerged in water."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But by the looks of it here, everything seems 
 fine..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I wonder if you could still call that a 
 premonition?"`;
    waitForClick; clearText; 
@@ -1470,14 +1332,11 @@ fgload({ id: 1, name: `SA13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A199`); appendText; 
-   //Sara
    Sara`"Beats me...I have no idea about things like 
 that..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Was the warehouse arranged like this from the 
 start?"`;
    waitForClick; clearText; 
@@ -1486,17 +1345,14 @@ fgload({ id: 1, name: `SA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A200`); appendText; 
-   //Sara
    Sara`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"See those containers and metal pipes lined up 
 over there?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked her while pointing to the rows of 
 scrap metal.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Were those stacked up in one tall pile 
 before?"`;
    waitForClick; clearText; 
@@ -1505,7 +1361,6 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A201`); appendText; 
-   //Sara
    Sara`"Uuumm.."`;
    waitForClick; clearText; 
 });
@@ -1513,11 +1368,9 @@ fgload({ id: 1, name: `SA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A202`); appendText; 
-   //Sara
    Sara`"You can't expect me to remember all the 
 details."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah...I guess you're right..."`;
    waitForClick; clearText; 
 });
@@ -1579,7 +1432,6 @@ vision.`;
    waitForClick; clearText; marker; appendText; 
    Narr`In front of the door stood Sara.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I let out a yell and ran to her.`;
@@ -1605,7 +1457,6 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"What happened?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked, standing at Sara's side.`;
@@ -1615,7 +1466,6 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A203`); appendText; 
-   //Sara
    Sara`"Nothing. What do you mean?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara acted like there was nothing out of the 
@@ -1640,10 +1490,8 @@ intensity...`;
    Narr`The sound reverberated to the core of my body, 
 rattling my brain.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who...is it...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey! Who's there!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I yelled at the door.`;
@@ -1653,7 +1501,6 @@ fgload({ id: 1, name: `SA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A204`); appendText; 
-   //Sara
    Sara`"What...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Confused, Sara reached out and touched the 
@@ -1677,7 +1524,6 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"..........................Nobody's in 
 here..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1686,7 +1532,6 @@ here..."`;
    Narr`But even before I could turn on the lights, I 
 could tell there was no one inside.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So then, what was that noise just now!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I turned around and looked at Sara.`;
@@ -1696,24 +1541,18 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A205`); appendText; 
-   //Sara
    Sara`"Hey? What is it THIS time? I have had no clue 
 what you're talking about."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What do you mean, no clue!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm just asking, what that noise was just 
 now!"`;
    waitForClick; clearText; marker; sound(`C3A206`); appendText; 
-   //Sara
    Sara`"What noise?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"A noise...you know...noise!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The sound of someone ramming into the door. 
 That noise."`;
    waitForClick; clearText; 
@@ -1722,20 +1561,16 @@ fgload({ id: 1, name: `SA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A207`); appendText; 
-   //Sara
    Sara`"*Sigh*...I'm tired."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; marker; sound(`C3A208`); appendText; 
-   //Sara
    Sara`"No really, I'm tired of putting up with 
 your..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara said this to me with a scornful look on 
 her face..`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What are you talking about?"`;
    waitForClick; clearText; 
 });
@@ -1743,45 +1578,33 @@ fgload({ id: 1, name: `SA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A209`); appendText; 
-   //Sara
    Sara`"That's exactly what I want to ask you. What 
 are you talking about?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C3A210`); appendText; 
-   //Sara
    Sara`"First you knew my name. Then you predict the 
 future..."`;
    waitForClick; clearText; marker; sound(`C3A211`); appendText; 
-   //Sara
    Sara`"And you see little girls who aren't there?"`;
    waitForClick; clearText; marker; sound(`C3A212`); appendText; 
-   //Sara
    Sara`"And when you look in the mirror, you think 
 you're a different person?"`;
    waitForClick; clearText; marker; sound(`C3A213`); appendText; 
-   //Sara
    Sara`"And now you're hearing sounds that aren't 
 there..."`;
    waitForClick; clearText; marker; sound(`C3A214`); appendText; 
-   //Sara
    Sara`"I'm sorry but I just can't keep putting up 
 with this..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hearing sounds that aren't there...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You mean, you couldn't hear it Sara?"`;
    waitForClick; clearText; marker; sound(`C3A215`); appendText; 
-   //Sara
    Sara`"Uugh...I shouldn't have to answer, but..."`;
    waitForClick; clearText; marker; sound(`C3A216`); appendText; 
-   //Sara
    Sara`"No I didn't hear it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So, why were you standing in front of that 
 door?"`;
    waitForClick; clearText; 
@@ -1790,7 +1613,6 @@ fgload({ id: 1, name: `SA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A217`); appendText; 
-   //Sara
    Sara`"Like I've been saying, no special reason."`;
    waitForClick; clearText; 
 });
@@ -1798,11 +1620,9 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A218`); appendText; 
-   //Sara
    Sara`"I was just wondering what's beyond that door, 
 that's all."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Are you serious?"`;
    waitForClick; clearText; 
 });
@@ -1810,7 +1630,6 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A219`); appendText; 
-   //Sara
    Sara`"Why would I lie about something like that?"`;
    waitForClick; clearText; 
 });
@@ -1818,21 +1637,17 @@ fgload({ id: 1, name: `SA04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A220`); appendText; 
-   //Sara
    Sara`"If there was a place on a map you'd never 
 been to, wouldn't you want to go there?"`;
    waitForClick; clearText; marker; sound(`C3A221`); appendText; 
-   //Sara
    Sara`"If there was an unopened treasure box, 
 wouldn't you want to open it?"`;
    waitForClick; clearText; marker; sound(`C3A222`); appendText; 
-   //Sara
    Sara`"If there was a person in the town that you 
 lived in who you'd never talked to before, 
 wouldn't you want to say something to that 
 person?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Ah, I see..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara's discomfort showed clearly on her face.`;
@@ -1846,13 +1661,10 @@ playBGM({ num: 18, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Really! I don't know what came over me!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Ha, ha, ha."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Ha, ha, ha, ha, ha, ha!"`;
    waitForClick; clearText; 
 });
@@ -1881,7 +1693,6 @@ could faze me. `;
    Narr`I felt like there was nothing left to be 
 afraid of...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Haaaaaaa, ha, ha, ha, ha, ha!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`My laughing voice reverberated throughout the 
@@ -1892,7 +1703,6 @@ fgload({ id: 1, name: `SA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A223`); appendText; 
-   //Sara
    Sara`"Ouch...that really hurts..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It seems my laughing had only proved to 
@@ -1937,7 +1747,6 @@ because she began to walk toward the window.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Speaking toward her backside I said, `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why would there be a window in a place like 
 this?"`;
    waitForClick; clearText; 
@@ -1946,26 +1755,20 @@ fgload({ id: 1, name: `SA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A224`); appendText; 
-   //Sara
    Sara`"...Huh?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara's feet stopped.`;
    waitForClick; clearText; marker; sound(`C3A225`); appendText; 
-   //Sara
    Sara`"This looks like...a window to you...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She said as she spun around.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Isn't it...a window?"`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Because...the light..."`;
    waitForClick; clearText; marker; sound(`C3A226`); appendText; 
-   //Sara
    Sara`"Light?"`;
    waitForClick; clearText; 
 });
@@ -1981,13 +1784,10 @@ fgload({ id: 1, name: `SA03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A227`); appendText; 
-   //Sara
    Sara`"You just said 'light' didn't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh, yeah..."`;
    waitForClick; clearText; marker; sound(`C3A228`); appendText; 
-   //Sara
    Sara`"It looks like it's shining light to you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`As if being called by the light, I began to 
@@ -2012,13 +1812,10 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A229`); appendText; 
-   //Sara
    Sara`"Hey? Will you answer my question?"`;
    waitForClick; clearText; marker; sound(`C3A230`); appendText; 
-   //Sara
    Sara`"Does it look like a light is shining?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, it does."`;
    waitForClick; clearText; 
 });
@@ -2048,7 +1845,6 @@ stammered.`;
    waitForClick; clearText; marker; appendText; 
    Narr`A red light seemed to emanate form her body.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So why does it look like it's shining?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was a very innocent, almost naive question.`;
@@ -2066,7 +1862,6 @@ fgload({ id: 2, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C3A231`); appendText; 
-   //Sara
    Sara`"Kid...can you see this?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Muttering, Sara gently removed something from 
@@ -2089,7 +1884,6 @@ Sara's face was lit up in red.`;
    Narr`I realized that what Sara had taken out was a 
 pendant and a lighter.`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Without saying a word, Sara brought the flame 
@@ -2109,7 +1903,6 @@ text(() => {
    Narr`Inside the pendant floated a holographic image 
 of a man who I had never seen before.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who's this?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`When I asked this, Sara's hand began to quiver.`;
@@ -2119,10 +1912,8 @@ of a man who I had never seen before.`;
    Narr`And from this a large shadow was projected on 
 the wall, which also flickered.`;
    waitForClick; clearText; marker; sound(`C3A232`); appendText; 
-   //Sara
    Sara`"So..."`;
    waitForClick; clearText; marker; sound(`C3A233`); appendText; 
-   //Sara
    Sara`"You can see it, too..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Click.`;
@@ -2140,36 +1931,26 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`C3A234`); appendText; 
-   //Sara
    Sara`"Kid, the other day..."`;
    waitForClick; clearText; marker; sound(`C3A235`); appendText; 
-   //Sara
    Sara`"When Nakkyu tried to open the door to the 
 Generator Room...you stopped her, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah."`;
    waitForClick; clearText; marker; sound(`C3A236`); appendText; 
-   //Sara
    Sara`"How come? Why did you stop her?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Wait, hold on a second."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Weren't you just telling me how tired you 
 were of all my 'premonitions and illusions'?"`;
    waitForClick; clearText; marker; sound(`C3A237`); appendText; 
-   //Sara
    Sara`"Premonitions...?"`;
    waitForClick; clearText; marker; sound(`C3A238`); appendText; 
-   //Sara
    Sara`"So that was...a premonition?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I can't say. I mean I don't really know..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's just that, I thought it would be 
 dangerous for her to open the door..."`;
    waitForClick; clearText; 
@@ -2194,10 +1975,8 @@ though she wasn't thinking anything...`;
    waitForClick; clearText; marker; appendText; 
    Narr`At last she spoke...`;
    waitForClick; clearText; marker; sound(`C3A239`); appendText; 
-   //Sara
    Sara`"Yeah, it couldn't be, right?"`;
    waitForClick; clearText; marker; sound(`C3A240`); appendText; 
-   //Sara
    Sara`"*sigh*..."`;
    waitForClick; clearText; 
 });
@@ -2219,12 +1998,10 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`I repeated my question to her.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara? Who's image was that in the pendant?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`As she walked toward the exit, she answered.`;
    waitForClick; clearText; marker; sound(`C3A241`); appendText; 
-   //Sara
    Sara`"A person from the Sun."`;
    waitForClick; clearText; 
 });

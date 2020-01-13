@@ -12,7 +12,6 @@ playBGM({ num: 13, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Uh, I...um..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was at a loss for words.`;
@@ -24,33 +23,26 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The girl just stared at me intently.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's..al-alright..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't worry...everything is alright..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She didn't answer.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh...um..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Anyway, let's go where everybody else is!"`;
    waitForClick; clearText; marker; sound(`C1S296`); appendText; 
    //Young Girl
    Young_Girl`"Everybody?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, it's not just me."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There are lots of other people..."`;
    waitForClick; clearText; marker; sound(`C1S297`); appendText; 
    //Young Girl
    Young_Girl`"Help?...Did you come to help?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Y-yeah...that's right."`;
    waitForClick; clearText; 
 });
@@ -61,7 +53,6 @@ text(() => {
    //Young Girl
    Young_Girl`"But...it's probably impossible..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`C1S299`); appendText; 
    //Young Girl
@@ -90,10 +81,8 @@ let lbl_000000ce;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Why do you say that?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We'll be fine! A rescue team should be here 
 any time!"`;
    waitForClick; clearText; 
@@ -105,20 +94,16 @@ text(() => {
    //Young Girl
    Young_Girl`"Liar..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's not a lie!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The people that escaped know that we're 
 here..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Someone will come for sure!"`;
    waitForClick; clearText; marker; appendText; 
    //Young Girl
    Young_Girl`"..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why do you say that?"`;
    waitForClick; clearText; marker; sound(`S1C237`); appendText; 
    //Young Girl
@@ -147,13 +132,10 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S302`); appendText; 
-   //Takeshi
    Takeshi`"Who are you talking to?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Takeshi! What great timing...!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It seems like this girl here 
 didn't get out either..."`;
    waitForClick; clearText; 
@@ -162,10 +144,8 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S303`); appendText; 
-   //Takeshi
    Takeshi`"Girl?"`;
    waitForClick; clearText; marker; sound(`C1S304`); appendText; 
-   //Takeshi
    Takeshi`"What girl...?"`;
    waitForClick; clearText; 
 });
@@ -173,10 +153,8 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S305`); appendText; 
-   //Takeshi
    Takeshi`"...There's nobody there."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh!?"`;
    waitForClick; clearText; 
 });
@@ -190,7 +168,6 @@ text(() => {
 that anyone had been sitting where she had 
 been.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Im...impossible..."`;
    waitForClick; clearText; 
 });
@@ -198,17 +175,13 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S306`); appendText; 
-   //Takeshi
    Takeshi`"Stop it already. What? Are you tired of 
 memory loss and working on delusions now?"`;
    waitForClick; clearText; marker; sound(`C1S307`); appendText; 
-   //Takeshi
    Takeshi`"You're worse off than we thought..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No! No! I'm not seeing things!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There was a girl here! She was sitting 
 on this bed!"`;
    waitForClick; clearText; 
@@ -217,10 +190,8 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S308`); appendText; 
-   //Takeshi
    Takeshi`"Listen, Kid..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Wh-what...?"`;
    waitForClick; clearText; 
 });
@@ -228,16 +199,12 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S309`); appendText; 
-   //Takeshi
    Takeshi`"Aren't you hungry?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hungry...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Wh-who cares about that right now?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There was a girl here...a girl I tell you..."`;
    waitForClick; clearText; 
 });
@@ -245,20 +212,15 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S310`); appendText; 
-   //Takeshi
    Takeshi`"I know, I know."`;
    waitForClick; clearText; marker; sound(`C1S311`); appendText; 
-   //Takeshi
    Takeshi`"There was a girl there. I heard you..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You don't get it at all!"`;
    waitForClick; clearText; marker; sound(`C1S312`); appendText; 
-   //Takeshi
    Takeshi`"Alright, alright. I'll listen to the whole 
 story later."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But..."`;
    waitForClick; clearText; 
 });
@@ -266,7 +228,6 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S313`); appendText; 
-   //Takeshi
    Takeshi`"But nothing! You're going to piss me off 
 if you keep this up!"`;
    waitForClick; clearText; 
@@ -275,15 +236,12 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S314`); appendText; 
-   //Takeshi
    Takeshi`"Everyone is waiting for you...
 to eat together..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well, then, what are we going to do about 
 the girl?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm sure the girl is probably starving, 
 too..."`;
    waitForClick; clearText; 
@@ -292,13 +250,10 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S315`); appendText; 
-   //Takeshi
    Takeshi`"Oh man...you've completely lost it..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm not crazy!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There was a girl...a girl...right here..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`In the end, I couldn't get Takeshi to listen 
@@ -311,7 +266,6 @@ varop(`(28 0a a4) ba += (00) 1`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Let's go!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`That was what I said.`;
@@ -324,13 +278,11 @@ text(() => {
    //Young Girl
    Young_Girl`"...Uh...where?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Anywhere. Let's just get out of here."`;
    waitForClick; clearText; marker; sound(`C1S317`); appendText; 
    //Young Girl
    Young_Girl`"Why...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Coco, because if we stay here, then we'll 
 probably..."`;
    waitForClick; clearText; 
@@ -355,16 +307,12 @@ her...Coco would vanish...`;
    waitForClick; clearText; marker; appendText; 
    Narr`So I would take her out of here...`;
    waitForClick; clearText; marker; sound(`C1S318`); appendText; 
-   //Coco
    Coco`"Don't go...please..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"W-what?"`;
    waitForClick; clearText; marker; sound(`C1S319`); appendText; 
-   //Coco
    Coco`"Please, don't go..."`;
    waitForClick; clearText; marker; sound(`C1S320`); appendText; 
-   //Coco
    Coco`"Don't leave me alone..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I couldn't understand what she meant.`;
@@ -372,10 +320,8 @@ her...Coco would vanish...`;
    Narr`I couldn't understand...but my mouth had an 
 answer.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I won't go."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I will stay with you, Coco."`;
    waitForClick; clearText; marker; appendText; 
    Narr`'Please, don't go'...just now the two of our 
@@ -411,7 +357,6 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S321`); appendText; 
-   //Takeshi
    Takeshi`"Who are you talking to?"`;
    waitForClick; clearText; 
 });
@@ -423,13 +368,11 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`But Coco was no longer there.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Coco! Coco!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`My voice echoed and died in that small, 
 steel-plated room.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Cocoooooo!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`No one was there to answer my shouts.`;
@@ -445,10 +388,8 @@ sitting. No warmth either.`;
    Narr`Like the frozen smell that follows the north 
 wind across snowfields.`;
    waitForClick; clearText; marker; sound(`C1S322`); appendText; 
-   //Takeshi
    Takeshi`"Co...Coco...?"`;
    waitForClick; clearText; marker; sound(`C1S323`); appendText; 
-   //Takeshi
    Takeshi`"Did...did you just say...Coco?"`;
    waitForClick; clearText; 
 });
@@ -464,13 +405,10 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`His lips were trembling.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Takeshi...do you know Coco?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You do know her!"`;
    waitForClick; clearText; 
 });
@@ -478,13 +416,10 @@ fgload({ id: 1, name: `KB13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S324`); appendText; 
-   //Takeshi
    Takeshi`"No...I don't..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Liar!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The way you said that, I know you know her!"`;
    waitForClick; clearText; 
 });
@@ -492,16 +427,12 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S325`); appendText; 
-   //Takeshi
    Takeshi`"Really...I don't..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why are you lying?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The girl was here just now."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But when you showed your face, she 
 vanished..."`;
    waitForClick; clearText; 
@@ -510,20 +441,15 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S326`); appendText; 
-   //Takeshi
    Takeshi`"You are the one that is lying."`;
    waitForClick; clearText; marker; sound(`C1S327`); appendText; 
-   //Takeshi
    Takeshi`"There's no girl in here..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yes there was! I'm positive that Coco was 
 sitting on that bed!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"............"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Tell me! Who is she?"`;
    waitForClick; clearText; 
 });
@@ -531,7 +457,6 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S328`); appendText; 
-   //Takeshi
    Takeshi`"I said I don't know anything about her..."`;
    waitForClick; clearText; 
 });
@@ -539,23 +464,17 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S329`); appendText; 
-   //Takeshi
    Takeshi`"You're asking the wrong guy."`;
    waitForClick; clearText; marker; sound(`C1S330`); appendText; 
-   //Takeshi
    Takeshi`"I didn't see a thing."`;
    waitForClick; clearText; marker; sound(`C1S331`); appendText; 
-   //Takeshi
    Takeshi`"You're the one who said you're seeing things, 
 right?"`;
    waitForClick; clearText; marker; sound(`C1S332`); appendText; 
-   //Takeshi
    Takeshi`"I should be asking that question to you."`;
    waitForClick; clearText; marker; sound(`C1S333`); appendText; 
-   //Takeshi
    Takeshi`"Who is Coco? Some friend of yours?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No. But..."`;
    waitForClick; clearText; 
 });
@@ -563,10 +482,8 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S334`); appendText; 
-   //Takeshi
    Takeshi`"So why do you know her name?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't know why! But it just suddenly popped 
 into my head!"`;
    waitForClick; clearText; 
@@ -575,13 +492,10 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S335`); appendText; 
-   //Takeshi
    Takeshi`"Oh, not this crap again..."`;
    waitForClick; clearText; marker; sound(`C1S336`); appendText; 
-   //Takeshi
    Takeshi`"You've got a pretty tricky case of amnesia..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"............"`;
    waitForClick; clearText; 
 });
@@ -589,7 +503,6 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S337`); appendText; 
-   //Takeshi
    Takeshi`"Alright, Kid."`;
    waitForClick; clearText; 
 });
@@ -597,15 +510,12 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S338`); appendText; 
-   //Takeshi
    Takeshi`"Let's say you happened to meet some girl in 
 this compression chamber."`;
    waitForClick; clearText; marker; sound(`C1S339`); appendText; 
-   //Takeshi
    Takeshi`"And you don't know why, but you knew her 
 name."`;
    waitForClick; clearText; marker; sound(`C1S340`); appendText; 
-   //Takeshi
    Takeshi`"And then, like some phantom, she just 
 disappears without a trace."`;
    waitForClick; clearText; 
@@ -614,16 +524,12 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S341`); appendText; 
-   //Takeshi
    Takeshi`"You're telling me to believe that?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm telling the truth!"`;
    waitForClick; clearText; marker; sound(`C1S342`); appendText; 
-   //Takeshi
    Takeshi`"Sure you are."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's true, I said!"`;
    waitForClick; clearText; 
 });
@@ -631,10 +537,8 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S343`); appendText; 
-   //Takeshi
    Takeshi`"I know, I know."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You don't get it at all!"`;
    waitForClick; clearText; 
 });
@@ -642,20 +546,15 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S344`); appendText; 
-   //Takeshi
    Takeshi`"Look, I'm getting outta here."`;
    waitForClick; clearText; marker; sound(`C1S345`); appendText; 
-   //Takeshi
    Takeshi`"You coming?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...Huh?"`;
    waitForClick; clearText; marker; sound(`C1S346`); appendText; 
-   //Takeshi
    Takeshi`"Everyone is waiting for you...we're going to 
 eat together..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who cares about eating?"`;
    waitForClick; clearText; 
 });
@@ -663,7 +562,6 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S347`); appendText; 
-   //Takeshi
    Takeshi`"Hmmph..."`;
    waitForClick; clearText; 
 });
@@ -671,7 +569,6 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S348`); appendText; 
-   //Takeshi
    Takeshi`"Fine, do what you want."`;
    waitForClick; clearText; 
 });
@@ -849,7 +746,6 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; sound(`C1S149`); appendText; 
-   //You
    You`"You think somebody would suddenly appear, 
 disappear or split into two people?"`;
    waitForClick; clearText; 
@@ -916,16 +812,12 @@ multifgload3({ name1: `SA09ADS`, name2: `SO02ADS`, name3: `YU09BDS`, x1: 128, x2
 showTextbox();
 text(() => {
    marker; sound(`C1S349`); appendText; 
-   //Sara
    Sara`"KYA, HA, HA, HA"`;
    waitForClick; clearText; marker; sound(`C1S350`); appendText; 
-   //You
    You`"AH, HA, HA, HA"`;
    waitForClick; clearText; marker; sound(`C1S351`); appendText; 
-   //Sora
    Sora`"FU, FU, FU, FU, FU"`;
    waitForClick; clearText; marker; sound(`C1S352`); appendText; 
-   //Everyone
    Everyone`"GA, HA, HA, HA, HA"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Everyone exploded in a chorus of laughter.`;
@@ -935,19 +827,15 @@ fgload({ id: 4, name: `YU02BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S353`); appendText; 
-   //You
    You`"Hey, what the heck are you doing, Kid?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You said this laughing.`;
    waitForClick; clearText; marker; sound(`C1S354`); appendText; 
-   //You
    You`"These cans contain pop made with special gas 
 so that they are made at 6 atmospheres."`;
    waitForClick; clearText; marker; sound(`C1S355`); appendText; 
-   //You
    You`"But right now we are at 1 atmosphere, right?"`;
    waitForClick; clearText; marker; sound(`C1S356`); appendText; 
-   //You
    You`"So if you don't hold it down when you open 
 it, the carbonation inside explodes..."`;
    waitForClick; clearText; 

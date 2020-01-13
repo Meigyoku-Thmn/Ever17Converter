@@ -98,7 +98,6 @@ moment.`;
 into the distance, dividing the sea from the 
 heavens.`;
    waitForClick; clearText; marker; sound(`EOP000`); appendText; 
-   //Takeshi
    Takeshi`"So tranquil......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I murmured to myself.`;
@@ -109,7 +108,6 @@ sky as the wind carried it away.`;
    Narr`The wind, full of the smell of the ocean, 
 gently blew by me.`;
    waitForClick; clearText; marker; sound(`EOP001`); appendText; 
-   //Takeshi
    Takeshi`"So peaceful..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It felt as if I were dreaming...`;
@@ -138,10 +136,8 @@ multifgload2({ id1: 1, id2: 2, name1: `HO02ADL`, name2: `SA09ADL`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`CEP000`); appendText; 
-   //Sara
    Sara`"Hey, Dad! Dadddy!"`;
    waitForClick; clearText; marker; sound(`CEP001`); appendText; 
-   //Hokuto
    Hokuto`"Daaaad! Dad!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I found out that I had a 16 year old daughter 
@@ -154,7 +150,6 @@ and son...`;
    Narr`(If I'm not dreaming, there's no way this 
 could be happening!)`;
    waitForClick; clearText; marker; sound(`CEP002`); appendText; 
-   //Sara
    Sara`"Hey! Daaaad! Listen!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The girl called Sara pulled up close to me.`;
@@ -164,7 +159,6 @@ I'd never her seen before. She suddenly
 pulled up close and pressed her cheek against 
 my arm.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -172,10 +166,8 @@ fgload({ id: 2, name: `SA01ADL`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP003`); appendText; 
-   //Sara
    Sara`"Hey, look! Look at this..."`;
    waitForClick; clearText; marker; sound(`CEP004`); appendText; 
-   //Sara
    Sara`"You know? I've been watching you ever since 
 I was a little, baby girl."`;
    waitForClick; clearText; 
@@ -194,14 +186,11 @@ attached to it.`;
 showTextbox();
 text(() => {
    marker; sound(`CEP005`); appendText; 
-   //Takeshi
    Takeshi`"Oh, really..."`;
    waitForClick; clearText; marker; sound(`CEP006`); appendText; 
-   //Takeshi
    Takeshi`"I don't really understand, but that's okay, 
 daughter of mine!"`;
    waitForClick; clearText; marker; sound(`CEP007`); appendText; 
-   //Takeshi
    Takeshi`"I can't believe how tall you've gotten!"`;
    waitForClick; clearText; 
 });
@@ -227,16 +216,12 @@ fgload({ id: 1, name: `HO03ADL`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP008`); appendText; 
-   //Hokuto
    Hokuto`"Hey! Dad, no fair!"`;
    waitForClick; clearText; marker; sound(`CEP009`); appendText; 
-   //Hokuto
    Hokuto`"And you kept telling me 'Don't call me dad!'"`;
    waitForClick; clearText; marker; sound(`CEP010`); appendText; 
-   //Hokuto
    Hokuto`"How come you act all dad-like to Sara!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -244,17 +229,13 @@ fgload({ id: 2, name: `SA01ADL`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP011`); appendText; 
-   //Sara
    Sara`"Hey, Dad? Daaaaad?"`;
    waitForClick; clearText; marker; sound(`CEP012`); appendText; 
-   //Sara
    Sara`"I want to go to Ninja Town for fun someday 
 soon."`;
    waitForClick; clearText; marker; sound(`CEP013`); appendText; 
-   //Takeshi
    Takeshi`"Ninja Town, eh....?"`;
    waitForClick; clearText; marker; sound(`CEP014`); appendText; 
-   //Takeshi
    Takeshi`"Why not? Sounds good to me."`;
    waitForClick; clearText; 
 });
@@ -262,23 +243,17 @@ multifgload2({ id1: 1, id2: 2, name1: `HO04ADL`, name2: `SA02ADL`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`CEP015`); appendText; 
-   //Hokuto
    Hokuto`"Hey! Stop ignoring me!"`;
    waitForClick; clearText; marker; sound(`CEP016`); appendText; 
-   //Hokuto
    Hokuto`"How come you listen to everything Sara 
 says!!?"`;
    waitForClick; clearText; marker; sound(`CEP017`); appendText; 
-   //Hokuto
    Hokuto`"Why don't you listen to a thing I say?"`;
    waitForClick; clearText; marker; sound(`CEP018`); appendText; 
-   //Hokuto
    Hokuto`"Well Dad? Why not?"`;
    waitForClick; clearText; marker; sound(`CEP019`); appendText; 
-   //Takeshi
    Takeshi`"...I'm not ignoring you."`;
    waitForClick; clearText; marker; sound(`CEP020`); appendText; 
-   //Takeshi
    Takeshi`"I just don't want to answer those kinds of 
 questions..."`;
    waitForClick; clearText; 
@@ -287,13 +262,10 @@ fgload({ id: 1, name: `HO03ADL`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP021`); appendText; 
-   //Hokuto
    Hokuto`"What do you mean, 'those kind of questions?'"`;
    waitForClick; clearText; marker; sound(`CEP022`); appendText; 
-   //Takeshi
    Takeshi`"Those kind."`;
    waitForClick; clearText; marker; sound(`CEP023`); appendText; 
-   //Takeshi
    Takeshi`"I don't answer meaningless questions."`;
    waitForClick; clearText; 
 });
@@ -332,7 +304,6 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`CEP023`); appendText; 
-   //Takeshi
    Takeshi`"I don't answer meaningless questions."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I could hear his words coming from a 
@@ -402,19 +373,14 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    marker; sound(`C7A152`); appendText; 
-   //Takeshi
    Takeshi`"So live!"`;
    waitForClick; clearText; marker; sound(`C7A153`); appendText; 
-   //Takeshi
    Takeshi`"As long as you're alive, live!"`;
    waitForClick; clearText; marker; sound(`C7A154`); appendText; 
-   //Takeshi
    Takeshi`"Don't worry..."`;
    waitForClick; clearText; marker; sound(`C7A155`); appendText; 
-   //Takeshi
    Takeshi`"I-"`;
    waitForClick; clearText; marker; sound(`C7A156`); appendText; 
-   //Takeshi
    Takeshi`"I'm not going to die."`;
    waitForClick; clearText; 
 });
@@ -466,10 +432,8 @@ fgload({ id: 2, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP024`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`CEP025`); appendText; 
-   //Tsugumi
    Tsugumi`"Welcome home."`;
    waitForClick; clearText; 
 });
@@ -486,21 +450,16 @@ text(() => {
 threatened to melt me, and for one moment my 
 heart had stopped beating.`;
    waitForClick; clearText; marker; sound(`CEP026`); appendText; 
-   //Takeshi
    Takeshi`"Hey, I'm back, Tsugumi."`;
    waitForClick; clearText; marker; sound(`CEP027`); appendText; 
-   //Takeshi
    Takeshi`"Sorry...for taking so long..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He whispered...`;
    waitForClick; clearText; marker; sound(`CEP028`); appendText; 
-   //Takeshi
    Takeshi`"You know..."`;
    waitForClick; clearText; marker; sound(`CEP029`); appendText; 
-   //Takeshi
    Takeshi`"You are as cute as ever..."`;
    waitForClick; clearText; marker; sound(`CEP030`); appendText; 
-   //Tsugumi
    Tsugumi`"What? Eh? Really? St-stop it...I..."`;
    waitForClick; clearText; 
 });
@@ -508,16 +467,12 @@ fgload({ id: 2, name: `TA01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP031`); appendText; 
-   //Takeshi
    Takeshi`"I can't help it, you're so adorable."`;
    waitForClick; clearText; marker; sound(`CEP032`); appendText; 
-   //Tsugumi
    Tsugumi`"What's with you all of the sudden..."`;
    waitForClick; clearText; marker; sound(`CEP033`); appendText; 
-   //Takeshi
    Takeshi`"You're so cute, I could just eat you up."`;
    waitForClick; clearText; marker; sound(`CEP034`); appendText; 
-   //Tsugumi
    Tsugumi`"S-stop it...what...are you talking about...?"`;
    waitForClick; clearText; 
 });
@@ -525,14 +480,11 @@ fgload({ id: 2, name: `TA02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP035`); appendText; 
-   //Takeshi
    Takeshi`"Uh-huh, you sure are charming."`;
    waitForClick; clearText; marker; sound(`CEP036`); appendText; 
-   //Takeshi
    Takeshi`"I suppose that's why they call you 
 Chami...it's a good name."`;
    waitForClick; clearText; marker; sound(`CEP037`); appendText; 
-   //Tsugumi
    Tsugumi`"...What!?"`;
    waitForClick; clearText; 
 });
@@ -551,10 +503,8 @@ chest.`;
    Narr`Chami was busy grooming himself with jerky 
 movements using both of his front paws...`;
    waitForClick; clearText; marker; sound(`CEP038`); appendText; 
-   //Tsugumi
    Tsugumi`"I can't believe it..."`;
    waitForClick; clearText; marker; sound(`CEP039`); appendText; 
-   //Tsugumi
    Tsugumi`"You are such a jerk, Takeshi!"`;
    waitForClick; clearText; 
 });
@@ -591,7 +541,6 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`CEP039`); appendText; 
-   //Tsugumi
    Tsugumi`"You are such a jerk, Takeshi!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Mama let out a yell, and turning 
@@ -602,7 +551,6 @@ wagging.`;
 been riding on her shoulder, lost his balance 
 and fell to the deck.`;
    waitForClick; clearText; marker; sound(`CEP040`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Tsugumi, what's wrong?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Dad went chasing after mom.`;
@@ -655,7 +603,6 @@ consistent...`;
 myself—'Chami is living each moment to the 
 fullest.'`;
    waitForClick; clearText; marker; sound(`CEP041`); appendText; 
-   //Sara
    Sara`"Hey? What do you think is going to happen to 
 us after this?"`;
    waitForClick; clearText; 
@@ -664,10 +611,8 @@ fgload({ id: 1, name: `HO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP042`); appendText; 
-   //Hokuto
    Hokuto`"What do you mean...?"`;
    waitForClick; clearText; marker; sound(`CEP043`); appendText; 
-   //Sara
    Sara`"With Leiblich..."`;
    waitForClick; clearText; 
 });
@@ -675,7 +620,6 @@ fgload({ id: 1, name: `HO03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP044`); appendText; 
-   //Sara
    Sara`"You don't think Leiblich will come after us 
 do you...?"`;
    waitForClick; clearText; marker; sound(`CEP045`); appendText; 
@@ -692,10 +636,8 @@ multifgload2({ id1: 1, id2: 2, name1: `HO03ADM`, name2: `YH01ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`CEP046`); appendText; 
-   //Sara
    Sara`"Oh. Hi Nakkyu...no wait, uh..."`;
    waitForClick; clearText; marker; sound(`CEP047`); appendText; 
-   //Sara
    Sara`"Ms. Tanaka—Yubiseiharukana, right?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Ms. Tanaka nodded slightly.`;
@@ -707,7 +649,6 @@ text(() => {
    marker; appendText; 
    Narr`Hokuto asked Ms. Tanaka -`;
    waitForClick; clearText; marker; sound(`CEP048`); appendText; 
-   //Hokuto
    Hokuto`"What do you mean we'll be alright?"`;
    waitForClick; clearText; 
 });
@@ -853,7 +794,6 @@ tough, but..."`;
    Narr`Ms. Tanaka took out an old marker, and 
 scratched it against her cheek.`;
    waitForClick; clearText; marker; sound(`CEP051`); appendText; 
-   //Hokuto
    Hokuto`"So...the whistleblower mentioned in this 
 article is..."`;
    waitForClick; clearText; 
@@ -877,7 +817,6 @@ maneuvering..."`;
    You_haru_`"So I told them, 'What ever happens, DON'T 
 move before May 7th!'"`;
    waitForClick; clearText; marker; sound(`CEP056`); appendText; 
-   //Sara
    Sara`"You mean in order to rescue dad, and that 
 girl Coco?"`;
    waitForClick; clearText; 
@@ -889,10 +828,8 @@ text(() => {
    //You'haru'
    You_haru_`"That's right."`;
    waitForClick; clearText; marker; sound(`CEP058`); appendText; 
-   //Sara
    Sara`"Well...uh..."`;
    waitForClick; clearText; marker; sound(`CEP059`); appendText; 
-   //Sara
    Sara`"That means they won't come after us! And 
 we're free!"`;
    waitForClick; clearText; 
@@ -945,10 +882,8 @@ to think about that, mother!?"`;
    //You'haru'
    You_haru_`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Hokuto
    Hokuto`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; 
 });
@@ -1150,7 +1085,6 @@ capsule pods.`;
 conscious as the virus consumed his body, 
 told me this - `;
    waitForClick; clearText; marker; sound(`CEP086`); appendText; 
-   //Researcher
    Researcher`"...You...I never dreamed...that we would meet 
 again...in a place like this..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1238,10 +1172,8 @@ gasping in pain...`;
    waitForClick; clearText; marker; appendText; 
    Narr`He struggled until the end to say...`;
    waitForClick; clearText; marker; sound(`C6A086`); appendText; 
-   //Researcher
    Researcher`"...My daughter..."`;
    waitForClick; clearText; marker; sound(`C6A087`); appendText; 
-   //Researcher
    Researcher`"Daughter...take care...of her..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`His last words...`;
@@ -1666,7 +1598,6 @@ fgload({ id: 1, name: `HO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP099`); appendText; 
-   //Hokuto
    Hokuto`"Oh, hey, You...you been here all along? I've 
 been looking for you."`;
    waitForClick; clearText; marker; appendText; 
@@ -1677,7 +1608,6 @@ fgload({ id: 1, name: `HO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP100`); appendText; 
-   //Hokuto
    Hokuto`"Actually, there was something that I wanted 
 to ask you..."`;
    waitForClick; clearText; marker; sound(`CEP101`); appendText; 
@@ -1691,7 +1621,6 @@ fgload({ id: 1, name: `HO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP102`); appendText; 
-   //Hokuto
    Hokuto`"I've been thinking I want to study 
 archaeology when I go to college..."`;
    waitForClick; clearText; 
@@ -1729,7 +1658,6 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`CEP102`); appendText; 
-   //Hokuto
    Hokuto`"I've been thinking I want to study 
 archaeology when I go to college..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1743,7 +1671,6 @@ text(() => {
    //You'aki'
    You_aki_`"Eh? Why that again...?"`;
    waitForClick; clearText; marker; sound(`CEP104`); appendText; 
-   //Hokuto
    Hokuto`"Well, because I want to study more about the 
 third eye."`;
    waitForClick; clearText; marker; appendText; 
@@ -1759,23 +1686,18 @@ guard by her reply.`;
    //You'aki'
    You_aki_`"And? What did you want to ask me about?"`;
    waitForClick; clearText; marker; sound(`CEP106`); appendText; 
-   //Hokuto
    Hokuto`"Ah, uh, well..."`;
    waitForClick; clearText; marker; sound(`CEP107`); appendText; 
-   //Hokuto
    Hokuto`"I've already made up my mind that I'm going 
 to study archaeology, but..."`;
    waitForClick; clearText; marker; sound(`CEP108`); appendText; 
-   //Hokuto
    Hokuto`"Still...I don't really know that much about 
 it..."`;
    waitForClick; clearText; marker; sound(`CEP109`); appendText; 
-   //Hokuto
    Hokuto`"Like what kinds of things I should do to 
 prepare, or if there are any books you know 
 that are good primers on the subject."`;
    waitForClick; clearText; marker; sound(`CEP110`); appendText; 
-   //Hokuto
    Hokuto`"So I was hoping that you could give me some 
 advice..."`;
    waitForClick; clearText; 
@@ -1792,7 +1714,6 @@ give."`;
    You_aki_`"I only just started college, and I've only 
 really taken my 'reqs.' so..."`;
    waitForClick; clearText; marker; sound(`CEP113`); appendText; 
-   //Hokuto
    Hokuto`"'Reqs.?'"`;
    waitForClick; clearText; 
 });
@@ -1807,7 +1728,6 @@ text(() => {
    You_aki_`"In order to major in archaeology, you've got 
 to be a junior."`;
    waitForClick; clearText; marker; sound(`CEP116`); appendText; 
-   //Hokuto
    Hokuto`"Oh..."`;
    waitForClick; clearText; marker; sound(`CEP117`); appendText; 
    //You'aki'
@@ -1825,7 +1745,6 @@ text(() => {
    //You'aki'
    You_aki_`"You should probably study something else."`;
    waitForClick; clearText; marker; sound(`CEP120`); appendText; 
-   //Hokuto
    Hokuto`"Huh? Why?"`;
    waitForClick; clearText; marker; sound(`CEP121`); appendText; 
    //You'aki'
@@ -1853,11 +1772,9 @@ direction of philosophy or psychology."`;
    You_aki_`"Besides, archaeology is a subject that 
 studies HUMAN history."`;
    waitForClick; clearText; marker; sound(`CEP126`); appendText; 
-   //Hokuto
    Hokuto`"But...it's okay! I've already made up my 
 mind!"`;
    waitForClick; clearText; marker; sound(`CEP127`); appendText; 
-   //Hokuto
    Hokuto`"I've been thinking I could approach the 
 study of the third eye from angle of human 
 history."`;
@@ -1878,7 +1795,6 @@ as me."`;
    //You'aki'
    You_aki_`"I mean it's obvious that you like me..."`;
    waitForClick; clearText; marker; sound(`CEP131`); appendText; 
-   //Hokuto
    Hokuto`"Yeah, you're probably right."`;
    waitForClick; clearText; 
 });
@@ -1896,7 +1812,6 @@ text(() => {
    Narr`And it seemed like my reply caught her 
 off-guard.`;
    waitForClick; clearText; marker; sound(`CEP132`); appendText; 
-   //Hokuto
    Hokuto`"Part of me feels like choosing to study 
 archaeology was already half-decided by 
 destiny... so I don't have a choice."`;
@@ -1904,24 +1819,19 @@ destiny... so I don't have a choice."`;
    //You'aki'
    You_aki_`"By destiny?"`;
    waitForClick; clearText; marker; sound(`CEP134`); appendText; 
-   //Hokuto
    Hokuto`"Yeah."`;
    waitForClick; clearText; marker; sound(`CEP135`); appendText; 
-   //Hokuto
    Hokuto`"In another space-time continuum, I'm 
 destined to walk that path in the future."`;
    waitForClick; clearText; marker; sound(`CEP136`); appendText; 
    //You'aki'
    You_aki_`"...huh?"`;
    waitForClick; clearText; marker; sound(`CEP137`); appendText; 
-   //Hokuto
    Hokuto`"I don't think you'll understand it, no 
 matter how much I explain it anyway."`;
    waitForClick; clearText; marker; sound(`CEP138`); appendText; 
-   //Hokuto
    Hokuto`"But I know what I saw."`;
    waitForClick; clearText; marker; sound(`CEP139`); appendText; 
-   //Hokuto
    Hokuto`"In that future, you and I were going out, 
 and..."`;
    waitForClick; clearText; 
@@ -1933,7 +1843,6 @@ text(() => {
    //You'aki'
    You_aki_`"...What!?"`;
    waitForClick; clearText; marker; sound(`CEP141`); appendText; 
-   //Hokuto
    Hokuto`"So I'm pretty sure that in this time, you 
 and I are destined to be together as well."`;
    waitForClick; clearText; 
@@ -1952,7 +1861,6 @@ like that are decided with both people's
 consent. AFTER that happens you start going 
 out."`;
    waitForClick; clearText; marker; sound(`CEP144`); appendText; 
-   //Hokuto
    Hokuto`"Yeah...Okay, I'll say it right now."`;
    waitForClick; clearText; 
 });
@@ -1963,16 +1871,12 @@ text(() => {
    //You'aki'
    You_aki_`"N-now!?"`;
    waitForClick; clearText; marker; sound(`CEP146`); appendText; 
-   //Hokuto
    Hokuto`"Yeah..."`;
    waitForClick; clearText; marker; sound(`CEP147`); appendText; 
-   //Hokuto
    Hokuto`"Yubiseiakikana..."`;
    waitForClick; clearText; marker; sound(`CEP148`); appendText; 
-   //Hokuto
    Hokuto`"Would you go out with me?"`;
    waitForClick; clearText; marker; sound(`CEP149`); appendText; 
-   //Hokuto
    Hokuto`"Because, I'm crazy about you."`;
    waitForClick; clearText; 
 });
@@ -2146,7 +2050,6 @@ that I didn't think about her.`;
    Narr`That was the only reason I had been able to 
 fool everyone.`;
    waitForClick; clearText; marker; sound(`CEP150`); appendText; 
-   //Coco
    Coco`"Heeey, Kiddo, Kiddo, Kiddo."`;
    waitForClick; clearText; marker; appendText; 
    Narr`My heart leaped.`;
@@ -2163,7 +2066,6 @@ fgload({ id: 1, name: `CO04ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP151`); appendText; 
-   //Coco
    Coco`"Hey! What are you doing here all by 
 yourself!?"`;
    waitForClick; clearText; marker; appendText; 
@@ -2175,11 +2077,9 @@ fgload({ id: 1, name: `CO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP152`); appendText; 
-   //Coco
    Coco`"Come on and join everyone! It's no fun by 
 yourself, right?"`;
    waitForClick; clearText; marker; sound(`CEP153`); appendText; 
-   //Kaburaki
    Kaburaki`"I..."`;
    waitForClick; clearText; 
 });
@@ -2187,11 +2087,9 @@ fgload({ id: 1, name: `CO06ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP154`); appendText; 
-   //Coco
    Coco`"Huh? You're not...worried about something are 
 you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kaburaki
    Kaburaki`"........."`;
    waitForClick; clearText; 
 });
@@ -2199,11 +2097,9 @@ fgload({ id: 1, name: `CO05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP155`); appendText; 
-   //Coco
    Coco`"Are you feeling bad that you lied to 
 everyone?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kaburaki
    Kaburaki`"........."`;
    waitForClick; clearText; 
 });
@@ -2211,7 +2107,6 @@ fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP156`); appendText; 
-   //Coco
    Coco`"You don't have to worry about that."`;
    waitForClick; clearText; 
 });
@@ -2219,25 +2114,19 @@ fgload({ id: 1, name: `CO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP157`); appendText; 
-   //Coco
    Coco`"Besides, if you hadn't been able to trick 
 Blick Winkel, Takepyon and me wouldn't be 
 here right now."`;
    waitForClick; clearText; marker; sound(`CEP158`); appendText; 
-   //Coco
    Coco`"We owe you our lives, right?"`;
    waitForClick; clearText; marker; sound(`CEP159`); appendText; 
-   //Coco
    Coco`"You don't have to explain a thing..."`;
    waitForClick; clearText; marker; sound(`CEP160`); appendText; 
-   //Coco
    Coco`"We're all grateful to you. Nobody here blames 
 you."`;
    waitForClick; clearText; marker; sound(`CEP161`); appendText; 
-   //Kaburaki
    Kaburaki`"You really think so?"`;
    waitForClick; clearText; marker; sound(`CEP162`); appendText; 
-   //Coco
    Coco`"Of course I do."`;
    waitForClick; clearText; 
 });
@@ -2245,17 +2134,13 @@ fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP163`); appendText; 
-   //Coco
    Coco`"Okay? So, come on!"`;
    waitForClick; clearText; marker; sound(`CEP164`); appendText; 
-   //Coco
    Coco`"Everybody's waiting to hear your voice, 
 kiddo."`;
    waitForClick; clearText; marker; sound(`CEP165`); appendText; 
-   //Coco
    Coco`"Waiting and waiting and waiting..."`;
    waitForClick; clearText; marker; sound(`CEP166`); appendText; 
-   //Coco
    Coco`"And after that we're going to celebrate."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco was laughing.`;
@@ -2306,16 +2191,12 @@ circuits out of order.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was a pain that I had experienced before.`;
    waitForClick; clearText; marker; sound(`CEP167`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Sora?"`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"........."`;
    waitForClick; clearText; marker; sound(`CEP168`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Sora!"`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"........."`;
    waitForClick; clearText; 
 });
@@ -2323,10 +2204,8 @@ fgload({ id: 1, name: `TA04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP169`); appendText; 
-   //Takeshi
    Takeshi`"Hey! Are you listening to me?"`;
    waitForClick; clearText; marker; sound(`CEP170`); appendText; 
-   //Sora
    Sora`"...Huh?...Um, what were you talking about 
 again?"`;
    waitForClick; clearText; 
@@ -2335,21 +2214,17 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP171`); appendText; 
-   //Takeshi
    Takeshi`"This here...Pipi."`;
    waitForClick; clearText; marker; sound(`CEP172`); appendText; 
-   //Takeshi
    Takeshi`"He stopped moving all of a sudden. I just 
 thought maybe you could take a look at him."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi lifted up Pipi, and stuck him out in 
 front of me.`;
    waitForClick; clearText; marker; sound(`CEP173`); appendText; 
-   //Sora
    Sora`"All of a sudden you say? Any reason you can 
 think of...?"`;
    waitForClick; clearText; marker; sound(`CEP174`); appendText; 
-   //Takeshi
    Takeshi`"Uumm, maybe."`;
    waitForClick; clearText; 
 });
@@ -2357,36 +2232,28 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP175`); appendText; 
-   //Takeshi
    Takeshi`"Tsugumi? She started thrashing around in the 
 cabin, and..."`;
    waitForClick; clearText; marker; sound(`CEP176`); appendText; 
-   //Takeshi
    Takeshi`"I tried to pin her down, but she threw me 
 off...."`;
    waitForClick; clearText; marker; sound(`CEP177`); appendText; 
-   //Takeshi
    Takeshi`"And when I went down, this little guy 
 happened to be there, and..."`;
    waitForClick; clearText; marker; sound(`CEP178`); appendText; 
-   //Sora
    Sora`"I landed right on top of him. Maybe that's 
 what could've caused it?"`;
    waitForClick; clearText; marker; sound(`CEP179`); appendText; 
-   //Takeshi
    Takeshi`"Yup. After that, he stopped moving..."`;
    waitForClick; clearText; marker; sound(`CEP180`); appendText; 
-   //Sora
    Sora`"Let me take a look."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I took Pipi from Takeshi, and started a 
 diagnostic on him.`;
    waitForClick; clearText; marker; sound(`CEP181`); appendText; 
-   //Sora
    Sora`"That's strange...I don't see anything wrong 
 with him."`;
    waitForClick; clearText; marker; sound(`CEP182`); appendText; 
-   //Sora
    Sora`"Maybe his battery ran out?"`;
    waitForClick; clearText; 
 });
@@ -2394,57 +2261,44 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP183`); appendText; 
-   //Takeshi
    Takeshi`"Whew, what a relief."`;
    waitForClick; clearText; marker; sound(`CEP184`); appendText; 
-   //Takeshi
    Takeshi`"If they thought I'd broken him, Coco, You, 
 and her daughter would've been furious at me."`;
    waitForClick; clearText; marker; sound(`CEP185`); appendText; 
-   //Sora
    Sora`"Well I would've been too."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Upset that he hadn't included me, I 
 continued...`;
    waitForClick; clearText; marker; sound(`CEP186`); appendText; 
-   //Sora
    Sora`"I'm fond of Pipi too, you know."`;
    waitForClick; clearText; marker; sound(`CEP187`); appendText; 
-   //Sora
    Sora`"I don't even think 'fond' describes it. You 
 might say Pipi and I are connected on a 
 deeper level."`;
    waitForClick; clearText; marker; sound(`CEP188`); appendText; 
-   //Sora
    Sora`"17 years ago..."`;
    waitForClick; clearText; marker; sound(`CEP189`); appendText; 
-   //Sora
    Sora`"If Pipi hadn't picked up my terabyte disk, I 
 wouldn't be here right now."`;
    waitForClick; clearText; marker; sound(`CEP190`); appendText; 
-   //Sora
    Sora`"And after Pipi got to the surface, 
 You...Yubiseiharukana, that is..."`;
    waitForClick; clearText; marker; sound(`CEP191`); appendText; 
-   //Sora
    Sora`"Took the data off the disk, and copied it to 
 the body you see now..."`;
    waitForClick; clearText; marker; sound(`CEP192`); appendText; 
-   //Sora
    Sora`"That is the reason I was able to maintain the 
 records of what happened to all of you, 17 
 years ago."`;
    waitForClick; clearText; marker; sound(`CEP193`); appendText; 
-   //Sora
    Sora`"After that, You took in Pipi...and from that 
 time on he's been a member of the Tanaka 
 family."`;
    waitForClick; clearText; marker; sound(`CEP194`); appendText; 
-   //Sora
    Sora`"In other words, Pipi is an irreplaceable 
 part of all of our lives."`;
    waitForClick; clearText; marker; sound(`CEP195`); appendText; 
-   //Sora
    Sora`"I thought I'd already told you?"`;
    waitForClick; clearText; 
 });
@@ -2452,11 +2306,9 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP196`); appendText; 
-   //Takeshi
    Takeshi`"Uh, yeah, that's right, now that you mention 
 it..."`;
    waitForClick; clearText; marker; sound(`CEP197`); appendText; 
-   //Takeshi
    Takeshi`"But come on, you don't have to get so 
 serious about it."`;
    waitForClick; clearText; 
@@ -2465,7 +2317,6 @@ fgload({ id: 1, name: `TA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP198`); appendText; 
-   //Takeshi
    Takeshi`"Besides, Pipi isn't broken...so what's the 
 big deal?"`;
    waitForClick; clearText; marker; appendText; 
@@ -2486,10 +2337,8 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP199`); appendText; 
-   //Takeshi
    Takeshi`"By the way, Sora? Can I ask you something?"`;
    waitForClick; clearText; marker; sound(`CEP200`); appendText; 
-   //Sora
    Sora`"W-what is it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked away, and tried desperately to regain 
@@ -2501,17 +2350,13 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP201`); appendText; 
-   //Takeshi
    Takeshi`"I hope you don't think it's rude of me to 
 ask this, but..."`;
    waitForClick; clearText; marker; sound(`CEP202`); appendText; 
-   //Takeshi
    Takeshi`"Um...er...uh...?"`;
    waitForClick; clearText; marker; sound(`CEP203`); appendText; 
-   //Takeshi
    Takeshi`"It's about your body."`;
    waitForClick; clearText; marker; sound(`CEP204`); appendText; 
-   //Sora
    Sora`"My body?"`;
    waitForClick; clearText; 
 });
@@ -2519,38 +2364,28 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP205`); appendText; 
-   //Takeshi
    Takeshi`"Yeah..."`;
    waitForClick; clearText; marker; sound(`CEP206`); appendText; 
-   //Takeshi
    Takeshi`"As far as I can tell, you look totally 
 human, your skin..."`;
    waitForClick; clearText; marker; sound(`CEP207`); appendText; 
-   //Takeshi
    Takeshi`"The way you move, your appearance, 
 everything, is so natural..."`;
    waitForClick; clearText; marker; sound(`CEP208`); appendText; 
-   //Sora
    Sora`"Ha, ha, ha, that isn't rude at all."`;
    waitForClick; clearText; marker; sound(`CEP209`); appendText; 
-   //Sora
    Sora`"Actually, that's a compliment, isn't it? 
 Thank you."`;
    waitForClick; clearText; marker; sound(`CEP210`); appendText; 
-   //Sora
    Sora`"And...was that your question?"`;
    waitForClick; clearText; marker; sound(`CEP211`); appendText; 
-   //Takeshi
    Takeshi`"Uh, no...I mean...I was wondering how your 
 body is put together is all..."`;
    waitForClick; clearText; marker; sound(`CEP212`); appendText; 
-   //Sora
    Sora`"Is it strange to you?"`;
    waitForClick; clearText; marker; sound(`CEP213`); appendText; 
-   //Takeshi
    Takeshi`"Yeah, a bit."`;
    waitForClick; clearText; marker; sound(`CEP214`); appendText; 
-   //Takeshi
    Takeshi`"And at the same time...I'm happy."`;
    waitForClick; clearText; 
 });
@@ -2559,7 +2394,6 @@ fgload({ id: 1, name: `TA02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP215`); appendText; 
-   //Takeshi
    Takeshi`"I mean...I can actually touch you now."`;
    waitForClick; clearText; marker; appendText; 
    Narr`As he said that, Takeshi put his hand on my 
@@ -2572,7 +2406,6 @@ my stomach to my brain.`;
 frying my processor...my logic 
 circuits...shut down.`;
    waitForClick; clearText; marker; sound(`CEP216`); appendText; 
-   //Sora
    Sora`"T-T-T-Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Holding Pipi firmly to my chest, I grabbed 
@@ -2592,38 +2425,28 @@ fgload({ id: 1, name: `TA03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP217`); appendText; 
-   //Takeshi
    Takeshi`"W-what's wrong Sora? Have you been drinking 
 or something? Your face is all red?"`;
    waitForClick; clearText; marker; sound(`CEP218`); appendText; 
-   //Sora
    Sora`"Professor Kuranari..."`;
    waitForClick; clearText; marker; sound(`CEP219`); appendText; 
-   //Takeshi
    Takeshi`"Wh-what is it Ms. Akanegasaki..."`;
    waitForClick; clearText; marker; sound(`CEP220`); appendText; 
-   //Sora
    Sora`"There are so many strange things in this 
 world, don't you think?"`;
    waitForClick; clearText; marker; sound(`CEP221`); appendText; 
-   //Takeshi
    Takeshi`"?"`;
    waitForClick; clearText; marker; sound(`CEP222`); appendText; 
-   //Sora
    Sora`"You asked about my body, didn't you 
 professor?"`;
    waitForClick; clearText; marker; sound(`CEP223`); appendText; 
-   //Sora
    Sora`"You wondered how I came to have this body, 
 didn't you?"`;
    waitForClick; clearText; marker; sound(`CEP224`); appendText; 
-   //Takeshi
    Takeshi`"Y-yeah..."`;
    waitForClick; clearText; marker; sound(`CEP225`); appendText; 
-   //Sora
    Sora`"There is only one answer."`;
    waitForClick; clearText; marker; sound(`CEP226`); appendText; 
-   //Sora
    Sora`"It was a miracle."`;
    waitForClick; clearText; 
 });
@@ -2631,10 +2454,8 @@ fgload({ id: 1, name: `TA01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP227`); appendText; 
-   //Takeshi
    Takeshi`"Miracle?"`;
    waitForClick; clearText; marker; sound(`CEP228`); appendText; 
-   //Sora
    Sora`"Yes - a miracle from the goddess Aphrodite."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi looked straight into my eyes and 
@@ -2648,7 +2469,6 @@ fgload({ id: 1, name: `TA02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP229`); appendText; 
-   //Takeshi
    Takeshi`"Pygmalion..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I slowly, quietly nodded.`;
@@ -2661,7 +2481,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA01ADM`, name2: `CO02ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`CEP230`); appendText; 
-   //Coco
    Coco`"Hellooooo!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`In came the girl with boundless energy, Coco.`;
@@ -2673,7 +2492,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA15ADM`, name2: `CO01ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`CEP231`); appendText; 
-   //Coco
    Coco`"Hey, hey? Have any of you seen Pipi?"`;
    waitForClick; clearText; 
 });
@@ -2681,10 +2499,8 @@ fgload({ id: 2, name: `CO05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP232`); appendText; 
-   //Coco
    Coco`"Er, wait a sec, you're holding him Sora!"`;
    waitForClick; clearText; marker; sound(`CEP233`); appendText; 
-   //Sora
    Sora`"Yes...But it looks like Pipi ran out of 
 batteries."`;
    waitForClick; clearText; marker; appendText; 
@@ -2694,10 +2510,8 @@ batteries."`;
 showTextbox();
 text(() => {
    marker; sound(`CEP234`); appendText; 
-   //Coco
    Coco`"Out of batteries? That can't be!"`;
    waitForClick; clearText; marker; sound(`CEP235`); appendText; 
-   //Coco
    Coco`"I just finished charging him a minute ago."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco held Pipi between both her hands and 
@@ -2706,7 +2520,6 @@ started shaking him left to right.`;
    Narr`He wasn't rechargeable kinetically, so that 
 shouldn't have done anything for him, but...`;
    waitForClick; clearText; marker; sound(`CEP236`); appendText; 
-   //Sora
    Sora`"?Ah!"`;
    waitForClick; clearText; 
 });
@@ -2719,7 +2532,6 @@ realized something .`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco and Takeshi both turned to stare at me.`;
    waitForClick; clearText; marker; sound(`CEP237`); appendText; 
-   //Sora
    Sora`"I figured it out. The reason, I mean."`;
    waitForClick; clearText; 
 });
@@ -2727,13 +2539,10 @@ fgload({ id: 1, name: `TA03ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP238`); appendText; 
-   //Takeshi
    Takeshi`"The reason?"`;
    waitForClick; clearText; marker; sound(`CEP239`); appendText; 
-   //Sora
    Sora`"His switch."`;
    waitForClick; clearText; marker; sound(`CEP240`); appendText; 
-   //Sora
    Sora`"I think you just need to turn on his switch."`;
    waitForClick; clearText; 
 });
@@ -2745,7 +2554,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`There was a button in his navel.`;
    waitForClick; clearText; marker; sound(`CEP241`); appendText; 
-   //Sora
    Sora`"Are you ready? Here I go."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I stuck out my finger and zeroed in on his 
@@ -2753,7 +2561,6 @@ bellybutton.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And...`;
    waitForClick; clearText; marker; sound(`CEP242`); appendText; 
-   //Sora
    Sora`"Keep it simple!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I firmly pushed the button. `;
@@ -2765,7 +2572,6 @@ the faint sound of something oscillating.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Pipi's eyes came to life.`;
    waitForClick; clearText; marker; sound(`PIPI_14`); appendText; 
-   //Pipi
    Pipi`"Wow! Bow wow wow! Woof woof!"`;
    waitForClick; clearText; 
 });
@@ -2773,10 +2579,8 @@ fgload({ id: 2, name: `CO02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP243`); appendText; 
-   //Coco
    Coco`"Ha, ha! Sora, thank you!"`;
    waitForClick; clearText; marker; sound(`CEP244`); appendText; 
-   //Sora
    Sora`"Don't mention it. All I did was push a 
 button."`;
    waitForClick; clearText; marker; appendText; 
@@ -2787,15 +2591,12 @@ fgload({ id: 1, name: `TA02ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP245`); appendText; 
-   //Takeshi
    Takeshi`"Ha, ha, ha! A ha, ha, ha, ha, ha!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi broke out in laughter.`;
    waitForClick; clearText; marker; sound(`CEP246`); appendText; 
-   //Takeshi
    Takeshi`"Hey...Sora you remembered?"`;
    waitForClick; clearText; marker; sound(`CEP247`); appendText; 
-   //Sora
    Sora`"Yes."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I smiled from the bottom of my heart, and 
@@ -2818,12 +2619,10 @@ terabyte disk...`;
 showTextbox();
 text(() => {
    marker; sound(`PIPI_09`); appendText; 
-   //Pipi
    Pipi`"Woof! Woof! Wow! Bow!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Pipi leapt from Coco's arms.`;
    waitForClick; clearText; marker; sound(`PIPI_13`); appendText; 
-   //Pipi
    Pipi`"Woof! Wow! Wow!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`And wagging his tail fitfully, he raced 
@@ -2834,7 +2633,6 @@ removeFG({ id: 2, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`CEP248`); appendText; 
-   //Coco
    Coco`"Hey! Wait, waaaaiiit! Pipiii!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Making a racket, Coco chased after him.`;
@@ -2852,10 +2650,8 @@ text(() => {
    Narr`The blue sky that continued without end, 
 stretching out in all directions.`;
    waitForClick; clearText; marker; sound(`PIPI_11`); appendText; 
-   //Pipi
    Pipi`"Woof! Woof woof! Woof!"`;
    waitForClick; clearText; marker; sound(`CEP249`); appendText; 
-   //Coco
    Coco`"Piipiii! Hey you, wait a second you 
 little...!"`;
    waitForClick; clearText; 
@@ -2892,10 +2688,8 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`PIPI_11`); appendText; 
-   //Pipi
    Pipi`"Woof! Woof woof! Woof!"`;
    waitForClick; clearText; marker; sound(`CEP249`); appendText; 
-   //Coco
    Coco`"Piipiii! Hey you, wait a second you 
 little...!"`;
    waitForClick; clearText; marker; appendText; 
@@ -2916,14 +2710,12 @@ he was flying.`;
 showTextbox();
 text(() => {
    marker; sound(`PIPI_16`); appendText; 
-   //Pipi
    Pipi`"Bow wow wow! Woof! Wow wow wow!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Just when I thought he wasn't running 
 anymore, he looked up to the sky and started 
 barking at something.`;
    waitForClick; clearText; marker; sound(`CEP250`); appendText; 
-   //Coco
    Coco`"Huh? Is there a bird or something?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I lifted him up.`;
@@ -2944,7 +2736,6 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`CEP251`); appendText; 
-   //Coco
    Coco`"Oh! It's you! Brother!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Right in front of my eyes floated the outline 
@@ -2965,10 +2756,8 @@ bgloadCrop({ name: `EV_CO15A`, transition: 26, x: 200, y: 250, hx: 400, hy: 300 
 showTextbox();
 text(() => {
    marker; sound(`CEP252`); appendText; 
-   //Coco
    Coco`"Heeey! Everyone! Come over here!"`;
    waitForClick; clearText; marker; sound(`CEP253`); appendText; 
-   //Coco
    Coco`"Come here! Quickly! Quickleeeey!"`;
    waitForClick; clearText; 
 });
@@ -2981,13 +2770,10 @@ text(() => {
    Narr`The first people to arrive are Hokutan and 
 Tsugumi.`;
    waitForClick; clearText; marker; sound(`CEP254`); appendText; 
-   //Hokuto
    Hokuto`"What's wrong?"`;
    waitForClick; clearText; marker; sound(`CEP255`); appendText; 
-   //Tsugumi
    Tsugumi`"Did something happen?"`;
    waitForClick; clearText; marker; sound(`CEP256`); appendText; 
-   //Coco
    Coco`"Look there! See, over there!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco points at you.`;
@@ -3000,7 +2786,6 @@ eyes against the sunlight.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokutan is...`;
    waitForClick; clearText; marker; sound(`CEP257`); appendText; 
-   //Hokuto
    Hokuto`"Hey! It's true! You've come back!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`A smile covers his whole face, and he jumps 
@@ -3015,12 +2800,10 @@ text(() => {
    marker; appendText; 
    Narr`Next Takepyon shows up.`;
    waitForClick; clearText; marker; sound(`CEP258`); appendText; 
-   //Takeshi
    Takeshi`"Huh? What's going on?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Mayo jumps up...`;
    waitForClick; clearText; marker; sound(`CEP259`); appendText; 
-   //Sara
    Sara`"Aaaii!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Up on Takepyon's back...`;
@@ -3037,7 +2820,6 @@ text(() => {
    marker; appendText; 
    Narr`Sora...Nakkyu's daughter...`;
    waitForClick; clearText; marker; sound(`CEP260`); appendText; 
-   //Sora
    Sora`"W-what's going on, You?"`;
    waitForClick; clearText; marker; sound(`CEP261`); appendText; 
    //You'aki'
@@ -3055,7 +2837,6 @@ text(() => {
    //You'haru'
    You_haru_`"It's him...?"`;
    waitForClick; clearText; marker; sound(`CEP263`); appendText; 
-   //Kaburaki
    Kaburaki`"Yeah..."`;
    waitForClick; clearText; 
 });
@@ -3066,7 +2847,6 @@ text(() => {
    marker; appendText; 
    Narr`The boat is suddenly crowded with excitement.`;
    waitForClick; clearText; marker; sound(`CEP264`); appendText; 
-   //Coco
    Coco`"Hey! Broooother! Broooother!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco is waving her arms wildly.`;

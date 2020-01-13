@@ -103,14 +103,12 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"What...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Something moved slightly on top of the whale.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I squinted, peering at it.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I glanced quickly at the planet next to the 
@@ -387,24 +385,18 @@ admiring herself.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The idea made me laugh without thinking`;
    waitForClick; clearText; marker; sound(`S4A000`); appendText; 
-   //Sara
    Sara`"Huh? Is something funny?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I mean..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It looks like you're sitting there grinning 
 at yourself."`;
    waitForClick; clearText; marker; sound(`S4A001`); appendText; 
-   //Sara
    Sara`"N-no I'm not!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I guess you've got a bit of a narcissistic 
 side?"`;
    waitForClick; clearText; marker; sound(`S4A002`); appendText; 
-   //Sara
    Sara`"I said I'm not!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`With that, Sara snapped the lighter shut.`;
@@ -423,7 +415,6 @@ in the mirror had split into two images.`;
    Narr`I thought that maybe there was a crack in the 
 mirror.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, can I see that pendant for a second?"`;
    waitForClick; clearText; 
 });
@@ -431,7 +422,6 @@ fgload({ id: 1, name: `SA05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A003`); appendText; 
-   //Sara
    Sara`"Sure..."`;
    waitForClick; clearText; 
 });
@@ -439,14 +429,12 @@ fgload({ id: 1, name: `SA01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A004`); appendText; 
-   //Sara
    Sara`"Don't drop it."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The whale's body continued to move up and down.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I figured that was what Sara meant.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I won't."`;
    waitForClick; clearText; 
 });
@@ -495,7 +483,6 @@ bgload({ name: `EV_ET02B`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Oh..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had spoken without thinking.`;
@@ -508,7 +495,6 @@ bgload({ name: `BG05A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"So this is a hologram pendant?"`;
    waitForClick; clearText; 
 });
@@ -517,7 +503,6 @@ fgload({ id: 1, name: `SA06ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A005`); appendText; 
-   //Sara
    Sara`"Huh?"`;
    waitForClick; clearText; 
 });
@@ -525,7 +510,6 @@ fgload({ id: 1, name: `SA03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A006`); appendText; 
-   //Sara
    Sara`"Y-yes, but..."`;
    waitForClick; clearText; 
 });
@@ -599,29 +583,22 @@ of my memory.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had no memory of the face.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who is this?"`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is it your boyfriend?"`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara remained quiet.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her expression was frozen solid.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's your boyfriend, isn't it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked her again.`;
@@ -634,7 +611,6 @@ would probably show a smile.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Especially, stuck in the middle of the ocean...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, he looks pretty cool."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I said it in a teasing way.`;
@@ -660,7 +636,6 @@ bgload({ name: `BG05A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"So? How long have you been dating?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I put out the lighter, set it on the pendant 
@@ -676,10 +651,8 @@ text(() => {
    Narr`She was still frozen stiff. It looked like she 
 was forgetting to breathe.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, Sara? Sara?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hello! Sara!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I grasped the pendant that she hadn't taken 
@@ -704,7 +677,6 @@ fgload({ id: 1, name: `SA06ADL`, x: 320, useAnim: false });
 showTextbox();
 text(() => {
    marker; sound(`S4A007`); appendText; 
-   //Sara
    Sara`"Kyaaa!"`;
    waitForClick; clearText; 
 });
@@ -755,7 +727,6 @@ face.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I could hear her breathing near my ear.`;
    waitForClick; clearText; marker; sound(`S4A008`); appendText; 
-   //Sara
    Sara`"Safe landing, huh?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara continued talking as she lifted up her 
@@ -766,7 +737,6 @@ fgload({ id: 1, name: `SA02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A009`); appendText; 
-   //Sara
    Sara`"Welcome to Planet Kuikui!"`;
    waitForClick; clearText; 
 });
@@ -835,7 +805,6 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Hmmm. That's strange."`;
    waitForClick; clearText; marker; sound(`S4A010`); appendText; 
    //??
@@ -848,13 +817,10 @@ text(() => {
    marker; appendText; 
    Narr`Surprised, I looked up and there was Takeshi.`;
    waitForClick; clearText; marker; sound(`S4A011`); appendText; 
-   //Takeshi
    Takeshi`"Are you looking for something?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Y-yeah..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Actually..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I explained the situation and showed Takeshi 
@@ -865,14 +831,11 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A012`); appendText; 
-   //Takeshi
    Takeshi`"I see. Well, you're right about it being 
 broken."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yup."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If you don't mind, could you help me look?"`;
    waitForClick; clearText; 
 });
@@ -880,13 +843,10 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A013`); appendText; 
-   //Takeshi
    Takeshi`"Ah, that sounds like a plan..."`;
    waitForClick; clearText; marker; sound(`S4A014`); appendText; 
-   //Takeshi
    Takeshi`"But can I ask you something first?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; 
 });
@@ -894,22 +854,17 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A015`); appendText; 
-   //Takeshi
    Takeshi`"That image of the guy you were talking about, 
 where is it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Where...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's right here."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I peered into the mirror.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"W-what?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"He's gone..."`;
    waitForClick; clearText; 
 });
@@ -919,10 +874,8 @@ text(() => {
    marker; appendText; 
    Narr`Takeshi looked at me skeptically.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But it was here yesterday...I swear..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh? I wonder why?"`;
    waitForClick; clearText; 
 });
@@ -930,10 +883,8 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A016`); appendText; 
-   //Takeshi
    Takeshi`"It's no big deal."`;
    waitForClick; clearText; marker; sound(`S4A017`); appendText; 
-   //Takeshi
    Takeshi`"I don't really care what kind of guy Sara 
 would date anyway..."`;
    waitForClick; clearText; 
@@ -942,13 +893,10 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A018`); appendText; 
-   //Takeshi
    Takeshi`"No...I take that back."`;
    waitForClick; clearText; marker; sound(`S4A019`); appendText; 
-   //Takeshi
    Takeshi`"I might be just a little bit interested."`;
    waitForClick; clearText; marker; sound(`S4A020`); appendText; 
-   //Takeshi
    Takeshi`"But I suppose it doesn't matter now that the 
 pendant's broke."`;
    waitForClick; clearText; 
@@ -957,14 +905,11 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A021`); appendText; 
-   //Takeshi
    Takeshi`"And since, the pendant is something that is 
 important to Sara."`;
    waitForClick; clearText; marker; sound(`S4A022`); appendText; 
-   //Takeshi
    Takeshi`"I'll help you look for the broken piece."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"T-thanks."`;
    waitForClick; clearText; 
 });
@@ -972,10 +917,8 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A023`); appendText; 
-   //Takeshi
    Takeshi`"First to find it wins, Kid!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi thumped my back and set about crawling 
@@ -986,10 +929,8 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A024`); appendText; 
-   //Takeshi
    Takeshi`"And? How much is the reward for this anyway?" `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Reward?"`;
    waitForClick; clearText; 
 });
@@ -997,10 +938,8 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A025`); appendText; 
-   //Takeshi
    Takeshi`"How much am I gonna get if I find the piece."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What...are you going to blackmail Sara?"`;
    waitForClick; clearText; 
 });
@@ -1008,13 +947,10 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A026`); appendText; 
-   //Takeshi
    Takeshi`"What're you talking about?"`;
    waitForClick; clearText; marker; sound(`S4A027`); appendText; 
-   //Takeshi
    Takeshi`"You're gonna pay me, not Sara!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Wh...why?"`;
    waitForClick; clearText; 
 });
@@ -1022,11 +958,9 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A028`); appendText; 
-   //Takeshi
    Takeshi`"Heeey, heeey, don't play innocent with me, 
 champ."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...W-what?"`;
    waitForClick; clearText; 
 });
@@ -1035,18 +969,15 @@ fgload({ id: 1, name: `KB02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A029`); appendText; 
-   //Takeshi
    Takeshi`"You don't think I'd let you take all the 
 credit, do you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi wriggled toward me like a snake. 
 He stopped in front of me.`;
    waitForClick; clearText; marker; sound(`S4A030`); appendText; 
-   //Takeshi
    Takeshi`"If I find it, I'll bet you're planning to 
 say you did."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I...I wouldn't..."`;
    waitForClick; clearText; 
 });
@@ -1055,7 +986,6 @@ fgload({ id: 1, name: `KB08ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A031`); appendText; 
-   //Takeshi
    Takeshi`"'OH, HI MILADY, SARA!'"`;
    waitForClick; clearText; 
 });
@@ -1064,7 +994,6 @@ fgload({ id: 1, name: `KB01ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A032`); appendText; 
-   //Takeshi
    Takeshi`"'Oh, hi Kid. What is it?'"`;
    waitForClick; clearText; 
 });
@@ -1073,7 +1002,6 @@ fgload({ id: 1, name: `KB04ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A033`); appendText; 
-   //Takeshi
    Takeshi`"'This is yours, milady.'"`;
    waitForClick; clearText; 
 });
@@ -1082,7 +1010,6 @@ fgload({ id: 1, name: `KB02ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A034`); appendText; 
-   //Takeshi
    Takeshi`"'Well, if it isn't the pendant I lent you 
 yesterday! Oh, joy, it is fixed! Oh happy 
 day!'"`;
@@ -1093,7 +1020,6 @@ fgload({ id: 1, name: `KB02ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A035`); appendText; 
-   //Takeshi
    Takeshi`"'Oh, how did I slave, searching the floor far 
 and wide all of yesterday!'"`;
    waitForClick; clearText; 
@@ -1103,7 +1029,6 @@ fgload({ id: 1, name: `KB03ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A036`); appendText; 
-   //Takeshi
    Takeshi`"'And was that alone that you searched, brave 
 youth?'"`;
    waitForClick; clearText; 
@@ -1113,7 +1038,6 @@ fgload({ id: 1, name: `KB08ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A037`); appendText; 
-   //Takeshi
    Takeshi`"'Do you jest? Of course I went on my quest 
 for the missing piece alone!'"`;
    waitForClick; clearText; 
@@ -1123,7 +1047,6 @@ fgload({ id: 1, name: `KB02ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A038`); appendText; 
-   //Takeshi
    Takeshi`"'Oh, wow! Kid, you are amazing!'"`;
    waitForClick; clearText; 
 });
@@ -1132,7 +1055,6 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A039`); appendText; 
-   //Takeshi
    Takeshi`"...So I know exactly what you are planning."`;
    waitForClick; clearText; 
 });
@@ -1140,14 +1062,11 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A040`); appendText; 
-   //Takeshi
    Takeshi`"You're full of yourself!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Whatever. Anyway, that wasn't a very good 
 impersonation - of me or Sara!"`;
    waitForClick; clearText; marker; sound(`S4A041`); appendText; 
-   //Takeshi
    Takeshi`"Don't be so picky about the details."`;
    waitForClick; clearText; 
 });
@@ -1155,10 +1074,8 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A042`); appendText; 
-   //Takeshi
    Takeshi`"I'm rootin' for you, okay kid?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I told you - it isn't like that."`;
    waitForClick; clearText; 
 });
@@ -1166,13 +1083,10 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A043`); appendText; 
-   //Takeshi
    Takeshi`"I said it's okay!"`;
    waitForClick; clearText; marker; sound(`S4A044`); appendText; 
-   //Takeshi
    Takeshi`"I like doing this kind of thing." `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What do you mean by 'this'?"`;
    waitForClick; clearText; 
 });
@@ -1180,11 +1094,9 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A045`); appendText; 
-   //Takeshi
    Takeshi`"I mean...well, you know, being cupid, a 
 matchmaker."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Cupid doesn't ask for money."`;
    waitForClick; clearText; 
 });
@@ -1192,7 +1104,6 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A046`); appendText; 
-   //Takeshi
    Takeshi`"I suppose that's true."`;
    waitForClick; clearText; 
 });
@@ -1200,10 +1111,8 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A047`); appendText; 
-   //Takeshi
    Takeshi`"Then how about you help me in return later?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Help?"`;
    waitForClick; clearText; 
 });
@@ -1211,10 +1120,8 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A048`); appendText; 
-   //Takeshi
    Takeshi`"It seems like the generator needs looking at."`;
    waitForClick; clearText; marker; sound(`S4A049`); appendText; 
-   //Takeshi
    Takeshi`"No big deal, just some maintenance that's 
 gotta be done."`;
    waitForClick; clearText; 
@@ -1223,10 +1130,8 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A050`); appendText; 
-   //Takeshi
    Takeshi`"It's an order from Sora."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"In that case, I'd do it even if I didn't owe 
 you anything."`;
    waitForClick; clearText; 
@@ -1235,7 +1140,6 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A051`); appendText; 
-   //Takeshi
    Takeshi`"Thanks!"`;
    waitForClick; clearText; 
 });
@@ -1273,14 +1177,11 @@ multifgload2({ id1: 1, id2: 2, name1: `SA02ADM`, name2: `KB03ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`S4A052`); appendText; 
-   //Sara
    Sara`"Oh, there you are."`;
    waitForClick; clearText; marker; sound(`S4A053`); appendText; 
-   //Sara
    Sara`"I think I forgot to get the pendant back 
 from you."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, yeah..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`All I could do was hand her back the fractured 
@@ -1294,7 +1195,6 @@ text(() => {
    Narr`Only then, like Sara was seeing us for the 
 first time, did she notice that we were filthy.`;
    waitForClick; clearText; marker; sound(`S4A054`); appendText; 
-   //Sara
    Sara`"What are you guys doing here anyway?"`;
    waitForClick; clearText; 
 });
@@ -1310,7 +1210,6 @@ fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A055`); appendText; 
-   //Takeshi
    Takeshi`"Actually...we were looking for the missing 
 piece."`;
    waitForClick; clearText; 
@@ -1319,17 +1218,14 @@ fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A056`); appendText; 
-   //Sara
    Sara`"Piece? What's that?"`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`S4A057`); appendText; 
-   //Takeshi
    Takeshi`"The piece that broke off that pendant."`;
    waitForClick; clearText; marker; sound(`S4A058`); appendText; 
-   //Takeshi
    Takeshi`"We thought we'd try to fix it for you."`;
    waitForClick; clearText; 
 });
@@ -1337,7 +1233,6 @@ fgload({ id: 1, name: `SA01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A059`); appendText; 
-   //Sara
    Sara`"Oh, don't worry about that."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara looked kind of embarrassed.`;
@@ -1357,11 +1252,9 @@ fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A060`); appendText; 
-   //Sara
    Sara`"Besides...I'm pretty sure you're not going to 
 find the piece here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why not?"`;
    waitForClick; clearText; 
 });
@@ -1369,7 +1262,6 @@ fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A061`); appendText; 
-   //Sara
    Sara`"Because...this pendant was cracked from the 
 start."`;
    waitForClick; clearText; 
@@ -1378,7 +1270,6 @@ fgload({ id: 2, name: `KB13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A062`); appendText; 
-   //Takeshi
    Takeshi`"From the start?"`;
    waitForClick; clearText; 
 });
@@ -1386,17 +1277,13 @@ fgload({ id: 1, name: `SA01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A063`); appendText; 
-   //Sara
    Sara`"Yup."`;
    waitForClick; clearText; marker; sound(`S4A064`); appendText; 
-   //Sara
    Sara`"I don't know why, but I've had this pendant 
 as long as I can remember."`;
    waitForClick; clearText; marker; sound(`S4A065`); appendText; 
-   //Sara
    Sara`"And this piece broke off a long time ago."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, well that means..."`;
    waitForClick; clearText; 
 });
@@ -1404,10 +1291,8 @@ fgload({ id: 2, name: `KB03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A066`); appendText; 
-   //Takeshi
    Takeshi`"We didn't have a chance of finding it."`;
    waitForClick; clearText; marker; sound(`S4A067`); appendText; 
-   //Takeshi
    Takeshi`"*sigh*"`;
    waitForClick; clearText; 
 });
@@ -1495,22 +1380,16 @@ bgload({ name: `EV_SA06B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S4A068`); appendText; 
-   //Sara
    Sara`"Moon sprite shouldering a long bow."`;
    waitForSound; clearText; marker; sound(`S4A069`); appendText; 
-   //Sara
    Sara`"Waiting inside a dream."`;
    waitForSound; clearText; marker; sound(`S4A070`); appendText; 
-   //Sara
    Sara`"Tonight a story by moonlight."`;
    waitForSound; clearText; marker; sound(`S4A071`); appendText; 
-   //Sara
    Sara`"Hoping the wait will be short."`;
    waitForSound; clearText; marker; sound(`S4A072`); appendText; 
-   //Sara
    Sara`"Sleeping curled and snug."`;
    waitForSound; clearText; marker; sound(`S4A073`); appendText; 
-   //Sara
    Sara`"Sleeping in mother's arms."`;
    waitForSound; clearText; 
 });
@@ -1561,7 +1440,6 @@ worrying...`;
    waitForClick; clearText; marker; appendText; 
    Narr`What was the matter with me?`;
    waitForClick; clearText; marker; sound(`S4A074`); appendText; 
-   //Sara
    Sara`"Who's there...?"`;
    waitForClick; clearText; 
 });
@@ -1579,10 +1457,8 @@ text(() => {
    Narr`Still confused by what I had just seen, 
 I answered.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's me, Sara."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sorry...I wanted to say something...but it 
 just didn't seem right."`;
    waitForClick; clearText; 
@@ -1599,17 +1475,14 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A075`); appendText; 
-   //Sara
    Sara`"What? What do you mean?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She seemed her upbeat self again.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I faced her and sat down.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That song, you sang it before."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"In front of the Generator Room, I think."`;
    waitForClick; clearText; 
 });
@@ -1617,7 +1490,6 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A076`); appendText; 
-   //Sara
    Sara`"Hey, your memory IS fine."`;
    waitForClick; clearText; 
 });
@@ -1625,14 +1497,12 @@ fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A077`); appendText; 
-   //Sara
    Sara`"Maybe you lost your memory because you packed 
 your head with so many useless little things 
 like that."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara laughed as she said this.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is that song a lullaby or something?"`;
    waitForClick; clearText; 
 });
@@ -1640,14 +1510,12 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A078`); appendText; 
-   //Sara
    Sara`"Yeah. You've never heard it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I shook my head.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't recall hearing it before.`;
    waitForClick; clearText; marker; sound(`S4A079`); appendText; 
-   //Sara
    Sara`"Really? You don't know it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pretended to think about it.`;
@@ -1660,17 +1528,14 @@ fgload({ id: 1, name: `SA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A080`); appendText; 
-   //Sara
    Sara`"Oh...I see..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara said it sadly and glanced down at the 
 pendant hanging from the middle finger of 
 her left hand.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There was something I wanted to ask you."`;
    waitForClick; clearText; 
 });
@@ -1678,13 +1543,11 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A081`); appendText; 
-   //Sara
    Sara`"?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I told her about how the image of the man in 
 the hologram pendant had disappeared.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I was sure the image was there yesterday..."`;
    waitForClick; clearText; 
 });
@@ -1692,20 +1555,15 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A082`); appendText; 
-   //Sara
    Sara`"Oh, that's because we're indoors."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh? Whaddya mean?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yesterday when we looked at it we were in 
 LeMU."`;
    waitForClick; clearText; marker; sound(`S4A083`); appendText; 
-   //Sara
    Sara`"No, that's not inside."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"?"`;
    waitForClick; clearText; 
 });
@@ -1713,10 +1571,8 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A084`); appendText; 
-   //Sara
    Sara`"That's a part of space, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; 
 });
@@ -1724,7 +1580,6 @@ fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A085`); appendText; 
-   //Sara
    Sara`"I'm just kidding..."`;
    waitForClick; clearText; 
 });
@@ -1732,7 +1587,6 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A086`); appendText; 
-   //Sara
    Sara`"Here is how it works..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`With that, Sara took the lighter from her 
@@ -1741,7 +1595,6 @@ pocket.`;
    Narr`She put the lighter's flame close to the 
 pendant.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The man in the hologram floated there - 
@@ -1754,13 +1607,11 @@ the same as the day before.`;
    Narr`The room with the whale was mostly dark. 
 I figured that was why he wasn't as clear.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So you have to hold the lighter flame next 
 to it to see it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked to make sure.`;
    waitForClick; clearText; marker; sound(`S4A087`); appendText; 
-   //Sara
    Sara`"Yup."`;
    waitForClick; clearText; 
 });
@@ -1768,10 +1619,8 @@ fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A088`); appendText; 
-   //Sara
    Sara`"It's gotta be either the lighter or sunlight."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sunlight?"`;
    waitForClick; clearText; 
 });
@@ -1779,7 +1628,6 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A089`); appendText; 
-   //Sara
    Sara`"Yeah. I don't really know how it works, 
 but you can't see it under fluorescent lights. 
 Weird, huh?"`;
@@ -1812,23 +1660,18 @@ fgload({ id: 1, name: `SA17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A090`); appendText; 
-   //Sara
    Sara`"Both of my parents are gone."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara said this out of the blue.`;
    waitForClick; clearText; marker; sound(`S4A091`); appendText; 
-   //Sara
    Sara`"They died when I was little."`;
    waitForClick; clearText; marker; sound(`S4A092`); appendText; 
-   //Sara
    Sara`"My mom and dad weren't around when I was a 
 kid."`;
    waitForClick; clearText; marker; sound(`S4A093`); appendText; 
-   //Sara
    Sara`"For a while, I thought it was that way for 
 everybody..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Really..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't know how to answer.`;
@@ -1840,22 +1683,17 @@ fgload({ id: 1, name: `SA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A094`); appendText; 
-   //Sara
    Sara`"This pendant is the only keepsake I have."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So that man is.."`;
    waitForClick; clearText; marker; sound(`S4A095`); appendText; 
-   //Sara
    Sara`"I think it's probably my father."`;
    waitForClick; clearText; marker; sound(`S4A096`); appendText; 
-   //Sara
    Sara`"I don't know for sure, but that is what 
 I think."`;
    waitForClick; clearText; marker; appendText; 
    Narr`After a long silence I said - `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's the same for me."`;
    waitForClick; clearText; 
 });
@@ -1863,30 +1701,22 @@ fgload({ id: 1, name: `SA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A097`); appendText; 
-   //Sara
    Sara`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I've forgotten everything."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So I don't remember anything about my mom 
 or dad."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If I bumped into them on the street, I would 
 never know it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Even if I get out of here in one piece..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't have anywhere to call home."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So I'm in the same situation."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's the same as not having any parents."`;
    waitForClick; clearText; 
 });
@@ -1894,10 +1724,8 @@ fgload({ id: 1, name: `SA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well, I should get going."`;
    waitForClick; clearText; 
 });
@@ -1905,13 +1733,10 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A098`); appendText; 
-   //Sara
    Sara`"?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I've got to go help Takeshi."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The generator needs some fixing..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I stood up.`;
@@ -1919,7 +1744,6 @@ text(() => {
    Narr`As I was about to leave, I thought of 
 something.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, would you mind lending me that lighter 
 and pendant again?"`;
    waitForClick; clearText; 
@@ -1932,7 +1756,6 @@ delay({ interval: 120 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Ouch. Takeshi, that hurts!"`;
    waitForClick; clearText; 
 });
@@ -1947,7 +1770,6 @@ clock(`16:7`);
 showTextbox();
 text(() => {
    marker; sound(`S4A099`); appendText; 
-   //Takeshi
    Takeshi`"You can take that. You're a man after all."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi grinned sadistically as he patted my 
@@ -1968,11 +1790,9 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A100`); appendText; 
-   //Takeshi
    Takeshi`"Wow. That dive you took was really something 
 else. Pretty impressive stuff."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Be quiet! I told you my leg slipped. You're 
 the one that forced the tools on me."`;
    waitForClick; clearText; 
@@ -1981,11 +1801,9 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A101`); appendText; 
-   //Takeshi
    Takeshi`"Don't try to pin this on me. I never said to 
 bring the tools along."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You're the one that jumped off without 
 anything."`;
    waitForClick; clearText; 
@@ -1994,13 +1812,11 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A102`); appendText; 
-   //Takeshi
    Takeshi`"If we have to make repairs again, then 
 we'll need the tools. So I left them there."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi was making excuses.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Okay, fine. Say it was all 
 my stupid fault..."`;
    waitForClick; clearText; marker; appendText; 
@@ -2016,12 +1832,10 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A103`); appendText; 
-   //Takeshi
    Takeshi`"Well, don't get down about it. Sora said it's 
 a clean break so you'll be back in business 
 in no time."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Easy for you to say..."`;
    waitForClick; clearText; 
 });
@@ -2029,7 +1843,6 @@ fgload({ id: 1, name: `KB11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A104`); appendText; 
-   //Takeshi
    Takeshi`"Alright, now it's time..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi took a transparent object that could 
@@ -2043,7 +1856,6 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A105`); appendText; 
-   //Takeshi
    Takeshi`"Gimme your arm."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi put the needle against my left arm.`;
@@ -2055,13 +1867,10 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A106`); appendText; 
-   //Takeshi
    Takeshi`"Alright, that should do it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Thanks, Takeshi."`;
    waitForClick; clearText; marker; sound(`S4A107`); appendText; 
-   //Takeshi
    Takeshi`"The break might cause a fever. Least you've 
 got some medicine in you."`;
    waitForClick; clearText; 
@@ -2069,21 +1878,17 @@ got some medicine in you."`;
 showTextbox();
 text(() => {
    marker; sound(`S4A108`); appendText; 
-   //Takeshi
    Takeshi`"Either way, the medicine ought to make you 
 drowsy. So take it easy."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Alright..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`S4A109`); appendText; 
-   //Takeshi
    Takeshi`"Well, I best get going."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh, hold on a second."`;
    waitForClick; clearText; 
 });
@@ -2091,16 +1896,12 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A110`); appendText; 
-   //Takeshi
    Takeshi`"Huh? What is it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There's something I want you to see."`;
    waitForClick; clearText; marker; sound(`S4A111`); appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"This."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I held Sara's pendant out to Takeshi.`;
@@ -2110,13 +1911,10 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A112`); appendText; 
-   //Takeshi
    Takeshi`"Not that again."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah. I want you to look at it again."`;
    waitForClick; clearText; marker; sound(`S4A113`); appendText; 
-   //Takeshi
    Takeshi`"You can be a pain, you know?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Even so, Takeshi took the pendant as he said 
@@ -2133,7 +1931,6 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A114`); appendText; 
-   //Takeshi
    Takeshi`"Hmmmm...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi scrutinized the pendant.`;
@@ -2147,13 +1944,10 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A115`); appendText; 
-   //Takeshi
    Takeshi`"There's nothing here to see..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh...there has to be...Oh!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I forgot."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I took the lighter out, lit it and held it up 
@@ -2161,7 +1955,6 @@ to the pendant.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I showed the light on the pendant.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"How's that?"`;
    waitForClick; clearText; 
 });
@@ -2169,16 +1962,12 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A116`); appendText; 
-   //Takeshi
    Takeshi`"Are you screwing with me?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`S4A117`); appendText; 
-   //Takeshi
    Takeshi`"Whaddya using a lighter to look at it for?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Because...that's how you see it."`;
    waitForClick; clearText; 
 });
@@ -2186,10 +1975,8 @@ fgload({ id: 1, name: `KB06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A118`); appendText; 
-   //Takeshi
    Takeshi`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look hard! There should be a man's face there."`;
    waitForClick; clearText; 
 });
@@ -2197,10 +1984,8 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; 
 });
@@ -2208,16 +1993,12 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A119`); appendText; 
-   //Takeshi
    Takeshi`"Oh, you're right! There is."`;
    waitForClick; clearText; marker; sound(`S4A120`); appendText; 
-   //Takeshi
    Takeshi`"And he's not a bad looking guy!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"See! That's Sara's boyfriend."`;
    waitForClick; clearText; marker; sound(`S4A121`); appendText; 
-   //Takeshi
    Takeshi`"Ho, ho. Alright!"`;
    waitForClick; clearText; 
 });
@@ -2225,14 +2006,11 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A122`); appendText; 
-   //Takeshi
    Takeshi`"I wonder when I started going out with Sara?"`;
    waitForClick; clearText; marker; sound(`S4A123`); appendText; 
-   //Takeshi
    Takeshi`"That or is this some miracle mirror that 
 shows the future?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh? What're you talking about?"`;
    waitForClick; clearText; 
 });
@@ -2240,13 +2018,10 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A124`); appendText; 
-   //Takeshi
    Takeshi`"The only face showing in this mirror is mine."`;
    waitForClick; clearText; marker; sound(`S4A125`); appendText; 
-   //Takeshi
    Takeshi`"That means I must be Sara's guy."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Idiot! There's no way you and Sara would get 
 together!"`;
    waitForClick; clearText; 
@@ -2255,22 +2030,17 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A126`); appendText; 
-   //Takeshi
    Takeshi`"You said it, not me."`;
    waitForClick; clearText; marker; sound(`S4A127`); appendText; 
-   //Takeshi
    Takeshi`"You said the guy in here was Sara's 
 boyfriend, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm not talking about your ugly reflection! 
 I'm talking about the holographic image!"`;
    waitForClick; clearText; marker; sound(`S4A128`); appendText; 
-   //Takeshi
    Takeshi`"And I'm saying there isn't a hologram in 
 here, stupid!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look again!"`;
    waitForClick; clearText; 
 });
@@ -2278,14 +2048,12 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A129`); appendText; 
-   //Takeshi
    Takeshi`"I AM looking! I am staring! Look at my eyes! 
 They're WIDE open!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked over Takeshi's shoulder and peered 
 into the pendant.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look! It's right there!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pointed at the hologram of the man.`;
@@ -2295,14 +2063,11 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A130`); appendText; 
-   //Takeshi
    Takeshi`"That's me, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You're behind it! The guy inside the mirror 
 is you!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The guy floating in the front is who I mean!"`;
    waitForClick; clearText; 
 });
@@ -2310,10 +2075,8 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A131`); appendText; 
-   //Takeshi
    Takeshi`"There's no floating guy anywhere..."`;
    waitForClick; clearText; marker; sound(`S4A132`); appendText; 
-   //Takeshi
    Takeshi`"How many times are you gonna make me say it? 
 There's nothing there!"`;
    waitForClick; clearText; 
@@ -2325,7 +2088,6 @@ text(() => {
    Narr`You came as we were repeating this sad 
 exchange.`;
    waitForClick; clearText; marker; sound(`S4A133`); appendText; 
-   //You
    You`"What are you all worked up about? You two 
 finished fixing the generator?"`;
    waitForClick; clearText; 
@@ -2335,14 +2097,11 @@ multifgload2({ id1: 1, id2: 2, name1: `YU07BDM`, name2: `KB04ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"You, come talk some sense into this idiot 
 for me!"`;
    waitForClick; clearText; marker; sound(`S4A134`); appendText; 
-   //Takeshi
    Takeshi`"That's my line!"`;
    waitForClick; clearText; marker; sound(`S4A135`); appendText; 
-   //You
    You`"What happened?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I showed You the hologram pendant.`;
@@ -2354,11 +2113,9 @@ fgload({ id: 2, name: `KB05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A136`); appendText; 
-   //Takeshi
    Takeshi`"He says the face inside there is Sara's 
 future man."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I didn't say that! You're twisting my words."`;
    waitForClick; clearText; 
 });
@@ -2366,7 +2123,6 @@ fgload({ id: 1, name: `YU06BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A137`); appendText; 
-   //You
    You`"Whoaa. Is that so?"`;
    waitForClick; clearText; 
 });
@@ -2374,11 +2130,9 @@ multifgload2({ id1: 1, id2: 2, name1: `YU02BDM`, name2: `KB07ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`S4A138`); appendText; 
-   //You
    You`"Cause either that girl is going to need a sex 
 change operation."`;
    waitForClick; clearText; marker; sound(`S4A139`); appendText; 
-   //You
    You`"Or I will..."`;
    waitForClick; clearText; 
 });
@@ -2386,10 +2140,8 @@ fgload({ id: 1, name: `YU08BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A140`); appendText; 
-   //You
    You`"Yuck! Not for me!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; 
 });
@@ -2397,14 +2149,11 @@ fgload({ id: 1, name: `YU05BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A141`); appendText; 
-   //You
    You`"I mean, this is just an ordinary mirror."`;
    waitForClick; clearText; marker; sound(`S4A142`); appendText; 
-   //You
    You`"I don't think there's a hologram or anything 
 in there."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's a hologram! There's a guy's face in 
 there!"`;
    waitForClick; clearText; 
@@ -2416,19 +2165,15 @@ text(() => {
    Narr`I wondered how many times I would have to 
 shout out this same line...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look! He's right here! Right here!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Now I looked over You's shoulder and pointed 
 to the pendant.`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -2436,14 +2181,11 @@ fgload({ id: 1, name: `YU03BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A143`); appendText; 
-   //You
    You`"Hey, Kid, are you alright? Are you having 
 another fit?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You really, truly can't see it?"`;
    waitForClick; clearText; marker; sound(`S4A144`); appendText; 
-   //You
    You`"Really."`;
    waitForClick; clearText; 
 });
@@ -2451,10 +2193,8 @@ fgload({ id: 2, name: `KB07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A145`); appendText; 
-   //Takeshi
    Takeshi`"That's right."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You can't see the man's face?"`;
    waitForClick; clearText; 
 });

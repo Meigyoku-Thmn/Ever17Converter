@@ -29,7 +29,6 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; sound(`YEP000`); appendText; 
-   //You
    You`"Wow, this is great weather"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You and I were riding on a boat.`;
@@ -53,10 +52,8 @@ starting to look like her mom 'her.'`;
    Narr`That and...she seemed to have become a bit 
 more easygoing and ladylike...`;
    waitForClick; clearText; marker; sound(`YEP001`); appendText; 
-   //You
    You`"So how is college going?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's alright I guess."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Yes. I had somehow gotten into college and 
@@ -66,82 +63,59 @@ was in my first year.`;
 than You, so we never had a chance to meet 
 on campus.`;
    waitForClick; clearText; marker; sound(`YEP002`); appendText; 
-   //You
    You`"Why on earth did you decide to major in 
 archaeology?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You really want to know?"`;
    waitForClick; clearText; marker; sound(`YEP003`); appendText; 
-   //You
    You`"That's why I'm asking."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You know, it might be better if you didn't 
 ask."`;
    waitForClick; clearText; marker; sound(`YEP004`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You still sure you want to know?"`;
    waitForClick; clearText; marker; sound(`YEP005`); appendText; 
-   //You
    You`"W-well..."`;
    waitForClick; clearText; marker; sound(`YEP006`); appendText; 
-   //You
    You`"Then I won't ask."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Alright. I won't tell."`;
    waitForClick; clearText; marker; sound(`YEP007`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; sound(`YEP008`); appendText; 
-   //You
    You`"Why? Tell me!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...you just said you weren't going to ask."`;
    waitForClick; clearText; marker; sound(`YEP009`); appendText; 
-   //You
    You`"That's because you said I probably 
 shouldn't..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"This is too confusing..."`;
    waitForClick; clearText; marker; sound(`YEP010`); appendText; 
-   //You
    You`"You're the one who made this conversation 
 confusing."`;
    waitForClick; clearText; marker; sound(`YEP011`); appendText; 
-   //You
    You`"Anyway, I guess I'll listen to your 
 reasoning."`;
    waitForClick; clearText; marker; appendText; 
    Narr`There she went changing her mind again.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You can really be twisted sometimes."`;
    waitForClick; clearText; marker; sound(`YEP012`); appendText; 
-   //You
    You`"Come on, say I'm pure at heart!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What are you talking about? If you were, 
 then I'd be..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`YEP013`); appendText; 
-   //You
    You`"Huh? You would be...what? Then you'd be 'the 
 pure-hearted Kid?'"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey...stop it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm not like I used to be..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`But after that, I was reluctant to speak.`;
@@ -178,14 +152,11 @@ was like 'me in another world....'`;
    waitForClick; clearText; marker; appendText; 
    Narr`Maybe that was it.`;
    waitForClick; clearText; marker; sound(`YEP014`); appendText; 
-   //You
    You`"You're right. You are not like you used 
 to be."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"?"`;
    waitForClick; clearText; marker; sound(`YEP015`); appendText; 
-   //You
    You`"Well, for one thing you got so tall." `;
    waitForClick; clearText; marker; appendText; 
    Narr`She stood on her tiptoes and raised her 
@@ -193,73 +164,51 @@ hand over my head.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had grown a head taller over the two years.`;
    waitForClick; clearText; marker; sound(`YEP016`); appendText; 
-   //You
    You`"So, are you going to tell me or not?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; marker; sound(`YEP017`); appendText; 
-   //You
    You`"About the reason you majored in archaeology."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Alright...it's because..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I want to know myself better."`;
    waitForClick; clearText; marker; sound(`YEP018`); appendText; 
-   //You
    You`"To know yourself?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yes."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"To know more about myself at that time..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"At that time, I thought that it would be best 
 to major in archaeology, the same as you, 
 to better understand the weird stuff that 
 was happening to me."`;
    waitForClick; clearText; marker; sound(`YEP019`); appendText; 
-   //You
    You`"You're not going to..."`;
    waitForClick; clearText; marker; sound(`YEP020`); appendText; 
-   //You
    You`"Study the third eye?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I sure am."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"............"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I told you..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It was probably better that you don't ask."`;
    waitForClick; clearText; marker; sound(`YEP021`); appendText; 
-   //You
    You`"You haven't changed...a bit, I mean..."`;
    waitForClick; clearText; marker; sound(`YEP022`); appendText; 
-   //You
    You`"Nope...you haven't changed at all."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...You, neither."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That reminds me. Your clothes are..."`;
    waitForClick; clearText; marker; sound(`YEP023`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The same ones you wore then, right?"`;
    waitForClick; clearText; marker; sound(`YEP024`); appendText; 
-   //You
    You`"Yeah...right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`There was a thin black stain on hem of her 
@@ -313,7 +262,6 @@ fgload({ id: 1, name: `SO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`YEP025`); appendText; 
-   //Sora
    Sora`"Good morning."`;
    waitForClick; clearText; 
 });
@@ -321,14 +269,11 @@ playBGM({ num: 8, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"...So-So-So-Sora!?"`;
    waitForClick; clearText; marker; sound(`YEP026`); appendText; 
-   //Sora
    Sora`"I promised you that I would see you again 
 soon, didn't I?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Bu-but...why are you here?"`;
    waitForClick; clearText; 
 });
@@ -336,10 +281,8 @@ fgload({ id: 1, name: `SO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`YEP027`); appendText; 
-   //Sora
    Sora`"Am I bothering you?"`;
    waitForClick; clearText; marker; sound(`YEP028`); appendText; 
-   //You
    You`"No, not all! I'm glad to see you again."`;
    waitForClick; clearText; 
 });
@@ -361,10 +304,8 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The clear blue sky seemed to spread on forever.`;
    waitForClick; clearText; marker; sound(`YEP029`); appendText; 
-   //Sora
    Sora`"Dr. Tanaka is waiting for you."`;
    waitForClick; clearText; marker; sound(`YEP030`); appendText; 
-   //Sora
    Sora`"Please come over here..."`;
    waitForClick; clearText; 
 });
@@ -380,7 +321,6 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Oh, you are..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The person called Dr. Tanaka that appeared in 
@@ -390,26 +330,22 @@ monitor...`;
    Narr`It was the person who had claimed to be 
 You's mother.`;
    waitForClick; clearText; marker; sound(`YEP031`); appendText; 
-   //You
    You`"M...mother..."`;
    waitForClick; clearText; marker; sound(`YEP032`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"You...I'm so happy you're alive..."`;
    waitForClick; clearText; marker; sound(`YEP033`); appendText; 
-   //You
    You`"Why are you...?"`;
    waitForClick; clearText; marker; sound(`YEP034`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"I promised that I would tell you everything 
 when you got to the floating island, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"..............."`;
    waitForClick; clearText; marker; sound(`YEP035`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"It's been a long time..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I wondered if she were talking to me.`;
@@ -423,49 +359,37 @@ I'd met her...`;
    Dr_Tanaka`"What's wrong? Is there something that 
 you would like to ask?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Y-yes! I have tons of things I want to ask."`;
    waitForClick; clearText; marker; sound(`YEP037`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"Fine. Don't worry, I'll tell you everything."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"All right, then.... F-first I want to..."`;
    waitForClick; clearText; marker; sound(`YEP038`); appendText; 
-   //You
    You`"Hold on!"`;
    waitForClick; clearText; marker; sound(`YEP039`); appendText; 
-   //You
    You`"Wait just a minute..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...You?"`;
    waitForClick; clearText; marker; sound(`YEP040`); appendText; 
-   //You
    You`"First, there is something I have to ask."`;
    waitForClick; clearText; marker; sound(`YEP041`); appendText; 
-   //You
    You`"Is that alright?"`;
    waitForClick; clearText; marker; sound(`YEP042`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"Go ahead."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; marker; sound(`YEP043`); appendText; 
-   //You
    You`"You said...that you're not my real mother."`;
    waitForClick; clearText; marker; sound(`YEP044`); appendText; 
-   //You
    You`"You also said that I was your child."`;
    waitForClick; clearText; marker; appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"........."`;
    waitForClick; clearText; marker; sound(`YEP045`); appendText; 
-   //You
    You`"There is only one thing I want to ask."`;
    waitForClick; clearText; marker; sound(`YEP046`); appendText; 
-   //You
    You`"Are you...my real 'mother'?"`;
    waitForClick; clearText; 
 });
@@ -480,7 +404,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`She twisted her lips sadly.`;
    waitForClick; clearText; marker; sound(`YEP047`); appendText; 
-   //You
    You`"Which is it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I wonder why You would ask such a thing.`;
@@ -490,7 +413,6 @@ text(() => {
    //Dr. Tanaka
    Dr_Tanaka`"...I am You..."`;
    waitForClick; clearText; marker; sound(`YEP049`); appendText; 
-   //You
    You`"...What?"`;
    waitForClick; clearText; 
 });
@@ -509,7 +431,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`She stared You in the eye as she said this. `;
    waitForClick; clearText; marker; sound(`YEP053`); appendText; 
-   //You
    You`"...Mother..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`".................."`;
@@ -653,90 +574,64 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`YEP054`); appendText; 
-   //You
    You`"You're thinking about the things that 
 happened then, aren't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh? Yeah..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, You?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Do you know the proverb 'Water flows and 
 people live'?"`;
    waitForClick; clearText; marker; sound(`YEP055`); appendText; 
-   //You
    You`"?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Water flows from high to lower places..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But the flow, its path has an infinite 
 number of possibilities."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"People live...means that like the water, 
 there are infinite ways for life to flow."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That's what it means."`;
    waitForClick; clearText; marker; sound(`YEP056`); appendText; 
-   //You
    You`"Hmmmm."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If life has infinite possibilities, there 
 might be another me somewhere who has a 
 different history from me in the present."`;
    waitForClick; clearText; marker; sound(`YEP057`); appendText; 
-   //You
    You`"Somewhere?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, say, beyond this broad sky..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Beyond this limitless universe..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There should be another universe..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Another me in another universe..."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I was thinking about that other me."`;
    waitForClick; clearText; marker; sound(`YEP058`); appendText; 
-   //You
    You`"Another universe, huh?"`;
    waitForClick; clearText; marker; sound(`YEP059`); appendText; 
-   //You
    You`"Hey, if there is another universe like 
 you say..."`;
    waitForClick; clearText; marker; sound(`YEP060`); appendText; 
-   //You
    You`"Is there another pair of us in the that other 
 world dating like us now?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sure there is."`;
    waitForClick; clearText; marker; sound(`YEP061`); appendText; 
-   //You
    You`"How can you tell?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I can tell because I can."`;
    waitForClick; clearText; marker; sound(`YEP062`); appendText; 
-   //You
    You`"???"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You see, if I do this..."`;
    waitForClick; clearText; 
 });

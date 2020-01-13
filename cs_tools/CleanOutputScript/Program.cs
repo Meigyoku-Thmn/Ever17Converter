@@ -569,7 +569,8 @@ namespace CleanOutputScript {
                      if (name[0] == '?') name = "Unk";
                      else throw new InvalidSyntaxException($"Unknown name tag format at line {inputLine + 1} of file '{filePath}'");
                   }
-                  name = $"//{name_comment}\r\n{tab}{name}";
+                  if (name != name_comment)
+                     name = $"//{name_comment}\r\n{tab}{name}";
                   return "";
                });
                innerText += $"\r\n{tab}{name}`{_fragment}`;\r\n{tab}";

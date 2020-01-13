@@ -55,7 +55,6 @@ heavens.`;
 showTextbox();
 text(() => {
    marker; sound(`EOP000`); appendText; 
-   //Takeshi
    Takeshi`"So tranquil..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He muttered.`;
@@ -72,7 +71,6 @@ background.`;
    Narr`The merry sound of children's voices echoed
 brighter than the sunlight pouring down.`;
    waitForClick; clearText; marker; sound(`EOP001`); appendText; 
-   //Takeshi
    Takeshi`"So peaceful..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was like being inside a dream.`;
@@ -128,7 +126,6 @@ gazed into the ocean depths.`;
    Narr`In the blue distance, he saw a massive metallic
 structure swaying gently.`;
    waitForClick; clearText; marker; sound(`EOP002`); appendText; 
-   //Takeshi
    Takeshi`"Utopia, huh...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He mumbled and looked back casually...`;
@@ -144,7 +141,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`For a moment they eyed each other in silence.`;
    waitForClick; clearText; marker; sound(`EOP003`); appendText; 
-   //Takeshi
    Takeshi`"Uh...he-hello..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`To clear the air, he nodded his head.`;
@@ -203,10 +199,8 @@ and opened his eyes again...`;
    Narr`Even after blinking several times... the
 bizarre scene refused to go away.`;
    waitForClick; clearText; marker; sound(`EOP005`); appendText; 
-   //Tanuki
    Tanuki`"Hey."`;
    waitForClick; clearText; marker; sound(`EOP006`); appendText; 
-   //Tanuki
    Tanuki`"Would you do something about this kid?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Whispered the big tanuki.`;
@@ -267,7 +261,6 @@ clock(`11:34`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He wondered how long he had been sitting.`;
@@ -280,7 +273,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`Eating the same ice cream.`;
    waitForClick; clearText; marker; sound(`EOP008`); appendText; 
-   //Kid
    Kid`"It's cold."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Of course it was.`;
@@ -290,7 +282,6 @@ text(() => {
    Narr`The melted vanilla ice cream trickled on to his
 hand, spilling on his lap.`;
    waitForClick; clearText; marker; sound(`EOP009`); appendText; 
-   //Kid
    Kid`"Wooh, that's cold."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The ice cream slowly soaked into the fabric of
@@ -316,7 +307,6 @@ completely soaking into his skin.`;
    Narr`He felt like he was teetering on the verge of
 utter confusion.`;
    waitForClick; clearText; marker; sound(`EOP010`); appendText; 
-   //Kid
    Kid`"Oh well..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He shook his head and sighed.`;
@@ -358,10 +348,8 @@ shining face.`;
    //Park staff
    Park_staff`"Did you get separated from your friends?"`;
    waitForClick; clearText; marker; sound(`EOP014`); appendText; 
-   //Kid
    Kid`"Yeah."`;
    waitForClick; clearText; marker; sound(`EOP015`); appendText; 
-   //Kid
    Kid`"I've been waiting."`;
    waitForClick; clearText; 
 });
@@ -372,10 +360,8 @@ text(() => {
    //Park staff
    Park_staff`"Waiting?"`;
    waitForClick; clearText; marker; sound(`EOP017`); appendText; 
-   //Kid
    Kid`"Well..."`;
    waitForClick; clearText; marker; sound(`EOP018`); appendText; 
-   //Kid
    Kid`"I was waiting."`;
    waitForClick; clearText; marker; sound(`EOP019`); appendText; 
    //Park staff
@@ -390,13 +376,11 @@ text(() => {
    //Park staff
    Park_staff`"For me?"`;
    waitForClick; clearText; marker; sound(`EOP021`); appendText; 
-   //Kid
    Kid`"N...no..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He was flustered as her grinning face peered
 into his.`;
    waitForClick; clearText; marker; sound(`EOP022`); appendText; 
-   //Kid
    Kid`"I was told to wait here, so..."`;
    waitForClick; clearText; 
 });
@@ -430,7 +414,6 @@ hands together.`;
    //Park staff
    Park_staff`"Hey, hey, you're alone, right?"`;
    waitForClick; clearText; marker; sound(`EOP028`); appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`EOP029`); appendText; 
    //Park staff
@@ -442,7 +425,6 @@ a tour of LeMU?"`;
    Narr`Without waiting for his reply, she made him
 stand.`;
    waitForClick; clearText; marker; sound(`EOP030`); appendText; 
-   //Kid
    Kid`"B...but, I'm waiting for someone."`;
    waitForClick; clearText; 
 });
@@ -453,7 +435,6 @@ text(() => {
    //Park staff
    Park_staff`"Waiting? For who?"`;
    waitForClick; clearText; marker; sound(`EOP032`); appendText; 
-   //Kid
    Kid`"...Uh..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Who was it?`;
@@ -477,7 +458,6 @@ you've waited long enough?"`;
    //Park staff
    Park_staff`"Whaddya say? How about it?"`;
    waitForClick; clearText; marker; sound(`EOP036`); appendText; 
-   //Kid
    Kid`"Al-alright..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He nodded slightly.`;
@@ -485,7 +465,6 @@ you've waited long enough?"`;
    Narr`The girl's nametag glittered brightly against
 the white fabric of her uniform.`;
    waitForClick; clearText; marker; sound(`EOP037`); appendText; 
-   //Kid
    Kid`"Y-O-U...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`That was what it said.`;
@@ -495,38 +474,28 @@ fgload({ id: 1, name: `YU01BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP038`); appendText; 
-   //You
    You`"I'm You!"`;
    waitForClick; clearText; marker; sound(`EOP039`); appendText; 
-   //Kid
    Kid`"???"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I'm you...?`;
    waitForClick; clearText; marker; sound(`EOP040`); appendText; 
-   //You
    You`"Yup."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She nodded.`;
    waitForClick; clearText; marker; sound(`EOP041`); appendText; 
-   //You
    You`"My name's You..."`;
    waitForClick; clearText; marker; sound(`EOP042`); appendText; 
-   //You
    You`"My last name is Tanaka..."`;
    waitForClick; clearText; marker; sound(`EOP043`); appendText; 
-   //Kid
    Kid`"You...?"`;
    waitForClick; clearText; marker; sound(`EOP044`); appendText; 
-   //You
    You`"My real name is much longer, though."`;
    waitForClick; clearText; marker; sound(`EOP045`); appendText; 
-   //Kid
    Kid`"Longer?"`;
    waitForClick; clearText; marker; sound(`EOP046`); appendText; 
-   //You
    You`"Long, like, endlessly long. But..."`;
    waitForClick; clearText; marker; sound(`EOP047`); appendText; 
-   //You
    You`"But, it's such a pain...just call me 'You.'"`;
    waitForClick; clearText; 
 });
@@ -534,13 +503,11 @@ fgload({ id: 1, name: `YU02BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP048`); appendText; 
-   //You
    You`"Nice to meet you!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`With that she enthusiastically stuck out her
 hand.`;
    waitForClick; clearText; marker; sound(`EOP049`); appendText; 
-   //Kid
    Kid`"N-nice to meet you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Without thinking he shook her hand.`;
@@ -554,7 +521,6 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP050`); appendText; 
-   //You
    You`"So, shall we go?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`They released hands, reluctantly.`;
@@ -732,7 +698,6 @@ bgload({ name: `EV_SO04A`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Visitors
    Visitors`"..."`;
    waitForClick; clearText; marker; sound(`EOP052`); appendText; 
    //Park staff
@@ -765,10 +730,8 @@ text(() => {
    //Young Girl
    Young_Girl`"I'M CO-CO YA-GA-MI!"`;
    waitForClick; clearText; marker; sound(`EOP059`); appendText; 
-   //Coco
    Coco`"This is my pet dog, Pipi."`;
    waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   //Pipi
    Pipi`"Woof!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`(So that isn't a tanuki, it's a dog.)`;
@@ -784,19 +747,15 @@ text(() => {
 showTextbox();
 text(() => {
    marker; sound(`EOP061`); appendText; 
-   //Coco
    Coco`"Uh, well...one,two,three,four,five..."`;
    waitForClick; clearText; marker; sound(`EOP062`); appendText; 
-   //Coco
    Coco`"This is my first time!"`;
    waitForClick; clearText; marker; sound(`EOP063`); appendText; 
    //Park staff
    Park_staff`"Hee, hee. Aren't you a funny girl?"`;
    waitForClick; clearText; marker; sound(`EOP064`); appendText; 
-   //Coco
    Coco`"I get that a lot."`;
    waitForClick; clearText; marker; sound(`EOP065`); appendText; 
-   //Coco
    Coco`"You want me to do something even more funny?"`;
    waitForClick; clearText; 
 });
@@ -807,7 +766,6 @@ text(() => {
    //Park staff
    Park_staff`"What?"`;
    waitForClick; clearText; marker; sound(`EOP067`); appendText; 
-   //Coco
    Coco`"My friend taught me a good joke the other day!"`;
    waitForClick; clearText; 
 });
@@ -818,23 +776,18 @@ text(() => {
    //Park staff
    Park_staff`"O-ooh.... Er...Maybe some other time."`;
    waitForClick; clearText; marker; sound(`EOP069`); appendText; 
-   //Coco
    Coco`"Why not?"`;
    waitForClick; clearText; marker; sound(`EOP070`); appendText; 
    //Park staff
    Park_staff`"Because I have to tell everyone something right
 now."`;
    waitForClick; clearText; marker; sound(`EOP071`); appendText; 
-   //Coco
    Coco`"Oh. Okay then."`;
    waitForClick; clearText; marker; sound(`EOP072`); appendText; 
-   //Coco
    Coco`"But it's really funny..."`;
    waitForClick; clearText; marker; sound(`EOP073`); appendText; 
-   //Coco
    Coco`"That's too bad, huh Pipi?"`;
    waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   //Pipi
    Pipi`"Woof!"`;
    waitForClick; clearText; 
 });
@@ -859,7 +812,6 @@ like to thank you very much for coming."`;
 about the LeMU theme park and tell you a few
 things to watch out for."`;
    waitForClick; clearText; marker; sound(`EOP077`); appendText; 
-   //Coco
    Coco`"Hey, who cares? Hurry up and let us inside
 already!"`;
    waitForClick; clearText; marker; sound(`EOP078`); appendText; 
@@ -1023,10 +975,8 @@ ground floor."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Just then.`;
    waitForClick; clearText; marker; sound(`EOP108`); appendText; 
-   //Coco
    Coco`"Hey, hey. Hey, you."`;
    waitForClick; clearText; marker; sound(`EOP109`); appendText; 
-   //Coco
    Coco`"Hey, I'm talking to you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`As he was listening to the explanation, someone
@@ -1044,7 +994,6 @@ the park staff.`;
    waitForClick; clearText; marker; appendText; 
    Narr`(What was her name again...?)`;
    waitForClick; clearText; marker; sound(`EOP110`); appendText; 
-   //Coco
    Coco`"Hey. Don't you want to know about my joke?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`(Oh, that's right.)`;
@@ -1054,17 +1003,13 @@ the park staff.`;
    Narr`(And that animal she's holding is 
 Pepe, or Popo, or something...)`;
    waitForClick; clearText; marker; sound(`EOP111`); appendText; 
-   //Coco
    Coco`"You wanna know, don't you?"`;
    waitForClick; clearText; marker; sound(`EOP112`); appendText; 
-   //Takeshi
    Takeshi`"Huh? What?"`;
    waitForClick; clearText; marker; sound(`EOP113`); appendText; 
-   //Coco
    Coco`"The joke I was just talking about. It's an
 Ame-joke."`;
    waitForClick; clearText; marker; sound(`EOP114`); appendText; 
-   //Takeshi
    Takeshi`"An ame..joke?"`;
    waitForClick; clearText; 
 });
@@ -1072,11 +1017,9 @@ bgload({ name: `EV_CO01C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP115`); appendText; 
-   //Coco
    Coco`"You haven't heard about them? They're real
 popular now, ya' know."`;
    waitForClick; clearText; marker; sound(`EOP116`); appendText; 
-   //Takeshi
    Takeshi`"No, I haven't.... What are you talking about?"`;
    waitForClick; clearText; 
 });
@@ -1084,14 +1027,11 @@ bgload({ name: `EV_CO01A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP117`); appendText; 
-   //Coco
    Coco`"An Ame-joke is an American joke. Get it?
 'Ame-joke.'"`;
    waitForClick; clearText; marker; sound(`EOP118`); appendText; 
-   //Takeshi
    Takeshi`"Oh, really..."`;
    waitForClick; clearText; marker; sound(`EOP119`); appendText; 
-   //Coco
    Coco`"Makes you wanna hear it, right? Want me to
 tell you?"`;
    waitForClick; clearText; 
@@ -1109,7 +1049,6 @@ varop(`(28 0a a4) dd := (00) 1`);
 showTextbox();
 text(() => {
    marker; sound(`EOP120`); appendText; 
-   //Takeshi
    Takeshi`"Yeah, I guess I'll listen to it."`;
    waitForClick; clearText; 
 });
@@ -1118,7 +1057,6 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; sound(`EOP121`); appendText; 
-   //Coco
    Coco`"Okay! Here it goes!"`;
    waitForClick; clearText; 
 });
@@ -1127,55 +1065,40 @@ playBGM({ num: 9, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`EOP122`); appendText; 
-   //Coco
    Coco`"Once there was this guy who was talking to the
 ghost of his dead grandfather. So he asked him
 a question."`;
    waitForClick; clearText; marker; sound(`EOP123`); appendText; 
-   //Coco
    Coco`"'How long is a million years to a ghost?' he
 wanted to know."`;
    waitForClick; clearText; marker; sound(`EOP124`); appendText; 
-   //Coco
    Coco`"And the ghost answered."`;
    waitForClick; clearText; marker; sound(`EOP125`); appendText; 
-   //Coco
    Coco`"'A million years is like a second to me.'"`;
    waitForClick; clearText; marker; sound(`EOP126`); appendText; 
-   //Coco
    Coco`"Next the man asked..."`;
    waitForClick; clearText; marker; sound(`EOP127`); appendText; 
-   //Coco
    Coco`"'How much is a million dollars to a ghost?'"`;
    waitForClick; clearText; marker; sound(`EOP128`); appendText; 
-   //Coco
    Coco`"And the ghost answered."`;
    waitForClick; clearText; marker; sound(`EOP129`); appendText; 
-   //Coco
    Coco`"'A million dollars? It is but one, small, cent
 to me.'"`;
    waitForClick; clearText; marker; sound(`EOP130`); appendText; 
-   //Coco
    Coco`"When he heard that, the man pretended to smile
 all nice and then said..."`;
    waitForClick; clearText; marker; sound(`EOP131`); appendText; 
-   //Coco
    Coco`"'Well then, gramps, how about giving me one of
 your cents then?'"`;
    waitForClick; clearText; marker; sound(`EOP132`); appendText; 
-   //Coco
    Coco`"Laughing the ghost replied."`;
    waitForClick; clearText; marker; sound(`EOP133`); appendText; 
-   //Coco
    Coco`"'Sure. Right away.'"`;
    waitForClick; clearText; marker; sound(`EOP134`); appendText; 
-   //Coco
    Coco`"'But can I get you to wait just a second?'"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"..."`;
    waitForClick; clearText; marker; sound(`EOP135`); appendText; 
-   //Coco
    Coco`"Hee, hee, heee..."`;
    waitForClick; clearText; 
 });
@@ -1183,10 +1106,8 @@ bgload({ name: `EV_CO01B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP136`); appendText; 
-   //Coco
    Coco`"Waaa! Ha, ha, ha!"`;
    waitForClick; clearText; marker; sound(`EOP137`); appendText; 
-   //Coco
    Coco`"Well? That's a pretty good joke, huh?"`;
    waitForClick; clearText; 
 });
@@ -1196,11 +1117,9 @@ varop(`(28 0a a4) b8 += (00) 1`);
 showTextbox();
 text(() => {
    marker; sound(`EOP138`); appendText; 
-   //Takeshi
    Takeshi`"Well, I suppose it could be worse, but....I'll
 talk to you later."`;
    waitForClick; clearText; marker; sound(`EOP139`); appendText; 
-   //Coco
    Coco`"Huh."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Patting the little dog's head, he turned back to
@@ -1324,16 +1243,12 @@ bgload({ name: `EV_CO01A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP158`); appendText; 
-   //Takeshi
    Takeshi`"Hey, say something."`;
    waitForClick; clearText; marker; sound(`EOP159`); appendText; 
-   //Coco
    Coco`"Like what?"`;
    waitForClick; clearText; marker; sound(`EOP160`); appendText; 
-   //Takeshi
    Takeshi`"Ha, ha, ha. Your voice is hilarious."`;
    waitForClick; clearText; marker; sound(`EOP161`); appendText; 
-   //Coco
    Coco`"Huh? My voice?"`;
    waitForClick; clearText; 
 });
@@ -1343,31 +1258,23 @@ text(() => {
    marker; appendText; 
    Narr`Coco hadn't been listening to the explanation.`;
    waitForClick; clearText; marker; sound(`EOP162`); appendText; 
-   //Takeshi
    Takeshi`"Can you tell me that joke one more time?"`;
    waitForClick; clearText; marker; sound(`EOP163`); appendText; 
-   //Coco
    Coco`"Why?"`;
    waitForClick; clearText; marker; sound(`EOP164`); appendText; 
-   //Takeshi
    Takeshi`"C'mon, just do it."`;
    waitForClick; clearText; marker; sound(`EOP165`); appendText; 
-   //Coco
    Coco`"Once there was this guy who was talking to the
 ghost of his dead grandfather. So he asked him
 a question."`;
    waitForClick; clearText; marker; sound(`EOP166`); appendText; 
-   //Coco
    Coco`"'How long is a million years to a ghost?' he
 wanted to know."`;
    waitForClick; clearText; marker; sound(`EOP167`); appendText; 
-   //Coco
    Coco`"And the ghost answered."`;
    waitForClick; clearText; marker; sound(`EOP168`); appendText; 
-   //Takeshi
    Takeshi`"Heee...heee..."`;
    waitForClick; clearText; marker; sound(`EOP169`); appendText; 
-   //Takeshi
    Takeshi`"Waaah, Haaaah!"`;
    waitForClick; clearText; 
 });
@@ -1375,7 +1282,6 @@ bgload({ name: `EV_CO01C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP170`); appendText; 
-   //Coco
    Coco`"What? That's weird. You didn't even laugh at
 all just a second ago."`;
    waitForClick; clearText; marker; appendText; 
@@ -1388,28 +1294,21 @@ let lbl_00000848;
 showTextbox();
 text(() => {
    marker; sound(`EOP171`); appendText; 
-   //Coco
    Coco`"What's wrong with my voice?"`;
    waitForClick; clearText; marker; sound(`EOP172`); appendText; 
-   //Takeshi
    Takeshi`"Ha, ha, ha. You weren't listening to the
 explanation."`;
    waitForClick; clearText; marker; sound(`EOP173`); appendText; 
-   //Coco
    Coco`"What are you laughing at? Why are you smiling
 like that?"`;
    waitForClick; clearText; marker; sound(`EOP174`); appendText; 
-   //Coco
    Coco`"You're acting really weird."`;
    waitForClick; clearText; marker; sound(`EOP175`); appendText; 
-   //Takeshi
    Takeshi`"Well, why don't you try listening to your own
 voice?"`;
    waitForClick; clearText; marker; sound(`EOP176`); appendText; 
-   //Coco
    Coco`"Huh?"`;
    waitForClick; clearText; marker; sound(`EOP177`); appendText; 
-   //Takeshi
    Takeshi`"It's so funny. You sound like an eight-legged
 alien."`;
    waitForClick; clearText; 
@@ -1418,19 +1317,15 @@ bgload({ name: `EV_CO01C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP178`); appendText; 
-   //Coco
    Coco`"Alien? Alien as in 'Take us to your leader'
 ...goooba joooba doooba space alien?"`;
    waitForClick; clearText; marker; sound(`EOP179`); appendText; 
-   //Coco
    Coco`"Like a Martian or someone for Planet Kuikui,
 or something?"`;
    waitForClick; clearText; marker; sound(`EOP180`); appendText; 
-   //Coco
    Coco`"A star person? From the far edge of the galaxy,
 with lasers...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"..."`;
    waitForClick; clearText; 
 });
@@ -1438,16 +1333,12 @@ bgload({ name: `EV_CO01A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP181`); appendText; 
-   //Coco
    Coco`"My joke was a lot funnier than THAT!"`;
    waitForClick; clearText; marker; sound(`EOP182`); appendText; 
-   //Takeshi
    Takeshi`"Hee...ha, ha..."`;
    waitForClick; clearText; marker; sound(`EOP183`); appendText; 
-   //Takeshi
    Takeshi`"Waaah, Haaaah!"`;
    waitForClick; clearText; marker; sound(`EOP184`); appendText; 
-   //Takeshi
    Takeshi`"That's enough. I can't take anymore of this.
 Thanks."`;
    waitForClick; clearText; marker; appendText; 
@@ -1483,24 +1374,18 @@ bgload({ name: `EV_CO01A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP189`); appendText; 
-   //Takeshi
    Takeshi`"So, shall we go...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Just as he headed for the elevator...`;
    waitForClick; clearText; marker; sound(`EOP190`); appendText; 
-   //Coco
    Coco`"So, are you here by yourself?"`;
    waitForClick; clearText; marker; sound(`EOP191`); appendText; 
-   //Takeshi
    Takeshi`"Who, me? No, I got separated from my friends."`;
    waitForClick; clearText; marker; sound(`EOP192`); appendText; 
-   //Coco
    Coco`"So you're lost?"`;
    waitForClick; clearText; marker; sound(`EOP193`); appendText; 
-   //Takeshi
    Takeshi`"Not exactly. But something like that."`;
    waitForClick; clearText; marker; sound(`EOP194`); appendText; 
-   //Takeshi
    Takeshi`"I'll head down the elevator and take a look
 around."`;
    waitForClick; clearText; 
@@ -1509,11 +1394,9 @@ bgload({ name: `EV_CO01B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP195`); appendText; 
-   //Coco
    Coco`"How about checking with that girl who was just
 talking?"`;
    waitForClick; clearText; marker; sound(`EOP196`); appendText; 
-   //Takeshi
    Takeshi`"Oh, I suppose I could do that. Excuse me..."`;
    waitForClick; clearText; 
 });
@@ -1542,10 +1425,8 @@ clock(`11:58`);
 showTextbox();
 text(() => {
    marker; sound(`EOP197`); appendText; 
-   //You
    You`"Hmmmm. So you came to LeMU by yourself?"`;
    waitForClick; clearText; marker; sound(`EOP198`); appendText; 
-   //Kid
    Kid`"Yup. That's right."`;
    waitForClick; clearText; 
 });
@@ -1553,13 +1434,11 @@ fgload({ id: 1, name: `YU05BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP199`); appendText; 
-   //You
    You`"Even so..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`After bending down to wipe away the white stain
 on his pants, You stood up.`;
    waitForClick; clearText; marker; sound(`EOP200`); appendText; 
-   //You
    You`"You don't see that very often, a guy coming to
 a park like this alone."`;
    waitForClick; clearText; marker; appendText; 
@@ -1577,14 +1456,11 @@ fgload({ id: 1, name: `YU11BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP201`); appendText; 
-   //You
    You`"So why didn't you go into the park with your
 friends?"`;
    waitForClick; clearText; marker; sound(`EOP202`); appendText; 
-   //You
    You`"Why arrange to meet inside LeMU?"`;
    waitForClick; clearText; marker; sound(`EOP203`); appendText; 
-   //Kid
    Kid`"Huh? Th-that's because..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Now that she mentioned it...`;
@@ -1598,15 +1474,12 @@ fgload({ id: 1, name: `YU05BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP204`); appendText; 
-   //You
    You`"Oh, well. Whatever. I won't push you."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Who was it...?`;
    waitForClick; clearText; marker; sound(`EOP205`); appendText; 
-   //You
    You`"But, I suppose that...well, I mean..."`;
    waitForClick; clearText; 
 });
@@ -1614,13 +1487,10 @@ fgload({ id: 1, name: `YU08BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP206`); appendText; 
-   //You
    You`"You've kind of been stood up...right?"`;
    waitForClick; clearText; marker; sound(`EOP207`); appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; marker; sound(`EOP208`); appendText; 
-   //Kid
    Kid`"Stood...up?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Stood up...`;
@@ -1628,7 +1498,6 @@ text(() => {
    Narr`It took a moment for the meaning of the word to
 register.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"............"`;
    waitForClick; clearText; 
 });
@@ -1636,7 +1505,6 @@ fgload({ id: 1, name: `YU06BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP209`); appendText; 
-   //You
    You`"Wow! I hit the nail on the head didn't I? Uh...
 sorry..."`;
    waitForClick; clearText; 
@@ -1652,7 +1520,6 @@ fgload({ id: 1, name: `YU02BDL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP210`); appendText; 
-   //You
    You`"Well, well. Don't get depressed about it!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She changed modes abruptly and let out a hearty
@@ -1660,10 +1527,8 @@ laugh.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She slapped him solidly on the back.`;
    waitForClick; clearText; marker; sound(`EOP211`); appendText; 
-   //You
    You`"I'll look out for you. Alright?"`;
    waitForClick; clearText; marker; sound(`EOP212`); appendText; 
-   //Kid
    Kid`"Al...alright."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He nodded, a bit overwhelmed.`;
@@ -1685,7 +1550,6 @@ bgload({ name: `BG23A6`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP213`); appendText; 
-   //Kid
    Kid`"But..."`;
    waitForClick; clearText; 
 });
@@ -1693,10 +1557,8 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP214`); appendText; 
-   //You
    You`"Huh? What?"`;
    waitForClick; clearText; marker; sound(`EOP215`); appendText; 
-   //Kid
    Kid`"Aren't you working right now, You?"`;
    waitForClick; clearText; 
 });
@@ -1704,13 +1566,11 @@ fgload({ id: 1, name: `YU02BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP216`); appendText; 
-   //You
    You`"You'd make a scary boss."`;
    waitForClick; clearText; marker; appendText; 
    Narr`No matter how many times he checked, she was
 definitely still wearing a LeMU uniform.`;
    waitForClick; clearText; marker; sound(`EOP217`); appendText; 
-   //You
    You`"I didn't have anything to do anyway. It's
 perfect timing. Yeah."`;
    waitForClick; clearText; marker; appendText; 
@@ -1738,22 +1598,18 @@ text(() => {
 showTextbox();
 text(() => {
    marker; sound(`EOP218`); appendText; 
-   //You
    You`"Going up..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She whispered mischievously.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"............"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The elevator was terribly crowded.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And everyone was packed in like sardines.`;
    waitForClick; clearText; marker; sound(`EOP219`); appendText; 
-   //You
    You`"Whoa...it's a little hot, huh?"`;
    waitForClick; clearText; marker; sound(`EOP220`); appendText; 
-   //Kid
    Kid`"I'll say..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her face was so close he almost bumped into it.`;
@@ -1770,10 +1626,8 @@ started to squirm.`;
 showTextbox();
 text(() => {
    marker; sound(`EOP221`); appendText; 
-   //You
    You`"Hey, kid."`;
    waitForClick; clearText; marker; sound(`EOP222`); appendText; 
-   //You
    You`"Hey don't go touching places you shouldn't..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She whispered into his ear, puffing out her
@@ -1786,13 +1640,10 @@ an inch.`;
 showTextbox();
 text(() => {
    marker; sound(`EOP223`); appendText; 
-   //You
    You`"That tickles...don't move so much."`;
    waitForClick; clearText; marker; sound(`EOP224`); appendText; 
-   //Kid
    Kid`"I don't have a lot of choice."`;
    waitForClick; clearText; marker; sound(`EOP225`); appendText; 
-   //Kid
    Kid`"I can't...breathe."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He couldn't move, but he couldn't bear standing
@@ -1818,7 +1669,6 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; sound(`EOP226`); appendText; 
-   //Kid
    Kid`"Whew!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He let out a cry, and bolted from the elevator.`;
@@ -1830,7 +1680,6 @@ fgload({ id: 1, name: `YU06BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP227`); appendText; 
-   //You
    You`"What...what's with you all of a sudden?"`;
    waitForClick; clearText; 
 });
@@ -1839,7 +1688,6 @@ fgload({ id: 1, name: `YU06BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP228`); appendText; 
-   //You
    You`"Hey! Wait! Kid! Kid!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He sprinted away leaving You far behind.`;
@@ -1876,7 +1724,6 @@ possessed.`;
    waitForClick; clearText; marker; appendText; 
    Narr`As he sifted, he kept running forward.`;
    waitForClick; clearText; marker; sound(`EOP229`); appendText; 
-   //Kid
    Kid`"Wait...!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He felt a desperate need to meet the person.`;
@@ -1888,14 +1735,12 @@ bgload({ name: `BG22A8`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP230`); appendText; 
-   //Kid
    Kid`"Huff...puff..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Eventually, he ran out of breath.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Holding his pounding chest, he looked up.`;
    waitForClick; clearText; marker; sound(`EOP231`); appendText; 
-   //Kid
    Kid`"Ah!"`;
    waitForClick; clearText; 
 });
@@ -1951,7 +1796,6 @@ shakeScreen();
 showTextbox();
 text(() => {
    marker; sound(`EOP232`); appendText; 
-   //Kid
    Kid`"Aaagh!"`;
    delay(0); 
 });
@@ -1965,7 +1809,6 @@ text(() => {
    marker; appendText; 
    Narr`He was caught up in a wave of people.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He got pushed into an elevator. It started to
@@ -2014,7 +1857,6 @@ bgload({ name: `BG01A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP233`); appendText; 
-   //Kid
    Kid`"What is this...this feeling..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`His heart was still beating furiously.`;
@@ -2035,23 +1877,19 @@ was talking to him.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She gave him a warm smile as she said this.`;
    waitForClick; clearText; marker; sound(`EOP236`); appendText; 
-   //Kid
    Kid`"Eh! Uh, uh...yes, I am."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Feeling that he seemed a little desperate, he
 quickly blurted out an answer.`;
    waitForClick; clearText; marker; sound(`EOP237`); appendText; 
-   //Kid
    Kid`"I'm trying to find someone!"`;
    waitForClick; clearText; marker; sound(`EOP238`); appendText; 
-   //Kid
    Kid`"I was supposed to meet up with them, but we
 must have missed each other."`;
    waitForClick; clearText; marker; sound(`EOP239`); appendText; 
    //Park staff
    Park_staff`"Who is it? What is their name?"`;
    waitForClick; clearText; marker; sound(`EOP240`); appendText; 
-   //Kid
    Kid`"Uh, their name..."`;
    waitForClick; clearText; marker; sound(`EOP241`); appendText; 
    //??
@@ -2070,7 +1908,6 @@ text(() => {
    Narr`Suddenly, the sounds of footsteps came rushing
 at him.`;
    waitForClick; clearText; marker; sound(`EOP242`); appendText; 
-   //Kid
    Kid`"Huh? You mean me?"`;
    waitForClick; clearText; 
 });
@@ -2080,7 +1917,6 @@ stopSFX()
 showTextbox();
 text(() => {
    marker; sound(`EOP243`); appendText; 
-   //Man
    Man`"Yes. That's right..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Running feet braked sharply beside him.`;
@@ -2092,10 +1928,8 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP244`); appendText; 
-   //Man
    Man`"Actually, I want to ask you something."`;
    waitForClick; clearText; marker; sound(`EOP245`); appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Surprised, he slowly opened his mouth.`;
@@ -2121,7 +1955,6 @@ setSceneTitle({ index: 2 });
 showTextbox();
 text(() => {
    marker; sound(`EOP246`); appendText; 
-   //Takeshi
    Takeshi`"Hey, you don't know, do you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`There was nothing to do but see where the
@@ -2131,34 +1964,27 @@ conversation went.`;
 showTextbox();
 text(() => {
    marker; sound(`EOP247`); appendText; 
-   //Takeshi
    Takeshi`"Sorry to ask you like this out of the blue, but
 you don't know, do you?"`;
    waitForClick; clearText; marker; sound(`EOP248`); appendText; 
-   //Takeshi
    Takeshi`"You haven't seen my friends around here, have
 you?"`;
    waitForClick; clearText; marker; sound(`EOP249`); appendText; 
-   //Takeshi
    Takeshi`"One of them is about 5'1 and around 140 pounds.
 Kind of good-looking, with dorky sunglasses and
 probably not the type girls would go for."`;
    waitForClick; clearText; marker; sound(`EOP250`); appendText; 
-   //Takeshi
    Takeshi`"Another was wearing a suit, no tie, short hair
 and has three pierces in his ear and one in his
 nose.... He likes to knit..."`;
    waitForClick; clearText; marker; sound(`EOP251`); appendText; 
-   //Takeshi
    Takeshi`"And then there was the only girl in the group,
 who had on a kind of simple color flower print
 one-piece with frilly lace..."`;
    waitForClick; clearText; marker; sound(`EOP252`); appendText; 
-   //Takeshi
    Takeshi`"You know, three people you might see
 anywhere..."`;
    waitForClick; clearText; marker; sound(`EOP253`); appendText; 
-   //Takeshi
    Takeshi`"Did you see them?"`;
    waitForClick; clearText; 
 });
@@ -2166,12 +1992,10 @@ fgload({ id: 1, name: `KA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP254`); appendText; 
-   //Kid
    Kid`"Nope."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The young kid shook his head.`;
    waitForClick; clearText; marker; sound(`EOP255`); appendText; 
-   //Takeshi
    Takeshi`"I see. Well, sorry about stopping you like
 that."`;
    waitForClick; clearText; 
@@ -2213,10 +2037,8 @@ fgload({ id: 1, name: `CO16ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP256`); appendText; 
-   //Coco
    Coco`"Hey, hey! Do you want to hear a joke?"`;
    waitForClick; clearText; marker; sound(`EOP257`); appendText; 
-   //Kid
    Kid`"Huh? What? Who are you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`(So that's it...)`;
@@ -2273,7 +2095,6 @@ bgload({ name: `BG03A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP258`); appendText; 
-   //Takeshi
    Takeshi`"What am I gonna do?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Walking around in this place blindly he thought
@@ -2281,7 +2102,6 @@ he might never run into his friends.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The floor was a lot wider than he'd imagined.`;
    waitForClick; clearText; marker; sound(`EOP259`); appendText; 
-   //Takeshi
    Takeshi`"Oh, right, my cell phone..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He took his PDA multi-purpose communication
@@ -2296,10 +2116,8 @@ the problem seemed to be...`;
    waitForClick; clearText; marker; appendText; 
    Narr`At least that was what the display said.`;
    waitForClick; clearText; marker; sound(`EOP260`); appendText; 
-   //Takeshi
    Takeshi`"Are you serious!?"`;
    waitForClick; clearText; marker; sound(`EOP261`); appendText; 
-   //Takeshi
    Takeshi`"I didn't think you could get out of range in
 this day and age..."`;
    waitForClick; clearText; marker; appendText; 
@@ -2365,7 +2183,6 @@ coming in...`;
    Narr`Thinking it perfect timing, he saddled up to the
 tanuki and called out.`;
    waitForClick; clearText; marker; sound(`EOP262`); appendText; 
-   //Takeshi
    Takeshi`"Excuse me, I'm looking for someone. A friend."`;
    waitForClick; clearText; marker; sound(`EOP263`); 
    Narr`"Could I get you to make an announcement over
@@ -2380,12 +2197,10 @@ text(() => {
    Narr`The tanuki slowly turned around and looked at
 him.`;
    waitForClick; clearText; marker; appendText; 
-   //Tanuki
    Tanuki`"............"`;
    waitForClick; clearText; marker; appendText; 
    Narr`But it didn't say anything.`;
    waitForClick; clearText; marker; sound(`EOP264`); appendText; 
-   //Takeshi
    Takeshi`"Uh? Hello? Hello?"`;
    waitForClick; clearText; 
 });
@@ -2410,13 +2225,11 @@ fgload({ id: 1, name: `MY19ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP265`); appendText; 
-   //Takeshi
    Takeshi`"HELLOOOooo. Can you hear me in there?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He asked the question nicely as he poked the
 tanuki in the ribs.`;
    waitForClick; clearText; marker; sound(`EOP266`); appendText; 
-   //Takeshi
    Takeshi`"Hey, you've gotta lot of extra flesh here,
 buddy."`;
    waitForClick; clearText; marker; appendText; 
@@ -2435,7 +2248,6 @@ turned to walk away.`;
    Narr`Upset at that, he grabbed the tanuki's
 shoulder.`;
    waitForClick; clearText; marker; sound(`EOP267`); appendText; 
-   //Takeshi
    Takeshi`"Hey! What kind of an attitude is that? And when
 a visitor's in trouble!"`;
    waitForClick; clearText; 
@@ -2454,10 +2266,8 @@ fgload({ id: 1, name: `MY01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP268`); appendText; 
-   //Takeshi
    Takeshi`"Umpph!"`;
    waitForClick; clearText; marker; sound(`EOP269`); appendText; 
-   //Takeshi
    Takeshi`"~~~~~~!?"`;
    waitForClick; clearText; 
 });
@@ -2477,10 +2287,8 @@ spanked him before.`;
    Narr`It had been a totally cheap shot - the tanuki
 had landed a solid uppercut.`;
    waitForClick; clearText; marker; sound(`EOP270`); appendText; 
-   //Takeshi
    Takeshi`"H-hey——! Tanuki—! Yeah, I mean you!"`;
    waitForClick; clearText; marker; appendText; 
-   //Tanuki
    Tanuki`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He went down to his knees and keeled over.`;
@@ -2516,7 +2324,6 @@ varop(`(28 0a a4) de := (00) 1`);
 showTextbox();
 text(() => {
    marker; sound(`EOP273`); appendText; 
-   //Takeshi
    Takeshi`"...That tanuki caught me with a body blow..."`;
    waitForClick; clearText; 
 });
@@ -2529,12 +2336,10 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The employee gave him a surprised look.`;
    waitForClick; clearText; marker; sound(`EOP275`); appendText; 
-   //Takeshi
    Takeshi`"I got sucker punched by that tanuki!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He pointed at the big tanuki.`;
    waitForClick; clearText; marker; appendText; 
-   //Tanuki
    Tanuki`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The tanuki's expression didn't change.`;
@@ -2563,7 +2368,6 @@ text(() => {
    Narr`And in an instant it had disappeared down the
 walkway.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -2588,7 +2392,6 @@ spoke.`;
    //Park staff
    Park_staff`"That's not a tanuki, that's a lemur."`;
    waitForClick; clearText; marker; sound(`EOP278`); appendText; 
-   //Takeshi
    Takeshi`"Le...lemu...what?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He rubbed his still-aching stomach as he spoke.`;
@@ -2673,10 +2476,8 @@ text(() => {
    //Park staff
    Park_staff`"But what happened? Are you ill? Or..."`;
    waitForClick; clearText; marker; sound(`EOP283`); appendText; 
-   //Takeshi
    Takeshi`"No. I'm fine now. Don't worry about me..."`;
    waitForClick; clearText; marker; sound(`EOP284`); appendText; 
-   //Takeshi
    Takeshi`"It's over anyway."`;
    waitForClick; clearText; 
 });
@@ -2693,7 +2494,6 @@ let lbl_00001099;
 showTextbox();
 text(() => {
    marker; sound(`EOP286`); appendText; 
-   //Takeshi
    Takeshi`"It's nothing. I just took a tumble."`;
    waitForClick; clearText; 
 });
@@ -2707,7 +2507,6 @@ text(() => {
    Narr`He couldn't bring himself to say that the tanuki
 had floored him with one punch...`;
    waitForClick; clearText; marker; appendText; 
-   //Tanuki
    Tanuki`"........."`;
    waitForClick; clearText; 
 });
@@ -2790,7 +2589,6 @@ help.`;
    waitForClick; clearText; marker; appendText; 
    Narr`He needed to be getting somewhere.`;
    waitForClick; clearText; marker; sound(`EOP291`); appendText; 
-   //Takeshi
    Takeshi`"I'll look around on my own a little more..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He muttered this as he composed himself.`;
@@ -2801,7 +2599,6 @@ the other end of this corridor.`;
    Narr`His friends might have been looking for him as
 they waited in line.`;
    waitForClick; clearText; marker; sound(`EOP292`); appendText; 
-   //Takeshi
    Takeshi`"So which way should I go?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`His legs were so tired that he could barely
@@ -2827,13 +2624,11 @@ bgload({ name: `BG01A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP293`); appendText; 
-   //Kid
    Kid`"Oh well..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hit by a slight dizzy spell, he leaned against
 the wall.`;
    waitForClick; clearText; marker; sound(`EOP294`); appendText; 
-   //Kid
    Kid`"What in the world...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He sighed.`;
@@ -2849,7 +2644,6 @@ had vanished somewhere.`;
    waitForClick; clearText; marker; appendText; 
    Narr`He was alone again.`;
    waitForClick; clearText; marker; sound(`EOP295`); appendText; 
-   //Kid
    Kid`"What did I come here for? I..."`;
    waitForClick; clearText; 
 });
@@ -2899,7 +2693,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`From somewhere...`;
    waitForClick; clearText; marker; sound(`EOP297`); appendText; 
-   //Kid
    Kid`"!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`From the shadows of the path, the owner of the
@@ -2936,7 +2729,6 @@ fgload({ id: 1, name: `MY01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP299`); appendText; 
-   //Tanuki
    Tanuki`"Do you know where we are?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He was led by the tanuki into a room at the end
@@ -2944,7 +2736,6 @@ of the walkway.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Or rather...packed into it.`;
    waitForClick; clearText; marker; sound(`EOP300`); appendText; 
-   //Kid
    Kid`"This is..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`(Is this the girl's changing room...?)`;
@@ -2969,7 +2760,6 @@ fgload({ id: 1, name: `MY01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`EOP301`); appendText; 
-   //Tanuki
    Tanuki`"Hey, do you know where we are?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The tanuki asked the same question again.`;
@@ -2979,24 +2769,19 @@ anyway?`;
    waitForClick; clearText; marker; appendText; 
    Narr`He had no clue.`;
    waitForClick; clearText; marker; sound(`EOP302`); appendText; 
-   //Kid
    Kid`"This..."`;
    waitForClick; clearText; marker; sound(`EOP303`); appendText; 
-   //Tanuki
    Tanuki`"...is the changing room."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She said this before he could answer.`;
    waitForClick; clearText; marker; sound(`EOP304`); appendText; 
-   //Tanuki
    Tanuki`"Changing room's are..."`;
    waitForClick; clearText; marker; sound(`EOP305`); appendText; 
-   //Tanuki
    Tanuki`"A place to keep secrets away from prying
 eyes..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She said this quietly.`;
    waitForClick; clearText; marker; sound(`EOP306`); appendText; 
-   //Kid
    Kid`"Secrets?"`;
    waitForClick; clearText; 
 });
@@ -3013,30 +2798,24 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`Everything went completely dark.`;
    waitForClick; clearText; marker; sound(`EOP307`); appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`EOP308`); appendText; 
-   //Tanuki
    Tanuki`"Will you look after this for me?"`;
    waitForClick; clearText; marker; sound(`EOP309`); appendText; 
-   //Kid
    Kid`"Huh? What? What?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Look after?`;
    waitForClick; clearText; marker; appendText; 
    Narr`He didn't understand.`;
    waitForClick; clearText; marker; sound(`EOP310`); appendText; 
-   //Tanuki
    Tanuki`"Here, I'll help you put it on right."`;
    waitForClick; clearText; marker; sound(`EOP311`); appendText; 
-   //Kid
    Kid`"Uh, um..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Wear it?`;
    waitForClick; clearText; marker; appendText; 
    Narr`He had no idea what she was talking about.`;
    waitForClick; clearText; marker; sound(`EOP312`); appendText; 
-   //Kid
    Kid`"Uh, wuh, whoa..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He didn't understand why, but he couldn't move.`;
@@ -3047,13 +2826,10 @@ what she wanted.`;
    Narr`In a moment, something completely covered his
 body.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`EOP313`); appendText; 
-   //Tanuki
    Tanuki`"Hee, hee. This should do it..."`;
    waitForClick; clearText; marker; sound(`EOP314`); appendText; 
-   //Tanuki
    Tanuki`"Alright then. I'll leave the rest to you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`And the light sound of her footsteps faded into
@@ -3067,14 +2843,12 @@ text(() => {
    Narr`The last thing he heard was the click of a door
 shutting...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He heard the sound.`;
    waitForClick; clearText; marker; appendText; 
    Narr`But he did not see her leave.`;
    waitForClick; clearText; marker; sound(`EOP315`); appendText; 
-   //Kid
    Kid`".........?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`(What did she do to me?)`;
@@ -3123,7 +2897,6 @@ clock(`12:29`);
 showTextbox();
 text(() => {
    marker; sound(`EOP316`); appendText; 
-   //Takeshi
    Takeshi`"Ahh!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Without thinking, he let out a cry.`;
@@ -3197,52 +2970,36 @@ text(() => {
    marker; appendText; 
    Narr`There!`;
    waitForClick; clearText; marker; sound(`EOP317`); appendText; 
-   //Kid
    Kid`"Who...who're you?"`;
    waitForClick; clearText; marker; sound(`EOP318`); appendText; 
-   //Takeshi
    Takeshi`"I should be asking you that!"`;
    waitForClick; clearText; marker; sound(`EOP319`); appendText; 
-   //Takeshi
    Takeshi`"Why would you do something like that!?"`;
    waitForClick; clearText; marker; sound(`EOP320`); appendText; 
-   //Kid
    Kid`"Huh? What'd I do?"`;
    waitForClick; clearText; marker; sound(`EOP321`); appendText; 
-   //Takeshi
    Takeshi`"Don't play dumb with me."`;
    waitForClick; clearText; marker; sound(`EOP322`); appendText; 
-   //Kid
    Kid`"I have no idea what you are talking about..."`;
    waitForClick; clearText; marker; sound(`EOP323`); appendText; 
-   //Takeshi
    Takeshi`"You punched me!"`;
    waitForClick; clearText; marker; sound(`EOP324`); appendText; 
-   //Kid
    Kid`"No I didn't. I have no idea what you mean..."`;
    waitForClick; clearText; marker; sound(`EOP325`); appendText; 
-   //Takeshi
    Takeshi`"Liar! What? Did you forget?"`;
    waitForClick; clearText; marker; sound(`EOP326`); appendText; 
-   //Kid
    Kid`"I'm not lying. This girl..."`;
    waitForClick; clearText; marker; sound(`EOP327`); appendText; 
-   //Kid
    Kid`"Gave me this outfit out of nowhere and..."`;
    waitForClick; clearText; marker; sound(`EOP328`); appendText; 
-   //Takeshi
    Takeshi`"What? You just met her? When did you change?"`;
    waitForClick; clearText; marker; sound(`EOP329`); appendText; 
-   //Kid
    Kid`"I just put it on. I..."`;
    waitForClick; clearText; marker; sound(`EOP330`); appendText; 
-   //Takeshi
    Takeshi`"Just put it on? What are you talking about?"`;
    waitForClick; clearText; marker; sound(`EOP331`); appendText; 
-   //Kid
    Kid`"But why do this..."`;
    waitForClick; clearText; marker; sound(`EOP332`); appendText; 
-   //Kid
    Kid`"This..."`;
    waitForClick; clearText; 
 });
@@ -3263,13 +3020,11 @@ playBGM({ num: 4, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`EOP333`); appendText; 
-   //Takeshi
    Takeshi`"Wh...what? Hey!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi shook his shoulders, but there was no
 response.`;
    waitForClick; clearText; marker; sound(`EOP334`); appendText; 
-   //Takeshi
    Takeshi`"Somebody come quick! Something's not right
 here."`;
    waitForClick; clearText; marker; appendText; 
@@ -3288,7 +3043,6 @@ text(() => {
    Narr`A female employee had heard the fuss and came
 running.`;
    waitForClick; clearText; marker; sound(`EOP336`); appendText; 
-   //Takeshi
    Takeshi`"Huh? You're that girl from before... this guy
 just collapsed all of the sudden."`;
    waitForClick; clearText; 
@@ -3321,7 +3075,6 @@ text(() => {
    Park_staff`"He's alright...but we can't leave him here
 like this."`;
    waitForClick; clearText; marker; sound(`EOP339`); appendText; 
-   //Takeshi
    Takeshi`"I'll help."`;
    waitForClick; clearText; marker; sound(`EOP340`); appendText; 
    //Park staff
@@ -3419,14 +3172,12 @@ text(() => {
    //Park staff
    Park_staff`"I wonder what it could be? Is he anemic?"`;
    waitForClick; clearText; marker; sound(`EOP342`); appendText; 
-   //Takeshi
    Takeshi`"Maybe it was the mascot suit? Maybe he couldn't
 get used to wearing it."`;
    waitForClick; clearText; marker; sound(`EOP343`); appendText; 
    //Park staff
    Park_staff`"It's possible. It could be heat exhaustion..."`;
    waitForClick; clearText; marker; sound(`EOP344`); appendText; 
-   //Takeshi
    Takeshi`"Does...it looks like he'll be okay?"`;
    waitForClick; clearText; 
 });
@@ -3438,13 +3189,11 @@ text(() => {
    Park_staff`"It doesn't appear to be anything serious. A
 little rest and he should be fine."`;
    waitForClick; clearText; marker; sound(`EOP346`); appendText; 
-   //Takeshi
    Takeshi`"I see."`;
    waitForClick; clearText; marker; sound(`EOP347`); appendText; 
    //Park staff
    Park_staff`"Thanks for your help. I'll take it from here."`;
    waitForClick; clearText; marker; sound(`EOP348`); appendText; 
-   //Takeshi
    Takeshi`"Oh, alright then."`;
    waitForClick; clearText; 
 });
@@ -3460,10 +3209,8 @@ bgload({ name: `BG08A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP349`); appendText; 
-   //Takeshi
    Takeshi`"Whew...saving people can sure be stressful."`;
    waitForClick; clearText; marker; sound(`EOP350`); appendText; 
-   //Takeshi
    Takeshi`"What was it I came here to do?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`A cool breeze was blowing along the walkway.`;
@@ -3555,7 +3302,6 @@ bgload({ name: `BG22A8`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP351`); appendText; 
-   //Takeshi
    Takeshi`"Hey, sorry! I'm getting in!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He dashed into the elevator.`;
@@ -3599,16 +3345,12 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The girl stared at him suspiciously.`;
    waitForClick; clearText; marker; sound(`EOP352`); appendText; 
-   //Girl
    Girl`"...What?"`;
    waitForClick; clearText; marker; sound(`EOP353`); appendText; 
-   //Girl
    Girl`"Just who are you...?"`;
    waitForClick; clearText; marker; sound(`EOP354`); appendText; 
-   //Girl
    Girl`"Why are you here?"`;
    waitForClick; clearText; marker; sound(`EOP355`); appendText; 
-   //Girl
    Girl`"Why are you following me...?"`;
    waitForClick; clearText; 
 });
@@ -3627,13 +3369,11 @@ varop(`(28 0a a4) b7 += (00) 1`);
 showTextbox();
 text(() => {
    marker; sound(`EOP356`); appendText; 
-   //Takeshi
    Takeshi`"I'm sorry."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He didn't recall seeing her, but he nodded
 slightly in apology.`;
    waitForClick; clearText; marker; sound(`EOP357`); appendText; 
-   //Takeshi
    Takeshi`"Did I do something to offend you?"`;
    waitForClick; clearText; 
 });
@@ -3641,24 +3381,18 @@ bgload({ name: `EV_TU01C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP358`); appendText; 
-   //Girl
    Girl`"...Not really..."`;
    waitForClick; clearText; marker; sound(`EOP359`); appendText; 
-   //Takeshi
    Takeshi`".........?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He was getting more and more confused.`;
    waitForClick; clearText; marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; sound(`EOP360`); appendText; 
-   //Girl
    Girl`"...I mean..."`;
    waitForClick; clearText; marker; sound(`EOP361`); appendText; 
-   //Girl
    Girl`"This elevator is...for employees only."`;
    waitForClick; clearText; marker; sound(`EOP362`); appendText; 
-   //Takeshi
    Takeshi`"Oh, I see."`;
    waitForClick; clearText; 
 });
@@ -3668,16 +3402,12 @@ varop(`(28 0a a4) b7 += (00) 2`);
 showTextbox();
 text(() => {
    marker; sound(`EOP363`); appendText; 
-   //Takeshi
    Takeshi`"Just exactly who are YOU?"`;
    waitForClick; clearText; marker; sound(`EOP364`); appendText; 
-   //Takeshi
    Takeshi`"Did I do something wrong?"`;
    waitForClick; clearText; marker; sound(`EOP365`); appendText; 
-   //Girl
    Girl`"Yes, you did. Just now..."`;
    waitForClick; clearText; marker; sound(`EOP366`); appendText; 
-   //Takeshi
    Takeshi`"Just now?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He was getting more and more confused.`;
@@ -3687,17 +3417,13 @@ bgload({ name: `EV_TU01C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; sound(`EOP367`); appendText; 
-   //Girl
    Girl`"I mean..."`;
    waitForClick; clearText; marker; sound(`EOP368`); appendText; 
-   //Girl
    Girl`"I don't want...you to get in the way. That's
 all."`;
    waitForClick; clearText; marker; sound(`EOP369`); appendText; 
-   //Takeshi
    Takeshi`"Get in the way of what?"`;
    waitForClick; clearText; 
 });
@@ -3706,10 +3432,8 @@ let lbl_0000171d;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; 
 });
@@ -3719,10 +3443,8 @@ text(() => {
    marker; appendText; 
    Narr`She avoided his eyes.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He felt like the air around him had suddenly
@@ -3768,13 +3490,10 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The lights flickered unsteadily.`;
    waitForClick; clearText; marker; sound(`EOP370`); appendText; 
-   //Takeshi
    Takeshi`"Wh...what was that?"`;
    waitForClick; clearText; marker; sound(`EOP371`); appendText; 
-   //Girl
    Girl`"It couldn't be..."`;
    waitForClick; clearText; marker; sound(`EOP372`); appendText; 
-   //Takeshi
    Takeshi`"Couldn't be? Couldn't be what?"`;
    waitForClick; clearText; 
 });
@@ -3922,17 +3641,13 @@ bgload({ name: `EV_TU01A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`EOP373`); appendText; 
-   //Takeshi
    Takeshi`"Couldn't be? Do you know something about
 this?"`;
    waitForClick; clearText; marker; sound(`EOP374`); appendText; 
-   //Girl
    Girl`"I don't know anything..."`;
    waitForClick; clearText; marker; sound(`EOP375`); appendText; 
-   //Girl
    Girl`"Do you know something?"`;
    waitForClick; clearText; marker; sound(`EOP376`); appendText; 
-   //Takeshi
    Takeshi`"How could I know anything?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The lights gradually dimmed and finally went
@@ -4049,16 +3764,12 @@ removeBG({ mode: BLACK, transition: 02 });
 showTextbox();
 text(() => {
    marker; sound(`EOP377`); appendText; 
-   //Takeshi
    Takeshi`"Hey! Who's there? Is there somebody there?"`;
    waitForClick; clearText; marker; sound(`EOP378`); appendText; 
-   //Takeshi
    Takeshi`"I'm here! I'm still in here!"`;
    waitForClick; clearText; marker; sound(`EOP379`); appendText; 
-   //Takeshi
    Takeshi`"Somebody, get me out of here!"`;
    waitForClick; clearText; marker; sound(`EOP380`); appendText; 
-   //Takeshi
    Takeshi`"Answer me...please..."`;
    waitForClick; clearText; 
 });
@@ -4080,17 +3791,14 @@ unSkippableDelay(8);
 showTextbox();
 text(() => {
    marker; sound(`EOP381`); appendText; 
-   //Kid
    Kid`"Isn't there anyone there?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Nobody answered.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The surroundings were filled with silence.`;
    waitForClick; clearText; marker; sound(`EOP382`); appendText; 
-   //Kid
    Kid`"What? Is anybody there?"`;
    waitForClick; clearText; marker; sound(`EOP383`); appendText; 
-   //Kid
    Kid`"So I'm alone...hee, hee, hee."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He burst with laughter.`;
@@ -4099,7 +3807,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`There was no one to restrain him now.`;
    waitForClick; clearText; marker; sound(`EOP384`); appendText; 
-   //Kid
    Kid`"Ah, ha, ha, ha!"`;
    waitForClick; clearText; 
 });
@@ -4273,7 +3980,6 @@ stop.`;
    waitForClick; clearText; marker; appendText; 
    Narr`He felt queasy, sick to his stomach.`;
    waitForClick; clearText; marker; sound(`EOP385`); appendText; 
-   //Girl
    Girl`"The air pressure...is dropping..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`(I forgot...I need to pop my ears...)`;
@@ -4281,10 +3987,8 @@ stop.`;
    Narr`With a pop, the air building inside his ears
 was released.`;
    waitForClick; clearText; marker; sound(`EOP386`); appendText; 
-   //Takeshi
    Takeshi`"Damn..."`;
    waitForClick; clearText; marker; sound(`EOP387`); appendText; 
-   //Takeshi
    Takeshi`"Which way is the exit...?"`;
    waitForClick; clearText; 
 });

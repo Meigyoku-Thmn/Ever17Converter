@@ -39,22 +39,18 @@ fgload({ id: 1, name: `KB01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S251`); appendText; 
-   //Takeshi
    Takeshi`"Hey...Kid..."`;
    waitForClick; clearText; marker; sound(`C2S252`); appendText; 
-   //Takeshi
    Takeshi`"Kid..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`C2S253`); appendText; 
-   //Takeshi
    Takeshi`"You asleep already?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi was shaking me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'd wake up even if I were asleep with you 
 shaking me that hard."`;
    waitForClick; clearText; 
@@ -63,13 +59,10 @@ fgload({ id: 1, name: `KB08ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S254`); appendText; 
-   //Takeshi
    Takeshi`"So? Which is? You awake or asleep?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It should be obvious."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm sleeping like a log..."`;
    waitForClick; clearText; 
 });
@@ -84,13 +77,10 @@ text(() => {
    marker; appendText; 
    Narr`I closed my eyes.`;
    waitForClick; clearText; marker; sound(`C2S255`); appendText; 
-   //Takeshi
    Takeshi`"Hey, come on, don't be like that."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; marker; sound(`C2S256`); appendText; 
-   //Takeshi
    Takeshi`"I can't sleep..."`;
    waitForClick; clearText; 
 });
@@ -104,23 +94,18 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Last night you seemed like you were 
 sleeping FINE!"`;
    waitForClick; clearText; marker; sound(`C2S257`); appendText; 
-   //Takeshi
    Takeshi`"But I'm all alone in this tiny little cramped 
 space."`;
    waitForClick; clearText; marker; sound(`C2S258`); appendText; 
-   //Takeshi
    Takeshi`"It's like being cooped up in a coffin. 
 It makes me feel..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's the same place you were snoring away 
 last night!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You could sleep in a coffin. You could sleep 
 in a cup of coffee."`;
    waitForClick; clearText; 
@@ -129,7 +114,6 @@ fgload({ id: 1, name: `KB02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S259`); appendText; 
-   //Takeshi
    Takeshi`"Hey, that almost rhymes or something..."`;
    waitForClick; clearText; 
 });
@@ -137,26 +121,20 @@ fgload({ id: 1, name: `KB01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S260`); appendText; 
-   //Takeshi
    Takeshi`"Coffin and coffee..."`;
    waitForClick; clearText; marker; sound(`C2S261`); appendText; 
-   //Takeshi
    Takeshi`"'Coffee has caffeine in it. That wakes 
 you up.'"`;
    waitForClick; clearText; marker; sound(`C2S262`); appendText; 
-   //Takeshi
    Takeshi`"'So there's no way a normal person could 
 catch a wink in a cup of coffee...'"`;
    waitForClick; clearText; marker; sound(`C2S263`); appendText; 
-   //Takeshi
    Takeshi`"'But...caffeine wouldn't phase a big lunk 
 like that Takeshi. He'd sleep like a baby.'"`;
    waitForClick; clearText; marker; sound(`C2S264`); appendText; 
-   //Takeshi
    Takeshi`"Is that what you are trying to say with that 
 almost rhyme of yours?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Stupid."`;
    waitForClick; clearText; 
 });
@@ -164,10 +142,8 @@ fgload({ id: 1, name: `KB04ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S265`); appendText; 
-   //Takeshi
    Takeshi`"Ha! Is that any way to talk to your elders?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm going to sleep."`;
    waitForClick; clearText; 
 });
@@ -175,10 +151,8 @@ fgload({ id: 1, name: `KB03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S266`); appendText; 
-   //Takeshi
    Takeshi`"Hey! Come on K-I-D!...Stay up with me a bit!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Good night."`;
    waitForClick; clearText; 
 });
@@ -207,7 +181,6 @@ fgload({ id: 1, name: `KB01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Hey, what are you doing? I'll sue you!"`;
    waitForClick; clearText; 
 });
@@ -215,13 +188,10 @@ fgload({ id: 1, name: `KB02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S267`); appendText; 
-   //Takeshi
    Takeshi`"Come on, take it easy. Calm down..."`;
    waitForClick; clearText; marker; sound(`C2S268`); appendText; 
-   //Takeshi
    Takeshi`"Let's have a drink. Y'know, man-to-man..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No thanks!"`;
    waitForClick; clearText; 
 });
@@ -229,10 +199,8 @@ fgload({ id: 1, name: `KB04ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S269`); appendText; 
-   //Takeshi
    Takeshi`"My thoughts exactly!"`;
    waitForClick; clearText; marker; sound(`C2S270`); appendText; 
-   //Takeshi
    Takeshi`"Yuck, yuck, yuck, yuck, yuckity, yuck!"`;
    waitForClick; clearText; 
 });
@@ -240,7 +208,6 @@ fgload({ id: 1, name: `KB03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S271`); appendText; 
-   //Takeshi
    Takeshi`"I'm nothing without you, Kid!"`;
    waitForClick; clearText; 
 });
@@ -258,10 +225,8 @@ delay({ interval: 60 });
 showTextbox();
 text(() => {
    marker; sound(`C2S272`); appendText; 
-   //You
    You`"Be quiet!"`;
    waitForClick; clearText; marker; sound(`C2S273`); appendText; 
-   //You
    You`"Cut it out the two of you! Just go to sleep!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You, lying in the bed next to me, had snapped.`;
@@ -269,7 +234,6 @@ text(() => {
    Narr`She sat upright, a strange light emanating 
 from her.`;
    waitForClick; clearText; marker; sound(`C2S274`); appendText; 
-   //Takeshi
    Takeshi`"Oh, sorry for causing such a ruckus milady..."`;
    waitForClick; clearText; 
 });
@@ -292,7 +256,6 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`C2S275`); appendText; 
-   //Takeshi
    Takeshi`"Hey, for now...why don't we hit the kiosk 
 and get some beers." `;
    waitForClick; clearText; 
@@ -305,17 +268,13 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`I stayed where I was.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is there beer in LeMU?"`;
    waitForClick; clearText; marker; sound(`C2S276`); appendText; 
-   //Takeshi
    Takeshi`"Uh, I don't think it was for sale, but it was 
 stashed in the back of the fridge."`;
    waitForClick; clearText; marker; sound(`C2S277`); appendText; 
-   //Takeshi
    Takeshi`"I figure some worker hid it in there..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...I can't drink beer."`;
    waitForClick; clearText; 
 });
@@ -323,18 +282,14 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S278`); appendText; 
-   //Takeshi
    Takeshi`"Huh? Why not?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I stopped and turned around.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm not old enough."`;
    waitForClick; clearText; marker; sound(`C2S279`); appendText; 
-   //Takeshi
    Takeshi`"So what?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Underage means you can't drink alcohol. It's 
 the law."`;
    waitForClick; clearText; 
@@ -343,18 +298,14 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S280`); appendText; 
-   //Takeshi
    Takeshi`"So, what are you saying, you don't want 
 to 'go break any laws there' boy scout?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Y-yeah..."`;
    waitForClick; clearText; marker; sound(`C2S281`); appendText; 
-   //Takeshi
    Takeshi`"But you ate sandwiches and cola, right? 
 And you didn't pay a cent."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That's...because I had to survive..."`;
    waitForClick; clearText; 
 });
@@ -362,7 +313,6 @@ fgload({ id: 1, name: `KB13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S282`); appendText; 
-   //Takeshi
    Takeshi`"Yuck, yuck...YUCK!"`;
    waitForClick; clearText; 
 });
@@ -370,12 +320,10 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S283`); appendText; 
-   //Takeshi
    Takeshi`"I bet you're the kind of kid that'll nark 
 on the kid next to you in class if he's 
 passing notes to his friends."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I...I am not..."`;
    waitForClick; clearText; 
 });
@@ -383,11 +331,9 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S284`); appendText; 
-   //Takeshi
    Takeshi`"You don't know if you are or not, 'cause you 
 don't got any memory."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -395,13 +341,10 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S285`); appendText; 
-   //Takeshi
    Takeshi`"Oh, alright, alright."`;
    waitForClick; clearText; marker; sound(`C2S286`); appendText; 
-   //Takeshi
    Takeshi`"You can drink cream soda then."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why cream soda?"`;
    waitForClick; clearText; 
 });
@@ -409,13 +352,10 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S287`); appendText; 
-   //Takeshi
    Takeshi`"Because you're just a wittle baby!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm not a baby!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm 16..."`;
    waitForClick; clearText; 
 });
@@ -423,21 +363,16 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S288`); appendText; 
-   //Takeshi
    Takeshi`"Ha, ha! Sixteen, huh?"`;
    waitForClick; clearText; marker; sound(`C2S289`); appendText; 
-   //Takeshi
    Takeshi`"Sixteen...old enough to lead a whole gang of 
 snot-nosed brats on your own."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Stop it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sixteen is still underage, but I'm not a kid 
 anymore."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm still not an adult, but I'm not a kid 
 anymore...that's what I am."`;
    waitForClick; clearText; 
@@ -446,13 +381,10 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S290`); appendText; 
-   //Takeshi
    Takeshi`"Just WHAT about you is more than a kid?"`;
    waitForClick; clearText; marker; sound(`C2S291`); appendText; 
-   //Takeshi
    Takeshi`"Kid...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm...going back to bed."`;
    waitForClick; clearText; 
 });
@@ -460,14 +392,11 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S292`); appendText; 
-   //Takeshi
    Takeshi`"Liar, liar pants on fire!"`;
    waitForClick; clearText; marker; sound(`C2S293`); appendText; 
-   //Takeshi
    Takeshi`"Right, right! Because you're a BIG boy... 
 all grown up...nya, nya, nya..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"..."`;
    waitForClick; clearText; 
 });
@@ -475,7 +404,6 @@ fgload({ id: 1, name: `KB06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S294`); appendText; 
-   //Takeshi
    Takeshi`"What? Hey! Hold on a sec!"`;
    waitForClick; clearText; 
 });
@@ -483,16 +411,12 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S295`); appendText; 
-   //Takeshi
    Takeshi`"Kid...you got no memory, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"R-right..."`;
    waitForClick; clearText; marker; sound(`C2S296`); appendText; 
-   //Takeshi
    Takeshi`"So...how do you know that you're 16?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Because...because..."`;
    waitForClick; clearText; 
 });
@@ -501,7 +425,6 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"I...I dunno...why..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`As I mumbled I unconsciously held open the 
@@ -524,21 +447,16 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S297`); appendText; 
-   //Takeshi
    Takeshi`"Well, whatever."`;
    waitForClick; clearText; marker; sound(`C2S298`); appendText; 
-   //Takeshi
    Takeshi`"Anyway, it's good that you remembered your 
 age..."`;
    waitForClick; clearText; marker; sound(`C2S299`); appendText; 
-   //Takeshi
    Takeshi`"Proof that you're slowly getting your 
 memory back."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C2S300`); appendText; 
-   //Takeshi
    Takeshi`"Hmmmm, 16, huh?"`;
    waitForClick; clearText; 
 });
@@ -546,10 +464,8 @@ fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S301`); appendText; 
-   //Takeshi
    Takeshi`"So my guess wasn't that far off, huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...Huh?"`;
    waitForClick; clearText; 
 });
@@ -557,11 +473,9 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S302`); appendText; 
-   //Takeshi
    Takeshi`"Yesterday I guessed, right? I said you were 
 around 14 or 15."`;
    waitForClick; clearText; marker; sound(`C2S303`); appendText; 
-   //Takeshi
    Takeshi`"I suppose someone like you could be 16.... 
 Could be possible enough..."`;
    waitForClick; clearText; 
@@ -584,7 +498,6 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S304`); appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; 
 });
@@ -592,13 +505,10 @@ fgload({ id: 1, name: `KB06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S305`); appendText; 
-   //Takeshi
    Takeshi`"Don't tell me you..."`;
    waitForClick; clearText; marker; sound(`C2S306`); appendText; 
-   //Takeshi
    Takeshi`"You didn't forget your own face, did ya?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...face ...?"`;
    waitForClick; clearText; 
 });
@@ -727,10 +637,8 @@ scattered everywhere...`;
    Narr`Someone was standing on the other side of the 
 open door.`;
    waitForClick; clearText; marker; sound(`C2S307`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Kid!"`;
    waitForClick; clearText; marker; sound(`C2S308`); appendText; 
-   //Takeshi
    Takeshi`"What's up with you? Running off like that..."`;
    waitForClick; clearText; 
 });
@@ -747,7 +655,6 @@ fgload({ id: 1, name: `KB07ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2S309`); appendText; 
-   //Takeshi
    Takeshi`"...A mirror?"`;
    waitForClick; clearText; 
 });
@@ -770,7 +677,6 @@ text(() => {
    Narr`'The face of some kid' who I didn't know was 
 staring back at me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Ah...aaaahh...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He screamed as if it were the end of the world.`;
@@ -780,7 +686,6 @@ spine. He clutched at his hair.`;
    waitForClick; clearText; marker; appendText; 
    Narr`His body shook, wracked with convulsions.`;
    waitForClick; clearText; marker; sound(`C2S310`); appendText; 
-   //Takeshi
    Takeshi`"Wh-what is it? What's going on! Kid!!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He put his fingernails on his cheek then 
@@ -788,47 +693,33 @@ scratched harshly the flesh around his neck.
 His neck jutted forward, drooping downward 
 and his tongue hung out.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No...no...no..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No...no...no...no...no...... 
 no...no...no...no..."`;
    waitForClick; clearText; marker; sound(`C2S311`); appendText; 
-   //Takeshi
    Takeshi`"What is it? What's wrong?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"This...this...this..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's not me..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's not me..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's not me..."`;
    waitForClick; clearText; marker; sound(`C2S312`); appendText; 
-   //Takeshi
    Takeshi`"What's not you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"AAAaaah....ohhhhhh....."`;
    waitForClick; clearText; marker; sound(`C2S313`); appendText; 
-   //Takeshi
    Takeshi`"Damn...what am I supposed to do!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No...no...no..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's not me...it's not me...it's not me..."`;
    waitForClick; clearText; marker; sound(`C2S314`); appendText; 
-   //Takeshi
    Takeshi`"J-just hold on!"`;
    waitForClick; clearText; marker; sound(`C2S315`); appendText; 
-   //Takeshi
    Takeshi`"I'll go get everyone!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't know who the 'me' was in the other 
@@ -856,12 +747,10 @@ know who I was....`;
    waitForClick; clearText; marker; appendText; 
    Narr`Where....was the real me...?`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who...are you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked him...and he asked me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who...am I?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked me and he asked he.`;

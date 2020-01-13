@@ -201,7 +201,6 @@ fgload({ id: 1, name: `CO18ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B000`); appendText; 
-   //Coco
    Coco`"Here I go!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`...With a heave, she began to climb up the 
@@ -230,7 +229,6 @@ let lbl_0000027a;
 showTextbox();
 text(() => {
    marker; sound(`T5B001`); appendText; 
-   //Coco
    Coco`"Okay...hmmmmmph..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Stumbling as she mounted the pedestal, Coco 
@@ -242,7 +240,6 @@ fgload({ id: 1, name: `KA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B002`); appendText; 
-   //Kid
    Kid`" Coco!...What the heck are you doing?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The Kid asked her curtly.`;
@@ -253,14 +250,11 @@ fgload({ id: 1, name: `CO16ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B003`); appendText; 
-   //Coco
    Coco`"Yahoo!"`;
    waitForClick; clearText; marker; sound(`T5B004`); appendText; 
-   //Coco
    Coco`"Wow, all I did was stand a little higher, 
 and everything looks all different."`;
    waitForClick; clearText; marker; sound(`T5B005`); appendText; 
-   //Coco
    Coco`"Let's see...to be exact, 27 inches higher, 
 don't you think?"`;
    waitForClick; clearText; marker; appendText; 
@@ -272,7 +266,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"...?"`;
    waitForClick; clearText; 
 });
@@ -280,7 +273,6 @@ fgload({ id: 1, name: `KA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B006`); appendText; 
-   //Kid
    Kid`"Hey Coco, is that why you climbed up there?"`;
    waitForClick; clearText; 
 });
@@ -289,10 +281,8 @@ fgload({ id: 1, name: `CO17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B007`); appendText; 
-   //Coco
    Coco`"What?"`;
    waitForClick; clearText; marker; sound(`T5B008`); appendText; 
-   //Coco
    Coco`"Well....uuum, actually no..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco answered with her head cocked.`;
@@ -302,7 +292,6 @@ fgload({ id: 1, name: `CO15ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B009`); appendText; 
-   //Coco
    Coco`"This area right here looks like it's missing 
 something."`;
    waitForClick; clearText; 
@@ -312,10 +301,8 @@ fgload({ id: 1, name: `KA13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B010`); appendText; 
-   //Kid
    Kid`"Missing something?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Which area?"`;
    waitForClick; clearText; 
 });
@@ -324,7 +311,6 @@ fgload({ id: 1, name: `CO13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B011`); appendText; 
-   //Coco
    Coco`"The statue's back..."`;
    waitForClick; clearText; 
 });
@@ -332,13 +318,11 @@ fgload({ id: 1, name: `CO11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B012`); appendText; 
-   //Coco
    Coco`"I kind of thought its back looked lonely."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco stroked the statue's back sympathetically 
 with her tiny hand.`;
    waitForClick; clearText; marker; sound(`T5B013`); appendText; 
-   //Coco
    Coco`"And well..."`;
    waitForClick; clearText; 
 });
@@ -346,10 +330,8 @@ fgload({ id: 1, name: `CO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B014`); appendText; 
-   //Coco
    Coco`"Abra...cadabra..."`;
    waitForClick; clearText; marker; sound(`T5B015`); appendText; 
-   //Coco
    Coco`"SCREW DRIVER at YA——!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Uttering a stream of nonsense, Coco suddenly 
@@ -361,7 +343,6 @@ fgload({ id: 1, name: `CO16ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B016`); appendText; 
-   //Coco
    Coco`"TIMES TWO——!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`And then, another one appeared in her left 
@@ -394,7 +375,6 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`T5B017`); appendText; 
-   //Coco
    Coco`"Here we go..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Cut, cut.`;
@@ -404,7 +384,6 @@ text(() => {
    Narr`And within moments, the back of the statue was 
 covered with gashes.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...????"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was incomprehensible.`;
@@ -421,7 +400,6 @@ with our jaws dropped.`;
 showTextbox();
 text(() => {
    marker; sound(`T5B018`); appendText; 
-   //Kid
    Kid`"Hey, hey! What are you doing!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The Kid yelled as he came back to his senses.`;
@@ -430,42 +408,34 @@ text(() => {
 showTextbox();
 text(() => {
    marker; sound(`T5B019`); appendText; 
-   //Coco
    Coco`"I'm carving."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`T5B020`); appendText; 
-   //Coco
    Coco`"Can't you see? I'm carving..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`T5B021`); appendText; 
-   //Coco
    Coco`"I'm etching some marks into the stone."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, really. Etching some marks..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I can tell that by watching you, Coco!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's not what I mean..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`T5B022`); appendText; 
-   //Kid
    Kid`"What for?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The Kid beat me to the question.`;
    waitForClick; clearText; marker; sound(`T5B023`); appendText; 
-   //Coco
    Coco`"Well, it's because..."`;
    waitForClick; clearText; 
 });
@@ -474,10 +444,8 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; sound(`T5B024`); appendText; 
-   //Coco
    Coco`"I was feeling lonesome."`;
    waitForClick; clearText; marker; sound(`T5B025`); appendText; 
-   //Coco
    Coco`"And anyway, I was..."`;
    waitForClick; clearText; 
 });
@@ -486,10 +454,8 @@ playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`T5B026`); appendText; 
-   //Coco
    Coco`"...feeling sad..."`;
    waitForClick; clearText; marker; sound(`T5B027`); appendText; 
-   //Coco
    Coco`"I was feeling sad..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She muttered in a tiny voice.`;
@@ -500,21 +466,16 @@ screwdriver in each hand.`;
    Narr`The tips of the drivers dug into the stone 
 screeching and forming tiny grooves.`;
    waitForClick; clearText; marker; sound(`T5B028`); appendText; 
-   //Kid
    Kid`"Sad?"`;
    waitForClick; clearText; marker; sound(`T5B029`); appendText; 
-   //Coco
    Coco`"Well, nobody's coming to rescue us, right? 
 We've been abandoned."`;
    waitForClick; clearText; marker; sound(`T5B030`); appendText; 
-   //Coco
    Coco`"So what harm is there in wrecking the place a 
 little?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The Kid and I looked at each other.`;
@@ -540,7 +501,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`Its tip formed a round head...`;
    waitForClick; clearText; marker; sound(`T5B031`); appendText; 
-   //Kid
    Kid`"Who's that?"`;
    waitForClick; clearText; 
 });
@@ -548,16 +508,13 @@ bgload({ name: `EV_CO19A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`T5B032`); appendText; 
-   //Coco
    Coco`"It's me, Coco."`;
    waitForClick; clearText; marker; sound(`T5B033`); appendText; 
-   //Coco
    Coco`"And look, this is Pipi and Chami."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Looking more carefully, I could see two 
 unusual animal figures beside the human form.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -565,7 +522,6 @@ goto(lbl_0000048c).if(var_d9 == 0);
 showTextbox();
 text(() => {
    marker; sound(`T5B034`); appendText; 
-   //Coco
    Coco`"And then there's..."`;
    waitForClick; clearText; 
 });
@@ -581,10 +537,8 @@ head.`;
 showTextbox();
 text(() => {
    marker; sound(`T5B035`); appendText; 
-   //Coco
    Coco`"This is Tsugumi."`;
    waitForClick; clearText; marker; sound(`T5B036`); appendText; 
-   //Coco
    Coco`"For Tsugumi, it's important to make her look 
 really cool..."`;
    waitForClick; clearText; 
@@ -594,7 +548,6 @@ let lbl_0000048c;
 showTextbox();
 text(() => {
    marker; sound(`T5B037`); appendText; 
-   //Coco
    Coco`"Okay, and then..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`One of the shapes had a particularly large 
@@ -606,10 +559,8 @@ head.`;
 showTextbox();
 text(() => {
    marker; sound(`T5B038`); appendText; 
-   //Coco
    Coco`"This is Sora."`;
    waitForClick; clearText; marker; sound(`T5B039`); appendText; 
-   //Coco
    Coco`"Sora is pretty, which makes her hard to 
 draw..."`;
    waitForClick; clearText; 
@@ -619,7 +570,6 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`T5B040`); appendText; 
-   //Coco
    Coco`"Tra, la, la...tra, la, la, la, la..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Singing a cute little song, Coco continued to 
@@ -631,28 +581,22 @@ doing.`;
    Narr`Somehow, I could relate to her desire to throw 
 herself into something...`;
    waitForClick; clearText; marker; sound(`T5B041`); appendText; 
-   //Kid
    Kid`"That's destroying private property...it's 
 vandalism."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, relax Kid. Now's not the time to be so 
 uptight."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Coco's into her work. You can't blame her."`;
    waitForClick; clearText; marker; sound(`T5B042`); appendText; 
-   //Kid
    Kid`"Um...right..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`T5B043`); appendText; 
-   //Coco
    Coco`"Here we go, next..."`;
    waitForClick; clearText; marker; sound(`T5B044`); appendText; 
-   //Coco
    Coco`"Uh oh!"`;
    waitForClick; clearText; 
 });
@@ -667,7 +611,6 @@ pedestal, Coco suddenly lost her balance. `;
 showTextbox();
 text(() => {
    marker; sound(`T5B045`); appendText; 
-   //Kid
    Kid`"Hey, be careful!!"`;
    waitForClick; clearText; 
 });
@@ -688,13 +631,10 @@ multifgload2({ id1: 1, id2: 2, name1: `CO15ADM`, name2: `KA01ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T5B046`); appendText; 
-   //Coco
    Coco`"Oops, thank you..."`;
    waitForClick; clearText; marker; sound(`T5B047`); appendText; 
-   //Kid
    Kid`"Watch your step, okay?"`;
    waitForClick; clearText; marker; sound(`T5B048`); appendText; 
-   //Coco
    Coco`"Okay!"`;
    waitForClick; clearText; 
 });
@@ -702,7 +642,6 @@ fgload({ id: 1, name: `CO16ADM`, x: 128, useAnim: false });
 showTextbox();
 text(() => {
    marker; sound(`T5B049`); appendText; 
-   //Coco
    Coco`"Ah, I know...why don't you join me Kiddo?"`;
    waitForClick; clearText; 
 });
@@ -710,21 +649,16 @@ fgload({ id: 2, name: `KA06ADM`, x: 512, useAnim: false });
 showTextbox();
 text(() => {
    marker; sound(`T5B050`); appendText; 
-   //Kid
    Kid`"You mean...?"`;
    waitForClick; clearText; marker; sound(`T5B051`); appendText; 
-   //Coco
    Coco`"Come on, please... Let's both try it!"`;
    waitForClick; clearText; marker; sound(`T5B052`); appendText; 
-   //Coco
    Coco`"You can carve a picture of yourself and 
 Nakkyu here..."`;
    waitForClick; clearText; marker; sound(`T5B053`); appendText; 
-   //Coco
    Coco`"And then I was thinking of carving Takepyon 
 over here."`;
    waitForClick; clearText; marker; sound(`T5B054`); appendText; 
-   //Coco
    Coco`"Okay? Here's one of my screwdrivers."`;
    waitForClick; clearText; 
 });
@@ -732,7 +666,6 @@ fgload({ id: 2, name: `KA11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B055`); appendText; 
-   //Kid
    Kid`"Well okay. Thanks..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Energized by Coco's enthusiasm, the Kid took 
@@ -745,17 +678,13 @@ multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Be careful not to fall yourself, Kid."`;
    waitForClick; clearText; marker; sound(`T5B056`); appendText; 
-   //Kid
    Kid`"I-I'll be alright."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Don't slip, Coco. Why don't you let me hold 
 you up?"`;
    waitForClick; clearText; marker; sound(`T5B057`); appendText; 
-   //Coco
    Coco`"Huh? I wonder if that's the...?"`;
    waitForClick; clearText; 
 });
@@ -763,7 +692,6 @@ fgload({ id: 1, name: `KA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B058`); appendText; 
-   //Kid
    Kid`"She'll be alright!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was about to stretch my hands toward her but 
@@ -774,7 +702,6 @@ fgload({ id: 1, name: `KA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B059`); appendText; 
-   //Kid
    Kid`"Don't worry, I got her..."`;
    waitForClick; clearText; 
 });
@@ -861,30 +788,22 @@ text(() => {
    Narr`After a light lunch, I looked around but 
 couldn't find You anywhere.`;
    waitForClick; clearText; marker; sound(`T5B060`); appendText; 
-   //Kid
    Kid`"Looking for You? She ate lunch and then went 
 to the Security Office in Zweite stock."`;
    waitForClick; clearText; marker; sound(`T5B061`); appendText; 
-   //Coco
    Coco`"She said something about doing some research."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Research? I wonder what that could be?"`;
    waitForClick; clearText; marker; sound(`T5B062`); appendText; 
-   //Kid
    Kid`"She didn't say exactly..."`;
    waitForClick; clearText; marker; sound(`T5B063`); appendText; 
-   //Kid
    Kid`"If you really want to know, why don't you go 
 ask her yourself?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, I guess you're right..."`;
    waitForClick; clearText; marker; sound(`T5B064`); appendText; 
-   //Coco
    Coco`"What about Sora, where'd she go?"`;
    waitForClick; clearText; marker; sound(`T5B065`); appendText; 
-   //Kid
    Kid`"She's still in the Control Room. I spoke to 
 her through the terminal intercom, but she 
 seemed really busy."`;
@@ -935,7 +854,6 @@ bgload({ name: `BG16A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Sora, are you in here?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I called out her name, but got no response.`;
@@ -952,7 +870,6 @@ report back to us?`;
    waitForClick; clearText; marker; appendText; 
    Narr`(Sora...where are you?)`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, So—ra—." `;
    waitForClick; clearText; marker; appendText; 
    Narr`I expected to find her hiding in the corner 
@@ -1060,7 +977,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I started to call out, but hesitated.`;
@@ -1073,7 +989,6 @@ into my mind.`;
    Narr`In the meantime, all I could see was Tsugumi's 
 back fading further away.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey! Wait up! Where you going?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Barely getting the words out, I dashed after 
@@ -1100,14 +1015,12 @@ of the emergency corridor.`;
    Narr`Her figure had already rounded the corner out 
 of sight.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Tsu—gu—mi...!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was out of breath.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had run about 30 yards, but...`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Damn it, Tsugumi, you sure are fast!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I grumbled after her, although she was now 
@@ -1134,7 +1047,6 @@ pulled me away from the flood at the aquarium.)`;
    waitForClick; clearText; marker; appendText; 
    Narr`At any rate I didn't want her to overdoing it.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Aaah, damn it...!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Annoyed that I was out of breath, I continued 
@@ -1199,7 +1111,6 @@ let lbl_00000917;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey!! Tsugumi—!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I called her name without much hope, but there 
@@ -1251,13 +1162,11 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B066`); appendText; 
-   //You
    You`"Oh, hi there Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Noticing me enter, You turned toward me from 
 the console. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Say, You, you haven't been smoking have you?"`;
    waitForClick; clearText; 
 });
@@ -1268,14 +1177,11 @@ text(() => {
    Narr`I only said it in jest, but You looked 
 slightly offended.`;
    waitForClick; clearText; marker; sound(`T5B067`); appendText; 
-   //You
    You`"No way...how could you ask..."`;
    waitForClick; clearText; marker; sound(`T5B068`); appendText; 
-   //You
    You`"You know the rules...no smoking until you're 
 legal."`;
    waitForClick; clearText; marker; sound(`T5B069`); appendText; 
-   //You
    You`"You can joke if you want, but I can't believe 
 you'd say that."`;
    waitForClick; clearText; 
@@ -1284,11 +1190,9 @@ fgload({ id: 1, name: `YU02BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B070`); appendText; 
-   //You
    You`"I mean, just take a look at my fresh silky 
 skin!"`;
    waitForClick; clearText; marker; sound(`T5B071`); appendText; 
-   //You
    You`"This is the soft skin of a lady!"`;
    waitForClick; clearText; 
 });
@@ -1296,13 +1200,11 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B072`); appendText; 
-   //You
    You`"This is the kind of beauty that's impossible 
 for a smoker like you, ha!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You spoke smugly, mocking me.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, I don't smoke."`;
    waitForClick; clearText; 
 });
@@ -1310,20 +1212,15 @@ fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B073`); appendText; 
-   //You
    You`"Oh, really?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`T5B074`); appendText; 
-   //You
    You`"Humph..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Anyway, let's stop all this stupid talk about 
 smoking..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I just wanted to ask you something...the Kid 
 said you were doing some research..."`;
    waitForClick; clearText; 
@@ -1332,10 +1229,8 @@ fgload({ id: 1, name: `YU06BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B075`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; sound(`T5B076`); appendText; 
-   //You
    You`"The Kid said that?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You gave me a slightly surprised look.`;
@@ -1345,18 +1240,14 @@ fgload({ id: 1, name: `YU03BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B077`); appendText; 
-   //You
    You`"So tell me, Takeshi, what exactly did the Kid 
 say?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I don't remember exactly, but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"He just mentioned your were researching 
 something. So I thought I'd ask you myself."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; 
 });
@@ -1364,7 +1255,6 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B078`); appendText; 
-   //You
    You`"Well in that case, guess I'll let you in on 
 it."`;
    waitForClick; clearText; marker; appendText; 
@@ -1378,22 +1268,17 @@ fgload({ id: 1, name: `YU11BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B079`); appendText; 
-   //You
    You`"You may not remember this, Takeshi, but..."`;
    waitForClick; clearText; marker; sound(`T5B080`); appendText; 
-   //You
    You`"I have been researching stuff about LeMU for 
 quite a while now."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She spoke with her eyes glued to the monitor.`;
    waitForClick; clearText; marker; sound(`T5B081`); appendText; 
-   //You
    You`"And then there's the thing about my father..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Huh..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Or have I told you about him yet?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It must have been the first day I came to this 
@@ -1404,7 +1289,6 @@ the Dolphin Carousel. `;
    waitForClick; clearText; marker; appendText; 
    Narr`I had heard about him then...`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So...have you found something?"`;
    waitForClick; clearText; 
 });
@@ -1412,7 +1296,6 @@ fgload({ id: 1, name: `YU13BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B082`); appendText; 
-   //You
    You`"Not yet."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You shook her head slowly.`;
@@ -1425,10 +1308,8 @@ text(() => {
    Narr`Eyeing the monitor, she hit some more keys and 
 entered a code.`;
    waitForClick; clearText; marker; sound(`T5B083`); appendText; 
-   //You
    You`"If I could only find the password..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Password?"`;
    waitForClick; clearText; 
 });
@@ -1436,26 +1317,20 @@ fgload({ id: 1, name: `YU11BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B084`); appendText; 
-   //You
    You`"If I just had the password, I could access 
 all the data inside LeMMIH."`;
    waitForClick; clearText; marker; sound(`T5B085`); appendText; 
-   //You
    You`"Normally, all the data concerning LeMMIH's 
 system has security protection."`;
    waitForClick; clearText; marker; sound(`T5B086`); appendText; 
-   //You
    You`"And of course the personal data of the 
 development staff as well."`;
    waitForClick; clearText; marker; sound(`T5B087`); appendText; 
-   //You
    You`"And so I'm hunting for the key to unlock that 
 protection...an emergency override."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, so that's what you've been up to..."`;
    waitForClick; clearText; marker; sound(`T5B088`); appendText; 
-   //You
    You`"...Yeah."`;
    waitForClick; clearText; 
 });
@@ -1465,7 +1340,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B089`); appendText; 
-   //You
    You`"But I give up."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You stopped typing.`;
@@ -1478,10 +1352,8 @@ text(() => {
    Narr`Taking her eyes off the console, she looked at 
 me.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey...by the way..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"If you disconnect LeMMIH's security 
 protection, what will happen to Sora?"`;
    waitForClick; clearText; 
@@ -1490,21 +1362,16 @@ fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B090`); appendText; 
-   //You
    You`"Sora?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well, since Sora is an AI program inside the 
 LeMMIH system, won't she be affected?"`;
    waitForClick; clearText; marker; sound(`T5B091`); appendText; 
-   //You
    You`"Hmm...yes..."`;
    waitForClick; clearText; marker; sound(`T5B092`); appendText; 
-   //You
    You`"Naturally, if the protection is removed, Sora 
 will be totally exposed... naked."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Naked...?"`;
    waitForClick; clearText; 
 });
@@ -1512,18 +1379,14 @@ fgload({ id: 1, name: `YU04BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B093`); appendText; 
-   //You
    You`"Um Takeshiiiii...? Did you just think of 
 something kinky?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Me...?"`;
    waitForClick; clearText; marker; sound(`T5B094`); appendText; 
-   //You
    You`"When I say naked, I don't mean Sora's image 
 will be nude!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I...I wasn't...thinking that at all..."`;
    waitForClick; clearText; 
 });
@@ -1531,25 +1394,19 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B095`); appendText; 
-   //You
    You`"Yeah, sure... You seem pretty suspect to 
 me..."`;
    waitForClick; clearText; marker; sound(`T5B096`); appendText; 
-   //You
    You`"I don't really care, but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`T5B097`); appendText; 
-   //You
    You`"Sora won't become 'nude'...but all her 
 thoughts, memories and various data will be 
 accessible."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's an invasion of privacy!"`;
    waitForClick; clearText; marker; sound(`T5B098`); appendText; 
-   //You
    You`"Well, not exactly, really."`;
    waitForClick; clearText; 
 });
@@ -1557,21 +1414,16 @@ goto(lbl_00000c34).if(var_da == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Come on, wait a minute...!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Okay, so if you find that password, will that 
 mean you can save Sora?"`;
    waitForClick; clearText; marker; sound(`T5B099`); appendText; 
-   //You
    You`"Save her?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I mean, you could copy all her source data to 
 a high-capacity hard drive or something..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...and then take that data out of here by 
 hand, right?"`;
    waitForClick; clearText; 
@@ -1580,7 +1432,6 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B100`); appendText; 
-   //You
    You`"Well, yeah. It could be done."`;
    waitForClick; clearText; 
 });
@@ -1588,12 +1439,10 @@ fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B101`); appendText; 
-   //You
    You`"Except, that won't be necessary."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You spoke coldly.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Huh?"`;
    waitForClick; clearText; 
 });
@@ -1601,38 +1450,28 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B102`); appendText; 
-   //You
    You`"We don't need to save Sora, she's saved 
 already."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"How's that?"`;
    waitForClick; clearText; marker; sound(`T5B103`); appendText; 
-   //You
    You`"The fact is, Sora doesn't actually reside in 
 LeMU."`;
    waitForClick; clearText; marker; sound(`T5B104`); appendText; 
-   //You
    You`"More precisely, the brains of Sora reside in 
 a super computer on Insel null."`;
    waitForClick; clearText; marker; sound(`T5B105`); appendText; 
-   //You
    You`"Are you following me?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`T5B106`); appendText; 
-   //You
    You`"Meaning, that even if LeMU sinks, floods or 
 explodes, Sora won't be damaged at all."`;
    waitForClick; clearText; marker; sound(`T5B107`); appendText; 
-   //You
    You`"Because, she's not even here."`;
    waitForClick; clearText; marker; sound(`T5B108`); appendText; 
-   //You
    You`"She really lives above the ocean."`;
    waitForClick; clearText; marker; sound(`T5B109`); appendText; 
-   //You
    You`"So from our point of view...just like her 
 name means in Japanese, 'Sora' is in the 
 'Sky'."`;
@@ -1651,19 +1490,15 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`Naturally, she was nowhere to be seen...`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, hey, hey, hold on a second! How could 
 that be!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"All data communication lines with Insel null 
 have been cut, they're useless...!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Sora herself said that. It doesn't make 
 sense!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"If as you say, Sora exists above us, then how 
 could she appear before us here?"`;
    waitForClick; clearText; 
@@ -1672,7 +1507,6 @@ fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; 
 });
@@ -1680,12 +1514,10 @@ fgload({ id: 1, name: `YU03BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B110`); appendText; 
-   //You
    You`"That's what I mean..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Suddenly, You's voice level dropped.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So, what...?"`;
    waitForClick; clearText; 
 });
@@ -1693,32 +1525,25 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B111`); appendText; 
-   //You
    You`"Come on, Takeshi. You think it's strange, 
 too, right?"`;
    waitForClick; clearText; marker; sound(`T5B112`); appendText; 
-   //You
    You`"Sora said that thanks to the maintenance 
 program, communication functions were 
 optimized..."`;
    waitForClick; clearText; marker; sound(`T5B113`); appendText; 
-   //You
    You`"In order to perform periodic maintenance, the 
 master supercomputer on Insel Null has to be 
 linked with LeMMIH here."`;
    waitForClick; clearText; marker; sound(`T5B114`); appendText; 
-   //You
    You`"And since she said the maintenance checked 
 out fine, that means..."`;
    waitForClick; clearText; marker; sound(`T5B115`); appendText; 
-   //You
    You`"There might be a data communication link up 
 and running somewhere."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"W-why, would Sora keep this from us?"`;
    waitForClick; clearText; 
 });
@@ -1726,17 +1551,14 @@ fgload({ id: 1, name: `YU13BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B116`); appendText; 
-   //You
    You`"What I'm going to say is only speculation, 
 but..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You furrowed her brows together.`;
    waitForClick; clearText; marker; sound(`T5B117`); appendText; 
-   //You
    You`"I think it's possible that someone is 
 intentionally hiding the facts from us."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Your saying...that Sora could be lying to us?"`;
    waitForClick; clearText; 
 });
@@ -1744,22 +1566,18 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B118`); appendText; 
-   //You
    You`"No, it doesn't necessarily mean that."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You shook her head as she spoke.`;
    waitForClick; clearText; marker; sound(`T5B119`); appendText; 
-   //You
    You`"On the one hand, someone might have created a 
 program to orchestrate the whole thing, 
 including keeping Sora silent."`;
    waitForClick; clearText; marker; sound(`T5B120`); appendText; 
-   //You
    You`"Or it could be that, Sora may not be 
 involved. Maybe she doesn't know anything or 
 just hasn't noticed..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -1767,15 +1585,12 @@ fgload({ id: 1, name: `YU13BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B121`); appendText; 
-   //You
    You`"But for now, I don't know if it is true or 
 not."`;
    waitForClick; clearText; marker; sound(`T5B122`); appendText; 
-   //You
    You`"Whether my suspicions are correct, or all 
 just a big misunderstanding......?"`;
    waitForClick; clearText; marker; sound(`T5B123`); appendText; 
-   //You
    You`"Anyway, I can worry about that after I've 
 cracked the protection..."`;
    waitForClick; clearText; 
@@ -1784,7 +1599,6 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B124`); appendText; 
-   //You
    You`"For now I'm just trying to access the 
 supercomputer on Insel null from this console."`;
    waitForClick; clearText; 
@@ -1792,14 +1606,11 @@ supercomputer on Insel null from this console."`;
 showTextbox();
 text(() => {
    marker; sound(`T5B125`); appendText; 
-   //You
    You`"I don't know whether I can even gain access, 
 but I'm pretty that's where the data is."`;
    waitForClick; clearText; marker; sound(`T5B126`); appendText; 
-   //You
    You`"Yep. At least I know where the data is..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -1809,21 +1620,16 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B127`); appendText; 
-   //You
    You`" I'm not one to go around blabbing secrets, 
 and to tell the truth I'm not interested."`;
    waitForClick; clearText; marker; sound(`T5B128`); appendText; 
-   //You
    You`"So don't worry, I've no intention of going 
 through Sora's personal data."`;
    waitForClick; clearText; marker; sound(`T5B129`); appendText; 
-   //You
    You`"Okay?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmm...well, okay."`;
    waitForClick; clearText; marker; sound(`T5B130`); appendText; 
-   //You
    You`"...Okay then."`;
    waitForClick; clearText; 
 });
@@ -1842,10 +1648,8 @@ text(() => {
    marker; appendText; 
    Narr`You was looking down.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"If you discover something about your 
 father...then what?"`;
    waitForClick; clearText; 
@@ -1856,16 +1660,12 @@ text(() => {
    marker; appendText; 
    Narr`When I asked, You furrowed her brow slightly.`;
    waitForClick; clearText; marker; sound(`T5B131`); appendText; 
-   //You
    You`"Yeah, I was just thinking about that..."`;
    waitForClick; clearText; marker; sound(`T5B132`); appendText; 
-   //You
    You`"Hmm. But I know what has to be done..."`;
    waitForClick; clearText; marker; sound(`T5B133`); appendText; 
-   //You
    You`"I know all too well..."`;
    waitForClick; clearText; marker; sound(`T5B134`); appendText; 
-   //You
    You`"But once I break this security code, I'll 
 know everything I need to know..."`;
    waitForClick; clearText; 
@@ -1874,18 +1674,14 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B135`); appendText; 
-   //You
    You`"Anyway, I'm trying to access LeMMIH's system 
 core from this console."`;
    waitForClick; clearText; marker; sound(`T5B136`); appendText; 
-   //You
    You`"Whether it's possible to gain access or not, 
 I can't say. But I know the data is there."`;
    waitForClick; clearText; marker; sound(`T5B137`); appendText; 
-   //You
    You`"Yep, I'm certain the data is there..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -1894,16 +1690,13 @@ fgload({ id: 1, name: `YU02BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B138`); appendText; 
-   //You
    You`"Well, at least it's a start..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You suddenly became more upbeat.`;
    waitForClick; clearText; marker; sound(`T5B139`); appendText; 
-   //You
    You`"Cracking the security protection is going to 
 be a real pain. This stubborn code!"`;
    waitForClick; clearText; marker; sound(`T5B140`); appendText; 
-   //You
    You`"So what exactly awaits hidden inside? ...It's 
 a little too soon to go there."`;
    waitForClick; clearText; 
@@ -1912,16 +1705,13 @@ fgload({ id: 1, name: `YU08BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B141`); appendText; 
-   //You
    You`"Until I can get inside, it's the same as not 
 knowing a thing."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You said this and then gave a big shrug.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But, I still think it's loads better than 
 knowing nothing at all."`;
    waitForClick; clearText; 
@@ -1930,7 +1720,6 @@ fgload({ id: 1, name: `YU02BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B142`); appendText; 
-   //You
    You`"Well, maybe you're right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You gave me a smile.`;
@@ -1943,16 +1732,12 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5B143`); appendText; 
-   //You
    You`"Now then..."`;
    waitForClick; clearText; marker; sound(`T5B144`); appendText; 
-   //You
    You`"Back to work."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Alright, You, good luck. There's still time."`;
    waitForClick; clearText; marker; sound(`T5B145`); appendText; 
-   //You
    You`"Okay."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Turning her back to me, You began to peck at 
@@ -1965,24 +1750,19 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; sound(`T5B146`); appendText; 
-   //You
    You`"But still, you know..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Without stopping her hands, she muttered 
 quietly.`;
    waitForClick; clearText; marker; sound(`T5B147`); appendText; 
-   //You
    You`"My mother used to tell me all about my 
 father's habits..."`;
    waitForClick; clearText; marker; sound(`T5B148`); appendText; 
-   //You
    You`"So I know there are clues to be found..."`;
    waitForClick; clearText; marker; sound(`T5B149`); appendText; 
-   //You
    You`"Decoding something as inorganic as a computer 
 program is possible because..."`;
    waitForClick; clearText; marker; sound(`T5B150`); appendText; 
-   //You
    You`"Even programmers have habits..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`For a long time, You stared at the monitor.`;

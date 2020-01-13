@@ -38,10 +38,8 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; sound(`S2C062`); appendText; 
-   //You
    You`"Mayo? She's a hacker."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hacker?"`;
    waitForClick; clearText; 
 });
@@ -49,7 +47,6 @@ fgload({ id: 1, name: `YU03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C063`); appendText; 
-   //You
    You`"Yeah. How should I explain this...I guess you 
 could say a computer expert of sorts."`;
    waitForClick; clearText; 
@@ -58,7 +55,6 @@ fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C064`); appendText; 
-   //You
    You`"Anyway, she knows everything about computers. 
 And she kicks butt when it comes to 
 programming, too."`;
@@ -68,12 +64,10 @@ fgload({ id: 1, name: `YU02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C065`); appendText; 
-   //You
    You`"She writes programs for kicks. Just the other 
 day she got first place in some cracking 
 contest..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Cracking contest?"`;
    waitForClick; clearText; 
 });
@@ -81,16 +75,13 @@ fgload({ id: 1, name: `YU01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C066`); appendText; 
-   //You
    You`"A contest to break codes. Just so you know, 
 it's not illegal."`;
    waitForClick; clearText; marker; sound(`S2C067`); appendText; 
-   //You
    You`"It was sponsored by some company with code 
 technology. It was legal cracking to test the 
 security of its technology..."`;
    waitForClick; clearText; marker; sound(`S2C068`); appendText; 
-   //You
    You`"The company has hackers attack their 
 algorithms."`;
    waitForClick; clearText; 
@@ -99,11 +90,9 @@ fgload({ id: 1, name: `YU08ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C069`); appendText; 
-   //You
    You`"Just think of it as a decryption game 
 contest."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, so it's a game."`;
    waitForClick; clearText; 
 });
@@ -111,7 +100,6 @@ fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C077`); appendText; 
-   //You
    You`"Just because you call it a game, I wouldn't 
 take it lightly."`;
    waitForClick; clearText; 
@@ -120,11 +108,9 @@ fgload({ id: 1, name: `YU01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C078`); appendText; 
-   //You
    You`"There were engineers participating from all 
 over the world."`;
    waitForClick; clearText; marker; sound(`S2C079`); appendText; 
-   //You
    You`"Winning it means that you are one of the 
 world's best hackers."`;
    waitForClick; clearText; 
@@ -133,13 +119,10 @@ fgload({ id: 1, name: `YU02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C080`); appendText; 
-   //You
    You`"You could even say THE best hacker."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"THE BEST...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That's just way too incredible."`;
    waitForClick; clearText; 
 });
@@ -147,10 +130,8 @@ fgload({ id: 1, name: `YU01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C081`); appendText; 
-   //You
    You`"I know."`;
    waitForClick; clearText; marker; sound(`S2C082`); appendText; 
-   //You
    You`"When it comes to computers...she's just a 
 genius."`;
    waitForClick; clearText; 
@@ -180,7 +161,6 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; sound(`T2C227`); appendText; 
-   //Sora
    Sora`"I..."`;
    waitForClick; clearText; 
 });
@@ -188,7 +168,6 @@ fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T2C228`); appendText; 
-   //Sora
    Sora`"I am only 'seen' when someone looks at me."`;
    waitForClick; clearText; 
 });
@@ -196,7 +175,6 @@ fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T2C229`); appendText; 
-   //Sora
    Sora`"I mean, that I cease to exist 
 when no one is looking at me."`;
    waitForClick; clearText; 
@@ -205,11 +183,9 @@ fgload({ id: 1, name: `SO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T2C230`); appendText; 
-   //Sora
    Sora`"For example, if the five of you here all 
 closed your eyes at once..."`;
    waitForClick; clearText; marker; sound(`T2C231`); appendText; 
-   //Sora
    Sora`"At that instant, I would cease to 
 exist anywhere."`;
    waitForClick; clearText; 
@@ -274,7 +250,6 @@ I tried, I couldn't grab the moon.`;
    Narr`The words that I had just heard from Sora cut 
 across my mind again.`;
    waitForClick; clearText; marker; sound(`T2C229`); appendText; 
-   //Sora
    Sora`"I mean, that I cease to exist 
 when no one is looking at me."`;
    waitForClick; clearText; marker; appendText; 
@@ -325,7 +300,6 @@ playBGM({ num: 8, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`S2C116`); appendText; 
-   //Sora
    Sora`"Kid, everyone is waiting for you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora said it softly, peering down at me spread 

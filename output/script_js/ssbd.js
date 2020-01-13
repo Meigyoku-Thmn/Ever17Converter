@@ -8,34 +8,26 @@ playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Sara!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I swam up next to Sara.`;
    waitForClick; clearText; marker; sound(`SBD000`); appendText; 
-   //Sara
    Sara`"Y-you're...alright..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Are you okay, Sara?"`;
    waitForClick; clearText; marker; sound(`SBD001`); appendText; 
-   //Sara
    Sara`"Yeah...I'm alright."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She smiled weakly.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She was spent and unsteady on her feet.`;
    waitForClick; clearText; marker; sound(`SBD002`); appendText; 
-   //Sara
    Sara`"Why...why did you come back?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I came back to get you of course!"`;
    waitForClick; clearText; marker; sound(`SBD003`); appendText; 
-   //Sara
    Sara`"To get me...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sure. I promised, didn't I...?"`;
    waitForClick; clearText; 
 });
@@ -43,23 +35,17 @@ bgload({ name: `EV_SA12C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`SBD004`); appendText; 
-   //Sara
    Sara`"I see...you finally...came to get me..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh...I'm so sorry, Sara."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I...I know I made you wait such a 
 long time..."`;
    waitForClick; clearText; marker; sound(`SBD005`); appendText; 
-   //Sara
    Sara`"No...it's alright."`;
    waitForClick; clearText; marker; sound(`SBD006`); appendText; 
-   //Sara
    Sara`"I mean you came and everything..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara...why did you come back...?"`;
    waitForClick; clearText; 
 });
@@ -67,50 +53,37 @@ bgload({ name: `EV_SA12A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`SBD007`); appendText; 
-   //Sara
    Sara`"Uh...to...um..."`;
    waitForClick; clearText; marker; sound(`SBD008`); appendText; 
-   //Sara
    Sara`"To get...this..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Saying that, Sara removed the fragment 
 that was embedded in my finger.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That's..."`;
    waitForClick; clearText; marker; sound(`SBD009`); appendText; 
-   //Sara
    Sara`"I forgot...this..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You came back...for that...?"`;
    waitForClick; clearText; marker; sound(`SBD010`); appendText; 
-   //Sara
    Sara`"Because...this is proof of how you looked 
 after me..."`;
    waitForClick; clearText; marker; sound(`SBD011`); appendText; 
-   //Sara
    Sara`"I felt like...if this disappeared...then my 
 connection to you...would be gone..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara..."`;
    waitForClick; clearText; marker; sound(`SBD012`); appendText; 
-   //Sara
    Sara`"I'm sorry...I got you...involved in this 
 mess."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, it's okay."`;
    waitForClick; clearText; marker; sound(`SBD013`); appendText; 
-   //Sara
    Sara`"I'm so sorry..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's alright. I only came...to keep 
 my promise."`;
    waitForClick; clearText; marker; sound(`SBD014`); appendText; 
-   //Sara
    Sara`"Th...thank you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I desperately tried to prop up Sara to keep 
@@ -121,22 +94,16 @@ bgload({ name: `EV_SA12B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`SBD015`); appendText; 
-   //Sara
    Sara`"I'm sorry...I can't keep...up...anymore..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, hold on!"`;
    waitForClick; clearText; marker; sound(`SBD016`); appendText; 
-   //Sara
    Sara`"I'm sorry...so sorry..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, hang on! Fight Sara!"`;
    waitForClick; clearText; marker; sound(`SBD017`); appendText; 
-   //Sara
    Sara`"For...some reason...I'm dizzy..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I remembered that the air pressure here was 
@@ -152,20 +119,16 @@ water in the cold seawater...`;
    Narr`The combination had probably rapidly robbed 
 Sara of her strength.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, hang in there!"`;
    waitForClick; clearText; marker; sound(`SBD018`); appendText; 
-   //Sara
    Sara`"I...I'll...try"`;
    waitForClick; clearText; marker; sound(`SBD019`); appendText; 
-   //Sara
    Sara`"But...my body...won't move anymore..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't know what to do.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And I'd finally found Sara.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Anyway, let's head for the emergency 
 corridor!"`;
    waitForClick; clearText; marker; appendText; 
@@ -174,7 +137,6 @@ emergency corridor.`;
    waitForClick; clearText; marker; appendText; 
    Narr`If we could just get there...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Listen, Sara!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I grabbed the weakened Sara and tried to dive 
@@ -203,10 +165,8 @@ increased dramatically.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I hurriedly struggled to lift her up.`;
    waitForClick; clearText; marker; sound(`SBD020`); appendText; 
-   //Sara
    Sara`"Cough...cough..."`;
    waitForClick; clearText; marker; sound(`SBD021`); appendText; 
-   //Sara
    Sara`"Pant, pant, pant..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It looked like she had swallowed some water.`;
@@ -225,25 +185,19 @@ text(() => {
    Narr`With a dull groan, LeMU tilted causing the 
 water to ripple.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hang on Sara! Just hang on!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I called to Sara as I desperately floated in 
 the waves on the surface.`;
    waitForClick; clearText; marker; sound(`SBD022`); appendText; 
-   //Sara
    Sara`"I'm sorry...so sorry."`;
    waitForClick; clearText; marker; sound(`SBD023`); appendText; 
-   //Sara
    Sara`"My body...it won't move..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No! Sara! Hang on!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We've finally found each other!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara! Open your eyes! Sara!"`;
    waitForClick; clearText; 
 });
@@ -252,10 +206,8 @@ bgload({ name: `EV_SA12C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`SBD024`); appendText; 
-   //Sara
    Sara`"Brother..."`;
    waitForClick; clearText; marker; sound(`SBD025`); appendText; 
-   //Sara
    Sara`"Thanks for...coming back...thank you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara's body went limp.`;

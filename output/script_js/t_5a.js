@@ -501,7 +501,6 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; sound(`T5A000`); appendText; 
-   //Tsugumi
    Tsugumi`"Hi."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hearing a voice from behind me, I turned my 
@@ -516,22 +515,17 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A001`); appendText; 
-   //Tsugumi
    Tsugumi`"Hey, what were you up to?"`;
    waitForClick; clearText; marker; sound(`T5A002`); appendText; 
-   //Tsugumi
    Tsugumi`"There's no point waiting around. That 
 elevator's not coming."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't have an answer to give.`;
    waitForClick; clearText; marker; sound(`T5A003`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi, what's the matter?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -539,18 +533,14 @@ fgload({ id: 1, name: `TU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A004`); appendText; 
-   //Tsugumi
    Tsugumi`"Are you deaf?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Heh, heh..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I couldn't help but laugh.`;
    waitForClick; clearText; marker; sound(`T5A005`); appendText; 
-   //Tsugumi
    Tsugumi`"Come on, what's going on...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ha, ha, ha..."`;
    waitForClick; clearText; 
 });
@@ -558,15 +548,12 @@ fgload({ id: 1, name: `TU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A006`); appendText; 
-   //Tsugumi
    Tsugumi`"What's so funny?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi seemed slightly disturbed.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's...nothing. No special reason."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's just that, well, I thought your question 
 was pointless."`;
    waitForClick; clearText; 
@@ -584,17 +571,13 @@ text(() => {
    marker; appendText; 
    Narr`But then she laughed back at me.`;
    waitForClick; clearText; marker; sound(`T5A007`); appendText; 
-   //Tsugumi
    Tsugumi`"You've started to catch on, haven't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I suppose..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I was just out for a little walk. What have 
 you been doing?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ah, that's okay, you don't have to answer."`;
    waitForClick; clearText; 
 });
@@ -602,7 +585,6 @@ fgload({ id: 1, name: `TU11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A008`); appendText; 
-   //Tsugumi
    Tsugumi`"In that case, don't ask..."`;
    waitForClick; clearText; 
 });
@@ -610,7 +592,6 @@ fgload({ id: 1, name: `TU13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Tsugumi
    Tsugumi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Turning her eyes away, Tsugumi frowned 
@@ -626,13 +607,10 @@ fgload({ id: 1, name: `TU10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A009`); appendText; 
-   //Tsugumi
    Tsugumi`"Say Takeshi, do you know what 'Qualle' is?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Qualle?"`;
    waitForClick; clearText; marker; sound(`T5A010`); appendText; 
-   //Tsugumi
    Tsugumi`"That's right, Qualle."`;
    waitForClick; 
 });
@@ -648,13 +626,10 @@ let lbl_00000413;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"I don't know."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Actually, I think I knew, but then I forgot."`;
    waitForClick; clearText; marker; sound(`T5A011`); appendText; 
-   //Tsugumi
    Tsugumi`"Right..."`;
    waitForClick; clearText; 
 });
@@ -662,20 +637,15 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A012`); appendText; 
-   //Tsugumi
    Tsugumi`"Okay, I'll tell you."`;
    waitForClick; clearText; marker; sound(`T5A013`); appendText; 
-   //Tsugumi
    Tsugumi`"Qualle is..."`;
    waitForClick; clearText; marker; sound(`T5A014`); appendText; 
-   //Tsugumi
    Tsugumi`"...the Jellyfish Gondola ride."`;
    waitForClick; clearText; marker; sound(`T5A015`); appendText; 
-   //Tsugumi
    Tsugumi`"And it's located just behind this elevator 
 room."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hooo, is that so?"`;
    waitForClick; clearText; 
 });
@@ -684,13 +654,10 @@ let lbl_00000433;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah I know what it is."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's the Jellyfish Gondola attraction."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...right?"`;
    waitForClick; clearText; 
 });
@@ -698,17 +665,13 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A016`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So, what about it?"`;
    waitForClick; clearText; marker; sound(`T5A017`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, Qualle is just behind this elevator 
 room."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, come to think about it, you're right."`;
    waitForClick; clearText; 
 });
@@ -717,10 +680,8 @@ fgload({ id: 1, name: `TU10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Tsugumi
    Tsugumi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`And then we both fell silent.`;
@@ -739,7 +700,6 @@ text(() => {
    Narr`With Tsugumi in the lead, we headed for the 
 Qualle entrance.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Say, how do you make this thing work?"`;
    waitForClick; clearText; 
 });
@@ -747,10 +707,8 @@ fgload({ id: 1, name: `TU15ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A018`); appendText; 
-   //Tsugumi
    Tsugumi`"Go figure."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"'Go figure'? Come on, tell me."`;
    waitForClick; clearText; 
 });
@@ -758,21 +716,16 @@ fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A019`); appendText; 
-   //Tsugumi
    Tsugumi`"It's already turned on, dummy, just get in 
 and it'll go."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's it?"`;
    waitForClick; clearText; marker; sound(`T5A020`); appendText; 
-   //Tsugumi
    Tsugumi`"Look, I tried it out already, so I'm pretty 
 sure."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmm, well, if you say so..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...wait a second! You've already tried it?"`;
    waitForClick; clearText; 
 });
@@ -780,19 +733,15 @@ fgload({ id: 1, name: `TU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A021`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, yeah...I tested it."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi's face looked troubled, as if she'd 
 been caught at something.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You're saying you rode it alone?"`;
    waitForClick; clearText; marker; sound(`T5A022`); appendText; 
-   //Tsugumi
    Tsugumi`"...well, not exactly alone."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So, who was with you?"`;
    waitForClick; clearText; 
 });
@@ -800,13 +749,10 @@ fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A023`); appendText; 
-   //Tsugumi
    Tsugumi`"It's not 'who' I was with..."`;
    waitForClick; clearText; marker; sound(`T5A024`); appendText; 
-   //Tsugumi
    Tsugumi`"You see, well...I was with Chami..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You mean your hamster?"`;
    waitForClick; clearText; 
 });
@@ -814,17 +760,13 @@ fgload({ id: 1, name: `TU15ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A025`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, yeah..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"In other words, one adult and one 
 'critter'."`;
    waitForClick; clearText; marker; sound(`T5A026`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You rode Qualle with Chami?"`;
    waitForClick; clearText; 
 });
@@ -832,10 +774,8 @@ fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A027`); appendText; 
-   //Tsugumi
    Tsugumi`"Yes...Don't make me repeat myself."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well, then how was it? Fun?"`;
    waitForClick; clearText; 
 });
@@ -843,13 +783,10 @@ fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A028`); appendText; 
-   //Tsugumi
    Tsugumi`"Chami fell asleep. I guess he was bored."`;
    waitForClick; clearText; marker; sound(`T5A029`); appendText; 
-   //Tsugumi
    Tsugumi`"But as for me..."`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"........."`;
    waitForClick; clearText; 
 });
@@ -857,22 +794,17 @@ fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A030`); appendText; 
-   //Tsugumi
    Tsugumi`"Who cares?"`;
    waitForClick; clearText; marker; sound(`T5A031`); appendText; 
-   //Tsugumi
    Tsugumi`"It's a meaningless question."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi hadn't said much, which was a lot more 
 than usual.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmm..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"In other words, you were lonely, huh...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"If I was there, I could have cheered you up."`;
    waitForClick; clearText; 
 });
@@ -880,14 +812,11 @@ fgload({ id: 1, name: `TU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A032`); appendText; 
-   //Tsugumi
    Tsugumi`"What do you mean, 'Cheer me up'?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well, you know...you've been through a 
 lot..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And I thought, maybe the two of us together 
 would..."`;
    waitForClick; clearText; 
@@ -896,7 +825,6 @@ fgload({ id: 1, name: `TU12ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A034`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah, right..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`But then suddenly, Tsugumi's expression lost 
@@ -906,7 +834,6 @@ its tension.`;
 showTextbox();
 text(() => {
    marker; sound(`T2B004`); appendText; 
-   //Tsugumi
    Tsugumi`"Heh, heh..."`;
    waitForClick; clearText; 
 });
@@ -914,15 +841,12 @@ fgload({ id: 1, name: `TU10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A035`); appendText; 
-   //Tsugumi
    Tsugumi`"Heh, heh, heh.... Ha, ha, ha..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`All of a sudden she let out a laugh.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey...what's going on with you...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Did I say something stupid?"`;
    waitForClick; clearText; 
 });
@@ -930,10 +854,8 @@ fgload({ id: 1, name: `TU02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A036`); appendText; 
-   //Tsugumi
    Tsugumi`"Nah, not really."`;
    waitForClick; clearText; marker; sound(`T5A037`); appendText; 
-   //Tsugumi
    Tsugumi`"It's nothing important."`;
    waitForClick; clearText; 
 });
@@ -941,7 +863,6 @@ fgload({ id: 1, name: `TU12ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A038`); appendText; 
-   //Tsugumi
    Tsugumi`"It's just that...I needed to laugh..."`;
    waitForClick; clearText; 
 });
@@ -961,10 +882,8 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`That a slight smile still remained on her face.`;
    waitForClick; clearText; marker; sound(`T5A039`); appendText; 
-   //Tsugumi
    Tsugumi`"Let's go."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Okay, if you say so..."`;
    waitForClick; clearText; 
 });
@@ -1004,30 +923,22 @@ goto(lbl_0000064a).if(var_d9 == 0);
 showTextbox();
 text(() => {
    marker; sound(`T5A040`); appendText; 
-   //Tsugumi
    Tsugumi`"I've been wanting to talk to you."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"About what?"`;
    waitForClick; clearText; marker; sound(`T5A041`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, some things I need to say..."`;
    waitForClick; clearText; marker; sound(`T5A042`); appendText; 
-   //Tsugumi
    Tsugumi`"Things to say...things I need to let you 
 know..."`;
    waitForClick; clearText; marker; sound(`T5A043`); appendText; 
-   //Tsugumi
    Tsugumi`"And I figured, no one could interrupt us 
 here."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It must really be something important..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Something serious...?"`;
    waitForClick; clearText; marker; sound(`T5A044`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, yeah...at least for me it is."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Having her approach me to talk was unusual.`;
@@ -1040,66 +951,46 @@ here."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Whatever the consequences, I had to listen...`;
    waitForClick; clearText; marker; sound(`T5A045`); appendText; 
-   //Tsugumi
    Tsugumi`"Twelve years ago..."`;
    waitForClick; clearText; marker; sound(`T5A046`); appendText; 
-   //Tsugumi
    Tsugumi`"In August of 2005."`;
    waitForClick; clearText; marker; sound(`T5A047`); appendText; 
-   //Tsugumi
    Tsugumi`"On a summer day..."`;
    waitForClick; clearText; marker; sound(`T5A048`); appendText; 
-   //Tsugumi
    Tsugumi`"I was infected."`;
    waitForClick; clearText; marker; sound(`T5A049`); appendText; 
-   //Tsugumi
    Tsugumi`"...I was infected with a virus..."`;
    waitForClick; clearText; marker; sound(`T5A050`); appendText; 
-   //Tsugumi
    Tsugumi`"Yes, 2005. Twelve years ago."`;
    waitForClick; clearText; marker; sound(`T5A051`); appendText; 
-   //Tsugumi
    Tsugumi`"I was only 12 years old at the time..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"A virus?"`;
    waitForClick; clearText; marker; sound(`T5A052`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And are you still...infected?"`;
    waitForClick; clearText; marker; sound(`T5A053`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah."`;
    waitForClick; clearText; marker; sound(`T5A054`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm a carrier..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...a carrier? What? Wait a second!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Come on! Wait a just a second here!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You mean to tell me...twelve years ago, at 
 age 12?"`;
    waitForClick; clearText; marker; sound(`T5A055`); appendText; 
-   //Tsugumi
    Tsugumi`"That's what I'm saying."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Twelve years ago, at age 12...means your age 
 now is..."`;
    waitForClick; clearText; marker; sound(`T5A056`); appendText; 
-   //Tsugumi
    Tsugumi`"That's right, I'm 23."`;
    waitForClick; clearText; marker; sound(`T5A057`); appendText; 
-   //Tsugumi
    Tsugumi`"I'll be 24 in another two months."`;
    waitForClick; clearText; marker; sound(`T5A058`); appendText; 
-   //Tsugumi
    Tsugumi`"You see...I was born 24 years ago. In July 
 1993."`;
    waitForClick; clearText; marker; appendText; 
@@ -1115,14 +1006,12 @@ age.`;
    Narr`But I had assumed her to be a "high school 
 student" at the most. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"23 years old..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I muttered to myself.`;
    waitForClick; clearText; marker; appendText; 
    Narr`To think...she was three years older than me...`;
    waitForClick; clearText; marker; sound(`T5A059`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi, where are you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She suddenly changed the topic.`;
@@ -1133,14 +1022,11 @@ let lbl_0000064a;
 showTextbox();
 text(() => {
    marker; sound(`T5A060`); appendText; 
-   //Tsugumi
    Tsugumi`"There's something I've been meaning to ask 
 you."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What is it...?"`;
    waitForClick; clearText; marker; sound(`T5A061`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, it's something I wanted to 
 ask...something I wanted to confirm..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1149,22 +1035,16 @@ something she wanted to say just to me.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her behavior seemed extremely odd.`;
    waitForClick; clearText; marker; sound(`T5A062`); appendText; 
-   //Tsugumi
    Tsugumi`"It's strange, but..."`;
    waitForClick; clearText; marker; sound(`T5A063`); appendText; 
-   //Tsugumi
    Tsugumi`"It's strange, but it seems that..."`;
    waitForClick; clearText; marker; sound(`T5A064`); appendText; 
-   //Tsugumi
    Tsugumi`"Like I'm beginning to lose it..."`;
    waitForClick; clearText; marker; sound(`T5A065`); appendText; 
-   //Tsugumi
    Tsugumi`"Like I'm going crazy..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Huh...?"`;
    waitForClick; clearText; marker; sound(`T5A066`); appendText; 
-   //Tsugumi
    Tsugumi`"So tell me, where are you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Out of nowhere she asked me again.`;
@@ -1174,22 +1054,17 @@ let lbl_0000064f;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"What do you mean, 'where?' I'm right 
 here."`;
    waitForClick; clearText; marker; sound(`T5A067`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah but, where is here?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You know, here is 'here,' right?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I beat the palm of my hand against my chest.`;
    waitForClick; clearText; marker; sound(`T5A068`); appendText; 
-   //Tsugumi
    Tsugumi`"Have you ever cut you finger nails?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What's up with you all of a sudden?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi leaned over urgently, right in front 
@@ -1201,36 +1076,26 @@ distant light.`;
    Narr`I could just glimpse the tip of her tongue, 
 wet and smooth.`;
    waitForClick; clearText; marker; sound(`T5A069`); appendText; 
-   //Tsugumi
    Tsugumi`"Just answer, okay..."`;
    waitForClick; clearText; marker; sound(`T5A070`); appendText; 
-   //Tsugumi
    Tsugumi`"Have you ever cut your finger nails?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Of course I have."`;
    waitForClick; clearText; marker; sound(`T5A071`); appendText; 
-   //Tsugumi
    Tsugumi`"Well then, is the nail that's been cut away 
 still you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What do you mean?"`;
    waitForClick; clearText; marker; sound(`T5A072`); appendText; 
-   //Tsugumi
    Tsugumi`"I mean, are you there in the nail?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"No...I guess once it's gone from my body, 
 it's not me anymore."`;
    waitForClick; clearText; marker; sound(`T5A073`); appendText; 
-   //Tsugumi
    Tsugumi`"How about hair?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"The same goes for hair."`;
    waitForClick; clearText; marker; sound(`T5A074`); appendText; 
-   //Tsugumi
    Tsugumi`"In that case, this hair here is you right? 
 But if I pull it out..."`;
    waitForClick; clearText; 
@@ -1239,31 +1104,24 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Ouch!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I reflexively put my hand to my head.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi had yanked out a couple strands.`;
    waitForClick; clearText; marker; sound(`T5A075`); appendText; 
-   //Tsugumi
    Tsugumi`"This isn't you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi held the hair up, waving it around.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmm...that's tough."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It isn't me but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I guess you could call it, 'ex-me.'"`;
    waitForClick; clearText; marker; sound(`T5A076`); appendText; 
-   //Tsugumi
    Tsugumi`"Okay then...What if I ripped your arm off?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You gotta be kidding!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi grabbed my arm.`;
@@ -1297,19 +1155,15 @@ it impossible to resist her.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It made me slightly dizzy...`;
    waitForClick; clearText; marker; sound(`T5A077`); appendText; 
-   //Tsugumi
    Tsugumi`"Well? If I ripped your arm off?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Gazing intensely at me, Tsugumi continued 
 shooting me questions.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`T5A078`); appendText; 
-   //Tsugumi
    Tsugumi`"Would you be there, in the arm?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"No, I suppose I wouldn't be there."`;
    waitForClick; clearText; 
 });
@@ -1317,13 +1171,10 @@ bgload({ name: `EV_TU08B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`T5A079`); appendText; 
-   //Tsugumi
    Tsugumi`"Okay, then what if I took off your leg?"`;
    waitForClick; clearText; marker; sound(`T5A080`); appendText; 
-   //Tsugumi
    Tsugumi`"Or if I cut your torso away?"`;
    waitForClick; clearText; marker; sound(`T5A081`); appendText; 
-   //Tsugumi
    Tsugumi`"Or even if I took out your brain?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Still gazing at me, she moved her hands and 
@@ -1345,13 +1196,10 @@ put them on my neck.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I wondered where the light originated from...`;
    waitForClick; clearText; marker; sound(`T5A082`); appendText; 
-   //Tsugumi
    Tsugumi`"Tell me, Takeshi, where are you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...where am I?"`;
    waitForClick; clearText; 
 });
@@ -1526,175 +1374,127 @@ text(() => {
    Narr`Tsugumi took her hand off of my neck. I 
 breathed easier.`;
    waitForClick; clearText; marker; sound(`T5A083`); appendText; 
-   //Tsugumi
    Tsugumi`"You see. Your existence has no substance."`;
    waitForClick; clearText; marker; sound(`T5A084`); appendText; 
-   //Tsugumi
    Tsugumi`"All you are is a concept."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"A concept?"`;
    waitForClick; clearText; marker; sound(`T5A085`); appendText; 
-   //Tsugumi
    Tsugumi`"You are just a packet of 
 information...'software'."`;
    waitForClick; clearText; marker; sound(`T5A086`); appendText; 
-   //Tsugumi
    Tsugumi`"The information written on a CD has no 
 physical body, right?"`;
    waitForClick; clearText; marker; sound(`T5A087`); appendText; 
-   //Tsugumi
    Tsugumi`"The CD itself is just plastic, a hard mass of 
 polycarbonate."`;
    waitForClick; clearText; marker; sound(`T5A088`); appendText; 
-   //Tsugumi
    Tsugumi`"But that mass has nothing to do with the 
 information it holds."`;
    waitForClick; clearText; marker; sound(`T5A089`); appendText; 
-   //Tsugumi
    Tsugumi`"Information can't have a physical body, 
 that's impossible."`;
    waitForClick; clearText; marker; sound(`T5A090`); appendText; 
-   //Tsugumi
    Tsugumi`"Information does not have shape or 
 substance."`;
    waitForClick; clearText; marker; sound(`T5A091`); appendText; 
-   //Tsugumi
    Tsugumi`"The embodiment of information only takes 
 place through its application."`;
    waitForClick; clearText; marker; sound(`T5A092`); appendText; 
-   //Tsugumi
    Tsugumi`"However, the embodied information itself has 
 no actual body."`;
    waitForClick; clearText; marker; sound(`T5A093`); appendText; 
-   //Tsugumi
    Tsugumi`"The essence of information is the information 
 itself..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`T5A094`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi, it's the same for you."`;
    waitForClick; clearText; marker; sound(`T5A095`); appendText; 
-   //Tsugumi
    Tsugumi`"There is no physical substance to your 
 'essence.'"`;
    waitForClick; clearText; marker; sound(`T5A096`); appendText; 
-   //Tsugumi
    Tsugumi`"Instead, the human called 'Takeshi Kuranari' 
 is no more than a concept, information, 
 software."`;
    waitForClick; clearText; marker; sound(`T5A097`); appendText; 
-   //Tsugumi
    Tsugumi`"And that essence is realized only through 
 your body, the hardware."`;
    waitForClick; clearText; marker; sound(`T5A098`); appendText; 
-   //Tsugumi
    Tsugumi`"That's it. Your body is just the hardware."`;
    waitForClick; clearText; marker; sound(`T5A099`); appendText; 
-   //Tsugumi
    Tsugumi`"It's just a device in which the entity of 
 'you' is embodied."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...I see. Hmm."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Okay, okay. I understand you perfectly."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"No, actually I hardly understand you at 
 all...but if what you say is true..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Then what?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What does that have to do with what you were 
 talking about?"`;
    waitForClick; clearText; marker; sound(`T5A100`); appendText; 
-   //Tsugumi
    Tsugumi`"Twelve years ago, I was infected with a 
 virus."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, you said that."`;
    waitForClick; clearText; marker; sound(`T5A101`); appendText; 
-   //Tsugumi
    Tsugumi`"Because of that virus...the virus..."`;
    waitForClick; clearText; marker; sound(`T5A102`); appendText; 
-   //Tsugumi
    Tsugumi`"It rewrote my genetic code."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What? Your genetic code?"`;
    waitForClick; clearText; marker; sound(`T5A103`); appendText; 
-   //Tsugumi
    Tsugumi`"Cells in peoples body are replaced daily."`;
    waitForClick; clearText; marker; sound(`T5A104`); appendText; 
-   //Tsugumi
    Tsugumi`"They are reborn, and then die."`;
    waitForClick; clearText; marker; sound(`T5A105`); appendText; 
-   //Tsugumi
    Tsugumi`"Normally, the human body is totally replaced 
 with new cells within five years."`;
    waitForClick; clearText; marker; sound(`T5A106`); appendText; 
-   //Tsugumi
    Tsugumi`"When I was twelve, the cells in my body were 
 infected. And from that moment on, they 
 divided and replaced themselves."`;
    waitForClick; clearText; marker; sound(`T5A107`); appendText; 
-   //Tsugumi
    Tsugumi`"Five years later, all cells had been 
 replaced."`;
    waitForClick; clearText; marker; sound(`T5A108`); appendText; 
-   //Tsugumi
    Tsugumi`"In five years, every cell that made up 
 my body had been genetically altered."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`".........?"`;
    waitForClick; clearText; marker; sound(`T5A109`); appendText; 
-   //Tsugumi
    Tsugumi`"And when the last of the cells had died..."`;
    waitForClick; clearText; marker; sound(`T5A110`); appendText; 
-   //Tsugumi
    Tsugumi`"...the last trace of my 12-year-old self 
 disappeared."`;
    waitForClick; clearText; marker; sound(`T5A111`); appendText; 
-   //Tsugumi
    Tsugumi`"In that moment the old me died."`;
    waitForClick; clearText; marker; sound(`T5A112`); appendText; 
-   //Tsugumi
    Tsugumi`"The old me died, but the new me became a body 
 that never dies."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"A body that never dies...?"`;
    waitForClick; clearText; marker; sound(`T5A113`); appendText; 
-   //Tsugumi
    Tsugumi`"My immune system and my metabolic 
 rate were remarkably improved..."`;
    waitForClick; clearText; marker; sound(`T5A114`); appendText; 
-   //Tsugumi
    Tsugumi`"My telomeres began to regenerate 
 themselves..."`;
    waitForClick; clearText; marker; sound(`T5A115`); appendText; 
-   //Tsugumi
    Tsugumi`"That's right..."`;
    waitForClick; clearText; marker; sound(`T5A116`); appendText; 
-   //Tsugumi
    Tsugumi`"I will never grow old, and never die."`;
    waitForClick; clearText; marker; sound(`T5A117`); appendText; 
-   //Tsugumi
    Tsugumi`"My physical growth stopped at that 
 moment in time."`;
    waitForClick; clearText; marker; sound(`T5A118`); appendText; 
-   //Tsugumi
    Tsugumi`"I'll never grow older than 17."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -1739,39 +1539,29 @@ text(() => {
    marker; appendText; 
    Narr`I couldn't help but laugh.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ha..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ha, ha, ha..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's a good story. But no way...!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But I guess it's a good joke, pretty 
 solid."`;
    waitForClick; clearText; marker; sound(`T5A119`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah...I guess your right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi snickered at my words.`;
    waitForClick; clearText; marker; sound(`T5A120`); appendText; 
-   //Tsugumi
    Tsugumi`"Yep, it's just a little joke."`;
    waitForClick; clearText; marker; sound(`T5A121`); appendText; 
-   //Tsugumi
    Tsugumi`"I thought you might fall for it, but I guess 
 not."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What else would you expect? Crazy talk like 
 that."`;
    waitForClick; clearText; marker; sound(`T5A122`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, Takeshi..."`;
    waitForClick; clearText; marker; sound(`T5A123`); appendText; 
-   //Tsugumi
    Tsugumi`"I guess you're not so stupid after all."`;
    waitForClick; clearText; 
 });
@@ -1790,30 +1580,22 @@ her legs.`;
    waitForClick; clearText; marker; appendText; 
    Narr`...and a scar.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What the...?"`;
    waitForClick; clearText; marker; sound(`T5A124`); appendText; 
-   //Tsugumi
    Tsugumi`"What's the matter?"`;
    waitForClick; clearText; marker; sound(`T5A125`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi...what are you looking at?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Your right thigh, at the scar...`;
    waitForClick; clearText; marker; sound(`T5A126`); appendText; 
-   //Tsugumi
    Tsugumi`"Do you want a closer look?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well...yeah...no..."`;
    waitForClick; clearText; marker; sound(`T5A127`); appendText; 
-   //Tsugumi
    Tsugumi`"Shall I show you...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"No, really..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's okay..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sure enough, it was a scar.`;
@@ -1858,103 +1640,77 @@ bgload({ name: `EV_TU08B`, transition: 10 });
 showTextbox();
 text(() => {
    marker; sound(`T5A128`); appendText; 
-   //Tsugumi
    Tsugumi`"You see. Your existence has no substance."`;
    waitForClick; clearText; marker; sound(`T5A129`); appendText; 
-   //Tsugumi
    Tsugumi`"All you are is a concept."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`".........?"`;
    waitForClick; clearText; marker; sound(`T5A130`); appendText; 
-   //Tsugumi
    Tsugumi`"You are just a packet of 
 information...'software'."`;
    waitForClick; clearText; marker; sound(`T5A131`); appendText; 
-   //Tsugumi
    Tsugumi`"The information written on a CD has no 
 physical body, right?"`;
    waitForClick; clearText; marker; sound(`T5A132`); appendText; 
-   //Tsugumi
    Tsugumi`"The CD itself is just plastic, a hard mass of 
 polycarbonate."`;
    waitForClick; clearText; marker; sound(`T5A133`); appendText; 
-   //Tsugumi
    Tsugumi`"But that mass has nothing to do with the 
 information it holds."`;
    waitForClick; clearText; marker; sound(`T5A134`); appendText; 
-   //Tsugumi
    Tsugumi`"Information can't have a physical body, 
 that's impossible."`;
    waitForClick; clearText; marker; sound(`T5A135`); appendText; 
-   //Tsugumi
    Tsugumi`"Information does not have shape or 
 substance."`;
    waitForClick; clearText; marker; sound(`T5A136`); appendText; 
-   //Tsugumi
    Tsugumi`"The embodiment of information only takes 
 place through it application."`;
    waitForClick; clearText; marker; sound(`T5A137`); appendText; 
-   //Tsugumi
    Tsugumi`"However, the embodied information itself has 
 no actual body."`;
    waitForClick; clearText; marker; sound(`T5A138`); appendText; 
-   //Tsugumi
    Tsugumi`"The essence of information is the information 
 itself..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"..."`;
    waitForClick; clearText; marker; sound(`T5A139`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi, it's the same for you."`;
    waitForClick; clearText; marker; sound(`T5A140`); appendText; 
-   //Tsugumi
    Tsugumi`"There is no physical substance to the essence 
 of Takeshi."`;
    waitForClick; clearText; marker; sound(`T5A141`); appendText; 
-   //Tsugumi
    Tsugumi`"Instead, the human called 'Takeshi Kuranari' 
 is no more than a concept, information, 
 software."`;
    waitForClick; clearText; marker; sound(`T5A142`); appendText; 
-   //Tsugumi
    Tsugumi`"And that essence is realized only through 
 your body, the hardware."`;
    waitForClick; clearText; marker; sound(`T5A143`); appendText; 
-   //Tsugumi
    Tsugumi`"That's it. Your body is just the hardware."`;
    waitForClick; clearText; marker; sound(`T5A144`); appendText; 
-   //Tsugumi
    Tsugumi`"It's just a device in which the entity of you 
 is embodied."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why...do...you...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I spit out the words with difficulty.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"How...come...you...are...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Was I making any sense to her? I couldn't tell.`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The weight of Tsugumi's whole body was on my 
 neck.`;
    waitForClick; clearText; marker; sound(`T5A145`); appendText; 
-   //Tsugumi
    Tsugumi`"I can't..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"..."`;
    waitForClick; clearText; marker; sound(`T5A146`); appendText; 
-   //Tsugumi
    Tsugumi`"I can't..."`;
    waitForClick; clearText; marker; sound(`T5A147`); appendText; 
-   //Tsugumi
    Tsugumi`"I just can't..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`For an instant, her grip loosened slightly.`;
@@ -1964,117 +1720,84 @@ bgload({ name: `EV_TU08C`, transition: 00 });
 showTextbox();
 text(() => {
    marker; sound(`T5A148`); appendText; 
-   //Tsugumi
    Tsugumi`"I can never escape."`;
    waitForClick; clearText; marker; sound(`T5A149`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm bound eternally to this horrid body."`;
    waitForClick; clearText; marker; sound(`T5A150`); appendText; 
-   //Tsugumi
    Tsugumi`"My soul is forever in chains."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi became teary eyed.`;
    waitForClick; clearText; marker; appendText; 
    Narr`So that was the light deep in her eyes...tears.`;
    waitForClick; clearText; marker; sound(`T5A151`); appendText; 
-   //Tsugumi
    Tsugumi`"Hey? Takeshi...?"`;
    waitForClick; clearText; marker; sound(`T5A152`); appendText; 
-   //Tsugumi
    Tsugumi`"Would... you kill me?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Half lying on her side, she grabbed my wrists.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She tried to force my hands to her own neck.`;
    waitForClick; clearText; marker; sound(`T5A153`); appendText; 
-   //Tsugumi
    Tsugumi`"Please...?"`;
    waitForClick; clearText; marker; sound(`T5A154`); appendText; 
-   //Tsugumi
    Tsugumi`"Kill me?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"W...what are you talking about!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I broke away from her grasp.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why are you talking like this...?"`;
    waitForClick; clearText; marker; sound(`T5A155`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah, I get it..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi muttered, her voice shaking.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And her gaze drifted off.`;
    waitForClick; clearText; marker; sound(`T5A156`); appendText; 
-   //Tsugumi
    Tsugumi`"You're just a coward..."`;
    waitForClick; clearText; marker; sound(`T5A157`); appendText; 
-   //Tsugumi
    Tsugumi`"...Just a gutless man..."`;
    waitForClick; clearText; marker; sound(`T5A158`); appendText; 
-   //Tsugumi
    Tsugumi`"In fact, you're not even a 'man.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's got nothing to do with this!"`;
    waitForClick; clearText; marker; sound(`T5A159`); appendText; 
-   //Tsugumi
    Tsugumi`"Come on, please..."`;
    waitForClick; clearText; marker; sound(`T5A160`); appendText; 
-   //Tsugumi
    Tsugumi`"Kill me...!"`;
    waitForClick; clearText; marker; sound(`T5A161`); appendText; 
-   //Tsugumi
    Tsugumi`"Can't you do it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Are you crazy!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"There's no way I could do such a thing!!"`;
    waitForClick; clearText; marker; sound(`T5A162`); appendText; 
-   //Tsugumi
    Tsugumi`"Why not? Why can't you...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Of course I can't! I..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...I don't need a reason!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I don't want to..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why do you want to die so badly, anyway?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why do you need someone to kill you!"`;
    waitForClick; clearText; marker; sound(`T5A163`); appendText; 
-   //Tsugumi
    Tsugumi`"Please. It's because..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Forget it!"`;
    waitForClick; clearText; marker; sound(`T5A164`); appendText; 
-   //Tsugumi
    Tsugumi`"Are you really so unwilling...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You're damn right I'm unwilling."`;
    waitForClick; clearText; marker; sound(`T5A165`); appendText; 
-   //Tsugumi
    Tsugumi`"Well, in that case..."`;
    waitForClick; clearText; marker; sound(`T5A166`); appendText; 
-   //Tsugumi
    Tsugumi`"In that case, I know..."`;
    waitForClick; clearText; marker; sound(`T5A167`); appendText; 
-   //Tsugumi
    Tsugumi`"I will kill you instead."`;
    waitForClick; clearText; 
 });
@@ -2094,7 +1817,6 @@ text(() => {
    Narr`With all her strength Tsugumi slammed me to 
 the floor and started choking me.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Gah."`;
    waitForClick; clearText; 
 });
@@ -2102,11 +1824,9 @@ closeShakeScreenAnim();
 showTextbox();
 text(() => {
    marker; sound(`T5A168`); appendText; 
-   //Tsugumi
    Tsugumi`"I'll give you the gift of death! And then 
 I'll..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Argh......!!"`;
    waitForClick; clearText; 
 });
@@ -2144,7 +1864,6 @@ text(() => {
    marker; appendText; 
    Narr`Again and again.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Stop...it......"`;
    waitForClick; clearText; 
 });
@@ -2207,28 +1926,20 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`........................`;
    waitForClick; clearText; marker; sound(`T5A169`); appendText; 
-   //Tsugumi
    Tsugumi`"I'll kill you..."`;
    waitForClick; clearText; marker; sound(`T5A170`); appendText; 
-   //Tsugumi
    Tsugumi`"I will...I'll kill you..."`;
    waitForClick; clearText; marker; sound(`T5A171`); appendText; 
-   //Tsugumi
    Tsugumi`"...oh, oh..."`;
    waitForClick; clearText; marker; sound(`T5A172`); appendText; 
-   //Tsugumi
    Tsugumi`"No!..."`;
    waitForClick; clearText; marker; sound(`T5A173`); appendText; 
-   //Tsugumi
    Tsugumi`"Don't leave me alone..."`;
    waitForClick; clearText; marker; sound(`T5A174`); appendText; 
-   //Tsugumi
    Tsugumi`"No, please don't leave me alone..."`;
    waitForClick; clearText; marker; sound(`T5A175`); appendText; 
-   //Tsugumi
    Tsugumi`"Please...Takeshi..."`;
    waitForClick; clearText; marker; sound(`T5A176`); appendText; 
-   //Tsugumi
    Tsugumi`"Please."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Darkness surrounded me.`;
@@ -2281,7 +1992,6 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A177`); appendText; 
-   //Sora
    Sora`"Good morning everybody."`;
    waitForClick; clearText; 
 });
@@ -2290,22 +2000,17 @@ multifgload3({ name1: `YU01BDS`, name2: `CO02ADS`, name3: `KA01ADS`, x1: 128, x2
 showTextbox();
 text(() => {
    marker; sound(`T5A178`); appendText; 
-   //You
    You`"Good morning!"`;
    waitForClick; clearText; marker; sound(`T5A179`); appendText; 
-   //Coco
    Coco`"Good...morning, Sora!!"`;
    waitForClick; clearText; marker; sound(`T5A180`); appendText; 
-   //Kid
    Kid`"Morning!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, hi there, Sora."`;
    waitForClick; clearText; marker; appendText; 
    Narr`A little later than usual, Sora presented 
 herself in the Conference Room.`;
    waitForClick; clearText; marker; sound(`T5A181`); appendText; 
-   //You
    You`"So how about it Sora? How did the maintenance 
 go?"`;
    waitForClick; clearText; 
@@ -2315,20 +2020,16 @@ multifgload2({ id1: 1, id2: 2, name1: `YU15BDM`, name2: `SO11ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T5A182`); appendText; 
-   //Sora
    Sora`"Well, yes..."`;
    waitForClick; clearText; marker; sound(`T5A183`); appendText; 
-   //Sora
    Sora`"The system is in sound condition. Although, 
 there would be no way to repair any mechanical 
 damage if it were to occur."`;
    waitForClick; clearText; marker; sound(`T5A184`); appendText; 
-   //Sora
    Sora`"The scheduled maintenance program checked 
 out. I can assure you that the entire 
 compound is functioning normally."`;
    waitForClick; clearText; marker; sound(`T5A185`); appendText; 
-   //You
    You`"Well, that's good to hear."`;
    waitForClick; clearText; 
 });
@@ -2336,12 +2037,10 @@ fgload({ id: 2, name: `SO01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A186`); appendText; 
-   //Sora
    Sora`"After carefully assessing the situation, I 
 have found a slight noise in my thought 
 processor..."`;
    waitForClick; clearText; marker; sound(`T5A187`); appendText; 
-   //Sora
    Sora`"Normal function will not be compromised, so 
 no modifications are necessary."`;
    waitForClick; clearText; 
@@ -2351,7 +2050,6 @@ fgload({ id: 1, name: `CO15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A188`); appendText; 
-   //Coco
    Coco`"Hey, Sora, what does that mean?"`;
    waitForClick; clearText; 
 });
@@ -2359,26 +2057,21 @@ fgload({ id: 2, name: `SO11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A189`); appendText; 
-   //Sora
    Sora`"Well, Coco. It means that..."`;
    waitForClick; clearText; marker; sound(`T5A190`); appendText; 
-   //Sora
    Sora`"You see, sometimes certain customers want to 
 play pranks on me. They tell lies, or try to 
 confuse me."`;
    waitForClick; clearText; marker; sound(`T5A191`); appendText; 
-   //Sora
    Sora`"And because of that, my memories or 
 programmed responses get a little out of 
 alignment. It tends to cause issues in my 
 thought processing."`;
    waitForClick; clearText; marker; sound(`T5A192`); appendText; 
-   //Sora
    Sora`"Sometimes older data gets mixed with newer 
 information, making it difficult to determine 
 which is correct."`;
    waitForClick; clearText; marker; sound(`T5A193`); appendText; 
-   //Sora
    Sora`"When this problem becomes severe, it's 
 necessary to fiddle with the system and 
 overwrite the problematic data."`;
@@ -2388,7 +2081,6 @@ fgload({ id: 2, name: `SO12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A194`); appendText; 
-   //Sora
    Sora`"However, at this time, nothing too drastic 
 has occurred, so please don't worry."`;
    waitForClick; clearText; 
@@ -2397,7 +2089,6 @@ fgload({ id: 1, name: `CO16ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A195`); appendText; 
-   //Coco
    Coco`"Okay."`;
    waitForClick; clearText; 
 });
@@ -2406,38 +2097,30 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A196`); appendText; 
-   //Sora
    Sora`"Other than that...I have yet to complete a 
 full check of the sensor data which was 
 recorded throughout the compound while you 
 all were sleeping."`;
    waitForClick; clearText; marker; sound(`T5A197`); appendText; 
-   //Sora
    Sora`"I doubt any new leakage has occurred...but I 
 will report back to you, once I've checked the 
 sensor data."`;
    waitForClick; clearText; marker; sound(`T5A198`); appendText; 
-   //Kid
    Kid`"Thanks, Sora. We're counting on you."`;
    waitForClick; clearText; marker; sound(`T5A199`); appendText; 
-   //Sora
    Sora`"Yes, leave it to me."`;
    waitForClick; clearText; marker; sound(`T5A200`); appendText; 
-   //Sora
    Sora`"By the way, thanks to the maintenance 
 program, the LeMMIH terminal response has 
 greatly improved."`;
    waitForClick; clearText; marker; sound(`T5A201`); appendText; 
-   //Sora
    Sora`"There was a slight problem concerning LeMMIH 
 traffic, but it has been resolved. Terminal 
 communication functions were optimized to 
 adjust to LeMU's current status."`;
    waitForClick; clearText; marker; sound(`T5A202`); appendText; 
-   //Kid
    Kid`"Hmm..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey Sora, what do you mean by 'traffic'? 
 I'd like to know more about what exactly has 
 was tweaked in the terminals."`;
@@ -2447,7 +2130,6 @@ fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Sora
    Sora`"......"`;
    waitForClick; clearText; 
 });
@@ -2455,7 +2137,6 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T5A203`); appendText; 
-   //Sora
    Sora`"Alright everyone, why don't we go to 
 breakfast?"`;
    waitForClick; clearText; marker; appendText; 

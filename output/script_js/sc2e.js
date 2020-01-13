@@ -87,7 +87,6 @@ text(() => {
    marker; appendText; 
    Narr`Clatter, clatter, clatter...`;
    waitForClick; clearText; marker; sound(`S2C259`); appendText; 
-   //Takeshi
    Takeshi`"Hey! Who kicked that?"`;
    waitForClick; clearText; 
 });
@@ -95,7 +94,6 @@ fgload({ id: 1, name: `YU08ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C337`); appendText; 
-   //You
    You`"I have no idea, but..."`;
    waitForClick; clearText; 
 });
@@ -103,7 +101,6 @@ fgload({ id: 4, name: `SA02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C338`); appendText; 
-   //Sara
    Sara`"Now is our chance!"`;
    waitForClick; clearText; 
 });
@@ -111,7 +108,6 @@ fgload({ id: 2, name: `SO03ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C339`); appendText; 
-   //Sora
    Sora`"Do...do you think we should...?"`;
    waitForClick; clearText; 
 });
@@ -133,10 +129,8 @@ triggerFlash();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"'Me!?'"`;
    waitForClick; clearText; marker; appendText; 
    Narr`A chill shot up my back.`;
@@ -239,10 +233,8 @@ there in the first place?`;
 that felt it made total sense for me to be 
 there.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"*sigh*...This is bad..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I have no idea what the deal is with 
 anything..."`;
    waitForClick; clearText; marker; appendText; 
@@ -259,7 +251,6 @@ text(() => {
    marker; appendText; 
    Narr`...give up.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"First, I'll go look for everyone."`;
    waitForClick; clearText; 
 });
@@ -308,10 +299,8 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; sound(`S2C351`); appendText; 
-   //Takeshi
    Takeshi`"Geez. He slaughtered us."`;
    waitForClick; clearText; marker; sound(`S2C352`); appendText; 
-   //Sora
    Sora`"That was twice as fast as Takeshi."`;
    waitForClick; clearText; 
 });
@@ -319,7 +308,6 @@ fgload({ id: 4, name: `YU02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C354`); appendText; 
-   //You
    You`"Wow. I can't believe you guessed everybody so 
 well in the dark."`;
    waitForClick; clearText; 
@@ -329,7 +317,6 @@ fgload({ id: 2, name: `SA08ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C355`); appendText; 
-   //Sara
    Sara`"Nakkyu...what are you talking about?"`;
    waitForClick; clearText; 
 });
@@ -337,7 +324,6 @@ fgload({ id: 4, name: `YU01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C356`); appendText; 
-   //You
    You`"Oh, Mayo, you don't know? This kid..."`;
    waitForClick; clearText; 
 });
@@ -356,7 +342,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TU05ADS`, name2: `KB14ADS`, x1: 176, x2: 
 showTextbox();
 text(() => {
    marker; sound(`S2C357`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Tsugumi! Give it up. Why don't you just 
 come out and admit you were playing too?"`;
    waitForClick; clearText; 
@@ -365,7 +350,6 @@ fgload({ id: 1, name: `TU18ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S2C345`); appendText; 
-   //Tsugumi
    Tsugumi`"I wasn't playing."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi said it as if her patience was nearly 
@@ -524,10 +508,8 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"I just want to make sure one more time..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, there was really no one was riding 
 in the elevator except for you?"`;
    waitForClick; clearText; 
@@ -536,16 +518,12 @@ multifgload2({ id1: 1, id2: 2, name1: `YU06BDM`, name2: `SA06ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C1S006`); appendText; 
-   //Sara
    Sara`"Uh..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So there was somebody?"`;
    waitForClick; clearText; marker; sound(`C1S007`); appendText; 
-   //Sara
    Sara`"N-no...there wasn't, but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...?"`;
    waitForClick; clearText; 
 });
@@ -553,16 +531,12 @@ fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S008`); appendText; 
-   //Sara
    Sara`"Why...?"`;
    waitForClick; clearText; marker; sound(`C1S009`); appendText; 
-   //Sara
    Sara`"...How...how do you know?"`;
    waitForClick; clearText; marker; sound(`C1S010`); appendText; 
-   //Sara
    Sara`"My..."`;
    waitForClick; clearText; marker; sound(`C1S011`); appendText; 
-   //Sara
    Sara`"My...name..."`;
    waitForClick; clearText; 
 });
@@ -570,7 +544,6 @@ fgload({ id: 1, name: `YU05BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S012`); appendText; 
-   //You
    You`"What? Oh, that's right. We haven't told you 
 Mayo's real name..."`;
    waitForClick; clearText; 
@@ -579,7 +552,6 @@ fgload({ id: 2, name: `SA04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S013`); appendText; 
-   //Sara
    Sara`"Hey! I asked you why!"`;
    waitForClick; clearText; 
 });
@@ -587,10 +559,8 @@ fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S018`); appendText; 
-   //Sara
    Sara`"How do you know me?"`;
    waitForClick; clearText; marker; sound(`C1S019`); appendText; 
-   //Sara
    Sara`"Who..."`;
    waitForClick; clearText; 
 });
@@ -598,7 +568,6 @@ fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S020`); appendText; 
-   //Sara
    Sara`"...Who are you?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She grilled me about how I knew. But I had no 
@@ -670,15 +639,12 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Wait! That's not right! It's definitely 
 weird!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There are only five people that didn't 
 escape in time!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But the bio scan is showing six."`;
    waitForClick; clearText; 
 });
@@ -686,7 +652,6 @@ multifgload2({ id1: 1, id2: 2, name1: `SA06ADM`, name2: `KB06ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C1S119`); appendText; 
-   //Sara
    Sara`"Huh? Why do you say there are five people?"`;
    waitForClick; clearText; 
 });
@@ -694,14 +659,11 @@ fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S120`); appendText; 
-   //Sara
    Sara`"Sora, Tsugumi, Takeshi, the Kid, 
 Nakkyu...and me."`;
    waitForClick; clearText; marker; sound(`C1S121`); appendText; 
-   //Sara
    Sara`"That's six."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No. Sara...that's wrong..."`;
    waitForClick; clearText; 
 });
@@ -709,7 +671,6 @@ fgload({ id: 2, name: `KB07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"The thing is, Sora is..."`;
    waitForClick; clearText; 
 });
@@ -717,10 +678,8 @@ fgload({ id: 2, name: `KB08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Sora is..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"She's not really here."`;
    waitForClick; clearText; 
 });
@@ -728,7 +687,6 @@ fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S122`); appendText; 
-   //Sara
    Sara`"She's not here...?"`;
    waitForClick; clearText; 
 });
@@ -736,10 +694,8 @@ fgload({ id: 2, name: `KB03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S123`); appendText; 
-   //Takeshi
    Takeshi`"What're you talking about, Kid?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sora is...she's an RSD-generated image."`;
    waitForClick; clearText; 
 });
@@ -747,7 +703,6 @@ fgload({ id: 1, name: `SA06ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S124`); appendText; 
-   //Sara
    Sara`"W-what?"`;
    waitForClick; clearText; 
 });
@@ -755,15 +710,12 @@ fgload({ id: 2, name: `KB06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S125`); appendText; 
-   //Takeshi
    Takeshi`"RSD!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's a system that uses semiconductor lasers 
 to project an image directly onto a 
 person's retina."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"In other words, the Sora that we are seeing 
 is just an image."`;
    waitForClick; clearText; marker; appendText; 
@@ -783,16 +735,12 @@ fgload({ id: 1, name: `SO05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C1S126`); appendText; 
-   //Sora
    Sora`"Yes. It is exactly as the Kid states."`;
    waitForClick; clearText; marker; sound(`C1S127`); appendText; 
-   //Sora
    Sora`"I am not flesh and blood."`;
    waitForClick; clearText; marker; sound(`C1S128`); appendText; 
-   //Sora
    Sora`"I have no form...I am merely an image."`;
    waitForClick; clearText; marker; sound(`C1S129`); appendText; 
-   //Sora
    Sora`"My thoughts and personality are all 
 controlled by an AI program."`;
    waitForClick; clearText; marker; appendText; 
@@ -854,28 +802,22 @@ text(() => {
    Narr`In the medical compression chamber I met with 
 a ghost-like young girl.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's..al-alright..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't worry...everything is alright..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Anyway, let's go where everybody else is!"`;
    waitForClick; clearText; marker; sound(`C1S296`); appendText; 
    //Young Girl
    Young_Girl`"Everybody?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, it's not just me."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There are lots of other people..."`;
    waitForClick; clearText; marker; sound(`C1S297`); appendText; 
    //Young Girl
    Young_Girl`"Help?...Did you come to help?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Y-yeah...that's right."`;
    waitForClick; clearText; 
 });
@@ -886,7 +828,6 @@ text(() => {
    //Young Girl
    Young_Girl`"But...it's probably impossible..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`C1S299`); appendText; 
    //Young Girl
@@ -894,7 +835,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`Then I suddenly said.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Let's go!"`;
    waitForClick; clearText; 
 });
@@ -905,13 +845,11 @@ text(() => {
    //Young Girl
    Young_Girl`"...Uh...where?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Anywhere. Let's just get out of here."`;
    waitForClick; clearText; marker; sound(`C1S317`); appendText; 
    //Young Girl
    Young_Girl`"Why...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Coco, because if we stay here, 
 then we'll probably..."`;
    waitForClick; clearText; marker; appendText; 
@@ -982,60 +920,43 @@ text(() => {
    Narr`I met up with Coco again in the dim light in 
 front of the Generator Room... `;
    waitForClick; clearText; marker; sound(`C2S173`); appendText; 
-   //Coco
    Coco`"Moon sprite shouldering a long bow."`;
    waitForSound; clearText; marker; sound(`C2S174`); appendText; 
-   //Coco
    Coco`"Waiting inside a dream."`;
    waitForSound; clearText; marker; sound(`C2S175`); appendText; 
-   //Coco
    Coco`"Tonight a story by moonlight."`;
    waitForSound; clearText; marker; sound(`C2S176`); appendText; 
-   //Coco
    Coco`"Hoping the wait will be short."`;
    waitForSound; clearText; marker; sound(`C2S177`); appendText; 
-   //Coco
    Coco`"Sleeping curled and snug."`;
    waitForSound; clearText; marker; sound(`C2S178`); appendText; 
-   //Coco
    Coco`"Sleeping in mother's arms."`;
    waitForSound; clearText; marker; appendText; 
    Narr`I didn't know why she was singing a lullaby. `;
    waitForClick; clearText; marker; appendText; 
    Narr`Before I could ask her, she started talking.`;
    waitForClick; clearText; marker; sound(`C2S179`); appendText; 
-   //Coco
    Coco`"I was waiting for you."`;
    waitForClick; clearText; marker; sound(`C2S180`); appendText; 
-   //Coco
    Coco`"I waited and waited...for you to come..."`;
    waitForClick; clearText; marker; sound(`C2S181`); appendText; 
-   //Coco
    Coco`"I was waiting...all alone like a moon 
 sprite..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"T-then you should have come to me..."`;
    waitForClick; clearText; marker; sound(`C2S182`); appendText; 
-   //Coco
    Coco`"I couldn't..."`;
    waitForClick; clearText; marker; sound(`C2S183`); appendText; 
-   //Coco
    Coco`"That's...impossible..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why...?"`;
    waitForClick; clearText; marker; sound(`C2S184`); appendText; 
-   //Coco
    Coco`"Because you wouldn't take me with you..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...What?"`;
    waitForClick; clearText; marker; sound(`C2S185`); appendText; 
-   //Coco
    Coco`"Will you take me to where everybody is?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Of course I will! Let's go together right 
 now!"`;
    waitForClick; clearText; marker; appendText; 
@@ -1058,7 +979,6 @@ text(() => {
    Narr`Droplets of water scattered everywhere like 
 mist...`;
    waitForClick; clearText; marker; sound(`C2S186`); appendText; 
-   //Coco
    Coco`"Farewell."`;
    waitForClick; clearText; 
 });
@@ -1131,11 +1051,9 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"But it's only been two days and so much has 
 happened..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Just being trapped here is an unusual state 
 of affairs..."`;
    waitForClick; clearText; marker; appendText; 

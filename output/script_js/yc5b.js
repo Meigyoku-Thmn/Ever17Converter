@@ -56,13 +56,10 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`C5A317`); appendText; 
-   //Tsugumi
    Tsugumi`"What is it?"`;
    waitForClick; clearText; marker; sound(`C5A318`); appendText; 
-   //Sora
    Sora`"Are you all right, Kid?"`;
    waitForClick; clearText; marker; sound(`C5A319`); appendText; 
-   //Sora
    Sora`"You don't look so good...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I shook my head and shivered as I stepped 
@@ -70,13 +67,10 @@ slowly backwards.`;
    waitForClick; clearText; marker; appendText; 
    Narr`My back bumped against the wall.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It can't be...."`;
    waitForClick; clearText; marker; sound(`C5A320`); appendText; 
-   //Tsugumi
    Tsugumi`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No! No! No!"`;
    waitForClick; clearText; 
 });
@@ -198,7 +192,6 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I suddenly felt as if I had been hit by 
@@ -246,7 +239,6 @@ stumbled into the room.`;
    waitForClick; clearText; marker; appendText; 
    Narr`As I suspected, I found You there.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Breathing heavily, I approached You.`;
@@ -256,16 +248,12 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A321`); appendText; 
-   //You
    You`"Wh-what is it? All of a sudden!?"`;
    waitForClick; clearText; marker; sound(`C5A322`); appendText; 
-   //You
    You`"What is it? ...What's wrong?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"This year...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What...year is it?"`;
    waitForClick; clearText; 
 });
@@ -273,15 +261,12 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A323`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Just answer me!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You blinked slowly, her mouth half-open.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I glared at You, and pressed her for an answer.`;
@@ -294,13 +279,10 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A324`); appendText; 
-   //You
    You`"On the standard calendar...."`;
    waitForClick; clearText; marker; sound(`C5A325`); appendText; 
-   //You
    You`"20...."`;
    waitForClick; clearText; marker; sound(`C5A326`); appendText; 
-   //You
    You`"...34. Why?"`;
    waitForClick; clearText; 
 });
@@ -334,10 +316,8 @@ clock(`12:36`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"It's 2017...."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So 2013 was four years ago?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I said to You.`;
@@ -365,13 +345,10 @@ nothing, asking nothing.`;
    waitForClick; clearText; marker; appendText; 
    Narr`After a short while....`;
    waitForClick; clearText; marker; sound(`C5A327`); appendText; 
-   //You
    You`"That's right."`;
    waitForClick; clearText; marker; sound(`C5A328`); appendText; 
-   //You
    You`"It was four years ago...."`;
    waitForClick; clearText; marker; sound(`C5A329`); appendText; 
-   //You
    You`"When I was 14."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You began quietly to tell her story....`;
@@ -394,14 +371,11 @@ fallen ill.`;
    Narr`She was examined at the hospital and the 
 doctor told her...`;
    waitForClick; clearText; marker; appendText; 
-   //Doctor
    Doctor`"This is very hard for me to tell you, so I 
 want you to please listen calmly."`;
    waitForClick; clearText; marker; appendText; 
-   //Doctor
    Doctor`"You have a very serious heart condition."`;
    waitForClick; clearText; marker; appendText; 
-   //Doctor
    Doctor`"It's unclear whether you'll even make it to 
 the end of high school."`;
    waitForClick; clearText; marker; appendText; 
@@ -416,13 +390,10 @@ and they couldn't guarantee her a cure.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She had received a death sentence.`;
    waitForClick; clearText; marker; appendText; 
-   //Doctor
    Doctor`"But medical treatment is advancing daily."`;
    waitForClick; clearText; marker; appendText; 
-   //Doctor
    Doctor`"In a few years, we may still find a cure."`;
    waitForClick; clearText; marker; appendText; 
-   //Doctor
    Doctor`"So don't give up. You have to fight this 
 illness."`;
    waitForClick; clearText; marker; appendText; 
@@ -961,10 +932,8 @@ bgload({ name: `EV_YU16A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"So the baby was...."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"WAS your child?"`;
    waitForClick; clearText; 
 });
@@ -973,40 +942,29 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Which means you were lying to me...."`;
    waitForClick; clearText; marker; sound(`C5A333`); appendText; 
-   //You
    You`"It wasn't...a lie...."`;
    waitForClick; clearText; marker; sound(`C5A334`); appendText; 
-   //You
    You`"She is my daughter...."`;
    waitForClick; clearText; marker; sound(`C5A335`); appendText; 
-   //You
    You`"But she's also my twin sister...."`;
    waitForClick; clearText; marker; sound(`C5A336`); appendText; 
-   //You
    You`"And...."`;
    waitForClick; clearText; marker; sound(`C5A337`); appendText; 
-   //You
    You`"She's another me...."`;
    waitForClick; clearText; marker; sound(`C5A338`); appendText; 
-   //You
    You`"She is...myself...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't know what to say.`;
    waitForClick; clearText; marker; sound(`C5A339`); appendText; 
-   //You
    You`"This was my sin...."`;
    waitForClick; clearText; marker; sound(`C5A340`); appendText; 
-   //You
    You`"I know I'll never be forgiven, and will 
 never be able to atone for it...."`;
    waitForClick; clearText; marker; sound(`C5A341`); appendText; 
-   //You
    You`"But...."`;
    waitForClick; clearText; 
 });
@@ -1014,78 +972,56 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A342`); appendText; 
-   //You
    You`"Like I told you, I have no regrets."`;
    waitForClick; clearText; marker; sound(`C5A343`); appendText; 
-   //You
    You`"I'm glad I had her...."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`C5A344`); appendText; 
-   //You
    You`"I'll never forget the moment that new life 
 was created."`;
    waitForClick; clearText; marker; sound(`C5A345`); appendText; 
-   //You
    You`"It was...such an unbelievably happy 
 moment...."`;
    waitForClick; clearText; marker; sound(`C5A346`); appendText; 
-   //You
    You`"The first time she said, 'Mama... Mama....'"`;
    waitForClick; clearText; marker; sound(`C5A347`); appendText; 
-   //You
    You`"I...I can't explain it...."`;
    waitForClick; clearText; marker; sound(`C5A348`); appendText; 
-   //You
    You`"It was more than a precious feeling, or 
 love, or that good fortune had come my 
 way...I felt as if I were wrapped in light...."`;
    waitForClick; clearText; marker; sound(`C5A349`); appendText; 
-   //You
    You`"I don't care if I burn in hell."`;
    waitForClick; clearText; marker; sound(`C5A350`); appendText; 
-   //You
    You`"I don't care if I burn in the fires of hell 
 for thousands, millions of years...."`;
    waitForClick; clearText; marker; sound(`C5A351`); appendText; 
-   //You
    You`"But...I knew I wanted to protect...my 
 daughter....no matter what."`;
    waitForClick; clearText; marker; sound(`C5A352`); appendText; 
-   //You
    You`"I didn't want her to suffer...."`;
    waitForClick; clearText; marker; sound(`C5A353`); appendText; 
-   //You
    You`"Her smile is so beautiful...."`;
    waitForClick; clearText; marker; sound(`C5A354`); appendText; 
-   //You
    You`"Her tiny hands are so cute...."`;
    waitForClick; clearText; marker; sound(`C5A355`); appendText; 
-   //You
    You`"She is everything to me...."`;
    waitForClick; clearText; marker; sound(`C5A356`); appendText; 
-   //You
    You`"She is irreplaceable...."`;
    waitForClick; clearText; marker; sound(`C5A357`); appendText; 
-   //You
    You`"Besides, none of this is her fault."`;
    waitForClick; clearText; marker; sound(`C5A358`); appendText; 
-   //You
    You`"She was welcomed to this world...just like 
 any other soul born who comes here."`;
    waitForClick; clearText; marker; sound(`C5A359`); appendText; 
-   //You
    You`"But at the same time...the moment I gave 
 birth to her...I died."`;
    waitForClick; clearText; marker; sound(`C5A360`); appendText; 
-   //You
    You`"It was as if I no longer existed...."`;
    waitForClick; clearText; marker; sound(`C5A361`); appendText; 
-   //You
    You`"You see...."`;
    waitForClick; clearText; marker; sound(`C5A362`); appendText; 
-   //You
    You`"I gave all my life, my existence, to my 
 child...."`;
    waitForClick; clearText; 
@@ -1131,7 +1067,6 @@ clock(`9:29`);
 showTextbox();
 text(() => {
    marker; sound(`C5A363`); appendText; 
-   //You
    You`"Hey! Hello—, are you listening to me?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You grabbed my shoulders and shook me.`;
@@ -1141,10 +1076,8 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A364`); appendText; 
-   //You
    You`"What's the matter with you? Kid?"`;
    waitForClick; clearText; marker; sound(`C5A365`); appendText; 
-   //You
    You`"You can't possibly have forgotten what year 
 it is?"`;
    waitForClick; clearText; marker; appendText; 
@@ -1178,16 +1111,12 @@ Yubiseiharukana's time in 2017....`;
    waitForClick; clearText; marker; appendText; 
    Narr`My voice came out strangled.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's 2034 now...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yukie died 15 years ago...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Which would have been in 2019...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But the date on that says on...'02/07/19'...."`;
    waitForClick; clearText; 
 });
@@ -1195,41 +1124,31 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A366`); appendText; 
-   //You
    You`"Oh, that?"`;
    waitForClick; clearText; marker; sound(`C5A367`); appendText; 
-   //You
    You`"You were worried about that?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You laughed.`;
    waitForClick; clearText; marker; sound(`C5A368`); appendText; 
-   //You
    You`"Well, I can understand why you might make 
 that mistake...."`;
    waitForClick; clearText; marker; sound(`C5A369`); appendText; 
-   //You
    You`"Do you see?"`;
    waitForClick; clearText; marker; sound(`C5A370`); appendText; 
-   //You
    You`"The date on that mail was written in the 
 German style."`;
    waitForClick; clearText; marker; sound(`C5A371`); appendText; 
-   //You
    You`"Not the Japanese order of year/month/day, but 
 month/day/year."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So are you telling me that...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That wasn't the July 19, 2002...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It was February, 7 2019...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You nodded.`;
    waitForClick; clearText; marker; sound(`C5A372`); appendText; 
-   //You
    You`"Any other questions?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I shook my head weakly, and trudged out of the 
@@ -1270,13 +1189,10 @@ clock(`9:41`);
 showTextbox();
 text(() => {
    marker; sound(`C5A373`); appendText; 
-   //Sara
    Sara`"What is it?"`;
    waitForClick; clearText; marker; sound(`C5A374`); appendText; 
-   //Sara
    Sara`"What did you bring me here for?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I wanted to...talk to you guys alone...."`;
    waitForClick; clearText; 
 });
@@ -1284,10 +1200,8 @@ fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A375`); appendText; 
-   //Sara
    Sara`"About what?"`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi was silent. She seemed to be afraid 
@@ -1298,27 +1212,20 @@ going to say.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her eyes gazed around, wildly.`;
    waitForClick; clearText; marker; sound(`C5A376`); appendText; 
-   //Sara
    Sara`"Is it important?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yes, very."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's something I don't want the others to 
 hear...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Wait, I don't mind if they hear it, but I 
 wanted you and Tsugumi to know first."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So that's why I asked you to come over here."`;
    waitForClick; clearText; marker; sound(`C5A377`); appendText; 
-   //Sara
    Sara`"Hmmmm."`;
    waitForClick; clearText; marker; sound(`C5A378`); appendText; 
-   //Sara
    Sara`"So, what's so important?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hadn't Sara noticed anything?`;
@@ -1341,7 +1248,6 @@ couldn't be true.`;
    Narr`The coincidence of meeting her mother again 
 was probably too much for Sara to believe.`;
    waitForClick; clearText; marker; sound(`C5A379`); appendText; 
-   //Sara
    Sara`"Well, are you going to say anything? Could 
 you hurry up...?"`;
    waitForClick; clearText; marker; appendText; 
@@ -1350,11 +1256,9 @@ you hurry up...?"`;
    Narr`Tsugumi said nothing, but her breathing 
 seemed a little rough.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara? Could you lend me your pendant and 
 lighter for a moment?"`;
    waitForClick; clearText; marker; sound(`C5A380`); appendText; 
-   //Sara
    Sara`"Alright."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She took them out of her pocket and gave them 
@@ -1408,22 +1312,17 @@ lip.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her clenched fists were shaking.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look closer...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I whispered to her.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You've seen this pendant before...haven't 
 you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's Takeshi."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The real Takeshi Kuranari is right here!"`;
    waitForClick; clearText; 
 });
@@ -1443,23 +1342,17 @@ fgload({ id: 1, name: `SA06ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A381`); appendText; 
-   //Sara
    Sara`"W-wait just a minute! What are you talking 
 about?"`;
    waitForClick; clearText; marker; sound(`C5A382`); appendText; 
-   //Sara
    Sara`"Takeshi...you mean Takeshi!?"`;
    waitForClick; clearText; marker; sound(`C5A383`); appendText; 
-   //Sara
    Sara`"Takeshi's...the one in this pendant!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Umm, no..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The Takeshi we know isn't really 'Takeshi.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I think he's lying to us."`;
    waitForClick; clearText; 
 });
@@ -1467,19 +1360,14 @@ fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A384`); appendText; 
-   //Sara
    Sara`".........?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The real Takeshi...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The real Takeshi Kuranari...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is your and my...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Father...."`;
    waitForClick; clearText; 
 });
@@ -1498,16 +1386,12 @@ fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A385`); appendText; 
-   //Sara
    Sara`"Hey, what's this all about?"`;
    waitForClick; clearText; marker; sound(`C5A386`); appendText; 
-   //Sara
    Sara`"Explain what's happening...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"All right."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But before I do, I want to check 
 something...."`;
    waitForClick; clearText; 
@@ -1550,22 +1434,17 @@ playBGM({ num: 21, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Mother...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`When I called out to her, warm tears ran down 
 my cheeks.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You are our mother...aren't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara's and my mother...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Mother...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You are, aren't you...?"`;
    waitForClick; clearText; 
 });
@@ -1573,7 +1452,6 @@ fgload({ id: 1, name: `SA06ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A387`); appendText; 
-   //Sara
    Sara`"...What!?"`;
    waitForClick; clearText; 
 });
@@ -1597,25 +1475,18 @@ fgload({ id: 1, name: `SA17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Mother, please say something...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't blame you...for anything...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I've waited for you...for so long...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I've been waiting for you...."`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Say something!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I screamed at her.`;
@@ -1627,7 +1498,6 @@ chest.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her thin body was shaking.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't just stand there, say something!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Holding Sara tightly, I stepped forward.`;
@@ -1637,23 +1507,17 @@ fgload({ id: 2, name: `TU14ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A388`); appendText; 
-   //Tsugumi
    Tsugumi`"No...."`;
    waitForClick; clearText; marker; sound(`C5A389`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm not...your mother...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't you lie to me!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I know everything!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Seventeen years ago, there was another 
 accident just like this one, here at LeMU."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You and Takeshi became a couple...."`;
    waitForClick; clearText; 
 });
@@ -1673,66 +1537,47 @@ control of her emotions.`;
    Narr`Tears welled in her eyes and rolled down her 
 cheeks.`;
    waitForClick; clearText; marker; sound(`C5A390`); appendText; 
-   //Tsugumi
    Tsugumi`"Yes...that's right...."`;
    waitForClick; clearText; marker; sound(`C5A391`); appendText; 
-   //Tsugumi
    Tsugumi`"You're right...."`;
    waitForClick; clearText; marker; sound(`C5A392`); appendText; 
-   //Tsugumi
    Tsugumi`"I gave birth to you...."`;
    waitForClick; clearText; marker; sound(`C5A393`); appendText; 
-   //Tsugumi
    Tsugumi`"But..."`;
    waitForClick; clearText; marker; sound(`C5A394`); appendText; 
-   //Tsugumi
    Tsugumi`"I have no right...to be called 'Mother'...."`;
    waitForClick; clearText; marker; sound(`C5A395`); appendText; 
-   //Tsugumi
    Tsugumi`"You have...a real mother...don't you?"`;
    waitForClick; clearText; marker; sound(`C5A396`); appendText; 
-   //Tsugumi
    Tsugumi`"Someone who took care of you...?"`;
    waitForClick; clearText; marker; sound(`C5A397`); appendText; 
-   //Tsugumi
    Tsugumi`"I...I...wasn't able to protect you both...."`;
    waitForClick; clearText; marker; sound(`C5A398`); appendText; 
-   //Tsugumi
    Tsugumi`"I couldn't take care of you...."`;
    waitForClick; clearText; marker; sound(`C5A399`); appendText; 
-   //Tsugumi
    Tsugumi`"I pretty much abandoned you...."`;
    waitForClick; clearText; marker; sound(`C5A400`); appendText; 
-   //Tsugumi
    Tsugumi`"I left you...and walked away."`;
    waitForClick; clearText; marker; sound(`C5A401`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm terrible...And I don't expect you to be 
 able to forgive me...."`;
    waitForClick; clearText; marker; sound(`C5A402`); appendText; 
-   //Tsugumi
    Tsugumi`"That's why I... "`;
    waitForClick; clearText; marker; sound(`C5A403`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm not your mother...."`;
    waitForClick; clearText; marker; sound(`C5A404`); appendText; 
-   //Tsugumi
    Tsugumi`"Please...don't call me 'mother'."`;
    waitForClick; clearText; marker; sound(`C5A405`); appendText; 
-   //Tsugumi
    Tsugumi`"Please don't...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi put her head in her hands, and sobbed.`;
    waitForClick; clearText; marker; appendText; 
    Narr`At that moment...`;
    waitForClick; clearText; marker; sound(`C5A406`); appendText; 
-   //Sara
    Sara`"Mama...."`;
    waitForClick; clearText; marker; sound(`C5A407`); appendText; 
-   //Sara
    Sara`"...Mama...."`;
    waitForClick; clearText; marker; sound(`C5A408`); appendText; 
-   //Sara
    Sara`"MAMA!"`;
    waitForClick; clearText; 
 });
@@ -1787,10 +1632,8 @@ nostalgia.`;
 sweetness that had been wired directly into my 
 brain.`;
    waitForClick; clearText; marker; sound(`C5A409`); appendText; 
-   //Sara
    Sara`"Mama...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Mother...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`As if in response, Tsugumi pulled us closer, 
@@ -1800,42 +1643,30 @@ gripping us with a fierce determination.`;
 drew us close, and stroked the back of our 
 heads.`;
    waitForClick; clearText; marker; sound(`C5A410`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm sorry...."`;
    waitForClick; clearText; marker; sound(`C5A411`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm so, so sorry...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi's voice was choked up.`;
    waitForClick; clearText; marker; sound(`C5A412`); appendText; 
-   //Tsugumi
    Tsugumi`"I can't ask you...to forgive me...."`;
    waitForClick; clearText; marker; sound(`C5A413`); appendText; 
-   //Tsugumi
    Tsugumi`"I...I...."`;
    waitForClick; clearText; marker; sound(`C5A414`); appendText; 
-   //Tsugumi
    Tsugumi`"I never...once forgot about you...."`;
    waitForClick; clearText; marker; sound(`C5A415`); appendText; 
-   //Tsugumi
    Tsugumi`"All...this...time...."`;
    waitForClick; clearText; marker; sound(`C5A416`); appendText; 
-   //Tsugumi
    Tsugumi`"I have wanted to see you...."`;
    waitForClick; clearText; marker; sound(`C5A417`); appendText; 
-   //Tsugumi
    Tsugumi`"Find you...and apologize...."`;
    waitForClick; clearText; marker; sound(`C5A418`); appendText; 
-   //Sara
    Sara`"It's alright...."`;
    waitForClick; clearText; marker; sound(`C5A419`); appendText; 
-   //Sara
    Sara`"Mama...."`;
    waitForClick; clearText; marker; sound(`C5A420`); appendText; 
-   //Sara
    Sara`"You don't need to apologize...."`;
    waitForClick; clearText; marker; sound(`C5A421`); appendText; 
-   //Sara
    Sara`"I...it's enough just to...be with you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`As we held onto each other, we understood 
@@ -1859,10 +1690,8 @@ forgave.`;
    Narr`I closed my eyes, and was intoxicated by her 
 warmth.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Mother...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...Mother...."`;
    waitForClick; clearText; 
 });
@@ -3502,14 +3331,11 @@ LeMU.`;
    Narr`'If you come to LeMU, you can see your mother 
 and sister.'`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, so that was it...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Before the accident took place, I had been 
 waiting for someone at the rest area."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It must have been my mother and Sara...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi must have been roped in to coming to 
@@ -3542,10 +3368,8 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"You...you..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You aren't Takeshi Kuranari!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Barging into the rest area I demanded an 
@@ -3560,14 +3384,11 @@ fgload({ id: 1, name: `KB11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A422`); appendText; 
-   //Takeshi
    Takeshi`"Look I don't have any clue what you're 
 talking about...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't play dumb!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I know that the real Takeshi is Sara's and my 
 father!"`;
    waitForClick; clearText; 
@@ -3576,13 +3397,10 @@ fgload({ id: 1, name: `KB06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A423`); appendText; 
-   //Takeshi
    Takeshi`"Father? Me? You and Sara's?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No, not you!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara and I are the children of Takeshi and 
 Tsugumi."`;
    waitForClick; clearText; 
@@ -3591,21 +3409,16 @@ fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A424`); appendText; 
-   //Takeshi
    Takeshi`"Wait, so Tsugumi and I...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I keep telling you, you're not Takeshi!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'm talking about Takeshi from the other 
 world!"`;
    waitForClick; clearText; marker; sound(`C5A425`); appendText; 
-   //Takeshi
    Takeshi`"Other world? What the heck's that supposed 
 to mean?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"The world back in 2017!"`;
    waitForClick; clearText; 
 });
@@ -3613,49 +3426,35 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A426`); appendText; 
-   //Takeshi
    Takeshi`"Um...2017, huh...?"`;
    waitForClick; clearText; marker; sound(`C5A427`); appendText; 
-   //Takeshi
    Takeshi`"And when were you born?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"On January 21, 16 years ago."`;
    waitForClick; clearText; marker; sound(`C5A428`); appendText; 
-   //Takeshi
    Takeshi`"In what year?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"In 2018!"`;
    waitForClick; clearText; marker; sound(`C5A429`); appendText; 
-   //Takeshi
    Takeshi`"I see."`;
    waitForClick; clearText; marker; sound(`C5A430`); appendText; 
-   //Takeshi
    Takeshi`"So, how could you possibly know what 
 happened in 2017?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I dunno, I just do! What do you expect me to 
 do about it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Besides, we're not talking about me now."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who...who are you anyway!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And why did you lie about the year 2017!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why are you pretending to be 'Takeshi 
 Kuranari!?'"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What was the reason you tried to trick us by 
 repeating the same incident as 17 years ago 
 and by using the same words!?"`;
@@ -3665,7 +3464,6 @@ fgload({ id: 1, name: `KB11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A431`); appendText; 
-   //Takeshi
    Takeshi`"To trick you...to trick you, huh...?"`;
    waitForClick; clearText; 
 });
@@ -3673,26 +3471,20 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A432`); appendText; 
-   //Takeshi
    Takeshi`"Think twice, will you, Kid?"`;
    waitForClick; clearText; marker; sound(`C5A433`); appendText; 
-   //Takeshi
    Takeshi`"For instance, if I was repeating the 
 incident in 2017,"`;
    waitForClick; clearText; marker; sound(`C5A434`); appendText; 
-   //Takeshi
    Takeshi`"How could I possibly trick you who were born 
 in 2018?"`;
    waitForClick; clearText; marker; sound(`C5A435`); appendText; 
-   //Takeshi
    Takeshi`"Practically speaking, it is impossible to 
 trick you into believing ''the same incident 
 from 17 years ago is taking place.'"`;
    waitForClick; clearText; marker; sound(`C5A436`); appendText; 
-   //Takeshi
    Takeshi`"Do you get it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -3700,15 +3492,12 @@ fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A437`); appendText; 
-   //Takeshi
    Takeshi`"Besides, how could you tell it was the same 
 incident?"`;
    waitForClick; clearText; marker; sound(`C5A438`); appendText; 
-   //Takeshi
    Takeshi`"How could you tell that I'm using the same 
 phrase?"`;
    waitForClick; clearText; marker; sound(`C5A439`); appendText; 
-   //Takeshi
    Takeshi`"How could you know the history before you 
 were even born!?"`;
    waitForClick; clearText; 
@@ -3717,10 +3506,8 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A440`); appendText; 
-   //Takeshi
    Takeshi`"Why don't you appear your true self?"`;
    waitForClick; clearText; marker; sound(`C5A441`); appendText; 
-   //Takeshi
    Takeshi`"Who are you anyway!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Somehow, I couldn't say a word.`;
@@ -3734,11 +3521,9 @@ fgload({ id: 1, name: `KB11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A442`); appendText; 
-   //Takeshi
    Takeshi`"Oh, I see, when it comes to your story, you 
 clam up, huh...?"`;
    waitForClick; clearText; marker; sound(`C5A443`); appendText; 
-   //Takeshi
    Takeshi`"Alright then."`;
    waitForClick; clearText; 
 });
@@ -3746,19 +3531,14 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A444`); appendText; 
-   //Takeshi
    Takeshi`"I'll tell you my real name."`;
    waitForClick; clearText; marker; sound(`C5A445`); appendText; 
-   //Takeshi
    Takeshi`"Yes, as you said, I am not Takeshi Kuranari."`;
    waitForClick; clearText; marker; sound(`C5A446`); appendText; 
-   //Takeshi
    Takeshi`"My real name is...."`;
    waitForClick; clearText; marker; sound(`C5A447`); appendText; 
-   //Kaburaki
    Kaburaki`"Kaburaki."`;
    waitForClick; clearText; marker; sound(`C5A448`); appendText; 
-   //Kaburaki
    Kaburaki`"Ryogo Kaburaki."`;
    waitForClick; clearText; 
 });
@@ -3791,10 +3571,8 @@ clock(`15:19`);
 showTextbox();
 text(() => {
    marker; sound(`C5A449`); appendText; 
-   //Kaburaki
    Kaburaki`"Ryogo Kaburaki."`;
    waitForClick; clearText; marker; sound(`C5A450`); appendText; 
-   //Kaburaki
    Kaburaki`"I just remembered my name...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The Kid repeated it slowly.`;
@@ -3804,20 +3582,16 @@ fgload({ id: 1, name: `KA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C5A451`); appendText; 
-   //Kaburaki
    Kaburaki`"Ryogo..., Ka...bu...ra...ki...."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Ryogo Kaburaki...."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So I see...."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Way to go."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I smiled and patted his head.`;
@@ -3956,14 +3730,12 @@ text(() => {
    Narr`Six human-like figures and two unfamiliar 
 animal shapes were drawn there.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...What?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked at the statue.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The statue pointed south.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`".........?"`;
    waitForClick; clearText; 
 });
@@ -4000,10 +3772,8 @@ text(() => {
    Narr`There was no writing on the statue pointing 
 east.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, just what is this supposed to mean!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What is up with this world anyway!?"`;
    waitForClick; clearText; 
 });
@@ -4082,10 +3852,8 @@ were mother and daughter.`;
    Narr`I tried gathering them and struggled to come 
 up with some kind of conclusion.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's 2034 now...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And Coco was in 2017...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I whispered to confirm the facts.`;
@@ -4129,7 +3897,6 @@ been infected with the Tief Blau Virus, had
 been rescued by the mini-sub, which came to 
 the pool in IBF.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, wait...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`How did the three of them recover from the 
@@ -4144,7 +3911,6 @@ from Tsugumi's blood...?`;
 oxygen treatment in the capsule pod at the 
 time....`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`(No, no, even before that)`;
@@ -4155,7 +3921,6 @@ heart disease,' right?)`;
    Narr`(But Yubiseiharukana is still alive and well 
 now)`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What is going on here...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`(Well I guess there's just one answer....)`;
@@ -4175,10 +3940,8 @@ than their real age.`;
    Narr`And Yubiseiharukana's heart disease would 
 have been fixed by the Cure Virus. `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But still...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is that really what happened...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`In a different history flow, Kaburaki 
@@ -4208,13 +3971,10 @@ complete Cure, then?`;
    Narr`But...it didn't seem to me that there could 
 be any such thing as an 'incomplete Cure'..... `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Um...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's no use...."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I can't figure it out...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`But I still had far serious matter to deal 
@@ -4249,7 +4009,6 @@ was to know about this incident.`;
    Narr`But how could I find Coco who seemed to just 
 pop up randomly.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, I know...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had a sudden inspiration....`;

@@ -67,7 +67,6 @@ openShakeScreenAnim();
 showTextbox();
 text(() => {
    marker; sound(`TBD000A`); appendText; 
-   //Announcement
    Announcement`"Three minutes `;
    waitForSound; sound(`TBD000B`); appendText; 
    Narr`before implosion."`;
@@ -94,19 +93,15 @@ shook.`;
 showTextbox();
 text(() => {
    marker; sound(`TBD001`); appendText; 
-   //Tsugumi
    Tsugumi`"Looks like...it's started."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi looked at the ceiling, and murmured 
 this.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Started...?"`;
    waitForClick; clearText; marker; sound(`TBD002`); appendText; 
-   //Tsugumi
    Tsugumi`"Or I guess you could say, it's finished."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Finished..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked up at the ceiling.`;
@@ -125,19 +120,15 @@ somewhere far away in the water.`;
 showTextbox();
 text(() => {
    marker; sound(`TBD003`); appendText; 
-   //Tsugumi
    Tsugumi`"In the end..."`;
    waitForClick; clearText; marker; sound(`TBD004`); appendText; 
-   //Tsugumi
    Tsugumi`"It looks like this is my place."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi let these words fall from her lips 
 without any expression.`;
    waitForClick; clearText; marker; sound(`TBD005`); appendText; 
-   //You
    You`"Tsugumi...what are you talking about?"`;
    waitForClick; clearText; marker; sound(`TBD006`); appendText; 
-   //You
    You`"Place? What place?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`From her spot on the floor, You raised her 
@@ -147,14 +138,11 @@ head feebly.`;
 showTextbox();
 text(() => {
    marker; sound(`TBD007`); appendText; 
-   //Tsugumi
    Tsugumi`"I've been searching for so long. Now I've 
 finally found it."`;
    waitForClick; clearText; marker; sound(`TBD008`); appendText; 
-   //Tsugumi
    Tsugumi`"This is my..."`;
    waitForClick; clearText; marker; sound(`TBD009`); appendText; 
-   //Tsugumi
    Tsugumi`"Place to die."`;
    waitForClick; clearText; 
 });
@@ -166,26 +154,20 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`She dragged...her right leg....`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Tsugumi, what happened to your...leg?"`;
    waitForClick; clearText; marker; sound(`TBD010`); appendText; 
-   //Tsugumi
    Tsugumi`"Oh, this?"`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi looked at her leg as if it was the 
 first time that she had noticed.`;
    waitForClick; clearText; marker; sound(`TBD011`); appendText; 
-   //Tsugumi
    Tsugumi`"It really wasn't anything."`;
    waitForClick; clearText; marker; sound(`TBD012`); appendText; 
-   //Tsugumi
    Tsugumi`"I kept telling myself I couldn't die no 
 matter what..."`;
    waitForClick; clearText; marker; sound(`TBD013`); appendText; 
-   //Tsugumi
    Tsugumi`"But it looks like I was wrong again..."`;
    waitForClick; clearText; 
 });
@@ -202,7 +184,6 @@ openShakeScreenAnim();
 showTextbox();
 text(() => {
    marker; sound(`TBD014A`); appendText; 
-   //Announcement
    Announcement`"Two minutes `;
    waitForSound; sound(`TBD014B`); appendText; 
    Narr`before implosion". `;
@@ -216,10 +197,8 @@ text(() => {
    Narr`Dragging her leg, Tsugumi hobbled toward the 
 door.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Tsugumi..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"W-wait!"`;
    waitForClick; clearText; 
 });
@@ -248,13 +227,10 @@ stand...I fell to the floor again.`;
    Narr`Sprawled out on the floor, my whole body was 
 numb and I couldn't move.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"W-what's happening...to me."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"......"`;
    waitForClick; clearText; 
 });
@@ -262,7 +238,6 @@ fgload({ id: 1, name: `TU09ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Tsugumi
    Tsugumi`"......"`;
    waitForClick; clearText; 
 });
@@ -270,7 +245,6 @@ playSFX({ name: `SE02_01`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`*cough*`;
    waitForClick; clearText; marker; appendText; 
    Narr`I started coughing, suddenly, and put my hand 
@@ -280,7 +254,6 @@ to my mouth.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I noticed my palm was sticky with blood.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Tsugumi...where are...you going?"`;
    waitForClick; clearText; 
 });
@@ -291,7 +264,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The distance separating us became distorted.`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"......"`;
    waitForClick; clearText; 
 });
@@ -299,7 +271,6 @@ fgload({ id: 1, name: `TU05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`TBD015`); appendText; 
-   //Tsugumi
    Tsugumi`"Who knows...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi tilted her head.`;
@@ -309,7 +280,6 @@ fgload({ id: 1, name: `TU17ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`TBD016`); appendText; 
-   //Tsugumi
    Tsugumi`"Pretending to be friends wasn't so bad, 
 but..."`;
    waitForClick; clearText; marker; appendText; 
@@ -321,7 +291,6 @@ fgload({ id: 1, name: `TU10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`TBD017`); appendText; 
-   //Tsugumi
    Tsugumi`"This is probably the last time we'll see each 
 other."`;
    waitForClick; clearText; marker; appendText; 
@@ -332,7 +301,6 @@ fgload({ id: 1, name: `TU02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`TBD018`); appendText; 
-   //Tsugumi
    Tsugumi`"Good-bye..."`;
    waitForClick; clearText; 
 });
@@ -388,10 +356,8 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Tsu...Tsugumi...!!"`;
    waitForClick; clearText; marker; sound(`TBD019`); appendText; 
-   //You
    You`"Tsugumi...!!"`;
    waitForClick; clearText; 
 });
@@ -407,7 +373,6 @@ varop(`(28 0a a2) 40 := (00) 1`);
 showTextbox();
 text(() => {
    marker; sound(`TBD020A`); appendText; 
-   //Announcement
    Announcement`"One minute `;
    waitForSound; sound(`TBD020B`); appendText; 
    Narr`before implosion."`;
@@ -436,10 +401,8 @@ playSFX({ name: `SE09_00L`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; sound(`TBD021`); appendText; 
-   //You
    You`"Kid..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Kid...no..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The alarm wouldn't stop,`;
@@ -449,13 +412,10 @@ text(() => {
    Narr`The lines weren't moving. No heartbeat. No 
 breathing. Nothing.`;
    waitForClick; clearText; marker; sound(`TBD022`); appendText; 
-   //You
    You`"It can't be..."`;
    waitForClick; clearText; marker; sound(`TBD023`); appendText; 
-   //You
    You`"It's got to be wrong... "`;
    waitForClick; clearText; marker; sound(`TBD024`); appendText; 
-   //You
    You`"Aaagh...."`;
    waitForClick; clearText; 
 });
@@ -463,14 +423,11 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`TBD025`); appendText; 
-   //You
    You`"Somebody tell me this is all just a bad 
 joke..."`;
    waitForClick; clearText; marker; sound(`TBD026`); appendText; 
-   //You
    You`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`TBD027`); appendText; 
-   //You
    You`"Tell me it's a lie..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Lying flat on the floor, You started sobbing.`;
@@ -497,10 +454,8 @@ became louder.`;
 the rest of my strength to pull myself close 
 to You.`;
    waitForClick; clearText; marker; sound(`TBD028`); appendText; 
-   //You
    You`"Takeshi...where are you...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm...here..."`;
    waitForClick; clearText; 
 });
@@ -508,10 +463,8 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`TBD029`); appendText; 
-   //You
    You`"Where are you?"`;
    waitForClick; clearText; marker; sound(`TBD030`); appendText; 
-   //You
    You`"Give me your hand..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The floor was wet with blood.`;
@@ -533,7 +486,6 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`TBD031`); appendText; 
-   //You
    You`"Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You came crawling over to me, pulling closer 
@@ -551,16 +503,12 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`TBD032`); appendText; 
-   //You
    You`"I hate this..."`;
    waitForClick; clearText; marker; sound(`TBD033`); appendText; 
-   //You
    You`"It's so cold..."`;
    waitForClick; clearText; marker; sound(`TBD034`); appendText; 
-   //You
    You`"I..."`;
    waitForClick; clearText; marker; sound(`TBD035`); appendText; 
-   //You
    You`"I don't want to die..."`;
    waitForClick; clearText; 
 });
@@ -577,13 +525,10 @@ that she was rapidly losing energy.`;
 showTextbox();
 text(() => {
    marker; sound(`TBD036`); appendText; 
-   //You
    You`"Takeshiii...."`;
    waitForClick; clearText; marker; sound(`TBD037`); appendText; 
-   //You
    You`"My heart..."`;
    waitForClick; clearText; marker; sound(`TBD038`); appendText; 
-   //You
    You`"My heart...feels like it's going to burst..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her skin and clothes were freezing cold.`;
@@ -599,13 +544,10 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`TBD039`); appendText; 
-   //You
    You`"I'm scared..."`;
    waitForClick; clearText; marker; sound(`TBD040`); appendText; 
-   //You
    You`"Help me..."`;
    waitForClick; clearText; marker; sound(`TBD041`); appendText; 
-   //You
    You`"Help me Takeshi."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her voice was getting hoarse, and she was 
@@ -625,10 +567,8 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; sound(`TBD042`); appendText; 
-   //You
    You`"Aagh..."`;
    waitForClick; clearText; marker; sound(`TBD043`); appendText; 
-   //You
    You`"It hurts..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her whole body was wracked with spasms,`;
@@ -657,10 +597,8 @@ bgload({ name: `EV_YU15B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`TBD044`); appendText; 
-   //You
    You`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`TBD045`); appendText; 
-   //You
    You`"You probably didn't...feel anything about me, 
 but..."`;
    waitForClick; clearText; marker; appendText; 
@@ -668,7 +606,6 @@ but..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`A single tear followed these words.`;
    waitForClick; clearText; marker; sound(`TBD046`); appendText; 
-   //You
    You`"But I...really liked...."`;
    waitForClick; clearText; 
 });
@@ -711,7 +648,6 @@ bgload({ name: `IMG04A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`In that moment my vision went red.`;

@@ -13,13 +13,11 @@ text(() => {
    Narr`I turned the knob and the door to the 
 elevator opened slowly.`;
    waitForClick; clearText; marker; sound(`T1A000`); appendText; 
-   //Announcement
    Announcement`"System wiederaufnahme."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I heard the mechanical announcement, but 
 didn't understand what it meant. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"The battery...is probably dead..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pushed the button, but my PDA didn't respond.`;
@@ -28,7 +26,6 @@ didn't understand what it meant. `;
 display, I had found the emergency manual 
 opening mechanism for the door...`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, are you alive?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I spoke to the girl.`;
@@ -38,7 +35,6 @@ fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A001`); appendText; 
-   //Girl
    Girl`"...Yes."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She looked a little tired.`;
@@ -51,7 +47,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`But there was no sign of anyone around.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What's going on here?"`;
    waitForClick; clearText; 
 });
@@ -59,10 +54,8 @@ fgload({ id: 1, name: `TU18ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A002`); appendText; 
-   //Girl
    Girl`"...I don't...know."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Let's go see if we can find anyone else."`;
    waitForClick; clearText; 
 });
@@ -99,15 +92,12 @@ the souvenir shop and other stuff. `;
    Narr`There was a thick set of shutters in the 
 circular space in the center of the area.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...Ah, ha, ha, ha."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I laughed an empty laugh.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I wonder if this area is under construction."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's probably why nobody's here. Yeah, 
 I'll bet that's why."`;
    waitForClick; clearText; 
@@ -116,10 +106,8 @@ fgload({ id: 1, name: `TU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Let's try the next place."`;
    waitForClick; clearText; 
 });
@@ -132,7 +120,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The door down the corridor was shut firmly. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Doesn't this door open?"`;
    waitForClick; clearText; 
 });
@@ -140,7 +127,6 @@ fgload({ id: 1, name: `TU18ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A003`); appendText; 
-   //Girl
    Girl`"I don't think it will. I don't see a switch."`;
    waitForClick; clearText; marker; appendText; 
    Narr`We chose a corridor, which was open and walked 
@@ -165,21 +151,16 @@ left open and we went in.`;
    Narr`It smelled like they had been cooking until 
 recently.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, mister, I'll take two of the sandwiches 
 that are half-price on weekdays."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...If only someone were here..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Looks like he ran off and left his stand. 
 Doesn't he have any pride?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Huh? There aren't any other customers here!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Business isn't exactly booming, is it."`;
    waitForClick; clearText; 
 });
@@ -187,20 +168,15 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm hungry..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I wasted too much energy walking around..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And my friends take off somewhere without 
 telling me..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Don't you think that's rude?"`;
    waitForClick; clearText; 
 });
@@ -208,14 +184,11 @@ fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A004`); appendText; 
-   //Girl
    Girl`"...Not really."`;
    waitForClick; clearText; marker; sound(`T1A005`); appendText; 
-   //Girl
    Girl`"We just met, and I don't particularly care 
 about you."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Okay, okay. Whatever you say."`;
    waitForClick; clearText; 
 });
@@ -235,10 +208,8 @@ text(() => {
    marker; appendText; 
    Narr`Everywhere looked the same.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I wonder if everyone is hiding somewhere."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Maybe they are trying to surprise us."`;
    waitForClick; clearText; 
 });
@@ -246,10 +217,8 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A006`); appendText; 
-   //Girl
    Girl`"What? Why do you think so?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well, it's just kind of a feeling..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had to speak to stay calm.`;
@@ -274,19 +243,14 @@ awaiting us.`;
 across the floor, it would have been hard to 
 believe that anyone had been around.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Where is everybody...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Gimme a break here!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Where did everybody go?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...There's a limit to how far you can take a 
 joke..."`;
    waitForClick; clearText; 
@@ -295,10 +259,8 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Girl
    Girl`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"..."`;
    waitForClick; clearText; 
 });
@@ -308,10 +270,8 @@ clock(`15:39`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"*Sigh...*"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why doesn't anyone come out...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I sank to the floor.`;
@@ -321,7 +281,6 @@ breathing.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Against my will, I started to sweat.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What do you think? What happened here? Why 
 haven't we seen anyone...?"`;
    waitForClick; clearText; 
@@ -330,20 +289,16 @@ fgload({ id: 1, name: `TU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A007`); appendText; 
-   //Girl
    Girl`"I don't know...there's only one thing for 
 sure."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She said this without changing the expression 
 on her face.`;
    waitForClick; clearText; marker; sound(`T1A008`); appendText; 
-   //Girl
    Girl`"This is not normal."`;
    waitForClick; clearText; marker; sound(`T1A009`); appendText; 
-   //Girl
    Girl`"If this keeps up..."`;
    waitForClick; clearText; marker; sound(`T1A010`); appendText; 
-   //Girl
    Girl`"We could be in danger..."`;
    waitForClick; clearText; 
 });
@@ -351,10 +306,8 @@ fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A011`); appendText; 
-   //Girl
    Girl`"Don't you think so?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She stared at me with calm eyes.`;
@@ -447,7 +400,6 @@ island.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The knob didn't budge.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Damn, why won't it open?"`;
    waitForClick; clearText; 
 });
@@ -468,10 +420,8 @@ text(() => {
    Narr`The hatch gave off a squeaking sound and the 
 knob bent unnaturally.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"!?"`;
    waitForClick; clearText; marker; sound(`T1A012`); appendText; 
-   //Girl
    Girl`"This way!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The girl screamed.`;
@@ -503,24 +453,18 @@ bgload({ name: `BG25A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Pant, pant..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Phew, *pant* *pant*..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was out of breath. I gasped.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Haaaa, haaaa, haaaaa."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Fwaaaa, Huuuu, haaaaa."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hiihii, Huuuu, haaaaa."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...Safe place, pokopon."`;
    waitForClick; clearText; 
 });
@@ -528,7 +472,6 @@ fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A013`); appendText; 
-   //Girl
    Girl`"...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The girl's expression didn't change.`;
@@ -541,10 +484,8 @@ bgload({ name: `BG01A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, don't you want to rest?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I want to rest..."`;
    waitForClick; clearText; 
 });
@@ -552,10 +493,8 @@ fgload({ id: 1, name: `TU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A014`); appendText; 
-   //Girl
    Girl`"Go ahead. Do what you want..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...Fine then."`;
    waitForClick; clearText; 
 });
@@ -590,14 +529,12 @@ fgload({ id: 1, name: `TU04ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A015`); appendText; 
-   //Girl
    Girl`"...Who?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her voice caused me to look up.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She hadn't said it to me.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, was somebody there?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I asked this as I stood.`;
@@ -607,7 +544,6 @@ fgload({ id: 1, name: `TU18ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Girl
    Girl`"..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The girl stood still. Her eyes were focused 
@@ -646,7 +582,6 @@ dressed as a park employee.`;
    waitForClick; clearText; marker; appendText; 
    Narr`She looked slightly panicked.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, hey. What's happened? What's dangerous? 
 Stay calm. Explain what's going on..."`;
    waitForClick; clearText; marker; sound(`T1A020`); appendText; 
@@ -700,7 +635,6 @@ text(() => {
    marker; appendText; 
    Narr`Fwaaaaaash!`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"UuuuwwWWAAaaaahh!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Glass shattered.`;
@@ -743,10 +677,8 @@ removeBG({ mode: WHITE, transition: 62 });
 showTextbox();
 text(() => {
    marker; sound(`T1A024`); appendText; 
-   //Girl
    Girl`"What're you doing? Hurry!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"W-whoaaa!"`;
    waitForClick; clearText; 
 });
@@ -798,7 +730,6 @@ playSFX({ name: `SE02_11L`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Whoa! Whoaaa! Whoaaaaaa!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I ran frantically.`;
@@ -813,7 +744,6 @@ delay({ interval: 30 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Whoooooa...."`;
    waitForClick; clearText; 
 });
@@ -828,7 +758,6 @@ text(() => {
    Narr`If I took a spill, I would be sleeping with 
 these fish!`;
    waitForClick; clearText; marker; sound(`T1A025`); appendText; 
-   //Girl
    Girl`"You are so much trouble...!"`;
    waitForClick; clearText; 
 });
@@ -867,10 +796,8 @@ text(() => {
    //Park staff
    Park_staff`"Over here! Hurry! Hurry!"`;
    waitForClick; clearText; marker; sound(`T1A027`); appendText; 
-   //Girl
    Girl`"I know!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`And even harder to believe was that the park 
@@ -901,7 +828,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TU03ADS`, name2: `SO14ADS`, x1: 176, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T1A028`); appendText; 
-   //Girl
    Girl`"Damn..."`;
    waitForClick; clearText; marker; sound(`T1A029`); appendText; 
    //Park staff
@@ -913,7 +839,6 @@ fgload({ id: 1, name: `TU04ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A030`); appendText; 
-   //Girl
    Girl`"There's no time!"`;
    waitForClick; clearText; 
 });
@@ -936,7 +861,6 @@ text(() => {
    Narr`We bounded from the slope into another 
 corridor.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Crap. Which way do we take to get outta here?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`We all ran without stopping, looking for an 
@@ -947,7 +871,6 @@ bgload({ name: `BG28A1L`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"It's a dead end...!"`;
    waitForClick; clearText; 
 });
@@ -955,7 +878,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TU18ADM`, name2: `SO14ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T1A031`); appendText; 
-   //Girl
    Girl`"Can we go through here?"`;
    waitForClick; clearText; marker; sound(`T1A032`); appendText; 
    //Park staff
@@ -966,7 +888,6 @@ fgload({ id: 1, name: `TU08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T1A033`); appendText; 
-   //Girl
    Girl`"I'm going!"`;
    waitForClick; clearText; 
 });
@@ -982,7 +903,6 @@ playSFX({ name: `SE10_19`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Hey...this isn't a corridor.... Aggh!"`;
    waitForClick; clearText; 
 });

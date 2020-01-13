@@ -148,7 +148,6 @@ nodded off.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked over to the bed next to mine.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara was asleep on the bed next to me.`;
@@ -226,28 +225,22 @@ important, but I was unsure of what.`;
    waitForClick; clearText; marker; appendText; 
    Narr`That was how I felt.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sora! Sora!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Forgetting that Sara was sleeping, I shouted 
 out for Sora.`;
    waitForClick; clearText; marker; sound(`S6A012`); appendText; 
-   //Sora
    Sora`"Yes, Kid. What is it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora's voice answered me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sora...did you do something to me?"`;
    waitForClick; clearText; marker; sound(`S6A013`); appendText; 
-   //Sora
    Sora`"Something...what do you mean?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't pretend you don't know! There was 
 a...scar on my left hand!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...it's gone now!"`;
    waitForClick; clearText; 
 });
@@ -255,25 +248,20 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A014`); appendText; 
-   //Sora
    Sora`"Oh, so that is what you mean."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora appeared in the entrance to the room.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What are you talking about?"`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`S6A015`); appendText; 
-   //Sora
    Sora`"While you were sleeping I extracted it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Extracted what?"`;
    waitForClick; clearText; marker; sound(`S6A016`); appendText; 
-   //Sora
    Sora`"Perhaps you should come over here."`;
    waitForClick; clearText; 
 });
@@ -289,20 +277,16 @@ fgload({ id: 1, name: `SO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A017`); appendText; 
-   //Sora
    Sora`"This."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora pointed to a small shard suspended by a 
 manipulator arm above the examination table.`;
    waitForClick; clearText; marker; sound(`S6A018`); appendText; 
-   //Sora
    Sora`"This was embedded in your thumb, so 
 I extracted it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What...gave you the right to do that?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It could have been a clue leading to my past!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I let loose on Sora without thinking.`;
@@ -311,7 +295,6 @@ I extracted it."`;
 showTextbox();
 text(() => {
    marker; sound(`S6A019`); appendText; 
-   //Sora
    Sora`"Yes, you are exactly right."`;
    waitForClick; clearText; 
 });
@@ -319,7 +302,6 @@ fgload({ id: 1, name: `SO03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A020`); appendText; 
-   //Sora
    Sora`"However, no good can come of leaving a 
 foreign object in your body to fester."`;
    waitForClick; clearText; 
@@ -328,34 +310,27 @@ fgload({ id: 1, name: `SO10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A021`); appendText; 
-   //Sora
    Sora`"More importantly..."`;
    waitForClick; clearText; marker; sound(`S6A022`); appendText; 
-   //Sora
    Sora`"Kid, do you recall seeing this fragment 
 before?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No! How could I?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It didn't make sense to me why Sora would 
 ask such a thing.`;
    waitForClick; clearText; marker; sound(`S6A023`); appendText; 
-   //Sora
    Sora`"This fragment has an image recorded on it."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora continued speaking calmly.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"An image?"`;
    waitForClick; clearText; marker; sound(`S6A024`); appendText; 
-   //Sora
    Sora`"Would you like to see it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pinched the shard that had been buried in my 
 thumb between my fingers.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"T-this...?"`;
    waitForClick; clearText; 
 });
@@ -368,40 +343,31 @@ pendant.`;
    waitForClick; clearText; marker; appendText; 
    Narr`There was a picture of a man, floating there.`;
    waitForClick; clearText; marker; sound(`S6A025`); appendText; 
-   //Sora
    Sora`"Can you see it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, I can see it..." `;
    waitForClick; clearText; marker; sound(`S6A026`); appendText; 
-   //Sora
    Sora`"This hologram was designed so that it only 
 can be seen when viewed with light of a 
 certain wavelength."`;
    waitForClick; clearText; marker; sound(`S6A027`); appendText; 
-   //Sora
    Sora`"Right now I am using LeMMIH to shine the 
 proper light on it."`;
    waitForClick; clearText; marker; sound(`S6A028`); appendText; 
-   //Sora
    Sora`"I could not confirm the date of manufacture 
 of this hologram, but it is undoubtedly very 
 old."`;
    waitForClick; clearText; marker; sound(`S6A029`); appendText; 
-   //Sora
    Sora`"Its makeup is fundamentally different from 
 the ones being sold at the LeMU's kiosks."`;
    waitForClick; clearText; marker; sound(`S6A030`); appendText; 
-   //Sora
    Sora`"In the past, holograms were recorded using an 
 interference pattern made from an object beam 
 and a reference beam."`;
    waitForClick; clearText; marker; sound(`S6A031`); appendText; 
-   //Sora
    Sora`"Put simply, the object beam is the light 
 reflected off of the object."`;
    waitForClick; clearText; marker; sound(`S6A032`); appendText; 
-   //Sora
    Sora`"The reference beam is the light that 
 interferes with the object beam. 
 Do you understand?"`;
@@ -409,39 +375,30 @@ Do you understand?"`;
    Narr`Sora continued on without giving me time 
 to think.`;
    waitForClick; clearText; marker; sound(`S6A033`); appendText; 
-   //Sora
    Sora`"And now comes the important part..."`;
    waitForClick; clearText; marker; sound(`S6A034`); appendText; 
-   //Sora
    Sora`"In order to make this hologram appear..."`;
    waitForClick; clearText; marker; sound(`S6A035`); appendText; 
-   //Sora
    Sora`"Light, which is the same wavelength as the 
 reference beam used to record the image, 
 must be shined upon it."`;
    waitForClick; clearText; marker; sound(`S6A036`); appendText; 
-   //Sora
    Sora`"So, to sum up, it is like this."`;
    waitForClick; clearText; marker; sound(`S6A037`); appendText; 
-   //Sora
    Sora`"The image on this fragmented hologram was 
 recorded using light that was a certain 
 wavelength."`;
    waitForClick; clearText; marker; sound(`S6A038`); appendText; 
-   //Sora
    Sora`"And in order to see the image you must shine 
 light of the same wavelength on it."`;
    waitForClick; clearText; marker; sound(`S6A039`); appendText; 
-   //Sora
    Sora`"It also cannot be seen under fluorescent 
 light."`;
    waitForClick; clearText; marker; sound(`S6A040`); appendText; 
-   //Sora
    Sora`"You must use light generated by 
 a heat-emitting light source, such as sunlight 
 or the flame of a lighter."`;
    waitForClick; clearText; marker; sound(`S6A041`); appendText; 
-   //Sora
    Sora`"And..."`;
    waitForClick; clearText; 
 });
@@ -476,15 +433,12 @@ fgload({ id: 1, name: `SO10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A042`); appendText; 
-   //Sora
    Sora`"You would not be able to see this image 
 unless you can see infrared light."`;
    waitForClick; clearText; marker; sound(`S6A043`); appendText; 
-   //Sora
    Sora`"The fact that you can see this image means 
 that you can see infrared light, Kid."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...what about Sara? Does that mean that 
 Sara can, too?"`;
    waitForClick; clearText; 
@@ -493,7 +447,6 @@ fgload({ id: 1, name: `SO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A044`); appendText; 
-   //Sora
    Sora`"Yes. Both of you have a very unique ability 
 to see infrared light."`;
    waitForClick; clearText; marker; appendText; 
@@ -501,15 +454,12 @@ to see infrared light."`;
 why Takeshi and You couldn't see the image in 
 the pendant.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...why was this hologram in my finger...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I trembled as I said this.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's the same image as in Sara's pendant..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Are you saying that the missing piece of that 
 pendant has been in my thumb?"`;
    waitForClick; clearText; 
@@ -518,14 +468,11 @@ fgload({ id: 1, name: `SO05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A045`); appendText; 
-   //Sora
    Sora`"That is the only conceivable explanation."`;
    waitForClick; clearText; marker; sound(`S6A046`); appendText; 
-   //Sora
    Sora`"The surface and shape of the fragment match 
 the pendant perfectly."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...why...?"`;
    waitForClick; clearText; 
 });
@@ -533,35 +480,28 @@ fgload({ id: 1, name: `SO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A047`); appendText; 
-   //Sora
    Sora`"That...Kid..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`S6A048`); appendText; 
-   //Sora
    Sora`"Is because you and Sara are siblings."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It can't be..."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`S6A049`); appendText; 
-   //Sora
    Sora`"It is the same reason that you both have the 
 ability to see infrared light."`;
    waitForClick; clearText; marker; sound(`S6A050`); appendText; 
-   //Sora
    Sora`"It is probably because you both carry the 
 same genes."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No...no...no..."`;
    waitForClick; clearText; 
 });
@@ -569,7 +509,6 @@ fgload({ id: 1, name: `SO07ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A051`); appendText; 
-   //Sora
    Sora`"Kid. Why wouldn't that make you happy?"`;
    waitForClick; clearText; 
 });
@@ -577,14 +516,11 @@ fgload({ id: 1, name: `SO09ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A052`); appendText; 
-   //Sora
    Sora`"You have found a blood relative."`;
    waitForClick; clearText; marker; sound(`S6A053`); appendText; 
-   //Sora
    Sora`"Is there any better way possible to recover 
 your memory?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No...no..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I held my head and crouched down.`;
@@ -594,22 +530,17 @@ fgload({ id: 1, name: `SO10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A054`); appendText; 
-   //Sora
    Sora`"In either case, it is a fact and you should 
 accept it."`;
    waitForClick; clearText; marker; sound(`S6A055`); appendText; 
-   //Sora
    Sora`"While you two were asleep I performed a DNA 
 analysis on both of you."`;
    waitForClick; clearText; marker; sound(`S6A056`); appendText; 
-   //Sora
    Sora`"The results are indicated on the display."`;
    waitForClick; clearText; marker; sound(`S6A057`); appendText; 
-   //Sora
    Sora`"The probability that you are brother and 
 sister is...nearly 100 percent."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No...no...no...no...no...no... 
 no...no...no...no...no...no...!"`;
    waitForClick; clearText; 
@@ -629,7 +560,6 @@ unable to breach, crumbled.`;
 of my memory, it burst, unleashing a torrent 
 of images that flooded into my mind.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uggghhh..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Memories of my life, in no apparent order, 
@@ -751,7 +681,6 @@ encircled us.`;
    Narr`The laughter and howls of our tormentors 
 echoed around us.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You bullies! How could you do this to Sara?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Forgetting myself, I lunged at the mob of kids.`;
@@ -775,7 +704,6 @@ bullies had left.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara came and held out her hands to me.`;
    waitForClick; clearText; marker; sound(`S6A062`); appendText; 
-   //Sara
    Sara`"You are so brave, brother."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She smiled as she said it.`;
@@ -900,7 +828,6 @@ text(() => {
    marker; appendText; 
    Narr`Sara alone was left there.`;
    waitForClick; clearText; marker; sound(`S6A063`); appendText; 
-   //Sara
    Sara`"Brother!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I could hear Sara's screams.`;
@@ -910,10 +837,8 @@ Sara was.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The researchers tried to block my path.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara!"`;
    waitForClick; clearText; marker; sound(`S6A064`); appendText; 
-   //Sara
    Sara`"Brother!"`;
    waitForClick; clearText; 
 });
@@ -921,14 +846,11 @@ bgloadCrop({ name: `EV_SA14C`, transition: 20, x: 72, y: 58, hx: 680, hy: 510 })
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Sara! Wait for me!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'll come back for you. I promise, I will 
 come find you!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Be a good girl and wait for me!"`;
    waitForClick; clearText; 
 });
@@ -936,14 +858,11 @@ bgloadCrop({ name: `EV_SA14C`, transition: 20, x: 17, y: 16, hx: 740, hy: 555 })
 showTextbox();
 text(() => {
    marker; sound(`S6A065`); appendText; 
-   //Sara
    Sara`"I'll be good and wait for you..."`;
    waitForClick; clearText; marker; sound(`S6A066`); appendText; 
-   //Sara
    Sara`"But come for sure. You come to get me for 
 sure. Okay?"`;
    waitForClick; clearText; marker; sound(`S6A067`); appendText; 
-   //Sara
    Sara`"I'll wait...I'll wait forever!"`;
    waitForClick; clearText; 
 });
@@ -1188,7 +1107,6 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; sound(`S4A079`); appendText; 
-   //Sara
    Sara`"You really don't know?" `;
    waitForClick; clearText; 
 });
@@ -1196,7 +1114,6 @@ fgload({ id: 1, name: `SA03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S4A080`); appendText; 
-   //Sara
    Sara`"Oh I see...that's right..."`;
    waitForClick; clearText; 
 });
@@ -1262,21 +1179,18 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; sound(`S6A068`); appendText; 
-   //Sara
    Sara`"Bro...ther...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`With her voice, my legs stopped.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I didn't have the courage to turn around.`;
    waitForClick; clearText; marker; sound(`S6A069`); appendText; 
-   //Sara
    Sara`"You...you are my brother, right?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara continued talking.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Each of her words was like a stab in the heart.`;
    waitForClick; clearText; marker; sound(`S6A070`); appendText; 
-   //Sara
    Sara`"Brother?"`;
    waitForClick; clearText; 
 });
@@ -1284,48 +1198,37 @@ playBGM({ num: 15, volume: 97 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"No!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I spit out the words without thinking.`;
    waitForClick; clearText; marker; sound(`S6A071`); appendText; 
-   //Sara
    Sara`"Huh...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You're wrong...about me."`;
    waitForClick; clearText; marker; sound(`S6A072`); appendText; 
-   //Sara
    Sara`"That...can't be."`;
    waitForClick; clearText; marker; sound(`S6A073`); appendText; 
-   //Sara
    Sara`"You are my brother, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I sensed that Sara was about to get up from 
 the bed so I tried to leave.`;
    waitForClick; clearText; marker; sound(`S6A074`); appendText; 
-   //Sara
    Sara`"Wait!"`;
    waitForClick; clearText; marker; sound(`S6A075`); appendText; 
-   //Sara
    Sara`"Brother, wait!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her voice sounded just like when she had cried 
 out to me when she was a child, and I froze, 
 unable to move.`;
    waitForClick; clearText; marker; sound(`S6A076`); appendText; 
-   //Sara
    Sara`"You are my brother.... You are, aren't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara grabbed my shoulders.`;
    waitForClick; clearText; marker; sound(`S6A077`); appendText; 
-   //Sara
    Sara`"Hey, why don't you say something? Look at me!"`;
    waitForClick; clearText; 
 });
@@ -1339,16 +1242,12 @@ time holding my shoulders.`;
    Narr`But I couldn't bear to look Sara in the face 
 and turned away.`;
    waitForClick; clearText; marker; sound(`S6A078`); appendText; 
-   //Sara
    Sara`"Hey. Why won't you look at me?"`;
    waitForClick; clearText; marker; sound(`S6A079`); appendText; 
-   //Sara
    Sara`"Hey, look at me."`;
    waitForClick; clearText; marker; sound(`S6A080`); appendText; 
-   //Sara
    Sara`"I said, look at me!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No, no, no!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I shook off Sara's hands.`;
@@ -1358,10 +1257,8 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A081`); appendText; 
-   //Sara
    Sara`"Aaah!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara!"`;
    waitForClick; clearText; 
 });
@@ -1379,29 +1276,21 @@ fgload({ id: 1, name: `SA10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A082`); appendText; 
-   //Sara
    Sara`"Why? Why are you denying me?"`;
    waitForClick; clearText; marker; sound(`S6A083`); appendText; 
-   //Sara
    Sara`"You are my brother, right? You are, aren't 
 you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No, no. I'm..."`;
    waitForClick; clearText; marker; sound(`S6A084`); appendText; 
-   //Sara
    Sara`"Why not? I know you are!"`;
    waitForClick; clearText; marker; sound(`S6A085`); appendText; 
-   //Sara
    Sara`"You're my brother...my brother!"`;
    waitForClick; clearText; marker; sound(`S6A086`); appendText; 
-   //Sara
    Sara`"I waited for you. I waited and waited!"`;
    waitForClick; clearText; marker; sound(`S6A087`); appendText; 
-   //Sara
    Sara`"I waited forever for you to come!"`;
    waitForClick; clearText; marker; sound(`S6A088`); appendText; 
-   //Sara
    Sara`"Brother..."`;
    waitForClick; clearText; 
 });
@@ -1642,26 +1531,19 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A089`); appendText; 
-   //You
    You`"Kid!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You, what is this? Did something happen?"`;
    waitForClick; clearText; marker; sound(`S6A090`); appendText; 
-   //You
    You`"I'll explain later. For now just hurry over 
 here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"W-what?"`;
    waitForClick; clearText; marker; sound(`S6A091`); appendText; 
-   //You
    You`"I found a way out!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Where?"`;
    waitForClick; clearText; marker; sound(`S6A092`); appendText; 
-   //You
    You`"I'll explain it later. Just hurry up!"`;
    waitForClick; clearText; 
 });
@@ -1688,10 +1570,8 @@ text(() => {
    Narr`She turned the corner heading for stairs 
 leading to an emergency corridor.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What about everybody else?"`;
    waitForClick; clearText; marker; sound(`S6A093`); appendText; 
-   //You
    You`"Takeshi is going to get Mayo. Tsugumi is 
 already at the emergency corridor."`;
    waitForClick; clearText; marker; appendText; 
@@ -1713,10 +1593,8 @@ multifgload2({ id1: 1, id2: 2, name1: `TU08ADS`, name2: `KB05ADS`, x1: 176, x2: 
 showTextbox();
 text(() => {
    marker; sound(`S6A094`); appendText; 
-   //Takeshi
    Takeshi`"Hurry, we don't have much time."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What happened?"`;
    waitForClick; clearText; 
 });
@@ -1724,7 +1602,6 @@ fgload({ id: 2, name: `KB04ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A095`); appendText; 
-   //Takeshi
    Takeshi`"Just hurry."`;
    waitForClick; clearText; 
 });
@@ -1742,7 +1619,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A096`); appendText; 
-   //You
    You`"Listen. LeMU is already starting to collapse."`;
    waitForClick; clearText; 
 });
@@ -1754,16 +1630,13 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`I started running.`;
    waitForClick; clearText; marker; sound(`S6A097`); appendText; 
-   //You
    You`"We were finally able to make contact with 
 the surface and now the emergency stairs 
 are accessible."`;
    waitForClick; clearText; marker; sound(`S6A098`); appendText; 
-   //You
    You`"But if we don't hurry, they're 
 going to flood."`;
    waitForClick; clearText; marker; sound(`S6A099`); appendText; 
-   //You
    You`"So just hurry."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You explained the situation from behind me.`;
@@ -1781,7 +1654,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi and Tsugumi were already climbing.`;
    waitForClick; clearText; marker; sound(`S6A100`); appendText; 
-   //Takeshi
    Takeshi`"Hurry! This way!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi's voice rang down from above.`;
@@ -1800,7 +1672,6 @@ throughout the emergency stairs.`;
    waitForClick; clearText; marker; appendText; 
    Narr`....`;
    waitForClick; clearText; marker; sound(`S6A101`); appendText; 
-   //Takeshi
    Takeshi`"Just a little more! We're almost there!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi shouted up ahead.`;
@@ -1809,7 +1680,6 @@ throughout the emergency stairs.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was then that we realized it.`;
    waitForClick; clearText; marker; sound(`S6A102`); appendText; 
-   //You
    You`"Mayo...Mayo...Mayo isn't here!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You shouted it.`;
@@ -1819,10 +1689,8 @@ stopSFX()
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`S6A103`); appendText; 
-   //Takeshi
    Takeshi`"What'd you say?"`;
    waitForClick; clearText; 
 });
@@ -1834,7 +1702,6 @@ text(() => {
    Narr`You stood on the stairs, stunned and looking 
 downward.`;
    waitForClick; clearText; marker; sound(`S6A104`); appendText; 
-   //You
    You`"What happened? She was right behind me!"`;
    waitForClick; clearText; 
 });
@@ -1842,7 +1709,6 @@ multifgload2({ id1: 1, id2: 2, name1: `YU03ADM`, name2: `KB05ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`S6A105`); appendText; 
-   //Takeshi
    Takeshi`"What happened?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi and the others came down the stairs.`;
@@ -1852,7 +1718,6 @@ fgload({ id: 1, name: `YU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A106`); appendText; 
-   //You
    You`"Takeshi, Mayo...Mayo isn't here!"`;
    waitForClick; clearText; 
 });
@@ -1860,7 +1725,6 @@ fgload({ id: 2, name: `KB04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A107`); appendText; 
-   //Takeshi
    Takeshi`"Geez...Didn't you check to see that 
 she was behind you?"`;
    waitForClick; clearText; 
@@ -1868,10 +1732,8 @@ she was behind you?"`;
 showTextbox();
 text(() => {
    marker; sound(`S6A108`); appendText; 
-   //You
    You`"She was right behind me from the start!"`;
    waitForClick; clearText; marker; sound(`S6A109`); appendText; 
-   //You
    You`"Part way up I got so into climbing..."`;
    waitForClick; clearText; 
 });
@@ -1901,10 +1763,8 @@ fgload({ id: 2, name: `KB04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A110`); appendText; 
-   //Takeshi
    Takeshi`"Damn! A blackout. We can't go back now."`;
    waitForClick; clearText; marker; sound(`S6A111`); appendText; 
-   //Takeshi
    Takeshi`"If we double back, everyone's a goner!"`;
    waitForClick; clearText; 
 });
@@ -1912,10 +1772,8 @@ fgload({ id: 1, name: `YU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A112`); appendText; 
-   //You
    You`"But!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'll go."`;
    waitForClick; clearText; 
 });
@@ -1923,10 +1781,8 @@ multifgload2({ id1: 1, id2: 2, name1: `YU06ADM`, name2: `KB06ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`S6A113`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'll go back. Everybody keep going."`;
    waitForClick; clearText; 
 });
@@ -1938,25 +1794,19 @@ text(() => {
    Narr`Without waiting for a reply, I started rushing 
 down the stairs I had just climbed.`;
    waitForClick; clearText; marker; sound(`S6A114`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Kid!"`;
    waitForClick; clearText; marker; sound(`S6A115`); appendText; 
-   //You
    You`"It's impossible! It's already starting to 
 flood. What do you think you're going to do?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Their voices rang out behind me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Swim!"`;
    waitForClick; clearText; marker; sound(`S6A116`); appendText; 
-   //You
    You`"It's pitch black below!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No problem!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I can see!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I could actually see the different parts of 
@@ -2283,19 +2133,14 @@ surface.`;
    Narr`Sara looked surprised when I broke through 
 to the surface.`;
    waitForClick; clearText; marker; sound(`S6A117`); appendText; 
-   //Sara
    Sara`"Kid...I mean brother."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara....you're alright."`;
    waitForClick; clearText; marker; sound(`S6A118`); appendText; 
-   //Sara
    Sara`"Why are you...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I promised, didn't I?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I told you that I come find you, didn't I?"`;
    waitForClick; clearText; 
 });

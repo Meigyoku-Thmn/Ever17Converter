@@ -120,17 +120,13 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; sound(`S1C046`); appendText; 
-   //Sora
    Sora`"Please imagine a 15-story building."`;
    waitForClick; clearText; marker; sound(`S1C047`); appendText; 
-   //Sora
    Sora`"Or five three-story school buildings 
 stacked vertically upon each other."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Five schools stacked..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No way. I couldn't swim that."`;
    waitForClick; clearText; 
 });
@@ -138,14 +134,11 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S1C048`); appendText; 
-   //Sora
    Sora`"Well, then how about a ten-story building?"`;
    waitForClick; clearText; marker; sound(`S1C049`); appendText; 
-   //Sora
    Sora`"A depth of 100 feet...that is the 
 depth of Zweite stock."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"100 feet..."`;
    waitForClick; clearText; 
 });
@@ -270,7 +263,6 @@ stopSFX()
 showTextbox();
 text(() => {
    marker; sound(`SEP000`); appendText; 
-   //Sara
    Sara`"Uh, ummmm..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara's voice pulled me back to reality.`;
@@ -278,17 +270,14 @@ text(() => {
    Narr`This was not the time to be thinking about 
 such things.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara...Sara?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I shook Sara's shoulder gently.`;
    waitForClick; clearText; marker; sound(`SEP001`); appendText; 
-   //Sara
    Sara`"Uh, ummm, ah..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara opened her eyes slightly.`;
    waitForClick; clearText; marker; sound(`SEP002`); appendText; 
-   //Sara
    Sara`"B...bro?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Soon her eyes opened widely.`;
@@ -302,12 +291,10 @@ fgload({ id: 1, name: `SA03AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP003`); appendText; 
-   //Sara
    Sara`"Where are we...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara didn't seem to understand the situation.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, this is Insel null."`;
    waitForClick; clearText; 
 });
@@ -315,13 +302,10 @@ fgload({ id: 1, name: `SA08AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP004`); appendText; 
-   //Sara
    Sara`"So...so we..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We're safe now. We made it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Over 100 feet from Zweite stock..."`;
    waitForClick; clearText; 
 });
@@ -329,10 +313,8 @@ fgload({ id: 1, name: `SA01AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP005`); appendText; 
-   //Sara
    Sara`"Are we...still alive...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yes. We are alive. You are and I am, too."`;
    waitForClick; clearText; 
 });
@@ -340,16 +322,12 @@ fgload({ id: 1, name: `SA09AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP006`); appendText; 
-   //Sara
    Sara`"We did it! We did it!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, Sara. We did it. We survived."`;
    waitForClick; clearText; marker; sound(`SEP007`); appendText; 
-   //Sara
    Sara`"Yeah...Thank you, brother."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I told you to trust me."`;
    waitForClick; clearText; 
 });
@@ -357,7 +335,6 @@ fgload({ id: 1, name: `SA02AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP008`); appendText; 
-   //Sara
    Sara`"Yes, you did."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara smiled.`;
@@ -381,7 +358,6 @@ text(() => {
    Narr`Looking relieved, she pulled the pendant out 
 and grasped it in her hand.`;
    waitForClick; clearText; marker; sound(`SEP009`); appendText; 
-   //Sara
    Sara`"Thank you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara whispered softly.`;
@@ -396,18 +372,14 @@ fgload({ id: 1, name: `SA03AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP010`); appendText; 
-   //Sara
    Sara`"Hey, brother...what about Nakkyu, Takeshi and 
 the others?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I think they are alright."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"By the time I turned back, they'd already 
 climbed fairly high."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If they kept going, they should've reached 
 the surface."`;
    waitForClick; clearText; 
@@ -416,7 +388,6 @@ fgload({ id: 1, name: `SA02AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP011`); appendText; 
-   //Sara
    Sara`"Really? That's good to hear."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara looked relieved.`;
@@ -426,7 +397,6 @@ fgload({ id: 1, name: `SA03AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP012`); appendText; 
-   //Sara
    Sara`"We can't stay here forever..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`We had made it to the surface safely, but Sara 
@@ -435,7 +405,6 @@ didn't look very well.`;
    Narr`Was she worried about being taken back to 
 Leiblich after all?`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, Sara..."`;
    waitForClick; clearText; 
 });
@@ -443,16 +412,12 @@ fgload({ id: 1, name: `SA08AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP013`); appendText; 
-   //Sara
    Sara`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Let's just keep running. Let's run away."`;
    waitForClick; clearText; marker; sound(`SEP014`); appendText; 
-   //Sara
    Sara`"Run away?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yes. From them...I mean, from Leiblich."`;
    waitForClick; clearText; 
 });
@@ -460,29 +425,21 @@ fgload({ id: 1, name: `SA10AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP015`); appendText; 
-   //Sara
    Sara`"No...it's impossible..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It is possible."`;
    waitForClick; clearText; marker; sound(`SEP016`); appendText; 
-   //Sara
    Sara`"How can you say that?"`;
    waitForClick; clearText; marker; sound(`SEP017`); appendText; 
-   //Sara
    Sara`"You know about them, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Think about it, Sara."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"This island has to be in utter chaos."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Right? LeMU flooded and the whole complex is 
 totally destroyed..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And since You and the others got out, this 
 place should be in major confusion, right?"`;
    waitForClick; clearText; 
@@ -491,17 +448,13 @@ fgload({ id: 1, name: `SA03AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP018`); appendText; 
-   //Sara
    Sara`"Y..yeah, I suppose..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They'll be telling everyone how we were left 
 behind in LeMU."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And for You and the others it's the truth."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If Leiblich has their doubts and tries to 
 look into them, that's as far as they can 
 investigate."`;
@@ -511,25 +464,19 @@ fgload({ id: 1, name: `SA01AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP019`); appendText; 
-   //Sara
    Sara`"Right..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So right now, everyone - including Leiblich 
 people ? will be turning their attention to 
 LeMU and looking under the ocean."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They might actually think that we are already 
 dead..."`;
    waitForClick; clearText; marker; sound(`SEP020`); appendText; 
-   //Sara
    Sara`"Yes, that's true!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Now is..."`;
    waitForClick; clearText; 
 });
@@ -537,10 +484,8 @@ fgload({ id: 1, name: `SA02AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP021`); appendText; 
-   //Sara
    Sara`"It's our chance, isn't it?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Right now. Now is the chance we've been 
 waiting for."`;
    waitForClick; clearText; 
@@ -549,17 +494,13 @@ fgload({ id: 1, name: `SA09AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP022`); appendText; 
-   //Sara
    Sara`"You are so incredible, brother!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We're already here, so it is impossible for 
 them to find us in LeMU."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And if they don't find us in LeMU..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They will expand their search for us to the 
 sea around this area."`;
    waitForClick; clearText; 
@@ -568,22 +509,17 @@ fgload({ id: 1, name: `SA01AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP023`); appendText; 
-   //Sara
    Sara`"Right."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They might suspect that we died and the 
 current carried us off somewhere..."`;
    waitForClick; clearText; marker; sound(`SEP024`); appendText; 
-   //Sara
    Sara`"In the meantime, if we hide somewhere, they 
 shouldn't be able to follow us, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah, I'm not sure if we can pull it all off 
 that easily..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But we'll still have plenty of head start 
 before they figure out the truth."`;
    waitForClick; clearText; 
@@ -592,7 +528,6 @@ fgload({ id: 1, name: `SA02AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP025`); appendText; 
-   //Sara
    Sara`"Yeah, right!"`;
    waitForClick; clearText; 
 });
@@ -600,23 +535,18 @@ fgload({ id: 1, name: `SA03AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP026`); appendText; 
-   //Sara
    Sara`"Oh...but..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Suddenly, Sara looked down.`;
    waitForClick; clearText; marker; sound(`SEP027`); appendText; 
-   //Sara
    Sara`"But...how are we going to escape from this 
 island?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; marker; sound(`SEP028`); appendText; 
-   //Sara
    Sara`"I mean, we can't escape without a way off of 
 this island, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yeah...that's..."`;
    waitForClick; clearText; 
 });
@@ -624,13 +554,11 @@ fgload({ id: 1, name: `SA01AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP029`); appendText; 
-   //Sara
    Sara`"That's?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara looked at me as if she was full of 
 confidence in me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh...ah...well..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She had me. I hadn't thought about that.`;
@@ -638,42 +566,33 @@ confidence in me.`;
    Narr`I thought we would be alright if could just 
 make it to the surface....`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I desperately tried to think of something.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I know! I've got it!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"There should be all kinds of people around 
 right now that aren't normally here, like 
 construction workers and technical staff."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So, ships and helicopters should come and go 
 frequently."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"First of all...we find some clothes and 
 change."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Especially your uniform...it really stands 
 out." `;
    waitForClick; clearText; marker; sound(`SEP030`); appendText; 
-   //Sara
    Sara`"Oh...you're right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara looked herself over again.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And...if we can't get aboard a helicopter, 
 then we can sneak onto some ship and get to 
 some port..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And after that we're going to be all right!"`;
    waitForClick; clearText; 
 });
@@ -681,11 +600,9 @@ fgload({ id: 1, name: `SA02AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`SEP031`); appendText; 
-   //Sara
    Sara`"You really are great! You really thought this 
 through."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh...no...well, er, sure."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara's was innocently happy.`;
@@ -695,7 +612,6 @@ protect her smile with my life.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I thought that would be my mission.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Let's go, Sara."`;
    waitForClick; clearText; 
 });
@@ -718,22 +634,16 @@ thumb flashed across my mind.`;
 helped me retrieve my memory and rediscover 
 the bond between Sara and me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Let's go, Sara."`;
    waitForClick; clearText; marker; sound(`SEP032`); appendText; 
-   //Sara
    Sara`"Okay, brother."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We're going to be free!"`;
    waitForClick; clearText; marker; sound(`SEP033`); appendText; 
-   //Sara
    Sara`"Free..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yes, free!"`;
    waitForClick; clearText; marker; sound(`SEP034`); appendText; 
-   //Sara
    Sara`"Yeah!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I would never leave Sara again.`;

@@ -32,22 +32,18 @@ bgloadCrop({ name: `BG31A1`, transition: 30, x: 240, y: 0, hx: 800, hy: 600 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Ow! Oouch! That's hot!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The smell of burned hair from the hand I had 
 used to shield my eye filled the air.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Fuuu....Fuuuu..Fuuuu..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I blew on my hand, trying futilely to cool it 
 down.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You scared the heck outta me..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Don't do this, Sora!"`;
    waitForClick; clearText; 
 });
@@ -55,7 +51,6 @@ fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6L303`); appendText; 
-   //Sora
    Sora`"No, Takeshi, YOU don't do this..."`;
    waitForClick; clearText; 
 });
@@ -70,7 +65,6 @@ fgload({ id: 1, name: `SO13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6L304`); appendText; 
-   //Sora
    Sora`"You've really done it."`;
    waitForClick; clearText; 
 });
@@ -117,7 +111,6 @@ entrance of HIMMEL.`;
    Narr`I tried to close the heavy door with the full 
 force of my weight.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Damn..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`But my hands wouldn't move like I wanted.`;
@@ -136,7 +129,6 @@ bgload({ name: `EV_SO10A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Gaagh, *cough* *cough*..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I suddenly felt terribly dizzy, a burning 
@@ -150,13 +142,10 @@ floor.`;
    Narr`In this crucial moment...my condition 
 couldn't have been worse...`;
    waitForClick; clearText; marker; sound(`T6L305`); appendText; 
-   //Sora
    Sora`"T-Takeshi!"`;
    waitForClick; clearText; marker; sound(`T6L306`); appendText; 
-   //Sora
    Sora`"Hang on tight!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I...I'm okay!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`But I wasn't.`;
@@ -187,13 +176,10 @@ varop(`(28 0a a2) 40 := (00) 1`);
 showTextbox();
 text(() => {
    marker; sound(`T6L307`); appendText; 
-   //Sora
    Sora`"Takeshi...no..."`;
    waitForClick; clearText; marker; sound(`T6L308`); appendText; 
-   //Sora
    Sora`"We...can't...any longer..."`;
    waitForClick; clearText; marker; sound(`T6L309`); appendText; 
-   //Sora
    Sora`"We won't...make it..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The stream of water had become a giant snake, 
@@ -211,10 +197,8 @@ varop(`(28 0a a2) 40 := (00) 4`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Ha..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Come on! You bastard water! Bring it!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I screamed back over my shoulder.`;
@@ -258,10 +242,8 @@ bgload({ name: `EV_SO10B`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Sora
    Sora`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The watertight door had been sealed shut by 
@@ -278,43 +260,32 @@ stopSFX()
 showTextbox();
 text(() => {
    marker; sound(`T6L310`); appendText; 
-   //Sora
    Sora`"Takeshi"`;
    waitForClick; clearText; marker; sound(`T6L311`); appendText; 
-   //Sora
    Sora`"Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Okay, I can hear you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I had a ringing in my ears.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"How long will it hold?"`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"........."`;
    waitForClick; clearText; marker; sound(`T6L312`); appendText; 
-   //Sora
    Sora`"I don't know..."`;
    waitForClick; clearText; marker; sound(`T6L313`); appendText; 
-   //Sora
    Sora`"The door behind you...is locked...you are 
 shut in."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Thanks..."`;
    waitForClick; clearText; marker; sound(`T6L314`); appendText; 
-   //Sora
    Sora`"In order to delay the destruction of LeMU, 
 I'm releasing all the watertight doors at 
 Dritte stock."`;
    waitForClick; clearText; marker; sound(`T6L315`); appendText; 
-   //Sora
    Sora`"Dritte stock has been flooded entirely. Its 
 structural integrity is failing..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I see. Thanks..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`On the other side of the door was 6 
@@ -334,21 +305,16 @@ bgload({ name: `EV_SO10C`, transition: 10 });
 showTextbox();
 text(() => {
    marker; sound(`T6L316`); appendText; 
-   //Sora
    Sora`"Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora bit on her lip.`;
    waitForClick; clearText; marker; sound(`T6L317`); appendText; 
-   //Sora
    Sora`"Please don't..."`;
    waitForClick; clearText; marker; sound(`T6L318`); appendText; 
-   //Sora
    Sora`"Don't thank me."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`T6L319`); appendText; 
-   //Sora
    Sora`"I was only......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Something gleamed in the dark.`;
@@ -363,10 +329,8 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`They sparkled then disappeared.`;
    waitForClick; clearText; marker; sound(`T6L320`); appendText; 
-   //Sora
    Sora`"Listen, I..."`;
    waitForClick; clearText; marker; sound(`T6L321`); appendText; 
-   //Sora
    Sora`"What shall I do...tell me."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I reached out to catch the tears.`;
@@ -376,10 +340,8 @@ in an instant.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The light disappeared as it reached my hands.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Don't worry."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You are doing fine. Don't do anything, Sora."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I wouldn't erase it.`;
@@ -389,13 +351,10 @@ in an instant.`;
    Narr`I opened my eyes as wide as I could and tried 
 to burn her image into my mind.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Listen..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"The main thing is that..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You are safe..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`My eyelids were becoming heavier.`;
@@ -513,7 +472,6 @@ delay({ interval: 30 });
 showTextbox();
 text(() => {
    marker; sound(`T7L000`); appendText; 
-   //Sora
    Sora`"Good morning!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I woke with the warmth of the light.`;
@@ -552,17 +510,13 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Morning..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"'Good morning' is such a fantastic word, 
 isn't it?"`;
    waitForClick; clearText; marker; sound(`T7L001`); appendText; 
-   //Sora
    Sora`"Yes..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It makes me feel like I need to get up and 
 get to work."`;
    waitForClick; clearText; 
@@ -571,21 +525,16 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L002`); appendText; 
-   //Sora
    Sora`"Ha, ha.... That's right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora smiled softly.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What time is it?"`;
    waitForClick; clearText; marker; sound(`T7L003`); appendText; 
-   //Sora
    Sora`"I don't know."`;
    waitForClick; clearText; marker; sound(`T7L004`); appendText; 
-   //Sora
    Sora`"It seems that the timer has is broken."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I took my PDA from my pocket and pressed the 
@@ -599,38 +548,30 @@ fgload({ id: 1, name: `SO13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L005`); appendText; 
-   //Sora
    Sora`"It seems that we have lost all way to tell 
 the time, haven't we?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah."`;
    waitForClick; clearText; marker; sound(`T7L006`); appendText; 
-   //Sora
    Sora`"The connection between myself and the 
 terminals at LeMMIH was been severed just a 
 little while ago, and all of the sensors in 
 LeMU itself are no longer operational..."`;
    waitForClick; clearText; marker; sound(`T7L007`); appendText; 
-   //Sora
    Sora`"But according to my previous calculations, 
 we can expect this area to hold out another..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Stop!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I put my hand in front of Sora's mouth.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And then, slowly let my hand fall.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Time doesn't matter any more."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I don't need to know. There's no need to 
 worry about it anymore..."`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"............"`;
    waitForClick; clearText; 
 });
@@ -638,7 +579,6 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L008`); appendText; 
-   //Sora
    Sora`"Yes, you are right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It may have been difficult for someone as 
@@ -659,27 +599,21 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L009`); appendText; 
-   //Sora
    Sora`"Oh, some good news arrived while you were 
 sleeping, Takeshi."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Good news?"`;
    waitForClick; clearText; marker; sound(`T7L010`); appendText; 
-   //Sora
    Sora`"I discovered that communications were still 
 operational in IBF, so I analysed the weak 
 signals going through the outer wall of LeMU."`;
    waitForClick; clearText; marker; sound(`T7L011`); appendText; 
-   //Sora
    Sora`"According to my results, everyone on IBF was 
 rescued by a salvage vessel and made it 
 safely to Insel null."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Wow, that's great news!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I realize just how much I was worried about 
 them."`;
    waitForClick; clearText; 
@@ -716,7 +650,6 @@ text(() => {
    Narr`Deep within her pupils was a faint light 
 shining.`;
    waitForClick; clearText; marker; sound(`T7L012`); appendText; 
-   //Sora
    Sora`"Takeshi...why did you come back 'here'?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora murmured quietly in the darkness. The 
@@ -725,7 +658,6 @@ the emergency lights.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her tone was peaceful.`;
    waitForClick; clearText; marker; sound(`T7L013`); appendText; 
-   //Sora
    Sora`"Would you tell me the real reason one more 
 time?"`;
    waitForClick; clearText; marker; appendText; 
@@ -734,45 +666,33 @@ time?"`;
    Narr`Sora was holding back tears that threatened 
 to burst forth at any moment.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Right...I'll tell you."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I have..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Someone that I want to protect, even if it 
 costs me my life."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"She isn't something tangible."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Other people may think I'm stupid."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But, to me, she was the most valuable thing 
 in the world."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I may not be able to see her with my eyes 
 closed."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I may not be able to hear her if I plug my 
 ears."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But, that doesn't mean she will disappear."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I know that she still exists."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And I realized...just how important she is 
 to me."`;
    waitForClick; clearText; marker; sound(`T7L014`); appendText; 
-   //Sora
    Sora`"Yes..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She nodded quietly.`;
@@ -782,12 +702,10 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Well...now....hmppphh."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Using my hands to support me, I got up.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I forgot. I had some unfinished business."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I went over to the HIMMEL console.`;
@@ -798,12 +716,10 @@ fgload({ id: 1, name: `SO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L015`); appendText; 
-   //Sora
    Sora`"Unfinished business? What do you mean?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She smiled softly and said.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Is LeMMIH still in maintenance mode?"`;
    waitForClick; clearText; 
 });
@@ -811,11 +727,9 @@ fgload({ id: 1, name: `SO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L016`); appendText; 
-   //Sora
    Sora`"Yes, but none of the functions related to 
 LeMU are operational any longer."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well, it doesn't matter."`;
    waitForClick; clearText; marker; appendText; 
    Narr`(Which pocket was it...?)`;
@@ -837,10 +751,8 @@ earlier.`;
 showTextbox();
 text(() => {
    marker; sound(`T7L017`); appendText; 
-   //Sora
    Sora`"Is that...a terabyte disk?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's right."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I nodded and inserted the terabyte disk into 
@@ -885,7 +797,6 @@ enough space on the disk, we were finished...`;
    Narr`I thought it was probably the last gamble in 
 my lifetime.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Keep it simple."`;
    waitForClick; clearText; 
 });
@@ -896,7 +807,6 @@ text(() => {
    Narr`I hit the 'Enter' key and the data began 
 copying.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Sora, remember to shout 'Keep it simple.' 
 when you hit a button."`;
    waitForClick; clearText; 
@@ -905,7 +815,6 @@ fgload({ id: 1, name: `SO08ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L018`); appendText; 
-   //Sora
    Sora`"Yes, professor."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora smiled shyly.`;
@@ -922,78 +831,57 @@ text(() => {
    Narr`All of her memories were being burned on to 
 the disk.`;
    waitForClick; clearText; marker; sound(`T7L019`); appendText; 
-   //Sora
    Sora`"Professor...about my homework."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora murmured as she looked at the monitor.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Homework?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Did I give you homework?"`;
    waitForClick; clearText; marker; sound(`T7L020`); appendText; 
-   //Sora
    Sora`"No, we students did it voluntarily. Would you 
 please listen?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yes, of course. Fire away."`;
    waitForClick; clearText; marker; sound(`T7L021`); appendText; 
-   //Sora
    Sora`"I..."`;
    waitForClick; clearText; marker; sound(`T7L022`); appendText; 
-   //Sora
    Sora`"I realized..."`;
    waitForClick; clearText; marker; sound(`T7L023`); appendText; 
-   //Sora
    Sora`"The reason why I was born."`;
    waitForClick; clearText; marker; sound(`T7L024`); appendText; 
-   //Sora
    Sora`"I was meant to be just like any other 
 human..."`;
    waitForClick; clearText; marker; sound(`T7L025`); appendText; 
-   //Sora
    Sora`"I was born to fall in love."`;
    waitForClick; clearText; marker; sound(`T7L026`); appendText; 
-   //Sora
    Sora`"That is why I am truly happy now."`;
    waitForClick; clearText; marker; sound(`T7L027`); appendText; 
-   //Sora
    Sora`"Because I know what love is now."`;
    waitForClick; clearText; marker; sound(`T7L028`); appendText; 
-   //Sora
    Sora`"And love is..."`;
    waitForClick; clearText; marker; sound(`T7L029`); appendText; 
-   //Sora
    Sora`"It doesn't matter if your method is 
 primitive."`;
    waitForClick; clearText; marker; sound(`T7L030`); appendText; 
-   //Sora
    Sora`"It isn't necessary seek a meaning for it or 
 an objective."`;
    waitForClick; clearText; marker; sound(`T7L031`); appendText; 
-   //Sora
    Sora`"The only thing you need to do is to love - 
 just that and nothing else."`;
    waitForClick; clearText; marker; sound(`T7L032`); appendText; 
-   //Sora
    Sora`"That is what I realized."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Really..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora brought her face close to mine.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And she brought her lips near my cheek.`;
    waitForClick; clearText; marker; sound(`T7L033`); appendText; 
-   //Sora
    Sora`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`T7L034`); appendText; 
-   //Sora
    Sora`"I love you..."`;
    waitForClick; clearText; marker; sound(`T7L035`); appendText; 
-   //Sora
    Sora`"I am so grateful to be in love with you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I touch my cheek where she kissed.`;
@@ -1004,19 +892,14 @@ just that and nothing else."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Or was my cheek simply blushing?`;
    waitForClick; clearText; marker; sound(`T7L036`); appendText; 
-   //Sora
    Sora`"There have been times when I've disliked you."`;
    waitForClick; clearText; marker; sound(`T7L037`); appendText; 
-   //Sora
    Sora`"I've even hated you, too."`;
    waitForClick; clearText; marker; sound(`T7L038`); appendText; 
-   //Sora
    Sora`"But, even with all of that..."`;
    waitForClick; clearText; marker; sound(`T7L039`); appendText; 
-   //Sora
    Sora`"I love every bit of you!"`;
    waitForClick; clearText; marker; sound(`T7L040`); appendText; 
-   //Sora
    Sora`"Whatever I'm going through, all it takes is 
 to think of you and I am so happy."`;
    waitForClick; clearText; marker; appendText; 
@@ -1026,7 +909,6 @@ to think of you and I am so happy."`;
 in the past few days, match the maturity of 
 her age or, more likely, transcending it.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Sora..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The disk continued to copy.`;
@@ -1035,7 +917,6 @@ her age or, more likely, transcending it.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was being etched into me, too.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What do you want to do when you get out of 
 here?"`;
    waitForClick; clearText; 
@@ -1045,7 +926,6 @@ fgload({ id: 1, name: `SO06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L041`); appendText; 
-   //Sora
    Sora`"What?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was an empty wish.`;
@@ -1062,13 +942,10 @@ fgload({ id: 1, name: `SO11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L042`); appendText; 
-   //Sora
    Sora`"I..."`;
    waitForClick; clearText; marker; sound(`T7L043`); appendText; 
-   //Sora
    Sora`"If I could get out of here..."`;
    waitForClick; clearText; marker; sound(`T7L044`); appendText; 
-   //Sora
    Sora`"Well..."`;
    waitForClick; clearText; 
 });
@@ -1076,7 +953,6 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L045`); appendText; 
-   //Sora
    Sora`"I would like to travel the world."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She winked and smiled.`;
@@ -1086,11 +962,9 @@ fgload({ id: 1, name: `SO08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L046`); appendText; 
-   //Sora
    Sora`"And, if I could, I'd like to go on a date 
 with you."`;
    waitForClick; clearText; marker; sound(`T7L047`); appendText; 
-   //Sora
    Sora`"I would go out with you for about two or 
 three years, then get married at the age of 
 26 or 27."`;
@@ -1100,7 +974,6 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L048`); appendText; 
-   //Sora
    Sora`"That's what young ladies hope for, isn't it?"`;
    waitForClick; clearText; 
 });
@@ -1108,12 +981,10 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L049`); appendText; 
-   //Sora
    Sora`"...Isn't that right?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora became a little blurry.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah...that's right..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`My eyes misted over.`;
@@ -1141,7 +1012,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Sora..."`;
    waitForClick; clearText; 
 });
@@ -1151,7 +1021,6 @@ playBGM({ num: 21, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Do you know the legend of Pygmalion?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was crying. The tears were falling down my 
@@ -1159,37 +1028,28 @@ face.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora's figure wavered.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"He was the master sculptor in Greek myths... 
 He's been called the King of Cyprus..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"One day he created a beautiful sculpture of 
 the woman of his dreams."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And, because it was so beautiful, he fell in 
 love with the statue."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"He kept on thinking to himself 'If only it 
 were a real woman.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Aphrodite, the goddess of love, took pity on 
 him and brought this sculpture to life."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"They married and even had children."`;
    waitForClick; clearText; marker; sound(`T7L050`); appendText; 
-   //Sora
    Sora`"Yes..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I don't think I'll ever be the King of 
 Cyprus..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But...I love you...more than anyone."`;
    waitForClick; clearText; 
 });
@@ -1284,10 +1144,8 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L051`); appendText; 
-   //Sora
    Sora`"Takeshi"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, what can I do for ya?"`;
    waitForClick; clearText; 
 });
@@ -1295,7 +1153,6 @@ fgload({ id: 1, name: `SO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L052`); appendText; 
-   //Sora
    Sora`"Ha, ha, ha..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Every time I played the fool, it never failed 
@@ -1309,23 +1166,18 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L053`); appendText; 
-   //Sora
    Sora`"I suppose that what we just talked about 
 while the disk was copying won't be on that 
 disk."`;
    waitForClick; clearText; marker; sound(`T7L054`); appendText; 
-   //Sora
    Sora`"It's kind of too bad."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Nah, the memory's right here."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pointed to my head.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I will remember..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And the next time that we meet, I'll tell 
 you about it."`;
    waitForClick; clearText; 
@@ -1334,10 +1186,8 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T7L055`); appendText; 
-   //Sora
    Sora`"Really? Okay let's promise, then."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Alright, it's a promise."`;
    waitForClick; clearText; 
 });
@@ -1398,13 +1248,10 @@ waist.`;
    waitForClick; clearText; marker; appendText; 
    Narr`But for some reason, I didn't feel any fear.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's a promise..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's going to be okay, Sora."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I won't die."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was just like the time we stood facing 
@@ -1418,10 +1265,8 @@ each other through the glass window.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I could sense everything about Sora.`;
    waitForClick; clearText; marker; sound(`T7L056`); appendText; 
-   //Sora
    Sora`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`T7L057`); appendText; 
-   //Sora
    Sora`"Thank you!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I couldn't help it and embraced Sora.`;

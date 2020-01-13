@@ -1,23 +1,17 @@
 showTextbox();
 text(() => {
    marker; sound(`C2T000`); appendText; 
-   //Sora
    Sora`"Someone sees me."`;
    waitForClick; clearText; marker; sound(`C2T001`); appendText; 
-   //Sora
    Sora`"That action allows me to manifest myself for 
 the first time."`;
    waitForClick; clearText; marker; sound(`C2T002`); appendText; 
-   //Sora
    Sora`"On that eye, that visual point."`;
    waitForClick; clearText; marker; sound(`C2T003`); appendText; 
-   //Sora
    Sora`"That someone's eye actually creates me."`;
    waitForClick; clearText; marker; sound(`C2T004`); appendText; 
-   //Sora
    Sora`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`C2T005`); appendText; 
-   //Sora
    Sora`"When you close your eyes, I disappear."`;
    waitForClick; 
 });
@@ -43,7 +37,6 @@ let lbl_000000c9;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"......."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I said nothing, and nothing happened.`;
@@ -70,10 +63,8 @@ fgload({ id: 1, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T2C238`); appendText; 
-   //Sora
    Sora`"Well, Takeshi..."`;
    waitForClick; clearText; marker; sound(`T2C239`); appendText; 
-   //Sora
    Sora`"LeMMIH is calling for me, so I will leave 
 and then come back shortly."`;
    waitForClick; clearText; 
@@ -94,7 +85,6 @@ let lbl_0000012b;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"When I close my eyes...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I tried closing my eyelids halfway.`;
@@ -133,10 +123,8 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`She smiled gently.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Sora...?"`;
    waitForClick; clearText; marker; sound(`C2T006`); appendText; 
-   //Sora
    Sora`"Yes...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`There was no real meaning in my question.`;
@@ -156,13 +144,11 @@ fgload({ id: 1, name: `SO08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T007`); appendText; 
-   //Sora
    Sora`"Is there anything else? Please don't stare 
 at me like that."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora was blushing.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh...no. Nothing else."`;
    waitForClick; clearText; 
 });
@@ -173,10 +159,8 @@ text(() => {
    Narr`Sora pinched her lips closed, as if she were 
 slightly embarrassed.`;
    waitForClick; clearText; marker; sound(`C2T008`); appendText; 
-   //Sora
    Sora`"By the way, Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah?"`;
    waitForClick; clearText; 
 });
@@ -184,7 +168,6 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T009`); appendText; 
-   //Sora
    Sora`"Takeshi...have you ever seen the moon?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The question came out of nowhere.`;
@@ -192,7 +175,6 @@ text(() => {
    Narr`But it was one that caused me to burst out 
 laughing.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ha, ha, ha! Yeah, of course I have."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I replied, immediately.`;
@@ -202,18 +184,14 @@ fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T010`); appendText; 
-   //Sora
    Sora`"Well, now let's say that you have seen a full 
 moon."`;
    waitForClick; clearText; marker; sound(`C2T011`); appendText; 
-   //Sora
    Sora`"And let's say that you closed your eyes. Do 
 you think that moon would still be there?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why are you asking such obvious questions?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Of course it would."`;
    waitForClick; clearText; 
 });
@@ -221,11 +199,9 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T012`); appendText; 
-   //Sora
    Sora`"And how about if everyone in the world 
 closed their eyes all at the same time?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I don't know what your point is, but...even if 
 everyone in the world closed their eyes, the 
 moon wouldn't disappear."`;
@@ -235,16 +211,12 @@ fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T013`); appendText; 
-   //Sora
    Sora`"Really?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah."`;
    waitForClick; clearText; marker; sound(`C2T014`); appendText; 
-   //Sora
    Sora`"How can you be sure?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Just open your eyes and check, right?"`;
    waitForClick; clearText; 
 });
@@ -252,31 +224,24 @@ fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T015`); appendText; 
-   //Sora
    Sora`"That goes against the purpose of this 
 exercise."`;
    waitForClick; clearText; marker; sound(`C2T016`); appendText; 
-   //Sora
    Sora`"My question was whether there is any way 
 of measuring whether or not the moon 
 exists, if someone closes their eyes."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"?"`;
    waitForClick; clearText; marker; sound(`C2T017`); appendText; 
-   //Sora
    Sora`"When you close your eyes, do you think this 
 world still exists?"`;
    waitForClick; clearText; marker; sound(`C2T018`); appendText; 
-   //Sora
    Sora`"What if I told you that not only myself, but 
 all of LeMU was nothing but an RSD-generated 
 illusion.....what would you do then?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"... Huh?"`;
    waitForClick; clearText; marker; sound(`C2T019`); appendText; 
-   //Sora
    Sora`"Can you prove that the walls, the ceiling 
 and all of the scenery that you are 
 witnessing actually exist?"`;
@@ -291,16 +256,12 @@ fgload({ id: 1, name: `SO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T020`); appendText; 
-   //Sora
    Sora`"Ha, ha, I'm sorry, I was only joking."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's a joke?"`;
    waitForClick; clearText; marker; sound(`C2T021`); appendText; 
-   //Sora
    Sora`"Yes, LeMU really does exist."`;
    waitForClick; clearText; marker; sound(`C2T022`); appendText; 
-   //Sora
    Sora`"You sounded so full of confidence when you 
 answered...I thought I would tease you 
 just a bit."`;
@@ -312,14 +273,11 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T023`); appendText; 
-   //Sora
    Sora`"However, I can say this..."`;
    waitForClick; clearText; marker; sound(`C2T024`); appendText; 
-   //Sora
    Sora`"For humans to know the world around them 
 they must use one of their five senses."`;
    waitForClick; clearText; marker; sound(`C2T025`); appendText; 
-   //Sora
    Sora`"If they lose all of these, they lose the 
 ability to tell whether this world exists, 
 or not."`;
@@ -329,17 +287,14 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T026`); appendText; 
-   //Sora
    Sora`"Another way of putting it might be to say 
 that the perspective is in the eye of the 
 beholder."`;
    waitForClick; clearText; marker; sound(`C2T027`); appendText; 
-   //Sora
    Sora`"In this instance, I don't mean just sight, 
 but hearing, smell, taste, touch - all of the 
 senses."`;
    waitForClick; clearText; marker; sound(`C2T028`); appendText; 
-   //Sora
    Sora`"The point at which we perceive the world - 
 that is perspective."`;
    waitForClick; clearText; 
@@ -348,7 +303,6 @@ fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T029`); appendText; 
-   //Sora
    Sora`"And I..."`;
    waitForClick; clearText; 
 });
@@ -356,10 +310,8 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T030`); appendText; 
-   //Sora
    Sora`"I....I am the same as the moon."`;
    waitForClick; clearText; marker; sound(`C2T031`); appendText; 
-   //Sora
    Sora`"Do you understand?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I felt like I had been able to get the gist 
@@ -413,7 +365,6 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Aah, I got it."`;
    waitForClick; clearText; marker; appendText; 
    Narr`That was how I answered.`;
@@ -544,7 +495,6 @@ another, speaking in two and three word
 sentences. They looked like they were having 
 fun.`;
    waitForClick; clearText; marker; sound(`PIPI_09`); appendText; 
-   //Pipi
    Pipi`"Wow! Wow! Woof!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`From out of nowhere Pipi appeared and rushed 
@@ -553,7 +503,6 @@ up to my legs.`;
    Narr`I lifted up the sopping wet Pipi, and went 
 over to stand by the two girls.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What'cha looking at?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I stood beside them and asked.`;
@@ -566,20 +515,15 @@ text(() => {
    marker; appendText; 
    Narr`You and Coco looked up and noticed me.`;
    waitForClick; clearText; marker; sound(`C2T032`); appendText; 
-   //Coco
    Coco`"Um, uh, we were um, looking at these 
 pictures."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Pictures?"`;
    waitForClick; clearText; marker; sound(`C2T033`); appendText; 
-   //You
    You`"You want to see them?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Sure."`;
    waitForClick; clearText; marker; sound(`C2T034`); appendText; 
-   //You
    You`"Okay, I'll show you."`;
    waitForClick; clearText; 
 });
@@ -598,10 +542,8 @@ the pages. `;
    waitForClick; clearText; marker; appendText; 
    Narr`They were baby pictures.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It can't be..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Your baby!?"`;
    waitForClick; clearText; 
 });
@@ -609,7 +551,6 @@ fgload({ id: 1, name: `YU04ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T035`); appendText; 
-   //You
    You`"Nooo stupid!"`;
    waitForClick; clearText; 
 });
@@ -625,13 +566,10 @@ fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T036`); appendText; 
-   //You
    You`"I'm 18, okay? And I'm single. Single!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, right..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Which means that this baby is...?"`;
    waitForClick; clearText; 
 });
@@ -640,17 +578,13 @@ multifgload2({ id1: 1, id2: 2, name1: `YU05ADM`, name2: `CO01ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T037`); appendText; 
-   //Coco
    Coco`"It's Nakkyu, dummy."`;
    waitForClick; clearText; marker; sound(`C2T038`); appendText; 
-   //Coco
    Coco`"These are from when Nakkyu was a little bitty 
 baby!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So this is what you were laughing about?"`;
    waitForClick; clearText; marker; sound(`C2T039`); appendText; 
-   //You
    You`"Something wrong with that?"`;
    waitForClick; clearText; 
 });
@@ -658,15 +592,12 @@ fgload({ id: 1, name: `YU02ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T040`); appendText; 
-   //You
    You`"I mean they're adorable, right? My baby 
 pictures."`;
    waitForClick; clearText; marker; sound(`C2T041`); appendText; 
-   //You
    You`"Uh, and of course, the fact that I'm cute 
 hasn't changed a bit, you know."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"......"`;
    waitForClick; clearText; 
 });
@@ -674,7 +605,6 @@ fgload({ id: 1, name: `YU01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T042`); appendText; 
-   //You
    You`"Oh and...um...can you hand those back?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`And saying that You snatched the file out of 
@@ -685,15 +615,12 @@ multifgload2({ id1: 1, id2: 2, name1: `YU15ADM`, name2: `CO12ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T043`); appendText; 
-   //You
    You`"This picture is from when I was dressed up 
 in a kimono as a kid..."`;
    waitForClick; clearText; marker; sound(`C2T044`); appendText; 
-   //You
    You`"And in this, I was head cheerleader for an 
 all school athletic event."`;
    waitForClick; clearText; marker; sound(`C2T045`); appendText; 
-   //You
    You`"And.... Oh, this one's from my first day of 
 middle school."`;
    waitForClick; clearText; marker; appendText; 
@@ -704,16 +631,13 @@ fgload({ id: 1, name: `YU16ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T046`); appendText; 
-   //You
    You`"And here's one that I took at the talent 
 show my freshman year in High School."`;
    waitForClick; clearText; marker; sound(`C2T047`); appendText; 
-   //You
    You`"Here's Keiko, Min-min, Betty, Chi-chan, Beef 
 Yamamoto.... Oh, and couldn't forget my 
 teacher, right?"`;
    waitForClick; clearText; marker; sound(`C2T048`); appendText; 
-   //You
    You`"And the firework competition....here's my 
 trip to the hot springs... Oh! And one from 
 that time I stayed at Ami-chan's!"`;
@@ -723,7 +647,6 @@ fgload({ id: 1, name: `YU17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T049`); appendText; 
-   //You
    You`"And here we have... Huh? What is this?"`;
    waitForClick; clearText; 
 });
@@ -731,11 +654,9 @@ fgload({ id: 1, name: `YU15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T050`); appendText; 
-   //You
    You`"Oooh, that's riiight. This is when we 
 sneaked into school that one night..."`;
    waitForClick; clearText; marker; sound(`C2T051`); appendText; 
-   //You
    You`"And of course the graduation ceremony.... 
 There was one more...uuummm..."`;
    waitForClick; clearText; 
@@ -744,7 +665,6 @@ fgload({ id: 1, name: `YU16ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T052`); appendText; 
-   //You
    You`"Here it is, heh, heh, it's hideous, right? 
 I'd been crying and crying..."`;
    waitForClick; clearText; marker; appendText; 
@@ -761,13 +681,11 @@ hard times...`;
 photos were people I didn't know, places I 
 didn't know, and a You that I didn't know.`;
    waitForClick; clearText; marker; sound(`C2T053`); appendText; 
-   //You
    You`"Oh, and, and..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You looked like she had no intention of 
 stopping, so I rushed to get a word in.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Um, You? So what is this like your life's 
 history album or something?"`;
    waitForClick; clearText; 
@@ -776,18 +694,14 @@ multifgload2({ id1: 1, id2: 2, name1: `YU01ADM`, name2: `CO01ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T054`); appendText; 
-   //You
    You`"A history album...Well I've never called it 
 that before..."`;
    waitForClick; clearText; marker; sound(`C2T055`); appendText; 
-   //You
    You`"But if you had to label it, I guess you 
 could call it that."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Uh, so why are you carrying that with you?"`;
    waitForClick; clearText; marker; sound(`C2T056`); appendText; 
-   //You
    You`"Huh? Why do you even need to ask?"`;
    waitForClick; clearText; 
 });
@@ -795,11 +709,9 @@ fgload({ id: 2, name: `CO02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T057`); appendText; 
-   //Coco
    Coco`"Takepyon, you don't know? All girls carry 
 around things like this. It's normal."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You don't say?"`;
    waitForClick; clearText; 
 });
@@ -807,10 +719,8 @@ fgload({ id: 1, name: `YU02ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T058`); appendText; 
-   //You
    You`"Yeah."`;
    waitForClick; clearText; marker; sound(`C2T059`); appendText; 
-   //Coco
    Coco`"Well, all the girls I know carry them around."`;
    waitForClick; clearText; 
 });
@@ -833,17 +743,14 @@ multifgload2({ id1: 1, id2: 2, name1: `YU03ADM`, name2: `CO11ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T060`); appendText; 
-   //You
    You`You murmured softly to herself as she flipped 
 through the pages.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I wonder what everyone is doing right about 
 now...`;
    waitForClick; clearText; marker; sound(`C2T061`); appendText; 
-   //You
    You`"Do any of these people ever worry about me?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -851,16 +758,12 @@ fgload({ id: 2, name: `CO01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T062`); appendText; 
-   //Coco
    Coco`"Oh, yeah..."`;
    waitForClick; clearText; marker; sound(`C2T063`); appendText; 
-   //Coco
    Coco`"Do you live with your mom and dad, Takepyon?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Eh?"`;
    waitForClick; clearText; marker; sound(`C2T064`); appendText; 
-   //Coco
    Coco`"Or do you live by yourself?"`;
    waitForClick; 
 });
@@ -876,25 +779,19 @@ let lbl_0000063e;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"I'm living with my parents."`;
    waitForClick; clearText; marker; sound(`C2T065`); appendText; 
-   //Coco
    Coco`"So, I'll bet your mom and dad are worried 
 about you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well, they're parents. Parents worry, it's 
 what they're good at..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Buuut, that's only if they know we're stuck 
 in here."`;
    waitForClick; clearText; marker; sound(`C2T066`); appendText; 
-   //Coco
    Coco`"Well, they've got to know."`;
    waitForClick; clearText; marker; sound(`C2T067`); appendText; 
-   //Coco
    Coco`"An accident as big as this? It's probably 
 all over the news. They might even be doing a 
 huge TV special about it."`;
@@ -905,15 +802,12 @@ let lbl_00000647;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"I live by myself."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I get a phone call every couple of months 
 from home and I don't really call them much 
 myself."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So....there's probably no way that my 
 parents know that I'm trapped in a place like 
 this."`;
@@ -923,10 +817,8 @@ fgload({ id: 1, name: `YU01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T068`); appendText; 
-   //You
    You`"That's not true! They've got to know."`;
    waitForClick; clearText; marker; sound(`C2T069`); appendText; 
-   //You
    You`"An accident as big as this? It's probably 
 all over the newspapers and television."`;
    waitForClick; clearText; 
@@ -935,7 +827,6 @@ let lbl_00000663;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"You think so? I'm not sure about that..."`;
    waitForClick; clearText; 
 });
@@ -948,7 +839,6 @@ text(() => {
    Narr`It didn't seem like she was very interested 
 in what I had to say.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"How about you, Coco? You're probably still 
 living with your parents, aren't you?"`;
    waitForClick; clearText; 
@@ -957,7 +847,6 @@ fgload({ id: 2, name: `CO02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T070`); appendText; 
-   //Coco
    Coco`"Well I'm 14 aren't I? Of course I am."`;
    waitForClick; clearText; 
 });
@@ -965,11 +854,9 @@ fgload({ id: 2, name: `CO07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T071`); appendText; 
-   //Coco
    Coco`"Ah, well, right now my dad isn't at home, 
 but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmm? Why not?"`;
    waitForClick; clearText; 
 });
@@ -977,11 +864,9 @@ fgload({ id: 2, name: `CO05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T072`); appendText; 
-   //Coco
    Coco`"Because he's on a 'business trip,' that's 
 why."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, I see."`;
    waitForClick; clearText; 
 });
@@ -989,7 +874,6 @@ fgload({ id: 2, name: `CO01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"And what about you, You? Are you living with 
 your parents or...?"`;
    waitForClick; clearText; 
@@ -1013,32 +897,24 @@ multifgload2({ id1: 1, id2: 2, name1: `YU01ADM`, name2: `CO11ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T073`); appendText; 
-   //You
    You`"I'm living with my mom."`;
    waitForClick; clearText; marker; sound(`C2T074`); appendText; 
-   //You
    You`"But I doubt she's really worried about me."`;
    waitForClick; clearText; marker; sound(`C2T075`); appendText; 
-   //You
    You`"That's just the kind of person she is, my 
 mom..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What do you mean?"`;
    waitForClick; clearText; marker; sound(`C2T076`); appendText; 
-   //You
    You`"I guess you could call her a positive 
 thinker.... She isn't the type to really let 
 herself get caught up in things."`;
    waitForClick; clearText; marker; sound(`C2T077`); appendText; 
-   //You
    You`"She doesn't care if I stay out all night..."`;
    waitForClick; clearText; marker; sound(`C2T078`); appendText; 
-   //You
    You`"I've been living with her for 18 years... but 
 she's never raised her voice at me once."`;
    waitForClick; clearText; marker; sound(`C2T079`); appendText; 
-   //You
    You`"I grew up pretty much doing whatever I 
 wanted."`;
    waitForClick; clearText; 
@@ -1047,7 +923,6 @@ fgload({ id: 1, name: `YU07ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C2T080`); appendText; 
-   //You
    You`"I suppose that's why I turned out the way I 
 did."`;
    waitForClick; clearText; 
@@ -1064,7 +939,6 @@ wrestler.`;
    waitForClick; clearText; marker; appendText; 
    Narr`And the guy looked like a bulky jock of sorts.`;
    waitForClick; clearText; marker; sound(`C2T081`); appendText; 
-   //You
    You`"So..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You said this as she snapped the album shut.`;
@@ -1074,14 +948,11 @@ multifgload2({ id1: 1, id2: 2, name1: `YU17ADM`, name2: `CO13ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T082`); appendText; 
-   //You
    You`"Hey, Coco? You want to go take a nap?"`;
    waitForClick; clearText; marker; sound(`C2T083`); appendText; 
-   //You
    You`"I don't know why, but....yaaawn....I'm kind 
 of tired all of a sudden..."`;
    waitForClick; clearText; marker; sound(`C2T084`); appendText; 
-   //Coco
    Coco`"Okay, let's take a nap."`;
    waitForClick; clearText; 
 });
@@ -1089,13 +960,10 @@ multifgload2({ id1: 1, id2: 2, name1: `YU05ADM`, name2: `CO05ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C2T085`); appendText; 
-   //You
    You`"I wonder why I'm so tired this early?"`;
    waitForClick; clearText; marker; sound(`C2T086`); appendText; 
-   //You
    You`"Right, Coco?"`;
    waitForClick; clearText; marker; sound(`C2T087`); appendText; 
-   //Coco
    Coco`"Right, Nakkyu?"`;
    waitForClick; clearText; 
 });

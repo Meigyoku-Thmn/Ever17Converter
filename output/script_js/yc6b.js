@@ -114,10 +114,8 @@ fgload({ id: 1, name: `TA04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A293`); appendText; 
-   //Takeshi
    Takeshi`"H-hello!"`;
    waitForClick; clearText; marker; sound(`C6A294`); appendText; 
-   //Takeshi
    Takeshi`"This is the IBF Infirmary... over!"`;
    waitForClick; clearText; 
 });
@@ -137,7 +135,6 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A295`); appendText; 
-   //Takeshi
    Takeshi`"Yeah! We can hear you! We hear you! Loud and 
 clear!"`;
    waitForClick; clearText; marker; appendText; 
@@ -154,14 +151,12 @@ line.`;
    Mission_Control`"We're sending a rescue team immediately. Can 
 you access the pool in IBF 3?"`;
    waitForClick; clearText; marker; sound(`C6A296`); appendText; 
-   //Takeshi
    Takeshi`"Uh, ah, yeah, it should be fine."`;
    waitForClick; clearText; marker; sound(`T6T229`); appendText; 
    //Mission Control
    Mission_Control`"Do you know how many survivors there are and 
 where they are located?"`;
    waitForClick; clearText; marker; sound(`C6A297`); appendText; 
-   //Takeshi
    Takeshi`"In the examination room there are five...no, 
 six."`;
    waitForClick; clearText; marker; sound(`T6T230`); appendText; 
@@ -174,7 +169,6 @@ sector salvage vessel. When it arrives, I
 want you to follow their directions and get 
 out of there."`;
    waitForClick; clearText; marker; sound(`C6A298`); appendText; 
-   //Takeshi
    Takeshi`"How long 'till they get here?"`;
    waitForClick; clearText; marker; sound(`T6T232`); appendText; 
    //Mission Control
@@ -195,7 +189,6 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A299`); appendText; 
-   //Takeshi
    Takeshi`"S-something goes wrong...? W-what do you 
 mean...?"`;
    waitForClick; clearText; marker; sound(`T6T235`); appendText; 
@@ -213,7 +206,6 @@ sinking."`;
 possibility that heavy pieces could crash 
 down on the research facility."`;
    waitForClick; clearText; marker; sound(`C6A300`); appendText; 
-   //Takeshi
    Takeshi`"A-alright... I understand..."`;
    waitForClick; clearText; marker; sound(`T6T238`); appendText; 
    //Mission Control
@@ -231,7 +223,6 @@ fgload({ id: 1, name: `TA04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A301`); appendText; 
-   //Takeshi
    Takeshi`"Ah, hey! W-wait a sec!"`;
    waitForClick; clearText; 
 });
@@ -247,7 +238,6 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A302`); appendText; 
-   //Takeshi
    Takeshi`"Damn it, we can't open up communications 
 from this side..."`;
    waitForClick; clearText; marker; appendText; 
@@ -259,7 +249,6 @@ fgload({ id: 1, name: `TA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A303`); appendText; 
-   //Takeshi
    Takeshi`"Ah, here it is!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Following the instructions in the manual, he 
@@ -271,7 +260,6 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A304`); appendText; 
-   //Takeshi
    Takeshi`"It's a small electric submersible..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The submarine was in a separate sealed sector 
@@ -288,7 +276,6 @@ brought over to the pool by remote control.`;
 showTextbox();
 text(() => {
    marker; sound(`C6A305`); appendText; 
-   //Takeshi
    Takeshi`"If things get dangerous, I guess they want 
 us to board this."`;
    waitForClick; clearText; marker; appendText; 
@@ -301,10 +288,8 @@ fgload({ id: 1, name: `TA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A306`); appendText; 
-   //Takeshi
    Takeshi`"Alright..."`;
    waitForClick; clearText; marker; sound(`C6A307`); appendText; 
-   //Takeshi
    Takeshi`"All we have to do now is..."`;
    waitForClick; clearText; 
 });
@@ -312,7 +297,6 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A308`); appendText; 
-   //Takeshi
    Takeshi`"Get Tsugumi and Sora over here..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The second Takeshi said this—`;
@@ -362,13 +346,10 @@ text(() => {
    marker; appendText; 
    Narr`'Warning: LeMU hull breach : Flooding'`;
    waitForClick; clearText; marker; sound(`C6A309`); appendText; 
-   //Takeshi
    Takeshi`"LeMU....!?"`;
    waitForClick; clearText; marker; sound(`C6A310`); appendText; 
-   //Takeshi
    Takeshi`"This is bad..."`;
    waitForClick; clearText; marker; sound(`C6A311`); appendText; 
-   //Takeshi
    Takeshi`"That means...Tsugumi and Sora...!"`;
    waitForClick; clearText; 
 });
@@ -396,7 +377,6 @@ text(() => {
    Narr`It was only slight, but the floor was 
 trembling.`;
    waitForClick; clearText; marker; sound(`C6A312`); appendText; 
-   //Takeshi
    Takeshi`"Agh..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`He suddenly seemed to get dizzy, and lost his 
@@ -405,10 +385,8 @@ balance, crashing into a wall.`;
    Narr`Holding his fingers to his temples, Takeshi 
 shook his head to clear it.`;
    waitForClick; clearText; marker; sound(`C6A313`); appendText; 
-   //Takeshi
    Takeshi`"I...still gotta go..."`;
    waitForClick; clearText; marker; sound(`C6A314`); appendText; 
-   //Takeshi
    Takeshi`"I have to GO!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Staggering while he ran, Takeshi took off.`;
@@ -426,13 +404,10 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The lift he was on started moving up...`;
    waitForClick; clearText; marker; sound(`C6A315`); appendText; 
-   //Announcement
    Announcement`"Depth 270 feet..."`;
    waitForClick; clearText; marker; sound(`C6A316`); appendText; 
-   //Announcement
    Announcement`"Depth 240 feet..."`;
    waitForClick; clearText; marker; sound(`C6A317`); appendText; 
-   //Announcement
    Announcement`"Depth 210 feet..."`;
    waitForClick; clearText; 
 });
@@ -450,10 +425,8 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A318`); appendText; 
-   //Takeshi
    Takeshi`"Sora! Soraaa!"`;
    waitForClick; clearText; marker; sound(`T6T243`); appendText; 
-   //Sora
    Sora`"Ta-Takeshi!? What are you...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi waved to Sora as she appeared outside 
@@ -464,16 +437,12 @@ fgload({ id: 1, name: `TA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A319`); appendText; 
-   //Takeshi
    Takeshi`"Hey! Long time, no see!"`;
    waitForClick; clearText; marker; sound(`T6T244`); appendText; 
-   //Sora
    Sora`"Wh-what are you doing here!"`;
    waitForClick; clearText; marker; sound(`C6A320`); appendText; 
-   //Takeshi
    Takeshi`"Well, it's obvious isn't it? I came back."`;
    waitForClick; clearText; marker; appendText; 
-   //Sora
    Sora`"......"`;
    waitForClick; clearText; 
 });
@@ -481,13 +450,10 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A321`); appendText; 
-   //Takeshi
    Takeshi`"What's the damage?"`;
    waitForClick; clearText; marker; sound(`T6T245`); appendText; 
-   //Sora
    Sora`"There's flooding in Zweite stock."`;
    waitForClick; clearText; marker; sound(`T6T246`); appendText; 
-   //Sora
    Sora`"The warehouse area has been breached and 
 cracks are beginning to form in the elevator 
 shaft. The situation is serious."`;
@@ -496,42 +462,30 @@ shaft. The situation is serious."`;
 showTextbox();
 text(() => {
    marker; sound(`T6T247`); appendText; 
-   //Sora
    Sora`"There is over six inches of flooding 
 in almost all of the corridors."`;
    waitForClick; clearText; marker; sound(`C6A322`); appendText; 
-   //Takeshi
    Takeshi`"Where's Tsugumi?"`;
    waitForClick; clearText; marker; sound(`T6T248`); appendText; 
-   //Sora
    Sora`"She's...trapped in the infirmary..."`;
    waitForClick; clearText; marker; sound(`C6A323`); appendText; 
-   //Takeshi
    Takeshi`"What about the door?"`;
    waitForClick; clearText; marker; sound(`T6T249`); appendText; 
-   //Sora
    Sora`"The electronic lock has been released. But..."`;
    waitForClick; clearText; marker; sound(`C6A324`); appendText; 
-   //Takeshi
    Takeshi`"It won't open 'cause of the water pressure?"`;
    waitForClick; clearText; marker; sound(`T6T250`); appendText; 
-   //Sora
    Sora`"Yes..."`;
    waitForClick; clearText; marker; sound(`T6T251`); appendText; 
-   //Sora
    Sora`"Takeshi, I'm going to start decompressing the 
 chamber."`;
    waitForClick; clearText; marker; sound(`C6A325`); appendText; 
-   //Takeshi
    Takeshi`"How long will it take?"`;
    waitForClick; clearText; marker; sound(`T6T252`); appendText; 
-   //Sora
    Sora`"I will complete it as soon as possible."`;
    waitForClick; clearText; marker; sound(`C6A326`); appendText; 
-   //Takeshi
    Takeshi`"I need to know how much time!"`;
    waitForClick; clearText; marker; sound(`T6T253`); appendText; 
-   //Sora
    Sora`"If I hurry...12 hours."`;
    waitForClick; clearText; 
 });
@@ -539,32 +493,24 @@ fgload({ id: 1, name: `TA04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A327`); appendText; 
-   //Takeshi
    Takeshi`"Tw-twelve hours!? We don't have that long!"`;
    waitForClick; clearText; marker; sound(`T6T254`); appendText; 
-   //Sora
    Sora`"If we don't dissolve the nitrogen in your 
 blood, you will get decompression sickness."`;
    waitForClick; clearText; marker; sound(`C6A328`); appendText; 
-   //Takeshi
    Takeshi`"I don't care! Open that door now!"`;
    waitForClick; clearText; marker; sound(`T6T255`); appendText; 
-   //Sora
    Sora`"I can't do that...!"`;
    waitForClick; clearText; marker; sound(`C6A329`); appendText; 
-   //Takeshi
    Takeshi`"If we don't act fast, Tsugumi is dead!"`;
    waitForClick; clearText; marker; sound(`T6T256`); appendText; 
-   //Sora
    Sora`"If we open that door now, due to the rapid 
 decompression, the nitrogen in your 
 bloodstream will form bubbles, causing blood 
 clots, and in the worst case..."`;
    waitForClick; clearText; marker; sound(`C6A330`); appendText; 
-   //Takeshi
    Takeshi`"I don't care, you get that door OPEN NOW!!!"`;
    waitForClick; clearText; marker; sound(`T6T257`); appendText; 
-   //Sora
    Sora`"I can't...it's too..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Looking around, Takeshi's eyes fell on an 
@@ -597,13 +543,10 @@ been built up inside.`;
 sliding and rolling along the floor, only to 
 stop when he crashed into the wall.`;
    waitForClick; clearText; marker; sound(`C6A331`); appendText; 
-   //Takeshi
    Takeshi`"Gaagh!"`;
    waitForClick; clearText; marker; sound(`C6A332`); appendText; 
-   //Takeshi
    Takeshi`"...eeeaaAAAAGGHH"`;
    waitForClick; clearText; marker; sound(`C6A333`); appendText; 
-   //Takeshi
    Takeshi`"WAAAAaaaah......"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi twisted in agony.`;
@@ -611,7 +554,6 @@ stop when he crashed into the wall.`;
    Narr`He flailed his four limbs as though he were a 
 man gone insane.`;
    waitForClick; clearText; marker; sound(`C6A334`); appendText; 
-   //Takeshi
    Takeshi`"*Urgh*....*uurrgh*..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`From his unnatural contorted position on the 
@@ -622,13 +564,10 @@ fgload({ id: 1, name: `SO17ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T260`); appendText; 
-   //Sora
    Sora`"Takeshi!"`;
    waitForClick; clearText; marker; sound(`T6T261`); appendText; 
-   //Sora
    Sora`"Takeshi...are you okay?"`;
    waitForClick; clearText; marker; sound(`C6A335`); appendText; 
-   //Takeshi
    Takeshi`"W-well...it looks like...I'm still alive..."`;
    waitForClick; clearText; 
 });
@@ -651,7 +590,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA18ADM`, name2: `SO13ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C6A336`); appendText; 
-   //Takeshi
    Takeshi`"Don't you stop me, you hear? No matter what 
 you say, I'm going."`;
    waitForClick; clearText; 
@@ -660,16 +598,13 @@ fgload({ id: 2, name: `SO14ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T262`); appendText; 
-   //Sora
    Sora`"Alright, Takeshi. It seems that you've made 
 up your mind..."`;
    waitForClick; clearText; marker; sound(`T6T263`); appendText; 
-   //Sora
    Sora`"I'll stay here in Himmel, to keep track of 
 the situation at LeMU, and send updates to 
 your PDA."`;
    waitForClick; clearText; marker; sound(`T6T264`); appendText; 
-   //Sora
    Sora`"I'll do what I can to stop the partitions 
 from falling...to see that this place stays 
 together, even a little while longer. So—"`;
@@ -679,7 +614,6 @@ fgload({ id: 2, name: `SO11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T265`); appendText; 
-   //Sora
    Sora`"Promise me...that you'll come back here with 
 Tsugumi..."`;
    waitForClick; clearText; 
@@ -688,7 +622,6 @@ fgload({ id: 1, name: `TA16ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A337`); appendText; 
-   //Takeshi
    Takeshi`"Yeah, it's a promise."`;
    waitForClick; clearText; marker; appendText; 
    Narr`And saying that he laughed weakly.`;
@@ -844,7 +777,6 @@ fgload({ id: 1, name: `TA01AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A338`); appendText; 
-   //Takeshi
    Takeshi`"Tsugumi! Tsugumi!"`;
    waitForClick; clearText; 
 });
@@ -863,7 +795,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA15AWM`, name2: `TU06AWM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T6T267`); appendText; 
-   //Tsugumi
    Tsugumi`"Ta-Takeshi...what...WHY...!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi opened up her eyes wide.`;
@@ -873,13 +804,10 @@ fgload({ id: 1, name: `TA16AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A339`); appendText; 
-   //Takeshi
    Takeshi`"What are you so surprised about, Tsugumi?"`;
    waitForClick; clearText; marker; sound(`C6A340`); appendText; 
-   //Takeshi
    Takeshi`"I came back, right now! I came back for you!"`;
    waitForClick; clearText; marker; sound(`C6A341`); appendText; 
-   //Takeshi
    Takeshi`"Well, I was a bit late, but..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi scratched his nose.`;
@@ -889,10 +817,8 @@ fgload({ id: 2, name: `TU04AWM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T268`); appendText; 
-   //Tsugumi
    Tsugumi`"Y-you idiot! What are you doing here!!?"`;
    waitForClick; clearText; marker; sound(`T6T269`); appendText; 
-   //Tsugumi
    Tsugumi`"Do you...want do die!?"`;
    waitForClick; clearText; 
 });
@@ -900,7 +826,6 @@ fgload({ id: 1, name: `TA15AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A342`); appendText; 
-   //Takeshi
    Takeshi`"Listen..."`;
    waitForClick; clearText; 
 });
@@ -914,7 +839,6 @@ fgload({ id: 1, name: `TA16AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A343`); appendText; 
-   //Takeshi
    Takeshi`"I came back for something I forget, um, yeah 
 that's it."`;
    waitForClick; clearText; 
@@ -923,19 +847,15 @@ fgload({ id: 2, name: `TU11AWM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T270`); appendText; 
-   //Tsugumi
    Tsugumi`"You...forgot...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Picking up Chami in both hands, she stood up 
 slowly.`;
    waitForClick; clearText; marker; sound(`C6A344`); appendText; 
-   //Takeshi
    Takeshi`"Yeah. Left it here, silly me..."`;
    waitForClick; clearText; marker; sound(`C6A345`); appendText; 
-   //Takeshi
    Takeshi`"My irreplaceable..."`;
    waitForClick; clearText; marker; sound(`C6A346`); appendText; 
-   //Takeshi
    Takeshi`"More important to me than anything 
 else...friend..."`;
    waitForClick; clearText; 
@@ -944,10 +864,8 @@ fgload({ id: 2, name: `TU13AWM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T271`); appendText; 
-   //Tsugumi
    Tsugumi`"...how..."`;
    waitForClick; clearText; marker; sound(`T6T272`); appendText; 
-   //Tsugumi
    Tsugumi`"How...did you get here?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She looked at Takeshi as if she still couldn't 
@@ -958,10 +876,8 @@ fgload({ id: 1, name: `TA15AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A347`); appendText; 
-   //Takeshi
    Takeshi`"Well, I'm a good swimmer."`;
    waitForClick; clearText; marker; sound(`C6A348`); appendText; 
-   //Takeshi
    Takeshi`"Actually, in a 25 meter pool...I made it 
 down and back, once..."`;
    waitForClick; clearText; 
@@ -970,7 +886,6 @@ fgload({ id: 1, name: `TA16AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A349`); appendText; 
-   //Takeshi
    Takeshi`"I kicked off wall coming back, but still..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi mimed swimming as he spoke.`;
@@ -980,7 +895,6 @@ fgload({ id: 1, name: `TA15AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A350`); appendText; 
-   //Takeshi
    Takeshi`"Wait, I think I just beat my record a while 
 a go..."`;
    waitForClick; clearText; 
@@ -988,7 +902,6 @@ a go..."`;
 showTextbox();
 text(() => {
    marker; sound(`C6A351`); appendText; 
-   //Takeshi
    Takeshi`"Hey? Do you remember the furthest I've ever 
 swam underwater?"`;
    waitForClick; clearText; 
@@ -997,33 +910,25 @@ fgload({ id: 2, name: `TU02AWM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T273`); appendText; 
-   //Tsugumi
    Tsugumi`"...Fif..."`;
    waitForClick; clearText; marker; sound(`T6T274`); appendText; 
-   //Tsugumi
    Tsugumi`"Fifty one meters...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She answered, her expression beginning to 
 break down.`;
    waitForClick; clearText; marker; sound(`C6A352`); appendText; 
-   //Takeshi
    Takeshi`"Yeah..."`;
    waitForClick; clearText; marker; sound(`C6A353`); appendText; 
-   //Takeshi
    Takeshi`"You think I'd die in a place like this?"`;
    waitForClick; clearText; marker; sound(`C6A354`); appendText; 
-   //Takeshi
    Takeshi`"I mean..."`;
    waitForClick; clearText; marker; sound(`C6A355`); appendText; 
-   //Takeshi
    Takeshi`"I still haven't gotten enough abuse from you 
 yet."`;
    waitForClick; clearText; marker; sound(`C6A356`); appendText; 
-   //Takeshi
    Takeshi`"I want to hear what you've got to say, from 
 here on out..."`;
    waitForClick; clearText; marker; sound(`T6T275`); appendText; 
-   //Tsugumi
    Tsugumi`"Aaagh..."`;
    waitForClick; clearText; 
 });
@@ -1031,13 +936,10 @@ fgload({ id: 1, name: `TA16AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A357`); appendText; 
-   //Takeshi
    Takeshi`"So..."`;
    waitForClick; clearText; marker; sound(`C6A358`); appendText; 
-   //Takeshi
    Takeshi`"I came for you, Tsugumi."`;
    waitForClick; clearText; marker; sound(`T6T276`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi...Takeshi!"`;
    waitForClick; clearText; 
 });
@@ -1084,10 +986,8 @@ Takeshi made it safely back to Himmel.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora was waiting for them back in the room.`;
    waitForClick; clearText; marker; sound(`T6T278`); appendText; 
-   //Sora
    Sora`"Takeshi, Tsugumi!"`;
    waitForClick; clearText; marker; sound(`T6T279`); appendText; 
-   //Sora
    Sora`"I've prepared the chamber for you, get inside 
 quickly!"`;
    waitForClick; clearText; 
@@ -1097,16 +997,13 @@ multifgload2({ id1: 1, id2: 2, name1: `TA16AWM`, name2: `SO14ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C6A360`); appendText; 
-   //Takeshi
    Takeshi`"Hey, what's the rush, Sora?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Although Takeshi was out of breath, he waved 
 the flustered Sora off with his hands.`;
    waitForClick; clearText; marker; sound(`C6A361`); appendText; 
-   //Sora
    Sora`"C-come on! You have to hurry!"`;
    waitForClick; clearText; marker; sound(`C6A362`); appendText; 
-   //Takeshi
    Takeshi`"Relax.... I still have one more thing I've 
 forgotten..."`;
    waitForClick; clearText; 
@@ -1115,7 +1012,6 @@ fgload({ id: 2, name: `SO13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A363`); appendText; 
-   //Sora
    Sora`"F-forgotten...? What?"`;
    waitForClick; clearText; 
 });
@@ -1123,7 +1019,6 @@ fgload({ id: 1, name: `TA15AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A364`); appendText; 
-   //Takeshi
    Takeshi`"This."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi pointed to Himmel's console.`;
@@ -1153,14 +1048,11 @@ light——`;
    Narr`And from the blinding flood of light a voice 
 could be heard...`;
    waitForClick; clearText; marker; sound(`C6A366`); appendText; 
-   //You
    You`"I was able to finish the transfer just in 
 time."`;
    waitForClick; clearText; marker; sound(`C6A367`); appendText; 
-   //You
    You`"The last password, and name, T.Y..."`;
    waitForClick; clearText; marker; sound(`C6A368`); appendText; 
-   //You
    You`"TANAKA, YOICHI..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Where is this?—'I' wondered.`;
@@ -1176,13 +1068,10 @@ somewhere.`;
    waitForClick; clearText; marker; appendText; 
    Narr`A murmuring filled with peace...`;
    waitForClick; clearText; marker; sound(`C6A369`); appendText; 
-   //You
    You`"It was in Himmel, along with Sora's memory—"`;
    waitForClick; clearText; marker; sound(`C6A370`); appendText; 
-   //You
    You`"It's on that terabyte disk."`;
    waitForClick; clearText; marker; sound(`C6A371`); appendText; 
-   //You
    You`"Thank you...dad."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The voice cut out with a crackle.`;
@@ -1211,7 +1100,6 @@ fgload({ id: 1, name: `TA04AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A372`); appendText; 
-   //Takeshi
    Takeshi`"Haa—!"`;
    waitForClick; clearText; 
 });
@@ -1219,7 +1107,6 @@ fgload({ id: 1, name: `TA02AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A373`); appendText; 
-   //Takeshi
    Takeshi`"Keep it simple!"`;
    waitForClick; clearText; 
 });
@@ -1240,7 +1127,6 @@ text(() => {
    Narr`It was a single terabyte disk made out of 
 polycarbonate.`;
    waitForClick; clearText; marker; sound(`C6A374`); appendText; 
-   //Takeshi
    Takeshi`"Okay, I'm taking this with me."`;
    waitForClick; clearText; 
 });
@@ -1256,7 +1142,6 @@ text(() => {
 showTextbox();
 text(() => {
    marker; sound(`C6A375`); appendText; 
-   //Sora
    Sora`"Y-yes..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Taking a side-glance at the dumbfounded Sora, 
@@ -1279,7 +1164,6 @@ text(() => {
    marker; appendText; 
    Narr`Into IBF's compression chamber.`;
    waitForClick; clearText; marker; sound(`T6T280`); appendText; 
-   //Tsugumi
    Tsugumi`"Haaa....Haaaa...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi slumped over in her chair, breathing 
@@ -1289,7 +1173,6 @@ with her whole body.`;
 showTextbox();
 text(() => {
    marker; sound(`C6A376`); appendText; 
-   //Takeshi
    Takeshi`"Whew..."`;
    waitForClick; clearText; 
 });
@@ -1313,10 +1196,8 @@ playBGM({ num: 8, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`C6A377`); appendText; 
-   //Takeshi
    Takeshi`"Sora..."`;
    waitForClick; clearText; marker; sound(`C6A378`); appendText; 
-   //Takeshi
    Takeshi`"I guess this means good-bye for a while?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sora was standing still on the other side of 
@@ -1330,16 +1211,12 @@ text(() => {
    Narr`Smiling softly, Sora shook her head left to 
 right.`;
    waitForClick; clearText; marker; sound(`C6A380`); appendText; 
-   //Sora
    Sora`"No, this isn't good-bye."`;
    waitForClick; clearText; marker; sound(`C6A381`); appendText; 
-   //Sora
    Sora`"I don't say...good-bye..."`;
    waitForClick; clearText; marker; sound(`C6A382`); appendText; 
-   //Takeshi
    Takeshi`"Yeah..."`;
    waitForClick; clearText; marker; sound(`C6A383`); appendText; 
-   //Takeshi
    Takeshi`"Me neither."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi returned her smile.`;
@@ -1349,13 +1226,10 @@ bgload({ name: `EV_SO07A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C6A384`); appendText; 
-   //Sora
    Sora`"I don't exist."`;
    waitForClick; clearText; marker; sound(`C6A385`); appendText; 
-   //Sora
    Sora`"And yet—I am everywhere."`;
    waitForClick; clearText; marker; sound(`C6A386`); appendText; 
-   //Sora
    Sora`"There will be a time when we meet again. I'm 
 sure of it."`;
    waitForClick; clearText; 
@@ -1364,26 +1238,19 @@ bgload({ name: `EV_SO07B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C6A388`); appendText; 
-   //Sora
    Sora`"So, please..."`;
    waitForClick; clearText; marker; sound(`C6A389`); appendText; 
-   //Sora
    Sora`"Don't ask me anything now."`;
    waitForClick; clearText; marker; sound(`C6A390`); appendText; 
-   //Takeshi
    Takeshi`"Okay..."`;
    waitForClick; clearText; marker; sound(`C6A391`); appendText; 
-   //Takeshi
    Takeshi`"I understand...now."`;
    waitForClick; clearText; marker; sound(`C6A392`); appendText; 
-   //Takeshi
    Takeshi`"I don't how, but I understand now."`;
    waitForClick; clearText; marker; sound(`C6A393`); appendText; 
-   //Takeshi
    Takeshi`"That the only place to find you is here, yet 
 I can find you anywhere..."`;
    waitForClick; clearText; marker; sound(`C6A394`); appendText; 
-   //Sora
    Sora`"Yes..."`;
    waitForClick; clearText; 
 });
@@ -1391,24 +1258,18 @@ bgload({ name: `EV_SO07C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C6A395`); appendText; 
-   //Takeshi
    Takeshi`"O-oh, and..."`;
    waitForClick; clearText; marker; sound(`C6A396`); appendText; 
-   //Takeshi
    Takeshi`"When you hit a button, don't forget to say 
 'Keep it simple'. Remember that."`;
    waitForClick; clearText; marker; sound(`C6A397`); appendText; 
-   //Sora
    Sora`"Yeah...heh, heh."`;
    waitForClick; clearText; marker; sound(`C6A398`); appendText; 
-   //Sora
    Sora`"Don't worry. I will remember."`;
    waitForClick; clearText; marker; sound(`C6A400`); appendText; 
-   //Sora
    Sora`"That's a promise. Mine and yours, 
 professor..."`;
    waitForClick; clearText; marker; sound(`C6A401`); appendText; 
-   //Sora
    Sora`"Thank you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The RSD image started to warp and break up.`;
@@ -1449,10 +1310,8 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`T6T295`); appendText; 
-   //Tsugumi
    Tsugumi`"It's quiet..."`;
    waitForClick; clearText; marker; sound(`C6A402`); appendText; 
-   //Takeshi
    Takeshi`"Yeah, you're right..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The flooding should have been fairly advanced 
@@ -1473,7 +1332,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA04ADM`, name2: `TU11ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C6A403`); appendText; 
-   //Takeshi
    Takeshi`"Ah..."`;
    waitForClick; clearText; 
 });
@@ -1481,10 +1339,8 @@ fgload({ id: 2, name: `TU06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T296`); appendText; 
-   //Tsugumi
    Tsugumi`"What's wrong?"`;
    waitForClick; clearText; marker; sound(`C6A404`); appendText; 
-   //Takeshi
    Takeshi`"The time...we're past the scheduled time."`;
    waitForClick; clearText; 
 });
@@ -1492,7 +1348,6 @@ fgload({ id: 2, name: `TU11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T297`); appendText; 
-   //Tsugumi
    Tsugumi`"What schedule?"`;
    waitForClick; clearText; 
 });
@@ -1500,17 +1355,13 @@ fgload({ id: 1, name: `TA15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A405`); appendText; 
-   //Takeshi
    Takeshi`"Actually, there's a rescue team on their way."`;
    waitForClick; clearText; marker; sound(`T6T298`); appendText; 
-   //Tsugumi
    Tsugumi`"Rescue...?"`;
    waitForClick; clearText; marker; sound(`C6A406`); appendText; 
-   //Takeshi
    Takeshi`"Yeah, they called themselves the Maritime 
 Defense Force, I think."`;
    waitForClick; clearText; marker; sound(`C6A407`); appendText; 
-   //Takeshi
    Takeshi`"You was able to open up the communications 
 line, so we got a hold of Insel null."`;
    waitForClick; clearText; 
@@ -1535,10 +1386,8 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`T6T299`); appendText; 
-   //Tsugumi
    Tsugumi`"Ah..."`;
    waitForClick; clearText; marker; sound(`T6T300`); appendText; 
-   //Tsugumi
    Tsugumi`"They aren't here...nobody's here!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi raised her voice.`;
@@ -1549,10 +1398,8 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`But they were all empty.`;
    waitForClick; clearText; marker; sound(`C6A408`); appendText; 
-   //Takeshi
    Takeshi`"Yeah..."`;
    waitForClick; clearText; marker; sound(`C6A409`); appendText; 
-   //Takeshi
    Takeshi`"You, the Kid, Coco, that old guy...they're 
 all gone."`;
    waitForClick; clearText; 
@@ -1561,7 +1408,6 @@ fgload({ id: 2, name: `TU13ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T301`); appendText; 
-   //Tsugumi
    Tsugumi`"Where did they go?"`;
    waitForClick; clearText; 
 });
@@ -1569,7 +1415,6 @@ fgload({ id: 1, name: `TA15ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A410`); appendText; 
-   //Takeshi
    Takeshi`"Hey, hold on. I'm sure the rescue team found 
 them."`;
    waitForClick; clearText; marker; appendText; 
@@ -1600,7 +1445,6 @@ fgload({ id: 1, name: `TA04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A412`); appendText; 
-   //Takeshi
    Takeshi`"This is the Examination Room in IBF 3, over!"`;
    waitForClick; clearText; marker; sound(`C6A413`); appendText; 
    //Mission Control
@@ -1616,7 +1460,6 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A415`); appendText; 
-   //Takeshi
    Takeshi`"I'm sorry, I was out for a bit."`;
    waitForClick; clearText; marker; sound(`C6A416`); appendText; 
    //Mission Control
@@ -1624,7 +1467,6 @@ text(() => {
 people in the examination room, and they are 
 being cared for in the salvage vessel."`;
    waitForClick; clearText; marker; sound(`C6A417`); appendText; 
-   //Takeshi
    Takeshi`"Is everyone okay!?"`;
    waitForClick; clearText; marker; sound(`C6A418`); appendText; 
    //Mission Control
@@ -1641,13 +1483,11 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A420`); appendText; 
-   //Takeshi
    Takeshi`"Okay. You take care of them."`;
    waitForClick; clearText; marker; sound(`C6A421`); appendText; 
    //Mission Control
    Mission_Control`"How many people are there with you?"`;
    waitForClick; clearText; marker; sound(`C6A422`); appendText; 
-   //Takeshi
    Takeshi`"Two, including me."`;
    waitForClick; clearText; 
 });
@@ -1655,7 +1495,6 @@ fgload({ id: 1, name: `TA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A423`); appendText; 
-   //Takeshi
    Takeshi`"The other person didn't make it......"`;
    waitForClick; clearText; marker; sound(`C6A424`); appendText; 
    //Mission Control
@@ -1672,7 +1511,6 @@ fgload({ id: 1, name: `TA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A426`); appendText; 
-   //Takeshi
    Takeshi`"I've got the exploration vessel standing by. 
 I can call it here by remote control, right?"`;
    waitForClick; clearText; marker; sound(`C6A427`); appendText; 
@@ -1684,7 +1522,6 @@ use it, but there's nothing else we can do."`;
    Mission_Control`"We'll do the best we can. Whatever happens, 
 you hang in there."`;
    waitForClick; clearText; marker; sound(`C6A429`); appendText; 
-   //Takeshi
    Takeshi`"Roger."`;
    waitForClick; clearText; marker; appendText; 
    Narr`And after that the communications cut out.`;
@@ -1695,7 +1532,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA01ADM`, name2: `TU13ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`T6T313`); appendText; 
-   //Tsugumi
    Tsugumi`"What's that supposed to mean?"`;
    waitForClick; clearText; 
 });
@@ -1703,14 +1539,11 @@ fgload({ id: 1, name: `TA15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A430`); appendText; 
-   //Takeshi
    Takeshi`"You weren't listening?"`;
    waitForClick; clearText; marker; sound(`C6A432`); appendText; 
-   //Takeshi
    Takeshi`"All this would be for nothing, if everyone 
 died while they were waiting for us."`;
    waitForClick; clearText; marker; sound(`C6A433`); appendText; 
-   //Takeshi
    Takeshi`"The rescue team decided to put a higher 
 priority on getting You, the Kid, and Coco, 
 to the hospital, than waiting for us."`;
@@ -1720,7 +1553,6 @@ fgload({ id: 2, name: `TU11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T314`); appendText; 
-   //Tsugumi
    Tsugumi`"Yeah...you're right..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The color in Tsugumi's face slowly returned to 
@@ -1730,10 +1562,8 @@ normal, as her sense of panic faded.`;
 showTextbox();
 text(() => {
    marker; sound(`C6A434`); appendText; 
-   //Takeshi
    Takeshi`"Well..."`;
    waitForClick; clearText; marker; sound(`C6A435`); appendText; 
-   //Takeshi
    Takeshi`"I might just take a nap until the next bus 
 comes..."`;
    waitForClick; clearText; 
@@ -1742,7 +1572,6 @@ fgload({ id: 2, name: `TU06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T315`); appendText; 
-   //Tsugumi
    Tsugumi`"B-bus?"`;
    waitForClick; clearText; 
 });
@@ -1750,17 +1579,13 @@ fgload({ id: 1, name: `TA16ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A436`); appendText; 
-   //Takeshi
    Takeshi`"If you think the bus is going to be late, 
 call a cab for me, will you?"`;
    waitForClick; clearText; marker; sound(`T6T316`); appendText; 
-   //Tsugumi
    Tsugumi`"T-taxi?"`;
    waitForClick; clearText; marker; sound(`T6T317`); appendText; 
-   //Tsugumi
    Tsugumi`"What are you talking about...Takeshi?"`;
    waitForClick; clearText; marker; sound(`C6A437`); appendText; 
-   //Takeshi
    Takeshi`"If you push that button, a small submarine 
 will come over here by remote control—Our 
 very own private taxi should come here from 
@@ -1771,16 +1596,12 @@ fgload({ id: 2, name: `TU11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T318`); appendText; 
-   //Tsugumi
    Tsugumi`"O-okay..."`;
    waitForClick; clearText; marker; sound(`C6A438`); appendText; 
-   //Takeshi
    Takeshi`"Anyway..."`;
    waitForClick; clearText; marker; sound(`C6A439`); appendText; 
-   //Takeshi
    Takeshi`"I'm just glad that everyone's alright..."`;
    waitForClick; clearText; marker; sound(`C6A440`); appendText; 
-   //Takeshi
    Takeshi`"Yes..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`A look of relief flooded softly over his face.`;
@@ -1790,7 +1611,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C6A441`); appendText; 
-   //Takeshi
    Takeshi`"I'm just...so...glad..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Like a marionette that had its strings cut, 
@@ -1801,7 +1621,6 @@ fgload({ id: 2, name: `TU06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`T6T319`); appendText; 
-   //Tsugumi
    Tsugumi`"Ta-Takeshi!?"`;
    waitForClick; clearText; 
 });
@@ -1932,13 +1751,11 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A089`); appendText; 
-   //You
    You`"Kid!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You jumped into the room, as though she were 
 possessed by a demon.`;
    waitForClick; clearText; marker; sound(`S6A091`); appendText; 
-   //You
    You`"I found an exit we can escape through!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You was screaming.`;
@@ -1949,12 +1766,10 @@ myself over and over.`;
    Narr`It took me a few seconds to grasp the 
 enormity of those words.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Where did you find it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`My mind was still not fully up and running.`;
    waitForClick; clearText; marker; sound(`S6A090`); appendText; 
-   //You
    You`"I'll explain later, just hurry!"`;
    waitForClick; clearText; 
 });
@@ -1990,7 +1805,6 @@ grogginess.`;
    Narr`No mater how much I ran, I couldn't return to 
 normal.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Where is everyone else...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I was barely able to hold onto my 
@@ -2002,7 +1816,6 @@ fgload({ id: 1, name: `YU05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A093`); appendText; 
-   //You
    You`"Takeshi's going to get Mayo, and Tsugumi's 
 already in the emergency corridor."`;
    waitForClick; clearText; 
@@ -2011,10 +1824,8 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Takeshi's going to get Mayo..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Tsugumi's in the emergency corridor..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`For no reason in particular I repeated You's 
@@ -2048,13 +1859,10 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A094`); appendText; 
-   //Kaburaki
    Kaburaki`"Hurry, we don't have much time."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Not much time...?"`;
    waitForClick; clearText; marker; sound(`S6A095`); appendText; 
-   //Kaburaki
    Kaburaki`"Just hurry."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Kaburaki grabbed my shoulder hard and, turning 
@@ -2072,18 +1880,14 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`S6A096`); appendText; 
-   //You
    You`"Listen up - LeMU has started to implode."`;
    waitForClick; clearText; marker; sound(`S6A097`); appendText; 
-   //You
    You`"We were finally able to make contact with the 
 surface and access the emergency stairs."`;
    waitForClick; clearText; marker; sound(`S6A098`); appendText; 
-   //You
    You`"But if we don't hurry, they're going to 
 flood."`;
    waitForClick; clearText; marker; sound(`S6A099`); appendText; 
-   //You
    You`"So hurry."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You grabbed my arm tightly.`;
@@ -2126,7 +1930,6 @@ stairwell, and were running up the stairs.`;
    Narr`I could hear Kaburaki, Sara and 
 Tsugumi...their footsteps right above me.`;
    waitForClick; clearText; marker; sound(`S6A100`); appendText; 
-   //Kaburaki
    Kaburaki`"Hurry up! This way!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I couldn't see from where Kaburaki was calling.`;
@@ -2179,7 +1982,6 @@ stopSFX()
 showTextbox();
 text(() => {
    marker; sound(`S6A101`); appendText; 
-   //Kaburaki
    Kaburaki`"Just a little more! We're almost there!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Kaburaki screamed at us from up above.`;
@@ -2230,19 +2032,14 @@ out of here...?)`;
 already arrived at the last step in front of 
 the door.`;
    waitForClick; clearText; marker; appendText; 
-   //Kaburaki
    Kaburaki`"............"`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"............"`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"............"`;
    waitForClick; clearText; marker; appendText; 
-   //Tsugumi
    Tsugumi`"............"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"............"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Nobody said a word.`;
@@ -2251,7 +2048,6 @@ the door.`;
 as we glared at the huge door, which rose 
 before us.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Alright, let's go."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I put my hand on the door's lever.`;

@@ -30,7 +30,6 @@ clock(`15:20`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Rip Van Winkle DID exist!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I screamed out.`;
@@ -40,28 +39,21 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A426`); appendText; 
-   //You
    You`"You are so silly."`;
    waitForClick; clearText; marker; sound(`C4A427`); appendText; 
-   //You
    You`"It's just a fairy tale!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look, not all fairy tales are fiction!"`;
    waitForClick; clearText; marker; sound(`C4A428`); appendText; 
-   //You
    You`"That doesn't mean that Rip Van Winkle 
 actually existed, does it?"`;
    waitForClick; clearText; marker; sound(`C4A429`); appendText; 
-   //You
    You`"Besides, even if the tale of Rip Van Winkle 
 was real, that has nothing to do with you, 
 Kid."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It does, too."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We're talking about whether people could 
 actually travel through time, right?"`;
    waitForClick; clearText; 
@@ -70,15 +62,12 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A430`); appendText; 
-   //You
    You`"That's what I mean! Don't you get it?"`;
    waitForClick; clearText; marker; sound(`C4A431`); appendText; 
-   //You
    You`"I'm saying even if someone could actually 
 travel in time, that doesn't necessary mean 
 that you did."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Then how come I can see the future?"`;
    waitForClick; clearText; 
 });
@@ -86,35 +75,27 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A432`); appendText; 
-   //You
    You`"Don't ask me. How should I know..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It has to be because I'm experiencing the 
 same moment in time over and over again."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I must have been stuck in LeMU in the past, 
 also..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Three days passed, and then four, five 
 days...and after that, I must have slipped 
 through time for some reason."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Meaning, I must have traveled back in time, 
 to the moment I fell into that pond."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That must be why I can look into the future."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No, I mean, I must be remembering things I've 
 already experienced in the past, instead of 
 looking into the future to be exact."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't know how, but I'm probably carrying 
 memories of the past."`;
    waitForClick; clearText; 
@@ -123,10 +104,8 @@ fgload({ id: 1, name: `YU14ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A433`); appendText; 
-   //You
    You`"Really...well that must be it, then."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, c'mon, I'm being serious here!"`;
    waitForClick; clearText; 
 });
@@ -134,42 +113,32 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A434`); appendText; 
-   //You
    You`"I'm sorry...but I've got far more serious, 
 urgent problems."`;
    waitForClick; clearText; marker; sound(`C4A435`); appendText; 
-   //You
    You`"I've got tons of things to think about."`;
    waitForClick; clearText; marker; sound(`C4A436`); appendText; 
-   //You
    You`"You know what I'm talking about, Kid?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C4A437`); appendText; 
-   //You
    You`"I don't know what the reason is, but you can 
 predict the future."`;
    waitForClick; clearText; marker; sound(`C4A438`); appendText; 
-   //You
    You`"So what...?"`;
    waitForClick; clearText; marker; sound(`C4A439`); appendText; 
-   //You
    You`"It's not like it's a bad ability to have. As 
 a matter of fact, I can imagine that it would 
 really come in handy."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You make it sound so simple...but in my 
 case, I don't think it is the ability to see 
 the future, I'm pretty sure I traveled 
 through time."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I might even be repeating the same moment in 
 history over and over again."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And what's more, I'm pretty sure the amnesia 
 has something to do with the time travel..."`;
    waitForClick; clearText; 
@@ -178,49 +147,36 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A440`); appendText; 
-   //You
    You`"Look, how many times do I have to tell you?"`;
    waitForClick; clearText; marker; sound(`C4A441`); appendText; 
-   //You
    You`"Time travel is NOT possible."`;
    waitForClick; clearText; marker; sound(`C4A442`); appendText; 
-   //You
    You`"And as far as your amnesia, I'm sure you'll 
 regain your memories in time!"`;
    waitForClick; clearText; marker; sound(`C4A443`); appendText; 
-   //You
    You`"You're already beginning to remember things, 
 right?"`;
    waitForClick; clearText; marker; sound(`C4A444`); appendText; 
-   //You
    You`"I mean, you've actually remembered most 
 everything, haven't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Not everything."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I just remembered things about Sara."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Just childhood memories."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I still don't have any memories from the 
 last few years..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I have no idea how I got to LeMU, why or with 
 whom."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I still don't remember anything before May 
 1st, the day I came to LeMU."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Where I was...what I was doing..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Or who I am..."`;
    waitForClick; clearText; 
 });
@@ -228,10 +184,8 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A445`); appendText; 
-   //You
    You`"Huh?"`;
    waitForClick; clearText; marker; sound(`C4A446`); appendText; 
-   //You
    You`"Wa-wa-wait a second."`;
    waitForClick; clearText; 
 });
@@ -239,31 +193,23 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A447`); appendText; 
-   //You
    You`"You're Mayo's brother, right? You did 
 remember that, don't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh, yeah."`;
    waitForClick; clearText; marker; sound(`C4A448`); appendText; 
-   //You
    You`"So you have to at least know 'who you are.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But...I don't..."`;
    waitForClick; clearText; marker; sound(`C4A449`); appendText; 
-   //You
    You`"...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"How can I explain this..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If someone were to ask me 'who are you?' All 
 I could say is, 'I'm Sara Matsunaga's 
 brother.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't know any other way to answer."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Then all of the sudden ...`;
@@ -273,17 +219,14 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A450`); appendText; 
-   //You
    You`"Oh! Oh, oh, oh!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You raised her voice and pointed her finger 
 at me.`;
    waitForClick; clearText; marker; sound(`C4A451`); appendText; 
-   //You
    You`"Oh, that reminds me - I keep forgetting to 
 ask you something important!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Something important?"`;
    waitForClick; clearText; 
 });
@@ -291,19 +234,14 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A452`); appendText; 
-   //You
    You`"Name! Your name!"`;
    waitForClick; clearText; marker; sound(`C4A453`); appendText; 
-   //You
    You`"Your name, Kid!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C4A454`); appendText; 
-   //You
    You`"Mayo told you, didn't she?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -311,10 +249,8 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A455`); appendText; 
-   //You
    You`"You DID ask her, didn't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -322,10 +258,8 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A456`); appendText; 
-   //You
    You`"You haven't asked her your name!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Um...no...I haven't."`;
    waitForClick; clearText; 
 });
@@ -370,7 +304,6 @@ openShakeScreenAnim();
 showTextbox();
 text(() => {
    marker; sound(`C4A457`); appendText; 
-   //You
    You`"ARE YOU STUPID OR WHAAAAAAAAAAAT??"`;
    waitForClick; clearText; 
 });
@@ -384,27 +317,21 @@ earthquake.`;
    Narr`"I was a bit frightened that it would tear the 
 partition walls."`;
    waitForClick; clearText; marker; sound(`C4A458`); appendText; 
-   //You
    You`"That's the first thing you should ask her 
 before anything else!!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well...you probably wouldn't understand this, 
 but..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara and I had so much else to talk about."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We had endless things to talk about...and I 
 just didn't have the presence of mind or 
 chance to think about myself."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"For us, the first priority was to regain the 
 time we had lost."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And to be honest, I could care less about my 
 name."`;
    waitForClick; clearText; 
@@ -414,18 +341,14 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A459`); appendText; 
-   //You
    You`"Listen, Kid...just think about it."`;
    waitForClick; clearText; marker; sound(`C4A460`); appendText; 
-   //You
    You`"It's YOUR own name. Aren't you curious to 
 know?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Now that you've brought it up, I'm starting 
 to wonder..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"When I was talking to Sara, it didn't even 
 flash through my mind."`;
    waitForClick; clearText; 
@@ -434,43 +357,33 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A461`); appendText; 
-   //You
    You`"*Sigh*..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You sighed with an exaggerated gesture.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well just put yourself in our position, You?" `;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara and I saw each other for the first time 
 in nine years."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We were just so happy, caught up in the 
 memories..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But on the other hand, we were scared, in 
 pain and our hearts ached..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"All these emotions were mixed up and jumbled 
 together and came flooding over us."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara and I were overwhelmed just trying to 
 understand one another."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Like I said, names didn't seem so important 
 at that time."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"She just called me 'brother,' and I just 
 wanted to call her Sara."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Do you understand?"`;
    waitForClick; clearText; 
 });
@@ -478,7 +391,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A462`); appendText; 
-   //You
    You`"No, not at all."`;
    waitForClick; clearText; 
 });
@@ -488,7 +400,6 @@ text(() => {
    marker; appendText; 
    Narr`You said that and started to walk off.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, wait a second! Where are you going?"`;
    waitForClick; clearText; 
 });
@@ -501,7 +412,6 @@ straight corridor ...`;
    waitForClick; clearText; marker; appendText; 
    Narr`I tagged along beside her and asked her again.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey, where are you going?"`;
    waitForClick; clearText; 
 });
@@ -509,10 +419,8 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A463`); appendText; 
-   //You
    You`"I'm going to ask Mayo."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; 
 });
@@ -520,10 +428,8 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A464`); appendText; 
-   //You
    You`"Well, helloooo? Your name of course, Kid!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look, you don't have to do that..."`;
    waitForClick; clearText; 
 });
@@ -531,10 +437,8 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A465`); appendText; 
-   //You
    You`"Huh? Why not?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -542,7 +446,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A466`); appendText; 
-   //You
    You`"What you've been saying doesn't make sense."`;
    waitForClick; clearText; 
 });
@@ -550,11 +453,9 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A467`); appendText; 
-   //You
    You`"Don't you want to regain your full memory? 
 Don't you want to know who you are?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh, of course I do, but... "`;
    waitForClick; clearText; 
 });
@@ -562,12 +463,10 @@ fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A468`); appendText; 
-   //You
    You`"Well then, instead of talking about stupid, 
 outrageous things like seeing the future or 
 time travel..."`;
    waitForClick; clearText; marker; sound(`C4A469`); appendText; 
-   //You
    You`"Don't you think it'd just be faster to ask 
 Mayo?"`;
    waitForClick; clearText; marker; appendText; 
@@ -588,7 +487,6 @@ confused again.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Besides ...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is a name really all that important?"`;
    waitForClick; clearText; 
 });
@@ -596,104 +494,80 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A470`); appendText; 
-   //You
    You`"...What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Look, names are just a way people give 
 themselves to make identifying one another 
 more convenient."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's just for convenience...so while living 
 without a name certainly has its own 
 challenges, I don't think a name is an 
 absolute necessity."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Take dolphins. They are highly intelligent 
 creatures, but they don't go around calling 
 one another by name."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And they seem to be getting along just fine."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They seem to be able to identify one dolphin 
 from the others, too..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They know which one is a son, which one is a 
 wife and the difference between a gray whale 
 and a killer whale..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They don't have names, yet they can recognize 
 things correctly."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And...this is just a speculation, but...they 
 seem to recognize individual identities."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"A dolphin seems to have its own sense of 
 self, separate from that of the dolphin 
 swimming next to it. And it is aware that it 
 is a separate entity.."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"They don't have to depend on names to 
 recognize all these things..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"My name is James, this one next to me is 
 Ling Ling and that one chasing after a fish 
 is Yumemi ..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I don't think they do that."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It may sound kind of cocky, but sometimes I 
 feel humans depend on names too much."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If one day, this girl you've known as Ling 
 Ling tells you 'Oh, by the way my name is 
 Lang Lang,' wouldn't that throw you off?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It'd cause confusion...and you might think..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"'You know, Ling Ling and Lang Lang are really 
 similar, but they're probably just two 
 different people.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It seems stupid to get confused just because 
 of a name."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Meaning people value, trust and depend on 
 names, more than the actual individual 
 differences..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I bet dolphins don't think like that."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Because, to begin with, they don't have 
 names to identify individuals."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I realized that for the first time once I 
 lost my name."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I noticed that a name really isn't all that 
 important."`;
    waitForClick; clearText; 
@@ -713,7 +587,6 @@ bgload({ name: `BG26B3R`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Hey, are you listening to me?" `;
    waitForClick; clearText; marker; appendText; 
    Narr`As we turned around a corner, I asked her.`;
@@ -723,7 +596,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A471`); appendText; 
-   //You
    You`"Yup, I'm listening, I'm listening."`;
    waitForClick; clearText; 
 });
@@ -731,11 +603,9 @@ fgload({ id: 1, name: `YU11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A472`); appendText; 
-   //You
    You`"I've been thinking about what you were just 
 saying..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"?"`;
    waitForClick; clearText; 
 });
@@ -743,21 +613,16 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A473`); appendText; 
-   //You
    You`"I feel like I understand what you mean."`;
    waitForClick; clearText; marker; sound(`C4A474`); appendText; 
-   //You
    You`"You know, I've had a complex about my name 
 for a long time, and I've actually thought 
 quite a lot about this issue."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Complex?"`;
    waitForClick; clearText; marker; sound(`C4A475`); appendText; 
-   //You
    You`"Yeah."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You don't like your own name, You?"`;
    waitForClick; clearText; 
 });
@@ -765,10 +630,8 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A476`); appendText; 
-   //You
    You`"Of course I don't."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Why?"`;
    waitForClick; clearText; 
 });
@@ -776,18 +639,14 @@ fgload({ id: 1, name: `YU03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A477`); appendText; 
-   //You
    You`"I'm embarrassed about it."`;
    waitForClick; clearText; marker; sound(`C4A478`); appendText; 
-   //You
    You`"People introduce themselves to one another 
 when they meet, right?"`;
    waitForClick; clearText; marker; sound(`C4A479`); appendText; 
-   //You
    You`"Every time a new year at school would start 
 I would just cringe..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Oh."`;
    waitForClick; clearText; 
 });
@@ -797,14 +656,11 @@ text(() => {
    marker; appendText; 
    Narr`I murmured.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I remember you said something about your 
 full name being much longer, right?"`;
    waitForClick; clearText; marker; sound(`C4A480`); appendText; 
-   //You
    You`"Yeah."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Well, would that have something to do with 
 the fact that you don't like your name?"`;
    waitForClick; clearText; 
@@ -813,7 +669,6 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A481`); appendText; 
-   //You
    You`"Something to do with it? ... that IS WHY I 
 don't like it."`;
    waitForClick; clearText; 
@@ -826,10 +681,8 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`She had a bitter smile on her face.`;
    waitForClick; clearText; marker; sound(`C4A482`); appendText; 
-   //You
    You`"Do you want to know?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; 
 });
@@ -837,28 +690,20 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A483`); appendText; 
-   //You
    You`"I still haven't told you my full name yet."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Uh, I guess."`;
    waitForClick; clearText; marker; sound(`C4A484`); appendText; 
-   //You
    You`"Will you promise that you won't laugh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...Sure."`;
    waitForClick; clearText; marker; sound(`C4A485`); appendText; 
-   //You
    You`"Okay, I'll tell you."`;
    waitForClick; clearText; marker; sound(`C4A486`); appendText; 
-   //You
    You`"My name is..."`;
    waitForClick; clearText; marker; sound(`C4A487`); appendText; 
-   //You
    You`"Tanaka..."`;
    waitForClick; clearText; marker; sound(`C4A488`); appendText; 
-   //You
    You`"Yubiseiakikana."`;
    waitForClick; clearText; 
 });
@@ -866,17 +711,13 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"What ...?"`;
    waitForClick; clearText; marker; sound(`C4A489`); appendText; 
-   //You
    You`"It means 'gentle', 'beautiful', 'pure', 
 'autumn', 'fragrant', 'green', 'blossom'."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What!?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yubiseiakikana!?"`;
    waitForClick; clearText; 
 });
@@ -906,10 +747,8 @@ directly...`;
    waitForClick; clearText; marker; appendText; 
    Narr`You's real name was...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Your...real...name is..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Yubisei 'haru' kana."`;
    waitForClick; clearText; 
 });
@@ -917,13 +756,10 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A490`); appendText; 
-   //You
    You`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You said it wrong, didn't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You actually meant to say 'harukana', right?"`;
    waitForClick; clearText; 
 });
@@ -931,19 +767,15 @@ fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A491`); appendText; 
-   //You
    You`"Look, I don't think I'd say my own name 
 incorrectly."`;
    waitForClick; clearText; marker; sound(`C4A492`); appendText; 
-   //You
    You`"Well, 'haru' or 'aki', either one is fine 
 with me."`;
    waitForClick; clearText; marker; sound(`C4A493`); appendText; 
-   //You
    You`"But on the birth certificate, it says 
 'aki'..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No!"`;
    waitForClick; clearText; 
 });
@@ -951,13 +783,10 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A494`); appendText; 
-   //You
    You`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Your full name has to be Yubisei 'haru' kana!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's not 'aki'!"`;
    waitForClick; clearText; 
 });
@@ -965,7 +794,6 @@ fgload({ id: 1, name: `YU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A495`); appendText; 
-   //You
    You`"Ha, ha, ha, ha, ha..."`;
    waitForClick; clearText; 
 });
@@ -973,14 +801,11 @@ fgload({ id: 1, name: `YU12ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A496`); appendText; 
-   //You
    You`"A, ha, ha, ha, ha."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What are you laughing about? This isn't 
 funny at all!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You don't remember your own name!"`;
    waitForClick; clearText; 
 });
@@ -988,61 +813,43 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A497`); appendText; 
-   //You
    You`"Yeah, yeah, that just may be it."`;
    waitForClick; clearText; marker; sound(`C4A498`); appendText; 
-   //You
    You`"My real name is...oh, was it Ling Ling? No 
 wait, maybe it was Lang Lang?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C4A499`); appendText; 
-   //You
    You`"Kid, listen up."`;
    waitForClick; clearText; marker; sound(`C4A500`); appendText; 
-   //You
    You`"My name is Yubiseiakikana."`;
    waitForClick; clearText; marker; sound(`C4A501`); appendText; 
-   //You
    You`"It's been that way since I was born, and it 
 will be that way as long as I live."`;
    waitForClick; clearText; marker; sound(`C4A502`); appendText; 
-   //You
    You`"You got it?"`;
    waitForClick; clearText; marker; sound(`C4A503`); appendText; 
-   //You
    You`"It's neither, haru, or natsu, or fuyu, but 
 aki."`;
    waitForClick; clearText; marker; sound(`C4A504`); appendText; 
-   //You
    You`"Do you know why?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C4A505`); appendText; 
-   //You
    You`"I was born 18 years and seven months ago."`;
    waitForClick; clearText; marker; sound(`C4A506`); appendText; 
-   //You
    You`"A little more than seven months, to be exact."`;
    waitForClick; clearText; marker; sound(`C4A507`); appendText; 
-   //You
    You`"My birthday is September 22."`;
    waitForClick; clearText; marker; sound(`C4A508`); appendText; 
-   //You
    You`"I was born in Japan."`;
    waitForClick; clearText; marker; sound(`C4A509`); appendText; 
-   //You
    You`"I wasn't born in the southern hemisphere."`;
    waitForClick; clearText; marker; sound(`C4A510`); appendText; 
-   //You
    You`"Let's see...was September spring in Japan!?"`;
    waitForClick; clearText; marker; sound(`C4A511`); appendText; 
-   //You
    You`"No, it's autumn, isn't it?"`;
    waitForClick; clearText; marker; sound(`C4A512`); appendText; 
-   //You
    You`"So, my name is 'akikana' - 'aki', as in 
 autumn - you got that?"`;
    waitForClick; clearText; marker; appendText; 
@@ -1062,7 +869,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A513`); appendText; 
-   //Sara
    Sara`"Brother! Nakkyu!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I glanced as I put my hand on my temple.`;
@@ -1081,25 +887,19 @@ multifgload2({ id1: 1, id2: 2, name1: `YU15ADM`, name2: `SA11ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C4A514`); appendText; 
-   //You
    You`"Good timing..."`;
    waitForClick; clearText; marker; sound(`C4A515`); appendText; 
-   //Sara
    Sara`"Good timing?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara stood in front of us, tilting her head 
 quizzically.`;
    waitForClick; clearText; marker; sound(`C4A516`); appendText; 
-   //You
    You`"Actually, I had a question for you, Mayo."`;
    waitForClick; clearText; marker; sound(`C4A517`); appendText; 
-   //Sara
    Sara`"What is it?"`;
    waitForClick; clearText; marker; sound(`C4A518`); appendText; 
-   //You
    You`"The Kid's name."`;
    waitForClick; clearText; marker; sound(`C4A519`); appendText; 
-   //You
    You`"Will you tell me his real name?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You put her hand over my shoulder.`;
@@ -1125,10 +925,8 @@ fgload({ id: 2, name: `SA12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Sara
    Sara`"   !"`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"   ,   ?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I couldn't hear her voice. `;
@@ -1136,7 +934,6 @@ text(() => {
    Narr`I saw Sara's lips were moving, but I couldn't 
 hear her voice for some reason.`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"   ,   "`;
    waitForClick; clearText; 
 });
@@ -1144,10 +941,8 @@ fgload({ id: 1, name: `YU01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //You
    You`"   ,   ..."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"   ,   '   '   "`;
    waitForClick; clearText; marker; appendText; 
    Narr`I couldn't hear You's voice, either.`;
@@ -1177,10 +972,8 @@ multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"Who are you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Who am I?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`"Who..."`;
@@ -1196,13 +989,10 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`C4A520`); appendText; 
-   //Sara
    Sara`"Hokuto!"`;
    waitForClick; clearText; marker; sound(`C4A521`); appendText; 
-   //Sara
    Sara`"Your name is Hokuto!"`;
    waitForClick; clearText; marker; sound(`C4A522`); appendText; 
-   //You
    You`"Hokuto, huh?"`;
    waitForClick; clearText; 
 });
@@ -1210,23 +1000,17 @@ fgload({ id: 1, name: `YU01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A523`); appendText; 
-   //You
    You`"So that's what he's called..."`;
    waitForClick; clearText; marker; sound(`C4A524`); appendText; 
-   //You
    You`"Now that you mention it, he does look kind 
 of look like a 'Hokuto' to me."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hokuto..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"That is..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...my..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"...name...?"`;
    waitForClick; clearText; 
 });
@@ -1234,15 +1018,12 @@ fgload({ id: 2, name: `SA01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A525`); appendText; 
-   //Sara
    Sara`"That's right, brother."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hokuto...Hokuto...Hokuto..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I repeated it aloud over and over again.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hokuto...Hokuto...Hokuto..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`My hunch had been right.`;
@@ -1287,10 +1068,8 @@ somebody that isn't me?)`;
    Narr`(Is Hokuto really me? Or is it me who's not 
 Hokuto?)`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hokuto...Hokuto...Hokuto..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Is it really...?"`;
    waitForClick; clearText; 
 });
@@ -1322,17 +1101,14 @@ clock(`19:44`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Is that really his name?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi slightly nodded her head.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Her face was all red.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"So you're Chami. Because you're charming."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"That's cute. What a good name!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`How....cute.`;
@@ -1346,10 +1122,8 @@ bgload({ name: `EV_TU02B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C4A526`); appendText; 
-   //Tsugumi
    Tsugumi`"Ah c'mon! You promised not to laugh!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm not laughing!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I tried to keep a straight face...but the 
@@ -1358,10 +1132,8 @@ corners of my mouth started to twitch.`;
    Narr`I could just imagine Tsugumi baby-talking to 
 it. 'Chami-poo, Chami-poo it's din-din time.'`;
    waitForClick; clearText; marker; sound(`C4A527`); appendText; 
-   //Tsugumi
    Tsugumi`"Aaaargh!"`;
    waitForClick; clearText; marker; sound(`C4A528`); appendText; 
-   //Tsugumi
    Tsugumi`"That's why I didn't want to tell you!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sullen, Tsugumi was red-faced...`;
@@ -1369,12 +1141,10 @@ it. 'Chami-poo, Chami-poo it's din-din time.'`;
    Narr`...but she held out the bath towel she had 
 behind her back.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, thanks."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I took the towel and wiped myself down.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Phew..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I breathed deeply, feeling reborn, as I 
@@ -1393,10 +1163,8 @@ and her cheeks were bright.`;
    Narr`It was the first time I'd ever seen her smile 
 like she meant it.`;
    waitForClick; clearText; marker; sound(`C4A529`); appendText; 
-   //Tsugumi
    Tsugumi`"Takeshi..."`;
    waitForClick; clearText; marker; sound(`C4A530`); appendText; 
-   //Tsugumi
    Tsugumi`"Thank you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi said it in a whisper without looking 
@@ -1449,32 +1217,25 @@ fgload({ id: 1, name: `TU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A531`); appendText; 
-   //Tsugumi
    Tsugumi`"What's wrong?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi must have noticed my slow steps, and 
 looked at my face, worried.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm just tired."`;
    waitForClick; clearText; marker; sound(`C4A532`); appendText; 
-   //Tsugumi
    Tsugumi`"Are you alright?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Ha-ha, yeah, I'm fine."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'm just tired is all."`;
    waitForClick; clearText; marker; sound(`C4A533`); appendText; 
-   //Tsugumi
    Tsugumi`"Okay."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi was worried about me.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was a funny feeling.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"By the way, how about yourself?"`;
    waitForClick; clearText; 
 });
@@ -1482,10 +1243,8 @@ fgload({ id: 1, name: `TU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A534`); appendText; 
-   //Tsugumi
    Tsugumi`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Your leg...you know, your injury."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi was dragging her right foot.`;
@@ -1495,14 +1254,11 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A535`); appendText; 
-   //Tsugumi
    Tsugumi`"I'm alright."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Are you really? The wound didn't open up or 
 anything, did it?"`;
    waitForClick; clearText; marker; sound(`C4A536`); appendText; 
-   //Tsugumi
    Tsugumi`"Do you wanna see?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi stopped walking.`;
@@ -1510,7 +1266,6 @@ anything, did it?"`;
    Narr`She quickly flipped up her skirt with her 
 hands.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"C-cut it out!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`In shock, I slapped Tsugumi's hand and 
@@ -1521,7 +1276,6 @@ fgload({ id: 1, name: `TU02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A537`); appendText; 
-   //Tsugumi
    Tsugumi`"Ha, ha, ha, ha..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi chuckled gleefully.`;
@@ -1613,7 +1367,6 @@ fgload({ id: 1, name: `TU10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A538`); appendText; 
-   //Tsugumi
    Tsugumi`"Do you want to try?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Saying so, Tsugumi put Chami on my shoulder.`;
@@ -1625,7 +1378,6 @@ text(() => {
    Narr`It tickled so much that I couldn't help but 
 wriggle my body.`;
    waitForClick; clearText; marker; sound(`C4A539`); appendText; 
-   //Tsugumi
    Tsugumi`"Ha, ha, ha."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Chami looked hesitant when he got to the end, 
@@ -1634,10 +1386,8 @@ which was the tip of my hand.`;
    Narr`I held Chami gently in my palm and looked at 
 him closely.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Chami, huh...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Are you Chami? Well are you? C'mon answer 
 me!!"`;
    waitForClick; clearText; marker; appendText; 
@@ -1645,15 +1395,12 @@ me!!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Maybe he was frightened I would eat him.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah...he sure is charming."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"He's Chami because he's so darn charming."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Curious, I decided to ask Tsugumi a question.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Why are you called Tsugumi?"`;
    waitForClick; clearText; 
 });
@@ -1661,20 +1408,15 @@ fgload({ id: 1, name: `TU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A540`); appendText; 
-   //Tsugumi
    Tsugumi`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Your name, I mean."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Does it come from Chinese character for the 
 bird, the redwing?"`;
    waitForClick; clearText; marker; sound(`C4A541`); appendText; 
-   //Tsugumi
    Tsugumi`"The bird?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"If I remember correct, they migrate, right?"`;
    waitForClick; clearText; 
 });
@@ -1682,16 +1424,12 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A542`); appendText; 
-   //Tsugumi
    Tsugumi`"Oh, redwings?"`;
    waitForClick; clearText; marker; sound(`C4A543`); appendText; 
-   //Tsugumi
    Tsugumi`"Not to disappoint you, but..."`;
    waitForClick; clearText; marker; sound(`C4A544`); appendText; 
-   //Tsugumi
    Tsugumi`"Nope, my name has nothing to do with birds."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Then what does your name mean?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`As I asked Tsugumi, I passed Chami back into 
@@ -1699,49 +1437,35 @@ her hand.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi picked up Chami, and told me.`;
    waitForClick; clearText; marker; sound(`C4A545`); appendText; 
-   //Tsugumi
    Tsugumi`"'Satellite of the earth' and 'where we are 
 at.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Huh?"`;
    waitForClick; clearText; marker; sound(`C4A546`); appendText; 
-   //Tsugumi
    Tsugumi`"What's the one satellite this earth has?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"The moon?"`;
    waitForClick; clearText; marker; sound(`C4A547`); appendText; 
-   //Tsugumi
    Tsugumi`"And where are we right now?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"LeMU."`;
    waitForClick; clearText; marker; sound(`C4A548`); appendText; 
-   //Tsugumi
    Tsugumi`"What's all around us here at LeMU?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Uh...around us....the ocean?"`;
    waitForClick; clearText; marker; sound(`C4A549`); appendText; 
-   //Tsugumi
    Tsugumi`"Yup."`;
    waitForClick; clearText; marker; sound(`C4A550`); appendText; 
-   //Tsugumi
    Tsugumi`"In Japanese you write it 'moon' and then 
 'ocean,' and read it 'Tsugumi.'"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Oh, I see."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Come to think of it, I didn't know which 
 Chinese characters your name used."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"'Moon' and 'ocean', huh...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hmm, that's a really pretty name."`;
    waitForClick; clearText; 
 });
@@ -1758,10 +1482,8 @@ playBGM({ num: 18, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`C4A551`); appendText; 
-   //Coco
    Coco`"Daddy! Mommy!"`;
    waitForClick; clearText; marker; sound(`PIPI_10`); appendText; 
-   //Pipi
    Pipi`"Bow-wow! Bow-wow!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco and Pipi came rushing in.`;
@@ -1771,13 +1493,10 @@ multifgload2({ id1: 1, id2: 2, name1: `CO02ADM`, name2: `TU14ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"I told you NOT to call me daddy!"`;
    waitForClick; clearText; marker; sound(`C4A552`); appendText; 
-   //Tsugumi
    Tsugumi`"I told you NOT to call me mommy!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; 
 });
@@ -1785,24 +1504,18 @@ fgload({ id: 2, name: `TU07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A553`); appendText; 
-   //Tsugumi
    Tsugumi`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Tsugumi and I looked at each other.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Coco's been calling you mommy, Tsugumi?"`;
    waitForClick; clearText; marker; sound(`C4A554`); appendText; 
-   //Tsugumi
    Tsugumi`"And she's calling you daddy, Takeshi?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"She keeps doing it no matter what I say!"`;
    waitForClick; clearText; marker; sound(`C4A555`); appendText; 
-   //Coco
    Coco`"Hey, daddy? Mommy? Let's play!"`;
    waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   //Pipi
    Pipi`"Bow-wow!"`;
    waitForClick; clearText; 
 });
@@ -1831,11 +1544,9 @@ back, AND swim underwater 102 meters.`;
    Narr`By the way, Coco's reason for calling Tsugumi 
 'mommy' was...`;
    waitForClick; clearText; marker; sound(`C4A556`); appendText; 
-   //Coco
    Coco`"A girl who doesn't have a mommy can call 
 somebody who reminds her of mommy 'mommy.'"`;
    waitForClick; clearText; marker; sound(`C4A557`); appendText; 
-   //Coco
    Coco`"It's written in the Naacal Tablet, wasn't it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`... So she said.`;
@@ -1884,7 +1595,6 @@ text(() => {
    Narr`You was sitting in front of the console, 
 staring blankly at the screen.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hi."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I called out a greeting as I sat down in the 
@@ -1893,56 +1603,41 @@ seat next to her.`;
    Narr`You grabbed a coffee cup, took big a gulp, and 
 said...`;
    waitForClick; clearText; marker; sound(`C4A558`); appendText; 
-   //You
    You`"Thank you."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Huh?"`;
    waitForClick; clearText; marker; sound(`C4A559`); appendText; 
-   //You
    You`"I didn't have a chance to say it earlier, 
 right?"`;
    waitForClick; clearText; marker; sound(`C4A560`); appendText; 
-   //You
    You`"So, thank you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You's eyes were fixed on the display.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Are you talking about when I carried you to 
 the infirmary, earlier?"`;
    waitForClick; clearText; marker; sound(`C4A561`); appendText; 
-   //You
    You`"Yes."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You don't have to thank me."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I just want to ask you a question."`;
    waitForClick; clearText; marker; appendText; 
-   //You
    You`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What caused it, anyway?"`;
    waitForClick; clearText; marker; sound(`C4A562`); appendText; 
-   //You
    You`"Cause? What are you talking about?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`You still wouldn't look at me.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"A normal, healthy person wouldn't just 
 suddenly clutch their chest in pain, you know?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"And besides..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You said 'It happens all the time'."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What is it all about?"`;
    waitForClick; clearText; 
 });
@@ -1958,7 +1653,6 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A563`); appendText; 
-   //You
    You`"Hey Takeshi? Do you remember why I came to 
 LeMU?"`;
    waitForClick; clearText; marker; appendText; 
@@ -1967,14 +1661,11 @@ LeMU?"`;
    Narr`I didn't understand why she was asking the 
 question, but I answered her anyway.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Yeah, I do."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"You came to get a part-time job for the 
 holidays..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But it was just an excuse to search for your 
 father who's been missing for 17 years, 
 right?"`;
@@ -1993,23 +1684,17 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; sound(`S1C122`); appendText; 
-   //You
    You`"My mom seems to think my dad is already 
 dead..."`;
    waitForClick; clearText; marker; sound(`S1C123`); appendText; 
-   //You
    You`"But you know?"`;
    waitForClick; clearText; marker; sound(`S1C124`); appendText; 
-   //You
    You`"I believe!"`;
    waitForClick; clearText; marker; sound(`S1C125`); appendText; 
-   //You
    You`"I know that my dad is still alive somewhere!"`;
    waitForClick; clearText; marker; sound(`S1C126`); appendText; 
-   //You
    You`"He's got to be!"`;
    waitForClick; clearText; marker; sound(`S1C127`); appendText; 
-   //You
    You`"He just went missing. They never found his 
 body."`;
    waitForClick; clearText; 
@@ -2024,17 +1709,13 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`C4A564`); appendText; 
-   //You
    You`"I just had to find out."`;
    waitForClick; clearText; marker; sound(`C4A565`); appendText; 
-   //You
    You`"If he was alive...or...dead..."`;
    waitForClick; clearText; marker; sound(`C4A566`); appendText; 
-   //You
    You`"If he's alive, of course I want to see 
 him..."`;
    waitForClick; clearText; marker; sound(`C4A567`); appendText; 
-   //You
    You`"And if he's dead, I wanted to find some kind 
 of evidence."`;
    waitForClick; clearText; 
@@ -2043,7 +1724,6 @@ fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A568`); appendText; 
-   //You
    You`"Otherwise I won't give up...I just can't 
 accept it."`;
    waitForClick; clearText; 
@@ -2073,17 +1753,13 @@ father's situation with the story of the nun.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It occurred to me that way.`;
    waitForClick; clearText; marker; sound(`C4A569`); appendText; 
-   //You
    You`"And so that's what I was researching just 
 now."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...And...did you...find out anything?"`;
    waitForClick; clearText; marker; sound(`C4A570`); appendText; 
-   //You
    You`"Nothing."`;
    waitForClick; clearText; marker; sound(`C4A571`); appendText; 
-   //You
    You`"I can't figure out the password...I give up."`;
    waitForClick; clearText; 
 });
@@ -2097,7 +1773,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`The cursor was flashing without a sound. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I see..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Biting her lip, You glanced down, dejectedly. `;
@@ -2110,10 +1785,8 @@ some of You's leftover coffee.`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was cold.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It's alright."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I know you'll...see him again..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked down into the cup.`;
@@ -2121,14 +1794,11 @@ some of You's leftover coffee.`;
    Narr`The black coffee hid the bottom of the 
 cup from my view.`;
    waitForClick; clearText; marker; sound(`C4A572`); appendText; 
-   //You
    You`"Thank you..."`;
    waitForClick; clearText; marker; sound(`C4A573`); appendText; 
-   //You
    You`"But...I don't think I'll ever see him 
 again..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I looked up in surprise.`;
@@ -2138,30 +1808,22 @@ again..."`;
    Narr`She squinted her eyes and looked off into the 
 distance. `;
    waitForClick; clearText; marker; sound(`C4A574`); appendText; 
-   //You
    You`"I came here because I thought I wanted to 
 find out about my dad..."`;
    waitForClick; clearText; marker; sound(`C4A575`); appendText; 
-   //You
    You`"But...I realize actually that wasn't it at 
 all ... "`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"...... ?"`;
    waitForClick; clearText; marker; sound(`C4A576`); appendText; 
-   //You
    You`"I'm running out of time."`;
    waitForClick; clearText; marker; sound(`C4A577`); appendText; 
-   //You
    You`"I've gone way past my limit."`;
    waitForClick; clearText; marker; sound(`C4A578`); appendText; 
-   //You
    You`"So that's why..."`;
    waitForClick; clearText; marker; sound(`C4A579`); appendText; 
-   //You
    You`"Before the time comes...I had to know..."`;
    waitForClick; clearText; marker; sound(`C4A580`); appendText; 
-   //You
    You`"The truth..."`;
    waitForClick; clearText; 
 });
@@ -2187,10 +1849,8 @@ chest.)`;
    Narr`Closing my eyes, I took a deep breath and 
 tried to shake bad thoughts from my mind.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Hey, You?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What do you mean by that...?"`;
    waitForClick; clearText; 
 });
@@ -2216,7 +1876,6 @@ floor...`;
    Narr`The glossy liquid was rippling with small 
 waves. `;
    waitForClick; clearText; marker; sound(`C4A581`); appendText; 
-   //You
    You`"I can't tell you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The sound of her shoes stopped abruptly.`;
@@ -2226,16 +1885,13 @@ fgload({ id: 1, name: `YU03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Why?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`She raised her face quietly and said.`;
    waitForClick; clearText; marker; sound(`C4A582`); appendText; 
-   //You
    You`"If I start telling you now, I might talk 
 about things I don't want to talk about."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But..."`;
    waitForClick; clearText; 
 });
@@ -2244,29 +1900,22 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A583`); appendText; 
-   //You
    You`"Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`You interrupted my words and went on.`;
    waitForClick; clearText; marker; sound(`C4A584`); appendText; 
-   //You
    You`"Have you ever...done something wrong or 
 sinned, Takeshi?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Sinned?"`;
    waitForClick; clearText; marker; sound(`C4A585`); appendText; 
-   //You
    You`"Yes..."`;
    waitForClick; clearText; marker; sound(`C4A586`); appendText; 
-   //You
    You`"A massive sin..."`;
    waitForClick; clearText; marker; sound(`C4A587`); appendText; 
-   //You
    You`"I don't care whether you believe in god or 
 not."`;
    waitForClick; clearText; marker; sound(`C4A588`); appendText; 
-   //You
    You`"I'm asking you if you ever committed a sin 
 that was morally wrong and there was nothing 
 you could do to mend it."`;
@@ -2284,54 +1933,39 @@ let lbl_00000afa;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Well..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I guess I might have..."`;
    waitForClick; clearText; marker; sound(`C4A589`); appendText; 
-   //You
    You`"What have you done?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Well...different things, I guess..."`;
    waitForClick; clearText; marker; sound(`C4A590`); appendText; 
-   //You
    You`"Things you can't tell me?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Uhhh..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I don't really want to talk about it, to be 
 honest."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I think that sins are something you carry 
 through life by yourself."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"It seems cowardly to me to unburden it onto 
 someone else, and beg for pity and compassion."`;
    waitForClick; clearText; marker; sound(`C4A591`); appendText; 
-   //You
    You`"I feel the same way."`;
    waitForClick; clearText; marker; sound(`C4A592`); appendText; 
-   //You
    You`"That's why I can't tell you."`;
    waitForClick; clearText; marker; sound(`C4A593`); appendText; 
-   //You
    You`"If I tell you now, it would just be an 
 excuse..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`C4A594`); appendText; 
-   //You
    You`"I crossed a line that should've never been 
 crossed."`;
    waitForClick; clearText; marker; sound(`C4A595`); appendText; 
-   //You
    You`"I turned my back on god..."`;
    waitForClick; clearText; 
 });
@@ -2340,18 +1974,14 @@ let lbl_00000b03;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"Come on."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I've made lots of mistakes. And you know why? 
 Because I'm human."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"I'd be lying if I told you I'd never hurt 
 people I cared about or broke their hearts."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"But I don't know if those are 'godless, 
 massive sins'..."`;
    waitForClick; clearText; 
@@ -2360,10 +1990,8 @@ fgload({ id: 1, name: `YU11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A596`); appendText; 
-   //You
    You`"Well ...you are admirable."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; 
 });
@@ -2372,33 +2000,24 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A597`); appendText; 
-   //You
    You`"No, I mean it."`;
    waitForClick; clearText; marker; sound(`C4A598`); appendText; 
-   //You
    You`"On the other hand..."`;
    waitForClick; clearText; marker; sound(`C4A599`); appendText; 
-   //You
    You`"I'm..."`;
    waitForClick; clearText; marker; sound(`C4A600`); appendText; 
-   //You
    You`"I'm not human anymore."`;
    waitForClick; clearText; marker; sound(`C4A601`); appendText; 
-   //You
    You`"I crossed a line that should've never been 
 crossed. "`;
    waitForClick; clearText; marker; sound(`C4A602`); appendText; 
-   //You
    You`"I turned my back on god..."`;
    waitForClick; clearText; marker; sound(`C4A603`); appendText; 
-   //You
    You`"That's why I can't tell you."`;
    waitForClick; clearText; marker; sound(`C4A604`); appendText; 
-   //You
    You`"If I tell you now, it would just be an 
 excuse..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -2409,57 +2028,41 @@ fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C4A605`); appendText; 
-   //You
    You`"It's like an original sin to me."`;
    waitForClick; clearText; marker; sound(`C4A606`); appendText; 
-   //You
    You`"I could never escape from it, and I don't 
 intend to."`;
    waitForClick; clearText; marker; sound(`C4A607`); appendText; 
-   //You
    You`"As long as I live..."`;
    waitForClick; clearText; marker; sound(`C4A608`); appendText; 
-   //You
    You`"Yes, as long as I live, I must carry this 
 sin with me."`;
    waitForClick; clearText; marker; sound(`C4A609`); appendText; 
-   //You
    You`"But you know what...?"`;
    waitForClick; clearText; marker; sound(`C4A610`); appendText; 
-   //You
    You`"You might think I'm horrible, but I don't 
 regret anything."`;
    waitForClick; clearText; marker; sound(`C4A611`); appendText; 
-   //You
    You`"It is probably better this way..."`;
    waitForClick; clearText; marker; sound(`C4A612`); appendText; 
-   //You
    You`"Because this way I'm the only one who has 
 sinned..."`;
    waitForClick; clearText; marker; sound(`C4A613`); appendText; 
-   //You
    You`"That means I'm the only one who will be 
 punished..."`;
    waitForClick; clearText; marker; sound(`C4A614`); appendText; 
-   //You
    You`"She has no sin to carry on."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"She...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Who are you talking about?"`;
    waitForClick; clearText; marker; sound(`C4A615`); appendText; 
-   //You
    You`"About myself..."`;
    waitForClick; clearText; marker; sound(`C4A616`); appendText; 
-   //You
    You`"My other self..."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Your other self...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Are you telling me you have split 
 personality?"`;
    waitForClick; clearText; 
@@ -2478,7 +2081,6 @@ my hand.`;
    Narr`The black liquid, overtaken by the force of 
 gravity, went splashing to the floor. `;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Y-You..."`;
    waitForClick; clearText; 
 });
@@ -2504,31 +2106,22 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; sound(`C4A617`); appendText; 
-   //You
    You`"She is ..."`;
    waitForClick; clearText; marker; sound(`C4A618`); appendText; 
-   //You
    You`"My sister."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"Your sister...?"`;
    waitForClick; clearText; marker; sound(`C4A619`); appendText; 
-   //You
    You`"Yes ..."`;
    waitForClick; clearText; marker; sound(`C4A620`); appendText; 
-   //You
    You`"And at the same time she is me."`;
    waitForClick; clearText; marker; sound(`C4A621`); appendText; 
-   //You
    You`"She and I are..."`;
    waitForClick; clearText; marker; sound(`C4A622`); appendText; 
-   //You
    You`"...twins, you see."`;
    waitForClick; clearText; marker; sound(`C4A623`); appendText; 
-   //You
    You`"She is my..."`;
    waitForClick; clearText; marker; sound(`C4A624`); appendText; 
-   //You
    You`"...twin sister ..."`;
    waitForClick; clearText; 
 });

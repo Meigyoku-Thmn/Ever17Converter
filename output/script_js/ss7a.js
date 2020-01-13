@@ -34,7 +34,6 @@ filled mostly with water.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara and I were floating there.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It looks like things have quieted down 
 a bit..."`;
    waitForClick; clearText; marker; appendText; 
@@ -43,34 +42,25 @@ a bit..."`;
    Narr`In the darkness, the only thing throwing off a 
 gentle aura of light was Sara.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, you alright?"`;
    waitForClick; clearText; marker; sound(`S7A000`); appendText; 
-   //Sara
    Sara`"Yeah. I'm okay...just...a little cold."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara forced a smile for me.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara...why did you come back?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"All you had to do was go a little more and 
 you would have been safe..."`;
    waitForClick; clearText; marker; sound(`S7A001`); appendText; 
-   //Sara
    Sara`"Uh...I..."`;
    waitForClick; clearText; marker; sound(`S7A002`); appendText; 
-   //Sara
    Sara`"Do you promise you won't get mad?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Mad? Why would I get mad?"`;
    waitForClick; clearText; marker; sound(`S7A003`); appendText; 
-   //Sara
    Sara`"Well..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Just tell me."`;
    waitForClick; clearText; 
 });
@@ -112,10 +102,8 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`S7A004`); appendText; 
-   //Sara
    Sara`"Well..."`;
    waitForClick; clearText; marker; sound(`S7A005`); appendText; 
-   //Sara
    Sara`"This..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara lifted her right hand.`;
@@ -123,49 +111,36 @@ text(() => {
    Narr`Pinched between her fingers was the shard 
 of the mirror from my finger.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Hey...it's that piece of the mirror."`;
    waitForClick; clearText; marker; sound(`S7A006`); appendText; 
-   //Sara
    Sara`"Yeah. I realized when we were running that 
 this had been left here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"So you came back for something like this!?"`;
    waitForClick; clearText; marker; sound(`S7A007`); appendText; 
-   //Sara
    Sara`"It's not just anything!"`;
    waitForClick; clearText; marker; sound(`S7A008`); appendText; 
-   //Sara
    Sara`"This was something that you fought so hard to 
 protect!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"But this isn't something worth risking your 
 life to come back for!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You had the pendant anyway!"`;
    waitForClick; clearText; marker; sound(`S7A009`); appendText; 
-   //Sara
    Sara`"You're right...I'm sorry."`;
    waitForClick; clearText; marker; sound(`S7A010`); appendText; 
-   //Sara
    Sara`"I got you involved in all of this..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I chose to turn back. You can't blame 
 yourself for that."`;
    waitForClick; clearText; marker; sound(`S7A011`); appendText; 
-   //Sara
    Sara`"No, I'm sorry..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`After that, Sara didn't speak for a while.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara?"`;
    waitForClick; clearText; 
 });
@@ -173,42 +148,31 @@ bgload({ name: `EV_SA12B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A012`); appendText; 
-   //Sara
    Sara`"To tell the truth...it wasn't just that..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Huh?"`;
    waitForClick; clearText; marker; sound(`S7A013`); appendText; 
-   //Sara
    Sara`"I was scared...to go outside..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Scared? Of what...?"`;
    waitForClick; clearText; marker; sound(`S7A014`); appendText; 
-   //Sara
    Sara`"I thought that once I got outside, everything 
 would return to like it was..."`;
    waitForClick; clearText; marker; sound(`S7A015`); appendText; 
-   //Sara
    Sara`"And once I thought about that I couldn't move 
 anymore..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Like it was? What are you talking about...?"`;
    waitForClick; clearText; marker; sound(`S7A016`); appendText; 
-   //Sara
    Sara`"I thought that Leiblich would start 
 controlling us again. And all my freedom 
 would be taken away..."`;
    waitForClick; clearText; marker; sound(`S7A017`); appendText; 
-   //Sara
    Sara`"When I thought that I'd never free again, 
 I was paralyzed."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Paralyzed...?"`;
    waitForClick; clearText; marker; sound(`S7A018`); appendText; 
-   //Sara
    Sara`"Ever since we've been trapped in 
 LeMU...everyone has been trying to escape, 
 but..."`;
@@ -218,17 +182,13 @@ bgload({ name: `EV_SA12A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A019`); appendText; 
-   //Sara
    Sara`"But...I was happy."`;
    waitForClick; clearText; marker; sound(`S7A020`); appendText; 
-   //Sara
    Sara`"Nobody was looking over me, and I've been 
 able to decide things for myself..."`;
    waitForClick; clearText; marker; sound(`S7A021`); appendText; 
-   //Sara
    Sara`"When I thought about that, I was so happy."`;
    waitForClick; clearText; marker; sound(`S7A022`); appendText; 
-   //Sara
    Sara`"Ever since I entered Leiblich's research 
 institute, I haven't felt free even once..."`;
    waitForClick; clearText; marker; appendText; 
@@ -295,44 +255,34 @@ text(() => {
    marker; appendText; 
    Narr`Thinking about it then amazed me.`;
    waitForClick; clearText; marker; sound(`S7A023`); appendText; 
-   //Sara
    Sara`"When all of this started I thought this 
 accident was just some kind of test of my 
 abilities or something..."`;
    waitForClick; clearText; marker; sound(`S7A024`); appendText; 
-   //Sara
    Sara`"And when I found out that Sora was 
 RSD-generated, I suspected that she 
 was here to observe me..."`;
    waitForClick; clearText; marker; sound(`S7A025`); appendText; 
-   //Sara
    Sara`"But since Nakkyu was here...I realized that 
 it was probably just an accident..."`;
    waitForClick; clearText; marker; sound(`S7A026`); appendText; 
-   //Sara
    Sara`"And it made me happy..."`;
    waitForClick; clearText; marker; sound(`S7A027`); appendText; 
-   //Sara
    Sara`"Until now, everywhere I've gone, there's been 
 someone watching me..."`;
    waitForClick; clearText; marker; sound(`S7A028`); appendText; 
-   //Sara
    Sara`"Even in high school, or when I went out 
 around town."`;
    waitForClick; clearText; marker; sound(`S7A029`); appendText; 
-   //Sara
    Sara`"It was pointless trying to escape...the only 
 place I had to go back to was the research 
 lab."`;
    waitForClick; clearText; marker; sound(`S7A030`); appendText; 
-   //Sara
    Sara`"And back at the lab the only thing waiting 
 for me was more experiments and tests..."`;
    waitForClick; clearText; marker; sound(`S7A031`); appendText; 
-   //Sara
    Sara`"I've never had an ounce of freedom."`;
    waitForClick; clearText; marker; sound(`S7A032`); appendText; 
-   //Sara
    Sara`"I suppose that's why I was happy about the 
 accident..."`;
    waitForClick; clearText; 
@@ -341,14 +291,11 @@ bgload({ name: `EV_SA12B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A033`); appendText; 
-   //Sara
    Sara`"Maybe I shouldn't say it...I mean everyone 
 was so desperate and everything..."`;
    waitForClick; clearText; marker; sound(`S7A034`); appendText; 
-   //Sara
    Sara`"But I'd never had freedom like this..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara..."`;
    waitForClick; clearText; 
 });
@@ -393,7 +340,6 @@ far-reaching influence.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Why...?`;
    waitForClick; clearText; marker; sound(`S7A035`); appendText; 
-   //Sara
    Sara`"Brother...?"`;
    waitForClick; clearText; 
 });
@@ -412,54 +358,39 @@ bgload({ name: `EV_SA12C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A036`); appendText; 
-   //Sara
    Sara`"Thank you."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"For what..."`;
    waitForClick; clearText; marker; sound(`S7A037`); appendText; 
-   //Sara
    Sara`"Because...you came..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No! I left you there by yourself."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I didn't...come for you."`;
    waitForClick; clearText; marker; sound(`S7A038`); appendText; 
-   //Sara
    Sara`"Yes you did."`;
    waitForClick; clearText; marker; sound(`S7A039`); appendText; 
-   //Sara
    Sara`"And I want to thank you..."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara said this and smiled.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The smile also seemed tinged with resignation.`;
    waitForClick; clearText; marker; sound(`S7A040`); appendText; 
-   //Sara
    Sara`"I don't care anymore..."`;
    waitForClick; clearText; marker; sound(`S7A041`); appendText; 
-   //Sara
    Sara`"It's okay to die here..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, what are you saying!?"`;
    waitForClick; clearText; marker; sound(`S7A042`); appendText; 
-   //Sara
    Sara`"I've finally tasted freedom..."`;
    waitForClick; clearText; marker; sound(`S7A043`); appendText; 
-   //Sara
    Sara`"And I was able to meet you."`;
    waitForClick; clearText; marker; sound(`S7A044`); appendText; 
-   //Sara
    Sara`"If it means going back to the life I had 
 before, then I'd rather..."`;
    waitForClick; clearText; marker; sound(`S7A045`); appendText; 
-   //Sara
    Sara`"Dying here and now would be...better..."`;
    waitForClick; clearText; marker; sound(`S7A046`); appendText; 
-   //Sara
    Sara`"Up until now...I never even had the freedom 
 to die..."`;
    waitForClick; clearText; marker; appendText; 
@@ -470,7 +401,6 @@ now had been so hard.`;
    waitForClick; clearText; marker; appendText; 
    Narr`But...`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"No, Sara."`;
    waitForClick; clearText; 
 });
@@ -479,13 +409,10 @@ playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`S7A047`); appendText; 
-   //Sara
    Sara`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Don't talk like that!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We're going to live! No matter what!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I wasn't about to let Sara die here!`;
@@ -493,17 +420,14 @@ text(() => {
    Narr`There was absolutely no way that I would 
 let Sara die.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If you die here, then it means you've lost 
 to THEM!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You're going to live! Survive! No matter 
 what!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was my responsibility to help Sara live.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, let's go."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I said -`;
@@ -513,29 +437,21 @@ bgload({ name: `EV_SA12A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A048`); appendText; 
-   //Sara
    Sara`"Where?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"To the ocean surface."`;
    waitForClick; clearText; marker; sound(`S7A049`); appendText; 
-   //Sara
    Sara`"How?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We'll swim."`;
    waitForClick; clearText; marker; sound(`S7A050`); appendText; 
-   //Sara
    Sara`"It's impossible. The pressure will..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We'll be okay. The air pressure here's been 
 compressed by the water pressure."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We're at about 4.5 atmospheres here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Even if we go out into the ocean from here, 
 our lungs will be okay."`;
    waitForClick; clearText; 
@@ -544,39 +460,29 @@ bgload({ name: `EV_SA12B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A051`); appendText; 
-   //Sara
    Sara`"But still."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We don't know that help will come for us. And 
 even if it does, it might be too late..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Besides, it is too dangerous for us to 
 stay here."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Listen, Sara? We're breathing at 4.5 
 atmospheres."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If we stay here we are in danger of oxygen 
 poisoning or nitrogen narcosis."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"And we have no idea how long LeMU will hold."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"If LeMU collapses then we'll get dragged down 
 with it..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"It's too dangerous to stay here."`;
    waitForClick; clearText; marker; appendText; 
-   //Sara
    Sara`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -584,39 +490,28 @@ bgload({ name: `EV_SA12A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A052`); appendText; 
-   //Sara
    Sara`"Hey..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"What?"`;
    waitForClick; clearText; marker; sound(`S7A053`); appendText; 
-   //Sara
    Sara`"You know I can't swim, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You'll be okay. You're kind of swimming 
 right now, aren't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"You'll just have to remember the lessons 
 I gave you."`;
    waitForClick; clearText; marker; sound(`S7A054`); appendText; 
-   //Sara
    Sara`"But...it isn't the same."`;
    waitForClick; clearText; marker; sound(`S7A055`); appendText; 
-   //Sara
    Sara`"I'm just floating, right now."`;
    waitForClick; clearText; marker; sound(`S7A056`); appendText; 
-   //Sara
    Sara`"It's different than swimming in the ocean!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, you'll be okay! Don't worry!"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'll lead you."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I'll pull you all the way."`;
    waitForClick; clearText; 
 });
@@ -624,28 +519,21 @@ bgload({ name: `EV_SA12B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A057`); appendText; 
-   //Sara
    Sara`"No...it's not possible."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"We can do it."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Believe in your brother."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"I came here...I came to help you, Sara!"`;
    waitForClick; clearText; marker; sound(`S7A058`); appendText; 
-   //Sara
    Sara`"Brother..."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Sara, believe in me."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Sara clasped the pendant she was wearing 
 around her neck.`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"Let's go, Sara!"`;
    waitForClick; clearText; 
 });
@@ -653,7 +541,6 @@ bgload({ name: `EV_SA12C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`S7A059`); appendText; 
-   //Sara
    Sara`"Okay!"`;
    waitForClick; clearText; 
 });

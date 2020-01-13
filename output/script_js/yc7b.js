@@ -7,56 +7,41 @@ text(() => {
    Narr`Kicking up his feet, Takeshi screamed to the 
 void. `;
    waitForClick; clearText; marker; sound(`C7A261`); appendText; 
-   //Takeshi
    Takeshi`"Hey, what am I supposed to do...? "`;
    waitForClick; clearText; marker; sound(`C7A262`); appendText; 
-   //Kid
    Kid`"Can't you escape by swimming through the 
 pool?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto answered.`;
    waitForClick; clearText; marker; sound(`C7A263`); appendText; 
-   //Takeshi
    Takeshi`"Idiot!"`;
    waitForClick; clearText; marker; sound(`C7A264`); appendText; 
-   //Takeshi
    Takeshi`"It's 357 feet under the water down here!"`;
    waitForClick; clearText; marker; sound(`C7A265`); appendText; 
-   //Takeshi
    Takeshi`"Coco and I won't be able to hold our breath 
 that long."`;
    waitForClick; clearText; marker; sound(`C7A266`); appendText; 
-   //Takeshi
    Takeshi`"Besides, in order to surface, we have to 
 decompress slowly as we go up."`;
    waitForClick; clearText; marker; sound(`C7A267`); appendText; 
-   //Takeshi
    Takeshi`"It's 12.5 atmospheres down here."`;
    waitForClick; clearText; marker; sound(`C7A268`); appendText; 
-   //Takeshi
    Takeshi`"And the ocean surface is 1 atmosphere."`;
    waitForClick; clearText; marker; sound(`C7A269`); appendText; 
-   //Takeshi
    Takeshi`"There's no way we can survive, unless we get 
 ourselves decompressed."`;
    waitForClick; clearText; marker; sound(`C7A270`); appendText; 
-   //Kid
    Kid`"How about the elevator?"`;
    waitForClick; clearText; marker; sound(`C7A271`); appendText; 
-   //Takeshi
    Takeshi`"It's been cut off."`;
    waitForClick; clearText; marker; sound(`C7A272`); appendText; 
-   //Takeshi
    Takeshi`"The elevator tubes were destroyed a long 
 time ago."`;
    waitForClick; clearText; marker; sound(`C7A273`); appendText; 
-   //Takeshi
    Takeshi`"There's no way to go up."`;
    waitForClick; clearText; marker; sound(`C7A274`); appendText; 
-   //Kid
    Kid`"Well, let's go to the examination room!"`;
    waitForClick; clearText; marker; sound(`C7A275`); appendText; 
-   //Takeshi
    Takeshi`"I know that..."`;
    waitForClick; clearText; 
 });
@@ -98,7 +83,6 @@ Blau' taken from Tsugumi.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco hadn't been inoculated with it yet.`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Without a word, Takeshi gave Coco the 
@@ -107,7 +91,6 @@ antibodies.`;
    Narr`Coco, had long passed the stage of suffering 
 and lay there looking limp.`;
    waitForClick; clearText; marker; sound(`C7A276`); appendText; 
-   //Takeshi
    Takeshi`"Come on...do the trick...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi threw the empty syringe away and held 
@@ -145,26 +128,20 @@ fgload({ id: 1, name: `TA04AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A277`); appendText; 
-   //Takeshi
    Takeshi`"Oh, come on! How come it isn't working!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi banged the wall.`;
    waitForClick; clearText; marker; sound(`C7A278`); appendText; 
-   //Kid
    Kid`"Coco was infected a few days earlier than 
 you, dad."`;
    waitForClick; clearText; marker; sound(`C7A279`); appendText; 
-   //Kid
    Kid`"So her disease has been progressing for that 
 much longer than everyone else...."`;
    waitForClick; clearText; marker; sound(`C7A280`); appendText; 
-   //Takeshi
    Takeshi`"Damn it, we can't just sit here and wait...."`;
    waitForClick; clearText; marker; sound(`C7A281`); appendText; 
-   //Takeshi
    Takeshi`"Besides, we've got to find a way to escape."`;
    waitForClick; clearText; marker; sound(`C7A282`); appendText; 
-   //Takeshi
    Takeshi`"I just need to think of something...."`;
    waitForClick; clearText; 
 });
@@ -191,41 +168,31 @@ fgload({ id: 1, name: `TA01AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A284`); appendText; 
-   //Takeshi
    Takeshi`"I heard an announcement earlier, before 
 Tsugumi and I escaped."`;
    waitForClick; clearText; marker; sound(`C7A285`); appendText; 
-   //Takeshi
    Takeshi`"The announcement said something like 'if you 
 are not out in a few minutes, you're gonna be 
 crushed.'"`;
    waitForClick; clearText; marker; sound(`C7A286`); appendText; 
-   //Takeshi
    Takeshi`"But this place is still standing. Why is 
 that?"`;
    waitForClick; clearText; marker; sound(`C7A287`); appendText; 
-   //Kid
    Kid`"I don't know why either...."`;
    waitForClick; clearText; marker; sound(`C7A288`); appendText; 
-   //Kid
    Kid`"But...maybe...."`;
    waitForClick; clearText; marker; sound(`C7A289`); appendText; 
-   //Takeshi
    Takeshi`"Maybe...what?"`;
    waitForClick; clearText; marker; sound(`C7A290`); appendText; 
-   //Kid
    Kid`"That announcement might have been about LeMU 
 imploding."`;
    waitForClick; clearText; marker; sound(`C7A291`); appendText; 
-   //Kid
    Kid`"But, think about it..."`;
    waitForClick; clearText; marker; sound(`C7A292`); appendText; 
-   //Kid
    Kid`"This laboratory has been built so that the 
 atmosphere on the inside and outside are 
 equal."`;
    waitForClick; clearText; marker; sound(`C7A293`); appendText; 
-   //Kid
    Kid`"Since they're still balanced, it probably 
 won't implode as easily...."`;
    waitForClick; clearText; marker; appendText; 
@@ -273,32 +240,25 @@ playSFX({ name: `SE05_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`C7A294`); appendText; 
-   //Takeshi
    Takeshi`"Damn it! Why is this all happening? Why!? 
 Why!? Why!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi kicked the wall.`;
    waitForClick; clearText; marker; sound(`C7A295`); appendText; 
-   //Kid
    Kid`"Well, dad...you should have given her the 
 antibody earlier...."`;
    waitForClick; clearText; marker; sound(`C7A296`); appendText; 
-   //Takeshi
    Takeshi`"Huh? It's a little late for that now, isn't 
 it!"`;
    waitForClick; clearText; marker; sound(`C7A297`); appendText; 
-   //Takeshi
    Takeshi`"Besides, Coco was in the pod under pressure 
 at that time!"`;
    waitForClick; clearText; marker; sound(`C7A298`); appendText; 
-   //Takeshi
    Takeshi`"I couldn't just open up the lid!"`;
    waitForClick; clearText; marker; sound(`C7A299`); appendText; 
-   //Kid
    Kid`"But...you could've given her a shot without 
 opening the lid."`;
    waitForClick; clearText; marker; sound(`C7A300`); appendText; 
-   //Kid
    Kid`"Because You said...."`;
    waitForClick; clearText; 
 });
@@ -306,12 +266,10 @@ monoColorOverlay({ interval: 6, color: WHITE });
 showTextbox();
 text(() => {
    marker; sound(`T6B219`); appendText; 
-   //You
    You`"It seems that this pod can also do laser 
 disinfecting as well as simple surgery, in 
 addition to the oxygen treatment."`;
    waitForClick; clearText; marker; sound(`T6B220`); appendText; 
-   //You
    You`"And depending on how you use it, even 
 cryogenic suspension..."`;
    waitForClick; clearText; 
@@ -324,60 +282,46 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; sound(`C7A301`); appendText; 
-   //Kid
    Kid`"Since it has so many other functions, it 
 probably should be able to give an 
 injection...."`;
    waitForClick; clearText; marker; sound(`C7A302`); appendText; 
-   //Takeshi
    Takeshi`"But You didn't say a word about 'being able 
 to give shots without opening the lid', did 
 she?"`;
    waitForClick; clearText; marker; sound(`C7A303`); appendText; 
-   //Takeshi
    Takeshi`"And if she didn't mention it, it must not be 
 possible...."`;
    waitForClick; clearText; marker; sound(`C7A304`); appendText; 
-   //Takeshi
    Takeshi`"Besides, neither you nor I have any idea 
 what this device can do."`;
    waitForClick; clearText; marker; sound(`C7A305`); appendText; 
-   //Takeshi
    Takeshi`"What's cryogenic suspension anyway?"`;
    waitForClick; clearText; marker; sound(`C7A306`); appendText; 
-   //Kid
    Kid`"It's like hibernation."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto answered as if anyone would know.`;
    waitForClick; clearText; marker; sound(`C7A307`); appendText; 
-   //Takeshi
    Takeshi`"Hibernation?"`;
    waitForClick; clearText; marker; sound(`C7A308`); appendText; 
-   //Takeshi
    Takeshi`"You mean...like bears do in the winter?"`;
    waitForClick; clearText; marker; sound(`C7A309`); appendText; 
-   //Kid
    Kid`"Yeah."`;
    waitForClick; clearText; marker; sound(`C7A310`); appendText; 
-   //Kid
    Kid`"I'm pretty sure that cryogenic suspension 
 means you can artificially induce hibernation."`;
    waitForClick; clearText; marker; sound(`C7A311`); appendText; 
-   //Kid
    Kid`"It keeps human body temperature low, around 
 40 degrees Fahrenheit, and reduces your 
 heartbeat and breathing to the absolute 
 minimum...."`;
    waitForClick; clearText; marker; sound(`C7A312`); appendText; 
-   //Kid
    Kid`"That way it increases your metabolic 
 efficiency and conserves as much energy as 
 possible."`;
    waitForClick; clearText; marker; sound(`C7A313`); appendText; 
-   //Takeshi
    Takeshi`"I see...."`;
    waitForClick; clearText; marker; sound(`C7A314`); appendText; 
-   //Takeshi
    Takeshi`"Hey I wonder why they have it here...."`;
    waitForClick; clearText; 
 });
@@ -393,11 +337,9 @@ too. `;
    waitForClick; clearText; marker; appendText; 
    Narr`And then, they screamed out at the same time.`;
    waitForClick; clearText; marker; sound(`C7A315`); appendText; 
-   //Takeshi
    Takeshi`"I got it! We'll put her in cryogenic 
 suspension!"`;
    waitForClick; clearText; marker; sound(`C7A316`); appendText; 
-   //Kid
    Kid`"I got it! We can put her in cryogenic 
 suspension!"`;
    waitForClick; clearText; 
@@ -406,24 +348,19 @@ fgload({ id: 1, name: `TA02AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A317`); appendText; 
-   //Takeshi
    Takeshi`"If it her body temperature is kept low, 
 it'll slow down the rate of the virus 
 infection too, right?"`;
    waitForClick; clearText; marker; sound(`C7A318`); appendText; 
-   //Kid
    Kid`"Yeah!"`;
    waitForClick; clearText; marker; sound(`C7A319`); appendText; 
-   //Takeshi
    Takeshi`"Alright! All we need now is a little more 
 time. If we have time, I'm sure it'll work... "`;
    waitForClick; clearText; marker; sound(`C7A320`); appendText; 
-   //Kid
    Kid`"If we can slow down that virus even for a 
 minute, or a second...it'll be better than 
 nothing."`;
    waitForClick; clearText; marker; sound(`C7A321`); appendText; 
-   //Takeshi
    Takeshi`"Alright, then..."`;
    waitForClick; clearText; 
 });
@@ -469,38 +406,28 @@ bgload({ name: `EV_CO10C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C7A322`); appendText; 
-   //Coco
    Coco`"Who is that...?"`;
    waitForClick; clearText; marker; sound(`C7A323`); appendText; 
-   //Takeshi
    Takeshi`"What?"`;
    waitForClick; clearText; marker; sound(`C7A324`); appendText; 
-   //Coco
    Coco`"Who's standing behind you, Takepyon...?"`;
    waitForClick; clearText; marker; sound(`C7A325`); appendText; 
-   //Takeshi
    Takeshi`"Behind me?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi looked back.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto was there.`;
    waitForClick; clearText; marker; sound(`C7A326`); appendText; 
-   //Takeshi
    Takeshi`"Can you see him, Coco?"`;
    waitForClick; clearText; marker; sound(`C7A327`); appendText; 
-   //Coco
    Coco`"Yeah, I do...."`;
    waitForClick; clearText; marker; sound(`C7A328`); appendText; 
-   //Kid
    Kid`"Coco...it's me, Hokuto."`;
    waitForClick; clearText; marker; sound(`C7A329`); appendText; 
-   //Coco
    Coco`"Hokuto...."`;
    waitForClick; clearText; marker; sound(`C7A330`); appendText; 
-   //Coco
    Coco`"Hokuto is your name...?"`;
    waitForClick; clearText; marker; sound(`C7A331`); appendText; 
-   //Coco
    Coco`"Can I call you Hokutan...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`The Coco of this time didn't seem to know 
@@ -509,53 +436,37 @@ Hokuto yet.`;
    Narr`So who was the phantom girl that I had been 
 seeing...?`;
    waitForClick; clearText; marker; sound(`C7A332`); appendText; 
-   //Takeshi
    Takeshi`"Hokuto...."`;
    waitForClick; clearText; marker; sound(`C7A333`); appendText; 
-   //Takeshi
    Takeshi`"Is that your name?"`;
    waitForClick; clearText; marker; sound(`C7A334`); appendText; 
-   //Kid
    Kid`"Uh-huh."`;
    waitForClick; clearText; marker; sound(`C7A335`); appendText; 
-   //Takeshi
    Takeshi`"Really."`;
    waitForClick; clearText; marker; sound(`C7A336`); appendText; 
-   //Takeshi
    Takeshi`"Coco?"`;
    waitForClick; clearText; marker; sound(`C7A337`); appendText; 
-   //Takeshi
    Takeshi`"I can't see him, but this guy Hokuto helped 
 us, you know."`;
    waitForClick; clearText; marker; sound(`C7A338`); appendText; 
-   //Coco
    Coco`"Hokutan...."`;
    waitForClick; clearText; marker; sound(`C7A339`); appendText; 
-   //Coco
    Coco`"Thank you...."`;
    waitForClick; clearText; marker; sound(`C7A340`); appendText; 
-   //Coco
    Coco`"And...."`;
    waitForClick; clearText; marker; sound(`C7A341`); appendText; 
-   //Coco
    Coco`"And...the other person...you...."`;
    waitForClick; clearText; marker; sound(`C7A342`); appendText; 
-   //Coco
    Coco`"Thank...you...."`;
    waitForClick; clearText; marker; sound(`C7A343`); appendText; 
-   //Takeshi
    Takeshi`"Other person? There's someone else?"`;
    waitForClick; clearText; marker; sound(`C7A344`); appendText; 
-   //Coco
    Coco`"Yeah, there is...."`;
    waitForClick; clearText; marker; sound(`C7A345`); appendText; 
-   //Coco
    Coco`"I can see him...behind Hokutan.... "`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Silence filled the room.`;
@@ -576,99 +487,71 @@ playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //BW
    BW`"Are you talking about me?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Feeling flustered, I gathered up my courage 
 and spoke up.`;
    waitForClick; clearText; marker; sound(`C7A346`); appendText; 
-   //Coco
    Coco`"Yes, you."`;
    waitForClick; clearText; marker; sound(`C7A347`); appendText; 
-   //Coco
    Coco`"We finally meet....?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"...Huh?"`;
    waitForClick; clearText; marker; sound(`C7A348`); appendText; 
-   //Coco
    Coco`"I don't know Hokutan, but...."`;
    waitForClick; clearText; marker; sound(`C7A349`); appendText; 
-   //Coco
    Coco`"But I sure know you...."`;
    waitForClick; clearText; marker; sound(`C7A350`); appendText; 
-   //Coco
    Coco`"Because...."`;
    waitForClick; clearText; marker; sound(`C7A351`); appendText; 
-   //Coco
    Coco`"Because...all this time...you've been 
 watching over me, haven't you?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; marker; sound(`C7A352`); appendText; 
-   //Coco
    Coco`"Mister 4th dimension...."`;
    waitForClick; clearText; marker; sound(`C7A353`); appendText; 
-   //Coco
    Coco`"Blick Winkel...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; marker; sound(`C7A354`); appendText; 
-   //Coco
    Coco`"Let's play chicks some time again."`;
    waitForClick; clearText; marker; sound(`C7A355`); appendText; 
-   //Coco
    Coco`"We go piyo-piyo...piyo-piyo...."`;
    waitForClick; clearText; marker; sound(`C7A356`); appendText; 
-   //Takeshi
    Takeshi`"Coco...I was the one...."`;
    waitForClick; clearText; marker; sound(`C7A357`); appendText; 
-   //Coco
    Coco`"Hee."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco's cheeks eased up a little. `;
    waitForClick; clearText; marker; sound(`C7A358`); appendText; 
-   //Coco
    Coco`"I don't think you knew it, Takepyon, but...."`;
    waitForClick; clearText; marker; sound(`C7A359`); appendText; 
-   //Coco
    Coco`"I didn't just play with you, I also was 
 playing with him."`;
    waitForClick; clearText; marker; sound(`C7A360`); appendText; 
-   //Coco
    Coco`"Huh? Isn't that right?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco was asking me.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Uh-huh...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I might have been watching over Coco for all 
 this time."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I've been watching over you...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I wanted to get closer to you, too."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"But it was probably...not possible...."`;
    waitForClick; clearText; marker; sound(`C7A361`); appendText; 
-   //Coco
    Coco`"Hee, hee...."`;
    waitForClick; clearText; marker; sound(`C7A362`); appendText; 
-   //Coco
    Coco`"So... you're the one who told me that you 
 liked me then?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Yes, I suppose it was...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"...I suppose it was...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco and I looked at each other.`;
@@ -680,23 +563,18 @@ liked me then?"`;
    Narr`I felt as though my existence would evaporate 
 any second.`;
    waitForClick; clearText; marker; sound(`C7A363`); appendText; 
-   //Coco
    Coco`"What's going to happen to me?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`All of a sudden, a dark shadow had covered 
 Coco's eyes.`;
    waitForClick; clearText; marker; sound(`C7A364`); appendText; 
-   //Coco
    Coco`"Am I...going to die? "`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Don't be silly! There's no way you are going 
 to die!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"No matter what, I'll save your life, Coco!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I won't let you die!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Excitedly I appealed to her.`;
@@ -707,88 +585,62 @@ to die!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`My heart seemed that it would surely melt....`;
    waitForClick; clearText; marker; sound(`C7A365`); appendText; 
-   //Takeshi
    Takeshi`"Coco...so that's how it is, okay....?"`;
    waitForClick; clearText; marker; sound(`C7A366`); appendText; 
-   //Takeshi
    Takeshi`"We're going to save you no matter what."`;
    waitForClick; clearText; marker; sound(`C7A367`); appendText; 
-   //Takeshi
    Takeshi`"So just relax. I want you to rest now...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`As he was saying this, Takeshi went to close 
 the pod.`;
    waitForClick; clearText; marker; sound(`C7A368`); appendText; 
-   //Coco
    Coco`"Wait!"`;
    waitForClick; clearText; marker; sound(`C7A369`); appendText; 
-   //Coco
    Coco`"What's going to happen?"`;
    waitForClick; clearText; marker; sound(`C7A370`); appendText; 
-   //Takeshi
    Takeshi`"You are going to sleep for a while, just 
 like a cuddly bear."`;
    waitForClick; clearText; marker; sound(`C7A371`); appendText; 
-   //Coco
    Coco`"No...."`;
    waitForClick; clearText; marker; sound(`C7A372`); appendText; 
-   //Coco
    Coco`"Please...don't leave me...."`;
    waitForClick; clearText; marker; sound(`C7A373`); appendText; 
-   //Coco
    Coco`"Don't go anywhere...."`;
    waitForClick; clearText; marker; sound(`C7A374`); appendText; 
-   //Coco
    Coco`"Don't leave me alone...."`;
    waitForClick; clearText; marker; sound(`C7A375`); appendText; 
-   //Takeshi
    Takeshi`"We're not going to leave you alone, will we?"`;
    waitForClick; clearText; marker; sound(`C7A376`); appendText; 
-   //Takeshi
    Takeshi`"We're going to stay right here."`;
    waitForClick; clearText; marker; sound(`C7A377`); appendText; 
-   //Coco
    Coco`"You're lying...."`;
    waitForClick; clearText; marker; sound(`C7A378`); appendText; 
-   //Coco
    Coco`"I don't believe you...."`;
    waitForClick; clearText; marker; sound(`C7A379`); appendText; 
-   //Takeshi
    Takeshi`"Quit being so stubborn!"`;
    waitForClick; clearText; marker; sound(`C7A380`); appendText; 
-   //Takeshi
    Takeshi`"If we leave you like this you're going 
 to...you're going to.... "`;
    waitForClick; clearText; marker; sound(`C7A381`); appendText; 
-   //Coco
    Coco`"No...no...no...."`;
    waitForClick; clearText; marker; sound(`C7A382`); appendText; 
-   //Coco
    Coco`"I don't want to...."`;
    waitForClick; clearText; marker; sound(`C7A383`); appendText; 
-   //Coco
    Coco`"I don't want to be all by myself. I'll be 
 too lonely."`;
    waitForClick; clearText; marker; sound(`C7A384`); appendText; 
-   //Coco
    Coco`"I'm scared...I'm...so, so scared...."`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; marker; sound(`C7A385`); appendText; 
-   //Coco
    Coco`"Takepyon, will you...."`;
    waitForClick; clearText; marker; sound(`C7A386`); appendText; 
-   //Coco
    Coco`"Lie down...and...sleep next to me?"`;
    waitForClick; clearText; marker; sound(`C7A387`); appendText; 
-   //Takeshi
    Takeshi`"There's no way...."`;
    waitForClick; clearText; marker; sound(`C7A388`); appendText; 
-   //Takeshi
    Takeshi`"This pod is...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi stopped in the middle of what he was 
@@ -798,16 +650,12 @@ saying.`;
 monitor on the wall, and finally to the pod 
 next to Coco.`;
    waitForClick; clearText; marker; sound(`C7A389`); appendText; 
-   //Takeshi
    Takeshi`"Alright, how about this then?"`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; marker; sound(`C7A390`); appendText; 
-   //Takeshi
    Takeshi`"I'll sleep in the pod next to you."`;
    waitForClick; clearText; marker; sound(`C7A391`); appendText; 
-   //Takeshi
    Takeshi`"How's that? You won't be lonely anymore, 
 right?"`;
    waitForClick; clearText; marker; appendText; 
@@ -819,128 +667,90 @@ and me. `;
    Narr`And stared at us with eyes that seemed about 
 to burst into tears.`;
    waitForClick; clearText; marker; sound(`C7A392`); appendText; 
-   //Coco
    Coco`"Really...?"`;
    waitForClick; clearText; marker; sound(`C7A393`); appendText; 
-   //Coco
    Coco`"You aren't lying...?"`;
    waitForClick; clearText; marker; sound(`C7A394`); appendText; 
-   //Takeshi
    Takeshi`"Of course not."`;
    waitForClick; clearText; marker; sound(`C7A395`); appendText; 
-   //Coco
    Coco`"You promise....?"`;
    waitForClick; clearText; marker; sound(`C7A396`); appendText; 
-   //Coco
    Coco`"You won't leave me and go?"`;
    waitForClick; clearText; marker; sound(`C7A397`); appendText; 
-   //Takeshi
    Takeshi`"I wouldn't do that, of course I won't go."`;
    waitForClick; clearText; marker; sound(`C7A398`); appendText; 
-   //Coco
    Coco`"Alright then...."`;
    waitForClick; clearText; marker; sound(`C7A399`); appendText; 
-   //Coco
    Coco`"I trust you, Takepyon."`;
    waitForClick; clearText; marker; sound(`C7A400`); appendText; 
-   //Takeshi
    Takeshi`"That's a good girl."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi petted Coco's head.`;
    waitForClick; clearText; marker; sound(`C7A401`); appendText; 
-   //Takeshi
    Takeshi`"Okay, I'm going to close it now, okay Coco?"`;
    waitForClick; clearText; marker; sound(`C7A402`); appendText; 
-   //Coco
    Coco`"Uh, uh-huh...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi turned on the switch.`;
    waitForClick; clearText; marker; appendText; 
    Narr`The lid of the pod slowly went down.`;
    waitForClick; clearText; marker; sound(`C7A403`); appendText; 
-   //Coco
    Coco`"Hey?"`;
    waitForClick; clearText; marker; sound(`C7A404`); appendText; 
-   //Coco
    Coco`"Before I go to sleep, will you listen to my 
 request?"`;
    waitForClick; clearText; marker; sound(`C7A405`); appendText; 
-   //Takeshi
    Takeshi`"Request?"`;
    waitForClick; clearText; marker; sound(`C7A406`); appendText; 
-   //Coco
    Coco`"I wasn't talking to you, Takepyon...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco's eyes were pointing towards me. `;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"M-me?"`;
    waitForClick; clearText; marker; sound(`C7A407`); appendText; 
-   //Coco
    Coco`"Yes."`;
    waitForClick; clearText; marker; sound(`C7A408`); appendText; 
-   //Coco
    Coco`"Well, um...I...."`;
    waitForClick; clearText; marker; sound(`C7A409`); appendText; 
-   //Coco
    Coco`"I want to see you."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"...What?"`;
    waitForClick; clearText; marker; sound(`C7A410`); appendText; 
-   //Coco
    Coco`"I want to see you again."`;
    waitForClick; clearText; marker; sound(`C7A411`); appendText; 
-   //Coco
    Coco`"I want to see you and talk with you more. "`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Uh-huh,"`;
    waitForClick; clearText; marker; sound(`C7A412`); appendText; 
-   //Coco
    Coco`"I think that I...."`;
    waitForClick; clearText; marker; sound(`C7A413`); appendText; 
-   //Coco
    Coco`"I might just...."`;
    waitForClick; clearText; marker; sound(`C7A414`); appendText; 
-   //Coco
    Coco`"It's just that I...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; marker; sound(`C7A415`); appendText; 
-   //Coco
    Coco`"Oh...."`;
    waitForClick; clearText; marker; sound(`C7A416`); appendText; 
-   //Coco
    Coco`"I can't say it...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; marker; sound(`C7A417`); appendText; 
-   //Coco
    Coco`"But will you promise me?"`;
    waitForClick; clearText; marker; sound(`C7A418`); appendText; 
-   //Coco
    Coco`"That...you and I will...see each other again 
 someday?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Yes"`;
    waitForClick; clearText; marker; sound(`C7A419`); appendText; 
-   //Coco
    Coco`"I'll be...waiting...."`;
    waitForClick; clearText; marker; sound(`C7A420`); appendText; 
-   //Coco
    Coco`"I'll wait for you no matter what...."`;
    waitForClick; clearText; marker; sound(`C7A421`); appendText; 
-   //Coco
    Coco`"You'll...come...get me...?"`;
    waitForClick; clearText; marker; sound(`C7A422`); appendText; 
-   //Coco
    Coco`"Promise?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Yes, I promise."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The space between the lid and the pod itself 
@@ -952,10 +762,8 @@ slit....`;
    Narr`Coco faced towards me and whispered one last 
 thing in her tiny voice. `;
    waitForClick; clearText; marker; sound(`C7A423`); appendText; 
-   //Coco
    Coco`"Well, good night...."`;
    waitForClick; clearText; marker; sound(`C7A424`); appendText; 
-   //Coco
    Coco`"Brother...."`;
    waitForClick; clearText; 
 });
@@ -993,16 +801,12 @@ fgload({ id: 1, name: `TA01AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A425`); appendText; 
-   //Takeshi
    Takeshi`"Well then...."`;
    waitForClick; clearText; marker; sound(`C7A426`); appendText; 
-   //Takeshi
    Takeshi`"Hey! Something Winkel! You still there?"`;
    waitForClick; clearText; marker; sound(`C7A427`); appendText; 
-   //Kid
    Kid`"What is it, Dad?"`;
    waitForClick; clearText; marker; sound(`C7A428`); appendText; 
-   //Takeshi
    Takeshi`"Oh, it's you, Hokuto...."`;
    waitForClick; clearText; 
 });
@@ -1010,18 +814,14 @@ fgload({ id: 1, name: `TA03AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A429`); appendText; 
-   //Takeshi
    Takeshi`"You guys are confusing me...."`;
    waitForClick; clearText; marker; sound(`C7A430`); appendText; 
-   //Takeshi
    Takeshi`"You and that Winkel guy are two different 
 people, right?"`;
    waitForClick; clearText; marker; sound(`C7A431`); appendText; 
-   //Takeshi
    Takeshi`"Or you are from the 4th dimension, too, 
 Hokuto?"`;
    waitForClick; clearText; marker; sound(`C7A432`); appendText; 
-   //Kid
    Kid`"No, I'm just borrowing his perspective for 
 now."`;
    waitForClick; clearText; 
@@ -1030,10 +830,8 @@ fgload({ id: 1, name: `TA01AWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A433`); appendText; 
-   //Takeshi
    Takeshi`"Really...."`;
    waitForClick; clearText; marker; sound(`C7A434`); appendText; 
-   //Takeshi
    Takeshi`"I mean, I still don't get it at all...but I 
 don't suppose it matters."`;
    waitForClick; clearText; marker; appendText; 
@@ -1047,47 +845,34 @@ bgload({ name: `EV_ET03B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C7A435`); appendText; 
-   //Kid
    Kid`"What!? Dad, what're you going to do!?"`;
    waitForClick; clearText; marker; sound(`C7A436`); appendText; 
-   //Takeshi
    Takeshi`"What do you think...there's nothing else can 
 I do, right?"`;
    waitForClick; clearText; marker; sound(`C7A437`); appendText; 
-   //Takeshi
    Takeshi`"I made her a promise, you know...."`;
    waitForClick; clearText; marker; sound(`C7A438`); appendText; 
-   //Kid
    Kid`"So you're going to...!?"`;
    waitForClick; clearText; marker; sound(`C7A439`); appendText; 
-   //Takeshi
    Takeshi`"Yep, that's right."`;
    waitForClick; clearText; marker; sound(`C7A440`); appendText; 
-   //Takeshi
    Takeshi`"It doesn't look like there's a way to escape, 
 anyway."`;
    waitForClick; clearText; marker; sound(`C7A441`); appendText; 
-   //Takeshi
    Takeshi`"We'll just have to wait for the second 
 rescue team to arrive...."`;
    waitForClick; clearText; marker; sound(`C7A442`); appendText; 
-   //Takeshi
    Takeshi`"But it'll just be a waste of energy to wait 
 here doing nothing, so...."`;
    waitForClick; clearText; marker; sound(`C7A443`); appendText; 
-   //Takeshi
    Takeshi`"I might as well get some sleep."`;
    waitForClick; clearText; marker; sound(`C7A444`); appendText; 
-   //Kid
    Kid`"D-dad! Wait a second!"`;
    waitForClick; clearText; marker; sound(`C7A445`); appendText; 
-   //Takeshi
    Takeshi`"No."`;
    waitForClick; clearText; marker; sound(`C7A446`); appendText; 
-   //Takeshi
    Takeshi`"I'm tired."`;
    waitForClick; clearText; marker; sound(`C7A447`); appendText; 
-   //Takeshi
    Takeshi`"I'm really, REALLY tired...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi stretched his arm from where he lay, 
@@ -1101,41 +886,29 @@ the same time.`;
    waitForClick; clearText; marker; appendText; 
    Narr`Steadily....`;
    waitForClick; clearText; marker; sound(`C7A448`); appendText; 
-   //Takeshi
    Takeshi`"Alright, Hokuto...."`;
    waitForClick; clearText; marker; sound(`C7A449`); appendText; 
-   //Takeshi
    Takeshi`"I'm counting on you...."`;
    waitForClick; clearText; marker; sound(`C7A450`); appendText; 
-   //Kid
    Kid`"Dad!"`;
    waitForClick; clearText; marker; sound(`C7A451`); appendText; 
-   //Takeshi
    Takeshi`"Oh, hey, one more thing."`;
    waitForClick; clearText; marker; sound(`C7A452`); appendText; 
-   //Kid
    Kid`"???"`;
    waitForClick; clearText; marker; sound(`C7A453`); appendText; 
-   //Takeshi
    Takeshi`"Quit calling me 'dad,' will you?"`;
    waitForClick; clearText; marker; sound(`C7A454`); appendText; 
-   //Kid
    Kid`"Well...I can't help it...."`;
    waitForClick; clearText; marker; sound(`C7A455`); appendText; 
-   //Kid
    Kid`"I'm your son...."`;
    waitForClick; clearText; marker; sound(`C7A456`); appendText; 
-   //Takeshi
    Takeshi`"No, no, that's not what I mean."`;
    waitForClick; clearText; marker; sound(`C7A457`); appendText; 
-   //Takeshi
    Takeshi`"If you call me 'dad', why don't you say it a 
 little more elegantly."`;
    waitForClick; clearText; marker; sound(`C7A458`); appendText; 
-   //Takeshi
    Takeshi`"Call me 'father,' okay? 'Father.'"`;
    waitForClick; clearText; marker; sound(`C7A459`); appendText; 
-   //Takeshi
    Takeshi`"You got it?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto took a deep breath trying to say 
@@ -1344,7 +1117,6 @@ with Takeshi.`;
    Narr`Anyway, I needed to tell her what had 
 happened to Takeshi and Coco!`;
    waitForClick; clearText; marker; sound(`C7A460`); appendText; 
-   //Kid
    Kid`"You! You!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was Hokuto who shouted at her.`;
@@ -1363,7 +1135,6 @@ text(() => {
 her, when she started talking to herself all 
 of a sudden.`;
    waitForClick; clearText; marker; sound(`C7A462`); appendText; 
-   //Kid
    Kid`"It's me!"`;
    waitForClick; clearText; marker; sound(`C7A463`); appendText; 
    //You'haru'
@@ -1379,13 +1150,10 @@ in the future.'`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto told her.`;
    waitForClick; clearText; marker; sound(`C7A464`); appendText; 
-   //Kid
    Kid`"Look, there's something I want you tell you."`;
    waitForClick; clearText; marker; sound(`C7A465`); appendText; 
-   //Kid
    Kid`"So listen to me carefully."`;
    waitForClick; clearText; marker; sound(`C7A466`); appendText; 
-   //Kid
    Kid`"Actually...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto told her that Coco and Takeshi had 
@@ -1400,20 +1168,16 @@ text(() => {
    //You'haru'
    You_haru_`"Oh my god! It can't be...."`;
    waitForClick; clearText; marker; sound(`C7A468`); appendText; 
-   //Kid
    Kid`"So you have to help them right away, okay!?"`;
    waitForClick; clearText; marker; sound(`C7A469`); appendText; 
    //You'haru'
    You_haru_`"Are you serious!?"`;
    waitForClick; clearText; marker; sound(`C7A470`); appendText; 
-   //Kid
    Kid`"Totally!"`;
    waitForClick; clearText; marker; sound(`C7A471`); appendText; 
-   //Kid
    Kid`"Coco and Takeshi weren't on the sub that 
 rescued you."`;
    waitForClick; clearText; marker; sound(`C7A472`); appendText; 
-   //Kid
    Kid`"And the only others who were rescued were 
 Tsugumi and Kaburaki...."`;
    waitForClick; clearText; 
@@ -1422,26 +1186,21 @@ fgload({ id: 1, name: `YU13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`PIPI_04`); appendText; 
-   //Pipi
    Pipi`"Bow-wow!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Pipi looked at Hokuto and me, and gave a loud 
 bark.`;
    waitForClick; clearText; marker; sound(`C7A473`); appendText; 
-   //Kid
    Kid`"Oh, yeah! Pipi!"`;
    waitForClick; clearText; marker; sound(`C7A474`); appendText; 
-   //Kid
    Kid`"Pipi...had a disc in his mouth, didn't he?"`;
    waitForClick; clearText; marker; sound(`C7A475`); appendText; 
    //You'haru'
    You_haru_`"Uh-huh...you mean the terabyte disc, right?"`;
    waitForClick; clearText; marker; sound(`C7A476`); appendText; 
-   //Kid
    Kid`"That's right, Sora's data and her memories 
 are in it...."`;
    waitForClick; clearText; marker; sound(`C7A477`); appendText; 
-   //Kid
    Kid`"What else, um...."`;
    waitForClick; clearText; 
 });
@@ -1455,10 +1214,8 @@ text(() => {
    //You'haru'
    You_haru_`"Where on earth are you now!?"`;
    waitForClick; clearText; marker; sound(`C7A480`); appendText; 
-   //Kid
    Kid`"That doesn't really matter."`;
    waitForClick; clearText; marker; sound(`C7A481`); appendText; 
-   //Kid
    Kid`"You have to believe me!"`;
    waitForClick; clearText; 
 });
@@ -1472,37 +1229,28 @@ text(() => {
    //You'haru'
    You_haru_`"What is this...am I hearing things?"`;
    waitForClick; clearText; marker; sound(`C7A484`); appendText; 
-   //Kid
    Kid`"No, you are not!"`;
    waitForClick; clearText; marker; sound(`C7A485`); appendText; 
-   //Kid
    Kid`"Seriously, Takeshi and Coco are...."`;
    waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   //Pipi
    Pipi`"Bow!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Pipi started barking again.`;
    waitForClick; clearText; marker; sound(`C7A486`); appendText; 
-   //Kid
    Kid`"Oh, oh, I know!"`;
    waitForClick; clearText; marker; sound(`C7A487`); appendText; 
-   //Kid
    Kid`"Pipi! Pipi must have seen it!"`;
    waitForClick; clearText; marker; sound(`C7A488`); appendText; 
-   //Kid
    Kid`"Pipi saw Coco collapsed in the hallway."`;
    waitForClick; clearText; marker; sound(`C7A489`); appendText; 
-   //Kid
    Kid`"There's gotta be some image data of that 
 saved in Pipi's memory."`;
    waitForClick; clearText; marker; sound(`C7A490`); appendText; 
-   //Kid
    Kid`"Can you play it back?"`;
    waitForClick; clearText; marker; appendText; 
    //You'haru'
    You_haru_`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; 
 });
@@ -1513,7 +1261,6 @@ text(() => {
    //You'haru'
    You_haru_`".................."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`".................."`;
    waitForClick; clearText; marker; appendText; 
    Narr`She dropped her head down as if deep in 
@@ -1537,20 +1284,16 @@ text(() => {
    You_haru_`"I have no idea who you are, but I'll see 
 what I can do."`;
    waitForClick; clearText; marker; sound(`C7A493`); appendText; 
-   //Kid
    Kid`"Thank you, You."`;
    waitForClick; clearText; marker; sound(`C7A494`); appendText; 
-   //Kid
    Kid`"I'm counting on you. It's about time I get 
 back to where I came from."`;
    waitForClick; clearText; marker; sound(`C7A495`); appendText; 
    //You'haru'
    You_haru_`"Where did you come from?"`;
    waitForClick; clearText; marker; sound(`C7A496`); appendText; 
-   //Kid
    Kid`"You wouldn't believe me, but...."`;
    waitForClick; clearText; marker; sound(`C7A497`); appendText; 
-   //Kid
    Kid`"It's...17 years into the future...."`;
    waitForClick; clearText; 
 });
@@ -1796,7 +1539,6 @@ text(() => {
    Narr`Yubiseiharukana was still standing in the 
 same place.`;
    waitForClick; clearText; marker; sound(`C7A498`); appendText; 
-   //Kid
    Kid`"You! You!"`;
    waitForClick; clearText; 
 });
@@ -1812,26 +1554,20 @@ back again....?"`;
    You_haru_`"Don't tell me it was only a joke or 
 something."`;
    waitForClick; clearText; marker; sound(`C7A501`); appendText; 
-   //Kid
    Kid`"I won't."`;
    waitForClick; clearText; marker; sound(`C7A502`); appendText; 
-   //Kid
    Kid`"It was real. I'm telling the truth."`;
    waitForClick; clearText; marker; sound(`C7A503`); appendText; 
-   //Kid
    Kid`"Takeshi and Coco are sleeping in the capsule 
 pods right now."`;
    waitForClick; clearText; marker; sound(`C7A504`); appendText; 
-   //Kid
    Kid`"But...but...."`;
    waitForClick; clearText; marker; sound(`C7A505`); appendText; 
-   //Kid
    Kid`"You can't rescue them!"`;
    waitForClick; clearText; marker; sound(`C7A506`); appendText; 
    //You'haru'
    You_haru_`"What!? Why is that!?"`;
    waitForClick; clearText; marker; sound(`C7A507`); appendText; 
-   //Kid
    Kid`"It's...it's because...."`;
    waitForClick; clearText; 
 });
@@ -1842,27 +1578,22 @@ text(() => {
    //You'haru'
    You_haru_`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
    //You'haru'
    You_haru_`".................."`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`".................."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Ah! I cannot stand it any longer!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I pushed away Hokuto's consciousness and 
 jumped to the front.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"You have to wait for 17 years!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`I told her that before anything else.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"17 years from now, I will reappear before 
 you, I promise!"`;
    waitForClick; clearText; marker; appendText; 
@@ -1872,7 +1603,6 @@ you, I promise!"`;
    Narr`Puckering out her lips and You cocked her 
 head to the side.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Just, listen carefully to what I am going to 
 tell you."`;
    waitForClick; clearText; marker; appendText; 
@@ -1882,264 +1612,195 @@ tell you."`;
 showTextbox();
 text(() => {
    marker; appendText; 
-   //BW
    BW`"'17 years from now, I will reappear to you 
 all.'"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I just told you that, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"But in order for me to reappear, you will 
 need to trick me. "`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"So what I am asking you to do is, trick me 
 17 years from now!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Trick me into falsely believing that it is 
 the year 2017 again."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"When that happens, I will still be the third 
 eye, Blick Winkel, and that will cause me to 
 reveal myself."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And unless I reveal myself, neither Takeshi 
 nor Coco will be saved."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Because in order to restore life to Takeshi, 
 who sank to the bottom of the ocean, I will 
 need to appear as myself and go back to the 
 year 2017."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If I do not appear myself, Takeshi is going 
 to rot at the bottom of the ocean."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And if Takeshi fails to reach the 
 laboratory, Coco will be left in the 
 hallway...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Both of them will die."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Do you get it?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"So, no matter what happens, you need to stay 
 away from IBF until 17 years from now!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If you save Takeshi and Coco now, the events 
 in 2034 will fail to take place."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And if that happens, I will not appear...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If I do not appear, then I will be unable to 
 save Takeshi and Coco in 2017...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Which will form a time paradox and Takeshi 
 and Coco will disappear."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I'll repeat it again, okay?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"In order for me to appear in the year 2034, 
 you MUST NOT rescue Takeshi and Coco now."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I know it is painful, but that is the only 
 way...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"..........................."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And...as for the way to trick me...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Well, how can I explain...? You will need a 
 bit of preparation."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Although it should not be too difficult."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"You certainly have enough time...17 years, 
 actually...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"So it should not be impossible."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I will tell you what to do...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Are you ready?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"The day to act on the plan will be on 
 Monday, May 1, 2034."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"First, Sara will be visiting LeMU for a 
 school event on that day."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Sara is Tsugumi's daughter who will be born 
 next January."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"She is actually a twin, and her twin 
 brother's name is Hokuto...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"But due to unavoidable circumstances, 
 Tsugumi, Sara and Hokuto will be separated."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"So you could probably just tell Tsugumi 'you 
 will be reunited with your son and daughter 
 at LeMU.'"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If you tell her that, Tsugumi will come to 
 LeMU for sure...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Next, you can also invite Hokuto in the same 
 way."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If you tell him 'you will meet your mother 
 and sister', he will also come, alone."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"You must also have your daughter, 
 Yubiseiakikana, work as LeMU attendant just 
 as you did."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If you coach her, you could lead her in that 
 direction, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And you must not tell anything to Sora."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"It is best that you erase her memories of the 
 incident in 2017."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"There is nothing to worry about because all 
 the backup memories are saved in the terabyte 
 disc."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And finally...you will need the cooperation 
 of young Kaburaki."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"17 years from now, Kaburaki must look and act 
 absolutely like Takeshi Kuranari."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"So he must begin training to look and act 
 just like Takeshi."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Do not worry. He will catch on in 17 years."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"These six people are required for the plan."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"All you have to do is...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Simply throw them all together into LeMU on 
 May 1, 2034, and have an accident similar to 
 the one in 2017."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"If you can arrange this, things will work 
 out by themselves."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"The time in question will be one week from 
 the 1st to the 7th."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"For these seven days, you must not interfere 
 with them."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"No matter what kind of crisis happens. 
 Understood?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"They will survive by themselves."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"And...should I show no sign of reappearing 
 by 9 p.m. on the 6th...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Then I ask of you to rescue them all...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Is that clear? Will you do what I just told 
 you? You must not forget."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"On May 1, 2034, you are going to trick me. 
 Understood?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Oh...wait...I mean not 'me' to be 
 exact...it's actually 'Hokuto'...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I want you to trick Hokuto."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"You must trick him so that he will believe 
 it is the year 2017."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"..........................."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"17 years from now, without remembering why, 
 I might ask you something like..."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"'Why have you called me here?'"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Then I want you to answer this way."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"'I only followed your directions.'"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"...That is all."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"It was kind of lengthy, but...do you 
 understand? You got it, right?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I need you to understand this...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Yubiseiharukana was surprisingly accepting.`;
@@ -2301,7 +1962,6 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Narr`'Above the' 'sky, and' 'at your feet....'`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"It's a stone monument...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I whispered.`;
@@ -2319,7 +1979,6 @@ knocked it over?`;
    waitForClick; clearText; marker; appendText; 
    Narr`I picked up one of the smaller pieces.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Oh...it's heavy...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It was probably as heavy as Coco.`;
@@ -2396,7 +2055,6 @@ rose....`;
    waitForClick; clearText; marker; appendText; 
    Narr`I decided to open my mouth.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Blub."`;
    waitForClick; clearText; marker; appendText; 
    Narr`The air in my lungs came out and a large 
@@ -2516,7 +2174,6 @@ had gone through.`;
    waitForClick; clearText; marker; appendText; 
    Narr`I crawled up weakly onto the floor.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Whew...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`But there was no time to relax.`;
@@ -2597,7 +2254,6 @@ bgload({ name: `EV_CO10B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //BW
    BW`"Coco...."`;
    waitForClick; clearText; 
 });
@@ -2605,19 +2261,14 @@ bgload({ name: `EV_CO07A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //BW
    BW`"Coco...."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Coco...."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Coco!"`;
    waitForClick; clearText; 
 });
@@ -2626,57 +2277,40 @@ bgload({ name: `EV_CO07B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C7A508`); appendText; 
-   //Coco
    Coco`"Um..umm...."`;
    waitForClick; clearText; marker; sound(`C7A509`); appendText; 
-   //Coco
    Coco`"Who is it...?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"It's me, Coco."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I came to save you...."`;
    waitForClick; clearText; marker; sound(`C7A510`); appendText; 
-   //Coco
    Coco`"Um...."`;
    waitForClick; clearText; marker; sound(`C7A511`); appendText; 
-   //Coco
    Coco`"You...came...?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Yes."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I kept my promise, didn't I?"`;
    waitForClick; clearText; marker; sound(`C7A512`); appendText; 
-   //Coco
    Coco`"The promise...."`;
    waitForClick; clearText; marker; sound(`C7A513`); appendText; 
-   //Coco
    Coco`"...The promise...."`;
    waitForClick; clearText; marker; sound(`C7A514`); appendText; 
-   //Coco
    Coco`"...The promise...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco rubbed her eyelids and blinked repeatedly.`;
    waitForClick; clearText; marker; sound(`C7A515`); appendText; 
-   //Coco
    Coco`"Oh...."`;
    waitForClick; clearText; marker; sound(`C7A516`); appendText; 
-   //Coco
    Coco`"Ah...!"`;
    waitForClick; clearText; marker; sound(`C7A517`); appendText; 
-   //Coco
    Coco`"Ahhh...!!"`;
    waitForClick; clearText; marker; sound(`C7A518`); appendText; 
-   //Coco
    Coco`"I knew it!"`;
    waitForClick; clearText; marker; sound(`C7A519`); appendText; 
-   //Coco
    Coco`"So you DID come to save me!"`;
    waitForClick; clearText; 
 });
@@ -2702,58 +2336,42 @@ who wasn't Hokuto...?`;
 showTextbox();
 text(() => {
    marker; sound(`C7A520`); appendText; 
-   //Coco
    Coco`"You know, I've been waiting for you sooooo 
 long!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I know."`;
    waitForClick; clearText; marker; sound(`C7A521`); appendText; 
-   //Coco
    Coco`"I've been waiting for you so, so, so long!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I know."`;
    waitForClick; clearText; marker; sound(`C7A522`); appendText; 
-   //Coco
    Coco`"I knew you would come and get me."`;
    waitForClick; clearText; marker; sound(`C7A523`); appendText; 
-   //Coco
    Coco`"I wanted to see you so bad...."`;
    waitForClick; clearText; marker; sound(`C7A524`); appendText; 
-   //Coco
    Coco`"I just...had to see you again...."`;
    waitForClick; clearText; marker; sound(`C7A525`); appendText; 
-   //Coco
    Coco`"My brother...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Uh, uh-huh...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"But you see, Coco...?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I'm not your brother, actually...."`;
    waitForClick; clearText; marker; sound(`C7A526`); appendText; 
-   //Coco
    Coco`"Oh, that's alright."`;
    waitForClick; clearText; marker; sound(`C7A527`); appendText; 
-   //Coco
    Coco`"A girl who doesn't have a brother could call 
 someone who is like a brother, 'brother!'"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Where is that written?"`;
    waitForClick; clearText; marker; sound(`C7A528`); appendText; 
-   //Coco
    Coco`"It's not written anywhere."`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; sound(`C7A529`); appendText; 
-   //Coco
    Coco`"I just decided it!"`;
    waitForClick; clearText; 
 });
@@ -2767,48 +2385,34 @@ text(() => {
    Narr`Coco and I stared at each other as if we were 
 drawn to each other.`;
    waitForClick; clearText; marker; sound(`C7A530`); appendText; 
-   //Coco
    Coco`"Hey? It's strange...."`;
    waitForClick; clearText; marker; sound(`C7A531`); appendText; 
-   //Coco
    Coco`"I thought I had so many things to talk to 
 you about when I finally see you, but...."`;
    waitForClick; clearText; marker; sound(`C7A532`); appendText; 
-   //Coco
    Coco`"I don't know why, but...."`;
    waitForClick; clearText; marker; sound(`C7A533`); appendText; 
-   //Coco
    Coco`"I get all tounge-tied...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; marker; sound(`C7A534`); appendText; 
-   //Coco
    Coco`"Oh, but one thing...."`;
    waitForClick; clearText; marker; sound(`C7A535`); appendText; 
-   //Coco
    Coco`"Can I tell you something I couldn't tell you 
 before? "`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Sure."`;
    waitForClick; clearText; marker; sound(`C7A536`); appendText; 
-   //Coco
    Coco`"Well,"`;
    waitForClick; clearText; marker; sound(`C7A537`); appendText; 
-   //Coco
    Coco`"I...."`;
    waitForClick; clearText; marker; sound(`C7A538`); appendText; 
-   //Coco
    Coco`"I think you'll be surprised, but...."`;
    waitForClick; clearText; marker; sound(`C7A539`); appendText; 
-   //Coco
    Coco`"You might not believe me, but...."`;
    waitForClick; clearText; marker; sound(`C7A540`); appendText; 
-   //Coco
    Coco`"I...."`;
    waitForClick; clearText; marker; sound(`C7A541`); appendText; 
-   //Coco
    Coco`"Well, I...."`;
    waitForClick; clearText; 
 });
@@ -2816,17 +2420,14 @@ fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A542`); appendText; 
-   //Coco
    Coco`"I might have fallen in love with you."`;
    waitForClick; clearText; marker; appendText; 
    Narr`'What!?'`;
    waitForClick; clearText; marker; appendText; 
    Narr`My heart skipped a few beats.`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"Well, but...."`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"But I still.......ah...."`;
    waitForClick; clearText; 
 });
@@ -2834,20 +2435,15 @@ fgload({ id: 1, name: `CO03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A543`); appendText; 
-   //Coco
    Coco`"For 17 years...."`;
    waitForClick; clearText; marker; sound(`C7A544`); appendText; 
-   //Coco
    Coco`"For 17 years...."`;
    waitForClick; clearText; marker; sound(`C7A545`); appendText; 
-   //Coco
    Coco`"I've been waiting for you, brother."`;
    waitForClick; clearText; marker; sound(`C7A546`); appendText; 
-   //Coco
    Coco`"I've known about you since 17 years ago, you 
 see?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"........."`;
    waitForClick; clearText; 
 });
@@ -2855,11 +2451,9 @@ fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A547`); appendText; 
-   //Coco
    Coco`"You've been watching over me this whole 
 time, too."`;
    waitForClick; clearText; marker; sound(`C7A548`); appendText; 
-   //Coco
    Coco`"But, I've been watching you, too...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`It all started to make sense to me....`;
@@ -2876,11 +2470,9 @@ fgload({ id: 1, name: `CO03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A549`); appendText; 
-   //Coco
    Coco`"Would it be so bad if I fell in love with 
 you?"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"I don't think so, really...."`;
    waitForClick; clearText; 
 });
@@ -2888,13 +2480,10 @@ fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A550`); appendText; 
-   //Coco
    Coco`"Well then!"`;
    waitForClick; clearText; marker; sound(`C7A551`); appendText; 
-   //Coco
    Coco`"It's decided!"`;
    waitForClick; clearText; marker; sound(`C7A552`); appendText; 
-   //Coco
    Coco`"From now on, you and I are sweethearts, okay?"`;
    waitForClick; clearText; 
 });
@@ -2902,7 +2491,6 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //BW
    BW`"...What...?"`;
    waitForClick; clearText; 
 });
@@ -2939,25 +2527,18 @@ text(() => {
    marker; appendText; 
    Narr`Hokuto opened Takeshi's pod.`;
    waitForClick; clearText; marker; sound(`C7A553`); appendText; 
-   //Kid
    Kid`"Dad!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`C7A554`); appendText; 
-   //Kid
    Kid`"Dad!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`C7A555`); appendText; 
-   //Kid
    Kid`"Dad! Wake up!"`;
    waitForClick; clearText; marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; marker; sound(`C7A556`); appendText; 
-   //Kid
    Kid`"Faaaather!"`;
    waitForClick; clearText; 
 });
@@ -2965,12 +2546,10 @@ bgload({ name: `EV_ET03B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; sound(`C7A557`); appendText; 
-   //Takeshi
    Takeshi`"...Um!?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`All the sudden, Takeshi opened his eyes. `;
    waitForClick; clearText; marker; sound(`C7A558`); appendText; 
-   //Takeshi
    Takeshi`"Wh-where...? Is this...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`He looked around confused.`;
@@ -2978,13 +2557,10 @@ text(() => {
    Narr`Takeshi realized that Hokuto's face was in 
 front of him, and said.`;
    waitForClick; clearText; marker; sound(`C7A559`); appendText; 
-   //Takeshi
    Takeshi`"W-who on....?"`;
    waitForClick; clearText; marker; sound(`C7A560`); appendText; 
-   //Takeshi
    Takeshi`"Earth're you...?"`;
    waitForClick; clearText; marker; sound(`C7A561`); appendText; 
-   //Kid
    Kid`"It's me, dad!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi took a close look at Hokuto's face.`;
@@ -3000,32 +2576,25 @@ examination room wall.`;
    Narr`Then, Takeshi gasped as if he realized 
 something and looked at Hokuto again.`;
    waitForClick; clearText; marker; sound(`C7A562`); appendText; 
-   //Takeshi
    Takeshi`"So...you're that...'Hokuto?'"`;
    waitForClick; clearText; marker; sound(`C7A563`); appendText; 
-   //Kid
    Kid`"That's right, it's me, dad!"`;
    waitForClick; clearText; marker; sound(`C7A564`); appendText; 
-   //Kid
    Kid`"Dad! Dad! I've missed you so much!"`;
    waitForClick; clearText; marker; sound(`C7A565`); appendText; 
-   //Kid
    Kid`"Daaaaad...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Raising his voice like a child, Hokuto rubbed 
 his face against Takeshi's chest. `;
    waitForClick; clearText; marker; sound(`C7A566`); appendText; 
-   //Takeshi
    Takeshi`"Hey hey hey...wait a sec, Hokuto...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi pushed back Hokuto.`;
    waitForClick; clearText; marker; sound(`C7A567`); appendText; 
-   //Takeshi
    Takeshi`"Take it easy, will you? Alright?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi tapped Hokuto on the back....`;
    waitForClick; clearText; marker; sound(`C7A568`); appendText; 
-   //Kid
    Kid`"???"`;
    waitForClick; clearText; 
 });
@@ -3043,7 +2612,6 @@ multifgload2({ id1: 1, id2: 2, name1: `TA01AWM`, name2: `CO12ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; sound(`C7A569`); appendText; 
-   //Coco
    Coco`"Takepyon!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Coco hastily jumped at Takeshi and hugged him.`;
@@ -3053,7 +2621,6 @@ fgload({ id: 1, name: `TA16AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A570`); appendText; 
-   //Takeshi
    Takeshi`"Hey, Coco! You look all better now!"`;
    waitForClick; clearText; 
 });
@@ -3061,17 +2628,13 @@ fgload({ id: 2, name: `CO11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A571`); appendText; 
-   //Coco
    Coco`"Uh-huh, I don't have a single sore spot!"`;
    waitForClick; clearText; marker; sound(`C7A572`); appendText; 
-   //Takeshi
    Takeshi`"That's great...looks like the plan worked out 
 beautifully, didn't it?"`;
    waitForClick; clearText; marker; sound(`C7A573`); appendText; 
-   //Takeshi
    Takeshi`"That's just so great!"`;
    waitForClick; clearText; marker; sound(`C7A574`); appendText; 
-   //Kid
    Kid`"Dad! Dad!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto jumped at Takeshi and hugged him just 
@@ -3082,12 +2645,10 @@ fgload({ id: 1, name: `TA04AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A575`); appendText; 
-   //Takeshi
    Takeshi`"Whoah, stop it now!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Takeshi forcefully peeled him away...`;
    waitForClick; clearText; marker; sound(`C7A576`); appendText; 
-   //Kid
    Kid`"W-why!? Why don't you want me to hug you!?"`;
    waitForClick; clearText; 
 });
@@ -3095,20 +2656,15 @@ fgload({ id: 1, name: `TA01AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A577`); appendText; 
-   //Takeshi
    Takeshi`"Before I answer that question, there's 
 something I want to ask you."`;
    waitForClick; clearText; marker; sound(`C7A578`); appendText; 
-   //Kid
    Kid`"What is it?"`;
    waitForClick; clearText; marker; sound(`C7A579`); appendText; 
-   //Takeshi
    Takeshi`"How long have I been sleeping?"`;
    waitForClick; clearText; marker; sound(`C7A580`); appendText; 
-   //Takeshi
    Takeshi`"A day? Two days?"`;
    waitForClick; clearText; marker; sound(`C7A581`); appendText; 
-   //Takeshi
    Takeshi`"Oh man, I didn't sleep for...a week did I?"`;
    waitForClick; clearText; 
 });
@@ -3116,10 +2672,8 @@ fgload({ id: 2, name: `CO06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A582`); appendText; 
-   //Kid
    Kid`"...Um..."`;
    waitForClick; clearText; marker; sound(`C7A583`); appendText; 
-   //Coco
    Coco`"...Huh?"`;
    waitForClick; clearText; 
 });
@@ -3127,10 +2681,8 @@ fgload({ id: 1, name: `TA03AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A584`); appendText; 
-   //Takeshi
    Takeshi`"Ugh...."`;
    waitForClick; clearText; marker; sound(`C7A585`); appendText; 
-   //Takeshi
    Takeshi`"Guessing from your reaction... it's been 
 more than a week...?"`;
    waitForClick; clearText; 
@@ -3139,10 +2691,8 @@ fgload({ id: 2, name: `CO07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; 
 });
@@ -3150,13 +2700,10 @@ fgload({ id: 1, name: `TA02AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A586`); appendText; 
-   //Takeshi
    Takeshi`"A month?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; 
 });
@@ -3164,29 +2711,22 @@ fgload({ id: 1, name: `TA03AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A587`); appendText; 
-   //Takeshi
    Takeshi`"Th-three months, then...maybe?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   //Coco
    Coco`"........."`;
    waitForClick; clearText; marker; sound(`C7A588`); appendText; 
-   //Takeshi
    Takeshi`"Y-you gotta be kidding......."`;
    waitForClick; clearText; marker; sound(`C7A589`); appendText; 
-   //Takeshi
    Takeshi`"You mean, I've slept past summer and into 
 autumn...?"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto and Coco closed their eyes and shook 
 their heads.`;
    waitForClick; clearText; marker; sound(`C7A590`); appendText; 
-   //Coco
    Coco`"Today is Sunday, May 7th...."`;
    waitForClick; clearText; marker; sound(`C7A591`); appendText; 
-   //Kid
    Kid`"The last day of the holiday."`;
    waitForClick; clearText; 
 });
@@ -3194,20 +2734,16 @@ fgload({ id: 1, name: `TA02AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A592`); appendText; 
-   //Takeshi
    Takeshi`"FWA, HA, HA, HA!"`;
    waitForClick; clearText; marker; sound(`C7A593`); appendText; 
-   //Takeshi
    Takeshi`"Whew, c'mon, you had me scared for a second 
 there...."`;
    waitForClick; clearText; marker; sound(`C7A594`); appendText; 
-   //Takeshi
    Takeshi`"So it's only been a few hours since then...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`Hokuto and Coco looked at each other, nodded 
 and said.`;
    waitForClick; clearText; marker; sound(`C7A595`); appendText; 
-   //Kid
    Kid`"Dad? I don't want you to panic, alright?"`;
    waitForClick; clearText; 
 });
@@ -3215,7 +2751,6 @@ fgload({ id: 2, name: `CO14ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A596`); appendText; 
-   //Coco
    Coco`"Just calm down and listen...."`;
    waitForClick; clearText; 
 });
@@ -3223,7 +2758,6 @@ fgload({ id: 1, name: `TA17AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   //Takeshi
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
@@ -3231,7 +2765,6 @@ fgload({ id: 1, name: `TA03AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A597`); appendText; 
-   //Kid
    Kid`"Well, actually...."`;
    waitForClick; clearText; 
 });
@@ -3239,7 +2772,6 @@ fgload({ id: 1, name: `TA17AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A598`); appendText; 
-   //Coco
    Coco`"Takepyon...."`;
    waitForClick; clearText; 
 });
@@ -3247,7 +2779,6 @@ fgload({ id: 1, name: `TA03AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A599`); appendText; 
-   //Kid
    Kid`"You have been...."`;
    waitForClick; clearText; 
 });
@@ -3255,7 +2786,6 @@ fgload({ id: 1, name: `TA17AWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; sound(`C7A600`); appendText; 
-   //Coco
    Coco`"Sleeping for...."`;
    waitForClick; clearText; 
 });
@@ -3269,10 +2799,8 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; sound(`C7A601`); appendText; 
-   //Takeshi
    Takeshi`"Wh, what, what...?"`;
    waitForClick; clearText; marker; sound(`C7A602`); appendText; 
-   //Takeshi
    Takeshi`"17 yeeeeaaaaarrrrrrssss!?"`;
    waitForClick; clearText; 
 });
@@ -3342,66 +2870,46 @@ text(() => {
    Narr`Under the bright sunlight, Takeshi, Coco, 
 Hokuto, and Pipi were hanging around.`;
    waitForClick; clearText; marker; sound(`C7A609`); appendText; 
-   //Takeshi
    Takeshi`"Good morning."`;
    waitForClick; clearText; marker; sound(`C7A610`); appendText; 
-   //Takeshi
    Takeshi`"Those are such nice words...."`;
    waitForClick; clearText; marker; sound(`C7A611`); appendText; 
-   //Takeshi
    Takeshi`"They make me feel like getting up and doing 
 my best."`;
    waitForClick; clearText; marker; sound(`C7A612`); appendText; 
-   //Coco
    Coco`"Yeah, I agree."`;
    waitForClick; clearText; marker; sound(`C7A613`); appendText; 
-   //Coco
    Coco`"Okay then, I'll say it too...."`;
    waitForClick; clearText; marker; sound(`C7A614`); appendText; 
-   //Coco
    Coco`"Good morning, Takepyon."`;
    waitForClick; clearText; marker; sound(`C7A615`); appendText; 
-   //Takeshi
    Takeshi`"Good morning, Coco."`;
    waitForClick; clearText; marker; sound(`C7A616`); appendText; 
-   //Kid
    Kid`"Well, me too...."`;
    waitForClick; clearText; marker; sound(`C7A617`); appendText; 
-   //Kid
    Kid`"Good morning, dad."`;
    waitForClick; clearText; marker; sound(`C7A618`); appendText; 
-   //Takeshi
    Takeshi`"Good morning, son...."`;
    waitForClick; clearText; marker; sound(`C7A619`); appendText; 
-   //Takeshi
    Takeshi`"...Son!? ...I DON'T have a son!"`;
    waitForClick; clearText; marker; sound(`C7A620`); appendText; 
-   //Kid
    Kid`"You've got a daughter, too."`;
    waitForClick; clearText; marker; sound(`C7A621`); appendText; 
-   //Takeshi
    Takeshi`"Hey, don't start adding kids like that!"`;
    waitForClick; clearText; marker; sound(`C7A622`); appendText; 
-   //Takeshi
    Takeshi`"So are you telling me I'm the father of two 
 children at my age?"`;
    waitForClick; clearText; marker; sound(`C7A623`); appendText; 
-   //Kid
    Kid`"That's right."`;
    waitForClick; clearText; marker; sound(`C7A624`); appendText; 
-   //Kid
    Kid`"And it's true whether you like it or not...."`;
    waitForClick; clearText; marker; sound(`C7A625`); appendText; 
-   //Kid
    Kid`"Right, Coco?"`;
    waitForClick; clearText; marker; sound(`C7A626`); appendText; 
-   //Coco
    Coco`"Right, Hokutan?"`;
    waitForClick; clearText; marker; sound(`C7A627`); appendText; 
-   //Kid
    Kid`"Nya, ha, ha, ha, ha, ha, ha!"`;
    waitForClick; clearText; marker; sound(`C7A628`); appendText; 
-   //Coco
    Coco`"Kya, ha, ha, ha, ha, ha, ha!"`;
    waitForClick; clearText; marker; appendText; 
    Narr`Listening to their cheerful laughter, I 
@@ -3412,236 +2920,164 @@ thought to myself....`;
    Narr`As I began to fade I heard only their happy 
 voices behind me.`;
    waitForClick; clearText; marker; sound(`C7A629`); appendText; 
-   //Coco
    Coco`"Hey, Takepyon, Takepyon!"`;
    waitForClick; clearText; marker; sound(`C7A630`); appendText; 
-   //Takeshi
    Takeshi`"Huh?"`;
    waitForClick; clearText; marker; sound(`C7A631`); appendText; 
-   //Coco
    Coco`"I've got a new brother!"`;
    waitForClick; clearText; marker; sound(`C7A632`); appendText; 
-   //Takeshi
    Takeshi`"A new brother?"`;
    waitForClick; clearText; marker; sound(`C7A633`); appendText; 
-   //Coco
    Coco`"Uh-huh, he's actually my brother and my 
 boyfriend at the same time...."`;
    waitForClick; clearText; marker; sound(`C7A634`); appendText; 
-   //Takeshi
    Takeshi`"Reeeally, well good for you."`;
    waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   //Pipi
    Pipi`"Bow-wow!"`;
    waitForClick; clearText; marker; sound(`C7A635`); appendText; 
-   //Kid
    Kid`"Hey, dad! Dad!"`;
    waitForClick; clearText; marker; sound(`C7A636`); appendText; 
-   //Takeshi
    Takeshi`"I told you NOT to call me dad!"`;
    waitForClick; clearText; marker; sound(`C7A637`); appendText; 
-   //Kid
    Kid`"How about father, then?"`;
    waitForClick; clearText; marker; sound(`C7A638`); appendText; 
-   //Takeshi
    Takeshi`"Don't call me that either!"`;
    waitForClick; clearText; marker; sound(`C7A639`); appendText; 
-   //Kid
    Kid`"Why not? You told me to call you father 
 before...."`;
    waitForClick; clearText; marker; sound(`C7A640`); appendText; 
-   //Takeshi
    Takeshi`"Well that just slipped out of my mouth...."`;
    waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   //Pipi
    Pipi`"Bow-wow!"`;
    waitForClick; clearText; marker; sound(`C7A641`); appendText; 
-   //Coco
    Coco`"Hey, Takepyon, Takepyon!"`;
    waitForClick; clearText; marker; sound(`C7A642`); appendText; 
-   //Takeshi
    Takeshi`"What's that?"`;
    waitForClick; clearText; marker; sound(`C7A643`); appendText; 
-   //Coco
    Coco`"Pu-pu-ku-pu! Pu-pu-ku-pu!"`;
    waitForClick; clearText; marker; sound(`C7A644`); appendText; 
-   //Takeshi
    Takeshi`"You're not making any sense!"`;
    waitForClick; clearText; marker; sound(`C7A645`); appendText; 
-   //Kid
    Kid`"Hey, dad! Dad!"`;
    waitForClick; clearText; marker; sound(`C7A646`); appendText; 
-   //Takeshi
    Takeshi`"What is it now!?"`;
    waitForClick; clearText; marker; sound(`C7A647`); appendText; 
-   //Kid
    Kid`"Chuwa-chuwa-chuwa-chuwa!"`;
    waitForClick; clearText; marker; sound(`C7A648`); appendText; 
-   //Takeshi
    Takeshi`"You too, huh!?"`;
    waitForClick; clearText; marker; sound(`PIPI_09`); appendText; 
-   //Pipi
    Pipi`"Bow-wow! Bow-wow!"`;
    waitForClick; clearText; marker; sound(`C7A649`); appendText; 
-   //Takeshi
    Takeshi`"What's up, Pipi?"`;
    waitForClick; clearText; marker; sound(`PIPI_19`); appendText; 
-   //Pipi
    Pipi`"Awoooooooooo!"`;
    waitForClick; clearText; marker; sound(`C7A650`); appendText; 
-   //Takeshi
    Takeshi`"You just wanted to howl!"`;
    waitForClick; clearText; marker; sound(`C7A651`); appendText; 
-   //Coco
    Coco`"Takepiyo! Takepiyo!"`;
    waitForClick; clearText; marker; sound(`C7A652`); appendText; 
-   //Takeshi
    Takeshi`"Hey, stop changing my nickname!"`;
    waitForClick; clearText; marker; sound(`C7A653`); appendText; 
-   //Coco
    Coco`"Coco's short comedy! If Coco were a monster!"`;
    waitForClick; clearText; marker; sound(`C7A654`); appendText; 
-   //Coco
    Coco`"Grrr, grrr, I'm a monster! Thump, thump, 
 thump! I'm going to destroy everything! Grrrr!"`;
    waitForClick; clearText; marker; sound(`C7A655`); appendText; 
-   //Takeshi
    Takeshi`"Where's the punchline?"`;
    waitForClick; clearText; marker; sound(`C7A656`); appendText; 
-   //Kid
    Kid`"My grandfather's son, my grandmother's son!"`;
    waitForClick; clearText; marker; sound(`C7A657`); appendText; 
-   //Takeshi
    Takeshi`"That's so confusing!"`;
    waitForClick; clearText; marker; sound(`C7A658`); appendText; 
-   //Kid
    Kid`"Hokutan's comedy sketch! If I became a 12th 
 grader,"`;
    waitForClick; clearText; marker; sound(`C7A901`); appendText; 
-   //Kid
    Kid`"Since I've made it all the way to 12th 
 grade, I'll try my best not to forget to 
 bring stuff to school. `;
    waitForClick; clearText; sound(`C7A902`); appendText; 
-   //Kid
    Kid`Since I always seem to forget my protractor, 
 I'll do my best to remember it."`;
    waitForClick; clearText; marker; sound(`C7A660`); appendText; 
-   //Takeshi
    Takeshi`"That's a resolution, not comedy! Well, do 
 your best! Don't you forget it, ya hear?"`;
    waitForClick; clearText; marker; sound(`PIPI_09`); appendText; 
-   //Pipi
    Pipi`"Bow-wow! Bow-wow!"`;
    waitForClick; clearText; marker; sound(`C7A661`); appendText; 
-   //Takeshi
    Takeshi`"What's with you this time, Pipi?"`;
    waitForClick; clearText; marker; sound(`PIPI_19`); appendText; 
-   //Pipi
    Pipi`"Awoooooooooooooo!"`;
    waitForClick; clearText; marker; sound(`C7A662`); appendText; 
-   //Takeshi
    Takeshi`"Let me guess, just wanted to howl again, 
 huh...."`;
    waitForClick; clearText; marker; sound(`C7A663`); appendText; 
-   //Coco
    Coco`"Takepyon! Takepyon!"`;
    waitForClick; clearText; marker; sound(`C7A664`); appendText; 
-   //Takeshi
    Takeshi`"What is it now...?"`;
    waitForClick; clearText; marker; sound(`C7A665`); appendText; 
-   //Coco
    Coco`"I want to play cater-pi-llarrrr, I want to 
 play cater-pi-llarrrr, I want to play 
 cater-pi-llarrrr!"`;
    waitForClick; clearText; marker; sound(`C7A666`); appendText; 
-   //Takeshi
    Takeshi`"Well, go ahead. No one's stopping you?"`;
    waitForClick; clearText; marker; sound(`C7A667`); appendText; 
-   //Kid
    Kid`"Dad! Mom!"`;
    waitForClick; clearText; marker; sound(`C7A668`); appendText; 
-   //Takeshi
    Takeshi`"What, am I BOTH now...?"`;
    waitForClick; clearText; marker; appendText; 
-   //Kid
    Kid`"........."`;
    waitForClick; clearText; marker; sound(`C7A669`); appendText; 
-   //Takeshi
    Takeshi`"Look if you can't think of anything to say, 
 don't say anything!"`;
    waitForClick; clearText; marker; sound(`PIPI_09`); appendText; 
-   //Pipi
    Pipi`"Bow-wow! Bow-wow!"`;
    waitForClick; clearText; marker; sound(`C7A670`); appendText; 
-   //Takeshi
    Takeshi`"You're just going to howl again...."`;
    waitForClick; clearText; marker; sound(`PIPI_17`); appendText; 
-   //Pipi
    Pipi`"Awoo."`;
    waitForClick; clearText; marker; sound(`C7A671`); appendText; 
-   //Takeshi
    Takeshi`"Oh, it's shorter now. Say that's kind of new."`;
    waitForClick; clearText; marker; sound(`C7A672`); appendText; 
-   //Coco
    Coco`"Takepyon! Takepyon!"`;
    waitForClick; clearText; marker; sound(`C7A673`); appendText; 
-   //Takeshi
    Takeshi`"So what is it?"`;
    waitForClick; clearText; marker; sound(`C7A674`); appendText; 
-   //Coco
    Coco`"Pu-pu-ku-pu! Pu-pu-ku-pu!"`;
    waitForClick; clearText; marker; sound(`C7A675`); appendText; 
-   //Takeshi
    Takeshi`"There you go again...."`;
    waitForClick; clearText; marker; appendText; 
    Narr`I decided to leave as I was hearing their 
 happy voices.`;
    waitForClick; clearText; marker; sound(`C7A676`); appendText; 
-   //Coco
    Coco`"Oh! Wait a minute! Brother!"`;
    waitForClick; clearText; marker; appendText; 
-   //BW
    BW`"...What?"`;
    waitForClick; clearText; marker; sound(`C7A677`); appendText; 
-   //Coco
    Coco`"Can I see you again?"`;
    waitForClick; clearText; marker; sound(`C7A678`); appendText; 
-   //Coco
    Coco`"I know I'll see you again. No matter what."`;
    waitForClick; clearText; marker; sound(`C7A679`); appendText; 
-   //Coco
    Coco`"I believe in you...."`;
    waitForClick; clearText; marker; sound(`C7A680`); appendText; 
-   //Coco
    Coco`"Because you know something?"`;
    waitForClick; clearText; marker; sound(`C7A681`); appendText; 
-   //Coco
    Coco`"You and me are both from the sun, right?"`;
    waitForClick; clearText; marker; sound(`C7A682`); appendText; 
-   //Coco
    Coco`"We can use psychic power."`;
    waitForClick; clearText; marker; sound(`C7A683`); appendText; 
-   //Coco
    Coco`"Okay? So believe in me, too."`;
    waitForClick; clearText; marker; sound(`C7A684`); appendText; 
-   //Coco
    Coco`"Your world and my world are connected."`;
    waitForClick; clearText; marker; sound(`C7A685`); appendText; 
-   //Coco
    Coco`"Our two worlds are...going to be united...."`;
    waitForClick; clearText; marker; sound(`C7A686`); appendText; 
-   //Coco
    Coco`"And at the intersection, there is a 
 perspective...."`;
    waitForClick; clearText; marker; sound(`C7A687`); appendText; 
-   //Coco
    Coco`"I'll always be with you, brother...."`;
    waitForClick; clearText; marker; sound(`C7A688`); appendText; 
-   //Coco
    Coco`"Okay, so I'll see you then!"`;
    waitForClick; clearText; marker; sound(`C7A689`); appendText; 
-   //Coco
    Coco`"Brother!"`;
    waitForClick; clearText; 
 });
