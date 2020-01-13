@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 3`);
-varop(`(28 0a a4) b2 := (00) 3`);
+g_b0 = 5;
+g_b1 = 3;
+g_b2 = 3;
 setSceneTitle({ index: 69 });
 bgload({ name: `BG29A1`, transition: 26 });
 playBGM({ num: 3, volume: 100 });
@@ -1030,7 +1030,7 @@ things.`;
 sluggish...)`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2050,7 +2050,7 @@ playing a nasty trick on me.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -2448,5 +2448,5 @@ move...at least to me.`;
 turning in his sleep.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_3D`);

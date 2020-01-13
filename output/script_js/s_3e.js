@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 3`);
-varop(`(28 0a a4) b2 := (00) 3`);
+g_b0 = 5;
+g_b1 = 3;
+g_b2 = 3;
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
 bgload({ name: `BG08A1`, transition: 20 });
 clock(`18:53`);
@@ -123,7 +123,7 @@ text(() => {
 myself together and started after her again.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1602,5 +1602,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`SY4A`);

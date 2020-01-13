@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 4`);
-varop(`(28 0a a4) b2 := (00) 4`);
+g_b0 = 5;
+g_b1 = 4;
+g_b2 = 4;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 20 });
 chapterCutin({ name: `00000000` });
@@ -259,7 +259,7 @@ text(() => {
 me.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopSFX()
 playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG29A1`, transition: 20 });
@@ -330,7 +330,7 @@ text(() => {
    Narr`Where to begin?`;
    waitForClick; clearText; 
 });
-bgload({ name: `EV_TU10B`, transition: 00 });
+bgload({ name: `EV_TU10B`, transition: 0 });
 stopBGM();
 clock(`1:42`);
 showTextbox();
@@ -433,7 +433,7 @@ switch (choice) {
    case 1: goto(lbl_0000032d);
 }
 let lbl_00000306;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -565,11 +565,11 @@ was quiet.`;
 wasn't joking.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000038e).if(var_b7 > 9);
-goto(lbl_0000038e).if(var_ec == 0);
+goto(lbl_0000038e).if(g_b7 > 9);
+goto(lbl_0000038e).if(g_ec == 0);
 goto(lbl_00000539);
 let lbl_0000038e;
-varop(`(28 0a a4) d9 := (00) 1`);
+g_d9 = 1;
 hideTextbox();
 stopBGM();
 showTextbox();
@@ -863,7 +863,7 @@ couldn't help but smile.`;
    Tsugumi`"I understand perfectly."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 03 });
+removeBG({ mode: BLACK, transition: 3 });
 showTextbox();
 text(() => {
    marker; sound(`T4A069`); appendText; 
@@ -970,7 +970,7 @@ room, frozen, without movement.`;
 });
 goto(lbl_00000964);
 let lbl_00000539;
-varop(`(28 0a a4) da := (00) 1`);
+g_da = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1020,7 +1020,7 @@ the rest of her body. She just laid there.`;
    Narr`I rose to my feet and left the room.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 2, volume: 100 });
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
@@ -1120,7 +1120,7 @@ text(() => {
    Narr`Sora smiled softly.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000630).if(var_e8 == 0);
+goto(lbl_00000630).if(g_e8 == 0);
 showTextbox();
 text(() => {
    marker; sound(`T4A085`); appendText; 
@@ -2091,5 +2091,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_4B`);

@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 5`);
-varop(`(28 0a a4) b2 := (00) 5`);
+g_b0 = 5;
+g_b1 = 5;
+g_b2 = 5;
 bgload({ name: `BG04B1`, transition: 20 });
 setSceneTitle({ index: 77 });
 clock(`0:3`);
@@ -336,7 +336,7 @@ to be strong, she is always waiting for
 the guy."`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -522,7 +522,7 @@ text(() => {
    Kid`"You don't look it."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000317).if(var_b3 != 0);
+goto(lbl_00000317).if(g_b3 != 0);
 bgload({ name: `EV_YU03C`, transition: 20 });
 let lbl_00000317;
 showTextbox();
@@ -676,7 +676,7 @@ text(() => {
    waitForClick; nextPage(04); 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 bgload({ name: `EV_YU03B`, transition: 10 });
 hideTextbox();
@@ -729,7 +729,7 @@ sometimes they add the word delusional for
 good measure."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -1533,7 +1533,7 @@ everywhere as I ran all out to where she was.`;
    Narr`(Will I make it?)`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1584,7 +1584,7 @@ a pretty nasty spill..."`;
    Kid`"..."`;
    waitForClick; clearText; 
 });
-bgload({ name: `IT05E`, transition: 00 });
+bgload({ name: `IT05E`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1597,7 +1597,7 @@ supporting the statue.`;
 behind the statue.`;
    waitForClick; clearText; 
 });
-bgload({ name: `IT05F`, transition: 00 });
+bgload({ name: `IT05F`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1621,7 +1621,7 @@ figures were two carvings of animals that I'd
 never seen.`;
    waitForClick; clearText; 
 });
-bgload({ name: `IT05E`, transition: 00 });
+bgload({ name: `IT05E`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1654,7 +1654,7 @@ that time...`;
    waitForClick; clearText; 
 });
 hideTextbox();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 delay({ interval: 120 });
 playBGM({ num: 3, volume: 100 });
@@ -1741,7 +1741,7 @@ You had left it.`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
 AVL_Mode();
@@ -1842,7 +1842,7 @@ bio scan.`;
    Narr`No, she had registered once...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1919,7 +1919,7 @@ hugging her knees.`;
    Narr`I had heard the lyrics somewhere before.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000ad4).if(var_e3 == 0);
+goto(lbl_00000ad4).if(g_e3 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2360,7 +2360,7 @@ text(() => {
 hideTextbox();
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 bgload({ name: `IMG01A`, transition: 26 });
 hideTextbox();
@@ -2413,5 +2413,5 @@ closed my eyes and tried to sleep.`;
    Narr`...And for myself.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`SY6A`);

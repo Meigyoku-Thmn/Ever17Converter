@@ -80,10 +80,10 @@ partitions were only creaking.`;
    Narr`Shaking it off, we kept trudging forward.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 1`);
+g_b3 = 1;
 jump(`T_1B`);
 let lbl_000000b8;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -266,7 +266,7 @@ text(() => {
    Narr`The door opened.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopSFX()
 showTextbox();
 text(() => {
@@ -418,7 +418,7 @@ ceiling of the elevator.`;
 hideTextbox();
 playSFX({ name: `SE00_09`, a1: 0, volume: 100 });
 stopBGM();
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 playBGM({ num: 9, volume: 100 });
 bgload({ name: `EV_CO02A`, transition: 10 });
 showTextbox();
@@ -657,7 +657,7 @@ text(() => {
    Narr`....`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG22A3`, transition: 20 });
 clock(`16:36`);
 fgload({ id: 1, name: `CO02ADM`, x: 320, useAnim: true });
@@ -1092,5 +1092,5 @@ I've been investigating ways to restore our
 connection, but it's going to take some time."`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 2`);
+g_b3 = 2;
 jump(`T_1B`);

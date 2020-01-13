@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -64,11 +64,11 @@ text(() => {
    Takeshi`"Securing is removing danger itself."`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 1`);
+g_b3 = 1;
 jump(`S_1B`);
 let lbl_000000e0;
-varop(`(28 0a a4) ba += (00) 1`);
-varop(`(28 0a a4) f0 := (00) 1`);
+g_ba += 1;
+g_f0 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -809,7 +809,7 @@ the frozen iceberg of my past...`;
 });
 hideTextbox();
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
 AVL_Mode();
@@ -1557,7 +1557,7 @@ text(() => {
    Narr`But...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1594,5 +1594,5 @@ from the Control Room.`;
 silent.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 1`);
+g_b3 = 1;
 jump(`S_1C`);

@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -62,7 +62,7 @@ sadness.`;
 });
 goto(lbl_00000241);
 let lbl_000000c5;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -375,5 +375,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_2D`);

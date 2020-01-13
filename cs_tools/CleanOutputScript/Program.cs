@@ -24,14 +24,24 @@ namespace CleanOutputScript {
       static readonly Regex inlineCommand1 = new Regex(@"{(.+?)}", RegexOptions.Compiled);
       static readonly Regex inlineCommand2 = new Regex(@"^{(.+?)}$", RegexOptions.Compiled);
       static readonly Regex nameTag = new Regex(@"^\[(.+?)\]\r\n", RegexOptions.Compiled);
-      static readonly Regex condBlock = new Regex(@"^\[cond \(28 0a a4\) (.+?) 14 \(00\)\]", RegexOptions.Compiled);
+      static readonly Regex condBlock = new Regex(@"^\[cond \(28 0a a4\) (.+?) 14 \(00\)\](.+)", RegexOptions.Compiled);
       static readonly Regex nextStatement = new Regex(@"^\[[0-9a-fA-F]+?\]", RegexOptions.Compiled);
       static readonly Regex rgb = new Regex(@"^rgb\((.+?),(.+?),(.+?)\)$", RegexOptions.Compiled);
       static readonly Regex jsInvalidChar1 = new Regex(@"[/ \-']");
       static readonly Regex jsInvalidChar2 = new Regex(@"[\.]");
+      static readonly Regex varop = new Regex(@".+? .+? (.+?)\) (.+?) (.+?) .+? (.+)");
       static readonly CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("JScript");
       static readonly int indent = 3;
       static readonly string tab = new string(' ', indent);
+      static string EscapeBackTick(string input) {
+         return input.Replace("`", "\\`");
+      }
+      static string FixJPTextInEnVer(string input) {
+         if (input == "‚k‚qQ‚`‚O‚O‚Ì’l‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB") {
+            input = "ＬＲ＿Ａ００の値が正しくありません。";
+         }
+         return input;
+      }
       static void Main(string[] args) {
          Directory.CreateDirectory(outputDirPath);
          var filePaths = Directory.GetFiles(inputDirPath, "*.dec", SearchOption.TopDirectoryOnly).OrderBy(e => e);
@@ -92,12 +102,12 @@ namespace CleanOutputScript {
                   break;
                }
                case "unlockCG": {
-                  var name = tokens[1];
+                  var name = EscapeBackTick(tokens[1]);
                   outputLines.Add($"unlockCG($`{name}`);");
                   break;
                }
                case "playVoice": {
-                  var name = tokens[1];
+                  var name = EscapeBackTick(tokens[1]);
                   outputLines.Add($"playVoice($`{name}`);");
                   break;
                }
@@ -186,9 +196,9 @@ namespace CleanOutputScript {
                   break;
                }
                case "multifgload3": {
-                  var name1 = tokens[2];
-                  var name2 = tokens[4];
-                  var name3 = tokens[6];
+                  var name1 = EscapeBackTick(tokens[2]);
+                  var name2 = EscapeBackTick(tokens[4]);
+                  var name3 = EscapeBackTick(tokens[6]);
                   var x1 = tokens[7];
                   var x2 = tokens[8];
                   var x3 = tokens[9];
@@ -224,12 +234,12 @@ namespace CleanOutputScript {
                   break;
                }
                case "playMovie": {
-                  var name = tokens[1];
+                  var name = EscapeBackTick(tokens[1]);
                   outputLines.Add($"playMovie(`{name}`);");
                   break;
                }
                case "jump": {
-                  var file = tokens[1];
+                  var file = EscapeBackTick(tokens[1]);
                   outputLines.Add($"jump(`{file}`);");
                   break;
                }
@@ -251,7 +261,23 @@ namespace CleanOutputScript {
                }
                case "varop": {
                   var unk = string.Join(" ", tokens.Skip(1));
-                  outputLines.Add($"varop(`{unk}`);");
+                  var m = varop.Match(unk);
+                  var type = m.Groups[1].Value;
+                  var name = m.Groups[2].Value;
+                  var op = m.Groups[3].Value;
+                  var assignee = m.Groups[4].Value;
+                  switch (type) {
+                     case "a4": type = "g_"; break;
+                     case "a2": type = "eff_"; break;
+                     case "a0": type = "dimOff_"; break;
+                     case "a3": type = "sys_"; break;
+                     default: throw new InvalidSyntaxException($"Invalid varop type at line {inputLine + 1} of file '{filePath}'");
+                  }
+                  switch (op) {
+                     case ":=": op = "="; break;
+                     case "+=": break;
+                  }
+                  outputLines.Add($"{type}{name} {op} {assignee};");
                   break;
                }
                case "delay": {
@@ -265,7 +291,7 @@ namespace CleanOutputScript {
                      break;
                   }
                   string mode = (tokens[1] == "1" ? "white" : tokens[1] == "0" ? "black" : null).ToUpper();
-                  string transition = tokens[2] + tokens[3];
+                  var transition = Convert.ToInt32(tokens[2] + tokens[3], 10);
                   outputLines.Add($"removeBG({{ mode: {mode}, transition: {transition} }});");
                   break;
                }
@@ -292,7 +318,7 @@ namespace CleanOutputScript {
                   break;
                }
                case "playSFX": {
-                  var name = tokens[1].ToUpper();
+                  var name = EscapeBackTick(tokens[1].ToUpper());
                   var a1 = tokens[2];
                   var volume = tokens[3];
                   outputLines.Add($"playSFX({{ name: `{name}`, a1: {a1}, volume: {volume} }});");
@@ -309,8 +335,8 @@ namespace CleanOutputScript {
                   break;
                }
                case "bgloadCrop": {
-                  var name = tokens[2].ToUpper();
-                  var transition = tokens[4] + tokens[3];
+                  var name = EscapeBackTick(tokens[2].ToUpper());
+                  var transition = Convert.ToInt32(tokens[4] + tokens[3], 10);
                   var x = tokens[5];
                   var y = tokens[6];
                   var hx = tokens[7];
@@ -354,7 +380,7 @@ namespace CleanOutputScript {
                   break;
                }
                case "chapterCutin": {
-                  var name = tokens[1];
+                  var name = EscapeBackTick(tokens[1]);
                   outputLines.Add($"chapterCutin({{ name: `{name}` }});");
                   break;
                }
@@ -369,13 +395,13 @@ namespace CleanOutputScript {
                   break;
                }
                case "bgload": {
-                  var name = tokens[2].ToUpper();
-                  var transition = tokens[4] + tokens[3];
+                  var name = EscapeBackTick(tokens[2].ToUpper());
+                  var transition = Convert.ToInt32(tokens[4] + tokens[3], 10);
                   outputLines.Add($"bgload({{ name: `{name}`, transition: {transition} }});");
                   break;
                }
                case "clock": {
-                  var time = tokens[1];
+                  var time = EscapeBackTick(tokens[1]);
                   outputLines.Add($"clock(`{time}`);");
                   break;
                }
@@ -403,7 +429,7 @@ namespace CleanOutputScript {
                }
                case "fgload": {
                   var id = tokens[1];
-                  var name = tokens[3];
+                  var name = EscapeBackTick(tokens[3]);
                   var x = tokens[4];
                   var useAnim = tokens[5] == "3" ? "true" : "false";
                   outputLines.Add($"fgload({{ id: {id}, name: `{name}`, x: {x}, useAnim: {useAnim} }});");
@@ -418,8 +444,8 @@ namespace CleanOutputScript {
                case "multifgload2": {
                   var id1 = tokens[1];
                   var id2 = tokens[2];
-                  var name1 = tokens[4];
-                  var name2 = tokens[6];
+                  var name1 = EscapeBackTick(tokens[4]);
+                  var name2 = EscapeBackTick(tokens[6]);
                   var x1 = tokens[7];
                   var x2 = tokens[8];
                   var useAnim = tokens[9] == "3" ? "true" : "false";
@@ -473,7 +499,7 @@ namespace CleanOutputScript {
                   var opposed_value = tokens[8];
                   var label = tokens[11];
                   usedLabelSet.Add(label);
-                  outputLines.Add($"goto(lbl_{label}).if(var_{variable} {comparision} {opposed_value});");
+                  outputLines.Add($"goto(lbl_{label}).if(g_{variable} {comparision} {opposed_value});");
                   break;
                }
                case "shakeScreen": {
@@ -481,8 +507,8 @@ namespace CleanOutputScript {
                   break;
                }
                case "bgload_keepFg": {
-                  var name = tokens[2].ToUpper();
-                  var transition = tokens[4] + tokens[3];
+                  var name = EscapeBackTick(tokens[2].ToUpper());
+                  var transition = Convert.ToInt32(tokens[4] + tokens[3], 10);
                   outputLines.Add($"bgload_keepFg({{ name: `{name}`, transition: {transition} }});");
                   break;
                }
@@ -573,7 +599,8 @@ namespace CleanOutputScript {
                      name = $"//{name_comment}\r\n{tab}{name}";
                   return "";
                });
-               innerText += $"\r\n{tab}{name}`{_fragment}`;\r\n{tab}";
+               _fragment = FixJPTextInEnVer(_fragment);
+               innerText += $"\r\n{tab}{name}`{EscapeBackTick(_fragment)}`;\r\n{tab}";
                continue;
             }
             var command = m.Groups[1].Value;
@@ -592,7 +619,7 @@ namespace CleanOutputScript {
                   break;
                }
                case "sound": {
-                  innerText += $"sound(`{_tokens[1]}`); ";
+                  innerText += $"sound(`{EscapeBackTick(_tokens[1])}`); ";
                   break;
                }
                case "nextPage": {
@@ -609,15 +636,17 @@ namespace CleanOutputScript {
                   var selections = command.Split(new[] { '|' }, StringSplitOptions.RemoveEmptyEntries).Skip(1);
                   foreach (var selection in selections) {
                      string variable = null;
+                     string realSelection = null;
                      var _selection = condBlock.Replace(selection, (_m) => {
                         variable = _m.Groups[1].Value;
+                        realSelection = _m.Groups[2].Value;
                         return "";
                      });
                      if (selection == _selection) {
-                        innerText += tab + $"`{selection}`\r\n";
+                        innerText += tab + $"`{EscapeBackTick(selection)}`\r\n";
                      }
                      else {
-                        innerText += tab + $"cond(`{selection}`, var_{variable})\r\n";
+                        innerText += tab + $"`{EscapeBackTick(realSelection)}`.if(g_{variable} != 0),\r\n";
                      }
                   }
                   innerText = innerText.TrimEnd();

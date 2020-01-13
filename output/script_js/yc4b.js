@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 4`);
-varop(`(28 0a a4) b2 := (00) 4`);
+g_b0 = 5;
+g_b1 = 4;
+g_b2 = 4;
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
 removeBG({ mode: BLACK, transition: 62 });
@@ -293,13 +293,13 @@ she continued to take one long breath in.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU10ADM`, x: 320, useAnim: true });
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_ca_0_6`);
-varop(`(28 0a a2) 3d := (00) 6`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 3`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_ca_0_6;
+eff_3d = 6;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 3;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -2125,5 +2125,5 @@ text(() => {
    You`"...twin sister ..."`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`YC5A`);

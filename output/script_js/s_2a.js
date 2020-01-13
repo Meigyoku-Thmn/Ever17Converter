@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 56 });
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 bgload({ name: `BG10A2`, transition: 10 });
 playBGM({ num: 2, volume: 97 });
 clock(`1:39`);
@@ -82,7 +82,7 @@ text(() => {
 she said this.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 51`);
+g_b3 = 51;
 random(7);
 jump(lbl_000001d6).ifRandomIs(0);
 jump(lbl_000001df).ifRandomIs(1);
@@ -203,7 +203,7 @@ text(() => {
    You`"Stop that...there's no way."`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 51`);
+g_b3 = 51;
 random(3);
 jump(lbl_0000029d).ifRandomIs(0);
 jump(lbl_000002a6).ifRandomIs(1);
@@ -241,7 +241,7 @@ text(() => {
 about me!"`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 51`);
+g_b3 = 51;
 random(7);
 jump(lbl_00000315).ifRandomIs(0);
 jump(lbl_0000031e).ifRandomIs(1);
@@ -495,7 +495,7 @@ graffiti on his face.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE10_09`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -1033,7 +1033,7 @@ playSFX({ name: `SE03_01`, a1: 0, volume: 100 });
 setNumberOfFlash(1);
 setFlashRGBColor(255, 255, 255);
 triggerFlash();
-varop(`(28 0a a4) bf := (00) 0`);
+g_bf = 0;
 tweenZoom({ x: 440, y: 170, hx: 400, hy: 300, duration: 40 });
 delay({ interval: 30 });
 playSFX({ name: `SE03_01`, a1: 0, volume: 100 });
@@ -1298,7 +1298,7 @@ Room trying to make contact with LeMMIH.`;
 was going.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000d7f).if(var_f0 != 0);
+goto(lbl_00000d7f).if(g_f0 != 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1811,9 +1811,9 @@ text(() => {
    Narr`Just then...`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a2) 41 := (00) 13`);
-varop(`(28 0a a2) 42 := (00) 7`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 13;
+eff_42 = 7;
+eff_50 = 0;
 showDimInAndOutAnim();
 multifgload2({ id1: 1, id2: 2, name1: `SA06ADM`, name2: `YU06ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
@@ -1901,7 +1901,7 @@ text(() => {
    You`"What about everybody else?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00001303).if(var_f0 != 0);
+goto(lbl_00001303).if(g_f0 != 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1928,8 +1928,8 @@ text(() => {
    Narr`Sara and I shook our heads in the darkness.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001346).if(var_f1 == 0);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_00001346).if(g_f1 == 0);
+g_b3 = 0;
 jump(`SC2A`);
 let lbl_00001346;
 showTextbox();
@@ -2598,7 +2598,7 @@ text(() => {
 });
 hideTextbox();
 monoColorOverlay({ interval: 6, color: WHITE });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG15B2`, transition: 26 });
 multifgload2({ id1: 1, id2: 2, name1: `SA02ADM`, name2: `YU01ADM`, x1: 128, x2: 512, useAnim: false });
 setMonoColorOverlayFadeOutDuration(23);
@@ -2625,5 +2625,5 @@ spinning like a top.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_2B`);

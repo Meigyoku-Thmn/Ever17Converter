@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 setDialogBoxColor(GREEN);
 playBGM({ num: 1, volume: 100 });
 bgload({ name: `BG17A1`, transition: 20 });
@@ -469,7 +469,7 @@ text(() => {
    Narr`There were two chicken sandwiches inside it.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000053a).if(var_e9 == 0);
+goto(lbl_0000053a).if(g_e9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -562,7 +562,7 @@ text(() => {
 my question.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000616).if(var_e9 == 0);
+goto(lbl_00000616).if(g_e9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -872,7 +872,7 @@ switch (choice) {
    case 1: goto(lbl_00000887);
 }
 let lbl_00000824;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1333,7 +1333,7 @@ just laughing and playing with Pipi.`;
 put that down to his circumstances....`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 delay({ interval: 120 });
 bgload({ name: `IMG01A`, transition: 20 });
@@ -2160,9 +2160,9 @@ and you all closed your eyes at once..."`;
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000116a).if(var_f1 == 0);
-goto(lbl_0000116a).if(var_ba != 3);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_0000116a).if(g_f1 == 0);
+goto(lbl_0000116a).if(g_ba != 3);
+g_b3 = 0;
 jump(`TC2A`);
 let lbl_0000116a;
 hideTextbox();
@@ -2210,7 +2210,7 @@ in the water.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG16A3`, transition: 20 });
 playSFX({ name: `SE03_01`, a1: 0, volume: 95 });
 showTextbox();
@@ -2240,8 +2240,8 @@ text(() => {
 LeMU hovered silently in the darkness.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_2D`);

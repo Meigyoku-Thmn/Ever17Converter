@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 6`);
-varop(`(28 0a a4) b2 := (00) 6`);
+g_b0 = 5;
+g_b1 = 6;
+g_b2 = 6;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 45 });
 playBGM({ num: 19, volume: 100 });
@@ -452,7 +452,7 @@ loved me...`;
    Narr`The only place she existed...was here.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -609,9 +609,9 @@ from my mouth in large amounts.`;
 wall.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a2) 41 := (00) 22`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 80`);
+eff_41 = 22;
+eff_42 = 9;
+eff_50 = 80;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1334,7 +1334,7 @@ sheets.`;
    Narr`.........`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1455,7 +1455,7 @@ slightly`;
 little longer.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playBGM({ num: 24, volume: 100 });
 delay({ interval: 60 });
 showTextbox();
@@ -1491,7 +1491,7 @@ dream.`;
 everything?`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T6L111`); appendText; 
@@ -1508,7 +1508,7 @@ text(() => {
    You`"We could copy it to a terabyte disk..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1526,7 +1526,7 @@ more...`;
 });
 hideTextbox();
 delay({ interval: 60 });
-bgload({ name: `BG34A1`, transition: 00 });
+bgload({ name: `BG34A1`, transition: 0 });
 clock(`21:15`);
 showTextbox();
 text(() => {
@@ -1814,13 +1814,13 @@ submarine at a moment's notice, if we had to.`;
 hideTextbox();
 stopBGM();
 playSFX({ name: `SE06_04`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 7`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 4`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 7;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 4;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -1889,7 +1889,7 @@ text(() => {
    Takeshi`"I have to GO!!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2011,7 +2011,7 @@ as she lay sprawled on the floor.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2029,7 +2029,7 @@ lift.`;
    Narr`Upwards...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2169,7 +2169,7 @@ text(() => {
 hideTextbox();
 stopBGM();
 playBGM({ num: 12, volume: 100 });
-removeBG({ mode: WHITE, transition: 03 });
+removeBG({ mode: WHITE, transition: 3 });
 playSFX({ name: `SE07_11`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -2187,9 +2187,9 @@ inside.`;
 hideTextbox();
 monoColorOverlay({ interval: 0, color: WHITE });
 bgloadCrop({ name: `BG31A1`, transition: 26, x: 240, y: 0, hx: 800, hy: 600 });
-varop(`(28 0a a2) 41 := (00) 22`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 80`);
+eff_41 = 22;
+eff_42 = 9;
+eff_50 = 80;
 showDimInAndOutAnim();
 setMonoColorOverlayFadeOutDuration(23);
 fadeOutMonoColorOverlay();
@@ -2579,7 +2579,7 @@ text(() => {
    Narr`Trying to keep my calm, I responded to her.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000104f).if(var_0f == 0);
+goto(lbl_0000104f).if(g_0f == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3067,7 +3067,7 @@ hideTextbox();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_B2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -3259,7 +3259,7 @@ in my ear.`;
    Narr`Giving up, I left the room.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_01`, a1: 1, volume: 95 });
 waitForSFX();
 playSFX({ name: `SE00_05`, a1: 0, volume: 90 });
@@ -3379,7 +3379,7 @@ top."`;
    Narr`................................`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -3535,7 +3535,7 @@ text(() => {
    Sora`"2, 1..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 03 });
+removeBG({ mode: BLACK, transition: 3 });
 playSFX({ name: `SE07_07`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -3614,9 +3614,9 @@ square case.`;
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 95 });
 bgload({ name: `BG15B1`, transition: 20 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -3723,7 +3723,7 @@ Please go back to Zweite stock."`;
 successful escape."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
 stopBGM();
 showTextbox();
@@ -3949,5 +3949,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`TL7A`);

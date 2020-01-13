@@ -2,9 +2,9 @@ hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
 removeFG({ id: 1, useAnim: false });
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 4`);
-varop(`(28 0a a4) b2 := (00) 4`);
+g_b0 = 5;
+g_b1 = 4;
+g_b2 = 4;
 removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
@@ -475,7 +475,7 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 playBGM({ num: 13, volume: 100 });
 showTextbox();
@@ -1344,7 +1344,7 @@ text(() => {
 });
 goto(lbl_0000087e);
 let lbl_00000857;
-varop(`(28 0a a4) b6 += (00) 1`);
+g_b6 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2139,7 +2139,7 @@ wished you were."`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -2331,7 +2331,7 @@ into my lungs and I couldn't breathe.`;
    You`"Everyone, close your eyes!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 03 });
+removeBG({ mode: BLACK, transition: 3 });
 stopSFX()
 showTextbox();
 text(() => {
@@ -2733,7 +2733,7 @@ text(() => {
    Narr`Sara struck the keyboard with her palm.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 stopSFX()
 delay({ interval: 60 });
 stopBGM();
@@ -2750,7 +2750,7 @@ text(() => {
 emergency reset.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3380,7 +3380,7 @@ Research Division.`;
    waitForClick; clearText; 
 });
 setFGRenderOrder(4, 2, 1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 hideTextbox();
 NVL_Mode();
 showTextbox();
@@ -3804,5 +3804,5 @@ Sora disappeared into the display.`;
 went in search of You and the others.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`SY4B`);

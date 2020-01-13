@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 4`);
-varop(`(28 0a a4) b2 := (00) 4`);
+g_b0 = 5;
+g_b1 = 4;
+g_b2 = 4;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
@@ -179,7 +179,7 @@ text(() => {
    Kid`"I'm no hero and I'm sure not a knight."`;
    waitForClick; clearText; 
 });
-goto(lbl_000001d3).if(var_df == 0);
+goto(lbl_000001d3).if(g_df == 0);
 fgload({ id: 1, name: `SA11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -425,7 +425,7 @@ So I don't have to prove it!"`;
    Kid`"And I thought you were strong."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000323).if(var_e3 != 0);
+goto(lbl_00000323).if(g_e3 != 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -818,9 +818,9 @@ sort this out, right?"`;
 });
 hideTextbox();
 stopBGM();
-varop(`(28 0a a2) 41 := (00) 11`);
-varop(`(28 0a a2) 42 := (00) 4`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 11;
+eff_42 = 4;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1440,7 +1440,7 @@ then.`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 stopBGM();
 hideTextbox();
@@ -1550,7 +1550,7 @@ text(() => {
 the fish outside!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1776,5 +1776,5 @@ that You was waiting for me, I started walking.`;
    Narr`I figured it was probably...`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`SY5A`);

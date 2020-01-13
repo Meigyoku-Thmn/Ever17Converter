@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 0`);
-varop(`(28 0a a4) b1 := (00) 0`);
-varop(`(28 0a a4) b2 := (00) 0`);
+g_b0 = 0;
+g_b1 = 0;
+g_b2 = 0;
 setDialogBoxColor(GREEN);
 playBGM({ num: 22, volume: 100 });
 bgload_keepFg({ name: `KURO_BG`, transition: 10 });
@@ -16,11 +16,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 setDialogBoxColor(GRAY);
 delay({ interval: 180 });
-bgload({ name: `EV_CO03D`, transition: 00 });
+bgload({ name: `EV_CO03D`, transition: 0 });
 setSceneTitle({ index: 48 });
 hideTextbox();
 NVL_Mode();
-bgload({ name: `EV_CO03A`, transition: 00 });
+bgload({ name: `EV_CO03A`, transition: 0 });
 showDimOverlay();
 showTextbox();
 text(() => {
@@ -43,7 +43,7 @@ text(() => {
    
 });
 delay({ interval: 180 });
-bgload_keepFg({ name: `EV_CO11A`, transition: 00 });
+bgload_keepFg({ name: `EV_CO11A`, transition: 0 });
 showTextbox();
 text(() => {
    appendText; delay(0); 
@@ -53,11 +53,11 @@ text(() => {
    nextPage(01); 
 });
 delay({ interval: 180 });
-bgload_keepFg({ name: `EV_CO11B`, transition: 00 });
+bgload_keepFg({ name: `EV_CO11B`, transition: 0 });
 delay({ interval: 180 });
 playSFX({ name: `SE10_29`, a1: 0, volume: 100 });
 monoColorOverlay({ interval: 36, color: BLACK });
-varop(`(28 0a a0) ac := (00) 1`);
+dimOff_ac = 1;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -74,5 +74,5 @@ delay({ interval: 180 });
 delay({ interval: 180 });
 stopSFX()
 stopBGM();
-varop(`(28 0a a4) 11 := (00) 1`);
+g_11 = 1;
 unlockCG($`POST16`);

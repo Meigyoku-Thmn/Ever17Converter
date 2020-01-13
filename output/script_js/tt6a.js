@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 6`);
-varop(`(28 0a a4) b2 := (00) 6`);
+g_b0 = 5;
+g_b1 = 6;
+g_b2 = 6;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 43 });
 playBGM({ num: 7, volume: 100 });
@@ -571,9 +571,9 @@ but my mouth as well.`;
    Narr`Red flecks splattered on the floor and walls.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a2) 41 := (00) 22`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 80`);
+eff_41 = 22;
+eff_42 = 9;
+eff_50 = 80;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1273,7 +1273,7 @@ sheets of the bed.`;
    Narr`.........`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2095,9 +2095,9 @@ text(() => {
 });
 fgload({ id: 1, name: `TU13ADM`, x: 320, useAnim: true });
 hideTextbox();
-varop(`(28 0a a2) 41 := (00) 22`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 80`);
+eff_41 = 22;
+eff_42 = 9;
+eff_50 = 80;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -2295,7 +2295,7 @@ text(() => {
 });
 hideTextbox();
 monoColorOverlay({ interval: 1, color: WHITE });
-varop(`(28 0a a0) ac := (00) 1`);
+dimOff_ac = 1;
 closeDimOverlay();
 stopBGM();
 playSFX({ name: `SE05_00`, a1: 0, volume: 100 });
@@ -2432,7 +2432,7 @@ her back and cried with everything she had.`;
 occasionally.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 60 });
 showTextbox();
 text(() => {
@@ -2452,7 +2452,7 @@ dream.`;
 things?)`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T6T206`); appendText; 
@@ -2493,7 +2493,7 @@ text(() => {
    Tsugumi`"See you."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2506,7 +2506,7 @@ hideTextbox();
 stopBGM();
 delay({ interval: 120 });
 playBGM({ num: 24, volume: 100 });
-bgload({ name: `BG34A1`, transition: 00 });
+bgload({ name: `BG34A1`, transition: 0 });
 clock(`21:15`);
 showTextbox();
 text(() => {
@@ -2794,13 +2794,13 @@ hideTextbox();
 stopBGM();
 playBGM({ num: 4, volume: 100 });
 playSFX({ name: `SE06_04`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 7`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 4`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 7;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 4;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -2872,7 +2872,7 @@ working or not...`;
    Takeshi`"I have to GO!!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -2884,7 +2884,7 @@ muster, I staggered toward the elevator.`;
 hideTextbox();
 playBGM({ num: 10, volume: 100 });
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2902,7 +2902,7 @@ lift.`;
    Narr`Upwards...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3023,7 +3023,7 @@ text(() => {
 hideTextbox();
 stopBGM();
 playBGM({ num: 12, volume: 100 });
-removeBG({ mode: WHITE, transition: 03 });
+removeBG({ mode: WHITE, transition: 3 });
 playSFX({ name: `SE07_11`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -3041,9 +3041,9 @@ inside.`;
 hideTextbox();
 monoColorOverlay({ interval: 0, color: WHITE });
 bgloadCrop({ name: `BG31A1`, transition: 26, x: 240, y: 0, hx: 800, hy: 600 });
-varop(`(28 0a a2) 41 := (00) 22`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 80`);
+eff_41 = 22;
+eff_42 = 9;
+eff_50 = 80;
 showDimInAndOutAnim();
 setMonoColorOverlayFadeOutDuration(23);
 fadeOutMonoColorOverlay();
@@ -3216,7 +3216,7 @@ my PDA.`;
    Narr`Sora had prepared it for me.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3274,8 +3274,8 @@ hideTextbox();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_B1`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3293,11 +3293,11 @@ stopBGM();
 playSFX({ name: `SE02_05`, a1: 1, volume: 100 });
 waitForSFX();
 playBGM({ num: 19, volume: 100 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
-bgload({ name: `IMG06A`, transition: 00 });
+bgload({ name: `IMG06A`, transition: 0 });
 hideTextbox();
 NVL_Mode();
 showTextbox();
@@ -3375,7 +3375,7 @@ make it my own...`;
 hideTextbox();
 hideTextbox();
 AVL_Mode();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
 playSFX({ name: `SE02_11L`, a1: 0, volume: 90 });
 bgload({ name: `BG09A1`, transition: 20 });
@@ -3563,7 +3563,7 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 playSFX({ name: `SE02_05`, a1: 0, volume: 100 });
-removeBG({ mode: WHITE, transition: 01 });
+removeBG({ mode: WHITE, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3601,11 +3601,11 @@ text(() => {
 wind.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG25B3`, transition: 20 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
 bgload({ name: `BG26B3R`, transition: 20 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 stopSFX()
 bgloadCrop({ name: `BG31A1`, transition: 20, x: 240, y: 0, hx: 800, hy: 600 });
 fgload({ id: 1, name: `SO10ADS`, x: 320, useAnim: true });
@@ -3686,7 +3686,7 @@ text(() => {
 lever on the side of the door.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001a3c).if(var_ec == 0);
+goto(lbl_00001a3c).if(g_ec == 0);
 bgload({ name: `EV_SO07B`, transition: 20 });
 showTextbox();
 text(() => {
@@ -3795,7 +3795,7 @@ disappeared without a word.`;
    waitForClick; clearText; 
 });
 let lbl_00001a4f;
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopSFX()
 stopBGM();
 showTextbox();
@@ -4156,8 +4156,8 @@ text(() => {
 me in her tight embrace.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`TT7A`);

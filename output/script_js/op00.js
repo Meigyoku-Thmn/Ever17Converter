@@ -1,8 +1,8 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
 delay({ interval: 120 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 setSceneTitle({ index: 0 });
 setDialogBoxColor(GRAY);
 delay({ interval: 119 });
@@ -20,13 +20,13 @@ monoColorOverlay({ interval: 0, color: WHITE });
 bgloadCrop({ name: `BG41A1`, transition: 26, x: 12, y: 12, hx: 775, hy: 581 });
 setKomoreType(0);
 showKomoreAnim();
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 20`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 30`);
-varop(`(28 0a a2) 3f := (00) VAR_cc_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 0;
+eff_3b = 20;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 30;
+eff_3f = VAR_cc_0_6;
+eff_40 = 1;
 openShakeScreenAnim();
 setMonoColorOverlayFadeOutDuration(61);
 fadeOutMonoColorOverlay();
@@ -156,7 +156,7 @@ biting the animal from behind.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a4) ce := (00) 0`);
+g_ce = 0;
 tweenZoom({ x: 0, y: 0, hx: 680, hy: 510, duration: 60 });
 bgloadCrop({ name: `EV_CO16A`, transition: 20, x: 0, y: 0, hx: 680, hy: 510 });
 showTextbox();
@@ -174,7 +174,7 @@ something strange about her as well.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a4) ce := (00) 0`);
+g_ce = 0;
 tweenZoom({ x: 0, y: 0, hx: 800, hy: 600, duration: 60 });
 bgload({ name: `EV_CO16A`, transition: 26 });
 showTextbox();
@@ -235,7 +235,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 setSceneTitle({ index: 1 });
 showTextbox();
 text(() => {
@@ -256,7 +256,7 @@ eyes.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE09_01L`, a1: 0, volume: 90 });
-bgload({ name: `BG21A4`, transition: 00 });
+bgload({ name: `BG21A4`, transition: 0 });
 clock(`11:34`);
 showTextbox();
 text(() => {
@@ -613,7 +613,7 @@ instructions, he stepped into the building.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a4) ce := (00) 0`);
+g_ce = 0;
 tweenZoom({ x: 332, y: 185, hx: 200, hy: 150, duration: 45 });
 monoColorOverlay({ interval: 18, color: WHITE });
 removeBG({ mode: WHITE, transition: 62 });
@@ -674,7 +674,7 @@ quietly.`;
 wall and the room got a shade darker.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE03_02`, a1: 0, volume: 95 });
 stopBGM();
 clock(`11:47`);
@@ -1045,7 +1045,7 @@ switch (choice) {
    case 1: goto(lbl_000007a5);
 }
 let lbl_00000765;
-varop(`(28 0a a4) dd := (00) 1`);
+g_dd = 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP120`); appendText; 
@@ -1113,7 +1113,7 @@ text(() => {
 });
 goto(lbl_000007cc);
 let lbl_000007a5;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP138`); appendText; 
@@ -1252,7 +1252,7 @@ text(() => {
    Coco`"Huh? My voice?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000848).if(var_dd == 0);
+goto(lbl_00000848).if(g_dd == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1400,7 +1400,7 @@ talking?"`;
    Takeshi`"Oh, I suppose I could do that. Excuse me..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1661,7 +1661,7 @@ suffering was over.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 90 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 60 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 95 });
 bgload({ name: `BG23A5`, transition: 20 });
@@ -2062,7 +2062,7 @@ the waiting patrons.`;
 LeMU.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 playSFX({ name: `SE03_12`, a1: 0, volume: 100 });
 bgload({ name: `BG25A5`, transition: 20 });
 clock(`12:15`);
@@ -2320,7 +2320,7 @@ switch (choice) {
    case 1: goto(lbl_00001099);
 }
 let lbl_00000f54;
-varop(`(28 0a a4) de := (00) 1`);
+g_de = 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP273`); appendText; 
@@ -2611,7 +2611,7 @@ move.`;
    Narr`And that was exactly how he felt.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 setChangePerspectiveDirection(FROM_LEFT);
 triggerChangePerspectiveAnim();
 unSkippableDelay(30);
@@ -2647,7 +2647,7 @@ had vanished somewhere.`;
    Kid`"What did I come here for? I..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2788,7 +2788,7 @@ eyes..."`;
 fgload({ id: 1, name: `MY04ADL`, x: 320, useAnim: false });
 removeFG({ id: 1, useAnim: false });
 playSFX({ name: `SE10_05`, a1: 0, volume: 100 });
-removeBG({ mode: BLACK, transition: 03 });
+removeBG({ mode: BLACK, transition: 3 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2906,7 +2906,7 @@ text(() => {
    Narr`(It's that tanuki...)`;
    waitForClick; clearText; 
 });
-goto(lbl_00001331).if(var_de == 0);
+goto(lbl_00001331).if(g_de == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3148,7 +3148,7 @@ quickly.`;
    Narr`He heard a different voice from somewhere...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 setChangePerspectiveDirection(FROM_RIGHT);
 triggerChangePerspectiveAnim();
 unSkippableDelay(30);
@@ -3216,7 +3216,7 @@ text(() => {
    Narr`A cool breeze was blowing along the walkway.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 setChangePerspectiveDirection(FROM_LEFT);
 triggerChangePerspectiveAnim();
 unSkippableDelay(30);
@@ -3225,7 +3225,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3275,7 +3275,7 @@ text(() => {
    Narr`(...Of course not...)`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 setChangePerspectiveDirection(FROM_RIGHT);
 triggerChangePerspectiveAnim();
 unSkippableDelay(30);
@@ -3309,7 +3309,7 @@ text(() => {
    Narr`The doors reopened silently and closed again.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `EV_TU01C`, transition: 20 });
 showTextbox();
 text(() => {
@@ -3365,7 +3365,7 @@ switch (choice) {
    case 2: goto(lbl_0000171d);
 }
 let lbl_000016cf;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; sound(`EOP356`); appendText; 
@@ -3398,7 +3398,7 @@ text(() => {
 });
 goto(lbl_00001739);
 let lbl_000016f6;
-varop(`(28 0a a4) b7 += (00) 2`);
+g_b7 += 2;
 showTextbox();
 text(() => {
    marker; sound(`EOP363`); appendText; 
@@ -3456,13 +3456,13 @@ let lbl_00001739;
 hideTextbox();
 stopBGM();
 playSFX({ name: `SE10_07`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 7`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 4`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 7;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 4;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -3472,9 +3472,9 @@ text(() => {
 });
 hideTextbox();
 closeShakeScreenAnim();
-varop(`(28 0a a2) 41 := (00) 11`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 11;
+eff_42 = 9;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -3552,7 +3552,7 @@ text(() => {
    Narr`(Damn...what's going on...?)`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3575,9 +3575,9 @@ there.`;
    waitForClick; clearText; 
 });
 bgload({ name: `IMG04A`, transition: 20 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -3606,7 +3606,7 @@ was wrong.`;
 of a dream.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 closeDimInAndOutAndFilterAnim();
 setChangePerspectiveDirection(FROM_RIGHT);
 triggerChangePerspectiveAnim();
@@ -3618,9 +3618,9 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 playSFX({ name: `SE09_04L`, a1: 0, volume: 100 });
 bgload({ name: `EV_TU01B`, transition: 20 });
-varop(`(28 0a a2) 41 := (00) 11`);
-varop(`(28 0a a2) 42 := (00) 9`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 11;
+eff_42 = 9;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -3656,7 +3656,7 @@ out.`;
 });
 hideTextbox();
 closeDimInAndOutAndFilterAnim();
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 setChangePerspectiveDirection(FROM_LEFT);
 triggerChangePerspectiveAnim();
 unSkippableDelay(30);
@@ -3665,7 +3665,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3731,7 +3731,7 @@ text(() => {
 hideTextbox();
 monoColorOverlay({ interval: 2, color: WHITE });
 removeBG({ mode: WHITE, transition: 62 });
-varop(`(28 0a a0) ac := (00) 1`);
+dimOff_ac = 1;
 closeDimInAndOutAndFilterAnim();
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
@@ -3751,7 +3751,7 @@ text(() => {
    Narr`Because there was no one there.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 setChangePerspectiveDirection(FROM_RIGHT);
 triggerChangePerspectiveAnim();
 unSkippableDelay(30);
@@ -3760,7 +3760,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`EOP377`); appendText; 
@@ -3812,11 +3812,11 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE01_04`, a1: 0, volume: 100 });
-varop(`(28 0a a4) ce := (00) 0`);
+g_ce = 0;
 tweenZoom({ x: 300, y: 250, hx: 200, hy: 150, duration: 60 });
 monoColorOverlay({ interval: 12, color: WHITE });
 removeBG({ mode: WHITE, transition: 62 });
-varop(`(28 0a a0) ac := (00) 1`);
+dimOff_ac = 1;
 closeDimOverlay();
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
@@ -3838,10 +3838,10 @@ text(() => {
    waitForClick; clearText; 
 });
 playSFX({ name: `SE02_06`, a1: 0, volume: 95 });
-bgload({ name: `IMG06A`, transition: 00 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+bgload({ name: `IMG06A`, transition: 0 });
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -3859,8 +3859,8 @@ text(() => {
    Narr`Deeper, deeper and deeper...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 00 });
-varop(`(28 0a a0) ac := (00) 1`);
+removeBG({ mode: BLACK, transition: 0 });
+dimOff_ac = 1;
 closeDimOverlay();
 closeDimInAndOutAndFilterAnim();
 setChangePerspectiveDirection(FROM_RIGHT);
@@ -3872,7 +3872,7 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 clock(`12:51`);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3895,7 +3895,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3921,7 +3921,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3942,7 +3942,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3969,7 +3969,7 @@ removeBG({ mode: WHITE, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -4005,7 +4005,7 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 setDialogBoxColor(GRAY);
-removeBG({ mode: BLACK, transition: 00 });
+removeBG({ mode: BLACK, transition: 0 });
 stopBGM();
 delay({ interval: 120 });
 showTextbox();
@@ -4102,7 +4102,7 @@ closeKomoreAnim();
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_1A`);
 let lbl_00001e7e;
 setDialogBoxColor(BLUE);
@@ -4122,5 +4122,5 @@ closeKomoreAnim();
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_1A`);

@@ -1,8 +1,8 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 6`);
-varop(`(28 0a a4) b2 := (00) 6`);
+g_b0 = 5;
+g_b1 = 6;
+g_b2 = 6;
 setDialogBoxColor(GREEN);
-goto(lbl_00000091).if(var_da != 0);
+goto(lbl_00000091).if(g_da != 0);
 setSceneTitle({ index: 37 });
 goto(lbl_0000009d);
 let lbl_00000091;
@@ -155,7 +155,7 @@ soon it no longer tasted palatable.`;
    Narr`It felt like the morning after a funeral.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -330,7 +330,7 @@ LeMU's system...it should last for about two
 hours."`;
    waitForClick; clearText; 
 });
-goto(lbl_000002bc).if(var_da == 0);
+goto(lbl_000002bc).if(g_da == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -496,7 +496,7 @@ its way."`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_000003ce).if(var_da == 0);
+goto(lbl_000003ce).if(g_da == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -555,7 +555,7 @@ to be calm in times of trouble.`;
    waitForClick; clearText; 
 });
 let lbl_000003d3;
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 bgload({ name: `BG21B1`, transition: 20 });
 clock(`10:51`);
@@ -620,13 +620,13 @@ text(() => {
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
 playSFX({ name: `SE06_01`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 153`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 153;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -1163,7 +1163,7 @@ text(() => {
    Coco`"Hey, is that you? Tsugumi?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000a30).if(var_d9 == 0);
+goto(lbl_00000a30).if(g_d9 == 0);
 fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -1527,7 +1527,7 @@ nothing.`;
 hideTextbox();
 stopBGM();
 delay({ interval: 60 });
-goto(lbl_00000d5e).if(var_d9 == 0);
+goto(lbl_00000d5e).if(g_d9 == 0);
 playBGM({ num: 7, volume: 100 });
 showTextbox();
 text(() => {
@@ -2167,7 +2167,7 @@ the referee.`;
    Narr`...as You spoke.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001090).if(var_da == 0);
+goto(lbl_00001090).if(g_da == 0);
 showTextbox();
 text(() => {
    marker; sound(`T6A180`); appendText; 
@@ -2591,7 +2591,7 @@ text(() => {
    Narr`I pushed the button to open the door.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -3039,10 +3039,10 @@ her.`;
    Narr`I realized that I was holding onto Coco.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
 bgload({ name: `BG26B1L`, transition: 20 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
@@ -3058,7 +3058,7 @@ supporting her from the sides.`;
 followed a short distance behind.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG29A1`, transition: 10 });
 playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG28A3L`, transition: 20 });
@@ -3115,7 +3115,7 @@ say it either.`;
 wouldn't give up.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3123,5 +3123,5 @@ text(() => {
 and rushed Coco to the infirmary.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_6B`);

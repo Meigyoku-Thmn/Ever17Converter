@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 setDialogBoxColor(GREEN);
 setSceneTitle({ index: 9 });
 chapterCutin({ name: `00000000` });
@@ -468,7 +468,7 @@ side corridor.`;
    Narr`I hurriedly chased after the three of them.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 2, volume: 100 });
 bgload({ name: `BG15B1`, transition: 20 });
@@ -492,7 +492,7 @@ switch (choice) {
    case 1: goto(lbl_00000457);
 }
 let lbl_000003f6;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -963,7 +963,7 @@ text(() => {
    Narr`I gave a large yawn.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 18, volume: 100 });
 bgload({ name: `BG07B1`, transition: 20 });
@@ -1173,7 +1173,7 @@ switch (choice) {
    case 1: goto(lbl_00000bfc);
 }
 let lbl_000008bc;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1339,17 +1339,17 @@ stepped as she walked away.`;
 });
 hideTextbox();
 playSFX({ name: `SE09_00L`, a1: 0, volume: 90 });
-varop(`(28 0a a2) 4f := (00) 153`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 153;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 openShakeScreenAnim();
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1597,8 +1597,8 @@ opening the door near the bottom of it..."`;
 });
 goto(lbl_00000e48);
 let lbl_00000bfc;
-varop(`(28 0a a4) b8 += (00) 2`);
-varop(`(28 0a a4) e9 := (00) 1`);
+g_b8 += 2;
+g_e9 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1625,7 +1625,7 @@ realized that I didn't know the route.`;
    Takeshi`"Maybe it's this way..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1742,17 +1742,17 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE09_00L`, a1: 0, volume: 90 });
-varop(`(28 0a a2) 4f := (00) 153`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 153;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 openShakeScreenAnim();
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1937,7 +1937,7 @@ text(() => {
    Takeshi`"Oh, thanks."`;
    waitForClick; clearText; 
 });
-goto(lbl_00000eb4).if(var_e9 == 0);
+goto(lbl_00000eb4).if(g_e9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2534,8 +2534,8 @@ hideTextbox();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG23A2`, transition: 20 });
 fgload({ id: 1, name: `TU03ADM`, x: 320, useAnim: true });
 showTextbox();
@@ -2617,7 +2617,7 @@ switch (choice) {
    case 1: goto(lbl_00001431);
 }
 let lbl_000013c3;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2669,7 +2669,7 @@ kind of salute.`;
 });
 goto(lbl_000015a5);
 let lbl_00001431;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2845,8 +2845,8 @@ kind of salute.`;
    waitForClick; clearText; 
 });
 let lbl_000015a5;
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_2B`);

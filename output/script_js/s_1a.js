@@ -1,9 +1,9 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 49 });
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
-removeBG({ mode: WHITE, transition: 00 });
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
+removeBG({ mode: WHITE, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -217,7 +217,7 @@ text(() => {
    Narr`And merry-go-round...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -298,7 +298,7 @@ switch (choice) {
    case 1: goto(lbl_000002a3);
 }
 let lbl_0000028f;
-varop(`(28 0a a4) b6 += (00) 1`);
+g_b6 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -592,7 +592,7 @@ walking for the door.`;
    Narr`While I turned my head to stare at her back...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 01 });
+removeBG({ mode: WHITE, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -738,7 +738,7 @@ text(() => {
 });
 hideTextbox();
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
 AVL_Mode();
@@ -822,7 +822,7 @@ exercise.`;
    Narr`Searching for that one lost finger...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 60 });
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
@@ -1272,13 +1272,13 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE09_00L`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c1_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c2_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_c1_0_6;
+eff_3d = 1;
+eff_3e = 2;
+eff_3f = VAR_c2_0_6;
+eff_40 = 2;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -1297,9 +1297,9 @@ text(() => {
    You`"What...? What was that sound...?"`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a2) 41 := (00) 9`);
-varop(`(28 0a a2) 42 := (00) 6`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 9;
+eff_42 = 6;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1341,13 +1341,13 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 2`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 6`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 2;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 6;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1413,13 +1413,13 @@ for space.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c7_0_6`);
-varop(`(28 0a a2) 3d := (00) 4`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_ca_0_6`);
-varop(`(28 0a a2) 40 := (00) 10`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_c7_0_6;
+eff_3d = 4;
+eff_3e = 2;
+eff_3f = VAR_ca_0_6;
+eff_40 = 10;
 showTextbox();
 text(() => {
    marker; sound(`S1A082`); appendText; 
@@ -1494,13 +1494,13 @@ text(() => {
 hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
 bgload({ name: `BG28A3L`, transition: 26 });
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 2`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 6`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 2;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 6;
 openShakeScreenAnim();
 setMonoColorOverlayFadeOutDuration(18);
 fadeOutMonoColorOverlay();
@@ -2030,9 +2030,9 @@ hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
 playSFX({ name: `SE10_11`, a1: 0, volume: 100 });
 bgload({ name: `IMG04A`, transition: 26 });
-varop(`(28 0a a2) 41 := (00) 21`);
-varop(`(28 0a a2) 42 := (00) 4`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 21;
+eff_42 = 4;
+eff_50 = 0;
 showDimInAndOutAnim();
 setMonoColorOverlayFadeOutDuration(18);
 fadeOutMonoColorOverlay();
@@ -2349,7 +2349,7 @@ I was frozen by an icy wave of unease.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -2602,7 +2602,7 @@ switch (choice) {
    case 1: goto(lbl_00001255);
 }
 let lbl_0000122a;
-varop(`(28 0a a4) b6 += (00) 1`);
+g_b6 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2774,5 +2774,5 @@ text(() => {
 down the stairs.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_1A2`);

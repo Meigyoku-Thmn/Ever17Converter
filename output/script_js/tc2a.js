@@ -15,15 +15,15 @@ the first time."`;
    Sora`"When you close your eyes, I disappear."`;
    waitForClick; 
 });
-varop(`(28 0a a4) d0 := (00) 1`);
-goto(lbl_0000008c).if(var_f1 == 0);
-goto(lbl_0000008c).if(var_ba != 3);
+g_d0 = 1;
+goto(lbl_0000008c).if(g_f1 == 0);
+goto(lbl_0000008c).if(g_ba != 3);
 goto(lbl_00000097);
 let lbl_0000008c;
-varop(`(28 0a a4) d0 := (00) 0`);
+g_d0 = 0;
 let lbl_00000097;
 choice(
-   cond(`[cond (28 0a a4) d0 14 (00)]Try it.`, var_d0)
+   `Try it.`.if(g_d0 != 0),
    `......`
 );
 switch (choice) {
@@ -31,7 +31,7 @@ switch (choice) {
    case 1: goto(lbl_000000c9);
 }
 let lbl_000000ba;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 goto(lbl_0000012b);
 let lbl_000000c9;
 showTextbox();
@@ -411,8 +411,8 @@ the Lemurian Ruins. The door was open.`;
    Narr`I saw someone.`;
    waitForClick; clearText; 
 });
-goto(lbl_000003cd).if(var_f1 == 0);
-goto(lbl_000003cd).if(var_ba != 4);
+goto(lbl_000003cd).if(g_f1 == 0);
+goto(lbl_000003cd).if(g_ba != 4);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -428,7 +428,7 @@ switch (choice) {
    case 1: goto(lbl_000003d2);
 }
 let lbl_000003b9;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -454,7 +454,7 @@ text(() => {
 quickly passed by the entrance.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -980,8 +980,8 @@ sight.`;
    waitForClick; clearText; 
 });
 let lbl_0000079c;
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_2D`);

@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 6`);
-varop(`(28 0a a4) b2 := (00) 6`);
+g_b0 = 5;
+g_b1 = 6;
+g_b2 = 6;
 setDialogBoxColor(GREEN);
 playSFX({ name: `SE00_00`, a1: 0, volume: 90 });
 bgload({ name: `BG09A1`, transition: 20 });
@@ -172,7 +172,7 @@ mortality rate."`;
    Narr`Tief Blau...?`;
    waitForClick; clearText; 
 });
-goto(lbl_000001b0).if(var_d9 == 0);
+goto(lbl_000001b0).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -568,7 +568,7 @@ When did you get this?"`;
    Narr`Pipi whined pitifully.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 4, volume: 100 });
 bgload({ name: `BG09A1`, transition: 20 });
@@ -1055,7 +1055,7 @@ along a first-aid kit just in case.`;
 below...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG26B1R`, transition: 20 });
 showTextbox();
 text(() => {
@@ -1127,15 +1127,15 @@ text(() => {
 we going to open that door?`;
    waitForClick; 
 });
-varop(`(28 0a a4) bb := (00) 0`);
-varop(`(28 0a a4) d0 := (00) 1`);
-varop(`(28 0a a4) d1 := (00) 1`);
-varop(`(28 0a a4) d2 := (00) 1`);
+g_bb = 0;
+g_d0 = 1;
+g_d1 = 1;
+g_d2 = 1;
 let lbl_000008eb;
 choice(
-   cond(`[cond (28 0a a4) d0 14 (00)]Ask Sora.`, var_d0)
-   cond(`[cond (28 0a a4) d1 14 (00)]Ask You.`, var_d1)
-   cond(`[cond (28 0a a4) d2 14 (00)]Ask Tsugumi.`, var_d2)
+   `Ask Sora.`.if(g_d0 != 0),
+   `Ask You.`.if(g_d1 != 0),
+   `Ask Tsugumi.`.if(g_d2 != 0),
 );
 switch (choice) {
    case 0: goto(lbl_00000915);
@@ -1143,9 +1143,9 @@ switch (choice) {
    case 2: goto(lbl_00000d3c);
 }
 let lbl_00000915;
-varop(`(28 0a a4) b8 += (00) 1`);
-varop(`(28 0a a4) d0 := (00) 0`);
-varop(`(28 0a a4) bb += (00) 1`);
+g_b8 += 1;
+g_d0 = 0;
+g_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1313,7 +1313,7 @@ text(() => {
 });
 removeFG({ id: 1, useAnim: true });
 makeFGNormal({ id: 1 });
-goto(lbl_00000eb7).if(var_bb > 1);
+goto(lbl_00000eb7).if(g_bb > 1);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1322,8 +1322,8 @@ text(() => {
 });
 goto(lbl_000008eb);
 let lbl_00000b96;
-varop(`(28 0a a4) d1 := (00) 0`);
-varop(`(28 0a a4) bb += (00) 1`);
+g_d1 = 0;
+g_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1472,7 +1472,7 @@ finger and went back to the first-aid kit.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_00000eb7).if(var_bb > 1);
+goto(lbl_00000eb7).if(g_bb > 1);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1481,9 +1481,9 @@ text(() => {
 });
 goto(lbl_000008eb);
 let lbl_00000d3c;
-varop(`(28 0a a4) b7 += (00) 1`);
-varop(`(28 0a a4) d2 := (00) 0`);
-varop(`(28 0a a4) bb += (00) 1`);
+g_b7 += 1;
+g_d2 = 0;
+g_bb += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1638,7 +1638,7 @@ floor.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_00000eb7).if(var_bb > 1);
+goto(lbl_00000eb7).if(g_bb > 1);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1647,10 +1647,10 @@ text(() => {
 });
 goto(lbl_000008eb);
 let lbl_00000eb7;
-varop(`(28 0a a4) bb := (00) 0`);
-varop(`(28 0a a4) d0 := (00) 0`);
-varop(`(28 0a a4) d1 := (00) 0`);
-varop(`(28 0a a4) d2 := (00) 0`);
+g_bb = 0;
+g_d0 = 0;
+g_d1 = 0;
+g_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1749,7 +1749,7 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a4) ce := (00) 0`);
+g_ce = 0;
 monoColorOverlay({ interval: 4, color: WHITE });
 tweenZoom({ x: 320, y: 197, hx: 200, hy: 150, duration: 20 });
 playSFX({ name: `SE00_04`, a1: 1, volume: 100 });
@@ -1761,7 +1761,7 @@ setMonoColorOverlayFadeOutDuration(61);
 fadeOutMonoColorOverlay();
 unSkippableDelay(48);
 clock(`14:19`);
-varop(`(28 0a a4) ce := (00) 0`);
+g_ce = 0;
 tweenZoom({ x: 400, y: 0, hx: 800, hy: 600, duration: 120 });
 tweenZoom({ x: 240, y: 0, hx: 800, hy: 600, duration: 120 });
 bgloadCrop({ name: `BG31A1`, transition: 26, x: 240, y: 0, hx: 800, hy: 600 });
@@ -2030,7 +2030,7 @@ switch (choice) {
    case 1: goto(lbl_000011bb);
 }
 let lbl_000011a7;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2044,7 +2044,7 @@ nodded.`;
 });
 goto(lbl_0000123f);
 let lbl_000011bb;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2218,9 +2218,9 @@ anyway.`;
 hideTextbox();
 monoColorOverlay({ interval: 1, color: WHITE });
 playSFX({ name: `SE07_03`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 41 := (00) 13`);
-varop(`(28 0a a2) 42 := (00) 7`);
-varop(`(28 0a a2) 50 := (00) 144`);
+eff_41 = 13;
+eff_42 = 7;
+eff_50 = 144;
 showDimInAndOutAnim();
 setMonoColorOverlayFadeOutDuration(23);
 fadeOutMonoColorOverlay();
@@ -2343,7 +2343,7 @@ again...?`;
 voice alternators back in my ears.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 stopSFX()
 playBGM({ num: 13, volume: 100 });
 showTextbox();
@@ -2368,7 +2368,7 @@ started sliding down.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 95 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2679,7 +2679,7 @@ stayed in the examination room with Pipi, to
 look after Coco and the researcher.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 bgload({ name: `BG35A1`, transition: 20 });
 playBGM({ num: 4, volume: 100 });
@@ -2906,7 +2906,7 @@ before May 1.`;
 hideTextbox();
 hideTextbox();
 AVL_Mode();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_07`, a1: 0, volume: 100 });
 bgload({ name: `BG34A1`, transition: 20 });
 clock(`16:23`);
@@ -3321,20 +3321,20 @@ estimated time for LeMU's implosion....it was
 almost May 6, 4:30 p.m.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-goto(lbl_000017f7).if(var_d9 != 0);
-goto(lbl_0000181f).if(var_da != 0);
+goto(lbl_000017f7).if(g_d9 != 0);
+goto(lbl_0000181f).if(g_da != 0);
 goto(lbl_00001846);
 let lbl_000017f7;
-goto(lbl_00001846).if(var_b7 < 17);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_00001846).if(g_b7 < 17);
+g_b3 = 0;
 jump(`TT6A`);
 let lbl_0000181f;
-goto(lbl_00001846).if(var_b8 < 14);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_00001846).if(g_b8 < 14);
+g_b3 = 0;
 jump(`TL6A`);
 let lbl_00001846;
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_BD`);

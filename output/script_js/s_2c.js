@@ -1,8 +1,8 @@
-goto(lbl_000010e0).if(var_b3 == 1);
+goto(lbl_000010e0).if(g_b3 == 1);
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 setSceneTitle({ index: 63 });
 bgload({ name: `BG17A1`, transition: 26 });
 playBGM({ num: 2, volume: 100 });
@@ -103,7 +103,7 @@ switch (choice) {
    case 1: goto(lbl_00000140);
 }
 let lbl_0000012c;
-varop(`(28 0a a4) b9 += (00) 1`);
+g_b9 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2196,5 +2196,5 @@ sadness.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_2D`);

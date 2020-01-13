@@ -369,7 +369,7 @@ know, 'At least I have a normal face?'"`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -1007,7 +1007,7 @@ text(() => {
    Narr`A recharged You faced the screen triumphantly.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1187,7 +1187,7 @@ hidden in those seventeen syllables?`;
 });
 goto(lbl_00000b29);
 let lbl_000006a2;
-varop(`(28 0a a4) ef := (00) 1`);
+g_ef = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1401,7 +1401,7 @@ think too deeply about things.`;
 situation.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2007,5 +2007,5 @@ text(() => {
 });
 goto(lbl_00000b29);
 let lbl_00000b29;
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`YC3B`);

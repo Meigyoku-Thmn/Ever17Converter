@@ -21,16 +21,16 @@ sickness."`;
    You`"Yeah, it could well be."`;
    waitForClick; 
 });
-varop(`(28 0a a4) d0 := (00) 1`);
-goto(lbl_000000a7).if(var_f1 == 0);
-goto(lbl_000000a7).if(var_ba != 1);
+g_d0 = 1;
+goto(lbl_000000a7).if(g_f1 == 0);
+goto(lbl_000000a7).if(g_ba != 1);
 goto(lbl_000000b2);
 let lbl_000000a7;
-varop(`(28 0a a4) d0 := (00) 0`);
+g_d0 = 0;
 let lbl_000000b2;
 choice(
    `Decompression sickness, what is that?`
-   cond(`[cond (28 0a a4) d0 14 (00)]Is it really a decompression sickness?`, var_d0)
+   `Is it really a decompression sickness?`.if(g_d0 != 0),
 );
 switch (choice) {
    case 0: goto(lbl_000000d5);
@@ -84,8 +84,8 @@ her on my back.`;
 });
 goto(lbl_00000249);
 let lbl_0000010c;
-varop(`(28 0a a4) ee := (00) 1`);
-varop(`(28 0a a4) ba += (00) 1`);
+g_ee = 1;
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -230,7 +230,7 @@ stopBGM();
 playBGM({ num: 10, volume: 100 });
 bgload({ name: `BG26B1L`, transition: 20 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
@@ -246,7 +246,7 @@ Tsugumi supporting her from the sides.`;
 followed a short distance behind.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG29A1`, transition: 20 });
 bgload({ name: `BG28A3L`, transition: 20 });
 showTextbox();
@@ -297,7 +297,7 @@ text(() => {
 We can treat decompression sickness here."`;
    waitForClick; clearText; 
 });
-goto(lbl_000003bc).if(var_ee == 0);
+goto(lbl_000003bc).if(g_ee == 0);
 showTextbox();
 text(() => {
    marker; sound(`C1T127`); appendText; 
@@ -505,7 +505,7 @@ place over several hours.`;
 nowhere to move.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 120 });
 playSFX({ name: `SE09_02L`, a1: 0, volume: 100 });
 bgload({ name: `BG10A1`, transition: 20 });
@@ -539,7 +539,7 @@ showFilter2();
 unSkippableDelay(1);
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 delay({ interval: 30 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -566,16 +566,16 @@ showFilter2();
 unSkippableDelay(1);
 delay({ interval: 30 });
 removeFG({ id: 1, useAnim: true });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
-varop(`(28 0a a4) d0 := (00) 1`);
-goto(lbl_00000574).if(var_f1 == 0);
-goto(lbl_00000574).if(var_ee == 0);
-goto(lbl_00000574).if(var_ba != 2);
+g_d0 = 1;
+goto(lbl_00000574).if(g_f1 == 0);
+goto(lbl_00000574).if(g_ee == 0);
+goto(lbl_00000574).if(g_ba != 2);
 goto(lbl_00000591);
 let lbl_00000574;
-varop(`(28 0a a4) d0 := (00) 0`);
-varop(`(28 0a a4) b3 := (00) 4`);
+g_d0 = 0;
+g_b3 = 4;
 jump(`T_1C`);
 let lbl_00000591;
 showTextbox();
@@ -595,7 +595,7 @@ pressurization process had started.`;
 choice(
    `Where did Tsugumi go?`
    `When was Sora going to sleep?`
-   cond(`[cond (28 0a a4) d0 14 (00)]Maybe Coco had some other illness after all?`, var_d0)
+   `Maybe Coco had some other illness after all?`.if(g_d0 != 0),
 );
 switch (choice) {
    case 0: goto(lbl_000005c0);
@@ -603,7 +603,7 @@ switch (choice) {
    case 2: goto(lbl_000006b3);
 }
 let lbl_000005c0;
-varop(`(28 0a a4) b7 += (00) 2`);
+g_b7 += 2;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -618,7 +618,7 @@ showFilter2();
 unSkippableDelay(1);
 fgload({ id: 1, name: `TU13ADM`, x: 320, useAnim: true });
 delay({ interval: 30 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -684,7 +684,7 @@ showFilter2();
 unSkippableDelay(1);
 delay({ interval: 30 });
 removeFG({ id: 1, useAnim: true });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -709,7 +709,7 @@ heavier.`;
 });
 goto(lbl_000006c3);
 let lbl_0000069f;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -745,7 +745,7 @@ heavier and heavier.`;
 });
 goto(lbl_000006c3);
 let lbl_000006b3;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -799,8 +799,8 @@ text(() => {
    Narr`With that, I fell asleep.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopSFX()
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_2A`);

@@ -1,10 +1,10 @@
-goto(lbl_000005fa).if(var_b3 == 1);
-goto(lbl_000011d2).if(var_b3 == 2);
-goto(lbl_000018ec).if(var_b3 == 3);
+goto(lbl_000005fa).if(g_b3 == 1);
+goto(lbl_000011d2).if(g_b3 == 2);
+goto(lbl_000018ec).if(g_b3 == 3);
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
 bgload({ name: `BG25A3`, transition: 20 });
 playBGM({ num: 3, volume: 100 });
 clock(`20:52`);
@@ -466,7 +466,7 @@ text(() => {
 });
 goto(lbl_0000058d);
 let lbl_000004ea;
-varop(`(28 0a a4) e0 := (00) 1`);
+g_e0 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -592,7 +592,7 @@ Office.`;
    Narr`But...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -654,24 +654,24 @@ text(() => {
    Narr`First...`;
    waitForClick; 
 });
-varop(`(28 0a a4) d0 := (00) 1`);
-varop(`(28 0a a4) d1 := (00) 1`);
-varop(`(28 0a a4) d2 := (00) 1`);
-varop(`(28 0a a4) d3 := (00) 1`);
-varop(`(28 0a a4) d4 := (00) 0`);
-varop(`(28 0a a4) bb := (00) 0`);
-varop(`(28 0a a4) bc := (00) 0`);
+g_d0 = 1;
+g_d1 = 1;
+g_d2 = 1;
+g_d3 = 1;
+g_d4 = 0;
+g_bb = 0;
+g_bc = 0;
 goto(lbl_0000073a);
 let lbl_00000693;
-goto(lbl_000006c8).if(var_bb == 0);
-goto(lbl_000006c8).if(var_bc != 0);
-varop(`(28 0a a4) d4 := (00) 1`);
+goto(lbl_000006c8).if(g_bb == 0);
+goto(lbl_000006c8).if(g_bc != 0);
+g_d4 = 1;
 let lbl_000006c8;
-goto(lbl_00000735).if(var_d0 != 0);
-goto(lbl_00000735).if(var_d1 != 0);
-goto(lbl_00000735).if(var_d2 != 0);
-goto(lbl_00000735).if(var_d3 != 0);
-goto(lbl_00000735).if(var_d4 != 0);
+goto(lbl_00000735).if(g_d0 != 0);
+goto(lbl_00000735).if(g_d1 != 0);
+goto(lbl_00000735).if(g_d2 != 0);
+goto(lbl_00000735).if(g_d3 != 0);
+goto(lbl_00000735).if(g_d4 != 0);
 goto(lbl_00001538);
 let lbl_00000735;
 showTextbox();
@@ -682,11 +682,11 @@ text(() => {
 });
 let lbl_0000073a;
 choice(
-   cond(`[cond (28 0a a4) d0 14 (00)]To the merry-go-round`, var_d0)
-   cond(`[cond (28 0a a4) d1 14 (00)]To the Jellyfish Gondola`, var_d1)
-   cond(`[cond (28 0a a4) d2 14 (00)]To the warehouse`, var_d2)
-   cond(`[cond (28 0a a4) d3 14 (00)]To the Control Room`, var_d3)
-   cond(`[cond (28 0a a4) d4 14 (00)]To the Security Office`, var_d4)
+   `To the merry-go-round`.if(g_d0 != 0),
+   `To the Jellyfish Gondola`.if(g_d1 != 0),
+   `To the warehouse`.if(g_d2 != 0),
+   `To the Control Room`.if(g_d3 != 0),
+   `To the Security Office`.if(g_d4 != 0),
 );
 showTextbox();
 text(() => {
@@ -709,11 +709,11 @@ waitForClick();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG02A1`, transition: 20 });
-varop(`(28 0a a4) e1 := (00) 1`);
-varop(`(28 0a a4) d0 := (00) 0`);
-varop(`(28 0a a4) bb := (00) 1`);
+g_e1 = 1;
+g_d0 = 0;
+g_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -771,7 +771,7 @@ text(() => {
    You`"Really?"`;
    waitForClick; clearText; 
 });
-goto(lbl_0000087b).if(var_e2 == 0);
+goto(lbl_0000087b).if(g_e2 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1235,10 +1235,10 @@ waitForClick();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG03A1`, transition: 20 });
-varop(`(28 0a a4) d1 := (00) 0`);
-varop(`(28 0a a4) bb := (00) 1`);
+g_d1 = 0;
+g_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1301,8 +1301,8 @@ text(() => {
    Tsugumi`"So what?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000c5b).if(var_e1 != 0);
-goto(lbl_00000c5b).if(var_e2 != 0);
+goto(lbl_00000c5b).if(g_e1 != 0);
+goto(lbl_00000c5b).if(g_e2 != 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1434,7 +1434,7 @@ text(() => {
 I simply stood there.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 goto(lbl_00000693);
 let lbl_00000d3b;
@@ -1446,11 +1446,11 @@ waitForClick();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG25A3`, transition: 20 });
-varop(`(28 0a a4) e2 := (00) 1`);
-varop(`(28 0a a4) d2 := (00) 0`);
-varop(`(28 0a a4) bb := (00) 1`);
+g_e2 = 1;
+g_d2 = 0;
+g_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1519,7 +1519,7 @@ text(() => {
    Kid`"Alone?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000e8d).if(var_e1 == 0);
+goto(lbl_00000e8d).if(g_e1 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1606,11 +1606,11 @@ waitForClick();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG16A1`, transition: 20 });
 playSFX({ name: `SE00_01`, a1: 0, volume: 100 });
-varop(`(28 0a a4) d3 := (00) 0`);
-varop(`(28 0a a4) bb := (00) 1`);
+g_d3 = 0;
+g_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1634,7 +1634,7 @@ accurately gauge the situation."`;
 normally be unthinkable."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001011).if(var_e1 == 0);
+goto(lbl_00001011).if(g_e1 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2011,8 +2011,8 @@ is pumped out and heat from that is used to
 operate generators."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001188).if(var_ba != 2);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_00001188).if(g_ba != 2);
+g_b3 = 0;
 jump(`SC1C`);
 let lbl_00001188;
 showTextbox();
@@ -2073,12 +2073,12 @@ waitForClick();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP2F_A1`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG11A1`, transition: 20 });
 playSFX({ name: `SE00_01`, a1: 1, volume: 100 });
 waitForSFX();
-varop(`(28 0a a4) d4 := (00) 0`);
-varop(`(28 0a a4) bc := (00) 1`);
+g_d4 = 0;
+g_bc = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2485,7 +2485,7 @@ text(() => {
    Narr`I also decided to go somewhere else.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 goto(lbl_00000693);
 let lbl_00001538;
@@ -2547,8 +2547,8 @@ and hopped in.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG10A2`, transition: 20 });
-goto(lbl_000015dc).if(var_f1 == 0);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_000015dc).if(g_f1 == 0);
+g_b3 = 0;
 jump(`SC1D`);
 let lbl_000015dc;
 showTextbox();
@@ -2856,7 +2856,7 @@ unSkippableDelay(1);
 setMonoColorOverlayFadeOutDuration(38);
 fadeOutMonoColorOverlay();
 unSkippableDelay(25);
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -2872,7 +2872,7 @@ hideTextbox();
 showFilter2();
 unSkippableDelay(1);
 monoColorOverlay({ interval: 18, color: WHITE });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 bgload({ name: `BG17A1`, transition: 26 });
 setMonoColorOverlayFadeOutDuration(23);
@@ -3346,7 +3346,7 @@ text(() => {
 have gone.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001d1b).if(var_f0 != 0);
+goto(lbl_00001d1b).if(g_f0 != 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3386,5 +3386,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 90 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_2A`);

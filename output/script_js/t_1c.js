@@ -1,10 +1,10 @@
-goto(lbl_0000046e).if(var_b3 == 1);
-goto(lbl_00000473).if(var_b3 == 2);
-goto(lbl_00001b06).if(var_b3 == 3);
-goto(lbl_00001e3c).if(var_b3 == 4);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
+goto(lbl_0000046e).if(g_b3 == 1);
+goto(lbl_00000473).if(g_b3 == 2);
+goto(lbl_00001b06).if(g_b3 == 3);
+goto(lbl_00001e3c).if(g_b3 == 4);
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG25A3`, transition: 20 });
@@ -126,18 +126,18 @@ in touch with the outside...)`;
 to visit first.`;
    waitForClick; 
 });
-varop(`(28 0a a4) d0 := (00) 1`);
-varop(`(28 0a a4) d1 := (00) 1`);
-varop(`(28 0a a4) d2 := (00) 1`);
+g_d0 = 1;
+g_d1 = 1;
+g_d2 = 1;
 let lbl_00000221;
-goto(lbl_00000260).if(var_d0 != 0);
-goto(lbl_00000260).if(var_d1 != 0);
-goto(lbl_000006a3).if(var_d2 == 0);
+goto(lbl_00000260).if(g_d0 != 0);
+goto(lbl_00000260).if(g_d1 != 0);
+goto(lbl_000006a3).if(g_d2 == 0);
 let lbl_00000260;
 choice(
-   cond(`[cond (28 0a a4) d0 14 (00)]The Dolphin Merry-go-round`, var_d0)
-   cond(`[cond (28 0a a4) d1 14 (00)]The souvenir shop`, var_d1)
-   cond(`[cond (28 0a a4) d2 14 (00)]The Security Office`, var_d2)
+   `The Dolphin Merry-go-round`.if(g_d0 != 0),
+   `The souvenir shop`.if(g_d1 != 0),
+   `The Security Office`.if(g_d2 != 0),
 );
 switch (choice) {
    case 0: goto(lbl_0000028a);
@@ -146,7 +146,7 @@ switch (choice) {
 }
 let lbl_0000028a;
 bgload({ name: `BG02A2`, transition: 20 });
-varop(`(28 0a a4) d0 := (00) 0`);
+g_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -644,7 +644,7 @@ hideTextbox();
 goto(lbl_00000221);
 let lbl_00000508;
 bgload({ name: `BG06A1`, transition: 20 });
-varop(`(28 0a a4) d1 := (00) 0`);
+g_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -658,7 +658,7 @@ theme park goods.`;
 costume off of the kid.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000544).if(var_de == 0);
+goto(lbl_00000544).if(g_de == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -917,7 +917,7 @@ bgload({ name: `BG25A3`, transition: 20 });
 hideTextbox();
 goto(lbl_00000221);
 let lbl_0000062a;
-varop(`(28 0a a4) d2 := (00) 0`);
+g_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1119,18 +1119,18 @@ said.`;
    Narr`I wondered where I should hit next.`;
    waitForClick; 
 });
-varop(`(28 0a a4) d0 := (00) 1`);
-varop(`(28 0a a4) d1 := (00) 1`);
-varop(`(28 0a a4) d2 := (00) 1`);
+g_d0 = 1;
+g_d1 = 1;
+g_d2 = 1;
 let lbl_000006c9;
-goto(lbl_00000708).if(var_d0 != 0);
-goto(lbl_00000708).if(var_d1 != 0);
-goto(lbl_00000baa).if(var_d2 == 0);
+goto(lbl_00000708).if(g_d0 != 0);
+goto(lbl_00000708).if(g_d1 != 0);
+goto(lbl_00000baa).if(g_d2 == 0);
 let lbl_00000708;
 choice(
-   cond(`[cond (28 0a a4) d0 14 (00)]The visitor elevator`, var_d0)
-   cond(`[cond (28 0a a4) d1 14 (00)]The warehouse`, var_d1)
-   cond(`[cond (28 0a a4) d2 14 (00)]The infirmary`, var_d2)
+   `The visitor elevator`.if(g_d0 != 0),
+   `The warehouse`.if(g_d1 != 0),
+   `The infirmary`.if(g_d2 != 0),
 );
 switch (choice) {
    case 0: goto(lbl_00000732);
@@ -1138,7 +1138,7 @@ switch (choice) {
    case 2: goto(lbl_000009c1);
 }
 let lbl_00000732;
-varop(`(28 0a a4) d0 := (00) 0`);
+g_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1248,7 +1248,7 @@ prying them apart.`;
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
 playSFX({ name: `SE00_10`, a1: 0, volume: 100 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1535,7 +1535,7 @@ text(() => {
 hideTextbox();
 goto(lbl_000006c9);
 let lbl_0000097a;
-varop(`(28 0a a4) d1 := (00) 0`);
+g_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1546,7 +1546,7 @@ it was for.`;
 a look.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG13A1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -1614,7 +1614,7 @@ hideTextbox();
 goto(lbl_000006c9);
 let lbl_000009c1;
 bgload({ name: `BG08A1`, transition: 20 });
-varop(`(28 0a a4) d2 := (00) 0`);
+g_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1733,7 +1733,7 @@ coming from there.`;
 jumped in.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1947,7 +1947,7 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_01`, a1: 0, volume: 100 });
 stopBGM();
 playBGM({ num: 1, volume: 100 });
@@ -2057,7 +2057,7 @@ text(() => {
 review..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 bgload({ name: `IMG01B`, transition: 20 });
 playBGM({ num: 14, volume: 100 });
@@ -2156,8 +2156,8 @@ switch (choice) {
    case 1: goto(lbl_00000d9f);
 }
 let lbl_00000d80;
-varop(`(28 0a a4) b7 += (00) 1`);
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b7 += 1;
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2273,7 +2273,7 @@ an SOS."`;
    Sora`"That concludes my report..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 delay({ interval: 90 });
 showTextbox();
 text(() => {
@@ -2559,7 +2559,7 @@ text(() => {
    Takeshi`"Ah! What a pain!"`;
    waitForClick; clearText; 
 });
-goto(lbl_000010bb).if(var_de == 0);
+goto(lbl_000010bb).if(g_de == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2642,13 +2642,13 @@ multifgload3({ name1: `SO06ADS`, name2: `YU06BDS`, name3: `TU06ADS`, x1: 128, x2
 setMonoColorOverlayFadeOutDuration(23);
 fadeOutMonoColorOverlay();
 unSkippableDelay(10);
-varop(`(28 0a a2) 4f := (00) 153`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 153;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -2686,13 +2686,13 @@ of her.`;
 hideTextbox();
 playBGM({ num: 12, volume: 100 });
 playSFX({ name: `SE06_00`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 7`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 4`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 7;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 4;
 openShakeScreenAnim();
 fgload({ id: 1, name: `SO17ADS`, x: 128, useAnim: true });
 showTextbox();
@@ -2737,17 +2737,17 @@ that when I made the rounds..."`;
 });
 hideTextbox();
 playSFX({ name: `SE06_01`, a1: 0, volume: 95 });
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 2`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 3`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 0;
+eff_3b = 2;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 3;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 openShakeScreenAnim();
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 fgload({ id: 2, name: `YU06BDS`, x: 320, useAnim: true });
 showTextbox();
@@ -2757,13 +2757,13 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 4`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 4;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 2;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2776,13 +2776,13 @@ swallowed by the ocean flashed across my mind.`;
 });
 hideTextbox();
 playSFX({ name: `SE06_02`, a1: 0, volume: 95 });
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 2`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 3`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 0;
+eff_3b = 2;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 3;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 showTextbox();
 text(() => {
    marker; sound(`T1C237`); appendText; 
@@ -2833,13 +2833,13 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE06_04`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 7`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 4`);
+eff_4f = 0;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 7;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 4;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2894,13 +2894,13 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a2) 4f := (00) 0`);
-varop(`(28 0a a2) 3b := (00) 2`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 1`);
-varop(`(28 0a a2) 3e := (00) 3`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 1`);
+eff_4f = 0;
+eff_3b = 2;
+eff_3c = VAR_c3_0_6;
+eff_3d = 1;
+eff_3e = 3;
+eff_3f = VAR_c3_0_6;
+eff_40 = 1;
 playSFX({ name: `SE06_01`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
@@ -2923,7 +2923,7 @@ text(() => {
    Narr`The vibrations also gradually subsided.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeShakeScreenAnim();
 closeDimInAndOutAndFilterAnim();
 stopBGM();
@@ -3052,7 +3052,7 @@ the monitor.`;
 removeFG({ id: 1, useAnim: true });
 goto(lbl_0000175a);
 let lbl_000016f8;
-varop(`(28 0a a4) e8 := (00) 1`);
+g_e8 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3284,8 +3284,8 @@ hideTextbox();
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 delay({ interval: 120 });
 playBGM({ num: 18, volume: 100 });
@@ -3546,9 +3546,9 @@ of the way and put her hands on the girl's
 shoulders.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001b06).if(var_f1 == 0);
-goto(lbl_00001b06).if(var_ba != 1);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_00001b06).if(g_f1 == 0);
+goto(lbl_00001b06).if(g_ba != 1);
+g_b3 = 0;
 jump(`TC1D`);
 let lbl_00001b06;
 multifgload2({ id1: 1, id2: 2, name1: `CO08ADM`, name2: `YU13BDM`, x1: 128, x2: 512, useAnim: true });
@@ -3619,7 +3619,7 @@ unSkippableDelay(3);
 playBGM({ num: 10, volume: 100 });
 bgload({ name: `BG26B1L`, transition: 20 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -3634,7 +3634,7 @@ Tsugumi supported her from the sides.`;
 up the rear.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG29A1`, transition: 20 });
 bgload({ name: `BG28A3L`, transition: 20 });
@@ -3832,7 +3832,7 @@ several hours.`;
 nowhere to move.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 120 });
 playSFX({ name: `SE09_02L`, a1: 0, volume: 100 });
 bgload({ name: `BG10A1`, transition: 20 });
@@ -3866,7 +3866,7 @@ showFilter2();
 unSkippableDelay(1);
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 delay({ interval: 30 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -3892,7 +3892,7 @@ showFilter2();
 unSkippableDelay(1);
 delay({ interval: 30 });
 removeFG({ id: 1, useAnim: true });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 let lbl_00001e3c;
 showTextbox();
@@ -3917,7 +3917,7 @@ switch (choice) {
    case 1: goto(lbl_00001f3e);
 }
 let lbl_00001e64;
-varop(`(28 0a a4) b7 += (00) 2`);
+g_b7 += 2;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3932,7 +3932,7 @@ showFilter2();
 unSkippableDelay(1);
 fgload({ id: 1, name: `TU13ADM`, x: 320, useAnim: true });
 delay({ interval: 30 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -3994,7 +3994,7 @@ showFilter2();
 unSkippableDelay(1);
 delay({ interval: 30 });
 removeFG({ id: 1, useAnim: true });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -4016,7 +4016,7 @@ had passed.`;
 });
 goto(lbl_00001f4e);
 let lbl_00001f3e;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -4061,8 +4061,8 @@ got heavier and heavier.`;
    Narr`And then I fell away into slumber.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopSFX()
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_2A`);

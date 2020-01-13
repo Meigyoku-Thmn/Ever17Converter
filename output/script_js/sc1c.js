@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -57,7 +57,7 @@ and hot springs...would be totally unrelated...`;
 I couldn't find a connection.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -89,10 +89,10 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 2`);
+g_b3 = 2;
 jump(`S_1C`);
 let lbl_000000df;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -120,7 +120,7 @@ behind them, but I was convinced that
 they were facts.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -264,5 +264,5 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-varop(`(28 0a a4) b3 := (00) 2`);
+g_b3 = 2;
 jump(`S_1C`);

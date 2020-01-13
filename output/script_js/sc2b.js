@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
@@ -152,7 +152,7 @@ during blackouts.'`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -296,7 +296,7 @@ hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
 goto(lbl_00000c5a);
 let lbl_000002d0;
-varop(`(28 0a a4) e3 := (00) 1`);
+g_e3 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -634,7 +634,7 @@ my pocket leaving my thumb extended.`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 6, color: BLACK });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
@@ -657,7 +657,7 @@ temperature inside had cooled enough.`;
 monoColorOverlay({ interval: 0, color: BLACK });
 goto(lbl_00000c5a);
 let lbl_000005c8;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1513,5 +1513,5 @@ hot steam.`;
 a fish out of water.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 1`);
+g_b3 = 1;
 jump(`S_2B`);

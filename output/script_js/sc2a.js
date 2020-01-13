@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 showTextbox();
 text(() => {
    marker; sound(`C2S005`); appendText; 
@@ -15,7 +15,7 @@ text(() => {
    Sara`"And Sora...?"`;
    waitForClick; clearText; 
 });
-goto(lbl_00000113).if(var_f0 != 0);
+goto(lbl_00000113).if(g_f0 != 0);
 fgload({ id: 2, name: `YU07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
@@ -147,7 +147,7 @@ text(() => {
    Narr`You called into the darkness.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000021c).if(var_f0 != 0);
+goto(lbl_0000021c).if(g_f0 != 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -260,7 +260,7 @@ the darkness.`;
 through water.`;
    waitForClick; clearText; 
 });
-goto(lbl_000004ae).if(var_f0 != 0);
+goto(lbl_000004ae).if(g_f0 != 0);
 stopSFX()
 multifgload3({ name1: `SA03ADS`, name2: `TU05ADS`, name3: `KB01ADS`, x1: 128, x2: 512, x3: 320, useAnim: 3 });
 showTextbox();
@@ -528,7 +528,7 @@ text(() => {
    You`"I think we should try the Generator Room..."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000058b).if(var_f0 == 0);
+goto(lbl_0000058b).if(g_f0 == 0);
 removeFG({ id: 1, useAnim: true });
 let lbl_0000058b;
 fgload({ id: 1, name: `SA08ADS`, x: 128, useAnim: true });
@@ -804,7 +804,7 @@ text(() => {
    You`"That's right."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG15B2`, transition: 20 });
 multifgload2({ id1: 1, id2: 2, name1: `SA02ADM`, name2: `YU01ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
@@ -828,5 +828,5 @@ started spinning like a top.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_2B`);

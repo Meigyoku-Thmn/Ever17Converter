@@ -768,7 +768,7 @@ thing in her tiny voice. `;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -919,7 +919,7 @@ pod had shut.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1489,9 +1489,9 @@ exist!`;
    waitForClick; clearText; 
 });
 bgload({ name: `IMG04A`, transition: 20 });
-varop(`(28 0a a2) 41 := (00) 79`);
-varop(`(28 0a a2) 42 := (00) 4`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 79;
+eff_42 = 4;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -1897,7 +1897,7 @@ under the ocean.`;
    Narr`In order to save them!`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 closeKomoreAnim();
 showTextbox();
 text(() => {
@@ -3094,5 +3094,5 @@ unSkippableDelay(1);
 playMovie(`MOV_END`);
 unSkippableDelay(1);
 unSkippableDelay(1);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`YCEP`);

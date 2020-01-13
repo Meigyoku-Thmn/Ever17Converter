@@ -1,7 +1,7 @@
 setDialogBoxColor(BLUE);
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 7`);
-varop(`(28 0a a4) b2 := (00) 0`);
+g_b0 = 5;
+g_b1 = 7;
+g_b2 = 0;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
@@ -71,7 +71,7 @@ help her.`;
    Narr`Yet still...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`Y4A061`); appendText; 
@@ -954,7 +954,7 @@ Sector 8, will flow into Sector 4, I guess."`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 36, color: BLACK });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playSFX({ name: `SE02_07`, a1: 1, volume: 100 });
 waitForSFX();
@@ -1545,7 +1545,7 @@ You's hand gripped tightly in mine.`;
    waitForClick; clearText; 
 });
 playBGM({ num: 10, volume: 100 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1602,7 +1602,7 @@ text(() => {
    Announcement`"...Two...One......"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopSFX()
 playSFX({ name: `SE07_12`, a1: 0, volume: 100 });
 showTextbox();
@@ -1627,7 +1627,7 @@ delay({ interval: 240 });
 playBGM({ num: 20, volume: 100 });
 setSceneTitle({ index: 89 });
 chapterCutin({ name: `00000000` });
-bgload({ name: `BG38A1`, transition: 00 });
+bgload({ name: `BG38A1`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1784,6 +1784,6 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 stopBGM();
-varop(`(28 0a a4) c7 := (00) 2`);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_c7 = 2;
+g_b3 = 0;
 jump(`Y_ED`);

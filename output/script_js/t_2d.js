@@ -287,7 +287,7 @@ switch (choice) {
    case 1: goto(lbl_00000327);
 }
 let lbl_000002fd;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -752,7 +752,7 @@ location of anyone.`;
    Narr`It looked like everyone was ready.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -810,7 +810,7 @@ opened automatically.`;
    Narr`First, I thought I would head for the...`;
    waitForClick; 
 });
-varop(`(28 0a a4) bb := (00) 0`);
+g_bb = 0;
 choice(
    `Central Control Room`
    `Elevator hall`
@@ -836,7 +836,7 @@ delay({ interval: 120 });
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG15B2`, transition: 20 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
 bgload({ name: `BG16A2`, transition: 20 });
@@ -861,7 +861,7 @@ left the room.`;
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
 bgload({ name: `BG26B4L`, transition: 20 });
-goto(lbl_000007f3).if(var_bb == 0);
+goto(lbl_000007f3).if(g_bb == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -870,7 +870,7 @@ text(() => {
 });
 goto(lbl_000008c0);
 let lbl_000007f3;
-varop(`(28 0a a4) bb := (00) 1`);
+g_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -900,7 +900,7 @@ delay({ interval: 120 });
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG22B2`, transition: 20 });
 showTextbox();
 text(() => {
@@ -920,7 +920,7 @@ was no sign of anything moving.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG26B4L`, transition: 20 });
-goto(lbl_000008ac).if(var_bb == 0);
+goto(lbl_000008ac).if(g_bb == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -929,7 +929,7 @@ text(() => {
 });
 goto(lbl_000008c0);
 let lbl_000008ac;
-varop(`(28 0a a4) bb := (00) 1`);
+g_bb = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1434,15 +1434,15 @@ text(() => {
    Narr`I thought about where I should start looking.`;
    waitForClick; 
 });
-varop(`(28 0a a4) d0 := (00) 1`);
-varop(`(28 0a a4) d1 := (00) 1`);
-varop(`(28 0a a4) d2 := (00) 1`);
-varop(`(28 0a a4) bb := (00) 0`);
+g_d0 = 1;
+g_d1 = 1;
+g_d2 = 1;
+g_bb = 0;
 let lbl_00000d74;
 choice(
-   cond(`[cond (28 0a a4) d0 14 (00)]Lemurian Ruins`, var_d0)
-   cond(`[cond (28 0a a4) d1 14 (00)]Rest area`, var_d1)
-   cond(`[cond (28 0a a4) d2 14 (00)]Chicken sandwich stand`, var_d2)
+   `Lemurian Ruins`.if(g_d0 != 0),
+   `Rest area`.if(g_d1 != 0),
+   `Chicken sandwich stand`.if(g_d2 != 0),
 );
 switch (choice) {
    case 0: goto(lbl_00000d9e);
@@ -1459,9 +1459,9 @@ delay({ interval: 120 });
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG04B2`, transition: 20 });
-varop(`(28 0a a4) d0 := (00) 0`);
+g_d0 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1590,10 +1590,10 @@ text(() => {
 hideTextbox();
 stopBGM();
 playBGM({ num: 13, volume: 100 });
-goto(lbl_00000ee8).if(var_bb == 0);
+goto(lbl_00000ee8).if(g_bb == 0);
 goto(lbl_000012d0);
 let lbl_00000ee8;
-varop(`(28 0a a4) bb := (00) 1`);
+g_bb = 1;
 bgload({ name: `BG25B4`, transition: 20 });
 showTextbox();
 text(() => {
@@ -1612,9 +1612,9 @@ delay({ interval: 120 });
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG21B2`, transition: 20 });
-varop(`(28 0a a4) d1 := (00) 0`);
+g_d1 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1698,13 +1698,13 @@ dim and didn't amount to much.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a2) 4f := (00) 34`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 3d := (00) 2`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 34;
+eff_3b = 1;
+eff_3c = VAR_c3_0_6;
+eff_3d = 2;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 2;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -1865,10 +1865,10 @@ text(() => {
    Narr`    <I found the Kid, I stepped on the can.>`;
    waitForClick; clearText; 
 });
-goto(lbl_0000116c).if(var_bb == 0);
+goto(lbl_0000116c).if(g_bb == 0);
 goto(lbl_000012d0);
 let lbl_0000116c;
-varop(`(28 0a a4) bb := (00) 1`);
+g_bb = 1;
 bgload({ name: `BG25B4`, transition: 20 });
 showTextbox();
 text(() => {
@@ -1887,9 +1887,9 @@ delay({ interval: 120 });
 closeMapIndicatorAnim();
 bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG07B2`, transition: 20 });
-varop(`(28 0a a4) d2 := (00) 0`);
+g_d2 = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2121,10 +2121,10 @@ text(() => {
 hideTextbox();
 stopBGM();
 playBGM({ num: 13, volume: 100 });
-goto(lbl_000012ae).if(var_bb == 0);
+goto(lbl_000012ae).if(g_bb == 0);
 goto(lbl_000012d0);
 let lbl_000012ae;
-varop(`(28 0a a4) bb := (00) 1`);
+g_bb = 1;
 bgload({ name: `BG25B4`, transition: 20 });
 showTextbox();
 text(() => {
@@ -2134,10 +2134,10 @@ text(() => {
 });
 goto(lbl_00000d74);
 let lbl_000012d0;
-varop(`(28 0a a4) d0 := (00) 0`);
-varop(`(28 0a a4) d1 := (00) 0`);
-varop(`(28 0a a4) d2 := (00) 0`);
-removeBG({ mode: BLACK, transition: 02 });
+g_d0 = 0;
+g_d1 = 0;
+g_d2 = 0;
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2244,7 +2244,7 @@ it's against the rules to kick the can!"`;
 everyone had already run away.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `IMG01A`, transition: 20 });
@@ -2375,7 +2375,7 @@ t-h-i-r-t-y-f-i-v-e..."`;
    Takeshi`"It seems like we've still got some time."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG25B4`, transition: 20 });
 fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
@@ -2449,7 +2449,7 @@ text(() => {
    Narr`You pushed me toward the entrance of the ruins.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2774,10 +2774,10 @@ text(() => {
    Narr`Kabing!`;
    waitForClick; clearText; 
 });
-goto(lbl_000018e4).if(var_f1 == 0);
-goto(lbl_000018e4).if(var_ba != 5);
+goto(lbl_000018e4).if(g_f1 == 0);
+goto(lbl_000018e4).if(g_ba != 5);
 stopBGM();
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`SC2E`);
 let lbl_000018e4;
 multifgload3({ name1: `YU03ADS`, name2: `CO07ADS`, name3: `TU06ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
@@ -2866,7 +2866,7 @@ text(() => {
 circles around us.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -2883,7 +2883,7 @@ counting...`;
    Narr`And I decided to enjoy a satisfying rest.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_3A`);

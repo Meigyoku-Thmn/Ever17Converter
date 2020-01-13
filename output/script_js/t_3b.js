@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 3`);
-varop(`(28 0a a4) b2 := (00) 3`);
+g_b0 = 5;
+g_b1 = 3;
+g_b2 = 3;
 setDialogBoxColor(GREEN);
 playBGM({ num: 2, volume: 100 });
 bgload({ name: `IMG01A`, transition: 20 });
@@ -551,7 +551,7 @@ switch (choice) {
    case 1: goto(lbl_0000061e);
 }
 let lbl_00000434;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -736,7 +736,7 @@ rat?"`;
    Narr`Scratching my head, I retraced my steps.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 bgload({ name: `BG10A1`, transition: 20 });
 showTextbox();
@@ -867,8 +867,8 @@ exaggeratedly.`;
 });
 goto(lbl_00000e81);
 let lbl_0000061e;
-varop(`(28 0a a4) b8 += (00) 1`);
-varop(`(28 0a a4) ec := (00) 1`);
+g_b8 += 1;
+g_ec = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1619,7 +1619,7 @@ switch (choice) {
    case 1: goto(lbl_00000ab8);
 }
 let lbl_00000aa4;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1793,7 +1793,7 @@ either."`;
    waitForClick; clearText; 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SO09ADM`, name2: `SO09ADM`, x1: 128, x2: 512, useAnim: true });
-goto(lbl_00000c05).if(var_b3 == 0);
+goto(lbl_00000c05).if(g_b3 == 0);
 showTextbox();
 text(() => {
    marker; sound(`T3B176`); appendText; 
@@ -2007,7 +2007,7 @@ text(() => {
    waitForClick; clearText; 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
-bgload({ name: `IT01D`, transition: 00 });
+bgload({ name: `IT01D`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2023,7 +2023,7 @@ in a 2-dimensional world."`;
    Sora`"Can they see a 3-dimensional object?"`;
    waitForClick; clearText; 
 });
-bgload({ name: `IT01E`, transition: 00 });
+bgload({ name: `IT01E`, transition: 0 });
 showTextbox();
 text(() => {
    marker; sound(`T3B194`); appendText; 
@@ -2047,7 +2047,7 @@ of its own square, never intersecting with
 the other lights.`;
    waitForClick; clearText; 
 });
-bgload({ name: `IT01F`, transition: 00 });
+bgload({ name: `IT01F`, transition: 0 });
 showTextbox();
 text(() => {
    marker; sound(`T3B197`); appendText; 
@@ -2067,7 +2067,7 @@ together to become one and moved to the
 center of the cube.`;
    waitForClick; clearText; 
 });
-bgload({ name: `IT01G`, transition: 00 });
+bgload({ name: `IT01G`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2132,7 +2132,7 @@ another you that took a different path on the
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 00 });
+removeBG({ mode: BLACK, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2140,7 +2140,7 @@ text(() => {
 disappeared.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 openSnowFallingAnim();
 showTextbox();
 text(() => {
@@ -2203,7 +2203,7 @@ this?"`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 monoColorOverlay({ interval: 18, color: WHITE });
 closeSnowFallingAnim();
@@ -2302,5 +2302,5 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_3C`);

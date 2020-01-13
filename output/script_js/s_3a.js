@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 65 });
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 3`);
-varop(`(28 0a a4) b2 := (00) 3`);
+g_b0 = 5;
+g_b1 = 3;
+g_b2 = 3;
 chapterCutin({ name: `00000000` });
 hideTextbox();
 monoColorOverlay({ interval: 6, color: BLACK });
@@ -1015,7 +1015,7 @@ switch (choice) {
    case 1: goto(lbl_000009bf);
 }
 let lbl_00000970;
-varop(`(28 0a a4) b6 += (00) 1`);
+g_b6 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2340,7 +2340,7 @@ going off suddenly like that.`;
    Narr`An extra set of hands couldn't hurt...`;
    waitForClick; clearText; 
 });
-goto(lbl_0000139a).if(var_e3 == 0);
+goto(lbl_0000139a).if(g_e3 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2356,7 +2356,7 @@ switch (choice) {
    case 1: goto(lbl_000012e9);
 }
 let lbl_000012e9;
-varop(`(28 0a a4) db := (00) 1`);
+g_db = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2442,10 +2442,10 @@ people left in the room.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_3C`);
 let lbl_0000139a;
-varop(`(28 0a a4) d8 := (00) 1`);
+g_d8 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2480,5 +2480,5 @@ I went.`;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 stopBGM();
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_3B`);

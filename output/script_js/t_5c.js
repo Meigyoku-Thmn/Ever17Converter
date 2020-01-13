@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 5`);
-varop(`(28 0a a4) b2 := (00) 5`);
+g_b0 = 5;
+g_b1 = 5;
+g_b2 = 5;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG07B1`, transition: 20 });
@@ -45,7 +45,7 @@ the sparkling rainbow.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
-goto(lbl_000000f6).if(var_da == 0);
+goto(lbl_000000f6).if(g_da == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -318,7 +318,7 @@ walking slowly away.`;
    Narr`She was smiling so gently...`;
    waitForClick; clearText; 
 });
-goto(lbl_000002d6).if(var_d9 == 0);
+goto(lbl_000002d6).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -932,13 +932,13 @@ together..."`;
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
 playSFX({ name: `SE06_04`, a1: 0, volume: 95 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 3d := (00) 4`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_c6_0_6;
+eff_3d = 4;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 2;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -1040,7 +1040,7 @@ switch (choice) {
    case 1: goto(lbl_000008dd);
 }
 let lbl_0000086f;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1100,7 +1100,7 @@ away slowly.`;
 removeFG({ id: 1, useAnim: true });
 goto(lbl_0000093c);
 let lbl_000008dd;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1158,8 +1158,8 @@ away slowly.`;
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
 let lbl_0000093c;
-goto(lbl_00000963).if(var_da == 0);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_00000963).if(g_da == 0);
+g_b3 = 0;
 jump(`T_5D`);
 let lbl_00000963;
 showTextbox();
@@ -1835,13 +1835,13 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE05_07`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 3d := (00) 4`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_c6_0_6;
+eff_3d = 4;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 2;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -2042,7 +2042,7 @@ her finger.`;
 hideTextbox();
 stopBGM();
 playBGM({ num: 24, volume: 100 });
-bgload({ name: `EV_TU11C`, transition: 00 });
+bgload({ name: `EV_TU11C`, transition: 0 });
 showTextbox();
 text(() => {
    marker; sound(`T5C165`); appendText; 
@@ -2103,7 +2103,7 @@ text(() => {
    Narr`Squish.`;
    delay(0); 
 });
-bgload_keepFg({ name: `KURO_BG`, transition: 00 });
+bgload_keepFg({ name: `KURO_BG`, transition: 0 });
 showTextbox();
 text(() => {
    appendText; waitForClick; clearText; 
@@ -2154,9 +2154,9 @@ started to fall.`;
    Narr`Her hands were shaking heavily as they opened.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 bgload({ name: `IMG04A`, transition: 10 });
 showTextbox();
@@ -2219,7 +2219,7 @@ down on them.`;
    Takeshi`"Chami is..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -2231,7 +2231,7 @@ text(() => {
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2265,7 +2265,7 @@ stand.`;
    Narr`There was still blood on her hand.`;
    waitForClick; clearText; 
 });
-bgload({ name: `EV_TU11B`, transition: 00 });
+bgload({ name: `EV_TU11B`, transition: 0 });
 showTextbox();
 text(() => {
    marker; sound(`T5C178`); appendText; 
@@ -2437,7 +2437,7 @@ red-stained floor of Qualle.`;
 });
 hideTextbox();
 stopBGM();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2473,7 +2473,7 @@ a few of us carriers."`;
 });
 hideTextbox();
 playBGM({ num: 7, volume: 100 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C217`); appendText; 
@@ -2523,7 +2523,7 @@ would be less."`;
    waitForClick; clearText; 
 });
 removeBG_unk(3, 0, 2);
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C233`); appendText; 
@@ -2545,7 +2545,7 @@ breathing."`;
    Tsugumi`"I woke up in an unfamiliar place."`;
    waitForClick; clearText; 
 });
-bgload({ name: `EV_TU12A`, transition: 00 });
+bgload({ name: `EV_TU12A`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2571,7 +2571,7 @@ know.`;
    Narr`....Well, I don't know that either. Sucks, huh?`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C240`); appendText; 
@@ -2618,7 +2618,7 @@ hurt...`;
 seen before.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2681,7 +2681,7 @@ worry yourself about it.`;
 before you know it. It won't hurt.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C251`); appendText; 
@@ -2723,7 +2723,7 @@ text(() => {
    Narr`I can see the future.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C254`); appendText; 
@@ -2782,7 +2782,7 @@ text(() => {
    Narr`Okay, everyone out! Run while you can!`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 playSFX({ name: `SE00_11`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
@@ -2804,7 +2804,7 @@ let them bite you!`;
    Narr`Watch out, they're contagious!`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2840,7 +2840,7 @@ before.`;
    Narr`Why?`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C261`); appendText; 
@@ -2887,7 +2887,7 @@ and let them go then?`;
    Narr`...No idea...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2926,7 +2926,7 @@ possibilities this entails.`;
    Narr`That's...that's not right...it's crazy.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2973,7 +2973,7 @@ it off.`;
 });
 hideTextbox();
 stopBGM();
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3189,7 +3189,7 @@ Qualle.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 95 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 delay({ interval: 60 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 90 });
 showTextbox();
@@ -3264,7 +3264,7 @@ text(() => {
    Narr`I bit hard down on my lip as I cried.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 delay({ interval: 120 });
 bgload({ name: `BG17A1`, transition: 10 });
 clock(`20:19`);
@@ -3321,7 +3321,7 @@ bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
 bgload({ name: `MAP3F_B2`, transition: 20 });
 delay({ interval: 120 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG17A2`, transition: 20 });
 showTextbox();
 text(() => {
@@ -3336,8 +3336,8 @@ text(() => {
 arms around my knees and we all went to sleep.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_6A`);

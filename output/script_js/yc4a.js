@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 4`);
-varop(`(28 0a a4) b2 := (00) 4`);
+g_b0 = 5;
+g_b1 = 4;
+g_b2 = 4;
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 removeBG({ mode: BLACK, transition: 62 });
@@ -108,7 +108,7 @@ safe. `;
 the cosmos.`;
    waitForClick; clearText; 
 });
-goto(lbl_000001ed).if(var_ef == 1);
+goto(lbl_000001ed).if(g_ef == 1);
 fgload({ id: 1, name: `SA05AWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
@@ -299,7 +299,7 @@ least had the face of an 'earthling.'`;
    Narr`He looked like any ordinary, young man to me.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000235).if(var_ef == 1);
+goto(lbl_00000235).if(g_ef == 1);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -360,7 +360,7 @@ lighter.`;
    Narr`Click.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -464,7 +464,7 @@ this hologram's image."`;
    Sara`"I THOUGHT I was the only who could see it."`;
    waitForClick; clearText; 
 });
-goto(lbl_000002da).if(var_ef == 1);
+goto(lbl_000002da).if(g_ef == 1);
 showTextbox();
 text(() => {
    marker; sound(`C4A041`); appendText; 
@@ -2079,7 +2079,7 @@ darkness.`;
 `;
    
 });
-goto(lbl_00000c2b).if(var_ef == 1);
+goto(lbl_00000c2b).if(g_ef == 1);
 showTextbox();
 text(() => {
    appendText; 
@@ -2506,7 +2506,7 @@ of the souvenir shop.`;
 pointed.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3506,5 +3506,5 @@ text(() => {
    You`"He...really...."`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`YC4B`);

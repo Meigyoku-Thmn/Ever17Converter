@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 5`);
-varop(`(28 0a a4) b2 := (00) 5`);
+g_b0 = 5;
+g_b1 = 5;
+g_b2 = 5;
 setDialogBoxColor(GREEN);
 showTextbox();
 text(() => {
@@ -489,9 +489,9 @@ stopSFX()
 playBGM({ num: 12, volume: 100 });
 playSFX({ name: `SE02_11L`, a1: 0, volume: 90 });
 bgload({ name: `BG25B1`, transition: 20 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -610,7 +610,7 @@ didn't budge.`;
 hideTextbox();
 monoColorOverlay({ interval: 6, color: WHITE });
 closeDimInAndOutAndFilterAnim();
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
@@ -644,7 +644,7 @@ text(() => {
    waitForClick; clearText; 
 });
 stopSFX()
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playBGM({ num: 24, volume: 100 });
 showTextbox();
 text(() => {
@@ -656,8 +656,8 @@ text(() => {
    Narr`Terrified, I opened my eyes.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 03 });
-bgload({ name: `EV_SO11D`, transition: 00 });
+removeBG({ mode: WHITE, transition: 3 });
+bgload({ name: `EV_SO11D`, transition: 0 });
 setSceneTitle({ index: 36 });
 showTextbox();
 text(() => {
@@ -1032,7 +1032,7 @@ reality..."`;
 at.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1373,7 +1373,7 @@ disappearing.`;
    Narr`I couldn't stand it anymore and closed my eyes.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; sound(`T5C466`); appendText; 
@@ -1398,7 +1398,7 @@ text(() => {
    Takeshi`"Please, wait Sora!!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -1411,7 +1411,7 @@ text(() => {
 and resetting learning operation."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1422,7 +1422,7 @@ text(() => {
 });
 hideTextbox();
 playBGM({ num: 15, volume: 100 });
-bgload({ name: `EV_SO12A`, transition: 00 });
+bgload({ name: `EV_SO12A`, transition: 0 });
 showTextbox();
 text(() => {
    marker; sound(`T5C475`); appendText; 
@@ -1855,7 +1855,7 @@ it."`;
    Sora`"Aaagh..."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T5C596`); appendText; 
@@ -1874,7 +1874,7 @@ text(() => {
    Sora`"Please stop it!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1981,7 +1981,7 @@ full. I hit on the buttons repeatedly.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE07_03`, a1: 0, volume: 100 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`T1A000`); appendText; 
@@ -1989,7 +1989,7 @@ text(() => {
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_11`, a1: 0, volume: 100 });
-bgload({ name: `BG30B1`, transition: 00 });
+bgload({ name: `BG30B1`, transition: 0 });
 playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
@@ -2034,9 +2034,9 @@ text(() => {
 trace of her remained.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 00 });
+removeBG({ mode: BLACK, transition: 0 });
 delay({ interval: 120 });
-bgload({ name: `BG17A1`, transition: 00 });
+bgload({ name: `BG17A1`, transition: 0 });
 clock(`20:19`);
 showTextbox();
 text(() => {
@@ -2091,7 +2091,7 @@ bgload_keepFg({ name: `MAP3F_A2`, transition: 30 });
 unSkippableDelay(1);
 bgload({ name: `MAP3F_B2`, transition: 20 });
 delay({ interval: 120 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG17A2`, transition: 20 });
 showTextbox();
 text(() => {
@@ -2106,8 +2106,8 @@ text(() => {
 arms around my knees and we all went to sleep.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_6A`);

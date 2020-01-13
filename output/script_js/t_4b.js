@@ -1,9 +1,9 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 4`);
-varop(`(28 0a a4) b2 := (00) 4`);
+g_b0 = 5;
+g_b1 = 4;
+g_b2 = 4;
 setDialogBoxColor(GREEN);
 playBGM({ num: 2, volume: 100 });
-bgload({ name: `BG17A1`, transition: 00 });
+bgload({ name: `BG17A1`, transition: 0 });
 setSceneTitle({ index: 22 });
 showTextbox();
 text(() => {
@@ -56,7 +56,7 @@ you all!"`;
    Narr`It was just shy of 9 a.m...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 18, volume: 100 });
 bgload({ name: `BG07B1`, transition: 20 });
@@ -325,7 +325,7 @@ text(() => {
 die. `;
    waitForClick; clearText; 
 });
-goto(lbl_000003b4).if(var_d9 == 0);
+goto(lbl_000003b4).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -345,7 +345,7 @@ text(() => {
    Narr`Wait, that was a contradiction.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 playBGM({ num: 13, volume: 100 });
 showTextbox();
 text(() => {
@@ -770,8 +770,8 @@ switch (choice) {
    case 2: goto(lbl_00000761);
 }
 let lbl_00000691;
-varop(`(28 0a a4) b7 += (00) 1`);
-varop(`(28 0a a4) ed := (00) 1`);
+g_b7 += 1;
+g_ed = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -829,7 +829,7 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 goto(lbl_00000835);
 let lbl_0000070a;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -970,7 +970,7 @@ all sorts of things.`;
    Narr`And Sora...`;
    waitForClick; clearText; 
 });
-goto(lbl_00000858).if(var_da == 0);
+goto(lbl_00000858).if(g_da == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1351,7 +1351,7 @@ switch (choice) {
    case 2: goto(lbl_00000c0f);
 }
 let lbl_00000bbf;
-varop(`(28 0a a4) b8 += (00) 1`);
+g_b8 += 1;
 playSFX({ name: `SE10_01`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
@@ -1379,7 +1379,7 @@ looking demure.`;
 });
 goto(lbl_00000c59);
 let lbl_00000bfb;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1524,7 +1524,7 @@ meant.`;
    Narr`But the Kid and Coco were a rapt audience.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 bgload({ name: `BG26B3L`, transition: 20 });
 playBGM({ num: 2, volume: 100 });
@@ -1556,7 +1556,7 @@ second floor.`;
 everyone agreed and headed upstairs.`;
    waitForClick; clearText; 
 });
-goto(lbl_00000dad).if(var_ed == 0);
+goto(lbl_00000dad).if(g_ed == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2366,7 +2366,7 @@ text(() => {
 using EI, so if you just wait a little..."`;
    waitForClick; clearText; 
 });
-goto(lbl_0000135f).if(var_d9 == 0);
+goto(lbl_0000135f).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2445,8 +2445,8 @@ leave the sector...)`;
    Narr`I cracked my knuckles.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
-goto(lbl_0000141e).if(var_d9 == 0);
+removeBG({ mode: WHITE, transition: 2 });
+goto(lbl_0000141e).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2656,7 +2656,7 @@ text(() => {
    Narr`I pretended to be calm.`;
    waitForClick; clearText; 
 });
-goto(lbl_0000156f).if(var_d9 == 0);
+goto(lbl_0000156f).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2897,7 +2897,7 @@ text(() => {
    Narr`She was trying to make a wall of words.`;
    waitForClick; clearText; 
 });
-goto(lbl_00001750).if(var_d9 == 0);
+goto(lbl_00001750).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -2962,7 +2962,7 @@ reason for you to be here."`;
    Tsugumi`"So don't treat me like one of your gang."`;
    waitForClick; clearText; 
 });
-goto(lbl_00001792).if(var_d9 == 0);
+goto(lbl_00001792).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3044,7 +3044,7 @@ me sick."`;
    Takeshi`"......"`;
    waitForClick; clearText; 
 });
-goto(lbl_000017e4).if(var_d9 == 0);
+goto(lbl_000017e4).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3092,7 +3092,7 @@ text(() => {
    Takeshi`"......"`;
    waitForClick; clearText; 
 });
-goto(lbl_0000184c).if(var_d9 == 0);
+goto(lbl_0000184c).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -3259,7 +3259,7 @@ text(() => {
    Narr`(And she could run a day later???)`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 90 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 100 });
 bgload({ name: `BG23A1`, transition: 20 });
@@ -3437,10 +3437,10 @@ removeBG({ mode: BLACK, transition: 62 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
-goto(lbl_00001abc).if(var_da != 0);
+goto(lbl_00001abc).if(g_da != 0);
 stopBGM();
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_4C`);
 let lbl_00001abc;
 bgload({ name: `BG25B3`, transition: 20 });
@@ -3465,7 +3465,7 @@ her lips and smiled.`;
    Sora`"Shall we say, individual study time?"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 bgload({ name: `BG17A1`, transition: 20 });
 clock(`12:51`);
@@ -4090,8 +4090,8 @@ text(() => {
 talking like her original self...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_4C`);

@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 3`);
-varop(`(28 0a a4) b2 := (00) 3`);
+g_b0 = 5;
+g_b1 = 3;
+g_b2 = 3;
 setDialogBoxColor(GREEN);
 playBGM({ num: 1, volume: 100 });
 bgload({ name: `BG07B1`, transition: 20 });
@@ -1198,8 +1198,8 @@ had, in such a short time, become full of
 life and seemed to be dancing about. `;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 150 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_4A`);

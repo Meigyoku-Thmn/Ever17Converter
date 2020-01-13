@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 1`);
-varop(`(28 0a a4) b2 := (00) 1`);
+g_b0 = 5;
+g_b1 = 1;
+g_b2 = 1;
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
@@ -24,10 +24,10 @@ switch (choice) {
    case 1: goto(lbl_000000ad);
 }
 let lbl_0000009a;
-varop(`(28 0a a4) b3 := (00) 1`);
+g_b3 = 1;
 jump(`S_1A2`);
 let lbl_000000ad;
-varop(`(28 0a a4) ba += (00) 1`);
+g_ba += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -167,7 +167,7 @@ text(() => {
 });
 hideTextbox();
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
 AVL_Mode();
@@ -917,7 +917,7 @@ unSkippableDelay(1);
 setMonoColorOverlayFadeOutDuration(19);
 fadeOutMonoColorOverlay();
 unSkippableDelay(6);
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -940,7 +940,7 @@ hideTextbox();
 showFilter2();
 unSkippableDelay(1);
 monoColorOverlay({ interval: 18, color: WHITE });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 bgload({ name: `BG26B3R`, transition: 26 });
 setMonoColorOverlayFadeOutDuration(23);
@@ -956,5 +956,5 @@ be able to touch it.`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
-varop(`(28 0a a4) b3 := (00) 2`);
+g_b3 = 2;
 jump(`S_1A2`);

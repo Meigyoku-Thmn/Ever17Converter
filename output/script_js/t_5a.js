@@ -1,14 +1,14 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 5`);
-varop(`(28 0a a4) b2 := (00) 5`);
+g_b0 = 5;
+g_b1 = 5;
+g_b2 = 5;
 setDialogBoxColor(GREEN);
 playBGM({ num: 24, volume: 100 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 bgload({ name: `IMG06A`, transition: 10 });
-goto(lbl_000000d3).if(var_da != 0);
+goto(lbl_000000d3).if(g_da != 0);
 setSceneTitle({ index: 29 });
 goto(lbl_000000e1);
 let lbl_000000d3;
@@ -84,7 +84,7 @@ text(() => {
 });
 hideTextbox();
 bgload({ name: `IMG04A`, transition: 20 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -184,8 +184,8 @@ text(() => {
    waitForClick; nextPage(04); 
 });
 hideTextbox();
-removeBG({ mode: BLACK, transition: 02 });
-varop(`(28 0a a0) ac := (00) 0`);
+removeBG({ mode: BLACK, transition: 2 });
+dimOff_ac = 0;
 closeDimOverlay();
 closeDimInAndOutAndFilterAnim();
 showTextbox();
@@ -258,7 +258,7 @@ Conference Room door and sneaked out.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE00_01`, a1: 0, volume: 95 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 chapterCutin({ name: `00000000` });
 bgload({ name: `BG25B3`, transition: 20 });
 playBGM({ num: 4, volume: 100 });
@@ -301,7 +301,7 @@ text(() => {
 toward Zweite stock.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG08A1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -348,7 +348,7 @@ text(() => {
 that maybe the terminal there would be online.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_01`, a1: 0, volume: 100 });
 bgload({ name: `BG11A1`, transition: 20 });
 showTextbox();
@@ -457,7 +457,7 @@ switch (choice) {
    case 1: goto(lbl_0000031f);
 }
 let lbl_000002f5;
-varop(`(28 0a a4) b7 += (00) 1`);
+g_b7 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -919,7 +919,7 @@ gondola skirted its way along.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG36A1`, transition: 20 });
-goto(lbl_0000064a).if(var_d9 == 0);
+goto(lbl_0000064a).if(g_d9 == 0);
 showTextbox();
 text(() => {
    marker; sound(`T5A040`); appendText; 
@@ -1206,9 +1206,9 @@ put them on my neck.`;
 hideTextbox();
 monoColorOverlay({ interval: 2, color: WHITE });
 removeBG({ mode: WHITE, transition: 62 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 bgload({ name: `IMG04A`, transition: 26 });
 setMonoColorOverlayFadeOutDuration(31);
@@ -1364,9 +1364,9 @@ text(() => {
 hideTextbox();
 hideTextbox();
 AVL_Mode();
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
-goto(lbl_000007a8).if(var_d9 == 0);
+goto(lbl_000007a8).if(g_d9 == 0);
 bgload({ name: `EV_TU08A`, transition: 10 });
 showTextbox();
 text(() => {
@@ -1498,7 +1498,7 @@ moment in time."`;
    Takeshi`"........."`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1565,7 +1565,7 @@ that."`;
    Tsugumi`"I guess you're not so stupid after all."`;
    waitForClick; clearText; 
 });
-bgload({ name: `EV_TU03A`, transition: 00 });
+bgload({ name: `EV_TU03A`, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1607,12 +1607,12 @@ ago, just a scar where once several stitches
 closed a wound.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 90 });
 goto(lbl_000009a9);
 let lbl_000007a8;
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -1632,9 +1632,9 @@ pressure.`;
 });
 hideTextbox();
 playBGM({ num: 24, volume: 100 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 bgload({ name: `EV_TU08B`, transition: 10 });
 showTextbox();
@@ -1716,7 +1716,7 @@ neck.`;
    Narr`For an instant, her grip loosened slightly.`;
    waitForClick; clearText; 
 });
-bgload({ name: `EV_TU08C`, transition: 00 });
+bgload({ name: `EV_TU08C`, transition: 0 });
 showTextbox();
 text(() => {
    marker; sound(`T5A148`); appendText; 
@@ -1803,13 +1803,13 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE05_07`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c2_0_6`);
-varop(`(28 0a a2) 3d := (00) 2`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 6`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_c2_0_6;
+eff_3d = 2;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 6;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -1886,9 +1886,9 @@ text(() => {
 playSFX({ name: `SE05_10`, a1: 0, volume: 95 });
 removeBG_unk(3, 0, 3);
 closeDimInAndOutAndFilterAnim();
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 bgload({ name: `IMG04A`, transition: 10 });
 showTextbox();
@@ -1916,7 +1916,7 @@ text(() => {
 blood...and tears...`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
 delay({ interval: 120 });
 showTextbox();
@@ -2179,8 +2179,8 @@ the meal.`;
    Narr`Tsugumi was nowhere to be seen.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_5B`);

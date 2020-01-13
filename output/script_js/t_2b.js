@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 2`);
-varop(`(28 0a a4) b2 := (00) 2`);
+g_b0 = 5;
+g_b1 = 2;
+g_b2 = 2;
 setDialogBoxColor(GREEN);
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `BG24A3`, transition: 20 });
@@ -307,13 +307,13 @@ text(() => {
 });
 hideTextbox();
 playSFX({ name: `SE10_07`, a1: 0, volume: 90 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 3d := (00) 4`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_c6_0_6;
+eff_3d = 4;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 2;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -359,9 +359,9 @@ my chest.`;
    waitForClick; clearText; 
 });
 bgload({ name: `IMG06A`, transition: 20 });
-varop(`(28 0a a2) 41 := (00) 6`);
-varop(`(28 0a a2) 42 := (00) 68`);
-varop(`(28 0a a2) 50 := (00) 0`);
+eff_41 = 6;
+eff_42 = 68;
+eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
@@ -404,7 +404,7 @@ stick to the ceiling.`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_TU05C`, transition: 20 });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 stopSFX()
 showTextbox();
@@ -418,13 +418,13 @@ to stay above the water.`;
 });
 hideTextbox();
 playSFX({ name: `SE10_07`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_cb_0_6`);
-varop(`(28 0a a2) 3d := (00) 7`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 40 := (00) 4`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_cb_0_6;
+eff_3d = 7;
+eff_3e = 2;
+eff_3f = VAR_c6_0_6;
+eff_40 = 4;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -455,7 +455,7 @@ Tsugumi's shoulder.`;
    Narr`I felt Tsugumi's body relax.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
@@ -500,7 +500,7 @@ text(() => {
    waitForClick; clearText; 
 });
 hideTextbox();
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 stopSFX()
 stopBGM();
 playSFX({ name: `SE00_08`, a1: 0, volume: 100 });
@@ -592,7 +592,7 @@ sprawling floor she look so small, like a
 newly born chick.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 playBGM({ num: 4, volume: 100 });
 bgload({ name: `BG25B4`, transition: 20 });
@@ -654,13 +654,13 @@ text(() => {
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
 playSFX({ name: `SE05_06`, a1: 0, volume: 100 });
-varop(`(28 0a a2) 4f := (00) 51`);
-varop(`(28 0a a2) 3b := (00) 1`);
-varop(`(28 0a a2) 3c := (00) VAR_c6_0_6`);
-varop(`(28 0a a2) 3d := (00) 4`);
-varop(`(28 0a a2) 3e := (00) 2`);
-varop(`(28 0a a2) 3f := (00) VAR_c3_0_6`);
-varop(`(28 0a a2) 40 := (00) 2`);
+eff_4f = 51;
+eff_3b = 1;
+eff_3c = VAR_c6_0_6;
+eff_3d = 4;
+eff_3e = 2;
+eff_3f = VAR_c3_0_6;
+eff_40 = 2;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
@@ -867,7 +867,7 @@ text(() => {
    Narr`I gave a deep sigh and shook my head.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1105,7 +1105,7 @@ text(() => {
    Narr`Fwishhhhhh!`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
@@ -1198,7 +1198,7 @@ text(() => {
 that I hadn't resolved.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG18B2`, transition: 20 });
 setSceneTitle({ index: 12 });
 clock(`8:0`);
@@ -2051,7 +2051,7 @@ before the repairs...`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_07`, a1: 0, volume: 100 });
 bgload({ name: `BG19B2`, transition: 20 });
 showFog2();
@@ -2482,7 +2482,7 @@ of the door.`;
 sound.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 95 });
 delay({ interval: 60 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
@@ -2599,7 +2599,7 @@ text(() => {
    Narr`Tsugumi pushed me out of the way and walked by.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 02 });
+removeBG({ mode: WHITE, transition: 2 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 95 });
 bgload({ name: `BG24A1`, transition: 20 });
 stopSFX()
@@ -2630,8 +2630,8 @@ come up one-by-one...)`;
 liked to sink down to the bottom of the ocean.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 stopBGM();
 delay({ interval: 120 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`T_2C`);

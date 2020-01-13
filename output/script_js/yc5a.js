@@ -1,6 +1,6 @@
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 5`);
-varop(`(28 0a a4) b2 := (00) 5`);
+g_b0 = 5;
+g_b1 = 5;
+g_b2 = 5;
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
 removeBG({ mode: BLACK, transition: 62 });
@@ -2139,7 +2139,7 @@ dirty, weren't you!"`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 bgload({ name: `EV_CO12A`, transition: 20 });
 hideTextbox();
@@ -2291,7 +2291,7 @@ was no way to see the whole thing.`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 bgload({ name: `BG09A1`, transition: 26 });
 stopBGM();
@@ -3084,7 +3084,7 @@ text(() => {
    Narr`The room slid into darkness.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; sound(`C5A295`); appendText; 
@@ -3155,7 +3155,7 @@ text(() => {
    Narr`...`;
    waitForClick; clearText; 
 });
-bgload({ name: `BG36A2`, transition: 00 });
+bgload({ name: `BG36A2`, transition: 0 });
 playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
@@ -3304,5 +3304,5 @@ chain.`;
    Narr`All she would give me was a mischievous smile.`;
    waitForClick; clearText; 
 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`YC5B`);

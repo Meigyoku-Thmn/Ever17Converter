@@ -1,8 +1,8 @@
 setDialogBoxColor(BLUE);
 setSceneTitle({ index: 101 });
-varop(`(28 0a a4) b0 := (00) 5`);
-varop(`(28 0a a4) b1 := (00) 7`);
-varop(`(28 0a a4) b2 := (00) 0`);
+g_b0 = 5;
+g_b1 = 7;
+g_b2 = 0;
 chapterCutin({ name: `00000000` });
 showTextbox();
 text(() => {
@@ -95,7 +95,7 @@ we were kids.`;
 });
 hideTextbox();
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
 AVL_Mode();
@@ -246,7 +246,7 @@ experiments.`;
 });
 hideTextbox();
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
 AVL_Mode();
@@ -344,7 +344,7 @@ far-reaching influence.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -544,7 +544,7 @@ text(() => {
    Sara`"Okay!"`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 01 });
+removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -667,6 +667,6 @@ setMonoColorOverlayFadeOutDuration(46);
 fadeOutMonoColorOverlay();
 unSkippableDelay(33);
 delay({ interval: 90 });
-varop(`(28 0a a4) c7 := (00) 3`);
-varop(`(28 0a a4) b3 := (00) 0`);
+g_c7 = 3;
+g_b3 = 0;
 jump(`Y_ED`);

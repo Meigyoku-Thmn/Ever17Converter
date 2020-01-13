@@ -1,5 +1,5 @@
-goto(lbl_00000829).if(var_b3 == 1);
-goto(lbl_00000c6b).if(var_b3 == 2);
+goto(lbl_00000829).if(g_b3 == 1);
+goto(lbl_00000c6b).if(g_b3 == 2);
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
 delay({ interval: 30 });
@@ -230,7 +230,7 @@ expected.`;
 well, unpleasant.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: BLACK, transition: 02 });
+removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -675,7 +675,7 @@ the sound of something snapping.`;
 and back.`;
    waitForClick; clearText; 
 });
-removeBG({ mode: WHITE, transition: 00 });
+removeBG({ mode: WHITE, transition: 0 });
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -704,7 +704,7 @@ someone!"`;
    You`"Geez. Lazy. Kids these days are so lazy..."`;
    waitForClick; clearText; 
 });
-bgload({ name: `EV_SA01A`, transition: 00 });
+bgload({ name: `EV_SA01A`, transition: 0 });
 playBGM({ num: 2, volume: 100 });
 showTextbox();
 text(() => {
@@ -925,7 +925,7 @@ used my momentum to pull myself up.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
@@ -953,7 +953,7 @@ switch (choice) {
    case 1: goto(lbl_00000832);
 }
 let lbl_00000776;
-varop(`(28 0a a4) b6 += (00) 1`);
+g_b6 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -975,10 +975,10 @@ text(() => {
 looked back at Mayo.`;
    waitForClick; clearText; 
 });
-goto(lbl_000007fb).if(var_1a == 0);
-varop(`(28 0a a4) f1 := (00) 1`);
-goto(lbl_000007fb).if(var_f1 == 0);
-varop(`(28 0a a4) b3 := (00) 0`);
+goto(lbl_000007fb).if(g_1a == 0);
+g_f1 = 1;
+goto(lbl_000007fb).if(g_f1 == 0);
+g_b3 = 0;
 jump(`SC1A`);
 let lbl_000007fb;
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
@@ -1461,7 +1461,7 @@ we got washed away by flood water..`;
 });
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
-varop(`(28 0a a0) ac := (00) 0`);
+dimOff_ac = 0;
 closeDimOverlay();
 stopBGM();
 let lbl_00000c6b;
@@ -1651,7 +1651,7 @@ switch (choice) {
    case 1: goto(lbl_00000e7b);
 }
 let lbl_00000e22;
-varop(`(28 0a a4) b6 += (00) 1`);
+g_b6 += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1935,5 +1935,5 @@ split up and started searching the complex.`;
 hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
 delay({ interval: 30 });
-varop(`(28 0a a4) b3 := (00) 0`);
+g_b3 = 0;
 jump(`S_1B`);
