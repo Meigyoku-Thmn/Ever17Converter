@@ -921,7 +921,7 @@ unSkippableDelay(3);
 delay({ interval: 120 });
 if (l_coco_point != 5) goto(lbl_0000074b);
 l_choice = 1;
-l_sc2f_clear = 1;
+l_sc2f_cleared = 1;
 jump(`YC3A`);
 let lbl_0000074b;
 l_choice = 0;

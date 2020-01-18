@@ -53,64 +53,64 @@ namespace CleanOutputScript {
             case "g_":
                switch (var) {
                   case "08":
-                     rs = "you_gd_reach";
+                     rs = "you_gd__cleared";
                      break;
                   case "09":
-                     rs = "_tsugumi_gd_clear";
+                     rs = "_tsugumi_gd_cleared";
                      break;
                   case "0d":
-                     rs = "sora_or_tsugumi_gd_reach";
+                     rs = "sora_or_tsugumi_gd__cleared";
                      break;
                   case "0e":
-                     rs = "sara_or_you_gd_reach";
+                     rs = "sara_or_you_gd__cleared";
                      break;
                   case "0f":
-                     rs = "tsugumi_gd_clear";
+                     rs = "tsugumi_gd_cleared";
                      break;
                   case "10":
-                     rs = "_sora_gd_clear";
+                     rs = "_sora_gd_cleared";
                      break;
                   case "11":
-                     rs = "takeshi_ep_reach";
+                     rs = "takeshi_ep__cleared";
                      break;
                   case "12":
-                     rs = "tsugumi_sora_bd_reach";
+                     rs = "tsugumi_sora_bd__cleared";
                      break;
                   case "19":
-                     rs = "coco_ep_reach";
+                     rs = "coco_ep__cleared";
                      break;
                   case "0a":
-                     rs = "sora_gd_clear";
+                     rs = "sora_gd_cleared";
                      break;
                   case "0b":
-                     rs = "sara_gd_reach";
+                     rs = "sara_gd__cleared";
                      break;
                   case "0c":
-                     rs = "_coco_ep_reach";
+                     rs = "_coco_ep__cleared";
                      break;
                   case "13":
-                     rs = "_you_gd_clear";
+                     rs = "_you_gd_cleared";
                      break;
                   case "14":
-                     rs = "you_gd_clear";
+                     rs = "you_gd_cleared";
                      break;
                   case "15":
-                     rs = "you_bd_clear";
+                     rs = "you_bd_cleared";
                      break;
                   case "16":
-                     rs = "_sara_gd_clear";
+                     rs = "_sara_gd_cleared";
                      break;
                   case "17":
-                     rs = "sara_gd_clear";
+                     rs = "sara_gd_cleared";
                      break;
                   case "18":
-                     rs = "sara_bd_clear";
+                     rs = "sara_bd_cleared";
                      break;
                   case "1a":
                      rs = "coco_route_unlock";
                      break;
                   case "1b":
-                     rs = "kid_bd_reach";
+                     rs = "kid_bd__cleared";
                      break;
                }
                break;
@@ -120,19 +120,19 @@ namespace CleanOutputScript {
                      rs = "_coco_route_unlock";
                      break;
                   case "25":
-                     rs = "_you_ep_reach";
+                     rs = "_you_ep__cleared";
                      break;
                   case "26":
-                     rs = "_tsugumi_gd_reach";
+                     rs = "_tsugumi_gd__cleared";
                      break;
                   case "27":
-                     rs = "_sora_gd_reach";
+                     rs = "_sora_gd__cleared";
                      break;
                   case "28":
-                     rs = "_sara_ep_reach";
+                     rs = "_sara_ep__cleared";
                      break;
                   case "29":
-                     rs = "coco_ep_reach";
+                     rs = "coco_ep__cleared";
                      break;
                   case "2a":
                      rs = "coco_ep_reach_a";
@@ -288,7 +288,7 @@ namespace CleanOutputScript {
                      rs = "is_coco_route";
                      break;
                   case "f2":
-                     rs = "sc2f_clear";
+                     rs = "sc2f_cleared";
                      break;
                }
                break;

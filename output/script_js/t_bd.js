@@ -721,7 +721,7 @@ text(() => {
 hideTextbox();
 stopSFX()
 delay({ interval: 180 });
-g_tsugumi_sora_bd_reach = 1;
+g_tsugumi_sora_bd__cleared = 1;
 l_ending = `takeshi_bd`;
 l_choice = 0;
 jump(`Y_ED`);

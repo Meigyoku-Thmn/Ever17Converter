@@ -74,5 +74,5 @@ delay({ interval: 180 });
 delay({ interval: 180 });
 stopSFX()
 stopBGM();
-g_takeshi_ep_reach = 1;
+g_takeshi_ep__cleared = 1;
 unlockCG($`POST16`);

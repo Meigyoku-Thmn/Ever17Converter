@@ -2579,7 +2579,7 @@ text(() => {
    `Trying to keep my calm, I responded to her.`;
    waitForClick; clearText; 
 });
-if (g_tsugumi_gd_clear == 0) goto(lbl_0000104f);
+if (g_tsugumi_gd_cleared == 0) goto(lbl_0000104f);
 showTextbox();
 text(() => {
    marker; appendText; 

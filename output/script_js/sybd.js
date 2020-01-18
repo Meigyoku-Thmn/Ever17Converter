@@ -826,8 +826,8 @@ text(() => {
 hideTextbox();
 removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 180 });
-g_you_bd_clear = 1;
-g_kid_bd_reach = 1;
+g_you_bd_cleared = 1;
+g_kid_bd__cleared = 1;
 l_ending = `you_bd`;
 l_choice = 0;
 jump(`Y_ED`);
