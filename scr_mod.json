@@ -1,17 +1,12 @@
 {
    "fileRedirect": {
-      "op200.scr": "s_2b.scr"
+      "op00.scr": "t_5a.scr"
    },
    "entryPointRedirect": {
-      "s_22b.scr": "0x00000ee9"
+      "t_5a.scr": "0x00000923"
    },
    "overwrite": {
-      "s_22b.scr": [
-         {
-            "offset": "0x00000f2b",
-            "shift": "0",
-            "content": "45 a0 09 00 00 81 00 00"
-         }
+      "s_2a.scr": [
       ]
    }
 }

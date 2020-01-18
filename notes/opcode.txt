@@ -93,8 +93,7 @@ setFGOrder_Unk(expr a1, expr a2, expr a3)
    setFGOrder(int id1, int id2, int id3)
       sắp xếp lại thứ tự render của các fg theo thứ tự lần lượt là id1 => id2 => id3
    setFGOrder_Unk 0 1 255 // render 4 => 2 => 1 
-   setFGOrder_Unk 1 0 255 // không quan trọng vì trong trường hợp này fg nv không đè nhau
-   TODO: check bug fg render order cho s_2a đến s_2b
+   setFGOrder_Unk 1 0 255 // render 4 => 1 => 2
 
 makeFGSomething(expr a1, expr a2)
    makeFGTransparent(int id)

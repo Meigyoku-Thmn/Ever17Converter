@@ -16,10 +16,10 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Kid`"Hey! You!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was strange...I thought that maybe she 
+   `It was strange...I thought that maybe she 
 wasn't on that floor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just then, Sora's voice came to me from the 
+   `Just then, Sora's voice came to me from the 
 voice converter.`;
    waitForClick; clearText; 
 });
@@ -50,7 +50,7 @@ well then."`;
 able to investigate, there was no major 
 damage."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora added that there were enough people to do 
+   `Sora added that there were enough people to do 
 the required work.`;
    waitForClick; clearText; marker; sound(`S3A280`); appendText; 
    Sora`"It would be better for you to go to You's 
@@ -70,7 +70,7 @@ investigate."`;
    Kid`"Wouldn't it be better if you went instead of 
 me?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If something were strange, I didn't know what 
+   `If something were strange, I didn't know what 
 I could do.`;
    waitForClick; clearText; marker; sound(`S3A284`); appendText; 
    Sora`"I'm sorry. Unfortunately, now I must go to 
@@ -101,7 +101,7 @@ playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I climbed to the second floor via the 
+   `I climbed to the second floor via the 
 emergency stairs.`;
    waitForClick; clearText; 
 });
@@ -111,14 +111,14 @@ clock(`7:6`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I called to You via the intercom on the side 
+   `I called to You via the intercom on the side 
 of the Security Office door.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"You? It's me. Can I come in?"`;
    waitForClick; clearText; marker; sound(`S3A288`); appendText; 
    You`"Huh!? Kid...?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After a bit the door opened.`;
+   `After a bit the door opened.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -131,9 +131,9 @@ text(() => {
    marker; sound(`S3A289`); appendText; 
    You`"What's up? What are you doing here?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You was unable to hide her surprise...`;
+   `You was unable to hide her surprise...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora was right. Strange might have been the 
+   `Sora was right. Strange might have been the 
 word for it.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sora told me to come."`;
@@ -150,14 +150,14 @@ text(() => {
    Kid`"She said...that something was strange and 
 that she wanted me to take a look..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I couldn't think of a better way to put it and 
+   `I couldn't think of a better way to put it and 
 blurted out the truth.`;
    waitForClick; clearText; marker; appendText; 
    You`"........."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Uh, is this a bad time?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You slumped her shoulders as if defeated and 
+   `You slumped her shoulders as if defeated and 
 heaved out a sigh.`;
    waitForClick; clearText; 
 });
@@ -196,35 +196,35 @@ playSFX({ name: `SE00_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I followed You into the room.`;
+   `I followed You into the room.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It smelled like hot coffee.`;
+   `It smelled like hot coffee.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In a corner of the room was an ancient siphon 
+   `In a corner of the room was an ancient siphon 
 coffee machine percolating up dark liquid.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You offered me a chair and I sat down.`;
+   `You offered me a chair and I sat down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She turned to the coffee maker to pour coffee.`;
+   `She turned to the coffee maker to pour coffee.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"What are you up to in here?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I asked You this bluntly as I leaned back in 
+   `I asked You this bluntly as I leaned back in 
 the chair.`;
    waitForClick; clearText; marker; sound(`S3A295`); appendText; 
    You`"I'm looking into something."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Looking into something?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`White steam curled into the air from where she 
+   `White steam curled into the air from where she 
 was pouring the coffee.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Is this something that you have to hide from 
 everyone?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought it came out a little too accusatory.`;
+   `I thought it came out a little too accusatory.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Maybe I was a little peeved that she was 
+   `Maybe I was a little peeved that she was 
 hiding something from us.`;
    waitForClick; clearText; 
 });
@@ -234,19 +234,19 @@ text(() => {
    marker; sound(`S3A296`); appendText; 
    You`"Here's your coffee."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She turned back toward me with a white cup in 
+   `She turned back toward me with a white cup in 
 each hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She handed one to me.`;
+   `She handed one to me.`;
    waitForClick; clearText; marker; sound(`S3A297`); appendText; 
    You`"It's hot so be careful."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Oh, thanks..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A white cup. White steam. Only the liquid 
+   `A white cup. White steam. Only the liquid 
 inside was black.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`LeMU's logo was printed on the cup. `;
+   `LeMU's logo was printed on the cup. `;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
@@ -255,10 +255,10 @@ text(() => {
    marker; sound(`S3A298`); appendText; 
    You`"Well.... Where should I start...?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You sat down next to me and took a sip of her 
+   `You sat down next to me and took a sip of her 
 coffee.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Then she gradually started to talk.`;
+   `Then she gradually started to talk.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
@@ -271,7 +271,7 @@ this job at LeMU..."`;
    You`"I'm looking for clues about my father, who 
 disappeared."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I nodded.`;
+   `I nodded.`;
    waitForClick; clearText; marker; sound(`S3A301`); appendText; 
    You`"He went missing 17 years ago and I came 
 hoping to find a hint as to why."`;
@@ -288,7 +288,7 @@ text(() => {
    marker; sound(`S3A302`); appendText; 
    You`"Yes..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You nodded and shifted the cup to her other 
+   `You nodded and shifted the cup to her other 
 hand.`;
    waitForClick; clearText; marker; sound(`S3A303`); appendText; 
    You`"Information about my father."`;
@@ -385,9 +385,9 @@ text(() => {
    marker; sound(`S3A319`); appendText; 
    You`"I guess it makes sense. I was pretty naive."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The chair squeaked as You slumped back in it.`;
+   `The chair squeaked as You slumped back in it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She just stared at the ceiling.`;
+   `She just stared at the ceiling.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
@@ -403,7 +403,7 @@ knocked."`;
    waitForClick; clearText; marker; sound(`S3A321`); appendText; 
    You`"Yup."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You placed the cup next to the console.`;
+   `You placed the cup next to the console.`;
    waitForClick; clearText; marker; sound(`S3A322`); appendText; 
    You`"Now I have access to LeMMIH."`;
    waitForClick; clearText; marker; sound(`S3A323`); appendText; 
@@ -420,7 +420,7 @@ text(() => {
    You`"Well, I suppose it has also put my life in 
 danger, but..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You joked as she shrugged her shoulders. `;
+   `You joked as she shrugged her shoulders. `;
    waitForClick; clearText; marker; appendText; 
    Kid`"I'll ask you one more time, but did you have 
 to keep it all secret?"`;
@@ -471,11 +471,11 @@ text(() => {
    marker; sound(`S3A332`); appendText; 
    You`You growled as she put the cup to her lips.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"Hmmm...I wonder about that."`;
+   `"Hmmm...I wonder about that."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I too took a sip of coffee.`;
+   `I too took a sip of coffee.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was super bitter and super thick.`;
+   `It was super bitter and super thick.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"So? Did you find anything out?"`;
    waitForClick; clearText; 
@@ -492,18 +492,18 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Saying that, You started manipulating the 
+   `Saying that, You started manipulating the 
 keyboard.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`One of the monitors on the wall shifted from 
+   `One of the monitors on the wall shifted from 
 footage of an observation camera to an image 
 of a computer desktop.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It the middle of it one window was open.`;
+   `It the middle of it one window was open.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You explained as she stared at the screen.`;
+   `You explained as she stared at the screen.`;
    waitForClick; clearText; marker; sound(`S3A334`); appendText; 
    You`"This is the authorization screen to connect 
 to the network."`;
@@ -515,7 +515,7 @@ for proper authorization."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"I see..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt like I kind of got it, but not really...`;
+   `I felt like I kind of got it, but not really...`;
    waitForClick; clearText; marker; sound(`S3A336`); appendText; 
    You`"I'm attempting to connect to LeMMIH's C 
 level...meaning I'm trying to access 
@@ -530,10 +530,10 @@ data, it would be a security disaster, right?"`;
 computer asks 'Hey, who's trying to look at 
 this?'"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As she spoke, You used the mouse to 
+   `As she spoke, You used the mouse to 
 click on the box for 'Name.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Inside the box were written the words, 'YUKIE 
+   `Inside the box were written the words, 'YUKIE 
 TANAKA.'`;
    waitForClick; clearText; marker; sound(`S3A339`); appendText; 
    You`"Of course there is no way I could access the 
@@ -552,10 +552,10 @@ to check people's identity."`;
    You`"The screen then says, 'If you really are 
 YUKIE TANAKA, please show me your password.'"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You then used the mouse to circle around the 
+   `You then used the mouse to circle around the 
 box for 'Password.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was still blank.`;
+   `It was still blank.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG11A1`, transition: 20 });
@@ -594,9 +594,9 @@ text(() => {
    marker; sound(`S3A346`); appendText; 
    You`"Yup...stuck."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You nodded and gave a big sigh.`;
+   `You nodded and gave a big sigh.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`....`;
+   `....`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_YU04A`, transition: 20 });
@@ -604,40 +604,40 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After a second's pause, You was back tapping 
+   `After a second's pause, You was back tapping 
 on the keyboard.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was nothing for me to do. I just sat 
+   `There was nothing for me to do. I just sat 
 there watching You do her thing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The password blank filled in as she typed.`;
+   `The password blank filled in as she typed.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"*`;
+   `"*`;
    delay(10); 
-   Narr`*`;
+   `*`;
    delay(5); 
-   Narr`*`;
+   `*`;
    delay(20); 
-   Narr`*`;
+   `*`;
    delay(4); 
-   Narr`*`;
+   `*`;
    delay(5); 
-   Narr`*`;
+   `*`;
    delay(15); 
-   Narr`*`;
+   `*`;
    delay(3); 
-   Narr`*"`;
+   `*"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The digits she typed in were blocked out by *, 
+   `The digits she typed in were blocked out by *, 
 so that anybody watching wouldn't know what 
 the word was.`;
    waitForClick; clearText; 
@@ -646,20 +646,20 @@ playSFX({ name: `SE04_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap!`;
+   `Tap!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You tapped the Enter key.`;
+   `You tapped the Enter key.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Access denied. Invalid name or password.'`;
+   `'Access denied. Invalid name or password.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So You immediately tapped in another line of 
+   `So You immediately tapped in another line of 
 letters.`;
    waitForClick; clearText; 
 });
@@ -667,46 +667,46 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"*`;
+   `"*`;
    delay(15); 
-   Narr`*`;
+   `*`;
    delay(5); 
-   Narr`*`;
+   `*`;
    delay(20); 
-   Narr`*`;
+   `*`;
    delay(15); 
-   Narr`*`;
+   `*`;
    delay(5); 
-   Narr`*`;
+   `*`;
    delay(3); 
-   Narr`*`;
+   `*`;
    delay(10); 
-   Narr`*"`;
+   `*"`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap!`;
+   `Tap!`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Access denied. Invalid name or password.'`;
+   `'Access denied. Invalid name or password.'`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Hey, You?"`;
    waitForClick; clearText; marker; sound(`S3A347`); appendText; 
@@ -736,7 +736,7 @@ think."`;
    waitForClick; clearText; marker; sound(`S3A350`); appendText; 
    You`"Yeah. So what?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You answered, her eyes still glued to the 
+   `You answered, her eyes still glued to the 
 computer.`;
    waitForClick; clearText; 
 });
@@ -753,7 +753,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`S3A352`); appendText; 
    You`"What's the problem?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You fired the question at me as she continued 
+   `You fired the question at me as she continued 
 to do battle with the computer.`;
    waitForClick; clearText; 
 });
@@ -788,10 +788,10 @@ text(() => {
    marker; appendText; 
    Kid`"Lemurian continent?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That reminded me, Sora had said the LeMU had 
+   `That reminded me, Sora had said the LeMU had 
 been named after a continent called Lemuria.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`On Dritte stock there was an attraction called 
+   `On Dritte stock there was an attraction called 
 'The Ruins of Lemuria'... `;
    waitForClick; clearText; marker; sound(`S2B190`); appendText; 
    You`"Lemuria is this phantom continent that was 
@@ -803,7 +803,7 @@ was more advanced that what we have today. But
 overnight it just slipped down to the bottom 
 of the ocean."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You spoke as if she were reading from a 
+   `You spoke as if she were reading from a 
 textbook.`;
    waitForClick; clearText; marker; sound(`S2B192`); appendText; 
    You`"There are some scholars that contend that 
@@ -827,7 +827,7 @@ longer a legitimate field of study."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Oh, you are...?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You and archaeology...somehow the two just did 
+   `You and archaeology...somehow the two just did 
 not seem to go together in my mind.`;
    waitForClick; clearText; 
 });
@@ -905,7 +905,7 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; 
 });
 if (l_chose_to_wait_there_in_2nd_day != 0) goto(lbl_000005c9);
@@ -945,9 +945,9 @@ text(() => {
    marker; appendText; 
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It didn't sound very basic to me.`;
+   `It didn't sound very basic to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`What did she mean?`;
+   `What did she mean?`;
    waitForClick; clearText; marker; sound(`S3A377`); appendText; 
    You`"Essentially, only by gaining a sense of the 
 4th dimension can we really fully sense the 
@@ -955,7 +955,7 @@ whole of what is going on around us."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"???"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had no idea what she was talking about.`;
+   `I had no idea what she was talking about.`;
    waitForClick; clearText; marker; sound(`S3A378`); appendText; 
    You`"Like when the third eye has opened up or 
 something."`;
@@ -966,10 +966,10 @@ stopSFX()
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`You's hands stopped typing there for an 
+   `You's hands stopped typing there for an 
 instant and she popped her neck loudly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She reached out for her cup and took a sip of 
+   `She reached out for her cup and took a sip of 
 coffee.`;
    waitForClick; clearText; 
 });
@@ -1013,10 +1013,10 @@ Buddhism."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Uh...uh..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt like I was being bombarded with exotic 
+   `I felt like I was being bombarded with exotic 
 words.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The conversation had completely left me behind.`;
+   `The conversation had completely left me behind.`;
    waitForClick; clearText; marker; sound(`S2B229`); appendText; 
    You`"Clairvoyance, telescopic vision, ghost sense, 
 the gift of the prophet, the power of seeing 
@@ -1027,7 +1027,7 @@ Some say it is a gift from the gods, others
 that you can acquire it from intensive 
 training. But what they all have in common is.."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When the third eye opens, true wisdom is 
+   `When the third eye opens, true wisdom is 
 apparent and all becomes visible.`;
    waitForClick; clearText; 
 });
@@ -1052,7 +1052,7 @@ please don't."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Wh-why..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had actually been thinking just that.`;
+   `I had actually been thinking just that.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU04ADL`, x: 320, useAnim: true });
@@ -1067,7 +1067,7 @@ that promise wisdom or anything else."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"What are those?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`More words I didn't know.`;
+   `More words I didn't know.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
@@ -1095,19 +1095,19 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I wondered why we only had two eyes.`;
+   `I wondered why we only had two eyes.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Common knowledge had it that physically two 
+   `Common knowledge had it that physically two 
 eyes were enough for gauging the distance to a 
 point or focusing on something.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`But what would it be like if we really used to 
+   `But what would it be like if we really used to 
 have three eyes?`;
    waitForClick; nextPage(04); 
 });
@@ -1115,23 +1115,23 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Actually...`;
+   `Actually...`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`The animal ancestors of vertebrates had three 
+   `The animal ancestors of vertebrates had three 
 eyes.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Early species of primitive reptiles...`;
+   `Early species of primitive reptiles...`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Like the tuatara lizard that still has a third 
+   `Like the tuatara lizard that still has a third 
 eye on the top of its head.`;
    waitForClick; nextPage(04); 
 });
@@ -1139,28 +1139,28 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The third eye...`;
+   `The third eye...`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`The organ has a similar function to the 
+   `The organ has a similar function to the 
 eyeball and lies on the top of the head.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`This organ would be sensitive to the light of 
+   `This organ would be sensitive to the light of 
 the outside world and control internal hormone 
 secretion and balance based on the light.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`An eye on the crest of one's head would stare 
+   `An eye on the crest of one's head would stare 
 straight up. It seemed safe to say that it 
 would sense the difference in light between 
 day and night.`;
@@ -1170,15 +1170,15 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`A right eye, a left eye and one above...`;
+   `A right eye, a left eye and one above...`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`An eye on the top of the head to stare at the 
+   `An eye on the top of the head to stare at the 
 sky.`;
    waitForClick; 
-   Narr`
+   `
 `;
    
 });
@@ -1186,36 +1186,36 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Only we people and higher vertebrates had lost 
+   `Only we people and higher vertebrates had lost 
 the third eye over a long process of 
 evolution. It had been covered over by the 
 cerebrum and we lost our ability to sense 
 light directly.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Therefore we had two light sensitive eyeballs, 
+   `Therefore we had two light sensitive eyeballs, 
 one on each side, instead.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`This lost third eye was called a 'pineal body.'`;
+   `This lost third eye was called a 'pineal body.'`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`This had functioned in the brain for eons and 
+   `This had functioned in the brain for eons and 
 was responsible for secreting hormones that 
 helped carve out our 24-hour rhythm.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`What we called our internal clocks existed 
+   `What we called our internal clocks existed 
 because of this pineal body.`;
    waitForClick; nextPage(04); 
 });
@@ -1299,7 +1299,7 @@ text(() => {
    marker; sound(`S2B260`); appendText; 
    You`"I used to hate archaeology..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You sighed as she said this.`;
+   `You sighed as she said this.`;
    waitForClick; clearText; marker; sound(`S2B261`); appendText; 
    You`"But one day I just woke up and found myself 
 in the archaeology department."`;
@@ -1313,7 +1313,7 @@ text(() => {
    marker; sound(`S2B262`); appendText; 
    You`"It's not that simple."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You gave another mighty sigh.`;
+   `You gave another mighty sigh.`;
    waitForClick; clearText; marker; sound(`S2B263`); appendText; 
    You`"It's like some kind of curse."`;
    waitForClick; clearText; marker; appendText; 
@@ -1369,10 +1369,10 @@ Buddhism."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Uh...uh..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt like I was being bombarded with exotic 
+   `I felt like I was being bombarded with exotic 
 words.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The conversation had completely left me behind.`;
+   `The conversation had completely left me behind.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU07ADL`, x: 320, useAnim: true });
@@ -1436,9 +1436,9 @@ are right now."`;
 eye or third perspective...and the 4th 
 dimension..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There were lots of things I didn't get.`;
+   `There were lots of things I didn't get.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The whole concept seemed to be beyond my 
+   `The whole concept seemed to be beyond my 
 understanding.`;
    waitForClick; clearText; 
 });
@@ -1456,9 +1456,9 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You started working again without answering my 
+   `You started working again without answering my 
 question.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Hey, You."`;
@@ -1473,22 +1473,22 @@ lecture."`;
    You`"If you really wanna know, next time I'll 
 explain it in an easy to swallow way."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You didn't say anything more.`;
+   `You didn't say anything more.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"...Okay."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I decided to give up for the time being.`;
+   `I decided to give up for the time being.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I remembered I was still holding the cup.`;
+   `I remembered I was still holding the cup.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I figured not drinking it would be a waste so 
+   `I figured not drinking it would be a waste so 
 I drank it down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Gulp.`;
+   `Gulp.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Yuck...this is so bitter.)`;
+   `(Yuck...this is so bitter.)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And it was completely cold, too.`;
+   `And it was completely cold, too.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -1510,24 +1510,24 @@ text(() => {
    marker; sound(`S3A407`); appendText; 
    You`"Oh, I give up."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You muttered this and looked down dejectedly.`;
+   `You muttered this and looked down dejectedly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She leaned back in the chair and it squeaked.`;
+   `She leaned back in the chair and it squeaked.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the end she hadn't found any new clues.`;
+   `In the end she hadn't found any new clues.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Actually, she hadn't even gotten past the 
+   `Actually, she hadn't even gotten past the 
 authorization screen.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Access denied. Invalid name or password.'`;
+   `'Access denied. Invalid name or password.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That message had been displayed again and 
+   `That message had been displayed again and 
 again. It still sat in the middle of the 
 screen.`;
    waitForClick; clearText; marker; sound(`S3A408`); appendText; 
    You`"Oh...."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You was really down.`;
+   `You was really down.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"So you couldn't get it? The password."`;
    waitForClick; clearText; marker; sound(`S3A409`); appendText; 
@@ -1596,12 +1596,12 @@ text(() => {
 illegal programs and can't just type one out 
 right now."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You stuck her hands up in the air, signaling 
+   `You stuck her hands up in the air, signaling 
 her surrender.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"I know! Sara could probably do it, right?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I remembered that Sara was a top-level hacker.`;
+   `I remembered that Sara was a top-level hacker.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"You said that Sara took first prize in some 
 code-breaking contest, right?"`;
@@ -1616,7 +1616,7 @@ text(() => {
    marker; sound(`S3A416`); appendText; 
    You`"Maybe."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You didn't seem keen on the idea.`;
+   `You didn't seem keen on the idea.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Why don't you ask her?"`;
    waitForClick; clearText; marker; sound(`S3A417`); appendText; 
@@ -1631,7 +1631,7 @@ text(() => {
    marker; sound(`S3A418`); appendText; 
    You`"I don't want to involve her in this."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought that maybe she was still concerned 
+   `I thought that maybe she was still concerned 
 about the criminal element of the idea.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"But you don't mind getting me involved?"`;
@@ -1645,12 +1645,12 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Kid`"I suppose..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But at this rate, You probably wouldn't find a 
+   `But at this rate, You probably wouldn't find a 
 clue during her lifetime.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wanted to help her out.`;
+   `I wanted to help her out.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As a way of thanking her for helping me.`;
+   `As a way of thanking her for helping me.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
@@ -1659,7 +1659,7 @@ text(() => {
    marker; sound(`S3A420`); appendText; 
    You`"There is just one clue..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You took a piece of paper from atop the 
+   `You took a piece of paper from atop the 
 console.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"What's that?"`;
@@ -1682,35 +1682,35 @@ playBGM({ num: 16, volume: 100 });
 showTextbox();
 text(() => {
    marker; sound(`S3A422`); appendText; nextPage(00); 
-   Narr`I sneaked into her research room before coming 
+   `I sneaked into her research room before coming 
 here.`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A423`); appendText; nextPage(00); 
-   Narr`I was looking for clues about my father of 
+   `I was looking for clues about my father of 
 course.`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A424`); appendText; nextPage(00); 
-   Narr`When I went in, I saw that her computer was on.`;
+   `When I went in, I saw that her computer was on.`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A425`); appendText; nextPage(00); 
-   Narr`Looking at it I saw that there was a text file 
+   `Looking at it I saw that there was a text file 
 entitled 'Password.'`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A426`); appendText; nextPage(00); 
-   Narr`When I opened it, it was only one line...`;
+   `When I opened it, it was only one line...`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A427`); appendText; nextPage(00); 
-   Narr`There was some Japanese sentence typed inside 
+   `There was some Japanese sentence typed inside 
 it.`;
    nextPage(01); waitForClick; nextPage(04); 
 });
@@ -1752,15 +1752,15 @@ delay({ interval: 60 });
 showTextbox();
 text(() => {
    marker; sound(`S3A431`); appendText; nextPage(00); 
-   Narr`I tried to take a note of it before I was 
+   `I tried to take a note of it before I was 
 found out.`;
    nextPage(01); waitForSound; sound(`S3A432`); appendText; nextPage(00); 
-   Narr`But I didn't see a pen or anything around.`;
+   `But I didn't see a pen or anything around.`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A433`); appendText; nextPage(00); 
-   Narr`And there were no disks or anything that I 
+   `And there were no disks or anything that I 
 could copy it to.`;
    nextPage(01); waitForClick; nextPage(04); 
 });
@@ -1785,24 +1785,24 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; sound(`S3A435`); appendText; nextPage(00); 
-   Narr`But I was in a rush and didn't think about it 
+   `But I was in a rush and didn't think about it 
 then.`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A436`); appendText; nextPage(00); 
-   Narr`Suddenly, I thought that I'd try to print it 
+   `Suddenly, I thought that I'd try to print it 
 out...`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A437`); appendText; nextPage(00); 
-   Narr`As soon it stopped printing my mom came back.`;
+   `As soon it stopped printing my mom came back.`;
    nextPage(01); waitForSound; 
-   Narr`
+   `
 `;
    sound(`S3A438`); appendText; nextPage(00); 
-   Narr`I snatched the paper that was in the tray and 
+   `I snatched the paper that was in the tray and 
 jammed it in my pocket.`;
    nextPage(01); waitForClick; nextPage(04); 
 });
@@ -1820,7 +1820,7 @@ text(() => {
    Kid`"So the paper you have now is the one with the 
 password on it?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You held out the paper without saying anything.`;
+   `You held out the paper without saying anything.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Huh? What's this?"`;
    waitForClick; clearText; 
@@ -1891,7 +1891,7 @@ you a hint?"`;
    Kid`"Like, did it have to do with food, or a 
 person's name..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You shook her head and spoke.`;
+   `You shook her head and spoke.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
@@ -1929,62 +1929,62 @@ bgload({ name: `IT03A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I looked again at the paper we thought 
+   `I looked again at the paper we thought 
 contained the password.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was obsessed with solving the puzzle we had 
+   `I was obsessed with solving the puzzle we had 
 found.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was frustrating.`;
+   `It was frustrating.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Now who is forgetting the important things?'`;
+   `'Now who is forgetting the important things?'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...What could I say to that?`;
+   `...What could I say to that?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(It's not like I wanted to lose my memory!)`;
+   `(It's not like I wanted to lose my memory!)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Watch this! I'll remember everything just to 
+   `(Watch this! I'll remember everything just to 
 show you!)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But first...I had to figure this out.`;
+   `But first...I had to figure this out.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had my mind set on it.`;
+   `I had my mind set on it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I almost felt like solving this was a rite of 
+   `I almost felt like solving this was a rite of 
 passage that would help restore my memory.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`............`;
+   `............`;
    waitForClick; clearText; marker; appendText; 
-   Narr`..........`;
+   `..........`;
    waitForClick; clearText; marker; appendText; 
-   Narr`..........`;
+   `..........`;
    waitForClick; 
 });
-l_d0 = 1;
-l_d1 = 1;
-l_d2 = 1;
-l_d3 = 1;
-l_d4 = 1;
-l_d5 = 1;
-l_bb = 0;
-l_bc = 0;
-l_bd = 0;
+l_selection_0_available = 1;
+l_selection_1_available = 1;
+l_selection_2_available = 1;
+l_selection_3_available = 1;
+l_selection_4_available = 1;
+l_selection_5_available = 1;
+l_counter = 0;
+l_choice_flag1 = 0;
+l_choice_flag2 = 0;
 goto(lbl_00000c3b);
 let lbl_00000bfe;
-if (l_bc != 0) goto(lbl_00000c36);
-if (l_bd != 0) goto(lbl_00000c36);
+if (l_choice_flag1 != 0) goto(lbl_00000c36);
+if (l_choice_flag2 != 0) goto(lbl_00000c36);
 bgload({ name: `IT03A`, transition: 20 });
 let lbl_00000c36;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`What should I do...?`;
+   `What should I do...?`;
    waitForClick; 
 });
 let lbl_00000c3b;
 choice(
-   `I got it`
-   `I don't get it`
+   `I got it`,
+   `I don't get it`,
 );
 switch (l_choice) {
    case 0: goto(lbl_00000c5e);
@@ -1994,18 +1994,18 @@ let lbl_00000c5e;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(Could it be...?)`;
+   `(Could it be...?)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought for a second.`;
+   `I thought for a second.`;
    waitForClick; 
 });
 choice(
-   cond(l_d0 != 0)`What if I turn it over...`,
-   cond(l_d1 != 0)`What if I turn it upside down...`,
-   cond(l_d2 != 0)`What if I heat it with a flame...`,
-   cond(l_d3 != 0)`What if I rip it in two...`,
-   cond(l_d4 != 0)`What if I tilt it...`,
-   cond(l_d5 != 0)`What if I wad it up...`,
+   cond(l_selection_0_available != 0)`What if I turn it over...`,
+   cond(l_selection_1_available != 0)`What if I turn it upside down...`,
+   cond(l_selection_2_available != 0)`What if I heat it with a flame...`,
+   cond(l_selection_3_available != 0)`What if I rip it in two...`,
+   cond(l_selection_4_available != 0)`What if I tilt it...`,
+   cond(l_selection_5_available != 0)`What if I wad it up...`,
 );
 switch (l_choice) {
    case 0: goto(lbl_00000ca2);
@@ -2016,15 +2016,15 @@ switch (l_choice) {
    case 5: goto(lbl_00000df6);
 }
 let lbl_00000ca2;
-l_bb += 1;
-l_d0 = 0;
+l_counter += 1;
+l_selection_0_available = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought that if I turned it over I might be 
+   `I thought that if I turned it over I might be 
 able to read something.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I turned the paper over and held it up to the 
+   `I turned the paper over and held it up to the 
 light.`;
    waitForClick; clearText; 
 });
@@ -2034,7 +2034,7 @@ text(() => {
    marker; appendText; 
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was no good. Turning it over showed nothing 
+   `It was no good. Turning it over showed nothing 
 new.`;
    waitForClick; clearText; marker; sound(`S3A453`); appendText; 
    You`"So? Did you figure it out?"`;
@@ -2046,20 +2046,20 @@ way."`;
    waitForClick; clearText; marker; sound(`S3A455`); appendText; 
    You`"I tried all kinds of things."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hmmmm. Let's see.)`;
+   `(Hmmmm. Let's see.)`;
    waitForClick; clearText; 
 });
 goto(lbl_00000fb4);
 let lbl_00000cd4;
-l_bb += 1;
-l_d1 = 0;
+l_counter += 1;
+l_selection_1_available = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought maybe I could read something if I 
+   `I thought maybe I could read something if I 
 turned the paper upside down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I turned it upside down.`;
+   `I turned it upside down.`;
    waitForClick; clearText; 
 });
 bgload({ name: `IT03C`, transition: 20 });
@@ -2068,7 +2068,7 @@ text(() => {
    marker; appendText; 
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was no good. Turning the paper upside down 
+   `It was no good. Turning the paper upside down 
 showed nothing new.`;
    waitForClick; clearText; marker; sound(`S3A453`); appendText; 
    You`"So? Did you figure it out?"`;
@@ -2080,18 +2080,18 @@ way."`;
    waitForClick; clearText; marker; sound(`S3A455`); appendText; 
    You`"I tried all kinds of things."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hmmmm. Let's see.)`;
+   `(Hmmmm. Let's see.)`;
    waitForClick; clearText; 
 });
 goto(lbl_00000fb4);
 let lbl_00000d06;
-l_bb += 1;
-l_d2 = 0;
-l_bc = 1;
+l_counter += 1;
+l_selection_2_available = 0;
+l_choice_flag1 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought maybe if I heated it with a flame, I 
+   `I thought maybe if I heated it with a flame, I 
 could read it.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Hey, you don't have a lighter, do you?"`;
@@ -2128,23 +2128,23 @@ flame, something might appear..." `;
    waitForClick; clearText; marker; appendText; 
    Kid`"Yeah. Ha, ha. I'm just joking..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I figured out that I couldn't read it 
+   `I figured out that I couldn't read it 
 that way.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hmmmm. Let's see.)`;
+   `(Hmmmm. Let's see.)`;
    waitForClick; clearText; 
 });
 goto(lbl_00000fb4);
 let lbl_00000d30;
-l_bb += 1;
-l_d3 = 0;
+l_counter += 1;
+l_selection_3_available = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought that if I folded it in half maybe I 
+   `I thought that if I folded it in half maybe I 
 could read something.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I took it and folded it in half.`;
+   `I took it and folded it in half.`;
    waitForClick; clearText; 
 });
 bgload({ name: `IT03D`, transition: 20 });
@@ -2153,7 +2153,7 @@ text(() => {
    marker; appendText; 
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was no good. Folding showed nothing new.`;
+   `It was no good. Folding showed nothing new.`;
    waitForClick; clearText; marker; sound(`S3A453`); appendText; 
    You`"So? Did you figure it out?"`;
    waitForClick; clearText; marker; appendText; 
@@ -2164,7 +2164,7 @@ way."`;
    waitForClick; clearText; marker; sound(`S3A455`); appendText; 
    You`"I tried all kinds of things."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hmmmm. Let's see.)`;
+   `(Hmmmm. Let's see.)`;
    waitForClick; clearText; 
 });
 goto(lbl_00000fb4);
@@ -2172,15 +2172,15 @@ let lbl_00000d62;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought that if I tilted it a little I might 
+   `I thought that if I tilted it a little I might 
 be able to see something.`;
    waitForClick; 
 });
 choice(
-   `Tilt it a little to the side`
-   `Tilt it almost completely to the side`
-   `Tilt it a little vertically`
-   `Tilt it almost completely vertical`
+   `Tilt it a little to the side`,
+   `Tilt it almost completely to the side`,
+   `Tilt it a little vertically`,
+   `Tilt it almost completely vertical`,
 );
 switch (l_choice) {
    case 0: goto(lbl_00000d98);
@@ -2202,13 +2202,13 @@ bgload({ name: `IT03F`, transition: 20 });
 stopBGM();
 goto(lbl_00000e84);
 let lbl_00000de2;
-l_bb += 1;
+l_counter += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It didn't help. Changing the angle showed 
+   `It didn't help. Changing the angle showed 
 nothing new.`;
    waitForClick; clearText; marker; sound(`S3A453`); appendText; 
    You`"So? Did you figure something out?"`;
@@ -2220,20 +2220,20 @@ way."`;
    waitForClick; clearText; marker; sound(`S3A455`); appendText; 
    You`"I tried all kinds of things."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hmmmm. Let's see.)`;
+   `(Hmmmm. Let's see.)`;
    waitForClick; clearText; 
 });
 goto(lbl_00000fb4);
 let lbl_00000df6;
-l_bb += 1;
-l_d5 = 0;
+l_counter += 1;
+l_selection_5_available = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I rolled the paper in a ball, 
+   `I rolled the paper in a ball, 
 but still couldn't read anything.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I rolled the paper into a stick-like shape.`;
+   `I rolled the paper into a stick-like shape.`;
    waitForClick; clearText; 
 });
 bgload({ name: `IT03I`, transition: 20 });
@@ -2242,7 +2242,7 @@ text(() => {
    marker; appendText; 
    Kid`"........."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was no good. Rolling it up showed nothing 
+   `It was no good. Rolling it up showed nothing 
 new.`;
    waitForClick; clearText; marker; sound(`S3A453`); appendText; 
    You`"So? Did you figure it out?"`;
@@ -2254,31 +2254,31 @@ way."`;
    waitForClick; clearText; marker; sound(`S3A455`); appendText; 
    You`"I tried all kinds of things."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hmmmm. Let's see.)`;
+   `(Hmmmm. Let's see.)`;
    waitForClick; clearText; 
 });
 goto(lbl_00000fb4);
 let lbl_00000e28;
-l_bb += 1;
-l_bd = 1;
+l_counter += 1;
+l_choice_flag2 = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
    Kid`"..............."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`No. I've got no idea.`;
+   `No. I've got no idea.`;
    waitForClick; clearText; marker; sound(`S3A453`); appendText; 
    You`"So? Did you figure it out?"`;
    waitForClick; clearText; 
 });
-if (l_bb >= 3) goto(lbl_00000fb4);
+if (l_counter >= 3) goto(lbl_00000fb4);
 showTextbox();
 text(() => {
    marker; appendText; 
    Kid`"No...not yet."`;
    waitForClick; clearText; 
 });
-if (l_bb == 2) goto(lbl_00000e7b);
+if (l_counter == 2) goto(lbl_00000e7b);
 showTextbox();
 text(() => {
    marker; sound(`S3A454`); appendText; 
@@ -2289,12 +2289,12 @@ text(() => {
    Kid`"But if we just change our way of looking at 
 things, I think we'll figure it out."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Huh?)`;
+   `(Huh?)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(By changing the way we look...we'll figure it 
+   `(By changing the way we look...we'll figure it 
 out?)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Something about my words triggered something 
+   `Something about my words triggered something 
 in my mind.`;
    waitForClick; clearText; 
 });
@@ -2331,21 +2331,21 @@ two-dimensionally."`;
    waitForClick; clearText; marker; sound(`S3A469`); appendText; 
    You`"So? Whaddya think?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(The stuff on the paper is two-dimensional...
+   `(The stuff on the paper is two-dimensional...
 And we are three dimensional.)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had to think two-dimensionally.`;
+   `I had to think two-dimensionally.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(What do I have to do to think 
+   `(What do I have to do to think 
 two-dimensionally...?)`;
    waitForClick; clearText; 
 });
 let lbl_00000e80;
 goto(lbl_00000bfe);
 let lbl_00000e84;
-l_e5 = 1;
-if (l_bb >= 2) goto(lbl_00000ed7);
-if (l_bb == 1) goto(lbl_00000ec8);
+l_chose_almost_completely_vertical = 1;
+if (l_counter >= 2) goto(lbl_00000ed7);
+if (l_counter == 1) goto(lbl_00000ec8);
 l_you_point += 3;
 goto(lbl_00000ee2);
 let lbl_00000ec8;
@@ -2375,9 +2375,9 @@ bgload({ name: `BG11A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`You grabbed the slip of paper from my hand.`;
+   `You grabbed the slip of paper from my hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Then she copied me and set the paper sideways 
+   `Then she copied me and set the paper sideways 
 in the same way.`;
    waitForClick; clearText; 
 });
@@ -2391,38 +2391,38 @@ text(() => {
    waitForClick; clearText; marker; sound(`S3A472`); appendText; 
    You`"Amazing! Kid, you're amazing!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You grabbed my hand and shook it happily.`;
+   `You grabbed my hand and shook it happily.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...But she didn't stop there...
+   `...But she didn't stop there...
 She pulled me close in a big bear hug.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Squeeze—!!!`;
+   `Squeeze—!!!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My face was pressed hard against her bust.`;
+   `My face was pressed hard against her bust.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was a nice fit...a little too nice...I 
+   `It was a nice fit...a little too nice...I 
 struggled for air.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"I...give up...give...mercy..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I almost felt dangerously excited by the 
+   `I almost felt dangerously excited by the 
 softness of her.`;
    waitForClick; clearText; marker; sound(`S3A473`); appendText; 
    You`"We did it, we did it! Yeah!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Finally, You let me go.`;
+   `Finally, You let me go.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She jumped around gleefully like a rabbit.`;
+   `She jumped around gleefully like a rabbit.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(I was glad she was happy...even if she did 
+   `(I was glad she was happy...even if she did 
 almost crush me.)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Watching You all happy like that seemed to 
+   `Watching You all happy like that seemed to 
 wash away all my irritation and fatigue.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The stress I was feeling simply faded away.`;
+   `The stress I was feeling simply faded away.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was like the winter frost melting away 
+   `It was like the winter frost melting away 
 under the spring sun.`;
    waitForClick; clearText; 
 });
@@ -2448,7 +2448,7 @@ make it print like this."`;
    You`"Anyway, as long as I have the password, 
 things are fine."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'The empty fall sky/ A single cuckoo calls 
+   `'The empty fall sky/ A single cuckoo calls 
 out/ Brings a chill to me.'`;
    waitForClick; clearText; marker; sound(`S3A479`); appendText; 
    You`"I think this is a variation of the famous 
@@ -2476,16 +2476,16 @@ bgload({ name: `EV_YU04A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`A recharged You faced the screen triumphantly.`;
+   `A recharged You faced the screen triumphantly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...`;
+   `But...`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; sound(`S3A483`); appendText; 
    You`"The-empty-fall-sky/ 
 A-single-cuckoo-calls-out- 
@@ -2496,24 +2496,24 @@ playSFX({ name: `SE04_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap!`;
+   `Tap!`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Access denied. Invalid name or password.'`;
+   `'Access denied. Invalid name or password.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But she still couldn't get into the C Level 
+   `But she still couldn't get into the C Level 
 information.`;
    waitForClick; clearText; 
 });
 goto(lbl_000010cd);
 let lbl_00000fb4;
-if (l_bb < 3) goto(lbl_00000bfe);
+if (l_counter < 3) goto(lbl_00000bfe);
 bgload({ name: `BG11A1`, transition: 20 });
 showTextbox();
 text(() => {
@@ -2552,27 +2552,27 @@ bgload({ name: `EV_YU04A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`You stared into the computer monitor.`;
+   `You stared into the computer monitor.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`....`;
+   `....`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Access denied. Invalid name or password.'`;
+   `'Access denied. Invalid name or password.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Things just didn't seem to want to go our way.`;
+   `Things just didn't seem to want to go our way.`;
    waitForClick; clearText; marker; sound(`S3A488`); appendText; 
    You`"Arrrggghhh! Damn!"`;
    waitForClick; clearText; marker; sound(`S3A489`); appendText; 
@@ -2587,7 +2587,7 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; sound(`S3A491`); appendText; 
    You`"Open sesame!"`;
    waitForClick; clearText; 
@@ -2596,14 +2596,14 @@ playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; sound(`S3A492`); appendText; 
    You`"Magic carpet...!"`;
    waitForClick; clearText; 
@@ -2612,14 +2612,14 @@ playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; marker; sound(`S3A493`); appendText; 
    You`"On Dasher and Dancer, and Prancer and 
 Vixen...come on!!"`;
@@ -2629,15 +2629,15 @@ playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Of course, none of these phrases got her 
+   `Of course, none of these phrases got her 
 access to the C Level information.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't see why she had to shout all of them 
+   `I didn't see why she had to shout all of them 
 out either.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was already at my wit's end and incapable of 
+   `I was already at my wit's end and incapable of 
 speech.`;
    waitForClick; clearText; 
 });
@@ -2646,7 +2646,7 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Just then - !`;
+   `Just then - !`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -2658,7 +2658,7 @@ text(() => {
    marker; sound(`S3A494`); appendText; 
    You`"Wh-what in the...?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The screen went black.`;
+   `The screen went black.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Wh-what just happened?"`;
    waitForClick; clearText; 
@@ -2673,14 +2673,14 @@ screen..."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Huh?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After a moment, the screen returned to normal.`;
+   `After a moment, the screen returned to normal.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`You pecked away at the keyboard and called up 
+   `You pecked away at the keyboard and called up 
 the authorization screen again.`;
    waitForClick; clearText; 
 });
@@ -2688,23 +2688,23 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap, tap, tap...`;
+   `Tap, tap, tap...`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Tap!`;
+   `Tap!`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Access denied. Currently this name cannot be 
+   `'Access denied. Currently this name cannot be 
 logged in.'`;
    waitForClick; clearText; marker; sound(`S3A496`); appendText; 
    You`"What?! What is this?!"`;
@@ -2714,16 +2714,16 @@ playSFX({ name: `SE04_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`She tried it again.`;
+   `She tried it again.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE03_04`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Beeeeeeeep!`;
+   `Beeeeeeeep!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The result was the same.`;
+   `The result was the same.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"What does this mean?"`;
    waitForClick; clearText; 
@@ -2753,10 +2753,10 @@ text(() => {
    You`"So we'll have to give up for the time being, 
 I guess."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You shrugged exaggeratedly.`;
+   `You shrugged exaggeratedly.`;
    waitForClick; clearText; 
 });
-if (l_e5 == 0) goto(lbl_00001232);
+if (l_chose_almost_completely_vertical == 0) goto(lbl_00001232);
 showTextbox();
 text(() => {
    marker; sound(`S3A500`); appendText; 
@@ -2790,13 +2790,13 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I wondered why You's mom would choose this 
+   `I wondered why You's mom would choose this 
 poem.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wondered what was hidden in the 17 syllables 
+   `I wondered what was hidden in the 17 syllables 
 of this poem.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was no answer or end to my questions.`;
+   `There was no answer or end to my questions.`;
    waitForClick; clearText; 
 });
 goto(lbl_0000125e);
@@ -2810,12 +2810,12 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And what was the password that should have 
+   `And what was the password that should have 
 been printed on that paper correctly?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A Japanese phrase of around 10 syllables.`;
+   `A Japanese phrase of around 10 syllables.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It bothered me to no end, and was totally 
+   `It bothered me to no end, and was totally 
 unsatisfying, but for the time being there was 
 no way to do anything more.`;
    waitForClick; clearText; 
@@ -2826,7 +2826,7 @@ delay({ interval: 120 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`A while after that, we heard from Takeshi that 
+   `A while after that, we heard from Takeshi that 
 repairs on the warehouse had been completed 
 with no problems.`;
    waitForClick; clearText; 

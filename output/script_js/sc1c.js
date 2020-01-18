@@ -4,14 +4,14 @@ l_dayB = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I waited for the rest of the explanation.`;
+   `I waited for the rest of the explanation.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But Sora didn't say anything more.`;
+   `But Sora didn't say anything more.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...I guess she was trying to say, 'Figure the 
+   `...I guess she was trying to say, 'Figure the 
 rest out yourself.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought...`;
+   `I thought...`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -19,24 +19,24 @@ showDimOverlay();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I figured that if it were the Leiblich 
+   `I figured that if it were the Leiblich 
 Pharmaceutical Japanese-German joint venture 
 that had control of LeMU...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There had to be a reason that a pharmaceutical 
+   `There had to be a reason that a pharmaceutical 
 company would build a theme park in a place 
 like this...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That reason and in-house power generation... 
+   `That reason and in-house power generation... 
 what could they have to do with each other...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Power generation—thermal seafloor vents — the 
+   `Power generation—thermal seafloor vents — the 
 first word that popped into my head was...`;
    waitForClick; 
 });
 choice(
-   `Hot springs`
-   `Microorganisms`
+   `Hot springs`,
+   `Microorganisms`,
 );
 switch (l_choice) {
    case 0: goto(lbl_00000072);
@@ -46,14 +46,14 @@ let lbl_00000072;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Hot springs.`;
+   `Hot springs.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Hot springs?`;
+   `Hot springs?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It seemed to me that a pharmaceutical company 
+   `It seemed to me that a pharmaceutical company 
 and hot springs...would be totally unrelated...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`No matter how much I thought about it, 
+   `No matter how much I thought about it, 
 I couldn't find a connection.`;
    waitForClick; clearText; 
 });
@@ -62,12 +62,12 @@ closeDimOverlay();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I decided to go ask Sora.`;
+   `I decided to go ask Sora.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Hey, does that have anything to do with what 
 we were just talking about?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora ignored my question and instead said...`;
+   `Sora ignored my question and instead said...`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
@@ -76,10 +76,10 @@ text(() => {
    marker; sound(`S1C190`); appendText; 
    Sora`"Do you mind if I get back to work?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It didn't look like the conversation would 
+   `It didn't look like the conversation would 
 lead anywhere.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So I gave up and went elsewhere.`;
+   `So I gave up and went elsewhere.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -96,26 +96,26 @@ l_coco_point += 1;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Microorganisms.`;
+   `Microorganisms.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That was it! Microorganisms!`;
+   `That was it! Microorganisms!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There were unique kinds of microorganisms 
+   `There were unique kinds of microorganisms 
 found around thermal seafloor vents that 
 weren't seen anywhere else.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That was why Leiblich Pharmaceuticals was 
+   `That was why Leiblich Pharmaceuticals was 
 researching microorganisms on the seafloor...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Himmel' - 'IBF' - 'High pressure oxygen 
+   `'Himmel' - 'IBF' - 'High pressure oxygen 
 treatment device'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`All these words that I had known flashed on to 
+   `All these words that I had known flashed on to 
 the screen of my mind.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As usual, I had no idea why I knew them.`;
+   `As usual, I had no idea why I knew them.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had no idea about the reasons or causes 
+   `I had no idea about the reasons or causes 
 behind them, but I was convinced that 
 they were facts.`;
    waitForClick; clearText; 
@@ -128,7 +128,7 @@ text(() => {
    Kid`"On the ocean floor...below LeMU...Leiblich 
 Pharmaceutical has a research lab, right?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I said this straight out to Sora.`;
+   `I said this straight out to Sora.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO06ADM`, x: 320, useAnim: true });
@@ -253,7 +253,7 @@ text(() => {
    marker; sound(`C1S295`); appendText; 
    Sora`"Do you promise?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I swore that I would. Then I left the Control 
+   `I swore that I would. Then I left the Control 
 Room.`;
    waitForClick; clearText; 
 });

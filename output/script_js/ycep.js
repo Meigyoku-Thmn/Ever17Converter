@@ -9,21 +9,21 @@ l_dayB = 0;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 `;
    appendText; delay(0); 
-   Narr`             `;
+   `             `;
    nextPage(00); 
-   Narr`——May 7, 2034 (Sun)`;
+   `——May 7, 2034 (Sun)`;
    nextPage(01); waitForClick; 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`               `;
+   `               `;
    nextPage(00); 
-   Narr`Time——11:17 a.m.`;
+   `Time——11:17 a.m.`;
    nextPage(01); waitForClick; nextPage(04); 
 });
 hideTextbox();
@@ -36,15 +36,15 @@ bgloadCrop({ name: `BG41A1`, transition: 26, x: 12, y: 12, hx: 775, hy: 581 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`            `;
+   `            `;
    nextPage(00); 
-   Narr`'——Takeshi Kuranari——'`;
+   `'——Takeshi Kuranari——'`;
    nextPage(01); waitForClick; 
 });
 setKomoreType(0);
@@ -64,72 +64,72 @@ setDialogBoxColor(GREEN);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I was in the center of a world of blue.`;
+   `I was in the center of a world of blue.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Headed back to the mainland...`;
+   `Headed back to the mainland...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was nobody on the boat besides us.`;
+   `There was nobody on the boat besides us.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Me, Hokuto, Tsugumi, Yubiseiharukana, Sora, 
+   `Me, Hokuto, Tsugumi, Yubiseiharukana, Sora, 
 Coco, Kaburaki, Chami, Pipi......`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Oh, and two girls called 
+   `Oh, and two girls called 
 Yubisei'aki'kana Tanaka and Sara Matsunaga.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Altogether nine people and two animals.`;
+   `Altogether nine people and two animals.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I slipped a short distance away from 
+   `I slipped a short distance away from 
 everyone, and leaned over the deck 
 railing to look out at the expanse of ocean 
 before me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The May sun sparkled on the ocean.`;
+   `The May sun sparkled on the ocean.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Above, high above, stretched a clear
+   `Above, high above, stretched a clear
 blue sky.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The fresh, new sky looked so glossy and vivid 
+   `The fresh, new sky looked so glossy and vivid 
 that it might spill down to earth at any 
 moment.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was all that was reflected in my eyes.`;
+   `It was all that was reflected in my eyes.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The straight line of the horizon stretched 
+   `The straight line of the horizon stretched 
 into the distance, dividing the sea from the 
 heavens.`;
    waitForClick; clearText; marker; sound(`EOP000`); appendText; 
    Takeshi`"So tranquil......"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I murmured to myself.`;
+   `I murmured to myself.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A solitary seagull traced a gentle arc in the 
+   `A solitary seagull traced a gentle arc in the 
 sky as the wind carried it away.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The wind, full of the smell of the ocean, 
+   `The wind, full of the smell of the ocean, 
 gently blew by me.`;
    waitForClick; clearText; marker; sound(`EOP001`); appendText; 
    Takeshi`"So peaceful..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It felt as if I were dreaming...`;
+   `It felt as if I were dreaming...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Everything that I saw in the scene before me 
+   `Everything that I saw in the scene before me 
 was exactly as it had been six days earlier.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Six days earlier......`;
+   `Six days earlier......`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For me, it had only been six days.`;
+   `For me, it had only been six days.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Not even a week had passed.`;
+   `Not even a week had passed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had got separated from my friends that day...`;
+   `I had got separated from my friends that day...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And ended up waiting by myself for an 
+   `And ended up waiting by myself for an 
 elevator...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...after surviving for six days, I had been 
+   `But...after surviving for six days, I had been 
 sucked 17 years into the future......`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And...`;
+   `And...`;
    waitForClick; clearText; 
 });
 multifgload2({ id1: 1, id2: 2, name1: `HO02ADL`, name2: `SA09ADL`, x1: 128, x2: 512, useAnim: true });
@@ -140,21 +140,21 @@ text(() => {
    waitForClick; clearText; marker; sound(`CEP001`); appendText; 
    Hokuto`"Daaaad! Dad!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I found out that I had a 16 year old daughter 
+   `I found out that I had a 16 year old daughter 
 and son...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`—It was a dream.`;
+   `—It was a dream.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Yeah, that's right, I must be dreaming!)`;
+   `(Yeah, that's right, I must be dreaming!)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(If I'm not dreaming, there's no way this 
+   `(If I'm not dreaming, there's no way this 
 could be happening!)`;
    waitForClick; clearText; marker; sound(`CEP002`); appendText; 
    Sara`"Hey! Daaaad! Listen!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The girl called Sara pulled up close to me.`;
+   `The girl called Sara pulled up close to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The girl was wearing a high-school uniform, 
+   `The girl was wearing a high-school uniform, 
 I'd never her seen before. She suddenly 
 pulled up close and pressed her cheek against 
 my arm.`;
@@ -175,12 +175,12 @@ I was a little, baby girl."`;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Sara stuck out a pendant with a mirror 
+   `Sara stuck out a pendant with a mirror 
 attached to it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`On the mirror side, there was nothing.`;
+   `On the mirror side, there was nothing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...`;
+   `But...`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -198,17 +198,17 @@ fgload({ id: 2, name: `SA02ADL`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Saying this I stroked her hair.`;
+   `Saying this I stroked her hair.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Since I had come this far, I decided there 
+   `Since I had come this far, I decided there 
 was no reason to hold back. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`Besides, all of this was a dream...`;
+   `Besides, all of this was a dream...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And if I had a daughter this cute, what did 
+   `And if I had a daughter this cute, what did 
 it matter anyway?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was no reason to resist the whole 
+   `There was no reason to resist the whole 
 situation.... And as I was thinking that...`;
    waitForClick; clearText; 
 });
@@ -280,15 +280,15 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`            `;
+   `            `;
    nextPage(00); 
-   Narr`'——Tsugumi Komachi——'`;
+   `'——Tsugumi Komachi——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -306,62 +306,62 @@ text(() => {
    marker; sound(`CEP023`); appendText; 
    Takeshi`"I don't answer meaningless questions."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I could hear his words coming from a 
+   `I could hear his words coming from a 
 distance, the same words I used to say 17 
 years ago.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In order to protect myself from the strong, 
+   `In order to protect myself from the strong, 
 May sunshine, I had stayed inside the boat.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I could see the three of them through the 
+   `I could see the three of them through the 
 window.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Takeshi was on the deck over by the railing, 
+   `Takeshi was on the deck over by the railing, 
 talking to the two kids.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'I don't answer meaningless questions.'`;
+   `'I don't answer meaningless questions.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Yes...`;
+   `Yes...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That's why I always kept quiet whenever he 
+   `That's why I always kept quiet whenever he 
 had asked me something.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was so much I wanted to talk about.`;
+   `There was so much I wanted to talk about.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wanted to tell him about every single day 
+   `I wanted to tell him about every single day 
 that had passed these long 17 years.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But for the moment...`;
+   `But for the moment...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For the moment, watching him innocently 
+   `For the moment, watching him innocently 
 playing with the children...was... enough for 
 me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Everything that had happened up until that 
+   `Everything that had happened up until that 
 point was meaningless.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He was there...right in front of me...and the 
+   `He was there...right in front of me...and the 
 two children were there...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was nothing more I could have hoped for`;
+   `There was nothing more I could have hoped for`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had found happiness - I was immersed in it, 
+   `I had found happiness - I was immersed in it, 
 drowning in it, intoxicated by it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That was truly how I felt.`;
+   `That was truly how I felt.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It seemed to me that all of the days filled 
+   `It seemed to me that all of the days filled 
 with struggle and sadness, had been for that 
 day, that moment...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Hokuto and Sara were on both sides of him, 
+   `Hokuto and Sara were on both sides of him, 
 and even when he tried to throw them off, 
 they clung to him.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I absently petted Chami, who was riding on my 
+   `I absently petted Chami, who was riding on my 
 shoulder, as I watched the scene before me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Him—Takeshi Kuranari`;
+   `Him—Takeshi Kuranari`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -393,16 +393,16 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And after saying that, he jumped from our 
+   `And after saying that, he jumped from our 
 'taxi,' that stupid man.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Stupid, man...`;
+   `Stupid, man...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...he had kept his promise.`;
+   `But...he had kept his promise.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So there was something I had to tell him.`;
+   `So there was something I had to tell him.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Going outside...wrapped in my '100 percent UV 
+   `Going outside...wrapped in my '100 percent UV 
 protective clothing,' I...`;
    waitForClick; clearText; 
 });
@@ -417,13 +417,13 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I walked over to where he was.`;
+   `I walked over to where he was.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For some reason my legs were shaking and my 
+   `For some reason my legs were shaking and my 
 heart was beating so hard it felt like it 
 would burst.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Being careful that he wouldn't notice the deep 
+   `Being careful that he wouldn't notice the deep 
 breaths I was taking, I went and stood in 
 front of him.`;
    waitForClick; clearText; 
@@ -442,11 +442,11 @@ fgload({ id: 2, name: `TA02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Suddenly, he pulled me close.`;
+   `Suddenly, he pulled me close.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Into his strong arms, and solid chest...`;
+   `Into his strong arms, and solid chest...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My body was wrapped in a heat, which 
+   `My body was wrapped in a heat, which 
 threatened to melt me, and for one moment my 
 heart had stopped beating.`;
    waitForClick; clearText; marker; sound(`CEP026`); appendText; 
@@ -454,7 +454,7 @@ heart had stopped beating.`;
    waitForClick; clearText; marker; sound(`CEP027`); appendText; 
    Takeshi`"Sorry...for taking so long..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He whispered...`;
+   `He whispered...`;
    waitForClick; clearText; marker; sound(`CEP028`); appendText; 
    Takeshi`"You know..."`;
    waitForClick; clearText; marker; sound(`CEP029`); appendText; 
@@ -493,14 +493,14 @@ fgload({ id: 2, name: `TA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I forcefully pried myself away from Takeshi's 
+   `I forcefully pried myself away from Takeshi's 
 chest.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`His eyes were leveled at my shoulder.`;
+   `His eyes were leveled at my shoulder.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I looked over to see what he was staring at.`;
+   `I looked over to see what he was staring at.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Chami was busy grooming himself with jerky 
+   `Chami was busy grooming himself with jerky 
 movements using both of his front paws...`;
    waitForClick; clearText; marker; sound(`CEP038`); appendText; 
    Tsugumi`"I can't believe it..."`;
@@ -515,15 +515,15 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`             `;
+   `             `;
    nextPage(00); 
-   Narr`'——Sara Matsunaga——'`;
+   `'——Sara Matsunaga——'`;
    nextPage(01); waitForClick; 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
@@ -543,31 +543,31 @@ text(() => {
    marker; sound(`CEP039`); appendText; 
    Tsugumi`"You are such a jerk, Takeshi!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Mama let out a yell, and turning 
+   `Mama let out a yell, and turning 
 around...went, back inside the boat, tail 
 wagging.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She moved unexpectedly, and Chami, who had 
+   `She moved unexpectedly, and Chami, who had 
 been riding on her shoulder, lost his balance 
 and fell to the deck.`;
    waitForClick; clearText; marker; sound(`CEP040`); appendText; 
    Takeshi`"Hey, Tsugumi, what's wrong?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Dad went chasing after mom.`;
+   `Dad went chasing after mom.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`—BAM—Wham!! Bang! Crash! Craaaaaash!`;
+   `—BAM—Wham!! Bang! Crash! Craaaaaash!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A series of frightful sounds ensued.`;
+   `A series of frightful sounds ensued.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I looked over on the other side of the 
+   `I looked over on the other side of the 
 window, and could see mama wildly 
 brandishing the head of the costume 
 she'd been wearing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She'd had on one of the lemur (fox-monkey) 
+   `She'd had on one of the lemur (fox-monkey) 
 costumes, in order to stay out of the sun.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I could see father's back as he was 
+   `I could see father's back as he was 
 desperately trying to calm mother down...`;
    waitForClick; clearText; 
 });
@@ -575,31 +575,31 @@ fgload({ id: 1, name: `HO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Hokuto and I looked at each other and started 
+   `Hokuto and I looked at each other and started 
 laughing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And Chami...?`;
+   `And Chami...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He was calmly acting as if nothing had 
+   `He was calmly acting as if nothing had 
 happened, and just continued cleaning himself.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I leaned down to put Chami in my palm and 
+   `I leaned down to put Chami in my palm and 
 stood back up.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Mom had already told me about this little 
+   `Mom had already told me about this little 
 hamster's ordeal.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When I thought about how Chami had lived 
+   `When I thought about how Chami had lived 
 through the same circumstances we had, it 
 made my heart warm.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I could feel the beating of his tiny heart in 
+   `I could feel the beating of his tiny heart in 
 my palm.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`*thump* *thump* His heartbeat was tiny, but 
+   `*thump* *thump* His heartbeat was tiny, but 
 consistent...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It goes without saying, but I thought to 
+   `It goes without saying, but I thought to 
 myself—'Chami is living each moment to the 
 fullest.'`;
    waitForClick; clearText; marker; sound(`CEP041`); appendText; 
@@ -626,9 +626,9 @@ do you...?"`;
    //You'haru'
    You_haru_`"We'll be alright, Sara....Don't worry, okay?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Someone was talking to us.`;
+   `Someone was talking to us.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Looking around, I saw...`;
+   `Looking around, I saw...`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
@@ -640,14 +640,14 @@ text(() => {
    waitForClick; clearText; marker; sound(`CEP047`); appendText; 
    Sara`"Ms. Tanaka—Yubiseiharukana, right?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Ms. Tanaka nodded slightly.`;
+   `Ms. Tanaka nodded slightly.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `HO17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Hokuto asked Ms. Tanaka -`;
+   `Hokuto asked Ms. Tanaka -`;
    waitForClick; clearText; marker; sound(`CEP048`); appendText; 
    Hokuto`"What do you mean we'll be alright?"`;
    waitForClick; clearText; 
@@ -659,13 +659,13 @@ text(() => {
    //You'haru'
    You_haru_`"What I mean is..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And saying that, she took out the newspaper 
+   `And saying that, she took out the newspaper 
 that had been tucked into her pocket, and 
 handed it to my brother.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He opened it up.`;
+   `He opened it up.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I nestled up against his shoulder and looked 
+   `I nestled up against his shoulder and looked 
 at the front page headline.`;
    waitForClick; clearText; 
 });
@@ -676,13 +676,13 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`'Leiblich Pharmaceutical, responsible for 
+   `'Leiblich Pharmaceutical, responsible for 
 outbreak of Tief Blau virus!?'`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`'Compulsory investigation to begin in a day or 
+   `'Compulsory investigation to begin in a day or 
 two.'`;
    waitForClick; nextPage(04); 
 });
@@ -690,19 +690,19 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`It was learned that the Tief Blau virus (TB), 
+   `It was learned that the Tief Blau virus (TB), 
 which has ravaged the world since 2017,`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`was manufactured by the Frankfurt-based 
+   `was manufactured by the Frankfurt-based 
 pharmaceutical giant Leiblich Pharmaceutical`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`when a whistleblower from the Japanese-German 
+   `when a whistleblower from the Japanese-German 
 joint-managed research facility came forward 
 earlier this week.`;
    waitForClick; nextPage(04); 
@@ -711,14 +711,14 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Spurred by these allegations, the Metropolitan 
+   `Spurred by these allegations, the Metropolitan 
 Police Department is expected to open a 
 criminal investigation`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`that will focus on Leiblich's branch offices 
+   `that will focus on Leiblich's branch offices 
 as well as related research facilities.`;
    waitForClick; nextPage(04); 
 });
@@ -726,15 +726,15 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Leiblich Pharmaceutical has for some time been 
+   `Leiblich Pharmaceutical has for some time been 
 conducting research and development of TB for 
 the purpose of manufacturing a biological 
 weapon.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`An outbreak of the virus is rumored to have 
+   `An outbreak of the virus is rumored to have 
 occurred in their research facility around 
 May 1, 2017.`;
    waitForClick; nextPage(04); 
@@ -743,22 +743,22 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Leiblich not only sought to cover up the 
+   `Leiblich not only sought to cover up the 
 accident, but also continued research into TB 
 without the authorization of the Ministry of 
 Health under conditions of extreme secrecy, 
 according to the whistleblower.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`The location of the company's research 
+   `The location of the company's research 
 institute has not yet been confirmed.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Numerous other doubts involving Leiblich, 
+   `Numerous other doubts involving Leiblich, 
 including charges that it wrongfully detained 
 citizens for the purpose of human 
 experiments, have been raised and are to be 
@@ -769,7 +769,7 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`In order to fully uncover the facts behind 
+   `In order to fully uncover the facts behind 
 these allegations and reported incident, the 
 Metropolitan Police Department is requesting 
 cooperation from authorities in Germany, where 
@@ -791,7 +791,7 @@ political clout at the national level.. so
 laying the groundwork for this was really 
 tough, but..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Ms. Tanaka took out an old marker, and 
+   `Ms. Tanaka took out an old marker, and 
 scratched it against her cheek.`;
    waitForClick; clearText; marker; sound(`CEP051`); appendText; 
    Hokuto`"So...the whistleblower mentioned in this 
@@ -844,9 +844,9 @@ text(() => {
    //You'haru'
    You_haru_`"So, there's nothing to worry about, okay?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Ms. Tanaka smiled kindly.`;
+   `Ms. Tanaka smiled kindly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just then...`;
+   `Just then...`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
@@ -906,15 +906,15 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`         `;
+   `         `;
    nextPage(00); 
-   Narr`'——Yubiseiharukana Tanaka——'`;
+   `'——Yubiseiharukana Tanaka——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -937,7 +937,7 @@ text(() => {
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And saying that, my daughter tugged firmly on 
+   `And saying that, my daughter tugged firmly on 
 my arm and led me over to a corner of the deck.`;
    waitForClick; clearText; 
 });
@@ -985,11 +985,11 @@ text(() => {
    //You'haru'
    You_haru_`"Well..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It had to be done to save Takeshi, and Coco.`;
+   `It had to be done to save Takeshi, and Coco.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`We didn't dare to change history.`;
+   `We didn't dare to change history.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Because I had made a promise to Blick Winkel 
+   `Because I had made a promise to Blick Winkel 
 in 2017...`;
    waitForClick; clearText; marker; sound(`CEP077`); appendText; 
    //You'aki'
@@ -1015,9 +1015,9 @@ text(() => {
    //You'aki'
    You_aki_`"You've lied to me these 18 years!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Yes, I have...)`;
+   `(Yes, I have...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(And there is nothing I can say to 
+   `(And there is nothing I can say to 
 apologize...)`;
    waitForClick; clearText; 
 });
@@ -1052,12 +1052,12 @@ closeKomoreAnim();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I didn't hesitate.`;
+   `I didn't hesitate.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I told her about her father, Yoichi, and 
+   `I told her about her father, Yoichi, and 
 mother, Yukie...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I told her the truth - all of it.`;
+   `I told her the truth - all of it.`;
    waitForClick; clearText; 
 });
 showFilter2();
@@ -1069,114 +1069,114 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`——May 6, 2017`;
+   `——May 6, 2017`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Because Coco was sick, we had all headed to 
+   `Because Coco was sick, we had all headed to 
 the IBF research lab.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`While Takeshi, the young Kaburaki and Tsugumi 
+   `While Takeshi, the young Kaburaki and Tsugumi 
 were searching around the research facility, 
 I stayed behind in the examination room.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco and the researcher were lying in the 
+   `Coco and the researcher were lying in the 
 capsule pods.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The researcher, who was fighting to stay 
+   `The researcher, who was fighting to stay 
 conscious as the virus consumed his body, 
 told me this - `;
    waitForClick; clearText; marker; sound(`CEP086`); appendText; 
    Researcher`"...You...I never dreamed...that we would meet 
 again...in a place like this..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That's right, he was my father - Y.T. - Yoichi 
+   `That's right, he was my father - Y.T. - Yoichi 
 Tanaka.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As he was lying there in agony, he explained 
+   `As he was lying there in agony, he explained 
 to me what had happened.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`.................`;
+   `.................`;
    waitForClick; clearText; marker; appendText; 
-   Narr`2000 A.D.`;
+   `2000 A.D.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My father was a researcher on the LeMMIH 
+   `My father was a researcher on the LeMMIH 
 development project. One day, by accident, he 
 discovered that Leiblich was developing the 
 TB Virus.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`TB is a potent virus, which has an 
+   `TB is a potent virus, which has an 
 exceedingly high mortality rate, and Leiblich 
 was planning to sell it to military buyers 
 around the world.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Father, whose sense of justice was stronger 
+   `Father, whose sense of justice was stronger 
 than anyone I have ever known, appealed to 
 the company to stop development of the 
 virus immediately.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But of course they refused...That being the 
+   `But of course they refused...That being the 
 case, my father made up his mind...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He hacked into the highly protected company 
+   `He hacked into the highly protected company 
 database, collected evidence, and prepared to 
 leak the information to the press.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`However...`;
+   `However...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Leiblich found out before he could make his 
+   `Leiblich found out before he could make his 
 move and put him in a situation he could not 
 escape.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`They threatened my father, telling him: 
+   `They threatened my father, telling him: 
 'Should you escape from here, your wife and 
 child will probably die...in an 'unfortunate' 
 car accident.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And to my mother, Yukie, Leiblich said...`;
+   `And to my mother, Yukie, Leiblich said...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Your husband is missing, after a highly 
+   `'Your husband is missing, after a highly 
 tragic accident.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When making his rounds on the LeMU premises he 
+   `When making his rounds on the LeMU premises he 
 slipped and fell into the ocean.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`We are doing everything we can to search the 
+   `We are doing everything we can to search the 
 surrounding waters, but his remains still 
 have not been located.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My mother believed them.`;
+   `My mother believed them.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was the summer of my first year.`;
+   `It was the summer of my first year.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`.......................................`;
+   `.......................................`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Time passed and it was the year 2017.`;
+   `Time passed and it was the year 2017.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My father, who had been maintaining the 
+   `My father, who had been maintaining the 
 computer system for IBF, was caught up in the 
 TB outbreak.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As all of the researchers fled, one-by-one, my 
+   `As all of the researchers fled, one-by-one, my 
 father stayed in IBF...because he was worried 
 about me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My father knew I was working at LeMU.`;
+   `My father knew I was working at LeMU.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And my father...`;
+   `And my father...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Right in front of my eyes...`;
+   `Right in front of my eyes...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After enduring one disaster after another and 
+   `After enduring one disaster after another and 
 gasping in pain...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`While clawing at his throat...`;
+   `While clawing at his throat...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He struggled until the end to say...`;
+   `He struggled until the end to say...`;
    waitForClick; clearText; marker; sound(`C6A086`); appendText; 
    Researcher`"...My daughter..."`;
    waitForClick; clearText; marker; sound(`C6A087`); appendText; 
    Researcher`"Daughter...take care...of her..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`His last words...`;
+   `His last words...`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -1215,7 +1215,7 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And the press only reported that it was 'A 
+   `And the press only reported that it was 'A 
 deadly virus of unknown origin.'`;
    waitForClick; nextPage(04); 
 });
@@ -1223,21 +1223,21 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Even the experts had no idea where the 
+   `Even the experts had no idea where the 
 disease really came from.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`However, the incubation period was very 
+   `However, the incubation period was very 
 short, so even though the death rate was 
 high, in many cases the carrier died before 
 infecting others.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`So while the TB virus spread rapidly for a 
+   `So while the TB virus spread rapidly for a 
 time, by 2019, two years after the accident, 
 the pace and scale of the disease's 
 destruction gradually waned.`;
@@ -1247,43 +1247,43 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`But that doesn't mean there weren't victims.`;
+   `But that doesn't mean there weren't victims.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`The number of people that the virus killed 
+   `The number of people that the virus killed 
 is said to have reached several tens of 
 thousands.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`And...`;
+   `And...`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`One of them was my mother, Yukie.`;
+   `One of them was my mother, Yukie.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`It was 15 years ago, that my mother caught 
+   `It was 15 years ago, that my mother caught 
 TB and it robbed her of her life.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`My sadness, anger and hatred, all came 
+   `My sadness, anger and hatred, all came 
 together then.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`I swore that I would get revenge on 
+   `I swore that I would get revenge on 
 Leiblich...`;
    waitForClick; nextPage(04); 
 });
@@ -1291,27 +1291,27 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I infiltrated LeMU, and at the same time 
+   `I infiltrated LeMU, and at the same time 
 started formulating a plan to rescue Takeshi 
 and Coco, who were trapped in the research 
 facility.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`And the person who helped me to do that was 
+   `And the person who helped me to do that was 
 Ryogo Kaburaki.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`We have spent every moment for the last 17 
+   `We have spent every moment for the last 17 
 years preparing for this.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Yes...it was the only thing that I've lived 
+   `Yes...it was the only thing that I've lived 
 for up until now.`;
    waitForClick; nextPage(04); 
 });
@@ -1319,46 +1319,46 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`To make Leiblich pay for taking my mother and 
+   `To make Leiblich pay for taking my mother and 
 father from me and to save 
 my friends Takeshi and Coco.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`And in order to do that, we needed to 
+   `And in order to do that, we needed to 
 discover the third eye - Blick Winkel.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Without his help, there was nothing we could 
+   `Without his help, there was nothing we could 
 do...`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`There was no other way that we, who were 
+   `There was no other way that we, who were 
 living in this dimension, could go back in 
 time...`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`.................................`;
+   `.................................`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`That was how the whole plan had been set in 
+   `That was how the whole plan had been set in 
 motion.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`All toward May 1, 2034.`;
+   `All toward May 1, 2034.`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
@@ -1371,10 +1371,10 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After finishing my explanation, I let out a 
+   `After finishing my explanation, I let out a 
 big sigh.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Biting on the nail of her thumb, my daughter 
+   `Biting on the nail of her thumb, my daughter 
 looked up at the sky`;
    waitForClick; clearText; marker; sound(`CEP089`); appendText; 
    //You'haru'
@@ -1386,7 +1386,7 @@ fgload({ id: 1, name: `YU05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`She looked at me.`;
+   `She looked at me.`;
    waitForClick; clearText; marker; sound(`CEP090`); appendText; 
    //You'haru'
    You_haru_`"But, then again...who would...?"`;
@@ -1395,31 +1395,31 @@ text(() => {
    You_haru_`"But...it doesn't change the fact that it's 
 the truth..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I reached out to stroke her hair.`;
+   `I reached out to stroke her hair.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She stared at me blankly...`;
+   `She stared at me blankly...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Looking just like I did 17 years ago...`;
+   `Looking just like I did 17 years ago...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Reckless, full of fire, pure - to the point of 
+   `Reckless, full of fire, pure - to the point of 
 being dangerous - and unable to control her 
 emotions.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her innocent eyes...had seen none of the evil 
+   `Her innocent eyes...had seen none of the evil 
 and corruption in this world.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Looking into her eyes, I could read 
+   `Looking into her eyes, I could read 
 everything she was thinking.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She wasn't mad. She wasn't unhappy.`;
+   `She wasn't mad. She wasn't unhappy.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just afraid to accept the truth...she didn't 
+   `Just afraid to accept the truth...she didn't 
 know how to handle it...and was scared and 
 embarrassed by that fact.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So I reached out and held her closely.`;
+   `So I reached out and held her closely.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'There's no need for you to say anything' - I 
+   `'There's no need for you to say anything' - I 
 thought this quietly to myself.`;
    waitForClick; clearText; 
 });
@@ -1434,7 +1434,7 @@ text(() => {
    You_aki_`"I...understand what you're trying to tell 
 me..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She whispered this quietly in my ear.`;
+   `She whispered this quietly in my ear.`;
    waitForClick; clearText; marker; sound(`CEP094`); appendText; 
    //You'aki'
    You_aki_`"But...there's something I have to know."`;
@@ -1448,7 +1448,7 @@ me..."`;
    //You'haru'
    You_haru_`"Ha, ha."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I laughed without thinking and replied... `;
+   `I laughed without thinking and replied... `;
    waitForClick; clearText; marker; sound(`CEP098`); appendText; 
    //You'haru'
    You_haru_`"You are everything to me."`;
@@ -1463,15 +1463,15 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`         `;
+   `         `;
    nextPage(00); 
-   Narr`'——Yubiseiakikana Tanaka——'`;
+   `'——Yubiseiakikana Tanaka——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1490,108 +1490,108 @@ text(() => {
    //You'haru'
    You_haru_`"You are everything to me."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Mom said these words to me.`;
+   `Mom said these words to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had wanted her to tell me, 'you are my 
+   `I had wanted her to tell me, 'you are my 
 daughter,' but...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But, for some reason I didn't bother me.`;
+   `But, for some reason I didn't bother me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Another voice inside my head murmured.`;
+   `Another voice inside my head murmured.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Shouldn't you be furious?' and 'You should 
+   `'Shouldn't you be furious?' and 'You should 
 slap her across the face'..`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But for some reason I couldn't get angry.`;
+   `But for some reason I couldn't get angry.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I relaxed against my mother, who held me 
+   `I relaxed against my mother, who held me 
 tightly, and I could only feel dizzy from her 
 warmth...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`All of my normal reactions, such as lashing 
+   `All of my normal reactions, such as lashing 
 out like a wild animal and my sudden mood 
 swings...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The warmth of her hug, took all of that away...`;
+   `The warmth of her hug, took all of that away...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"Mom..."`;
+   `"Mom..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When it came down to it, I still thought of 
+   `When it came down to it, I still thought of 
 her as my mother.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was an instinctive 'itch,' that 
+   `There was an instinctive 'itch,' that 
 transcended my basic reason....It was beyond 
 my ability to control...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the end, no matter what anyone said, the 
+   `In the end, no matter what anyone said, the 
 woman in front of me was my mother.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She wasn't much of a mother, but to me she 
+   `She wasn't much of a mother, but to me she 
 was the only mother I had.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And that's all there was too it.`;
+   `And that's all there was too it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At that moment it occurred to me? I only 
+   `At that moment it occurred to me? I only 
 differed from other people in the way that I 
 was born.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`..............`;
+   `..............`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had been told since I was a little girl 
+   `I had been told since I was a little girl 
 that there are lots of things in this world 
 that are hard to believe.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In junior high and high school, all of my 
+   `In junior high and high school, all of my 
 friends loved to talk about all kinds of 
 strange things.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Psychic phenomena, supernatural powers, UFOs, 
+   `Psychic phenomena, supernatural powers, UFOs, 
 UMAs, super-ancient civilizations, urban 
 myths, curses, fortune-telling, miracles, 
 mysteries....`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought I had dismissed all of these things 
+   `I thought I had dismissed all of these things 
 as girlish fantasy...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But something...had now changed slightly.`;
+   `But something...had now changed slightly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I mean, my existence itself was something 
+   `I mean, my existence itself was something 
 hard to explain...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If I thought about the fact that I myself 
+   `If I thought about the fact that I myself 
 'this girl called You,' was somewhat of a 
 mystic entity...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Then ectoplasm, cattle mutilations, Rip Van 
+   `Then ectoplasm, cattle mutilations, Rip Van 
 Winkle, The Lemurian Civilization...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`All of these seemed like normal, everyday 
+   `All of these seemed like normal, everyday 
 things.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Even the 'Third Eye'...`;
+   `Even the 'Third Eye'...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`................`;
+   `................`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And while those thoughts drifted through my 
+   `And while those thoughts drifted through my 
 head, my mother quietly went inside of the 
 boat.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Left by myself in the corner of the deck, I 
+   `Left by myself in the corner of the deck, I 
 basked in the lingering warmth that remained 
 on my skin.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The boat slowly rocked back and forth as it 
+   `The boat slowly rocked back and forth as it 
 cut through the waves.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The smell of the ocean quietly wafted by 
+   `The smell of the ocean quietly wafted by 
 carried by the sea breeze.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Soon....`;
+   `Soon....`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `HO02ADM`, x: 320, useAnim: true });
@@ -1601,7 +1601,7 @@ text(() => {
    Hokuto`"Oh, hey, You...you been here all along? I've 
 been looking for you."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The Kid, Hokuto came walking over to me.`;
+   `The Kid, Hokuto came walking over to me.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `HO01ADM`, x: 320, useAnim: true });
@@ -1614,7 +1614,7 @@ to ask you..."`;
    //You'aki'
    You_aki_`"Ask me?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Hokuto nodded deeply and said.`;
+   `Hokuto nodded deeply and said.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `HO02ADM`, x: 320, useAnim: true });
@@ -1634,15 +1634,15 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`                 `;
+   `                 `;
    nextPage(00); 
-   Narr`'——Hokuto——'`;
+   `'——Hokuto——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1661,7 +1661,7 @@ text(() => {
    Hokuto`"I've been thinking I want to study 
 archaeology when I go to college..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I told to You what had been on my mind.`;
+   `I told to You what had been on my mind.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
@@ -1674,12 +1674,12 @@ text(() => {
    Hokuto`"Well, because I want to study more about the 
 third eye."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You was silent.`;
+   `You was silent.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Huh!? What are you stupid!? There's no such 
+   `'Huh!? What are you stupid!? There's no such 
 thing as the third eye!'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought for sure that she would come back 
+   `I thought for sure that she would come back 
 with something like that, so I was caught off 
 guard by her reply.`;
    waitForClick; clearText; marker; sound(`CEP105`); appendText; 
@@ -1802,14 +1802,14 @@ fgload({ id: 1, name: `YU06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I told her point-blank how I felt.`;
+   `I told her point-blank how I felt.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And it seemed like my reply caught her 
+   `And it seemed like my reply caught her 
 off-guard.`;
    waitForClick; clearText; marker; sound(`CEP132`); appendText; 
    Hokuto`"Part of me feels like choosing to study 
@@ -1889,15 +1889,15 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`             `;
+   `             `;
    nextPage(00); 
-   Narr`'——Ryogo Kaburaki——'`;
+   `'——Ryogo Kaburaki——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1913,152 +1913,152 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`"Because, I'm crazy about you."`;
+   `"Because, I'm crazy about you."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was 2017... I was still 15.`;
+   `It was 2017... I was still 15.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was stuck in LeMU, in a total state of 
+   `I was stuck in LeMU, in a total state of 
 confusion, with no memory, and had even 
 forgotten my name, Ryogo Kaburaki.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was 15 years old —all I wanted at that 
+   `I was 15 years old —all I wanted at that 
 time was stability.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Young as I was, I was overcome with amnesia, 
+   `Young as I was, I was overcome with amnesia, 
 and even doubts as to whether my existence 
 would fade away.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the midst of my chaos, it was her innocent 
+   `In the midst of my chaos, it was her innocent 
 smile that helped thaw my frozen heart.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I fell for her right away.`;
+   `I fell for her right away.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`All I had to do was see her smile, that's all 
+   `All I had to do was see her smile, that's all 
 it took, and my fear disappeared, blown away 
 like leaves falling off a tree in autumn.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Although I was still uncertain about who I 
+   `Although I was still uncertain about who I 
 was, her uniqueness helped me turn my eyes 
 away from the turmoil inside of me to the 
 world around me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Perhaps it was because of my uncertainty.`;
+   `Perhaps it was because of my uncertainty.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I suppose that I might have been grasping for 
+   `I suppose that I might have been grasping for 
 my identity through the love that I felt for 
 her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was an empty shell at that time.`;
+   `I was an empty shell at that time.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Flowing into that void was her simple, pure 
+   `Flowing into that void was her simple, pure 
 smile, innocence and her total lack of 
 artifice.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`From that point on - for six days - she was in my 
+   `From that point on - for six days - she was in my 
 thoughts constantly. I found myself looking 
 at her all the time.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't have the courage to tell her. But it 
+   `I didn't have the courage to tell her. But it 
 was enough for me just to see her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That's how fond I was of her.`;
+   `That's how fond I was of her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I loved her.`;
+   `I loved her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco Yagami...`;
+   `Coco Yagami...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`..................................`;
+   `..................................`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And then May 6th, the fateful day arrived.`;
+   `And then May 6th, the fateful day arrived.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had come down with TB, and when the rescue 
+   `I had come down with TB, and when the rescue 
 team found me, I had lost consciousness.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`By the time I found out that Coco had been 
+   `By the time I found out that Coco had been 
 left behind in the research facility, a few 
 days had already passed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When You (Yubiseiharukana) told me what had 
+   `When You (Yubiseiharukana) told me what had 
 happened, I was shocked.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And at the same time I thought 'I've got to 
+   `And at the same time I thought 'I've got to 
 go save her!' I didn't even wait for You to 
 finish the rest of her story, I just ran 
 outside.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You caught up with me, and started telling me 
+   `You caught up with me, and started telling me 
 about things about the third eye, the fourth 
 dimension, the past and future, but none of 
 it made sense.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"17 years from now, you have to go back to 
+   `"17 years from now, you have to go back to 
 LeMU. You'll return as Takeshi Kuranari."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"Unless we can trick Blick Winkel, wake him 
+   `"Unless we can trick Blick Winkel, wake him 
 up and bring him to our world, we'll never 
 save Coco and Takeshi."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'So please...help me?' —that was what You 
+   `'So please...help me?' —that was what You 
 asked of me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It took a few more months for me to become 
+   `It took a few more months for me to become 
 fully convinced.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`............`;
+   `............`;
    waitForClick; clearText; marker; appendText; 
-   Narr`All I wanted to do was save Coco.`;
+   `All I wanted to do was save Coco.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If she'd be alright, I didn't mind the danger.`;
+   `If she'd be alright, I didn't mind the danger.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Even if I was despised, blamed, criticized, 
+   `Even if I was despised, blamed, criticized, 
 even ridiculed, none of that mattered to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I...just wanted...to see...Coco's smile 
+   `I...just wanted...to see...Coco's smile 
 again...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Still, there was Takeshi to consider as well.`;
+   `Still, there was Takeshi to consider as well.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I respected him greatly.`;
+   `I respected him greatly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'He was brave enough to sacrifice his life to 
+   `'He was brave enough to sacrifice his life to 
 save the woman that he loved.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For a 15-year-old like me, Takeshi was a role 
+   `For a 15-year-old like me, Takeshi was a role 
 model.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I swore that I would save Coco and Takeshi, 
+   `I swore that I would save Coco and Takeshi, 
 no matter what it took.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`..................................`;
+   `..................................`;
    waitForClick; clearText; marker; appendText; 
-   Narr`17 years later—`;
+   `17 years later—`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For 17 years, You and I had spent every 
+   `For 17 years, You and I had spent every 
 minute, every second putting our plan in 
 motion.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Yes...I had lived for this day.`;
+   `Yes...I had lived for this day.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just six days....Coco and I had only spent 
+   `Just six days....Coco and I had only spent 
 six days together. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`But in those 17 years, not a moment went by 
+   `But in those 17 years, not a moment went by 
 that I didn't think about her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"Because I love her—"`;
+   `"Because I love her—"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That was the only reason I had been able to 
+   `That was the only reason I had been able to 
 fool everyone.`;
    waitForClick; clearText; marker; sound(`CEP150`); appendText; 
    Coco`"Heeey, Kiddo, Kiddo, Kiddo."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My heart leaped.`;
+   `My heart leaped.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She was calling to me...`;
+   `She was calling to me...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I couldn't turn around.`;
+   `I couldn't turn around.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I stood there frozen, even forgetting to 
+   `I stood there frozen, even forgetting to 
 breathe.`;
    waitForClick; clearText; 
 });
@@ -2069,7 +2069,7 @@ text(() => {
    Coco`"Hey! What are you doing here all by 
 yourself!?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco rapped me on the head, and peeked around 
+   `Coco rapped me on the head, and peeked around 
 at my face.`;
    waitForClick; clearText; 
 });
@@ -2143,9 +2143,9 @@ kiddo."`;
    waitForClick; clearText; marker; sound(`CEP166`); appendText; 
    Coco`"And after that we're going to celebrate."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco was laughing.`;
+   `Coco was laughing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The smile that I had waited 17 years to see 
+   `The smile that I had waited 17 years to see 
 was shining right in front of me.`;
    waitForClick; clearText; 
 });
@@ -2158,13 +2158,13 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`            '——Sora Akanegasaki——'`;
+   `            '——Sora Akanegasaki——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -2180,16 +2180,16 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The smile that I had waited 17 years to see 
+   `The smile that I had waited 17 years to see 
 was shining right in front of me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It made me dizzy to look at it.`;
+   `It made me dizzy to look at it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`An electronic rhythm pulsed through my 
+   `An electronic rhythm pulsed through my 
 body - the excessive voltage throwing my logic 
 circuits out of order.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was a pain that I had experienced before.`;
+   `It was a pain that I had experienced before.`;
    waitForClick; clearText; marker; sound(`CEP167`); appendText; 
    Takeshi`"Hey, Sora?"`;
    waitForClick; clearText; marker; appendText; 
@@ -2219,7 +2219,7 @@ text(() => {
    Takeshi`"He stopped moving all of a sudden. I just 
 thought maybe you could take a look at him."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Takeshi lifted up Pipi, and stuck him out in 
+   `Takeshi lifted up Pipi, and stuck him out in 
 front of me.`;
    waitForClick; clearText; marker; sound(`CEP173`); appendText; 
    Sora`"All of a sudden you say? Any reason you can 
@@ -2248,7 +2248,7 @@ what could've caused it?"`;
    waitForClick; clearText; marker; sound(`CEP180`); appendText; 
    Sora`"Let me take a look."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I took Pipi from Takeshi, and started a 
+   `I took Pipi from Takeshi, and started a 
 diagnostic on him.`;
    waitForClick; clearText; marker; sound(`CEP181`); appendText; 
    Sora`"That's strange...I don't see anything wrong 
@@ -2268,7 +2268,7 @@ and her daughter would've been furious at me."`;
    waitForClick; clearText; marker; sound(`CEP185`); appendText; 
    Sora`"Well I would've been too."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Upset that he hadn't included me, I 
+   `Upset that he hadn't included me, I 
 continued...`;
    waitForClick; clearText; marker; sound(`CEP186`); appendText; 
    Sora`"I'm fond of Pipi too, you know."`;
@@ -2320,16 +2320,16 @@ text(() => {
    Takeshi`"Besides, Pipi isn't broken...so what's the 
 big deal?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Takeshi laughed pleasantly.`;
+   `Takeshi laughed pleasantly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Ah, I...I can't fight it)`;
+   `(Ah, I...I can't fight it)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`His smile always disarmed me.`;
+   `His smile always disarmed me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was as bright as the sun, and powerfully 
+   `It was as bright as the sun, and powerfully 
 magnetic, he could charm me effortlessly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(It isn't fair...that smile should be 
+   `(It isn't fair...that smile should be 
 outlawed, Takeshi.)`;
    waitForClick; clearText; 
 });
@@ -2341,7 +2341,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`CEP200`); appendText; 
    Sora`"W-what is it?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I looked away, and tried desperately to regain 
+   `I looked away, and tried desperately to regain 
 control of my wildly racing mind, so that he 
 would not see through to my true feelings.`;
    waitForClick; clearText; 
@@ -2396,28 +2396,28 @@ text(() => {
    marker; sound(`CEP215`); appendText; 
    Takeshi`"I mean...I can actually touch you now."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As he said that, Takeshi put his hand on my 
+   `As he said that, Takeshi put his hand on my 
 cheek.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It burned...A lump, hot and boiling, ran from 
+   `It burned...A lump, hot and boiling, ran from 
 my stomach to my brain.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My generator was burning too much energy, 
+   `My generator was burning too much energy, 
 frying my processor...my logic 
 circuits...shut down.`;
    waitForClick; clearText; marker; sound(`CEP216`); appendText; 
    Sora`"T-T-T-Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Holding Pipi firmly to my chest, I grabbed 
+   `Holding Pipi firmly to my chest, I grabbed 
 onto Takeshi's palm with my free hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Ah...Ah...We're actually touching each 
+   `(Ah...Ah...We're actually touching each 
 other...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(We can touch each other...really touch each 
+   `(We can touch each other...really touch each 
 other...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had waited these 17 years for just this 
+   `I had waited these 17 years for just this 
 moment.`;
    waitForClick; clearText; 
 });
@@ -2458,10 +2458,10 @@ text(() => {
    waitForClick; clearText; marker; sound(`CEP228`); appendText; 
    Sora`"Yes - a miracle from the goddess Aphrodite."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Takeshi looked straight into my eyes and 
+   `Takeshi looked straight into my eyes and 
 blinked.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He opened his eyes wide with a start and 
+   `He opened his eyes wide with a start and 
 said...`;
    waitForClick; clearText; 
 });
@@ -2471,9 +2471,9 @@ text(() => {
    marker; sound(`CEP229`); appendText; 
    Takeshi`"Pygmalion..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I slowly, quietly nodded.`;
+   `I slowly, quietly nodded.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just then—`;
+   `Just then—`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
@@ -2483,9 +2483,9 @@ text(() => {
    marker; sound(`CEP230`); appendText; 
    Coco`"Hellooooo!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In came the girl with boundless energy, Coco.`;
+   `In came the girl with boundless energy, Coco.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I quickly let go of Takeshi's hand.`;
+   `I quickly let go of Takeshi's hand.`;
    waitForClick; clearText; 
 });
 multifgload2({ id1: 1, id2: 2, name1: `TA15ADM`, name2: `CO01ADM`, x1: 128, x2: 512, useAnim: true });
@@ -2504,7 +2504,7 @@ text(() => {
    Sora`"Yes...But it looks like Pipi ran out of 
 batteries."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And saying that I handed Pipi over to Coco.`;
+   `And saying that I handed Pipi over to Coco.`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -2514,10 +2514,10 @@ text(() => {
    waitForClick; clearText; marker; sound(`CEP235`); appendText; 
    Coco`"I just finished charging him a minute ago."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco held Pipi between both her hands and 
+   `Coco held Pipi between both her hands and 
 started shaking him left to right.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He wasn't rechargeable kinetically, so that 
+   `He wasn't rechargeable kinetically, so that 
 shouldn't have done anything for him, but...`;
    waitForClick; clearText; marker; sound(`CEP236`); appendText; 
    Sora`"?Ah!"`;
@@ -2527,10 +2527,10 @@ multifgload2({ id1: 1, id2: 2, name1: `TA01ADM`, name2: `CO06ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I exclaimed this without thinking as I 
+   `I exclaimed this without thinking as I 
 realized something .`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco and Takeshi both turned to stare at me.`;
+   `Coco and Takeshi both turned to stare at me.`;
    waitForClick; clearText; marker; sound(`CEP237`); appendText; 
    Sora`"I figured it out. The reason, I mean."`;
    waitForClick; clearText; 
@@ -2550,27 +2550,27 @@ multifgload2({ id1: 1, id2: 2, name1: `TA01ADM`, name2: `CO03ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Coco lifted Pipi up above her.`;
+   `Coco lifted Pipi up above her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was a button in his navel.`;
+   `There was a button in his navel.`;
    waitForClick; clearText; marker; sound(`CEP241`); appendText; 
    Sora`"Are you ready? Here I go."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I stuck out my finger and zeroed in on his 
+   `I stuck out my finger and zeroed in on his 
 bellybutton.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And...`;
+   `And...`;
    waitForClick; clearText; marker; sound(`CEP242`); appendText; 
    Sora`"Keep it simple!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I firmly pushed the button. `;
+   `I firmly pushed the button. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`Whiiiiiiiiiiiiiiiiiiiiiirr...`;
+   `Whiiiiiiiiiiiiiiiiiiiiiirr...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`His motor started to run, and I could hear 
+   `His motor started to run, and I could hear 
 the faint sound of something oscillating.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Pipi's eyes came to life.`;
+   `Pipi's eyes came to life.`;
    waitForClick; clearText; marker; sound(`PIPI_14`); appendText; 
    Pipi`"Wow! Bow wow wow! Woof woof!"`;
    waitForClick; clearText; 
@@ -2584,7 +2584,7 @@ text(() => {
    Sora`"Don't mention it. All I did was push a 
 button."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just then...`;
+   `Just then...`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `TA02ADM`, x: 128, useAnim: true });
@@ -2593,27 +2593,27 @@ text(() => {
    marker; sound(`CEP245`); appendText; 
    Takeshi`"Ha, ha, ha! A ha, ha, ha, ha, ha!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Takeshi broke out in laughter.`;
+   `Takeshi broke out in laughter.`;
    waitForClick; clearText; marker; sound(`CEP246`); appendText; 
    Takeshi`"Hey...Sora you remembered?"`;
    waitForClick; clearText; marker; sound(`CEP247`); appendText; 
    Sora`"Yes."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I smiled from the bottom of my heart, and 
+   `I smiled from the bottom of my heart, and 
 nodded.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The world is full of strange and wonderful 
+   `The world is full of strange and wonderful 
 things.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Isn't it?`;
+   `Isn't it?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"The discussion about Pygmalion... and 'keep 
+   `"The discussion about Pygmalion... and 'keep 
 it simple'..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Neither of those should have been on my 
+   `Neither of those should have been on my 
 terabyte disk...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`..................................`;
+   `..................................`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -2621,11 +2621,11 @@ text(() => {
    marker; sound(`PIPI_09`); appendText; 
    Pipi`"Woof! Woof! Wow! Bow!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Pipi leapt from Coco's arms.`;
+   `Pipi leapt from Coco's arms.`;
    waitForClick; clearText; marker; sound(`PIPI_13`); appendText; 
    Pipi`"Woof! Wow! Wow!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And wagging his tail fitfully, he raced 
+   `And wagging his tail fitfully, he raced 
 across the deck.`;
    waitForClick; clearText; 
 });
@@ -2635,9 +2635,9 @@ text(() => {
    marker; sound(`CEP248`); appendText; 
    Coco`"Hey! Wait, waaaaiiit! Pipiii!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Making a racket, Coco chased after him.`;
+   `Making a racket, Coco chased after him.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The deck was overflowing with quiet sunlight 
+   `The deck was overflowing with quiet sunlight 
 and cheerful laughter.`;
    waitForClick; clearText; 
 });
@@ -2645,9 +2645,9 @@ bgload({ name: `IMG05A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Looking up, there was the sky...`;
+   `Looking up, there was the sky...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The blue sky that continued without end, 
+   `The blue sky that continued without end, 
 stretching out in all directions.`;
    waitForClick; clearText; marker; sound(`PIPI_11`); appendText; 
    Pipi`"Woof! Woof woof! Woof!"`;
@@ -2664,15 +2664,15 @@ bgloadCrop({ name: `BG41A1`, transition: 26, x: 12, y: 12, hx: 775, hy: 581 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`              `;
+   `              `;
    nextPage(00); 
-   Narr`'——Coco Yagami——'`;
+   `'——Coco Yagami——'`;
    nextPage(01); waitForClick; 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -2693,18 +2693,18 @@ text(() => {
    Coco`"Piipiii! Hey you, wait a second you 
 little...!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was chasing after Pipi.`;
+   `I was chasing after Pipi.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't know why, but that's what I was doing.`;
+   `I didn't know why, but that's what I was doing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was probably just something fun to do.`;
+   `It was probably just something fun to do.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Pipi ran across the surface of the deck, like 
+   `Pipi ran across the surface of the deck, like 
 he was flying.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Suddenly...`;
+   `Suddenly...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Pipi stopped.`;
+   `Pipi stopped.`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -2712,18 +2712,18 @@ text(() => {
    marker; sound(`PIPI_16`); appendText; 
    Pipi`"Bow wow wow! Woof! Wow wow wow!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just when I thought he wasn't running 
+   `Just when I thought he wasn't running 
 anymore, he looked up to the sky and started 
 barking at something.`;
    waitForClick; clearText; marker; sound(`CEP250`); appendText; 
    Coco`"Huh? Is there a bird or something?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I lifted him up.`;
+   `I lifted him up.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Still he wouldn't stop barking, so I followed 
+   `Still he wouldn't stop barking, so I followed 
 his gaze and looked up into the sky.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And there was...`;
+   `And there was...`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -2738,16 +2738,16 @@ text(() => {
    marker; sound(`CEP251`); appendText; 
    Coco`"Oh! It's you! Brother!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Right in front of my eyes floated the outline 
+   `Right in front of my eyes floated the outline 
 of my brother, who I loved dearly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Well, it wasn't something I HAD seen...rather 
+   `Well, it wasn't something I HAD seen...rather 
 I'm seeing it right now.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Right now at this moment, Coco is looking at 
+   `Right now at this moment, Coco is looking at 
 you.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She cries out suddenly with an elated 
+   `She cries out suddenly with an elated 
 expression.`;
    waitForClick; clearText; 
 });
@@ -2767,7 +2767,7 @@ bgloadCrop({ name: `EV_CO15B`, transition: 26, x: 43, y: 50, hx: 450, hy: 337 })
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The first people to arrive are Hokutan and 
+   `The first people to arrive are Hokutan and 
 Tsugumi.`;
    waitForClick; clearText; marker; sound(`CEP254`); appendText; 
    Hokuto`"What's wrong?"`;
@@ -2776,19 +2776,19 @@ Tsugumi.`;
    waitForClick; clearText; marker; sound(`CEP256`); appendText; 
    Coco`"Look there! See, over there!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco points at you.`;
+   `Coco points at you.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She wanted to tell everyone that you've 
+   `She wanted to tell everyone that you've 
 arrived.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Tsugumi takes off her hat, and squints her 
+   `Tsugumi takes off her hat, and squints her 
 eyes against the sunlight.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Hokutan is...`;
+   `Hokutan is...`;
    waitForClick; clearText; marker; sound(`CEP257`); appendText; 
    Hokuto`"Hey! It's true! You've come back!?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A smile covers his whole face, and he jumps 
+   `A smile covers his whole face, and he jumps 
 around as if he will start to dance.`;
    waitForClick; clearText; 
 });
@@ -2798,17 +2798,17 @@ bgloadCrop({ name: `EV_CO15C`, transition: 26, x: 312, y: 162, hx: 450, hy: 337 
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Next Takepyon shows up.`;
+   `Next Takepyon shows up.`;
    waitForClick; clearText; marker; sound(`CEP258`); appendText; 
    Takeshi`"Huh? What's going on?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Mayo jumps up...`;
+   `Mayo jumps up...`;
    waitForClick; clearText; marker; sound(`CEP259`); appendText; 
    Sara`"Aaaii!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Up on Takepyon's back...`;
+   `Up on Takepyon's back...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And soon everyone shows up one-by-one.`;
+   `And soon everyone shows up one-by-one.`;
    waitForClick; clearText; 
 });
 bgloadCrop({ name: `EV_CO15D`, transition: 20, x: 312, y: 162, hx: 450, hy: 337 });
@@ -2818,7 +2818,7 @@ bgloadCrop({ name: `EV_CO15D`, transition: 26, x: 400, y: 0, hx: 400, hy: 300 })
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Sora...Nakkyu's daughter...`;
+   `Sora...Nakkyu's daughter...`;
    waitForClick; clearText; marker; sound(`CEP260`); appendText; 
    Sora`"W-what's going on, You?"`;
    waitForClick; clearText; marker; sound(`CEP261`); appendText; 
@@ -2832,7 +2832,7 @@ bgloadCrop({ name: `EV_CO15E`, transition: 26, x: 0, y: 0, hx: 400, hy: 300 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And Nakkyu...Kiddo...`;
+   `And Nakkyu...Kiddo...`;
    waitForClick; clearText; marker; sound(`CEP262`); appendText; 
    //You'haru'
    You_haru_`"It's him...?"`;
@@ -2845,22 +2845,22 @@ bgloadCrop({ name: `EV_CO15E`, transition: 26, x: 0, y: 0, hx: 800, hy: 600 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The boat is suddenly crowded with excitement.`;
+   `The boat is suddenly crowded with excitement.`;
    waitForClick; clearText; marker; sound(`CEP264`); appendText; 
    Coco`"Hey! Broooother! Broooother!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco is waving her arms wildly.`;
+   `Coco is waving her arms wildly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Hoping...praying...`;
+   `Hoping...praying...`;
    waitForClick; clearText; marker; sound(`CEP265`); appendText; 
-   Narr`'Please let my thoughts reach my brother...'`;
+   `'Please let my thoughts reach my brother...'`;
    waitForClick; clearText; marker; sound(`CEP266`); appendText; 
-   Narr`'And please, let me meet with him again, 
+   `'And please, let me meet with him again, 
 someday...'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Right then—`;
+   `Right then—`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I, Coco, was looking at my brother.`;
+   `I, Coco, was looking at my brother.`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_CO15F`, transition: 20 });
@@ -2868,33 +2868,33 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Right then—`;
+   `Right then—`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was looking at the world where Coco existed.`;
+   `I was looking at the world where Coco existed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Looking down on it with both of my eyes...I 
+   `Looking down on it with both of my eyes...I 
 was sure of it...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If the moon is only there because of your 
+   `If the moon is only there because of your 
 belief that it will be there when you look 
 for it...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Then it was possible that I am here, and they 
+   `Then it was possible that I am here, and they 
 are here, only because we believe that that 
 we are.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The world is here now...`;
+   `The world is here now...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I am here looking at the world...`;
+   `I am here looking at the world...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I am here looking at myself, looking at the 
+   `I am here looking at myself, looking at the 
 world...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`How far do I go?`;
+   `How far do I go?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I don't know the answer...`;
+   `I don't know the answer...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But there are some things I am sure of.`;
+   `But there are some things I am sure of.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -2904,53 +2904,53 @@ showDimOverlay();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 `;
    appendText; delay(0); 
-   Narr`               `;
+   `               `;
    nextPage(00); 
-   Narr`'I am seeing now.'`;
+   `'I am seeing now.'`;
    nextPage(01); waitForClick; 
-   Narr`
+   `
 `;
    
 });
 showTextbox();
 text(() => {
    appendText; delay(0); 
-   Narr`             `;
+   `             `;
    nextPage(00); 
-   Narr`'I am being seen now.'`;
+   `'I am being seen now.'`;
    nextPage(01); waitForClick; 
-   Narr`
+   `
 `;
    
 });
 showTextbox();
 text(() => {
    appendText; delay(0); 
-   Narr`             `;
+   `             `;
    nextPage(00); 
-   Narr`'You are seeing now.'`;
+   `'You are seeing now.'`;
    nextPage(01); waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 `;
    appendText; nextPage(00); 
-   Narr`               'And you are...'`;
+   `               'And you are...'`;
    nextPage(01); waitForClick; 
-   Narr`
+   `
 `;
    appendText; nextPage(00); 
-   Narr`        'Surely being seen by someone.'`;
+   `        'Surely being seen by someone.'`;
    nextPage(01); waitForClick; 
 });
 monoColorOverlay({ interval: 24, color: WHITE });
@@ -2978,13 +2978,13 @@ unlockCG($`POST12`);
 g__coco_ep_reach = 1;
 g_coco_ep_reach = 1;
 sys_fe = 1;
-l_29 = 1;
-l_2a = 1;
-l_2b = 1;
-l_2c = 1;
-l_2d = 1;
-l_2e = 1;
-l_2f = 1;
+l_coco_ep_reach = 1;
+l_coco_ep_reach_a = 1;
+l_coco_ep_reach_b = 1;
+l_coco_ep_reach_c = 1;
+l_coco_ep_reach_d = 1;
+l_coco_ep_reach_e = 1;
+l_coco_ep_reach_f = 1;
 if (l_sc2f_clear == 0) goto(lbl_0000118d);
 unlockCG($`POST06`);
 if (g_1d != 0) goto(lbl_000011b2);

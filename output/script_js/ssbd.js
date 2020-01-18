@@ -10,7 +10,7 @@ text(() => {
    marker; appendText; 
    Kid`"Sara!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I swam up next to Sara.`;
+   `I swam up next to Sara.`;
    waitForClick; clearText; marker; sound(`SBD000`); appendText; 
    Sara`"Y-you're...alright..."`;
    waitForClick; clearText; marker; appendText; 
@@ -18,9 +18,9 @@ text(() => {
    waitForClick; clearText; marker; sound(`SBD001`); appendText; 
    Sara`"Yeah...I'm alright."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She smiled weakly.`;
+   `She smiled weakly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She was spent and unsteady on her feet.`;
+   `She was spent and unsteady on her feet.`;
    waitForClick; clearText; marker; sound(`SBD002`); appendText; 
    Sara`"Why...why did you come back?"`;
    waitForClick; clearText; marker; appendText; 
@@ -57,7 +57,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`SBD008`); appendText; 
    Sara`"To get...this..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Saying that, Sara removed the fragment 
+   `Saying that, Sara removed the fragment 
 that was embedded in my finger.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"That's..."`;
@@ -86,7 +86,7 @@ my promise."`;
    waitForClick; clearText; marker; sound(`SBD014`); appendText; 
    Sara`"Th...thank you..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I desperately tried to prop up Sara to keep 
+   `I desperately tried to prop up Sara to keep 
 her from sinking. `;
    waitForClick; clearText; 
 });
@@ -106,17 +106,17 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I remembered that the air pressure here was 
+   `I remembered that the air pressure here was 
 compressed to 4.5 atmospheres because of the 
 water pressure.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara had probably gotten oxygen poisoning from 
+   `Sara had probably gotten oxygen poisoning from 
 breathing the oxygen-heavy air.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That compounded with the fatigue from treading 
+   `That compounded with the fatigue from treading 
 water in the cold seawater...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The combination had probably rapidly robbed 
+   `The combination had probably rapidly robbed 
 Sara of her strength.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara, hang in there!"`;
@@ -125,24 +125,24 @@ Sara of her strength.`;
    waitForClick; clearText; marker; sound(`SBD019`); appendText; 
    Sara`"But...my body...won't move anymore..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't know what to do.`;
+   `I didn't know what to do.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And I'd finally found Sara.`;
+   `And I'd finally found Sara.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Anyway, let's head for the emergency 
 corridor!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Before the water hadn't flooded into the 
+   `Before the water hadn't flooded into the 
 emergency corridor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If we could just get there...`;
+   `If we could just get there...`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Listen, Sara!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I grabbed the weakened Sara and tried to dive 
+   `I grabbed the weakened Sara and tried to dive 
 under water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was then that it happened`;
+   `It was then that it happened`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -153,27 +153,27 @@ playSFX({ name: `SE06_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Screeeeeeeeeeeeeeeech!`;
+   `Screeeeeeeeeeeeeeeech!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A metallic scream echoed through LeMU as a 
+   `A metallic scream echoed through LeMU as a 
 shock wracked the structure.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At the same time, the flow of the water 
+   `At the same time, the flow of the water 
 increased dramatically.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The shock shook Sara loose from my grasp.`;
+   `The shock shook Sara loose from my grasp.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I hurriedly struggled to lift her up.`;
+   `I hurriedly struggled to lift her up.`;
    waitForClick; clearText; marker; sound(`SBD020`); appendText; 
    Sara`"Cough...cough..."`;
    waitForClick; clearText; marker; sound(`SBD021`); appendText; 
    Sara`"Pant, pant, pant..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It looked like she had swallowed some water.`;
+   `It looked like she had swallowed some water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her breathing was labored...`;
+   `Her breathing was labored...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`What should I do...what could I do...?`;
+   `What should I do...what could I do...?`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE06_01`, a1: 0, volume: 100 });
@@ -182,12 +182,12 @@ playSFX({ name: `SE06_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`With a dull groan, LeMU tilted causing the 
+   `With a dull groan, LeMU tilted causing the 
 water to ripple.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Hang on Sara! Just hang on!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I called to Sara as I desperately floated in 
+   `I called to Sara as I desperately floated in 
 the waves on the surface.`;
    waitForClick; clearText; marker; sound(`SBD022`); appendText; 
    Sara`"I'm sorry...so sorry."`;
@@ -210,16 +210,16 @@ text(() => {
    waitForClick; clearText; marker; sound(`SBD025`); appendText; 
    Sara`"Thanks for...coming back...thank you..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara's body went limp.`;
+   `Sara's body went limp.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I swore inside my mind.`;
+   `I swore inside my mind.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Why, why, why?`;
+   `Why, why, why?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wondered if there was no way that I could 
+   `I wondered if there was no way that I could 
 save Sara?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I took a big breath and, holding Sara, dove 
+   `I took a big breath and, holding Sara, dove 
 under water.`;
    waitForClick; clearText; 
 });
@@ -227,17 +227,17 @@ removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I meant to get us out of LeMU.`;
+   `I meant to get us out of LeMU.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If I let us stick around, we would have been 
+   `If I let us stick around, we would have been 
 crushed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The irregular shocks continued and the sounds 
+   `The irregular shocks continued and the sounds 
 of metal on metal echoed harshly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`LeMU was already mostly filled with water.`;
+   `LeMU was already mostly filled with water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I ducked into a crack running down the wall 
+   `I ducked into a crack running down the wall 
 that was just big enough and slipped outside. `;
    waitForClick; clearText; 
 });
@@ -245,23 +245,23 @@ bgload({ name: `EV_SA13D`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`There the sprawling darkness of the ocean 
+   `There the sprawling darkness of the ocean 
 surrounded me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My only hope was the light piercing through 
+   `My only hope was the light piercing through 
 the water from above.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Clutching Sara, I swam toward it.`;
+   `Clutching Sara, I swam toward it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But swimming with my injured arm and holding a 
+   `But swimming with my injured arm and holding a 
 limp Sara was nearly impossible.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The water pressure constricted my chest, 
+   `The water pressure constricted my chest, 
 forcing out my air.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But I kept swimming.`;
+   `But I kept swimming.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My body was screaming for air.`;
+   `My body was screaming for air.`;
    waitForClick; clearText; 
 });
 eff_41 = 13;
@@ -271,7 +271,7 @@ showDimInAndOutAnim();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`My eyes clouded. Flashes of white light darted 
+   `My eyes clouded. Flashes of white light darted 
 across my vision...`;
    waitForClick; clearText; 
 });
@@ -288,171 +288,171 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; appendText; delay(0); 
-   Narr`       `;
+   `       `;
    nextPage(00); 
-   Narr`It was no good. I couldn't see...`;
+   `It was no good. I couldn't see...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`    `;
+   `    `;
    nextPage(00); 
-   Narr`I wasn't sure if I were heading upward.`;
+   `I wasn't sure if I were heading upward.`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`            `;
+   `            `;
    nextPage(00); 
-   Narr`Or maybe downward...`;
+   `Or maybe downward...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); nextPage(00); 
-   Narr`In my right arm, Sara felt cold, nearly frozen.`;
+   `In my right arm, Sara felt cold, nearly frozen.`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`         `;
+   `         `;
    nextPage(00); 
-   Narr`I didn't think I'd make it...`;
+   `I didn't think I'd make it...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`           `;
+   `           `;
    nextPage(00); 
-   Narr`My arms refused to move...`;
+   `My arms refused to move...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`                 `;
+   `                 `;
    nextPage(00); 
-   Narr`And my legs...`;
+   `And my legs...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`               `;
+   `               `;
    nextPage(00); 
-   Narr`I took Sara and...`;
+   `I took Sara and...`;
    nextPage(01); delay(60); nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; delay(0); 
-   Narr`                     `;
+   `                     `;
    nextPage(00); 
-   Narr`*GULP*`;
+   `*GULP*`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`           `;
+   `           `;
    nextPage(00); 
-   Narr`I couldn't take anymore...`;
+   `I couldn't take anymore...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`              `;
+   `              `;
    nextPage(00); 
-   Narr`I swallowed water...`;
+   `I swallowed water...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`                 `;
+   `                 `;
    nextPage(00); 
-   Narr`*GULP* *COUGH*`;
+   `*GULP* *COUGH*`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`        `;
+   `        `;
    nextPage(00); 
-   Narr`My consciousness was slipping...`;
+   `My consciousness was slipping...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`            `;
+   `            `;
    nextPage(00); 
-   Narr`My body had no power...`;
+   `My body had no power...`;
    nextPage(01); delay(60); nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`                    `;
+   `                    `;
    nextPage(00); bigChar; clearText; 
-   Narr`Sara...`;
+   `Sara...`;
    nextPage(01); delay(99); nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; delay(0); 
-   Narr`               `;
+   `               `;
    nextPage(00); 
-   Narr`I'm sorry Sara...`;
+   `I'm sorry Sara...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`           `;
+   `           `;
    nextPage(00); 
-   Narr`I...just couldn't quite...`;
+   `I...just couldn't quite...`;
    nextPage(01); delay(60); 
-   Narr`
+   `
 `;
    appendText; delay(0); 
-   Narr`            `;
+   `            `;
    nextPage(00); 
-   Narr`...seem to save Sara...`;
+   `...seem to save Sara...`;
    nextPage(01); delay(60); nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`                    `;
+   `                    `;
    nextPage(00); bigChar; clearText; 
-   Narr`Sara...`;
+   `Sara...`;
    nextPage(01); delay(90); delay(60); nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`           `;
+   `           `;
    nextPage(00); 
-   Narr`The darkness enveloped me, 
+   `The darkness enveloped me, 
 `;
    appendText; delay(0); 
-   Narr`       stealing away my consciousness...`;
+   `       stealing away my consciousness...`;
    nextPage(01); delay(90); delay(90); nextPage(04); 
 });
 hideTextbox();

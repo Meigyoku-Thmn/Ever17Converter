@@ -7,26 +7,26 @@ playBGM({ num: 2, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After that...`;
+   `After that...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`We gathered at the rest area, had a light meal 
+   `We gathered at the rest area, had a light meal 
 and chatted it up.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`From beginning to end, Sora's explanation of 
+   `From beginning to end, Sora's explanation of 
 the RSD system dominated the conversation.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`During the talking, I discovered something of 
+   `During the talking, I discovered something of 
 interest.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I learned that Sara was supposed to be amazing 
+   `I learned that Sara was supposed to be amazing 
 when it came to computers.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara was floored the day before when she heard 
+   `Sara was floored the day before when she heard 
 that Sora was computer generated. But when 
 Sora gave her a technical explanation, she 
 was able to absorb it all without any problem.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You said this about Sara -`;
+   `You said this about Sara -`;
    waitForClick; clearText; 
 });
 monoColorOverlay({ interval: 0, color: BLACK });
@@ -145,9 +145,9 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`That about rounded out the topic of RSD.`;
+   `That about rounded out the topic of RSD.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At the end of the conversation, Sora added the 
+   `At the end of the conversation, Sora added the 
 following.`;
    waitForClick; clearText; 
 });
@@ -202,58 +202,58 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After the discussion, I stayed in the rest 
+   `After the discussion, I stayed in the rest 
 area alone.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was a free time of sorts.`;
+   `It was a free time of sorts.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I imagined that everyone was walking around 
+   `I imagined that everyone was walking around 
 LeMU, spending the time as they pleased.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`We had decided when and where we would meet.`;
+   `We had decided when and where we would meet.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't know what I should do with myself 
+   `I didn't know what I should do with myself 
 until then.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was bored stiff.`;
+   `I was bored stiff.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I looked down.`;
+   `I looked down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The floor was covered with a layer of water.`;
+   `The floor was covered with a layer of water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The lights in the ceiling were reflected in 
+   `The lights in the ceiling were reflected in 
 the water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was like the cold light of the moon.`;
+   `It was like the cold light of the moon.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I poked my finger into the water.`;
+   `I poked my finger into the water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Plop.`;
+   `Plop.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The water rippled and the surface shook.`;
+   `The water rippled and the surface shook.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The light in the water fragmented into 
+   `The light in the water fragmented into 
 disarray...finally returning to its 
 original shapes.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I reached into to the water trying to grab 
+   `I reached into to the water trying to grab 
 the light.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...`;
+   `But...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I could only grab a little seawater...I 
+   `I could only grab a little seawater...I 
 couldn't touch the light.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I tried again and again, but no matter how 
+   `I tried again and again, but no matter how 
 I tried, I couldn't grab the moon.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The words that I had just heard from Sora cut 
+   `The words that I had just heard from Sora cut 
 across my mind again.`;
    waitForClick; clearText; marker; sound(`T2C229`); appendText; 
    Sora`"I mean, that I cease to exist 
 when no one is looking at me."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I laid down on the bench and closed my eyes.`;
+   `I laid down on the bench and closed my eyes.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -265,20 +265,20 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought about Sora...`;
+   `I thought about Sora...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As I thought, my consciousness slipped into a 
+   `As I thought, my consciousness slipped into a 
 light sleep.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`.......`;
+   `.......`;
    waitForClick; clearText; marker; appendText; 
-   Narr`....`;
+   `....`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...`;
+   `...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was actually more than a light sleep.`;
+   `It was actually more than a light sleep.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I continued my slumber.`;
+   `I continued my slumber.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -293,7 +293,7 @@ clock(`18:43`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`When I opened my eyes, there was Sora.`;
+   `When I opened my eyes, there was Sora.`;
    waitForClick; clearText; 
 });
 playBGM({ num: 8, volume: 100 });
@@ -302,10 +302,10 @@ text(() => {
    marker; sound(`S2C116`); appendText; 
    Sora`"Kid, everyone is waiting for you."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora said it softly, peering down at me spread 
+   `Sora said it softly, peering down at me spread 
 out on the bench.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was still half a sleep when Sora and I 
+   `I was still half a sleep when Sora and I 
 started heading for the Conference Room 
 to meet everyone.`;
    waitForClick; clearText; 
@@ -314,22 +314,22 @@ bgload({ name: `BG25B3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought as I walked the corridors in a 
+   `I thought as I walked the corridors in a 
 stupor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I remembered the words that Sora had said 
+   `I remembered the words that Sora had said 
 before I slept - `;
    waitForClick; clearText; marker; appendText; 
-   Narr`"I mean, that I cease to exist 
+   `"I mean, that I cease to exist 
 when no one is looking at me."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For some reason, I just could not shake those 
+   `For some reason, I just could not shake those 
 words from my mind.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I asked Sora walking next to me why she had 
+   `I asked Sora walking next to me why she had 
 said them.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And this is what she said...`;
+   `And this is what she said...`;
    waitForClick; clearText; 
 });
 if (l_coco_point == 5) goto(lbl_0000031f);

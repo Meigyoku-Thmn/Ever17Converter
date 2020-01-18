@@ -9,30 +9,30 @@ clock(`8:44`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After breakfast, we each had plenty of free 
+   `After breakfast, we each had plenty of free 
 time.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But there was nothing in particular to do...`;
+   `But there was nothing in particular to do...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...Nothing that just had to be done...`;
+   `...Nothing that just had to be done...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So without any reason, we all just ended up 
+   `So without any reason, we all just ended up 
 gathering in the rest area. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`As always, the vases were filled with 
+   `As always, the vases were filled with 
 blossoming flowers.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Marguerites, marigolds and roses.`;
+   `Marguerites, marigolds and roses.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Apparently, the flowers were watered 
+   `Apparently, the flowers were watered 
 periodically by mist from the sprinkler 
 system, helping them maintain their freshness.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't see Sora anywhere, but then 
+   `I didn't see Sora anywhere, but then 
 again...she did say she hadn't finished 
 checking the sensor data...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She probably had gone to the Control Room. It 
+   `She probably had gone to the Control Room. It 
 seemed that she could concentrate on 
 performing operations better there.`;
    waitForClick; clearText; 
@@ -41,7 +41,7 @@ fgload({ id: 1, name: `YU11BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`You, who had been talking with Sora earlier, 
+   `You, who had been talking with Sora earlier, 
 was strolling alone around the top of the 
 circular stage in the middle of the room.`;
    waitForClick; clearText; 
@@ -51,17 +51,17 @@ multifgload2({ id1: 1, id2: 2, name1: `CO16ADM`, name2: `KA12ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The Kid, Coco, and Pipi where chasing each 
+   `The Kid, Coco, and Pipi where chasing each 
 other playfully through the water. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had a feeling I had seen this all before...`;
+   `I had a feeling I had seen this all before...`;
    waitForClick; clearText; 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After having a good stretch, I watched Coco 
+   `After having a good stretch, I watched Coco 
 and the others play.`;
    waitForClick; clearText; 
 });
@@ -69,16 +69,16 @@ multifgload2({ id1: 1, id2: 2, name1: `CO12ADS`, name2: `KA12ADS`, x1: 176, x2: 
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The three of them, two kids and an animal, 
+   `The three of them, two kids and an animal, 
 circling the stone statue.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`They were playing a game of chase, not really 
+   `They were playing a game of chase, not really 
 caring who was "it."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Without seeming to get bored, they kept 
+   `Without seeming to get bored, they kept 
 running around and around.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I seemed to be making more effort than they 
+   `I seemed to be making more effort than they 
 were, just watching them.`;
    waitForClick; clearText; 
 });
@@ -86,24 +86,24 @@ multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(Phew, what a sight...)`;
+   `(Phew, what a sight...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It looked like fun, but I quickly gave up any 
+   `It looked like fun, but I quickly gave up any 
 idea of joining in.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And at any rate...Tsugumi had yet to make an 
+   `And at any rate...Tsugumi had yet to make an 
 appearance this morning.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Just in case, I had left a sandwich for her at 
+   `Just in case, I had left a sandwich for her at 
 the kiosk.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(I don't know if she'll actually eat it or 
+   `(I don't know if she'll actually eat it or 
 not...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`What would I say to her if I met her?`;
+   `What would I say to her if I met her?`;
    waitForClick; clearText; 
 });
-if (l_d9 == 0) goto(lbl_0000018a);
+if (l_tsugumi_flag == 0) goto(lbl_0000018a);
 removeBG({ mode: WHITE, transition: 2 });
 showFilter2();
 unSkippableDelay(1);
@@ -111,22 +111,22 @@ bgload({ name: `EV_TU03A`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`She had confided her secrets to me on the 
+   `She had confided her secrets to me on the 
 Jellyfish Gondola.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Virus carrier.`;
+   `Virus carrier.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A body that never dies.`;
+   `A body that never dies.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A body that never grows old.`;
+   `A body that never grows old.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her healed scar.`;
+   `Her healed scar.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was all so hard to believe...`;
+   `It was all so hard to believe...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Could such a mind-boggling story even be true?`;
+   `Could such a mind-boggling story even be true?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was still unable to completely believe her.`;
+   `I was still unable to completely believe her.`;
    waitForClick; clearText; 
 });
 goto(lbl_000001b3);
@@ -138,25 +138,25 @@ bgload({ name: `EV_TU08A`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`So talking to her again would be awkward.`;
+   `So talking to her again would be awkward.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She had told me while we were on the Jellyfish 
+   `She had told me while we were on the Jellyfish 
 Gondola...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"Kill me"...`;
+   `"Kill me"...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I couldn't.`;
+   `I couldn't.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was no possible way I could do such a 
+   `There was no possible way I could do such a 
 thing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But still...`;
+   `But still...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Why did I feel like I had messed up somehow...?`;
+   `Why did I feel like I had messed up somehow...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Something had come over me.`;
+   `Something had come over me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was nothing I could do...`;
+   `There was nothing I could do...`;
    waitForClick; clearText; 
 });
 let lbl_000001b3;
@@ -168,10 +168,10 @@ clock(`9:19`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I glanced up and noticed Coco and the others 
+   `I glanced up and noticed Coco and the others 
 had stopped playing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Huh....? What is she doing....?)`;
+   `(Huh....? What is she doing....?)`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -180,17 +180,17 @@ fgload({ id: 1, name: `KA06ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`With a worried look on his face, the Kid was 
+   `With a worried look on his face, the Kid was 
 watching Coco intently. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`Pipi, too, had his eyes on her.`;
+   `Pipi, too, had his eyes on her.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`In the middle of the rest area stood four 
+   `In the middle of the rest area stood four 
 stone statues. Coco was deliberately 
 attempting to scale one of the pedestals...`;
    waitForClick; clearText; 
@@ -203,7 +203,7 @@ text(() => {
    marker; sound(`T5B000`); appendText; 
    Coco`"Here I go!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...With a heave, she began to climb up the 
+   `...With a heave, she began to climb up the 
 side.`;
    waitForClick; clearText; 
 });
@@ -211,15 +211,15 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(...??)`;
+   `(...??)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was an odd sight.`;
+   `It was an odd sight.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I ran to the Kid, as he stood frozen watching 
+   `I ran to the Kid, as he stood frozen watching 
 her.`;
    waitForClick; clearText; 
 });
-if (l_d9 == 0) goto(lbl_00000268);
+if (l_tsugumi_flag == 0) goto(lbl_00000268);
 bgload({ name: `IT05A`, transition: 20 });
 goto(lbl_0000027a);
 let lbl_00000268;
@@ -231,7 +231,7 @@ text(() => {
    marker; sound(`T5B001`); appendText; 
    Coco`"Okay...hmmmmmph..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Stumbling as she mounted the pedestal, Coco 
+   `Stumbling as she mounted the pedestal, Coco 
 ended up embracing the statue. `;
    waitForClick; clearText; 
 });
@@ -242,7 +242,7 @@ text(() => {
    marker; sound(`T5B002`); appendText; 
    Kid`" Coco!...What the heck are you doing?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The Kid asked her curtly.`;
+   `The Kid asked her curtly.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
@@ -258,7 +258,7 @@ and everything looks all different."`;
    Coco`"Let's see...to be exact, 27 inches higher, 
 don't you think?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Perched on top of the pedestal, Coco said this 
+   `Perched on top of the pedestal, Coco said this 
 smiling triumphantly.`;
    waitForClick; clearText; 
 });
@@ -285,7 +285,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`T5B008`); appendText; 
    Coco`"Well....uuum, actually no..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco answered with her head cocked.`;
+   `Coco answered with her head cocked.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `CO15ADM`, x: 320, useAnim: true });
@@ -320,7 +320,7 @@ text(() => {
    marker; sound(`T5B012`); appendText; 
    Coco`"I kind of thought its back looked lonely."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco stroked the statue's back sympathetically 
+   `Coco stroked the statue's back sympathetically 
 with her tiny hand.`;
    waitForClick; clearText; marker; sound(`T5B013`); appendText; 
    Coco`"And well..."`;
@@ -334,7 +334,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`T5B015`); appendText; 
    Coco`"SCREW DRIVER at YA——!!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Uttering a stream of nonsense, Coco suddenly 
+   `Uttering a stream of nonsense, Coco suddenly 
 produced a flat-head screwdriver in her right 
 hand.`;
    waitForClick; clearText; 
@@ -345,24 +345,24 @@ text(() => {
    marker; sound(`T5B016`); appendText; 
    Coco`"TIMES TWO——!!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And then, another one appeared in her left 
+   `And then, another one appeared in her left 
 hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Hey, where did she get those...?)`;
+   `(Hey, where did she get those...?)`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`But before I could ask her anything, Coco was 
+   `But before I could ask her anything, Coco was 
 gripping two screwdrivers...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And then...`;
+   `And then...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...Into the back of the statue...`;
+   `...Into the back of the statue...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...she began to carve the stone using the tip 
+   `...she began to carve the stone using the tip 
 of the screwdriver....`;
    waitForClick; clearText; 
 });
@@ -377,23 +377,23 @@ text(() => {
    marker; sound(`T5B017`); appendText; 
    Coco`"Here we go..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Cut, cut.`;
+   `Cut, cut.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Cut, cut, carve, carve...`;
+   `Cut, cut, carve, carve...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And within moments, the back of the statue was 
+   `And within moments, the back of the statue was 
 covered with gashes.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"...????"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was incomprehensible.`;
+   `It was incomprehensible.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I just couldn't understand it.`;
+   `I just couldn't understand it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`First she says the back looks "lonely", and 
+   `First she says the back looks "lonely", and 
 then she starts gouging it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For a while the Kid and I just gazed at her 
+   `For a while the Kid and I just gazed at her 
 with our jaws dropped.`;
    waitForClick; clearText; 
 });
@@ -402,7 +402,7 @@ text(() => {
    marker; sound(`T5B018`); appendText; 
    Kid`"Hey, hey! What are you doing!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The Kid yelled as he came back to his senses.`;
+   `The Kid yelled as he came back to his senses.`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -434,7 +434,7 @@ text(() => {
    marker; sound(`T5B022`); appendText; 
    Kid`"What for?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The Kid beat me to the question.`;
+   `The Kid beat me to the question.`;
    waitForClick; clearText; marker; sound(`T5B023`); appendText; 
    Coco`"Well, it's because..."`;
    waitForClick; clearText; 
@@ -458,12 +458,12 @@ text(() => {
    waitForClick; clearText; marker; sound(`T5B027`); appendText; 
    Coco`"I was feeling sad..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She muttered in a tiny voice.`;
+   `She muttered in a tiny voice.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She worked with great dexterity, using a 
+   `She worked with great dexterity, using a 
 screwdriver in each hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The tips of the drivers dug into the stone 
+   `The tips of the drivers dug into the stone 
 screeching and forming tiny grooves.`;
    waitForClick; clearText; marker; sound(`T5B028`); appendText; 
    Kid`"Sad?"`;
@@ -478,13 +478,13 @@ little?"`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The Kid and I looked at each other.`;
+   `The Kid and I looked at each other.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco looked back at her handiwork.`;
+   `Coco looked back at her handiwork.`;
    waitForClick; clearText; 
 });
 hideTextbox();
-if (l_d9 == 0) goto(lbl_00000438);
+if (l_tsugumi_flag == 0) goto(lbl_00000438);
 bgload({ name: `IT05A`, transition: 20 });
 goto(lbl_0000044c);
 let lbl_00000438;
@@ -495,11 +495,11 @@ let lbl_0000044c;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The gashes had begun to take on a shape.`;
+   `The gashes had begun to take on a shape.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was a human form, like a stick person.`;
+   `It was a human form, like a stick person.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Its tip formed a round head...`;
+   `Its tip formed a round head...`;
    waitForClick; clearText; marker; sound(`T5B031`); appendText; 
    Kid`"Who's that?"`;
    waitForClick; clearText; 
@@ -512,13 +512,13 @@ text(() => {
    waitForClick; clearText; marker; sound(`T5B033`); appendText; 
    Coco`"And look, this is Pipi and Chami."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Looking more carefully, I could see two 
+   `Looking more carefully, I could see two 
 unusual animal figures beside the human form.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"........."`;
    waitForClick; clearText; 
 });
-if (l_d9 == 0) goto(lbl_0000048c);
+if (l_tsugumi_flag == 0) goto(lbl_0000048c);
 showTextbox();
 text(() => {
    marker; sound(`T5B034`); appendText; 
@@ -528,10 +528,10 @@ text(() => {
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`One of the shapes had a particularly large 
+   `One of the shapes had a particularly large 
 head.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was only half finished.`;
+   `It was only half finished.`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -550,10 +550,10 @@ text(() => {
    marker; sound(`T5B037`); appendText; 
    Coco`"Okay, and then..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`One of the shapes had a particularly large 
+   `One of the shapes had a particularly large 
 head.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was only half finished.`;
+   `It was only half finished.`;
    waitForClick; clearText; 
 });
 showTextbox();
@@ -572,13 +572,13 @@ text(() => {
    marker; sound(`T5B040`); appendText; 
    Coco`"Tra, la, la...tra, la, la, la, la..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Singing a cute little song, Coco continued to 
+   `Singing a cute little song, Coco continued to 
 carve.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She seemed entirely absorbed by what she was 
+   `She seemed entirely absorbed by what she was 
 doing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Somehow, I could relate to her desire to throw 
+   `Somehow, I could relate to her desire to throw 
 herself into something...`;
    waitForClick; clearText; marker; sound(`T5B041`); appendText; 
    Kid`"That's destroying private property...it's 
@@ -604,7 +604,7 @@ bgload({ name: `EV_CO19B`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Because of her unsteady position on the 
+   `Because of her unsteady position on the 
 pedestal, Coco suddenly lost her balance. `;
    waitForClick; clearText; 
 });
@@ -618,10 +618,10 @@ removeBG({ mode: BLACK, transition: 62 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Without hesitating, the Kid jumped forward, 
+   `Without hesitating, the Kid jumped forward, 
 steadying her body.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`He grabbed her by the hips, to prevent her 
+   `He grabbed her by the hips, to prevent her 
 from slipping down and carefully lowered her 
 to sit on the pedestal. `;
    waitForClick; clearText; 
@@ -668,10 +668,10 @@ text(() => {
    marker; sound(`T5B055`); appendText; 
    Kid`"Well okay. Thanks..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Energized by Coco's enthusiasm, the Kid took 
+   `Energized by Coco's enthusiasm, the Kid took 
 the screwdriver.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And mounted the pedestal to join her.`;
+   `And mounted the pedestal to join her.`;
    waitForClick; clearText; 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
@@ -694,7 +694,7 @@ text(() => {
    marker; sound(`T5B058`); appendText; 
    Kid`"She'll be alright!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was about to stretch my hands toward her but 
+   `I was about to stretch my hands toward her but 
 the Kid stopped me.`;
    waitForClick; clearText; 
 });
@@ -709,21 +709,21 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The Kid took hold of Coco's empty hand.`;
+   `The Kid took hold of Coco's empty hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`While embracing the statue in a hug, Coco and 
+   `While embracing the statue in a hug, Coco and 
 the Kid steadied each other.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And using their free hands, they both began 
+   `And using their free hands, they both began 
 carving shapes.`;
    waitForClick; clearText; 
 });
-if (l_d9 == 0) goto(lbl_000005b5);
+if (l_tsugumi_flag == 0) goto(lbl_000005b5);
 bgload({ name: `IT05A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The statue stood there in silence without 
+   `The statue stood there in silence without 
 complaint, pointing its finger to the south.`;
    waitForClick; clearText; 
 });
@@ -733,13 +733,13 @@ bgload({ name: `IT05C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The statue didn't say a word, only stood 
+   `The statue didn't say a word, only stood 
 silently, pointing at the ceiling.`;
    waitForClick; clearText; 
 });
 let lbl_000005c8;
 hideTextbox();
-if (l_d9 == 0) goto(lbl_000005f9);
+if (l_tsugumi_flag == 0) goto(lbl_000005f9);
 monoColorOverlay({ interval: 6, color: BLACK });
 bgload({ name: `IT05B`, transition: 20 });
 goto(lbl_00000615);
@@ -752,7 +752,7 @@ let lbl_00000615;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`A while later...`;
+   `A while later...`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -762,10 +762,10 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`What was left in stone was the carved images 
+   `What was left in stone was the carved images 
 of six people and two animals.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was evidence of our existence here.`;
+   `It was evidence of our existence here.`;
    waitForClick; clearText; 
 });
 removeBG({ mode: BLACK, transition: 0 });
@@ -774,7 +774,7 @@ delay({ interval: 60 });
 playBGM({ num: 3, volume: 100 });
 bgload({ name: `IMG01B`, transition: 20 });
 clock(`12:36`);
-if (l_da != 0) goto(lbl_0000068d);
+if (l_sora_flag != 0) goto(lbl_0000068d);
 setSceneTitle({ index: 32 });
 goto(lbl_0000069b);
 let lbl_0000068d;
@@ -783,9 +783,9 @@ let lbl_0000069b;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`That afternoon -`;
+   `That afternoon -`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After a light lunch, I looked around but 
+   `After a light lunch, I looked around but 
 couldn't find You anywhere.`;
    waitForClick; clearText; marker; sound(`T5B060`); appendText; 
    Kid`"Looking for You? She ate lunch and then went 
@@ -808,10 +808,10 @@ ask her yourself?"`;
 her through the terminal intercom, but she 
 seemed really busy."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As usual, Tsugumi was nowhere to be seen...but 
+   `As usual, Tsugumi was nowhere to be seen...but 
 the sandwich I left at the kiosk was gone...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Come to think of it, neither You, Sora nor 
+   `Come to think of it, neither You, Sora nor 
 Tsugumi had said a word to me all morning.`;
    waitForClick; clearText; 
 });
@@ -819,18 +819,18 @@ bgload({ name: `BG26B1L`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(Something's up...I can tell...)`;
+   `(Something's up...I can tell...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At any rate, I figured I would go search for 
+   `At any rate, I figured I would go search for 
 them.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But I didn't know where should I go?`;
+   `But I didn't know where should I go?`;
    waitForClick; 
 });
 choice(
-   `The Control Room?`
-   `The Infirmary?`
-   `The Security Office?`
+   `The Control Room?`,
+   `The Infirmary?`,
+   `The Security Office?`,
 );
 switch (l_choice) {
    case 0: goto(lbl_000006dd);
@@ -843,9 +843,9 @@ bgload({ name: `BG15B1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I tried the Control Room.`;
+   `I tried the Control Room.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I pushed the button to open the door and it 
+   `I pushed the button to open the door and it 
 slid open.`;
    waitForClick; clearText; 
 });
@@ -856,31 +856,31 @@ text(() => {
    marker; appendText; 
    Takeshi`"Sora, are you in here?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I called out her name, but got no response.`;
+   `I called out her name, but got no response.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The console was silent.`;
+   `The console was silent.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(That's strange...)`;
+   `(That's strange...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wonder if this means she finished checking 
+   `I wonder if this means she finished checking 
 the sensor data.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But if that was the case, I thought she would 
+   `But if that was the case, I thought she would 
 report back to us?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Sora...where are you?)`;
+   `(Sora...where are you?)`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, So—ra—." `;
    waitForClick; clearText; marker; appendText; 
-   Narr`I expected to find her hiding in the corner 
+   `I expected to find her hiding in the corner 
 somewhere...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I called out for her again, but still got no 
+   `I called out for her again, but still got no 
 response.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Next, I touched the terminal.`;
+   `Next, I touched the terminal.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Although I didn't know how to operate it, it 
+   `Although I didn't know how to operate it, it 
 seemed to be responding.`;
    waitForClick; clearText; 
 });
@@ -893,10 +893,10 @@ delay({ interval: 120 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`A map of LeMU data suddenly appeared on the 
+   `A map of LeMU data suddenly appeared on the 
 LeMMIH monitor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But it didn't tell me anything.`;
+   `But it didn't tell me anything.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -908,21 +908,21 @@ bgload({ name: `BG16A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`There was still no sign of Sora.`;
+   `There was still no sign of Sora.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I decided to check somewhere else.`;
+   `I decided to check somewhere else.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I headed for the second floor.`;
+   `I headed for the second floor.`;
    waitForClick; 
 });
 choice(
-   `The Infirmary`
-   `The Security Office`
+   `The Infirmary`,
+   `The Security Office`,
 );
 switch (l_choice) {
    case 0: goto(lbl_000007d0);
@@ -935,7 +935,7 @@ bgload({ name: `BG08A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Turning down a corridor after climbing the 
+   `Turning down a corridor after climbing the 
 emergency stairs, I came out in front of the 
 Infirmary.`;
    waitForClick; clearText; 
@@ -944,24 +944,24 @@ playSFX({ name: `SE00_03`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(Huh....!?)`;
+   `(Huh....!?)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The door abruptly opened in my face, and a 
+   `The door abruptly opened in my face, and a 
 person came flying out.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...And then dodged right past me.`;
+   `...And then dodged right past me.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE01_04`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`In a flash the figure was gone, without even 
+   `In a flash the figure was gone, without even 
 seeming to notice me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(...Who was that??)`;
+   `(...Who was that??)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I whipped around quickly, trying to see who 
+   `I whipped around quickly, trying to see who 
 the person was.`;
    waitForClick; clearText; 
 });
@@ -970,7 +970,7 @@ fgload({ id: 1, name: `TU03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`...It was Tsugumi.`;
+   `...It was Tsugumi.`;
    waitForClick; clearText; 
 });
 removeFG({ id: 1, useAnim: true });
@@ -979,19 +979,19 @@ text(() => {
    marker; appendText; 
    Takeshi`"Hey..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I started to call out, but hesitated.`;
+   `I started to call out, but hesitated.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The events of from the night before popped 
+   `The events of from the night before popped 
 into my mind.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(I could stop her, but then what...?)`;
+   `(I could stop her, but then what...?)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the meantime, all I could see was Tsugumi's 
+   `In the meantime, all I could see was Tsugumi's 
 back fading further away.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey! Wait up! Where you going?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Barely getting the words out, I dashed after 
+   `Barely getting the words out, I dashed after 
 her.`;
    waitForClick; clearText; 
 });
@@ -1000,7 +1000,7 @@ bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I ran up a corridor, and hurriedly climbed the 
+   `I ran up a corridor, and hurriedly climbed the 
 stairs.`;
    waitForClick; clearText; 
 });
@@ -1009,47 +1009,47 @@ bgload({ name: `BG28A3R`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`But the sound of her feet faded down the end 
+   `But the sound of her feet faded down the end 
 of the emergency corridor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her figure had already rounded the corner out 
+   `Her figure had already rounded the corner out 
 of sight.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Tsu—gu—mi...!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was out of breath.`;
+   `I was out of breath.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had run about 30 yards, but...`;
+   `I had run about 30 yards, but...`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Damn it, Tsugumi, you sure are fast!!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I grumbled after her, although she was now 
+   `I grumbled after her, although she was now 
 well out of earshot.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It didn't feel like I could catch up with her 
+   `It didn't feel like I could catch up with her 
 at all.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her speed was unnatural.`;
+   `Her speed was unnatural.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...She was still supposed to be recuperating...`;
+   `...She was still supposed to be recuperating...`;
    waitForClick; clearText; 
 });
-if (l_d9 == 0) goto(lbl_00000917);
+if (l_tsugumi_flag == 0) goto(lbl_00000917);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(But still...)`;
+   `(But still...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(She's still a little slower than when she 
+   `(She's still a little slower than when she 
 pulled me away from the flood at the aquarium.)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her legs probably still hadn't fully recovered.`;
+   `Her legs probably still hadn't fully recovered.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At any rate I didn't want her to overdoing it.`;
+   `At any rate I didn't want her to overdoing it.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Aaah, damn it...!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Annoyed that I was out of breath, I continued 
+   `Annoyed that I was out of breath, I continued 
 after Tsugumi.`;
    waitForClick; clearText; 
 });
@@ -1057,23 +1057,23 @@ bgload({ name: `BG27A3`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`The sound of her feet was only barely 
+   `The sound of her feet was only barely 
 perceptible in the distance.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I strained my ears to hear.`;
+   `I strained my ears to hear.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It sounded like she had headed downstairs...`;
+   `It sounded like she had headed downstairs...`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I descended the stairs.`;
+   `I descended the stairs.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was unable to hear any footsteps from below.`;
+   `I was unable to hear any footsteps from below.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It seemed that instead of going to the third 
+   `It seemed that instead of going to the third 
 floor, she had gone down to the corridor on 
 the second floor.`;
    waitForClick; clearText; 
@@ -1083,26 +1083,26 @@ bgload({ name: `BG03A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I came out near the entrance to the Jellyfish 
+   `I came out near the entrance to the Jellyfish 
 Gondola.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(I had thought she came this way...)`;
+   `(I had thought she came this way...)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But Tsugumi was nowhere in sight.`;
+   `But Tsugumi was nowhere in sight.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Damn...I guess I'll just have to give up.)`;
+   `(Damn...I guess I'll just have to give up.)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`What's the point in playing chase with her 
+   `What's the point in playing chase with her 
 anyway, I thought...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But still, I was disappointed.`;
+   `But still, I was disappointed.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG26A3R`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Without further recourse, I gave up and walked 
+   `Without further recourse, I gave up and walked 
 to the nearby Security Office.`;
    waitForClick; clearText; 
 });
@@ -1113,25 +1113,25 @@ text(() => {
    marker; appendText; 
    Takeshi`"Hey!! Tsugumi—!!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I called her name without much hope, but there 
+   `I called her name without much hope, but there 
 was no answer.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the end it seemed Tsugumi hadn't noticed.`;
+   `In the end it seemed Tsugumi hadn't noticed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It hadn't seemed that she was trying to avoid 
+   `It hadn't seemed that she was trying to avoid 
 me...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But maybe I was better off this way.`;
+   `But maybe I was better off this way.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Giving up, I went back down the stairs and 
+   `Giving up, I went back down the stairs and 
 returned to the corridor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I decided to stop by the nearby Security 
+   `I decided to stop by the nearby Security 
 Office.`;
    waitForClick; clearText; 
 });
@@ -1140,7 +1140,7 @@ let lbl_00000933;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Climbing the stairs, I headed toward the 
+   `Climbing the stairs, I headed toward the 
 Security Office on second floor.`;
    waitForClick; clearText; 
 });
@@ -1152,7 +1152,7 @@ bgload({ name: `BG11A1`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`And as usual, the room smelled faintly of 
+   `And as usual, the room smelled faintly of 
 smoke.`;
    waitForClick; clearText; 
 });
@@ -1164,7 +1164,7 @@ text(() => {
    marker; sound(`T5B066`); appendText; 
    You`"Oh, hi there Takeshi..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Noticing me enter, You turned toward me from 
+   `Noticing me enter, You turned toward me from 
 the console. `;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Say, You, you haven't been smoking have you?"`;
@@ -1174,7 +1174,7 @@ fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I only said it in jest, but You looked 
+   `I only said it in jest, but You looked 
 slightly offended.`;
    waitForClick; clearText; marker; sound(`T5B067`); appendText; 
    You`"No way...how could you ask..."`;
@@ -1203,7 +1203,7 @@ text(() => {
    You`"This is the kind of beauty that's impossible 
 for a smoker like you, ha!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You spoke smugly, mocking me.`;
+   `You spoke smugly, mocking me.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, I don't smoke."`;
    waitForClick; clearText; 
@@ -1233,7 +1233,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`T5B076`); appendText; 
    You`"The Kid said that?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You gave me a slightly surprised look.`;
+   `You gave me a slightly surprised look.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU03BDM`, x: 320, useAnim: true });
@@ -1258,7 +1258,7 @@ text(() => {
    You`"Well in that case, guess I'll let you in on 
 it."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Turing back to the console, You began to type.`;
+   `Turing back to the console, You began to type.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -1273,7 +1273,7 @@ text(() => {
    You`"I have been researching stuff about LeMU for 
 quite a while now."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She spoke with her eyes glued to the monitor.`;
+   `She spoke with her eyes glued to the monitor.`;
    waitForClick; clearText; marker; sound(`T5B081`); appendText; 
    You`"And then there's the thing about my father..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1281,13 +1281,13 @@ quite a while now."`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Or have I told you about him yet?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It must have been the first day I came to this 
+   `It must have been the first day I came to this 
 place.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When You startled me by suddenly starting up 
+   `When You startled me by suddenly starting up 
 the Dolphin Carousel. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had heard about him then...`;
+   `I had heard about him then...`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"So...have you found something?"`;
    waitForClick; clearText; 
@@ -1298,14 +1298,14 @@ text(() => {
    marker; sound(`T5B082`); appendText; 
    You`"Not yet."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You shook her head slowly.`;
+   `You shook her head slowly.`;
    waitForClick; clearText; 
 });
 playSFX({ name: `SE04_01`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Eyeing the monitor, she hit some more keys and 
+   `Eyeing the monitor, she hit some more keys and 
 entered a code.`;
    waitForClick; clearText; marker; sound(`T5B083`); appendText; 
    You`"If I could only find the password..."`;
@@ -1342,14 +1342,14 @@ text(() => {
    marker; sound(`T5B089`); appendText; 
    You`"But I give up."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You stopped typing.`;
+   `You stopped typing.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Taking her eyes off the console, she looked at 
+   `Taking her eyes off the console, she looked at 
 me.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey...by the way..."`;
@@ -1410,7 +1410,7 @@ accessible."`;
    You`"Well, not exactly, really."`;
    waitForClick; clearText; 
 });
-if (l_da == 0) goto(lbl_00000c34);
+if (l_sora_flag == 0) goto(lbl_00000c34);
 showTextbox();
 text(() => {
    marker; appendText; 
@@ -1441,7 +1441,7 @@ text(() => {
    marker; sound(`T5B101`); appendText; 
    You`"Except, that won't be necessary."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You spoke coldly.`;
+   `You spoke coldly.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Huh?"`;
    waitForClick; clearText; 
@@ -1476,7 +1476,7 @@ explodes, Sora won't be damaged at all."`;
 name means in Japanese, 'Sora' is in the 
 'Sky'."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`With that, You pointed her finger towards the 
+   `With that, You pointed her finger towards the 
 ceiling.`;
    waitForClick; clearText; 
 });
@@ -1484,11 +1484,11 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Lured by her pointing finger, I looked up.`;
+   `Lured by her pointing finger, I looked up.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As if I expected to find Sora there.`;
+   `As if I expected to find Sora there.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Naturally, she was nowhere to be seen...`;
+   `Naturally, she was nowhere to be seen...`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, hey, hey, hold on a second! How could 
 that be!"`;
@@ -1516,7 +1516,7 @@ text(() => {
    marker; sound(`T5B110`); appendText; 
    You`"That's what I mean..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Suddenly, You's voice level dropped.`;
+   `Suddenly, You's voice level dropped.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"So, what...?"`;
    waitForClick; clearText; 
@@ -1554,7 +1554,7 @@ text(() => {
    You`"What I'm going to say is only speculation, 
 but..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You furrowed her brows together.`;
+   `You furrowed her brows together.`;
    waitForClick; clearText; marker; sound(`T5B117`); appendText; 
    You`"I think it's possible that someone is 
 intentionally hiding the facts from us."`;
@@ -1568,7 +1568,7 @@ text(() => {
    marker; sound(`T5B118`); appendText; 
    You`"No, it doesn't necessarily mean that."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You shook her head as she spoke.`;
+   `You shook her head as she spoke.`;
    waitForClick; clearText; marker; sound(`T5B119`); appendText; 
    You`"On the one hand, someone might have created a 
 program to orchestrate the whole thing, 
@@ -1637,16 +1637,16 @@ fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After that I fell silent.`;
+   `After that I fell silent.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was searching for something to say.`;
+   `I was searching for something to say.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `YU03BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`You was looking down.`;
+   `You was looking down.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"So..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1658,7 +1658,7 @@ fgload({ id: 1, name: `YU13BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`When I asked, You furrowed her brow slightly.`;
+   `When I asked, You furrowed her brow slightly.`;
    waitForClick; clearText; marker; sound(`T5B131`); appendText; 
    You`"Yeah, I was just thinking about that..."`;
    waitForClick; clearText; marker; sound(`T5B132`); appendText; 
@@ -1692,7 +1692,7 @@ text(() => {
    marker; sound(`T5B138`); appendText; 
    You`"Well, at least it's a start..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You suddenly became more upbeat.`;
+   `You suddenly became more upbeat.`;
    waitForClick; clearText; marker; sound(`T5B139`); appendText; 
    You`"Cracking the security protection is going to 
 be a real pain. This stubborn code!"`;
@@ -1708,7 +1708,7 @@ text(() => {
    You`"Until I can get inside, it's the same as not 
 knowing a thing."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You said this and then gave a big shrug.`;
+   `You said this and then gave a big shrug.`;
    waitForClick; clearText; marker; appendText; 
    Takeshi`"Yeah..."`;
    waitForClick; clearText; marker; appendText; 
@@ -1722,9 +1722,9 @@ text(() => {
    marker; sound(`T5B142`); appendText; 
    You`"Well, maybe you're right."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You gave me a smile.`;
+   `You gave me a smile.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She then popped her neck and rotated her stiff 
+   `She then popped her neck and rotated her stiff 
 shoulders.`;
    waitForClick; clearText; 
 });
@@ -1740,7 +1740,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`T5B145`); appendText; 
    You`"Okay."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Turning her back to me, You began to peck at 
+   `Turning her back to me, You began to peck at 
 the keyboard.`;
    waitForClick; clearText; 
 });
@@ -1752,7 +1752,7 @@ text(() => {
    marker; sound(`T5B146`); appendText; 
    You`"But still, you know..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Without stopping her hands, she muttered 
+   `Without stopping her hands, she muttered 
 quietly.`;
    waitForClick; clearText; marker; sound(`T5B147`); appendText; 
    You`"My mother used to tell me all about my 
@@ -1765,22 +1765,22 @@ program is possible because..."`;
    waitForClick; clearText; marker; sound(`T5B150`); appendText; 
    You`"Even programmers have habits..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`For a long time, You stared at the monitor.`;
+   `For a long time, You stared at the monitor.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She didn't look my way.`;
+   `She didn't look my way.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So I couldn't read her expression anymore.`;
+   `So I couldn't read her expression anymore.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But I could tell by her shaky voice.`;
+   `But I could tell by her shaky voice.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She was probably crying.`;
+   `She was probably crying.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Without saying a word, I slipped out of the 
+   `Without saying a word, I slipped out of the 
 Security Office.`;
    waitForClick; clearText; 
 });
 stopSFX()
-if (l_da == 0) goto(lbl_00000d5b);
+if (l_sora_flag == 0) goto(lbl_00000d5b);
 hideTextbox();
 stopBGM();
 bgload({ name: `BG25A1`, transition: 20 });
@@ -1788,34 +1788,34 @@ playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`(Is Sora really in Insel null...?)`;
+   `(Is Sora really in Insel null...?)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If so...`;
+   `If so...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`No matter whether LeMU is crushed or not, 
+   `No matter whether LeMU is crushed or not, 
 she'd still be okay...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`"Tell me Takeshi, after you escape from here 
+   `"Tell me Takeshi, after you escape from here 
 safely, what's the first thing you want to do?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`......`;
+   `......`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Were her words just a flimsy attempt at 
+   `Were her words just a flimsy attempt at 
 compassion?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'I feel like I've gained an new perspective on 
+   `'I feel like I've gained an new perspective on 
 human life.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Come on everybody! Believe in tomorrow, so 
+   `'Come on everybody! Believe in tomorrow, so 
 you can live today...'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Were these words just robotic, programmed 
+   `Were these words just robotic, programmed 
 phrases...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Simple utterances encoded to pacify and 
+   `Simple utterances encoded to pacify and 
 comfort humans...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Suddenly, I felt a distance between Sora's 
+   `Suddenly, I felt a distance between Sora's 
 existence and my own.`;
    waitForClick; clearText; 
 });

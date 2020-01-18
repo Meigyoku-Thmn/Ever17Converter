@@ -58,6 +58,12 @@ namespace CleanOutputScript {
                   case "09":
                      rs = "_tsugumi_gd_clear";
                      break;
+                  case "0d":
+                     rs = "sora_or_tsugumi_gd_reach";
+                     break;
+                  case "0e":
+                     rs = "sara_or_you_gd_reach";
+                     break;
                   case "0f":
                      rs = "tsugumi_gd_clear";
                      break;
@@ -116,8 +122,35 @@ namespace CleanOutputScript {
                   case "25":
                      rs = "_you_ep_reach";
                      break;
+                  case "26":
+                     rs = "_tsugumi_gd_reach";
+                     break;
+                  case "27":
+                     rs = "_sora_gd_reach";
+                     break;
                   case "28":
                      rs = "_sara_ep_reach";
+                     break;
+                  case "29":
+                     rs = "coco_ep_reach";
+                     break;
+                  case "2a":
+                     rs = "coco_ep_reach_a";
+                     break;
+                  case "2b":
+                     rs = "coco_ep_reach_b";
+                     break;
+                  case "2c":
+                     rs = "coco_ep_reach_c";
+                     break;
+                  case "2d":
+                     rs = "coco_ep_reach_d";
+                     break;
+                  case "2e":
+                     rs = "coco_ep_reach_e";
+                     break;
+                  case "2f":
+                     rs = "coco_ep_reach_f";
                      break;
                   case "b1":
                      rs = "dayA";
@@ -143,6 +176,15 @@ namespace CleanOutputScript {
                   case "ba":
                      rs = "coco_point";
                      break;
+                  case "bb":
+                     rs = "counter";
+                     break;
+                  case "bc":
+                     rs = "choice_flag1";
+                     break;
+                  case "bd":
+                     rs = "choice_flag2";
+                     break;
                   case "bf":
                      rs = "accumulator";
                      break;
@@ -155,8 +197,32 @@ namespace CleanOutputScript {
                         { "1", "`sora_gd`" }, { "0", "`tsugumi_gd`" },
                      };
                      break;
+                  case "d0":
+                     rs = "selection_0_available";
+                     break;
+                  case "d1":
+                     rs = "selection_1_available";
+                     break;
+                  case "d2":
+                     rs = "selection_2_available";
+                     break;
+                  case "d3":
+                     rs = "selection_3_available";
+                     break;
+                  case "d4":
+                     rs = "selection_4_available";
+                     break;
+                  case "d5":
+                     rs = "selection_5_available";
+                     break;
                   case "d8":
                      rs = "looked_for_you";
+                     break;
+                  case "d9":
+                     rs = "tsugumi_flag";
+                     break;
+                  case "da":
+                     rs = "sora_flag";
                      break;
                   case "db":
                      rs = "repaired_with_sara";
@@ -173,14 +239,26 @@ namespace CleanOutputScript {
                   case "e0":
                      rs = "thought_you_can_swim_34_meters_regardless_water_pressure";
                      break;
+                  case "e1":
+                     rs = "went_to_merry_go_round";
+                     break;
+                  case "e2":
+                     rs = "went_to_warehouse";
+                     break;
                   case "e3":
                      rs = "chose_to_wait_there_in_2nd_day";
                      break;
                   case "e4":
                      rs = "went_with_you_in_2nd_day";
                      break;
+                  case "e5":
+                     rs = "chose_almost_completely_vertical";
+                     break;
                   case "e6":
                      rs = "talked_to_you_about_her_father_in_6th_day";
+                     break;
+                  case "e7":
+                     rs = "you_gd_flag";
                      break;
                   case "e8":
                      rs = "said_it_is_not_soras_fault";
@@ -219,7 +297,22 @@ namespace CleanOutputScript {
             case "dimOff_":
                break;
             case "sys_":
+               switch (var) {
+                  case "f1":
+                     rs = "allow_shortcut";
+                     break;
+                  case "f2":
+                     rs = "allow_jukebox";
+                     break;
+                  case "f3":
+                     rs = "allow_album";
+                     break;
+                  case "f5":
+                     rs = "allow_clearlist";
+                     break;
+               }
                break;
+
          }
          return (rs, @enum);
       };
@@ -485,11 +578,9 @@ namespace CleanOutputScript {
                   break;
                }
                case "removeBG": {
-                  if (tokens[1] == "3") {
-                     outputLines.Add($"removeBG_unk({tokens[1]}, {tokens[2]}, {tokens[3]});");
-                     break;
-                  }
-                  string mode = (tokens[1] == "1" ? "white" : tokens[1] == "0" ? "black" : null).ToUpper();
+                  string mode = (tokens[1] == "3" ? "red" :
+                                 tokens[1] == "1" ? "white" : 
+                                 tokens[1] == "0" ? "black" : null).ToUpper();
                   var transition = Convert.ToInt32(tokens[2] + tokens[3], 10);
                   outputLines.Add($"removeBG({{ mode: {mode}, transition: {transition} }});");
                   break;
@@ -801,7 +892,7 @@ namespace CleanOutputScript {
             }
             var m = inlineCommand2.Match(fragment);
             if (m.Success == false) {
-               string name = "Narr";
+               string name = "";
                var _fragment = nameTag.Replace(fragment, (_m) => {
                   name = _m.Groups[1].Value;
                   var name_comment = name;
@@ -859,7 +950,7 @@ namespace CleanOutputScript {
                         return "";
                      });
                      if (selection == _selection) {
-                        innerText += tab + $"`{EscapeBackTick(selection)}`\r\n";
+                        innerText += tab + $"`{EscapeBackTick(selection)}`,\r\n";
                      }
                      else {
                         var num = Convert.ToUInt32(variable, 16);

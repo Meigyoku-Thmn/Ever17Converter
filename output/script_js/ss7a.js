@@ -7,13 +7,13 @@ chapterCutin({ name: `00000000` });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Finally the roaring sounds stopped and the 
+   `Finally the roaring sounds stopped and the 
 flow of the water slowed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The squeaking and screeching of metal on metal 
+   `The squeaking and screeching of metal on metal 
 also died down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It seemed that the flooding had stopped.`;
+   `It seemed that the flooding had stopped.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -26,27 +26,27 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`There was still a little air left in the 
+   `There was still a little air left in the 
 ceiling of the infirmary.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was kind of like a cup flipped upside down 
+   `It was kind of like a cup flipped upside down 
 filled mostly with water.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara and I were floating there.`;
+   `Sara and I were floating there.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"It looks like things have quieted down 
 a bit..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I looked at Sara.`;
+   `I looked at Sara.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the darkness, the only thing throwing off a 
+   `In the darkness, the only thing throwing off a 
 gentle aura of light was Sara.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara, you alright?"`;
    waitForClick; clearText; marker; sound(`S7A000`); appendText; 
    Sara`"Yeah. I'm okay...just...a little cold."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara forced a smile for me.`;
+   `Sara forced a smile for me.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara...why did you come back?"`;
    waitForClick; clearText; marker; appendText; 
@@ -71,25 +71,25 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I thought something was strange.`;
+   `I thought something was strange.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`From the beginning Sara had always seemed 
+   `From the beginning Sara had always seemed 
 like she had the upper hand in our 
 relationship.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`But now that we knew that we were brother and 
+   `But now that we knew that we were brother and 
 sister, it felt like things had been reversed.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Now Sara was relying on me...like when 
+   `Now Sara was relying on me...like when 
 we were kids.`;
    waitForClick; nextPage(04); 
 });
@@ -106,9 +106,9 @@ text(() => {
    waitForClick; clearText; marker; sound(`S7A005`); appendText; 
    Sara`"This..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara lifted her right hand.`;
+   `Sara lifted her right hand.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Pinched between her fingers was the shard 
+   `Pinched between her fingers was the shard 
 of the mirror from my finger.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Hey...it's that piece of the mirror."`;
@@ -139,7 +139,7 @@ yourself for that."`;
    waitForClick; clearText; marker; sound(`S7A011`); appendText; 
    Sara`"No, I'm sorry..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After that, Sara didn't speak for a while.`;
+   `After that, Sara didn't speak for a while.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara?"`;
    waitForClick; clearText; 
@@ -192,7 +192,7 @@ able to decide things for myself..."`;
    Sara`"Ever since I entered Leiblich's research 
 institute, I haven't felt free even once..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara's words left me stunned.`;
+   `Sara's words left me stunned.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -202,18 +202,18 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I wondered why I had never thought of things 
+   `I wondered why I had never thought of things 
 that way before.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`Leiblich had written me off early on.`;
+   `Leiblich had written me off early on.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`I figured that it was probably because the 
+   `I figured that it was probably because the 
 only special power I had was seeing infrared 
 light.`;
    waitForClick; nextPage(04); 
@@ -222,24 +222,24 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`But Sara was probably different.`;
+   `But Sara was probably different.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`The way that she had been able to use 
+   `The way that she had been able to use 
 computers... You had called her a first-rate 
 hacker.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`It was probably only the beginning.`;
+   `It was probably only the beginning.`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`After I had left the institute, Sara must have 
+   `After I had left the institute, Sara must have 
 lived under constant observation and undergone 
 experiments.`;
    waitForClick; nextPage(04); 
@@ -253,7 +253,7 @@ AVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Thinking about it then amazed me.`;
+   `Thinking about it then amazed me.`;
    waitForClick; clearText; marker; sound(`S7A023`); appendText; 
    Sara`"When all of this started I thought this 
 accident was just some kind of test of my 
@@ -305,40 +305,40 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`That was all that I could say.`;
+   `That was all that I could say.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara's each and every word made my heart ache.`;
+   `Sara's each and every word made my heart ache.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I knew that wasn't Sara's intention.`;
+   `I knew that wasn't Sara's intention.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But it felt like every word of hers was a 
+   `But it felt like every word of hers was a 
 confession to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Of course, I had been under surveillance as 
+   `Of course, I had been under surveillance as 
 well, but it had been nowhere near as strict.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As long as I didn't do anything out of the 
+   `As long as I didn't do anything out of the 
 ordinary it was like there was no one there.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The whole time I had been living carefree.`;
+   `The whole time I had been living carefree.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But Sara had...been under Leiblich's careful 
+   `But Sara had...been under Leiblich's careful 
 watch the whole time, their guinea pig.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Why hadn't I gone to help Sara earlier...`;
+   `Why hadn't I gone to help Sara earlier...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I promised that I would...but I hadn't...`;
+   `I promised that I would...but I hadn't...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Of course, I had tried.`;
+   `Of course, I had tried.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But everything I did was blocked by Leiblich's 
+   `But everything I did was blocked by Leiblich's 
 far-reaching influence.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Still, I knew there could be no excuses.`;
+   `Still, I knew there could be no excuses.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Why hadn't I tried harder?`;
+   `Why hadn't I tried harder?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Why...?`;
+   `Why...?`;
    waitForClick; clearText; marker; sound(`S7A035`); appendText; 
    Sara`"Brother...?"`;
    waitForClick; clearText; 
@@ -349,9 +349,9 @@ closeDimOverlay();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Sara was calling to me.`;
+   `Sara was calling to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had been daydreaming in my own world.`;
+   `I had been daydreaming in my own world.`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_SA12C`, transition: 20 });
@@ -372,9 +372,9 @@ text(() => {
    waitForClick; clearText; marker; sound(`S7A039`); appendText; 
    Sara`"And I want to thank you..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara said this and smiled.`;
+   `Sara said this and smiled.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The smile also seemed tinged with resignation.`;
+   `The smile also seemed tinged with resignation.`;
    waitForClick; clearText; marker; sound(`S7A040`); appendText; 
    Sara`"I don't care anymore..."`;
    waitForClick; clearText; marker; sound(`S7A041`); appendText; 
@@ -394,12 +394,12 @@ before, then I'd rather..."`;
    Sara`"Up until now...I never even had the freedom 
 to die..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her words shocked me into silence.`;
+   `Her words shocked me into silence.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had had no idea that Sara's life up until 
+   `I had had no idea that Sara's life up until 
 now had been so hard.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...`;
+   `But...`;
    waitForClick; clearText; marker; appendText; 
    Kid`"No, Sara."`;
    waitForClick; clearText; 
@@ -415,9 +415,9 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Kid`"We're going to live! No matter what!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wasn't about to let Sara die here!`;
+   `I wasn't about to let Sara die here!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was absolutely no way that I would 
+   `There was absolutely no way that I would 
 let Sara die.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"If you die here, then it means you've lost 
@@ -426,11 +426,11 @@ to THEM!"`;
    Kid`"You're going to live! Survive! No matter 
 what!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was my responsibility to help Sara live.`;
+   `It was my responsibility to help Sara live.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara, let's go."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I said -`;
+   `I said -`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_SA12A`, transition: 20 });
@@ -531,7 +531,7 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Kid`"Sara, believe in me."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara clasped the pendant she was wearing 
+   `Sara clasped the pendant she was wearing 
 around her neck.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Let's go, Sara!"`;
@@ -548,21 +548,21 @@ removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I pulled Sara along with me, and we left the 
+   `I pulled Sara along with me, and we left the 
 infirmary.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`We moved from air pocket to air pocket looking 
+   `We moved from air pocket to air pocket looking 
 desperately for a place where the wall had 
 collapsed in.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When we finally found a tear big enough 
+   `When we finally found a tear big enough 
 for us to squeeze through, we doubled back 
 to the nearest air pocket.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`We took a number of short breaths to boost the 
+   `We took a number of short breaths to boost the 
 oxygen level in our blood.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And finally taking a big breath, I grabbed 
+   `And finally taking a big breath, I grabbed 
 onto Sara's hand and led her through the hole 
 and into the ocean.`;
    waitForClick; clearText; 
@@ -571,91 +571,91 @@ bgload({ name: `EV_SA13A`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`With the walls and floor gone, for an instant 
+   `With the walls and floor gone, for an instant 
 I lost sense of which way was up and which 
 was down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Soon I saw a faint light in the water above.`;
+   `Soon I saw a faint light in the water above.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I held Sara under my arm and headed for that 
+   `I held Sara under my arm and headed for that 
 light.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I desperately thrashed my legs and swam with 
+   `I desperately thrashed my legs and swam with 
 my broken arm.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The water pressure was slowly pushing the air 
+   `The water pressure was slowly pushing the air 
 from my lungs.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara's face was twisted in pain.`;
+   `Sara's face was twisted in pain.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was in agony.`;
+   `I was in agony.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Still, I swam, struggling to pull Sara toward 
+   `Still, I swam, struggling to pull Sara toward 
 the light.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I kept kicking, believing that if I could make 
+   `I kept kicking, believing that if I could make 
 it to the source of the light then everything 
 would be okay.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Even if all of the oxygen were squeezed out of 
+   `Even if all of the oxygen were squeezed out of 
 my lungs, I was not about to let Sara die here.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That thought kept me moving.`;
+   `That thought kept me moving.`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Slowly. Gradually.`;
+   `Slowly. Gradually.`;
    delay(0); 
 });
 bgload_keepFg({ name: `EV_SA13B`, transition: 20 });
 showTextbox();
 text(() => {
    appendText; 
-   Narr`The light was getting bigger.`;
+   `The light was getting bigger.`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Sara's arms squeezed me in desperation.`;
+   `Sara's arms squeezed me in desperation.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Hoping to give Sara courage, I gripped her 
+   `Hoping to give Sara courage, I gripped her 
 tighter with my left arm.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`As if in response, Sara gave me a smile and 
+   `As if in response, Sara gave me a smile and 
 started trying to swim upward.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I matched her movements, swimming desperately.`;
+   `I matched her movements, swimming desperately.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Come Sara...`;
+   `Come Sara...`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Let's go...`;
+   `Let's go...`;
    delay(0); 
 });
 bgload_keepFg({ name: `EV_SA13C`, transition: 20 });
 showTextbox();
 text(() => {
    appendText; 
-   Narr`Toward the light...`;
+   `Toward the light...`;
    waitForClick; clearText; 
 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I was never going to let Sara go again.`;
+   `I was never going to let Sara go again.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was never going to leave my precious sister 
+   `I was never going to leave my precious sister 
 behind again.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Never again...`;
+   `Never again...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sara...`;
+   `Sara...`;
    waitForClick; clearText; 
 });
 hideTextbox();

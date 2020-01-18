@@ -20,8 +20,8 @@ the first time."`;
    waitForClick; 
 });
 choice(
-   `Try it`
-   `Don't do anything`
+   `Try it`,
+   `Don't do anything`,
 );
 switch (l_choice) {
    case 0: goto(lbl_000000c5);
@@ -33,9 +33,9 @@ text(() => {
    marker; appendText; 
    Kid`"..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't say or do anything.`;
+   `I didn't say or do anything.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`No, it would be better to say that I couldn't 
+   `No, it would be better to say that I couldn't 
 say or do anything.`;
    waitForClick; clearText; 
 });
@@ -50,14 +50,14 @@ unSkippableDelay(5);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Eventually we reached the Conference Room.`;
+   `Eventually we reached the Conference Room.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora's face was one big smile.`;
+   `Sora's face was one big smile.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But somewhere in her smile seemed a hint of 
+   `But somewhere in her smile seemed a hint of 
 sadness.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At least...it appeared that way to me.`;
+   `At least...it appeared that way to me.`;
    waitForClick; clearText; 
 });
 goto(lbl_00000241);
@@ -68,7 +68,7 @@ text(() => {
    marker; appendText; 
    Kid`"When I close my eyes...?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I decided to test it and covered my eyes with 
+   `I decided to test it and covered my eyes with 
 one hand.`;
    waitForClick; clearText; 
 });
@@ -83,20 +83,20 @@ makeFGNormal({ id: 2 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Instantly, Sora vanished.`;
+   `Instantly, Sora vanished.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If Sora did exist, I should have been able to 
+   `If Sora did exist, I should have been able to 
 see her head above my hand and her feet below.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But Sora wasn't there.`;
+   `But Sora wasn't there.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My hand kept the laser from reaching my eye, 
+   `My hand kept the laser from reaching my eye, 
 so I couldn't see Sora.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Something about it made her seem fragile and 
+   `Something about it made her seem fragile and 
 temporary. It scared me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I quickly put down my hand.`;
+   `I quickly put down my hand.`;
    waitForClick; clearText; 
 });
 setFGRenderOrder(4, 2, 1);
@@ -104,27 +104,27 @@ fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Her beautiful image appeared without a sound.`;
+   `Her beautiful image appeared without a sound.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She smiled gently.`;
+   `She smiled gently.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Sora...?"`;
    waitForClick; clearText; marker; sound(`C2S224`); appendText; 
    Sora`"Yes...?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was no real meaning in my question.`;
+   `There was no real meaning in my question.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Maybe it was just that I wanted to see whether 
+   `Maybe it was just that I wanted to see whether 
 or not she would answer me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Given her fragile existence, there seemed to 
+   `Given her fragile existence, there seemed to 
 be a danger that she might slip away at any 
 moment...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was uneasy about it, and at the same time 
+   `I was uneasy about it, and at the same time 
 felt a sort of awe about the mystery of it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt drawn to her.`;
+   `I felt drawn to her.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO08ADM`, x: 320, useAnim: true });
@@ -134,11 +134,11 @@ text(() => {
    Sora`"Is there anything else? Please don't stare at 
 me like that."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora was blushing.`;
+   `Sora was blushing.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Oh...no. Nothing else."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora pinched her lips closed, as if she were 
+   `Sora pinched her lips closed, as if she were 
 slightly embarrassed.`;
    waitForClick; clearText; 
 });
@@ -152,9 +152,9 @@ text(() => {
    waitForClick; clearText; marker; sound(`C2S227`); appendText; 
    Sora`"Kid...have you ever seen the moon?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The question came out of nowhere.`;
+   `The question came out of nowhere.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My mind switched tracks and starting looking 
+   `My mind switched tracks and starting looking 
 for an appropriate answer.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Uh...the moon, huh...?"`;
@@ -249,10 +249,10 @@ illusion.....what would you do then?"`;
 all of the scenery that you are witnessing 
 actually exist?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(Is everything I'm looking at...is it 
+   `(Is everything I'm looking at...is it 
 RSD...???)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I panicked, glancing around at my surroundings.`;
+   `I panicked, glancing around at my surroundings.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
@@ -274,7 +274,7 @@ text(() => {
 answered...I thought I would tease you just 
 a bit."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora giggled, covering her mouth.`;
+   `Sora giggled, covering her mouth.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
@@ -317,52 +317,52 @@ text(() => {
    waitForClick; clearText; marker; sound(`C2S250`); appendText; 
    Sora`"Do you understand?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt like I had been able to get the gist of 
+   `I felt like I had been able to get the gist of 
 what she meant.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Still...I didn't know exactly what she 
+   `Still...I didn't know exactly what she 
 meant by...'I am the same as the moon.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I mustered an image of a silvery blue moon, 
+   `I mustered an image of a silvery blue moon, 
 its light piercing through the dark night.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`(I see...that's what she means.)`;
+   `(I see...that's what she means.)`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The answer came to me surprisingly quickly.`;
+   `The answer came to me surprisingly quickly.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The moon didn't bark like a dog, it didn't 
+   `The moon didn't bark like a dog, it didn't 
 smell, and it didn't taste tart like an 
 apple ? at least not as far as I knew.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The only way to be sure of the existence of 
+   `The only way to be sure of the existence of 
 the moon was through its small gravitational 
 pull and its blue-white light.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Thinking of it in that way, the mysterious 
+   `Thinking of it in that way, the mysterious 
 charm of the moon and its transience were 
 things that Sora shared.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I believed the moon was there, so it was 
+   `I believed the moon was there, so it was 
 there...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I believed that Sora was there, and 
+   `I believed that Sora was there, and 
 she was there...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Maybe that was what Sora wanted to say.`;
+   `Maybe that was what Sora wanted to say.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Yeah. I understand."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That was what I answered.`;
+   `That was what I answered.`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Sora's eyes lit up and her cheeks wrinkled 
+   `Sora's eyes lit up and her cheeks wrinkled 
 into a big smile.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And, it may have been my imagination, but from 
+   `And, it may have been my imagination, but from 
 somewhere I thought I smelled the tart scent 
 of an apple.`;
    waitForClick; clearText; 

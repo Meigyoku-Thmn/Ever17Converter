@@ -17,13 +17,13 @@ switch (l_ending) {
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`ＬＲ＿Ａ００の値が正しくありません。`;
+   `ＬＲ＿Ａ００の値が正しくありません。`;
    waitForClick; clearText; 
 });
 let lbl_000001b4;
 g_you_gd_reach = 1;
 if (g__sara_gd_clear == 0) goto(lbl_000001df);
-g_0e = 1;
+g_sara_or_you_gd_reach = 1;
 let lbl_000001df;
 if (g_coco_ep_reach != 0) goto(lbl_0000034e);
 if (g__you_gd_clear == 1) goto(lbl_000002af);
@@ -67,9 +67,9 @@ let lbl_000004a8;
 g__tsugumi_gd_clear = 1;
 unlockCG($`POST04`);
 unlockCG($`POST09`);
-l_26 = 1;
+l__tsugumi_gd_reach = 1;
 if (g__sora_gd_clear == 0) goto(lbl_000004f6);
-g_0d = 1;
+g_sora_or_tsugumi_gd_reach = 1;
 unlockCG($`POST03`);
 let lbl_000004f6;
 g_tsugumi_gd_clear = 1;
@@ -109,9 +109,9 @@ let lbl_00000775;
 g_sora_gd_clear = 1;
 unlockCG($`POST10`);
 unlockCG($`POST14`);
-l_27 = 1;
+l__sora_gd_reach = 1;
 if (g_tsugumi_gd_clear == 0) goto(lbl_000007c3);
-g_0d = 1;
+g_sora_or_tsugumi_gd_reach = 1;
 unlockCG($`POST03`);
 let lbl_000007c3;
 g__sora_gd_clear = 1;
@@ -150,7 +150,7 @@ jump(`T_EP`);
 let lbl_00000a42;
 g_sara_gd_reach = 1;
 if (g__you_gd_clear == 0) goto(lbl_00000a6d);
-g_0e = 1;
+g_sara_or_you_gd_reach = 1;
 let lbl_00000a6d;
 if (g_coco_ep_reach != 0) goto(lbl_00000c85);
 if (g__sara_gd_clear == 1) goto(lbl_00000aac);
@@ -236,7 +236,7 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
@@ -246,35 +246,35 @@ text(() => {
 
 `;
    marker; appendText; bigChar; clearText; 
-   Narr`    L`;
+   `    L`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`i`;
+   `i`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`f`;
+   `f`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`e`;
+   `e`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr` `;
+   ` `;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`r`;
+   `r`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`e`;
+   `e`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`a`;
+   `a`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`d`;
+   `d`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`i`;
+   `i`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`n`;
+   `n`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`g`;
+   `g`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`:`;
+   `:`;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr` `;
+   ` `;
    delay(46); marker; appendText; bigChar; clearText; 
-   Narr`1`;
+   `1`;
    delay(90); delay(90); 
 });
 monoColorOverlay({ interval: 24, color: BLACK });
@@ -289,7 +289,7 @@ removeBG({ mode: BLACK, transition: 62 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
@@ -304,26 +304,26 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    marker; appendText; delay(0); 
-   Narr`         `;
+   `         `;
    nextPage(00); 
-   Narr`This story is not an end yet.`;
+   `This story is not an end yet.`;
    nextPage(01); 
-   Narr`
+   `
 `;
    marker; appendText; delay(0); 
-   Narr`   `;
+   `   `;
    nextPage(00); 
-   Narr`Because only you are in the infinity loop.`;
+   `Because only you are in the infinity loop.`;
    nextPage(01); marker; appendText; delay(90); delay(90); delay(90); nextPage(04); 
 });
 hideTextbox();
 removeBG({ mode: BLACK, transition: 62 });
 hideTextbox();
 AVL_Mode();
-sys_f1 = 1;
-sys_f3 = 1;
-sys_f2 = 1;
-sys_f5 = 1;
+sys_allow_shortcut = 1;
+sys_allow_album = 1;
+sys_allow_jukebox = 1;
+sys_allow_clearlist = 1;
 unlockCG($`POST01`);
 if (g_1d == 0) goto(lbl_00000fe3);
 unlockCG($`POST17`);
@@ -334,7 +334,7 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
@@ -342,25 +342,25 @@ text(() => {
 
 `;
    marker; appendText; delay(0); 
-   Narr`         `;
+   `         `;
    nextPage(00); 
-   Narr`This story is not an end yet.`;
+   `This story is not an end yet.`;
    nextPage(01); 
-   Narr`
+   `
 `;
    marker; appendText; delay(0); 
-   Narr`   `;
+   `   `;
    nextPage(00); 
-   Narr`Because only you are in the infinity loop.`;
+   `Because only you are in the infinity loop.`;
    nextPage(01); marker; appendText; delay(90); delay(90); delay(90); nextPage(04); 
 });
 hideTextbox();
 hideTextbox();
 AVL_Mode();
-sys_f1 = 1;
-sys_f3 = 1;
-sys_f2 = 1;
-sys_f5 = 1;
+sys_allow_shortcut = 1;
+sys_allow_album = 1;
+sys_allow_jukebox = 1;
+sys_allow_clearlist = 1;
 unlockCG($`POST01`);
 if (g_1d == 0) goto(lbl_00001062);
 unlockCG($`POST17`);
@@ -383,7 +383,7 @@ l__coco_route_unlock = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Opening The Third Eye- The Last Chapter:
+   `Opening The Third Eye- The Last Chapter:
 Finding Coco`;
    waitForClick; clearText; 
 });

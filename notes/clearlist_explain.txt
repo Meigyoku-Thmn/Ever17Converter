@@ -1,0 +1,5 @@
+Endings Cleared: tổng số end
+Scenes Completed: tổng số scene, clear lần lượt bằng lệnh setSceneTitleByIndex
+Paths Completed: tổng số lựa chọn của tất cả lời gọi choice
+Percentage Complete: ??
+Number of Screen Savers: ??

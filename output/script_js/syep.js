@@ -12,7 +12,7 @@ setSceneTitle({ index: 91 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Two years later...`;
+   `Two years later...`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -31,35 +31,35 @@ text(() => {
    marker; sound(`YEP000`); appendText; 
    You`"Wow, this is great weather"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You and I were riding on a boat.`;
+   `You and I were riding on a boat.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The infinitely deep, blue ocean spread as far 
+   `The infinitely deep, blue ocean spread as far 
 as we could see.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`A clear blue sky unfolded above us.`;
+   `A clear blue sky unfolded above us.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was a pair of seagulls flying overhead.`;
+   `There was a pair of seagulls flying overhead.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The sea breeze whipped at us little strongly, 
+   `The sea breeze whipped at us little strongly, 
 and You used her hand to hold her hair in 
 check.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She had recently started to grow her hair out.`;
+   `She had recently started to grow her hair out.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Somehow it seemed that she might have been 
+   `Somehow it seemed that she might have been 
 starting to look like her mom 'her.'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That and...she seemed to have become a bit 
+   `That and...she seemed to have become a bit 
 more easygoing and ladylike...`;
    waitForClick; clearText; marker; sound(`YEP001`); appendText; 
    You`"So how is college going?"`;
    waitForClick; clearText; marker; appendText; 
    Kid`"It's alright I guess."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Yes. I had somehow gotten into college and 
+   `Yes. I had somehow gotten into college and 
 was in my first year.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Of course, I was going to a different school 
+   `Of course, I was going to a different school 
 than You, so we never had a chance to meet 
 on campus.`;
    waitForClick; clearText; marker; sound(`YEP002`); appendText; 
@@ -100,7 +100,7 @@ confusing."`;
    You`"Anyway, I guess I'll listen to your 
 reasoning."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There she went changing her mind again.`;
+   `There she went changing her mind again.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"You can really be twisted sometimes."`;
    waitForClick; clearText; marker; sound(`YEP012`); appendText; 
@@ -118,39 +118,39 @@ pure-hearted Kid?'"`;
    waitForClick; clearText; marker; appendText; 
    Kid`"I'm not like I used to be..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But after that, I was reluctant to speak.`;
+   `But after that, I was reluctant to speak.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wondered if I really was different from the 
+   `I wondered if I really was different from the 
 person I was at that time.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...Probably I was.`;
+   `...Probably I was.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Since then, no inexplicable, mysterious 
+   `Since then, no inexplicable, mysterious 
 things had happened to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I couldn't predict things any more.`;
+   `I couldn't predict things any more.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had gotten my memory back.`;
+   `I had gotten my memory back.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`...Or maybe, maybe I was the same.`;
+   `...Or maybe, maybe I was the same.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Maybe I was the same as ever.`;
+   `Maybe I was the same as ever.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I knew that people learned, got hurt, and lost 
+   `I knew that people learned, got hurt, and lost 
 things... and that they change as they 
 live life.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But my basic nature hadn't changed.`;
+   `But my basic nature hadn't changed.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Some things change. Some things never did.`;
+   `Some things change. Some things never did.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was still 'me'...but myself in the past was 
+   `I was still 'me'...but myself in the past was 
 different...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If I had to explain it, I might say that it 
+   `If I had to explain it, I might say that it 
 was like 'me in another world....'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Maybe that was it.`;
+   `Maybe that was it.`;
    waitForClick; clearText; marker; sound(`YEP014`); appendText; 
    You`"You're right. You are not like you used 
 to be."`;
@@ -159,10 +159,10 @@ to be."`;
    waitForClick; clearText; marker; sound(`YEP015`); appendText; 
    You`"Well, for one thing you got so tall." `;
    waitForClick; clearText; marker; appendText; 
-   Narr`She stood on her tiptoes and raised her 
+   `She stood on her tiptoes and raised her 
 hand over my head.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I had grown a head taller over the two years.`;
+   `I had grown a head taller over the two years.`;
    waitForClick; clearText; marker; sound(`YEP016`); appendText; 
    You`"So, are you going to tell me or not?"`;
    waitForClick; clearText; marker; appendText; 
@@ -211,23 +211,23 @@ was happening to me."`;
    waitForClick; clearText; marker; sound(`YEP024`); appendText; 
    You`"Yeah...right."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was a thin black stain on hem of her 
+   `There was a thin black stain on hem of her 
 jacket that had remained.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was a memorable stain.`;
+   `It was a memorable stain.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Our memory....`;
+   `Our memory....`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I started to think as I gazed at the ocean.`;
+   `I started to think as I gazed at the ocean.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought about the time when I met You.`;
+   `I thought about the time when I met You.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`About those unforgettable seven days...`;
+   `About those unforgettable seven days...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But I should talk about the things that 
+   `But I should talk about the things that 
 happened after that.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`After that...`;
+   `After that...`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -243,19 +243,19 @@ bgload({ name: `BG39A2`, transition: 10 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`For some time, we just stood there enjoying 
+   `For some time, we just stood there enjoying 
 the sunshine on the floating island.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The sun looked extremely bright after a week 
+   `The sun looked extremely bright after a week 
 without it. Its rays were warm.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At that moment...`;
+   `At that moment...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Someone patted me on the shoulder.`;
+   `Someone patted me on the shoulder.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I turned back and...`;
+   `I turned back and...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was...`;
+   `There was...`;
    waitForClick; clearText; 
 });
 fgload({ id: 1, name: `SO02ADL`, x: 320, useAnim: true });
@@ -290,9 +290,9 @@ fgload({ id: 1, name: `SO08ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Hearing that, Sora smiled gently.`;
+   `Hearing that, Sora smiled gently.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I exchanged a handshake with Sora when 
+   `I exchanged a handshake with Sora when 
 I met her again.`;
    waitForClick; clearText; 
 });
@@ -300,9 +300,9 @@ bgload({ name: `IMG05A`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I looked up at the sky above.`;
+   `I looked up at the sky above.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The clear blue sky seemed to spread on forever.`;
+   `The clear blue sky seemed to spread on forever.`;
    waitForClick; clearText; marker; sound(`YEP029`); appendText; 
    Sora`"Dr. Tanaka is waiting for you."`;
    waitForClick; clearText; marker; sound(`YEP030`); appendText; 
@@ -323,11 +323,11 @@ text(() => {
    marker; appendText; 
    Kid`"Oh, you are..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The person called Dr. Tanaka that appeared in 
+   `The person called Dr. Tanaka that appeared in 
 front of us was the woman I'd seen on the 
 monitor...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was the person who had claimed to be 
+   `It was the person who had claimed to be 
 You's mother.`;
    waitForClick; clearText; marker; sound(`YEP031`); appendText; 
    You`"M...mother..."`;
@@ -348,12 +348,12 @@ when you got to the floating island, right?"`;
    waitForClick; clearText; marker; appendText; 
    Kid`"What?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wondered if she were talking to me.`;
+   `I wondered if she were talking to me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It seemed like it was the first time that 
+   `It seemed like it was the first time that 
 I'd met her...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Or had I met her in the past...?`;
+   `Or had I met her in the past...?`;
    waitForClick; clearText; marker; sound(`YEP036`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"What's wrong? Is there something that 
@@ -400,15 +400,15 @@ text(() => {
    //Dr. Tanaka
    Dr_Tanaka`"..............."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Dr. Tanaka looked down.`;
+   `Dr. Tanaka looked down.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She twisted her lips sadly.`;
+   `She twisted her lips sadly.`;
    waitForClick; clearText; marker; sound(`YEP047`); appendText; 
    You`"Which is it?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wonder why You would ask such a thing.`;
+   `I wonder why You would ask such a thing.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She should've already known the answer...`;
+   `She should've already known the answer...`;
    waitForClick; clearText; marker; sound(`YEP048`); appendText; 
    //Dr. Tanaka
    Dr_Tanaka`"...I am You..."`;
@@ -429,11 +429,11 @@ text(() => {
    //Dr. Tanaka
    Dr_Tanaka`"''Mother'.... You..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She stared You in the eye as she said this. `;
+   `She stared You in the eye as she said this. `;
    waitForClick; clearText; marker; sound(`YEP053`); appendText; 
    You`"...Mother..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`".................."`;
+   `".................."`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -443,7 +443,7 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`After a while, we asked Dr. Tanaka question 
+   `After a while, we asked Dr. Tanaka question 
 after question.`;
    waitForClick; nextPage(04); 
 });
@@ -451,108 +451,108 @@ hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`...How did we get trapped?`;
+   `...How did we get trapped?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...Was it an accident or not?`;
+   `...Was it an accident or not?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...Why could I predict things?`;
+   `...Why could I predict things?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...Why did I lose my memory?`;
+   `...Why did I lose my memory?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...What had happened in my past?`;
+   `...What had happened in my past?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...Did the girl I'd seen really exist? 
+   `...Did the girl I'd seen really exist? 
 Who was she?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...What had happened in You's past?`;
+   `...What had happened in You's past?`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`...Did You's father and mother really die?`;
+   `...Did You's father and mother really die?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...If so, then who was she, 
+   `...If so, then who was she, 
 this...'Dr. Tanaka?'`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...What was the meaning of the Haiku 
+   `...What was the meaning of the Haiku 
 poem password?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...What was Blick Winkel?`;
+   `...What was Blick Winkel?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...What was the connection between the 
+   `...What was the connection between the 
 TB virus and the accident?`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`And...`;
+   `And...`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`What was 'the third eye?'`;
+   `What was 'the third eye?'`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`...............`;
+   `...............`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`.........`;
+   `.........`;
    waitForClick; 
-   Narr`
+   `
 `;
    appendText; 
-   Narr`......`;
+   `......`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`           It was a long, long story.`;
+   `           It was a long, long story.`;
    waitForClick; nextPage(04); 
 });
 hideTextbox();
@@ -645,24 +645,24 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I drew You close and kissed her. `;
+   `I drew You close and kissed her. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`We were surrounded by the spring sun, clouds 
+   `We were surrounded by the spring sun, clouds 
 floating in the sky, the rippling ocean and 
 the song of seagulls.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt everything about You through her skin.`;
+   `I felt everything about You through her skin.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Her warmth, her scent, her touch, heartbeat 
+   `Her warmth, her scent, her touch, heartbeat 
 and even the color of her heart.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I could see through You completely then.`;
+   `I could see through You completely then.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was exactly...the third eye.`;
+   `It was exactly...the third eye.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Ultimate wisdom.`;
+   `Ultimate wisdom.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Yes, if I do this...`;
+   `Yes, if I do this...`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_YU12B`, transition: 20 });
@@ -671,13 +671,13 @@ NVL_Mode();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 
 `;
    appendText; delay(0); 
-   Narr`         Then we could transcend time.`;
+   `         Then we could transcend time.`;
    delay(90); 
 });
 delay({ interval: 120 });

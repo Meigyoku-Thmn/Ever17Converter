@@ -59,7 +59,7 @@ var metadata = {};
          case "GetUnitData":
             console.log('Received GetUnitData message');
             try {
-               let unitBuf = fs.readFileSync("script/" + message.payload.unitName);
+               let unitBuf = fs.readFileSync("base_script/en/" + message.payload.unitName);
                injectBufferByConfig(unitBuf, message.payload.unitName)
                script.post({ type: "UnitData" }, unitBuf);
             }

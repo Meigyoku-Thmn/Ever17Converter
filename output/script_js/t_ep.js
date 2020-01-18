@@ -25,7 +25,7 @@ showDimOverlay();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`
+   `
 
 
 `;
@@ -34,11 +34,11 @@ text(() => {
 showTextbox();
 text(() => {
    appendText; delay(0); 
-   Narr`           `;
+   `           `;
    nextPage(00); 
-   Narr`Eine Geschichte setzt auf`;
+   `Eine Geschichte setzt auf`;
    nextPage(01); 
-   Narr`
+   `
 `;
    
 });
@@ -47,9 +47,9 @@ bgload_keepFg({ name: `EV_CO11A`, transition: 0 });
 showTextbox();
 text(() => {
    appendText; delay(0); 
-   Narr`                `;
+   `                `;
    nextPage(00); 
-   Narr`1 Mai,2034 fort.`;
+   `1 Mai,2034 fort.`;
    nextPage(01); 
 });
 delay({ interval: 180 });

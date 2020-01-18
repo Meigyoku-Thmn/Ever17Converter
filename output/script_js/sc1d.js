@@ -4,7 +4,7 @@ l_dayB = 1;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`She sat in the dark room on the bed.`;
+   `She sat in the dark room on the bed.`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_CO03A`, transition: 20 });
@@ -14,20 +14,20 @@ text(() => {
    marker; appendText; 
    Kid`"Uh, I...um..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was at a loss for words.`;
+   `I was at a loss for words.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I didn't know where to start.`;
+   `I didn't know where to start.`;
    waitForClick; clearText; marker; appendText; 
    //Young Girl
    Young_Girl`"..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The girl just stared at me intently.`;
+   `The girl just stared at me intently.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"It's..al-alright..."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Don't worry...everything is alright..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`She didn't answer.`;
+   `She didn't answer.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Uh...um..."`;
    waitForClick; clearText; marker; appendText; 
@@ -58,7 +58,7 @@ text(() => {
    //Young Girl
    Young_Girl`"There is...no way out anymore..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The girl's eyes were sad and moist.`;
+   `The girl's eyes were sad and moist.`;
    waitForClick; clearText; 
 });
 if (l_know_sora_is_an_ai == 0) goto(lbl_000000ce);
@@ -66,12 +66,12 @@ if (l_coco_point != 3) goto(lbl_000000ce);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I decided to...`;
+   `I decided to...`;
    waitForClick; 
 });
 choice(
-   `Ask her why she said that`
-   `Take the girl out`
+   `Ask her why she said that`,
+   `Take the girl out`,
 );
 switch (l_choice) {
    case 0: goto(lbl_000000ce);
@@ -114,17 +114,17 @@ bgload({ name: `EV_CO03C`, transition: 26 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Then suddenly a shocked look appeared on 
+   `Then suddenly a shocked look appeared on 
 the girl's face as her eyes focused behind me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I followed her gaze.`;
+   `I followed her gaze.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG10A2`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`On the other side of the door...was Takeshi 
+   `On the other side of the door...was Takeshi 
 peeking in.`;
    waitForClick; clearText; 
 });
@@ -162,9 +162,9 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I looked back.`;
+   `I looked back.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The girl had vanished and there was no sign 
+   `The girl had vanished and there was no sign 
 that anyone had been sitting where she had 
 been.`;
    waitForClick; clearText; marker; appendText; 
@@ -256,7 +256,7 @@ text(() => {
    waitForClick; clearText; marker; appendText; 
    Kid`"There was a girl...a girl...right here..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`In the end, I couldn't get Takeshi to listen 
+   `In the end, I couldn't get Takeshi to listen 
 to me.`;
    waitForClick; clearText; 
 });
@@ -268,7 +268,7 @@ text(() => {
    marker; appendText; 
    Kid`"Let's go!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That was what I said.`;
+   `That was what I said.`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_CO03A`, transition: 20 });
@@ -291,21 +291,21 @@ stopBGM();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I sucked in my breath.`;
+   `I sucked in my breath.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Somehow I knew her name as well.`;
+   `Somehow I knew her name as well.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco Yagami.`;
+   `Coco Yagami.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`And then I had a premonition that something 
+   `And then I had a premonition that something 
 was about to happen.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I thought that when I took my eyes off of 
+   `I thought that when I took my eyes off of 
 her...Coco would vanish...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Like a ghost...`;
+   `Like a ghost...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`So I would take her out of here...`;
+   `So I would take her out of here...`;
    waitForClick; clearText; marker; sound(`C1S318`); appendText; 
    Coco`"Don't go...please..."`;
    waitForClick; clearText; marker; appendText; 
@@ -315,41 +315,41 @@ her...Coco would vanish...`;
    waitForClick; clearText; marker; sound(`C1S320`); appendText; 
    Coco`"Don't leave me alone..."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I couldn't understand what she meant.`;
+   `I couldn't understand what she meant.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I couldn't understand...but my mouth had an 
+   `I couldn't understand...but my mouth had an 
 answer.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"I won't go."`;
    waitForClick; clearText; marker; appendText; 
    Kid`"I will stay with you, Coco."`;
    waitForClick; clearText; marker; appendText; 
-   Narr`'Please, don't go'...just now the two of our 
+   `'Please, don't go'...just now the two of our 
 minds had overlapped.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I felt if I took my eyes off of her, she would 
+   `I felt if I took my eyes off of her, she would 
 disappear. `;
    waitForClick; clearText; marker; appendText; 
-   Narr`And Coco felt the same way.`;
+   `And Coco felt the same way.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Coco's eyes watered as if she were sad.`;
+   `Coco's eyes watered as if she were sad.`;
    waitForClick; clearText; 
 });
 bgload({ name: `EV_CO03C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Then suddenly a shocked look appeared on her 
+   `Then suddenly a shocked look appeared on her 
 face as her eyes focused behind me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I followed Coco's eyes.`;
+   `I followed Coco's eyes.`;
    waitForClick; clearText; 
 });
 bgload({ name: `BG10A2`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`On the other side of the door...was Takeshi 
+   `On the other side of the door...was Takeshi 
 peeking in.`;
    waitForClick; clearText; 
 });
@@ -364,28 +364,28 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I hurriedly looked back.`;
+   `I hurriedly looked back.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But Coco was no longer there.`;
+   `But Coco was no longer there.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Coco! Coco!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`My voice echoed and died in that small, 
+   `My voice echoed and died in that small, 
 steel-plated room.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Cocoooooo!"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`No one was there to answer my shouts.`;
+   `No one was there to answer my shouts.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was no sign of anyone and it felt as if 
+   `There was no sign of anyone and it felt as if 
 it might have been that way from the start.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There were no wrinkles where Coco had been 
+   `There were no wrinkles where Coco had been 
 sitting. No warmth either.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There was just a faint smell.`;
+   `There was just a faint smell.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Like the frozen smell that follows the north 
+   `Like the frozen smell that follows the north 
 wind across snowfields.`;
    waitForClick; clearText; marker; sound(`C1S322`); appendText; 
    Takeshi`"Co...Coco...?"`;
@@ -399,11 +399,11 @@ fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`I looked back at Takeshi.`;
+   `I looked back at Takeshi.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Something was different about Takeshi.`;
+   `Something was different about Takeshi.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`His lips were trembling.`;
+   `His lips were trembling.`;
    waitForClick; clearText; marker; appendText; 
    Kid`"Takeshi...do you know Coco?"`;
    waitForClick; clearText; marker; appendText; 
@@ -576,7 +576,7 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Takeshi left me with those harsh words 
+   `Takeshi left me with those harsh words 
 and departed.`;
    waitForClick; clearText; 
 });
@@ -592,19 +592,19 @@ clock(`22:24`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Before going to the Conference Room I peeked 
+   `Before going to the Conference Room I peeked 
 into the Control Room.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The bio scan figure was eating at my mind.`;
+   `The bio scan figure was eating at my mind.`;
    waitForClick; clearText; 
 });
 bgload({ name: `IT04C`, transition: 20 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`'Life readings: 5'`;
+   `'Life readings: 5'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The number had dropped from six to five.`;
+   `The number had dropped from six to five.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -618,26 +618,26 @@ clock(`22:28`);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Everyone was in the Conference Room.`;
+   `Everyone was in the Conference Room.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`There were fried chicken sandwiches and drinks 
+   `There were fried chicken sandwiches and drinks 
 secured from the sandwich shop there for 
 everyone.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Only Tsugumi was absent.`;
+   `Only Tsugumi was absent.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wondered where she had gone....but more 
+   `I wondered where she had gone....but more 
 than that, I was worried about her.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I told everyone about the girl.`;
+   `I told everyone about the girl.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But...`;
+   `But...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Everyone just laughed and no one listened.`;
+   `Everyone just laughed and no one listened.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`No one else had seen the girl.`;
+   `No one else had seen the girl.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Then I remembered the bio scan figure.`;
+   `Then I remembered the bio scan figure.`;
    waitForClick; clearText; 
 });
 if (l_know_sora_is_an_ai != 0) goto(lbl_00000527);
@@ -654,11 +654,11 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`'7'`;
+   `'7'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That girl was probably person number seven.`;
+   `That girl was probably person number seven.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But the number had been five and six as well.`;
+   `But the number had been five and six as well.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -674,15 +674,15 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`What could it mean?`;
+   `What could it mean?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`The image of the girl had been burned into my 
+   `The image of the girl had been burned into my 
 mind and there was no getting away from it.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I wondered if it was, like Takeshi had 
+   `I wondered if it was, like Takeshi had 
 said ? a hallucination.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If not, then...a ghost?`;
+   `If not, then...a ghost?`;
    waitForClick; clearText; 
 });
 goto(lbl_00000662);
@@ -700,17 +700,17 @@ closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`'5,6,7'`;
+   `'5,6,7'`;
    waitForClick; clearText; marker; appendText; 
-   Narr`What could it mean?`;
+   `What could it mean?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`If the girl was in fact a ghost, that would 
+   `If the girl was in fact a ghost, that would 
 mean that the number five was correct.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Sora wouldn't be included, and the four of 
+   `Sora wouldn't be included, and the four of 
 here plus Tsugumi would equal five.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`But the number had jumped to six and even to 
+   `But the number had jumped to six and even to 
 seven.`;
    waitForClick; clearText; 
 });
@@ -727,9 +727,9 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`What...in the world could that girl be...?`;
+   `What...in the world could that girl be...?`;
    waitForClick; clearText; marker; appendText; 
-   Narr`That reminded me of what You had said.`;
+   `That reminded me of what You had said.`;
    waitForClick; clearText; 
 });
 hideTextbox();
@@ -763,31 +763,31 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`If that were the case, it would explain 
+   `If that were the case, it would explain 
 everything.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`When the girl disappeared the number would be 
+   `When the girl disappeared the number would be 
 five. When she appeared six, and when she 
 split, then seven.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Split???`;
+   `Split???`;
    waitForClick; clearText; 
 });
 let lbl_00000662;
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Ha, ha. That was crazy.`;
+   `Ha, ha. That was crazy.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I shook my head at my own silliness.`;
+   `I shook my head at my own silliness.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Maybe I was losing it...`;
+   `Maybe I was losing it...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Something had to be wrong with me.`;
+   `Something had to be wrong with me.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I needed to calm down, collect myself.`;
+   `I needed to calm down, collect myself.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`While I thought this I flipped up the tab on 
+   `While I thought this I flipped up the tab on 
 the can of cola.`;
    waitForClick; clearText; 
 });
@@ -796,15 +796,15 @@ playSFX({ name: `SE02_15`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`Fushaaaww!`;
+   `Fushaaaww!`;
    waitForClick; clearText; marker; appendText; 
-   Narr`At first I didn't know what had happened.`;
+   `At first I didn't know what had happened.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I licked the liquid around my lips.`;
+   `I licked the liquid around my lips.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It was sweet.`;
+   `It was sweet.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`It seemed as if the cola had exploded into my 
+   `It seemed as if the cola had exploded into my 
 face.`;
    waitForClick; clearText; 
 });
@@ -820,7 +820,7 @@ text(() => {
    waitForClick; clearText; marker; sound(`C1S352`); appendText; 
    Everyone`"GA, HA, HA, HA, HA"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Everyone exploded in a chorus of laughter.`;
+   `Everyone exploded in a chorus of laughter.`;
    waitForClick; clearText; 
 });
 fgload({ id: 4, name: `YU02BDS`, x: 320, useAnim: true });
@@ -829,7 +829,7 @@ text(() => {
    marker; sound(`C1S353`); appendText; 
    You`"Hey, what the heck are you doing, Kid?"`;
    waitForClick; clearText; marker; appendText; 
-   Narr`You said this laughing.`;
+   `You said this laughing.`;
    waitForClick; clearText; marker; sound(`C1S354`); appendText; 
    You`"These cans contain pop made with special gas 
 so that they are made at 6 atmospheres."`;
@@ -844,13 +844,13 @@ fgload({ id: 1, name: `SA02ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    marker; appendText; 
-   Narr`As she laughed, Sara took out a handkerchief.`;
+   `As she laughed, Sara took out a handkerchief.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I took it and wiped my face.`;
+   `I took it and wiped my face.`;
    waitForClick; clearText; marker; appendText; 
-   Narr`I was enveloped in laughter...`;
+   `I was enveloped in laughter...`;
    waitForClick; clearText; marker; appendText; 
-   Narr`Without noticing, I'd forgotten about 
+   `Without noticing, I'd forgotten about 
 everything that had been weighing on my mind.`;
    waitForClick; clearText; 
 });
