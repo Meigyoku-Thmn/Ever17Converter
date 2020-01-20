@@ -267,20 +267,6 @@ namespace string_extractor {
             var yaml = serializer.Serialize(dict);
             scene_titles_file.Write(yaml);
          }
-         return;
-         var test_pointers_offset = 0x0003EA78;
-         target.BaseStream.Position = test_pointers_offset;
-         var test_pointers = new List<long>();
-         for (var i = 0; i < 2202; i++) {
-            test_pointers.Add((long)VAToFileOffset(target.ReadUInt32(), targetHeader));
-         }
-         var tests = new List<string>();
-         foreach (var test_pointer in test_pointers) {
-            target.BaseStream.Position = test_pointer;
-            var test = target.ReadNullTerminatedStr();
-            tests.Add(test);
-         }
-         File.WriteAllLines(Path.Combine(outputDirPath, "new 1.txt"), tests);
       }
    }
 }

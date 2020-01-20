@@ -20,5 +20,7 @@
       "cs_tools/**/*.csproj.user": true,
       "cs_tools/**/Properties": true,
    },
-   "python.pythonPath": "C:\\Python27\\python.exe"
+   "python.pythonPath": "C:\\Python27\\python.exe",
+   "editor.tabSize": 3,
+   "editor.detectIndentation": false
 }

@@ -132,7 +132,7 @@ namespace CleanOutputScript {
                      rs = "_sara_ep__cleared";
                      break;
                   case "29":
-                     rs = "coco_ep__cleared";
+                     rs = "coco_ep__clear";
                      break;
                   case "2a":
                      rs = "coco_ep_reach_a";
@@ -288,7 +288,7 @@ namespace CleanOutputScript {
                      rs = "is_coco_route";
                      break;
                   case "f2":
-                     rs = "sc2f_cleared";
+                     rs = "sc2f_clear";
                      break;
                }
                break;
@@ -316,10 +316,43 @@ namespace CleanOutputScript {
          }
          return (rs, @enum);
       };
+      static string Params2Str(object[] @params) {
+         return string.Join(",", @params.Select(e => {
+            if (e is int) return e;
+            if (codeProvider.IsValidIdentifier(e.ToString()))
+               return e;
+            throw new InvalidSyntaxException($"Invalid Indentifier '{e}'");
+         }));
+      }
+      [DebuggerDisplay("{DebugValue}")]
+      class TextToken {
+         private string DebugValue {
+            get {
+               if (Name == "Text") {
+                  return $"{CharaName}`{Text}`";
+               }
+               else {
+                  return $"{Name}({Params2Str(Params)})";
+               }
+            }
+         }
+         public string Name = "";
+         public object[] Params = new object[0];
+         public string CharaName = "";
+         public string Text = "";
+      }
+      enum TextMode { NVL, ADV }
+      static TextMode textMode = TextMode.ADV;
+      static bool dialogNotCompleted = false;
+      static string lastCharaName = "";
       static void Main(string[] args) {
          Directory.CreateDirectory(outputDirPath);
          var filePaths = Directory.GetFiles(inputDirPath, "*.dec", SearchOption.TopDirectoryOnly).OrderBy(e => e);
          foreach (var filePath in filePaths) {
+            textMode = TextMode.ADV;
+            dialogNotCompleted = false;
+            lastCharaName = "Narr";
+
             var lines = File.ReadAllLines(filePath);
             var outputLines = new List<string>();
             var usedLabelSet = new HashSet<string>();
@@ -579,7 +612,7 @@ namespace CleanOutputScript {
                }
                case "removeBG": {
                   string mode = (tokens[1] == "3" ? "red" :
-                                 tokens[1] == "1" ? "white" : 
+                                 tokens[1] == "1" ? "white" :
                                  tokens[1] == "0" ? "black" : null).ToUpper();
                   var transition = Convert.ToInt32(tokens[2] + tokens[3], 10);
                   outputLines.Add($"removeBG({{ mode: {mode}, transition: {transition} }});");
@@ -839,10 +872,12 @@ namespace CleanOutputScript {
                }
                case "turnOnFullscreenTextMode": {
                   outputLines.Add("NVL_Mode();");
+                  textMode = TextMode.NVL;
                   break;
                }
                case "turnOffFullscreenTextMode": {
-                  outputLines.Add("AVL_Mode();");
+                  outputLines.Add("ADV_Mode();");
+                  textMode = TextMode.ADV;
                   break;
                }
                case "showDimInAndOutAnim": {
@@ -883,7 +918,8 @@ namespace CleanOutputScript {
          text = inlineCommand1.Replace(text, m => {
             return $"�{m}�";
          });
-         var innerText = tab;
+         string innerText = null;
+         List<TextToken> textTokens = new List<TextToken>();
          var fragments = text.Split(new[] { '�' }, StringSplitOptions.RemoveEmptyEntries);
          var isChoice = false;
          foreach (var fragment in fragments) {
@@ -891,7 +927,8 @@ namespace CleanOutputScript {
                throw new InvalidSyntaxException($"This range has other commands beside {{choice}} at line {inputLine + 1} of file '{filePath}'");
             }
             var m = inlineCommand2.Match(fragment);
-            if (m.Success == false) {
+            if (!m.Success) {
+               // This is a text fragment
                string name = "";
                var _fragment = nameTag.Replace(fragment, (_m) => {
                   name = _m.Groups[1].Value;
@@ -907,34 +944,41 @@ namespace CleanOutputScript {
                   return "";
                });
                _fragment = FixJPTextInEnVer(_fragment);
-               innerText += $"\r\n{tab}{name}`{EscapeBackTick(_fragment)}`;\r\n{tab}";
+               //innerText += $"\r\n{tab}{name}`{EscapeBackTick(_fragment)}`;\r\n{tab}";
+               textTokens.Add(new TextToken {
+                  Name = "Text",
+                  CharaName = name,
+                  Text = EscapeBackTick(_fragment),
+               });
                continue;
             }
             var command = m.Groups[1].Value;
             var _tokens = command.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var foundName = "";
+            var foundParams = new object[0];
             switch (_tokens[0]) {
                case "waitForClick":
                case "clearText":
                case "appendText":
                case "waitForSound":
                case "marker": {
-                  innerText += $"{_tokens[0]}; ";
+                  foundName = _tokens[0];
                   break;
                }
                case "delay": {
-                  innerText += $"delay({_tokens[1]}); ";
+                  foundName = "delay"; foundParams = new object[] { int.Parse(_tokens[1]) };
                   break;
                }
                case "sound": {
-                  innerText += $"sound(`{EscapeBackTick(_tokens[1])}`); ";
+                  foundName = "sound"; foundParams = new object[] { EscapeBackTick(_tokens[1]) };
                   break;
                }
                case "nextPage": {
-                  innerText += $"nextPage({_tokens[1]}); ";
+                  foundName = "nextPage"; foundParams = new object[] { int.Parse(_tokens[1]) };
                   break;
                }
                case "bigChar": {
-                  innerText += $"bigChar; ";
+                  foundName = "bigChar";
                   break;
                }
                case "choice": {
@@ -968,17 +1012,98 @@ namespace CleanOutputScript {
                   throw new InvalidSyntaxException($"Unknown command '{_tokens[0]}' at line {inputLine + 1} of file '{filePath}'");
                }
             }
+            textTokens.Add(new TextToken {
+               Name = foundName,
+               Params = foundParams,
+            });
          }
-         if (isChoice == false) {
-            outputLines.Add("text(() => {");
-            outputLines.Add(innerText);
-            outputLines.Add("});");
-         }
-         else {
+         if (isChoice) {
             outputLines.Add("choice(");
             outputLines.Add(innerText);
             outputLines.Add(");");
+            return;
          }
+         var groupedToken = textTokens
+            .Aggregate(new List<List<TextToken>>() { new List<TextToken>() }, (acc, token) => {
+               if ((textMode == TextMode.NVL && (token.Name == "marker" || token.Name == "appendText")) ||
+                  (textMode == TextMode.ADV && (token.Name == "marker"))) {
+                  acc.Add(new List<TextToken>());
+               }
+               else {
+                  acc.Last().Add(token);
+               }
+               return acc;
+            })
+            .Where(e => e.Count > 0)
+            ;
+         if (textMode == TextMode.NVL)
+            ;
+         foreach (var _tokens in groupedToken) {
+            var currentName = dialogNotCompleted ? "Append" : "";
+            var currentText = "";
+            var baseVoice = "";
+            dialogNotCompleted = textMode == TextMode.NVL ? false : true;
+            var hasClearNVL = false;
+            var hasWaitClickAtEnd = false;
+            foreach (var token in _tokens) {
+               if (dialogNotCompleted == false && textMode == TextMode.ADV)
+                  throw new InvalidSyntaxException($"Lingering command(s) after 'clearText' at line {inputLine + 1} of file '{filePath}'");
+               void AddWaitClick() {
+                  if (hasWaitClickAtEnd == true) currentText += "${wait}";
+                  hasWaitClickAtEnd = false;
+               }
+               switch (token.Name) {
+                  case "nextPage":
+                     if ((int)token.Params[0] == 4) hasClearNVL = true;
+                     else currentText += $"${{nextPage({Params2Str(token.Params)})}}";
+                     break;
+                  case "waitForClick":
+                     if (hasWaitClickAtEnd == true) currentText += "${wait}";
+                     hasWaitClickAtEnd = true;
+                     break;
+                  case "clearText":
+                     dialogNotCompleted = false;
+                     break;
+                  case "delay": {
+                     if ((int)token.Params[0] == 0) break;
+                     currentText += $"${{wait({Params2Str(token.Params)})}}";
+                     break;
+                  }
+                  case "marker":
+                  case "appendText":
+                     break;
+                  case "waitForSound":
+                     AddWaitClick();
+                     currentText += $"${{waitVoice}}";
+                     break;
+                  case "sound": {
+                     AddWaitClick();
+                     if (baseVoice == "")
+                        baseVoice = Params2Str(token.Params);
+                     else
+                        currentText += $"${{voice({Params2Str(token.Params)})}}";
+                     break;
+                  }
+                  case "Text":
+                     AddWaitClick();
+                     if (currentName != "")
+                        throw new InvalidSyntaxException($"Detect lingering name tag '{token.CharaName}' at line {inputLine + 1} of file '{filePath}'");
+                     currentName = token.CharaName;
+                     currentText += token.Text;
+                     break;
+                  default:
+                     throw new InvalidSyntaxException($"Invalid command '{token.Name}' at line {inputLine + 1} of file '{filePath}'");
+               }
+            }
+            if (currentName == "" && baseVoice != "") currentName = lastCharaName;
+            else lastCharaName = currentName;
+            innerText += $"{tab}{currentName}{(baseVoice == "" ? "" : $"({baseVoice})")}`{currentText}{(hasWaitClickAtEnd ? "" : "${noWait}")}`;\r\n";
+            if (hasClearNVL)
+               innerText += $"{tab}clearPage();";
+         }
+         outputLines.Add("text(() => {");
+         outputLines.Add(innerText);
+         outputLines.Add("});");
       }
    }
 }
