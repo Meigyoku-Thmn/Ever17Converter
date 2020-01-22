@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-
 namespace extractor {
    static class Bit {
       public static uint ToUInt32(this byte[] arr) {

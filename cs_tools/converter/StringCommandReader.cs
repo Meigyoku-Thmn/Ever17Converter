@@ -32,29 +32,22 @@ namespace converter {
             if (op == null) {
                var chr = ReadChar();
                output.Append(chr == "\n" ? NewLine : chr);
-            }
-            else {
+            } else {
                c = Read();
                if (op == StrOpcode.waitForClick) {
                   output.Append("{" + op + "}");
-               }
-               else if (op == StrOpcode.clearText) {
+               } else if (op == StrOpcode.clearText) {
                   output.Append("{" + op + "}");
-               }
-               else if (op == StrOpcode.delay) {
+               } else if (op == StrOpcode.delay) {
                   output.Append("{" + $"{op} {ReadExpr()}" + "}");
-               }
-               else if (op == StrOpcode.appendText) {
+               } else if (op == StrOpcode.appendText) {
                   ReadExpr();
                   output.Append("{" + op + "}");
-               }
-               else if (op == StrOpcode.sound) {
+               } else if (op == StrOpcode.sound) {
                   output.Append("{" + $"{op} {ReadCString()}" + "}");
-               }
-               else if (op == StrOpcode.waitForSound) {
+               } else if (op == StrOpcode.waitForSound) {
                   output.Append("{" + op + "}");
-               }
-               else if (op == StrOpcode.choice) {
+               } else if (op == StrOpcode.choice) {
                   int arg0 = Read();
                   int arg1 = ReadShort();
                   output.Append("{" + $"{op} {arg0:x2} {arg1:x4} ");
@@ -66,20 +59,17 @@ namespace converter {
                   Read(); //Read away the trailing 0
                   output.Append("}");
                   goto OUTER;
-               }
-               else if (op == StrOpcode.marker) {
+               } else if (op == StrOpcode.marker) {
                   output.Append("{" + $"{op}" + "}");
-               }
-               else if (op == StrOpcode.nextPage) {
+               } else if (op == StrOpcode.nextPage) {
                   int arg0 = Read();
                   output.Append("{" + $"{op} {arg0:x2}" + "}");
-               }
-               else if (op == StrOpcode.bigChar) {
+               } else if (op == StrOpcode.bigChar) {
                   output.Append("{" + $"{op}" + "}");
                }
             }
          }
-OUTER:;
+      OUTER:;
       }
       protected string ParseChoiceOption() {
          int marker = Read();
@@ -96,8 +86,7 @@ OUTER:;
                temp.Append(c);
                c = ReadChar();
             }
-         }
-         else if (type == 2) {
+         } else if (type == 2) {
             int arg0 = Read();
             int arg1 = Read();
             int arg2 = Read();

@@ -17,14 +17,12 @@ namespace converter {
             int mode = arg0;
             int val = buf.ReadByte() & 0xFF;
             return string.Format("VAR_{0:x2}_{1}", mode, val);
-         }
-         else if (arg0 >= 0xC1 && arg0 <= 0xCF) {
+         } else if (arg0 >= 0xC1 && arg0 <= 0xCF) {
             int mode = arg0;
             int a = buf.ReadInt16() & 0xFFFF;
             int b = buf.ReadInt16() & 0xFFFF;
             return string.Format("VAR_{0:x2}_{1}_{2}", mode, a, b);
-         }
-         else if (arg0 >= 0xA0 && arg0 <= 0xAF) {
+         } else if (arg0 >= 0xA0 && arg0 <= 0xAF) {
             int m = arg0;
             int a = buf.ReadByte() & 0xFF;
             int b = buf.ReadByte() & 0xFF;
@@ -35,13 +33,11 @@ namespace converter {
 
             if (b == 0 && nil == 0) {
                return (256 * (m - 0xA0) + a).ToString();
-            }
-            else if (m == 0xA4) {
+            } else if (m == 0xA4) {
                return KIDUtil.GetVarname(string.Format("{0:x2}", a));
             }
             return string.Format("CONST_{0:x2}_{1:x2}_{2:x2}", m, a, b);
-         }
-         else if (arg0 >= 0xB0 && arg0 <= 0xBF) {
+         } else if (arg0 >= 0xB0 && arg0 <= 0xBF) {
             int m = arg0;
             int a = buf.ReadByte() & 0xFF;
             int b = buf.ReadByte() & 0xFF;
@@ -52,13 +48,11 @@ namespace converter {
 
             if (b == 0 && nil == 0) {
                return (256 * (m - 0xBF) + (a - 0x100)).ToString();
-            }
-            else if (m == 0xB4) {
+            } else if (m == 0xB4) {
                return KIDUtil.GetVarname(string.Format("{0:x2}", a));
             }
             return string.Format("CONST_{0:x2}_{1:x2}_{2:x2}", m, a, b);
-         }
-         else if (arg0 >= 0x80 && arg0 <= 0x8F) {
+         } else if (arg0 >= 0x80 && arg0 <= 0x8F) {
             int a = arg0 - 0x80; //Constant
             int b = buf.ReadByte() & 0xFF;
 
@@ -74,15 +68,13 @@ namespace converter {
             }
 
             return "" + a;
-         }
-         else if (arg0 == 0x28) {
+         } else if (arg0 == 0x28) {
             int arg1 = buf.ReadByte() & 0xFF;
             if (arg1 != 0x0a) {
                Log.Write("  [Unknown] I thought 0x28 is always followed by 0x0a, but got: " + arg1 + _position);
             }
             return ReadExpr(buf);
-         }
-         else if (arg0 == 0xe0) {
+         } else if (arg0 == 0xe0) {
             int rColor = buf.ReadByte() & 0xFF;
             int gColor = buf.ReadByte() & 0xFF;
             int bColor = buf.ReadByte() & 0xFF;
@@ -93,8 +85,7 @@ namespace converter {
                Log.Write("  [Unknown] I thought 0xe0 color code is always ended by three 0x00, at " + _position);
             }
             return string.Format($"rgb({rColor},{gColor},{bColor})");
-         }
-         else {
+         } else {
             if (!WorkAround.CanSuppressVaropError(arg0)) {
                Log.Write("  [Unknown] What kind of expr is this? " + arg0 + _position);
             }

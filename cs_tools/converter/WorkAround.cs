@@ -35,8 +35,7 @@ namespace converter {
                var dump = buf.ReadByte();
                if (a + 1 != 12) {
                   outp.Write("{0:x2} ", dump);
-               }
-               else {
+               } else {
                   outp.Write("{0:x2}", dump);
                }
             }
@@ -53,8 +52,7 @@ namespace converter {
                var jumpTarget = jumpTable[jumpTableIndex];
                outp.WriteLine("jumpIfRandomIs " + i + string.Format(" {0:x8} ({1:x8})", jumpTarget, jumpTableIndex));
             }
-         }
-         else {
+         } else {
             rs = false;
             buf.BaseStream.Position = offset + 1;
          }

@@ -1,0 +1,1 @@
+enum TextMode { NVL, ADV }

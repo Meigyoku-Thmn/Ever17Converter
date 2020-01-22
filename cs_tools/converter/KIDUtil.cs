@@ -14,8 +14,7 @@ namespace converter {
             buf.BaseStream.Limit(buf.BaseStream.Length);
             buf.BaseStream.Position = pos;
             return ReadCString(buf);
-         }
-         finally {
+         } finally {
             buf.BaseStream.Position = oldpos;
             buf.BaseStream.Limit(oldlimit);
          }

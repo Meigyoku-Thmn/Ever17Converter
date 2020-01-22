@@ -28,8 +28,7 @@ namespace extractor {
                proc.StandardInput.BaseStream.Write(inp.GetBuffer(), 0, (int)inp.Length);
                proc.StandardInput.Close();
             }).Wait();
-         }
-         catch (Exception e) when (e.InnerException is IOException) {
+         } catch (Exception e) when (e.InnerException is IOException) {
          }
          proc.WaitForExit();
          var error = proc.StandardError.ReadToEnd();
@@ -57,8 +56,7 @@ namespace extractor {
          });
          try {
             Task.WaitAll(inputTask, outputTask);
-         }
-         catch (Exception e) when (e.InnerException is IOException) {
+         } catch (Exception e) when (e.InnerException is IOException) {
          }
          proc.WaitForExit();
          var error = proc.StandardError.ReadToEnd();

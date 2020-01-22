@@ -17,8 +17,7 @@ namespace extractor {
             inp.Position += 4;
             uncompressedLength = din.ReadUInt32();
             inp.Position += 4;
-         }
-         else uncompressedLength = _uncompressedLength;
+         } else uncompressedLength = _uncompressedLength;
          var @out = new MemoryStream(new byte[uncompressedLength], 0, (int)uncompressedLength, true, true);
          int w = 0;
          byte[] temp = new byte[16 << 10];
@@ -36,8 +35,7 @@ namespace extractor {
                      @out.WriteByte((byte)b);
                      w++;
                   }
-               }
-               else {
+               } else {
                   //Copy previously decompressed bytes to output
                   int offset = ((b & 0x03) << 8) + din.ReadByte() + 1;
                   int count = ((b >> 2) & 0x0f) + 2;
@@ -52,8 +50,7 @@ namespace extractor {
                      w++;
                   }
                }
-            }
-            else {
+            } else {
                if ((b & 0x40) != 0) {
                   //Copy byte sequence k times
                   int count = (b & 0x3f) + 2;
@@ -65,8 +62,7 @@ namespace extractor {
                         w++;
                      }
                   }
-               }
-               else {
+               } else {
                   //Copy byte sequence
                   int count = (b & 0x1f) + 1;
                   if ((b & 0x20) != 0) {
