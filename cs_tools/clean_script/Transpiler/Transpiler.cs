@@ -8,11 +8,8 @@ class Transpiler {
       Directory.CreateDirectory(Config.outputDirPath);
       var filePaths = Directory.GetFiles(Config.inputDirPath, "*.dec", SearchOption.TopDirectoryOnly).OrderBy(e => e);
       foreach (var filePath in filePaths) {
-         var state = new State() {
-            textMode = TextMode.ADV,
-            dialogNotCompleted = false,
-            lastCharaName = "Narr",
-         };
+         Console.WriteLine(filePath);
+         var state = new State();
 
          var lines = File.ReadAllLines(filePath);
          var outputLines = new List<string>();
@@ -30,6 +27,8 @@ class Transpiler {
                if (line2 == line) throw new InvalidSyntaxException($"Invalid statement syntax at line {i + 1} of file '{filePath}'");
                var tokens = line2.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                labelSet[outputLines.Count] = label;
+               if (state.switchLabelSet.Contains(label))
+                  state.dialogCompleted = true;
                Instruction.Resolve(state, filePath, tokens, ref i, lines, outputLines, usedLabelSet);
             }
          } catch (Exception) {

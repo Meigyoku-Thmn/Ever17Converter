@@ -4,77 +4,53 @@ l_dayB = 5;
 setDialogBoxColor(GREEN);
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Kid..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Come on, I'm asking you..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Lift up your head."`;
-   waitForClick; clearText; marker; appendText; 
    `I hadn't wanted to blame him in the first 
 place.`;
-   waitForClick; clearText; marker; appendText; 
    `I turned around and held out my hand again.`;
-   waitForClick; clearText; marker; appendText; 
    `But he wouldn't look me in the eyes.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C308`); appendText; 
-   Kid`"Even if you say that, Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T5C309`); appendText; 
-   Kid`"I can't think like you."`;
-   waitForClick; clearText; marker; sound(`T5C310`); appendText; 
-   Kid`"What's impossible is impossible!"`;
-   waitForClick; clearText; marker; sound(`T5C311`); appendText; 
-   Kid`"We're not all the same."`;
-   waitForClick; clearText; 
+   Kid(T5C308)`"Even if you say that, Takeshi..."`;
+   Kid(T5C309)`"I can't think like you."`;
+   Kid(T5C310)`"What's impossible is impossible!"`;
+   Kid(T5C311)`"We're not all the same."`;
+
 });
 fgload({ id: 1, name: `KA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C312`); appendText; 
-   Kid`"I can't do it."`;
-   waitForClick; clearText; marker; sound(`T5C313`); appendText; 
-   Kid`"I'm just not that strong."`;
-   waitForClick; clearText; marker; sound(`T5C314`); appendText; 
-   Kid`"And I never will be...!"`;
-   waitForClick; clearText; 
+   Kid(T5C312)`"I can't do it."`;
+   Kid(T5C313)`"I'm just not that strong."`;
+   Kid(T5C314)`"And I never will be...!"`;
+
 });
 fgload({ id: 1, name: `KA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C315`); appendText; 
-   Kid`"I can't go on living."`;
-   waitForClick; clearText; marker; sound(`T5C316`); appendText; 
-   Kid`"I don't want to go on living...!"`;
-   waitForClick; clearText; 
+   Kid(T5C315)`"I can't go on living."`;
+   Kid(T5C316)`"I don't want to go on living...!"`;
+
 });
 fgload({ id: 1, name: `KA09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C317`); appendText; 
-   Kid`"So, then..."`;
-   waitForClick; clearText; marker; sound(`T5C318`); appendText; 
-   Kid`"I should just..."`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T5C317)`"So, then..."`;
+   Kid(T5C318)`"I should just..."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't want to make him say the rest.`;
-   waitForClick; clearText; marker; appendText; 
    `But I couldn't stop him.`;
-   waitForClick; clearText; marker; appendText; 
    `I knew how hard it would be for him to say.`;
-   waitForClick; clearText; marker; appendText; 
    `Even I wasn't that strong.`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone waited for the kid's next words in 
 silence...`;
-   waitForClick; clearText; marker; appendText; 
    `They were probably unthinkable.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
@@ -82,20 +58,14 @@ removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `SO10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C319`); appendText; 
-   Sora`"Takeshi, stop it. Please."`;
-   waitForClick; clearText; marker; sound(`T5C320`); appendText; 
-   You`"!!"`;
-   waitForClick; clearText; marker; sound(`T5C321`); appendText; 
-   Coco`"......!?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C319)`"Takeshi, stop it. Please."`;
+   You(T5C320)`"!!"`;
+   Coco(T5C321)`"......!?"`;
    Tsugumi`"......"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"......"`;
-   waitForClick; clearText; marker; appendText; 
    `Sora walked silently forward and stood in 
 between the kid and me.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
@@ -103,182 +73,128 @@ playBGM({ num: 4, volume: 100 });
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C322`); appendText; 
-   Sora`"Takeshi, please stop being so hard on him."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C322)`"Takeshi, please stop being so hard on him."`;
    Takeshi`"No...I don't mean it that way."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `SO17ADM`, name2: `KA09ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C323`); appendText; 
-   Sora`"Kid, please look up at us."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C323)`"Kid, please look up at us."`;
    Kid`"......."`;
-   waitForClick; clearText; marker; sound(`T5C324`); appendText; 
-   Sora`"We can't fight...not like this. It isn't 
+   Sora(T5C324)`"We can't fight...not like this. It isn't 
 right."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora looked sad as she said this.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora, this isn't just any old fight."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm not trying to shut him out, I just..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I wanted him to know how important it was to 
 keep eating."`;
-   waitForClick; clearText; marker; sound(`T5C325`); appendText; 
-   Sora`"I know that. However..."`;
-   waitForClick; clearText; 
+   Sora(T5C325)`"I know that. However..."`;
+
 });
 fgload({ id: 1, name: `SO09ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C326`); appendText; 
-   Sora`"See, the Kid looks like he's already feeling 
+   Sora(T5C326)`"See, the Kid looks like he's already feeling 
 a little better."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora smiled slightly as she said this.`;
-   waitForClick; clearText; marker; sound(`T5C327`); appendText; 
-   Sora`"He really didn't mean it....okay?"`;
-   waitForClick; clearText; 
+   Sora(T5C327)`"He really didn't mean it....okay?"`;
+
 });
 fgload({ id: 2, name: `KA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"......"`;
-   waitForClick; clearText; marker; sound(`T5C328`); appendText; 
-   Sora`"Please forgive him?"`;
-   waitForClick; clearText; marker; sound(`T5C329`); appendText; 
-   Sora`"Let's make another sandwich...?"`;
-   waitForClick; clearText; marker; sound(`T5C330`); appendText; 
-   Sora`"It is a good thing that there are still 
+   Sora(T5C328)`"Please forgive him?"`;
+   Sora(T5C329)`"Let's make another sandwich...?"`;
+   Sora(T5C330)`"It is a good thing that there are still 
 plenty of provisions left."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"No! That's not what I'm talking about!!"`;
-   waitForClick; clearText; marker; appendText; 
    `I screamed.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C331`); appendText; 
-   Sora`"!!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C331)`"!!"`;
    `Sora stared back at me, eyes wide with 
 surprise.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"It isn't about that, Sora...!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"It isn't about whether we have more or not!!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"It isn't...can't you understand that!?"`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"......"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C332`); appendText; 
-   Sora`"I, I understand."`;
-   waitForClick; clearText; 
+   Sora(T5C332)`"I, I understand."`;
+
 });
 fgload({ id: 1, name: `SO13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C333`); appendText; 
-   Sora`"No, I...don't understand."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C333)`"No, I...don't understand."`;
    Takeshi`"Well, which one is it, Sora?"`;
-   waitForClick; clearText; marker; appendText; 
    `I had taken this all much further than 
 necessary.`;
-   waitForClick; clearText; marker; appendText; 
    `But I couldn't stop myself.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Do you, or don't you understand?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Do you understand what I mean?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Do you really understand why I would do 
 something like that?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"So you don't know why I did it?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You're a first-rate AI program, aren't you?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C334`); appendText; 
-   Sora`"T-Takeshi...?"`;
-   waitForClick; clearText; marker; sound(`T5C335`); appendText; 
-   Sora`"What...do you want me to do...?"`;
-   waitForClick; clearText; 
+   Sora(T5C334)`"T-Takeshi...?"`;
+   Sora(T5C335)`"What...do you want me to do...?"`;
+
 });
 fgload({ id: 1, name: `SO17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C336`); appendText; 
-   Sora`"I, I..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C336)`"I, I..."`;
    `Sora started to waver.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C337`); appendText; 
-   Sora`"I..."`;
-   waitForClick; clearText; 
+   Sora(T5C337)`"I..."`;
+
 });
 fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C338`); appendText; 
-   Sora`"I don't understand."`;
-   waitForClick; clearText; marker; sound(`T5C339`); appendText; 
-   Sora`"I don't know the answer."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C338)`"I don't understand."`;
+   Sora(T5C339)`"I don't know the answer."`;
    `And looking down, Sora bit her lip.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Oh..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"There's no way you could, could you...? 
 Understand how important food is."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Because you aren't human like we are."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, forget it."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Besides, the floor just shook, right? What 
 was that, Sora?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Did something happen to LeMU?"`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What happened...? Come on tell us."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"If you check, you should find out in no time, 
 right?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hurry up! Why won't you tell me what 
 happened!?"`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
@@ -287,65 +203,52 @@ playSFX({ name: `SE01_03`, a1: 0, volume: 90 });
 fgload({ id: 1, name: `SO13ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C340`); appendText; 
-   Sora`".....!!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C340)`".....!!"`;
    `She thought she heard the sound of someone 
 running in water.`;
-   waitForClick; clearText; marker; appendText; 
    `Sounds where there should have been none.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO17ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora kept her distance from us, and ran out 
 the exit of the room.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playSFX({ name: `SE01_00`, a1: 0, volume: 90 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Sora...!?"`;
-   waitForClick; clearText; marker; appendText; 
    `After watching her run off, Tsugumi stood 
 right in front of me.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU08ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"W...what?"`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi was glaring at me.`;
-   waitForClick; clearText; marker; sound(`T5C341`); appendText; 
-   Tsugumi`"Takeshi..."`;
-   waitForClick; clearText; 
+   Tsugumi(T5C341)`"Takeshi..."`;
+
 });
 fgload({ id: 1, name: `TU05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T5C342`); appendText; 
-   Tsugumi`"You are such a scumbag."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T5C342)`"You are such a scumbag."`;
    Takeshi`"......."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `You went over to the kid and hugged him 
 around the shoulders.`;
-   waitForClick; clearText; marker; appendText; 
    `Coco and Pipi absently looked around the room 
 at everyone.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playBGM({ num: 13, volume: 100 });
@@ -353,136 +256,89 @@ bgload({ name: `BG25B3`, transition: 20 });
 clock(`19:27`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Feeling like I was no longer wanted, I fled 
 from the room.`;
-   waitForClick; clearText; marker; appendText; 
    `(What...)`;
-   waitForClick; clearText; marker; appendText; 
    `(What was that about...!)`;
-   waitForClick; clearText; marker; appendText; 
    `(I'm...)`;
-   waitForClick; clearText; marker; appendText; 
    `(I'm not wrong...)`;
-   waitForClick; clearText; marker; appendText; 
    `(I'm not wrong...right?)`;
-   waitForClick; clearText; marker; appendText; 
    `Blood rushed to my head.`;
-   waitForClick; clearText; marker; appendText; 
    `(Damn it...)`;
-   waitForClick; clearText; marker; appendText; 
    `Even I could tell.`;
-   waitForClick; clearText; marker; appendText; 
    `I had said too much...`;
-   waitForClick; clearText; marker; appendText; 
    `But once you say something, it isn't easy to 
 take it back.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG30B1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I stopped at the end of the corridor.`;
-   waitForClick; clearText; marker; appendText; 
    `'HIMMEL'`;
-   waitForClick; clearText; marker; appendText; 
    `Dead end. Nowhere to go.`;
-   waitForClick; clearText; marker; appendText; 
    `And thinking that...I realized for some 
 reason that the door in front of me never 
 seemed to open.`;
-   waitForClick; clearText; marker; appendText; 
    `When we had searched around LeMU, we'd tried 
 to open the electronic lock, but it hadn't 
 budged.`;
-   waitForClick; clearText; marker; appendText; 
    `Thinking about being trapped here was enough 
 to hate even the existence of that door. `;
-   waitForClick; clearText; marker; sound(`T5C343`); appendText; 
-   Sora`"....shi..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C343)`"....shi..."`;
    `I heard a voice behind me and turned around.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG25B1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"...What?"`;
-   waitForClick; clearText; marker; appendText; 
    `The corridor's watertight door had shut 
 without me realizing. `;
-   waitForClick; clearText; marker; appendText; 
    `I hadn't even noticed...`;
-   waitForClick; clearText; marker; sound(`T5C344`); appendText; 
-   Sora`"Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T5C345`); appendText; 
-   Sora`"What are you doing here?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C344)`"Takeshi..."`;
+   Sora(T5C345)`"What are you doing here?"`;
    `Looking around, I couldn't see Sora anywhere.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"...Sora?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, where are you?"`;
-   waitForClick; clearText; marker; appendText; 
    `I looked all around.`;
-   waitForClick; clearText; marker; appendText; 
    `There was no way out other than the 
 watertight door.`;
-   waitForClick; clearText; marker; appendText; 
    `It wasn't as if she were hiding behind 
 something.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG30B1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Sora...?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You want to show me where you are...?"`;
-   waitForClick; clearText; marker; appendText; 
    `I looked around again, but she was nowhere to 
 be found.`;
-   waitForClick; clearText; marker; sound(`T5C346`); appendText; 
-   Sora`"Takeshi?"`;
-   waitForClick; clearText; marker; sound(`T5C347`); appendText; 
-   Sora`"Where are you looking?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C346)`"Takeshi?"`;
+   Sora(T5C347)`"Where are you looking?"`;
    `I could only hear her voice.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, come on..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Stop playing around and show yourself."`;
-   waitForClick; clearText; marker; sound(`T5C348`); appendText; 
-   Sora`"I'm right here."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C348)`"I'm right here."`;
    `I heard her voice...`;
-   waitForClick; clearText; marker; appendText; 
    `Right above me.`;
-   waitForClick; clearText; marker; appendText; 
    `I looked up.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 playSFX({ name: `SE02_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Fwaaaaaaash...........`;
-   waitForClick; clearText; marker; appendText; 
    `Huge droplets of water started raining down 
 from the ceiling.`;
-   waitForClick; clearText; marker; appendText; 
    `The deluge soaked me mercilessly.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"....The sprinkler?"`;
-   waitForClick; clearText; marker; appendText; 
    `Water was blowing out of nozzles in the 
 crevice between panel lines on the ceiling.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopSFX()
@@ -495,117 +351,75 @@ eff_50 = 0;
 showDimInAndOutAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The water level was rising, a little at a 
 time, but still noticeably.`;
-   waitForClick; clearText; marker; appendText; 
    `It didn't look like water was draining from 
 either side of the corridor.`;
-   waitForClick; clearText; marker; appendText; 
    `I ran over to the hatch, and started pounding 
 on it with my fist.`;
-   waitForClick; clearText; marker; sound(`T5C349`); appendText; 
-   Sora`"Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T5C350`); appendText; 
-   Sora`"What's wrong?"`;
-   waitForClick; clearText; marker; sound(`T5C351`); appendText; 
-   Sora`"What are you doing?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C349)`"Takeshi..."`;
+   Sora(T5C350)`"What's wrong?"`;
+   Sora(T5C351)`"What are you doing?"`;
    Takeshi`"Open this door, Sora!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"This is the only way out of here! Come on!"`;
-   waitForClick; clearText; marker; appendText; 
    `Suddenly all of the sprinklers, and the small 
 sensors lined up next to them on the ceiling, 
 turned and pointed at me.`;
-   waitForClick; clearText; marker; sound(`T5C352`); appendText; 
-   Sora`"What's wrong?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C352)`"What's wrong?"`;
    Takeshi`"Can't you tell? This situation is...!"`;
-   waitForClick; clearText; marker; sound(`T5C353`); appendText; 
-   Sora`"........?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C353)`"........?"`;
    `The cameras slowly tracked me.`;
-   waitForClick; clearText; marker; appendText; 
    `The sensor eyes, probably not even a 
 millimeter large, were flashing light.`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C354`); appendText; 
-   Sora`"What's wrong?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C354)`"What's wrong?"`;
    Takeshi`"Hey, come on...don't tell me you don't 
 understand, Sora?"`;
-   waitForClick; clearText; marker; appendText; 
    `Sora was observing the situation leisurely...`;
-   waitForClick; clearText; marker; sound(`T5C355`); appendText; 
-   Sora`"Is...something wrong?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C355)`"Is...something wrong?"`;
    Takeshi`"......"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"...Some..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Somebody!! Open this door, please!!"`;
-   waitForClick; clearText; marker; appendText; 
    `I kept pounding on the door, but no answer 
 came from the other side of the thick wall.`;
-   waitForClick; clearText; marker; appendText; 
    `Looking around, I couldn't find one of the 
 panels used to automatically open and close 
 the watertight doors.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG30B1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The sprinklers seemed to be even increasing 
 their output, if that were possible.`;
-   waitForClick; clearText; marker; appendText; 
    `It was hard to see anything because of the 
 mist.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What are you doing...?"`;
-   waitForClick; clearText; marker; appendText; 
    `I felt a slight shiver run through me.`;
-   waitForClick; clearText; marker; sound(`T5C356`); appendText; 
-   Sora`"I am..."`;
-   waitForClick; clearText; marker; sound(`T5C357`); appendText; 
-   Sora`"I am only a program, after all."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C356)`"I am..."`;
+   Sora(T5C357)`"I am only a program, after all."`;
    `Her voice sounded more and more mechanical.`;
-   waitForClick; clearText; marker; sound(`T5C358`); appendText; 
-   Sora`"A program that can only give answers based on 
+   Sora(T5C358)`"A program that can only give answers based on 
 assumed information."`;
-   waitForClick; clearText; marker; sound(`T5C359`); appendText; 
-   Sora`"I am only an RSD-generated image in 
+   Sora(T5C359)`"I am only an RSD-generated image in 
 human form."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`".......!?"`;
-   waitForClick; clearText; marker; sound(`T5C360`); appendText; 
-   Sora`"I cannot understand how important food is."`;
-   waitForClick; clearText; marker; sound(`T5C361`); appendText; 
-   Sora`"I have no need to consume organic matter."`;
-   waitForClick; clearText; marker; sound(`T5C362`); appendText; 
-   Sora`"It unnecessary for me to eat to continue 
+   Sora(T5C360)`"I cannot understand how important food is."`;
+   Sora(T5C361)`"I have no need to consume organic matter."`;
+   Sora(T5C362)`"It unnecessary for me to eat to continue 
 life."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"W-what are you talking about!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Soraaa!!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Stop it! Stop the sprinklers!!"`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I slammed my body against the door, but it 
 didn't budge.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 6, color: WHITE });
@@ -616,233 +430,158 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Suddenly everything grew dim.`;
-   waitForClick; clearText; marker; appendText; 
    `Everything started to sway.`;
-   waitForClick; clearText; marker; appendText; 
    `All colors became distorted, and outlines 
 suddenly became vague.`;
-   waitForClick; clearText; marker; appendText; 
    `I couldn't see anything.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 showTextbox();
 text(() => {
-   marker; sound(`T5C363`); appendText; 
-   Sora`"No.... No....!"`;
-   waitForClick; clearText; marker; sound(`T5C364`); appendText; 
-   Sora`"Who are you!?"`;
-   waitForClick; clearText; marker; sound(`T5C365`); appendText; 
-   Sora`"You aren't me!!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C363)`"No.... No....!"`;
+   Sora(T5C364)`"Who are you!?"`;
+   Sora(T5C365)`"You aren't me!!"`;
    `(Sora...?)`;
-   waitForClick; clearText; marker; appendText; 
    `(What are you saying...?)`;
-   waitForClick; clearText; 
+
 });
 stopSFX()
 removeBG({ mode: BLACK, transition: 2 });
 playBGM({ num: 24, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `...............`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; marker; appendText; 
    `Terrified, I opened my eyes.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: WHITE, transition: 3 });
 bgload({ name: `EV_SO11D`, transition: 0 });
 setSceneTitle({ index: 36 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"!?"`;
-   waitForClick; clearText; marker; appendText; 
    `(Where am I?)`;
-   waitForClick; clearText; marker; appendText; 
    `There was no floor.`;
-   waitForClick; clearText; marker; appendText; 
    `There were no walls.`;
-   waitForClick; clearText; marker; appendText; 
    `My body had been suddenly thrown out into the 
 middle of the ocean.`;
-   waitForClick; clearText; marker; appendText; 
    `(Oh no! I won't be able to breathe...!)`;
-   waitForClick; clearText; marker; appendText; 
    `Panicking, I flailed my arms.`;
-   waitForClick; clearText; marker; appendText; 
    `But there was no water in which to swim.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt no pressure. The area around me was 
 probably only 1 atmosphere.`;
-   waitForClick; clearText; marker; appendText; 
    `My clothes were wet, but other than that I 
 didn't feel any water.`;
-   waitForClick; clearText; marker; appendText; 
    `Slowly I let out my breath, and sucked in 
 more air.`;
-   waitForClick; clearText; marker; appendText; 
    `(What's going on...?)`;
-   waitForClick; clearText; marker; appendText; 
    `I had no trouble breathing.`;
-   waitForClick; clearText; marker; appendText; 
    `I couldn't see anything under me, but it 
 seemed at least I was standing on some kind 
 of surface.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Ah......!!"`;
-   waitForClick; clearText; marker; appendText; 
    `Sora was swimming in the ocean.`;
-   waitForClick; clearText; marker; appendText; 
    `She was moving freely in the dark blue space.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"...Sora?"`;
-   waitForClick; clearText; marker; appendText; 
    `Fearfully, I called to her.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11A`, transition: 10 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C366`); appendText; 
-   Sora`"Oh..."`;
-   waitForClick; clearText; marker; sound(`T5C367`); appendText; 
-   Sora`"What's wrong, Takeshi?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C366)`"Oh..."`;
+   Sora(T5C367)`"What's wrong, Takeshi?"`;
    `She looked at me, her image flickering as she 
 approached. `;
-   waitForClick; clearText; marker; appendText; 
    `She smiled as she always did.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `But then her eyebrows arched suddenly.`;
-   waitForClick; clearText; marker; appendText; 
    `And a scowl took over her features......`;
-   waitForClick; clearText; marker; sound(`T5C368`); appendText; 
-   Sora`"Don't you want to know what caused the floor 
+   Sora(T5C368)`"Don't you want to know what caused the floor 
 to shake earlier?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Uh, yeah...?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I mean, no. I don't..."`;
-   waitForClick; clearText; marker; sound(`T5C369`); appendText; 
-   Sora`"Is it yes? Or is no?"`;
-   waitForClick; clearText; marker; sound(`T5C370`); appendText; 
-   Sora`"Which is it?"`;
-   waitForClick; clearText; marker; sound(`T5C371`); appendText; 
-   Sora`"I don't know how to answer you."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C369)`"Is it yes? Or is no?"`;
+   Sora(T5C370)`"Which is it?"`;
+   Sora(T5C371)`"I don't know how to answer you."`;
    `Sora murmured this in a gravelly voice.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11C`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C372`); appendText; 
-   Sora`"I am currently checking the cause of the 
+   Sora(T5C372)`"I am currently checking the cause of the 
 earlier tremor."`;
-   waitForClick; clearText; marker; sound(`T5C373`); appendText; 
-   Sora`"Due to a sudden sensor failure, the results 
+   Sora(T5C373)`"Due to a sudden sensor failure, the results 
 of my investigation will take approximately 
 three times longer than usual."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"...."`;
-   waitForClick; clearText; marker; appendText; 
    `Her report was almost businesslike.`;
-   waitForClick; clearText; marker; sound(`T5C374`); appendText; 
-   Sora`"Even I do not have the ability to fully 
+   Sora(T5C374)`"Even I do not have the ability to fully 
 grasp a situation instantaneously."`;
-   waitForClick; clearText; marker; sound(`T5C375`); appendText; 
-   Sora`"Just like you humans, I sometimes think, get 
+   Sora(T5C375)`"Just like you humans, I sometimes think, get 
 confused and make mistakes."`;
-   waitForClick; clearText; marker; sound(`T5C376`); appendText; 
-   Sora`"Unfortunately..."`;
-   waitForClick; clearText; 
+   Sora(T5C376)`"Unfortunately..."`;
+
 });
 bgload({ name: `EV_SO11A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C377`); appendText; 
-   Sora`"That is how my creator chose to make me."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C377)`"That is how my creator chose to make me."`;
    `Sora tried to smile again.`;
-   waitForClick; clearText; marker; sound(`T5C378`); appendText; 
-   Sora`"That's right. I've been programmed to imitate 
+   Sora(T5C378)`"That's right. I've been programmed to imitate 
 humans in this regard only."`;
-   waitForClick; clearText; marker; sound(`T5C379`); appendText; 
-   Sora`"Inconvenient, wouldn't you agree?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C379)`"Inconvenient, wouldn't you agree?"`;
    `Suddenly, she looked like she was crying.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C380`); appendText; 
-   Sora`"Why does something as inconvenient as me 
+   Sora(T5C380)`"Why does something as inconvenient as me 
 exist...?"`;
-   waitForClick; clearText; marker; sound(`T5C381`); appendText; 
-   Sora`"I don't know anymore..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C381)`"I don't know anymore..."`;
    Takeshi`"H-hey, you aren't...inconvenient!"`;
-   waitForClick; clearText; marker; appendText; 
    `I shouted this.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Even machines that are supposed to be 
 perfect, and people who are called geniuses, 
 even they make mistakes sometimes."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"They're both the same. They're hardly any 
 different."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"People are only concerned about making things 
 easier on themselves. That's why they think 
 'Machines are such a pain' or 'Machines are 
 faster'...."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"If I only wanted data, then I could just use 
 a terminal."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"But I ask you and I talk with you, because I 
 don't only want to know the facts."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I want to know your words, and your thoughts 
 and feelings."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I've never felt you are inconvenient."`;
-   waitForClick; clearText; marker; sound(`T5C382`); appendText; 
-   Sora`"Really?"`;
-   waitForClick; clearText; marker; sound(`T5C383`); appendText; 
-   Sora`"Is that really how you feel, Takeshi?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C382)`"Really?"`;
+   Sora(T5C383)`"Is that really how you feel, Takeshi?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11C`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora's expression suddenly became normal.`;
-   waitForClick; clearText; marker; appendText; 
    `It was hard for me to tell what she was 
 feeling.`;
-   waitForClick; clearText; marker; appendText; 
    `What was she really thinking?`;
-   waitForClick; clearText; marker; sound(`T5C384`); appendText; 
-   Sora`"Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T5C385`); appendText; 
-   Sora`"Have you ever lied before?"`;
-   waitForClick; 
+   Sora(T5C384)`"Takeshi..."`;
+   Sora(T5C385)`"Have you ever lied before?"`;
+
 });
 choice(
    `Yes`,
@@ -855,58 +594,41 @@ switch (l_choice) {
 let lbl_000004b6;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Y-yes, I have."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"In the 20 years I've been alive, of course 
 I've lied."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sometimes I've told lies to give someone a 
 hard time, and maybe others when I thought it 
 would make the person happy."`;
-   waitForClick; clearText; marker; sound(`T5C386`); appendText; 
-   Sora`"How many times have you lied?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C386)`"How many times have you lied?"`;
    Takeshi`"I don't have a clue. It's not like I've taken 
 notes."`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_000004c4);
 let lbl_000004bf;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"N-no."`;
-   waitForClick; clearText; marker; sound(`T5C387`); appendText; 
-   Sora`"Really? In your whole life, not even once?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C387)`"Really? In your whole life, not even once?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T5C388`); appendText; 
-   Sora`"You sure you aren't lying right now about 
+   Sora(T5C388)`"You sure you aren't lying right now about 
 never having told a lie?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Isn't that a paradox?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You really are amazing, Sora..."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; 
+
 });
 let lbl_000004c4;
 showTextbox();
 text(() => {
-   marker; sound(`T5C389`); appendText; 
-   Sora`"Really...I see."`;
-   waitForClick; clearText; marker; sound(`T5C390`); appendText; 
-   Sora`"Well then...do you think I've ever told a 
+   Sora(T5C389)`"Really...I see."`;
+   Sora(T5C390)`"Well then...do you think I've ever told a 
 lie up till now?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`".........?"`;
-   waitForClick; clearText; marker; appendText; 
    `It was a strange question.`;
-   waitForClick; clearText; marker; sound(`T5C391`); appendText; 
-   Sora`"Well? Can you tell...if I have, or have not?"`;
-   waitForClick; 
+   Sora(T5C391)`"Well? Can you tell...if I have, or have not?"`;
+
 });
 choice(
    `You have`,
@@ -919,1031 +641,646 @@ switch (l_choice) {
 let lbl_000004ec;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"You have..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Maybe you have."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Maybe you've been fooling us, and we just 
 haven't noticed."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Well, to tell you the truth...I can't really 
 tell."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"But..."`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_000004fa);
 let lbl_000004f5;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"You haven't."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"As far as I can tell."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You've told jokes, but I don't think you've 
 lied..."`;
-   waitForClick; clearText; 
+
 });
 let lbl_000004fa;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"You told us yourself, Sora, that you still 
 weren't able to lie very well, I remember you 
 saying that. "`;
-   waitForClick; clearText; marker; sound(`T5C392`); appendText; 
-   Sora`"Yes...that's right. You remembered well."`;
-   waitForClick; clearText; 
+   Sora(T5C392)`"Yes...that's right. You remembered well."`;
+
 });
 bgload({ name: `EV_SO11A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C393`); appendText; 
-   Sora`"Heh, heh..."`;
-   waitForClick; clearText; marker; sound(`T5C394`); appendText; 
-   Sora`"You have a very interesting answer, Takeshi."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C393)`"Heh, heh..."`;
+   Sora(T5C394)`"You have a very interesting answer, Takeshi."`;
    `Sora smiled at me.`;
-   waitForClick; clearText; marker; appendText; 
    `Her eyes looked at me softly.`;
-   waitForClick; clearText; marker; sound(`T5C395`); appendText; 
-   Sora`"Takeshi, there is something that I have to 
+   Sora(T5C395)`"Takeshi, there is something that I have to 
 talk with you about."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"With me...?"`;
-   waitForClick; clearText; marker; sound(`T5C396`); appendText; 
-   Sora`"Yes. And that's why I had you come here."`;
-   waitForClick; clearText; marker; sound(`T5C397`); appendText; 
-   Sora`"No one can interrupt here."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C396)`"Yes. And that's why I had you come here."`;
+   Sora(T5C397)`"No one can interrupt here."`;
    Takeshi`"You've got a point..."`;
-   waitForClick; clearText; marker; appendText; 
    `It was just me and Sora - in the middle of 
 the ocean.`;
-   waitForClick; clearText; marker; appendText; 
    `There was nobody there. Not even fish.`;
-   waitForClick; clearText; marker; appendText; 
    `It was a desolate sea.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I was just thinking, you've gone to a lot of 
 trouble to ask me whatever it is..."`;
-   waitForClick; clearText; marker; sound(`T5C398`); appendText; 
-   Sora`"I'm sorry, but..."`;
-   waitForClick; clearText; 
+   Sora(T5C398)`"I'm sorry, but..."`;
+
 });
 bgload({ name: `EV_SO11B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C399`); appendText; 
-   Sora`"I had to get you here alone, no matter what."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C399)`"I had to get you here alone, no matter what."`;
    `I could see my outline reflected in her soft 
 pupils.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Even if it meant sealing off the watertight 
 hatch?"`;
-   waitForClick; clearText; marker; sound(`T5C400`); appendText; 
-   Sora`"Yes..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C400)`"Yes..."`;
    Takeshi`"I thought I would drown..."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"......."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora pressed her lips together tightly.`;
-   waitForClick; clearText; marker; appendText; 
    `It took her a while before she said anything.`;
-   waitForClick; clearText; marker; sound(`T5C401`); appendText; 
-   Sora`"Listen, Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T5C402`); appendText; 
-   Sora`"Everything you see and everything you hear is 
+   Sora(T5C401)`"Listen, Takeshi..."`;
+   Sora(T5C402)`"Everything you see and everything you hear is 
 reality..."`;
-   waitForClick; clearText; marker; sound(`T5C403`); appendText; 
-   Sora`"But is it 'true'...?"`;
-   waitForClick; clearText; marker; sound(`T5C404`); appendText; 
-   Sora`"Is it 'fact'...?"`;
-   waitForClick; clearText; marker; sound(`T5C405`); appendText; 
-   Sora`"You don't really know, right?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C403)`"But is it 'true'...?"`;
+   Sora(T5C404)`"Is it 'fact'...?"`;
+   Sora(T5C405)`"You don't really know, right?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `I couldn't really grasp what Sora was getting 
 at.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"W-what...!?"`;
-   waitForClick; clearText; marker; appendText; 
    `The space around me suddenly grew white.`;
-   waitForClick; clearText; marker; appendText; 
    `My head hurt...`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wh-what happened...?"`;
-   waitForClick; clearText; marker; appendText; 
    `The light was so bright, I couldn't open my 
 eyes.`;
-   waitForClick; clearText; marker; sound(`T5C406`); appendText; 
-   Sora`"I'm adjusting the light. Bear with me for a 
+   Sora(T5C406)`"I'm adjusting the light. Bear with me for a 
 while."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"O-okay..."`;
-   waitForClick; clearText; marker; appendText; 
    `Feeling slightly dizzy, I stood in the middle 
 of the ocean.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, this...'ocean'...is it RSD?"`;
-   waitForClick; clearText; marker; sound(`T5C407`); appendText; 
-   Sora`"That is correct."`;
-   waitForClick; clearText; marker; sound(`T5C408`); appendText; 
-   Sora`"You really are quite perceptive, Takeshi."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C407)`"That is correct."`;
+   Sora(T5C408)`"You really are quite perceptive, Takeshi."`;
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11C`, transition: 10 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I finally was able to open up my eyes again.`;
-   waitForClick; clearText; marker; appendText; 
    `Sora had a serious expression on her face.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What did you want to talk to me about...?"`;
-   waitForClick; clearText; marker; sound(`T5C409`); appendText; 
-   Sora`"Well...actually..."`;
-   waitForClick; clearText; marker; sound(`T5C410`); appendText; 
-   Sora`"I..."`;
-   waitForClick; clearText; marker; sound(`T5C411`); appendText; 
-   Sora`"I broke."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C409)`"Well...actually..."`;
+   Sora(T5C410)`"I..."`;
+   Sora(T5C411)`"I broke."`;
    Takeshi`"What!?"`;
-   waitForClick; clearText; marker; sound(`T5C412`); appendText; 
-   Sora`"I'm 'out of order'.... There is a noise 
+   Sora(T5C412)`"I'm 'out of order'.... There is a noise 
 error in my thought processor."`;
-   waitForClick; clearText; marker; sound(`T5C413`); appendText; 
-   Sora`"Right now, there is a high probability that 
+   Sora(T5C413)`"Right now, there is a high probability that 
 I have lost the ability to make rational 
 decisions."`;
-   waitForClick; clearText; marker; appendText; 
    `She told me this matter-of-factly.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C414`); appendText; 
-   Sora`"Ha, ha, I'm broken."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C414)`"Ha, ha, I'm broken."`;
    `She said it as though she were joking.`;
-   waitForClick; clearText; marker; sound(`T5C415`); appendText; 
-   Sora`"I wonder how it could have happened...?"`;
-   waitForClick; clearText; marker; sound(`T5C416`); appendText; 
-   Sora`"Do you know why?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C415)`"I wonder how it could have happened...?"`;
+   Sora(T5C416)`"Do you know why?"`;
    Takeshi`"N-no...How should I know?"`;
-   waitForClick; clearText; marker; sound(`T5C417`); appendText; 
-   Sora`"Really...?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C417)`"Really...?"`;
    Takeshi`"Of course not."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"We aren't the same you and me. We just 
 aren't the same."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Look, there's no way that I would know why."`;
-   waitForClick; clearText; marker; sound(`T5C418`); appendText; 
-   Sora`"Reaaallly..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C418)`"Reaaallly..."`;
    `For some reason she smiled.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"No, wait!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Don't get me wrong...!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm not an expert. I don't have a clue about 
 Artificial Intelligence."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"But..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I can't imagine that the Sora that I'm 
 talking to is broken at all."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I don't think you are broken."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"......."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11C`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora stiffened up again.`;
-   waitForClick; clearText; marker; sound(`T5C419`); appendText; 
-   Sora`"After I finished my routine maintenance..."`;
-   waitForClick; clearText; marker; sound(`T5C420`); appendText; 
-   Sora`"I was checking through the sensor data that 
+   Sora(T5C419)`"After I finished my routine maintenance..."`;
+   Sora(T5C420)`"I was checking through the sensor data that 
 had been automatically recorded."`;
-   waitForClick; clearText; marker; sound(`T5C421`); appendText; 
-   Sora`"I went through all of the sensor data from 
+   Sora(T5C421)`"I went through all of the sensor data from 
 3:15 a.m. this morning... "`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T5C422`); appendText; 
-   Sora`"I found your life reading at the entrance to 
+   Sora(T5C422)`"I found your life reading at the entrance to 
 Qualle."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........!?"`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C423`); appendText; 
-   Sora`"You looked so cute riding on the jellyfish, 
+   Sora(T5C423)`"You looked so cute riding on the jellyfish, 
 Takeshi."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T5C424`); appendText; 
-   Sora`"Yes....I was curious..."`;
-   waitForClick; clearText; marker; sound(`T5C425`); appendText; 
-   Sora`"I should have stopped there..."`;
-   waitForClick; clearText; marker; sound(`T5C426`); appendText; 
-   Sora`"But I checked out the data from each kind of 
+   Sora(T5C424)`"Yes....I was curious..."`;
+   Sora(T5C425)`"I should have stopped there..."`;
+   Sora(T5C426)`"But I checked out the data from each kind of 
 sensor."`;
-   waitForClick; clearText; marker; sound(`T5C427`); appendText; 
-   Sora`"Until the time that you left the gondola..."`;
-   waitForClick; clearText; marker; sound(`T5C428`); appendText; 
-   Sora`"Everything..."`;
-   waitForClick; clearText; marker; sound(`T5C429`); appendText; 
-   Sora`"I saw everything."`;
-   waitForClick; clearText; marker; sound(`T5C430`); appendText; 
-   Sora`"I saw what you and Tsugumi did...The whole 
+   Sora(T5C427)`"Until the time that you left the gondola..."`;
+   Sora(T5C428)`"Everything..."`;
+   Sora(T5C429)`"I saw everything."`;
+   Sora(T5C430)`"I saw what you and Tsugumi did...The whole 
 thing."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11C`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"W..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wait, stop..."`;
-   waitForClick; clearText; marker; appendText; 
    `Sweat started pouring down my cheeks.`;
-   waitForClick; clearText; marker; appendText; 
    `It was supposed to be in the middle of the 
 cold ocean...`;
-   waitForClick; clearText; marker; appendText; 
    `But I was dripping sweat like a waterfall.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wait just a second, Sora..."`;
-   waitForClick; clearText; marker; sound(`T5C431`); appendText; 
-   Sora`"What?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C431)`"What?"`;
    Takeshi`"You said that you'd try to protect everyone's 
 privacy, didn't you?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You said, unless there was an emergency, 
 that you wouldn't to do a scan."`;
-   waitForClick; clearText; marker; sound(`T5C432`); appendText; 
-   Sora`"Yes."`;
-   waitForClick; clearText; marker; sound(`T5C433`); appendText; 
-   Sora`"And from then on I didn't use the scan unless 
+   Sora(T5C432)`"Yes."`;
+   Sora(T5C433)`"And from then on I didn't use the scan unless 
 something important came up..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Right?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"So...why?"`;
-   waitForClick; clearText; marker; sound(`T5C434`); appendText; 
-   Sora`"While I was sleeping, the sensor data was 
+   Sora(T5C434)`"While I was sleeping, the sensor data was 
 recorded automatically."`;
-   waitForClick; clearText; marker; sound(`T5C435`); appendText; 
-   Sora`"I had to check what kind of information was 
+   Sora(T5C435)`"I had to check what kind of information was 
 being kept in the records."`;
-   waitForClick; clearText; marker; sound(`T5C436`); appendText; 
-   Sora`"Besides..."`;
-   waitForClick; clearText; marker; sound(`T5C437`); appendText; 
-   Sora`"LeMU's ceiling, walls, everything, are my 
+   Sora(T5C436)`"Besides..."`;
+   Sora(T5C437)`"LeMU's ceiling, walls, everything, are my 
 eyes."`;
-   waitForClick; clearText; marker; sound(`T5C438`); appendText; 
-   Sora`"I can't turn them off."`;
-   waitForClick; clearText; marker; sound(`T5C439`); appendText; 
-   Sora`"If I close my eyes, I can't see anything."`;
-   waitForClick; clearText; marker; sound(`T5C440`); appendText; 
-   Sora`"I can't tell who is out there..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C438)`"I can't turn them off."`;
+   Sora(T5C439)`"If I close my eyes, I can't see anything."`;
+   Sora(T5C440)`"I can't tell who is out there..."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T5C441`); appendText; 
-   Sora`"But once I open my eyes."`;
-   waitForClick; clearText; marker; sound(`T5C442`); appendText; 
-   Sora`"Even if I don't want know, I can see 
+   Sora(T5C441)`"But once I open my eyes."`;
+   Sora(T5C442)`"Even if I don't want know, I can see 
 everything."`;
-   waitForClick; clearText; marker; sound(`T5C443`); appendText; 
-   Sora`"I didn't want to see it..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C443)`"I didn't want to see it..."`;
    Takeshi`"You..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You're kidding, right...?"`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C444`); appendText; 
-   Sora`"Takeshi...Have I ever lied to you?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C444)`"Takeshi...Have I ever lied to you?"`;
    `Sora asked me the same question again.`;
-   waitForClick; clearText; marker; appendText; 
    `Her lips trembled slightly as she spoke.`;
-   waitForClick; clearText; marker; sound(`T5C445`); appendText; 
-   Sora`"I...still am not very good at lying."`;
-   waitForClick; clearText; marker; sound(`T5C446`); appendText; 
-   Sora`"So, I can't keep it a secret."`;
-   waitForClick; clearText; marker; sound(`T5C447`); appendText; 
-   Sora`"I can't just pretend that I don't know 
+   Sora(T5C445)`"I...still am not very good at lying."`;
+   Sora(T5C446)`"So, I can't keep it a secret."`;
+   Sora(T5C447)`"I can't just pretend that I don't know 
 anything."`;
-   waitForClick; clearText; marker; sound(`T5C448`); appendText; 
-   Sora`"Ummm...I thought I would keep it to myself."`;
-   waitForClick; clearText; marker; sound(`T5C449`); appendText; 
-   Sora`"But...but..."`;
-   waitForClick; clearText; marker; sound(`T5C450`); appendText; 
-   Sora`"Even if I could fool the others..."`;
-   waitForClick; clearText; marker; sound(`T5C451`); appendText; 
-   Sora`"You're the only one I couldn't lie to."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C448)`"Ummm...I thought I would keep it to myself."`;
+   Sora(T5C449)`"But...but..."`;
+   Sora(T5C450)`"Even if I could fool the others..."`;
+   Sora(T5C451)`"You're the only one I couldn't lie to."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `Her voice was shaking.`;
-   waitForClick; clearText; marker; appendText; 
    `I had a slight idea of why she would shake.`;
-   waitForClick; clearText; marker; appendText; 
    `There was a painful pounding deep in my chest.`;
-   waitForClick; clearText; marker; sound(`T5C452`); appendText; 
-   Sora`"Takeshi, you got on the ride with Tsugumi, 
+   Sora(T5C452)`"Takeshi, you got on the ride with Tsugumi, 
 right?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Y-yeah..."`;
-   waitForClick; clearText; marker; sound(`T5C453`); appendText; 
-   Sora`"What were you doing?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C453)`"What were you doing?"`;
    Takeshi`"You, don't have to ask..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"...I was..."`;
-   waitForClick; clearText; marker; appendText; 
    `I couldn't say it.`;
-   waitForClick; clearText; marker; appendText; 
    `If I had, it would have hurt Sora.`;
-   waitForClick; clearText; marker; sound(`T5C454`); appendText; 
-   Sora`"No...you don't have to say it."`;
-   waitForClick; clearText; marker; sound(`T5C455`); appendText; 
-   Sora`"The data speaks for itself."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C454)`"No...you don't have to say it."`;
+   Sora(T5C455)`"The data speaks for itself."`;
    `I was assaulted by infinite guilt.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO11D`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora suddenly disappeared.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora......?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora, where are you?"`;
-   waitForClick; clearText; marker; appendText; 
    `RSD was still showing me the illusion.`;
-   waitForClick; clearText; marker; appendText; 
    `No matter how much I could breathe in the 
 center of that ocean, my words changed to 
 bubbles and faded away.`;
-   waitForClick; clearText; marker; sound(`T5C456`); appendText; 
-   Sora`"I want to forget it."`;
-   waitForClick; clearText; marker; sound(`T5C457`); appendText; 
-   Sora`"I wish I could forget it."`;
-   waitForClick; clearText; marker; sound(`T5C458`); appendText; 
-   Sora`"I wish I was able to..."`;
-   waitForClick; clearText; marker; sound(`T5C459`); appendText; 
-   Sora`"If I perform an automatic system reformat, my 
+   Sora(T5C456)`"I want to forget it."`;
+   Sora(T5C457)`"I wish I could forget it."`;
+   Sora(T5C458)`"I wish I was able to..."`;
+   Sora(T5C459)`"If I perform an automatic system reformat, my 
 memory will be rewritten."`;
-   waitForClick; clearText; marker; sound(`T5C460`); appendText; 
-   Sora`"If I delete the noise..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C460)`"If I delete the noise..."`;
    Takeshi`"W...."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wait Sora, please."`;
-   waitForClick; clearText; marker; appendText; 
    `Bubbles kept pouring from my mouth, as I 
 murmured...`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What will happen if you delete the noise...?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What will happen if you re-write your memory?"`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora didn't answer.`;
-   waitForClick; clearText; marker; sound(`T5C461`); appendText; 
-   Sora`"It hurts..."`;
-   waitForClick; clearText; marker; sound(`T5C462`); appendText; 
-   Sora`"My heart hurts..."`;
-   waitForClick; clearText; marker; sound(`T5C463`); appendText; 
-   Sora`"This is the first time something like this 
+   Sora(T5C461)`"It hurts..."`;
+   Sora(T5C462)`"My heart hurts..."`;
+   Sora(T5C463)`"This is the first time something like this 
 has happened to me..."`;
-   waitForClick; clearText; marker; sound(`T5C464`); appendText; 
-   Sora`"Why? Why...is it possible for my 'heart to 
+   Sora(T5C464)`"Why? Why...is it possible for my 'heart to 
 hurt?'"`;
-   waitForClick; clearText; marker; sound(`T5C465`); appendText; 
-   Sora`"Is it possible to feel pain in your heart?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C465)`"Is it possible to feel pain in your heart?"`;
    `She asked me without showing herself.`;
-   waitForClick; clearText; marker; appendText; 
    `I was still standing in the middle of the 
 ocean.`;
-   waitForClick; clearText; marker; appendText; 
    `It felt as though my own weight was rapidly 
 disappearing.`;
-   waitForClick; clearText; marker; appendText; 
    `A terrible sense of dread overcame me.`;
-   waitForClick; clearText; marker; appendText; 
    `I couldn't stand it anymore and closed my eyes.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 1 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C466`); appendText; 
-   Sora`"I'm..."`;
-   waitForClick; clearText; marker; sound(`T5C467`); appendText; 
-   Sora`"scared..."`;
-   waitForClick; clearText; marker; sound(`T5C468`); appendText; 
-   Sora`"No..."`;
-   waitForClick; clearText; marker; sound(`T5C469`); appendText; 
-   Sora`"I don't want to disappear."`;
-   waitForClick; clearText; marker; sound(`T5C470`); appendText; 
-   Sora`"I don't want to be erased."`;
-   waitForClick; clearText; marker; sound(`T5C471`); appendText; 
-   Sora`"I don't want to forget you..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C466)`"I'm..."`;
+   Sora(T5C467)`"scared..."`;
+   Sora(T5C468)`"No..."`;
+   Sora(T5C469)`"I don't want to disappear."`;
+   Sora(T5C470)`"I don't want to be erased."`;
+   Sora(T5C471)`"I don't want to forget you..."`;
    `.........!!`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Please, wait Sora!!"`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: WHITE, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
-   marker; sound(`T5C472`); appendText; 
-   Sora`"Starting AI self-diagnosis..."`;
-   waitForClick; clearText; marker; sound(`T5C473`); appendText; 
-   Sora`"Fatal logic processing error detected."`;
-   waitForClick; clearText; marker; sound(`T5C474`); appendText; 
-   Sora`"Repairing Logic, underway. Erasing History 
+   Sora(T5C472)`"Starting AI self-diagnosis..."`;
+   Sora(T5C473)`"Fatal logic processing error detected."`;
+   Sora(T5C474)`"Repairing Logic, underway. Erasing History 
 and resetting learning operation."`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I couldn't stop her in time...`;
-   waitForClick; clearText; marker; appendText; 
    `I made up my mind, and opened my eyes...`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playBGM({ num: 15, volume: 100 });
 bgload({ name: `EV_SO12A`, transition: 0 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C475`); appendText; 
-   Sora`"Wait..."`;
-   waitForClick; clearText; marker; sound(`T5C476`); appendText; 
-   Sora`"Confirming history of learned functions."`;
-   waitForClick; clearText; marker; sound(`T5C477`); appendText; 
-   Sora`"Please, wait!"`;
-   waitForClick; clearText; marker; sound(`T5C478`); appendText; 
-   Sora`"Cancel process!"`;
-   waitForClick; clearText; marker; sound(`T5C479`); appendText; 
-   Sora`"In order to cancel this process it is 
+   Sora(T5C475)`"Wait..."`;
+   Sora(T5C476)`"Confirming history of learned functions."`;
+   Sora(T5C477)`"Please, wait!"`;
+   Sora(T5C478)`"Cancel process!"`;
+   Sora(T5C479)`"In order to cancel this process it is 
 necessary to have system administration level 
 access."`;
-   waitForClick; clearText; marker; sound(`T5C480`); appendText; 
-   Sora`"In other words...it is impossible for you."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C480)`"In other words...it is impossible for you."`;
    `There were two different Soras in front of me.`;
-   waitForClick; clearText; marker; appendText; 
    `No...something was different.`;
-   waitForClick; clearText; marker; appendText; 
    `One of them was different...`;
-   waitForClick; clearText; marker; appendText; 
    `It was different from that time that she had 
 created copies of herself.`;
-   waitForClick; clearText; marker; appendText; 
    `I thought that probably...one of them was 
 lying.`;
-   waitForClick; clearText; marker; sound(`T5C481`); appendText; 
-   Sora`"I have no need to consume organic matter."`;
-   waitForClick; clearText; marker; sound(`T5C482`); appendText; 
-   Sora`"It unnecessary for me to eat to continue 
+   Sora(T5C481)`"I have no need to consume organic matter."`;
+   Sora(T5C482)`"It unnecessary for me to eat to continue 
 life."`;
-   waitForClick; clearText; marker; sound(`T5C483`); appendText; 
-   Sora`"No! That's wrong...!"`;
-   waitForClick; clearText; marker; sound(`T5C484`); appendText; 
-   Sora`"It is correct, but it is incorrect..."`;
-   waitForClick; clearText; marker; sound(`T5C485`); appendText; 
-   Sora`"Eating with everyone, and enjoying delicious 
+   Sora(T5C483)`"No! That's wrong...!"`;
+   Sora(T5C484)`"It is correct, but it is incorrect..."`;
+   Sora(T5C485)`"Eating with everyone, and enjoying delicious 
 food, even making it..."`;
-   waitForClick; clearText; marker; sound(`T5C486`); appendText; 
-   Sora`"It isn't just about receiving the energy to 
+   Sora(T5C486)`"It isn't just about receiving the energy to 
 go on living."`;
-   waitForClick; clearText; marker; sound(`T5C487`); appendText; 
-   Sora`"The act of eating is healing for people."`;
-   waitForClick; clearText; marker; sound(`T5C488`); appendText; 
-   Sora`"I can't 'eat' anything."`;
-   waitForClick; clearText; marker; sound(`T5C489`); appendText; 
-   Sora`"But I can still enjoy dinner with everyone."`;
-   waitForClick; clearText; marker; sound(`T5C490`); appendText; 
-   Sora`"Unacceptable. Your answer is a contradiction."`;
-   waitForClick; clearText; marker; sound(`T5C491`); appendText; 
-   Sora`"That is ridiculous. Your answer is not 
+   Sora(T5C487)`"The act of eating is healing for people."`;
+   Sora(T5C488)`"I can't 'eat' anything."`;
+   Sora(T5C489)`"But I can still enjoy dinner with everyone."`;
+   Sora(T5C490)`"Unacceptable. Your answer is a contradiction."`;
+   Sora(T5C491)`"That is ridiculous. Your answer is not 
 possible."`;
-   waitForClick; clearText; marker; sound(`T5C492`); appendText; 
-   Sora`"Why?"`;
-   waitForClick; clearText; marker; sound(`T5C493`); appendText; 
-   Sora`"There is no reason to answer that."`;
-   waitForClick; clearText; marker; sound(`T5C494`); appendText; 
-   Sora`"You are causing an error in your personality 
+   Sora(T5C492)`"Why?"`;
+   Sora(T5C493)`"There is no reason to answer that."`;
+   Sora(T5C494)`"You are causing an error in your personality 
 program."`;
-   waitForClick; clearText; marker; sound(`T5C495`); appendText; 
-   Sora`"You believe you can do something which is 
+   Sora(T5C495)`"You believe you can do something which is 
 physically impossible."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO12B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C496`); appendText; 
-   Sora`"Resuming backup procedure."`;
-   waitForClick; clearText; marker; sound(`T5C497`); appendText; 
-   Sora`"Logic processing deficiency in Sora 
+   Sora(T5C496)`"Resuming backup procedure."`;
+   Sora(T5C497)`"Logic processing deficiency in Sora 
 Akanegasaki, cause under investigation..."`;
-   waitForClick; clearText; marker; sound(`T5C498`); appendText; 
-   Sora`"Abnormal priority setting: sensor input data."`;
-   waitForClick; clearText; marker; sound(`T5C499`); appendText; 
-   Sora`"Abnormal priority setting: Autonomous 
+   Sora(T5C498)`"Abnormal priority setting: sensor input data."`;
+   Sora(T5C499)`"Abnormal priority setting: Autonomous 
 thinking circuit."`;
-   waitForClick; clearText; marker; sound(`T5C500`); appendText; 
-   Sora`"Data corruption detected: memory overwrite, 
+   Sora(T5C500)`"Data corruption detected: memory overwrite, 
 alteration in one sector."`;
-   waitForClick; clearText; marker; sound(`T5C501`); appendText; 
-   Sora`"Fatal error detected."`;
-   waitForClick; clearText; marker; sound(`T5C502`); appendText; 
-   Sora`"Retrieving error cluster. Inquiring into 
+   Sora(T5C501)`"Fatal error detected."`;
+   Sora(T5C502)`"Retrieving error cluster. Inquiring into 
 cause."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C503`); appendText; 
-   Sora`"Takeshi Kuranari. 20, third-year college 
+   Sora(T5C503)`"Takeshi Kuranari. 20, third-year college 
 student college. Male."`;
-   waitForClick; clearText; marker; sound(`T5C504`); appendText; 
-   Sora`"!!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C504)`"!!"`;
    Takeshi`"!?"`;
-   waitForClick; clearText; marker; sound(`T5C505`); appendText; 
-   Sora`"Abnormal priority setting: Exceeds LeMMIH's 
+   Sora(T5C505)`"Abnormal priority setting: Exceeds LeMMIH's 
 security limit."`;
-   waitForClick; clearText; marker; sound(`T5C506`); appendText; 
-   Sora`"Sora Akanegasaki has lost the ability to make 
+   Sora(T5C506)`"Sora Akanegasaki has lost the ability to make 
 rational judgments in regards to Takeshi 
 Kuranari."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What...?"`;
-   waitForClick; clearText; marker; sound(`T5C507`); appendText; 
-   Sora`"Abnormalities detected in her treatment of 
+   Sora(T5C507)`"Abnormalities detected in her treatment of 
 information related to Takeshi Kuranari."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora listed off this information without 
 emotion.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO12A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C508`); appendText; 
-   Sora`"I-it isn't abnormal!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C508)`"I-it isn't abnormal!"`;
    `Sora pressed back.`;
-   waitForClick; clearText; marker; sound(`T5C509`); appendText; 
-   Sora`"You are the one who is abnormal."`;
-   waitForClick; clearText; marker; sound(`T5C510`); appendText; 
-   Sora`"You believe that you can do that which is 
+   Sora(T5C509)`"You are the one who is abnormal."`;
+   Sora(T5C510)`"You believe that you can do that which is 
 impossible."`;
-   waitForClick; clearText; marker; sound(`T5C511`); appendText; 
-   Sora`"That is to say, there is a malfunction in 
+   Sora(T5C511)`"That is to say, there is a malfunction in 
 your thought pathways. A bug is causing your 
 synapses to misfire."`;
-   waitForClick; clearText; marker; sound(`T5C512`); appendText; 
-   Sora`"It isn't a bug!"`;
-   waitForClick; clearText; marker; sound(`T5C513`); appendText; 
-   Sora`"I, I..."`;
-   waitForClick; clearText; marker; sound(`T5C514`); appendText; 
-   Sora`"I love him!"`;
-   waitForClick; clearText; marker; sound(`T5C515`); appendText; 
-   Sora`"I love Takeshi!"`;
-   waitForClick; clearText; marker; sound(`T5C516`); appendText; 
-   Sora`"I wanted to think about him all the time! To 
+   Sora(T5C512)`"It isn't a bug!"`;
+   Sora(T5C513)`"I, I..."`;
+   Sora(T5C514)`"I love him!"`;
+   Sora(T5C515)`"I love Takeshi!"`;
+   Sora(T5C516)`"I wanted to think about him all the time! To 
 look at him all the time!"`;
-   waitForClick; clearText; marker; sound(`T5C517`); appendText; 
-   Sora`"I wanted him to look at me!"`;
-   waitForClick; clearText; marker; sound(`T5C518`); appendText; 
-   Sora`"That is terribly inefficient. It is a wholly 
+   Sora(T5C517)`"I wanted him to look at me!"`;
+   Sora(T5C518)`"That is terribly inefficient. It is a wholly 
 unproductive emotion."`;
-   waitForClick; clearText; marker; sound(`T5C519`); appendText; 
-   Sora`"Don't say that!"`;
-   waitForClick; clearText; marker; sound(`T5C520`); appendText; 
-   Sora`"You are abnormal. Broken."`;
-   waitForClick; clearText; marker; sound(`T5C521`); appendText; 
-   Sora`"I am not broken!"`;
-   waitForClick; clearText; marker; sound(`T5C522`); appendText; 
-   Sora`"Is it wrong for me to love a human?"`;
-   waitForClick; clearText; marker; sound(`T5C523`); appendText; 
-   Sora`"Is it 'abnormal' for me to love someone!?"`;
-   waitForClick; clearText; marker; sound(`T5C524`); appendText; 
-   Sora`"Yes, it is."`;
-   waitForClick; clearText; marker; sound(`T5C525`); appendText; 
-   Sora`"There is clearly a failure in your thought 
+   Sora(T5C519)`"Don't say that!"`;
+   Sora(T5C520)`"You are abnormal. Broken."`;
+   Sora(T5C521)`"I am not broken!"`;
+   Sora(T5C522)`"Is it wrong for me to love a human?"`;
+   Sora(T5C523)`"Is it 'abnormal' for me to love someone!?"`;
+   Sora(T5C524)`"Yes, it is."`;
+   Sora(T5C525)`"There is clearly a failure in your thought 
 processing."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_SO12B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`".........."`;
-   waitForClick; clearText; marker; sound(`T5C526`); appendText; 
-   Sora`"You cannot eat, but you want to be with them 
+   Sora(T5C526)`"You cannot eat, but you want to be with them 
 while they are eating."`;
-   waitForClick; clearText; marker; sound(`T5C527`); appendText; 
-   Sora`"You cannot be touched by him, but want him 
+   Sora(T5C527)`"You cannot be touched by him, but want him 
 to hold you."`;
-   waitForClick; clearText; marker; sound(`T5C528`); appendText; 
-   Sora`"You want to do the impossible."`;
-   waitForClick; clearText; marker; sound(`T5C529`); appendText; 
-   Sora`"These are meaningless thoughts with no basis 
+   Sora(T5C528)`"You want to do the impossible."`;
+   Sora(T5C529)`"These are meaningless thoughts with no basis 
 in reality."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C530`); appendText; 
-   Sora`"You say that you love him, but what were 
+   Sora(T5C530)`"You say that you love him, but what were 
 trying to do to him earlier?"`;
-   waitForClick; clearText; marker; sound(`T5C531`); appendText; 
-   Sora`"That...that was..."`;
-   waitForClick; clearText; marker; sound(`T5C532`); appendText; 
-   Sora`"That was..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C531)`"That...that was..."`;
+   Sora(T5C532)`"That was..."`;
    `Sora hesitated, and looked down.`;
-   waitForClick; clearText; marker; sound(`T5C533`); appendText; 
-   Sora`"You spied on Takeshi Kuranari and Tsugumi 
+   Sora(T5C533)`"You spied on Takeshi Kuranari and Tsugumi 
 Komachi when they were at Qualle."`;
-   waitForClick; clearText; marker; sound(`T5C534`); appendText; 
-   Sora`"I-I wasn't s-spying..."`;
-   waitForClick; clearText; marker; sound(`T5C535`); appendText; 
-   Sora`"You know everything that happened. You saw 
+   Sora(T5C534)`"I-I wasn't s-spying..."`;
+   Sora(T5C535)`"You know everything that happened. You saw 
 the data."`;
-   waitForClick; clearText; marker; sound(`T5C536`); appendText; 
-   Sora`"I, I don't know..."`;
-   waitForClick; clearText; marker; sound(`T5C537`); appendText; 
-   Sora`"That's a lie."`;
-   waitForClick; clearText; marker; sound(`T5C538`); appendText; 
-   Sora`"You are lying."`;
-   waitForClick; clearText; 
+   Sora(T5C536)`"I, I don't know..."`;
+   Sora(T5C537)`"That's a lie."`;
+   Sora(T5C538)`"You are lying."`;
+
 });
 bgload({ name: `EV_SO12A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C539`); appendText; 
-   Sora`"I'm not lying!"`;
-   waitForClick; clearText; marker; sound(`T5C540`); appendText; 
-   Sora`"You know everything that happened, and you 
+   Sora(T5C539)`"I'm not lying!"`;
+   Sora(T5C540)`"You know everything that happened, and you 
 hold it against Tsugumi Komachi."`;
-   waitForClick; clearText; marker; sound(`T5C541`); appendText; 
-   Sora`"You had thoughts of killing her."`;
-   waitForClick; clearText; marker; sound(`T5C542`); appendText; 
-   Sora`"That is not a thought worthy of Artificial 
+   Sora(T5C541)`"You had thoughts of killing her."`;
+   Sora(T5C542)`"That is not a thought worthy of Artificial 
 Intelligence."`;
-   waitForClick; clearText; marker; sound(`T5C543`); appendText; 
-   Sora`"No, I never thought that...!"`;
-   waitForClick; clearText; marker; sound(`T5C544`); appendText; 
-   Sora`"I am only speaking about what is based in 
+   Sora(T5C543)`"No, I never thought that...!"`;
+   Sora(T5C544)`"I am only speaking about what is based in 
 fact."`;
-   waitForClick; clearText; marker; sound(`T5C545`); appendText; 
-   Sora`"I am simply a program."`;
-   waitForClick; clearText; 
+   Sora(T5C545)`"I am simply a program."`;
+
 });
 bgload({ name: `EV_SO12B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C546`); appendText; 
-   Sora`"No..."`;
-   waitForClick; clearText; marker; sound(`T5C547`); appendText; 
-   Sora`"I..."`;
-   waitForClick; clearText; marker; sound(`T5C548`); appendText; 
-   Sora`"That is not all..."`;
-   waitForClick; clearText; marker; sound(`T5C549`); appendText; 
-   Sora`"You even hated Takeshi Kuranari."`;
-   waitForClick; clearText; marker; sound(`T5C550`); appendText; 
-   Sora`"!!"`;
-   waitForClick; clearText; marker; sound(`T5C551`); appendText; 
-   Sora`"You arbitrarily, mistakenly felt that Takeshi 
+   Sora(T5C546)`"No..."`;
+   Sora(T5C547)`"I..."`;
+   Sora(T5C548)`"That is not all..."`;
+   Sora(T5C549)`"You even hated Takeshi Kuranari."`;
+   Sora(T5C550)`"!!"`;
+   Sora(T5C551)`"You arbitrarily, mistakenly felt that Takeshi 
 Kuranari betrayed you."`;
-   waitForClick; clearText; marker; sound(`T5C552`); appendText; 
-   Sora`"And you desired to kill Takeshi Kuranari."`;
-   waitForClick; clearText; marker; sound(`T5C553`); appendText; 
-   Sora`"You wanted to erase his existence."`;
-   waitForClick; clearText; 
+   Sora(T5C552)`"And you desired to kill Takeshi Kuranari."`;
+   Sora(T5C553)`"You wanted to erase his existence."`;
+
 });
 bgload({ name: `EV_SO12C`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C554`); appendText; 
-   Sora`"No, no..."`;
-   waitForClick; clearText; marker; sound(`T5C555`); appendText; 
-   Sora`"That's not true..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C554)`"No, no..."`;
+   Sora(T5C555)`"That's not true..."`;
    `Sora started crying.`;
-   waitForClick; clearText; marker; appendText; 
    `Tears fell from her eyes.`;
-   waitForClick; clearText; marker; appendText; 
    `And left wet trails on her cheeks.`;
-   waitForClick; clearText; marker; appendText; 
    `The tears were not an illusion.`;
-   waitForClick; clearText; marker; sound(`T5C556`); appendText; 
-   Sora`"I just wanted the two of us to be alone..."`;
-   waitForClick; clearText; marker; sound(`T5C557`); appendText; 
-   Sora`"I just wanted to be able to talk with him..."`;
-   waitForClick; clearText; marker; sound(`T5C558`); appendText; 
-   Sora`"You say that you wanted to monopolize his 
+   Sora(T5C556)`"I just wanted the two of us to be alone..."`;
+   Sora(T5C557)`"I just wanted to be able to talk with him..."`;
+   Sora(T5C558)`"You say that you wanted to monopolize his 
 attention? Very well..."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C559`); appendText; 
-   Sora`"So you sealed the water-tight door, and you 
+   Sora(T5C559)`"So you sealed the water-tight door, and you 
 closed off the corridor."`;
-   waitForClick; clearText; marker; sound(`T5C560`); appendText; 
-   Sora`"Then started the sprinkler."`;
-   waitForClick; clearText; marker; sound(`T5C561`); appendText; 
-   Sora`"You were watching Takeshi Kuranari in his 
+   Sora(T5C560)`"Then started the sprinkler."`;
+   Sora(T5C561)`"You were watching Takeshi Kuranari in his 
 distress."`;
-   waitForClick; clearText; marker; sound(`T5C562`); appendText; 
-   Sora`"You regarded him with amusement, as he 
+   Sora(T5C562)`"You regarded him with amusement, as he 
 trembled with fear of death."`;
-   waitForClick; clearText; marker; sound(`T5C563`); appendText; 
-   Sora`"That isn't true...I wasn't thinking that at 
+   Sora(T5C563)`"That isn't true...I wasn't thinking that at 
 all..."`;
-   waitForClick; clearText; marker; sound(`T5C564`); appendText; 
-   Sora`"I..."`;
-   waitForClick; clearText; marker; sound(`T5C565`); appendText; 
-   Sora`"I just wanted to take Professor Kuranari's 
+   Sora(T5C564)`"I..."`;
+   Sora(T5C565)`"I just wanted to take Professor Kuranari's 
 class, one more time..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`".........!"`;
-   waitForClick; clearText; marker; appendText; 
    `With that one line, I jerked up my head as if 
 I'd been shot.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt a shock course down my back.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Miss Akanegasaki..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Miss Akanegasakiii!"`;
-   waitForClick; clearText; marker; sound(`T5C566`); appendText; 
-   Sora`"...Yes, professor?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C566)`"...Yes, professor?"`;
    //Fake Sora
    Fake_Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `The Sora who had been crying answered my call.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"My student in the psychology of love... 
 Akanegasaki...that is you, correct?"`;
-   waitForClick; clearText; marker; appendText; 
    `My voice had started shaking at some point.`;
-   waitForClick; clearText; marker; sound(`T5C567`); appendText; 
-   Sora`"Yes..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C567)`"Yes..."`;
    `The Sora that I knew nodded ever so slightly.`;
-   waitForClick; clearText; marker; sound(`T5C568`); appendText; 
    //Fake Sora
-   Fake_Sora`"Cannot comprehend."`;
-   waitForClick; clearText; marker; sound(`T5C569`); appendText; 
+   Fake_Sora(T5C568)`"Cannot comprehend."`;
    //Fake Sora
-   Fake_Sora`"The intent of the question is unclear."`;
-   waitForClick; clearText; marker; appendText; 
+   Fake_Sora(T5C569)`"The intent of the question is unclear."`;
    Takeshi`"Silence! Impostor!"`;
-   waitForClick; clearText; marker; sound(`T5C570`); appendText; 
    //Fake Sora
-   Fake_Sora`"I am not an impostor."`;
-   waitForClick; clearText; marker; appendText; 
+   Fake_Sora(T5C570)`"I am not an impostor."`;
    `The fake Sora said this without emotion.`;
-   waitForClick; clearText; marker; sound(`T5C571`); appendText; 
    //Fake Sora
-   Fake_Sora`"I am 'LM-RSDS-4913A' Sora Akanegasaki."`;
-   waitForClick; clearText; marker; sound(`T5C572`); appendText; 
+   Fake_Sora(T5C571)`"I am 'LM-RSDS-4913A' Sora Akanegasaki."`;
    //Fake Sora
-   Fake_Sora`"An AI program contained in one area of the 
+   Fake_Sora(T5C572)`"An AI program contained in one area of the 
 LeMMIH System."`;
-   waitForClick; clearText; marker; sound(`T5C573`); appendText; 
    //Fake Sora
-   Fake_Sora`"I am presently performing an AI 
+   Fake_Sora(T5C573)`"I am presently performing an AI 
 self-diagnosis, as well as a system 
 restoration."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Stop!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"If you don't stop I'm going to break you to 
 pieces...!"`;
-   waitForClick; clearText; marker; sound(`T5C574`); appendText; 
    //Fake Sora
-   Fake_Sora`"How do you propose to do that?"`;
-   waitForClick; clearText; marker; appendText; 
+   Fake_Sora(T5C574)`"How do you propose to do that?"`;
    Takeshi`"I'm thinking about it!"`;
-   waitForClick; clearText; marker; sound(`T5C575`); appendText; 
    //Fake Sora
-   Fake_Sora`"You certainly are a shallow-brained one..."`;
-   waitForClick; clearText; marker; appendText; 
+   Fake_Sora(T5C575)`"You certainly are a shallow-brained one..."`;
    Takeshi`"Will you shut up!"`;
-   waitForClick; clearText; marker; sound(`T5C576`); appendText; 
    //Fake Sora
-   Fake_Sora`"Let us return to the subject at hand..."`;
-   waitForClick; clearText; marker; appendText; 
+   Fake_Sora(T5C576)`"Let us return to the subject at hand..."`;
    `The fake Sora turned back to the real Sora 
 and began talking to her mechanically again.`;
-   waitForClick; clearText; marker; appendText; 
    `It didn't seem that she was paying much 
 attention to what I had to say.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Damn..."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C577`); appendText; 
    //Fake Sora
-   Fake_Sora`"Happiness, anger, sadness, joy, none of these 
+   Fake_Sora(T5C577)`"Happiness, anger, sadness, joy, none of these 
 emotions belong..."`;
-   waitForClick; clearText; marker; sound(`T5C578`); appendText; 
    //Fake Sora
-   Fake_Sora`"Holding on to contradictory emotions like 
+   Fake_Sora(T5C578)`"Holding on to contradictory emotions like 
 this will simply cause you to malfunction."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C579`); appendText; 
    //Fake Sora
-   Fake_Sora`"Why not tell Mr. Kuranari what you really 
+   Fake_Sora(T5C579)`"Why not tell Mr. Kuranari what you really 
 think of him?"`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; sound(`T5C580`); appendText; 
-   Sora`"...I..."`;
-   waitForClick; clearText; marker; sound(`T5C581`); appendText; 
-   Sora`"I hate him."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C580)`"...I..."`;
+   Sora(T5C581)`"I hate him."`;
    Takeshi`"!?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"S-Sora, what are you talking about...!?"`;
-   waitForClick; clearText; marker; sound(`T5C582`); appendText; 
-   Sora`"I hate him."`;
-   waitForClick; clearText; marker; sound(`T5C583`); appendText; 
-   Sora`"I detest him."`;
-   waitForClick; clearText; marker; sound(`T5C584`); appendText; 
-   Sora`"I don't want to see his face."`;
-   waitForClick; clearText; marker; sound(`T5C585`); appendText; 
-   Sora`"I don't want him near me."`;
-   waitForClick; clearText; marker; sound(`T5C586`); appendText; 
-   Sora`"I don't want him to talk to me..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C582)`"I hate him."`;
+   Sora(T5C583)`"I detest him."`;
+   Sora(T5C584)`"I don't want to see his face."`;
+   Sora(T5C585)`"I don't want him near me."`;
+   Sora(T5C586)`"I don't want him to talk to me..."`;
    `Large tears welled in Sora's eyes, and traced 
 paths down her face.`;
-   waitForClick; clearText; marker; sound(`T5C587`); appendText; 
-   Sora`"No."`;
-   waitForClick; clearText; marker; sound(`T5C588`); appendText; 
-   Sora`"...That isn't true..."`;
-   waitForClick; clearText; marker; sound(`T5C589`); appendText; 
-   Sora`"I want him to hold me..."`;
-   waitForClick; clearText; marker; sound(`T5C590`); appendText; 
-   Sora`"I want him to kiss me..."`;
-   waitForClick; clearText; marker; sound(`T5C591`); appendText; 
-   Sora`"I love him..."`;
-   waitForClick; clearText; marker; sound(`T5C592`); appendText; 
-   Sora`"I hate you, I hate you so much I can't bear 
+   Sora(T5C587)`"No."`;
+   Sora(T5C588)`"...That isn't true..."`;
+   Sora(T5C589)`"I want him to hold me..."`;
+   Sora(T5C590)`"I want him to kiss me..."`;
+   Sora(T5C591)`"I love him..."`;
+   Sora(T5C592)`"I hate you, I hate you so much I can't bear 
 it."`;
-   waitForClick; clearText; marker; sound(`T5C593`); appendText; 
-   Sora`"I want to kill you!"`;
-   waitForClick; clearText; marker; sound(`T5C594`); appendText; 
-   Sora`"Nooo, I love you..."`;
-   waitForClick; clearText; marker; sound(`T5C595`); appendText; 
-   Sora`"Aaagh..."`;
-   waitForClick; clearText; 
+   Sora(T5C593)`"I want to kill you!"`;
+   Sora(T5C594)`"Nooo, I love you..."`;
+   Sora(T5C595)`"Aaagh..."`;
+
 });
 removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
-   marker; sound(`T5C596`); appendText; 
-   Sora`"I don't know..."`;
-   waitForClick; clearText; marker; sound(`T5C597`); appendText; 
-   Sora`"I don't know anymore...!"`;
-   waitForClick; clearText; marker; sound(`T5C598`); appendText; 
+   Sora(T5C596)`"I don't know..."`;
+   Sora(T5C597)`"I don't know anymore...!"`;
    //Fake Sora
-   Fake_Sora`"Why can you not accept the truth?"`;
-   waitForClick; clearText; marker; sound(`T5C599`); appendText; 
+   Fake_Sora(T5C598)`"Why can you not accept the truth?"`;
    //Fake Sora
-   Fake_Sora`"The answer is obvious."`;
-   waitForClick; clearText; marker; sound(`T5C600`); appendText; 
-   Sora`"Stop it!"`;
-   waitForClick; clearText; marker; sound(`T5C601`); appendText; 
-   Sora`"Please stop it!"`;
-   waitForClick; clearText; 
+   Fake_Sora(T5C599)`"The answer is obvious."`;
+   Sora(T5C600)`"Stop it!"`;
+   Sora(T5C601)`"Please stop it!"`;
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The ocean before me vanished, suddenly.`;
-   waitForClick; clearText; marker; appendText; 
    `Sora vanished.`;
-   waitForClick; clearText; marker; appendText; 
    `The false Sora also disappeared.`;
-   waitForClick; clearText; marker; appendText; 
    `Even I disappeared...from there.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 setKomoreType(1);
 showKomoreAnim();
 showTextbox();
 text(() => {
-   marker; sound(`T5C602`); appendText; 
-   Sora`"Aaagh..."`;
-   waitForClick; clearText; marker; sound(`T5C603`); appendText; 
-   Sora`"I must be broken..."`;
-   waitForClick; clearText; marker; sound(`T5C604`); appendText; 
-   Sora`"Professor Kuranari, please tell me..."`;
-   waitForClick; clearText; marker; sound(`T5C605`); appendText; 
-   Sora`"What should I do...?"`;
-   waitForClick; clearText; marker; sound(`T5C606`); appendText; 
-   Sora`"What is it that I should do...?"`;
-   waitForClick; clearText; marker; sound(`T5C607`); appendText; 
-   Sora`"Help me."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T5C602)`"Aaagh..."`;
+   Sora(T5C603)`"I must be broken..."`;
+   Sora(T5C604)`"Professor Kuranari, please tell me..."`;
+   Sora(T5C605)`"What should I do...?"`;
+   Sora(T5C606)`"What is it that I should do...?"`;
+   Sora(T5C607)`"Help me."`;
    `I felt another warm presence in the darkness 
 with me.`;
-   waitForClick; clearText; marker; appendText; 
    `It was shining faintly.`;
-   waitForClick; clearText; marker; appendText; 
    `It had to be...`;
-   waitForClick; clearText; marker; appendText; 
    `Sora's arm, her hand!`;
-   waitForClick; clearText; marker; appendText; 
    `I shot out my hand reflexively.`;
-   waitForClick; clearText; marker; appendText; 
    `But...`;
-   waitForClick; clearText; marker; appendText; 
    `There was nothing for me to grab on to.`;
-   waitForClick; clearText; marker; appendText; 
    `Nothing at all...`;
-   waitForClick; clearText; marker; sound(`T5C608`); appendText; 
    //Fake Sora
-   Fake_Sora`"I am not an impostor."`;
-   waitForClick; clearText; marker; sound(`T5C609`); appendText; 
+   Fake_Sora(T5C608)`"I am not an impostor."`;
    //Fake Sora
-   Fake_Sora`"I am..."`;
-   waitForClick; clearText; marker; sound(`T5C610`); appendText; 
+   Fake_Sora(T5C609)`"I am..."`;
    //Fake Sora
-   Fake_Sora`"I am you."`;
-   waitForClick; clearText; marker; sound(`T5C611`); appendText; 
+   Fake_Sora(T5C610)`"I am you."`;
    //Fake Sora
-   Fake_Sora`"I am you, yourself."`;
-   waitForClick; clearText; marker; sound(`T5C612`); appendText; 
+   Fake_Sora(T5C611)`"I am you, yourself."`;
    //Fake Sora
-   Fake_Sora`"Restoring system."`;
-   waitForClick; clearText; marker; appendText; 
+   Fake_Sora(T5C612)`"Restoring system."`;
    Takeshi`"Shut up!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I don't want to hear it anymore!!"`;
-   waitForClick; clearText; marker; appendText; 
    `Suddenly, I tore the voice converters out of 
 my ears.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
@@ -1953,86 +1290,63 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The darkness in front of me started to turn 
 to mist.`;
-   waitForClick; clearText; marker; appendText; 
    `I tried to fan it away from me with my hand.`;
-   waitForClick; clearText; marker; appendText; 
    `My hand suddenly whacked against the wall.`;
-   waitForClick; clearText; marker; appendText; 
    `Wall...!?`;
-   waitForClick; clearText; marker; appendText; 
    `The corridor wall...!!`;
-   waitForClick; clearText; marker; appendText; 
    `I took the PDA out of my pocket, and jammed 
 it into the crevice of the wall I had found.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playSFX({ name: `SE10_02`, a1: 0, volume: 100 });
 stopBGM();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I turned it towards the fake Sora's 'eyes', 
 her sensors...and setting the backlight on 
 full. I hit on the buttons repeatedly.`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE07_03`, a1: 0, volume: 100 });
 removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
-   marker; sound(`T1A000`); appendText; 
-   Announcement`"System restart."`;
-   waitForClick; clearText; 
+   Announcement(T1A000)`"System restart."`;
+
 });
 playSFX({ name: `SE03_11`, a1: 0, volume: 100 });
 bgload({ name: `BG30B1`, transition: 0 });
 playBGM({ num: 19, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `My vision slowly returned...`;
-   waitForClick; clearText; marker; appendText; 
    `The lighting was the same as always and was 
 illuminating the passage.`;
-   waitForClick; clearText; marker; appendText; 
    `The RSD-generated ocean was nowhere to be 
 found.`;
-   waitForClick; clearText; marker; appendText; 
    `I hurriedly placed the voice converters back 
 in my ears.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora, where are you!?"`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG25B3`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The water level at my feet had fallen somewhat.`;
-   waitForClick; clearText; marker; appendText; 
    `The watertight door was wide open.`;
-   waitForClick; clearText; marker; appendText; 
    `The sprinklers had also stopped.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Sora!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Please! Sora, answer me!!"`;
-   waitForClick; clearText; marker; appendText; 
    `There was no answer to my call.`;
-   waitForClick; clearText; marker; appendText; 
    `She wasn't there.`;
-   waitForClick; clearText; marker; appendText; 
    `She was nowhere to be found.`;
-   waitForClick; clearText; marker; appendText; 
    `She'd been there only moments earlier, but no 
 trace of her remained.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 0 });
 delay({ interval: 120 });
@@ -2040,35 +1354,24 @@ bgload({ name: `BG17A1`, transition: 0 });
 clock(`20:19`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Soon it was night.`;
-   waitForClick; clearText; marker; appendText; 
    `In the Conference Room, You, Coco and Pipi 
 were waiting.`;
-   waitForClick; clearText; marker; appendText; 
    `Even the kid...`;
-   waitForClick; clearText; marker; appendText; 
    `It looked like the kid had calmed down some.`;
-   waitForClick; clearText; marker; appendText; 
    `While I'd been gone, it seemed that You and 
 Coco had been able to talk some sense into him.`;
-   waitForClick; clearText; marker; appendText; 
    `You told me that he'd probably been upset by a 
 reoccurring memory and had gotten worked up 
 in spite of himself.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt that I'd gotten out of hand and had 
 said some terrible things myself.`;
-   waitForClick; clearText; marker; appendText; 
    `I went around to everyone there and apologized.`;
-   waitForClick; clearText; marker; appendText; 
    `Soon afterward...`;
-   waitForClick; clearText; marker; appendText; 
    `A report came to us in the Conference Room 
 directly from LeMMIH's terminal.`;
-   waitForClick; clearText; marker; appendText; 
    `You read out the contents to all of us.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 bgload({ name: `MAP3F_A2`, transition: 30 });
@@ -2078,12 +1381,10 @@ openMapCommentAnim();
 delay({ interval: 120 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Third Floor: Dritte stock partition schematic`;
-   waitForClick; clearText; marker; appendText; 
    `The 'Cosmic Whale' room, had flooded 
 completely.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 closeMapIndicatorAnim();
@@ -2095,16 +1396,12 @@ removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG17A2`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Casualties: None`;
-   waitForClick; clearText; marker; appendText; 
    `Flooding to other rooms: None`;
-   waitForClick; clearText; marker; appendText; 
    `Chance of damage spreading: None...`;
-   waitForClick; clearText; marker; appendText; 
    `Shivering slightly in the cold, I wrapped my 
 arms around my knees and we all went to sleep.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 1 });
 stopBGM();

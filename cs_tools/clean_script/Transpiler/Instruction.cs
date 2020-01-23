@@ -424,6 +424,7 @@ class Instruction {
                   var label = _tokens[3];
                   texts.Add($"{Config.tab}case {subt_choice ?? choice}: goto(lbl_{label});");
                   usedLabelSet.Add(label);
+                  state.switchLabelSet.Add(label);
                   i++;
                }
                var text = string.Join("\r\n", texts);
@@ -436,6 +437,7 @@ class Instruction {
                var label = tokens[1];
                usedLabelSet.Add(label);
                outputLines.Add($"goto(lbl_{label});");
+               state.switchLabelSet.Add(label);
                break;
             }
             case "gotoif": {
@@ -451,6 +453,7 @@ class Instruction {
                var subt = Kits.SubstituteVar(type, variable);
                subt.@enum.TryGetValue(opposed_value, out string subt_value);
                outputLines.Add($"if ({type}{subt.var} {comparision} {subt_value ?? opposed_value}) goto(lbl_{label});");
+               state.switchLabelSet.Add(label);
                break;
             }
             case "shakeScreen": {
@@ -484,11 +487,13 @@ class Instruction {
             case "turnOnFullscreenTextMode": {
                outputLines.Add("NVL_Mode();");
                state.textMode = TextMode.NVL;
+               state.dialogCompleted = true;
                break;
             }
             case "turnOffFullscreenTextMode": {
                outputLines.Add("ADV_Mode();");
                state.textMode = TextMode.ADV;
+               state.dialogCompleted = true;
                break;
             }
             case "showDimInAndOutAnim": {

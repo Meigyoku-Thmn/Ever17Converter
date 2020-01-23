@@ -16,9 +16,8 @@ switch (l_ending) {
 }
 showTextbox();
 text(() => {
-   marker; appendText; 
    `ＬＲ＿Ａ００の値が正しくありません。`;
-   waitForClick; clearText; 
+
 });
 let lbl_000001b4;
 g_you_gd__cleared = 1;
@@ -235,7 +234,6 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `
 
 
@@ -244,43 +242,29 @@ text(() => {
 
 
 
-`;
-   marker; appendText; bigChar; clearText; 
-   `    L`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `i`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `f`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `e`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   ` `;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `r`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `e`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `a`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `d`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `i`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `n`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `g`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `:`;
-   delay(46); marker; appendText; bigChar; clearText; 
-   ` `;
-   delay(46); marker; appendText; bigChar; clearText; 
-   `1`;
-   delay(90); delay(90); 
+${noWait}`;
+   `${bigChar}    L${wait(46)}${noWait}`;
+   Append`${bigChar}i${wait(46)}${noWait}`;
+   Append`${bigChar}f${wait(46)}${noWait}`;
+   Append`${bigChar}e${wait(46)}${noWait}`;
+   Append`${bigChar} ${wait(46)}${noWait}`;
+   Append`${bigChar}r${wait(46)}${noWait}`;
+   Append`${bigChar}e${wait(46)}${noWait}`;
+   Append`${bigChar}a${wait(46)}${noWait}`;
+   Append`${bigChar}d${wait(46)}${noWait}`;
+   Append`${bigChar}i${wait(46)}${noWait}`;
+   Append`${bigChar}n${wait(46)}${noWait}`;
+   Append`${bigChar}g${wait(46)}${noWait}`;
+   Append`${bigChar}:${wait(46)}${noWait}`;
+   Append`${bigChar} ${wait(46)}${noWait}`;
+   Append`${bigChar}1${wait(90)}${wait(90)}${noWait}`;
+
 });
 monoColorOverlay({ interval: 24, color: BLACK });
 showTextbox();
 text(() => {
-   marker; appendText; nextPage(04); 
+   Append`${noWait}`;
+   fadeClearPage();
 });
 hideTextbox();
 dimOff_ac = 0;
@@ -288,38 +272,29 @@ closeDimOverlay();
 removeBG({ mode: BLACK, transition: 62 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `
 
 
 
 
 
-`;
-   
+${noWait}`;
+
 });
 setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; delay(0); 
-   `         `;
-   nextPage(00); 
-   `This story is not an end yet.`;
-   nextPage(01); 
-   `
-`;
-   marker; appendText; delay(0); 
-   `   `;
-   nextPage(00); 
-   `Because only you are in the infinity loop.`;
-   nextPage(01); marker; appendText; delay(90); delay(90); delay(90); nextPage(04); 
+   `         ${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
+   `   ${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
+   `${wait(90)}${wait(90)}${wait(90)}${noWait}`;
+   fadeClearPage();
 });
 hideTextbox();
 removeBG({ mode: BLACK, transition: 62 });
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 sys_allow_shortcut = 1;
 sys_allow_album = 1;
 sys_allow_jukebox = 1;
@@ -333,30 +308,21 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `
 
 
 
 
 
-`;
-   marker; appendText; delay(0); 
-   `         `;
-   nextPage(00); 
-   `This story is not an end yet.`;
-   nextPage(01); 
-   `
-`;
-   marker; appendText; delay(0); 
-   `   `;
-   nextPage(00); 
-   `Because only you are in the infinity loop.`;
-   nextPage(01); marker; appendText; delay(90); delay(90); delay(90); nextPage(04); 
+${noWait}`;
+   `         ${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
+   `   ${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
+   `${wait(90)}${wait(90)}${wait(90)}${noWait}`;
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 sys_allow_shortcut = 1;
 sys_allow_album = 1;
 sys_allow_jukebox = 1;
@@ -382,10 +348,9 @@ g_coco_route_unlock = 1;
 l__coco_route_unlock = 1;
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Opening The Third Eye- The Last Chapter:
 Finding Coco`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 let lbl_00001161;

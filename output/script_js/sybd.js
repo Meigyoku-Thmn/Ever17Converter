@@ -13,136 +13,83 @@ setSceneTitle({ index: 90 });
 clock(`1:39`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Daybreak. The date had changed to 
 Sunday, May 7.`;
-   waitForClick; clearText; marker; appendText; 
    `Since that time, we hadn't slept at all.`;
-   waitForClick; clearText; marker; appendText; 
    `I was starting to feel badly again.`;
-   waitForClick; clearText; marker; appendText; 
    `A headache, dizziness, nausea and coldness 
 felt like they were seeping from deep in the 
 core of my body.`;
-   waitForClick; clearText; marker; appendText; 
    `I suffered from a wave of dull pain and 
 extreme fatigue...I was only half-conscious.`;
-   waitForClick; clearText; marker; appendText; 
    `Exhaustion...I had reached my limit.`;
-   waitForClick; clearText; marker; appendText; 
    `But I tried to keep my energy from being 
 sapped away.`;
-   waitForClick; clearText; marker; appendText; 
    `Surrounded by darkness...and endless fear, 
 we had fought our way this far...`;
-   waitForClick; clearText; marker; appendText; 
    `And there was no sign that things were going 
 to get better.`;
-   waitForClick; clearText; marker; appendText; 
    `Communication lines with the outside were 
 still down.`;
-   waitForClick; clearText; marker; appendText; 
    `And...`;
-   waitForClick; clearText; marker; appendText; 
    `We had yet to find a clue that 
 might lead to escape.`;
-   waitForClick; clearText; marker; appendText; 
    `Slowly You started to get ill, too.`;
-   waitForClick; clearText; marker; appendText; 
    `Her face was pale.`;
-   waitForClick; clearText; marker; appendText; 
    `Her breathing was heavy. Beads of sweat stood 
 out on her forehead.`;
-   waitForClick; clearText; marker; appendText; 
    `She seemed to have a terrible fever.`;
-   waitForClick; clearText; marker; appendText; 
    `I was not the only one suffering mentally and 
 physically. `;
-   waitForClick; clearText; marker; appendText; 
    `There had been signs from the day before.`;
-   waitForClick; clearText; marker; appendText; 
    `But we couldn't do anything about it. The 
 infirmary was already underwater.`;
-   waitForClick; clearText; marker; appendText; 
    `We could only endure the passing of time.`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playBGM({ num: 13, volume: 100 });
 bgload({ name: `BG11A1`, transition: 10 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `(Is this it...?)`;
-   waitForClick; clearText; marker; appendText; 
    `(Is this the end...?)`;
-   waitForClick; clearText; marker; appendText; 
    `(Is giving up the only choice...?)`;
-   waitForClick; clearText; marker; appendText; 
    `I looked up, helplessly.`;
-   waitForClick; clearText; marker; appendText; 
    `The ceiling was crusty with cigarette smoke.`;
-   waitForClick; clearText; marker; appendText; 
    `I couldn't see anything else.`;
-   waitForClick; clearText; marker; appendText; 
    `(I am going to die...)`;
-   waitForClick; clearText; marker; appendText; 
    `(There's nothing I can do, just die...)`;
-   waitForClick; clearText; marker; appendText; 
    `That was my conclusion.`;
-   waitForClick; clearText; marker; appendText; 
    `Ha ha...`;
-   waitForClick; clearText; marker; appendText; 
    `Ha ha ha...`;
-   waitForClick; clearText; marker; appendText; 
    `Aha ha ha ha ha.`;
-   waitForClick; clearText; marker; appendText; 
    `I knew then exactly how much strength 
 I had left.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt utterly...hopeless.`;
-   waitForClick; clearText; marker; appendText; 
    `Useless.`;
-   waitForClick; clearText; marker; appendText; 
    `Incompetent.`;
-   waitForClick; clearText; marker; appendText; 
    `Yes, I would die.`;
-   waitForClick; clearText; marker; appendText; 
    `And I was fine with that.`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't care.`;
-   waitForClick; clearText; marker; appendText; 
    `Without a memory, I thought I had been the 
 equivalent of dead to start with....`;
-   waitForClick; clearText; marker; appendText; 
    `Nothing changes. I had nothing to lose.`;
-   waitForClick; clearText; marker; appendText; 
    `It was already decided.`;
-   waitForClick; clearText; marker; appendText; 
    `I remembered what Tsugumi had told me that...`;
-   waitForClick; clearText; marker; appendText; 
    `I would die in seven days.`;
-   waitForClick; clearText; marker; appendText; 
    `Her prediction was true...`;
-   waitForClick; clearText; marker; appendText; 
    `(I don't care...this is the way it 
 should be...)`;
-   waitForClick; clearText; marker; appendText; 
    `I relaxed and looked down.`;
-   waitForClick; clearText; marker; appendText; 
    `And I saw...`;
-   waitForClick; clearText; marker; appendText; 
    `...You.`;
-   waitForClick; clearText; marker; appendText; 
    `She slumped back into a chair and her 
 breathing looked labored.`;
-   waitForClick; clearText; 
+
 });
 showDimOverlay();
 removeBG({ mode: WHITE, transition: 2 });
@@ -150,68 +97,45 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
-   `
+   `${voice(Y4A061)}
 
 
-`;
-   sound(`Y4A061`); appendText; delay(0); 
-   `                    `;
-   nextPage(00); 
-   `Promise?`;
-   nextPage(01); waitForClick; 
-   `
-`;
-   appendText; delay(0); 
-   `                `;
-   nextPage(00); 
-   `Yeah, I promise.`;
-   nextPage(01); waitForClick; nextPage(04); 
+${noWait}`;
+   Append`                    ${nextPage(0)}Promise?${nextPage(1)}`;
+   `                ${nextPage(0)}Yeah, I promise.${nextPage(1)}`;
+   fadeClearPage();
 });
 hideTextbox();
 dimOff_ac = 0;
 closeDimOverlay();
 bgload({ name: `BG11A1`, transition: 20 });
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Suddenly I felt the warmth I'd felt from You's 
 fingers when I'd made my promise again in my 
 fingertips.`;
-   waitForClick; clearText; marker; appendText; 
    `You...`;
-   waitForClick; clearText; marker; appendText; 
    `Yes...if I didn't do anything, 
 You would die, too.`;
-   waitForClick; clearText; marker; appendText; 
    `No...I wouldn't let that happen!`;
-   waitForClick; clearText; marker; appendText; 
    `I don't care if I die, but You...You is...`;
-   waitForClick; clearText; marker; appendText; 
    `Somehow I had to save her.`;
-   waitForClick; clearText; marker; appendText; 
    `Because I had promised.`;
-   waitForClick; clearText; marker; appendText; 
    `Promised....`;
-   waitForClick; clearText; marker; appendText; 
    `(How could I...how...)`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `.........`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; marker; appendText; 
    `Then...`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
@@ -221,21 +145,18 @@ unSkippableDelay(18);
 clock(`4:17`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `There was only a short time until the 
 estimated time of implosion.  `;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playSFX({ name: `SE06_02`, a1: 0, volume: 100 });
 delay({ interval: 120 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The Security Office started shaking violently.`;
-   waitForClick; clearText; marker; appendText; 
    `The complex screeched.`;
-   waitForClick; clearText; 
+
 });
 eff_41 = 11;
 eff_42 = 8;
@@ -244,48 +165,35 @@ showDimInAndOutAnim();
 playSFX({ name: `SE09_03L`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Alarms pierced the air with shrill warnings.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`YBD000`); appendText; 
-   Sora`"The partition strength limits...have been 
+   Sora(YBD000)`"The partition strength limits...have been 
 exceeded."`;
-   waitForClick; clearText; marker; sound(`YBD001`); appendText; 
-   Sora`"Flooding has started on each floor."`;
-   waitForClick; clearText; marker; sound(`YBD002`); appendText; 
-   Sora`"Flooding has begun in Sector 4 of Zweite 
+   Sora(YBD001)`"Flooding has started on each floor."`;
+   Sora(YBD002)`"Flooding has begun in Sector 4 of Zweite 
 stock...implosion has begun in Sector 5 on the 
 same floor...in Sector 6..."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora reporting the situation in a monotone.`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"......"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"...What's wrong? What else?" `;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`YBD003`); appendText; 
-   Sora`"No, I leave it at that...this report now 
+   Sora(YBD003)`"No, I leave it at that...this report now 
 means nothing..."`;
-   waitForClick; clearText; marker; sound(`YBD004`); appendText; 
-   Sora`"Flooding has started in this sector, too...it 
+   Sora(YBD004)`"Flooding has started in this sector, too...it 
 won't be long until damage will appear here."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I see......"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"How long do you think this will hold?"`;
-   waitForClick; clearText; marker; sound(`YBD005`); appendText; 
-   Sora`"20 to 25 minutes......"`;
-   waitForClick; clearText; marker; sound(`YBD006`); appendText; 
-   Sora`"But it could implode at any time."`;
-   waitForClick; clearText; 
+   Sora(YBD005)`"20 to 25 minutes......"`;
+   Sora(YBD006)`"But it could implode at any time."`;
+
 });
 hideTextbox();
 playSFX({ name: `SE06_04`, a1: 0, volume: 100 });
@@ -311,123 +219,91 @@ unSkippableDelay(8);
 bgload({ name: `BG11A2`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The normal lighting went out and the emergency 
 lighting kicked in.`;
-   waitForClick; clearText; marker; appendText; 
    `I figured that the Generator Room was probably 
 damaged.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`YBD007`); appendText; 
-   Sora`"I couldn't save you two after all..."`;
-   waitForClick; clearText; marker; sound(`YBD008`); appendText; 
-   Sora`"I am......really...truly...sorry..."`;
-   waitForClick; clearText; marker; sound(`YBD009`); appendText; 
-   Sora`"...Truly...."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(YBD007)`"I couldn't save you two after all..."`;
+   Sora(YBD008)`"I am......really...truly...sorry..."`;
+   Sora(YBD009)`"...Truly...."`;
    Kid`"Don't be.... It's not your fault."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I think you did a great job."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"..."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I headed over to be beside You.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"You, this place isn't going to hold...let's 
 go."`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE06_02`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `You was completely weakened.`;
-   waitForClick; clearText; marker; appendText; 
    `She looked up powerlessly and nodded slightly.`;
-   waitForClick; clearText; marker; sound(`YBD010`); appendText; 
-   You`"....Mmm."`;
-   waitForClick; clearText; 
+   You(YBD010)`"....Mmm."`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I carried You on my back.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`YBD011`); appendText; 
-   Sora`"Where are you going?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(YBD011)`"Where are you going?"`;
    Kid`"I don't know.... Somewhere where we can 
 gain a little more time."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I intend to stake our lives on the 
 possibility that we would be rescued 
 until the very end."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I can't think of anything to do other than 
 that..."`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE06_02`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"I promised her......that I would protect 
 her no matter what."`;
-   waitForClick; clearText; marker; appendText; 
    Sora`"......"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Where is the safest place left among 
 the floors?"`;
-   waitForClick; clearText; marker; sound(`YBD012`); appendText; 
-   Sora`"That would be the Control Room on Dritte 
+   Sora(YBD012)`"That would be the Control Room on Dritte 
 stock, or......"`;
-   waitForClick; clearText; marker; sound(`YBD013`); appendText; 
-   Sora`"But it is only a matter of a few dozen 
+   Sora(YBD013)`"But it is only a matter of a few dozen 
 minutes difference."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"That's enough......"`;
-   waitForClick; clearText; marker; appendText; 
    `I was going to leave the room...but I suddenly 
 stopped.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"What are you going to do, Sora?"`;
-   waitForClick; clearText; marker; sound(`YBD014`); appendText; 
-   Sora`"I will not be able to accompany you two 
+   Sora(YBD014)`"I will not be able to accompany you two 
 any more."`;
-   waitForClick; clearText; marker; sound(`YBD015`); appendText; 
-   Sora`"Due to flooding, image broadcasting devices 
+   Sora(YBD015)`"Due to flooding, image broadcasting devices 
 in the complex have been significantly 
 damaged."`;
-   waitForClick; clearText; marker; sound(`YBD016`); appendText; 
-   Sora`"The places I can appear are limited."`;
-   waitForClick; clearText; marker; sound(`YBD017`); appendText; 
-   Sora`"But at the very least, I want to guide you 
+   Sora(YBD016)`"The places I can appear are limited."`;
+   Sora(YBD017)`"But at the very least, I want to guide you 
 two to the Control Room via my audio 
 function."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Alright. Please do."`;
-   waitForClick; clearText; marker; sound(`YBD018`); appendText; 
-   Sora`"Yes......"`;
-   waitForClick; clearText; 
+   Sora(YBD018)`"Yes......"`;
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });
@@ -437,53 +313,37 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `When I left the room, I found water leaking 
 from walls in spots.`;
-   waitForClick; clearText; marker; appendText; 
    `The bulkheads squealed.`;
-   waitForClick; clearText; marker; sound(`YBD019`); appendText; 
-   Sora`"I will guide you.... I will show you the 
+   Sora(YBD019)`"I will guide you.... I will show you the 
 route to the Control Room which is still 
 safe..."`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 delay({ interval: 120 });
 bgload({ name: `BG26B4R`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We went down to the third floor.`;
-   waitForClick; clearText; marker; appendText; 
    `LeMU was still holding.`;
-   waitForClick; clearText; marker; appendText; 
    `The estimated time of implosion that Sora had 
 predicted should have passed long before.`;
-   waitForClick; clearText; marker; appendText; 
    `LeMU kept resisting to the end as if Sora was 
 willing it to protect us.`;
-   waitForClick; clearText; marker; sound(`YBD020`); appendText; 
-   You`"*Pant*, *pant*, *pant*......"`;
-   waitForClick; clearText; marker; appendText; 
+   You(YBD020)`"*Pant*, *pant*, *pant*......"`;
    `You gasped, suffering terribly as I carried 
 her on my back.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Be strong. Be patient. It's just a little 
 further..."`;
-   waitForClick; clearText; marker; appendText; 
    `I lied.`;
-   waitForClick; clearText; marker; appendText; 
    `I was a liar.`;
-   waitForClick; clearText; marker; appendText; 
    `A little more patience...and then what?`;
-   waitForClick; clearText; marker; appendText; 
    `There was nothing I could do.`;
-   waitForClick; clearText; marker; appendText; 
    `So I lied....`;
-   waitForClick; clearText; marker; appendText; 
    `....I was a big liar!`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 removeBG({ mode: BLACK, transition: 2 });
@@ -491,62 +351,42 @@ bgload({ name: `BG25B4`, transition: 20 });
 playBGM({ num: 24, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We were close to the Control Room......`;
-   waitForClick; clearText; marker; appendText; 
    `And again......I saw it.`;
-   waitForClick; clearText; marker; appendText; 
    `The vision of the little girl....`;
-   waitForClick; clearText; marker; sound(`YBD021`); appendText; 
-   You`"...What...what's the matter...?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(YBD021)`"...What...what's the matter...?"`;
    `She stood across the corridor.`;
-   waitForClick; clearText; marker; appendText; 
    `Her eyes met mine.`;
-   waitForClick; clearText; marker; appendText; 
    `And then a name flashed in my mind, 
 as clear as a bell.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"...Coco!"`;
-   waitForClick; clearText; marker; sound(`YBD022`); appendText; 
-   Sora`"Kid, what is the matter?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(YBD022)`"Kid, what is the matter?"`;
    `Turning on her heels, Coco ran off 
 in the other direction.`;
-   waitForClick; clearText; marker; appendText; 
    `I chased after her, still carrying You.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Cocoooo!"`;
-   waitForClick; clearText; marker; sound(`YBD023`); appendText; 
-   Sora`"Kid! Please come back! There is...!"`;
-   waitForClick; clearText; 
+   Sora(YBD023)`"Kid! Please come back! There is...!"`;
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I was chasing after her at full speed.`;
-   waitForClick; clearText; marker; appendText; 
    `But the flooding and shaking ground slowed 
 me down.`;
-   waitForClick; clearText; marker; appendText; 
    `From the beginning it was a crazy, reckless 
 idea - to run after her with You on my back.`;
-   waitForClick; clearText; marker; appendText; 
    `......I lost sight of her.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG30B2`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `It was a dead end in a narrow corridor 
 in front of a small door.`;
-   waitForClick; clearText; marker; appendText; 
    `Where is this...?`;
-   waitForClick; clearText; marker; appendText; 
    `I thought that maybe she was beyond the door.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 1, color: WHITE });
@@ -555,47 +395,33 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(25);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `In that instant I glimpsed something 
 in my head.`;
-   waitForClick; clearText; marker; appendText; 
    `It was a vague, abstract image.`;
-   waitForClick; clearText; marker; appendText; 
    `I wasn't sure...but definitely....`;
-   waitForClick; clearText; marker; appendText; 
    `I felt it. I could see it.`;
-   waitForClick; clearText; marker; appendText; 
    `...That there should be a beam of hope ahead.`;
-   waitForClick; clearText; marker; appendText; 
    `I lowered You and tried to open the door of 
 Himmel.`;
-   waitForClick; clearText; marker; appendText; 
    `But the door wouldn't budge.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Sora! Open this door!"`;
-   waitForClick; clearText; marker; sound(`Y7A131`); appendText; 
-   Sora`"It's impossible. That door is out of my 
+   Sora(Y7A131)`"It's impossible. That door is out of my 
 jurisdiction."`;
-   waitForClick; clearText; marker; appendText; 
    `I pounded on the door.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I know it...on the other side of this 
 door...!"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"You will be safe in there! Please! Open this 
 door!!!"`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 playSFX({ name: `SE02_07`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Splash!`;
-   waitForClick; clearText; marker; appendText; 
    `Water spouted fiercely from the corridor wall.`;
-   waitForClick; clearText; 
+
 });
 eff_4f = 0;
 eff_3b = 1;
@@ -607,107 +433,64 @@ eff_40 = 1;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `An animal-like growl echoed from faraway. `;
-   waitForClick; clearText; marker; appendText; 
    `The complex pitched violently.`;
-   waitForClick; clearText; marker; appendText; 
    `I saw a massive amount of water...flooding 
 down the corridor ahead.`;
-   waitForClick; clearText; marker; appendText; 
    `It was as if a pitch-black monster were 
 opening its massive mouth to attack.`;
-   waitForClick; clearText; marker; appendText; 
    `I ran frantically to You.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt as if I were moving in slow motion.`;
-   waitForClick; clearText; marker; appendText; 
    `...I won't make it!`;
-   waitForClick; clearText; marker; appendText; 
    `For an instant, time stopped...and then it 
 started again.`;
-   waitForClick; clearText; marker; appendText; 
    `The water swallowed us in a moment.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 closeShakeScreenAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `In the water, my eyes met You's.`;
-   waitForClick; clearText; marker; appendText; 
    `She was trying desperately to reach her 
 hand out.`;
-   waitForClick; clearText; marker; appendText; 
    `I held her hand. You squeezed mine back.`;
-   waitForClick; clearText; marker; appendText; 
    `You mumbled something.`;
-   waitForClick; clearText; marker; appendText; 
    `But the words didn't reach me.`;
-   waitForClick; clearText; marker; appendText; 
    `The words just changed into small 
 bubbles...and vanished in the darkness.`;
-   waitForClick; clearText; marker; appendText; 
    `You slowly closed her eyes.`;
-   waitForClick; clearText; marker; appendText; 
    `(...You?)`;
-   waitForClick; clearText; marker; appendText; 
    `(What? What did you say...?)`;
-   waitForClick; clearText; marker; appendText; 
    `(Of course I want to know...)`;
-   waitForClick; clearText; marker; appendText; 
    `I shook her hand. There was no response.`;
-   waitForClick; clearText; marker; appendText; 
    `(That's not fair......)`;
-   waitForClick; clearText; marker; appendText; 
    `(She is teasing me again...)`;
-   waitForClick; clearText; marker; appendText; 
    `I touched her cheek.`;
-   waitForClick; clearText; marker; appendText; 
    `It was cold.`;
-   waitForClick; clearText; marker; appendText; 
    `(Cold......)`;
-   waitForClick; clearText; marker; appendText; 
    `(Of course...it's because we're in 
 the water......)`;
-   waitForClick; clearText; marker; appendText; 
    `(Ha, ha, ha......it's because we are in 
 this cold water...)`;
-   waitForClick; clearText; marker; appendText; 
    `I squeezed her hand.`;
-   waitForClick; clearText; marker; appendText; 
    `(Hey.)`;
-   waitForClick; clearText; marker; appendText; 
    `(I said, hey......)`;
-   waitForClick; clearText; marker; appendText; 
    `(Hey, You, tell me......)`;
-   waitForClick; clearText; marker; appendText; 
    `She didn't squeeze my hand back.`;
-   waitForClick; clearText; marker; appendText; 
    `She didn't move.`;
-   waitForClick; clearText; marker; appendText; 
    `She didn't tell me anything any more.`;
-   waitForClick; clearText; marker; appendText; 
    `(......)`;
-   waitForClick; clearText; marker; appendText; 
    `(......)`;
-   waitForClick; clearText; marker; appendText; 
    `(......)`;
-   waitForClick; clearText; marker; appendText; 
    `(...It's not true.)`;
-   waitForClick; clearText; marker; appendText; 
    `(No, no, no...it's a lie...)`;
-   waitForClick; clearText; marker; appendText; 
    `(This can't be true......! 
 It has to be a lie...!)`;
-   waitForClick; clearText; marker; appendText; 
    `(This is a lie......!)`;
-   waitForClick; clearText; marker; appendText; 
    `I let go the last breath from my lungs.`;
-   waitForClick; clearText; marker; appendText; 
    `I closed my eyes to avert them from reality.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 0, color: BLACK });
@@ -718,33 +501,24 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(33);
 showTextbox();
 text(() => {
-   marker; sound(`Y4A061`); appendText; 
-   You`"Promise?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(Y4A061)`"Promise?"`;
    Kid`"Yeah, I promise."`;
-   waitForClick; clearText; marker; sound(`Y4A062`); appendText; 
-   You`"And what if......you break it?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(Y4A062)`"And what if......you break it?"`;
    Kid`"I won't. I'll see that you're safe."`;
-   waitForClick; clearText; marker; sound(`Y4A063`); appendText; 
-   You`"For sure? There's not even a 1 percent 
+   You(Y4A063)`"For sure? There's not even a 1 percent 
 chance you're wrong?"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"There is not even a 0.00000000000000001 
 percent possibility."`;
-   waitForClick; clearText; marker; appendText; 
    You`"......"`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_YU03C`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`Y4A064`); appendText; 
-   You`"Talk about promising more than 
+   You(Y4A064)`"Talk about promising more than 
 you can deliver..."`;
-   waitForClick; clearText; marker; sound(`Y4A065`); appendText; 
-   You`"Oh well, I suppose I'll have to trust you."`;
-   waitForClick; clearText; 
+   You(Y4A065)`"Oh well, I suppose I'll have to trust you."`;
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });
@@ -754,17 +528,12 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `(I didn't make it......)`;
-   waitForClick; clearText; marker; appendText; 
    `(I couldn't keep my promise......)`;
-   waitForClick; clearText; marker; appendText; 
    `(I couldn't protect her......)`;
-   waitForClick; clearText; marker; appendText; 
    `(I was a liar......)`;
-   waitForClick; clearText; marker; appendText; 
    `(......A damn liar!!!)`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 delay({ interval: 120 });
@@ -775,53 +544,34 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Just at that moment, I felt a soft, warm light.`;
-   waitForClick; clearText; marker; appendText; 
    `A light?`;
-   waitForClick; clearText; marker; appendText; 
    `A ray of light sliced through the plain 
 dark world.`;
-   waitForClick; clearText; marker; appendText; 
    `The door of Himmel started to open...`;
-   waitForClick; clearText; marker; appendText; 
    `Beyond the door spread a dazzling white world.`;
-   waitForClick; clearText; marker; appendText; 
    `Heaven....`;
-   waitForClick; clearText; marker; appendText; 
    `Heaven...was it an illusion?`;
-   waitForClick; clearText; marker; appendText; 
    `......No, it wasn't.`;
-   waitForClick; clearText; marker; appendText; 
    `This was reality.`;
-   waitForClick; clearText; marker; appendText; 
    `This was undoubtedly the truth of my world.`;
-   waitForClick; clearText; marker; appendText; 
    `I knew that......`;
-   waitForClick; clearText; marker; appendText; 
    `If we went to the place...`;
-   waitForClick; clearText; marker; appendText; 
    `On the other side of the door......`;
-   waitForClick; clearText; marker; appendText; 
    `We could meet again.`;
-   waitForClick; clearText; marker; appendText; 
    `This time I might be able to protect her.`;
-   waitForClick; clearText; marker; appendText; 
    `......You.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 delay({ interval: 60 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I......`;
-   waitForClick; clearText; marker; appendText; 
    `Quietly......`;
-   waitForClick; clearText; marker; appendText; 
    `Opened my eyes.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 removeBG({ mode: BLACK, transition: 2 });

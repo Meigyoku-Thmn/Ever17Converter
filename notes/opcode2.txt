@@ -3,8 +3,7 @@ waitForClick: wait until user clicks or presses accept button
 clearText: clear all text in avl mode, not sure about nvl mode
    - used in every normal dialogue to clear previous dialogue text
    - this game use clearText even in selection menu (for branching), you should remove it in such situation so the reader can still see the previous dialogue text in selection menu
-   - you can ignore it if you find it in nvl mode
-
+   - if used in nvl mode, it's the same of {nextPage 04} without effect
 delay(n): wait in n second(s)
    - hard to skip by mouse click or button press, except for fast forward
 

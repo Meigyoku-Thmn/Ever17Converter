@@ -12,45 +12,30 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Suddenly, I was enveloped in darkness.`;
-   waitForClick; clearText; marker; appendText; 
    `Plunged into darkness without a ray of light. 
 I heard the tinny sound of a can being kicked.`;
-   waitForClick; clearText; marker; appendText; 
    `The low sound felt as though it were 
 penetrating my body, shaking me to my core.`;
-   waitForClick; clearText; marker; appendText; 
    `Something...like an empty shell reverberating 
 and echoing within itself.`;
-   waitForClick; clearText; marker; appendText; 
    `There was no sign that the sound would stop.`;
-   waitForClick; clearText; marker; appendText; 
    `Rather, they seemed to be getting 
 stronger and stronger.`;
-   waitForClick; clearText; marker; appendText; 
    `A crack ran down the outer husk.`;
-   waitForClick; clearText; marker; appendText; 
    `It began to spread like the strands of a web, 
 and soon covered the entire shell.`;
-   waitForClick; clearText; marker; appendText; 
    `Pieces began to fall away.`;
-   waitForClick; clearText; marker; appendText; 
    `Dropping...to the floor...`;
-   waitForClick; clearText; marker; appendText; 
    `What I had glanced through the fragmented 
 shell...was darkness...`;
-   waitForClick; clearText; marker; appendText; 
    `The particles of light scattered throughout 
 the darkness began to attract to each other 
 and congeal.`;
-   waitForClick; clearText; marker; appendText; 
    `The light formed a vague image.`;
-   waitForClick; clearText; marker; appendText; 
    `The image came flying into view...`;
-   waitForClick; clearText; marker; appendText; 
    `A fragment of a scene familiar to me.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 delay({ interval: 60 });
@@ -77,50 +62,42 @@ playSFX({ name: `SE08_04`, a1: 0, volume: 100 });
 multifgload3({ name1: `YU06ADS`, name2: `SO06ADS`, name3: `SA06ADS`, x1: 128, x2: 512, x3: 320, useAnim: 0 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Kabing!`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE08_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Clatter, clatter, clatter...`;
-   waitForClick; clearText; marker; sound(`S2C259`); appendText; 
-   Takeshi`"Hey! Who kicked that?"`;
-   waitForClick; clearText; 
+   Takeshi(S2C259)`"Hey! Who kicked that?"`;
+
 });
 fgload({ id: 1, name: `YU08ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C337`); appendText; 
-   You`"I have no idea, but..."`;
-   waitForClick; clearText; 
+   You(S2C337)`"I have no idea, but..."`;
+
 });
 fgload({ id: 4, name: `SA02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C338`); appendText; 
-   Sara`"Now is our chance!"`;
-   waitForClick; clearText; 
+   Sara(S2C338)`"Now is our chance!"`;
+
 });
 fgload({ id: 2, name: `SO03ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C339`); appendText; 
-   Sora`"Do...do you think we should...?"`;
-   waitForClick; clearText; 
+   Sora(S2C339)`"Do...do you think we should...?"`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `As everyone spoke, they scattered like baby 
 spiders in the wind.`;
-   waitForClick; clearText; marker; appendText; 
    `I was the only one left in the Conference 
 Room...`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 setNumberOfFlash(2);
@@ -128,13 +105,10 @@ setFlashRGBColor(255, 255, 255);
 triggerFlash();
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Huh?"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"'Me!?'"`;
-   waitForClick; clearText; marker; appendText; 
    `A chill shot up my back.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 hideTextbox();
@@ -142,131 +116,84 @@ NVL_Mode();
 playBGM({ num: 13, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `
 
-`;
-   appendText; delay(0); 
-   `                  `;
-   nextPage(00); 
-   `I...I...I...`;
-   nextPage(01); waitForClick; 
-   `
-`;
-   appendText; delay(0); 
-   `                 `;
-   nextPage(00); 
-   `I...am here...`;
-   nextPage(01); waitForClick; 
-   `
-`;
-   appendText; delay(0); 
-   `         `;
-   nextPage(00); 
-   `I have been here...forever...`;
-   nextPage(01); waitForClick; nextPage(04); 
+${noWait}`;
+   `                  ${nextPage(0)}I...I...I...${nextPage(1)}`;
+   `                 ${nextPage(0)}I...am here...${nextPage(1)}`;
+   `         ${nextPage(0)}I have been here...forever...${nextPage(1)}`;
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Still, I had this odd sense that something 
 was not quite right.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt that until just a while before, I was 
 not really myself.`;
-   waitForClick; clearText; marker; appendText; 
    `'A me that is not me.'`;
-   waitForClick; clearText; marker; appendText; 
    `'A me that is not me.' Who...could...that be?`;
-   waitForClick; clearText; marker; appendText; 
    `I wondered why these doubts were creeping 
 into my mind.`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't know the reason.`;
-   waitForClick; clearText; marker; appendText; 
    `But for some reason I was consumed by the 
 feeling that I was floating in space.`;
-   waitForClick; clearText; marker; appendText; 
    `A feeling that was accompanied with a 
 limitless terror.`;
-   waitForClick; clearText; marker; appendText; 
    `It was like I had been transported into some 
 unknown world before I even realized it....`;
-   waitForClick; clearText; marker; appendText; 
    `...That was how I felt.`;
-   waitForClick; clearText; marker; appendText; 
    `Suddenly, I felt dizzy.`;
-   waitForClick; clearText; marker; appendText; 
    `My consciousness felt that it would flee if I 
 did not latch firmly on to it.`;
-   waitForClick; clearText; marker; appendText; 
    `I tried to do this as I calmly, carefully 
 analyzed the situation.`;
-   waitForClick; clearText; marker; appendText; 
    `I started with what I knew...`;
-   waitForClick; clearText; marker; appendText; 
    `It seemed that we were all playing kick the 
 can in the dark.`;
-   waitForClick; clearText; marker; appendText; 
    `And thinking back on the fact that Takeshi and 
 everyone had run away, it seemed clear that 
 I was it. `;
-   waitForClick; clearText; marker; appendText; 
    `No, wait...`;
-   waitForClick; clearText; marker; appendText; 
    `All I could think was 'who cared about the 
 game now?'`;
-   waitForClick; clearText; marker; appendText; 
    `I thought it was more important to find out 
 the cause of this strange feeling.`;
-   waitForClick; clearText; marker; appendText; 
    `In the first place, I wondered why I was 
 there in the first place?`;
-   waitForClick; clearText; marker; appendText; 
    `What had I been doing?`;
-   waitForClick; clearText; marker; appendText; 
    `While I had questions, there was a part of me 
 that felt it made total sense for me to be 
 there.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"*sigh*...This is bad..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I have no idea what the deal is with 
 anything..."`;
-   waitForClick; clearText; marker; appendText; 
    `My mind was fuzzy. I was not going to be able 
 to push ahead with any logical thinking.`;
-   waitForClick; clearText; marker; appendText; 
    `I decided to...`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `...give up.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"First, I'll go look for everyone."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG26B4R`, transition: 10 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I left the Conference Room and started my 
 search.`;
-   waitForClick; clearText; marker; appendText; 
    `Strangely, my doubts and sense of unease 
 lessened with time. `;
-   waitForClick; clearText; marker; appendText; 
    `I calmly went about devoting myself to 
 being 'it'.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
@@ -277,17 +204,14 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `In the darkness almost completely devoid of 
 light, I went place to place looking for 
 everyone.`;
-   waitForClick; clearText; marker; appendText; 
    `You, Takeshi, Sora, Sara, Tsugumi...it didn't 
 take me long to find all of them.`;
-   waitForClick; clearText; marker; appendText; 
    `Once we were all gathered back in the 
 Conference Room we had the following talk.`;
-   waitForClick; clearText; 
+
 });
 monoColorOverlay({ interval: 0, color: BLACK });
 bgload({ name: `BG17A2`, transition: 26 });
@@ -298,63 +222,53 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   marker; sound(`S2C351`); appendText; 
-   Takeshi`"Geez. He slaughtered us."`;
-   waitForClick; clearText; marker; sound(`S2C352`); appendText; 
-   Sora`"That was twice as fast as Takeshi."`;
-   waitForClick; clearText; 
+   Takeshi(S2C351)`"Geez. He slaughtered us."`;
+   Sora(S2C352)`"That was twice as fast as Takeshi."`;
+
 });
 fgload({ id: 4, name: `YU02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C354`); appendText; 
-   You`"Wow. I can't believe you guessed everybody so 
+   You(S2C354)`"Wow. I can't believe you guessed everybody so 
 well in the dark."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `SA08ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C355`); appendText; 
-   Sara`"Nakkyu...what are you talking about?"`;
-   waitForClick; clearText; 
+   Sara(S2C355)`"Nakkyu...what are you talking about?"`;
+
 });
 fgload({ id: 4, name: `YU01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C356`); appendText; 
-   You`"Oh, Mayo, you don't know? This kid..."`;
-   waitForClick; clearText; 
+   You(S2C356)`"Oh, Mayo, you don't know? This kid..."`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `You put her hand on my head and said something 
 to Sara.`;
-   waitForClick; clearText; marker; appendText; 
    `Takeshi was making a fuss next to me so I 
 couldn't hear what she said.`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `TU05ADS`, name2: `KB14ADS`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C357`); appendText; 
-   Takeshi`"Hey, Tsugumi! Give it up. Why don't you just 
+   Takeshi(S2C357)`"Hey, Tsugumi! Give it up. Why don't you just 
 come out and admit you were playing too?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU18ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S2C345`); appendText; 
-   Tsugumi`"I wasn't playing."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(S2C345)`"I wasn't playing."`;
    `Tsugumi said it as if her patience was nearly 
 gone.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
@@ -365,11 +279,9 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `And that was the end of our game.`;
-   waitForClick; clearText; marker; appendText; 
    `The evening continued quietly...`;
-   waitForClick; clearText; 
+
 });
 monoColorOverlay({ interval: 0, color: BLACK });
 bgload({ name: `BG09A2`, transition: 26 });
@@ -379,58 +291,42 @@ unSkippableDelay(25);
 clock(`23:45`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The day had seen no major developments.`;
-   waitForClick; clearText; marker; appendText; 
    `There was nothing else for us to do so we 
 decided to go to bed.`;
-   waitForClick; clearText; marker; appendText; 
    `There were four legitimate beds in the dry 
 areas.`;
-   waitForClick; clearText; marker; appendText; 
    `There was one in the compression chamber, two 
 in the infirmary and an examination table 
 there as well.`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi was AWOL, Sora didn't need sleep, so 
 there were exactly four of us.`;
-   waitForClick; clearText; marker; appendText; 
    `Takeshi had been relegated to the compression 
 chamber as a potential danger to the women.`;
-   waitForClick; clearText; marker; appendText; 
    `You and Sara had said that since they were 
 vulnerable young women they would take the two 
 beds.`;
-   waitForClick; clearText; marker; appendText; 
    `So I...got stuck on the hard examination table.`;
-   waitForClick; clearText; 
+
 });
 playBGM({ num: 16, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Now...`;
-   waitForClick; clearText; marker; appendText; 
    `With the clamor having quieted down and 
 finding myself alone, I stared at the ceiling 
 and started to reflect on things.`;
-   waitForClick; clearText; marker; appendText; 
    `Enough time had passed since I had that eerie 
 feeling of things being not right. Now my mind 
 was clear.`;
-   waitForClick; clearText; marker; appendText; 
    `I was able easily to reel in the thread of 
 my memory.`;
-   waitForClick; clearText; marker; appendText; 
    `The date was May 2.`;
-   waitForClick; clearText; marker; appendText; 
    `It was the second day we had been trapped in 
 LeMU.`;
-   waitForClick; clearText; marker; appendText; 
    `Our second day here was almost over.`;
-   waitForClick; clearText; marker; appendText; 
    `I reflected on the happenings of the two days.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 24, color: WHITE });
@@ -443,51 +339,27 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `On May 1...`;
-   waitForClick; 
-   `
-`;
-   appendText; 
-   `
-`;
-   appendText; 
+   `${noWait}`;
    `I had awoken in the infirmary without 
 my memory.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `I didn't know my name, age, address, or even 
 why I was here.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `The person who had looked after me had been 
 You.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Trapped in LeMU, You and I had wandered 
 through the complex searching for an exit.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `We were caught up in a sudden rush of water 
 and barely escaped death. Then we found Sara 
 and rescued her from the elevator...`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `Oh, and I remembered that I had blurted out 
 something crazy...`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
@@ -498,7 +370,7 @@ bgload({ name: `BG22B1`, transition: 26 });
 showFilter2();
 unSkippableDelay(1);
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 multifgload2({ id1: 1, id2: 2, name1: `YU07BDM`, name2: `SA05ADM`, x1: 128, x2: 512, useAnim: false });
 setMonoColorOverlayFadeOutDuration(19);
 fadeOutMonoColorOverlay();
@@ -507,80 +379,61 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"I just want to make sure one more time..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Sara, there was really no one was riding 
 in the elevator except for you?"`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU06BDM`, name2: `SA06ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S006`); appendText; 
-   Sara`"Uh..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S006)`"Uh..."`;
    Kid`"So there was somebody?"`;
-   waitForClick; clearText; marker; sound(`C1S007`); appendText; 
-   Sara`"N-no...there wasn't, but..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S007)`"N-no...there wasn't, but..."`;
    Kid`"But...?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S008`); appendText; 
-   Sara`"Why...?"`;
-   waitForClick; clearText; marker; sound(`C1S009`); appendText; 
-   Sara`"...How...how do you know?"`;
-   waitForClick; clearText; marker; sound(`C1S010`); appendText; 
-   Sara`"My..."`;
-   waitForClick; clearText; marker; sound(`C1S011`); appendText; 
-   Sara`"My...name..."`;
-   waitForClick; clearText; 
+   Sara(C1S008)`"Why...?"`;
+   Sara(C1S009)`"...How...how do you know?"`;
+   Sara(C1S010)`"My..."`;
+   Sara(C1S011)`"My...name..."`;
+
 });
 fgload({ id: 1, name: `YU05BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S012`); appendText; 
-   You`"What? Oh, that's right. We haven't told you 
+   You(C1S012)`"What? Oh, that's right. We haven't told you 
 Mayo's real name..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S013`); appendText; 
-   Sara`"Hey! I asked you why!"`;
-   waitForClick; clearText; 
+   Sara(C1S013)`"Hey! I asked you why!"`;
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S018`); appendText; 
-   Sara`"How do you know me?"`;
-   waitForClick; clearText; marker; sound(`C1S019`); appendText; 
-   Sara`"Who..."`;
-   waitForClick; clearText; 
+   Sara(C1S018)`"How do you know me?"`;
+   Sara(C1S019)`"Who..."`;
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S020`); appendText; 
-   Sara`"...Who are you?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S020)`"...Who are you?"`;
    `She grilled me about how I knew. But I had no 
 answer.`;
-   waitForClick; clearText; marker; appendText; 
    `Still, I knew her name was Sara Matsunaga.`;
-   waitForClick; clearText; marker; appendText; 
    `Even though I knew it, I still didn't know how 
 I knew it.`;
-   waitForClick; clearText; marker; appendText; 
    `The word 'Sara ' just unconsciously popped 
 out of my mouth.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 showFilter2();
@@ -597,28 +450,15 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `After that...`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `I met with Tsugumi, Sora, Takeshi to 
 contemplate escape routes.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `We noticed that LeMMIH's bio scan was 
 displaying bizarre numbers for the 
 number of people in LeMU.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `I had another experience similar to the one 
 with Sara.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
@@ -629,7 +469,7 @@ bgload({ name: `BG16A1`, transition: 26 });
 showFilter2();
 unSkippableDelay(1);
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 multifgload2({ id1: 1, id2: 2, name1: `SA08ADM`, name2: `KB07ADM`, x1: 128, x2: 512, useAnim: false });
 setMonoColorOverlayFadeOutDuration(19);
 fadeOutMonoColorOverlay();
@@ -638,119 +478,92 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Wait! That's not right! It's definitely 
 weird!"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"There are only five people that didn't 
 escape in time!"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"But the bio scan is showing six."`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA06ADM`, name2: `KB06ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S119`); appendText; 
-   Sara`"Huh? Why do you say there are five people?"`;
-   waitForClick; clearText; 
+   Sara(C1S119)`"Huh? Why do you say there are five people?"`;
+
 });
 fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S120`); appendText; 
-   Sara`"Sora, Tsugumi, Takeshi, the Kid, 
+   Sara(C1S120)`"Sora, Tsugumi, Takeshi, the Kid, 
 Nakkyu...and me."`;
-   waitForClick; clearText; marker; sound(`C1S121`); appendText; 
-   Sara`"That's six."`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S121)`"That's six."`;
    Kid`"No. Sara...that's wrong..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `KB07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"The thing is, Sora is..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `KB08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Sora is..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"She's not really here."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S122`); appendText; 
-   Sara`"She's not here...?"`;
-   waitForClick; clearText; 
+   Sara(C1S122)`"She's not here...?"`;
+
 });
 fgload({ id: 2, name: `KB03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S123`); appendText; 
-   Takeshi`"What're you talking about, Kid?"`;
-   waitForClick; clearText; marker; appendText; 
+   Takeshi(C1S123)`"What're you talking about, Kid?"`;
    Kid`"Sora is...she's an RSD-generated image."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SA06ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S124`); appendText; 
-   Sara`"W-what?"`;
-   waitForClick; clearText; 
+   Sara(C1S124)`"W-what?"`;
+
 });
 fgload({ id: 2, name: `KB06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S125`); appendText; 
-   Takeshi`"RSD!?"`;
-   waitForClick; clearText; marker; appendText; 
+   Takeshi(C1S125)`"RSD!?"`;
    Kid`"It's a system that uses semiconductor lasers 
 to project an image directly onto a 
 person's retina."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"In other words, the Sora that we are seeing 
 is just an image."`;
-   waitForClick; clearText; marker; appendText; 
    `Sara and Takeshi's jaws dropped and they 
 blinked again and again.`;
-   waitForClick; clearText; marker; appendText; 
    `Being an employee of LeMU, I figured that You 
 had known this from the start. She didn't 
 look surprised, but just gazed off into 
 the distance.`;
-   waitForClick; clearText; marker; appendText; 
    `As for Sora...`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `SO05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S126`); appendText; 
-   Sora`"Yes. It is exactly as the Kid states."`;
-   waitForClick; clearText; marker; sound(`C1S127`); appendText; 
-   Sora`"I am not flesh and blood."`;
-   waitForClick; clearText; marker; sound(`C1S128`); appendText; 
-   Sora`"I have no form...I am merely an image."`;
-   waitForClick; clearText; marker; sound(`C1S129`); appendText; 
-   Sora`"My thoughts and personality are all 
+   Sora(C1S126)`"Yes. It is exactly as the Kid states."`;
+   Sora(C1S127)`"I am not flesh and blood."`;
+   Sora(C1S128)`"I have no form...I am merely an image."`;
+   Sora(C1S129)`"My thoughts and personality are all 
 controlled by an AI program."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora answered without looking surprised.`;
-   waitForClick; clearText; marker; appendText; 
    `But the whole situation was staggering.`;
-   waitForClick; clearText; marker; appendText; 
    `Because no one had told me the fact that Sora 
 was an RSD-generated image...`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 showFilter2();
@@ -767,19 +580,12 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `These were inexplicable, recurring 
 phenomena...premonitions.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
-   `
-`;
-   appendText; 
+   `${noWait}`;
    `And there was an even more unbelievable scene 
 that I had stumbled upon.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
@@ -790,7 +596,7 @@ bgload({ name: `EV_CO03A`, transition: 26 });
 showFilter2();
 unSkippableDelay(1);
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 setMonoColorOverlayFadeOutDuration(19);
 fadeOutMonoColorOverlay();
 unSkippableDelay(6);
@@ -798,73 +604,50 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `In the medical compression chamber I met with 
 a ghost-like young girl.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"It's..al-alright..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Don't worry...everything is alright..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Anyway, let's go where everybody else is!"`;
-   waitForClick; clearText; marker; sound(`C1S296`); appendText; 
    //Young Girl
-   Young_Girl`"Everybody?"`;
-   waitForClick; clearText; marker; appendText; 
+   Young_Girl(C1S296)`"Everybody?"`;
    Kid`"Yeah, it's not just me."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"There are lots of other people..."`;
-   waitForClick; clearText; marker; sound(`C1S297`); appendText; 
    //Young Girl
-   Young_Girl`"Help?...Did you come to help?"`;
-   waitForClick; clearText; marker; appendText; 
+   Young_Girl(C1S297)`"Help?...Did you come to help?"`;
    Kid`"Y-yeah...that's right."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_CO03B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`C1S298`); appendText; 
    //Young Girl
-   Young_Girl`"But...it's probably impossible..."`;
-   waitForClick; clearText; marker; appendText; 
+   Young_Girl(C1S298)`"But...it's probably impossible..."`;
    Kid`"Huh?"`;
-   waitForClick; clearText; marker; sound(`C1S299`); appendText; 
    //Young Girl
-   Young_Girl`"There is...no way out anymore..."`;
-   waitForClick; clearText; marker; appendText; 
+   Young_Girl(C1S299)`"There is...no way out anymore..."`;
    `Then I suddenly said.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Let's go!"`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `EV_CO03A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`C1S316`); appendText; 
    //Young Girl
-   Young_Girl`"...Uh...where?"`;
-   waitForClick; clearText; marker; appendText; 
+   Young_Girl(C1S316)`"...Uh...where?"`;
    Kid`"Anywhere. Let's just get out of here."`;
-   waitForClick; clearText; marker; sound(`C1S317`); appendText; 
    //Young Girl
-   Young_Girl`"Why...?"`;
-   waitForClick; clearText; marker; appendText; 
+   Young_Girl(C1S317)`"Why...?"`;
    Kid`"Coco, because if we stay here, 
 then we'll probably..."`;
-   waitForClick; clearText; marker; appendText; 
    `I sucked in my breath.`;
-   waitForClick; clearText; marker; appendText; 
    `I knew something there was no reason I should 
 have known...`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't know why, but I knew her name.`;
-   waitForClick; clearText; marker; appendText; 
    `Coco Yagami.`;
-   waitForClick; clearText; marker; appendText; 
    `And then the moment I took my eyes off of her, 
 Coco disappeared without a sound.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 showFilter2();
@@ -881,23 +664,14 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I lost sight of her in the compression chamber 
 where we had spent the night.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `I saw her again the next day - or only hours 
 before I had laid down and started thinking 
 this all out.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `After a sudden blackout, we went to fix the 
 generator.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
@@ -908,7 +682,7 @@ bgload({ name: `EV_CO04A`, transition: 26 });
 showFilter2();
 unSkippableDelay(1);
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 setMonoColorOverlayFadeOutDuration(19);
 fadeOutMonoColorOverlay();
 unSkippableDelay(6);
@@ -916,78 +690,52 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I met up with Coco again in the dim light in 
 front of the Generator Room... `;
-   waitForClick; clearText; marker; sound(`C2S173`); appendText; 
-   Coco`"Moon sprite shouldering a long bow."`;
-   waitForSound; clearText; marker; sound(`C2S174`); appendText; 
-   Coco`"Waiting inside a dream."`;
-   waitForSound; clearText; marker; sound(`C2S175`); appendText; 
-   Coco`"Tonight a story by moonlight."`;
-   waitForSound; clearText; marker; sound(`C2S176`); appendText; 
-   Coco`"Hoping the wait will be short."`;
-   waitForSound; clearText; marker; sound(`C2S177`); appendText; 
-   Coco`"Sleeping curled and snug."`;
-   waitForSound; clearText; marker; sound(`C2S178`); appendText; 
-   Coco`"Sleeping in mother's arms."`;
-   waitForSound; clearText; marker; appendText; 
+   Coco(C2S173)`"Moon sprite shouldering a long bow."${waitVoice}${noWait}`;
+   Coco(C2S174)`"Waiting inside a dream."${waitVoice}${noWait}`;
+   Coco(C2S175)`"Tonight a story by moonlight."${waitVoice}${noWait}`;
+   Coco(C2S176)`"Hoping the wait will be short."${waitVoice}${noWait}`;
+   Coco(C2S177)`"Sleeping curled and snug."${waitVoice}${noWait}`;
+   Coco(C2S178)`"Sleeping in mother's arms."${waitVoice}${noWait}`;
    `I didn't know why she was singing a lullaby. `;
-   waitForClick; clearText; marker; appendText; 
    `Before I could ask her, she started talking.`;
-   waitForClick; clearText; marker; sound(`C2S179`); appendText; 
-   Coco`"I was waiting for you."`;
-   waitForClick; clearText; marker; sound(`C2S180`); appendText; 
-   Coco`"I waited and waited...for you to come..."`;
-   waitForClick; clearText; marker; sound(`C2S181`); appendText; 
-   Coco`"I was waiting...all alone like a moon 
+   Coco(C2S179)`"I was waiting for you."`;
+   Coco(C2S180)`"I waited and waited...for you to come..."`;
+   Coco(C2S181)`"I was waiting...all alone like a moon 
 sprite..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"T-then you should have come to me..."`;
-   waitForClick; clearText; marker; sound(`C2S182`); appendText; 
-   Coco`"I couldn't..."`;
-   waitForClick; clearText; marker; sound(`C2S183`); appendText; 
-   Coco`"That's...impossible..."`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(C2S182)`"I couldn't..."`;
+   Coco(C2S183)`"That's...impossible..."`;
    Kid`"Why...?"`;
-   waitForClick; clearText; marker; sound(`C2S184`); appendText; 
-   Coco`"Because you wouldn't take me with you..."`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(C2S184)`"Because you wouldn't take me with you..."`;
    Kid`"...What?"`;
-   waitForClick; clearText; marker; sound(`C2S185`); appendText; 
-   Coco`"Will you take me to where everybody is?"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(C2S185)`"Will you take me to where everybody is?"`;
    Kid`"Of course I will! Let's go together right 
 now!"`;
-   waitForClick; clearText; marker; appendText; 
    `Just as I said that...`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE02_01`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Splash!`;
-   waitForClick; clearText; marker; appendText; 
    `A wall of water exploded from near Coco's feet.`;
-   waitForClick; clearText; 
+
 });
 showFog2();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Droplets of water scattered everywhere like 
 mist...`;
-   waitForClick; clearText; marker; sound(`C2S186`); appendText; 
-   Coco`"Farewell."`;
-   waitForClick; clearText; 
+   Coco(C2S186)`"Farewell."`;
+
 });
 bgload({ name: `BG18B2`, transition: 10 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Coco disappeared in the spray.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 showFilter2();
@@ -1005,37 +753,23 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `And then night came and we decided to play 
 kick the can in the dark.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `Takeshi was 'it' again and again, but finally 
 my turn came.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `I had found everyone, one after another, 
 in the dark...`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `When only Tsugumi was left, the sound of the 
 can being kicked rang out through the 
 Conference Room...`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `And just that moment I had felt that 
 something was not right.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
@@ -1044,66 +778,45 @@ dimOff_ac = 0;
 closeDimOverlay();
 bgload({ name: `BG09A2`, transition: 26 });
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 setMonoColorOverlayFadeOutDuration(38);
 fadeOutMonoColorOverlay();
 unSkippableDelay(25);
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"But it's only been two days and so much has 
 happened..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Just being trapped here is an unusual state 
 of affairs..."`;
-   waitForClick; clearText; marker; appendText; 
    `The premonitions...and the ghost-like girl...`;
-   waitForClick; clearText; marker; appendText; 
    `And besides that...`;
-   waitForClick; clearText; marker; appendText; 
    `You's father had gone missing, and Tsugumi - 
 well she was just plain rude - Sora was only 
 an image and Sara...`;
-   waitForClick; clearText; marker; appendText; 
    `Sara...well...what was with Sara?`;
-   waitForClick; clearText; marker; appendText; 
    `Something about her stuck in my mind.`;
-   waitForClick; clearText; marker; appendText; 
    `But...oh, whatever.`;
-   waitForClick; clearText; marker; appendText; 
    `Anyway, the events of the past two days had 
 been like a roller coaster.`;
-   waitForClick; clearText; marker; appendText; 
    `Just too many things had happened...`;
-   waitForClick; clearText; marker; appendText; 
    `It was like they said about water mills - they 
 worked best in a fast stream but stopped when 
 there was a flood.`;
-   waitForClick; clearText; marker; appendText; 
    `The way I felt was like that. I couldn't get 
 my mind around the intense rush of events, 
 doubts and questions that had forced 
 themselves on me.`;
-   waitForClick; clearText; marker; appendText; 
    `They were beyond what I could digest.`;
-   waitForClick; clearText; marker; appendText; 
    `I wondered what I could do about it.`;
-   waitForClick; clearText; marker; appendText; 
    `My body knew what the best thing to do was.`;
-   waitForClick; clearText; marker; appendText; 
    `Sleep. I needed to rest my mind.`;
-   waitForClick; clearText; marker; appendText; 
    `And with that I was rapidly assaulted by 
 fatigue and whisked off to slumberland.`;
-   waitForClick; clearText; marker; appendText; 
    `..........`;
-   waitForClick; clearText; marker; appendText; 
    `.......`;
-   waitForClick; clearText; marker; appendText; 
    `....`;
-   waitForClick; clearText; marker; appendText; 
    `But I was only briefly able to enjoy my visit.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 24, color: BLACK });

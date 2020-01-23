@@ -14,172 +14,125 @@ bgload({ name: `BG07B1`, transition: 20 });
 clock(`7:26`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `The sound of boiling, bubbling oil filled the 
 room.`;
-   waitForClick; clearText; marker; appendText; 
    `I fried the chicken in silence.`;
-   waitForClick; clearText; marker; appendText; 
    `After getting up, we all gathered in front of 
 the sandwich shop as usual.`;
-   waitForClick; clearText; marker; appendText; 
    `As luck would have it, everyone showed up at 
 the same time.`;
-   waitForClick; clearText; marker; appendText; 
    `I guess I could have called it lucky...`;
-   waitForClick; clearText; 
+
 });
 multifgload3({ name1: `CO13ADS`, name2: `KA03ADS`, name3: `YU17ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    You`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Coco`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `SO13ADS`, name2: `TU17ADS`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Tsugumi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Pipi`"........."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Hardly anyone said a thing.`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone had glum expressions on their faces 
 and ate silently.`;
-   waitForClick; clearText; marker; appendText; 
    `There was a strange atmosphere surrounding 
 us. For some reason it had become hard for us 
 to look one another in the eyes.`;
-   waitForClick; clearText; marker; appendText; 
    `It felt like the beginning of a bottomless 
 rift amongst us.`;
-   waitForClick; clearText; marker; appendText; 
    `And at the same time, there was a strange 
 smell in the air...`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playSFX({ name: `SE02_13`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sizzle!`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Aggghh!"`;
-   waitForClick; clearText; marker; appendText; 
    `There was smoke coming from the tip of my 
 finger!`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Smoke! Smoke! Aaaggggh that's hot....!"`;
-   waitForClick; clearText; marker; appendText; 
    `I had been firmly pressing it against the 
 grill.`;
-   waitForClick; clearText; marker; appendText; 
    `I hastily cut the power.`;
-   waitForClick; clearText; marker; appendText; 
    `A juicy smell, not unlike sausage, was coming 
 from the burnt tip of my finger.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Ooooooww, that hurts...."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm such an idiot..."`;
-   waitForClick; clearText; marker; appendText; 
    `As I blew on my finger to cool it off, I 
 looked around at everyone.`;
-   waitForClick; clearText; 
+
 });
 multifgload3({ name1: `CO03ADS`, name2: `KA03ADS`, name3: `YU03ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    You`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Coco`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `SO03ADS`, name2: `TU03ADS`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Tsugumi`"........."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `They had noticed, but they all turned their 
 gazes down.`;
-   waitForClick; clearText; marker; sound(`PIPI_06`); appendText; 
-   Pipi`"*whine*"`;
-   waitForClick; clearText; marker; appendText; 
+   Pipi(PIPI_06)`"*whine*"`;
    `Only Pipi was kind enough to acknowledge me.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Yeah Pipi, I burnt myself pretty good, ha, 
 ha, ha."`;
-   waitForClick; clearText; marker; appendText; 
    Pipi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `But soon, even Pipi turned his face away from 
 me.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey..."`;
-   waitForClick; clearText; marker; appendText; 
    `It seemed like everyone hated me. I felt 
 totally alone.`;
-   waitForClick; clearText; marker; appendText; 
    `The sandwich I had just finished cooled and 
 soon it no longer tasted palatable.`;
-   waitForClick; clearText; marker; appendText; 
    `It felt like the morning after a funeral.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Everyone knew why things had sunk so low.`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone knew, but nobody wanted to say 
 anything.`;
-   waitForClick; clearText; marker; appendText; 
    `A moment of carelessness had opened our 
 hearts up to despair...`;
-   waitForClick; clearText; marker; appendText; 
    `They shoveled the chicken sandwiches into 
 their mouths in silence.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 bgload({ name: `BG17A1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `After we were all finished eating, everyone 
 went to the Conference Room.`;
-   waitForClick; clearText; 
+
 });
 clock(`8:9`);
 hideTextbox();
@@ -187,372 +140,285 @@ playBGM({ num: 3, volume: 100 });
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A000`); appendText; 
-   Sora`"There is an important reason why I've called 
+   Sora(T6A000)`"There is an important reason why I've called 
 all of you here."`;
-   waitForClick; clearText; marker; sound(`T6A001`); appendText; 
-   Sora`"There is something that I wanted to inform 
+   Sora(T6A001)`"There is something that I wanted to inform 
 you about as soon as possible."`;
-   waitForClick; clearText; marker; sound(`T6A002`); appendText; 
-   Sora`"I know it is difficult, but it is important 
+   Sora(T6A002)`"I know it is difficult, but it is important 
 for you to accurately realize the full 
 gravity of this situation."`;
-   waitForClick; clearText; marker; sound(`T6A003`); appendText; 
-   Sora`"Please don't panic, settle down...and listen 
+   Sora(T6A003)`"Please don't panic, settle down...and listen 
 carefully."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora paused for a second.`;
-   waitForClick; clearText; marker; appendText; 
    `Sora looked at all five of us in turn....You, 
 Tsugumi, Coco, the Kid and me.`;
-   waitForClick; clearText; marker; appendText; 
    `The Conference Room was silent.`;
-   waitForClick; clearText; marker; appendText; 
    `But I could hear the sound of water, faintly 
 coming from somewhere.`;
-   waitForClick; clearText; marker; appendText; 
    `Was it water lapping in the hallways...?`;
-   waitForClick; clearText; marker; appendText; 
    `Moments later I couldn't hear it anymore.`;
-   waitForClick; clearText; marker; appendText; 
    `As if Sora was waiting for this cue, she 
 slowly opened her mouth.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A004`); appendText; 
-   Sora`"The situation...is not good."`;
-   waitForClick; clearText; 
+   Sora(T6A004)`"The situation...is not good."`;
+
 });
 playSFX({ name: `SE03_02`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora extended her hand and a holographic 
 window appeared in the space in front of us.`;
-   waitForClick; clearText; marker; appendText; 
    `I felt like I hadn't seen her do that for a 
 while.`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 bgload({ name: `IMG03A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A005`); appendText; 
-   Sora`"Currently, there are no areas that 
+   Sora(T6A005)`"Currently, there are no areas that 
 show signs of new flooding."`;
-   waitForClick; clearText; marker; sound(`T6A006`); appendText; 
-   Sora`"Since the flooding of the Cosmic Whale area 
+   Sora(T6A006)`"Since the flooding of the Cosmic Whale area 
 in Dritte stock last night, there have been 
 no further reports of significant damage."`;
-   waitForClick; clearText; marker; sound(`T6A007`); appendText; 
-   Sora`"The burden being placed on LeMU's support 
+   Sora(T6A007)`"The burden being placed on LeMU's support 
 columns has increased, due to the flooding." `;
-   waitForClick; clearText; marker; sound(`T6A008`); appendText; 
-   Sora`"The structural distortion between floors is 
+   Sora(T6A008)`"The structural distortion between floors is 
 increasing."`;
-   waitForClick; clearText; marker; sound(`T6A009`); appendText; 
-   Sora`"As this continues, LeMU will eventually lose 
+   Sora(T6A009)`"As this continues, LeMU will eventually lose 
 its equilibrium and tilt dramatically."`;
-   waitForClick; clearText; marker; sound(`T6A010`); appendText; 
-   Sora`"If the damage to the areas connecting the 
+   Sora(T6A010)`"If the damage to the areas connecting the 
 floors of different sectors increases, there 
 is the possibility that pipe leaks could 
 flood the dry sectors."`;
-   waitForClick; clearText; marker; sound(`T6A011`); appendText; 
-   Sora`"In other words...we can't afford to be 
+   Sora(T6A011)`"In other words...we can't afford to be 
 careless. Things are critical."`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `IMG01B`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A012`); appendText; 
-   Sora`"I think that I told you this before..."`;
-   waitForClick; clearText; marker; sound(`T6A013`); appendText; 
-   Sora`"Implosion of LeMU is estimated to occur at 
+   Sora(T6A012)`"I think that I told you this before..."`;
+   Sora(T6A013)`"Implosion of LeMU is estimated to occur at 
 4:30 a.m. on May 7."`;
-   waitForClick; clearText; marker; sound(`T6A014`); appendText; 
-   Sora`"The calculation has a margin of error of +/- 
+   Sora(T6A014)`"The calculation has a margin of error of +/- 
 12 hours."`;
-   waitForClick; clearText; marker; sound(`T6A015`); appendText; 
-   Sora`"There has been no significant change in this 
+   Sora(T6A015)`"There has been no significant change in this 
 prediction."`;
-   waitForClick; clearText; marker; sound(`T6A016`); appendText; 
-   Sora`"In one area, the strength limits of 
+   Sora(T6A016)`"In one area, the strength limits of 
 partitions have already been exceeded."`;
-   waitForClick; clearText; marker; sound(`T6A017`); appendText; 
-   Sora`"The destruction of LeMU will be gradual, but 
+   Sora(T6A017)`"The destruction of LeMU will be gradual, but 
 it will inevitably and steadily occur."`;
-   waitForClick; clearText; marker; sound(`T6A018`); appendText; 
-   Sora`"It is...only a matter of time."`;
-   waitForClick; clearText; 
+   Sora(T6A018)`"It is...only a matter of time."`;
+
 });
 bgload({ name: `BG17A1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora told all of us this with a calm look on 
 her face.`;
-   waitForClick; clearText; marker; appendText; 
    `We all swallowed and held our breath as we 
 listened.`;
-   waitForClick; clearText; marker; appendText; 
    `We knew we were reaching our time limit.`;
-   waitForClick; clearText; marker; appendText; 
    `We had no choice but to accept the reality.`;
-   waitForClick; clearText; marker; appendText; 
    `There was no avoiding the situation.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A019`); appendText; 
-   Sora`"Presently, the power generator is functioning 
+   Sora(T6A019)`"Presently, the power generator is functioning 
 normally."`;
-   waitForClick; clearText; marker; sound(`T6A020`); appendText; 
-   Sora`"However, if by chance there is a 
+   Sora(T6A020)`"However, if by chance there is a 
 blackout...we will switch to the emergency 
 power source battery."`;
-   waitForClick; clearText; marker; sound(`T6A021`); appendText; 
-   Sora`"This is generally meant for supporting the 
+   Sora(T6A021)`"This is generally meant for supporting the 
 emergency lighting and the maintenance for 
 LeMU's system...it should last for about two 
 hours."`;
-   waitForClick; clearText; 
+
 });
 if (l_sora_flag == 0) goto(lbl_000002bc);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `However...`;
-   waitForClick; clearText; marker; appendText; 
    `As I listened to Sora's report, I couldn't 
 help thinking about yesterday...`;
-   waitForClick; clearText; marker; appendText; 
    `...with Sora.`;
-   waitForClick; clearText; marker; appendText; 
    `How much of her thought processing had been 
 'repaired'?`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Speaking in front of me was a Sora who was 
 practical, businesslike and simply responding 
 to the situation at hand.`;
-   waitForClick; clearText; marker; appendText; 
    `She looked at me as if nothing had 
 transpired, and I was of little importance to 
 her.`;
-   waitForClick; clearText; marker; appendText; 
    `Which Sora is she? The real one or the fake 
 one...?`;
-   waitForClick; clearText; marker; appendText; 
    `This sucks...`;
-   waitForClick; clearText; marker; appendText; 
    `It wasn't the time to be thinking about that.`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_00000304);
 let lbl_000002bc;
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I needed to be listening more attentively to 
 Sora's report.`;
-   waitForClick; clearText; marker; appendText; 
    `Just like You, Coco, Kid, Pipi...`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `TU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `...and even Tsugumi.`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone was listening calmly to what Sora 
 had to say. No one was panicking, yet.`;
-   waitForClick; clearText; marker; appendText; 
    `Last night, Tsugumi's yells had pierced my 
 heart. Yet her bitter bullet didn't come out 
 my back—it remained lodged inside as a 
 constant reminder.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU18ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `She refused to look at me.`;
-   waitForClick; clearText; marker; appendText; 
    `Instead, Tsugumi just stared blankly in front 
 of her.`;
-   waitForClick; clearText; marker; appendText; 
    `Perhaps that was for the best...`;
-   waitForClick; clearText; marker; appendText; 
    `No, that wasn't just it...`;
-   waitForClick; clearText; marker; appendText; 
    `...Something else was bothering me.`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I tuned back in to the affairs at hand, 
 listening carefully to Sora's report.`;
-   waitForClick; clearText; 
+
 });
 let lbl_00000304;
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A022`); appendText; 
-   Sora`"The normal communication channels are still 
+   Sora(T6A022)`"The normal communication channels are still 
 not functioning." `;
-   waitForClick; clearText; marker; sound(`T6A023`); appendText; 
-   Sora`"Neither have I found an escape route."`;
-   waitForClick; clearText; marker; sound(`T6A024`); appendText; 
-   Sora`"However..."`;
-   waitForClick; clearText; marker; sound(`T6A025`); appendText; 
-   Sora`"I have made protecting you my top priority 
+   Sora(T6A023)`"Neither have I found an escape route."`;
+   Sora(T6A024)`"However..."`;
+   Sora(T6A025)`"I have made protecting you my top priority 
 and LeMMIH is devoting all of its resources 
 to that objective."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A026`); appendText; 
-   Sora`"I am also using all sensors, lights, 
+   Sora(T6A026)`"I am also using all sensors, lights, 
 manipulators and means at my disposal outside 
 of the complex..."`;
-   waitForClick; clearText; marker; sound(`T6A027`); appendText; 
-   Sora`"And I am still investigating whether there 
+   Sora(T6A027)`"And I am still investigating whether there 
 are any means of communicating with the 
 outside using light, radio or sound."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora nodded her head, straightened her back, 
 and surveyed the room. We were all silent.`;
-   waitForClick; clearText; marker; appendText; 
    `There was a look of determination in her eyes.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A028`); appendText; 
-   Sora`"Let me say one thing more..."`;
-   waitForClick; clearText; marker; sound(`T6A029`); appendText; 
-   Sora`"That as long as I...Sora Akanegasaki exist..."`;
-   waitForClick; clearText; marker; sound(`T6A030`); appendText; 
-   Sora`"And while my powers are limited, as long as 
+   Sora(T6A028)`"Let me say one thing more..."`;
+   Sora(T6A029)`"That as long as I...Sora Akanegasaki exist..."`;
+   Sora(T6A030)`"And while my powers are limited, as long as 
 you are here..."`;
-   waitForClick; clearText; marker; sound(`T6A031`); appendText; 
-   Sora`"I will do my utmost to find a way for you to 
+   Sora(T6A031)`"I will do my utmost to find a way for you to 
 escape to safety."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A032`); appendText; 
-   Sora`"We do not have much longer together, but I 
+   Sora(T6A032)`"We do not have much longer together, but I 
 Sora Akanegasaki, am at your service."`;
-   waitForClick; clearText; marker; appendText; 
    `She concluded with a serious nod.`;
-   waitForClick; clearText; marker; appendText; 
    `We also nodded in agreement.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO09ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A033`); appendText; 
-   Sora`"We must wait...and believe that help is on 
+   Sora(T6A033)`"We must wait...and believe that help is on 
 its way."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora's serious expression gave way to a smile.`;
-   waitForClick; clearText; marker; sound(`T6A034`); appendText; 
-   Sora`"Everyone, let's pray for a safe rescue."`;
-   waitForClick; clearText; 
+   Sora(T6A034)`"Everyone, let's pray for a safe rescue."`;
+
 });
 removeFG({ id: 1, useAnim: true });
 if (l_sora_flag == 0) goto(lbl_000003ce);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Her calmness was the result of her efficiently 
 functioning A.I..`;
-   waitForClick; clearText; marker; appendText; 
    `Thankfully, nobody panicked.`;
-   waitForClick; clearText; marker; appendText; 
    `But...`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Was that a genuine smile from Sora?`;
-   waitForClick; clearText; marker; appendText; 
    `I was pretty sure it was.`;
-   waitForClick; clearText; marker; appendText; 
    `Because if that were fake smile...`;
-   waitForClick; clearText; marker; appendText; 
    `No, even if were Sora's real smile...`;
-   waitForClick; clearText; marker; appendText; 
    `Thinking about it there was something sad 
 about it.`;
-   waitForClick; clearText; marker; appendText; 
    `Not wanting anyone to realize my thoughts, I 
 bit my lip. `;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The gloomy atmosphere that had been hanging 
 over the gathering lightened and everyone 
 started thinking about how they should spend 
 their time.`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_000003d3);
 let lbl_000003ce;
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The gloomy atmosphere that had been hanging 
 over the gathering lightened and everyone 
 started thinking about how they should spend 
 their time.`;
-   waitForClick; clearText; marker; appendText; 
    `Sora's smile instilled everyone with courage.`;
-   waitForClick; clearText; marker; appendText; 
    `I was grateful for that piece of code in 
 Sora's A.I.—the function that allowed her 
 to be calm in times of trouble.`;
-   waitForClick; clearText; 
+
 });
 let lbl_000003d3;
 removeBG({ mode: BLACK, transition: 2 });
@@ -562,60 +428,41 @@ clock(`10:51`);
 playBGM({ num: 4, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We transferred to the rest area.`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone found a seat around the central stage.`;
-   waitForClick; clearText; marker; appendText; 
    `A ripple ran through the water on the floor.`;
-   waitForClick; clearText; marker; appendText; 
    `A wave swashed back and forth, from wall to 
 wall.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"This is serious..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What are we going we do...?"`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't have any ideas. `;
-   waitForClick; clearText; marker; appendText; 
    `A few quiet discussions were going on.`;
-   waitForClick; clearText; marker; appendText; 
    `Yet from where I stood, it seemed the more 
 people spoke, the murkier the answers became.`;
-   waitForClick; clearText; marker; appendText; 
    `From the beginning it was the same debate 
 repeated over and over again.`;
-   waitForClick; clearText; marker; appendText; 
    `Should we wait for help?`;
-   waitForClick; clearText; marker; appendText; 
    `Should we seek an escape route?`;
-   waitForClick; clearText; marker; appendText; 
    `All I could do was look to the ceiling.`;
-   waitForClick; clearText; marker; appendText; 
    `There was no sign that any bright ideas were 
 on their way to my head.`;
-   waitForClick; clearText; marker; appendText; 
    `We were just waiting for the walls and 
 ceiling to come crumbling down.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A035`); appendText; 
-   Kid`"Ahhhh!"`;
-   waitForClick; clearText; marker; sound(`T6A036`); appendText; 
-   You`"Kid, what happened?"`;
-   waitForClick; clearText; 
+   Kid(T6A035)`"Ahhhh!"`;
+   You(T6A036)`"Kid, what happened?"`;
+
 });
 fgload({ id: 1, name: `KA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A037`); appendText; 
-   Kid`"Everyone, be careful!"`;
-   waitForClick; clearText; marker; sound(`T6A038`); appendText; 
-   Kid`"Don't move! Don't stand up!"`;
-   waitForClick; clearText; 
+   Kid(T6A037)`"Everyone, be careful!"`;
+   Kid(T6A038)`"Don't move! Don't stand up!"`;
+
 });
 hideTextbox();
 removeFG({ id: 1, useAnim: true });
@@ -630,647 +477,503 @@ eff_40 = 1;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `A deep moan rumbled through the room as the 
 floor began to shake.`;
-   waitForClick; clearText; marker; appendText; 
    `A wave of fear ran through us.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 closeShakeScreenAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Soon the shaking ceased.`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU15ADM`, name2: `KA13ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A039`); appendText; 
-   Kid`"Y-You..."`;
-   waitForClick; clearText; marker; sound(`T6A040`); appendText; 
-   You`"Don't worry! It's okay."`;
-   waitForClick; clearText; marker; sound(`T6A041`); appendText; 
-   You`"Right, Sora?"`;
-   waitForClick; clearText; 
+   Kid(T6A039)`"Y-You..."`;
+   You(T6A040)`"Don't worry! It's okay."`;
+   You(T6A041)`"Right, Sora?"`;
+
 });
 removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `SO11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A042`); appendText; 
-   Sora`"Yes. The shaking right now was..."`;
-   waitForClick; clearText; marker; sound(`T6A043`); appendText; 
-   Sora`"I believe it was only due to a large amount 
+   Sora(T6A042)`"Yes. The shaking right now was..."`;
+   Sora(T6A043)`"I believe it was only due to a large amount 
 of activity from the thermal vents, on the 
 ocean floor. It should only be temporary."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 fgload({ id: 1, name: `KA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `But her facial coloring still hadn't returned 
 to normal.`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Everyone looked around the room, exchanging 
 glances.`;
-   waitForClick; clearText; marker; appendText; 
    `And just like that, nervous tension refilled 
 the room again.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Not again..."`;
-   waitForClick; clearText; marker; appendText; 
    `I decided to take charge.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 playSFX({ name: `SE05_11`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Alright! Listen up everyone!"`;
-   waitForClick; clearText; marker; appendText; 
    `I rose to my feet and shouted to everyone.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playBGM({ num: 18, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Listen, just stay where you all are!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm going to check the kiosk on the second 
 floor!"`;
-   waitForClick; clearText; 
+
 });
 multifgload3({ name1: `KA07ADS`, name2: `CO06ADS`, name3: `YU06ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Everyone looked shocked as I yelled.`;
-   waitForClick; clearText; marker; appendText; 
    `Some jaws even dropped.`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `SO07ADS`, name2: `TU06ADS`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `They may have been half put off by me.`;
-   waitForClick; clearText; marker; appendText; 
    `Still, I didn't concern myself with that.`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `No matter how stupid it seemed, I continued...`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm going above to grab some snacks for 
 everybody. There is plenty up there, and we 
 still should be able to eat it."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"It'll be a pain to go get it later, and it 
 doesn't make sense to let them go to waste."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Alright? We're going to eat here."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"And let's have a good time..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Oh, that's right. Does anybody want beer...?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A044`); appendText; 
-   You`"What? B-but..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A044)`"What? B-but..."`;
    `You raised her hand timidly.`;
-   waitForClick; clearText; marker; sound(`T6A045`); appendText; 
-   You`"But we don't sell alcohol at the LeMU kiosks."`;
-   waitForClick; clearText; 
+   You(T6A045)`"But we don't sell alcohol at the LeMU kiosks."`;
+
 });
 fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A046`); appendText; 
-   You`"We've had a lot of complaints about customers 
+   You(T6A046)`"We've had a lot of complaints about customers 
 having bad hangovers due to the differences 
 in air pressure down here."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"That's too bad."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Well, hardly any of you look like you could 
 hold your drink anyway. I guess it'll have to 
 be juice..."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `KA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A047`); appendText; 
-   Kid`"Excuse me, Takeshi?"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A047)`"Excuse me, Takeshi?"`;
    `Now it was Kid who raised his hand.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A048`); appendText; 
-   Kid`"There are probably plenty of drinks at the 
+   Kid(T6A048)`"There are probably plenty of drinks at the 
 chicken sandwich shop. That way you won't 
 have to go above."`;
-   waitForClick; clearText; marker; sound(`T6A049`); appendText; 
-   Kid`"There's canned juice and paper cups.... Why 
+   Kid(T6A049)`"There's canned juice and paper cups.... Why 
 don't I go and get them?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Alright, Kid, you do that."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A050`); appendText; 
-   Kid`"Alright. Leave it to me!"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A050)`"Alright. Leave it to me!"`;
    `The Kid laughed. It seemed he was over the 
 events from the day before. `;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `CO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A051`); appendText; 
-   Coco`"Hey, let me help!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A051)`"Hey, let me help!"`;
    `An excited Coco raised her hand, volunteering.`;
-   waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   Pipi`"Bow-wow!"`;
-   waitForClick; clearText; marker; sound(`T6A052`); appendText; 
-   Coco`"I think Pipi wants to help too!"`;
-   waitForClick; clearText; marker; appendText; 
+   Pipi(PIPI_04)`"Bow-wow!"`;
+   Coco(T6A052)`"I think Pipi wants to help too!"`;
    Takeshi`"Great! Alright, let's go and get the 
 supplies."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `YU15ADS`, name2: `SO11ADS`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A053`); appendText; 
-   You`"Sora, do we still have time?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A053)`"Sora, do we still have time?"`;
    `You asked Sora this in a small voice.`;
-   waitForClick; clearText; marker; sound(`T6A054`); appendText; 
-   Sora`"I am sorry. I am not able to run an accurate 
+   Sora(T6A054)`"I am sorry. I am not able to run an accurate 
 simulation..."`;
-   waitForClick; clearText; marker; sound(`T6A055`); appendText; 
-   Sora`"There may not be much time, but we will be 
+   Sora(T6A055)`"There may not be much time, but we will be 
 safe until 2 p.m. That I can guarantee."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora replied casually.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A056`); appendText; 
-   You`"Alright..."`;
-   waitForClick; clearText; 
+   You(T6A056)`"Alright..."`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `You nodded and looked up.`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU16ADM`, name2: `KA12ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A057`); appendText; 
-   You`"Kid, are you ready? Let's grab all the 
+   You(T6A057)`"Kid, are you ready? Let's grab all the 
 drinks we can carry."`;
-   waitForClick; clearText; marker; sound(`T6A058`); appendText; 
-   Kid`"Okay, let's go."`;
-   waitForClick; clearText; 
+   Kid(T6A058)`"Okay, let's go."`;
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU15ADM`, name2: `KA11ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A059`); appendText; 
-   You`"Oh, that's right!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A059)`"Oh, that's right!"`;
    `You slammed her fist into her hand excitedly 
 and looked about the room.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU02ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A060`); appendText; 
-   You`"What about Tsugumi?" `;
-   waitForClick; clearText; 
+   You(T6A060)`"What about Tsugumi?" `;
+
 });
 fgload({ id: 1, name: `YU07ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A061`); appendText; 
-   You`"Tsugumi? H-huh...?"`;
-   waitForClick; clearText; marker; sound(`T6A062`); appendText; 
-   You`"She's not here..."`;
-   waitForClick; clearText; 
+   You(T6A061)`"Tsugumi? H-huh...?"`;
+   You(T6A062)`"She's not here..."`;
+
 });
 fgload({ id: 2, name: `KA06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"What!?"`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I frantically surveyed the room as well, but 
 Tsugumi was nowhere in sight.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Where the heck did she go? And when'd she 
 leave?"`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `SO09ADM`, name2: `YU11ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A063`); appendText; 
-   Sora`"I believe Tsugumi slipped out of here just a 
+   Sora(T6A063)`"I believe Tsugumi slipped out of here just a 
 short while ago."`;
-   waitForClick; clearText; marker; sound(`T6A064`); appendText; 
-   Sora`"She seems to have left for the second 
+   Sora(T6A064)`"She seems to have left for the second 
 floor..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `YU05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A065`); appendText; 
-   You`"There's nothing we can do."`;
-   waitForClick; clearText; 
+   You(T6A065)`"There's nothing we can do."`;
+
 });
 fgload({ id: 2, name: `YU01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A066`); appendText; 
-   You`"She'll be back soon, right Takeshi?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A066)`"She'll be back soon, right Takeshi?"`;
    Takeshi`"Aah, yeah..."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 fgload({ id: 1, name: `YU02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A067`); appendText; 
-   You`"Okay everyone, let's get ready to party!"`;
-   waitForClick; clearText; 
+   You(T6A067)`"Okay everyone, let's get ready to party!"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 setFGRenderOrder(1, 4, 2);
 multifgload3({ name1: `SO02ADS`, name2: `CO02ADS`, name3: `KA02ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A068`); appendText; 
-   Coco`"Okay!"`;
-   waitForClick; clearText; marker; sound(`T6A069`); appendText; 
-   Kid`"Alright!"`;
-   waitForClick; clearText; marker; sound(`T6A070`); appendText; 
-   Sora`"Yes!"`;
-   waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   Pipi`"Woof!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A068)`"Okay!"`;
+   Kid(T6A069)`"Alright!"`;
+   Sora(T6A070)`"Yes!"`;
+   Pipi(PIPI_01)`"Woof!"`;
    Takeshi`"Y-yeah!"`;
-   waitForClick; clearText; marker; sound(`T6A071`); appendText; 
-   Coco`"Let's party! Party!"`;
-   waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   Pipi`"Bow-wow!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A071)`"Let's party! Party!"`;
+   Pipi(PIPI_04)`"Bow-wow!"`;
    `I had only thrown out the idea as a way to 
 lighten the mood...`;
-   waitForClick; clearText; marker; appendText; 
    `And before I knew it, we had ourselves a 
 full-blown party in the making.`;
-   waitForClick; clearText; marker; appendText; 
    `...Well, whatever.`;
-   waitForClick; clearText; marker; appendText; 
    `It was better than having everyone moping 
 around.`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 setFGRenderOrder(4, 2, 1);
 bgload({ name: `BG25B3`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Soon, Coco, Pipi, and I left to get food. We 
 took the emergency stairs.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A072`); appendText; 
-   Coco`"Laaaa,la la, la la la la."`;
-   waitForClick; clearText; marker; sound(`T6A073`); appendText; 
-   Coco`"Fa la la la la, la la la la."`;
-   waitForClick; clearText; marker; sound(`T6A074`); appendText; 
-   Coco`"Fa la la fa la la."`;
-   waitForClick; clearText; marker; sound(`T6A075`); appendText; 
-   Coco`"LA LA LA!" `;
-   waitForClick; clearText; marker; sound(`PIPI_01`); appendText; 
-   Pipi`"Woof!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A072)`"Laaaa,la la, la la la la."`;
+   Coco(T6A073)`"Fa la la la la, la la la la."`;
+   Coco(T6A074)`"Fa la la fa la la."`;
+   Coco(T6A075)`"LA LA LA!" `;
+   Pipi(PIPI_01)`"Woof!"`;
    `As we climbed the stairs, Coco sang some 
 crazy song.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You seem like you're in a good mood, Coco."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A076`); appendText; 
-   Coco`"Well, you know, I just get excited 
+   Coco(T6A076)`"Well, you know, I just get excited 
 sometimes..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A077`); appendText; 
-   Coco`"Looks like we've come to the climax!"`;
-   waitForClick; clearText; 
+   Coco(T6A077)`"Looks like we've come to the climax!"`;
+
 });
 fgload({ id: 1, name: `CO04ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A078`); appendText; 
-   Coco`"The damsel in distress is in a pinch and in 
+   Coco(T6A078)`"The damsel in distress is in a pinch and in 
 waltzes our dashing hero!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO14ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A079`); appendText; 
-   Coco`"Young lady, are you alright? Are you not 
+   Coco(T6A079)`"Young lady, are you alright? Are you not 
 injured?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO18ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A080`); appendText; 
-   Coco`"And there is our masked villain. I can't 
+   Coco(T6A080)`"And there is our masked villain. I can't 
 forgive you this, you evil scoundrel!"`;
-   waitForClick; clearText; marker; sound(`T6A081`); appendText; 
-   Coco`"Using my neutrino energy power...I'll kill 
+   Coco(T6A081)`"Using my neutrino energy power...I'll kill 
 you! Ayah!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO16ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A082`); appendText; 
-   Coco`"Oh I can pretend can't I?"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A082)`"Oh I can pretend can't I?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO07ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A083`); appendText; 
-   Coco`"Huh, Takepyon? Are you fed up with me?"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A083)`"Huh, Takepyon? Are you fed up with me?"`;
    Takeshi`"N-no..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO05ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A084`); appendText; 
-   Coco`"You think I'm just a silly girl, don't you? 
+   Coco(T6A084)`"You think I'm just a silly girl, don't you? 
 Ah! So sad! But you want to see what kind of 
 parents could have raised me."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"No, no. It's not that...Not at all!"`;
-   waitForClick; clearText; marker; appendText; 
    `I mussed up her hair affectionately.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A085`); appendText; 
-   Coco`"Heh, heh, he..."`;
-   waitForClick; clearText; 
+   Coco(T6A085)`"Heh, heh, he..."`;
+
 });
 fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A086`); appendText; 
-   Coco`"If I were in a pinch like that, I'm sure 
+   Coco(T6A086)`"If I were in a pinch like that, I'm sure 
 someone would come to my rescue!"`;
-   waitForClick; clearText; marker; sound(`T6A087`); appendText; 
-   Coco`"I just can't help but think of how wonderful 
+   Coco(T6A087)`"I just can't help but think of how wonderful 
 that would be..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A088`); appendText; 
-   Coco`"You know? What's wrong with dreaming like 
+   Coco(T6A088)`"You know? What's wrong with dreaming like 
 that?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Yeah, you're right."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You know...to tell you the truth, I'm 
 thinking the same way."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I think that someone might come to rescue us!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I don't know about the neutrino stuff though."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A089`); appendText; 
-   Coco`"Yeah yeah! You're right!"`;
-   waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   Pipi`"Bow-wow!"`;
-   waitForClick; clearText; 
+   Coco(T6A089)`"Yeah yeah! You're right!"`;
+   Pipi(PIPI_04)`"Bow-wow!"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We wanted to believe that a hero was on the 
 way...`;
-   waitForClick; clearText; marker; appendText; 
    `...and that went for Coco, Pipi and me, too.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG25A3`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We reached the second floor.`;
-   waitForClick; clearText; marker; appendText; 
    `We turned down the corridor and entered the 
 souvenir shop.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG06A1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Someone had beaten us there.`;
-   waitForClick; clearText; marker; sound(`T6A090`); appendText; 
-   Coco`"Hey, is that you? Tsugumi?"`;
-   waitForClick; clearText; 
+   Coco(T6A090)`"Hey, is that you? Tsugumi?"`;
+
 });
 if (l_tsugumi_flag == 0) goto(lbl_00000a30);
 fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A091`); appendText; 
-   Tsugumi`"Hi..."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A091)`"Hi..."`;
    `I was shocked to see her.`;
-   waitForClick; clearText; marker; appendText; 
    `I totally blanked and went speechless.`;
-   waitForClick; clearText; marker; sound(`T6A092`); appendText; 
-   Tsugumi`"Is there a reason I shouldn't be here?"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A092)`"Is there a reason I shouldn't be here?"`;
    `Tsugumi spit out her words coldly...`;
-   waitForClick; clearText; marker; appendText; 
    `It was typical Tsugumi.`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `TU17ADM`, name2: `CO13ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A093`); appendText; 
-   Coco`"No, not at all..."`;
-   waitForClick; clearText; 
+   Coco(T6A093)`"No, not at all..."`;
+
 });
 fgload({ id: 2, name: `CO12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A094`); appendText; 
-   Coco`"Tsugumi, how about you help us out?"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A094)`"Tsugumi, how about you help us out?"`;
    Tsugumi`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A095`); appendText; 
-   Tsugumi`"Well, alright. I don't suppose I really have 
+   Tsugumi(T6A095)`"Well, alright. I don't suppose I really have 
 a choice."`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi nodded reluctantly.`;
-   waitForClick; clearText; marker; sound(`T6A096`); appendText; 
-   Tsugumi`"So what should I do, Coco?"`;
-   waitForClick; clearText; 
+   Tsugumi(T6A096)`"So what should I do, Coco?"`;
+
 });
 fgload({ id: 2, name: `CO11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A097`); appendText; 
-   Coco`"Well...let's see..."`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A097)`"Well...let's see..."`;
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Tsugumi glanced at me...`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `She didn't say anything and looked away 
 quickly.`;
-   waitForClick; clearText; marker; appendText; 
    `Her eyes seemed dead.`;
-   waitForClick; clearText; marker; appendText; 
    `Thinking about it made me sad.`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_00000a75);
 let lbl_00000a30;
 fgload({ id: 1, name: `TU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A098`); appendText; 
-   Tsugumi`"You're taking too long..."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A098)`"You're taking too long..."`;
    `Tsugumi looked a little miffed.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A099`); appendText; 
-   Tsugumi`"Well, what is it you want me to carry?"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A099)`"Well, what is it you want me to carry?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A100`); appendText; 
-   Tsugumi`"What is it, Takeshi? You look like a pigeon 
+   Tsugumi(T6A100)`"What is it, Takeshi? You look like a pigeon 
 caught in a shotgun blast."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Oh, it's nothing. Nothing."`;
-   waitForClick; clearText; marker; appendText; 
    `I was surprised she even said anything to me.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Okay, let's get started!"`;
-   waitForClick; clearText; 
+
 });
 let lbl_00000a75;
 hideTextbox();
@@ -1288,241 +991,161 @@ NVL_Mode();
 clock(`11:43`);
 showTextbox();
 text(() => {
-   marker; appendText; 
-   `One hour later—`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+   `One hour later—${wait(30)}`;
    `We began our party in an elevated part of the 
-rest area.`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
-   `Even without alcohol, the party was lively.`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+rest area.${wait(30)}`;
+   `Even without alcohol, the party was lively.${wait(30)}`;
    `The Kid and I distributed the snacks and 
-drinks to everyone.`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+drinks to everyone.${wait(30)}`;
    `It was then that You volunteered to provide 
 some entertainment.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `First she performed an impersonation of a 
 strange old archaeologist, who had a talent 
-for cracking a whip..`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+for cracking a whip..${wait(30)}`;
    `Then Coco came out in a makeshift sumo outfit 
-and stomped her feet on the stage...`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+and stomped her feet on the stage...${wait(30)}`;
    `Sora kept busy filling the room with hologram 
-projections of rainbows.`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+projections of rainbows.${wait(30)}`;
    `The rainbow-colored bubbles that floated from 
 the water surface through the air were 
 particularly pretty.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   marker; appendText; 
-   `After that Tsugumi joined us...`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+   `After that Tsugumi joined us...${wait(30)}`;
    `She added a little magic to the show as she 
 dropped her hamster in her skirt pocket only 
-to have it reappear in her breast pocket.`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
-   `That really impressed the crowd. `;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+to have it reappear in her breast pocket.${wait(30)}`;
+   `That really impressed the crowd. ${wait(30)}`;
    `Although I knew about her hamster, Chami, many 
 didn't even know Tsugumi kept a pet.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   marker; appendText; 
-   `Then Kid and I performed a comedy skit.`;
-   delay(30); waitForClick; 
-   `
-`;
-   appendText; 
+   `Then Kid and I performed a comedy skit.${wait(30)}`;
    `We pulled out one-liners and impromptu gags 
 which got huge laughter from everyone.`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 bgload({ name: `BG21B1`, transition: 20 });
 clock(`12:55`);
 fgload({ id: 1, name: `KA02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A101`); appendText; 
-   Kid`"Thank you! Thank you very much!"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A101)`"Thank you! Thank you very much!"`;
    Takeshi`"Thanks!"`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Kid and I exited the stage to thunderous 
 applause.`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `CO09ADM`, name2: `YU09ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A102`); appendText; 
-   Coco`"Ha ha ha ha ha! That was great!"`;
-   waitForClick; clearText; marker; sound(`T6A103`); appendText; 
-   You`"That was absolutely wonderful!"`;
-   waitForClick; clearText; 
+   Coco(T6A102)`"Ha ha ha ha ha! That was great!"`;
+   You(T6A103)`"That was absolutely wonderful!"`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `SO08ADM`, name2: `TU07ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A104`); appendText; 
-   Tsugumi`"Better than I expected..."`;
-   waitForClick; clearText; marker; sound(`T6A105`); appendText; 
-   Sora`"Those two were perfect together."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A104)`"Better than I expected..."`;
+   Sora(T6A105)`"Those two were perfect together."`;
    Takeshi`"Thank you, thank you..."`;
-   waitForClick; clearText; marker; sound(`T6A106`); appendText; 
-   Kid`"Thank you everyone..."`;
-   waitForClick; clearText; 
+   Kid(T6A106)`"Thank you everyone..."`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Actually, I was surprised too that you poked 
 fun at yourself using the truth about you 
 losing your memory as a gag." `;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A107`); appendText; 
-   Kid`"Well, that's just how the skit flowed. It 
+   Kid(T6A107)`"Well, that's just how the skit flowed. It 
 fit perfectly into our act."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Yeah, I guess you're right..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Well, it looks like I've got nothing more to 
 teach you! So, go ahead and follow in my 
 comedy footsteps!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A108`); appendText; 
-   Kid`"Ah, sorry. I've already forgot everything 
+   Kid(T6A108)`"Ah, sorry. I've already forgot everything 
 you taught me."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Well, that's too bad...you should at least 
 take notes. Notes!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"But never fear! I ain't taught you nothin' 
 yet!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `KA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A109`); appendText; 
-   Kid`"Is that true?"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A109)`"Is that true?"`;
    `And that was about it...`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The party gradually wound down.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG07B1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I then took a trip back to the chicken 
 sandwich stand and brought sandwiches back 
 for everyone.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG21B1`, transition: 20 });
 multifgload3({ name1: `YU16ADS`, name2: `CO02ADS`, name3: `KA12ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We all munched on hot sandwiches.`;
-   waitForClick; clearText; marker; appendText; 
    `(These...are so good!)`;
-   waitForClick; clearText; marker; appendText; 
    `It wasn't exactly the ideal breakfast food.`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone happily downed their food.`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Food...`;
-   waitForClick; clearText; marker; appendText; 
    `If LeMU collapsed soon...`;
-   waitForClick; clearText; marker; appendText; 
    `I thought that could be everyone's last meal...`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone understood that, yet said nothing.`;
-   waitForClick; clearText; marker; appendText; 
    `No...`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone understood, which is why they said 
 nothing.`;
-   waitForClick; clearText; marker; appendText; 
    `...............`;
-   waitForClick; clearText; marker; appendText; 
    `.........`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
@@ -1531,483 +1154,352 @@ if (l_tsugumi_flag == 0) goto(lbl_00000d5e);
 playBGM({ num: 7, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Tsugumi..."`;
-   waitForClick; clearText; marker; appendText; 
    `After finishing my sandwich, I got up the 
 nerve to speak to Tsugumi.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A110`); appendText; 
-   Tsugumi`"What?"`;
-   waitForClick; clearText; marker; sound(`T6A111`); appendText; 
-   Tsugumi`"What do you want, Takeshi...?"`;
-   waitForClick; clearText; 
+   Tsugumi(T6A110)`"What?"`;
+   Tsugumi(T6A111)`"What do you want, Takeshi...?"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Tsugumi crouched on the stage.`;
-   waitForClick; clearText; marker; appendText; 
    `I crouched beside her, and looked to see what 
 she was doing.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU15ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `There, Tsugumi was drawing something on the 
 stage with a thick marker.`;
-   waitForClick; clearText; marker; appendText; 
    `As usual, Tsugumi didn't look at me.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Ah, well...it's..."`;
-   waitForClick; clearText; marker; appendText; 
    `She stopped scribbling for a moment. I 
 decided to come out and say what I had to say.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"About yesterday..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm sorry. I didn't know what to say...but..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU17ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A112`); appendText; 
-   Tsugumi`"About what?"`;
-   waitForClick; clearText; marker; sound(`T6A113`); appendText; 
-   Tsugumi`"I don't really know what you're talking 
+   Tsugumi(T6A112)`"About what?"`;
+   Tsugumi(T6A113)`"I don't really know what you're talking 
 about."`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi was curt in her response.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Tsu-Tsugumi!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You're joking, right?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"There's no way you could've forgotten."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I know I haven't."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"That's not just something you can...just 
 simply forget about."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I realize it's not something you can talk 
 about casually, but..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Tsugumi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `Her eyes wandered around the room for a moment.`;
-   waitForClick; clearText; marker; appendText; 
    `Then, she looked down again at the scribbles 
 she had been drawing.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU17ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A114`); appendText; 
-   Tsugumi`"I don't really care."`;
-   waitForClick; clearText; marker; sound(`T6A115`); appendText; 
-   Tsugumi`"I don't care about what happened yesterday..."`;
-   waitForClick; clearText; 
+   Tsugumi(T6A114)`"I don't really care."`;
+   Tsugumi(T6A115)`"I don't care about what happened yesterday..."`;
+
 });
 fgload({ id: 1, name: `TU15ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A116`); appendText; 
-   Tsugumi`"So, would you please stop talking about it?"`;
-   waitForClick; clearText; marker; sound(`T6A117`); appendText; 
-   Tsugumi`"Don't say anything."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A116)`"So, would you please stop talking about it?"`;
+   Tsugumi(T6A117)`"Don't say anything."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi was back to her drawing on the stage 
 floor.`;
-   waitForClick; clearText; marker; sound(`T6A118`); appendText; 
-   Tsugumi`"I..."`;
-   waitForClick; clearText; 
+   Tsugumi(T6A118)`"I..."`;
+
 });
 fgload({ id: 1, name: `TU17ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A119`); appendText; 
-   Tsugumi`"I'm trying to think of a way to get out of 
+   Tsugumi(T6A119)`"I'm trying to think of a way to get out of 
 here, too."`;
-   waitForClick; clearText; marker; sound(`T6A120`); appendText; 
-   Tsugumi`"So don't...bother me."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A120)`"So don't...bother me."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi refused to look at me as she spoke.`;
-   waitForClick; clearText; marker; appendText; 
    `After that I felt a little gun-shy.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Okaaaay, then."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I stood up and left her there.`;
-   waitForClick; clearText; marker; appendText; 
    `I walked over toward where Sora was.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey, Sora."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A121`); appendText; 
-   Sora`"Hello. What may I help you with, Takeshi?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A121)`"Hello. What may I help you with, Takeshi?"`;
    `Sora smiled softly when she looked at me.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Nothing much...I just have a lot on my mind."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A122`); appendText; 
-   Sora`"Right now LeMMIH is handling operations and 
+   Sora(T6A122)`"Right now LeMMIH is handling operations and 
 will alert me if any troubles arise."`;
-   waitForClick; clearText; marker; sound(`T6A123`); appendText; 
-   Sora`"LeMMIH is also currently continuing 
+   Sora(T6A123)`"LeMMIH is also currently continuing 
 investigation of means of escape as well as 
 communication with the outside."`;
-   waitForClick; clearText; marker; sound(`T6A124`); appendText; 
-   Sora`"Please do not worry."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A124)`"Please do not worry."`;
    Takeshi`"Thanks, Sora.... That helps."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Can I ask what time it is? I need to set it 
 on my..."`;
-   waitForClick; clearText; marker; sound(`T6A125`); appendText; 
-   Sora`"No problem. The current time is——."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A125)`"No problem. The current time is——."`;
    Takeshi`"Hold on for a second."`;
-   waitForClick; clearText; marker; appendText; 
    `I took my PDA from my pocket.`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_00000e0d);
 let lbl_00000d5e;
 playBGM({ num: 8, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Sora..."`;
-   waitForClick; clearText; marker; appendText; 
    `I made up my mind to speak to her about the 
 important things I had on my mind...right 
 after finishing my sandwich.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A126`); appendText; 
-   Sora`"Yes, what is it?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A126)`"Yes, what is it?"`;
    `With a slight smile, Sora gazed at me.`;
-   waitForClick; clearText; marker; appendText; 
    `Her eyes were like a clear, cloudless sky.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Ah, well, it's just that..."`;
-   waitForClick; clearText; marker; appendText; 
    `When I saw her smile, I wavered slightly. 
 Yet, I continued to speak.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Um, about yesterday..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I'm sorry. I don't know what to say but..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A127`); appendText; 
-   Sora`"What is it?"`;
-   waitForClick; clearText; marker; sound(`T6A128`); appendText; 
-   Sora`"I am not quite sure what you are talking 
+   Sora(T6A127)`"What is it?"`;
+   Sora(T6A128)`"I am not quite sure what you are talking 
 about."`;
-   waitForClick; clearText; marker; appendText; 
    `Sora spoke brusquely.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"S-Sora!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You're lying, right?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You haven't forgotten, right?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I know I haven't forgotten."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"That's not just something you...just forget 
 about."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I realize it's not something you can 
 casually address, but..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A129`); appendText; 
-   Sora`"Ha ha ha..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A129)`"Ha ha ha..."`;
    `Sora gave me a bitter smile.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A130`); appendText; 
-   Sora`"I'm sorry, Takeshi. I really do not remember 
+   Sora(T6A130)`"I'm sorry, Takeshi. I really do not remember 
 the events of last night."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What?"`;
-   waitForClick; clearText; marker; sound(`T6A131`); appendText; 
-   Sora`"I...do not remember."`;
-   waitForClick; clearText; marker; sound(`T6A132`); appendText; 
-   Sora`I am sorry.`;
-   waitForClick; clearText; marker; sound(`T6A133`); appendText; 
-   Sora`"I forgot them. There is a gap in my memory 
+   Sora(T6A131)`"I...do not remember."`;
+   Sora(T6A132)`I am sorry.`;
+   Sora(T6A133)`"I forgot them. There is a gap in my memory 
 of a few hours."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"How...why?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"You're lying...you've got to be..."`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't want to believe it.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A134`); appendText; 
-   Sora`"Listen, Takeshi...I..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A134)`"Listen, Takeshi...I..."`;
    `She laughed again and gazed out at the others 
 around the stage.`;
-   waitForClick; clearText; marker; sound(`T6A135`); appendText; 
-   Sora`"I love this."`;
-   waitForClick; clearText; marker; sound(`T6A136`); appendText; 
-   Sora`"Seeing the people around me laugh...I love 
+   Sora(T6A135)`"I love this."`;
+   Sora(T6A136)`"Seeing the people around me laugh...I love 
 that."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A137`); appendText; 
-   Sora`"Right now LeMMIH is handling operations and 
+   Sora(T6A137)`"Right now LeMMIH is handling operations and 
 will alert me if any troubles arise."`;
-   waitForClick; clearText; marker; sound(`T6A138`); appendText; 
-   Sora`"I have been hoping that no trouble befalls 
+   Sora(T6A138)`"I have been hoping that no trouble befalls 
 us..."`;
-   waitForClick; clearText; marker; sound(`T6A139`); appendText; 
-   Sora`"It is my duty to watch over you all."`;
-   waitForClick; clearText; marker; sound(`T6A140`); appendText; 
-   Sora`"When people return a smile, it warms my 
+   Sora(T6A139)`"It is my duty to watch over you all."`;
+   Sora(T6A140)`"When people return a smile, it warms my 
 heart..."`;
-   waitForClick; clearText; marker; sound(`T6A141`); appendText; 
-   Sora`"And for that very reason..."`;
-   waitForClick; clearText; marker; sound(`T6A142`); appendText; 
-   Sora`"That is why I am always able to laugh."`;
-   waitForClick; clearText; marker; sound(`T6A143`); appendText; 
-   Sora`"That was how my creator made me..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A141)`"And for that very reason..."`;
+   Sora(T6A142)`"That is why I am always able to laugh."`;
+   Sora(T6A143)`"That was how my creator made me..."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't want to talk about herself as 
 something 'made,' or how she was 
 'manufactured.' `;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A144`); appendText; 
-   Sora`"Takeshi, please do not look at me as if you 
+   Sora(T6A144)`"Takeshi, please do not look at me as if you 
 are going to cry."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Yeah, right...fine."`;
-   waitForClick; clearText; marker; appendText; 
    `I wished that I hadn't gone overboard last 
 night.`;
-   waitForClick; clearText; marker; appendText; 
    `But I was wishing for the impossible...`;
-   waitForClick; clearText; 
+
 });
 let lbl_00000e0d;
 showTextbox();
 text(() => {
-   marker; appendText; 
    `...what I did.`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `SO15ADM`, name2: `TU13ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A145`); appendText; 
-   Tsugumi`"Excuse me, Sora."`;
-   waitForClick; clearText; marker; sound(`T6A146`); appendText; 
-   Sora`"Ah, yes. Tsugumi.... What is on your mind?"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A145)`"Excuse me, Sora."`;
+   Sora(T6A146)`"Ah, yes. Tsugumi.... What is on your mind?"`;
    `Tsugumi was suddenly standing right between 
 Sora and I.`;
-   waitForClick; clearText; marker; appendText; 
    `Tsugumi let out a nervous laugh.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `TU12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A147`); appendText; 
-   Tsugumi`"There's something I want to tell you, in 
+   Tsugumi(T6A147)`"There's something I want to tell you, in 
 private..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A148`); appendText; 
-   Sora`"In private?"`;
-   waitForClick; clearText; marker; sound(`T6A149`); appendText; 
-   Tsugumi`"Yes...Please."`;
-   waitForClick; clearText; 
+   Sora(T6A148)`"In private?"`;
+   Tsugumi(T6A149)`"Yes...Please."`;
+
 });
 fgload({ id: 2, name: `TU11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A150`); appendText; 
-   Tsugumi`"It's about escaping this place. I have a 
+   Tsugumi(T6A150)`"It's about escaping this place. I have a 
 proposal for you."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A151`); appendText; 
-   Sora`"Is that so? What is it? You know of a way?"`;
-   waitForClick; clearText; marker; sound(`T6A152`); appendText; 
-   Tsugumi`"Yes. I might be able to help in some way."`;
-   waitForClick; clearText; marker; sound(`T6A153`); appendText; 
-   Tsugumi`"I want to hear from you whether or not my 
+   Sora(T6A151)`"Is that so? What is it? You know of a way?"`;
+   Tsugumi(T6A152)`"Yes. I might be able to help in some way."`;
+   Tsugumi(T6A153)`"I want to hear from you whether or not my 
 idea is feasible."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What? Wait a second, Tsugumi. Sora and I..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `TU08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A154`); appendText; 
-   Tsugumi`"Shut up, Takeshi."`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A154)`"Shut up, Takeshi."`;
    `Tsugumi held out her hand as if stopping my 
 mouth in one motion.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A155`); appendText; 
-   Tsugumi`"I want to speak to Sora. Alone."`;
-   waitForClick; clearText; 
+   Tsugumi(T6A155)`"I want to speak to Sora. Alone."`;
+
 });
 fgload({ id: 2, name: `TU12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A156`); appendText; 
-   Tsugumi`"You don't mind, do you Sora?"`;
-   waitForClick; clearText; marker; sound(`T6A157`); appendText; 
-   Sora`"No. Let's go talk in the Central Control 
+   Tsugumi(T6A156)`"You don't mind, do you Sora?"`;
+   Sora(T6A157)`"No. Let's go talk in the Central Control 
 Room."`;
-   waitForClick; clearText; marker; sound(`T6A158`); appendText; 
-   Tsugumi`"Right, let's go."`;
-   waitForClick; clearText; 
+   Tsugumi(T6A158)`"Right, let's go."`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The two got down from the stage and set off 
 with very serious looks on their faces.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wait! Hold up you two! Don't go starting 
 something without telling everyone!"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Why can't you just talk here!?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A159`); appendText; 
-   Tsugumi`"Takeshi...!"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A159)`"Takeshi...!"`;
    `Tsugumi turned around and shot a sharp glare 
 at me.`;
-   waitForClick; clearText; marker; appendText; 
    `Her eyes were ice.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A160`); appendText; 
-   Tsugumi`"I told you to shut up, didn't I?"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A160)`"I told you to shut up, didn't I?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU17ADM`, x: 320, useAnim: true });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sora and Tsugumi turned their backs to me and 
 left together.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 stopBGM();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Things around me got quiet.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What the hell."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What the hell is going on here...?"`;
-   waitForClick; clearText; marker; appendText; 
    `I felt alone. Balling up the sandwich 
 wrapper, I threw it as hard as I could.`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE02_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Splash.`;
-   waitForClick; clearText; marker; appendText; 
    `The wrapper fell in the water, creating a 
 series of ripples.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playBGM({ num: 19, volume: 100 });
@@ -2015,477 +1507,307 @@ setSceneTitle({ index: 39 });
 fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A161`); appendText; 
-   You`"Takeshi...what do you think you're doing?"`;
-   waitForClick; clearText; marker; sound(`T6A162`); appendText; 
-   You`"You shouldn't litter, you know?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A161)`"Takeshi...what do you think you're doing?"`;
+   You(T6A162)`"You shouldn't litter, you know?"`;
    `You picked the wrapper out of the water and 
 twisted it around her finger.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wh-who cares? It doesn't matter at this point 
 anyway..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A163`); appendText; 
-   You`"Oh, not that again. Quit your sulking, mister!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A163)`"Oh, not that again. Quit your sulking, mister!"`;
    Takeshi`"I'm not sulking."`;
-   waitForClick; clearText; marker; sound(`T6A164`); appendText; 
-   You`"If you saaay so..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A164)`"If you saaay so..."`;
    `You shrugged and let out a deep sigh.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A165`); appendText; 
-   You`"*siiiigggggghhhhhh*"`;
-   waitForClick; clearText; 
+   You(T6A165)`"*siiiigggggghhhhhh*"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A166`); appendText; 
-   You`"Alright!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A166)`"Alright!"`;
    `I glanced over to the corner of the room and 
 saw Coco and Kid climbing a statue.`;
-   waitForClick; clearText; marker; appendText; 
    `Looking over at them...`;
-   waitForClick; clearText; marker; appendText; 
    `You and I sat down on the circular stage.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A167`); appendText; 
-   You`"The reason is totally obvious."`;
-   waitForClick; clearText; marker; sound(`T6A168`); appendText; 
-   You`"You don't have to say anything."`;
-   waitForClick; clearText; marker; sound(`T6A169`); appendText; 
-   You`"Even if you look fine, I know it's just for 
+   You(T6A167)`"The reason is totally obvious."`;
+   You(T6A168)`"You don't have to say anything."`;
+   You(T6A169)`"Even if you look fine, I know it's just for 
 show."`;
-   waitForClick; clearText; marker; sound(`T6A170`); appendText; 
-   You`"I know you're depressed, Takeshi."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A170)`"I know you're depressed, Takeshi."`;
    Takeshi`"W-well because! I mean, i-it isn't like that 
 at all...!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A171`); appendText; 
-   You`"Because? What's this 'because'?"`;
-   waitForClick; clearText; marker; sound(`T6A172`); appendText; 
-   You`"Obviously you're hiding something. You said 
+   You(T6A171)`"Because? What's this 'because'?"`;
+   You(T6A172)`"Obviously you're hiding something. You said 
 'because.'"`;
-   waitForClick; clearText; marker; sound(`T6A173`); appendText; 
-   You`"That's a little strange, don't you think?"`;
-   waitForClick; clearText; 
+   You(T6A173)`"That's a little strange, don't you think?"`;
+
 });
 fgload({ id: 1, name: `YU02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A174`); appendText; 
-   You`"Come on, try to prove me wrong."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A174)`"Come on, try to prove me wrong."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `I was pretending I was fine.`;
-   waitForClick; clearText; marker; appendText; 
    `Even I knew the reason was obvious.`;
-   waitForClick; clearText; marker; appendText; 
    `I was worried about 'her'...`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU13ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A175`); appendText; 
-   You`"*siiiigggggghhhhhh*"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A175)`"*siiiigggggghhhhhh*"`;
    `You let out another fake sigh again.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A176`); appendText; 
-   You`"Well, if you're not going to tell me, do you 
+   You(T6A176)`"Well, if you're not going to tell me, do you 
 mind if I ask a question?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Go ahead..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"As you wish..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"*sigh*"`;
-   waitForClick; clearText; marker; appendText; 
    `This time I was the one to sigh.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A177`); appendText; 
-   You`"Okay! Here I go!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A177)`"Okay! Here I go!"`;
    Takeshi`"Well, hurry up already."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A178`); appendText; 
-   You`"What are you so angry about?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A178)`"What are you so angry about?"`;
    Takeshi`"I'm not angry about anything."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A179`); appendText; 
-   You`"Okay, okay..."`;
-   waitForClick; clearText; 
+   You(T6A179)`"Okay, okay..."`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The Kid and Pipi were playing sumo. Coco was 
 the referee.`;
-   waitForClick; clearText; marker; appendText; 
    `I watching them...`;
-   waitForClick; clearText; marker; appendText; 
    `...as You spoke.`;
-   waitForClick; clearText; 
+
 });
 if (l_sora_flag == 0) goto(lbl_00001090);
 showTextbox();
 text(() => {
-   marker; sound(`T6A180`); appendText; 
-   You`"Hey, Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T6A181`); appendText; 
-   You`"Do you know about the malfunction in Sora's 
+   You(T6A180)`"Hey, Takeshi..."`;
+   You(T6A181)`"Do you know about the malfunction in Sora's 
 thought process?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"I don't know."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"No, wait, maybe I do know."`;
-   waitForClick; clearText; marker; sound(`T6A182`); appendText; 
-   You`"Well, which one is it?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A182)`"Well, which one is it?"`;
    Takeshi`"I can't say either way."`;
-   waitForClick; clearText; marker; sound(`T6A183`); appendText; 
-   You`"Ah, so you're one of those indecisive types, 
+   You(T6A183)`"Ah, so you're one of those indecisive types, 
 huh?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Alright, alright..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"But I can't talk about it."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"It's a secret, between Sora and me."`;
-   waitForClick; clearText; marker; appendText; 
    `It was likely that Sora was jealous of 
 Tsugumi and me.`;
-   waitForClick; clearText; marker; appendText; 
    `But I was pretty sure A.I. didn't understand 
 emotions like jealousy.`;
-   waitForClick; clearText; marker; appendText; 
    `Always bothered by emotions that she didn't 
 understand. Sora...`;
-   waitForClick; clearText; marker; appendText; 
    `Asking me to explain them to her. Sora...`;
-   waitForClick; clearText; marker; appendText; 
    `Sharp twinges nagged at my heart.`;
-   waitForClick; clearText; marker; sound(`T6A184`); appendText; 
-   You`"Oh really? I see. It's a secret, huh?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A184)`"Oh really? I see. It's a secret, huh?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A185`); appendText; 
-   You`"By the way..."`;
-   waitForClick; clearText; marker; sound(`T6A186`); appendText; 
-   You`"When I was searching through LeMMIH I found 
+   You(T6A185)`"By the way..."`;
+   You(T6A186)`"When I was searching through LeMMIH I found 
 this out... "`;
-   waitForClick; clearText; marker; sound(`T6A187`); appendText; 
-   You`"One feature of Sora's system is the ability 
+   You(T6A187)`"One feature of Sora's system is the ability 
 to engage in self-study, but she is unable to 
 manipulate memories."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What did you just say?"`;
-   waitForClick; clearText; marker; sound(`T6A188`); appendText; 
-   You`"She is able to - by herself - store 
+   You(T6A188)`"She is able to - by herself - store 
 information she accumulates through 
 self-study."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"No, the part after that..."`;
-   waitForClick; clearText; marker; sound(`T6A189`); appendText; 
-   You`"She isn't able to manipulate or delete 
+   You(T6A189)`"She isn't able to manipulate or delete 
 memories...by herself. The only thing that 
 can change is the priority she puts on 
 information in her database."`;
-   waitForClick; clearText; marker; sound(`T6A190`); appendText; 
-   You`"The only way to perform a system recovery is 
+   You(T6A190)`"The only way to perform a system recovery is 
 when the system crashes. As a last resort..."`;
-   waitForClick; clearText; marker; sound(`T6A191`); appendText; 
-   You`"And only humans approved by the system can 
+   You(T6A191)`"And only humans approved by the system can 
 restart her."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `Meaning that she couldn't have undergone a 
 system recovery last night.`;
-   waitForClick; clearText; marker; appendText; 
    `Sora...`;
-   waitForClick; clearText; marker; appendText; 
    `She told me the truth.`;
-   waitForClick; clearText; marker; appendText; 
    `But at the same time she lied.`;
-   waitForClick; clearText; marker; appendText; 
    `A computer program that could only accept 
 'yes' or 'no,' 'ones' and 'zeros,' had tried 
 desperately to accept a contradiction.`;
-   waitForClick; clearText; marker; sound(`T6A192`); appendText; 
-   You`"In a sense, A.I. is similar to people."`;
-   waitForClick; clearText; marker; sound(`T6A193`); appendText; 
-   You`"It can pretend that it didn't notice 
+   You(T6A192)`"In a sense, A.I. is similar to people."`;
+   You(T6A193)`"It can pretend that it didn't notice 
 something, but it's not easy for it to forget 
 things..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Why are you telling me this?"`;
-   waitForClick; clearText; marker; sound(`T6A194`); appendText; 
-   You`"I wonder...?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A194)`"I wonder...?"`;
    `You said this sarcastically, playing dumb.`;
-   waitForClick; clearText; marker; appendText; 
    `Then she laughed mischievously.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Listen...You..."`;
-   waitForClick; clearText; marker; sound(`T6A195`); appendText; 
-   You`"Whaaat?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A195)`"Whaaat?"`;
    Takeshi`"Even if Sora's memory was being stored 
 somewhere above us, do you think she really 
 wants to be rescued with the rest of us?"`;
-   waitForClick; clearText; marker; sound(`T6A196`); appendText; 
-   You`"What do you think Takeshi?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A196)`"What do you think Takeshi?"`;
    Takeshi`"Of course I...I want her to be saved along 
 with everyone."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"LeMU is Sora's eyes, her body. Even if her 
 mind is in another section, if this part 
 sinks, part of her will go down with it."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"And if that's the case, no matter what we 
 do, there's no way to rescue her from here 
 completely..."`;
-   waitForClick; clearText; marker; sound(`T6A197`); appendText; 
-   You`"Yeah. I really hope that we can all escape 
+   You(T6A197)`"Yeah. I really hope that we can all escape 
 together."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"It sure would be nice for that wish to come 
 true..."`;
-   waitForClick; clearText; marker; sound(`T6A198`); appendText; 
-   You`"Yeah...it would."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A198)`"Yeah...it would."`;
    `Coco and Pipi...`;
-   waitForClick; clearText; marker; appendText; 
    `I could hear splashes as they ran.`;
-   waitForClick; clearText; marker; sound(`T6A199`); appendText; 
-   You`"Actually, a close friend of mine told me 
+   You(T6A199)`"Actually, a close friend of mine told me 
 this once, but..."`;
-   waitForClick; clearText; marker; sound(`T6A200`); appendText; 
-   You`"Believe it, desire it and it can come true..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A200)`"Believe it, desire it and it can come true..."`;
    Takeshi`"Believe it, desire it, and it can..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What is that, something you read in a book?"`;
-   waitForClick; clearText; marker; sound(`T6A201`); appendText; 
-   You`"Well...not exactly."`;
-   waitForClick; clearText; marker; sound(`T6A202`); appendText; 
-   You`"It's a sort of phenomenon. I don't know if 
+   You(T6A201)`"Well...not exactly."`;
+   You(T6A202)`"It's a sort of phenomenon. I don't know if 
 it's true or not. It's just a kind of 
 hypothesis."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hypothesis?"`;
-   waitForClick; clearText; marker; sound(`T6A203`); appendText; 
-   You`"Yeah."`;
-   waitForClick; clearText; marker; sound(`T6A204`); appendText; 
-   You`"It's called..."`;
-   waitForClick; clearText; marker; sound(`T6A205`); appendText; 
-   You`"Cure."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A203)`"Yeah."`;
+   You(T6A204)`"It's called..."`;
+   You(T6A205)`"Cure."`;
    Takeshi`"Cure?"`;
-   waitForClick; clearText; marker; appendText; 
    `Cure...`;
-   waitForClick; clearText; marker; appendText; 
    `I pondered the word for a moment.`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_00001095);
 let lbl_00001090;
 showTextbox();
 text(() => {
-   marker; sound(`T6A206`); appendText; 
-   You`"Hey...Takeshi..."`;
-   waitForClick; clearText; marker; sound(`T6A207`); appendText; 
-   You`"About Tsugumi's injury..."`;
-   waitForClick; clearText; marker; sound(`T6A208`); appendText; 
-   You`"It is healing really quickly..."`;
-   waitForClick; clearText; marker; sound(`T6A209`); appendText; 
-   You`"She didn't even need stitches, you know."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A206)`"Hey...Takeshi..."`;
+   You(T6A207)`"About Tsugumi's injury..."`;
+   You(T6A208)`"It is healing really quickly..."`;
+   You(T6A209)`"She didn't even need stitches, you know."`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A210`); appendText; 
-   You`"Tsugumi seems like she leads a normal life, 
+   You(T6A210)`"Tsugumi seems like she leads a normal life, 
 just like you and me..."`;
-   waitForClick; clearText; marker; sound(`T6A211`); appendText; 
-   You`"And I try not to worry too much about her 
+   You(T6A211)`"And I try not to worry too much about her 
 and just accept things as I see them, but..."`;
-   waitForClick; clearText; marker; sound(`T6A212`); appendText; 
-   You`"But that just isn't normal."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A212)`"But that just isn't normal."`;
    `She looked down at her feet when she spoke.`;
-   waitForClick; clearText; marker; sound(`T6A213`); appendText; 
-   You`"Have you heard about Tsugumi's condition?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A213)`"Have you heard about Tsugumi's condition?"`;
    Takeshi`"No I haven't..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Wait, I might have."`;
-   waitForClick; clearText; marker; sound(`T6A214`); appendText; 
-   You`"You can really be vague, sometimes, you know?"`;
-   waitForClick; clearText; marker; sound(`T6A215`); appendText; 
-   You`"Which one is it?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A214)`"You can really be vague, sometimes, you know?"`;
+   You(T6A215)`"Which one is it?"`;
    Takeshi`"I'm sorry...I forgot."`;
-   waitForClick; clearText; marker; sound(`T6A216`); appendText; 
-   You`"You forgot!?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A216)`"You forgot!?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A217`); appendText; 
-   You`"So you're one of those indecisive type of 
+   You(T6A217)`"So you're one of those indecisive type of 
 guys, hmmm?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A218`); appendText; 
-   You`"Come on! Say something..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A218)`"Come on! Say something..."`;
    `I was silent.`;
-   waitForClick; clearText; marker; appendText; 
    `I figured it was something just between 
 Tsugumi and me.`;
-   waitForClick; clearText; marker; appendText; 
    `And...`;
-   waitForClick; clearText; marker; appendText; 
    `I didn't really know enough about her 
 condition to say 'yeah, I know something.'`;
-   waitForClick; clearText; marker; appendText; 
    `Plus, I was still having a difficult time 
 believing the whole thing.`;
-   waitForClick; clearText; marker; appendText; 
    `Even when I saw it with my own eyes, part of 
 my brain refused to accept it.`;
-   waitForClick; clearText; marker; sound(`T6A219`); appendText; 
-   You`"Let's just drop it..."`;
-   waitForClick; clearText; marker; sound(`T6A220`); appendText; 
-   You`"Ha ha. You really forgot didn't you?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A219)`"Let's just drop it..."`;
+   You(T6A220)`"Ha ha. You really forgot didn't you?"`;
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A221`); appendText; 
-   You`"Well I guess there's nothing we can do about 
+   You(T6A221)`"Well I guess there's nothing we can do about 
 it."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"How come you asked me about it?"`;
-   waitForClick; clearText; marker; sound(`T6A222`); appendText; 
-   You`"I wonder why?"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A222)`"I wonder why?"`;
    `You said this sarcastically, playing dumb.`;
-   waitForClick; clearText; marker; appendText; 
    `And then a serious look formed on her face.`;
-   waitForClick; clearText; marker; sound(`T6A223`); appendText; 
-   You`"The truth is..."`;
-   waitForClick; clearText; marker; sound(`T6A224`); appendText; 
-   You`"When I was looking at LeMMIH, I came upon 
+   You(T6A223)`"The truth is..."`;
+   You(T6A224)`"When I was looking at LeMMIH, I came upon 
 some interesting information in the medical 
 database."`;
-   waitForClick; clearText; marker; sound(`T6A225`); appendText; 
-   You`"It was from the Leiblich Pharmaceutical 
+   You(T6A225)`"It was from the Leiblich Pharmaceutical 
 database..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Leiblich Pharmaceutical?"`;
-   waitForClick; clearText; marker; appendText; 
    You`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Database?"`;
-   waitForClick; clearText; marker; sound(`T6A226`); appendText; 
-   You`"I think they use it during treatment in the 
+   You(T6A226)`"I think they use it during treatment in the 
 infirmary, but..."`;
-   waitForClick; clearText; marker; appendText; 
    `Coco and Pipi...`;
-   waitForClick; clearText; marker; appendText; 
    `I could hear the splashes from their running 
 echo.`;
-   waitForClick; clearText; marker; sound(`T6A227`); appendText; 
-   You`"When I scoured the database...I couldn't 
+   You(T6A227)`"When I scoured the database...I couldn't 
 believe what I read."`;
-   waitForClick; clearText; marker; sound(`T6A228`); appendText; 
-   You`"A body that doesn't grow old..."`;
-   waitForClick; clearText; marker; sound(`T6A229`); appendText; 
-   You`"A mutated body type because of a virus..."`;
-   waitForClick; clearText; marker; sound(`T6A230`); appendText; 
-   You`"It shakes the foundations of modern 
+   You(T6A228)`"A body that doesn't grow old..."`;
+   You(T6A229)`"A mutated body type because of a virus..."`;
+   You(T6A230)`"It shakes the foundations of modern 
 science..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"........."`;
-   waitForClick; clearText; marker; sound(`T6A231`); appendText; 
-   You`"I might have found something related to 
+   You(T6A231)`"I might have found something related to 
 Tsugumi's condition."`;
-   waitForClick; clearText; marker; sound(`T6A232`); appendText; 
-   You`"In the database I searched through a number 
+   You(T6A232)`"In the database I searched through a number 
 of old medical records."`;
-   waitForClick; clearText; marker; sound(`T6A233`); appendText; 
-   You`"I found one that mirrors Tsugumi's condition."`;
-   waitForClick; clearText; marker; sound(`T6A234`); appendText; 
-   You`"Generally speaking, the number of cases of 
+   You(T6A233)`"I found one that mirrors Tsugumi's condition."`;
+   You(T6A234)`"Generally speaking, the number of cases of 
 victims of this virus known is very small.."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What...?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Hey hey! Hold on a sec..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"How come LeMU has that kind of information?"`;
-   waitForClick; clearText; marker; sound(`T6A235`); appendText; 
-   You`"I don't know! Why ask me?"`;
-   waitForClick; clearText; marker; sound(`T6A236`); appendText; 
-   You`"All I do know is that data and the name of 
+   You(T6A235)`"I don't know! Why ask me?"`;
+   You(T6A236)`"All I do know is that data and the name of 
 the virus."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"The name of the...virus?"`;
-   waitForClick; clearText; marker; sound(`T6A237`); appendText; 
-   You`"Yeah, the name."`;
-   waitForClick; clearText; marker; sound(`T6A238`); appendText; 
-   You`"It's called..."`;
-   waitForClick; clearText; marker; sound(`T6A239`); appendText; 
-   You`"Cure."`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A237)`"Yeah, the name."`;
+   You(T6A238)`"It's called..."`;
+   You(T6A239)`"Cure."`;
    Takeshi`"Cure?"`;
-   waitForClick; clearText; marker; appendText; 
    `Cure.`;
-   waitForClick; clearText; marker; appendText; 
    `I pondered the name for a moment.`;
-   waitForClick; clearText; 
+
 });
 let lbl_00001095;
 hideTextbox();
@@ -2493,29 +1815,24 @@ playSFX({ name: `SE01_00`, a1: 0, volume: 90 });
 stopBGM();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Just then...`;
-   waitForClick; clearText; marker; sound(`T6A240`); appendText; 
-   Kid`"Everyone! We've got trouble!"`;
-   waitForClick; clearText; 
+   Kid(T6A240)`"Everyone! We've got trouble!"`;
+
 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Kid came running into the room yelling.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 fgload({ id: 1, name: `KA04ADM`, x: 320, useAnim: true });
 stopSFX()
 showTextbox();
 text(() => {
-   marker; appendText; 
    Takeshi`"Kid? Where the heck did you just go?"`;
-   waitForClick; clearText; marker; sound(`T6A241`); appendText; 
-   You`"Problem? What kind of problem?"`;
-   waitForClick; clearText; 
+   You(T6A241)`"Problem? What kind of problem?"`;
+
 });
 hideTextbox();
 playBGM({ num: 12, volume: 100 });
@@ -2523,48 +1840,32 @@ removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `YU06ADM`, name2: `KA08ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A242`); appendText; 
-   Kid`"C-come on! We've gotta go and stop it!"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A242)`"C-come on! We've gotta go and stop it!"`;
    `Kid was breathing heavily, yelling between 
 breaths.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Stop what? Hey, explain what's going on."`;
-   waitForClick; clearText; marker; sound(`T6A243`); appendText; 
-   Coco`"W-what happened?"`;
-   waitForClick; clearText; marker; sound(`PIPI_00`); appendText; 
-   Pipi`"Woof!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A243)`"W-what happened?"`;
+   Pipi(PIPI_00)`"Woof!"`;
    `Coco and Pipi came over to see what all the 
 commotion was about.`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 multifgload3({ name1: `YU18ADS`, name2: `CO06ADS`, name3: `KA08ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A244`); appendText; 
-   Kid`"The Central Control Room...!"`;
-   waitForClick; clearText; marker; sound(`T6A245`); appendText; 
-   Kid`"Sora and Tsugumi were gone for such a long 
+   Kid(T6A244)`"The Central Control Room...!"`;
+   Kid(T6A245)`"Sora and Tsugumi were gone for such a long 
 time, I..."`;
-   waitForClick; clearText; marker; sound(`T6A246`); appendText; 
-   Kid`"I went to go find them..."`;
-   waitForClick; clearText; marker; sound(`T6A247`); appendText; 
-   Kid`"And they were in a brutal argument!!"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A246)`"I went to go find them..."`;
+   Kid(T6A247)`"And they were in a brutal argument!!"`;
    Takeshi`"!!"`;
-   waitForClick; clearText; marker; sound(`T6A248`); appendText; 
-   Kid`"I just couldn't watch, so I..."`;
-   waitForClick; clearText; marker; sound(`T6A249`); appendText; 
-   You`"This is bad news...at a time like this."`;
-   waitForClick; clearText; marker; sound(`T6A250`); appendText; 
-   Coco`"L-let's go! We've got to stop them!"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A248)`"I just couldn't watch, so I..."`;
+   You(T6A249)`"This is bad news...at a time like this."`;
+   Coco(T6A250)`"L-let's go! We've got to stop them!"`;
    Takeshi`"Y-yeah! We'd better hurry!"`;
-   waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   Pipi`"Bow wow!"`;
-   waitForClick; clearText; 
+   Pipi(PIPI_04)`"Bow wow!"`;
+
 });
 hideTextbox();
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
@@ -2573,33 +1874,26 @@ bgload({ name: `BG25B3`, transition: 20 });
 clock(`13:27`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `The Kid, Coco, Pipi, You and myself...`;
-   waitForClick; clearText; marker; appendText; 
    `We sped along the wet floor to the Central 
 Control Room.`;
-   waitForClick; clearText; 
+
 });
 bgload({ name: `BG15B1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A251`); appendText; 
-   You`"Sora!"`;
-   waitForClick; clearText; marker; sound(`T6A252`); appendText; 
-   Coco`"Tsugumi!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A251)`"Sora!"`;
+   Coco(T6A252)`"Tsugumi!"`;
    `I pushed the button to open the door.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A253`); appendText; 
-   Tsugumi`".........!"`;
-   waitForClick; clearText; marker; sound(`T6A254`); appendText; 
-   Sora`".........!"`;
-   waitForClick; clearText; 
+   Tsugumi(T6A253)`".........!"`;
+   Sora(T6A254)`".........!"`;
+
 });
 hideTextbox();
 stopBGM();
@@ -2607,437 +1901,322 @@ playBGM({ num: 15, volume: 100 });
 bgload({ name: `BG16A1`, transition: 10 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We burst into the room...`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `TU18ADM`, name2: `SO14ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `...We found Tsugumi and Sora screaming at each 
 other.`;
-   waitForClick; clearText; marker; appendText; 
    `Neither one would give an inch. They just 
 glared at one another.`;
-   waitForClick; clearText; marker; appendText; 
    `It looked as though they had been fighting 
 for several minutes. The room was filled with 
 tension.`;
-   waitForClick; clearText; marker; sound(`T6A255`); appendText; 
-   Sora`"Beneath us?"`;
-   waitForClick; clearText; marker; sound(`T6A256`); appendText; 
-   Sora`"There aren't any floors underneath Dritte 
+   Sora(T6A255)`"Beneath us?"`;
+   Sora(T6A256)`"There aren't any floors underneath Dritte 
 stock. We can't go down any further."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A257`); appendText; 
-   Tsugumi`"Liar..."`;
-   waitForClick; clearText; marker; sound(`T6A258`); appendText; 
-   Tsugumi`"You're lying..."`;
-   waitForClick; clearText; marker; sound(`T6A259`); appendText; 
-   Tsugumi`"I saw down from Qualle, and borrowing your 
+   Tsugumi(T6A257)`"Liar..."`;
+   Tsugumi(T6A258)`"You're lying..."`;
+   Tsugumi(T6A259)`"I saw down from Qualle, and borrowing your 
 eyes, I was able to access LeMMIH, it took a 
 while though..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A260`); appendText; 
-   Tsugumi`"I finally got proof. There is more to LeMU 
+   Tsugumi(T6A260)`"I finally got proof. There is more to LeMU 
 below us."`;
-   waitForClick; clearText; marker; sound(`T6A261`); appendText; 
-   Tsugumi`"Um, there's another installation other than 
+   Tsugumi(T6A261)`"Um, there's another installation other than 
 LeMU...and it's right below us. Really far 
 down."`;
-   waitForClick; clearText; marker; sound(`T6A262`); appendText; 
-   Tsugumi`"I'm right, aren't I?"`;
-   waitForClick; clearText; 
+   Tsugumi(T6A262)`"I'm right, aren't I?"`;
+
 });
 fgload({ id: 2, name: `SO13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`".........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SO14ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A263`); appendText; 
-   Sora`"I can't answer that question..."`;
-   waitForClick; clearText; 
+   Sora(T6A263)`"I can't answer that question..."`;
+
 });
 fgload({ id: 1, name: `TU17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A264`); appendText; 
-   Tsugumi`"Don't tell me that, just answer me!"`;
-   waitForClick; clearText; marker; sound(`T6A265`); appendText; 
-   Tsugumi`"I did a Turing test, and I found out that 
+   Tsugumi(T6A264)`"Don't tell me that, just answer me!"`;
+   Tsugumi(T6A265)`"I did a Turing test, and I found out that 
 you really are A.I."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A266`); appendText; 
-   Tsugumi`"As long as you aren't blocked by a protect 
+   Tsugumi(T6A266)`"As long as you aren't blocked by a protect 
 routine, you have to answer humans honestly."`;
-   waitForClick; clearText; marker; sound(`T6A267`); appendText; 
-   Tsugumi`"That's part of your functioning."`;
-   waitForClick; clearText; 
+   Tsugumi(T6A267)`"That's part of your functioning."`;
+
 });
 fgload({ id: 2, name: `SO13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`"........"`;
-   waitForClick; clearText; marker; sound(`T6A268`); appendText; 
-   Tsugumi`"It isn't possible to get there using normal 
+   Tsugumi(T6A268)`"It isn't possible to get there using normal 
 elevators."`;
-   waitForClick; clearText; marker; sound(`T6A269`); appendText; 
-   Tsugumi`"The only way there is through a locked door."`;
-   waitForClick; clearText; 
+   Tsugumi(T6A269)`"The only way there is through a locked door."`;
+
 });
 fgload({ id: 1, name: `TU17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A270`); appendText; 
-   Tsugumi`"That room..."`;
-   waitForClick; clearText; marker; sound(`T6A271`); appendText; 
-   Tsugumi`"HIMMEL...That's your name, isn't it Sora?"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A270)`"That room..."`;
+   Tsugumi(T6A271)`"HIMMEL...That's your name, isn't it Sora?"`;
    Sora`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A272`); appendText; 
-   Tsugumi`"We aren't getting anywhere just sitting 
+   Tsugumi(T6A272)`"We aren't getting anywhere just sitting 
 around."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A273`); appendText; 
-   Tsugumi`"We're fighting against time!"`;
-   waitForClick; clearText; marker; sound(`T6A274`); appendText; 
-   Tsugumi`"The truth is behind that door."`;
-   waitForClick; clearText; marker; sound(`T6A275`); appendText; 
-   Tsugumi`"Tell us the password to that door...the one 
+   Tsugumi(T6A273)`"We're fighting against time!"`;
+   Tsugumi(T6A274)`"The truth is behind that door."`;
+   Tsugumi(T6A275)`"Tell us the password to that door...the one 
 leading to HIMMEL, Sora!"`;
-   waitForClick; clearText; marker; sound(`T6A276`); appendText; 
-   Sora`"It is true..."`;
-   waitForClick; clearText; marker; sound(`T6A277`); appendText; 
-   Sora`"That HIMMEL...in German means sky, or 'Sora' 
+   Sora(T6A276)`"It is true..."`;
+   Sora(T6A277)`"That HIMMEL...in German means sky, or 'Sora' 
 in Japanese..."`;
-   waitForClick; clearText; marker; sound(`T6A278`); appendText; 
-   Sora`"But Tsugumi, I..."`;
-   waitForClick; clearText; marker; sound(`T6A279`); appendText; 
-   Sora`"I don't have the security access to open 
+   Sora(T6A278)`"But Tsugumi, I..."`;
+   Sora(T6A279)`"I don't have the security access to open 
 that door."`;
-   waitForClick; clearText; marker; sound(`T6A280`); appendText; 
-   Sora`"I'm sorry..."`;
-   waitForClick; clearText; 
+   Sora(T6A280)`"I'm sorry..."`;
+
 });
 fgload({ id: 1, name: `TU04ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A281`); appendText; 
-   Tsugumi`"That's a lie!"`;
-   waitForClick; clearText; 
+   Tsugumi(T6A281)`"That's a lie!"`;
+
 });
 fgload({ id: 2, name: `SO14ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A282`); appendText; 
-   Sora`"It is not!"`;
-   waitForClick; clearText; 
+   Sora(T6A282)`"It is not!"`;
+
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A283`); appendText; 
-   Tsugumi`"Some A.I. you are! You think I'm stupid? You 
+   Tsugumi(T6A283)`"Some A.I. you are! You think I'm stupid? You 
 think you can fool me?"`;
-   waitForClick; clearText; marker; sound(`T6A284`); appendText; 
-   Sora`"It is not a lie! I am telling the truth!!"`;
-   waitForClick; clearText; marker; sound(`T6A285`); appendText; 
-   Sora`"I don't have any information of what's 
+   Sora(T6A284)`"It is not a lie! I am telling the truth!!"`;
+   Sora(T6A285)`"I don't have any information of what's 
 behind that door..."`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 fgload({ id: 1, name: `CO04ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A286`); appendText; 
-   Coco`"Stop it!!"`;
-   waitForClick; clearText; 
+   Coco(T6A286)`"Stop it!!"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Coco jumped between them.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `CO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A287`); appendText; 
-   Coco`"Stop it, both of you!"`;
-   waitForClick; clearText; 
+   Coco(T6A287)`"Stop it, both of you!"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `TU06ADM`, name2: `SO06ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Both of them flinched for a moment, but 
 continued to look bitter.`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `TU05ADM`, name2: `SO17ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A288`); appendText; 
-   Sora`"Coco..."`;
-   waitForClick; clearText; marker; sound(`T6A289`); appendText; 
-   Tsugumi`"Coco..."`;
-   waitForClick; clearText; 
+   Sora(T6A288)`"Coco..."`;
+   Tsugumi(T6A289)`"Coco..."`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 fgload({ id: 1, name: `CO04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A290`); appendText; 
-   Coco`"Stop it...okay? Please!"`;
-   waitForClick; clearText; 
+   Coco(T6A290)`"Stop it...okay? Please!"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload3({ name1: `TU05ADS`, name2: `CO05ADS`, name3: `SO13ADS`, x1: 128, x2: 320, x3: 512, useAnim: 3 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A291`); appendText; 
-   Sora`"Coco, this is between Tsugumi and me."`;
-   waitForClick; clearText; marker; sound(`T6A292`); appendText; 
-   Tsugumi`"Get back Coco...or I'm really going to get 
+   Sora(T6A291)`"Coco, this is between Tsugumi and me."`;
+   Tsugumi(T6A292)`"Get back Coco...or I'm really going to get 
 mad."`;
-   waitForClick; clearText; marker; sound(`T6A293`); appendText; 
-   Coco`"Why?"`;
-   waitForClick; clearText; marker; sound(`T6A294`); appendText; 
-   Coco`"Tsugumi, Sora, stop it!"`;
-   waitForClick; clearText; marker; sound(`T6A295`); appendText; 
-   Coco`"Why are you arguing?"`;
-   waitForClick; clearText; marker; sound(`T6A296`); appendText; 
-   Sora`"This isn't an argument."`;
-   waitForClick; clearText; marker; sound(`T6A297`); appendText; 
-   Tsugumi`"We aren't."`;
-   waitForClick; clearText; 
+   Coco(T6A293)`"Why?"`;
+   Coco(T6A294)`"Tsugumi, Sora, stop it!"`;
+   Coco(T6A295)`"Why are you arguing?"`;
+   Sora(T6A296)`"This isn't an argument."`;
+   Tsugumi(T6A297)`"We aren't."`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 fgload({ id: 1, name: `CO03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A298`); appendText; 
-   Coco`"You're lying...it's a lie...!"`;
-   waitForClick; clearText; 
+   Coco(T6A298)`"You're lying...it's a lie...!"`;
+
 });
 fgload({ id: 1, name: `CO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A299`); appendText; 
-   Coco`"We shouldn't be fighting...!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A299)`"We shouldn't be fighting...!"`;
    `Large tears welled and flowed from Coco's eyes.`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `TU03ADM`, name2: `SO17ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sora`"........."`;
-   waitForClick; clearText; marker; appendText; 
    Tsugumi`"........."`;
-   waitForClick; clearText; marker; appendText; 
    `The tears had a freezing effect on Sora and 
 Tsugumi.`;
-   waitForClick; clearText; 
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 fgload({ id: 1, name: `CO10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A300`); appendText; 
-   Coco`"Agh..."`;
-   waitForClick; clearText; marker; sound(`T6A301`); appendText; 
-   Coco`"Aaaghh...."`;
-   waitForClick; clearText; marker; sound(`T6A302`); appendText; 
-   Coco`"Waagghh...."`;
-   waitForClick; clearText; 
+   Coco(T6A300)`"Agh..."`;
+   Coco(T6A301)`"Aaaghh...."`;
+   Coco(T6A302)`"Waagghh...."`;
+
 });
 hideTextbox();
 playSFX({ name: `SE01_05`, a1: 0, volume: 95 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Coco started gasping.`;
-   waitForClick; clearText; marker; appendText; 
    `She suddenly ran to the corner of the console.`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE05_10`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Or...rather fell there.`;
-   waitForClick; clearText; marker; appendText; 
    `She leaned against the console, barely able 
 to support herself.`;
-   waitForClick; clearText; marker; appendText; 
    `Coco's body was shaking slightly.`;
-   waitForClick; clearText; marker; appendText; 
    `Her lips trembled.`;
-   waitForClick; clearText; marker; appendText; 
    `I could see that her lips had gone pale 
 quickly.`;
-   waitForClick; clearText; marker; appendText; 
    `It was different than crying... `;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Coco..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"H-hey, what...?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"What's up with you all of a sudden...?"`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: RED, transition: 2 });
 stopBGM();
 showTextbox();
 text(() => {
-   marker; sound(`T6A303`); appendText; 
-   Coco`"Agh...!!"`;
-   delay(0); 
+   Coco(T6A303)`"Agh...!!"${noWait}`;
+
 });
 bgload_keepFg({ name: `IMG04A`, transition: 10 });
 bgload_keepFg({ name: `KURO_BG`, transition: 20 });
 showTextbox();
 text(() => {
-   appendText; waitForClick; clearText; 
+   Append``;
+
 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Coco's lips were suddenly...stained red.`;
-   waitForClick; clearText; marker; sound(`T6A304`); appendText; 
-   Kid`"Coco!!"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A304)`"Coco!!"`;
    `The Kid opened his eyes wide, looking shocked.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 playBGM({ num: 11, volume: 100 });
 bgload({ name: `EV_CO06A`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; sound(`T6A305`); appendText; 
-   Coco`"Ugh...uh...uuugh..."`;
-   waitForClick; clearText; marker; sound(`T6A306`); appendText; 
-   Coco`"Gah...uuuugh...uuugh..."`;
-   waitForClick; clearText; marker; sound(`T6A307`); appendText; 
-   Coco`"Nngagh...uuuh...uuugh..."`;
-   waitForClick; clearText; marker; sound(`T6A308`); appendText; 
-   You`"Coco!"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A305)`"Ugh...uh...uuugh..."`;
+   Coco(T6A306)`"Gah...uuuugh...uuugh..."`;
+   Coco(T6A307)`"Nngagh...uuuh...uuugh..."`;
+   You(T6A308)`"Coco!"`;
    `Blood was flowing onto the floor of the 
 Control Room.`;
-   waitForClick; clearText; marker; appendText; 
    `It wouldn't stop.`;
-   waitForClick; clearText; marker; appendText; 
    `It kept falling from her mouth.`;
-   waitForClick; clearText; marker; sound(`T6A309`); appendText; 
-   Tsugumi`"What's happening!?"`;
-   waitForClick; clearText; marker; sound(`T6A310`); appendText; 
-   Sora`"Coco!"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A309)`"What's happening!?"`;
+   Sora(T6A310)`"Coco!"`;
    `Coco shook her head and trembled violently.`;
-   waitForClick; clearText; marker; appendText; 
    `She had her hand to her mouth, desperately 
 trying not to cough.`;
-   waitForClick; clearText; marker; sound(`T6A311`); appendText; 
-   Sora`"It can't be...!"`;
-   waitForClick; clearText; marker; sound(`T6A312`); appendText; 
-   Sora`"These...these symptoms are...!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A311)`"It can't be...!"`;
+   Sora(T6A312)`"These...these symptoms are...!"`;
    `Sora looked as if she were about to panic.`;
-   waitForClick; clearText; marker; sound(`T6A313`); appendText; 
-   Tsugumi`"Symptoms!? Who cares about that!"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A313)`"Symptoms!? Who cares about that!"`;
    `Tsugumi screamed, furious.`;
-   waitForClick; clearText; marker; sound(`T6A314`); appendText; 
-   Tsugumi`"Can't you tell! If this keeps up, Coco's 
+   Tsugumi(T6A314)`"Can't you tell! If this keeps up, Coco's 
 going to...!!"`;
-   waitForClick; clearText; marker; sound(`T6A315`); appendText; 
-   Kid`"Coco, hang in there!"`;
-   waitForClick; clearText; marker; sound(`T6A316`); appendText; 
-   You`"Ta-Takeshi...what are we going to do!?"`;
-   waitForClick; clearText; marker; appendText; 
+   Kid(T6A315)`"Coco, hang in there!"`;
+   You(T6A316)`"Ta-Takeshi...what are we going to do!?"`;
    Takeshi`"Hang on! Everyone don't panic! You've got to 
 stay calm!!"`;
-   waitForClick; clearText; marker; appendText; 
    `I screamed out in a loud voice to everyone.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Just calm the heck down, okay!?"`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Oh wait...maybe I need to calm down too..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Whew..."`;
-   waitForClick; clearText; marker; appendText; 
    `Everyone took deep breaths trying to settle 
 down.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Coco, just relax. You're going to be okay..."`;
-   waitForClick; clearText; marker; sound(`T6A317`); appendText; 
-   Coco`"Ugh..."`;
-   waitForClick; clearText; marker; sound(`T6A318`); appendText; 
-   Coco`"I'm...Al...right...Take...pyon."`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A317)`"Ugh..."`;
+   Coco(T6A318)`"I'm...Al...right...Take...pyon."`;
    `Steadying her trembling eyes, Coco looked at 
 me firmly.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Good girl..."`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Now hang onto me, Coco!"`;
-   waitForClick; clearText; marker; appendText; 
    `I turned around and thrust out my back toward 
 her.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Can you get on?"`;
-   waitForClick; clearText; marker; sound(`T6A319`); appendText; 
-   Coco`"Ye...yeah."`;
-   waitForClick; clearText; marker; sound(`PIPI_06`); appendText; 
-   Pipi`"*Whine*"`;
-   waitForClick; clearText; marker; appendText; 
+   Coco(T6A319)`"Ye...yeah."`;
+   Pipi(PIPI_06)`"*Whine*"`;
    `Pipi looked up worriedly at Coco.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"We're going to the infirmary on Zweite."`;
-   waitForClick; clearText; marker; sound(`T6A320`); appendText; 
-   You`"O-okay!"`;
-   waitForClick; clearText; marker; sound(`PIPI_04`); appendText; 
-   Pipi`"Woof, woof!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(T6A320)`"O-okay!"`;
+   Pipi(PIPI_04)`"Woof, woof!"`;
    `I realized that I was holding onto Coco.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
@@ -3047,16 +2226,13 @@ playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG29A1`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We were rushing up to Zweite stock 
 some 56 feet above us.`;
-   waitForClick; clearText; marker; appendText; 
    `I held Coco on my back, with You and Tsugumi 
 supporting her from the sides.`;
-   waitForClick; clearText; marker; appendText; 
    `Sora went ahead to guide us, and the kid 
 followed a short distance behind.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 bgload({ name: `BG29A1`, transition: 10 });
@@ -3064,64 +2240,51 @@ playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 bgload({ name: `BG28A3L`, transition: 20 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `We emerged at the second floor 
 emergency corridor.`;
-   waitForClick; clearText; marker; appendText; 
    Takeshi`"Which was is it, left or right!?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SO10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A321`); appendText; 
-   Sora`"Straight ahead!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sora(T6A321)`"Straight ahead!"`;
    Takeshi`"Okay!"`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `TU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`T6A322`); appendText; 
-   Tsugumi`"Don't run so fast! Stop shaking her so much!"`;
-   waitForClick; clearText; marker; appendText; 
+   Tsugumi(T6A322)`"Don't run so fast! Stop shaking her so much!"`;
    Takeshi`"I know! Just pipe down, would you?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Tsugumi`"........."`;
-   waitForClick; clearText; 
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Coco was groaning in pain on my back.`;
-   waitForClick; clearText; marker; appendText; 
    `But I could still make it.`;
-   waitForClick; clearText; marker; appendText; 
    `There was no way I was going to fail.`;
-   waitForClick; clearText; marker; appendText; 
    `I wasn't going to say 'It's no use, we're too 
 late,' and I wasn't going to let anyone else 
 say it either.`;
-   waitForClick; clearText; marker; appendText; 
    `As long as there was some hope left, I 
 wouldn't give up.`;
-   waitForClick; clearText; 
+
 });
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I took a shortcut to the nearest elevator, 
 and rushed Coco to the infirmary.`;
-   waitForClick; clearText; 
+
 });
 l_choice = 0;
 jump(`T_6B`);

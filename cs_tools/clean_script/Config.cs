@@ -15,7 +15,7 @@ class Config {
    public static readonly Regex jsInvalidChar2 = new Regex(@"[\.]");
    public static readonly Regex varop = new Regex(@".+? .+? (.+?)\) (.+?) (.+?) .+? (.+)");
    public static readonly Regex switch_varop = new Regex(@"^switch_varop \(28 0a a4\) (.+?) .+? \(00\)");
-   public static readonly CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("JScript");
+   public static readonly CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("CSharp");
    public static readonly int indent = 3;
    public static readonly string tab = new string(' ', indent);
 }

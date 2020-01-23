@@ -24,33 +24,23 @@ bgload({ name: `EV_CO03A`, transition: 0 });
 showDimOverlay();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `
 
 
-`;
-   
+${noWait}`;
+
 });
 showTextbox();
 text(() => {
-   appendText; delay(0); 
-   `           `;
-   nextPage(00); 
-   `Eine Geschichte setzt auf`;
-   nextPage(01); 
-   `
-`;
-   
+   `           ${nextPage(0)}Eine Geschichte setzt auf${nextPage(1)}${noWait}`;
+
 });
 delay({ interval: 180 });
 bgload_keepFg({ name: `EV_CO11A`, transition: 0 });
 showTextbox();
 text(() => {
-   appendText; delay(0); 
-   `                `;
-   nextPage(00); 
-   `1 Mai,2034 fort.`;
-   nextPage(01); 
+   `                ${nextPage(0)}1 Mai,2034 fort.${nextPage(1)}${noWait}`;
+
 });
 delay({ interval: 180 });
 bgload_keepFg({ name: `EV_CO11B`, transition: 0 });
@@ -61,7 +51,8 @@ dimOff_ac = 1;
 closeDimOverlay();
 showTextbox();
 text(() => {
-   marker; appendText; delay(90); delay(90); nextPage(04); 
+   `${wait(90)}${wait(90)}${noWait}`;
+   fadeClearPage();
 });
 hideTextbox();
 removeBG({ mode: BLACK, transition: 62 });
@@ -69,7 +60,7 @@ setMonoColorOverlayFadeOutDuration(16);
 fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 delay({ interval: 180 });
 delay({ interval: 180 });
 stopSFX()

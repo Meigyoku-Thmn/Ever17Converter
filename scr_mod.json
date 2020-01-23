@@ -1,12 +1,12 @@
 {
    "fileRedirect": {
-      "op00.scr": "t_5a.scr"
+      "op00.scr": "s_1a.scr"
    },
    "entryPointRedirect": {
-      "t_5a.scr": "0x00000923"
+      "s_1a.scr": "0x00000185"
    },
    "overwrite": {
-      "s_2a.scr": [
+      "s_2dđa.scr": [
       ]
    }
 }

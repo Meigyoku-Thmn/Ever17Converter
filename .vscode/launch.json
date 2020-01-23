@@ -5,6 +5,16 @@
    "version": "0.2.0",
    "configurations": [
       {
+         "name": "Clean Script",
+         "type": "coreclr",
+         "request": "launch",
+         "program": "${workspaceFolder}/cs_tools/clean_script/bin/Debug/netcoreapp3.1/clean_script.exe",
+         "preLaunchTask": "build_clean_script",
+         "logging": {
+            "moduleLoad": false
+         }
+      },
+      {
          "name": "Python Attach",
          "type": "python",
          "request": "attach",
@@ -21,7 +31,7 @@
       {
          "type": "node",
          "request": "launch",
-         "name": "Launch Program",
+         "name": "Launch Game Mod",
          "program": "${workspaceFolder}\\index.js"
       }
    ]

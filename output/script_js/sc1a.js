@@ -4,16 +4,14 @@ l_dayB = 1;
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S000`); appendText; 
-   Mayo`"No. I was all alone."`;
-   waitForClick; clearText; 
+   Mayo(C1S000)`"No. I was all alone."`;
+
 });
 fgload({ id: 1, name: `YU07BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S001`); appendText; 
-   Mayo`"There was nobody..."`;
-   waitForClick; 
+   Mayo(C1S001)`"There was nobody..."`;
+
 });
 choice(
    `Was that right...?`,
@@ -30,112 +28,86 @@ let lbl_000000ad;
 l_coco_point += 1;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Really?"`;
-   waitForClick; clearText; marker; sound(`C1S002`); appendText; 
-   Mayo`"Yeah..."`;
-   waitForClick; clearText; marker; appendText; 
+   Mayo(C1S002)`"Yeah..."`;
    Kid`"You're sure there was nobody else there?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S003`); appendText; 
-   Mayo`"I said there was nobody there."`;
-   waitForClick; clearText; marker; appendText; 
+   Mayo(C1S003)`"I said there was nobody there."`;
    Kid`"Even in the elevator next to you?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S004`); appendText; 
-   Mayo`"No. I don't think there was anybody riding 
+   Mayo(C1S004)`"No. I don't think there was anybody riding 
 in it."`;
-   waitForClick; clearText; marker; sound(`C1S005`); appendText; 
-   Mayo`"I was shouting for help the whole time and 
+   Mayo(C1S005)`"I was shouting for help the whole time and 
 nobody answered me."`;
-   waitForClick; clearText; marker; appendText; 
    `I wondered why not. The voice that I had heard 
 a little bit ago was grating on my mind.`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I just want to make sure one more time..."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Sara, there was really no one riding 
 in the elevator except for you?"`;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU06BWM`, name2: `SA06ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S006`); appendText; 
-   Sara`"Uh..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S006)`"Uh..."`;
    Kid`"So there was somebody?"`;
-   waitForClick; clearText; marker; sound(`C1S007`); appendText; 
-   Sara`"N-no...there wasn't, but..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S007)`"N-no...there wasn't, but..."`;
    Kid`"But...?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S008`); appendText; 
-   Sara`"Why...?"`;
-   waitForClick; clearText; marker; sound(`C1S009`); appendText; 
-   Sara`"...How...how do you know?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S008)`"Why...?"`;
+   Sara(C1S009)`"...How...how do you know?"`;
    Kid`"?"`;
-   waitForClick; clearText; marker; sound(`C1S010`); appendText; 
-   Sara`"My..."`;
-   waitForClick; clearText; marker; sound(`C1S011`); appendText; 
-   Sara`"My...name..."`;
-   waitForClick; clearText; 
+   Sara(C1S010)`"My..."`;
+   Sara(C1S011)`"My...name..."`;
+
 });
 stopBGM();
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"N-name...?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S012`); appendText; 
-   You`"What? Oh, that's right. We haven't told you 
+   You(C1S012)`"What? Oh, that's right. We haven't told you 
 Mayo's real name..."`;
-   waitForClick; clearText; marker; appendText; 
    `That instant, my vision shook crazily.`;
-   waitForClick; clearText; 
+
 });
 playBGM({ num: 16, volume: 100 });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Something spine-chilling was squirming in the 
 core of my body.`;
-   waitForClick; clearText; marker; appendText; 
    `The feeling spread through my network of 
 nerves to the far corners of my body in an 
 instant.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S013`); appendText; 
-   Sara`"Hey! I asked you why!"`;
-   waitForClick; clearText; 
+   Sara(C1S013)`"Hey! I asked you why!"`;
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S014`); appendText; 
-   Sara`"Do...do you know...me?"`;
-   waitForClick; clearText; 
+   Sara(C1S014)`"Do...do you know...me?"`;
+
 });
 hideTextbox();
 showDimOverlay();
@@ -143,254 +115,186 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sara Matsunaga.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
-   `
-`;
-   appendText; 
+   `${noWait}`;
    `Yes. I was sure. Her name was Sara Matsunaga.`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `But...how...`;
-   waitForClick; 
-   `
-`;
-   appendText; 
    `How did I know her name?`;
-   waitForClick; nextPage(04); 
+   fadeClearPage();
 });
 hideTextbox();
 hideTextbox();
 dimOff_ac = 0;
 closeDimOverlay();
 hideTextbox();
-AVL_Mode();
+ADV_Mode();
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"I don't know...I really don't know..."`;
-   waitForClick; clearText; marker; appendText; 
    `I cradled my head and shook it several times.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S015`); appendText; 
-   Sara`"What is this?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S015)`"What is this?"`;
    Kid`"I don't know..."`;
-   waitForClick; clearText; marker; sound(`C1S016`); appendText; 
-   Sara`"If you don't know, then I don't know!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S016)`"If you don't know, then I don't know!"`;
    Kid`"I dunno...I dunno...I dunno..."`;
-   waitForClick; clearText; marker; sound(`C1S017`); appendText; 
-   Sara`"Hey! Answer me!"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S017)`"Hey! Answer me!"`;
    Kid`"........."`;
-   waitForClick; clearText; marker; sound(`C1S018`); appendText; 
-   Sara`"How do you know me?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S018)`"How do you know me?"`;
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S019`); appendText; 
-   Sara`"Who..."`;
-   waitForClick; clearText; 
+   Sara(C1S019)`"Who..."`;
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S020`); appendText; 
-   Sara`"...Who are you?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S020)`"...Who are you?"`;
    Kid`"I said I don't know!"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"I don't know myself! I don't know!"`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Why do....I....know...your name...?"`;
-   waitForClick; clearText; marker; appendText; 
    `My temples started to throb.`;
-   waitForClick; clearText; marker; appendText; 
    `The power drained from my body.`;
-   waitForClick; clearText; marker; appendText; 
    `I crumpled on the spot as if I had been sucked 
 dry of energy.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU06BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S021`); appendText; 
-   You`"W-wait...not another one of your fits!?"`;
-   waitForClick; clearText; 
+   You(C1S021)`"W-wait...not another one of your fits!?"`;
+
 });
 fgload({ id: 1, name: `YU03BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S022`); appendText; 
-   You`"Gimme a break. Geez..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S022)`"Gimme a break. Geez..."`;
    `You's voice sounded far away.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S023`); appendText; 
-   Sara`"Fits?"`;
-   waitForClick; clearText; 
+   Sara(C1S023)`"Fits?"`;
+
 });
 fgload({ id: 1, name: `YU17BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S024`); appendText; 
-   You`"He's..."`;
-   waitForClick; clearText; marker; sound(`C1S025`); appendText; 
-   You`"...lost his memory."`;
-   waitForClick; clearText; 
+   You(C1S024)`"He's..."`;
+   You(C1S025)`"...lost his memory."`;
+
 });
 fgload({ id: 2, name: `SA06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S026`); appendText; 
-   Sara`"Lost...his...memory?"`;
-   waitForClick; clearText; marker; sound(`C1S027`); appendText; 
-   You`"Yup."`;
-   waitForClick; clearText; marker; sound(`C1S028`); appendText; 
-   You`"No matter how much you ask him, he doesn't 
+   Sara(C1S026)`"Lost...his...memory?"`;
+   You(C1S027)`"Yup."`;
+   You(C1S028)`"No matter how much you ask him, he doesn't 
 remember..."`;
-   waitForClick; clearText; marker; sound(`C1S029`); appendText; 
-   You`"If you try to make him remember, then..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S029)`"If you try to make him remember, then..."`;
    Kid`"Ooohhh...arggghhh...."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU07BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S030`); appendText; 
-   You`"See? He gets like this."`;
-   waitForClick; clearText; 
+   You(C1S030)`"See? He gets like this."`;
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Sara`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU04BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S031`); appendText; 
-   You`"Now stand up! Get a hold of yourself!"`;
-   waitForClick; clearText; 
+   You(C1S031)`"Now stand up! Get a hold of yourself!"`;
+
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `You grabbed both of my shoulders and stood 
 me up.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S032`); appendText; 
-   You`"Listen. Listen good. Look at me..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S032)`"Listen. Listen good. Look at me..."`;
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU07BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S033`); appendText; 
-   You`"I think you have lost touch with who you are, 
+   You(C1S033)`"I think you have lost touch with who you are, 
 and it scares you."`;
-   waitForClick; clearText; marker; sound(`C1S034`); appendText; 
-   You`"Because you have no memory...because you 
+   You(C1S034)`"Because you have no memory...because you 
 have no past..."`;
-   waitForClick; clearText; marker; sound(`C1S035`); appendText; 
-   You`"You've lost your past and feel like you've 
+   You(C1S035)`"You've lost your past and feel like you've 
 lost yourself...you are afraid..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S036`); appendText; 
-   You`"But you know what? There is nothing to be 
+   You(C1S036)`"But you know what? There is nothing to be 
 afraid of."`;
-   waitForClick; clearText; marker; sound(`C1S037`); appendText; 
-   You`"You are right here, right now."`;
-   waitForClick; clearText; marker; sound(`C1S038`); appendText; 
-   You`"Standing right in front of me."`;
-   waitForClick; clearText; marker; sound(`C1S039`); appendText; 
-   You`"No matter what happens, there is no way you 
+   You(C1S037)`"You are right here, right now."`;
+   You(C1S038)`"Standing right in front of me."`;
+   You(C1S039)`"No matter what happens, there is no way you 
 are just going to disappear."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 showTextbox();
 text(() => {
-   marker; sound(`C1S040`); appendText; 
-   You`"Okay? Look me in the eyes, alright?"`;
-   waitForClick; clearText; marker; sound(`C1S041`); appendText; 
-   You`"That's better..."`;
-   waitForClick; clearText; 
+   You(C1S040)`"Okay? Look me in the eyes, alright?"`;
+   You(C1S041)`"That's better..."`;
+
 });
 fgload({ id: 1, name: `YU02BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S042`); appendText; 
-   You`"Now try to smile."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S042)`"Now try to smile."`;
    Kid`"...What?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S043`); appendText; 
-   You`"Just, smile..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S043)`"Just, smile..."`;
    `I made a conscious effort to move my cheek 
 muscles.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU08BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S044`); appendText; 
-   You`"No, no, no. More. Like say....'Cheeeeeeese.'"`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S044)`"No, no, no. More. Like say....'Cheeeeeeese.'"`;
    `I put more effort into moving the muscles 
 in my face.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S045`); appendText; 
-   You`"That's a pretty forced grin, but...I guess 
+   You(C1S045)`"That's a pretty forced grin, but...I guess 
 it's good enough."`;
-   waitForClick; clearText; marker; sound(`C1S046`); appendText; 
-   You`"How's that? I'll bet you've forgotten to 
+   You(C1S046)`"How's that? I'll bet you've forgotten to 
 worry about your past, right?"`;
-   waitForClick; 
+
 });
 choice(
    `Yeah`,
@@ -403,230 +307,183 @@ switch (l_choice) {
 let lbl_00000394;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Yeah..."`;
-   waitForClick; clearText; marker; appendText; 
    `I answered You.`;
-   waitForClick; clearText; 
+
 });
 showTextbox();
 text(() => {
-   marker; sound(`C1S047`); appendText; 
-   You`"See? The past isn't important."`;
-   waitForClick; clearText; marker; sound(`C1S048`); appendText; 
-   You`"What is important is whether or not you can 
+   You(C1S047)`"See? The past isn't important."`;
+   You(C1S048)`"What is important is whether or not you can 
 smile right now..."`;
-   waitForClick; clearText; marker; sound(`C1S049`); appendText; 
-   You`"That is proof of your existence..."`;
-   waitForClick; clearText; marker; sound(`C1S050`); appendText; 
-   You`"So you have to smile."`;
-   waitForClick; clearText; 
+   You(C1S049)`"That is proof of your existence..."`;
+   You(C1S050)`"So you have to smile."`;
+
 });
 fgload({ id: 1, name: `YU02BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S051`); appendText; 
-   You`"I know you are better at smiling than that."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S051)`"I know you are better at smiling than that."`;
    `Enticed by You's smile, my own cheeks started 
 to loosen naturally.`;
-   waitForClick; clearText; marker; appendText; 
    `You gently touched my hair...`;
-   waitForClick; clearText; marker; appendText; 
    `It was as if her hand sucked the pain away.`;
-   waitForClick; clearText; 
+
 });
 goto(lbl_000005ac);
 let lbl_000003b9;
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Nope...."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU07BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"It's not your problem so it's easy for you 
 to say that..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S052`); appendText; 
-   You`"But at least you've gotten better so that you 
+   You(C1S052)`"But at least you've gotten better so that you 
 can talk."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"........."`;
-   waitForClick; clearText; marker; sound(`C1S053`); appendText; 
-   You`"And do you know why?"`;
-   waitForClick; clearText; 
+   You(C1S053)`"And do you know why?"`;
+
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S054`); appendText; 
-   You`"You can speak because you are aware of 
+   You(C1S054)`"You can speak because you are aware of 
 this moment, right now."`;
-   waitForClick; clearText; marker; appendText; 
    Kid`"Right now?"`;
-   waitForClick; clearText; marker; sound(`C1S055`); appendText; 
-   You`"People have no choice but to live in the 
+   You(C1S055)`"People have no choice but to live in the 
 moment."`;
-   waitForClick; clearText; marker; sound(`C1S056`); appendText; 
-   You`"The past and the future are simply an 
+   You(C1S056)`"The past and the future are simply an 
 illusion..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S057`); appendText; 
-   You`"Trying to grab that empty image is...it's 
+   You(C1S057)`"Trying to grab that empty image is...it's 
 meaningless."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S058`); appendText; 
-   You`"So right now you should just smile as if you 
+   You(C1S058)`"So right now you should just smile as if you 
 don't care."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU02BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S059`); appendText; 
-   You`"Smile."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S059)`"Smile."`;
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 fgload({ id: 1, name: `YU04BWL`, x: 320, useAnim: true });
 playBGM({ num: 18, volume: 100 });
 showTextbox();
 text(() => {
-   marker; sound(`C1S060`); appendText; 
-   You`"Now smile!"`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S060)`"Now smile!"`;
    Kid`"I can't JUST smile..."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S061`); appendText; 
-   You`"If you don't smile...then I'll put my finger 
+   You(C1S061)`"If you don't smile...then I'll put my finger 
 up Mayo's nose."`;
-   waitForClick; clearText; marker; sound(`C1S062`); appendText; 
-   Sara`"...Huh?"`;
-   waitForClick; clearText; 
+   Sara(C1S062)`"...Huh?"`;
+
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `YU02BWM`, name2: `SA08ADM`, x1: 176, x2: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S063`); appendText; 
-   You`"I'll put finger in that gooey pit..."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S063)`"I'll put finger in that gooey pit..."`;
    `As she talked, You did exactly as she said.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA06ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S064`); appendText; 
-   Sara`"W-wait! Stop! Nakkyu!"`;
-   waitForClick; clearText; marker; sound(`C1S065`); appendText; 
-   You`"Pick, pick...goooooey..."`;
-   waitForClick; clearText; 
+   Sara(C1S064)`"W-wait! Stop! Nakkyu!"`;
+   You(C1S065)`"Pick, pick...goooooey..."`;
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S066`); appendText; 
-   Sara`"Hey...hey! Nakkyu...Nakkyu..."`;
-   waitForClick; clearText; marker; sound(`C1S067`); appendText; 
-   Sara`"Nakkyu...your finger's in my nose..."`;
-   waitForClick; clearText; marker; sound(`C1S068`); appendText; 
-   You`"Pickity, pickity...."`;
-   waitForClick; clearText; 
+   Sara(C1S066)`"Hey...hey! Nakkyu...Nakkyu..."`;
+   Sara(C1S067)`"Nakkyu...your finger's in my nose..."`;
+   You(C1S068)`"Pickity, pickity...."`;
+
 });
 fgload({ id: 2, name: `SA01ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S069`); appendText; 
-   Sara`"And now Nakkyu and I become one..."*`;
-   waitForClick; clearText; marker; sound(`C1S070`); appendText; 
-   You`"Goooooeeey..."`;
-   waitForClick; clearText; 
+   Sara(C1S069)`"And now Nakkyu and I become one..."*`;
+   You(C1S070)`"Goooooeeey..."`;
+
 });
 fgload({ id: 2, name: `SA14ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S071`); appendText; 
-   Sara`"...Wait, just what do you think you are 
+   Sara(C1S071)`"...Wait, just what do you think you are 
 doing?"`;
-   waitForClick; clearText; 
+
 });
 playSFX({ name: `SE05_01`, a1: 0, volume: 100 });
 fgload({ id: 1, name: `YU08BWM`, x: 176, useAnim: false });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Whack!`;
-   waitForClick; clearText; marker; appendText; 
    `Sara smacked You.`;
-   waitForClick; clearText; marker; appendText; 
    `Watching that scene, my cheeks just naturally 
 relaxed.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU09BWM`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S072`); appendText; 
-   You`"Ha! He smiled, he smiled!"`;
-   waitForClick; clearText; 
+   You(C1S072)`"Ha! He smiled, he smiled!"`;
+
 });
 fgload({ id: 2, name: `SA09ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S073`); appendText; 
-   Sara`"He is! He is! A, HA, HA, HA!"`;
-   waitForClick; clearText; 
+   Sara(C1S073)`"He is! He is! A, HA, HA, HA!"`;
+
 });
 fgload({ id: 2, name: `SA04ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S074`); appendText; 
-   Sara`"...But - do you think I'm happy about this?"`;
-   waitForClick; clearText; 
+   Sara(C1S074)`"...But - do you think I'm happy about this?"`;
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S075`); appendText; 
-   Sara`"What are you thinking? Sticking your finger 
+   Sara(C1S075)`"What are you thinking? Sticking your finger 
 in somebody's nose...geez."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU08BWM`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S076`); appendText; 
-   You`"Hee, hee, hee."`;
-   waitForClick; clearText; marker; appendText; 
+   You(C1S076)`"Hee, hee, hee."`;
    `As I was watching their exchange, at some 
 point the pain in my head had also eased.`;
-   waitForClick; clearText; marker; appendText; 
    `It was a 'painful' exchange in a different 
 meaning of the word, but...`;
-   waitForClick; clearText; 
+
 });
 let lbl_000005ac;
 hideTextbox();
@@ -641,273 +498,220 @@ unSkippableDelay(25);
 clock(`17:49`);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `After I had calmed down again, we went to find 
 an exit.`;
-   waitForClick; clearText; marker; appendText; 
    `Of course, Sara couldn't hide her surprise at 
 what had happened to the inside of the complex.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `SA06ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S1A292`); appendText; 
-   Sara`"What is this?"`;
-   waitForClick; clearText; marker; sound(`S1A293`); appendText; 
-   Sara`"Why is everything wet?"`;
-   waitForClick; clearText; 
+   Sara(S1A292)`"What is this?"`;
+   Sara(S1A293)`"Why is everything wet?"`;
+
 });
 fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`S1A294`); appendText; 
-   Sara`"And there isn't anyone around..."`;
-   waitForClick; clearText; 
+   Sara(S1A294)`"And there isn't anyone around..."`;
+
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `As we walked, You explained to Sara the 
 sequence of events to that point.`;
-   waitForClick; clearText; marker; appendText; 
    `'You was working at LeMU on a part-time basis.'`;
-   waitForClick; clearText; marker; appendText; 
    `'I collapsed at the kiosk.'`;
-   waitForClick; clearText; marker; appendText; 
    `'The warning alarm sounded, everyone 
 disappeared from LeMU and the 
 flooding started.'`;
-   waitForClick; clearText; marker; appendText; 
    `Stunned, Sara listened to You.`;
-   waitForClick; clearText; marker; appendText; 
    `A while after You had finished the story...`;
-   waitForClick; clearText; marker; appendText; 
    `As if she had just thought of it, You blurted 
 out suddenly - `;
-   waitForClick; clearText; 
+
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU07BWM`, name2: `SA01ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S077`); appendText; 
-   You`"But you know what is really strange..."`;
-   waitForClick; clearText; 
+   You(C1S077)`"But you know what is really strange..."`;
+
 });
 fgload({ id: 2, name: `SA06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S078`); appendText; 
-   Sara`"What?"`;
-   waitForClick; clearText; marker; sound(`C1S079`); appendText; 
-   You`"What this kid was just saying..."`;
-   waitForClick; clearText; marker; sound(`C1S080`); appendText; 
-   You`"I mean, Mayo, you don't remember him from 
+   Sara(C1S078)`"What?"`;
+   You(C1S079)`"What this kid was just saying..."`;
+   You(C1S080)`"I mean, Mayo, you don't remember him from 
 anywhere, right?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S081`); appendText; 
-   Sara`"Right..."`;
-   waitForClick; clearText; 
+   Sara(C1S081)`"Right..."`;
+
 });
 fgload({ id: 1, name: `YU05BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S082`); appendText; 
-   You`"But he knew your name..."`;
-   waitForClick; clearText; marker; sound(`C1S083`); appendText; 
-   You`"So that means that somewhere in his lost 
+   You(C1S082)`"But he knew your name..."`;
+   You(C1S083)`"So that means that somewhere in his lost 
 memory there is some information stored 
 about you, right?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU07BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S084`); appendText; 
-   You`"I wonder why."`;
-   waitForClick; clearText; 
+   You(C1S084)`"I wonder why."`;
+
 });
 fgload({ id: 2, name: `SA03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"........."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU03BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S085`); appendText; 
-   You`"If it were the other way around, it'd make 
+   You(C1S085)`"If it were the other way around, it'd make 
 sense."`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S086`); appendText; 
-   You`"If you knew something about him...but he had 
+   You(C1S086)`"If you knew something about him...but he had 
 forgotten you because of amnesia..."`;
-   waitForClick; clearText; marker; sound(`C1S087`); appendText; 
-   You`"That would make sense to me..."`;
-   waitForClick; clearText; 
+   You(C1S087)`"That would make sense to me..."`;
+
 });
 fgload({ id: 1, name: `YU01BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S088`); appendText; 
-   You`"But this is like going backward on a one-way 
+   You(C1S088)`"But this is like going backward on a one-way 
 street." `;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S089`); appendText; 
-   Sara`"One-way street, huh...?"`;
-   waitForClick; clearText; 
+   Sara(C1S089)`"One-way street, huh...?"`;
+
 });
 fgload({ id: 2, name: `SA06ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S090`); appendText; 
-   Sara`"Oh, I know! This is probably what happened."`;
-   waitForClick; clearText; 
+   Sara(C1S090)`"Oh, I know! This is probably what happened."`;
+
 });
 fgload({ id: 1, name: `YU07BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S091`); appendText; 
-   You`"?"`;
-   waitForClick; clearText; 
+   You(C1S091)`"?"`;
+
 });
 fgload({ id: 2, name: `SA02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S092`); appendText; 
-   Sara`"This kid probably used to be a big Sara 
+   Sara(C1S092)`"This kid probably used to be a big Sara 
 Matsunaga fan!"`;
-   waitForClick; clearText; marker; sound(`C1S093`); appendText; 
-   Sara`"I'll bet I never noticed him, but he used to 
+   Sara(C1S093)`"I'll bet I never noticed him, but he used to 
 watch me from a distance, like from the 
 shadows."`;
-   waitForClick; clearText; marker; sound(`C1S094`); appendText; 
-   Sara`"That would explain it completely."`;
-   waitForClick; clearText; 
+   Sara(C1S094)`"That would explain it completely."`;
+
 });
 fgload({ id: 1, name: `YU03BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S095`); appendText; 
-   You`"You're saying he is a stalker?"`;
-   waitForClick; clearText; 
+   You(C1S095)`"You're saying he is a stalker?"`;
+
 });
 fgload({ id: 2, name: `SA01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S096`); appendText; 
-   Sara`"Yup. That's exactly it."`;
-   waitForClick; clearText; 
+   Sara(C1S096)`"Yup. That's exactly it."`;
+
 });
 fgload({ id: 2, name: `SA02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S097`); appendText; 
-   Sara`"Hey. Is that it? Did you used to stalk her?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S097)`"Hey. Is that it? Did you used to stalk her?"`;
    Kid`"Just because I lost my memory, don't go 
 making one up for me!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S098`); appendText; 
-   Sara`"Am I wrong?"`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S098)`"Am I wrong?"`;
    Kid`"Yes!"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU05BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S099`); appendText; 
-   You`"Mayo, I'll only ask you one more time..." `;
-   waitForClick; clearText; marker; sound(`C1S100`); appendText; 
-   You`"Are you really sure that you don't remember 
+   You(C1S099)`"Mayo, I'll only ask you one more time..." `;
+   You(C1S100)`"Are you really sure that you don't remember 
 seeing this kid before?"`;
-   waitForClick; clearText; marker; sound(`C1S101`); appendText; 
-   Sara`"Remember him...?"`;
-   waitForClick; clearText; 
+   Sara(C1S101)`"Remember him...?"`;
+
 });
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S102`); appendText; 
-   Sara`"Hmmm...hmmm..."`;
-   waitForClick; clearText; marker; appendText; 
+   Sara(C1S102)`"Hmmm...hmmm..."`;
    `Sara brought her face close to me and stared 
 at me.`;
-   waitForClick; clearText; marker; appendText; 
    `I could almost feel her breath.`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S103`); appendText; 
-   Sara`"Well now that you mention it..."`;
-   waitForClick; clearText; 
+   Sara(C1S103)`"Well now that you mention it..."`;
+
 });
 stopBGM();
 showTextbox();
 text(() => {
-   marker; appendText; 
    Kid`"Huh?"`;
-   waitForClick; clearText; 
+
 });
 fgload({ id: 1, name: `YU06BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S104`); appendText; 
-   You`"Huh?"`;
-   waitForClick; clearText; 
+   You(C1S104)`"Huh?"`;
+
 });
 fgload({ id: 2, name: `SA02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S105`); appendText; 
-   Sara`"No...I'm kidding...I'm just joking."`;
-   waitForClick; clearText; 
+   Sara(C1S105)`"No...I'm kidding...I'm just joking."`;
+
 });
 fgload({ id: 2, name: `SA17ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   marker; sound(`C1S106`); appendText; 
-   Sara`"There's no reason I should remember him."`;
-   waitForClick; clearText; 
+   Sara(C1S106)`"There's no reason I should remember him."`;
+
 });
 fgload({ id: 1, name: `YU07BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   marker; appendText; 
    `'No reason???`;
-   waitForClick; clearText; marker; appendText; 
    `I wondered what she meant by that.`;
-   waitForClick; clearText; marker; appendText; 
    `I thought that maybe she really did know who 
 I was.`;
-   waitForClick; clearText; marker; appendText; 
    `My heart started to pound again.`;
-   waitForClick; clearText; marker; appendText; 
    `I remembered when I had seen Sara for the 
 first time a little bit ago.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 18, color: WHITE });
@@ -921,20 +725,15 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   marker; appendText; 
    `I had felt something along the lines of 
 nostalgia.`;
-   waitForClick; clearText; marker; appendText; 
    `For some reason, I felt that I had witnessed 
 the same scene somewhere before.`;
-   waitForClick; clearText; marker; appendText; 
    `Maybe I had met her in the past after all.`;
-   waitForClick; clearText; marker; appendText; 
    `But I couldn't be sure of it.`;
-   waitForClick; clearText; marker; appendText; 
    `Even if I did know a name, or even feel 
 nostalgic...it wasn't in my memory.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 showFilter2();
@@ -948,11 +747,10 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   marker; appendText; 
    `Sara's smile felt far away, so that no matter 
 how much I reached out for it, I would never 
 be able to touch it.`;
-   waitForClick; clearText; 
+
 });
 hideTextbox();
 monoColorOverlay({ interval: 18, color: BLACK });

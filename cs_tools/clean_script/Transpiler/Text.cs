@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 class Text {
@@ -124,32 +125,57 @@ class Text {
          });
       }
       if (isChoice) {
+         state.dialogCompleted = true;
          outputLines.Add("choice(");
          outputLines.Add(innerText);
          outputLines.Add(");");
          return;
       }
-      var groupedToken = textTokens
-         .Aggregate(new List<List<TextToken>>() { new List<TextToken>() }, (acc, token) => {
-            if ((state.textMode == TextMode.NVL && (token.Name == "marker" || token.Name == "appendText")) ||
-               (state.textMode == TextMode.ADV && (token.Name == "marker"))) {
-               acc.Add(new List<TextToken>());
-            } else {
-               acc.Last().Add(token);
-            }
-            return acc;
-         })
-         .Where(e => e.Count > 0)
-         ;
+      IEnumerable<List<TextToken>> groupedToken;
+      {
+         var clearTextHit = false;
+         groupedToken = textTokens
+            .Aggregate(new List<List<TextToken>>() { new List<TextToken>() }, (acc, token) => {
+               if ((state.textMode == TextMode.NVL && (token.Name == "marker" || token.Name == "appendText")) ||
+                  (state.textMode == TextMode.ADV && (token.Name == "marker"))) {
+                  acc.Add(new List<TextToken>());
+               } else {
+                  if (token.Name == "clearText")
+                     clearTextHit = true;
+                  else {
+                     if (clearTextHit == true && state.textMode == TextMode.ADV)
+                        acc.Add(new List<TextToken>());
+                     clearTextHit = false;
+                  }
+                  acc.Last().Add(token);
+               }
+               return acc;
+            })
+            .Where(e => e.Count > 0)
+            ;
+      }
       foreach (var _tokens in groupedToken) {
-         var currentName = state.dialogNotCompleted ? "Append" : "";
+         // state.dialogCompleted == false => the last loop doesn't clear text
+         var currentName = state.dialogCompleted == true ? "" : "Append";
+         if (state.textMode == TextMode.NVL) state.dialogCompleted = true;
          var currentText = "";
          var baseVoice = "";
-         state.dialogNotCompleted = state.textMode == TextMode.NVL ? false : true;
-         var hasClearNVL = false;
+         // Fix some edge cases
+         if (state.textMode == TextMode.ADV) {
+         } else {
+            if (_tokens[^1].Name == "Text") {
+               if (_tokens[^1].Text == "\r\n" || _tokens[^1].Text == "\n")
+                  _tokens.RemoveAt(_tokens.Count - 1);
+            } else {
+               state.dialogCompleted = false;
+            }
+         }
+         var clearNVLType = "";
          var hasWaitClickAtEnd = false;
+         var clearTextHit = false;
+         var bigCharHit = false;
          foreach (var token in _tokens) {
-            if (state.dialogNotCompleted == false && state.textMode == TextMode.ADV)
+            if (clearTextHit == true && state.textMode == TextMode.ADV)
                throw new InvalidSyntaxException($"Lingering command(s) after 'clearText' at line {inputLine + 1} of file '{filePath}'");
             void AddWaitClick() {
                if (hasWaitClickAtEnd == true) currentText += "${wait}";
@@ -157,18 +183,27 @@ class Text {
             }
             switch (token.Name) {
                case "nextPage":
-                  if ((int)token.Params[0] == 4) hasClearNVL = true;
+                  if ((int)token.Params[0] == 4) clearNVLType = "fade";
                   else currentText += $"${{nextPage({Kits.Params2Str(token.Params)})}}";
+                  state.dialogCompleted = true;
                   break;
                case "waitForClick":
                   if (hasWaitClickAtEnd == true) currentText += "${wait}";
                   hasWaitClickAtEnd = true;
                   break;
                case "clearText":
-                  state.dialogNotCompleted = false;
+                  if (state.textMode != TextMode.NVL)
+                     clearTextHit = true;
+                  else if (bigCharHit == true) {
+                     bigCharHit = false;
+                  } else {
+                     clearNVLType = "noeff";
+                     state.dialogCompleted = true;
+                  }
                   break;
                case "delay": {
                   if ((int)token.Params[0] == 0) break;
+                  AddWaitClick();
                   currentText += $"${{wait({Kits.Params2Str(token.Params)})}}";
                   break;
                }
@@ -178,6 +213,11 @@ class Text {
                case "waitForSound":
                   AddWaitClick();
                   currentText += $"${{waitVoice}}";
+                  break;
+               case "bigChar":
+                  AddWaitClick();
+                  bigCharHit = true;
+                  currentText += "${bigChar}";
                   break;
                case "sound": {
                   AddWaitClick();
@@ -189,20 +229,33 @@ class Text {
                }
                case "Text":
                   AddWaitClick();
-                  if (currentName != "")
+                  if (token.CharaName == currentName && currentName != "")
                      throw new InvalidSyntaxException($"Detect lingering name tag '{token.CharaName}' at line {inputLine + 1} of file '{filePath}'");
-                  currentName = token.CharaName;
+                  if (currentName != "Append")
+                     currentName = token.CharaName;
+                  else if (token.CharaName != "")
+                     throw new InvalidSyntaxException($"Detect lingering name tag '{token.CharaName}' at line {inputLine + 1} of file '{filePath}'");
                   currentText += token.Text;
                   break;
                default:
                   throw new InvalidSyntaxException($"Invalid command '{token.Name}' at line {inputLine + 1} of file '{filePath}'");
             }
          }
-         if (currentName == "" && baseVoice != "") currentName = state.lastCharaName;
-         else state.lastCharaName = currentName;
-         innerText += $"{Config.tab}{currentName}{(baseVoice == "" ? "" : $"({baseVoice})")}`{currentText}{(hasWaitClickAtEnd ? "" : "${noWait}")}`;\r\n";
-         if (hasClearNVL)
-            innerText += $"{Config.tab}clearPage();";
+         if (state.textMode == TextMode.ADV)
+            if (clearTextHit == false) state.dialogCompleted = false;
+            else state.dialogCompleted = true;
+         if (currentName == "" && baseVoice != "")
+            innerText += $"{Config.tab}`${{voice({baseVoice})}}{currentText}{(hasWaitClickAtEnd ? "" : "${noWait}")}`;\r\n";
+         else
+            innerText += $"{Config.tab}{currentName}{(baseVoice == "" ? "" : $"({baseVoice})")}`{currentText}{(hasWaitClickAtEnd ? "" : "${noWait}")}`;\r\n";
+         switch (clearNVLType) {
+            case "fade":
+               innerText += $"{Config.tab}fadeClearPage();";
+               break;
+            case "noeff":
+               innerText += $"{Config.tab}clearPage();";
+               break;
+         }
       }
       outputLines.Add("text(() => {");
       outputLines.Add(innerText);
