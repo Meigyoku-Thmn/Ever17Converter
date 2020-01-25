@@ -298,7 +298,7 @@ text(() => {
 
 
 ${noWait}`;
-   `           It was a long, long story.`;
+   `${center}It was a long, long story.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -375,7 +375,7 @@ text(() => {
 
 
 ${noWait}`;
-   `         Then we could transcend time.${wait(90)}${noWait}`;
+   `${center}Then we could transcend time.${wait(90)}${noWait}`;
 
 });
 delay({ interval: 120 });

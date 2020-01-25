@@ -167,43 +167,25 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   `       ${nextPage(0)}It was no good. I couldn't see...${nextPage(1)}${wait(60)}${noWait}`;
-   `    ${nextPage(0)}I wasn't sure if I were heading upward.${nextPage(1)}${wait(60)}${noWait}`;
-   `            ${nextPage(0)}Or maybe downward...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}It was no good. I couldn't see...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I wasn't sure if I were heading upward.${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Or maybe downward...${nextPage(1)}${wait(60)}${noWait}`;
    `${nextPage(0)}In my right arm, Sara felt cold, nearly frozen.${nextPage(1)}${wait(60)}${noWait}`;
-   `         ${nextPage(0)}I didn't think I'd make it...${nextPage(1)}${wait(60)}${noWait}`;
-   `           ${nextPage(0)}My arms refused to move...${nextPage(1)}${wait(60)}${noWait}`;
-   `                 ${nextPage(0)}And my legs...${nextPage(1)}${wait(60)}${noWait}`;
-   `               ${nextPage(0)}I took Sara and...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I didn't think I'd make it...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}My arms refused to move...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}And my legs...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I took Sara and...${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   `                     ${nextPage(0)}*GULP*${nextPage(1)}${wait(60)}${noWait}`;
-   `           ${nextPage(0)}I couldn't take anymore...${nextPage(1)}${wait(60)}${noWait}`;
-   `              ${nextPage(0)}I swallowed water...${nextPage(1)}${wait(60)}${noWait}`;
-   `                 ${nextPage(0)}*GULP* *COUGH*${nextPage(1)}${wait(60)}${noWait}`;
-   `        ${nextPage(0)}My consciousness was slipping...${nextPage(1)}${wait(60)}${noWait}`;
-   `            ${nextPage(0)}My body had no power...${nextPage(1)}${wait(60)}${noWait}`;
-   fadeClearPage();
-});
-hideTextbox();
-showTextbox();
-text(() => {
-   `
-
-
-${noWait}`;
-   `                    ${nextPage(0)}${bigChar}Sara...${nextPage(1)}${wait(99)}${noWait}`;
-   fadeClearPage();
-});
-hideTextbox();
-showTextbox();
-text(() => {
-   `               ${nextPage(0)}I'm sorry Sara...${nextPage(1)}${wait(60)}${noWait}`;
-   `           ${nextPage(0)}I...just couldn't quite...${nextPage(1)}${wait(60)}${noWait}`;
-   `            ${nextPage(0)}...seem to save Sara...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}*GULP*${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I couldn't take anymore...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I swallowed water...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}*GULP* *COUGH*${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}My consciousness was slipping...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}My body had no power...${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -213,7 +195,15 @@ text(() => {
 
 
 ${noWait}`;
-   `                    ${nextPage(0)}${bigChar}Sara...${nextPage(1)}${wait(90)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}${bigChar}Sara...${nextPage(1)}${wait(99)}${noWait}`;
+   fadeClearPage();
+});
+hideTextbox();
+showTextbox();
+text(() => {
+   `${center}${nextPage(0)}I'm sorry Sara...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I...just couldn't quite...${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}...seem to save Sara...${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -223,8 +213,18 @@ text(() => {
 
 
 ${noWait}`;
-   `           ${nextPage(0)}The darkness enveloped me, ${noWait}`;
-   `       stealing away my consciousness...${nextPage(1)}${wait(90)}${wait(90)}${noWait}`;
+   `${center}${nextPage(0)}${bigChar}Sara...${nextPage(1)}${wait(90)}${wait(60)}${noWait}`;
+   fadeClearPage();
+});
+hideTextbox();
+showTextbox();
+text(() => {
+   `
+
+
+${noWait}`;
+   `${center}${nextPage(0)}The darkness enveloped me, ${noWait}`;
+   `${center}stealing away my consciousness...${nextPage(1)}${wait(90)}${wait(90)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();

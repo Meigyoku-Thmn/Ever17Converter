@@ -1320,7 +1320,7 @@ text(() => {
 
 
 ${noWait}`;
-   `                ${nextPage(0)}possibly be...?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}possibly be...?${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();

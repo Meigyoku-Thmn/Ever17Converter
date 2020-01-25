@@ -11,8 +11,8 @@ text(() => {
    `
 
 ${noWait}`;
-   `             ${nextPage(0)}——May 7, 2034 (Sun)${nextPage(1)}`;
-   `               ${nextPage(0)}Time——11:17 a.m.${nextPage(1)}`;
+   `${center}${nextPage(0)}——May 7, 2034 (Sun)${nextPage(1)}`;
+   `${center}${nextPage(0)}Time——11:17 a.m.${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -28,7 +28,7 @@ text(() => {
 
 
 ${noWait}`;
-   `            ${nextPage(0)}'——Takeshi Kuranari——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Takeshi Kuranari——'${nextPage(1)}`;
 
 });
 setKomoreType(0);
@@ -173,7 +173,7 @@ text(() => {
 
 
 ${noWait}`;
-   `            ${nextPage(0)}'——Tsugumi Komachi——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Tsugumi Komachi——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -318,7 +318,7 @@ text(() => {
 
 
 ${noWait}`;
-   `             ${nextPage(0)}'——Sara Matsunaga——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Sara Matsunaga——'${nextPage(1)}`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
@@ -548,7 +548,7 @@ text(() => {
 
 
 ${noWait}`;
-   `         ${nextPage(0)}'——Yubiseiharukana Tanaka——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Yubiseiharukana Tanaka——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -849,7 +849,7 @@ text(() => {
 
 
 ${noWait}`;
-   `         ${nextPage(0)}'——Yubiseiakikana Tanaka——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Yubiseiakikana Tanaka——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -941,7 +941,7 @@ text(() => {
 
 
 ${noWait}`;
-   `                 ${nextPage(0)}'——Hokuto——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Hokuto——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1103,7 +1103,7 @@ text(() => {
 
 
 ${noWait}`;
-   `             ${nextPage(0)}'——Ryogo Kaburaki——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Ryogo Kaburaki——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1241,7 +1241,7 @@ text(() => {
 
 
 ${noWait}`;
-   `            '——Sora Akanegasaki——'${nextPage(1)}`;
+   `${center}'——Sora Akanegasaki——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1537,7 +1537,7 @@ text(() => {
 
 
 ${noWait}`;
-   `              ${nextPage(0)}'——Coco Yagami——'${nextPage(1)}`;
+   `${center}${nextPage(0)}'——Coco Yagami——'${nextPage(1)}`;
 
 });
 setMonoColorOverlayFadeOutDuration(53);
@@ -1690,17 +1690,17 @@ text(() => {
    `
 
 ${noWait}`;
-   `               ${nextPage(0)}'I am seeing now.'${nextPage(1)}`;
+   `${center}${nextPage(0)}'I am seeing now.'${nextPage(1)}`;
 
 });
 showTextbox();
 text(() => {
-   `             ${nextPage(0)}'I am being seen now.'${nextPage(1)}`;
+   `${center}${nextPage(0)}'I am being seen now.'${nextPage(1)}`;
 
 });
 showTextbox();
 text(() => {
-   `             ${nextPage(0)}'You are seeing now.'${nextPage(1)}`;
+   `${center}${nextPage(0)}'You are seeing now.'${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1709,8 +1709,8 @@ text(() => {
    `
 
 ${noWait}`;
-   `${nextPage(0)}               'And you are...'${nextPage(1)}`;
-   `${nextPage(0)}        'Surely being seen by someone.'${nextPage(1)}`;
+   `${nextPage(0)}${center}'And you are...'${nextPage(1)}`;
+   `${nextPage(0)}${center}'Surely being seen by someone.'${nextPage(1)}`;
 
 });
 monoColorOverlay({ interval: 24, color: WHITE });

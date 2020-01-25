@@ -518,8 +518,8 @@ text(() => {
    `
 
 ${noWait}`;
-   `                 ${nextPage(0)}Who...are you?${nextPage(1)}${wait(60)}${noWait}`;
-   `                  ${nextPage(0)}Who...am I?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Who...are you?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Who...am I?${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -539,8 +539,8 @@ text(() => {
    `
 
 ${noWait}`;
-   `                 ${nextPage(0)}Who...are you?${nextPage(1)}${wait(60)}${noWait}`;
-   `                  ${nextPage(0)}Who...am I?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Who...are you?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Who...am I?${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -584,8 +584,8 @@ text(() => {
    `
 
 ${noWait}`;
-   `                 ${nextPage(0)}Who...are you?${nextPage(1)}${wait(60)}${noWait}`;
-   `                  ${nextPage(0)}Who...am I?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Who...are you?${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Who...am I?${nextPage(1)}${wait(60)}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();

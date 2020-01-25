@@ -132,9 +132,9 @@ showTextbox();
 text(() => {
    `
 ${noWait}`;
-   `           Even Sora could be wrong.`;
+   `${center}Even Sora could be wrong.`;
    `${noWait}`;
-   `         We were able to swim it, Sora.`;
+   `${center}We were able to swim it, Sora.`;
    fadeClearPage();
 });
 hideTextbox();

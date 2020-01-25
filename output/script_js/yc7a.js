@@ -260,7 +260,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`         Four minutes until implosion.`;
+   Append`${center}Four minutes until implosion.`;
    clearPage();
 });
 monoColorOverlay({ interval: 0, color: BLACK });
@@ -1079,41 +1079,41 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   `                  Who...am I?`;
-   `                 Who...are you?`;
-   `                 I am...Hokuto.`;
-   `                 Who...are you?`;
-   `                  Who...am I?`;
-   `               You are...Hokuto.`;
-   `              I am not...Hokuto...`;
-   `         I am not Hokuto.... I am...me.`;
+   `${center}Who...am I?`;
+   `${center}Who...are you?`;
+   `${center}I am...Hokuto.`;
+   `${center}Who...are you?`;
+   `${center}Who...am I?`;
+   `${center}You are...Hokuto.`;
+   `${center}I am not...Hokuto...`;
+   `${center}I am not Hokuto.... I am...me.`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   `                   I am...me.`;
-   `              Yes...I remember...`;
-   `                I am....I am me.`;
-   `        I have...watched...your world... ${noWait}`;
-   `          For...so long...watching...`;
+   `${center}I am...me.`;
+   `${center}Yes...I remember...`;
+   `${center}I am....I am me.`;
+   `${center}I have...watched...your world... ${noWait}`;
+   `${center}For...so long...watching...`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   `          I am but a 'perspective'...`;
-   `             An eye that transcends ${noWait}`;
-   `           dimensional boundaries...`;
-   `             I am the third eye...`;
-   `                    I am...`;
-   `                    I am...`;
+   `${center}I am but a 'perspective'...`;
+   `${center}An eye that transcends ${noWait}`;
+   `${center}dimensional boundaries...`;
+   `${center}I am the third eye...`;
+   `${center}I am...`;
+   `${center}I am...`;
 
 });
 playBGM({ num: 24, volume: 100 });
 showTextbox();
 text(() => {
-   `               ${nextPage(0)}Blick...Winkel...${nextPage(1)}`;
+   `${center}${nextPage(0)}Blick...Winkel...${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();

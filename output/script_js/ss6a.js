@@ -17,12 +17,12 @@ showTextbox();
 text(() => {
    `${voice(S6A000)}
 ${noWait}`;
-   Append(S6A001)`      ${nextPage(0)}Moon sprite shouldering a long bow.${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A002)}            ${nextPage(0)}Waiting inside a dream.${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A009)}         ${nextPage(0)}Tonight a story by moonlight.${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A004)}         ${nextPage(0)}Hoping the wait will be short.${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A005)}           ${nextPage(0)}Sleeping curled and snug.${nextPage(1)}${waitVoice} ${noWait}`;
-   `           ${nextPage(0)}Sleeping in mother's arms.${nextPage(1)}${waitVoice}${noWait}`;
+   Append(S6A001)`${center}${nextPage(0)}Moon sprite shouldering a long bow.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A002)}${center}${nextPage(0)}Waiting inside a dream.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A009)}${center}${nextPage(0)}Tonight a story by moonlight.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A004)}${center}${nextPage(0)}Hoping the wait will be short.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A005)}${center}${nextPage(0)}Sleeping curled and snug.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${center}${nextPage(0)}Sleeping in mother's arms.${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -30,13 +30,13 @@ showTextbox();
 text(() => {
    `${voice(S6A006)}
 ${noWait}`;
-   Append(S6A007)`    ${nextPage(0)}Water sprite lifting a pair of paddles.${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A008)}            ${nextPage(0)}Waiting inside a dream.${nextPage(1)}${waitVoice} ${noWait}`;
-   `          ${nextPage(0)}Tonight the whirlpool demon, ${noWait}`;
-   `${voice(S6A009)}               waiting for a boat${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A010)}         ${nextPage(0)}Hoping the wait will be short.${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S6A011)}          ${nextPage(0)}Rock, rock, rocked to sleep.${nextPage(1)}${waitVoice} ${noWait}`;
-   `     ${nextPage(0)}Sleeping, sleeping held by the ocean.${nextPage(1)}${waitVoice}${noWait}`;
+   Append(S6A007)`${center}${nextPage(0)}Water sprite lifting a pair of paddles.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A008)}${center}${nextPage(0)}Waiting inside a dream.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${center}${nextPage(0)}Tonight the whirlpool demon, ${noWait}`;
+   `${voice(S6A009)}${center}waiting for a boat${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A010)}${center}${nextPage(0)}Hoping the wait will be short.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S6A011)}${center}${nextPage(0)}Rock, rock, rocked to sleep.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${center}${nextPage(0)}Sleeping, sleeping held by the ocean.${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -403,7 +403,7 @@ text(() => {
 
 
 ${noWait}`;
-   `              ${nextPage(0)}Even though I lost.${nextPage(1)}`;
+   `${center}${nextPage(0)}Even though I lost.${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -503,12 +503,12 @@ unSkippableDelay(5);
 showTextbox();
 text(() => {
    `${noWait}`;
-   `                ${nextPage(0)}I had promised.${nextPage(1)}${wait(60)}${noWait}`;
-   `           ${nextPage(0)}That was how things were.${nextPage(1)}${wait(60)}${noWait}`;
-   `           ${nextPage(0)}Back then I had promised.${nextPage(1)}${wait(60)}${noWait}`;
-   `         ${nextPage(0)}I had promised to go get her.${nextPage(1)}${wait(60)}${noWait}`;
-   `              ${nextPage(0)}But...I hadn't gone.${nextPage(1)}${wait(60)}${noWait}`;
-   `                 ${nextPage(0)}I couldn't go.${nextPage(1)}`;
+   `${center}${nextPage(0)}I had promised.${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}That was how things were.${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}Back then I had promised.${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I had promised to go get her.${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}But...I hadn't gone.${nextPage(1)}${wait(60)}${noWait}`;
+   `${center}${nextPage(0)}I couldn't go.${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -539,7 +539,7 @@ text(() => {
 
 
 ${noWait}`;
-   `        ${nextPage(0)}I couldn't keep...my promise...${nextPage(1)}`;
+   `${center}${nextPage(0)}I couldn't keep...my promise...${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -570,9 +570,9 @@ showTextbox();
 text(() => {
    `
 ${noWait}`;
-   `         There was nothing I could do!`;
-   `        I didn't have any other choice!`;
-   `          What else could I have done?`;
+   `${center}There was nothing I could do!`;
+   `${center}I didn't have any other choice!`;
+   `${center}What else could I have done?`;
    fadeClearPage();
 });
 hideTextbox();
@@ -784,11 +784,11 @@ hideTextbox();
 showTextbox();
 text(() => {
    `${noWait}`;
-   `                  That was...`;
-   `                   My name...`;
-   `               What was my name?`;
-   `               What was I called?`;
-   `                 I didn't know.`;
+   `${center}That was...`;
+   `${center}My name...`;
+   `${center}What was my name?`;
+   `${center}What was I called?`;
+   `${center}I didn't know.`;
    fadeClearPage();
 });
 hideTextbox();

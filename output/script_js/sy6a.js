@@ -717,8 +717,8 @@ text(() => {
 
 
 ${noWait}`;
-   `                    Final conclusion— ${noWait}`;
-   `   'Current prognosis for escape: hopeless.'`;
+   `${center}Final conclusion— ${noWait}`;
+   `${center}'Current prognosis for escape: hopeless.'`;
    fadeClearPage();
 });
 hideTextbox();

@@ -827,8 +827,8 @@ text(() => {
 
 
 ${noWait}`;
-   Append(S3D026)`                 On the 7th...${wait} ${noWait}`;
-   Append`                 You will die.`;
+   Append(S3D026)`${center}On the 7th...${wait} ${noWait}`;
+   Append`${center}You will die.`;
    fadeClearPage();
 });
 hideTextbox();

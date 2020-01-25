@@ -52,8 +52,8 @@ text(() => {
 
 
 ${noWait}`;
-   Append(S5A003)`                 You ran away!${waitVoice} ${noWait}`;
-   Append`     You left that kid and ran away alone!${waitVoice}${noWait}`;
+   Append(S5A003)`${center}You ran away!${waitVoice} ${noWait}`;
+   Append`${center}You left that kid and ran away alone!${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -234,9 +234,9 @@ text(() => {
    `
 
 ${noWait}`;
-   `             (As if I would know!?)`;
-   `         (Flailing around like that...)`;
-   `    (Anyone would think you were drowning!)`;
+   `${center}(As if I would know!?)`;
+   `${center}(Flailing around like that...)`;
+   `${center}(Anyone would think you were drowning!)`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1040,11 +1040,11 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    `${voice(S3B105)}${noWait}`;
-   Append(S3B106)`                ${nextPage(0)}Yeah, I promise.${nextPage(1)}${waitVoice} ${noWait}`;
-   `            ${nextPage(0)}To wait like a good girl. ${noWait}`;
-   `${voice(S3B107)}          Until you come for me...${nextPage(1)}${waitVoice} ${noWait}`;
-   `${voice(S3B108)}        ${nextPage(0)}I'll wait...like a good girl...${nextPage(1)}${waitVoice} ${noWait}`;
-   `            ${nextPage(0)}I'll wait....forever...${nextPage(1)}${waitVoice}${noWait}`;
+   Append(S3B106)`${center}${nextPage(0)}Yeah, I promise.${nextPage(1)}${waitVoice} ${noWait}`;
+   `${center}${nextPage(0)}To wait like a good girl. ${noWait}`;
+   `${voice(S3B107)}${center}Until you come for me...${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S3B108)}${center}${nextPage(0)}I'll wait...like a good girl...${nextPage(1)}${waitVoice} ${noWait}`;
+   `${center}${nextPage(0)}I'll wait....forever...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1457,7 +1457,7 @@ showTextbox();
 text(() => {
    `${voice(T5B003)}
 ${noWait}`;
-   Append`                  Hello there${waitVoice}${noWait}`;
+   Append`${center}Hello there${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();
@@ -1574,7 +1574,7 @@ showTextbox();
 text(() => {
    `${voice(T5B017)}
 ${noWait}`;
-   Append`               Heave ho, heave ho${waitVoice}${noWait}`;
+   Append`${center}Heave ho, heave ho${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();
@@ -1622,11 +1622,11 @@ showTextbox();
 text(() => {
    `${voice(T5B019)}
 ${noWait}`;
-   Append`                    ${nextPage(0)}Carving.${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Carving.${nextPage(1)}${waitVoice}${noWait}`;
    `${voice(T5B020)}
 
 ${noWait}`;
-   Append`               ${nextPage(0)}Chiseling away...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Chiseling away...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1651,7 +1651,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`     ${nextPage(0)}Cutting scars into this stone statue.${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Cutting scars into this stone statue.${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1817,7 +1817,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                      ${nextPage(0)}Okay${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Okay${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -2421,8 +2421,8 @@ text(() => {
 
 
 ${noWait}`;
-   Append(S5A176)`              Why do you care now?${waitVoice} ${noWait}`;
-   Append`    You were the one that ran away alone...${waitVoice}${noWait}`;
+   Append(S5A176)`${center}Why do you care now?${waitVoice} ${noWait}`;
+   Append`${center}You were the one that ran away alone...${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();

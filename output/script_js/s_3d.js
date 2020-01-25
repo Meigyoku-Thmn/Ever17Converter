@@ -548,7 +548,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`              It's all your fault${waitVoice}${noWait}`;
+   Append`${center}It's all your fault${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();

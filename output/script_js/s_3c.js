@@ -770,7 +770,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                ${nextPage(0)}Ouch....ouch...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Ouch....ouch...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -798,7 +798,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`             ${nextPage(0)}Shut up! Quit whining!${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Shut up! Quit whining!${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -820,7 +820,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                ${nextPage(0)}Owwww! It hurts!${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Owwww! It hurts!${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -831,7 +831,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`               ${nextPage(0)}Help....Someone...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Help....Someone...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -852,8 +852,8 @@ text(() => {
 
 
 ${noWait}`;
-   Append`              ${nextPage(0)}I'm sorry, I'm sorry - ${noWait}`;
-   `         I'm sorry, I'm sorry, I'm sorry -${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}I'm sorry, I'm sorry - ${noWait}`;
+   `${center}I'm sorry, I'm sorry, I'm sorry -${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -899,7 +899,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                ${nextPage(0)}Ouch...Owwwww...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Ouch...Owwwww...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -923,7 +923,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                   ${nextPage(0)}Help me...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Help me...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -944,7 +944,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`               ${nextPage(0)}Help...help me...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Help...help me...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -955,7 +955,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`              It's all your fault!${waitVoice}${noWait}`;
+   Append`${center}It's all your fault!${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();
@@ -973,10 +973,10 @@ text(() => {
    `${voice(S3B096)}
 
 ${noWait}`;
-   Append(S3B097)`   All of this is just the way you wanted it.${waitVoice} ${noWait}`;
-   Append(S3B098)`     Right? You best fess up to all of it.${waitVoice} ${noWait}`;
-   Append`            You knew from the start ${noWait}`;
-   `    that things would turn out like this...${waitVoice}${noWait}`;
+   Append(S3B097)`${center}All of this is just the way you wanted it.${waitVoice} ${noWait}`;
+   Append(S3B098)`${center}Right? You best fess up to all of it.${waitVoice} ${noWait}`;
+   Append`${center}You knew from the start ${noWait}`;
+   `${center}that things would turn out like this...${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();
@@ -996,7 +996,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`         Liar! So why did you run away?${waitVoice}${noWait}`;
+   Append`${center}Liar! So why did you run away?${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();
@@ -1015,8 +1015,8 @@ text(() => {
 
 
 ${noWait}`;
-   Append(S3B101)`                 You ran away.${waitVoice} ${noWait}`;
-   Append`        You left that girl and ran away.${waitVoice}${noWait}`;
+   Append(S3B101)`${center}You ran away.${waitVoice} ${noWait}`;
+   Append`${center}You left that girl and ran away.${waitVoice}${noWait}`;
    clearPage();
 });
 hideTextbox();
@@ -1034,7 +1034,7 @@ text(() => {
    `${voice(S3B102)}
 
 ${noWait}`;
-   Append(S3B103)`               And you broke it.${waitVoice} ${noWait}`;
+   Append(S3B103)`${center}And you broke it.${waitVoice} ${noWait}`;
    Append` Or maybe you meant to break it from the start?${waitVoice}${noWait}`;
    clearPage();
 });
@@ -1054,9 +1054,9 @@ text(() => {
 
 
 ${noWait}`;
-   Append`       You bought happiness for yourself. ${noWait}`;
-   `     You traded it for that girl's life... ${noWait}`;
-   `                A, HA, HA, HA...${waitVoice}${noWait}`;
+   Append`${center}You bought happiness for yourself. ${noWait}`;
+   `${center}You traded it for that girl's life... ${noWait}`;
+   `${center}A, HA, HA, HA...${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1084,7 +1084,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                ${nextPage(0)}Yeah, I promise.${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}Yeah, I promise.${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1106,7 +1106,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`        ${nextPage(0)}I'll wait...like a good girl....${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}I'll wait...like a good girl....${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1117,7 +1117,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append`            ${nextPage(0)}I'll wait....forever...${nextPage(1)}${waitVoice}${noWait}`;
+   Append`${center}${nextPage(0)}I'll wait....forever...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
 hideTextbox();

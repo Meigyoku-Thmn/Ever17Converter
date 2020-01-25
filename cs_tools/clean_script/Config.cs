@@ -11,10 +11,11 @@ class Config {
    public static readonly Regex condBlock = new Regex(@"^\[cond \(28 0a a4\) (.+?) 14 \(00\)\](.+)", RegexOptions.Compiled);
    public static readonly Regex nextStatement = new Regex(@"^\[[0-9a-fA-F]+?\]", RegexOptions.Compiled);
    public static readonly Regex rgb = new Regex(@"^rgb\((.+?),(.+?),(.+?)\)$", RegexOptions.Compiled);
-   public static readonly Regex jsInvalidChar1 = new Regex(@"[/ \-']");
-   public static readonly Regex jsInvalidChar2 = new Regex(@"[\.]");
-   public static readonly Regex varop = new Regex(@".+? .+? (.+?)\) (.+?) (.+?) .+? (.+)");
+   public static readonly Regex jsInvalidChar1 = new Regex(@"[/ \-']", RegexOptions.Compiled);
+   public static readonly Regex jsInvalidChar2 = new Regex(@"[\.]", RegexOptions.Compiled);
+   public static readonly Regex varop = new Regex(@".+? .+? (.+?)\) (.+?) (.+?) .+? (.+)", RegexOptions.Compiled);
    public static readonly Regex switch_varop = new Regex(@"^switch_varop \(28 0a a4\) (.+?) .+? \(00\)");
+   public static readonly Regex spaces = new Regex(@" +", RegexOptions.Compiled);
    public static readonly CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("CSharp");
    public static readonly int indent = 3;
    public static readonly string tab = new string(' ', indent);

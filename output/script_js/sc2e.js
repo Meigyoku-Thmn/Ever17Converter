@@ -108,9 +108,9 @@ showTextbox();
 text(() => {
    `
 ${noWait}`;
-   `                  ${nextPage(0)}I...I...I...${nextPage(1)}`;
-   `                 ${nextPage(0)}I...am here...${nextPage(1)}`;
-   `         ${nextPage(0)}I have been here...forever...${nextPage(1)}`;
+   `${center}${nextPage(0)}I...I...I...${nextPage(1)}`;
+   `${center}${nextPage(0)}I...am here...${nextPage(1)}`;
+   `${center}${nextPage(0)}I have been here...forever...${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();

@@ -85,8 +85,8 @@ text(() => {
 
 
 ${noWait}`;
-   Append`                    ${nextPage(0)}Promise?${nextPage(1)}`;
-   `                ${nextPage(0)}Yeah, I promise.${nextPage(1)}`;
+   Append`${center}${nextPage(0)}Promise?${nextPage(1)}`;
+   `${center}${nextPage(0)}Yeah, I promise.${nextPage(1)}`;
    fadeClearPage();
 });
 hideTextbox();

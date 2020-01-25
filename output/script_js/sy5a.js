@@ -393,7 +393,7 @@ text(() => {
 
 
 ${noWait}`;
-   `              'Life readings: 7'`;
+   `${center}'Life readings: 7'`;
    fadeClearPage();
 });
 hideTextbox();

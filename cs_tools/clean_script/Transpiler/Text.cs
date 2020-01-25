@@ -201,6 +201,11 @@ class Text {
          })
          ;
       foreach (var _tokens in groupedToken) {
+         // resolve center
+         var firstTextToken = _tokens.Find(token => token.Name == "Text");
+         if (firstTextToken != null && firstTextToken.Text.StartsWith("  ")) {
+            firstTextToken.Text = Config.spaces.Replace(firstTextToken.Text, "${center}", 1);
+         }
          // state.dialogCompleted == false => the last loop doesn't clear text
          var currentName = state.dialogCompleted == true ? "" : "Append";
          if (state.textMode == TextMode.NVL) state.dialogCompleted = true;

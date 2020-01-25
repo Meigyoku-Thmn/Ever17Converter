@@ -31,14 +31,14 @@ ${noWait}`;
 });
 showTextbox();
 text(() => {
-   `           ${nextPage(0)}Eine Geschichte setzt auf${nextPage(1)}${noWait}`;
+   `${center}${nextPage(0)}Eine Geschichte setzt auf${nextPage(1)}${noWait}`;
 
 });
 delay({ interval: 180 });
 bgload_keepFg({ name: `EV_CO11A`, transition: 0 });
 showTextbox();
 text(() => {
-   `                ${nextPage(0)}1 Mai,2034 fort.${nextPage(1)}${noWait}`;
+   `${center}${nextPage(0)}1 Mai,2034 fort.${nextPage(1)}${noWait}`;
 
 });
 delay({ interval: 180 });

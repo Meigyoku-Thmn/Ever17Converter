@@ -242,7 +242,7 @@ text(() => {
 
 
 ${noWait}`;
-   `${bigChar}    L${wait(46)}${noWait}`;
+   `${bigChar}${center}L${wait(46)}${noWait}`;
    Append`${bigChar}i${wait(46)}${noWait}`;
    Append`${bigChar}f${wait(46)}${noWait}`;
    Append`${bigChar}e${wait(46)}${noWait}`;
@@ -284,8 +284,8 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   `         ${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
-   `   ${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
+   `${center}${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
+   `${center}${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
    `${wait(90)}${wait(90)}${wait(90)}${noWait}`;
    fadeClearPage();
 });
@@ -312,8 +312,8 @@ text(() => {
 
 
 ${noWait}`;
-   `         ${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
-   `   ${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
+   `${center}${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
+   `${center}${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
    `${wait(90)}${wait(90)}${wait(90)}${noWait}`;
    fadeClearPage();
 });

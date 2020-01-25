@@ -1549,7 +1549,7 @@ text(() => {
 
 
 ${noWait}`;
-   `                  <Can stomp>`;
+   `${center}<Can stomp>`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1831,7 +1831,7 @@ text(() => {
 
 
 ${noWait}`;
-   `                  <Can stomp>`;
+   `${center}<Can stomp>`;
    fadeClearPage();
 });
 hideTextbox();

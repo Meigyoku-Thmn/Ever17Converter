@@ -504,7 +504,7 @@ text(() => {
 
 
 ${noWait}`;
-   `                     And...`;
+   `${center}And...`;
    fadeClearPage();
 });
 hideTextbox();
