@@ -31,22 +31,16 @@ text(() => {
    `The first sound I had heard in my life—`;
    `Yes, it was the sound of a heart beating.`;
    `I remembered.`;
-   `I was surrounded by the gentle sound of a 
-beating heart.`;
-   `There was no greater feeling of peace than 
-what I felt then.`;
+   `I was surrounded by the gentle sound of a beating heart.`;
+   `There was no greater feeling of peace than what I felt then.`;
    `How long would I be able to stay there?`;
    `I didn't know.`;
-   `I knew that I would have to leave the place 
-at some point.`;
-   `I would have to let go of that fragile bond 
-soon.`;
+   `I knew that I would have to leave the place at some point.`;
+   `I would have to let go of that fragile bond soon.`;
    `But I wasn't sad.`;
    `If that time must come...`;
-   `Darkness cleared again and out of it would 
-come...`;
-   `A new world, where I would resolve to be 
-reborn.`;
+   `Darkness cleared again and out of it would come...`;
+   `A new world, where I would resolve to be reborn.`;
    `...............`;
    `.........`;
 
@@ -72,8 +66,7 @@ showTextbox();
 text(() => {
    `I was lying down in bed.`;
    `Right next to me, Tsugumi was starting at me.`;
-   `She was squatting next to the bed, her eyes 
-level with mine...`;
+   `She was squatting next to the bed, her eyes level with mine...`;
    `We stared at each other eye-to-eye.`;
 
 });
@@ -86,11 +79,9 @@ text(() => {
    Tsugumi(T7T001)`"Well..."`;
    `Tsugumi took the PDA out of my pocket.`;
    Tsugumi(T7T002)`"The batteries are dead."`;
-   `She pressed the buttons, but nothing appeared 
-on the screen.`;
+   `She pressed the buttons, but nothing appeared on the screen.`;
    Takeshi`"Oh..."`;
-   Tsugumi(T7T003)`"You want me to go check the clock on the 
-terminal?"`;
+   Tsugumi(T7T003)`"You want me to go check the clock on the terminal?"`;
    Takeshi`"Nah, that's okay. Just stay here with me."`;
    Tsugumi(T7T004)`"Okay..."`;
    `There were tears in Tsugumi's eyes.`;
@@ -98,23 +89,17 @@ terminal?"`;
    Takeshi`"That's a dumb question."`;
    Tsugumi(T7T006)`"Just tell me. How are you feeling?"`;
    `Tsugumi held my hand softly.`;
-   `The feel of her soft skin seemed like it 
-would pull me in.`;
-   Takeshi`"I don't feel so good. My body feels tired all 
-over..."`;
+   `The feel of her soft skin seemed like it would pull me in.`;
+   Takeshi`"I don't feel so good. My body feels tired all over..."`;
    Takeshi`"But it could be worse, I guess."`;
    Tsugumi(T7T007)`"Okay..."`;
-   `I tried opening and closing the hand that was 
-free in front of my face.`;
+   `I tried opening and closing the hand that was free in front of my face.`;
    `My movements were still sluggish.`;
    Tsugumi(T7T008)`"Your cut doesn't hurt?"`;
    Takeshi`"Cut...?"`;
-   Tsugumi(T7T009)`"You fell over and...I tried to stop you from 
-falling, but..."`;
-   Tsugumi(T7T010)`"I didn't get there in time. You split your 
-forehead, Takeshi."`;
-   `Tsugumi opened her glossy lips slightly and 
-murmured.`;
+   Tsugumi(T7T009)`"You fell over and...I tried to stop you from falling, but..."`;
+   Tsugumi(T7T010)`"I didn't get there in time. You split your forehead, Takeshi."`;
+   `Tsugumi opened her glossy lips slightly and murmured.`;
    `I could see the tip of her red tongue.`;
    Takeshi`"Forehead?...Split?"`;
    Tsugumi(T7T011)`"Hey..."`;
@@ -141,8 +126,7 @@ murmured.`;
    Takeshi`"So don't worry about it."`;
    `I patted Tsugumi on the head.`;
    `I was alive.`;
-   `Even though I was banged up pretty good, I 
-was alive.`;
+   `Even though I was banged up pretty good, I was alive.`;
    `Besides, it wasn't a big deal.`;
 
 });
@@ -163,46 +147,37 @@ text(() => {
    Takeshi`"Communications?"`;
    Tsugumi(T7T017)`"Since that one, we haven't had any..."`;
    `I could see the monitor.`;
-   `It reported that the remote control guidance 
-was working normally.`;
-   `It would take about one hour for it to reach 
-our pool...`;
-   `But it seemed that the submarine was making 
-its way without any glitches.`;
+   `It reported that the remote control guidance was working normally.`;
+   `It would take about one hour for it to reach our pool...`;
+   `But it seemed that the submarine was making its way without any glitches.`;
    Takeshi`"Oh..."`;
-   Takeshi`"I guess that leaves us some time to relax 
-until the taxi gets here."`;
-   Takeshi`"Won't do us an ounce of good getting worked 
-up about it."`;
+   Takeshi`"I guess that leaves us some time to relax until the taxi gets here."`;
+   Takeshi`"Won't do us an ounce of good getting worked up about it."`;
    Tsugumi(T7T018)`"...Yeah."`;
    `Even if I had wanted to...`;
    `My body wasn't doing what I wanted it to.`;
    `It felt like I was running low on batteries...`;
    `I was exhausted.`;
    `I couldn't think straight.`;
-   `I had gone beyond the limits of my strength 
-and spirit.`;
+   `I had gone beyond the limits of my strength and spirit.`;
 
 });
 bgload({ name: `EV_TU14A`, transition: 10 });
 showTextbox();
 text(() => {
    Takeshi`"...Huh?"`;
-   `I noticed something and brought my face 
-closer to Tsugumi.`;
+   `I noticed something and brought my face closer to Tsugumi.`;
    Tsugumi(T7T019)`"W-what? Takeshi..."`;
    Takeshi`"Takeshi..."`;
    Takeshi`"I..."`;
-   `I almost pressed myself against her, and 
-brought myself close to her face. `;
+   `I almost pressed myself against her, and brought myself close to her face. `;
    Tsugumi(T7T020)`"W-w-w-what...?"`;
 
 });
 bgload({ name: `EV_TU14B`, transition: 10 });
 showTextbox();
 text(() => {
-   `Her cheeks, which had been puffed up from 
-crying, started to turn slightly red.`;
+   `Her cheeks, which had been puffed up from crying, started to turn slightly red.`;
    Takeshi`"I'm hungry..."`;
    `I murmured, pulling my face up close.`;
    Takeshi`"I feel like I could eat just about anything."`;
@@ -210,8 +185,7 @@ crying, started to turn slightly red.`;
    Takeshi`"And guess what...Tsugumi."`;
    Tsugumi(T7T022)`"Huh...what?"`;
    `Tsugumi's face became redder and redder.`;
-   Takeshi`"There's just the most amazing smell coming 
-from you."`;
+   Takeshi`"There's just the most amazing smell coming from you."`;
    Tsugumi(T7T023)`"...huh?"`;
    `Her eyebrows arched, as if she were annoyed....`;
    Takeshi`"Hey..."`;
@@ -230,14 +204,10 @@ showTextbox();
 text(() => {
    Tsugumi(T7T027)`"Don't call me stupid, stupid..."`;
    `Her expression returned to normal.`;
-   `She undid a few of her buttons and let Chami 
-out from her shirt.`;
-   Tsugumi(T7T028)`"I'm sorry for keeping you in there the whole 
-time, Chami."`;
+   `She undid a few of her buttons and let Chami out from her shirt.`;
+   Tsugumi(T7T028)`"I'm sorry for keeping you in there the whole time, Chami."`;
    Tsugumi(T7T029)`"It's okay, you can go play now..."`;
-   `Chami sniffed the air as he rode in the palm 
-of Tsugumi's hand. He suddenly jumped to the 
-floor and ran into the corner of the room.`;
+   `Chami sniffed the air as he rode in the palm of Tsugumi's hand. He suddenly jumped to the floor and ran into the corner of the room.`;
    Takeshi`"........."`;
    `I watched the whole time.`;
 
@@ -284,15 +254,13 @@ closeShakeScreenAnim();
 showTextbox();
 text(() => {
    Tsugumi(T7T035)`"It's okay..."`;
-   `She looked up for a second, then quickly 
-returned her gaze.`;
+   `She looked up for a second, then quickly returned her gaze.`;
    Tsugumi(T7T036)`"Don't worry, alright?"`;
    Tsugumi(T7T037)`"We're okay for now...I think."`;
    Tsugumi(T7T038)`"Yeah, we'll be fine, I know it."`;
    Tsugumi(T7T039)`"I don't have any proof, but..."`;
    Takeshi`"........."`;
-   Tsugumi(T7T040)`"Ha, ha, I'm even starting to talk like you 
-now."`;
+   Tsugumi(T7T040)`"Ha, ha, I'm even starting to talk like you now."`;
    Tsugumi(T7T041)`"There must be something wrong with me..."`;
    Takeshi`"........."`;
 
@@ -315,15 +283,13 @@ text(() => {
    Tsugumi(T7T043)`"W-what?"`;
    Takeshi`"This is incredible!"`;
    Tsugumi(T7T044)`"W-what are you talking about...?"`;
-   `Flustered, Tsugumi's cheeks changing color in 
-her confusion.`;
+   `Flustered, Tsugumi's cheeks changing color in her confusion.`;
    Takeshi`"I've made a major discovery!"`;
    `I brought her hand close to me.`;
    `Tsugumi's face was right next to mine.`;
    Takeshi`"Alright, listen up!"`;
    Tsugumi(T7T045)`"O-okay..."`;
-   Takeshi`"I know where that great smell is coming 
-from..."`;
+   Takeshi`"I know where that great smell is coming from..."`;
    Takeshi`"It is—"`;
 
 });
@@ -373,25 +339,20 @@ text(() => {
 bgload({ name: `EV_TU14B`, transition: 20 });
 showTextbox();
 text(() => {
-   Tsugumi(T7T055)`"What were you thinking biting on my finger 
-like that...?"`;
+   Tsugumi(T7T055)`"What were you thinking biting on my finger like that...?"`;
    `My teeth had left an imprint on her finger.`;
    Takeshi`"Thank you..."`;
    Takeshi`"I'm still hungry, but I feel a lot better."`;
-   `I couldn't keep sitting up, so I lay down in 
-bed again.`;
+   `I couldn't keep sitting up, so I lay down in bed again.`;
    Tsugumi(T7T056)`"I can't believe you did that..."`;
-   `The tears that had dried up just a bit ago 
-were in Tsugumi's eyes again.`;
+   `The tears that had dried up just a bit ago were in Tsugumi's eyes again.`;
    Takeshi`"Ha, ha, ha..."`;
    `I laughed at the situation.`;
-   `There wasn't much strength left in me, but I 
-laughed anyway.`;
+   `There wasn't much strength left in me, but I laughed anyway.`;
    Takeshi`"I am a man of insatiable desires."`;
    Takeshi`"When I get hungry, I stuff my face..."`;
    Takeshi`"When I get sleepy, I sleep like a bear..."`;
-   Takeshi`"And give me a chance and I'll be thinking 
-about hanky panky..."`;
+   Takeshi`"And give me a chance and I'll be thinking about hanky panky..."`;
    Takeshi`"It's all I think about."`;
    Takeshi`"I'm beyond salvation, right?"`;
    Tsugumi(T7T057)`"Yeah..."`;
@@ -427,37 +388,25 @@ text(() => {
    Tsugumi(T7T065)`"That's it...?"`;
    `The tears continued to fall.`;
    Takeshi`"I..."`;
-   Takeshi`"I think there were some things that I was 
-taking too lightly."`;
-   Takeshi`"There are people who go on living even when 
-they want to die."`;
-   Takeshi`"And people that die who want to keep on 
-living."`;
+   Takeshi`"I think there were some things that I was taking too lightly."`;
+   Takeshi`"There are people who go on living even when they want to die."`;
+   Takeshi`"And people that die who want to keep on living."`;
    Takeshi`"I had no idea that was how things were."`;
-   Takeshi`"I guess I was pretty naive about the way the 
-world works..."`;
+   Takeshi`"I guess I was pretty naive about the way the world works..."`;
    Takeshi`"Until coming to LeMU, that is."`;
    Tsugumi`"........."`;
    Takeshi`"But then I met you..."`;
-   Takeshi`"And the way that I thought about things 
-changed."`;
-   Takeshi`"The world isn't always filled with good 
-things."`;
+   Takeshi`"And the way that I thought about things changed."`;
+   Takeshi`"The world isn't always filled with good things."`;
    Tsugumi(T7T066)`"Yeah..."`;
    `She nodded.`;
    `I calmly wiped away her tears.`;
    Takeshi`"But..."`;
-   Takeshi`"I don't want you to think that living is 
-something to be embarrassed about, or 
-something that you hate."`;
-   Takeshi`"I think as long as you are alive, it is okay 
-to live."`;
-   Takeshi`"I think there are good things waiting for 
-you."`;
-   Takeshi`"Wait...not just that, that being alive is a 
-good thing in itself."`;
-   Takeshi`"In that way, my thinking still hasn't 
-changed."`;
+   Takeshi`"I don't want you to think that living is something to be embarrassed about, or something that you hate."`;
+   Takeshi`"I think as long as you are alive, it is okay to live."`;
+   Takeshi`"I think there are good things waiting for you."`;
+   Takeshi`"Wait...not just that, that being alive is a good thing in itself."`;
+   Takeshi`"In that way, my thinking still hasn't changed."`;
    Tsugumi(T7T067)`"...Yeah..."`;
    `She nodded.`;
    `We held each other's hands.`;
@@ -467,8 +416,7 @@ bgload({ name: `BG34A1`, transition: 20 });
 showTextbox();
 text(() => {
    Takeshi`"I don't know how to say it, but..."`;
-   `I looked up at toward the heavens I couldn't 
-see.`;
+   `I looked up at toward the heavens I couldn't see.`;
    `I didn't know if there was 'something above.'`;
    `Didn't know if it really mattered.`;
    `Maybe all I had to do was accept.`;
@@ -476,12 +424,10 @@ see.`;
    Takeshi`"What does it mean to die?"`;
    Takeshi`"Does everything really end when we die?"`;
    Takeshi`"Until you can stare—"`;
-   Takeshi`"...really STARE reality in the face, I think 
-you should wait."`;
+   Takeshi`"...really STARE reality in the face, I think you should wait."`;
    Takeshi`"Put it on hold."`;
    Takeshi`"It isn't time for me to die yet."`;
-   Takeshi`"I just can't die yet. You can't either, and 
-neither can any of the rest of us."`;
+   Takeshi`"I just can't die yet. You can't either, and neither can any of the rest of us."`;
    Takeshi`"Until that time comes..."`;
    Takeshi`"All of us should live."`;
    Tsugumi`"........."`;
@@ -496,8 +442,7 @@ text(() => {
    Takeshi`"Hey, Tsugumi..."`;
    Tsugumi(T7T069)`"Whaaat?"`;
    `I looked deeply into her eyes.`;
-   `I was trying to see if there was light inside 
-there.`;
+   `I was trying to see if there was light inside there.`;
    `I wanted to get as close as I could and see.`;
    Takeshi`"Hey...you're bleeding from your finger."`;
    Tsugumi(T7T070)`"Well you...bit me earlier, right?"`;
@@ -505,8 +450,7 @@ there.`;
    Tsugumi(T7T071)`"Yes that is SO."`;
    Takeshi`"I'm sorry."`;
    Tsugumi`"........."`;
-   `Tsugumi's face was close enough so that we 
-were almost touching noses.`;
+   `Tsugumi's face was close enough so that we were almost touching noses.`;
    `Closer...`;
    `Even closer still`;
    Takeshi`"Ah...!"`;
@@ -520,8 +464,7 @@ were almost touching noses.`;
    Takeshi`"Um..."`;
    Tsugumi(T7T076)`"Um...maybe you're right."`;
    Takeshi`"........."`;
-   Tsugumi(T7T077)`"It was probably from when the building shook 
-earlier."`;
+   Tsugumi(T7T077)`"It was probably from when the building shook earlier."`;
    Takeshi`"Looks painful."`;
    Tsugumi(T7T078)`"Well...if it hurts, it's your fault, Takeshi."`;
    Takeshi`"You think so...?"`;
@@ -539,8 +482,7 @@ text(() => {
    `Taste her tears.`;
    `She bit down on my lower lip.`;
    `And my blood started to flow.`;
-   `We were pressed together as tightly as we 
-could be...`;
+   `We were pressed together as tightly as we could be...`;
    `Embracing one another with everything we had.`;
    `Our bodies came together, became one.`;
    `I felt her breathing.`;
@@ -574,8 +516,7 @@ text(() => {
    `I jumped out of the bed and stood up.`;
    `I stretched my arms and loosened my shoulders.`;
    `I felt pretty good.`;
-   `I took a deep breath as I fixed my clothes 
-rumpled during sleep.`;
+   `I took a deep breath as I fixed my clothes rumpled during sleep.`;
    `My mind was firing and my head felt clear.`;
 
 });
@@ -584,8 +525,7 @@ showTextbox();
 text(() => {
    Tsugumi(T7T085)`"Chami. Chami...come here."`;
    Tsugumi(T7T086)`"Come on, we've got to get going now."`;
-   `Tsugumi scooped up Chami, who'd been running 
-around on the floor, and held him to her chest.`;
+   `Tsugumi scooped up Chami, who'd been running around on the floor, and held him to her chest.`;
 
 });
 fgload({ id: 1, name: `TU06ADS`, x: 320, useAnim: true });
@@ -604,8 +544,7 @@ text(() => {
    `She nodded.`;
    `I looked under the bed I had been sleeping on.`;
    `Something was lying there...`;
-   `I reached out and pulled whatever it was 
-closer to me.`;
+   `I reached out and pulled whatever it was closer to me.`;
    Takeshi`"Huh??"`;
 
 });
@@ -614,8 +553,7 @@ showTextbox();
 text(() => {
    Tsugumi(T7T089)`"Pipi..."`;
    `It was Pipi...`;
-   Takeshi`"Hey Pipi, what's going on? What are you doing 
-here?"`;
+   Takeshi`"Hey Pipi, what's going on? What are you doing here?"`;
    Pipi`"........."`;
    `Pipi didn't respond. `;
    `All of the color had vanished from his eyes.`;
@@ -628,10 +566,8 @@ here?"`;
 bgload({ name: `IT09A`, transition: 20 });
 showTextbox();
 text(() => {
-   `It was a disk...a terabyte disk made of 
-polycarbonate.`;
-   `I put the disk Pipi had been carrying in my 
-pocket.`;
+   `It was a disk...a terabyte disk made of polycarbonate.`;
+   `I put the disk Pipi had been carrying in my pocket.`;
 
 });
 hideTextbox();
@@ -649,8 +585,7 @@ openShakeScreenAnim();
 showTextbox();
 text(() => {
    `—Boooooooommm!!!`;
-   `With a roaring sound, the whole room suddenly 
-shook violently.`;
+   `With a roaring sound, the whole room suddenly shook violently.`;
 
 });
 hideTextbox();
@@ -665,28 +600,24 @@ eff_40 = 1;
 openShakeScreenAnim();
 showTextbox();
 text(() => {
-   `${voice(T7T090A)}"Five minutes ${waitVoice}${voice(T7T090B)}until implosion."`;
+   Announcement(T7T090A)`"Five minutes ${waitVoice}${voice(T7T090B)}until implosion."`;
 
 });
 showTextbox();
 text(() => {
    Takeshi`"Hey, WHAT did that announcement just say!?"`;
-   `Holding Pipi under my arm, I looked up at the 
-ceiling.`;
+   `Holding Pipi under my arm, I looked up at the ceiling.`;
    `Tsugumi quickly got up.`;
 
 });
 fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Tsugumi(T7T091)`"We've got five minutes...until this place 
-implodes."`;
+   Tsugumi(T7T091)`"We've got five minutes...until this place implodes."`;
    Takeshi`"FIVE MINUTES!?"`;
    Takeshi`"Give me a break!"`;
-   Takeshi`"Why do they gotta tell us when there's only 
-FIVE minutes left."`;
-   Takeshi`"Give us some more warning...for cryin' out 
-loud!"`;
+   Takeshi`"Why do they gotta tell us when there's only FIVE minutes left."`;
+   Takeshi`"Give us some more warning...for cryin' out loud!"`;
    `I started mumbling complaints to myself.`;
    `Maybe it was mostly for show...`;
 
@@ -703,19 +634,16 @@ fgload({ id: 1, name: `TU07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(T7T093)`"Anyway, we've only got five minutes."`;
-   `Tsugumi shrugged her shoulders exaggeratedly 
-and stared at me.`;
+   `Tsugumi shrugged her shoulders exaggeratedly and stared at me.`;
 
 });
 fgload({ id: 1, name: `TU10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    `But for some reason...she seemed to be smiling.`;
-   Tsugumi(T7T094)`"You've just got to accept reality. You could 
-learn something from me, you know?"`;
+   Tsugumi(T7T094)`"You've just got to accept reality. You could learn something from me, you know?"`;
    Takeshi`"Ha, ha, ha, listen to yourself, Tsugumi."`;
-   Takeshi`"Telling jokes at a time like this is more MY 
-style, don't you think?"`;
+   Takeshi`"Telling jokes at a time like this is more MY style, don't you think?"`;
 
 });
 hideTextbox();
@@ -724,10 +652,8 @@ fgload({ id: 1, name: `TU10ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(T7T095)`"Ha, ha. Well, I guess you're right..."`;
-   Tsugumi(T7T096)`"But we should be okay if we've got five 
-minutes, right?"`;
-   `A smile floated to her lips and Tsugumi held 
-out a hand to me.`;
+   Tsugumi(T7T096)`"But we should be okay if we've got five minutes, right?"`;
+   `A smile floated to her lips and Tsugumi held out a hand to me.`;
    Takeshi`"Of course."`;
    `I took her hand firmly.`;
 
@@ -750,25 +676,20 @@ eff_40 = 4;
 bgload({ name: `BG35A1`, transition: 20 });
 showTextbox();
 text(() => {
-   `${voice(T7T097A)}"Four minutes ${waitVoice}${voice(T7T097B)}until implosion."`;
+   Announcement(T7T097A)`"Four minutes ${waitVoice}${voice(T7T097B)}until implosion."`;
 
 });
 showTextbox();
 text(() => {
    `The shaking and rumbling of IBF continued.`;
-   `I could hear the sound of the water rushing 
-in and striking against the watertight 
-hatches somewhere.`;
-   `Ominous metallic sounds rang out from above, 
-and I wouldn't have been surprised it the 
-ceiling had suddenly ruptured.`;
+   `I could hear the sound of the water rushing in and striking against the watertight hatches somewhere.`;
+   `Ominous metallic sounds rang out from above, and I wouldn't have been surprised it the ceiling had suddenly ruptured.`;
    `But still, we ran without stopping.`;
    `We were running to get out of there.`;
    `I held onto Tsugumi's hand the whole time...`;
    `Her body moved fluidly as she ran.`;
    `We ran in sync with one another...`;
-   `We passed through a door that stood wide open 
-at the end of the passage.`;
+   `We passed through a door that stood wide open at the end of the passage.`;
 
 });
 removeBG({ mode: BLACK, transition: 2 });
@@ -777,8 +698,7 @@ stopBGM();
 bgload({ name: `BG33A5`, transition: 20 });
 showTextbox();
 text(() => {
-   `And on top of the pool, which looked like it 
-was threatening to overflow at any moment—`;
+   `And on top of the pool, which looked like it was threatening to overflow at any moment—`;
 
 });
 hideTextbox();
@@ -796,11 +716,9 @@ fgload({ id: 1, name: `TU01ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(T7T098)`"Well, of course."`;
-   `Tsugumi looked at me with a smug face and 
-said...`;
+   `Tsugumi looked at me with a smug face and said...`;
    Tsugumi(T7T099)`"It's a TAXI..."`;
-   Tsugumi(T7T100)`"They aren't going to just leave us 
-high-tipping customers here."`;
+   Tsugumi(T7T100)`"They aren't going to just leave us high-tipping customers here."`;
    Takeshi`"Oh yeah you're right...Oh NO!!!"`;
 
 });
@@ -828,27 +746,23 @@ text(() => {
 });
 showTextbox();
 text(() => {
-   `${voice(T7T105A)}"Three minutes ${waitVoice}${voice(T7T105B)}until implosion."`;
+   Announcement(T7T105A)`"Three minutes ${waitVoice}${voice(T7T105B)}until implosion."`;
 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    `Three minutes until implosion.`;
-   `We scrambled to the sub and jumped down the 
-hatch.`;
+   `We scrambled to the sub and jumped down the hatch.`;
 
 });
 removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
    `The controls were simple.`;
-   `We closed the hatch on the top by pressing a 
-button.`;
-   `The submarine slipped out from the pool and 
-into the middle of the ocean.`;
-   `The ocean currents quickly pushed us out to 
-sea.`;
+   `We closed the hatch on the top by pressing a button.`;
+   `The submarine slipped out from the pool and into the middle of the ocean.`;
+   `The ocean currents quickly pushed us out to sea.`;
    `Away from the sinking LeMU...`;
    `Yes...`;
    `LeMU was...`;
@@ -860,22 +774,17 @@ hideTextbox();
 playSFX({ name: `SE07_12`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `Warping and folding on itself, like some 
-kind of a crumpled old newspaper.`;
-   `It scattered as it collapsed, like a child's 
-wooden blocks that hadn't been stacked 
-properly...`;
+   `Warping and folding on itself, like some kind of a crumpled old newspaper.`;
+   `It scattered as it collapsed, like a child's wooden blocks that hadn't been stacked properly...`;
    `Letting out its final breath of bubbles...`;
-   `It disappeared to the bottom of the deep blue 
-sea.`;
+   `It disappeared to the bottom of the deep blue sea.`;
 
 });
 removeBG({ mode: BLACK, transition: 0 });
 showTextbox();
 text(() => {
    `We were moving up.`;
-   `The small, fragile egg we were in floated 
-quietly toward the surface.`;
+   `The small, fragile egg we were in floated quietly toward the surface.`;
 
 });
 hideTextbox();
@@ -886,13 +795,11 @@ text(() => {
    Tsugumi(T7T106)`"What...do we do from here?"`;
    `Tsugumi asked in a quiet voice.`;
    Takeshi`"There's so much that I want to do."`;
-   `I said, as I placed the motionless Pipi, on 
-the seat next to me.`;
+   `I said, as I placed the motionless Pipi, on the seat next to me.`;
    Takeshi`"But, first..."`;
    Takeshi`"I'm thinking more about where to start."`;
    Tsugumi(T7T107)`"Hmmm..."`;
-   Takeshi`"What about you Tsugumi, what do you want to 
-do?"`;
+   Takeshi`"What about you Tsugumi, what do you want to do?"`;
    Tsugumi`"........."`;
    Takeshi`"What you didn't like the question?"`;
    Tsugumi(T7T108)`"No, it's not that."`;
@@ -924,18 +831,15 @@ text(() => {
    `The operating console made a funny sound.`;
    Tsugumi(T7T111)`"What's that noise...?"`;
    Takeshi`"No clue..."`;
-   Takeshi`"Hey, something just came up on that screen 
-over there."`;
+   Takeshi`"Hey, something just came up on that screen over there."`;
    `The monitor behind Tsugumi started blinking.`;
    Tsugumi(T7T112)`"What does it say...?"`;
-   Takeshi`"You're closer than I am, why don't you turn 
-around and look at it yourself."`;
+   Takeshi`"You're closer than I am, why don't you turn around and look at it yourself."`;
    Tsugumi(T7T113)`"N...no..."`;
    Tsugumi(T7T114)`"I don't want to see it..."`;
    Tsugumi(T7T115)`"I've got...a really bad feeling about this."`;
    Takeshi`"Don't be so selfish."`;
-   `Not left with any other choice, I peeked at 
-the monitor.`;
+   `Not left with any other choice, I peeked at the monitor.`;
    Takeshi`"Ah...which one, which one..."`;
    Takeshi`"Uumm..."`;
    Takeshi`"'Low battery...'"`;
@@ -952,64 +856,45 @@ text(() => {
    `The monitor went dark.`;
    `All of the power went out.`;
    `The electrical equipment went silent.`;
-   `The only thing still working was the analog 
-pressure gauge.`;
+   `The only thing still working was the analog pressure gauge.`;
    `Present depth—189 feet`;
    `Internal pressure—12.5 Atmospheres`;
-   `The submarine was set to saturation diving 
-specifications.`;
-   `The pressure on the inside was higher than the 
-pressure on the outside.`;
+   `The submarine was set to saturation diving specifications.`;
+   `The pressure on the inside was higher than the pressure on the outside.`;
    Tsugumi(T7T116)`"Ta-Takeshi..."`;
    Takeshi`"It's okay. We're going to be fine."`;
    Takeshi`"Stop looking like you're going to cry."`;
    `Depth—192 feet.`;
    `We had lost our upward momentum...`;
-   `The submarine began sinking slowly, very 
-slowly.`;
+   `The submarine began sinking slowly, very slowly.`;
    `Residual air pressure: 0`;
    `Ballast tank: Unable to drain.`;
    Takeshi`"Wonderful, we hitched a ride on a junker..."`;
-   Takeshi`"You know, this cab always seems to stall on 
-these country roads..."`;
+   Takeshi`"You know, this cab always seems to stall on these country roads..."`;
    Takeshi`"I'm terribly sorry ma'am..."`;
    Tsugumi`"........."`;
    `Depth—195 feet.`;
    `Takeshi looked at the aft hatch.`;
    `It had a two-ply hatch...`;
-   `The inner side was made of reinforced glass 
-and FRP while the outer side had a door made 
-from high-strength steel.`;
-   Takeshi`"Hey, you think if we let some of the high 
-pressure gas out of the hatch we'd start 
-rising again?"`;
+   `The inner side was made of reinforced glass and FRP while the outer side had a door made from high-strength steel.`;
+   Takeshi`"Hey, you think if we let some of the high pressure gas out of the hatch we'd start rising again?"`;
    Tsugumi(T7T117)`"No..."`;
-   Tsugumi(T7T118)`"I don't think we'll go straight up and our 
-momentum would be limited. "`;
-   Tsugumi(T7T119)`"Not to mention the fact that if we do that, 
-we'll start flooding..."`;
-   Tsugumi(T7T120)`"Because we don't have any spare compressed 
-air."`;
-   Tsugumi(T7T121)`"And we don't have enough buoyancy in the main 
-fuselage."`;
+   Tsugumi(T7T118)`"I don't think we'll go straight up and our momentum would be limited. "`;
+   Tsugumi(T7T119)`"Not to mention the fact that if we do that, we'll start flooding..."`;
+   Tsugumi(T7T120)`"Because we don't have any spare compressed air."`;
+   Tsugumi(T7T121)`"And we don't have enough buoyancy in the main fuselage."`;
    Takeshi`"Buoyancy..."`;
    Tsugumi(T7T122)`"We've got to get rid of ballast..."`;
    Takeshi`"Ballast..."`;
    `Depth—198 feet.`;
-   Tsugumi(T7T123)`"The valve used to release ballast is usually 
-electronically controlled."`;
+   Tsugumi(T7T123)`"The valve used to release ballast is usually electronically controlled."`;
    Tsugumi(T7T124)`"But now, we're..."`;
    Takeshi`"Alright, let's just stay calm."`;
-   Takeshi`"Judging by how fast we're sinking... we only 
-need to be a little bit lighter, right?"`;
-   Takeshi`"If we can get rid of about 100 pounds or 
-more, we should be fine."`;
-   Takeshi`"Let's try pulling out a few of those 
-machines over there? That should make us 
-lighter."`;
+   Takeshi`"Judging by how fast we're sinking... we only need to be a little bit lighter, right?"`;
+   Takeshi`"If we can get rid of about 100 pounds or more, we should be fine."`;
+   Takeshi`"Let's try pulling out a few of those machines over there? That should make us lighter."`;
    Tsugumi(T7T125)`"You think it's going to be easy?"`;
-   Takeshi`"Well...they seem to be welded on fairly good. 
-Probably not easy to do bare-handed."`;
+   Takeshi`"Well...they seem to be welded on fairly good. Probably not easy to do bare-handed."`;
    Takeshi`"And unfortunately we don't have any tools..."`;
    Tsugumi(T7T126)`"So that's it, huh..."`;
    `Tsugumi bit her lip and looked down.`;
@@ -1027,8 +912,7 @@ text(() => {
    Tsugumi(T7T127)`"Looks like we celebrated too soon..."`;
    Tsugumi(T7T128)`"Doesn't it..."`;
    Tsugumi(T7T129)`"Ha, ha, ha..."`;
-   `Her shoulders shook from disappointment...and 
-she laughed without conviction.`;
+   `Her shoulders shook from disappointment...and she laughed without conviction.`;
    Tsugumi(T7T130)`"So stupid..."`;
    Tsugumi(T7T131)`"I'm so stupid..."`;
    Takeshi`"........."`;
@@ -1046,8 +930,7 @@ text(() => {
    Tsugumi(T7T133)`"W-what are you doing Takeshi!?"`;
    Takeshi`"What...you can't tell by looking?"`;
    Takeshi`"I'm opening the hatch."`;
-   Tsugumi(T7T134)`"That's why I'm asking you! What are you 
-doing!"`;
+   Tsugumi(T7T134)`"That's why I'm asking you! What are you doing!"`;
    Takeshi`"Do you even need to ask?"`;
 
 });
@@ -1065,10 +948,8 @@ text(() => {
 playSFX({ name: `SE10_10`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `I threw off Tsugumi's arm and raised the glass 
-hatch.`;
-   `It was just large enough for one person to go 
-through.`;
+   `I threw off Tsugumi's arm and raised the glass hatch.`;
+   `It was just large enough for one person to go through.`;
    Takeshi`"Please don't touch me..."`;
    Takeshi`"Don't touch me."`;
    Tsugumi(T7T137)`"No! I won't let you go!"`;
@@ -1077,8 +958,7 @@ through.`;
 playSFX({ name: `SE00_04`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
-   `Tsugumi grabbed onto my arm firmly. The hatch 
-was closing.`;
+   `Tsugumi grabbed onto my arm firmly. The hatch was closing.`;
    Tsugumi(T7T138)`"I don't care if I die...I'm not letting go."`;
    Takeshi`"........."`;
    `Depth—207 feet.`;
@@ -1092,8 +972,7 @@ was closing.`;
    `And slowly opened my mouth.`;
    Takeshi`"Hey, Tsugumi...?"`;
    Tsugumi`"........."`;
-   Takeshi`"Do you know what the Archimedes principle 
-is?"`;
+   Takeshi`"Do you know what the Archimedes principle is?"`;
    Tsugumi(T7T139)`"Huh?"`;
    `Surprised, for a moment Tsugumi's grip relaxed.`;
 
@@ -1101,24 +980,20 @@ is?"`;
 removeBG({ mode: WHITE, transition: 2 });
 showTextbox();
 text(() => {
-   `In that brief instant, I tore myself 
-forcefully away from her grasp.`;
+   `In that brief instant, I tore myself forcefully away from her grasp.`;
 
 });
 playSFX({ name: `SE00_09`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `I quickly opened the glass hatch, and slipped 
-to the back of the airlock.`;
-   `After I jumped inside it was surprisingly 
-easy to close the hatch from the inside.`;
+   `I quickly opened the glass hatch, and slipped to the back of the airlock.`;
+   `After I jumped inside it was surprisingly easy to close the hatch from the inside.`;
 
 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
-   `Once the hatch was closed, I shut the latch 
-right away.`;
+   `Once the hatch was closed, I shut the latch right away.`;
    `Depth—210 feet.`;
 
 });
@@ -1130,12 +1005,9 @@ bgload({ name: `EV_TU16A`, transition: 0 });
 showTextbox();
 text(() => {
    `Tsugumi was stunned...`;
-   `Her eyes were opened up as wide as they would 
-go, and she stared at me from the other side 
-of the glass.`;
+   `Her eyes were opened up as wide as they would go, and she stared at me from the other side of the glass.`;
    Tsugumi(T7T140)`"Takeshi! Takeshi!"`;
-   Tsugumi(T7T141)`"What are you doing? Open it up! Get out of 
-there!"`;
+   Tsugumi(T7T141)`"What are you doing? Open it up! Get out of there!"`;
 
 });
 hideTextbox();
@@ -1143,8 +1015,7 @@ playSFX({ name: `SE00_13`, a1: 0, volume: 100 });
 shakeScreen();
 showTextbox();
 text(() => {
-   `Tsugumi wildly pounded on the reinforced 
-glass with her fist.`;
+   `Tsugumi wildly pounded on the reinforced glass with her fist.`;
 
 });
 hideTextbox();
@@ -1152,11 +1023,9 @@ playSFX({ name: `SE10_10`, a1: 0, volume: 90 });
 shakeScreenHard();
 showTextbox();
 text(() => {
-   `She tried as hard as she could to pull up the 
-lever, but was unable to.`;
+   `She tried as hard as she could to pull up the lever, but was unable to.`;
    Takeshi`"Tsugumi...what are you saying?"`;
-   Takeshi`"The glass is pretty thick you know, I really 
-can't hear very well."`;
+   Takeshi`"The glass is pretty thick you know, I really can't hear very well."`;
 
 });
 hideTextbox();
@@ -1166,8 +1035,7 @@ showTextbox();
 text(() => {
    Tsugumi(T7T142)`"You stupid idiot! Open it up this instant!"`;
    Tsugumi(T7T143)`"What are you thinkiiing!"`;
-   `Tears started falling from Tsugumi's wide-open 
-eyes.`;
+   `Tears started falling from Tsugumi's wide-open eyes.`;
    `Drops fell in a constant stream.`;
 
 });
@@ -1176,15 +1044,12 @@ playSFX({ name: `SE00_13`, a1: 0, volume: 100 });
 shakeScreen();
 showTextbox();
 text(() => {
-   `Her tears and her fist pounded against the 
-glass.`;
+   `Her tears and her fist pounded against the glass.`;
    `The glass creaked as she hit it.`;
    `Depth—213 feet.`;
    Takeshi`"Hey, wait a second didn't you..."`;
-   Takeshi`"I thought you knew about Archimedes' 
-principle ?"`;
-   Takeshi`"I mean, I think you were the one that taught 
-me about it."`;
+   Takeshi`"I thought you knew about Archimedes' principle ?"`;
+   Takeshi`"I mean, I think you were the one that taught me about it."`;
    Takeshi`"I guess you'd know that. Sorry. Ha, ha, ha..."`;
 
 });
@@ -1197,8 +1062,7 @@ text(() => {
    Tsugumi(T7T145)`"This isn't...it's not about that!!"`;
    Tsugumi(T7T146)`"You fool...Takeshi you idiot!!!"`;
    `Tsugumi sobbed as she screamed.`;
-   Takeshi`"Yeah, I'm an idiot—The biggest one there 
-is!"`;
+   Takeshi`"Yeah, I'm an idiot—The biggest one there is!"`;
    Takeshi`"You didn't know that? Tsugumi..."`;
    `Depth—216 feet.`;
 
@@ -1208,16 +1072,12 @@ playSFX({ name: `SE00_13`, a1: 0, volume: 100 });
 shakeScreen();
 showTextbox();
 text(() => {
-   `No matter how hard she pounded on the glass, 
-it didn't break.`;
-   `The hatch wouldn't open, and it wouldn't break 
-either.`;
+   `No matter how hard she pounded on the glass, it didn't break.`;
+   `The hatch wouldn't open, and it wouldn't break either.`;
    `It looked fairly sturdy.`;
-   `It made me feel good to know that it would 
-hold.`;
+   `It made me feel good to know that it would hold.`;
    Takeshi`"Well, anyway..."`;
-   Takeshi`"We gotta make sure this little egg stays 
-afloat."`;
+   Takeshi`"We gotta make sure this little egg stays afloat."`;
    `I put one hand behind me on the other hatch.`;
    `If I could open it up, she'd be safe...`;
 
@@ -1237,8 +1097,7 @@ playSFX({ name: `SE00_06`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    Takeshi`"Don't worry."`;
-   `I didn't look away when I spoke to her, and 
-said firmly...`;
+   `I didn't look away when I spoke to her, and said firmly...`;
    Takeshi`"I may be stupid but..."`;
    Takeshi`"I'm not that stupid."`;
    `Depth—219 feet.`;
@@ -1254,8 +1113,7 @@ text(() => {
    Tsugumi(T7T153)`"Don't leave me all by myself!"`;
    Takeshi`"There you go, always worrying..."`;
    `I forced a smile.`;
-   Takeshi`"I keep telling you, it's going to be okay, 
-right?"`;
+   Takeshi`"I keep telling you, it's going to be okay, right?"`;
    Tsugumi(T7T154)`"Yes..."`;
    Takeshi`"You want to live, don't you...?"`;
    Tsugumi(T7T155)`"Yes..."`;
@@ -1273,10 +1131,8 @@ delay({ interval: 60 });
 playSFX({ name: `SE10_17`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `The hatch on the bottom of the submarine 
-opened.`;
-   `The air, which had been compressed in the 
-airlock, was jettisoned into the ocean.`;
+   `The hatch on the bottom of the submarine opened.`;
+   `The air, which had been compressed in the airlock, was jettisoned into the ocean.`;
    `My body shot out like a bullet into the water.`;
 
 });
@@ -1287,12 +1143,9 @@ showTextbox();
 text(() => {
    Tsugumi(T7T156)`"........!!"`;
    `I could no longer hear her voice.`;
-   `In the middle of the ocean, her voice 
-wouldn't carry to me.`;
-   `On the other side of the glass, I could make 
-out her blurry outline.`;
-   `Tsugumi's face was covered with tears. Her 
-face was broken with sadness....`;
+   `In the middle of the ocean, her voice wouldn't carry to me.`;
+   `On the other side of the glass, I could make out her blurry outline.`;
+   `Tsugumi's face was covered with tears. Her face was broken with sadness....`;
    `Her image refracted through the water.`;
 
 });
@@ -1306,8 +1159,7 @@ unSkippableDelay(48);
 showTextbox();
 text(() => {
    `—225 feet.`;
-   `I grabbed onto a rail on the outside of the 
-submarine and steadied myself.`;
+   `I grabbed onto a rail on the outside of the submarine and steadied myself.`;
    `I closed the outside hatch.`;
    `I couldn't see her anymore.`;
    `Wouldn't be able to see her again.`;
@@ -1315,29 +1167,24 @@ submarine and steadied myself.`;
    `I let go of my last source of support.`;
    `And kicked the sub.`;
    `Released from its support, my body went flying.`;
-   `Into a jet-black ocean filled with sparkling 
-fragments of light.`;
+   `Into a jet-black ocean filled with sparkling fragments of light.`;
    `—231 feet.`;
    `My consciousness was floating.`;
-   `But my will steadfastly clung to my body. It 
-was still there.`;
+   `But my will steadfastly clung to my body. It was still there.`;
    `Even if it were threatening to turn to dust.`;
-   `Even if it were threatening to be torn 
-apart...`;
+   `Even if it were threatening to be torn apart...`;
    `Live as long as you are alive.`;
    `That was what I wanted.`;
    `Maybe it was just stubbornness...`;
    `I was sinking to the bottom of the ocean.`;
-   `My field of vision filled with white bubbles 
-heading up toward the heavens.`;
+   `My field of vision filled with white bubbles heading up toward the heavens.`;
 
 });
 bgload({ name: `IMG06A`, transition: 0 });
 showTextbox();
 text(() => {
    `I closed my eyes slowly.`;
-   `That's when I realized for the first time 
-that I was here.`;
+   `That's when I realized for the first time that I was here.`;
    `I'm here.`;
 
 });
@@ -1351,8 +1198,7 @@ text(() => {
 showTextbox();
 text(() => {
    `I   '    m        h     e    r    e.`;
-   `My body dissolved in the ocean, mixing with 
-it...becoming one with it.`;
+   `My body dissolved in the ocean, mixing with it...becoming one with it.`;
 
 });
 hideTextbox();

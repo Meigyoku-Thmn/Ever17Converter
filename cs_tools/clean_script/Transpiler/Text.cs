@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 
 class Text {
    public static void Resolve(State state, string filePath, string[] tokens, ref int i, string[] lines, List<string> outputLines) {
@@ -56,7 +57,7 @@ class Text {
             textTokens.Add(new TextToken {
                Name = "Text",
                CharaName = name,
-               Text = Kits.EscapeBackTick(_fragment),
+               Text = Kits.EscapeBackTick(_fragment).Replace("\r\n", "\n").Replace("\r", "\n"),
             });
             continue;
          }
@@ -132,28 +133,73 @@ class Text {
          return;
       }
       IEnumerable<List<TextToken>> groupedToken;
-      {
-         var clearTextHit = false;
-         groupedToken = textTokens
-            .Aggregate(new List<List<TextToken>>() { new List<TextToken>() }, (acc, token) => {
-               if ((state.textMode == TextMode.NVL && (token.Name == "marker" || token.Name == "appendText")) ||
-                  (state.textMode == TextMode.ADV && (token.Name == "marker"))) {
-                  acc.Add(new List<TextToken>());
-               } else {
-                  if (token.Name == "clearText")
-                     clearTextHit = true;
+      var clearTextHitOuter = false;
+      groupedToken = textTokens
+         .Aggregate(new List<List<TextToken>>() { new List<TextToken>() }, (acc, token) => {
+            if ((state.textMode == TextMode.NVL && (token.Name == "marker" || token.Name == "appendText")) ||
+               (state.textMode == TextMode.ADV && (token.Name == "marker"))) {
+               acc.Add(new List<TextToken>());
+            } else {
+               if (token.Name == "clearText")
+                  clearTextHitOuter = true;
+               else {
+                  if (clearTextHitOuter == true && state.textMode == TextMode.ADV)
+                     acc.Add(new List<TextToken>());
+                  clearTextHitOuter = false;
+               }
+               acc.Last().Add(token);
+            }
+            return acc;
+         })
+         .Where(e => e.Count > 0)
+         .Select(_tokens => {
+            var splittedDialogToken = _tokens.Aggregate(new List<List<TextToken>>() { new List<TextToken>() }, (acc, token) => {
+               if (token.Name != "Text") acc.Last().Add(token);
+               else {
+                  var newLineIdxs = token.Text.AllIndexOf("\n");
+                  if (newLineIdxs.Count == 0) acc.Last().Add(token);
                   else {
-                     if (clearTextHit == true && state.textMode == TextMode.ADV)
+                     foreach (var (idx, i) in newLineIdxs.Select((idx, i) => (idx, i))) {
+                        var subToken = token.Clone() as TextToken;
+                        var previousIdx = i == 0 ? 0 : newLineIdxs[i - 1] + 1;
+                        subToken.Text = subToken.Text.Substring(previousIdx, idx - previousIdx + 1);
+                        subToken.CharaName = i == 0 ? subToken.CharaName : "";
+                        acc.Last().Add(subToken);
                         acc.Add(new List<TextToken>());
-                     clearTextHit = false;
+                        if (i + 1 == newLineIdxs.Count) {
+                           var lastSubToken = token.Clone() as TextToken;
+                           lastSubToken.Text = lastSubToken.Text.Substring(idx + 1);
+                           lastSubToken.CharaName = "";
+                           acc.Last().Add(lastSubToken);
+                        }
+                     }
                   }
-                  acc.Last().Add(token);
                }
                return acc;
-            })
-            .Where(e => e.Count > 0)
-            ;
-      }
+            });
+            var rs = new List<TextToken>();
+            var lastTokens = splittedDialogToken.Last();
+            foreach (var tokens in splittedDialogToken) {
+               rs.AddRange(tokens);
+               if (tokens == lastTokens) continue;
+               var lineIsEmpty = tokens.All(token => {
+                  if (token.Name != "Text") return true;
+                  else if (token.Text == "") return true;
+                  else if (token == tokens.Last() && token.Text == "\n") return true;
+                  return false;
+               });
+               if (lineIsEmpty) continue;
+               var lastTextToken = tokens.FindLast(token => token.Name == "Text");
+               if (lastTextToken.Text.Length == 1 || lastTextToken.Text[^2] != ' ')
+                  lastTextToken.Text =
+                     lastTextToken.Text.Substring(0, lastTextToken.Text.Length - 1) + " ";
+               else
+                  lastTextToken.Text = lastTextToken.Text.Substring(0, lastTextToken.Text.Length - 1);
+            }
+            foreach (var token in rs) token.Text = token.Text.Replace("\n", "\r\n");
+            return rs;
+         })
+         ;
       foreach (var _tokens in groupedToken) {
          // state.dialogCompleted == false => the last loop doesn't clear text
          var currentName = state.dialogCompleted == true ? "" : "Append";
@@ -161,19 +207,21 @@ class Text {
          var currentText = "";
          var baseVoice = "";
          // Fix some edge cases
-         if (state.textMode == TextMode.ADV) {
-         } else {
+         if (state.textMode == TextMode.NVL) {
             if (_tokens[^1].Name == "Text") {
-               if (_tokens[^1].Text == "\r\n" || _tokens[^1].Text == "\n")
-                  _tokens.RemoveAt(_tokens.Count - 1);
+               if (_tokens[^2].Text == " " && _tokens[^1].Text == "")
+                  _tokens.RemoveRange(_tokens.Count - 2, 2);
+               else if ((_tokens[^2].Text == "\n" || _tokens[^2].Text == "\r\n") && _tokens[^1].Text == "")
+                  _tokens.RemoveRange(_tokens.Count - 2, 2);
             } else {
                state.dialogCompleted = false;
             }
          }
-         var clearNVLType = "";
+         var clearNVLType = ClearPageType.None;
          var hasWaitClickAtEnd = false;
          var clearTextHit = false;
          var bigCharHit = false;
+         var textHit = false;
          foreach (var token in _tokens) {
             if (clearTextHit == true && state.textMode == TextMode.ADV)
                throw new InvalidSyntaxException($"Lingering command(s) after 'clearText' at line {inputLine + 1} of file '{filePath}'");
@@ -183,7 +231,7 @@ class Text {
             }
             switch (token.Name) {
                case "nextPage":
-                  if ((int)token.Params[0] == 4) clearNVLType = "fade";
+                  if ((int)token.Params[0] == 4) clearNVLType = ClearPageType.Fade;
                   else currentText += $"${{nextPage({Kits.Params2Str(token.Params)})}}";
                   state.dialogCompleted = true;
                   break;
@@ -197,7 +245,7 @@ class Text {
                   else if (bigCharHit == true) {
                      bigCharHit = false;
                   } else {
-                     clearNVLType = "noeff";
+                     clearNVLType = ClearPageType.NoEffect;
                      state.dialogCompleted = true;
                   }
                   break;
@@ -229,13 +277,13 @@ class Text {
                }
                case "Text":
                   AddWaitClick();
-                  if (token.CharaName == currentName && currentName != "")
-                     throw new InvalidSyntaxException($"Detect lingering name tag '{token.CharaName}' at line {inputLine + 1} of file '{filePath}'");
-                  if (currentName != "Append")
-                     currentName = token.CharaName;
-                  else if (token.CharaName != "")
+                  if (textHit == false) {
+                     if (currentName != "Append")
+                        currentName = token.CharaName;
+                  } else if (token.CharaName != "")
                      throw new InvalidSyntaxException($"Detect lingering name tag '{token.CharaName}' at line {inputLine + 1} of file '{filePath}'");
                   currentText += token.Text;
+                  textHit = true;
                   break;
                default:
                   throw new InvalidSyntaxException($"Invalid command '{token.Name}' at line {inputLine + 1} of file '{filePath}'");
@@ -249,10 +297,10 @@ class Text {
          else
             innerText += $"{Config.tab}{currentName}{(baseVoice == "" ? "" : $"({baseVoice})")}`{currentText}{(hasWaitClickAtEnd ? "" : "${noWait}")}`;\r\n";
          switch (clearNVLType) {
-            case "fade":
+            case ClearPageType.Fade:
                innerText += $"{Config.tab}fadeClearPage();";
                break;
-            case "noeff":
+            case ClearPageType.NoEffect:
                innerText += $"{Config.tab}clearPage();";
                break;
          }

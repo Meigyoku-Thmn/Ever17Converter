@@ -26,7 +26,6 @@ showTextbox();
 text(() => {
    `
 
-
 ${noWait}`;
 
 });

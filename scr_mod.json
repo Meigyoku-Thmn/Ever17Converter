@@ -3,7 +3,7 @@
       "op00.scr": "s_1a.scr"
    },
    "entryPointRedirect": {
-      "s_1a.scr": "0x00000185"
+      "s_1a.scr": "0x00000e43"
    },
    "overwrite": {
       "s_2dđa.scr": [

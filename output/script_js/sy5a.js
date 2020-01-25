@@ -8,14 +8,11 @@ clock(`0:3`);
 showTextbox();
 text(() => {
    `The Lemurian Ruins.`;
-   `Just like I had the day before, I visited 
-the ruins.`;
+   `Just like I had the day before, I visited the ruins.`;
    `I figured I would find You there.`;
-   `It felt like I had traveled through time and 
-opened the door to an ancient time.`;
+   `It felt like I had traveled through time and opened the door to an ancient time.`;
    `Speaking of time travel...`;
-   `You had scoffed at it, but I still hadn't 
-given up on the theory.`;
+   `You had scoffed at it, but I still hadn't given up on the theory.`;
    `It was the only one that made sense to me.`;
    `There was no other way to explain things.`;
 
@@ -28,11 +25,9 @@ text(() => {
    `I entered the ruins.`;
    `I continued through the maze-like passages.`;
    `Trying not to get lost, I wracked my memory...`;
-   `Fortunately, I remembered the path I'd taken 
-the day before.`;
+   `Fortunately, I remembered the path I'd taken the day before.`;
    `It was still fresh in my mind.`;
-   `It was like I had been through the area 
-dozens of times.`;
+   `It was like I had been through the area dozens of times.`;
    `Finally...`;
    You(Y5A000)`"Hey there."`;
 
@@ -41,29 +36,22 @@ bgload({ name: `EV_YU03C`, transition: 20 });
 showTextbox();
 text(() => {
    `I found You.`;
-   `She was in the same spot as the day before - 
-the Sun Temple.`;
-   `And she was sitting on the same obelisk, 
-sitting hugging her knees.`;
+   `She was in the same spot as the day before - the Sun Temple.`;
+   `And she was sitting on the same obelisk, sitting hugging her knees.`;
    `I sat down next to her.`;
    Kid`"Do you feel better now?"`;
    You(Y5A001)`"Yeah. Thanks to you."`;
    Kid`"That's good to hear."`;
-   You(Y5A002)`"You did a good job of finding this place 
-again."`;
+   You(Y5A002)`"You did a good job of finding this place again."`;
    Kid`"It was the only place I could think of."`;
-   You(Y5A003)`"That's not what I mean...I mean you 
-remembered the route here."`;
-   Kid`"What are you talking about? You called me 
-here, right?"`;
+   You(Y5A003)`"That's not what I mean...I mean you remembered the route here."`;
+   Kid`"What are you talking about? You called me here, right?"`;
    You(Y5A004)`"That's right."`;
-   Kid`"Don't tell me, you thought that I wouldn't 
-find my way back!"`;
+   Kid`"Don't tell me, you thought that I wouldn't find my way back!"`;
    You(Y5A005)`"Well, yeah."`;
    Kid`"........."`;
    You(Y5A006)`"I'm kidding. It's a joke!"`;
-   You(Y5A007)`"To tell you the truth, I just wanted to test 
-you."`;
+   You(Y5A007)`"To tell you the truth, I just wanted to test you."`;
    Kid`"Test? Me?"`;
 
 });
@@ -71,9 +59,7 @@ bgload({ name: `EV_YU03A`, transition: 20 });
 showTextbox();
 text(() => {
    You(Y5A008)`"Yup."`;
-   You(Y5A009)`"I wanted to see if you could navigate the 
-labyrinth, slay the evil dragon and rescue the 
-princess held captive here."`;
+   You(Y5A009)`"I wanted to see if you could navigate the labyrinth, slay the evil dragon and rescue the princess held captive here."`;
    You(Y5A010)`"To see whether the hero would show up or not."`;
    You(Y5A011)`"I wanted to test the knight in shining armor."`;
    Kid`"........."`;
@@ -85,8 +71,7 @@ showTextbox();
 text(() => {
    You(Y5A012)`"Right."`;
    Kid`"And you are supposed to be the princess?"`;
-   You(Y5A013)`"Well, I don't want to sound to full of 
-myself, but..."`;
+   You(Y5A013)`"Well, I don't want to sound to full of myself, but..."`;
    Kid`"........."`;
    Kid`"I'm going back."`;
    `I stood up.`;
@@ -95,12 +80,9 @@ myself, but..."`;
 bgload({ name: `EV_YU03B`, transition: 20 });
 showTextbox();
 text(() => {
-   You(Y5A014)`"Oh! You're mean! What? I'm not good enough 
-for you?"`;
-   Kid`"That's not it at all. I just can't handle 
-this kind of game right now."`;
-   Kid`"I'm completely worn out. And I've got this 
-broken arm."`;
+   You(Y5A014)`"Oh! You're mean! What? I'm not good enough for you?"`;
+   Kid`"That's not it at all. I just can't handle this kind of game right now."`;
+   Kid`"I'm completely worn out. And I've got this broken arm."`;
 
 });
 bgload({ name: `EV_YU03A`, transition: 20 });
@@ -113,8 +95,7 @@ text(() => {
 bgload({ name: `BG40B1`, transition: 20 });
 showTextbox();
 text(() => {
-   `Standing, I went to return on the road that 
-I had used in coming.`;
+   `Standing, I went to return on the road that I had used in coming.`;
    `But You came after me.`;
 
 });
@@ -122,9 +103,7 @@ fgload({ id: 1, name: `YU04BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(Y5A016)`"Hey, I said wait just a second!"`;
-   Kid`"Leave me alone! If all you want to do is talk 
-about your stupid fantasies, I'd rather get 
-some sleep."`;
+   Kid`"Leave me alone! If all you want to do is talk about your stupid fantasies, I'd rather get some sleep."`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -150,8 +129,7 @@ text(() => {
    You(Y5A019)`"Does it still hurt?"`;
    Kid`"...Only a little."`;
    `I lied.`;
-   `Thanks to the medicine it didn't really hurt 
-at all.`;
+   `Thanks to the medicine it didn't really hurt at all.`;
 
 });
 fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
@@ -159,19 +137,14 @@ showTextbox();
 text(() => {
    You(Y5A020)`"You want me to cast a spell on it for you?"`;
    Kid`"A spell?"`;
-   You(Y5A021)`"Yup. I learned it straight from my mom. It's 
-guaranteed to work."`;
+   You(Y5A021)`"Yup. I learned it straight from my mom. It's guaranteed to work."`;
    You(Y5A022)`"It's my way of saying I'm sorry."`;
    Kid`"........."`;
-   `You put both her hands on my cast, gently, as 
-if enveloping it and gently started rubbing it.`;
+   `You put both her hands on my cast, gently, as if enveloping it and gently started rubbing it.`;
    `I just stood there.`;
-   `I could feel the heat from her palms through 
-the cast.`;
-   `As she gently stroked my arm, You started 
-whispering.`;
-   You(Y5A023)`"Chichin puipui, pain, pain go fly away! To a 
-galaxy far, far away..."`;
+   `I could feel the heat from her palms through the cast.`;
+   `As she gently stroked my arm, You started whispering.`;
+   You(Y5A023)`"Chichin puipui, pain, pain go fly away! To a galaxy far, far away..."`;
 
 });
 hideTextbox();
@@ -189,8 +162,7 @@ text(() => {
    You(Y5A025)`"W-what? You gotta problem with the charm?"`;
    Kid`"Ha...hee, hee...nope...nope...heeeee..."`;
    `All of the sudden, I had a wild urge to laugh.`;
-   `It was something I never thought I'd hear come 
-out of You's mouth.`;
+   `It was something I never thought I'd hear come out of You's mouth.`;
    `And it tickled incredibly.`;
    Kid`"Yeah...it looks like you completely fixed it."`;
    `My irritation vanished.`;
@@ -213,15 +185,12 @@ text(() => {
 fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A028)`"That you made your way through the labyrinth 
-to find me."`;
+   You(Y5A028)`"That you made your way through the labyrinth to find me."`;
    Kid`"........."`;
-   You(Y5A029)`"Now all you have to do is rescue the 
-princess. Right, white knight?"`;
+   You(Y5A029)`"Now all you have to do is rescue the princess. Right, white knight?"`;
    Kid`"........."`;
    Kid`"You just don't quit..."`;
-   Kid`"Alright then, I guess I am off to dispose of 
-some evil dragon."`;
+   Kid`"Alright then, I guess I am off to dispose of some evil dragon."`;
    `Finally I understand.`;
    `The evil dragon that was holding You...`;
    `...It was You's past.`;
@@ -231,9 +200,7 @@ some evil dragon."`;
 showDimOverlay();
 showTextbox();
 text(() => {
-   Sara(Y4A483)`"Listen...no matter how much a girl pretends 
-to be strong, she is always waiting for 
-the guy."`;
+   Sara(Y4A483)`"Listen...no matter how much a girl pretends to be strong, she is always waiting for the guy."`;
 
 });
 dimOff_ac = 0;
@@ -246,14 +213,10 @@ text(() => {
 fgload({ id: 1, name: `YU02BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A030)`"Alright, now let's restart our detective 
-work!"`;
-   `Suddenly, I noticed a tart, refreshing aroma 
-tickling my nose mixed, cutting through the 
-mildew smell of the ruins.`;
+   You(Y5A030)`"Alright, now let's restart our detective work!"`;
+   `Suddenly, I noticed a tart, refreshing aroma tickling my nose mixed, cutting through the mildew smell of the ruins.`;
    `It was the scent of not yet ripened fruit.`;
-   `It was familiar...it smelled like the sun 
-in spring.`;
+   `It was familiar...it smelled like the sun in spring.`;
 
 });
 hideTextbox();
@@ -265,43 +228,25 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `We decided to reorganize the information 
-we had.`;
-   `We thought about the data we had on 
-her parents.`;
-   `Sora's files had You's mother, Yukie Tanaka as 
-dying 15 years ago.`;
-   `The company LAN had a chat log that had You's 
-father, Yoichi Tanaka, as dying 34 years ago.`;
-   `However, You's mom had told her that her 
-father had gone missing 17 years before.`;
-   `There were pictures and movies, but they 
-could not be completely trusted as reliable. 
-You had even said so herself.`;
+   `We decided to reorganize the information we had.`;
+   `We thought about the data we had on her parents.`;
+   `Sora's files had You's mother, Yukie Tanaka as dying 15 years ago.`;
+   `The company LAN had a chat log that had You's father, Yoichi Tanaka, as dying 34 years ago.`;
+   `However, You's mom had told her that her father had gone missing 17 years before.`;
+   `There were pictures and movies, but they could not be completely trusted as reliable. You had even said so herself.`;
    `And what was most suspicious...`;
-   `...was the lady who You had always thought 
-of as her mom.`;
-   `From what we could gather, the death of her 
-parents Yoichi and Yukie were facts.`;
-   `That meant that her mother - or the lady who 
-called herself that - could have been lying 
-all along.`;
-   `...Based on all of the information, we 
-narrowed it down to the two most likely 
-possibilities.`;
-   `'4.Yoichi had died 34 years before and Yukie 
-15 years before.'`;
+   `...was the lady who You had always thought of as her mom.`;
+   `From what we could gather, the death of her parents Yoichi and Yukie were facts.`;
+   `That meant that her mother - or the lady who called herself that - could have been lying all along.`;
+   `...Based on all of the information, we narrowed it down to the two most likely possibilities.`;
+   `'4.Yoichi had died 34 years before and Yukie 15 years before.'`;
    Kid`"Hey, I bet this is what happened."`;
-   Kid`"Assuming that your mom and dad did die is a 
-fact, then the person working at LeMU..."`;
-   Kid`"I mean the person that you thought was your 
-mom up to now, isn't your mom, but..."`;
+   Kid`"Assuming that your mom and dad did die is a fact, then the person working at LeMU..."`;
+   Kid`"I mean the person that you thought was your mom up to now, isn't your mom, but..."`;
    You(Y5A031)`"A foster parent?"`;
    Kid`"Yeah."`;
-   Kid`"Then your real dad could have died 34 years 
-ago and your mom 15 years ago."`;
-   Kid`"So somebody that took pity on the orphaned 
-daughter, took you in and raised you..."`;
+   Kid`"Then your real dad could have died 34 years ago and your mom 15 years ago."`;
+   Kid`"So somebody that took pity on the orphaned daughter, took you in and raised you..."`;
 
 });
 bgload({ name: `EV_YU03B`, transition: 20 });
@@ -313,16 +258,11 @@ text(() => {
    You(Y5A034)`"I mean it has to be true."`;
    You(Y5A035)`"He died 34 years ago, right?"`;
    You(Y5A036)`"And I was born 18 years ago."`;
-   You(Y5A037)`"To be precise, I was born on September 22, 19 
-years ago."`;
-   You(Y5A038)`"In either case, my father would have had to 
-have been alive until December of 
-20 years ago."`;
-   `I figured that was an area I didn't really 
-know much about, so I held my tongue...`;
+   You(Y5A037)`"To be precise, I was born on September 22, 19 years ago."`;
+   You(Y5A038)`"In either case, my father would have had to have been alive until December of 20 years ago."`;
+   `I figured that was an area I didn't really know much about, so I held my tongue...`;
    `But she was right. It did sound fishy.`;
-   `The question was how to fill in the 
-missing years...`;
+   `The question was how to fill in the missing years...`;
    Kid`"No way..."`;
 
 });
@@ -336,8 +276,7 @@ text(() => {
 bgload({ name: `EV_YU03B`, transition: 20 });
 showTextbox();
 text(() => {
-   You(Y5A040)`"What? Tell me? You can't start to say 
-something and stop like that."`;
+   You(Y5A040)`"What? Tell me? You can't start to say something and stop like that."`;
    Kid`"I don't think this could ever happen, but..."`;
    Kid`"What if you were actually 33-years-old..."`;
 
@@ -346,8 +285,7 @@ bgload({ name: `EV_YU03C`, transition: 20 });
 showTextbox();
 text(() => {
    You(Y5A041)`"Kyaaa, ha, ha! Me? 33?"`;
-   You(Y5A042)`"You think with my skin I look like I could be 
-in my 30s?"`;
+   You(Y5A042)`"You think with my skin I look like I could be in my 30s?"`;
 
 });
 choice(
@@ -388,34 +326,23 @@ text(() => {
 bgload({ name: `EV_YU03A`, transition: 20 });
 showTextbox();
 text(() => {
-   You(Y5A046)`"If I were 33-years-old, that would mean 
-there was 15 year gap in my memory."`;
-   You(Y5A047)`"Where in the world could those 15 years 
-have gone?"`;
-   You(Y5A048)`"I've never had amnesia like you, don't 
-remember being abducted by aliens and haven't 
-had any Rip Van Winkle like experiences 
-either."`;
+   You(Y5A046)`"If I were 33-years-old, that would mean there was 15 year gap in my memory."`;
+   You(Y5A047)`"Where in the world could those 15 years have gone?"`;
+   You(Y5A048)`"I've never had amnesia like you, don't remember being abducted by aliens and haven't had any Rip Van Winkle like experiences either."`;
    Kid`"........."`;
    `(Rip Van what...?)`;
-   You(Y5A049)`"That would mean when I was 12, I was 
-really 27?"`;
+   You(Y5A049)`"That would mean when I was 12, I was really 27?"`;
    You(Y5A050)`"That couldn't be, right?"`;
-   You(Y5A051)`"Or that when I was five, I was actually 20. 
-That's even more impossible."`;
-   You(Y5A052)`"In the 18 years and seven months of my life 
-I've never once felt a gap of 15 years."`;
+   You(Y5A051)`"Or that when I was five, I was actually 20. That's even more impossible."`;
+   You(Y5A052)`"In the 18 years and seven months of my life I've never once felt a gap of 15 years."`;
    `(A 15 year gap...?)`;
-   Kid`"Listen. Sorry to stop you, but let's get 
-back on topic..."`;
+   Kid`"Listen. Sorry to stop you, but let's get back on topic..."`;
    You(Y5A053)`"?"`;
-   Kid`"You were just talking about Rip Van Winkle, 
-right?"`;
+   Kid`"You were just talking about Rip Van Winkle, right?"`;
    You(Y5A054)`"And?"`;
    Kid`"He falls asleep and..."`;
    You(Y5A055)`"Huh?"`;
-   `(Rip Van Winkle...he falls asleep...and when 
-he returns home...)`;
+   `(Rip Van Winkle...he falls asleep...and when he returns home...)`;
    `(When he returns home...)`;
    Kid`"I got it! I got it!"`;
    Kid`"This is probably what happened."`;
@@ -425,38 +352,28 @@ bgload({ name: `EV_YU03B`, transition: 20 });
 showTextbox();
 text(() => {
    You(Y5A056)`"You probably traveled through time!"`;
-   You(Y5A057)`"...Would you stop talking about these stupid 
-theories of yours?"`;
+   You(Y5A057)`"...Would you stop talking about these stupid theories of yours?"`;
    Kid`"But it would explain everything!"`;
-   Kid`"Somewhere along the line, maybe when you were 
-small before you can even remember, I'll bet 
-you jumped 15 years into the future."`;
+   Kid`"Somewhere along the line, maybe when you were small before you can even remember, I'll bet you jumped 15 years into the future."`;
    Kid`"You were probably really born 33 years ago..."`;
-   Kid`"That would mean that if Yoichi died 34 years 
-ago it all makes sense."`;
-   You(Y5A058)`"Geez...how many times are you going to have 
-to say that before you are satisfied?"`;
+   Kid`"That would mean that if Yoichi died 34 years ago it all makes sense."`;
+   You(Y5A058)`"Geez...how many times are you going to have to say that before you are satisfied?"`;
    You(Y5A059)`"Time travel is a physical impossibility."`;
    You(Y5A060)`"Just like...."`;
    Kid`"...Water flows downhill..."`;
-   Kid`"BUT, if you use a siphon, you can move water 
-up hill!"`;
+   Kid`"BUT, if you use a siphon, you can move water up hill!"`;
    You(Y5A061)`"That's not what I mean."`;
    You(Y5A062)`"It's just an example, an analogy..."`;
    Kid`"But...but..."`;
-   Kid`"But you're not the only one that experienced 
-time travel!"`;
+   Kid`"But you're not the only one that experienced time travel!"`;
    Kid`"I...I did too..."`;
    Kid`"But my time travel was different..."`;
-   Kid`"And I think it is probably the reason that 
-I get premonitions about things."`;
+   Kid`"And I think it is probably the reason that I get premonitions about things."`;
    Kid`"I was trapped here in LeMU before."`;
    You(Y5A063)`"How can you be so sure about it?"`;
-   You(Y5A064)`"How can you be so absolutely confident about 
-it?"`;
+   You(Y5A064)`"How can you be so absolutely confident about it?"`;
    You(Y5A065)`"Even if...IF..."`;
-   You(Y5A066)`"Just suppose that you did travel through 
-time..."`;
+   You(Y5A066)`"Just suppose that you did travel through time..."`;
    You(Y5A067)`"Where is the other Kid, the other you?"`;
    Kid`"The other me?"`;
 
@@ -475,7 +392,6 @@ text(() => {
    `
 
 
-
 ${noWait}`;
    `              'Life readings: 7'`;
    fadeClearPage();
@@ -488,33 +404,23 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   `I remembered on the night of May 1, when the 
-numbers for the life scan kept changing. `;
+   `I remembered on the night of May 1, when the numbers for the life scan kept changing. `;
    You(Y5A068)`"Yes, the other you."`;
-   You(Y5A069)`"You're saying that you have been repeating 
-the several days of being trapped here, right?"`;
-   You(Y5A070)`"If so, then the past you should be here as 
-well."`;
+   You(Y5A069)`"You're saying that you have been repeating the several days of being trapped here, right?"`;
+   You(Y5A070)`"If so, then the past you should be here as well."`;
    Kid`"That's...uh...I..."`;
-   Kid`"I know! Only my memory is going back 
-through time!"`;
+   Kid`"I know! Only my memory is going back through time!"`;
    You(Y5A071)`"Even though you forgot everything?"`;
    Kid`"That's exactly why I've lost my memory!"`;
-   Kid`"Normally anything like a memory going back 
-through time would defy common sense."`;
+   Kid`"Normally anything like a memory going back through time would defy common sense."`;
    Kid`"But this time common sense is being defied..."`;
-   Kid`"My brain couldn't deal with the situation and 
-started to panic. So it tried to logically 
-explain or deal with the situation."`;
+   Kid`"My brain couldn't deal with the situation and started to panic. So it tried to logically explain or deal with the situation."`;
    Kid`"And so it erased all of my memories."`;
    You`"........."`;
    Kid`"........."`;
-   You(Y5A072)`"Uh...I don't mean to take the air out of you 
-after your enthusiastic speech, but..."`;
+   You(Y5A072)`"Uh...I don't mean to take the air out of you after your enthusiastic speech, but..."`;
    You(Y5A073)`"We don't call that logical."`;
-   You(Y5A074)`"I'm pretty sure the word is pathological. And 
-sometimes they add the word delusional for 
-good measure."`;
+   You(Y5A074)`"I'm pretty sure the word is pathological. And sometimes they add the word delusional for good measure."`;
 
 });
 removeBG({ mode: BLACK, transition: 1 });
@@ -524,8 +430,7 @@ text(() => {
    `....`;
    `....`;
    `....`;
-   `So the day ended without us finding any 
-answers.`;
+   `So the day ended without us finding any answers.`;
 
 });
 hideTextbox();
@@ -541,11 +446,8 @@ text(() => {
    `The next morning -`;
    `Everybody slept in.`;
    `It looked like everyone was pretty beat.`;
-   `When You and I saw each other we exchanged 
-good mornings as if everything were normal.`;
-   `It seemed like she wanted to act as if things 
-were the same as always in front of everybody 
-else.`;
+   `When You and I saw each other we exchanged good mornings as if everything were normal.`;
+   `It seemed like she wanted to act as if things were the same as always in front of everybody else.`;
    `So I did my best to follow suit.`;
    fadeClearPage();
 });
@@ -557,21 +459,16 @@ clock(`8:37`);
 showTextbox();
 text(() => {
    `Sleeping in made breakfast later than usual.`;
-   `Sora had put in a request and we were going to 
-have another picnic.`;
+   `Sora had put in a request and we were going to have another picnic.`;
    `She really seemed to enjoy them.`;
-   `We spread out the same Myumyun blanket near 
-the rest area.`;
+   `We spread out the same Myumyun blanket near the rest area.`;
 
 });
 bgload({ name: `BG07B1`, transition: 20 });
 showTextbox();
 text(() => {
-   `I went to go check on the trap that we had set 
-the night before, while everyone was 
-preparing, just in case we'd caught something.`;
-   `But just as I got to where we'd set it, I saw 
-Takeshi breaking down the trap.`;
+   `I went to go check on the trap that we had set the night before, while everyone was preparing, just in case we'd caught something.`;
+   `But just as I got to where we'd set it, I saw Takeshi breaking down the trap.`;
 
 });
 fgload({ id: 1, name: `KB08ADS`, x: 320, useAnim: true });
@@ -581,10 +478,8 @@ text(() => {
    `Takeshi nodded silently.`;
    Kid`"Meaning...that...?"`;
    Takeshi`"........."`;
-   `Takeshi's shoulders slumped and he let out 
-a big sigh.`;
-   `He looked so pathetic...I couldn't say 
-anything else.`;
+   `Takeshi's shoulders slumped and he let out a big sigh.`;
+   `He looked so pathetic...I couldn't say anything else.`;
 
 });
 hideTextbox();
@@ -598,18 +493,12 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `When we had finally got everything ready, 
-Tsugumi appeared out of nowhere.`;
-   `She again plopped herself down on the sheet 
-and started munching away.`;
-   `I didn't know if Takeshi had matured over 
-night, but he held his tongue, though it was 
-clear he was in a sulky mood.`;
-   `Sara and Tsugumi didn't look at each other. It 
-seemed like they were ignoring each other.`;
+   `When we had finally got everything ready, Tsugumi appeared out of nowhere.`;
+   `She again plopped herself down on the sheet and started munching away.`;
+   `I didn't know if Takeshi had matured over night, but he held his tongue, though it was clear he was in a sulky mood.`;
+   `Sara and Tsugumi didn't look at each other. It seemed like they were ignoring each other.`;
    `Apparently they still weren't getting along.`;
-   `But everybody tried to make the best of it, 
-eating, chatting and having fun.`;
+   `But everybody tried to make the best of it, eating, chatting and having fun.`;
 
 });
 multifgload2({ id1: 1, id2: 4, name1: `SA01ADM`, name2: `YU01BDM`, x1: 128, x2: 512, useAnim: true });
@@ -618,23 +507,17 @@ text(() => {
    Sara(Y5A075)`"Rock, paper, scissors!"`;
    Sara(Y5A076)`"Ready go!"`;
    Kid`"I lost again!"`;
-   You(Y5A077)`"Kid, you're terrible at this. What is that? 
-Sixteen losses in a row?"`;
+   You(Y5A077)`"Kid, you're terrible at this. What is that? Sixteen losses in a row?"`;
    Kid`"Weird..."`;
-   You(Y5A078)`"You're too nice. You have to just throw out 
-what you feel - rock, paper or scissors."`;
+   You(Y5A078)`"You're too nice. You have to just throw out what you feel - rock, paper or scissors."`;
    Sara(Y5A079)`"He's the gullible type."`;
    Kid`"I am not. I'm trying to win."`;
    You(Y5A080)`"Rock, paper, scissors. Ready go!"`;
    Kid`"Dang it!"`;
    `I just kept losing.`;
-   You(Y5A081)`"Could be, that with your amnesia, your 
-ability to make decisions isn't so good 
-right now."`;
-   You(Y5A082)`"Don't get too caught up with the trivial 
-things that you can't control."`;
-   You(Y5A083)`"You need to be strong. Make up your own mind. 
-Or you'll just end up following everybody else."`;
+   You(Y5A081)`"Could be, that with your amnesia, your ability to make decisions isn't so good right now."`;
+   You(Y5A082)`"Don't get too caught up with the trivial things that you can't control."`;
+   You(Y5A083)`"You need to be strong. Make up your own mind. Or you'll just end up following everybody else."`;
    Kid`"I know..."`;
    You(Y5A084)`"That being as it is..."`;
 
@@ -652,20 +535,13 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 4, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `She squeezed a ton of mustard on to 
-my sandwich.`;
-   `The penalty was mustard. And my sandwich was 
-already drenched in the stuff.`;
-   `My mouth felt like it was on fire before 
-I even took a bite.`;
-   `...Maybe thanks to that exchange, I was able 
-to get through the whole thing without 
-thinking about it too much.`;
-   `Suddenly, someone cut across my field of 
-vision.`;
+   `She squeezed a ton of mustard on to my sandwich.`;
+   `The penalty was mustard. And my sandwich was already drenched in the stuff.`;
+   `My mouth felt like it was on fire before I even took a bite.`;
+   `...Maybe thanks to that exchange, I was able to get through the whole thing without thinking about it too much.`;
+   `Suddenly, someone cut across my field of vision.`;
    `It was Tsugumi.`;
-   `Tsugumi was walking toward Takeshi. 
-She extended her hand.`;
+   `Tsugumi was walking toward Takeshi. She extended her hand.`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `TU15ADM`, name2: `KB14ADM`, x1: 128, x2: 512, useAnim: true });
@@ -674,16 +550,14 @@ text(() => {
    Takeshi(Y5A088)`"Huh? What's with the hand?"`;
    Tsugumi`"..."`;
    Takeshi(Y5A089)`"You're like a dog. Shake girl."`;
-   Takeshi(Y5A090)`"And you'll probably say 'don't make fun 
-of me!'"`;
+   Takeshi(Y5A090)`"And you'll probably say 'don't make fun of me!'"`;
 
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(Y5A091)`"You're really dumb, you know that?"`;
-   Sora(Y5A092)`"Are you trying to say that you want another 
-helping?"`;
+   Sora(Y5A092)`"Are you trying to say that you want another helping?"`;
 
 });
 fgload({ id: 1, name: `TU15ADM`, x: 128, useAnim: true });
@@ -691,9 +565,7 @@ showTextbox();
 text(() => {
    `Tsugumi nodded at Sora's extra explanation.`;
    `She had already wolfed down her first one.`;
-   Takeshi(Y5A093)`"Hey...you've gotta lot of nerve...you only 
-show your face at meal time and now you're 
-demanding seconds..."`;
+   Takeshi(Y5A093)`"Hey...you've gotta lot of nerve...you only show your face at meal time and now you're demanding seconds..."`;
 
 });
 fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
@@ -701,17 +573,14 @@ showTextbox();
 text(() => {
    Takeshi(Y5A094)`"Well, I suppose..."`;
    Tsugumi(Y5A095)`"So do you have more or not?"`;
-   Takeshi(Y5A096)`"I do. I thought you might want more so 
-I made a SPECIAL one for you."`;
+   Takeshi(Y5A096)`"I do. I thought you might want more so I made a SPECIAL one for you."`;
    Kid`"Special?"`;
    `I had a bad feeling about the whole thing.`;
    Takeshi(Y5A097)`"Eat this. And no leftovers."`;
    Tsugumi`"..."`;
-   `Tsugumi took the sandwich without saying 
-anything.`;
+   `Tsugumi took the sandwich without saying anything.`;
    Takeshi`"..."`;
-   `Takeshi stared at Tsugumi as she took 
-the wrap off of the sandwich.`;
+   `Takeshi stared at Tsugumi as she took the wrap off of the sandwich.`;
 
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
@@ -723,17 +592,13 @@ text(() => {
 fgload({ id: 2, name: `KB12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A099)`"Nothing. It's just that you're so beautiful. 
-I can't take my eyes off of you even when 
-you're just removing a sandwich wrapper..."`;
+   Takeshi(Y5A099)`"Nothing. It's just that you're so beautiful. I can't take my eyes off of you even when you're just removing a sandwich wrapper..."`;
    Tsugumi(Y5A100)`"Your stupidity is terminal."`;
    Tsugumi(Y5A101)`"Maybe if you died 50 times it would help."`;
    Takeshi`"..."`;
    `I thought Takeshi would get angry.`;
-   `But he was just grinning as he watched Tsugumi 
-start in on her sandwich.`;
-   `Something was definitely not right here. 
-I sucked in my breath and watched.`;
+   `But he was just grinning as he watched Tsugumi start in on her sandwich.`;
+   `Something was definitely not right here. I sucked in my breath and watched.`;
    `Tsugumi bit into the sandwich.`;
    `Munch.`;
    `Chomp. Chew.`;
@@ -751,19 +616,12 @@ text(() => {
    Takeshi(Y5A103)`"Hee, heee..."`;
    Takeshi(Y5A104)`"Fwaaa, ha, ha, ha, ha, ha..."`;
    Tsugumi`"..."`;
-   Takeshi(Y5A105)`"It's got quite a flavor, huh? That 
-sandwich...ha, ha,ha..."`;
+   Takeshi(Y5A105)`"It's got quite a flavor, huh? That sandwich...ha, ha,ha..."`;
    `Takeshi laughed so hard he cried.`;
-   Takeshi(Y5A106)`"It's packed with mustard, Tabasco, pepper, 
-sage, nutmeg, cinnamon, mint and a dose of 
-curry powder..."`;
-   Takeshi(Y5A107)`"For good measure I added a dose of 
-mayonnaise, ketchup, sugar, salt, soy sauce, 
-vinegar and vanilla..."`;
+   Takeshi(Y5A106)`"It's packed with mustard, Tabasco, pepper, sage, nutmeg, cinnamon, mint and a dose of curry powder..."`;
+   Takeshi(Y5A107)`"For good measure I added a dose of mayonnaise, ketchup, sugar, salt, soy sauce, vinegar and vanilla..."`;
    Takeshi(Y5A108)`"And...what else? Oh, I forget..."`;
-   Takeshi(Y5A109)`"Anyway, I threw in every ingredient and spice 
-that I could find. It's my secret 34 
-ingredient sauce."`;
+   Takeshi(Y5A109)`"Anyway, I threw in every ingredient and spice that I could find. It's my secret 34 ingredient sauce."`;
    Tsugumi`"..."`;
    You(Y5A110)`"H...hey! That's just too cruel!"`;
    Sara(Y5A111)`"Yeah...!"`;
@@ -774,17 +632,14 @@ fgload({ id: 2, name: `KB04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(Y5A112)`"Shut up! I'm the cook here."`;
-   Sora(Y5A113)`"Tsugumi...I highly recommend inducing 
-vomiting immediately...!"`;
-   Sora(Y5A114)`"Get water quickly! N...no...we'll need 
-medicine first...!"`;
+   Sora(Y5A113)`"Tsugumi...I highly recommend inducing vomiting immediately...!"`;
+   Sora(Y5A114)`"Get water quickly! N...no...we'll need medicine first...!"`;
 
 });
 fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A115)`"She'll be fine. She'll get the runs, 
-but she won't die."`;
+   Takeshi(Y5A115)`"She'll be fine. She'll get the runs, but she won't die."`;
    Kid`"That's not something you should do to a girl."`;
    `I went to grab Takeshi with my left hand.`;
 
@@ -806,8 +661,7 @@ text(() => {
 fgload({ id: 2, name: `KB12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A119)`"But it still tastes terrible, right? Right? 
-Tell the truth."`;
+   Takeshi(Y5A119)`"But it still tastes terrible, right? Right? Tell the truth."`;
 
 });
 fgload({ id: 1, name: `TU16ADM`, x: 128, useAnim: true });
@@ -859,16 +713,12 @@ fgload({ id: 1, name: `TU02ADM`, x: 128, useAnim: true });
 removeFG({ id: 2, useAnim: true });
 showTextbox();
 text(() => {
-   `Takeshi went to grab the sandwich, but Tsugumi 
-was too quick for him. Not only that, Takeshi 
-caught his foot and fell to the floor.`;
-   `In that instant, Tsugumi polished off the 
-sandwich.`;
+   `Takeshi went to grab the sandwich, but Tsugumi was too quick for him. Not only that, Takeshi caught his foot and fell to the floor.`;
+   `In that instant, Tsugumi polished off the sandwich.`;
    Tsugumi(Y5A127)`"Thanks for the sandwich."`;
    Tsugumi(Y5A128)`"You made it specially for me, right?"`;
    Takeshi`".................."`;
-   `So the event ended with Tsugumi turning the 
-tables on Takeshi.`;
+   `So the event ended with Tsugumi turning the tables on Takeshi.`;
 
 });
 hideTextbox();
@@ -884,17 +734,13 @@ clock(`9:19`);
 showTextbox();
 text(() => {
    `I ended up cleaning the area up afterward.`;
-   `I separated the cans and sandwich wrappers 
-and put them in garbage bags.`;
+   `I separated the cans and sandwich wrappers and put them in garbage bags.`;
    `You and Sara helped.`;
-   `Takeshi said he was going to start getting 
-ready for lunch and headed to the kiosk.`;
-   `Sora said she had to do some maintenance 
-on LeMMIH and left for the Control Room.`;
+   `Takeshi said he was going to start getting ready for lunch and headed to the kiosk.`;
+   `Sora said she had to do some maintenance on LeMMIH and left for the Control Room.`;
    `Tsugumi disappeared to somewhere unknown.`;
    `....`;
-   `But something happened when I was picking up 
-garbage.`;
+   `But something happened when I was picking up garbage.`;
 
 });
 stopBGM();
@@ -919,8 +765,7 @@ text(() => {
 fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(Y5A132)`"I'll bet you're just trying to find a way 
-to get out of helping."`;
+   Sara(Y5A132)`"I'll bet you're just trying to find a way to get out of helping."`;
    Kid`"I'm not. It's not that at all."`;
 
 });
@@ -929,8 +774,7 @@ showTextbox();
 text(() => {
    You(Y5A133)`"You hearing your mystery voices again?"`;
    Kid`"Well, I..."`;
-   You(Y5A134)`"Please, don't do that again. Get a hold of 
-yourself already."`;
+   You(Y5A134)`"Please, don't do that again. Get a hold of yourself already."`;
    You(Y5A135)`"I know you're tired, but..."`;
    Kid`"........."`;
 
@@ -939,17 +783,14 @@ multiremoveFG({ id1: 1, id2: 4, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    `We started picking up garbage again.`;
-   `We finally finished with the trash, folded the 
-blanket and were done cleaning up.`;
+   `We finally finished with the trash, folded the blanket and were done cleaning up.`;
 
 });
 multifgload2({ id1: 1, id2: 4, name1: `SA01ADM`, name2: `YU01BDM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
    You(Y5A136)`"Now we'll just sweep the area."`;
-   You(Y5A137)`"Mayo. Can you do me a favor and get me a 
-broom and dustpan? I think they are at the 
-kiosk."`;
+   You(Y5A137)`"Mayo. Can you do me a favor and get me a broom and dustpan? I think they are at the kiosk."`;
    Sara(Y5A138)`"Roger that!"`;
 
 });
@@ -957,30 +798,23 @@ multiremoveFG({ id1: 1, id2: 4, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    `Sara set out for the kiosk.`;
-   Kid`"I was just thinking. This must be a nightmare 
-for the people that clean this place."`;
+   Kid`"I was just thinking. This must be a nightmare for the people that clean this place."`;
 
 });
 fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(Y5A139)`"It would be if 'people' had to do it."`;
-   You(Y5A140)`"But LeMMIH usually uses a cleaning robot that 
-automatically cleans the whole complex."`;
+   You(Y5A140)`"But LeMMIH usually uses a cleaning robot that automatically cleans the whole complex."`;
    Kid`"Wow."`;
-   You(Y5A141)`"Well, what with the accident and all, 
-I imagine the robot is a rusted pile of 
-junk metal at the bottom of the ocean right 
-about now."`;
+   You(Y5A141)`"Well, what with the accident and all, I imagine the robot is a rusted pile of junk metal at the bottom of the ocean right about now."`;
    Kid`"I'll bet."`;
    //??
    Unk(T5B017)`"Heave ho, heave ho!"`;
    `(...What?)`;
    `I...I was hearing voices again.`;
-   You(Y5A142)`"Thinking about it, I guess that LeMU is just 
-one massive pile of scrap metal."`;
-   You(Y5A143)`"I suppose it's just of matter of how it's 
-destroyed..."`;
+   You(Y5A142)`"Thinking about it, I guess that LeMU is just one massive pile of scrap metal."`;
+   You(Y5A143)`"I suppose it's just of matter of how it's destroyed..."`;
 
 });
 fgload({ id: 1, name: `YU06BDM`, x: 320, useAnim: true });
@@ -1000,10 +834,8 @@ text(() => {
 fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A146)`"Oh...alright. You've done enough. Just go to 
-the infirmary or somewhere and rest."`;
-   You(Y5A147)`"You've got a serious condition of 
-something..."`;
+   You(Y5A146)`"Oh...alright. You've done enough. Just go to the infirmary or somewhere and rest."`;
+   You(Y5A147)`"You've got a serious condition of something..."`;
    `I was sure I'd heard something...`;
    `This time, I was sure it wasn't my imagination.`;
    //??
@@ -1019,8 +851,7 @@ something..."`;
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `I looked around the four stone statues at the 
-edge of the open area.`;
+   `I looked around the four stone statues at the edge of the open area.`;
    `And there....`;
 
 });
@@ -1028,11 +859,9 @@ bgload({ name: `EV_CO19C`, transition: 20 });
 showTextbox();
 text(() => {
    `Atop the pedestal of a stone statue was a girl.`;
-   `She was standing there next to the figure as 
-if clinging to the statue.`;
+   `She was standing there next to the figure as if clinging to the statue.`;
    `(Oh! It's that girl...)`;
-   `It was the girl that I had seen and who had 
-then vanished on the first day.`;
+   `It was the girl that I had seen and who had then vanished on the first day.`;
    Kid`"Look, You! Right there!"`;
 
 });
@@ -1043,8 +872,7 @@ text(() => {
    You(Y5A148)`"Huh?"`;
    Kid`"Look! Over on that statue!"`;
    You(Y5A149)`"What about the statue?"`;
-   Kid`"Look! That stone statue! There's a girl 
-there! See?"`;
+   Kid`"Look! That stone statue! There's a girl there! See?"`;
 
 });
 fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
@@ -1076,8 +904,7 @@ text(() => {
    Unk(T5B043)`"And next..."`;
    //??
    Unk(T5B044)`"Uh oh!"`;
-   `Just then the girl lost her balance, falling 
-from her awkward place on the pedestal.`;
+   `Just then the girl lost her balance, falling from her awkward place on the pedestal.`;
 
 });
 bgload({ name: `EV_CO19D`, transition: 20 });
@@ -1085,18 +912,15 @@ showTextbox();
 text(() => {
    Kid`"L-look out!"`;
    `I ran toward her.`;
-   `The water caught on my feet and sprayed 
-everywhere as I ran all out to where she was.`;
+   `The water caught on my feet and sprayed everywhere as I ran all out to where she was.`;
    `(Will I make it?)`;
 
 });
 removeBG({ mode: BLACK, transition: 2 });
 showTextbox();
 text(() => {
-   `I closed my eyes, mustered all of my 
-power and sprinted.`;
-   `I threw out my free left hand to where the 
-girl would be falling to catch her.`;
+   `I closed my eyes, mustered all of my power and sprinted.`;
+   `I threw out my free left hand to where the girl would be falling to catch her.`;
 
 });
 hideTextbox();
@@ -1121,8 +945,7 @@ text(() => {
    `There was no one in my arms.`;
    `Or even around me.`;
    `Only the water sloshing about gently around me.`;
-   You(Y5A152)`"Hey, are you alright? It looks like you took 
-a pretty nasty spill..."`;
+   You(Y5A152)`"Hey, are you alright? It looks like you took a pretty nasty spill..."`;
    Kid`"..."`;
 
 });
@@ -1130,35 +953,27 @@ bgload({ name: `IT05E`, transition: 0 });
 showTextbox();
 text(() => {
    `I looked above me.`;
-   `Of course there was no one on the pedestal 
-supporting the statue.`;
-   `Without saying anything, I got up and went 
-behind the statue.`;
+   `Of course there was no one on the pedestal supporting the statue.`;
+   `Without saying anything, I got up and went behind the statue.`;
 
 });
 bgload({ name: `IT05F`, transition: 0 });
 showTextbox();
 text(() => {
    `There were scratches in the statue.`;
-   `There were deep notches that looked like they 
-had been carved there by something hard and 
-sharp.`;
+   `There were deep notches that looked like they had been carved there by something hard and sharp.`;
    `They were the shape of people.`;
    `Really simple looking like stick people.`;
-   `At the end of each stick was a little round 
-face...`;
+   `At the end of each stick was a little round face...`;
    `There were six in all.`;
-   `Looking closer, I saw that next to the people 
-figures were two carvings of animals that I'd 
-never seen.`;
+   `Looking closer, I saw that next to the people figures were two carvings of animals that I'd never seen.`;
 
 });
 bgload({ name: `IT05E`, transition: 0 });
 showTextbox();
 text(() => {
    `I looked up at the statue.`;
-   `The statue was pointing diagonal and 
-up...toward the east.`;
+   `The statue was pointing diagonal and up...toward the east.`;
 
 });
 bgload({ name: `BG21B1`, transition: 20 });
@@ -1166,14 +981,12 @@ showTextbox();
 text(() => {
    Sara(Y5A153)`"Hey, what are you two doing?"`;
    You(Y5A154)`"That's a good question..."`;
-   `I ignored them and gently touched the 
-carvings on the statue.`;
+   `I ignored them and gently touched the carvings on the statue.`;
    `Without thinking I blurted out - `;
    Kid`"Watch your step, okay?"`;
    //??
    Unk(T5B048)`"Okay!"`;
-   `That answer could have been my imagination 
-that time...`;
+   `That answer could have been my imagination that time...`;
 
 });
 hideTextbox();
@@ -1188,11 +1001,9 @@ NVL_Mode();
 setSceneTitle({ index: 79 });
 showTextbox();
 text(() => {
-   `After that I decided to go to the infirmary 
-and sleep.`;
+   `After that I decided to go to the infirmary and sleep.`;
    `It wasn't that I was feeling ill.`;
-   `It was simply that I was not getting enough 
-sleep. I wanted some quality rest.`;
+   `It was simply that I was not getting enough sleep. I wanted some quality rest.`;
    `I slept so deeply that I didn't even dream...`;
    fadeClearPage();
 });
@@ -1206,11 +1017,9 @@ text(() => {
 hideTextbox();
 showTextbox();
 text(() => {
-   `'We will be in the Conference Room until 
-dinner.`;
+   `'We will be in the Conference Room until dinner.`;
    `If you wake up by then, please come along.`;
-   `I'm sorry for making you hang out with me 
-the last couple days.`;
+   `I'm sorry for making you hang out with me the last couple days.`;
    `Please make sure that you get enough rest.`;
    `You'`;
 
@@ -1218,8 +1027,7 @@ the last couple days.`;
 showTextbox();
 text(() => {
    `${noWait}`;
-   `Judging from the signature, it seemed that 
-You had left it.`;
+   `Judging from the signature, it seemed that You had left it.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1236,10 +1044,8 @@ bgload({ name: `BG26A3L`, transition: 20 });
 clock(`16:22`);
 showTextbox();
 text(() => {
-   `I started walking in the direction opposite 
-of the Conference Room.`;
-   `I decided to take a walk around the complex 
-for fun.`;
+   `I started walking in the direction opposite of the Conference Room.`;
+   `I decided to take a walk around the complex for fun.`;
 
 });
 bgload({ name: `BG23A1`, transition: 20 });
@@ -1248,9 +1054,7 @@ playSFX({ name: `SE00_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    `I got into EI.`;
-   `I thought that it might make for a good 
-change of pace to walk around a floor 
-I hadn't spent much time on.`;
+   `I thought that it might make for a good change of pace to walk around a floor I hadn't spent much time on.`;
    `...That was my thinking.`;
 
 });
@@ -1273,8 +1077,7 @@ text(() => {
    `...It was then that it happened.`;
    `I saw 'the girl' again!`;
    Kid`"Oh!"`;
-   `I saw her small figure cutting across 
-the corridor.`;
+   `I saw her small figure cutting across the corridor.`;
    `I was sure of it.`;
    `It was that girl!`;
    `I chased after her.`;
@@ -1285,18 +1088,13 @@ playBGM({ num: 11, volume: 100 });
 bgload({ name: `BG26B3L`, transition: 20 });
 showTextbox();
 text(() => {
-   `Her skirt shook back and forth as she walked 
-further and further away.`;
-   `It was almost as if she were trying to get 
-away from me.`;
+   `Her skirt shook back and forth as she walked further and further away.`;
+   `It was almost as if she were trying to get away from me.`;
    Kid`"Hey! Wait a minute!"`;
-   `She might not have heard me and she didn't 
-show any sign of stopping.`;
+   `She might not have heard me and she didn't show any sign of stopping.`;
    `I wondered what it was all about.`;
-   `This girl that kept appearing out of nowhere 
-and then disappearing.`;
-   `This girl that didn't register on LeMMIH's 
-bio scan.`;
+   `This girl that kept appearing out of nowhere and then disappearing.`;
+   `This girl that didn't register on LeMMIH's bio scan.`;
    `No, she had registered once...`;
 
 });
@@ -1309,14 +1107,10 @@ text(() => {
 bgload({ name: `BG26B3L`, transition: 20 });
 showTextbox();
 text(() => {
-   `But the more I thought about it, the stranger 
-everything seemed.`;
-   `She only appeared in front of me and we hardly 
-communicated...`;
-   `Well, I couldn't worry about it. I knew it 
-wouldn't help.`;
-   `It was something that I could only solve by 
-asking her directly.`;
+   `But the more I thought about it, the stranger everything seemed.`;
+   `She only appeared in front of me and we hardly communicated...`;
+   `Well, I couldn't worry about it. I knew it wouldn't help.`;
+   `It was something that I could only solve by asking her directly.`;
 
 });
 bgload({ name: `BG25B3`, transition: 20 });
@@ -1336,16 +1130,14 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    `The room was dimly lit.`;
-   `A massive whale floated like a majestic 
-phantasm, in the cosmic room.`;
+   `A massive whale floated like a majestic phantasm, in the cosmic room.`;
    `The girl was in the middle of the room.`;
 
 });
 playBGM({ num: 22, volume: 100 });
 showTextbox();
 text(() => {
-   `She was facing away from me, sitting and 
-hugging her knees.`;
+   `She was facing away from me, sitting and hugging her knees.`;
    Kid`"I finally...caught up..."`;
    `I approached her as I caught my breath.`;
    `...I heard singing.`;
@@ -1375,11 +1167,9 @@ text(() => {
 let lbl_00000ad9;
 showTextbox();
 text(() => {
-   `I wondered if it was my missing memory that 
-was making me feel that way...?`;
+   `I wondered if it was my missing memory that was making me feel that way...?`;
    Kid`"Hey, you."`;
-   `Her shoulders jumped with shock and she 
-stopped singing.`;
+   `Her shoulders jumped with shock and she stopped singing.`;
 
 });
 fgload({ id: 1, name: `CO01ADM`, x: 320, useAnim: true });
@@ -1391,9 +1181,7 @@ text(() => {
    //??
    Unk`"........."`;
    Kid`"Oh, well. I guess it doesn't matter."`;
-   `It really did matter to me, but since I had 
-finally been able to confront the girl, 
-I felt a surge of relief.`;
+   `It really did matter to me, but since I had finally been able to confront the girl, I felt a surge of relief.`;
    Kid`"Well, why don't we go where everyone else is?"`;
    `I held out my hand as I said this.`;
    `Finally, she stood up and spoke.`;
@@ -1413,12 +1201,10 @@ text(() => {
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `I took her hand and tugged it as I began 
-to walk.`;
+   `I took her hand and tugged it as I began to walk.`;
    `The inside of my mind was churning...`;
    `It was because of what she had just said.`;
-   `Inside of me it felt like another me was 
-screaming.`;
+   `Inside of me it felt like another me was screaming.`;
    `...That was how I felt.`;
 
 });
@@ -1439,10 +1225,8 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `I burst into the Conference Room as 
-I shouted this.`;
-   `Of course, I was still leading the girl 
-by the hand.`;
+   `I burst into the Conference Room as I shouted this.`;
+   `Of course, I was still leading the girl by the hand.`;
    `Everyone turned to look at me at once.`;
 
 });
@@ -1459,8 +1243,7 @@ showTextbox();
 text(() => {
    Takeshi(Y5A161)`"Who are you talking about?"`;
    Sora(Y5A162)`"Are you talking about...THAT girl?"`;
-   Kid`"Yeah. I found her in the Cosmic Whale Room 
-and brought her here."`;
+   Kid`"Yeah. I found her in the Cosmic Whale Room and brought her here."`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
@@ -1504,8 +1287,7 @@ playBGM({ num: 4, volume: 100 });
 fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(Y5A165)`"What are you doing...dragging me here all 
-of the sudden?"`;
+   Sara(Y5A165)`"What are you doing...dragging me here all of the sudden?"`;
    Kid`"S-Sara...?"`;
    Sara(Y5A166)`"???"`;
    `I looked back at everyone.`;
@@ -1516,8 +1298,7 @@ multifgload2({ id1: 1, id2: 2, name1: `YU07BDM`, name2: `TU06ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    Kid`"T-this isn't right! I swear, I saw her!"`;
-   Kid`"We were walking here hand-in-hand. It wasn't 
-Sara..."`;
+   Kid`"We were walking here hand-in-hand. It wasn't Sara..."`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
@@ -1534,13 +1315,10 @@ text(() => {
 multifgload2({ id1: 1, id2: 2, name1: `SO03ADM`, name2: `SA04ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(Y5A170)`"Huh? What're you talking about? You're 
-the one that's lying?"`;
+   Sara(Y5A170)`"Huh? What're you talking about? You're the one that's lying?"`;
    Kid`"W-what...?"`;
-   Kid`"The girl was in the Whale Room...she was 
-sitting down hugging her knees."`;
-   Kid`"She was singing some kind of phrases to 
-a kid's song."`;
+   Kid`"The girl was in the Whale Room...she was sitting down hugging her knees."`;
+   Kid`"She was singing some kind of phrases to a kid's song."`;
    Sara(Y5A171)`"I'm telling you that was me!"`;
    `Sara was red-faced and shouting.`;
    Sara(Y5A172)`"You don't have to tell everybody about it!"`;
@@ -1558,10 +1336,8 @@ fgload({ id: 1, name: `YU03BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(Y5A173)`"Oh my!"`;
-   `You groaned as she slapped her forehead 
-with her hand.`;
-   You(Y5A174)`"Kid? Just forget about everything else and 
-get some rest."`;
+   `You groaned as she slapped her forehead with her hand.`;
+   You(Y5A174)`"Kid? Just forget about everything else and get some rest."`;
    You(Y5A175)`"I'll bring you some dinner later."`;
    Kid`"..............."`;
 
@@ -1577,8 +1353,7 @@ monoColorOverlay({ interval: 24, color: BLACK });
 removeFG({ id: 1, useAnim: false });
 showTextbox();
 text(() => {
-   `I thought about a lot of things as I plodded 
-to the infirmary.`;
+   `I thought about a lot of things as I plodded to the infirmary.`;
 
 });
 hideTextbox();
@@ -1602,22 +1377,17 @@ text(() => {
 hideTextbox();
 showTextbox();
 text(() => {
-   `Everything I had been trying to avoid thinking 
-about all rushed in to my mind at once, making 
-it a confused mess.`;
-   `I couldn't help thinking...and 
-worrying...about things.`;
+   `Everything I had been trying to avoid thinking about all rushed in to my mind at once, making it a confused mess.`;
+   `I couldn't help thinking...and worrying...about things.`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
    `About You.`;
-   `What if the man who had died 34 years before 
-wasn't You's father?`;
+   `What if the man who had died 34 years before wasn't You's father?`;
    `Then who was her real father?`;
-   `Was the woman that died 15 years before really 
-You's mother?`;
+   `Was the woman that died 15 years before really You's mother?`;
    `If not, then who was?`;
    fadeClearPage();
 });
@@ -1625,12 +1395,9 @@ hideTextbox();
 showTextbox();
 text(() => {
    `About me.`;
-   `Why did I keep having premonitions of 
-the future? What did it mean?`;
-   `Who was the girl? Why had I mistaken 
-Sara for her?`;
-   `Why had I even lost my memory in the 
-first place?`;
+   `Why did I keep having premonitions of the future? What did it mean?`;
+   `Who was the girl? Why had I mistaken Sara for her?`;
+   `Why had I even lost my memory in the first place?`;
    `What had happened to me in my past?`;
    `What did Tsugumi know about all of this?`;
    fadeClearPage();
@@ -1660,26 +1427,20 @@ unSkippableDelay(18);
 clock(`20:19`);
 showTextbox();
 text(() => {
-   `A few hours later, the installation started to 
-flood again.`;
+   `A few hours later, the installation started to flood again.`;
 
 });
 showTextbox();
 text(() => {
-   `'Dritte stock - from the partition to the 
-Cosmic Whale was submerged.'`;
+   `'Dritte stock - from the partition to the Cosmic Whale was submerged.'`;
    `'Casualties: None'`;
    `'Flooding to other rooms: None'`;
    `'Chance of damage spreading: None...'`;
-   `Sora's voice conveyed the situation over the 
-intercom in a matter-of-fact tone.`;
+   `Sora's voice conveyed the situation over the intercom in a matter-of-fact tone.`;
    `The Cosmic Whale Room...`;
-   `I had been there until just shortly before the 
-flooding.`;
-   `But somehow it felt like some event that 
-had taken place thousands of miles away.`;
-   `I covered my head with the blanket, 
-closed my eyes and tried to sleep.`;
+   `I had been there until just shortly before the flooding.`;
+   `But somehow it felt like some event that had taken place thousands of miles away.`;
+   `I covered my head with the blanket, closed my eyes and tried to sleep.`;
    `I tried to search.`;
    `...For the world I should be in.`;
    `...For the place I should return to.`;

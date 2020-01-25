@@ -241,7 +241,6 @@ text(() => {
 
 
 
-
 ${noWait}`;
    `${bigChar}    L${wait(46)}${noWait}`;
    Append`${bigChar}i${wait(46)}${noWait}`;
@@ -273,7 +272,6 @@ removeBG({ mode: BLACK, transition: 62 });
 showTextbox();
 text(() => {
    `
-
 
 
 
@@ -313,7 +311,6 @@ text(() => {
 
 
 
-
 ${noWait}`;
    `         ${nextPage(0)}This story is not an end yet.${nextPage(1)}${noWait}`;
    `   ${nextPage(0)}Because only you are in the infinity loop.${nextPage(1)}${noWait}`;
@@ -348,8 +345,7 @@ g_coco_route_unlock = 1;
 l__coco_route_unlock = 1;
 showTextbox();
 text(() => {
-   `Opening The Third Eye- The Last Chapter:
-Finding Coco`;
+   `Opening The Third Eye- The Last Chapter: Finding Coco`;
 
 });
 hideTextbox();

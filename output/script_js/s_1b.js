@@ -12,34 +12,27 @@ unSkippableDelay(18);
 clock(`18:30`);
 showTextbox();
 text(() => {
-   `I decided to check Dritte stock from end to 
-end.`;
-   `You and Sara were probably investigating 
-upstairs.`;
+   `I decided to check Dritte stock from end to end.`;
+   `You and Sara were probably investigating upstairs.`;
 
 });
 bgload({ name: `BG21B1`, transition: 20 });
 showTextbox();
 text(() => {
    `The rest area.`;
-   `I noticed immediately that the scenery was 
-different from the morning.`;
+   `I noticed immediately that the scenery was different from the morning.`;
    `The pond in the middle was covered with a lid.`;
    `Or more a partition of sorts than a lid.`;
-   `In either case, the pond was no longer 
-connected to the ocean.`;
-   `The LeMMIH computer that You had talked about 
-might have automatically sealed it off.`;
+   `In either case, the pond was no longer connected to the ocean.`;
+   `The LeMMIH computer that You had talked about might have automatically sealed it off.`;
 
 });
 bgload({ name: `BG07B1`, transition: 20 });
 showTextbox();
 text(() => {
    `- Fried chicken sandwich shop.`;
-   `There was still a slight scent of cooked 
-chicken in the air.`;
-   `The second I smelled it, my stomach started to 
-growl.`;
+   `There was still a slight scent of cooked chicken in the air.`;
+   `The second I smelled it, my stomach started to growl.`;
    `I glanced around.`;
    `There was no one there...`;
    `I thought I might eat...`;
@@ -51,8 +44,7 @@ bgload({ name: `BG17A1`, transition: 20 });
 showTextbox();
 text(() => {
    `The Conference Room.`;
-   `There was nothing really out of the ordinary 
-here, but I did pick up on one thing.`;
+   `There was nothing really out of the ordinary here, but I did pick up on one thing.`;
    `This room was not flooded with seawater.`;
    `The elevated entrance had stopped the water.`;
 
@@ -68,12 +60,9 @@ bgload({ name: `BG16A1`, transition: 20 });
 showTextbox();
 text(() => {
    `- The Control Room.`;
-   `This room to was spared flooding by its 
-elevated entrance. `;
-   `The chair that You had knocked over was as 
-she had left it.`;
-   `I put it back where it should be, checked 
-the room and left.`;
+   `This room to was spared flooding by its elevated entrance. `;
+   `The chair that You had knocked over was as she had left it.`;
+   `I put it back where it should be, checked the room and left.`;
 
 });
 bgloadCrop({ name: `BG07B1`, transition: 20, x: 150, y: 37, hx: 550, hy: 412 });
@@ -87,25 +76,18 @@ bgload({ name: `BG04B1`, transition: 20 });
 showTextbox();
 text(() => {
    `The Ruins of Lemuria.`;
-   `You had passed through here just a while 
-before.`;
-   `Just to be sure, I peeked in the shadows 
-of the stone pillars and behind buildings, 
-but couldn't find anything resembling a 
-pathway.`;
+   `You had passed through here just a while before.`;
+   `Just to be sure, I peeked in the shadows of the stone pillars and behind buildings, but couldn't find anything resembling a pathway.`;
 
 });
 bgloadCrop({ name: `BG07B1`, transition: 20, x: 281, y: 85, hx: 382, hy: 287 });
 showTextbox();
 text(() => {
    `- The chicken sandwich stand.`;
-   `That smell.... Ohh! I couldn't take it 
-any move.`;
-   `I slyly extended my hand toward the case 
-holding the warm chicken sandwiches.`;
+   `That smell.... Ohh! I couldn't take it any move.`;
+   `I slyly extended my hand toward the case holding the warm chicken sandwiches.`;
    `This situation called for extreme measures!`;
-   `I kept telling myself that as I munched and 
-swallowed down the sandwich.`;
+   `I kept telling myself that as I munched and swallowed down the sandwich.`;
 
 });
 hideTextbox();
@@ -116,17 +98,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `With that, I had finished checking 
-Dritte stock.`;
-   `It didn't look like there were any hidden 
-corridors to be found, or anyone trapped here 
-besides the three of us.`;
+   `With that, I had finished checking Dritte stock.`;
+   `It didn't look like there were any hidden corridors to be found, or anyone trapped here besides the three of us.`;
    `I wondered how things were above.`;
-   `Maybe it was just like You had said. 
-Maybe there was no more point in looking...`;
-   `It was still before our meeting time, 
-but I went back to our rendezvous point 
-in front of the Control Room.`;
+   `Maybe it was just like You had said. Maybe there was no more point in looking...`;
+   `It was still before our meeting time, but I went back to our rendezvous point in front of the Control Room.`;
 
 });
 hideTextbox();
@@ -174,8 +150,7 @@ text(() => {
 fgload({ id: 1, name: `KB01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Man(S1B003)`"Nah, I don't think I've introduced myself 
-yet."`;
+   Man(S1B003)`"Nah, I don't think I've introduced myself yet."`;
    Takeshi(S1B004)`"I'm Takeshi Kuranari. And this here is..."`;
    `The guy named Takeshi indicated the girl.`;
 
@@ -207,9 +182,7 @@ text(() => {
 fgload({ id: 4, name: `YU01BDS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B008)`"Just a bit ago, when I was walking around 
-Zweite stock with Mayo...we bumped into 
-these three..."`;
+   You(S1B008)`"Just a bit ago, when I was walking around Zweite stock with Mayo...we bumped into these three..."`;
    Kid`"So, you're stuck here too, huh?"`;
 
 });
@@ -218,8 +191,7 @@ showTextbox();
 text(() => {
    Sora(S1B009)`"Y-yes..."`;
    Takeshi(S1B010)`"That's right."`;
-   Kid`"Huh? Wait a sec... 
-didn't you just say 'three people'?"`;
+   Kid`"Huh? Wait a sec... didn't you just say 'three people'?"`;
    You(S1B011)`"Yeah."`;
    You(S1B012)`"See. Right over there."`;
 
@@ -233,11 +205,8 @@ text(() => {
 fgload({ id: 1, name: `TU17ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   `Someone was standing on the opposite end of 
-the wall along the corridor.`;
-   `I could only make out half of the person's 
-back, but I saw long hair and black clothes 
-and it left an impression.`;
+   `Someone was standing on the opposite end of the wall along the corridor.`;
+   `I could only make out half of the person's back, but I saw long hair and black clothes and it left an impression.`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -247,51 +216,40 @@ text(() => {
    Kid`"Who's that...?"`;
    Sora(S1B013)`"You mean Tsugumi?"`;
    Takeshi(S1B014)`"Oh. Tsugumi Komachi, I think it was."`;
-   `Tsugumi...so that was her name. 
-She wore all black.`;
+   `Tsugumi...so that was her name. She wore all black.`;
    `It didn't sound familiar. But, still...`;
    Kid`"I feel like I've met her somewhere before."`;
    Sora(S1B015)`"Do you know her?"`;
-   Kid`"No, it's not that. It's probably just my 
-imagination..."`;
+   Kid`"No, it's not that. It's probably just my imagination..."`;
    Kid`"It's just somehow...something..."`;
 
 });
 fgload({ id: 2, name: `KB03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B016)`"Something? Anyway, she's pretty tough to get 
-along with."`;
-   Takeshi(S1B017)`"I'm not sure why, but it seems like she 
-doesn't like me very much."`;
+   Takeshi(S1B016)`"Something? Anyway, she's pretty tough to get along with."`;
+   Takeshi(S1B017)`"I'm not sure why, but it seems like she doesn't like me very much."`;
    Kid`"Doesn't like you?"`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `I could feel a slight animosity emanating from 
-Tsugumi's back.`;
-   `She didn't have to say anything, there was a 
-definite atmosphere which made approaching her 
-difficult.`;
+   `I could feel a slight animosity emanating from Tsugumi's back.`;
+   `She didn't have to say anything, there was a definite atmosphere which made approaching her difficult.`;
    `(Maybe I'll go talk to her...)`;
 
 });
 fgload({ id: 1, name: `TU08ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   `Just as that thought crossed my mind, 
-Tsugumi shot a glance in our direction.`;
-   `She had piercing eyes...and an intimidating 
-gaze...`;
-   `With her glare eating into me, I couldn't take 
-even one step forward.`;
+   `Just as that thought crossed my mind, Tsugumi shot a glance in our direction.`;
+   `She had piercing eyes...and an intimidating gaze...`;
+   `With her glare eating into me, I couldn't take even one step forward.`;
    `There was no way I could talk with her.`;
    `(W-what that's all about...?)`;
    `(Why is she so angry...?)`;
-   `(I haven't done anything to make her 
-hate me...)`;
+   `(I haven't done anything to make her hate me...)`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -300,15 +258,13 @@ text(() => {
    `Tsugumi's gaze returned to normal.`;
    `Cold beads of sweat appeared on my forehead.`;
    Kid`"Oh, that reminds me - where's Sara?"`;
-   `Having realized she wasn't around, I glanced 
-around the room.`;
+   `Having realized she wasn't around, I glanced around the room.`;
 
 });
 fgload({ id: 1, name: `SA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   `Without my noticing it, Sara had come to stand 
-behind me at some point.`;
+   `Without my noticing it, Sara had come to stand behind me at some point.`;
    Sara`"........."`;
 
 });
@@ -325,10 +281,8 @@ l_sara_point += 1;
 showTextbox();
 text(() => {
    Kid`"Huh? What's wrong?"`;
-   `I couldn't help but notice a dark 
-look in her eyes.`;
-   `There was nothing left of the 'ninja' attitude 
-that she had departed with.`;
+   `I couldn't help but notice a dark look in her eyes.`;
+   `There was nothing left of the 'ninja' attitude that she had departed with.`;
 
 });
 showTextbox();
@@ -368,8 +322,7 @@ showTextbox();
 text(() => {
    Sara(S1B022)`"It's just..."`;
    Kid`"Just?"`;
-   Sara(S1B023)`"We didn't find an exit...so I'm feeling kinda 
-down..."`;
+   Sara(S1B023)`"We didn't find an exit...so I'm feeling kinda down..."`;
    Kid`"Is that really all that's bothering you?"`;
 
 });
@@ -388,16 +341,14 @@ showTextbox();
 text(() => {
    `But, her expression somehow didn't seem fine...`;
    `It was probably to be expected, though.`;
-   `All kinds of things had happened, and 
-in the end we hadn't found an exit.`;
+   `All kinds of things had happened, and in the end we hadn't found an exit.`;
    `Mentally we were pretty well done in.`;
 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `I thought that I should probably leave her 
-alone for the time being.`;
+   `I thought that I should probably leave her alone for the time being.`;
 
 });
 goto(lbl_000004a4);
@@ -405,19 +356,15 @@ let lbl_000004a4;
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B025)`"Anyway, just standing around isn't going to 
-get us anywhere..."`;
-   Sora(S1B026)`"Let's see what the situation in LeMU is 
-right now via the Control Room."`;
-   `Sora said this and pointed to the Control Room 
-right across from us.`;
+   Sora(S1B025)`"Anyway, just standing around isn't going to get us anywhere..."`;
+   Sora(S1B026)`"Let's see what the situation in LeMU is right now via the Control Room."`;
+   `Sora said this and pointed to the Control Room right across from us.`;
 
 });
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `Encouraged by Sora, we all shuffled into 
-the room.`;
+   `Encouraged by Sora, we all shuffled into the room.`;
 
 });
 hideTextbox();
@@ -433,16 +380,11 @@ text(() => {
    You(S1B027)`"So, Sora, do you understand this?"`;
    Sora(S1B028)`"Well, let's see..."`;
    `Sora faced the monitor and held up both hands.`;
-   `Instantly the content of the screen began to 
-change, with a number of windows opening, 
-closing and searches for data underway.`;
+   `Instantly the content of the screen began to change, with a number of windows opening, closing and searches for data underway.`;
    `I stared dully at her rapidly moving hands.`;
-   `It looked like Sora was fairly used to 
-handling this computer.`;
-   `For one thing there weren't any flying chairs 
-or heel stomping...`;
-   `It was completely different from the way You 
-handled things a while ago...`;
+   `It looked like Sora was fairly used to handling this computer.`;
+   `For one thing there weren't any flying chairs or heel stomping...`;
+   `It was completely different from the way You handled things a while ago...`;
 
 });
 hideTextbox();
@@ -451,16 +393,14 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B029)`"...I've learned something."`;
-   `Finally, Sora said this in a matter-of-fact 
-way.`;
+   `Finally, Sora said this in a matter-of-fact way.`;
    `Everyone looked in her direction.`;
 
 });
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B030)`"Everyone, please calm down and listen 
-to me..."`;
+   Sora(S1B030)`"Everyone, please calm down and listen to me..."`;
    Sora(S1B031)`"Please don't get hysterical or depressed."`;
    `Saying this her face seemed pale.`;
    `All eyes were glued to her in silence.`;
@@ -469,8 +409,7 @@ to me..."`;
 fgload({ id: 1, name: `SO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B032)`"I have a report on the current status of 
-LeMU."`;
+   Sora(S1B032)`"I have a report on the current status of LeMU."`;
 
 });
 hideTextbox();
@@ -485,11 +424,8 @@ text(() => {
    Sora(S1B033)`"First, the first floor, Erste boden..."`;
    Sora(S1B034)`"Is completely flooded."`;
    You(S1B035)`"Co-completely!?"`;
-   Sora(S1B036)`"Yeah. All of the partitions have dropped 
-and it isn't possible to get through 
-any of its corridors."`;
-   Sara(S1B037)`"So what you mean is...all the paths leading 
-up are completely shut off?"`;
+   Sora(S1B036)`"Yeah. All of the partitions have dropped and it isn't possible to get through any of its corridors."`;
+   Sara(S1B037)`"So what you mean is...all the paths leading up are completely shut off?"`;
    Sora(S1B038)`"That is correct."`;
    Sora(S1B039)`"Furthermore..."`;
 
@@ -498,8 +434,7 @@ bgload({ name: `MAP2F_A1`, transition: 30 });
 showTextbox();
 text(() => {
    Sora(S1B040)`"Here is the status of Zweite stock."`;
-   Sora(S1B041)`"This is the floor above, the floor with the 
-infirmary."`;
+   Sora(S1B041)`"This is the floor above, the floor with the infirmary."`;
 
 });
 bgload({ name: `MAP3F_A1`, transition: 30 });
@@ -520,8 +455,7 @@ text(() => {
    Takeshi(S1B044)`"You serious...?"`;
    Sara(S1B045)`"No...way..."`;
    You(S1B046)`"Almost half of LeMU is submerged!"`;
-   `Sora nodded somberly with a pained expression 
-on her face.`;
+   `Sora nodded somberly with a pained expression on her face.`;
 
 });
 closeMapIndicatorAnim();
@@ -529,40 +463,26 @@ bgload_keepFg({ name: `MAP3F_A1`, transition: 30 });
 unSkippableDelay(1);
 showTextbox();
 text(() => {
-   Sora(S1B047)`"This floor's dry areas are divided into three 
-sections."`;
+   Sora(S1B047)`"This floor's dry areas are divided into three sections."`;
    Kid`"Dry areas...?"`;
-   Sora(S1B048)`"The areas that have no flooding and that 
-people are able to pass through."`;
-   Sora(S1B049)`"The central area displayed on this map is 
-where we currently are in Sector 8."`;
-   Kid`"Huh? It looks like the map is divided in to 
-two areas...so where is the third?"`;
-   Sora(S1B050)`"Actually, due to a flaw in the system, we are 
-unable to call up a detailed map..."`;
-   Sora(S1B051)`"Sector 4 above the corner of Sector 8 
-looks fine."`;
+   Sora(S1B048)`"The areas that have no flooding and that people are able to pass through."`;
+   Sora(S1B049)`"The central area displayed on this map is where we currently are in Sector 8."`;
+   Kid`"Huh? It looks like the map is divided in to two areas...so where is the third?"`;
+   Sora(S1B050)`"Actually, due to a flaw in the system, we are unable to call up a detailed map..."`;
+   Sora(S1B051)`"Sector 4 above the corner of Sector 8 looks fine."`;
    Sora(S1B052)`"However..."`;
    Sara(S1B053)`"There's no way to get there?"`;
    Sora(S1B054)`"Correct. It is impossible."`;
    Kid`"Why?"`;
-   Sora(S1B055)`"All of the corridors connecting the sectors 
-have flooded."`;
-   Sora(S1B056)`"In terms of distance, it is roughly 
-100 yards."`;
-   Sora(S1B057)`"I don't think there is anyone among you that 
-is capable of swimming 100 yards without 
-breathing."`;
+   Sora(S1B055)`"All of the corridors connecting the sectors have flooded."`;
+   Sora(S1B056)`"In terms of distance, it is roughly 100 yards."`;
+   Sora(S1B057)`"I don't think there is anyone among you that is capable of swimming 100 yards without breathing."`;
    Sora(S1B058)`"Therefore, I say it is impossible."`;
-   Sora(S1B059)`"Furthermore...even if someone did reach 
-Sector 4, I don't think it would improve our 
-situation at all."`;
+   Sora(S1B059)`"Furthermore...even if someone did reach Sector 4, I don't think it would improve our situation at all."`;
    Kid`"?"`;
    Sora(S1B060)`"Section 4 is in the same predicament as here."`;
-   Sora(S1B061)`"All of the emergency stairs leading up to the 
-floating island have completely flooded."`;
-   Takeshi(S1B062)`"So, even if we could make it there, we'd be 
-wasting our time?"`;
+   Sora(S1B061)`"All of the emergency stairs leading up to the floating island have completely flooded."`;
+   Takeshi(S1B062)`"So, even if we could make it there, we'd be wasting our time?"`;
    Sora(S1B063)`"That's correct."`;
 
 });
@@ -576,8 +496,7 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    `Everyone went quiet.`;
-   `For a while, we just stared at the LeMU map 
-that was floating in the darkness.`;
+   `For a while, we just stared at the LeMU map that was floating in the darkness.`;
    `And then...`;
 
 });
@@ -592,8 +511,7 @@ showTextbox();
 text(() => {
    You(S1B064)`"Hey, I just thought of something..."`;
    `You opened her mouth silently.`;
-   You(S1B065)`"Isn't there something like a wastewater 
-pump in LeMU?"`;
+   You(S1B065)`"Isn't there something like a wastewater pump in LeMU?"`;
 
 });
 fgload({ id: 4, name: `SO10ADS`, x: 320, useAnim: true });
@@ -604,8 +522,7 @@ text(() => {
 });
 showTextbox();
 text(() => {
-   Sara(S1B067)`"Well, why don't we use that to pump the flood 
-water out of those areas..."`;
+   Sara(S1B067)`"Well, why don't we use that to pump the flood water out of those areas..."`;
 
 });
 fgload({ id: 4, name: `SO03ADS`, x: 320, useAnim: true });
@@ -619,10 +536,8 @@ showTextbox();
 text(() => {
    You(S1B069)`"Why? We've got electricity..."`;
    Sora(S1B070)`"I am not yet certain...of the cause."`;
-   Sora(S1B071)`"Some electrical systems, including the 
-elevators are malfunctioning."`;
-   Sora(S1B072)`"Disconnected wiring in each sector might be 
-affecting the situation, but..."`;
+   Sora(S1B071)`"Some electrical systems, including the elevators are malfunctioning."`;
+   Sora(S1B072)`"Disconnected wiring in each sector might be affecting the situation, but..."`;
 
 });
 multifgload2({ id1: 2, id2: 1, name1: `YU03BDS`, name2: `SA03ADS`, x1: 512, x2: 128, useAnim: true });
@@ -637,35 +552,27 @@ text(() => {
 fgload({ id: 4, name: `SO10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B073)`"By the way, a life readings search or bio 
-scan for life inside of LeMU indicates that 
-the people present are the only people 
-remaining here."`;
+   Sora(S1B073)`"By the way, a life readings search or bio scan for life inside of LeMU indicates that the people present are the only people remaining here."`;
 
 });
 multifgload2({ id1: 2, id2: 1, name1: `YU06BDS`, name2: `SA06ADS`, x1: 512, x2: 128, useAnim: true });
 showTextbox();
 text(() => {
    `The people here....`;
-   `You, Sara, Sora, Tsugumi, Takeshi and I...a 
-total of six people...`;
+   `You, Sara, Sora, Tsugumi, Takeshi and I...a total of six people...`;
 
 });
 fgload({ id: 4, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B074)`"Furthermore, the current internal air 
-pressure is 1 atmosphere."`;
-   Sora(S1B075)`"Oxygen concentration 22%, nitrogen 
-concentration 75%, helium concentration 
-3%, temperature 75.2 degrees..."`;
+   Sora(S1B074)`"Furthermore, the current internal air pressure is 1 atmosphere."`;
+   Sora(S1B075)`"Oxygen concentration 22%, nitrogen concentration 75%, helium concentration 3%, temperature 75.2 degrees..."`;
 
 });
 fgload({ id: 1, name: `SA01ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B076)`"You mean the environment is suitable for us 
-to stay here for a while?"`;
+   Sara(S1B076)`"You mean the environment is suitable for us to stay here for a while?"`;
 
 });
 fgload({ id: 4, name: `SO03ADS`, x: 320, useAnim: true });
@@ -677,8 +584,7 @@ text(() => {
 fgload({ id: 2, name: `YU07BDS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B078)`"Everyone, we will be forced to wait inside 
-the complex for a while."`;
+   Sora(S1B078)`"Everyone, we will be forced to wait inside the complex for a while."`;
 
 });
 removeFG({ id: 2, useAnim: true });
@@ -692,35 +598,27 @@ fgload({ id: 4, name: `SO05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B080)`"Until help comes."`;
-   Sora(S1B081)`"I am continuously sending out a request 
-for assistance. However..."`;
+   Sora(S1B081)`"I am continuously sending out a request for assistance. However..."`;
 
 });
 fgload({ id: 4, name: `SO10ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B082)`"Currently, there is no guarantee that they 
-will reach anyone."`;
+   Sora(S1B082)`"Currently, there is no guarantee that they will reach anyone."`;
 
 });
 fgload({ id: 1, name: `SA05ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B083)`"All communication lines to Insel null, 
-including the emergency ones, have been 
-physically severed and are unusable."`;
-   Sora(S1B084)`"I have also been attempting to make contact 
-via a seafloor cable network, using sonar..."`;
-   Sora(S1B085)`"Right now I cannot estimate when the 
-network will be back online."`;
+   Sora(S1B083)`"All communication lines to Insel null, including the emergency ones, have been physically severed and are unusable."`;
+   Sora(S1B084)`"I have also been attempting to make contact via a seafloor cable network, using sonar..."`;
+   Sora(S1B085)`"Right now I cannot estimate when the network will be back online."`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA03ADS`, name2: `KB05ADS`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B086)`"So we're like little kids lost smack in the 
-middle of the ocean and nobody can hear our 
-SOS..."`;
+   Takeshi(S1B086)`"So we're like little kids lost smack in the middle of the ocean and nobody can hear our SOS..."`;
 
 });
 fgload({ id: 4, name: `SO05ADS`, x: 320, useAnim: true });
@@ -732,11 +630,9 @@ text(() => {
 fgload({ id: 2, name: `KB03ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   `The gravity of the situation was 
-descending on us.`;
+   `The gravity of the situation was descending on us.`;
    `There was no reason to be upbeat.`;
-   `Takeshi and You let loose with sighs almost 
-simultaneously.`;
+   `Takeshi and You let loose with sighs almost simultaneously.`;
    `Sara and I slumped our shoulders.`;
 
 });
@@ -751,10 +647,8 @@ text(() => {
 fgload({ id: 1, name: `TU08ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   `Tsugumi was standing in a corner of the room 
-glaring at us.`;
-   `Like before, there was an atmosphere around 
-her that seemed impenetrable.`;
+   `Tsugumi was standing in a corner of the room glaring at us.`;
+   `Like before, there was an atmosphere around her that seemed impenetrable.`;
    `(Really, why is she so peeved...?)`;
 
 });
@@ -781,12 +675,9 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(25);
 showTextbox();
 text(() => {
-   You(S1B088)`"But, well...getting depressed isn't going 
-to do solve anything, is it?"`;
-   You(S1B089)`"Let's be positive. Positive is the word! 
-Alright everybody?!"`;
-   `You broke the silence with her energetic 
-pep talk.`;
+   You(S1B088)`"But, well...getting depressed isn't going to do solve anything, is it?"`;
+   You(S1B089)`"Let's be positive. Positive is the word! Alright everybody?!"`;
+   `You broke the silence with her energetic pep talk.`;
    `But no one responded.`;
 
 });
@@ -794,17 +685,14 @@ fgload({ id: 4, name: `YU05BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(S1B090)`"Now quit looking so depressed."`;
-   You(S1B091)`"Even if we are floating in the middle of the 
-Pacific, it's not as if we're lost in a 
-blizzard."`;
+   You(S1B091)`"Even if we are floating in the middle of the Pacific, it's not as if we're lost in a blizzard."`;
    Kid`"So what?"`;
 
 });
 fgload({ id: 4, name: `YU01BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B092)`"So, I mean if we wait a few hours, help will 
-probably come."`;
+   You(S1B092)`"So, I mean if we wait a few hours, help will probably come."`;
 
 });
 fgload({ id: 1, name: `SA15ADS`, x: 128, useAnim: true });
@@ -817,58 +705,48 @@ fgload({ id: 4, name: `YU11BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(S1B094)`"Well...think about it."`;
-   You(S1B095)`"We don't know why, but we've been trapped 
-inside this cramped complex."`;
-   You(S1B096)`"On top of that, we don't have any way to 
-contact the outside."`;
+   You(S1B095)`"We don't know why, but we've been trapped inside this cramped complex."`;
+   You(S1B096)`"On top of that, we don't have any way to contact the outside."`;
 
 });
 fgload({ id: 4, name: `YU14BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(S1B097)`"But, but...listen."`;
-   You(S1B098)`"Even if we can't contact anyone, somebody 
-else probably will."`;
+   You(S1B098)`"Even if we can't contact anyone, somebody else probably will."`;
    Kid`"Like who?"`;
 
 });
 showTextbox();
 text(() => {
    Kid`"Ooooh, that's right."`;
-   Kid`"You mean like your colleagues...or Sara's 
-classmates, or teacher..."`;
+   Kid`"You mean like your colleagues...or Sara's classmates, or teacher..."`;
 
 });
 fgload({ id: 4, name: `YU02BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   `You gave a big nod as if to say, 
-"That's right."`;
+   `You gave a big nod as if to say, "That's right."`;
 
 });
 multifgload2({ id1: 1, id2: 4, name1: `SA16ADS`, name2: `YU16BDS`, x1: 128, x2: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B100)`"And Takeshi, you weren't alone when you got 
-here either, right?"`;
+   You(S1B100)`"And Takeshi, you weren't alone when you got here either, right?"`;
 
 });
 fgload({ id: 2, name: `KB11ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S1B101)`"Well, that's true."`;
-   Takeshi(S1B102)`"The people on the floating island should have 
-noticed a long time ago that we're still 
-down here."`;
+   Takeshi(S1B102)`"The people on the floating island should have noticed a long time ago that we're still down here."`;
 
 });
 fgload({ id: 4, name: `YU01BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(S1B103)`"Yup."`;
-   You(S1B104)`"So I don't know if it will be a rescue 
-team or a search team or what, but anyway 
-somebody should come to help us soon."`;
+   You(S1B104)`"So I don't know if it will be a rescue team or a search team or what, but anyway somebody should come to help us soon."`;
 
 });
 fgload({ id: 4, name: `YU02BDS`, x: 320, useAnim: true });
@@ -882,8 +760,7 @@ showTextbox();
 text(() => {
    `Sara, Sora, Takeshi and I all nodded.`;
    `Hope returned to everybody's face.`;
-   `Only Tsugumi...only she kept her cold gaze 
-trained on us.`;
+   `Only Tsugumi...only she kept her cold gaze trained on us.`;
 
 });
 hideTextbox();
@@ -900,68 +777,53 @@ clock(`19:25`);
 showTextbox();
 text(() => {
    `We all moved to the Conference Room together.`;
-   `There was something unnerving about waiting 
-for help in the dimly lit Control Room, and 
-there weren't that many chairs to start with.`;
-   `I wondered if there were a place in one of 
-the dry areas that everyone could relax.`;
-   `The closest one was the Conference Room we 
-were at.`;
-   Kid`"Hey...Sora, how come you know so much about 
-LeMU?"`;
+   `There was something unnerving about waiting for help in the dimly lit Control Room, and there weren't that many chairs to start with.`;
+   `I wondered if there were a place in one of the dry areas that everyone could relax.`;
+   `The closest one was the Conference Room we were at.`;
+   Kid`"Hey...Sora, how come you know so much about LeMU?"`;
    `I asked Sora, who was sitting next to me.`;
 
 });
 fgload({ id: 4, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B106)`"Probably because I am a system engineer at 
-LeMU's research and development division."`;
+   Sora(S1B106)`"Probably because I am a system engineer at LeMU's research and development division."`;
    Sora(S1B107)`"Actually...I am the assistant chief."`;
 
 });
 fgload({ id: 2, name: `KB12ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B108)`"Assistant chief...so you're pretty high up 
-then?"`;
+   Takeshi(S1B108)`"Assistant chief...so you're pretty high up then?"`;
 
 });
 fgload({ id: 4, name: `SO15ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B109)`"Only in name, I'm really just an assistant. 
-It's no big deal."`;
+   Sora(S1B109)`"Only in name, I'm really just an assistant. It's no big deal."`;
 
 });
 fgload({ id: 2, name: `KB11ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B110)`"But, hey, Sora weren't you up at the gate 
-above ground?"`;
-   Takeshi(S1B111)`"You were giving some kind of explanation at 
-the entrance, right? I only heard half of 
-it, but..."`;
+   Takeshi(S1B110)`"But, hey, Sora weren't you up at the gate above ground?"`;
+   Takeshi(S1B111)`"You were giving some kind of explanation at the entrance, right? I only heard half of it, but..."`;
    Sora(S1B112)`"That's right. So you noticed..."`;
 
 });
 fgload({ id: 4, name: `SO16ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B113)`"We are short of staff here. So from time to 
-time I do that kind of work."`;
+   Sora(S1B113)`"We are short of staff here. So from time to time I do that kind of work."`;
    `Sora smiled.`;
    `I wondered what the 'gate above ground' was.`;
-   `I didn't understand what Takeshi and Sora were 
-talking about, but for now I knew the reason 
-why Sora knew so much about LeMU.`;
+   `I didn't understand what Takeshi and Sora were talking about, but for now I knew the reason why Sora knew so much about LeMU.`;
 
 });
 fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B114)`"So that means...there are two employees from 
-LeMU here then."`;
+   Takeshi(S1B114)`"So that means...there are two employees from LeMU here then."`;
 
 });
 multifgload2({ id1: 4, id2: 1, name1: `SO07ADS`, name2: `YU05BDS`, x1: 320, x2: 128, useAnim: true });
@@ -974,8 +836,7 @@ text(() => {
 fgload({ id: 1, name: `YU07BDS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B117)`"Well, I'm not really an employee. It's just a 
-part-time thing..."`;
+   You(S1B117)`"Well, I'm not really an employee. It's just a part-time thing..."`;
 
 });
 fgload({ id: 1, name: `YU02BDS`, x: 128, useAnim: true });
@@ -987,8 +848,7 @@ text(() => {
 fgload({ id: 2, name: `KB07ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B119)`"What other reason would someone have for 
-coming to a theme park?"`;
+   Takeshi(S1B119)`"What other reason would someone have for coming to a theme park?"`;
    Takeshi(S1B120)`"And Sara?"`;
 
 });
@@ -1024,18 +884,15 @@ text(() => {
    Kid`"Huh?"`;
    `Without thinking I let out a cry.`;
    `For some reason, something bothered me.`;
-   Kid`"Everybody here...you're not all friends, 
-right?"`;
+   Kid`"Everybody here...you're not all friends, right?"`;
 
 });
 multifgload3({ name1: `YU05BDS`, name2: `KB07ADS`, name3: `SA08ADS`, x1: 128, x2: 512, x3: 320, useAnim: 3 });
 showTextbox();
 text(() => {
    You(S1B126)`"No way. We just met."`;
-   Kid`"So then why are You talking to Takeshi like 
-you're old friends?"`;
-   Kid`"And Takeshi is talking to you guys the 
-same way."`;
+   Kid`"So then why are You talking to Takeshi like you're old friends?"`;
+   Kid`"And Takeshi is talking to you guys the same way."`;
 
 });
 multifgload2({ id1: 4, id2: 2, name1: `SA02ADS`, name2: `KB02ADS`, x1: 320, x2: 512, useAnim: true });
@@ -1049,8 +906,7 @@ removeFG({ id: 4, useAnim: true });
 fgload({ id: 4, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B128)`"When we all met up on Zweite stock we 
-introduced ourselves."`;
+   Sora(S1B128)`"When we all met up on Zweite stock we introduced ourselves."`;
    Kid`"Oh, so that's it..."`;
 
 });
@@ -1058,8 +914,7 @@ fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S1B129)`"Yup. That's it..."`;
-   `(Hm? Still it seems strange how they are all 
-so friendly for having just met...)`;
+   `(Hm? Still it seems strange how they are all so friendly for having just met...)`;
    `That was what I thought.`;
    Takeshi(S1B130)`"What about you? What's your name anyway?"`;
 
@@ -1099,8 +954,7 @@ removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `YU04BDS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B136)`"I told you to quit taking things so 
-seriously. You just don't get it."`;
+   You(S1B136)`"I told you to quit taking things so seriously. You just don't get it."`;
 
 });
 multifgload2({ id1: 4, id2: 2, name1: `SO07ADS`, name2: `KB07ADS`, x1: 320, x2: 512, useAnim: true });
@@ -1139,14 +993,10 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   `You gave them a brief explanation of my 
-situation.`;
-   `She told them how I'd forgotten my name, 
-address, family and friends.`;
-   `And that I only remembered the date and 
-everything after meeting You.`;
-   `After listening to the explanation, 
-Sora said - `;
+   `You gave them a brief explanation of my situation.`;
+   `She told them how I'd forgotten my name, address, family and friends.`;
+   `And that I only remembered the date and everything after meeting You.`;
+   `After listening to the explanation, Sora said - `;
 
 });
 hideTextbox();
@@ -1159,30 +1009,23 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   Sora(S1B144)`"It sounds like it's probably complete 
-amnesia, a type of retrograde block."`;
+   Sora(S1B144)`"It sounds like it's probably complete amnesia, a type of retrograde block."`;
 
 });
 fgload({ id: 1, name: `YU05BDS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Kid`"???"`;
-   Sora(S1B145)`"Complete amnesia. It's also called retrograde 
-life amnesia..."`;
-   Sora(S1B146)`"While general education and knowledge remain 
-intact..."`;
-   Sora(S1B147)`"One's name, background, family and friends, 
-all aspects of one's life history are wiped 
-completely from one's memory."`;
-   Sora(S1B148)`"Normally, one's memory returns within a 
-few days or months."`;
+   Sora(S1B145)`"Complete amnesia. It's also called retrograde life amnesia..."`;
+   Sora(S1B146)`"While general education and knowledge remain intact..."`;
+   Sora(S1B147)`"One's name, background, family and friends, all aspects of one's life history are wiped completely from one's memory."`;
+   Sora(S1B148)`"Normally, one's memory returns within a few days or months."`;
 
 });
 fgload({ id: 4, name: `SO05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B149)`"Hypnotism and electric shock therapy are also 
-said to be effective means..."`;
+   Sora(S1B149)`"Hypnotism and electric shock therapy are also said to be effective means..."`;
 
 });
 fgload({ id: 1, name: `YU06BDS`, x: 128, useAnim: true });
@@ -1200,17 +1043,14 @@ text(() => {
 fgload({ id: 4, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B151)`"To put it another way...this type of amnesia 
-usually solves itself naturally."`;
+   Sora(S1B151)`"To put it another way...this type of amnesia usually solves itself naturally."`;
 
 });
 fgload({ id: 1, name: `YU01BDS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B152)`"So for now..."`;
-   Sora(S1B153)`"You really shouldn't worry or think too much 
-about it. That's really the best medicine 
-for you."`;
+   Sora(S1B153)`"You really shouldn't worry or think too much about it. That's really the best medicine for you."`;
 
 });
 fgload({ id: 1, name: `YU02BDS`, x: 128, useAnim: true });
@@ -1237,13 +1077,9 @@ text(() => {
 fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B158)`"I mean, memory's a weird thing. Sometimes 
-when you're thinking about something entirely 
-different, boom, you just remember."`;
-   Takeshi(S1B159)`"Like with celebrities...you know their face, 
-but you just can't remember their name..."`;
-   Kid`"Yeah...I wonder if that's just the way it 
-works..."`;
+   Takeshi(S1B158)`"I mean, memory's a weird thing. Sometimes when you're thinking about something entirely different, boom, you just remember."`;
+   Takeshi(S1B159)`"Like with celebrities...you know their face, but you just can't remember their name..."`;
+   Kid`"Yeah...I wonder if that's just the way it works..."`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -1274,15 +1110,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `I searched back in time through for the edge 
-of my memory.`;
-   `Was there a point where I could still remember 
-and a point where I had forgotten?`;
-   `Different images floated through my mind as if 
-to provide an answer.`;
+   `I searched back in time through for the edge of my memory.`;
+   `Was there a point where I could still remember and a point where I had forgotten?`;
+   `Different images floated through my mind as if to provide an answer.`;
    `${noWait}`;
-   `That was it. I'd lost my memory when I fell 
-into the pond at the rest area!`;
+   `That was it. I'd lost my memory when I fell into the pond at the rest area!`;
    `That had to be it.`;
    fadeClearPage();
 });
@@ -1291,8 +1123,7 @@ showTextbox();
 text(() => {
    `I couldn't remember anything before that.`;
    `And, I remembered everything after that.`;
-   `So that tumble into the pond was the line 
-between my memory and non-memory.`;
+   `So that tumble into the pond was the line between my memory and non-memory.`;
    `
 ${wait(30)}${noWait}`;
    Append`${nextPage(0)}My consciousness was cut off at that moment.${nextPage(1)}${wait(60)}${noWait}`;
@@ -1312,16 +1143,14 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   Kid`"I think it probably happened when I fell in 
-the pond."`;
+   Kid`"I think it probably happened when I fell in the pond."`;
    `I announced this to everyone.`;
 
 });
 fgload({ id: 4, name: `SO03ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B163)`"By 'pond' do you mean...the 'pond' at the 
-rest area?"`;
+   Sora(S1B163)`"By 'pond' do you mean...the 'pond' at the rest area?"`;
    Kid`"I think so..."`;
 
 });
@@ -1353,24 +1182,20 @@ text(() => {
 fgload({ id: 1, name: `SA01ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B168)`"On TV there you sometimes see dramas about 
-people who don't remember anything, but who 
-instinctively know things."`;
+   Sara(S1B168)`"On TV there you sometimes see dramas about people who don't remember anything, but who instinctively know things."`;
 
 });
 fgload({ id: 2, name: `KB01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B169)`"I get it. Like the guy that paints like 
-a pro the instant he takes up a brush?"`;
+   Takeshi(S1B169)`"I get it. Like the guy that paints like a pro the instant he takes up a brush?"`;
 
 });
 fgload({ id: 1, name: `SA02ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S1B170)`"Yeah. Like that."`;
-   Sara(S1B171)`"So maybe you should try to see and touch 
-lots of things?"`;
+   Sara(S1B171)`"So maybe you should try to see and touch lots of things?"`;
 
 });
 fgload({ id: 2, name: `KB02ADS`, x: 512, useAnim: true });
@@ -1411,14 +1236,11 @@ fgload({ id: 4, name: `YU05BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(S1B176)`"Sora just said it, right?"`;
-   You(S1B177)`"'You really shouldn't worry or think too much 
-about it.'"`;
-   You(S1B178)`"If you put too much pressure on him, the 
-mental stress will turn him into a wreck."`;
+   You(S1B177)`"'You really shouldn't worry or think too much about it.'"`;
+   You(S1B178)`"If you put too much pressure on him, the mental stress will turn him into a wreck."`;
    Sara(S1B179)`"A wreck?"`;
    You(S1B180)`"Like mental overload, maybe?"`;
-   You(S1B181)`"Sometimes he starts groaning like he's in 
-pain...then he suddenly collapses."`;
+   You(S1B181)`"Sometimes he starts groaning like he's in pain...then he suddenly collapses."`;
 
 });
 fgload({ id: 2, name: `KB03ADS`, x: 512, useAnim: true });
@@ -1430,8 +1252,7 @@ text(() => {
 fgload({ id: 4, name: `YU01BDS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B183)`"So when it comes to things having to do with 
-his memory, take it easy or..."`;
+   You(S1B183)`"So when it comes to things having to do with his memory, take it easy or..."`;
 
 });
 fgload({ id: 4, name: `YU02BDS`, x: 320, useAnim: true });
@@ -1443,8 +1264,7 @@ text(() => {
 playBGM({ num: 2, volume: 100 });
 showTextbox();
 text(() => {
-   `When she did, it was strange, but it seemed to 
-suck away the pain.`;
+   `When she did, it was strange, but it seemed to suck away the pain.`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA02ADS`, name2: `KB02ADS`, x1: 128, x2: 512, useAnim: true });
@@ -1460,8 +1280,7 @@ fgload({ id: 1, name: `SO03ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B186)`"Um..."`;
-   Sora(S1B187)`"Something has been bothering me for a 
-while..."`;
+   Sora(S1B187)`"Something has been bothering me for a while..."`;
    Sara(S1B188)`"?"`;
 
 });
@@ -1476,27 +1295,21 @@ showTextbox();
 text(() => {
    You(S1B190)`"?"`;
    Sora(S1B191)`"What do you suppose we should call him?"`;
-   You(S1B192)`"Oh, yeah. We should probably decide to 
-call him something or else it'll kind 
-of be a pain."`;
+   You(S1B192)`"Oh, yeah. We should probably decide to call him something or else it'll kind of be a pain."`;
 
 });
 fgload({ id: 2, name: `KB11ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S1B193)`"How about John?"`;
-   Takeshi(S1B194)`"Don't you think that would be a little 
-rude to all of the people named John?"`;
+   Takeshi(S1B194)`"Don't you think that would be a little rude to all of the people named John?"`;
 
 });
 fgload({ id: 1, name: `SO17ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B195)`"'Or, it's kinda of random, but how about 
-John Doe?' Don't you think that's kind of rude 
-to the other Johns?"`;
-   Takeshi(S1B196)`"Well, it's only for a little while, 
-so it doesn't have to be perfect."`;
+   Sora(S1B195)`"'Or, it's kinda of random, but how about John Doe?' Don't you think that's kind of rude to the other Johns?"`;
+   Takeshi(S1B196)`"Well, it's only for a little while, so it doesn't have to be perfect."`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -1574,8 +1387,7 @@ text(() => {
 fgload({ id: 2, name: `KB11ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B211)`"That makes him sound like a convict or 
-something."`;
+   Takeshi(S1B211)`"That makes him sound like a convict or something."`;
 
 });
 fgload({ id: 4, name: `YU01BDS`, x: 320, useAnim: true });
@@ -1600,8 +1412,7 @@ text(() => {
 fgload({ id: 2, name: `KB11ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B216)`"Enough with this! Something simple is 
-just fine."`;
+   Takeshi(S1B216)`"Enough with this! Something simple is just fine."`;
 
 });
 fgload({ id: 4, name: `YU02BDS`, x: 320, useAnim: true });
@@ -1627,8 +1438,7 @@ text(() => {
 multifgload2({ id1: 1, id2: 4, name1: `SA04ADS`, name2: `YU07BDS`, x1: 128, x2: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B219)`"Don't be so picky! These are tough times for 
-everybody!"`;
+   Sara(S1B219)`"Don't be so picky! These are tough times for everybody!"`;
    Kid`"Well..."`;
 
 });
@@ -1794,8 +1604,7 @@ removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `KB04ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B233)`"Oh, this is a pain. We'll just 
-call him 'Kid.'"`;
+   Takeshi(S1B233)`"Oh, this is a pain. We'll just call him 'Kid.'"`;
 
 });
 stopBGM();
@@ -1853,8 +1662,7 @@ showTextbox();
 text(() => {
    You(S1B239)`"Ye-yeah...she's right..."`;
    `The first one to open her mouth was You.`;
-   You(S1B240)`"We're not thinking about his feelings at 
-all...we just got a little carried away..."`;
+   You(S1B240)`"We're not thinking about his feelings at all...we just got a little carried away..."`;
 
 });
 fgload({ id: 1, name: `TU04ADM`, x: 320, useAnim: true });
@@ -1866,8 +1674,7 @@ text(() => {
 fgload({ id: 1, name: `TU08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B242)`"Well, Tsugumi, what would you suggest that 
-we call him?"`;
+   Sora(S1B242)`"Well, Tsugumi, what would you suggest that we call him?"`;
    Tsugumi`"........."`;
    Everyone`"........."`;
 
@@ -1889,8 +1696,7 @@ playSFX({ name: `SE00_01`, a1: 1, volume: 100 });
 waitForSFX();
 showTextbox();
 text(() => {
-   `Tsugumi said this in disgust and left the 
-room. `;
+   `Tsugumi said this in disgust and left the room. `;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `KB07ADM`, name2: `SA05ADM`, x1: 128, x2: 512, useAnim: true });
@@ -1910,8 +1716,7 @@ removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `SA07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B247)`"Takeshi...did you do something to make 
-her mad at you?"`;
+   Sara(S1B247)`"Takeshi...did you do something to make her mad at you?"`;
 
 });
 fgload({ id: 1, name: `KB04ADM`, x: 128, useAnim: true });
@@ -1923,20 +1728,15 @@ text(() => {
 fgload({ id: 1, name: `KB05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B249)`"I don't get it. She's been like that since we 
-met..."`;
+   Takeshi(S1B249)`"I don't get it. She's been like that since we met..."`;
 
 });
 removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `SO03ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B250)`"It appears that we should be a little bit 
-careful about how we treat Tsugumi."`;
-   Sora(S1B251)`"Let's just be patient. Once she sees that 
-we don't have any ill will or hostile 
-feelings, things will probably resolve 
-themselves..."`;
+   Sora(S1B250)`"It appears that we should be a little bit careful about how we treat Tsugumi."`;
+   Sora(S1B251)`"Let's just be patient. Once she sees that we don't have any ill will or hostile feelings, things will probably resolve themselves..."`;
    `I felt as if something was controlling me...`;
 
 });
@@ -1949,8 +1749,7 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   `The next thing I knew, I found I was rushing 
-out of the room.`;
+   `The next thing I knew, I found I was rushing out of the room.`;
 
 });
 hideTextbox();
@@ -1961,16 +1760,13 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   `Down the corridor Tsugumi was kicking water 
-as she walked.`;
+   `Down the corridor Tsugumi was kicking water as she walked.`;
    `I didn't know where she was heading.`;
    `I called out to her back.`;
    Kid`"Hey! Wait!"`;
-   `Tsugumi didn't stop. There was no sign that 
-she would look back.`;
+   `Tsugumi didn't stop. There was no sign that she would look back.`;
    Kid`"Tsugumi! Tsugumi!"`;
-   `When I finally caught up with her, I put 
-my hand on her shoulder.`;
+   `When I finally caught up with her, I put my hand on her shoulder.`;
 
 });
 hideTextbox();
@@ -1985,8 +1781,7 @@ fgload({ id: 1, name: `TU05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(S1B253)`"Can you please not touch me...?"`;
-   `Tsugumi stopped walking and said it in a small 
-voice.`;
+   `Tsugumi stopped walking and said it in a small voice.`;
    Kid`"So...sorry..."`;
    `Apologizing, I took my hand from her shoulder.`;
 
@@ -2049,8 +1844,7 @@ text(() => {
 fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Tsugumi(S1B260)`"Listen. Cut it out. I've had enough of that. 
-Just drop it..."`;
+   Tsugumi(S1B260)`"Listen. Cut it out. I've had enough of that. Just drop it..."`;
    Kid`"Of this?"`;
    Tsugumi(S1B261)`"Don't pretend like you don't know. Please..."`;
    Kid`"I'm not pretending..."`;
@@ -2066,8 +1860,7 @@ fgload({ id: 1, name: `TU01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(S1B263)`"I know everything."`;
-   Tsugumi(S1B264)`"I don't believe it. I never thought that 
-you'd join up with those guys..."`;
+   Tsugumi(S1B264)`"I don't believe it. I never thought that you'd join up with those guys..."`;
    Kid`"Those guys? Join up?"`;
    Tsugumi(S1B265)`"You were just talking about amnesia, right?"`;
    Kid`"Y...yeah..."`;
@@ -2101,8 +1894,7 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    `With that, Tsugumi strolled away.`;
-   `I couldn't find the words to stop her. 
-I stared after her shrinking back in silence.`;
+   `I couldn't find the words to stop her. I stared after her shrinking back in silence.`;
 
 });
 hideTextbox();
@@ -2116,11 +1908,8 @@ unSkippableDelay(25);
 clock(`19:48`);
 showTextbox();
 text(() => {
-   `When I returned to the Conference Room, in the 
-center of the table was a three-dimensional 
-image of LeMU.`;
-   `You, Sara, Sora and Takeshi were looking at 
-it and discussing something intensely.`;
+   `When I returned to the Conference Room, in the center of the table was a three-dimensional image of LeMU.`;
+   `You, Sara, Sora and Takeshi were looking at it and discussing something intensely.`;
    Kid`"Hey. What are you talking about?"`;
 
 });
@@ -2137,13 +1926,10 @@ showTextbox();
 text(() => {
    Takeshi(S1B273)`"I told you. She's difficult, huh?"`;
    `This time I nodded.`;
-   `Tsugumi was difficult for sure. I had no idea 
-what she was thinking. `;
-   `There was no point in prying any more into 
-Tsugumi's situation.`;
+   `Tsugumi was difficult for sure. I had no idea what she was thinking. `;
+   `There was no point in prying any more into Tsugumi's situation.`;
    `I asked them again.`;
-   Kid`"So? What were you talking about? 
-I mean just now."`;
+   Kid`"So? What were you talking about? I mean just now."`;
 
 });
 removeFG({ id: 2, useAnim: true });
@@ -2163,10 +1949,8 @@ fgload({ id: 4, name: `SA05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S1B276)`"That's what we were discussing."`;
-   Kid`"Oh. The cause of the accident and steps to 
-take, huh...?"`;
-   Kid`"Hey, do you mind filling me in on what you 
-came up with? You can keep it simple."`;
+   Kid`"Oh. The cause of the accident and steps to take, huh...?"`;
+   Kid`"Hey, do you mind filling me in on what you came up with? You can keep it simple."`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
@@ -2174,10 +1958,8 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B277)`"Sure."`;
-   Sora(S1B278)`"Well then, allow me to explain about 
-the accident one more time."`;
-   `Saying that Sora touched program image 
-above the table.`;
+   Sora(S1B278)`"Well then, allow me to explain about the accident one more time."`;
+   `Saying that Sora touched program image above the table.`;
 
 });
 bgload({ name: `IMG03A`, transition: 20 });
@@ -2185,16 +1967,10 @@ playBGM({ num: 14, volume: 100 });
 showTextbox();
 text(() => {
    `Then she said the following - `;
-   `'12:45 p.m. - LeMU was suddenly struck by 
-a blackout. The cause is unclear.'`;
-   `'Immediately after that an emergency 
-evacuation order was issued...The cause of 
-this was unclear as well.'`;
-   `'In any case, the evacuation of LeMU by 
-visitors and employees was initiated at 
-this point.'`;
-   `'12:54 p.m. ? The emergency doors 
-were activated.'`;
+   `'12:45 p.m. - LeMU was suddenly struck by a blackout. The cause is unclear.'`;
+   `'Immediately after that an emergency evacuation order was issued...The cause of this was unclear as well.'`;
+   `'In any case, the evacuation of LeMU by visitors and employees was initiated at this point.'`;
+   `'12:54 p.m. ? The emergency doors were activated.'`;
 
 });
 bgload({ name: `BG17A1`, transition: 20 });
@@ -2206,13 +1982,9 @@ text(() => {
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B279)`"That is referring to the emergency 
-escape exits connected directly to 
-the floating island."`;
-   Sora(S1B280)`"These are located at the very upper part of 
-the emergency stairs."`;
-   Sora(S1B281)`"Normally, except under extreme circumstances, 
-this door is not opened..."`;
+   Sora(S1B279)`"That is referring to the emergency escape exits connected directly to the floating island."`;
+   Sora(S1B280)`"These are located at the very upper part of the emergency stairs."`;
+   Sora(S1B281)`"Normally, except under extreme circumstances, this door is not opened..."`;
    Kid`"But you're saying that it was opened?"`;
 
 });
@@ -2220,8 +1992,7 @@ fgload({ id: 1, name: `SO05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B282)`"Yes..."`;
-   Kid`"What exactly does 'except in extreme 
-circumstances' mean?"`;
+   Kid`"What exactly does 'except in extreme circumstances' mean?"`;
 
 });
 fgload({ id: 1, name: `SO03ADM`, x: 320, useAnim: true });
@@ -2235,34 +2006,24 @@ fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B284)`"In the manual, it is written that -"`;
-   Sora(S1B285)`"'In the case of an emergency, it is 
-necessary to temporarily hold visitors 
-in the decompression chamber.'"`;
-   Kid`"Why? But what if you have to escape in a 
-hurry? Why do you have to stop in the 
-decompression chamber?"`;
+   Sora(S1B285)`"'In the case of an emergency, it is necessary to temporarily hold visitors in the decompression chamber.'"`;
+   Kid`"Why? But what if you have to escape in a hurry? Why do you have to stop in the decompression chamber?"`;
 
 });
 showTextbox();
 text(() => {
    Sora(S1B286)`"In order to prevent decompression sickness."`;
    Kid`"Decompression sickness?"`;
-   Sora(S1B287)`"When there is a sudden decrease in pressure, 
-the nitrogen that has dissolved in a person's 
-blood gasifies and can cause blood clots that 
-interfere with circulation."`;
+   Sora(S1B287)`"When there is a sudden decrease in pressure, the nitrogen that has dissolved in a person's blood gasifies and can cause blood clots that interfere with circulation."`;
    Kid`"???"`;
 
 });
 fgload({ id: 1, name: `SO07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B288)`"Uh...I'll explain that later...for now let me 
-continue on this topic, alright?"`;
+   Sora(S1B288)`"Uh...I'll explain that later...for now let me continue on this topic, alright?"`;
    Kid`"Sure..."`;
-   Kid`"Anyway, what you are saying is that these 
-doors that shouldn't be opened were opened. 
-Is that it?"`;
+   Kid`"Anyway, what you are saying is that these doors that shouldn't be opened were opened. Is that it?"`;
 
 });
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
@@ -2280,14 +2041,9 @@ text(() => {
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B291)`"It would appear that probably one of the 
-visitors panicked and in the confusion 
-manually opened the emergency airtight doors."`;
-   Sora(S1B292)`"And then the door was not closed, but was 
-left open."`;
-   Sora(S1B293)`"Accordingly, the roughly 6 atmosphere mixture 
-of gas inside suddenly was released outside 
-the room."`;
+   Sora(S1B291)`"It would appear that probably one of the visitors panicked and in the confusion manually opened the emergency airtight doors."`;
+   Sora(S1B292)`"And then the door was not closed, but was left open."`;
+   Sora(S1B293)`"Accordingly, the roughly 6 atmosphere mixture of gas inside suddenly was released outside the room."`;
    `Sora continued her explanation.`;
 
 });
@@ -2295,10 +2051,7 @@ hideTextbox();
 showDimOverlay();
 showTextbox();
 text(() => {
-   `'2:39 p.m. ? Helium, since it is lighter than 
-oxygen and nitrogen, was released first...and 
-internal pressure dropped to the equivalent of 
-the external pressure of one atmosphere.'`;
+   `'2:39 p.m. ? Helium, since it is lighter than oxygen and nitrogen, was released first...and internal pressure dropped to the equivalent of the external pressure of one atmosphere.'`;
    `'3:55 p.m.—Water leak occurs.'`;
 
 });
@@ -2308,14 +2061,9 @@ closeDimOverlay();
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B294)`"LeMU is a structure designed based upon 
-saturation diving specifications..."`;
-   Kid`"Saturation diving specifications? What's that 
-mean?"`;
-   Sora(S1B295)`"To equalize the internal air pressure with, 
-or to set it at levels above, the external 
-water pressure, to keep the unit from being 
-crushed by seawater..."`;
+   Sora(S1B294)`"LeMU is a structure designed based upon saturation diving specifications..."`;
+   Kid`"Saturation diving specifications? What's that mean?"`;
+   Sora(S1B295)`"To equalize the internal air pressure with, or to set it at levels above, the external water pressure, to keep the unit from being crushed by seawater..."`;
    Sora(S1B296)`"...That is what it means. Do you understand?"`;
 
 });
@@ -2336,20 +2084,13 @@ text(() => {
 fgload({ id: 1, name: `SO07ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B297)`"Well, then the question becomes why the water 
-leakage..."`;
+   Sora(S1B297)`"Well, then the question becomes why the water leakage..."`;
    Kid`"Yeah...that's right..."`;
    Kid`"Couldn't it be that..."`;
-   Kid`"LeMU was made to keep the internal air 
-pressure and external water pressure the 
-same so it won't be crushed, right?"`;
-   Kid`"But if the air inside completely escaped, 
-and the air pressure dropped to 1 
-atmosphere..."`;
-   Kid`"Then wouldn't the pressure of the seawater 
-push in and..."`;
-   Kid`"Finally, there would be a tear somewhere and 
-seawater would come rushing in..."`;
+   Kid`"LeMU was made to keep the internal air pressure and external water pressure the same so it won't be crushed, right?"`;
+   Kid`"But if the air inside completely escaped, and the air pressure dropped to 1 atmosphere..."`;
+   Kid`"Then wouldn't the pressure of the seawater push in and..."`;
+   Kid`"Finally, there would be a tear somewhere and seawater would come rushing in..."`;
 
 });
 fgload({ id: 1, name: `SO01ADM`, x: 320, useAnim: true });
@@ -2361,8 +2102,7 @@ text(() => {
 fgload({ id: 1, name: `SO02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B299)`"Impressive, Kid. Are you sure you're 
-suffering from amnesia?"`;
+   Sora(S1B299)`"Impressive, Kid. Are you sure you're suffering from amnesia?"`;
    Kid`"Huh? Y-yeah...pretty sure..."`;
 
 });
@@ -2370,8 +2110,7 @@ fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B300)`"I have nothing left to add."`;
-   Sora(S1B301)`"The sudden decrease in air pressure is the 
-major cause of this flood mishap."`;
+   Sora(S1B301)`"The sudden decrease in air pressure is the major cause of this flood mishap."`;
 
 });
 goto(lbl_00001cd8);
@@ -2384,24 +2123,19 @@ text(() => {
 });
 showTextbox();
 text(() => {
-   Sora(S1B302)`"Think about what would happen if you took a 
-plastic bottle capped and filled with air and 
-put it deep in water?"`;
-   Kid`"What would happen...the side of the bottle 
-would dimple in, right?"`;
+   Sora(S1B302)`"Think about what would happen if you took a plastic bottle capped and filled with air and put it deep in water?"`;
+   Kid`"What would happen...the side of the bottle would dimple in, right?"`;
 
 });
 showTextbox();
 text(() => {
    Sora(S1B303)`"Exactly."`;
-   Sora(S1B304)`"This phenomenon is due to the air inside the 
-bottle being pushed in by the water pressure."`;
+   Sora(S1B304)`"This phenomenon is due to the air inside the bottle being pushed in by the water pressure."`;
 
 });
 showTextbox();
 text(() => {
-   Sora(S1B305)`"So to keep the bottle from being compressed, 
-what do you have to do?"`;
+   Sora(S1B305)`"So to keep the bottle from being compressed, what do you have to do?"`;
    Kid`"Oh, I see..."`;
 
 });
@@ -2409,26 +2143,19 @@ showTextbox();
 text(() => {
    Sora(S1B306)`"The answer is simple."`;
    Sora(S1B307)`"You pack more air into the bottle."`;
-   Sora(S1B308)`"If the pressure from the outside and the 
-pressure from the inside are in balance, 
-then the bottle's shape will not change."`;
-   Sora(S1B309)`"This is what is meant by saturation diving 
-specifications. That's a little bit of a rough 
-example..."`;
+   Sora(S1B308)`"If the pressure from the outside and the pressure from the inside are in balance, then the bottle's shape will not change."`;
+   Sora(S1B309)`"This is what is meant by saturation diving specifications. That's a little bit of a rough example..."`;
    Kid`"I think I get it..."`;
 
 });
 showTextbox();
 text(() => {
-   Sora(S1B310)`"By the way, in this bottle that we were 
-talking about that is filled with air..."`;
-   Sora(S1B311)`"...And immersed in water. What happens 
-when you open a hole in the top?"`;
+   Sora(S1B310)`"By the way, in this bottle that we were talking about that is filled with air..."`;
+   Sora(S1B311)`"...And immersed in water. What happens when you open a hole in the top?"`;
    Kid`"The air will leak."`;
    Sora(S1B312)`"And then?"`;
    Kid`"The air will escape out..."`;
-   Kid`"Oh. And when the balance of pressure is lost, 
-the bottle will be crushed."`;
+   Kid`"Oh. And when the balance of pressure is lost, the bottle will be crushed."`;
 
 });
 showTextbox();
@@ -2439,21 +2166,15 @@ text(() => {
 fgload({ id: 1, name: `SO10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B314)`"And that is precisely what occurred and the 
-primary cause of the flooding here at LeMU."`;
-   Sora(S1B315)`"Due to the drop in internal pressure to 1 
-atmosphere, the weakest area of the structure, 
-the glass, cracked, letting in massive 
-quantities of water."`;
+   Sora(S1B314)`"And that is precisely what occurred and the primary cause of the flooding here at LeMU."`;
+   Sora(S1B315)`"Due to the drop in internal pressure to 1 atmosphere, the weakest area of the structure, the glass, cracked, letting in massive quantities of water."`;
 
 });
 goto(lbl_00001cd8);
 let lbl_00001cd8;
 showTextbox();
 text(() => {
-   Sora(S1B316)`"Subsequently...in order to minimize damage, 
-LeMMIH automatically closed the watertight 
-doors."`;
+   Sora(S1B316)`"Subsequently...in order to minimize damage, LeMMIH automatically closed the watertight doors."`;
    Kid`"And so we're all trapped in here..."`;
 
 });
@@ -2474,16 +2195,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `Maybe it was because I had jumped into a 
-complicated discussion, but somewhere in 
-my head felt like it was tearing.`;
-   `But thinking back on Sora's explanation there 
-were two key points.`;
+   `Maybe it was because I had jumped into a complicated discussion, but somewhere in my head felt like it was tearing.`;
+   `But thinking back on Sora's explanation there were two key points.`;
    `${noWait}`;
-   `1: The reason for the complex blackout was 
-unclear.`;
-   `2: The reason for the drop in air pressure 
-was that we had sprung a leak.`;
+   `1: The reason for the complex blackout was unclear.`;
+   `2: The reason for the drop in air pressure was that we had sprung a leak.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -2505,8 +2221,7 @@ text(() => {
 fgload({ id: 2, name: `SO15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   `Takeshi, who had been listening quietly until 
-now, spoke.`;
+   `Takeshi, who had been listening quietly until now, spoke.`;
 
 });
 showTextbox();
@@ -2517,9 +2232,7 @@ text(() => {
 showTextbox();
 text(() => {
    Sora(S1B320)`"Yes that's correct, why do you...?"`;
-   Takeshi(S1B321)`"So does that mean that this...voice 
-alternator thing that we're wearing, 
-that we don't need it anymore?"`;
+   Takeshi(S1B321)`"So does that mean that this...voice alternator thing that we're wearing, that we don't need it anymore?"`;
 
 });
 fgload({ id: 2, name: `SO17ADM`, x: 128, useAnim: true });
@@ -2536,8 +2249,7 @@ text(() => {
    Sara(S1B324)`"Why? The helium gas is mostly gone, right?"`;
    You`"........."`;
    `Only You remained silent.`;
-   `It looked like she was awkwardly avoiding 
-my gaze.`;
+   `It looked like she was awkwardly avoiding my gaze.`;
 
 });
 fgload({ id: 2, name: `SO09ADM`, x: 128, useAnim: true });
@@ -2557,18 +2269,15 @@ removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `YU01BDM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B327)`"Well, if Sora says so, that should 
-be good enough."`;
-   You(S1B328)`"I'm still wearing it and I don't have any 
-problem with it...this voice alternator."`;
+   You(S1B327)`"Well, if Sora says so, that should be good enough."`;
+   You(S1B328)`"I'm still wearing it and I don't have any problem with it...this voice alternator."`;
 
 });
 removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `SA07ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B329)`"Well, that's for sure. I had almost forgot 
-I was wearing it..."`;
+   Sara(S1B329)`"Well, that's for sure. I had almost forgot I was wearing it..."`;
 
 });
 fgload({ id: 1, name: `YU02BDM`, x: 512, useAnim: true });
@@ -2580,10 +2289,7 @@ text(() => {
 fgload({ id: 1, name: `YU01BDM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B331)`"Anyway, more importantly...we should be 
-talking about...'What are we going to do 
-now?'...and talking about our next step...at 
-least that's my opinion..."`;
+   You(S1B331)`"Anyway, more importantly...we should be talking about...'What are we going to do now?'...and talking about our next step...at least that's my opinion..."`;
 
 });
 removeFG({ id: 2, useAnim: true });
@@ -2604,19 +2310,15 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    `After that...`;
-   `We crossed our arms, and started 
-brainstorming...but we couldn't come up with 
-even a single good idea.`;
+   `We crossed our arms, and started brainstorming...but we couldn't come up with even a single good idea.`;
    `In the end...`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA03ADM`, name2: `YU03BDM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B333)`"I guess all we can do is wait for help to 
-come..."`;
-   `Of course, there was no reason to expect 
-a differing opinion.`;
+   You(S1B333)`"I guess all we can do is wait for help to come..."`;
+   `Of course, there was no reason to expect a differing opinion.`;
 
 });
 hideTextbox();
@@ -2631,35 +2333,26 @@ unSkippableDelay(25);
 clock(`20:36`);
 showTextbox();
 text(() => {
-   `Nearly an hour had passed since Tsugumi had 
-left the room.`;
-   `Sora had said that she was going to try 
-to 'think of a plan' and went back to the 
-Control Room. `;
-   `The remaining four of us didn't have anything 
-to say or do and continued to wait for contact 
-or help from the outside.`;
+   `Nearly an hour had passed since Tsugumi had left the room.`;
+   `Sora had said that she was going to try to 'think of a plan' and went back to the Control Room. `;
+   `The remaining four of us didn't have anything to say or do and continued to wait for contact or help from the outside.`;
    Sara(S1B334)`"Tsugumi hasn't come back..."`;
    `Sara muttered this.`;
-   Sara(S1B335)`"I wonder if it is good to leave her alone 
-like this..."`;
+   Sara(S1B335)`"I wonder if it is good to leave her alone like this..."`;
 
 });
 fgload({ id: 2, name: `KB08ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B336)`"I don't think there is anything good about 
-it..."`;
+   Takeshi(S1B336)`"I don't think there is anything good about it..."`;
 
 });
 fgload({ id: 1, name: `SA05ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B337)`"Hey, Kid. You followed after Tsugumi a bit 
-ago, right?"`;
+   Sara(S1B337)`"Hey, Kid. You followed after Tsugumi a bit ago, right?"`;
    Kid`"Yeah."`;
-   Sara(S1B338)`"She didn't say where she was going or 
-anything?"`;
+   Sara(S1B338)`"She didn't say where she was going or anything?"`;
    Kid`"Nope, she didn't mention anything."`;
 
 });
@@ -2674,8 +2367,7 @@ text(() => {
 bgload({ name: `BG15B1`, transition: 20 });
 showTextbox();
 text(() => {
-   `For some reason, You made straight for the 
-Control Room.`;
+   `For some reason, You made straight for the Control Room.`;
    Kid`"Huh? Why the Control Room?"`;
 
 });
@@ -2688,10 +2380,8 @@ text(() => {
 fgload({ id: 1, name: `YU05BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B342)`"When we gathered in the Control Room 
-before, Sora said something, right?"`;
-   You(S1B343)`"By searching for the life readings or bio 
-signs of such and such..."`;
+   You(S1B342)`"When we gathered in the Control Room before, Sora said something, right?"`;
+   You(S1B343)`"By searching for the life readings or bio signs of such and such..."`;
    Kid`"She said that?"`;
 
 });
@@ -2710,15 +2400,11 @@ text(() => {
 fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B347)`"We'll probably know where Tsugumi is right 
-away."`;
+   You(S1B347)`"We'll probably know where Tsugumi is right away."`;
    Kid`"Hmmm."`;
    `Bio scan.`;
-   `It seemed like one difficult word after 
-another was being thrown at me.`;
-   `I wondered if this was part of amnesia. 
-There were so many words and phenomena and 
-systems and stuff here that I was at a loss.`;
+   `It seemed like one difficult word after another was being thrown at me.`;
+   `I wondered if this was part of amnesia. There were so many words and phenomena and systems and stuff here that I was at a loss.`;
    Kid`"*Sigh*...."`;
    `Without thinking I let go a sigh.`;
 
@@ -2726,19 +2412,13 @@ systems and stuff here that I was at a loss.`;
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `Incidentally, there was another thing that 
-I had not been able to understand.`;
-   `Somewhere along the line everyone had taken to 
-calling me 'Kid.'`;
-   `That random decision-making process to find a 
-consensus on my name had ended up with me 
-being called 'Kid.'`;
-   `Well it was better than 'John Mitochondria' 
-anyway.`;
+   `Incidentally, there was another thing that I had not been able to understand.`;
+   `Somewhere along the line everyone had taken to calling me 'Kid.'`;
+   `That random decision-making process to find a consensus on my name had ended up with me being called 'Kid.'`;
+   `Well it was better than 'John Mitochondria' anyway.`;
    `But still it was all hard for me to understand.`;
    Kid`"*Sigh*...."`;
-   `I sighed again and shaking my head followed 
-everyone into the Control Room.`;
+   `I sighed again and shaking my head followed everyone into the Control Room.`;
 
 });
 playSFX({ name: `SE00_00`, a1: 0, volume: 100 });
@@ -2747,22 +2427,19 @@ fgload({ id: 4, name: `SO07ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B348)`"Hey? Is something wrong?"`;
-   `Sora tilted her head, looking at us 
-quizzically as we shuffled into the room.`;
+   `Sora tilted her head, looking at us quizzically as we shuffled into the room.`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA15ADS`, name2: `YU11BDS`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B349)`"Well, we just didn't think we could leave 
-Tsugumi alone like this..."`;
+   Sara(S1B349)`"Well, we just didn't think we could leave Tsugumi alone like this..."`;
 
 });
 fgload({ id: 2, name: `YU12BDS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(S1B350)`"Yeah. So we thought if we could get you to do 
-another bio scan..."`;
+   You(S1B350)`"Yeah. So we thought if we could get you to do another bio scan..."`;
 
 });
 fgload({ id: 4, name: `SO02ADS`, x: 320, useAnim: true });
@@ -2774,8 +2451,7 @@ text(() => {
 fgload({ id: 4, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S1B352)`"You want me to investigate the location of 
-Tsugumi then?"`;
+   Sora(S1B352)`"You want me to investigate the location of Tsugumi then?"`;
    Sora(S1B353)`"Please wait a moment..."`;
 
 });
@@ -2783,38 +2459,27 @@ multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 showTextbox();
 text(() => {
    `A map of LeMU was displayed on the monitor.`;
-   `It enlarged and reduced in size, slid, 
-spun...the image switched and changed in a 
-dizzying way.`;
+   `It enlarged and reduced in size, slid, spun...the image switched and changed in a dizzying way.`;
    Kid`"Uh, Sora."`;
-   Kid`"Will you really know where Tsugumi is just by 
-running a bio search for her?"`;
+   Kid`"Will you really know where Tsugumi is just by running a bio search for her?"`;
 
 });
 fgload({ id: 4, name: `SO01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B354)`"Yes."`;
-   Sora(S1B355)`"Humans are homeothermic animals meaning that 
-they constantly maintain a temperature of 
-around 98.6 degrees Fahrenheit."`;
-   Sora(S1B356)`"That body temperature can be detected using 
-infrared radiation."`;
-   Sora(S1B357)`"Via this technique we can affirm the 
-location and number of humans in the LeMU 
-complex..."`;
+   Sora(S1B355)`"Humans are homeothermic animals meaning that they constantly maintain a temperature of around 98.6 degrees Fahrenheit."`;
+   Sora(S1B356)`"That body temperature can be detected using infrared radiation."`;
+   Sora(S1B357)`"Via this technique we can affirm the location and number of humans in the LeMU complex..."`;
 
 });
 fgload({ id: 4, name: `SO02ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sora(S1B358)`"See, there it is."`;
-   `See that uncertain bit of light in Zweite 
-stock.`;
+   `See that uncertain bit of light in Zweite stock.`;
    Sora(S1B359)`"There's no mistake. That's Tsugumi."`;
-   `Below that in a room in Dritte stock there 
-were also a number of light-emitting points 
-overlapping.`;
+   `Below that in a room in Dritte stock there were also a number of light-emitting points overlapping.`;
    `I figured that was probably the Control Room.`;
 
 });
@@ -2823,8 +2488,7 @@ showTextbox();
 text(() => {
    `(...Huh? What is...?)`;
    `Just then I noticed something strange.`;
-   `In a corner of the monitor 'Life readings: 7' 
-was displayed in small letters.`;
+   `In a corner of the monitor 'Life readings: 7' was displayed in small letters.`;
    Kid`"U...um...?"`;
 
 });
@@ -2832,8 +2496,7 @@ fgload({ id: 2, name: `YU05BDS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    You(S1B360)`"What is it?"`;
-   Kid`"Isn't there something strange about this 
-number?"`;
+   Kid`"Isn't there something strange about this number?"`;
    Kid`"See..."`;
    `I pointed to the corner of the monitor.`;
 
@@ -2847,11 +2510,8 @@ text(() => {
    Sara(S1B362)`"Seven!?"`;
    Takeshi(S1B363)`"Seven!?"`;
    Sora(S1B364)`"Wh...what..."`;
-   `There should have been a total of six people 
-trapped in LeMU - You, Sara, Sora, Tsugumi, 
-Takeshi and me.`;
-   `Yet, the main computer LeMMIH was indicating 
-that there were seven people.`;
+   `There should have been a total of six people trapped in LeMU - You, Sara, Sora, Tsugumi, Takeshi and me.`;
+   `Yet, the main computer LeMMIH was indicating that there were seven people.`;
    Sora(S1B365)`"What...what in the world...?"`;
    `And then...`;
 
@@ -2859,15 +2519,13 @@ that there were seven people.`;
 bgload({ name: `IT04C`, transition: 20 });
 showTextbox();
 text(() => {
-   `'Life readings: 5'${wait(30)}
-${noWait}`;
+   `'Life readings: 5'${wait(30)} ${noWait}`;
 
 });
 bgload_keepFg({ name: `IT04E`, transition: 30 });
 showTextbox();
 text(() => {
-   Append`'Life readings: 7'${wait(30)}
-${noWait}`;
+   Append`'Life readings: 7'${wait(30)} ${noWait}`;
 
 });
 bgload_keepFg({ name: `IT04D`, transition: 30 });
@@ -2922,25 +2580,20 @@ showTextbox();
 text(() => {
    `And always the number '6' plus or minus one.`;
    Sora(S1B366)`"Why? Why is this happening...?"`;
-   `Flustered and out of character, Sora was 
-busily operating the console.`;
+   `Flustered and out of character, Sora was busily operating the console.`;
 
 });
 bgload({ name: `IT04D`, transition: 30 });
 showTextbox();
 text(() => {
-   `But...the numbers continued to fluctuate and 
-there was no sign that they would stop.`;
-   `I shifted my eyes to the points of light 
-on the map.`;
+   `But...the numbers continued to fluctuate and there was no sign that they would stop.`;
+   `I shifted my eyes to the points of light on the map.`;
 
 });
 bgload({ name: `IT04C`, transition: 30 });
 showTextbox();
 text(() => {
-   `Even if the life reading numbers changed, 
-the points of light didn't increase or 
-decrease.`;
+   `Even if the life reading numbers changed, the points of light didn't increase or decrease.`;
 
 });
 bgload({ name: `BG16A1`, transition: 20 });
@@ -2948,10 +2601,8 @@ multifgload2({ id1: 1, id2: 2, name1: `SA05ADM`, name2: `YU05BDM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    Sara(S1B367)`"If the number really is '7' then..."`;
-   Kid`"That would mean that there is another person 
-here that didn't get out in time!"`;
-   You(S1B368)`"Yeah, assuming that seven is the right 
-number..."`;
+   Kid`"That would mean that there is another person here that didn't get out in time!"`;
+   You(S1B368)`"Yeah, assuming that seven is the right number..."`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -3001,8 +2652,7 @@ removeFG({ id: 2, useAnim: true });
 fgload({ id: 2, name: `KB01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B373)`"Anyway, it looks like it settled on six...so 
-that's probably the right number. Right?"`;
+   Takeshi(S1B373)`"Anyway, it looks like it settled on six...so that's probably the right number. Right?"`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -3015,8 +2665,7 @@ text(() => {
 fgload({ id: 1, name: `SA01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S1B375)`"Thinking about it, it's hard to imagine 
-anyone else is here..."`;
+   Sara(S1B375)`"Thinking about it, it's hard to imagine anyone else is here..."`;
    Kid`"But..."`;
 
 });
@@ -3035,8 +2684,7 @@ let lbl_000023d2;
 fgload({ id: 2, name: `KB08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B378)`"Well, either way, it's something we can solve 
-by walking around the complex, right?"`;
+   Takeshi(S1B378)`"Well, either way, it's something we can solve by walking around the complex, right?"`;
    Kid`"........."`;
 
 });
@@ -3071,9 +2719,7 @@ text(() => {
 fgload({ id: 2, name: `KB01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B384)`"Oh, that's right. I haven't told Sara, You 
-and all about everything and that crazy 
-girl, have I?"`;
+   Takeshi(S1B384)`"Oh, that's right. I haven't told Sara, You and all about everything and that crazy girl, have I?"`;
 
 });
 fgload({ id: 1, name: `SA03ADM`, x: 128, useAnim: true });
@@ -3086,8 +2732,7 @@ text(() => {
 fgload({ id: 2, name: `KB02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S1B387)`"Alright. It's time to think of a way of 
-securing Tsugumi."`;
+   Takeshi(S1B387)`"Alright. It's time to think of a way of securing Tsugumi."`;
    Takeshi(S1B388)`"Are you ready?"`;
 
 });
@@ -3100,13 +2745,8 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `We climbed the emergency stairs to the floor 
-where Tsugumi was.`;
-   `Only Sora remained in the Control Room, 
-thinking of ways to escape, trying to 
-re-establish communications, rechecking 
-the complex, and trying to get other 
-systems that were down back online.`;
+   `We climbed the emergency stairs to the floor where Tsugumi was.`;
+   `Only Sora remained in the Control Room, thinking of ways to escape, trying to re-establish communications, rechecking the complex, and trying to get other systems that were down back online.`;
 
 });
 hideTextbox();

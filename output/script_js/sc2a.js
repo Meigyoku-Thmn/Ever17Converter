@@ -3,8 +3,7 @@ l_dayA = 2;
 l_dayB = 2;
 showTextbox();
 text(() => {
-   You(C2S005)`"Anyway, let's go looking for 
-Takeshi and Tsugumi."`;
+   You(C2S005)`"Anyway, let's go looking for Takeshi and Tsugumi."`;
 
 });
 fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
@@ -30,8 +29,7 @@ text(() => {
 fgload({ id: 2, name: `YU05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(C2S009)`"I'll tell you later. Looking for those two 
-is the top priority right now."`;
+   You(C2S009)`"I'll tell you later. Looking for those two is the top priority right now."`;
 
 });
 removeFG({ id: 2, useAnim: true });
@@ -43,8 +41,7 @@ text(() => {
 fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   `Sara and I followed her without knowing what 
-was going on.`;
+   `Sara and I followed her without knowing what was going on.`;
 
 });
 goto(lbl_00000172);
@@ -60,10 +57,8 @@ showTextbox();
 text(() => {
    Sara(C2S011)`"So what?"`;
    Kid`"Oh, I see..."`;
-   Kid`"Sora's brain is AI, and her body is made by 
-RSD."`;
-   Kid`"Which means...if the power is down then, Sora 
-can't appear."`;
+   Kid`"Sora's brain is AI, and her body is made by RSD."`;
+   Kid`"Which means...if the power is down then, Sora can't appear."`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA01ADM`, name2: `YU01ADM`, x1: 128, x2: 512, useAnim: true });
@@ -91,8 +86,7 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    `I didn't know where Takeshi and Tsugumi were.`;
-   `And I couldn't imagine that they would be just 
-wandering around during this crisis.`;
+   `And I couldn't imagine that they would be just wandering around during this crisis.`;
    `So where would they go first?`;
 
 });
@@ -102,10 +96,8 @@ showTextbox();
 text(() => {
    `—The Control Room`;
    `I couldn't think of anywhere else.`;
-   `The power was out, so the door didn't open 
-automatically.`;
-   `You pulled the lever next to the door 
-and opened it manually.`;
+   `The power was out, so the door didn't open automatically.`;
+   `You pulled the lever next to the door and opened it manually.`;
 
 });
 bgload({ name: `BG16A2`, transition: 10 });
@@ -124,8 +116,7 @@ text(() => {
 if (l_know_sora_is_an_ai != 0) goto(lbl_0000021c);
 showTextbox();
 text(() => {
-   `I wondered why she only called out for Takeshi 
-and Tsugumi.`;
+   `I wondered why she only called out for Takeshi and Tsugumi.`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -133,8 +124,7 @@ showTextbox();
 text(() => {
    Kid`"Sora! Sora!"`;
    `I called to Sora but there was no answer.`;
-   Kid`"Sora should have been here. 
-I wonder where she could have gone."`;
+   Kid`"Sora should have been here. I wonder where she could have gone."`;
 
 });
 goto(lbl_0000022e);
@@ -155,23 +145,19 @@ let lbl_0000022e;
 showTextbox();
 text(() => {
    `You had picked up a flashlight at some point.`;
-   `I thought that maybe she had found it 
-somewhere in the Control Room.`;
+   `I thought that maybe she had found it somewhere in the Control Room.`;
    `You turned on it...`;
    `A round, white light appeared on the wall.`;
-   `You shined the flashlight right and left, 
-lighting up all corners of the room.`;
+   `You shined the flashlight right and left, lighting up all corners of the room.`;
    `The electricity was completely out.`;
-   `Like an abandoned castle, 
-there was no sign of warmth left.`;
+   `Like an abandoned castle, there was no sign of warmth left.`;
    `There was clearly nobody there.`;
 
 });
 fgload({ id: 1, name: `SA05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(C2S015)`"It doesn't seem...like there is 
-anyone here..."`;
+   Sara(C2S015)`"It doesn't seem...like there is anyone here..."`;
 
 });
 bgload({ name: `BG15B2`, transition: 20 });
@@ -189,8 +175,7 @@ text(() => {
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `You handed me the flashlight and shut the 
-Control Room door.`;
+   `You handed me the flashlight and shut the Control Room door.`;
    `Just then...`;
 
 });
@@ -198,14 +183,11 @@ playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    `Splash, splash, splash...`;
-   `We heard the sounds of someone running 
-toward us through water.`;
-   `After a short while, two figures emerged from 
-the darkness.`;
+   `We heard the sounds of someone running toward us through water.`;
+   `After a short while, two figures emerged from the darkness.`;
    Kid`"Oh, Takeshi!"`;
    Sara(C2S017)`"Tsugumi!"`;
-   `Takeshi and Tsugumi approached, walking 
-through water.`;
+   `Takeshi and Tsugumi approached, walking through water.`;
 
 });
 if (l_know_sora_is_an_ai != 0) goto(lbl_000004ae);
@@ -246,18 +228,15 @@ text(() => {
 removeFG({ id: 4, useAnim: true });
 showTextbox();
 text(() => {
-   `Takeshi took the flashlight, turned it on and 
-went into the room.`;
+   `Takeshi took the flashlight, turned it on and went into the room.`;
    `.....................`;
 
 });
 fgload({ id: 4, name: `KB05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(C2S022)`"Geez...Where would Sora go at a time like 
-this?"`;
-   `Takeshi said that when he emerged from the 
-Control Room.`;
+   Takeshi(C2S022)`"Geez...Where would Sora go at a time like this?"`;
+   `Takeshi said that when he emerged from the Control Room.`;
 
 });
 removeFG({ id: 2, useAnim: true });
@@ -265,12 +244,9 @@ fgload({ id: 2, name: `YU01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    You(C2S023)`"So...what are we going to do?"`;
-   `You said it with her hands on her hips. 
-She appeared calm.`;
-   `It had been a series of strange things 
-happening since the day before...`;
-   `Maybe we were all completely used to it. 
-In any case, none of us were freaking out.`;
+   `You said it with her hands on her hips. She appeared calm.`;
+   `It had been a series of strange things happening since the day before...`;
+   `Maybe we were all completely used to it. In any case, none of us were freaking out.`;
 
 });
 fgload({ id: 1, name: `SA05ADS`, x: 128, useAnim: true });
@@ -283,10 +259,8 @@ text(() => {
 fgload({ id: 1, name: `SA07ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(C2S026)`"Without Sora, we won't know 
-why there's been this blackout..."`;
-   Kid`"Yeah. Sora knows more about 
-LeMU than anyone."`;
+   Sara(C2S026)`"Without Sora, we won't know why there's been this blackout..."`;
+   Kid`"Yeah. Sora knows more about LeMU than anyone."`;
 
 });
 fgload({ id: 2, name: `YU05ADS`, x: 512, useAnim: true });
@@ -319,8 +293,7 @@ fgload({ id: 2, name: `YU07ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    You(C2S032)`"Since it has come to this, I'll tell you..."`;
-   You(C2S033)`"I don't think we'll find Sora, even if we 
-look."`;
+   You(C2S033)`"I don't think we'll find Sora, even if we look."`;
 
 });
 multifgload2({ id1: 1, id2: 4, name1: `SA06ADS`, name2: `KB06ADS`, x1: 128, x2: 320, useAnim: true });
@@ -335,8 +308,7 @@ fgload({ id: 2, name: `YU05ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    You(C2S036)`"I can't tell you the reason."`;
-   You(C2S037)`"That's something that you should hear from 
-Sora herself..."`;
+   You(C2S037)`"That's something that you should hear from Sora herself..."`;
 
 });
 fgload({ id: 1, name: `SA05ADS`, x: 128, useAnim: true });
@@ -397,15 +369,13 @@ text(() => {
 fgload({ id: 1, name: `KB03ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(C2S050)`"If this blackout goes on, don't you think 
-that Sora might never appear again?"`;
+   Takeshi(C2S050)`"If this blackout goes on, don't you think that Sora might never appear again?"`;
 
 });
 fgload({ id: 2, name: `YU01ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(C2S051)`"That is something you don't have to worry 
-about."`;
+   You(C2S051)`"That is something you don't have to worry about."`;
    You(C2S052)`"I've got an idea."`;
 
 });
@@ -429,16 +399,10 @@ fgload({ id: 1, name: `SA08ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Sara(C2S055)`"The Generator Room?"`;
-   You(C2S056)`"I figure that the cause of this blackout is 
-trouble in the Generator Room."`;
-   `That reminded me of something Sora had said 
-the day before...`;
-   `LeMU didn't receive any power from the 
-outside, but had an in-house generating 
-system.`;
-   `It draws hot water from a thermal seafloor 
-vent and operates the generator using this 
-heat.`;
+   You(C2S056)`"I figure that the cause of this blackout is trouble in the Generator Room."`;
+   `That reminded me of something Sora had said the day before...`;
+   `LeMU didn't receive any power from the outside, but had an in-house generating system.`;
+   `It draws hot water from a thermal seafloor vent and operates the generator using this heat.`;
 
 });
 fgload({ id: 2, name: `YU01ADS`, x: 512, useAnim: true });
@@ -470,15 +434,13 @@ removeFG({ id: 4, useAnim: true });
 showTextbox();
 text(() => {
    `After saying that, Tsugumi left.`;
-   `It didn't look like it would be any use 
-calling after her.`;
+   `It didn't look like it would be any use calling after her.`;
 
 });
 fgload({ id: 4, name: `KB05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(C2S062)`"Geez. I have no clue what is going 
-on in that girl's head."`;
+   Takeshi(C2S062)`"Geez. I have no clue what is going on in that girl's head."`;
 
 });
 fgload({ id: 2, name: `YU05ADS`, x: 512, useAnim: true });
@@ -509,30 +471,26 @@ text(() => {
 fgload({ id: 2, name: `YU04ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(C2S067)`"Hey Takeshi, where do you think you are 
-going?"`;
+   You(C2S067)`"Hey Takeshi, where do you think you are going?"`;
 
 });
 multifgload2({ id1: 1, id2: 4, name1: `SA08ADS`, name2: `KB07ADS`, x1: 128, x2: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(C2S068)`"Where? To the Generator Room of course. It 
-was your idea to start with, right?"`;
+   Takeshi(C2S068)`"Where? To the Generator Room of course. It was your idea to start with, right?"`;
    You(C2S069)`"And? How were you thinking of going there?"`;
 
 });
 fgload({ id: 4, name: `KB05ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(C2S070)`"Huh? By walking through the corridors, 
-dummy."`;
+   Takeshi(C2S070)`"Huh? By walking through the corridors, dummy."`;
 
 });
 fgload({ id: 2, name: `YU07ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(C2S071)`"Oh please...you really don't get anything, 
-do you?"`;
+   You(C2S071)`"Oh please...you really don't get anything, do you?"`;
 
 });
 multifgload2({ id1: 1, id2: 4, name1: `SA05ADS`, name2: `KB06ADS`, x1: 128, x2: 320, useAnim: true });
@@ -546,8 +504,7 @@ text(() => {
 fgload({ id: 2, name: `YU05ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(C2S074)`"You guys don't remember the map of LeMU we 
-saw yesterday?"`;
+   You(C2S074)`"You guys don't remember the map of LeMU we saw yesterday?"`;
 
 });
 fgload({ id: 4, name: `KB01ADS`, x: 320, useAnim: true });
@@ -568,8 +525,7 @@ openMapCommentAnim();
 waitForClick();
 showTextbox();
 text(() => {
-   Sara(C2S076)`"Oh...you mean the three story map that 
-was split into two areas?" `;
+   Sara(C2S076)`"Oh...you mean the three story map that was split into two areas?" `;
    Kid`"Oh, that's right..."`;
    You(C2S077)`"You remember it too, Takeshi?"`;
 
@@ -581,8 +537,7 @@ openMapCommentAnim();
 waitForClick();
 showTextbox();
 text(() => {
-   Takeshi(C2S078)`"I can't say I remember it exactly...but 
-kinda, yeah."`;
+   Takeshi(C2S078)`"I can't say I remember it exactly...but kinda, yeah."`;
 
 });
 closeMapIndicatorAnim();
@@ -603,13 +558,10 @@ showTextbox();
 text(() => {
    You(C2S081)`"Bingo."`;
    You(C2S082)`"Meaning what?"`;
-   Kid`"The two areas are divided by a block which 
-is now under water...?"`;
+   Kid`"The two areas are divided by a block which is now under water...?"`;
    You(C2S083)`"And?"`;
-   Sara(C2S084)`"We can't go directly from the Control Room 
-area to the Generator Room area."`;
-   Kid`"Besides that, the emergency stairs of one of 
-those areas was also flooded..."`;
+   Sara(C2S084)`"We can't go directly from the Control Room area to the Generator Room area."`;
+   Kid`"Besides that, the emergency stairs of one of those areas was also flooded..."`;
 
 });
 closeMapIndicatorAnim();
@@ -617,15 +569,13 @@ showTextbox();
 text(() => {
    You(C2S085)`"So what?"`;
    Takeshi(C2S086)`"I got it..."`;
-   Takeshi(C2S087)`"To get to the Generator Room's area, 
-we have to access the second floor..."`;
+   Takeshi(C2S087)`"To get to the Generator Room's area, we have to access the second floor..."`;
 
 });
 bgload({ name: `MAP2F_A1`, transition: 30 });
 showTextbox();
 text(() => {
-   Takeshi(C2S088)`"And the only way we can do that is 
-by using the neutral buoyancy elevator."`;
+   Takeshi(C2S088)`"And the only way we can do that is by using the neutral buoyancy elevator."`;
 
 });
 hideTextbox();
@@ -637,8 +587,7 @@ showTextbox();
 text(() => {
    You(C2S089)`"Correct."`;
    You(C2S090)`"So, we have to go to..."`;
-   Kid`"To the entrance to the neutral buoyancy 
-elevator."`;
+   Kid`"To the entrance to the neutral buoyancy elevator."`;
 
 });
 closeMapIndicatorAnim();
@@ -661,8 +610,7 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `Sara took a bizarre kung fu pose and 
-started spinning like a top.`;
+   `Sara took a bizarre kung fu pose and started spinning like a top.`;
    `But I had no clue what she was trying to do.`;
 
 });

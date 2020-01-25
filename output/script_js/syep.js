@@ -29,31 +29,21 @@ showTextbox();
 text(() => {
    You(YEP000)`"Wow, this is great weather"`;
    `You and I were riding on a boat.`;
-   `The infinitely deep, blue ocean spread as far 
-as we could see.`;
+   `The infinitely deep, blue ocean spread as far as we could see.`;
    `A clear blue sky unfolded above us.`;
    `There was a pair of seagulls flying overhead.`;
-   `The sea breeze whipped at us little strongly, 
-and You used her hand to hold her hair in 
-check.`;
+   `The sea breeze whipped at us little strongly, and You used her hand to hold her hair in check.`;
    `She had recently started to grow her hair out.`;
-   `Somehow it seemed that she might have been 
-starting to look like her mom 'her.'`;
-   `That and...she seemed to have become a bit 
-more easygoing and ladylike...`;
+   `Somehow it seemed that she might have been starting to look like her mom 'her.'`;
+   `That and...she seemed to have become a bit more easygoing and ladylike...`;
    You(YEP001)`"So how is college going?"`;
    Kid`"It's alright I guess."`;
-   `Yes. I had somehow gotten into college and 
-was in my first year.`;
-   `Of course, I was going to a different school 
-than You, so we never had a chance to meet 
-on campus.`;
-   You(YEP002)`"Why on earth did you decide to major in 
-archaeology?"`;
+   `Yes. I had somehow gotten into college and was in my first year.`;
+   `Of course, I was going to a different school than You, so we never had a chance to meet on campus.`;
+   You(YEP002)`"Why on earth did you decide to major in archaeology?"`;
    Kid`"You really want to know?"`;
    You(YEP003)`"That's why I'm asking."`;
-   Kid`"You know, it might be better if you didn't 
-ask."`;
+   Kid`"You know, it might be better if you didn't ask."`;
    You(YEP004)`"Huh?"`;
    Kid`"You still sure you want to know?"`;
    You(YEP005)`"W-well..."`;
@@ -62,49 +52,36 @@ ask."`;
    You(YEP007)`"Huh?"`;
    You(YEP008)`"Why? Tell me!"`;
    Kid`"But...you just said you weren't going to ask."`;
-   You(YEP009)`"That's because you said I probably 
-shouldn't..."`;
+   You(YEP009)`"That's because you said I probably shouldn't..."`;
    Kid`"This is too confusing..."`;
-   You(YEP010)`"You're the one who made this conversation 
-confusing."`;
-   You(YEP011)`"Anyway, I guess I'll listen to your 
-reasoning."`;
+   You(YEP010)`"You're the one who made this conversation confusing."`;
+   You(YEP011)`"Anyway, I guess I'll listen to your reasoning."`;
    `There she went changing her mind again.`;
    Kid`"You can really be twisted sometimes."`;
    You(YEP012)`"Come on, say I'm pure at heart!"`;
-   Kid`"What are you talking about? If you were, 
-then I'd be..."`;
+   Kid`"What are you talking about? If you were, then I'd be..."`;
    Kid`"........."`;
-   You(YEP013)`"Huh? You would be...what? Then you'd be 'the 
-pure-hearted Kid?'"`;
+   You(YEP013)`"Huh? You would be...what? Then you'd be 'the pure-hearted Kid?'"`;
    Kid`"Hey...stop it."`;
    Kid`"I'm not like I used to be..."`;
    `But after that, I was reluctant to speak.`;
-   `I wondered if I really was different from the 
-person I was at that time.`;
+   `I wondered if I really was different from the person I was at that time.`;
    `...Probably I was.`;
-   `Since then, no inexplicable, mysterious 
-things had happened to me.`;
+   `Since then, no inexplicable, mysterious things had happened to me.`;
    `I couldn't predict things any more.`;
    `I had gotten my memory back.`;
    `...Or maybe, maybe I was the same.`;
    `Maybe I was the same as ever.`;
-   `I knew that people learned, got hurt, and lost 
-things... and that they change as they 
-live life.`;
+   `I knew that people learned, got hurt, and lost things... and that they change as they live life.`;
    `But my basic nature hadn't changed.`;
    `Some things change. Some things never did.`;
-   `I was still 'me'...but myself in the past was 
-different...`;
-   `If I had to explain it, I might say that it 
-was like 'me in another world....'`;
+   `I was still 'me'...but myself in the past was different...`;
+   `If I had to explain it, I might say that it was like 'me in another world....'`;
    `Maybe that was it.`;
-   You(YEP014)`"You're right. You are not like you used 
-to be."`;
+   You(YEP014)`"You're right. You are not like you used to be."`;
    Kid`"?"`;
    You(YEP015)`"Well, for one thing you got so tall." `;
-   `She stood on her tiptoes and raised her 
-hand over my head.`;
+   `She stood on her tiptoes and raised her hand over my head.`;
    `I had grown a head taller over the two years.`;
    You(YEP016)`"So, are you going to tell me or not?"`;
    Kid`"What?"`;
@@ -114,10 +91,7 @@ hand over my head.`;
    You(YEP018)`"To know yourself?"`;
    Kid`"Yes."`;
    Kid`"To know more about myself at that time..."`;
-   Kid`"At that time, I thought that it would be best 
-to major in archaeology, the same as you, 
-to better understand the weird stuff that 
-was happening to me."`;
+   Kid`"At that time, I thought that it would be best to major in archaeology, the same as you, to better understand the weird stuff that was happening to me."`;
    You(YEP019)`"You're not going to..."`;
    You(YEP020)`"Study the third eye?"`;
    Kid`"I sure am."`;
@@ -131,15 +105,13 @@ was happening to me."`;
    You(YEP023)`"Huh?"`;
    Kid`"The same ones you wore then, right?"`;
    You(YEP024)`"Yeah...right."`;
-   `There was a thin black stain on hem of her 
-jacket that had remained.`;
+   `There was a thin black stain on hem of her jacket that had remained.`;
    `It was a memorable stain.`;
    `Our memory....`;
    `I started to think as I gazed at the ocean.`;
    `I thought about the time when I met You.`;
    `About those unforgettable seven days...`;
-   `But I should talk about the things that 
-happened after that.`;
+   `But I should talk about the things that happened after that.`;
    `After that...`;
 
 });
@@ -155,10 +127,8 @@ delay({ interval: 60 });
 bgload({ name: `BG39A2`, transition: 10 });
 showTextbox();
 text(() => {
-   `For some time, we just stood there enjoying 
-the sunshine on the floating island.`;
-   `The sun looked extremely bright after a week 
-without it. Its rays were warm.`;
+   `For some time, we just stood there enjoying the sunshine on the floating island.`;
+   `The sun looked extremely bright after a week without it. Its rays were warm.`;
    `At that moment...`;
    `Someone patted me on the shoulder.`;
    `I turned back and...`;
@@ -175,8 +145,7 @@ playBGM({ num: 8, volume: 100 });
 showTextbox();
 text(() => {
    Kid`"...So-So-So-Sora!?"`;
-   Sora(YEP026)`"I promised you that I would see you again 
-soon, didn't I?"`;
+   Sora(YEP026)`"I promised you that I would see you again soon, didn't I?"`;
    Kid`"Bu-but...why are you here?"`;
 
 });
@@ -191,8 +160,7 @@ fgload({ id: 1, name: `SO08ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    `Hearing that, Sora smiled gently.`;
-   `I exchanged a handshake with Sora when 
-I met her again.`;
+   `I exchanged a handshake with Sora when I met her again.`;
 
 });
 bgload({ name: `IMG05A`, transition: 20 });
@@ -216,29 +184,23 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    Kid`"Oh, you are..."`;
-   `The person called Dr. Tanaka that appeared in 
-front of us was the woman I'd seen on the 
-monitor...`;
-   `It was the person who had claimed to be 
-You's mother.`;
+   `The person called Dr. Tanaka that appeared in front of us was the woman I'd seen on the monitor...`;
+   `It was the person who had claimed to be You's mother.`;
    You(YEP031)`"M...mother..."`;
    //Dr. Tanaka
    Dr_Tanaka(YEP032)`"You...I'm so happy you're alive..."`;
    You(YEP033)`"Why are you...?"`;
    //Dr. Tanaka
-   Dr_Tanaka(YEP034)`"I promised that I would tell you everything 
-when you got to the floating island, right?"`;
+   Dr_Tanaka(YEP034)`"I promised that I would tell you everything when you got to the floating island, right?"`;
    You`"..............."`;
    //Dr. Tanaka
    Dr_Tanaka(YEP035)`"It's been a long time..."`;
    Kid`"What?"`;
    `I wondered if she were talking to me.`;
-   `It seemed like it was the first time that 
-I'd met her...`;
+   `It seemed like it was the first time that I'd met her...`;
    `Or had I met her in the past...?`;
    //Dr. Tanaka
-   Dr_Tanaka(YEP036)`"What's wrong? Is there something that 
-you would like to ask?"`;
+   Dr_Tanaka(YEP036)`"What's wrong? Is there something that you would like to ask?"`;
    Kid`"Y-yes! I have tons of things I want to ask."`;
    //Dr. Tanaka
    Dr_Tanaka(YEP037)`"Fine. Don't worry, I'll tell you everything."`;
@@ -294,8 +256,7 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   `After a while, we asked Dr. Tanaka question 
-after question.`;
+   `After a while, we asked Dr. Tanaka question after question.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -306,8 +267,7 @@ text(() => {
    `...Why could I predict things?`;
    `...Why did I lose my memory?`;
    `...What had happened in my past?`;
-   `...Did the girl I'd seen really exist? 
-Who was she?`;
+   `...Did the girl I'd seen really exist? Who was she?`;
    `...What had happened in You's past?`;
    fadeClearPage();
 });
@@ -315,13 +275,10 @@ hideTextbox();
 showTextbox();
 text(() => {
    `...Did You's father and mother really die?`;
-   `...If so, then who was she, 
-this...'Dr. Tanaka?'`;
-   `...What was the meaning of the Haiku 
-poem password?`;
+   `...If so, then who was she, this...'Dr. Tanaka?'`;
+   `...What was the meaning of the Haiku poem password?`;
    `...What was Blick Winkel?`;
-   `...What was the connection between the 
-TB virus and the accident?`;
+   `...What was the connection between the TB virus and the accident?`;
    `And...`;
    fadeClearPage();
 });
@@ -338,7 +295,6 @@ hideTextbox();
 showTextbox();
 text(() => {
    `
-
 
 
 ${noWait}`;
@@ -363,23 +319,17 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   You(YEP054)`"You're thinking about the things that 
-happened then, aren't you?"`;
+   You(YEP054)`"You're thinking about the things that happened then, aren't you?"`;
    Kid`"Huh? Yeah..."`;
    Kid`"Hey, You?"`;
-   Kid`"Do you know the proverb 'Water flows and 
-people live'?"`;
+   Kid`"Do you know the proverb 'Water flows and people live'?"`;
    You(YEP055)`"?"`;
    Kid`"Water flows from high to lower places..."`;
-   Kid`"But the flow, its path has an infinite 
-number of possibilities."`;
-   Kid`"People live...means that like the water, 
-there are infinite ways for life to flow."`;
+   Kid`"But the flow, its path has an infinite number of possibilities."`;
+   Kid`"People live...means that like the water, there are infinite ways for life to flow."`;
    Kid`"That's what it means."`;
    You(YEP056)`"Hmmmm."`;
-   Kid`"If life has infinite possibilities, there 
-might be another me somewhere who has a 
-different history from me in the present."`;
+   Kid`"If life has infinite possibilities, there might be another me somewhere who has a different history from me in the present."`;
    You(YEP057)`"Somewhere?"`;
    Kid`"Yeah, say, beyond this broad sky..."`;
    Kid`"Beyond this limitless universe..."`;
@@ -388,10 +338,8 @@ different history from me in the present."`;
    You`"........."`;
    Kid`"I was thinking about that other me."`;
    You(YEP058)`"Another universe, huh?"`;
-   You(YEP059)`"Hey, if there is another universe like 
-you say..."`;
-   You(YEP060)`"Is there another pair of us in the that other 
-world dating like us now?"`;
+   You(YEP059)`"Hey, if there is another universe like you say..."`;
+   You(YEP060)`"Is there another pair of us in the that other world dating like us now?"`;
    Kid`"Sure there is."`;
    You(YEP061)`"How can you tell?"`;
    Kid`"I can tell because I can."`;
@@ -409,12 +357,9 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    `I drew You close and kissed her. `;
-   `We were surrounded by the spring sun, clouds 
-floating in the sky, the rippling ocean and 
-the song of seagulls.`;
+   `We were surrounded by the spring sun, clouds floating in the sky, the rippling ocean and the song of seagulls.`;
    `I felt everything about You through her skin.`;
-   `Her warmth, her scent, her touch, heartbeat 
-and even the color of her heart.`;
+   `Her warmth, her scent, her touch, heartbeat and even the color of her heart.`;
    `I could see through You completely then.`;
    `It was exactly...the third eye.`;
    `Ultimate wisdom.`;
@@ -427,7 +372,6 @@ NVL_Mode();
 showTextbox();
 text(() => {
    `
-
 
 
 ${noWait}`;

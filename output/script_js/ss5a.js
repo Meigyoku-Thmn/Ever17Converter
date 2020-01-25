@@ -14,8 +14,7 @@ playVoice($`S5A000`);
 showTextbox();
 text(() => {
    `I heard a voice crying somewhere.`;
-   `The muffled voice kept sniveling and sobbing 
-again and again.`;
+   `The muffled voice kept sniveling and sobbing again and again.`;
    `Who...who was it...?`;
    `Who are you...?`;
    `I...didn't know...what I was escaping from...`;
@@ -53,8 +52,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append(S5A003)`                 You ran away!${waitVoice}
-${noWait}`;
+   Append(S5A003)`                 You ran away!${waitVoice} ${noWait}`;
    Append`     You left that kid and ran away alone!${waitVoice}${noWait}`;
    fadeClearPage();
 });
@@ -75,8 +73,7 @@ dimOff_ac = 0;
 closeDimOverlay();
 showTextbox();
 text(() => {
-   `Gradually the scenery around me began to 
-change into eerie colors....`;
+   `Gradually the scenery around me began to change into eerie colors....`;
 
 });
 hideTextbox();
@@ -105,8 +102,7 @@ showTextbox();
 text(() => {
    `Ouch!`;
    `A sharp pain shot through my right arm.`;
-   `I looked at my right arm and stared confused 
-at the cast on my arm.`;
+   `I looked at my right arm and stared confused at the cast on my arm.`;
    `I didn't know why... `;
 
 });
@@ -114,52 +110,35 @@ hideTextbox();
 playBGM({ num: 3, volume: 97 });
 showTextbox();
 text(() => {
-   `Then I remembered. I had broken my arm and was 
-resting...`;
-   `I was still foggy from the drugs. A string of 
-hazy memories came back to me.`;
+   `Then I remembered. I had broken my arm and was resting...`;
+   `I was still foggy from the drugs. A string of hazy memories came back to me.`;
    `I remembered the scary dream I had.`;
    `I thought it was from the fever and medicine. `;
    `I was sure of it.`;
    `That's why I had such bizarre dreams.`;
-   `I shook my head and tried to get a better grip 
-on my consciousness.`;
-   `I looked at the clock on the wall. It was a 
-bit past two in the morning.`;
+   `I shook my head and tried to get a better grip on my consciousness.`;
+   `I looked at the clock on the wall. It was a bit past two in the morning.`;
    `Normally it would be the middle of the night...`;
    `But somehow it didn't feel like that at all.`;
-   `I tried to remember how long we had been 
-trapped there...`;
-   `An extended amount of time in here - where the 
-cycles of day and night were meaningless - 
-really played with one's sense of time.`;
-   `I sat up, taking care to watch out for 
-my broken arm.`;
+   `I tried to remember how long we had been trapped there...`;
+   `An extended amount of time in here - where the cycles of day and night were meaningless - really played with one's sense of time.`;
+   `I sat up, taking care to watch out for my broken arm.`;
    `Clank.`;
    `Sara's pendant was by my left hand.`;
-   `It looked like I had fallen asleep with it 
-clasped in my hand.`;
+   `It looked like I had fallen asleep with it clasped in my hand.`;
    Kid`"I've gotta return this."`;
    `I slipped off of the bed.`;
-   `My right arm felt slightly feverish, but 
-because the medicine Takeshi had injected 
-was probably still working, it didn't hurt 
-much.`;
+   `My right arm felt slightly feverish, but because the medicine Takeshi had injected was probably still working, it didn't hurt much.`;
    `But I still was unable to move it normally.`;
-   `Next to the pillow was a sling for me to hang 
-my arm.`;
-   `I wondered if Takeshi had left it. Or maybe 
-You.`;
-   `Either way, I couldn't just let my hurt arm 
-swing back and forth as I walked. I put it on.`;
+   `Next to the pillow was a sling for me to hang my arm.`;
+   `I wondered if Takeshi had left it. Or maybe You.`;
+   `Either way, I couldn't just let my hurt arm swing back and forth as I walked. I put it on.`;
    `I thought about where Sara might be...`;
    `I figured she might be asleep.`;
    `I wondered where she always slept.`;
-   `An image of Sara atop the whale floated into 
-my mind.`;
+   `An image of Sara atop the whale floated into my mind.`;
    `I decided to try there first...`;
-   `If she weren't there, then I'd try somewhere 
-else.`;
+   `If she weren't there, then I'd try somewhere else.`;
    `Still a bit groggy, I left the infirmary.`;
 
 });
@@ -171,8 +150,7 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   `I went down in the elevator and headed for 
-the Cosmic Whale.`;
+   `I went down in the elevator and headed for the Cosmic Whale.`;
 
 });
 playSFX({ name: `SE02_14`, a1: 0, volume: 85 });
@@ -207,29 +185,24 @@ showTextbox();
 text(() => {
    `-!`;
    Kid`"S...Sara!"`;
-   `The moment I saw what was happening, I jumped 
-into the water.`;
+   `The moment I saw what was happening, I jumped into the water.`;
 
 });
 playSFX({ name: `SE02_05`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `After I jumped I remembered that my arm 
-was broken, but it was too late.`;
-   `I swam toward Sara doing the best I could with 
-my arm.`;
+   `After I jumped I remembered that my arm was broken, but it was too late.`;
+   `I swam toward Sara doing the best I could with my arm.`;
    Kid`"Sara, grab hold!"`;
    Sara(S5A004)`"Huh? Kid, what're you doing?"`;
    Kid`"Just grab hold of me!"`;
-   `I tried to grab Sara, but she swam away 
-from me.`;
+   `I tried to grab Sara, but she swam away from me.`;
    Sara(S5A005)`"Just leave me alone!"`;
    Kid`"Huh? w-w-wait Sara?"`;
    Sara(S5A006)`"I said, stay away from me - pervert!"`;
    Kid`"Pervert....what?"`;
    `Then I noticed something a little bit strange.`;
-   `If I stretched my legs I could just touch 
-the floor.`;
+   `If I stretched my legs I could just touch the floor.`;
 
 });
 hideTextbox();
@@ -246,8 +219,7 @@ text(() => {
    Sara(S5A007)`"What?"`;
    Kid`"Uh, what're you doing?"`;
    Sara(S5A008)`"Just what it looks like."`;
-   Kid`"...I don't know what it looks like. That's 
-why I asked."`;
+   Kid`"...I don't know what it looks like. That's why I asked."`;
    Sara(S5A009)`"I'm practicing swimming."`;
    Kid`"Practicing...swimming?"`;
    Sara(S5A010)`"Yes. Just what it looks like?"`;
@@ -260,7 +232,6 @@ NVL_Mode();
 showTextbox();
 text(() => {
    `
-
 
 ${noWait}`;
    `             (As if I would know!?)`;
@@ -276,8 +247,7 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   `That was the comeback I launched in my mind. 
-But what came out of my mouth was...`;
+   `That was the comeback I launched in my mind. But what came out of my mouth was...`;
    Kid`"Oh...I see...well, geez..."`;
    `...Only that stupid line.`;
 
@@ -285,24 +255,20 @@ But what came out of my mouth was...`;
 fgload({ id: 1, name: `SA04BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A011)`"Well, since you've seen me, I'll tell you 
-I guess."`;
+   Sara(S5A011)`"Well, since you've seen me, I'll tell you I guess."`;
 
 });
 fgload({ id: 1, name: `SA03BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S5A012)`"I actually don't know how to swim."`;
-   `As she said this, Sara continued flapping 
-about madly in the water as if she were 
-sinking.`;
+   `As she said this, Sara continued flapping about madly in the water as if she were sinking.`;
 
 });
 fgload({ id: 1, name: `SA01BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A013)`"I thought we have all this time...and I 
-found a swimsuit in the changing room."`;
+   Sara(S5A013)`"I thought we have all this time...and I found a swimsuit in the changing room."`;
 
 });
 hideTextbox();
@@ -312,9 +278,7 @@ NVL_Mode();
 showTextbox();
 text(() => {
    `Distracted, I hadn't noticed...`;
-   `But when she told me I did for the first time. 
-Sara was decked out like a LeMU employee in a 
-one-piece swimsuit.`;
+   `But when she told me I did for the first time. Sara was decked out like a LeMU employee in a one-piece swimsuit.`;
    `I wondered why I hadn't noticed...`;
    `I blushed with embarrassment.`;
    fadeClearPage();
@@ -323,9 +287,7 @@ hideTextbox();
 showTextbox();
 text(() => {
    `But still...`;
-   `Watching Sara's movements, it would have been 
-more of a stretch to imagine her swimming than 
-drowning.`;
+   `Watching Sara's movements, it would have been more of a stretch to imagine her swimming than drowning.`;
    `Besides, the medicine was still affecting me...`;
    `I was making up all kinds of excuses.`;
    fadeClearPage();
@@ -338,15 +300,11 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   `But Sara didn't notice my confusion, 
-and kept at it.`;
-   Sara(S5A014)`"So I thought that I would try to get in a 
-little swim practice."`;
+   `But Sara didn't notice my confusion, and kept at it.`;
+   Sara(S5A014)`"So I thought that I would try to get in a little swim practice."`;
    Sara(S5A015)`"I mean, the water here isn't all that cold."`;
-   `Now that she mentioned it, I realized the 
-water was warmer than in the corridors.`;
-   `I imagined the heat from the pipes had warmed 
-it.`;
+   `Now that she mentioned it, I realized the water was warmer than in the corridors.`;
+   `I imagined the heat from the pipes had warmed it.`;
    Sara(S5A016)`"So I was practicing swimming all alone."`;
    Kid`"I thought you were a ninja? Ninja can..."`;
 
@@ -354,12 +312,10 @@ it.`;
 fgload({ id: 1, name: `SA04BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A017)`"Well, swimming is the only skill 
-I'm not good at..."`;
+   Sara(S5A017)`"Well, swimming is the only skill I'm not good at..."`;
    Kid`"I see..."`;
    Sara(S5A018)`"Just between you and me..."`;
-   Sara(S5A019)`"Unfortunately, my swimming was so bad that 
-I wasn't promoted to a master."`;
+   Sara(S5A019)`"Unfortunately, my swimming was so bad that I wasn't promoted to a master."`;
    Kid`"Is that right...?"`;
 
 });
@@ -368,8 +324,7 @@ showTextbox();
 text(() => {
    Sara(S5A020)`"Ah, hee, hee..."`;
    Kid`"W...what?"`;
-   Sara(S5A021)`"Hee, hee. Kid, you take everything so 
-seriously. Nin! Nin! Ninja!"`;
+   Sara(S5A021)`"Hee, hee. Kid, you take everything so seriously. Nin! Nin! Ninja!"`;
    Kid`"Oh...so...that was a joke!"`;
    Sara(S5A022)`"Sure it was. Me? A ninja?"`;
    Kid`"B-but..."`;
@@ -379,10 +334,8 @@ seriously. Nin! Nin! Ninja!"`;
 fgload({ id: 1, name: `SA01BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A024)`"And being in this situation and not being 
-able to swim...it makes me nervous."`;
-   Sara(S5A025)`"I think I'm probably the only one here who 
-can't swim."`;
+   Sara(S5A024)`"And being in this situation and not being able to swim...it makes me nervous."`;
+   Sara(S5A025)`"I think I'm probably the only one here who can't swim."`;
 
 });
 fgload({ id: 1, name: `SA03BWM`, x: 320, useAnim: true });
@@ -390,8 +343,7 @@ showTextbox();
 text(() => {
    Sara(S5A026)`"You can swim right, Kid?"`;
    Kid`"I..."`;
-   `I hadn't thought about it, but I thought I'd 
-been swimming alright a minute ago.`;
+   `I hadn't thought about it, but I thought I'd been swimming alright a minute ago.`;
    `That meant that I could swim.`;
    Kid`"Yeah...I can swim."`;
 
@@ -421,18 +373,14 @@ showTextbox();
 text(() => {
    Sara(S5A028)`"Oh, why not?"`;
    Kid`"Well, my arm is no good like this..."`;
-   `My broken arm actually felt like it was on 
-fire - probably because I had strained it 
-trying to swim.`;
+   `My broken arm actually felt like it was on fire - probably because I had strained it trying to swim.`;
 
 });
 fgload({ id: 1, name: `SA01BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A029)`"That's okay. You can just watch and tell me 
-what I'm doing wrong."`;
-   Kid`"But I know you won't listen to anything 
-I say..."`;
+   Sara(S5A029)`"That's okay. You can just watch and tell me what I'm doing wrong."`;
+   Kid`"But I know you won't listen to anything I say..."`;
    Sara(S5A030)`"Sure I will! I'll listen!"`;
    Kid`"Really?"`;
    Sara(S5A031)`"For sure. I promise!"`;
@@ -450,22 +398,16 @@ showTextbox();
 text(() => {
    `Sara splashed water at me.`;
    Kid`"I'm just kidding..."`;
-   Sara(S5A033)`"Now you've made me mad. I can't believe you'd 
-say that."`;
-   Kid`"So you don't want me to teach you how to 
-swim?"`;
+   Sara(S5A033)`"Now you've made me mad. I can't believe you'd say that."`;
+   Kid`"So you don't want me to teach you how to swim?"`;
    Sara(S5A034)`"Aw...you're tricky!"`;
-   Sara(S5A035)`"I think you've got samurai in you, so you 
-better fight fair!"`;
-   Kid`"I'm not samurai and I'm not fighting about 
-anything."`;
+   Sara(S5A035)`"I think you've got samurai in you, so you better fight fair!"`;
+   Kid`"I'm not samurai and I'm not fighting about anything."`;
    Sara(S5A036)`"Ohhh! You're so difficult!"`;
    Kid`"Difficult...?"`;
-   Sara(S5A037)`"Forget it! That's it - you're 
-teaching me to swim."`;
+   Sara(S5A037)`"Forget it! That's it - you're teaching me to swim."`;
    Kid`"Hey it's not all up to you."`;
-   Sara(S5A038)`"I didn't decide it. It's fate. Inevitable and 
-decided by the stars!" `;
+   Sara(S5A038)`"I didn't decide it. It's fate. Inevitable and decided by the stars!" `;
    Kid`"Uh..."`;
 
 });
@@ -482,13 +424,10 @@ text(() => {
    Sara(S5A040)`"You sure whine a lot for a guy!"`;
    Sara(S5A041)`"When something is decided, you accept it."`;
    Kid`"So when exactly was this decided?"`;
-   Sara(S5A042)`"EXACTLY right now. I decided, so it's 
-decided. Kid, you're gonna teach me to swim!"`;
-   `I didn't think there was any point to 
-continuing the argument.`;
+   Sara(S5A042)`"EXACTLY right now. I decided, so it's decided. Kid, you're gonna teach me to swim!"`;
+   `I didn't think there was any point to continuing the argument.`;
    Kid`"Alright. Fine. I'll teach you."`;
-   Sara(S5A043)`"It would've been easier if you had said that 
-in the first place!"`;
+   Sara(S5A043)`"It would've been easier if you had said that in the first place!"`;
 
 });
 goto(lbl_0000052f);
@@ -497,11 +436,9 @@ showTextbox();
 text(() => {
    Kid`"I suppose..."`;
    Sara(S5A044)`"Huh?"`;
-   Kid`"Well, I'm already soaked to the bone... 
-I might as well teach you a little."`;
+   Kid`"Well, I'm already soaked to the bone... I might as well teach you a little."`;
    Sara(S5A045)`"You mean it? Alright!"`;
-   Sara(S5A046)`"Wow. You're being surprisingly nice, 
-aren't you?"`;
+   Sara(S5A046)`"Wow. You're being surprisingly nice, aren't you?"`;
    Kid`"No I'm not."`;
    Sara(S5A047)`"Oh! I know what it is."`;
    Kid`"W-what?"`;
@@ -510,11 +447,9 @@ aren't you?"`;
 fgload({ id: 1, name: `SA09BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A048)`"It's because I look so good in this swimsuit! 
-Better keep your hands off!" `;
+   Sara(S5A048)`"It's because I look so good in this swimsuit! Better keep your hands off!" `;
    Kid`"I, d-don't know what you are talking about!"`;
-   Sara(S5A049)`"Oh! See! I can tell I'm right 'cause you're 
-getting all worked up!"`;
+   Sara(S5A049)`"Oh! See! I can tell I'm right 'cause you're getting all worked up!"`;
 
 });
 showTextbox();
@@ -540,8 +475,7 @@ showTextbox();
 text(() => {
    Sara(S5A052)`"Yeah. I promise."`;
    Kid`"Hmmm."`;
-   Sara(S5A053)`"I said I promise! I swear to God, to Buddha! 
-And anyone else who'll listen!"`;
+   Sara(S5A053)`"I said I promise! I swear to God, to Buddha! And anyone else who'll listen!"`;
    Kid`"Well...alright."`;
    Sara(S5A054)`"Really? You know I love you, right?"`;
    Kid`"........."`;
@@ -552,8 +486,7 @@ And anyone else who'll listen!"`;
 showTextbox();
 text(() => {
    Sara(S5A055)`"Ohhhhh, I'm kidding! Come back here!"`;
-   `Sara flapped her arms about making even more 
-spray.`;
+   `Sara flapped her arms about making even more spray.`;
    Kid`"Oh, alright. I'll teach you, okay?"`;
    Sara(S5A056)`"Yeah!"`;
    Sara(S5A057)`"I was so hoping that you would say that!"`;
@@ -576,17 +509,12 @@ text(() => {
    Kid`"Sara, you've gotta relax more!"`;
    Kid`"Just be natural like."`;
    Kid`"Sara!"`;
-   `I had to strain my voice to be heard over 
-Sara's splashing.`;
+   `I had to strain my voice to be heard over Sara's splashing.`;
    `I had gotten out of the water.`;
-   `With my right arm in a sling, there were only 
-so many ways to teach swimming.`;
-   `I just watched what she was doing and hollered 
-out advice.`;
-   `But...no matter what I said...she still looked 
-clumsy.`;
-   Kid`"If you keep that up, you'll never learn to 
-swim!"`;
+   `With my right arm in a sling, there were only so many ways to teach swimming.`;
+   `I just watched what she was doing and hollered out advice.`;
+   `But...no matter what I said...she still looked clumsy.`;
+   Kid`"If you keep that up, you'll never learn to swim!"`;
    Sara(S5A058)`"Well, what am I s'posed to do? Pant, pant."`;
    Sara(S5A059)`"I'm doing my best to do just like you said."`;
    Kid`"I see..."`;
@@ -599,18 +527,14 @@ playSFX({ name: `SE02_14`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    `Splish, splash, splish, splash!`;
-   `She only whirled the water into a bigger froth 
-with more spray.`;
+   `She only whirled the water into a bigger froth with more spray.`;
    Kid`"Whoa! S-Sara, slow down!"`;
-   `I shouted instructions as I avoided the spray 
-showering down around me.`;
+   `I shouted instructions as I avoided the spray showering down around me.`;
    Kid`"Are you doing that on purpose?"`;
    Sara(S5A061)`"Why would I?"`;
    Sara(S5A062)`"Whaddya expect me to do?"`;
-   Kid`"You've gotta move more slowly...gentle 
-like..."`;
-   Sara(S5A063)`"How am I supposed to know what you mean 
-by gentle? What else can I do?"`;
+   Kid`"You've gotta move more slowly...gentle like..."`;
+   Sara(S5A063)`"How am I supposed to know what you mean by gentle? What else can I do?"`;
    Sara(S5A064)`"You're no good at teaching!"`;
    `That ticked me off.`;
 
@@ -632,8 +556,7 @@ fgload({ id: 1, name: `SA04BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S5A065)`"What?"`;
-   Kid`"Sara, you don't need to learn to swim, 
-do you?"`;
+   Kid`"Sara, you don't need to learn to swim, do you?"`;
    Sara(S5A066)`"Of course I do!"`;
    Kid`"Hmmm. Really?"`;
 
@@ -694,8 +617,7 @@ text(() => {
 fgload({ id: 1, name: `SA01BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A077)`"Besides, I think I look pretty good 
-in a swimsuit."`;
+   Sara(S5A077)`"Besides, I think I look pretty good in a swimsuit."`;
    Sara(S5A078)`"You should be happy just to be around me."`;
    Kid`"...Not even a little."`;
 
@@ -707,10 +629,8 @@ NVL_Mode();
 showTextbox();
 text(() => {
    `
-
 ${noWait}`;
-   `Truthfully though, Sara was something in a 
-swimsuit.`;
+   `Truthfully though, Sara was something in a swimsuit.`;
    `But I couldn't tell her that.`;
    `I didn't want her to get bigheaded.`;
    fadeClearPage();
@@ -723,8 +643,7 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   Kid`"Now why should I be so happy about seeing 
-you in a swimsuit?"`;
+   Kid`"Now why should I be so happy about seeing you in a swimsuit?"`;
    Sara(S5A079)`"Oh! You're such a jerk."`;
 
 });
@@ -737,14 +656,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(5);
 showTextbox();
 text(() => {
-   `Sara started kicking and showered me with 
-water.`;
+   `Sara started kicking and showered me with water.`;
    Kid`"Whoa! Stop that right now!"`;
-   Sara(S5A080)`"Then you tell the truth! You like me 
-in a swimsuit, right?"`;
+   Sara(S5A080)`"Then you tell the truth! You like me in a swimsuit, right?"`;
    Kid`"Why would I? You in a swimsuit...?"`;
-   `I was blushing, completely giving away my 
-feelings.`;
+   `I was blushing, completely giving away my feelings.`;
 
 });
 hideTextbox();
@@ -767,12 +683,9 @@ text(() => {
    Kid`"You're not listening to me!"`;
    Sara(S5A083)`"You're a guy."`;
    Kid`"What's that supposed to mean?"`;
-   Sara(S5A084)`"Well, any healthy guy in his right mind would 
-like to be with a beautiful girl in a bathing 
-suit."`;
+   Sara(S5A084)`"Well, any healthy guy in his right mind would like to be with a beautiful girl in a bathing suit."`;
    Kid`"It's not like that."`;
-   Sara(S5A085)`"You're saying that even though you want to 
-sneak a better look."`;
+   Sara(S5A085)`"You're saying that even though you want to sneak a better look."`;
    Kid`"I said I don't!"`;
    Kid`"I've had enough. I'm leaving!"`;
 
@@ -785,8 +698,7 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   `I was embarrassed because she'd seen through 
-me. I really meant to leave the room.`;
+   `I was embarrassed because she'd seen through me. I really meant to leave the room.`;
    Sara(S5A086)`"Aiiiieeee!"`;
    `I heard Sara scream behind me.`;
 
@@ -820,8 +732,7 @@ showTextbox();
 text(() => {
    `Splash!`;
    `Water suddenly sprayed in my eyes, blinding me.`;
-   `The next thing I knew I had slipped and was 
-spinning in the air.`;
+   `The next thing I knew I had slipped and was spinning in the air.`;
 
 });
 playSFX({ name: `SE02_05`, a1: 0, volume: 95 });
@@ -830,8 +741,7 @@ text(() => {
    `Crasplash!`;
    `The following instant I was in the water.`;
    Kid`"Aaagghhh!"`;
-   `It all happened so quickly that I swallowed a 
-ton of water. And some went up my nose.`;
+   `It all happened so quickly that I swallowed a ton of water. And some went up my nose.`;
    `My nose stung.`;
    `I desperately fought to get to the surface.`;
 
@@ -852,21 +762,16 @@ bgload({ name: `EV_SA10A`, transition: 20 });
 playBGM({ num: 18, volume: 97 });
 showTextbox();
 text(() => {
-   `Sara, pretending that nothing had happened, 
-had resumed her swim practice.`;
+   `Sara, pretending that nothing had happened, had resumed her swim practice.`;
    Kid`"Cough, sputter...Sara, you're mean!"`;
    `I approached Sara.`;
    Sara(S5A088)`"Paaa...A,HA,HA,Haaaaaa!"`;
    Kid`"W-what?"`;
-   Sara(S5A089)`"You fall for EVERYTHING so easily! 
-Hee, hee...."`;
+   Sara(S5A089)`"You fall for EVERYTHING so easily! Hee, hee...."`;
    Kid`"S-Sara!"`;
-   Sara(S5A090)`"It would seem you are still wet behind the 
-ears, Kid."`;
+   Sara(S5A090)`"It would seem you are still wet behind the ears, Kid."`;
    Sara(S5A091)`"Paaa...A,HA,HA,Haaaaaa!"`;
-   `Seeing Sara laughing with such enthusiasm, I 
-realized that getting any angrier was 
-pointless.`;
+   `Seeing Sara laughing with such enthusiasm, I realized that getting any angrier was pointless.`;
    `Actually, for some reason I started to laugh.`;
    Kid`"...Hee....Kya, Ha, ha, ha, ha..."`;
    Sara(S5A092)`"A, Ha, ha, ha, ha, ha!"`;
@@ -884,8 +789,7 @@ unSkippableDelay(5);
 showTextbox();
 text(() => {
    Kid`"Anyway..."`;
-   `Once my fit of laughter was done, I got out of 
-the water.`;
+   `Once my fit of laughter was done, I got out of the water.`;
    Sara(S5A093)`"Uh, Kid..."`;
    `Sara called out to me shyly.`;
    Kid`"So, should we start?"`;
@@ -895,10 +799,8 @@ the water.`;
 fgload({ id: 1, name: `SA01BWM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A095)`"Okay wise teacher! Please fill me in with 
-swimming knowledge!"`;
-   Kid`"You know I'm pretty strict. You think you can 
-handle it?"`;
+   Sara(S5A095)`"Okay wise teacher! Please fill me in with swimming knowledge!"`;
+   Kid`"You know I'm pretty strict. You think you can handle it?"`;
    Sara(S5A096)`"Yes, sir!"`;
    Kid`"Okay. Then let's get started."`;
    Sara(S5A097)`"Okay."`;
@@ -912,27 +814,20 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(5);
 showTextbox();
 text(() => {
-   Kid`"Listen. I think with you, Sara, your body 
-gets tight because you think you can't swim."`;
+   Kid`"Listen. I think with you, Sara, your body gets tight because you think you can't swim."`;
    Kid`"So you have to relax more."`;
-   Sara(S5A098)`"But...I'm trying to do it just the way you 
-say..."`;
-   Kid`"Yeah, but you're so stiff. Like a scarecrow 
-or you're made of wood or something..." `;
-   Kid`"You need to let your legs flow freely...like 
-a fish maybe."`;
+   Sara(S5A098)`"But...I'm trying to do it just the way you say..."`;
+   Kid`"Yeah, but you're so stiff. Like a scarecrow or you're made of wood or something..." `;
+   Kid`"You need to let your legs flow freely...like a fish maybe."`;
    Sara(S5A099)`"A fish... Alright then, I'm a fish now."`;
    Kid`"Okay, Sara! You need to get pumped!"`;
    Sara(S5A100)`"I just can't picture what you mean."`;
-   Kid`"Well, if you can't imagine a fish, then how 
-about a dolphin or whale...anyway, you have 
-to be relaxed and move freely."`;
+   Kid`"Well, if you can't imagine a fish, then how about a dolphin or whale...anyway, you have to be relaxed and move freely."`;
    Sara(S5A101)`"Uuuuh..."`;
    Kid`"No. You're still too stiff! Relax more."`;
    Kid`"Just let your feet go!"`;
    `Somehow teaching her to swim had become fun. `;
-   `It was fun to see Sara, who was always in 
-control of things, in the opposite position.`;
+   `It was fun to see Sara, who was always in control of things, in the opposite position.`;
    Kid`"Sara!"`;
    Sara(S5A102)`"Mmmmmmm."`;
 
@@ -949,11 +844,9 @@ unSkippableDelay(25);
 clock(`3:40`);
 showTextbox();
 text(() => {
-   `I waited for Sara to emerge from the changing 
-room.`;
+   `I waited for Sara to emerge from the changing room.`;
    `I played with her pendant.`;
-   `Looking at it without the flame or the 
-lighter, it was just a mirror.`;
+   `Looking at it without the flame or the lighter, it was just a mirror.`;
    `I ran my finger around the edge of the pendant.`;
 
 });
@@ -970,8 +863,7 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   `I thought about what Sara had said in the 
-compression chamber.`;
+   `I thought about what Sara had said in the compression chamber.`;
    Sara(S4A090)`"Both of my parents are gone."`;
    `Sara had looked so sad as she'd said it.`;
 
@@ -1004,8 +896,7 @@ fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S5A105)`"Oh you brought it for me."`;
-   Sara(S5A106)`"Sorry you had to stick around teaching me 
-until the end."`;
+   Sara(S5A106)`"Sorry you had to stick around teaching me until the end."`;
    Kid`"You're the one that made me stay..."`;
    `I mumbled this.`;
    Sara(S5A107)`"Huh? What did you say?"`;
@@ -1018,11 +909,9 @@ text(() => {
    Sara(S5A108)`"Well, anyway, thanks a lot..."`;
    Sara(S5A109)`"And thanks for hanging out until the end."`;
    Kid`"What?"`;
-   `I was taken aback. I was waiting for some 
-witty comeback.`;
+   `I was taken aback. I was waiting for some witty comeback.`;
    `But Sara was sincerely saying thanks.`;
-   Kid`"W-wow. You're being surprisingly nice 
-to me..."`;
+   Kid`"W-wow. You're being surprisingly nice to me..."`;
 
 });
 fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
@@ -1041,31 +930,21 @@ text(() => {
 fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A113)`"But it was fun. I was happy you were so 
-serious about it..."`;
+   Sara(S5A113)`"But it was fun. I was happy you were so serious about it..."`;
    Kid`"Sara..."`;
    `I got a little bit embarrassed.`;
-   `Somehow, watching Sara struggle with something 
-when she was used to always having her way, 
-well, it was kind of fun.`;
-   `I had taught her how to swim correctly, but I 
-did have an urge to be a bit of a bully about 
-it.`;
-   `Still, I never thought that she would come out 
-and say 'Thank you'...`;
+   `Somehow, watching Sara struggle with something when she was used to always having her way, well, it was kind of fun.`;
+   `I had taught her how to swim correctly, but I did have an urge to be a bit of a bully about it.`;
+   `Still, I never thought that she would come out and say 'Thank you'...`;
 
 });
 fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S5A114)`"I really mean it. Thanks, Kid."`;
-   Kid`"Y-yeah. But don't let it go to your head, 
-because you can't really call what you were 
-doing swimming."`;
-   `I was embarrassed, and reflexively went into 
-mean mode.`;
-   Sara(S5A115)`"I know. If we have another chance, I hope 
-you'll teach me again."`;
+   Kid`"Y-yeah. But don't let it go to your head, because you can't really call what you were doing swimming."`;
+   `I was embarrassed, and reflexively went into mean mode.`;
+   Sara(S5A115)`"I know. If we have another chance, I hope you'll teach me again."`;
    Kid`"S-sure."`;
 
 });
@@ -1087,16 +966,14 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S5A118)`"Somehow, I'm tired out..."`;
-   `As she spoke, Sara took the pendant and put 
-it on.`;
+   `As she spoke, Sara took the pendant and put it on.`;
    `Then she took it in her hand and stared at it.`;
 
 });
 fgload({ id: 1, name: `SA17ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S5A119)`"I'll bet, if my brother was around, it would 
-be kinda like this..."`;
+   Sara(S5A119)`"I'll bet, if my brother was around, it would be kinda like this..."`;
    `Sara mumbled it, sounding lonely.`;
    Kid`"Your brother?"`;
 
@@ -1127,8 +1004,7 @@ text(() => {
    Sara(S5A124)`"But he promised me..."`;
    Kid`"Promised you?"`;
    Sara(S5A125)`"Yeah, he promised."`;
-   Sara(S5A126)`"He promised that he would come get me no 
-matter what..."`;
+   Sara(S5A126)`"He promised that he would come get me no matter what..."`;
    Kid`"Is that right?"`;
 
 });
@@ -1148,8 +1024,7 @@ fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S5A129)`"Waiting for him to come save me...always..."`;
-   `Sara's words, brought back a vision I had 
-seen. `;
+   `Sara's words, brought back a vision I had seen. `;
 
 });
 hideTextbox();
@@ -1165,14 +1040,10 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    `${voice(S3B105)}${noWait}`;
-   Append(S3B106)`                ${nextPage(0)}Yeah, I promise.${nextPage(1)}${waitVoice}
-${noWait}`;
-   `            ${nextPage(0)}To wait like a good girl.
-${noWait}`;
-   `${voice(S3B107)}          Until you come for me...${nextPage(1)}${waitVoice}
-${noWait}`;
-   `${voice(S3B108)}        ${nextPage(0)}I'll wait...like a good girl...${nextPage(1)}${waitVoice}
-${noWait}`;
+   Append(S3B106)`                ${nextPage(0)}Yeah, I promise.${nextPage(1)}${waitVoice} ${noWait}`;
+   `            ${nextPage(0)}To wait like a good girl. ${noWait}`;
+   `${voice(S3B107)}          Until you come for me...${nextPage(1)}${waitVoice} ${noWait}`;
+   `${voice(S3B108)}        ${nextPage(0)}I'll wait...like a good girl...${nextPage(1)}${waitVoice} ${noWait}`;
    `            ${nextPage(0)}I'll wait....forever...${nextPage(1)}${waitVoice}${noWait}`;
    fadeClearPage();
 });
@@ -1214,11 +1085,9 @@ unSkippableDelay(25);
 showTextbox();
 text(() => {
    `The next morning I overslept.`;
-   `I thought I might be in trouble with 
-everyone...`;
+   `I thought I might be in trouble with everyone...`;
    `But it seemed like I wasn't the only one.`;
-   `The late start pushed our breakfast time back 
-later than always.`;
+   `The late start pushed our breakfast time back later than always.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -1237,24 +1106,15 @@ unSkippableDelay(25);
 clock(`8:37`);
 showTextbox();
 text(() => {
-   `We wanted a change of pace, to do something 
-fun, so we spread out a blanket in the park's 
-rest area.`;
-   `The blanket was from a shop on the same floor. 
-It had LeMU's Myumyun label printed on it.`;
-   `Sora couldn't eat, but she sat with us, 
-smiling just the same.`;
+   `We wanted a change of pace, to do something fun, so we spread out a blanket in the park's rest area.`;
+   `The blanket was from a shop on the same floor. It had LeMU's Myumyun label printed on it.`;
+   `Sora couldn't eat, but she sat with us, smiling just the same.`;
    `As if drawn by the scent, Tsugumi appeared.`;
-   `As if she didn't notice or didn't care, 
-Tsugumi parked herself on Myumyun's face. 
-She started munching a sandwich.`;
-   `Of course, Takeshi started complaining, 
-but Tsugumi just ignored him.`;
-   `Sara and Tsugumi didn't look at each other.
-It seemed like they were ignoring each other.`;
+   `As if she didn't notice or didn't care, Tsugumi parked herself on Myumyun's face. She started munching a sandwich.`;
+   `Of course, Takeshi started complaining, but Tsugumi just ignored him.`;
+   `Sara and Tsugumi didn't look at each other. It seemed like they were ignoring each other.`;
    `Apparently they still weren't getting along.`;
-   `But everybody tried to make the best of it, 
-eating, chatting and having fun.`;
+   `But everybody tried to make the best of it, eating, chatting and having fun.`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `SA02ADM`, name2: `YU02BDM`, x1: 128, x2: 512, useAnim: true });
@@ -1268,11 +1128,9 @@ text(() => {
 fgload({ id: 2, name: `YU05BDM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A077)`"Kid, you're terrible at this. What is that? 
-Sixteen losses in a row?"`;
+   You(Y5A077)`"Kid, you're terrible at this. What is that? Sixteen losses in a row?"`;
    Kid`"Weird..."`;
-   You(Y5A078)`"You're too nice. You have to just throw out 
-what you feel - rock, paper or scissors."`;
+   You(Y5A078)`"You're too nice. You have to just throw out what you feel - rock, paper or scissors."`;
 
 });
 fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
@@ -1293,17 +1151,14 @@ text(() => {
 multifgload2({ id1: 1, id2: 2, name1: `SA07ADM`, name2: `YU07BDM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A081)`"Could be that with your amnesia your ability 
-to make decisions isn't so good right now."`;
+   You(Y5A081)`"Could be that with your amnesia your ability to make decisions isn't so good right now."`;
 
 });
 fgload({ id: 2, name: `YU05BDM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A082)`"Don't get to caught up with the trivial 
-things that you can't control."`;
-   You(Y5A083)`"You need to be strong. Make up your own mind. 
-Or you'll just end up following everybody else."`;
+   You(Y5A082)`"Don't get to caught up with the trivial things that you can't control."`;
+   You(Y5A083)`"You need to be strong. Make up your own mind. Or you'll just end up following everybody else."`;
    Kid`"I know..."`;
 
 });
@@ -1331,20 +1186,13 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `She squeezed a ton of mustard on to my 
-sandwich.`;
-   `The penalty was mustard. And my sandwich was 
-already drenched in the stuff.`;
-   `My mouth felt like it was on fire before I 
-even took a bite.`;
-   `...Maybe thanks to that silly exchange, I was 
-able to get through the whole thing without 
-thinking about it too much.`;
-   `Suddenly, someone cut across my field of 
-vision.`;
+   `She squeezed a ton of mustard on to my sandwich.`;
+   `The penalty was mustard. And my sandwich was already drenched in the stuff.`;
+   `My mouth felt like it was on fire before I even took a bite.`;
+   `...Maybe thanks to that silly exchange, I was able to get through the whole thing without thinking about it too much.`;
+   `Suddenly, someone cut across my field of vision.`;
    `It was Tsugumi.`;
-   `Tsugumi was walking toward Takeshi. She 
-extended her hand.`;
+   `Tsugumi was walking toward Takeshi. She extended her hand.`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `TU15ADM`, name2: `KB14ADM`, x1: 128, x2: 512, useAnim: true });
@@ -1353,8 +1201,7 @@ text(() => {
    Takeshi(Y5A088)`"Huh? What's with the hand?"`;
    Tsugumi`"........."`;
    Takeshi(Y5A089)`"You're like a dog. Shake girl."`;
-   Takeshi(Y5A090)`"And you'll probably say 'don't make fun of 
-me!'"`;
+   Takeshi(Y5A090)`"And you'll probably say 'don't make fun of me!'"`;
 
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
@@ -1365,8 +1212,7 @@ text(() => {
 });
 showTextbox();
 text(() => {
-   Sora(Y5A092)`"Are you trying to say that you want another 
-helping?"`;
+   Sora(Y5A092)`"Are you trying to say that you want another helping?"`;
 
 });
 fgload({ id: 1, name: `TU15ADM`, x: 128, useAnim: true });
@@ -1374,9 +1220,7 @@ showTextbox();
 text(() => {
    `Tsugumi nodded at Sora's extra explanation. `;
    `She had already wolfed down her first one.`;
-   Takeshi(Y5A093)`"Hey...you've gotta lot of nerve...you only 
-show your face at meal time and now you're 
-demanding seconds..."`;
+   Takeshi(Y5A093)`"Hey...you've gotta lot of nerve...you only show your face at meal time and now you're demanding seconds..."`;
 
 });
 fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
@@ -1394,8 +1238,7 @@ text(() => {
 fgload({ id: 2, name: `KB12ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A096)`"I do. I thought you might want more so 
-I made a SPECIAL one for you."`;
+   Takeshi(Y5A096)`"I do. I thought you might want more so I made a SPECIAL one for you."`;
 
 });
 showTextbox();
@@ -1409,20 +1252,16 @@ fgload({ id: 1, name: `TU17ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi`"........."`;
-   `Tsugumi took the sandwich without saying 
-anything.`;
+   `Tsugumi took the sandwich without saying anything.`;
    Takeshi`"............"`;
-   `Takeshi stared at Tsugumi as she took the wrap 
-off of the sandwich.`;
+   `Takeshi stared at Tsugumi as she took the wrap off of the sandwich.`;
 
 });
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(Y5A098)`"...What?"`;
-   Takeshi(Y5A099)`"Nothing. It's just that you're so beautiful. 
-I can't take my eyes off of you even when 
-you're just removing a sandwich wrapper..."`;
+   Takeshi(Y5A099)`"Nothing. It's just that you're so beautiful. I can't take my eyes off of you even when you're just removing a sandwich wrapper..."`;
    Tsugumi(Y5A100)`"You're stupidity is terminal."`;
    Tsugumi(Y5A101)`"Maybe if you died 50 times it would help."`;
 
@@ -1435,10 +1274,8 @@ text(() => {
 showTextbox();
 text(() => {
    `I thought Takeshi would get angry.`;
-   `But he was just grinning as he watched Tsugumi 
-start in on her sandwich.`;
-   `Something was definitely not right here. 
-I sucked in my breath and watched.`;
+   `But he was just grinning as he watched Tsugumi start in on her sandwich.`;
+   `Something was definitely not right here. I sucked in my breath and watched.`;
 
 });
 fgload({ id: 1, name: `TU17ADM`, x: 128, useAnim: true });
@@ -1456,15 +1293,10 @@ text(() => {
    Takeshi(Y5A103)`"Hee, heee."`;
    Takeshi(Y5A104)`"Fwaaa, ha, ha, ha, ha, ha..."`;
    Tsugumi`"..."`;
-   Takeshi(Y5A105)`"It's got quite a flavor, huh? That 
-sandwich...ha, ha, ha..."`;
+   Takeshi(Y5A105)`"It's got quite a flavor, huh? That sandwich...ha, ha, ha..."`;
    `Takeshi laughed so hard he cried.`;
-   Takeshi(Y5A106)`"It's packed with mustard, Tabasco, pepper, 
-sage, nutmeg, cinnamon, mint and a dose 
-of curry powder..."`;
-   Takeshi(Y5A107)`"For good measure I added a dose of 
-mayonnaise, ketchup, sugar, salt, soy sauce, 
-vinegar and vanilla..."`;
+   Takeshi(Y5A106)`"It's packed with mustard, Tabasco, pepper, sage, nutmeg, cinnamon, mint and a dose of curry powder..."`;
+   Takeshi(Y5A107)`"For good measure I added a dose of mayonnaise, ketchup, sugar, salt, soy sauce, vinegar and vanilla..."`;
 
 });
 fgload({ id: 2, name: `KB13ADM`, x: 512, useAnim: true });
@@ -1476,9 +1308,7 @@ text(() => {
 fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A109)`"Anyway, I threw in every ingredient and spice 
-that I could find. It's my secret 34 
-ingredient sauce."`;
+   Takeshi(Y5A109)`"Anyway, I threw in every ingredient and spice that I could find. It's my secret 34 ingredient sauce."`;
 
 });
 fgload({ id: 1, name: `TU17ADM`, x: 128, useAnim: true });
@@ -1494,21 +1324,18 @@ fgload({ id: 2, name: `KB04ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(Y5A112)`"Shut up! I'm the cook here."`;
-   Sora(Y5A113)`"Tsugumi...I highly recommend inducing 
-vomiting immediately...!"`;
+   Sora(Y5A113)`"Tsugumi...I highly recommend inducing vomiting immediately...!"`;
 
 });
 showTextbox();
 text(() => {
-   Sora(Y5A114)`"Get water quickly! N-no...we'll need medicine 
-first...!"`;
+   Sora(Y5A114)`"Get water quickly! N-no...we'll need medicine first...!"`;
 
 });
 fgload({ id: 2, name: `KB01ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A115)`"She'll be fine. She'll get the runs, 
-but she won't die."`;
+   Takeshi(Y5A115)`"She'll be fine. She'll get the runs, but she won't die."`;
    Kid`"That's not something you should do to a girl."`;
    `I went to grab Takeshi with my left hand.`;
 
@@ -1530,8 +1357,7 @@ text(() => {
 fgload({ id: 2, name: `KB02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(Y5A119)`"But it still tastes terrible, right? Right? 
-Tell the truth."`;
+   Takeshi(Y5A119)`"But it still tastes terrible, right? Right? Tell the truth."`;
 
 });
 fgload({ id: 1, name: `TU01ADM`, x: 128, useAnim: true });
@@ -1588,11 +1414,8 @@ removeFG({ id: 2, useAnim: true });
 playSFX({ name: `SE02_04`, a1: 0, volume: 90 });
 showTextbox();
 text(() => {
-   `Takeshi went to grab the sandwich, but Tsugumi 
-was too quick for him. Not only that, Takeshi 
-caught his foot and fell to the floor.`;
-   `In that instant, Tsugumi polished off the 
-sandwich.`;
+   `Takeshi went to grab the sandwich, but Tsugumi was too quick for him. Not only that, Takeshi caught his foot and fell to the floor.`;
+   `In that instant, Tsugumi polished off the sandwich.`;
 
 });
 fgload({ id: 1, name: `TU01ADM`, x: 128, useAnim: true });
@@ -1601,8 +1424,7 @@ text(() => {
    Tsugumi(Y5A127)`"Thanks for the sandwich."`;
    Tsugumi(Y5A128)`"You made it specially for me, right?"`;
    Takeshi`"............"`;
-   `So the event ended with Tsugumi turning the 
-tables on Takeshi.`;
+   `So the event ended with Tsugumi turning the tables on Takeshi.`;
 
 });
 hideTextbox();
@@ -1618,17 +1440,13 @@ clock(`9:19`);
 showTextbox();
 text(() => {
    `I ended up cleaning up afterward.`;
-   `I separated the cans and sandwich wrappers and 
-put them in garbage bags.`;
+   `I separated the cans and sandwich wrappers and put them in garbage bags.`;
    `You and Sara helped.`;
-   `Takeshi said he was going to start getting 
-ready for lunch and headed to the kiosk.`;
-   `Sora said she had to do some maintenance on 
-LeMMIH and left for the Control Room.`;
+   `Takeshi said he was going to start getting ready for lunch and headed to the kiosk.`;
+   `Sora said she had to do some maintenance on LeMMIH and left for the Control Room.`;
    `Tsugumi disappeared to somewhere unknown.`;
    `....`;
-   `But something happened when I was picking up 
-garbage.`;
+   `But something happened when I was picking up garbage.`;
 
 });
 hideTextbox();
@@ -1671,8 +1489,7 @@ text(() => {
 fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(Y5A132)`"I'll bet you're just trying to find a way to 
-get out of helping."`;
+   Sara(Y5A132)`"I'll bet you're just trying to find a way to get out of helping."`;
    Kid`"I'm not. It's not that at all."`;
 
 });
@@ -1686,8 +1503,7 @@ text(() => {
 fgload({ id: 2, name: `YU05BDM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A134)`"Please, don't do that again. Get a hold of 
-yourself already."`;
+   You(Y5A134)`"Please, don't do that again. Get a hold of yourself already."`;
    You(Y5A135)`"I know you're tired, but..."`;
    Kid`"........."`;
 
@@ -1702,8 +1518,7 @@ hideTextbox();
 monoColorOverlay({ interval: 12, color: BLACK });
 showTextbox();
 text(() => {
-   `We finally finished with the trash, folded the 
-blanket and were done cleaning up.`;
+   `We finally finished with the trash, folded the blanket and were done cleaning up.`;
 
 });
 hideTextbox();
@@ -1719,9 +1534,7 @@ text(() => {
 fgload({ id: 2, name: `YU11BDM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A137)`"Mayo. Can you do me a favor and get me a 
-broom and dustpan? I think they are at 
-the kiosk."`;
+   You(Y5A137)`"Mayo. Can you do me a favor and get me a broom and dustpan? I think they are at the kiosk."`;
 
 });
 fgload({ id: 1, name: `SA02ADM`, x: 128, useAnim: true });
@@ -1734,26 +1547,21 @@ multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
    `Sara set out for the kiosk.`;
-   Kid`"I was just thinking. This must be a nightmare 
-for the people that clean this place."`;
+   Kid`"I was just thinking. This must be a nightmare for the people that clean this place."`;
 
 });
 fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(Y5A139)`"It would be if 'people' had to do it."`;
-   You(Y5A140)`"But LeMMIH usually uses a cleaning robot that 
-automatically cleans the whole complex."`;
+   You(Y5A140)`"But LeMMIH usually uses a cleaning robot that automatically cleans the whole complex."`;
    Kid`"Wow."`;
 
 });
 fgload({ id: 1, name: `YU08BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A141)`"Well, what with the accident and all, I 
-imagine the robot is a rusted pile of junk 
-metal at the bottom of the ocean right 
-about now."`;
+   You(Y5A141)`"Well, what with the accident and all, I imagine the robot is a rusted pile of junk metal at the bottom of the ocean right about now."`;
    Kid`"I'll bet."`;
 
 });
@@ -1784,10 +1592,8 @@ text(() => {
 fgload({ id: 1, name: `YU07BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(Y5A142)`"Thinking about it, I guess that LeMU is just 
-one massive pile of scrap metal."`;
-   You(Y5A143)`"I suppose it's just of matter of how it's 
-destroyed..."`;
+   You(Y5A142)`"Thinking about it, I guess that LeMU is just one massive pile of scrap metal."`;
+   You(Y5A143)`"I suppose it's just of matter of how it's destroyed..."`;
 
 });
 fgload({ id: 1, name: `YU06BDM`, x: 320, useAnim: true });
@@ -1802,10 +1608,8 @@ showTextbox();
 text(() => {
    You(Y5A145)`"You're not...not again?"`;
    Kid`"........."`;
-   You(Y5A146)`"Oh...alright. You've done enough. Just go to 
-the infirmary or somewhere and rest."`;
-   You(Y5A147)`"You've got a serious condition of 
-something..."`;
+   You(Y5A146)`"Oh...alright. You've done enough. Just go to the infirmary or somewhere and rest."`;
+   You(Y5A147)`"You've got a serious condition of something..."`;
    `I was sure I'd heard something...`;
    `This time, I was sure it wasn't my imagination.`;
 
@@ -1864,8 +1668,7 @@ text(() => {
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `I looked around the four stone statues at the 
-edge of the open area.`;
+   `I looked around the four stone statues at the edge of the open area.`;
    `And there....`;
 
 });
@@ -1873,11 +1676,9 @@ bgload({ name: `EV_CO19C`, transition: 20 });
 showTextbox();
 text(() => {
    `Atop the pedestal of a stone statue was a girl.`;
-   `She was standing there next to the figure as 
-if clinging to the statue.`;
+   `She was standing there next to the figure as if clinging to the statue.`;
    `(Oh! It's that girl...)`;
-   `It was the girl that I had seen and who had 
-then vanished on the first day.`;
+   `It was the girl that I had seen and who had then vanished on the first day.`;
    Kid`"Look, You! Right there!"`;
 
 });
@@ -1888,8 +1689,7 @@ text(() => {
    You(Y5A148)`"Huh?"`;
    Kid`"Look! Over on that statue!"`;
    You(Y5A149)`"What about the statue?"`;
-   Kid`"Look! That stone statue! There's a girl 
-there! See?"`;
+   Kid`"Look! That stone statue! There's a girl there! See?"`;
 
 });
 fgload({ id: 1, name: `YU13BDM`, x: 320, useAnim: true });
@@ -1921,8 +1721,7 @@ text(() => {
    Unk(T5B043)`"And next..."`;
    //??
    Unk(T5B044)`"Uh oh!"`;
-   `Just then the girl lost her balance, falling 
-from her awkward place on the pedestal.`;
+   `Just then the girl lost her balance, falling from her awkward place on the pedestal.`;
 
 });
 bgload({ name: `EV_CO19D`, transition: 20 });
@@ -1935,8 +1734,7 @@ playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    `I ran toward her.`;
-   `The water caught on my feet and sprayed 
-everywhere as I ran all out to where she was.`;
+   `The water caught on my feet and sprayed everywhere as I ran all out to where she was.`;
    `(Will I make it?)`;
 
 });
@@ -1945,10 +1743,8 @@ stopSFX()
 stopBGM();
 showTextbox();
 text(() => {
-   `I closed my eyes and mustered all of my power 
-and sprinted.`;
-   `I threw out my free left hand to where the 
-girl would be falling to catch her.`;
+   `I closed my eyes and mustered all of my power and sprinted.`;
+   `I threw out my free left hand to where the girl would be falling to catch her.`;
 
 });
 playSFX({ name: `SE02_02`, a1: 0, volume: 100 });
@@ -1971,8 +1767,7 @@ text(() => {
    `There was no one in my arms.`;
    `Or even around me.`;
    `Only the water sloshing about gently around me.`;
-   You(Y5A152)`"Hey, are you alright? It looks like you took 
-a pretty nasty spill..."`;
+   You(Y5A152)`"Hey, are you alright? It looks like you took a pretty nasty spill..."`;
    Kid`"........."`;
 
 });
@@ -1980,35 +1775,27 @@ bgload({ name: `IT05E`, transition: 20 });
 showTextbox();
 text(() => {
    `I looked above me.`;
-   `Of course there was no one on the pedestal 
-supporting the statue.`;
-   `Without saying anything, I got up and went 
-behind the statue.`;
+   `Of course there was no one on the pedestal supporting the statue.`;
+   `Without saying anything, I got up and went behind the statue.`;
 
 });
 bgload({ name: `IT05F`, transition: 20 });
 showTextbox();
 text(() => {
    `There were scratches in the statue.`;
-   `They were deep notches that looked like they 
-had been carved there by something hard and 
-sharp.`;
+   `They were deep notches that looked like they had been carved there by something hard and sharp.`;
    `They were the shape of people.`;
    `Really simple looking like stick people.`;
-   `At the end of each stick was a little round 
-face...`;
+   `At the end of each stick was a little round face...`;
    `There were six in all.`;
-   `Looking closer, I saw that next to the people 
-figures were two carvings of animals that 
-I'd never seen.`;
+   `Looking closer, I saw that next to the people figures were two carvings of animals that I'd never seen.`;
 
 });
 bgload({ name: `IT05E`, transition: 20 });
 showTextbox();
 text(() => {
    `I looked up at the statue.`;
-   `The statue was pointing diagonal and 
-up...toward the east.`;
+   `The statue was pointing diagonal and up...toward the east.`;
 
 });
 bgload({ name: `BG21B1`, transition: 20 });
@@ -2016,8 +1803,7 @@ showTextbox();
 text(() => {
    Sara(Y5A153)`"Hey, what are you two doing?"`;
    You(Y5A154)`"That's a good question..."`;
-   `I ignored them and gently touched the carvings 
-on the statue.`;
+   `I ignored them and gently touched the carvings on the statue.`;
    `Without thinking I blurted out - `;
    Kid`"Watch your step, okay?"`;
 
@@ -2042,8 +1828,7 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   `That answer could have been my imagination 
-that time...`;
+   `That answer could have been my imagination that time...`;
 
 });
 hideTextbox();
@@ -2061,15 +1846,10 @@ unSkippableDelay(33);
 showTextbox();
 text(() => {
    `Time passed...`;
-   `We all split up, roamed around freely doing 
-what we wanted to do.`;
-   `Some wandered the complex, some tried to open 
-up communications with the outside, some tried 
-to think of ways to escape...`;
-   `But no one gave up and everyone was working on 
-ways to get out of our difficult situation.`;
-   `But it all was it vain. We made no 
-breakthroughs...`;
+   `We all split up, roamed around freely doing what we wanted to do.`;
+   `Some wandered the complex, some tried to open up communications with the outside, some tried to think of ways to escape...`;
+   `But no one gave up and everyone was working on ways to get out of our difficult situation.`;
+   `But it all was it vain. We made no breakthroughs...`;
    `The evening of the fifth rolled around.`;
    fadeClearPage();
 });
@@ -2091,13 +1871,10 @@ showTextbox();
 text(() => {
    `I...`;
    `I wandered aimlessly around LeMU by myself.`;
-   `Honestly, I had not been able to forget what 
-Sara had said to me the day before, or more 
-accurately that morning.`;
+   `Honestly, I had not been able to forget what Sara had said to me the day before, or more accurately that morning.`;
    `I couldn't seem to clear my mind.`;
    `At breakfast, Sara was her same old self...`;
-   `I thought that a little walk might make for a 
-change of mood...`;
+   `I thought that a little walk might make for a change of mood...`;
 
 });
 bgload({ name: `BG23A1`, transition: 20 });
@@ -2105,8 +1882,7 @@ bgload({ name: `BG24A1`, transition: 20 });
 playSFX({ name: `SE00_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `The next thing that I knew, I was heading for 
-the Cosmic Whale...`;
+   `The next thing that I knew, I was heading for the Cosmic Whale...`;
    `I took the EI elevator.`;
 
 });
@@ -2117,16 +1893,13 @@ playSFX({ name: `SE00_02`, a1: 0, volume: 100 });
 bgload({ name: `BG23B1`, transition: 20 });
 showTextbox();
 text(() => {
-   `I rode down to the third floor that was 
-flooded with water.`;
-   `There was no guarantee that Sara would be 
-there...`;
+   `I rode down to the third floor that was flooded with water.`;
+   `There was no guarantee that Sara would be there...`;
    `I turned my head, inspecting the area.`;
    `...It was just then that...`;
    `I saw 'her' again!`;
    Kid`"Hey!"`;
-   `I saw her small figure cutting across the 
-corridor.`;
+   `I saw her small figure cutting across the corridor.`;
    `I was sure of it.`;
    `It was that girl!`;
    `I chased after her.`;
@@ -2136,18 +1909,13 @@ bgload({ name: `BG26B3L`, transition: 20 });
 playSFX({ name: `SE01_00`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `Her skirt shook back and forth as she walked 
-further and further away.`;
-   `It was almost as if she were trying to get 
-away from me.`;
+   `Her skirt shook back and forth as she walked further and further away.`;
+   `It was almost as if she were trying to get away from me.`;
    Kid`"Hey! Wait a minute!"`;
-   `She might not have heard me. She didn't show 
-any sign of stopping.`;
+   `She might not have heard me. She didn't show any sign of stopping.`;
    `I wondered what it was all about.`;
-   `This girl that kept appearing out of nowhere 
-and then disappearing.`;
-   `This girl that didn't register on LeMMIH's 
-bio scan.`;
+   `This girl that kept appearing out of nowhere and then disappearing.`;
+   `This girl that didn't register on LeMMIH's bio scan.`;
    `No, she had registered once...`;
 
 });
@@ -2171,14 +1939,10 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(5);
 showTextbox();
 text(() => {
-   `But the more I thought about it, the stranger 
-everything seemed.`;
-   `She only appeared in front of me and we hardly 
-communicated...`;
-   `Whatever. I knew thinking about it wouldn't 
-help.`;
-   `It was something that I could solve by asking 
-her directly.`;
+   `But the more I thought about it, the stranger everything seemed.`;
+   `She only appeared in front of me and we hardly communicated...`;
+   `Whatever. I knew thinking about it wouldn't help.`;
+   `It was something that I could solve by asking her directly.`;
 
 });
 bgload({ name: `BG25B3`, transition: 20 });
@@ -2195,8 +1959,7 @@ stopBGM();
 showTextbox();
 text(() => {
    `I didn't see her anywhere.`;
-   `Instead, I saw Sara sitting in the same place 
-we had sat earlier, on the whale.`;
+   `Instead, I saw Sara sitting in the same place we had sat earlier, on the whale.`;
    `Sara was singing softly.`;
 
 });
@@ -2209,8 +1972,7 @@ text(() => {
    Sara(S5A133)`"Hoping the wait will be short."${waitVoice}${noWait}`;
    Sara(S5A134)`"Sleeping curled and snug."${waitVoice}${noWait}`;
    Sara(S5A135)`"Sleeping in mother's arms."${waitVoice}${noWait}`;
-   `Her voice echoed quietly as if it were seeping 
-into the night sky.`;
+   `Her voice echoed quietly as if it were seeping into the night sky.`;
    `Somehow it sounded faintly sad and lonely.`;
    `I couldn't make myself call out to Sara...`;
 
@@ -2226,12 +1988,9 @@ unSkippableDelay(10);
 clock(`20:19`);
 showTextbox();
 text(() => {
-   `My eyes opened to the jarring sound of metal 
-screaming under strain.`;
-   `I didn't know if it was because of my broken 
-arm, or the swimming with Sara...`;
-   `But I felt sluggish and feverish, so I took 
-some medicine and went to bed.`;
+   `My eyes opened to the jarring sound of metal screaming under strain.`;
+   `I didn't know if it was because of my broken arm, or the swimming with Sara...`;
+   `But I felt sluggish and feverish, so I took some medicine and went to bed.`;
    `Vibrations shook through LeMU.`;
    Kid`"I wonder if something happened."`;
 
@@ -2239,10 +1998,8 @@ some medicine and went to bed.`;
 bgload({ name: `BG26A3R`, transition: 20 });
 showTextbox();
 text(() => {
-   `By the time I had gotten out of the infirmary, 
-the shaking had stopped.`;
-   `I thought that if I went to the Security 
-Office I might learn what happened.`;
+   `By the time I had gotten out of the infirmary, the shaking had stopped.`;
+   `I thought that if I went to the Security Office I might learn what happened.`;
 
 });
 hideTextbox();
@@ -2284,12 +2041,9 @@ text(() => {
 fgload({ id: 2, name: `SO10ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S5A140)`"Yes. The room's wall collapsed under the 
-water pressure and started flooding."`;
+   Sora(S5A140)`"Yes. The room's wall collapsed under the water pressure and started flooding."`;
    Kid`"Are we...alright?"`;
-   Sora(S5A141)`"The doors to the Cosmic Whale have been 
-sealed so there will be no effect on other 
-areas."`;
+   Sora(S5A141)`"The doors to the Cosmic Whale have been sealed so there will be no effect on other areas."`;
    Kid`"What about everyone else?"`;
 
 });
@@ -2303,8 +2057,7 @@ text(() => {
 fgload({ id: 2, name: `SO05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S5A143)`"Sara...her last confirmed location is in a 
-corridor near the Cosmic Whale."`;
+   Sora(S5A143)`"Sara...her last confirmed location is in a corridor near the Cosmic Whale."`;
 
 });
 fgload({ id: 1, name: `TU06ADM`, x: 128, useAnim: true });
@@ -2312,9 +2065,7 @@ fgload({ id: 1, name: `TU05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Kid`"Corridor?"`;
-   Sora(S5A144)`"Sensors in that area are not functioning at 
-full capacity...so I have not been able to 
-verify this."`;
+   Sora(S5A144)`"Sensors in that area are not functioning at full capacity...so I have not been able to verify this."`;
    Sora(S5A145)`"Presently it is completely cut off."`;
    Kid`"What about Sara?"`;
 
@@ -2322,8 +2073,7 @@ verify this."`;
 fgload({ id: 2, name: `SO10ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S5A146)`"I am unable to confirmed her location 
-anywhere else in LeMU."`;
+   Sora(S5A146)`"I am unable to confirmed her location anywhere else in LeMU."`;
    Kid`"No way! Then she was in that room!"`;
 
 });
@@ -2333,8 +2083,7 @@ monoColorOverlay({ interval: 6, color: BLACK });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `I couldn't stand staying in that room and ran 
-outside.`;
+   `I couldn't stand staying in that room and ran outside.`;
    `Tsugumi followed on my heels.`;
 
 });
@@ -2346,8 +2095,7 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   `Tsugumi and I went down to the area housing 
-the Cosmic Whale Room.`;
+   `Tsugumi and I went down to the area housing the Cosmic Whale Room.`;
    Kid`"Sora, can you open the doors to the room?"`;
 
 });
@@ -2361,10 +2109,8 @@ text(() => {
 fgload({ id: 2, name: `SO10ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S5A148)`"I am sorry..... If I open these doors down, 
-this sector will flood as well."`;
-   Sora(S5A149)`"If the Generator Room floods, then we will be 
-powerless. I cannot do that."`;
+   Sora(S5A148)`"I am sorry..... If I open these doors down, this sector will flood as well."`;
+   Sora(S5A149)`"If the Generator Room floods, then we will be powerless. I cannot do that."`;
    Kid`"What about Sara? Sara!"`;
 
 });
@@ -2378,24 +2124,19 @@ text(() => {
 fgload({ id: 1, name: `TU15ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Tsugumi(S5A151)`"Sora, are the emergency corridors around here 
-still functioning? Is there anyway to get to 
-the room through them?"`;
+   Tsugumi(S5A151)`"Sora, are the emergency corridors around here still functioning? Is there anyway to get to the room through them?"`;
 
 });
 fgload({ id: 2, name: `SO11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S5A152)`"I will check..... Yes. There is a corridor 
-directly above the Cosmic Whale."`;
+   Sora(S5A152)`"I will check..... Yes. There is a corridor directly above the Cosmic Whale."`;
 
 });
 fgload({ id: 2, name: `SO13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sora(S5A153)`"However, it is not possible to enter Cosmic 
-Whale from there. That area is completely 
-flooded."`;
+   Sora(S5A153)`"However, it is not possible to enter Cosmic Whale from there. That area is completely flooded."`;
    Tsugumi(S5A154)`"But we could enter it by diving, right?"`;
 
 });
@@ -2415,8 +2156,7 @@ text(() => {
 multifgload2({ id1: 1, id2: 2, name1: `TU05ADM`, name2: `SO03ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Tsugumi(S5A157)`"You'll start drowning and in the end I'll 
-have to go save you, too."`;
+   Tsugumi(S5A157)`"You'll start drowning and in the end I'll have to go save you, too."`;
    Kid`"........."`;
 
 });
@@ -2441,21 +2181,18 @@ text(() => {
 fgload({ id: 1, name: `TU18ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Tsugumi(S5A160)`"Sora, where is the nearest entrance to a 
-corridor that'll get me there?"`;
+   Tsugumi(S5A160)`"Sora, where is the nearest entrance to a corridor that'll get me there?"`;
 
 });
 showTextbox();
 text(() => {
-   Sora(S5A161)`"Use the connecting staircase out of here and 
-to the left."`;
+   Sora(S5A161)`"Use the connecting staircase out of here and to the left."`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `Tsugumi started running before Sara was done 
-speaking.`;
+   `Tsugumi started running before Sara was done speaking.`;
 
 });
 bgload({ name: `BG26B1L`, transition: 20 });
@@ -2467,8 +2204,7 @@ text(() => {
    Tsugumi(S5A162)`"...There's no other choice."`;
    Tsugumi(S5A163)`"We're in this...together."`;
    Kid`"Tsugumi..."`;
-   `Tsugumi sprinted the emergency stairs and 
-climbed to the emergency corridor.`;
+   `Tsugumi sprinted the emergency stairs and climbed to the emergency corridor.`;
    `I followed right behind her.`;
 
 });
@@ -2476,8 +2212,7 @@ bgload({ name: `BG27A3`, transition: 20 });
 playSFX({ name: `SE01_06`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `When I got to the corridor, Tsugumi was 
-running for the Cosmic Whale Room.`;
+   `When I got to the corridor, Tsugumi was running for the Cosmic Whale Room.`;
    `I hurriedly ran after her.`;
 
 });
@@ -2485,9 +2220,7 @@ bgload({ name: `BG28A1L`, transition: 20 });
 stopSFX()
 showTextbox();
 text(() => {
-   `Tsugumi had turned the corner, had already 
-opened the hatch to the Whale Room and was 
-peering in.`;
+   `Tsugumi had turned the corner, had already opened the hatch to the Whale Room and was peering in.`;
    Kid`"Tsugumi! Wait!"`;
    `Tsugumi glanced at me.`;
 
@@ -2506,20 +2239,14 @@ text(() => {
    `Saying that, Tsugumi leaped through hatch.`;
    Kid`"Tsugumi!"`;
    Kid`"Sora! Is Tsugumi okay?"`;
-   Sora(S5A165)`"I don't know. Now we can only trust and wait 
-for her."`;
+   Sora(S5A165)`"I don't know. Now we can only trust and wait for her."`;
    `Only Sora's voice echoed around me.`;
-   `She was speaking through a different set of 
-emergency speakers and her voice crackled and 
-mixed with static.`;
-   Sora(S5A166)`"You and Takeshi said that they will wait for 
-you in the infirmary."`;
+   `She was speaking through a different set of emergency speakers and her voice crackled and mixed with static.`;
+   Sora(S5A166)`"You and Takeshi said that they will wait for you in the infirmary."`;
    Kid`"Okay..."`;
    `I looked in the emergency hatch again.`;
-   `Inside, the hatch was brimming with cold 
-water. `;
-   `Frustrated and feeling powerless because 
-I could only wait, I tried to be patient.`;
+   `Inside, the hatch was brimming with cold water. `;
+   `Frustrated and feeling powerless because I could only wait, I tried to be patient.`;
    Kid`"Tsugumi, please...find Sara..."`;
    Kid`"Sara..."`;
 
@@ -2531,8 +2258,7 @@ showTextbox();
 text(() => {
    `Time passed.`;
    `It might not have really been that long.`;
-   `But at that time it felt like an eternity 
-to me.`;
+   `But at that time it felt like an eternity to me.`;
 
 });
 hideTextbox();
@@ -2570,16 +2296,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(25);
 showTextbox();
 text(() => {
-   `We carried her to the infirmary and lay her 
-on an examination table.`;
-   `Tsugumi immediately started giving her a heart 
-massage.`;
-   `Takeshi and You were fiddling with the 
-machines around the examination table 
-trying to learn more about Sara's status.`;
+   `We carried her to the infirmary and lay her on an examination table.`;
+   `Tsugumi immediately started giving her a heart massage.`;
+   `Takeshi and You were fiddling with the machines around the examination table trying to learn more about Sara's status.`;
    `Takeshi got out the defibrillator.`;
-   `A beep signaled that they were charged and 
-Takeshi placed two pads on Sara's chest.`;
+   `A beep signaled that they were charged and Takeshi placed two pads on Sara's chest.`;
 
 });
 shakeScreen();
@@ -2587,41 +2308,30 @@ showTextbox();
 text(() => {
    `Whaap!`;
    `Sara's body jumped.`;
-   `Tsugumi put her hand on Sara neck and shook 
-her head.`;
+   `Tsugumi put her hand on Sara neck and shook her head.`;
    `She went right back to massaging her heart.`;
    Takeshi(S5A170)`"Damn. One more time."`;
    `The beep echoed again.`;
    `And then the electric pulse again. `;
-   `Sara's face was drained of color and her lips 
-were blue.`;
+   `Sara's face was drained of color and her lips were blue.`;
    `Her body was stiff and unresponsive.`;
-   `All I could do was watch the three of them 
-busily work to save her.`;
-   `There was nothing in the drawers of memory 
-accessible to me, telling me how to act in 
-this situation.`;
-   `Images of time I had spent with Sara until now 
-flashed through my mind and the voices in the 
-room barely reached me.`;
+   `All I could do was watch the three of them busily work to save her.`;
+   `There was nothing in the drawers of memory accessible to me, telling me how to act in this situation.`;
+   `Images of time I had spent with Sara until now flashed through my mind and the voices in the room barely reached me.`;
    `Finally...Tsugumi relaxed her hands.`;
    `With a look of grief she moved away from Sara. `;
-   `Takeshi also put the defibrillator back on the 
-table. `;
+   `Takeshi also put the defibrillator back on the table. `;
    You(S5A171)`"No..."`;
    Takeshi(S5A172)`"Damn...why..."`;
    Kid`"What...happened?"`;
    Kid`"Hey, why are you all stopping?"`;
-   Kid`"Hey. Why do you all have those looks on 
-your faces?"`;
+   Kid`"Hey. Why do you all have those looks on your faces?"`;
    You(S5A173)`"....Kid."`;
    Kid`"It can't...be!"`;
    Kid`"Sara! Sara!"`;
    Kid`"Sara! Wake up! Wake up! Sara!"`;
-   `I started trying to copy Tsugumi's heart 
-massage.`;
-   `The three of them watched with sad looks on 
-their faces.`;
+   `I started trying to copy Tsugumi's heart massage.`;
+   `The three of them watched with sad looks on their faces.`;
    Kid`"Why...why do you all want to give up?"`;
    Kid`"Sara isn't going to die! She can't die here!"`;
    `I continued to pump her chest frantically.`;
@@ -2670,8 +2380,7 @@ showTextbox();
 text(() => {
    You(S5A174)`"Kid..."`;
    `You put her hand on my shoulder.`;
-   `But I shook her hand off and continued pushing 
-on Sara's chest.`;
+   `But I shook her hand off and continued pushing on Sara's chest.`;
 
 });
 hideTextbox();
@@ -2712,8 +2421,7 @@ text(() => {
 
 
 ${noWait}`;
-   Append(S5A176)`              Why do you care now?${waitVoice}
-${noWait}`;
+   Append(S5A176)`              Why do you care now?${waitVoice} ${noWait}`;
    Append`    You were the one that ran away alone...${waitVoice}${noWait}`;
    clearPage();
 });
@@ -2727,8 +2435,7 @@ text(() => {
    `I heard a voice.`;
    Kid`"No, I didn't run away!"`;
    Kid`"I wanted to help you!"`;
-   `I put more power into the hand I was using to 
-push on her chest.`;
+   `I put more power into the hand I was using to push on her chest.`;
    `Her ribs bent under the strain.`;
    `Still, I kept pumping.`;
    Kid`"I told you, Sara!"`;
@@ -2748,8 +2455,7 @@ text(() => {
    `Cough.`;
    `A little water came out of Sara's mouth.`;
    Sara(S5A177)`"Cough..."`;
-   `She started breathing faintly and more water 
-came out of her mouth.`;
+   `She started breathing faintly and more water came out of her mouth.`;
    Sara(S5A178)`"Cough, cough..."`;
    Kid`"Sara! Sara!"`;
    `I shook Sara desperately.`;
@@ -2762,8 +2468,7 @@ text(() => {
    Sara(S5A179)`"Ugh....ooooooh..."`;
    `Sara's eyes opened slightly.`;
    Kid`"Oh, Sara!"`;
-   `That instant the tension in the atmosphere of 
-the infirmary eased.`;
+   `That instant the tension in the atmosphere of the infirmary eased.`;
    Sara(S5A180)`"Oh...uh...I..."`;
    Kid`"Oh, thank goodness...Sara...Sara..."`;
 

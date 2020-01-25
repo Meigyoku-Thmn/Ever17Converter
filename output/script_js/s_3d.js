@@ -7,16 +7,13 @@ bgload({ name: `EV_SA13D`, transition: 10 });
 playBGM({ num: 2, volume: 100 });
 showTextbox();
 text(() => {
-   `We finally gathered again in the Conference 
-Room.`;
+   `We finally gathered again in the Conference Room.`;
 
 });
 if (l_repaired_with_sara == 0) goto(lbl_000000b4);
 showTextbox();
 text(() => {
-   `Even though I had just embarrassed myself in 
-front of everyone, they all acted as if 
-nothing had happened.`;
+   `Even though I had just embarrassed myself in front of everyone, they all acted as if nothing had happened.`;
 
 });
 let lbl_000000b4;
@@ -24,24 +21,16 @@ showTextbox();
 text(() => {
    `We were killing time...`;
    `We still couldn't think of any way to escape.`;
-   `Still, we didn't want to feel like we were 
-completely wasting our time.`;
-   `So we all decided to wander around LeMU one 
-more time.`;
+   `Still, we didn't want to feel like we were completely wasting our time.`;
+   `So we all decided to wander around LeMU one more time.`;
    `As we made the rounds Takeshi said - `;
-   `'Whaddya think the record is for running from 
-one end of LeMU to the other?'`;
-   `'I think we should try to give the chicken 
-sandwiches a completely new flavor, somehow!'`;
+   `'Whaddya think the record is for running from one end of LeMU to the other?'`;
+   `'I think we should try to give the chicken sandwiches a completely new flavor, somehow!'`;
    `He made a number of stupid comments.`;
-   `We all (with the exception of Tsugumi of 
-course) listened half exasperated and half 
-interested.`;
+   `We all (with the exception of Tsugumi of course) listened half exasperated and half interested.`;
    `We all knew...`;
-   `As long as we were doing something, it kept 
-our minds off things we couldn't change...`;
-   `Like about how there was no way out, or 
-remembering where we were.`;
+   `As long as we were doing something, it kept our minds off things we couldn't change...`;
+   `Like about how there was no way out, or remembering where we were.`;
 
 });
 hideTextbox();
@@ -54,27 +43,21 @@ unSkippableDelay(18);
 showTextbox();
 text(() => {
    `We decided to meet at 8 p.m. for dinner.`;
-   `Everyone was left to wander around freely 
-until then.`;
-   `I decided to help You try to repair the 
-infirmary scanning machine.`;
+   `Everyone was left to wander around freely until then.`;
+   `I decided to help You try to repair the infirmary scanning machine.`;
 
 });
 if (l_repaired_with_sara != 0) goto(lbl_0000010a);
 showTextbox();
 text(() => {
-   `Of course, it was kind of an indirect thank 
-you to her for looking after me when I was 
-feeling down two days before.`;
+   `Of course, it was kind of an indirect thank you to her for looking after me when I was feeling down two days before.`;
 
 });
 goto(lbl_0000010f);
 let lbl_0000010a;
 showTextbox();
 text(() => {
-   `Of course, it was kind of an indirect thank 
-you for her looking after me twice and 
-worrying about my lost memory.`;
+   `Of course, it was kind of an indirect thank you for her looking after me twice and worrying about my lost memory.`;
 
 });
 let lbl_0000010f;
@@ -90,16 +73,10 @@ text(() => {
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `You plopped down on the floor with the tools 
-and parts, spreading out the repair manual.`;
-   `Of course the repairs were You's job ? I was 
-just there to help.`;
-   `I was getting used to handing her the tools, 
-and was getting better at predicting which 
-tool would be used next.`;
-   `I thought that if there were an exam for 
-expertise in handing pliers or screws, I would 
-pass with flying colors.`;
+   `You plopped down on the floor with the tools and parts, spreading out the repair manual.`;
+   `Of course the repairs were You's job ? I was just there to help.`;
+   `I was getting used to handing her the tools, and was getting better at predicting which tool would be used next.`;
+   `I thought that if there were an exam for expertise in handing pliers or screws, I would pass with flying colors.`;
    `But the repairs were tougher than I imagined.`;
 
 });
@@ -122,18 +99,15 @@ showTextbox();
 text(() => {
    You(S3C003)`"It's not here..."`;
    Kid`"........."`;
-   `She searched all over, but couldn't find the 
-cause of the problem.`;
+   `She searched all over, but couldn't find the cause of the problem.`;
    `You said everything looked normal.`;
-   `In other words, there was no sign of anything 
-broken.`;
+   `In other words, there was no sign of anything broken.`;
 
 });
 fgload({ id: 1, name: `YU04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(S3C004)`"Geez! This good for nothing! Stupid, 
-idiotic....!"`;
+   You(S3C004)`"Geez! This good for nothing! Stupid, idiotic....!"`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -141,8 +115,7 @@ fgload({ id: 1, name: `YU10ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(S3C005)`"Argghhh!"`;
-   `All of the sudden, You lost her cool, pounded 
-on the diagram and kicked the toolbox.`;
+   `All of the sudden, You lost her cool, pounded on the diagram and kicked the toolbox.`;
 
 });
 playSFX({ name: `SE07_06`, a1: 0, volume: 100 });
@@ -152,8 +125,7 @@ text(() => {
    You(S3C006)`"Pant, pant, pant..."`;
    Kid`"Hey, that's not very grown-up of you."`;
    You`"........."`;
-   Kid`"You know, you could ask Sora about how to fix 
-it later."`;
+   Kid`"You know, you could ask Sora about how to fix it later."`;
    You`"........."`;
    Kid`"You want to clean up for now?"`;
 
@@ -184,10 +156,8 @@ text(() => {
 fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S3C010)`"Nothing really. I just thought I'd get 
-some coffee or something to wake me up."`;
-   Takeshi(S3C011)`"What about you two? What are you and the Kid 
-up to?"`;
+   Takeshi(S3C010)`"Nothing really. I just thought I'd get some coffee or something to wake me up."`;
+   Takeshi(S3C011)`"What about you two? What are you and the Kid up to?"`;
    You(S3C012)`"You can't tell by looking?"`;
 
 });
@@ -195,25 +165,21 @@ fgload({ id: 2, name: `KB13ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S3C013)`"If I could, do you think I'd be asking?"`;
-   Kid`"Takeshi, do you think you could lend us a 
-hand?"`;
+   Kid`"Takeshi, do you think you could lend us a hand?"`;
 
 });
 fgload({ id: 2, name: `KB07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S3C014)`"Sure...I can do that. You want help picking 
-up this stuff?"`;
+   Takeshi(S3C014)`"Sure...I can do that. You want help picking up this stuff?"`;
    Kid`"Yeah."`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `We split up and started picking up the tools 
-strewn around the room.`;
-   `Screwdrivers and screws had flown all the way 
-to the walls.`;
+   `We split up and started picking up the tools strewn around the room.`;
+   `Screwdrivers and screws had flown all the way to the walls.`;
    `....................`;
 
 });
@@ -234,11 +200,9 @@ fgload({ id: 1, name: `KB07ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S3C016)`"Hey, what's this?"`;
-   `Takeshi picked up something that looked like 
-an electric plug...`;
+   `Takeshi picked up something that looked like an electric plug...`;
    `No, it WAS an electric plug.`;
-   `The cable continued, disappearing under the 
-floor. It was embedded there.`;
+   `The cable continued, disappearing under the floor. It was embedded there.`;
    You`"........."`;
    Kid`"........."`;
 
@@ -247,8 +211,7 @@ fgload({ id: 1, name: `KB01ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S3C017)`"I wonder what this is supposed to power."`;
-   `In the wall was an outlet the same as in the 
-home.`;
+   `In the wall was an outlet the same as in the home.`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -266,8 +229,7 @@ text(() => {
 showTextbox();
 text(() => {
    Kid`"Hey, something is moving!"`;
-   Takeshi(S3C018)`"Oh. Hey, looks like it was for that machine 
-over there."`;
+   Takeshi(S3C018)`"Oh. Hey, looks like it was for that machine over there."`;
 
 });
 fgload({ id: 1, name: `YU03ADM`, x: 320, useAnim: true });
@@ -292,8 +254,7 @@ multifgload2({ id1: 1, id2: 2, name1: `YU03ADM`, name2: `KB07ADM`, x1: 176, x2: 
 showTextbox();
 text(() => {
    Takeshi(S3C020)`"Hey...by the way..."`;
-   `Takeshi shot a question at me and You who were 
-speechless.`;
+   `Takeshi shot a question at me and You who were speechless.`;
    Takeshi(S3C021)`"What were you doing here anyway?"`;
    Kid`"........."`;
 
@@ -334,8 +295,7 @@ text(() => {
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `She clicked her tongue in an irritated way 
-and turned to leave the room.`;
+   `She clicked her tongue in an irritated way and turned to leave the room.`;
 
 });
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
@@ -350,25 +310,21 @@ multifgload2({ id1: 1, id2: 2, name1: `TU18ADS`, name2: `SA14ADS`, x1: 176, x2: 
 showTextbox();
 text(() => {
    `...This time it was Sara.`;
-   `It could have been my imagination, but she 
-looked kind of angry about something.`;
-   `Sara stood her ground, blocking the exit so 
-that Tsugumi couldn't leave.`;
+   `It could have been my imagination, but she looked kind of angry about something.`;
+   `Sara stood her ground, blocking the exit so that Tsugumi couldn't leave.`;
    Tsugumi(S3C024)`"Get outta the way."`;
    Sara(S3C025)`"Quit running away and answer."`;
    Tsugumi(S3C026)`"I said, outta the way."`;
    Sara(S3C027)`"I said give me an answer!"`;
    `It seemed like the two of them were fighting.`;
    `(But I wonder why...)`;
-   `I couldn't think of any reason for the two of 
-them would want to fight.`;
+   `I couldn't think of any reason for the two of them would want to fight.`;
 
 });
 fgload({ id: 1, name: `TU17ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   Tsugumi(S3C028)`"If you keep shouting, the three of them will 
-hear."`;
+   Tsugumi(S3C028)`"If you keep shouting, the three of them will hear."`;
    Sara(S3C029)`"I don't care!"`;
    Tsugumi`"........."`;
 
@@ -398,8 +354,7 @@ text(() => {
 fgload({ id: 1, name: `KB05ADS`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S3C033)`"Wh-what...are we? What are YOU planning? Stop 
-with the nonsense already."`;
+   Takeshi(S3C033)`"Wh-what...are we? What are YOU planning? Stop with the nonsense already."`;
    Tsugumi`"........."`;
    You(S3C034)`"Hey, Mayo, what happened?"`;
    Sara`"........."`;
@@ -415,24 +370,21 @@ showTextbox();
 text(() => {
    Tsugumi`"............"`;
    `(...Huh?)`;
-   `For an instant I thought that...Tsugumi drew 
-up her face up sadly.`;
+   `For an instant I thought that...Tsugumi drew up her face up sadly.`;
 
 });
 fgload({ id: 4, name: `TU18ADS`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Tsugumi(S3C035)`"Now get outta my way!"`;
-   `As she turned around, Tsugumi tried to push 
-Sara out of the way.`;
+   `As she turned around, Tsugumi tried to push Sara out of the way.`;
    `Sara resisted.`;
 
 });
 fgload({ id: 2, name: `SA04ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S3C036)`"So what? Did you run away from him the same 
-as you are trying to run from me now?"`;
+   Sara(S3C036)`"So what? Did you run away from him the same as you are trying to run from me now?"`;
    `Sara said that as the two of them wrestled.`;
 
 });
@@ -471,8 +423,7 @@ multifgload2({ id1: 1, id2: 4, name1: `KB06ADS`, name2: `TU04ADS`, x1: 128, x2: 
 showTextbox();
 text(() => {
    Tsugumi(S3C040)`"!"`;
-   `Tsugumi lifted up her right hand as if to hit 
-Sara.`;
+   `Tsugumi lifted up her right hand as if to hit Sara.`;
 
 });
 fgload({ id: 1, name: `KB08ADS`, x: 128, useAnim: true });
@@ -506,11 +457,8 @@ fgload({ id: 2, name: `SA06ADS`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S3C043)`"Ah!"`;
-   `The raging Tsugumi, threw off Takeshi and 
-stole from Sara whatever it was she was 
-holding.`;
-   `She went to throw whatever it was she had 
-against the wall...`;
+   `The raging Tsugumi, threw off Takeshi and stole from Sara whatever it was she was holding.`;
+   `She went to throw whatever it was she had against the wall...`;
 
 });
 fgload({ id: 4, name: `TU09ADS`, x: 320, useAnim: true });
@@ -525,8 +473,7 @@ showTextbox();
 text(() => {
    Takeshi(S3C045)`"Stop!"`;
    `Takeshi went to grab her arm.`;
-   `Tsugumi's arm went slack and something slipped 
-to the floor.`;
+   `Tsugumi's arm went slack and something slipped to the floor.`;
 
 });
 stopBGM();
@@ -541,15 +488,13 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 2, id3: 4, useAnim: true });
 showTextbox();
 text(() => {
-   `Sara scooped up the pendant as if she were 
-picking up a fragile piece of ice.`;
+   `Sara scooped up the pendant as if she were picking up a fragile piece of ice.`;
    Sara`"..."`;
    `Sara's back quivered tensely.`;
    `Sara looked down, dropping her head.`;
    `The she squeezed her fist around the pendant.`;
    You(S3C046)`"Mayo?"`;
-   `You said it softly, but Sara didn't appear to 
-hear.`;
+   `You said it softly, but Sara didn't appear to hear.`;
 
 });
 bgload({ name: `EV_SA04A`, transition: 20 });
@@ -560,12 +505,8 @@ text(() => {
    `Both of her eyes were welling up with tears.`;
    Sara`"............"`;
    Tsugumi`"............"`;
-   `Tsugumi stared coldly at Sara as if looking 
-down at her from far above.`;
-   `Sara withstood the glare, and stared back at 
-Tsugumi, enraged. She continued to resist 
-silently, trying not to shed tears, not to 
-sob.  `;
+   `Tsugumi stared coldly at Sara as if looking down at her from far above.`;
+   `Sara withstood the glare, and stared back at Tsugumi, enraged. She continued to resist silently, trying not to shed tears, not to sob.  `;
    `The scene was just like...`;
    `Just like...`;
 
@@ -576,23 +517,18 @@ delay({ interval: 120 });
 showTextbox();
 text(() => {
    `Just like...how to put it?`;
-   `It was like the emotion that was about to 
-explode to the surface had sunk away to 
-nothingness.`;
+   `It was like the emotion that was about to explode to the surface had sunk away to nothingness.`;
 
 });
 bgload({ name: `BG09A1`, transition: 20 });
 showTextbox();
 text(() => {
-   `The next thing I knew, Tsugumi had turned to 
-leave the room.`;
+   `The next thing I knew, Tsugumi had turned to leave the room.`;
    `Sara still focused her glare on Tsugumi.`;
-   `I looked back and forth between the two of 
-them...`;
+   `I looked back and forth between the two of them...`;
    `Finally I let my eyes trail off after Tsugumi.`;
    `You was there to help Sara.`;
-   `But first I wanted to find out what the fight 
-was all about.`;
+   `But first I wanted to find out what the fight was all about.`;
 
 });
 l_choice = 0;
@@ -638,8 +574,7 @@ showTextbox();
 text(() => {
    Kid`"Y...you..."`;
    `A hot surge of hate raced through me.`;
-   Kid`"Who the hell do you think you are! You good 
-for nothing...!"`;
+   Kid`"Who the hell do you think you are! You good for nothing...!"`;
 
 });
 bgload({ name: `BG09A1`, transition: 20 });
@@ -654,12 +589,10 @@ removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `TU09ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   `You grabbed me from behind and pulled me away 
-from Tsugumi.`;
+   `You grabbed me from behind and pulled me away from Tsugumi.`;
    Kid`"Let go! Let go! I said, let go of me!"`;
    `I continued to struggle violently.`;
-   `I was like a desperate beast, devoid of all 
-reason.`;
+   `I was like a desperate beast, devoid of all reason.`;
    `With my fangs bared and a thirst for blood.`;
 
 });

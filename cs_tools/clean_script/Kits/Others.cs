@@ -1,6 +1,8 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
-partial class Kits {
+static partial class Kits {
    public static string EscapeBackTick(string input) {
       return input.Replace("`", "\\`");
    }
@@ -12,5 +14,14 @@ partial class Kits {
             return e;
          throw new InvalidSyntaxException($"Invalid Indentifier '{e}'");
       }));
+   }
+   public static IList<int> AllIndexOf(this string text, string str, StringComparison comparisonType = StringComparison.CurrentCulture) {
+      IList<int> allIndexOf = new List<int>();
+      int index = text.IndexOf(str, comparisonType);
+      while (index != -1) {
+         allIndexOf.Add(index);
+         index = text.IndexOf(str, index + str.Length, comparisonType);
+      }
+      return allIndexOf;
    }
 }

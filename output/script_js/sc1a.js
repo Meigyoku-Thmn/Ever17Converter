@@ -43,15 +43,11 @@ text(() => {
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Mayo(C1S004)`"No. I don't think there was anybody riding 
-in it."`;
-   Mayo(C1S005)`"I was shouting for help the whole time and 
-nobody answered me."`;
-   `I wondered why not. The voice that I had heard 
-a little bit ago was grating on my mind.`;
+   Mayo(C1S004)`"No. I don't think there was anybody riding in it."`;
+   Mayo(C1S005)`"I was shouting for help the whole time and nobody answered me."`;
+   `I wondered why not. The voice that I had heard a little bit ago was grating on my mind.`;
    Kid`"I just want to make sure one more time..."`;
-   Kid`"Sara, there was really no one riding 
-in the elevator except for you?"`;
+   Kid`"Sara, there was really no one riding in the elevator except for you?"`;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU06BWM`, name2: `SA06ADM`, x1: 128, x2: 512, useAnim: true });
@@ -82,19 +78,15 @@ text(() => {
 fgload({ id: 1, name: `YU05BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S012)`"What? Oh, that's right. We haven't told you 
-Mayo's real name..."`;
+   You(C1S012)`"What? Oh, that's right. We haven't told you Mayo's real name..."`;
    `That instant, my vision shook crazily.`;
 
 });
 playBGM({ num: 16, volume: 100 });
 showTextbox();
 text(() => {
-   `Something spine-chilling was squirming in the 
-core of my body.`;
-   `The feeling spread through my network of 
-nerves to the far corners of my body in an 
-instant.`;
+   `Something spine-chilling was squirming in the core of my body.`;
+   `The feeling spread through my network of nerves to the far corners of my body in an instant.`;
 
 });
 fgload({ id: 2, name: `SA04ADM`, x: 512, useAnim: true });
@@ -162,8 +154,7 @@ text(() => {
    Kid`"Why do....I....know...your name...?"`;
    `My temples started to throb.`;
    `The power drained from my body.`;
-   `I crumpled on the spot as if I had been sucked 
-dry of energy.`;
+   `I crumpled on the spot as if I had been sucked dry of energy.`;
 
 });
 fgload({ id: 1, name: `YU06BWM`, x: 128, useAnim: true });
@@ -197,8 +188,7 @@ showTextbox();
 text(() => {
    Sara(C1S026)`"Lost...his...memory?"`;
    You(C1S027)`"Yup."`;
-   You(C1S028)`"No matter how much you ask him, he doesn't 
-remember..."`;
+   You(C1S028)`"No matter how much you ask him, he doesn't remember..."`;
    You(C1S029)`"If you try to make him remember, then..."`;
    Kid`"Ooohhh...arggghhh...."`;
 
@@ -224,8 +214,7 @@ text(() => {
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });
 showTextbox();
 text(() => {
-   `You grabbed both of my shoulders and stood 
-me up.`;
+   `You grabbed both of my shoulders and stood me up.`;
 
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
@@ -238,23 +227,18 @@ text(() => {
 fgload({ id: 1, name: `YU07BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S033)`"I think you have lost touch with who you are, 
-and it scares you."`;
-   You(C1S034)`"Because you have no memory...because you 
-have no past..."`;
-   You(C1S035)`"You've lost your past and feel like you've 
-lost yourself...you are afraid..."`;
+   You(C1S033)`"I think you have lost touch with who you are, and it scares you."`;
+   You(C1S034)`"Because you have no memory...because you have no past..."`;
+   You(C1S035)`"You've lost your past and feel like you've lost yourself...you are afraid..."`;
 
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S036)`"But you know what? There is nothing to be 
-afraid of."`;
+   You(C1S036)`"But you know what? There is nothing to be afraid of."`;
    You(C1S037)`"You are right here, right now."`;
    You(C1S038)`"Standing right in front of me."`;
-   You(C1S039)`"No matter what happens, there is no way you 
-are just going to disappear."`;
+   You(C1S039)`"No matter what happens, there is no way you are just going to disappear."`;
    Kid`"........."`;
 
 });
@@ -275,25 +259,21 @@ fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(C1S043)`"Just, smile..."`;
-   `I made a conscious effort to move my cheek 
-muscles.`;
+   `I made a conscious effort to move my cheek muscles.`;
 
 });
 fgload({ id: 1, name: `YU08BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(C1S044)`"No, no, no. More. Like say....'Cheeeeeeese.'"`;
-   `I put more effort into moving the muscles 
-in my face.`;
+   `I put more effort into moving the muscles in my face.`;
 
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S045)`"That's a pretty forced grin, but...I guess 
-it's good enough."`;
-   You(C1S046)`"How's that? I'll bet you've forgotten to 
-worry about your past, right?"`;
+   You(C1S045)`"That's a pretty forced grin, but...I guess it's good enough."`;
+   You(C1S046)`"How's that? I'll bet you've forgotten to worry about your past, right?"`;
 
 });
 choice(
@@ -314,8 +294,7 @@ text(() => {
 showTextbox();
 text(() => {
    You(C1S047)`"See? The past isn't important."`;
-   You(C1S048)`"What is important is whether or not you can 
-smile right now..."`;
+   You(C1S048)`"What is important is whether or not you can smile right now..."`;
    You(C1S049)`"That is proof of your existence..."`;
    You(C1S050)`"So you have to smile."`;
 
@@ -324,8 +303,7 @@ fgload({ id: 1, name: `YU02BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    You(C1S051)`"I know you are better at smiling than that."`;
-   `Enticed by You's smile, my own cheeks started 
-to loosen naturally.`;
+   `Enticed by You's smile, my own cheeks started to loosen naturally.`;
    `You gently touched my hair...`;
    `It was as if her hand sucked the pain away.`;
 
@@ -340,15 +318,13 @@ text(() => {
 fgload({ id: 1, name: `YU07BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Kid`"It's not your problem so it's easy for you 
-to say that..."`;
+   Kid`"It's not your problem so it's easy for you to say that..."`;
 
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S052)`"But at least you've gotten better so that you 
-can talk."`;
+   You(C1S052)`"But at least you've gotten better so that you can talk."`;
    Kid`"........."`;
    You(C1S053)`"And do you know why?"`;
 
@@ -356,27 +332,22 @@ can talk."`;
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S054)`"You can speak because you are aware of 
-this moment, right now."`;
+   You(C1S054)`"You can speak because you are aware of this moment, right now."`;
    Kid`"Right now?"`;
-   You(C1S055)`"People have no choice but to live in the 
-moment."`;
-   You(C1S056)`"The past and the future are simply an 
-illusion..."`;
+   You(C1S055)`"People have no choice but to live in the moment."`;
+   You(C1S056)`"The past and the future are simply an illusion..."`;
 
 });
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S057)`"Trying to grab that empty image is...it's 
-meaningless."`;
+   You(C1S057)`"Trying to grab that empty image is...it's meaningless."`;
 
 });
 fgload({ id: 1, name: `YU01BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S058)`"So right now you should just smile as if you 
-don't care."`;
+   You(C1S058)`"So right now you should just smile as if you don't care."`;
 
 });
 fgload({ id: 1, name: `YU02BWL`, x: 320, useAnim: true });
@@ -398,8 +369,7 @@ text(() => {
 fgload({ id: 1, name: `YU05BWL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S061)`"If you don't smile...then I'll put my finger 
-up Mayo's nose."`;
+   You(C1S061)`"If you don't smile...then I'll put my finger up Mayo's nose."`;
    Sara(C1S062)`"...Huh?"`;
 
 });
@@ -436,8 +406,7 @@ text(() => {
 fgload({ id: 2, name: `SA14ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(C1S071)`"...Wait, just what do you think you are 
-doing?"`;
+   Sara(C1S071)`"...Wait, just what do you think you are doing?"`;
 
 });
 playSFX({ name: `SE05_01`, a1: 0, volume: 100 });
@@ -446,8 +415,7 @@ showTextbox();
 text(() => {
    `Whack!`;
    `Sara smacked You.`;
-   `Watching that scene, my cheeks just naturally 
-relaxed.`;
+   `Watching that scene, my cheeks just naturally relaxed.`;
 
 });
 fgload({ id: 1, name: `YU09BWM`, x: 176, useAnim: true });
@@ -471,18 +439,15 @@ text(() => {
 fgload({ id: 2, name: `SA05ADM`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(C1S075)`"What are you thinking? Sticking your finger 
-in somebody's nose...geez."`;
+   Sara(C1S075)`"What are you thinking? Sticking your finger in somebody's nose...geez."`;
 
 });
 fgload({ id: 1, name: `YU08BWM`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
    You(C1S076)`"Hee, hee, hee."`;
-   `As I was watching their exchange, at some 
-point the pain in my head had also eased.`;
-   `It was a 'painful' exchange in a different 
-meaning of the word, but...`;
+   `As I was watching their exchange, at some point the pain in my head had also eased.`;
+   `It was a 'painful' exchange in a different meaning of the word, but...`;
 
 });
 let lbl_000005ac;
@@ -498,10 +463,8 @@ unSkippableDelay(25);
 clock(`17:49`);
 showTextbox();
 text(() => {
-   `After I had calmed down again, we went to find 
-an exit.`;
-   `Of course, Sara couldn't hide her surprise at 
-what had happened to the inside of the complex.`;
+   `After I had calmed down again, we went to find an exit.`;
+   `Of course, Sara couldn't hide her surprise at what had happened to the inside of the complex.`;
 
 });
 fgload({ id: 1, name: `SA06ADM`, x: 320, useAnim: true });
@@ -520,17 +483,13 @@ text(() => {
 removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
-   `As we walked, You explained to Sara the 
-sequence of events to that point.`;
+   `As we walked, You explained to Sara the sequence of events to that point.`;
    `'You was working at LeMU on a part-time basis.'`;
    `'I collapsed at the kiosk.'`;
-   `'The warning alarm sounded, everyone 
-disappeared from LeMU and the 
-flooding started.'`;
+   `'The warning alarm sounded, everyone disappeared from LeMU and the flooding started.'`;
    `Stunned, Sara listened to You.`;
    `A while after You had finished the story...`;
-   `As if she had just thought of it, You blurted 
-out suddenly - `;
+   `As if she had just thought of it, You blurted out suddenly - `;
 
 });
 multifgload2({ id1: 1, id2: 2, name1: `YU07BWM`, name2: `SA01ADM`, x1: 128, x2: 512, useAnim: true });
@@ -544,8 +503,7 @@ showTextbox();
 text(() => {
    Sara(C1S078)`"What?"`;
    You(C1S079)`"What this kid was just saying..."`;
-   You(C1S080)`"I mean, Mayo, you don't remember him from 
-anywhere, right?"`;
+   You(C1S080)`"I mean, Mayo, you don't remember him from anywhere, right?"`;
 
 });
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
@@ -558,9 +516,7 @@ fgload({ id: 1, name: `YU05BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    You(C1S082)`"But he knew your name..."`;
-   You(C1S083)`"So that means that somewhere in his lost 
-memory there is some information stored 
-about you, right?"`;
+   You(C1S083)`"So that means that somewhere in his lost memory there is some information stored about you, right?"`;
 
 });
 fgload({ id: 1, name: `YU07BWM`, x: 128, useAnim: true });
@@ -578,23 +534,20 @@ text(() => {
 fgload({ id: 1, name: `YU03BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S085)`"If it were the other way around, it'd make 
-sense."`;
+   You(C1S085)`"If it were the other way around, it'd make sense."`;
 
 });
 fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S086)`"If you knew something about him...but he had 
-forgotten you because of amnesia..."`;
+   You(C1S086)`"If you knew something about him...but he had forgotten you because of amnesia..."`;
    You(C1S087)`"That would make sense to me..."`;
 
 });
 fgload({ id: 1, name: `YU01BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   You(C1S088)`"But this is like going backward on a one-way 
-street." `;
+   You(C1S088)`"But this is like going backward on a one-way street." `;
 
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
@@ -618,11 +571,8 @@ text(() => {
 fgload({ id: 2, name: `SA02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(C1S092)`"This kid probably used to be a big Sara 
-Matsunaga fan!"`;
-   Sara(C1S093)`"I'll bet I never noticed him, but he used to 
-watch me from a distance, like from the 
-shadows."`;
+   Sara(C1S092)`"This kid probably used to be a big Sara Matsunaga fan!"`;
+   Sara(C1S093)`"I'll bet I never noticed him, but he used to watch me from a distance, like from the shadows."`;
    Sara(C1S094)`"That would explain it completely."`;
 
 });
@@ -642,8 +592,7 @@ fgload({ id: 2, name: `SA02ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Sara(C1S097)`"Hey. Is that it? Did you used to stalk her?"`;
-   Kid`"Just because I lost my memory, don't go 
-making one up for me!"`;
+   Kid`"Just because I lost my memory, don't go making one up for me!"`;
 
 });
 fgload({ id: 2, name: `SA05ADM`, x: 512, useAnim: true });
@@ -657,8 +606,7 @@ fgload({ id: 1, name: `YU05BWM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    You(C1S099)`"Mayo, I'll only ask you one more time..." `;
-   You(C1S100)`"Are you really sure that you don't remember 
-seeing this kid before?"`;
+   You(C1S100)`"Are you really sure that you don't remember seeing this kid before?"`;
    Sara(C1S101)`"Remember him...?"`;
 
 });
@@ -666,8 +614,7 @@ fgload({ id: 2, name: `SA08ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
    Sara(C1S102)`"Hmmm...hmmm..."`;
-   `Sara brought her face close to me and stared 
-at me.`;
+   `Sara brought her face close to me and stared at me.`;
    `I could almost feel her breath.`;
 
 });
@@ -706,11 +653,9 @@ showTextbox();
 text(() => {
    `'No reason???`;
    `I wondered what she meant by that.`;
-   `I thought that maybe she really did know who 
-I was.`;
+   `I thought that maybe she really did know who I was.`;
    `My heart started to pound again.`;
-   `I remembered when I had seen Sara for the 
-first time a little bit ago.`;
+   `I remembered when I had seen Sara for the first time a little bit ago.`;
 
 });
 hideTextbox();
@@ -725,14 +670,11 @@ dimOff_ac = 0;
 closeDimInAndOutAndFilterAnim();
 showTextbox();
 text(() => {
-   `I had felt something along the lines of 
-nostalgia.`;
-   `For some reason, I felt that I had witnessed 
-the same scene somewhere before.`;
+   `I had felt something along the lines of nostalgia.`;
+   `For some reason, I felt that I had witnessed the same scene somewhere before.`;
    `Maybe I had met her in the past after all.`;
    `But I couldn't be sure of it.`;
-   `Even if I did know a name, or even feel 
-nostalgic...it wasn't in my memory.`;
+   `Even if I did know a name, or even feel nostalgic...it wasn't in my memory.`;
 
 });
 hideTextbox();
@@ -747,9 +689,7 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `Sara's smile felt far away, so that no matter 
-how much I reached out for it, I would never 
-be able to touch it.`;
+   `Sara's smile felt far away, so that no matter how much I reached out for it, I would never be able to touch it.`;
 
 });
 hideTextbox();

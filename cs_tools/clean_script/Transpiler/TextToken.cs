@@ -1,7 +1,9 @@
+using System;
 using System.Diagnostics;
 
 [DebuggerDisplay("{DebugValue}")]
-class TextToken {
+class TextToken : ICloneable {
+   public object Clone() => this.MemberwiseClone();
    private string DebugValue {
       get {
          if (Name == "Text") {

@@ -9,34 +9,22 @@ clock(`1:36`);
 showTextbox();
 text(() => {
    `I walked around LeMU.`;
-   `After what had happened, I didn't want to be 
-around You or Takeshi.`;
-   `But I was too worked up to just stick around 
-in one place.`;
-   `I thought I would pick the place they were 
-least likely to come and wander around it.`;
-   `I wondered what that fit of rage had been 
-about...`;
+   `After what had happened, I didn't want to be around You or Takeshi.`;
+   `But I was too worked up to just stick around in one place.`;
+   `I thought I would pick the place they were least likely to come and wander around it.`;
+   `I wondered what that fit of rage had been about...`;
    `Why had I gotten so mad...?`;
    `Why...?`;
    `Tsugumi had stared coldly down at Sara.`;
-   `And Sara had desperately battled to stand her 
-ground...`;
-   `What were the emotions that had welled up 
-within me in that instant...?`;
-   `I felt like I was on the verge of figuring 
-it out.`;
-   `Like my lost memory had been concealed by a 
-thick fog.`;
-   `But now it was only an inch away, right there 
-covered by a thin sheet.`;
-   `But no matter how thin it was I still couldn't 
-remove it.`;
-   `The more I thought about it, the further away 
-into the fog my memory seemed to recede.`;
+   `And Sara had desperately battled to stand her ground...`;
+   `What were the emotions that had welled up within me in that instant...?`;
+   `I felt like I was on the verge of figuring it out.`;
+   `Like my lost memory had been concealed by a thick fog.`;
+   `But now it was only an inch away, right there covered by a thin sheet.`;
+   `But no matter how thin it was I still couldn't remove it.`;
+   `The more I thought about it, the further away into the fog my memory seemed to recede.`;
    `I wondered what I could have had in my past...`;
-   `I continued to wander LeMU without 
-understanding anything...`;
+   `I continued to wander LeMU without understanding anything...`;
 
 });
 hideTextbox();
@@ -47,26 +35,16 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(25);
 showTextbox();
 text(() => {
-   `Suddenly, I felt like I heard someone's 
-voice in a room so I entered it.`;
-   `In the sprawling night sky were a number of 
-orb-shaped planets...`;
-   `And in between the planets, there was a huge, 
-soft-looking whale floating. `;
+   `Suddenly, I felt like I heard someone's voice in a room so I entered it.`;
+   `In the sprawling night sky were a number of orb-shaped planets...`;
+   `And in between the planets, there was a huge, soft-looking whale floating. `;
    `This was the Cosmic Whale Room.`;
-   `Of course, the whale and the starry sky were 
-all merely theme park attractions.`;
-   `I thought that wide, open space and the 
-attractions would help to ease my ragged 
-nerves.`;
-   `Even though it was fake, the expansive space 
-eased my tense mind and nerves - frazzled 
-from being cooped up for so long.`;
+   `Of course, the whale and the starry sky were all merely theme park attractions.`;
+   `I thought that wide, open space and the attractions would help to ease my ragged nerves.`;
+   `Even though it was fake, the expansive space eased my tense mind and nerves - frazzled from being cooped up for so long.`;
    `But I still had no memory...`;
-   `I realized again just how stressed this 
-situation had made me without my even noticing.`;
-   `For a while, I just relaxed, looking at 
-the scenery.`;
+   `I realized again just how stressed this situation had made me without my even noticing.`;
+   `For a while, I just relaxed, looking at the scenery.`;
    `....`;
 
 });
@@ -78,8 +56,7 @@ text(() => {
    `Something moved slightly on top of the whale.`;
    `I squinted, peering at it.`;
    Kid`"Sara...?"`;
-   `I glanced quickly at the planet next to the 
-whale and headed for the stairs leading to it.`;
+   `I glanced quickly at the planet next to the whale and headed for the stairs leading to it.`;
 
 });
 hideTextbox();
@@ -93,28 +70,16 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(18);
 showTextbox();
 text(() => {
-   `I walked out to the edge of the whale's nose 
-and sat down next to Sara.`;
-   `I thought that normally whales and dolphins 
-have their blowholes or nostrils near the 
-middle of their head so it wasn't probably 
-accurate to say 'its nose.'`;
-   `We looked at the countless stars sparkling 
-overhead.`;
-   `It seemed as if we could reach the stars in 
-the sky.`;
-   `If I had stood up, I could have probably 
-actually touched a star.`;
-   `Because it was all a facade of fake stars 
-projected onto the ceiling.`;
+   `I walked out to the edge of the whale's nose and sat down next to Sara.`;
+   `I thought that normally whales and dolphins have their blowholes or nostrils near the middle of their head so it wasn't probably accurate to say 'its nose.'`;
+   `We looked at the countless stars sparkling overhead.`;
+   `It seemed as if we could reach the stars in the sky.`;
+   `If I had stood up, I could have probably actually touched a star.`;
+   `Because it was all a facade of fake stars projected onto the ceiling.`;
    `Speaking of fake, the whale was, too.`;
-   `I don't know what kind of cutting-edge 
-technology they used, but the skin on 
-the whale felt like it could have been real.`;
-   `Then again, I didn't suppose I had ever 
-actually touched a real whale.`;
-   `Maybe I was just working from some image 
-I had of what whale skin would feel like.`;
+   `I don't know what kind of cutting-edge technology they used, but the skin on the whale felt like it could have been real.`;
+   `Then again, I didn't suppose I had ever actually touched a real whale.`;
+   `Maybe I was just working from some image I had of what whale skin would feel like.`;
 
 });
 hideTextbox();
@@ -124,46 +89,35 @@ NVL_Mode();
 showTextbox();
 text(() => {
    `
-
 ${noWait}`;
    `Not having a memory was mysterious in a way.`;
-   `Normal and abnormal, common sense and nonsense 
-were all dictated by memory.`;
+   `Normal and abnormal, common sense and nonsense were all dictated by memory.`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
    `For example - `;
-   `If a sea otter suddenly appeared right in 
-front of me...`;
-   `And he said, 'I'm your father,' then, well, I 
-probably wouldn't believe him.`;
-   `Because in this life I had never met a cross 
-between a sea otter and a person...`;
+   `If a sea otter suddenly appeared right in front of me...`;
+   `And he said, 'I'm your father,' then, well, I probably wouldn't believe him.`;
+   `Because in this life I had never met a cross between a sea otter and a person...`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   `But with no memory, there was no way for me to 
-know for sure if I had ever met a sea otter 
-person...`;
+   `But with no memory, there was no way for me to know for sure if I had ever met a sea otter person...`;
    `Thinking of it that way...`;
-   `It was amazing to me that I could be so 
-logical.`;
+   `It was amazing to me that I could be so logical.`;
    fadeClearPage();
 });
 hideTextbox();
 showTextbox();
 text(() => {
-   `I imagined that my memories were stored away 
-in a drawer in my brain somewhere.`;
+   `I imagined that my memories were stored away in a drawer in my brain somewhere.`;
    `And I was adding to the drawers even now.`;
-   `Only the number of drawers that I could open 
-was limited.`;
-   `I had no idea where the drawers from before 
-May 1st were packed away.`;
+   `Only the number of drawers that I could open was limited.`;
+   `I had no idea where the drawers from before May 1st were packed away.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -171,9 +125,7 @@ showTextbox();
 text(() => {
    `Still...`;
    `There was someone opening my drawers...`;
-   `And he or she was judging whether what was 
-happening was normal or abnormal, common sense 
-or nonsense.`;
+   `And he or she was judging whether what was happening was normal or abnormal, common sense or nonsense.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -196,31 +148,20 @@ hideTextbox();
 ADV_Mode();
 showTextbox();
 text(() => {
-   `Incidentally, it wasn't just the texture of 
-the whale's skin that made it seem so lifelike.`;
+   `Incidentally, it wasn't just the texture of the whale's skin that made it seem so lifelike.`;
    `The whale was alive.`;
    `At least it seemed that way to me.`;
    `A whale swimming in the starry sky.`;
-   `The repetitive wave-like motion of its back 
-as it swam through the sky.`;
-   `His soft mouth opened and closed, and even 
-puffed up from time to time.`;
-   `About every three minutes, he blew out a warm 
-breath through his blowhole.`;
-   `A seawater mist of spray would scatter around 
-the area.`;
-   `Sitting at the tip of his nose, Sara and I 
-bobbed up and down, in time with its 
-movements...`;
-   `Still, the whale undulated so slowly that we 
-could let go with our hands and still feel 
-safe.`;
+   `The repetitive wave-like motion of its back as it swam through the sky.`;
+   `His soft mouth opened and closed, and even puffed up from time to time.`;
+   `About every three minutes, he blew out a warm breath through his blowhole.`;
+   `A seawater mist of spray would scatter around the area.`;
+   `Sitting at the tip of his nose, Sara and I bobbed up and down, in time with its movements...`;
+   `Still, the whale undulated so slowly that we could let go with our hands and still feel safe.`;
    `It was like a cradle rocking back and forth...`;
-   `On the back of the whale, we sailed through 
-the cosmos.`;
+   `On the back of the whale, we sailed through the cosmos.`;
    `We were on our way to Planet Kuikui.`;
-   `Sara slowly took something out of her pocket 
-and showed it to me.`;
+   `Sara slowly took something out of her pocket and showed it to me.`;
    `It was an old-style oil lighter.`;
 
 });
@@ -231,33 +172,25 @@ showTextbox();
 text(() => {
    `She lit it.`;
    `The flickering flame made Sara's face look red.`;
-   `I wondered why she was carrying around a 
-lighter.`;
-   `I couldn't picture her as the type that 
-would smoke.`;
+   `I wondered why she was carrying around a lighter.`;
+   `I couldn't picture her as the type that would smoke.`;
    `I thought I might ask her.`;
    `But as I did, Sara opened her other hand.`;
    `In it was the pendant from before.`;
-   `A thin chain was wrapped around her index 
-finger. The pendant swayed in her hand.`;
-   `Sara brought the flame closer to the pendant 
-and started at it dreamily.`;
+   `A thin chain was wrapped around her index finger. The pendant swayed in her hand.`;
+   `Sara brought the flame closer to the pendant and started at it dreamily.`;
    `Her expression relaxed.`;
    `It was as if Sara were mesmerized by something.`;
    `A mirror was embedded in the pendant.`;
-   `The flame of the lighter reflected brightly 
-in the mirror.`;
+   `The flame of the lighter reflected brightly in the mirror.`;
    `I wondered if...`;
-   `Sara might be staring at her reflection and 
-admiring herself.`;
+   `Sara might be staring at her reflection and admiring herself.`;
    `The idea made me laugh without thinking`;
    Sara(S4A000)`"Huh? Is something funny?"`;
    Kid`"I mean..."`;
-   Kid`"It looks like you're sitting there grinning 
-at yourself."`;
+   Kid`"It looks like you're sitting there grinning at yourself."`;
    Sara(S4A001)`"N-no I'm not!"`;
-   Kid`"I guess you've got a bit of a narcissistic 
-side?"`;
+   Kid`"I guess you've got a bit of a narcissistic side?"`;
    Sara(S4A002)`"I said I'm not!"`;
    `With that, Sara snapped the lighter shut.`;
 
@@ -267,10 +200,8 @@ fgload({ id: 1, name: `SA04ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    `That moment I noticed something odd.`;
-   `It had looked like the flame of the lighter 
-in the mirror had split into two images.`;
-   `I thought that maybe there was a crack in the 
-mirror.`;
+   `It had looked like the flame of the lighter in the mirror had split into two images.`;
+   `I thought that maybe there was a crack in the mirror.`;
    Kid`"Hey, can I see that pendant for a second?"`;
 
 });
@@ -298,22 +229,15 @@ text(() => {
 bgload({ name: `EV_ET02A`, transition: 20 });
 showTextbox();
 text(() => {
-   `I wrapped the chain around my finger and 
-brought it close to my face.`;
+   `I wrapped the chain around my finger and brought it close to my face.`;
    `As I had suspected, the mirror was cracked.`;
-   `It wasn't just broken. A piece of it was 
-missing.`;
+   `It wasn't just broken. A piece of it was missing.`;
    `I touched the area that was missing.`;
-   `I thought it had probably broken from the 
-shock of Tsugumi dropping it.`;
-   `The missing fragment might still be lying 
-about in that room.`;
-   `Feeling the sharp contours of where the 
-missing piece belonged made me sad.`;
-   `I took my fingers from the mirror and held my 
-palm out toward Sara.`;
-   `Without saying anything, Sara plunked the 
-lighter down on the palm of my hand.`;
+   `I thought it had probably broken from the shock of Tsugumi dropping it.`;
+   `The missing fragment might still be lying about in that room.`;
+   `Feeling the sharp contours of where the missing piece belonged made me sad.`;
+   `I took my fingers from the mirror and held my palm out toward Sara.`;
+   `Without saying anything, Sara plunked the lighter down on the palm of my hand.`;
    `Fitz!`;
    `It sparked and lit.`;
 
@@ -323,8 +247,7 @@ showTextbox();
 text(() => {
    Kid`"Oh..."`;
    `I had spoken without thinking.`;
-   `The flame appeared in the mirror, dimly but in 
-three dimensions.`;
+   `The flame appeared in the mirror, dimly but in three dimensions.`;
 
 });
 bgload({ name: `BG05A3`, transition: 20 });
@@ -353,8 +276,7 @@ showTextbox();
 text(() => {
    `The mirror showed a person.`;
    `It was basically a headshot.`;
-   `From the shoulders on up, the head and facial 
-expression were extremely clear.`;
+   `From the shoulders on up, the head and facial expression were extremely clear.`;
    `I imagined it was made using a holomachine.`;
 
 });
@@ -364,11 +286,8 @@ hideTextbox();
 NVL_Mode();
 showTextbox();
 text(() => {
-   `Holomachines were machines that would burn a 
-hologram into pendants or key chains or any 
-other object that a person wanted.`;
-   `On LeMU there were even a number of these 
-machines.`;
+   `Holomachines were machines that would burn a hologram into pendants or key chains or any other object that a person wanted.`;
+   `On LeMU there were even a number of these machines.`;
    fadeClearPage();
 });
 hideTextbox();
@@ -380,21 +299,14 @@ ADV_Mode();
 showTextbox();
 text(() => {
    `I remembered that much.`;
-   `It was the same as before - if there were 
-something to trigger my memory, I could recall 
-some things.`;
-   `I thought that if I could remember these 
-kinds of things, why not...`;
-   `But I shoved that thought aside and focused 
-again on the image in the pendant.`;
+   `It was the same as before - if there were something to trigger my memory, I could recall some things.`;
+   `I thought that if I could remember these kinds of things, why not...`;
+   `But I shoved that thought aside and focused again on the image in the pendant.`;
    `Since it was a hologram, it also had depth.`;
-   `Changing the angle of the mirror changed the 
-angle of his face.`;
+   `Changing the angle of the mirror changed the angle of his face.`;
    `His...it was an image of a man.`;
    `A man I didn't know.`;
-   `I suspected it was an image that was closed 
-away in one of those inaccessible drawers 
-of my memory.`;
+   `I suspected it was an image that was closed away in one of those inaccessible drawers of my memory.`;
    `I had no memory of the face.`;
    Kid`"Who is this?"`;
    Sara`"........."`;
@@ -406,22 +318,16 @@ of my memory.`;
    `Her expression was frozen solid.`;
    Kid`"It's your boyfriend, isn't it?"`;
    `I asked her again.`;
-   `But there was not even a glimmer of hidden 
-romance on her face.`;
-   `Any girl looking at her boyfriend's picture 
-would probably show a smile.`;
+   `But there was not even a glimmer of hidden romance on her face.`;
+   `Any girl looking at her boyfriend's picture would probably show a smile.`;
    `Especially, stuck in the middle of the ocean...`;
    Kid`"Hey, he looks pretty cool."`;
    `I said it in a teasing way.`;
-   `Actually, he was so good looking it was enough 
-to make you sick.`;
-   `I thought she might chirp out, 'Oh, honey, 
-I hope you are well. I miss you.'`;
+   `Actually, he was so good looking it was enough to make you sick.`;
+   `I thought she might chirp out, 'Oh, honey, I hope you are well. I miss you.'`;
    `But there was one thing that bothered me...`;
    `His image was all in one color.`;
-   `But there was kind of a retro trend going on 
-and some people did go for the sepia or 
-monochrome holograms.`;
+   `But there was kind of a retro trend going on and some people did go for the sepia or monochrome holograms.`;
    `So it didn't really seem all that outlandish.`;
 
 });
@@ -429,20 +335,17 @@ bgload({ name: `BG05A3`, transition: 20 });
 showTextbox();
 text(() => {
    Kid`"So? How long have you been dating?"`;
-   `I put out the lighter, set it on the pendant 
-and held it out to Sara.`;
+   `I put out the lighter, set it on the pendant and held it out to Sara.`;
 
 });
 fgload({ id: 1, name: `SA03ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    `She didn't take them.`;
-   `She was still frozen stiff. It looked like she 
-was forgetting to breathe.`;
+   `She was still frozen stiff. It looked like she was forgetting to breathe.`;
    Kid`"Hey, Sara? Sara?"`;
    Kid`"Hello! Sara!"`;
-   `I grasped the pendant that she hadn't taken 
-and shook Sara's shoulders. `;
+   `I grasped the pendant that she hadn't taken and shook Sara's shoulders. `;
    `Sara didn't even blink.`;
    `And then...`;
 
@@ -466,23 +369,17 @@ removeFG({ id: 1, useAnim: false });
 playSFX({ name: `SE05_05`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
-   `Sara leaped up and smashed into me, leveling 
-me with a powerful tackle.`;
-   `Who knows? It might have been that she was so 
-surprised, she just wanted something to grab 
-on to.`;
+   `Sara leaped up and smashed into me, leveling me with a powerful tackle.`;
+   `Who knows? It might have been that she was so surprised, she just wanted something to grab on to.`;
    `Still, her full weight came barreling into me.`;
-   `With that I went down and she crumpled with 
-me. We slid down and off the whale's smooth 
-skin.`;
+   `With that I went down and she crumpled with me. We slid down and off the whale's smooth skin.`;
    `The stars appeared to gain distance.`;
 
 });
 removeBG({ mode: BLACK, transition: 0 });
 showTextbox();
 text(() => {
-   `What they say about space being weightless, 
-well, that seemed a lie.`;
+   `What they say about space being weightless, well, that seemed a lie.`;
 
 });
 bgload({ name: `BG05A1`, transition: 30 });
@@ -491,15 +388,12 @@ waitForSFX();
 shakeScreen();
 showTextbox();
 text(() => {
-   `Before I had time to think anything else, 
-my body made contact with the hard floor.`;
-   `A fine mist descended down on to my skyward 
-face.`;
+   `Before I had time to think anything else, my body made contact with the hard floor.`;
+   `A fine mist descended down on to my skyward face.`;
    `Sara was on top of me, unmoving.`;
    `I could hear her breathing near my ear.`;
    Sara(S4A008)`"Safe landing, huh?"`;
-   `Sara continued talking as she lifted up her 
-face and peered into my face.`;
+   `Sara continued talking as she lifted up her face and peered into my face.`;
 
 });
 fgload({ id: 1, name: `SA02ADL`, x: 320, useAnim: true });
@@ -528,9 +422,7 @@ clock(`10:12`);
 showTextbox();
 text(() => {
    `I ended up failing to give the pendant back.`;
-   `I thought I would look for the missing piece 
-of the hologram and had an idea of where 
-it might be.`;
+   `I thought I would look for the missing piece of the hologram and had an idea of where it might be.`;
 
 });
 hideTextbox();
@@ -542,17 +434,11 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(10);
 showTextbox();
 text(() => {
-   `It was the site of Tsugumi and Sara's fight 
-the day before.`;
-   `The fragment should be around that room 
-somewhere.`;
-   `I wanted to find the piece and put it back in 
-the pendant. `;
-   `I thought if I could do it, Sara would jump 
-with joy.`;
-   `As I imagined her happy face, I crawled around 
-on my knees, searching from room corner to 
-corner.`;
+   `It was the site of Tsugumi and Sara's fight the day before.`;
+   `The fragment should be around that room somewhere.`;
+   `I wanted to find the piece and put it back in the pendant. `;
+   `I thought if I could do it, Sara would jump with joy.`;
+   `As I imagined her happy face, I crawled around on my knees, searching from room corner to corner.`;
 
 });
 hideTextbox();
@@ -577,15 +463,13 @@ text(() => {
    Takeshi(S4A011)`"Are you looking for something?"`;
    Kid`"Y-yeah..."`;
    Kid`"Actually..."`;
-   `I explained the situation and showed Takeshi 
-the broken pendant.`;
+   `I explained the situation and showed Takeshi the broken pendant.`;
 
 });
 fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A012)`"I see. Well, you're right about it being 
-broken."`;
+   Takeshi(S4A012)`"I see. Well, you're right about it being broken."`;
    Kid`"Yup."`;
    Kid`"If you don't mind, could you help me look?"`;
 
@@ -601,8 +485,7 @@ text(() => {
 fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A015)`"That image of the guy you were talking about, 
-where is it?"`;
+   Takeshi(S4A015)`"That image of the guy you were talking about, where is it?"`;
    Kid`"Where...?"`;
    Kid`"It's right here."`;
    `I peered into the mirror.`;
@@ -622,8 +505,7 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A016)`"It's no big deal."`;
-   Takeshi(S4A017)`"I don't really care what kind of guy Sara 
-would date anyway..."`;
+   Takeshi(S4A017)`"I don't really care what kind of guy Sara would date anyway..."`;
 
 });
 fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
@@ -631,15 +513,13 @@ showTextbox();
 text(() => {
    Takeshi(S4A018)`"No...I take that back."`;
    Takeshi(S4A019)`"I might be just a little bit interested."`;
-   Takeshi(S4A020)`"But I suppose it doesn't matter now that the 
-pendant's broke."`;
+   Takeshi(S4A020)`"But I suppose it doesn't matter now that the pendant's broke."`;
 
 });
 fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A021)`"And since, the pendant is something that is 
-important to Sara."`;
+   Takeshi(S4A021)`"And since, the pendant is something that is important to Sara."`;
    Takeshi(S4A022)`"I'll help you look for the broken piece."`;
    Kid`"T-thanks."`;
 
@@ -649,8 +529,7 @@ showTextbox();
 text(() => {
    Takeshi(S4A023)`"First to find it wins, Kid!"`;
    Kid`"Huh?"`;
-   `Takeshi thumped my back and set about crawling 
-on the floor, searching.`;
+   `Takeshi thumped my back and set about crawling on the floor, searching.`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -678,8 +557,7 @@ text(() => {
 fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A028)`"Heeey, heeey, don't play innocent with me, 
-champ."`;
+   Takeshi(S4A028)`"Heeey, heeey, don't play innocent with me, champ."`;
    Kid`"...W-what?"`;
 
 });
@@ -687,12 +565,9 @@ removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `KB02ADL`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A029)`"You don't think I'd let you take all the 
-credit, do you?"`;
-   `Takeshi wriggled toward me like a snake. 
-He stopped in front of me.`;
-   Takeshi(S4A030)`"If I find it, I'll bet you're planning to 
-say you did."`;
+   Takeshi(S4A029)`"You don't think I'd let you take all the credit, do you?"`;
+   `Takeshi wriggled toward me like a snake. He stopped in front of me.`;
+   Takeshi(S4A030)`"If I find it, I'll bet you're planning to say you did."`;
    Kid`"I...I wouldn't..."`;
 
 });
@@ -721,33 +596,28 @@ removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `KB02ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A034)`"'Well, if it isn't the pendant I lent you 
-yesterday! Oh, joy, it is fixed! Oh happy 
-day!'"`;
+   Takeshi(S4A034)`"'Well, if it isn't the pendant I lent you yesterday! Oh, joy, it is fixed! Oh happy day!'"`;
 
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `KB02ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A035)`"'Oh, how did I slave, searching the floor far 
-and wide all of yesterday!'"`;
+   Takeshi(S4A035)`"'Oh, how did I slave, searching the floor far and wide all of yesterday!'"`;
 
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `KB03ADS`, x: 464, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A036)`"'And was that alone that you searched, brave 
-youth?'"`;
+   Takeshi(S4A036)`"'And was that alone that you searched, brave youth?'"`;
 
 });
 removeFG({ id: 1, useAnim: true });
 fgload({ id: 1, name: `KB08ADS`, x: 176, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A037)`"'Do you jest? Of course I went on my quest 
-for the missing piece alone!'"`;
+   Takeshi(S4A037)`"'Do you jest? Of course I went on my quest for the missing piece alone!'"`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -768,8 +638,7 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A040)`"You're full of yourself!"`;
-   Kid`"Whatever. Anyway, that wasn't a very good 
-impersonation - of me or Sara!"`;
+   Kid`"Whatever. Anyway, that wasn't a very good impersonation - of me or Sara!"`;
    Takeshi(S4A041)`"Don't be so picky about the details."`;
 
 });
@@ -791,8 +660,7 @@ text(() => {
 fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A045)`"I mean...well, you know, being cupid, a 
-matchmaker."`;
+   Takeshi(S4A045)`"I mean...well, you know, being cupid, a matchmaker."`;
    Kid`"Cupid doesn't ask for money."`;
 
 });
@@ -813,16 +681,14 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A048)`"It seems like the generator needs looking at."`;
-   Takeshi(S4A049)`"No big deal, just some maintenance that's 
-gotta be done."`;
+   Takeshi(S4A049)`"No big deal, just some maintenance that's gotta be done."`;
 
 });
 fgload({ id: 1, name: `KB03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A050)`"It's an order from Sora."`;
-   Kid`"In that case, I'd do it even if I didn't owe 
-you anything."`;
+   Kid`"In that case, I'd do it even if I didn't owe you anything."`;
 
 });
 fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
@@ -841,8 +707,7 @@ unSkippableDelay(3);
 showTextbox();
 text(() => {
    `In the end, we didn't find the missing piece...`;
-   `Takeshi and I were just standing around 
-covered in dust.`;
+   `Takeshi and I were just standing around covered in dust.`;
 
 });
 hideTextbox();
@@ -862,33 +727,28 @@ multifgload2({ id1: 1, id2: 2, name1: `SA02ADM`, name2: `KB03ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    Sara(S4A052)`"Oh, there you are."`;
-   Sara(S4A053)`"I think I forgot to get the pendant back 
-from you."`;
+   Sara(S4A053)`"I think I forgot to get the pendant back from you."`;
    Kid`"Oh, yeah..."`;
-   `All I could do was hand her back the fractured 
-pendant.`;
+   `All I could do was hand her back the fractured pendant.`;
 
 });
 fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   `Only then, like Sara was seeing us for the 
-first time, did she notice that we were filthy.`;
+   `Only then, like Sara was seeing us for the first time, did she notice that we were filthy.`;
    Sara(S4A054)`"What are you guys doing here anyway?"`;
 
 });
 fgload({ id: 2, name: `KB07ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   `I couldn't think of anything to say. Takeshi 
-and I exchanged glances.`;
+   `I couldn't think of anything to say. Takeshi and I exchanged glances.`;
 
 });
 fgload({ id: 2, name: `KB11ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A055)`"Actually...we were looking for the missing 
-piece."`;
+   Takeshi(S4A055)`"Actually...we were looking for the missing piece."`;
 
 });
 fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
@@ -910,25 +770,21 @@ text(() => {
    `Sara looked kind of embarrassed.`;
    `What?`;
    `What had happened?`;
-   `All of the sudden Takeshi had made it look 
-like it was all his bright idea.`;
-   `I thought he was going to let me take the 
-credit.`;
+   `All of the sudden Takeshi had made it look like it was all his bright idea.`;
+   `I thought he was going to let me take the credit.`;
 
 });
 fgload({ id: 1, name: `SA08ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S4A060)`"Besides...I'm pretty sure you're not going to 
-find the piece here."`;
+   Sara(S4A060)`"Besides...I'm pretty sure you're not going to find the piece here."`;
    Kid`"Why not?"`;
 
 });
 fgload({ id: 1, name: `SA05ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S4A061)`"Because...this pendant was cracked from the 
-start."`;
+   Sara(S4A061)`"Because...this pendant was cracked from the start."`;
 
 });
 fgload({ id: 2, name: `KB13ADM`, x: 512, useAnim: true });
@@ -941,8 +797,7 @@ fgload({ id: 1, name: `SA01ADM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S4A063)`"Yup."`;
-   Sara(S4A064)`"I don't know why, but I've had this pendant 
-as long as I can remember."`;
+   Sara(S4A064)`"I don't know why, but I've had this pendant as long as I can remember."`;
    Sara(S4A065)`"And this piece broke off a long time ago."`;
    Kid`"Oh, well that means..."`;
 
@@ -971,16 +826,10 @@ unSkippableDelay(18);
 clock(`13:34`);
 showTextbox();
 text(() => {
-   `After lunch...Takeshi gave me more information 
-about the generator problem.`;
-   `He said that the part we had repaired before 
-was malfunctioning and that the machine wasn't 
-functioning in a stable manner.`;
-   `Takeshi told me when to meet him to fix it. 
-Then he said he had something to do and took 
-off.`;
-   `I didn't have anything to do until our meeting 
-time, so I walked the corridors alone.`;
+   `After lunch...Takeshi gave me more information about the generator problem.`;
+   `He said that the part we had repaired before was malfunctioning and that the machine wasn't functioning in a stable manner.`;
+   `Takeshi told me when to meet him to fix it. Then he said he had something to do and took off.`;
+   `I didn't have anything to do until our meeting time, so I walked the corridors alone.`;
 
 });
 hideTextbox();
@@ -998,22 +847,18 @@ showTextbox();
 text(() => {
    `But there was no one there.`;
    `And the voice had stopped.`;
-   `But I was sure that the voice had come from 
-around here.`;
+   `But I was sure that the voice had come from around here.`;
    `I thought that maybe...`;
 
 });
 bgload({ name: `EV_SA06A`, transition: 20 });
 showTextbox();
 text(() => {
-   `I peeked into the compression chamber from the 
-shadows and saw Sara.`;
-   `Sara was sitting in front of the think window 
-and staring at her pendant.`;
+   `I peeked into the compression chamber from the shadows and saw Sara.`;
+   `Sara was sitting in front of the think window and staring at her pendant.`;
    `I thought I might call out to her.`;
    `She seemed to be focusing on something...`;
-   `It looked like she was starting to recite a 
-song.`;
+   `It looked like she was starting to recite a song.`;
 
 });
 bgload({ name: `EV_SA06B`, transition: 20 });
@@ -1040,8 +885,7 @@ text(() => {
 });
 showTextbox();
 text(() => {
-   `It didn't seem like a good time to call out 
-to her.`;
+   `It didn't seem like a good time to call out to her.`;
    `So I went to leave.`;
 
 });
@@ -1053,13 +897,9 @@ fadeOutMonoColorOverlay();
 unSkippableDelay(3);
 showTextbox();
 text(() => {
-   `Then suddenly in front of my eyes, another 
-scene fused together with the one I was 
-witnessing.`;
-   `A girl was sitting on the bed, crying in the 
-same way.`;
-   `She was stifling her sobs to keep others from 
-worrying...`;
+   `Then suddenly in front of my eyes, another scene fused together with the one I was witnessing.`;
+   `A girl was sitting on the bed, crying in the same way.`;
+   `She was stifling her sobs to keep others from worrying...`;
    `But who? Who was this?`;
    `What could this all mean?`;
    `What was the matter with me?`;
@@ -1075,11 +915,9 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    `With her voice, the image instantly vanished.`;
-   `Still confused by what I had just seen, 
-I answered.`;
+   `Still confused by what I had just seen, I answered.`;
    Kid`"It's me, Sara."`;
-   Kid`"Sorry...I wanted to say something...but it 
-just didn't seem right."`;
+   Kid`"Sorry...I wanted to say something...but it just didn't seem right."`;
 
 });
 bgload({ name: `BG10A1`, transition: 20 });
@@ -1108,9 +946,7 @@ text(() => {
 fgload({ id: 1, name: `SA02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S4A077)`"Maybe you lost your memory because you packed 
-your head with so many useless little things 
-like that."`;
+   Sara(S4A077)`"Maybe you lost your memory because you packed your head with so many useless little things like that."`;
    `Sara laughed as she said this.`;
    Kid`"Is that song a lullaby or something?"`;
 
@@ -1123,17 +959,14 @@ text(() => {
    `I didn't recall hearing it before.`;
    Sara(S4A079)`"Really? You don't know it?"`;
    `I pretended to think about it.`;
-   `Even if I did think on it, I didn't imagine 
-I'd remember it.`;
+   `Even if I did think on it, I didn't imagine I'd remember it.`;
 
 });
 fgload({ id: 1, name: `SA03ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S4A080)`"Oh...I see..."`;
-   `Sara said it sadly and glanced down at the 
-pendant hanging from the middle finger of 
-her left hand.`;
+   `Sara said it sadly and glanced down at the pendant hanging from the middle finger of her left hand.`;
    Kid`"Uh..."`;
    Kid`"There was something I wanted to ask you."`;
 
@@ -1142,8 +975,7 @@ fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S4A081)`"?"`;
-   `I told her about how the image of the man in 
-the hologram pendant had disappeared.`;
+   `I told her about how the image of the man in the hologram pendant had disappeared.`;
    Kid`"I was sure the image was there yesterday..."`;
 
 });
@@ -1152,8 +984,7 @@ showTextbox();
 text(() => {
    Sara(S4A082)`"Oh, that's because we're indoors."`;
    Kid`"Huh? Whaddya mean?"`;
-   Kid`"Yesterday when we looked at it we were in 
-LeMU."`;
+   Kid`"Yesterday when we looked at it we were in LeMU."`;
    Sara(S4A083)`"No, that's not inside."`;
    Kid`"?"`;
 
@@ -1175,19 +1006,14 @@ fgload({ id: 1, name: `SA01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Sara(S4A086)`"Here is how it works..."`;
-   `With that, Sara took the lighter from her 
-pocket.`;
-   `She put the lighter's flame close to the 
-pendant.`;
+   `With that, Sara took the lighter from her pocket.`;
+   `She put the lighter's flame close to the pendant.`;
    Kid`"Oh."`;
-   `The man in the hologram floated there - 
-the same as the day before.`;
+   `The man in the hologram floated there - the same as the day before.`;
    `The image wasn't as clear as before.`;
    `I thought that it was probably the bad light.`;
-   `The room with the whale was mostly dark. 
-I figured that was why he wasn't as clear.`;
-   Kid`"So you have to hold the lighter flame next 
-to it to see it?"`;
+   `The room with the whale was mostly dark. I figured that was why he wasn't as clear.`;
+   Kid`"So you have to hold the lighter flame next to it to see it?"`;
    `I asked to make sure.`;
    Sara(S4A087)`"Yup."`;
 
@@ -1202,9 +1028,7 @@ text(() => {
 fgload({ id: 1, name: `SA08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Sara(S4A089)`"Yeah. I don't really know how it works, 
-but you can't see it under fluorescent lights. 
-Weird, huh?"`;
+   Sara(S4A089)`"Yeah. I don't really know how it works, but you can't see it under fluorescent lights. Weird, huh?"`;
 
 });
 hideTextbox();
@@ -1212,14 +1036,12 @@ removeFG({ id: 1, useAnim: true });
 stopBGM();
 showTextbox();
 text(() => {
-   `That's when I understood why Sara always 
-carried the lighter.`;
+   `That's when I understood why Sara always carried the lighter.`;
    `It was to look at the hologram...`;
    `Sara put out the flame.`;
    `And lit it, and put it out.`;
    `And lit it, and put it out...`;
-   `She stared absently at the image of the man 
-appearing and disappearing.`;
+   `She stared absently at the image of the man appearing and disappearing.`;
 
 });
 hideTextbox();
@@ -1230,10 +1052,8 @@ text(() => {
    Sara(S4A090)`"Both of my parents are gone."`;
    `Sara said this out of the blue.`;
    Sara(S4A091)`"They died when I was little."`;
-   Sara(S4A092)`"My mom and dad weren't around when I was a 
-kid."`;
-   Sara(S4A093)`"For a while, I thought it was that way for 
-everybody..."`;
+   Sara(S4A092)`"My mom and dad weren't around when I was a kid."`;
+   Sara(S4A093)`"For a while, I thought it was that way for everybody..."`;
    Kid`"Really..."`;
    `I didn't know how to answer.`;
    `I couldn't think of a decent reply.`;
@@ -1245,8 +1065,7 @@ text(() => {
    Sara(S4A094)`"This pendant is the only keepsake I have."`;
    Kid`"So that man is.."`;
    Sara(S4A095)`"I think it's probably my father."`;
-   Sara(S4A096)`"I don't know for sure, but that is what 
-I think."`;
+   Sara(S4A096)`"I don't know for sure, but that is what I think."`;
    `After a long silence I said - `;
    Kid`"It's the same for me."`;
 
@@ -1256,10 +1075,8 @@ showTextbox();
 text(() => {
    Sara(S4A097)`"Huh?"`;
    Kid`"I've forgotten everything."`;
-   Kid`"So I don't remember anything about my mom 
-or dad."`;
-   Kid`"If I bumped into them on the street, I would 
-never know it."`;
+   Kid`"So I don't remember anything about my mom or dad."`;
+   Kid`"If I bumped into them on the street, I would never know it."`;
    Kid`"Even if I get out of here in one piece..."`;
    Kid`"I don't have anywhere to call home."`;
    Kid`"So I'm in the same situation."`;
@@ -1280,10 +1097,8 @@ text(() => {
    Kid`"I've got to go help Takeshi."`;
    Kid`"The generator needs some fixing..."`;
    `I stood up.`;
-   `As I was about to leave, I thought of 
-something.`;
-   Kid`"Hey, would you mind lending me that lighter 
-and pendant again?"`;
+   `As I was about to leave, I thought of something.`;
+   Kid`"Hey, would you mind lending me that lighter and pendant again?"`;
 
 });
 hideTextbox();
@@ -1307,56 +1122,40 @@ clock(`16:7`);
 showTextbox();
 text(() => {
    Takeshi(S4A099)`"You can take that. You're a man after all."`;
-   `Takeshi grinned sadistically as he patted my 
-right arm, which was supported by a cast.`;
-   `The cast was made of a specially formulated 
-plastic. It was lighter than I had expected 
-and not too cumbersome. `;
-   `Takeshi had put the cast on me with 
-instructions from Sora.`;
-   `Sora said she had something else to do and 
-left the work to Takeshi.`;
+   `Takeshi grinned sadistically as he patted my right arm, which was supported by a cast.`;
+   `The cast was made of a specially formulated plastic. It was lighter than I had expected and not too cumbersome. `;
+   `Takeshi had put the cast on me with instructions from Sora.`;
+   `Sora said she had something else to do and left the work to Takeshi.`;
 
 });
 fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A100)`"Wow. That dive you took was really something 
-else. Pretty impressive stuff."`;
-   Kid`"Be quiet! I told you my leg slipped. You're 
-the one that forced the tools on me."`;
+   Takeshi(S4A100)`"Wow. That dive you took was really something else. Pretty impressive stuff."`;
+   Kid`"Be quiet! I told you my leg slipped. You're the one that forced the tools on me."`;
 
 });
 fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A101)`"Don't try to pin this on me. I never said to 
-bring the tools along."`;
-   Kid`"You're the one that jumped off without 
-anything."`;
+   Takeshi(S4A101)`"Don't try to pin this on me. I never said to bring the tools along."`;
+   Kid`"You're the one that jumped off without anything."`;
 
 });
 fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A102)`"If we have to make repairs again, then 
-we'll need the tools. So I left them there."`;
+   Takeshi(S4A102)`"If we have to make repairs again, then we'll need the tools. So I left them there."`;
    `Takeshi was making excuses.`;
-   Kid`"Okay, fine. Say it was all 
-my stupid fault..."`;
-   `I looked at the cast wrapped around my right 
-arm.`;
-   `While we were repairing the generator I had 
-lost my balance holding the heavy toolbox 
-and fallen off the machine.`;
+   Kid`"Okay, fine. Say it was all my stupid fault..."`;
+   `I looked at the cast wrapped around my right arm.`;
+   `While we were repairing the generator I had lost my balance holding the heavy toolbox and fallen off the machine.`;
 
 });
 fgload({ id: 1, name: `KB02ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A103)`"Well, don't get down about it. Sora said it's 
-a clean break so you'll be back in business 
-in no time."`;
+   Takeshi(S4A103)`"Well, don't get down about it. Sora said it's a clean break so you'll be back in business in no time."`;
    Kid`"Easy for you to say..."`;
 
 });
@@ -1364,11 +1163,7 @@ fgload({ id: 1, name: `KB11ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A104)`"Alright, now it's time..."`;
-   `Takeshi took a transparent object that could 
-easily be mistaken for a gun at a glance. It 
-was an injection syringe and cartridge filled 
-with a cocktail of antibiotics, fever 
-medicine, painkillers and vitamins.`;
+   `Takeshi took a transparent object that could easily be mistaken for a gun at a glance. It was an injection syringe and cartridge filled with a cocktail of antibiotics, fever medicine, painkillers and vitamins.`;
 
 });
 fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
@@ -1384,14 +1179,12 @@ showTextbox();
 text(() => {
    Takeshi(S4A106)`"Alright, that should do it."`;
    Kid`"Thanks, Takeshi."`;
-   Takeshi(S4A107)`"The break might cause a fever. Least you've 
-got some medicine in you."`;
+   Takeshi(S4A107)`"The break might cause a fever. Least you've got some medicine in you."`;
 
 });
 showTextbox();
 text(() => {
-   Takeshi(S4A108)`"Either way, the medicine ought to make you 
-drowsy. So take it easy."`;
+   Takeshi(S4A108)`"Either way, the medicine ought to make you drowsy. So take it easy."`;
    Kid`"Alright..."`;
 
 });
@@ -1417,12 +1210,9 @@ text(() => {
    Takeshi(S4A112)`"Not that again."`;
    Kid`"Yeah. I want you to look at it again."`;
    Takeshi(S4A113)`"You can be a pain, you know?"`;
-   `Even so, Takeshi took the pendant as he said 
-this.`;
-   `This time I thought he'd be able to see it as 
-well.`;
-   `I was gonna tell him that it was a picture of 
-Sara's boyfriend.`;
+   `Even so, Takeshi took the pendant as he said this.`;
+   `This time I thought he'd be able to see it as well.`;
+   `I was gonna tell him that it was a picture of Sara's boyfriend.`;
 
 });
 fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
@@ -1440,8 +1230,7 @@ text(() => {
    Takeshi(S4A115)`"There's nothing here to see..."`;
    Kid`"Huh...there has to be...Oh!"`;
    Kid`"I forgot."`;
-   `I took the lighter out, lit it and held it up 
-to the pendant.`;
+   `I took the lighter out, lit it and held it up to the pendant.`;
    `I showed the light on the pendant.`;
    Kid`"How's that?"`;
 
@@ -1482,8 +1271,7 @@ fgload({ id: 1, name: `KB01ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A122)`"I wonder when I started going out with Sara?"`;
-   Takeshi(S4A123)`"That or is this some miracle mirror that 
-shows the future?"`;
+   Takeshi(S4A123)`"That or is this some miracle mirror that shows the future?"`;
    Kid`"Huh? What're you talking about?"`;
 
 });
@@ -1492,30 +1280,24 @@ showTextbox();
 text(() => {
    Takeshi(S4A124)`"The only face showing in this mirror is mine."`;
    Takeshi(S4A125)`"That means I must be Sara's guy."`;
-   Kid`"Idiot! There's no way you and Sara would get 
-together!"`;
+   Kid`"Idiot! There's no way you and Sara would get together!"`;
 
 });
 fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A126)`"You said it, not me."`;
-   Takeshi(S4A127)`"You said the guy in here was Sara's 
-boyfriend, right?"`;
-   Kid`"I'm not talking about your ugly reflection! 
-I'm talking about the holographic image!"`;
-   Takeshi(S4A128)`"And I'm saying there isn't a hologram in 
-here, stupid!"`;
+   Takeshi(S4A127)`"You said the guy in here was Sara's boyfriend, right?"`;
+   Kid`"I'm not talking about your ugly reflection! I'm talking about the holographic image!"`;
+   Takeshi(S4A128)`"And I'm saying there isn't a hologram in here, stupid!"`;
    Kid`"Look again!"`;
 
 });
 fgload({ id: 1, name: `KB05ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A129)`"I AM looking! I am staring! Look at my eyes! 
-They're WIDE open!"`;
-   `I looked over Takeshi's shoulder and peered 
-into the pendant.`;
+   Takeshi(S4A129)`"I AM looking! I am staring! Look at my eyes! They're WIDE open!"`;
+   `I looked over Takeshi's shoulder and peered into the pendant.`;
    Kid`"Look! It's right there!"`;
    `I pointed at the hologram of the man.`;
 
@@ -1524,8 +1306,7 @@ fgload({ id: 1, name: `KB08ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A130)`"That's me, right?"`;
-   Kid`"You're behind it! The guy inside the mirror 
-is you!"`;
+   Kid`"You're behind it! The guy inside the mirror is you!"`;
    Kid`"The guy floating in the front is who I mean!"`;
 
 });
@@ -1533,25 +1314,21 @@ fgload({ id: 1, name: `KB04ADM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    Takeshi(S4A131)`"There's no floating guy anywhere..."`;
-   Takeshi(S4A132)`"How many times are you gonna make me say it? 
-There's nothing there!"`;
+   Takeshi(S4A132)`"How many times are you gonna make me say it? There's nothing there!"`;
 
 });
 playSFX({ name: `SE00_03`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
-   `You came as we were repeating this sad 
-exchange.`;
-   You(S4A133)`"What are you all worked up about? You two 
-finished fixing the generator?"`;
+   `You came as we were repeating this sad exchange.`;
+   You(S4A133)`"What are you all worked up about? You two finished fixing the generator?"`;
 
 });
 removeFG({ id: 1, useAnim: true });
 multifgload2({ id1: 1, id2: 2, name1: `YU07BDM`, name2: `KB04ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Kid`"You, come talk some sense into this idiot 
-for me!"`;
+   Kid`"You, come talk some sense into this idiot for me!"`;
    Takeshi(S4A134)`"That's my line!"`;
    You(S4A135)`"What happened?"`;
    `I showed You the hologram pendant.`;
@@ -1561,8 +1338,7 @@ for me!"`;
 fgload({ id: 2, name: `KB05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   Takeshi(S4A136)`"He says the face inside there is Sara's 
-future man."`;
+   Takeshi(S4A136)`"He says the face inside there is Sara's future man."`;
    Kid`"I didn't say that! You're twisting my words."`;
 
 });
@@ -1575,8 +1351,7 @@ text(() => {
 multifgload2({ id1: 1, id2: 2, name1: `YU02BDM`, name2: `KB07ADM`, x1: 128, x2: 512, useAnim: true });
 showTextbox();
 text(() => {
-   You(S4A138)`"Cause either that girl is going to need a sex 
-change operation."`;
+   You(S4A138)`"Cause either that girl is going to need a sex change operation."`;
    You(S4A139)`"Or I will..."`;
 
 });
@@ -1591,20 +1366,16 @@ fgload({ id: 1, name: `YU05BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
    You(S4A141)`"I mean, this is just an ordinary mirror."`;
-   You(S4A142)`"I don't think there's a hologram or anything 
-in there."`;
-   Kid`"It's a hologram! There's a guy's face in 
-there!"`;
+   You(S4A142)`"I don't think there's a hologram or anything in there."`;
+   Kid`"It's a hologram! There's a guy's face in there!"`;
 
 });
 fgload({ id: 2, name: `KB05ADM`, x: 512, useAnim: true });
 showTextbox();
 text(() => {
-   `I wondered how many times I would have to 
-shout out this same line...`;
+   `I wondered how many times I would have to shout out this same line...`;
    Kid`"Look! He's right here! Right here!"`;
-   `Now I looked over You's shoulder and pointed 
-to the pendant.`;
+   `Now I looked over You's shoulder and pointed to the pendant.`;
    You`"........."`;
    Kid`"........."`;
    Takeshi`"........."`;
@@ -1613,8 +1384,7 @@ to the pendant.`;
 fgload({ id: 1, name: `YU03BDM`, x: 128, useAnim: true });
 showTextbox();
 text(() => {
-   You(S4A143)`"Hey, Kid, are you alright? Are you having 
-another fit?"`;
+   You(S4A143)`"Hey, Kid, are you alright? Are you having another fit?"`;
    Kid`"You really, truly can't see it?"`;
    You(S4A144)`"Really."`;
 
