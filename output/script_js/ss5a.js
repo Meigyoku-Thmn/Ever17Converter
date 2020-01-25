@@ -1707,20 +1707,20 @@ text(() => {
    `I sprinted toward the stone statue.`;
    `(What could the girl be doing up there?)`;
    //??
-   Unk(T5B023)`"Well, it's because..."`;
+   Anon(T5B023)`"Well, it's because..."`;
    //??
-   Unk(T5B024)`"I was feeling lonesome."`;
+   Anon(T5B024)`"I was feeling lonesome."`;
    `Lonesome?`;
    //??
-   Unk(T5B025)`"And anyway, I was..."`;
+   Anon(T5B025)`"And anyway, I was..."`;
    //??
-   Unk(T5B026)`"...feeling sad..."`;
+   Anon(T5B026)`"...feeling sad..."`;
    `Sad?`;
    `(What is she talking about?)`;
    //??
-   Unk(T5B043)`"And next..."`;
+   Anon(T5B043)`"And next..."`;
    //??
-   Unk(T5B044)`"Uh oh!"`;
+   Anon(T5B044)`"Uh oh!"`;
    `Just then the girl lost her balance, falling from her awkward place on the pedestal.`;
 
 });

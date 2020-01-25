@@ -1167,7 +1167,7 @@ text(() => {
    `I heard someone fall spectacularly.`;
    Takeshi`"Hey, I dunno who you are, but are you alright?"`;
    //??
-   Unk`"........."`;
+   Anon`"........."`;
    `I thought I was near where the person had stumbled.`;
    `But it was dark and I couldn't see much.`;
    Takeshi`"I wonder if this might work..."`;
@@ -1780,7 +1780,7 @@ removeFG({ id: 1, useAnim: true });
 showTextbox();
 text(() => {
    //??
-   Unk(T2C424)`"...e-i-g-h-t-y-s-e-v-e-n... e-i-g-h-t-y-e-i-g-h-t..."`;
+   Anon(T2C424)`"...e-i-g-h-t-y-s-e-v-e-n... e-i-g-h-t-y-e-i-g-h-t..."`;
 
 });
 fgload({ id: 1, name: `KA01ADM`, x: 320, useAnim: true });
@@ -1822,7 +1822,7 @@ stopBGM();
 showTextbox();
 text(() => {
    //??
-   Unk(T2C429)`"...n-i-n-e-t-y-e-i-g-h-t... n-i-n-e-t-y-n-i-n-e..."`;
+   Anon(T2C429)`"...n-i-n-e-t-y-e-i-g-h-t... n-i-n-e-t-y-n-i-n-e..."`;
    Kid(T2C430)`"Hey...whose voice is that?"`;
 
 });

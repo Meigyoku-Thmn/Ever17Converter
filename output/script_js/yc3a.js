@@ -1557,11 +1557,11 @@ clock(`7:25`);
 showTextbox();
 text(() => {
    //??
-   Unk(C3A094)`"Aaaagh, waaaaaah, waaaaah"`;
+   Anon(C3A094)`"Aaaagh, waaaaaah, waaaaah"`;
    //??
-   Unk(C3A095)`"waaaaaah, waaaaah"`;
+   Anon(C3A095)`"waaaaaah, waaaaah"`;
    //??
-   Unk(C3A096)`"waaaaaah, waaaaah"`;
+   Anon(C3A096)`"waaaaaah, waaaaah"`;
 
 });
 playBGM({ num: 2, volume: 100 });

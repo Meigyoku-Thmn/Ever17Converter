@@ -985,7 +985,7 @@ stopBGM();
 showTextbox();
 text(() => {
    //??
-   Unk(T1C131)`"Yeah. I don't think there's any way out now."`;
+   Anon(T1C131)`"Yeah. I don't think there's any way out now."`;
    `(!?)`;
    `I was getting used to surprises, but the voice startled me.`;
 
@@ -997,9 +997,9 @@ text(() => {
    `I didn't know who was talking.`;
    `But somebody sure was.`;
    //??
-   Unk(C1S296)`"Everybody?"`;
+   Anon(C1S296)`"Everybody?"`;
    //??
-   Unk(C1S297)`"Help?...Did you come to help?"`;
+   Anon(C1S297)`"Help?...Did you come to help?"`;
    `It sounded like Coco....`;
    `But I didn't know who she was talking to.`;
    `I couldn't tell where they were.`;

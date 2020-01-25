@@ -112,7 +112,7 @@ bgloadCrop({ name: `EV_CO16A`, transition: 20, x: 0, y: 0, hx: 680, hy: 510 });
 showTextbox();
 text(() => {
    //??
-   Unk(EOP004)`"Grr...grr...grr..."`;
+   Anon(EOP004)`"Grr...grr...grr..."`;
    `It was a young girl.`;
    `She was shaped like a "person."`;
    `Looking closer revealed that there was something strange about her as well.`;
@@ -125,7 +125,7 @@ bgload({ name: `EV_CO16A`, transition: 26 });
 showTextbox();
 text(() => {
    //??
-   Unk(PIPI_24)`"Grr...grr...grr..."`;
+   Anon(PIPI_24)`"Grr...grr...grr..."`;
    `Namely, a small tanuki attached to the girl's backside.`;
    `'In front of him there was a big tanuki being bitten by a girl, who was being bitten by an smaller tanuki'`;
    `The scene was enough to make him lose his sense of reality.`;
@@ -136,9 +136,9 @@ text(() => {
    `Whispered the big tanuki.`;
    `But the words didn't reach his mind, because it was so busy trying to process the absurd scene.`;
    //??
-   Unk(PIPI_24)`"Grr...grr...grr..."`;
+   Anon(PIPI_24)`"Grr...grr...grr..."`;
    //??
-   Unk(EOP007)`"Grr...grr...grr..."`;
+   Anon(EOP007)`"Grr...grr...grr..."`;
    `(I must be dreaming, right?)`;
    `—That was what he was really thinking.`;
 
@@ -1203,7 +1203,7 @@ text(() => {
    Park_staff(EOP239)`"Who is it? What is their name?"`;
    Kid(EOP240)`"Uh, their name..."`;
    //??
-   Unk(EOP241)`"Hey! You there! Wait!"`;
+   Anon(EOP241)`"Hey! You there! Wait!"`;
 
 });
 hideTextbox();
@@ -1720,7 +1720,7 @@ stopBGM();
 showTextbox();
 text(() => {
    //??
-   Unk(EOP296)`"Could you come here for a moment?"`;
+   Anon(EOP296)`"Could you come here for a moment?"`;
    `A voice called to him from somewhere.`;
    `From somewhere...`;
    Kid(EOP297)`"!?"`;
@@ -1733,7 +1733,7 @@ playBGM({ num: 18, volume: 100 });
 showTextbox();
 text(() => {
    //??
-   Unk(EOP298)`"Look, hurry up will you?"`;
+   Anon(EOP298)`"Look, hurry up will you?"`;
    `It was the whispering voice of a young woman.`;
    `Her bulky, black arm was swaying rhythmically.`;
    `Disturbed by the difference between the voice and its owner's appearance, he moved hypnotized in its direction.`;

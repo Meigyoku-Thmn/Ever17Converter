@@ -453,7 +453,7 @@ showTextbox();
 text(() => {
    Kid`"Hmmm. That's strange."`;
    //??
-   Unk(S4A010)`"What's strange?"`;
+   Anon(S4A010)`"What's strange?"`;
 
 });
 fgload({ id: 1, name: `KB07ADM`, x: 320, useAnim: true });

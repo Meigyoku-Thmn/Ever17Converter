@@ -509,48 +509,48 @@ text(() => {
    `As I let my imagination run wild I was looking around the campus trying to get a feel for my new surroundings. `;
    `All of the sudden, from among the din of voices and activity someone called out to me.`;
    //??
-   Unk(S3A070)`"Hey, you there!"`;
+   Anon(S3A070)`"Hey, you there!"`;
    `I stopped.`;
    `Looking in the direction of the voice was a girl student, her face one big smile.`;
    `From the ribbon on her uniform it was clear she was a senior.`;
    `Her hair was cut short enough that it just hid her ears. It also made her look like a go-getter.`;
    `When I pointed at myself to see if she meant me, she nodded smiling.`;
    //??
-   Unk(S3A071)`"Yeah. I mean you."`;
+   Anon(S3A071)`"Yeah. I mean you."`;
    `The smiling girl approached me.`;
    //??
-   Unk(S3A072)`"Do you have a minute? Sure you do, right?"`;
+   Anon(S3A072)`"Do you have a minute? Sure you do, right?"`;
    //??
-   Unk(S3A073)`"If you are up for it, can I talk with you?"`;
+   Anon(S3A073)`"If you are up for it, can I talk with you?"`;
    //??
-   Unk(S3A074)`"Don't worry. It won't take much of your time."`;
+   Anon(S3A074)`"Don't worry. It won't take much of your time."`;
    `What was it with this person? I wondered if she were trying to pick me up...or...`;
    `I had a bad feeling about the situation.`;
    `Seeing my skeptical face, the girl with the bobbed haircut tried to explain herself.`;
    //??
-   Unk(S3A075)`"Don't get me wrong. I'm not trying to...I simply wanted to..."`;
+   Anon(S3A075)`"Don't get me wrong. I'm not trying to...I simply wanted to..."`;
    //??
-   Unk(S3A076)`"I was just wandering if you would like to join our club."`;
+   Anon(S3A076)`"I was just wandering if you would like to join our club."`;
    `...So that was it. I wonder how many people had asked me the same question.`;
    `I was pretty sick of the whole thing.`;
    Sara(S3A077)`"No thank you. I'm not interested."`;
    //??
-   Unk(S3A078)`"Oh really? Have you already decided to join somewhere?"`;
+   Anon(S3A078)`"Oh really? Have you already decided to join somewhere?"`;
    Sara(S3A079)`"No."`;
    //??
-   Unk(S3A080)`"Well then!"`;
+   Anon(S3A080)`"Well then!"`;
    Sara(S3A081)`"I've decided not to join anything."`;
    //??
-   Unk(S3A082)`"Oh, don't say that...won't you just come take a look at our club room?"`;
+   Anon(S3A082)`"Oh, don't say that...won't you just come take a look at our club room?"`;
    Sara(S3A083)`"No thank you."`;
    //??
-   Unk(S3A084)`"I'll bet you are wondering what our club is all about."`;
+   Anon(S3A084)`"I'll bet you are wondering what our club is all about."`;
    Sara(S3A085)`"Not in the least."`;
    //??
-   Unk(S3A086)`"Okay, okay. Just come take a look. We don't bite."`;
+   Anon(S3A086)`"Okay, okay. Just come take a look. We don't bite."`;
    Sara(S3A087)`"I said..."`;
    //??
-   Unk(S3A088)`"Listen! Stop talking, shut up and come with me!"`;
+   Anon(S3A088)`"Listen! Stop talking, shut up and come with me!"`;
    `So that persistent senior dragged me to their club room half by force.`;
 
 });
@@ -872,7 +872,7 @@ text(() => {
    `A stuffed animal bumblebee, a button with a picture of a nuclear missile blasting off, an unidentified object X and other stuff were scattered around almost completely covering the floor.`;
    `If Mayo had been a clean freak, we would have lost her right there.`;
    //??
-   Unk(S3A143)`"Oh? Nakkyu, is that a new member?"`;
+   Anon(S3A143)`"Oh? Nakkyu, is that a new member?"`;
    `A girl stood from in front of a computer, her chair nearly buried. `;
    `She was the head of the club. She always wore glasses with black frames and kept her hair in two braids.`;
    `Her name was...uh...I forgot.`;

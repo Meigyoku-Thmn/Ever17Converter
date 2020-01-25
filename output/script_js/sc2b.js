@@ -630,19 +630,19 @@ text(() => {
    `I readied myself for anything, facing the darkness.`;
    `Just then...`;
    //??
-   Unk(C2S173)`"Moon sprite shouldering a long bow."${waitVoice}${noWait}`;
+   Anon(C2S173)`"Moon sprite shouldering a long bow."${waitVoice}${noWait}`;
    //??
-   Unk(C2S174)`"Waiting inside a dream."${waitVoice}${noWait}`;
+   Anon(C2S174)`"Waiting inside a dream."${waitVoice}${noWait}`;
    Kid`"W-who's there...?"`;
    //??
-   Unk(C2S175)`"Tonight a story by moonlight."${waitVoice}${noWait}`;
+   Anon(C2S175)`"Tonight a story by moonlight."${waitVoice}${noWait}`;
    //??
-   Unk(C2S176)`"Hoping the wait will be short."${waitVoice}${noWait}`;
+   Anon(C2S176)`"Hoping the wait will be short."${waitVoice}${noWait}`;
    Kid`"H-hey...who's there?"`;
    //??
-   Unk(C2S177)`"Sleeping curled and snug."${waitVoice}${noWait}`;
+   Anon(C2S177)`"Sleeping curled and snug."${waitVoice}${noWait}`;
    //??
-   Unk(C2S178)`"Sleeping in mother's arms."${waitVoice}${noWait}`;
+   Anon(C2S178)`"Sleeping in mother's arms."${waitVoice}${noWait}`;
 
 });
 bgload({ name: `EV_CO04A`, transition: 20 });

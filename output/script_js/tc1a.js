@@ -147,13 +147,13 @@ playSFX({ name: `SE00_13`, a1: 0, volume: 95 });
 showTextbox();
 text(() => {
    //??
-   Unk(C1T012)`"Heeey! Somebodyyyy!"`;
+   Anon(C1T012)`"Heeey! Somebodyyyy!"`;
    //??
-   Unk(C1T013)`"Somebodyyyy!"`;
+   Anon(C1T013)`"Somebodyyyy!"`;
    //??
-   Unk(C1T014)`"Is anyone thereee?"`;
+   Anon(C1T014)`"Is anyone thereee?"`;
    //??
-   Unk(C1T015)`"Anyooooone?"`;
+   Anon(C1T015)`"Anyooooone?"`;
    `Two female voices were coming from inside the elevator.`;
 
 });
@@ -168,14 +168,14 @@ showTextbox();
 text(() => {
    Takeshi`"Hey! Can you hear us!?"`;
    //??
-   Unk(C1T016)`"Ah! Y-y-yeah! I can hear you!"`;
+   Anon(C1T016)`"Ah! Y-y-yeah! I can hear you!"`;
    Takeshi`"Hang on! We'll get you out!"`;
    //??
-   Unk(C1T017)`"Please!"`;
+   Anon(C1T017)`"Please!"`;
    //??
-   Unk(C1T018)`"Aah... Thank goodness..."`;
+   Anon(C1T018)`"Aah... Thank goodness..."`;
    //??
-   Unk(C1T019)`"I didn't think anyone would come to help..."`;
+   Anon(C1T019)`"I didn't think anyone would come to help..."`;
    `The voice that had answered seemed to be in good spirits.`;
    `Whoever it was didn't sound like they were weak, or injured.`;
    `I placed both of my hands firmly on the door and pried it apart with all my strength.`;
@@ -255,7 +255,7 @@ text(() => {
    Takeshi`"Agh!"`;
    `I struck my knee painfully.`;
    //??
-   Unk(C1T020)`"Are you alriiight?"`;
+   Anon(C1T020)`"Are you alriiight?"`;
    `I heard a voice from below.`;
    //Park staff
    Park_staff(C1T021)`"Did you hurt yourself?"`;
@@ -268,7 +268,7 @@ text(() => {
    `And as I stood there thinking that...`;
    Takeshi`"Hold on. I'll get you out of there."`;
    //??
-   Unk(C1T022)`"Okaaaay."`;
+   Anon(C1T022)`"Okaaaay."`;
    `I opened up the small door set into the ceiling of the elevator.`;
 
 });
@@ -281,24 +281,24 @@ bgload({ name: `EV_CO02A`, transition: 10 });
 showTextbox();
 text(() => {
    //??
-   Unk(C1T023)`"Oh, thank you so much!"`;
+   Anon(C1T023)`"Oh, thank you so much!"`;
    `I looked to the girl inside`;
    `Her face was one big smile. She was clearly happy she was about to be freed.`;
    `(Huh?)`;
    `(I think I've seen this girl...somewhere before...)`;
    Takeshi`"Ah!"`;
    //??
-   Unk(C1T024)`"Ah!"`;
+   Anon(C1T024)`"Ah!"`;
    Takeshi`"You're that girl from before!"`;
    //??
-   Unk(C1T025)`"You're that guy from before!"`;
+   Anon(C1T025)`"You're that guy from before!"`;
    `The girl and I pointed at each other and froze.`;
    //??
-   Unk(PIPI_01)`"Woof!"`;
+   Anon(PIPI_01)`"Woof!"`;
    `I spotted the scruffy face of a dog circling around her feet.`;
    Takeshi`"Popo..."`;
    //??
-   Unk(C1T026)`"His name's not 'Popo'..."`;
+   Anon(C1T026)`"His name's not 'Popo'..."`;
    Coco(C1T027)`"This little guy's name is Pipi, and my name's Coco.... Try not to mix them up, okay?"`;
    `Pipi and Coco...`;
    `That's right...`;

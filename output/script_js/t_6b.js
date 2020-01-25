@@ -1220,7 +1220,7 @@ text(() => {
    `Blood was coming from his mouth and he had passed out at a console.`;
    Takeshi`"Hey mister! Are you alright!?"`;
    //??
-   Unk`"........."`;
+   Anon`"........."`;
    `The man didn't reply to me. He just lay there motionless.`;
    Takeshi`"Who is this guy...?"`;
    Takeshi`"Sora, do you have any idea who this is?"`;

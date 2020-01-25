@@ -11,7 +11,7 @@ text(() => {
    `It smelled of disinfectant...`;
    `I wondered where I was?`;
    //??
-   Unk(S1A000)`"Are you awake now?"`;
+   Anon(S1A000)`"Are you awake now?"`;
 
 });
 playBGM({ num: 4, volume: 100 });
@@ -24,9 +24,9 @@ text(() => {
    `Somewhere...`;
    `I felt like...I had met this person somewhere before.`;
    //??
-   Unk(S1A001)`"How are you doing?"`;
+   Anon(S1A001)`"How are you doing?"`;
    //??
-   Unk(S1A002)`"You look...alright anyway."`;
+   Anon(S1A002)`"You look...alright anyway."`;
    `Who? Who was it?`;
    `I knew her.`;
    `I was sure that I knew her.`;
@@ -38,9 +38,9 @@ bgload({ name: `EV_YU01B`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A003)`"Oh? I guess it's no good then?"`;
+   Anon(S1A003)`"Oh? I guess it's no good then?"`;
    //??
-   Unk(S1A004)`"Does your head...hurt?"`;
+   Anon(S1A004)`"Does your head...hurt?"`;
    `I pressed my temples with the fingers of both hands, nodding slightly.`;
 
 });
@@ -48,9 +48,9 @@ bgload({ name: `EV_YU01A`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A005)`"I see. Just wait a second, alright?"`;
+   Anon(S1A005)`"I see. Just wait a second, alright?"`;
    //??
-   Unk(S1A006)`"I'll try to find some painkillers."`;
+   Anon(S1A006)`"I'll try to find some painkillers."`;
    `She laughed sweetly and stepped away from me.`;
 
 });
@@ -75,7 +75,7 @@ text(() => {
    Kid`"This is..."`;
    Kid`"...the middle of the ocean."`;
    //??
-   Unk(S1A007)`"What's the matter?"`;
+   Anon(S1A007)`"What's the matter?"`;
 
 });
 hideTextbox();
@@ -94,9 +94,9 @@ fgload({ id: 1, name: `YU01BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A008)`"Of course it is!?"`;
+   Anon(S1A008)`"Of course it is!?"`;
    //??
-   Unk(S1A009)`"This is the LeMU infirmary."`;
+   Anon(S1A009)`"This is the LeMU infirmary."`;
 
 });
 hideTextbox();
@@ -172,14 +172,14 @@ unSkippableDelay(10);
 showTextbox();
 text(() => {
    //??
-   Unk(S1A010)`"Hey...are you alright?"`;
+   Anon(S1A010)`"Hey...are you alright?"`;
 
 });
 fgload({ id: 1, name: `YU03BDM`, x: 320, useAnim: true });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A011)`"Shouldn't you rest a little more?"`;
+   Anon(S1A011)`"Shouldn't you rest a little more?"`;
 
 });
 removeFG({ id: 1, useAnim: true });
@@ -192,7 +192,7 @@ bgload({ name: `EV_YU01A`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A012)`"I brought you some headache medicine."`;
+   Anon(S1A012)`"I brought you some headache medicine."`;
    `She held two white pills in her left hand. In her right was a cup filled with water.`;
    `White, white pills, two of them...`;
 
@@ -226,10 +226,10 @@ bgload({ name: `EV_YU01B`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A013)`"What's the matter? Your head hurts, right?"`;
+   Anon(S1A013)`"What's the matter? Your head hurts, right?"`;
    Kid`"Yeah..."`;
    //??
-   Unk(S1A014)`"Then if you don't take these...the pain won't go away."`;
+   Anon(S1A014)`"Then if you don't take these...the pain won't go away."`;
    Kid`"..."`;
    `Pain continued to throb through my skull.`;
    `The pills in her hand would help to ease that pain...`;
@@ -242,24 +242,24 @@ bgload({ name: `EV_YU01A`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A015)`"Oh, I get it!"`;
+   Anon(S1A015)`"Oh, I get it!"`;
    //??
-   Unk(S1A016)`"I see, you..."`;
+   Anon(S1A016)`"I see, you..."`;
    //??
-   Unk(S1A017)`"You don't like the taste, right?"`;
+   Anon(S1A017)`"You don't like the taste, right?"`;
    Kid`"..."`;
    //??
-   Unk(S1A018)`"That's kind of sad."`;
+   Anon(S1A018)`"That's kind of sad."`;
    //??
-   Unk(S1A019)`"But that's okay. This medicine isn't bitter at all."`;
+   Anon(S1A019)`"But that's okay. This medicine isn't bitter at all."`;
    //??
-   Unk(S1A020)`"It's more than not bitter. It's got a mellow, sweet, full flavor that floods throughout the mouth without an aftertaste..."`;
+   Anon(S1A020)`"It's more than not bitter. It's got a mellow, sweet, full flavor that floods throughout the mouth without an aftertaste..."`;
    Kid`"Ooouccch..."`;
    `My headache had gotten worse.`;
    //??
-   Unk(S1A021)`"I told you so."`;
+   Anon(S1A021)`"I told you so."`;
    //??
-   Unk(S1A022)`"If you REALLY can't drink it then I can give it to you anally via a suppository."`;
+   Anon(S1A022)`"If you REALLY can't drink it then I can give it to you anally via a suppository."`;
    `For an instant I feared my chastity might be violated and grabbed the belt of my pants.`;
    Kid`"A-alright. I'll drink it...I'll drink it."`;
    `Feeling half-threatened, I drank the medicine even though I didn't want to.`;
@@ -272,35 +272,35 @@ showTextbox();
 text(() => {
    `${voice(S1A023)}"It's probably just mild barotrauma, or decompression sickness."`;
    //??
-   Unk(S1A024)`"It happens a lot to visitors..."`;
+   Anon(S1A024)`"It happens a lot to visitors..."`;
    //??
-   Unk(S1A025)`"They just feel ill all of the sudden and get carted in here..."`;
+   Anon(S1A025)`"They just feel ill all of the sudden and get carted in here..."`;
    `As she said this she slyly took the cup from my hand.`;
    `I sank my head back into the fluffy pillow.`;
    //??
-   Unk(S1A026)`"It's a bit of a stretch coming down here anyway."`;
+   Anon(S1A026)`"It's a bit of a stretch coming down here anyway."`;
    //??
-   Unk(S1A027)`"People with no experience just jumping to 6 atmospheres for long periods of time. Sheesh."`;
+   Anon(S1A027)`"People with no experience just jumping to 6 atmospheres for long periods of time. Sheesh."`;
    //??
-   Unk(S1A028)`"The air pressure in the earth's atmosphere is made for people to live comfortably."`;
+   Anon(S1A028)`"The air pressure in the earth's atmosphere is made for people to live comfortably."`;
    //??
-   Unk(S1A029)`"Of course people are going to have bad reactions to breathing air this thick."`;
+   Anon(S1A029)`"Of course people are going to have bad reactions to breathing air this thick."`;
    //??
-   Unk(S1A030)`"Air and first love - both should be light. No doubt about that."`;
+   Anon(S1A030)`"Air and first love - both should be light. No doubt about that."`;
    //??
-   Unk(S1A031)`"Coffee and your first TIME... well those of course are better thick."`;
+   Anon(S1A031)`"Coffee and your first TIME... well those of course are better thick."`;
    Kid`"...Huh?"`;
    `She touched my face with the palm of her hand.`;
    `The backs of her slender fingers stroked my cheek.`;
    `The smooth texture of her skin slipped down from my neck to above my chest, stopping there.`;
    //??
-   Unk(S1A032)`"It's alright. You don't seem to have a fever."`;
+   Anon(S1A032)`"It's alright. You don't seem to have a fever."`;
    `She smiled at me.`;
    `Somehow I felt all embarrassed. I pulled the bedcover up to my eyes and hid my face.`;
    //??
-   Unk(S1A033)`"Just rest like that for a while. Okay?"`;
+   Anon(S1A033)`"Just rest like that for a while. Okay?"`;
    //??
-   Unk(S1A034)`"I'll go see what is going on outside."`;
+   Anon(S1A034)`"I'll go see what is going on outside."`;
    Kid`"Outside?"`;
 
 });
@@ -308,9 +308,9 @@ bgload({ name: `EV_YU01B`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A035)`"Yes.... How should I put this?"`;
+   Anon(S1A035)`"Yes.... How should I put this?"`;
    //??
-   Unk(S1A036)`"While you were asleep it seems that there was a bit of trouble..."`;
+   Anon(S1A036)`"While you were asleep it seems that there was a bit of trouble..."`;
    Kid`"???"`;
 
 });
@@ -318,24 +318,24 @@ bgload({ name: `EV_YU01A`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A037)`"Well, I'll explain it later."`;
+   Anon(S1A037)`"Well, I'll explain it later."`;
    //??
-   Unk(S1A038)`"Anyway, for now just rest and don't worry about anything. Okay?"`;
+   Anon(S1A038)`"Anyway, for now just rest and don't worry about anything. Okay?"`;
    `Seeing me nod, she walked away from the bed.`;
    Kid`"Uh, hey! Wait a second!"`;
    //??
-   Unk(S1A039)`"What?"`;
+   Anon(S1A039)`"What?"`;
    Kid`"Just let me ask you one thing."`;
    //??
-   Unk(S1A040)`"What might that be?"`;
+   Anon(S1A040)`"What might that be?"`;
    Kid`"Why...am I here?"`;
    Kid`"You just told me that this is the LeMU infirmary...right?"`;
    //??
-   Unk(S1A041)`"You passed out all of the sudden at the kiosk on Zweite stock."`;
+   Anon(S1A041)`"You passed out all of the sudden at the kiosk on Zweite stock."`;
    //??
-   Unk(S1A042)`"And then some guy and I...hauled you here..."`;
+   Anon(S1A042)`"And then some guy and I...hauled you here..."`;
    //??
-   Unk(S1A043)`"You don't remember what happened?"`;
+   Anon(S1A043)`"You don't remember what happened?"`;
    `Kiosk...at the kiosk...`;
    `In front of a big window...`;
    `A sweet...a sweet smell...`;
@@ -352,7 +352,7 @@ unSkippableDelay(5);
 showTextbox();
 text(() => {
    //??
-   Unk(S1A044)`"It was you, you're the one that hit me"${waitVoice}${noWait}`;
+   Anon(S1A044)`"It was you, you're the one that hit me"${waitVoice}${noWait}`;
 
 });
 hideTextbox();
@@ -367,15 +367,15 @@ text(() => {
    `And I was struck dizzy...`;
    `Like something being stolen away...I lost consciousness...and...`;
    //??
-   Unk(S1A045)`"So? Do you remember?"`;
+   Anon(S1A045)`"So? Do you remember?"`;
    Kid`"Y...yes..."`;
    //??
-   Unk(S1A046)`"Do you have any other questions?"`;
+   Anon(S1A046)`"Do you have any other questions?"`;
    `I shook my head and answered.`;
    //??
-   Unk(S1A047)`"Well be a good boy wait here, alright?"`;
+   Anon(S1A047)`"Well be a good boy wait here, alright?"`;
    //??
-   Unk(S1A048)`"I'll be right back."`;
+   Anon(S1A048)`"I'll be right back."`;
 
 });
 bgload({ name: `BG09A1`, transition: 20 });

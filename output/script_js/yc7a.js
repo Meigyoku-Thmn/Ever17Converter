@@ -1401,18 +1401,18 @@ text(() => {
    `His pliant body shot like a coiled spring...`;
    `Pipi ran down the passages, breaking to the right, and turning to the left. He was aiming for something.`;
    //??
-   Unk(C7A160)`"Pipi..."`;
+   Anon(C7A160)`"Pipi..."`;
    //??
-   Unk(C7A161)`"...Pi...pi..."`;
+   Anon(C7A161)`"...Pi...pi..."`;
    `Only her voice could be heard.`;
    Pipi(PIPI_01)`"Woof!"`;
    `Pipi barked loudly.`;
    `The disk fell out of his mouth to spin across the floor with a rattle.`;
    `Pipi quickly braked with all four legs, turned around to get the disk and dashed across the floor again.`;
    //??
-   Unk(C7A162)`"Pipi..."`;
+   Anon(C7A162)`"Pipi..."`;
    //??
-   Unk(C7A163)`"...Take...pyon..."`;
+   Anon(C7A163)`"...Take...pyon..."`;
 
 });
 bgloadCrop({ name: `EV_CO18A`, transition: 0, x: 0, y: 0, hx: 800, hy: 600 });
@@ -1425,35 +1425,35 @@ text(() => {
    `He tried desperately to pull her along, but just as he could not budge the man before, it was too much for his small frame to budge her.`;
    Pipi(PIPI_15)`"Woof! Woof woof!"`;
    //??
-   Unk(C7A164)`"Pi-Pipi..."`;
+   Anon(C7A164)`"Pi-Pipi..."`;
    `She opened her eyes weakly.`;
    //??
-   Unk(C7A165)`"Oh...where did you go...?"`;
+   Anon(C7A165)`"Oh...where did you go...?"`;
    //??
-   Unk(C7A166)`"I was...so worried...about you..."`;
+   Anon(C7A166)`"I was...so worried...about you..."`;
    `Pipi licked her face.`;
    //??
-   Unk(C7A167)`"...Where is...everyone...?"`;
+   Anon(C7A167)`"...Where is...everyone...?"`;
    Pipi(PIPI_05)`"*whine* *whine*"`;
    //??
-   Unk(C7A168)`"I don't understand when you whine..."`;
+   Anon(C7A168)`"I don't understand when you whine..."`;
    `Pipi pulled on her clothes, and scratched her shoulder, grunting with his effort.`;
    Pipi(PIPI_14)`"Woof! Woof woof! Woof!"`;
    `Perhaps he realized there was nothing he could do, but Pipi barked frantically.`;
    //??
-   Unk(C7A169)`"Hey, Pipi...?"`;
+   Anon(C7A169)`"Hey, Pipi...?"`;
    //??
-   Unk(C7A170)`"...Let's...go...home...?"`;
+   Anon(C7A170)`"...Let's...go...home...?"`;
    //??
-   Unk(C7A171)`"Daddy and...mommy...are waiting...for us..."`;
+   Anon(C7A171)`"Daddy and...mommy...are waiting...for us..."`;
    //??
-   Unk(C7A172)`"So..."`;
+   Anon(C7A172)`"So..."`;
    //??
-   Unk(C7A173)`"...let's...go..."`;
+   Anon(C7A173)`"...let's...go..."`;
    //??
-   Unk(C7A174)`"go...home..."`;
+   Anon(C7A174)`"go...home..."`;
    //??
-   Unk(C7A175)`"Okay...? Pipi..."`;
+   Anon(C7A175)`"Okay...? Pipi..."`;
 
 });
 bgload({ name: `BG35A1`, transition: 20 });

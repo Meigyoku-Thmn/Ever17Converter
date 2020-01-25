@@ -747,7 +747,7 @@ stopBGM();
 showTextbox();
 text(() => {
    //??
-   Unk(T5B003)`"Hello there!"`;
+   Anon(T5B003)`"Hello there!"`;
    Kid`"Huh?"`;
 
 });
@@ -810,7 +810,7 @@ text(() => {
    You(Y5A141)`"Well, what with the accident and all, I imagine the robot is a rusted pile of junk metal at the bottom of the ocean right about now."`;
    Kid`"I'll bet."`;
    //??
-   Unk(T5B017)`"Heave ho, heave ho!"`;
+   Anon(T5B017)`"Heave ho, heave ho!"`;
    `(...What?)`;
    `I...I was hearing voices again.`;
    You(Y5A142)`"Thinking about it, I guess that LeMU is just one massive pile of scrap metal."`;
@@ -839,12 +839,12 @@ text(() => {
    `I was sure I'd heard something...`;
    `This time, I was sure it wasn't my imagination.`;
    //??
-   Unk(T5B019)`"I'm carving."`;
+   Anon(T5B019)`"I'm carving."`;
    //??
-   Unk(T5B020)`"Can't you see. I'm carving..."`;
+   Anon(T5B020)`"Can't you see. I'm carving..."`;
    `(See, I really can hear something.)`;
    //??
-   Unk(T5B021)`"I'm etching some marks into the stone."`;
+   Anon(T5B021)`"I'm etching some marks into the stone."`;
    `(...Stone statue?)`;
 
 });
@@ -890,20 +890,20 @@ text(() => {
    `I sprinted toward the stone statue.`;
    `(What could the girl be doing up there?)`;
    //??
-   Unk(T5B023)`"Well, it's because..."`;
+   Anon(T5B023)`"Well, it's because..."`;
    //??
-   Unk(T5B024)`"I was feeling lonesome."`;
+   Anon(T5B024)`"I was feeling lonesome."`;
    `Lonesome?`;
    //??
-   Unk(T5B025)`"And anyway, I was..."`;
+   Anon(T5B025)`"And anyway, I was..."`;
    //??
-   Unk(T5B026)`"...feeling sad..."`;
+   Anon(T5B026)`"...feeling sad..."`;
    `Sad?`;
    `(What is she talking about?)`;
    //??
-   Unk(T5B043)`"And next..."`;
+   Anon(T5B043)`"And next..."`;
    //??
-   Unk(T5B044)`"Uh oh!"`;
+   Anon(T5B044)`"Uh oh!"`;
    `Just then the girl lost her balance, falling from her awkward place on the pedestal.`;
 
 });
@@ -985,7 +985,7 @@ text(() => {
    `Without thinking I blurted out - `;
    Kid`"Watch your step, okay?"`;
    //??
-   Unk(T5B048)`"Okay!"`;
+   Anon(T5B048)`"Okay!"`;
    `That answer could have been my imagination that time...`;
 
 });
@@ -1143,9 +1143,9 @@ text(() => {
    `...I heard singing.`;
    `It sounded like phrases from a children's song.`;
    //??
-   Unk(Y5A155)`"Moon sprite...shouldering a...long bow."`;
+   Anon(Y5A155)`"Moon sprite...shouldering a...long bow."`;
    //??
-   Unk(Y5A156)`"Waiting inside a dream."`;
+   Anon(Y5A156)`"Waiting inside a dream."`;
    `I felt like...`;
    `I had heard the lyrics somewhere before.`;
 
@@ -1179,7 +1179,7 @@ text(() => {
    `It was the girl after all.`;
    Kid`"Why do you run away from me?"`;
    //??
-   Unk`"........."`;
+   Anon`"........."`;
    Kid`"Oh, well. I guess it doesn't matter."`;
    `It really did matter to me, but since I had finally been able to confront the girl, I felt a surge of relief.`;
    Kid`"Well, why don't we go where everyone else is?"`;
@@ -1190,10 +1190,10 @@ text(() => {
 showTextbox();
 text(() => {
    //??
-   Unk(Y5A158)`"Brother..."`;
+   Anon(Y5A158)`"Brother..."`;
    Kid`"...What?"`;
    //??
-   Unk`"........."`;
+   Anon`"........."`;
    `The girl just stared at my face.`;
    Kid`"L...let's go!"`;
 
@@ -1271,7 +1271,7 @@ text(() => {
    Tsugumi(Y5A163)`"Maybe you better rest for a while."`;
    Kid`"What?"`;
    //??
-   Unk(Y5A164)`"Hey, hey!"`;
+   Anon(Y5A164)`"Hey, hey!"`;
 
 });
 multiremoveFG({ id1: 1, id2: 2, id3: 0, useAnim: true });

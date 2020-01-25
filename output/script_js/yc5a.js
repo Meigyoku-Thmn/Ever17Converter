@@ -389,12 +389,12 @@ text(() => {
    `A ghost...`;
    `A phantom girl...`;
    //??
-   Unk(C5A082)`"Hokuto..."`;
+   Anon(C5A082)`"Hokuto..."`;
    `I heard a tiny voice.`;
    `'Hokuto'...my name...`;
    `Was she calling to me?`;
    //??
-   Unk(C5A083)`"Hokuto..."`;
+   Anon(C5A083)`"Hokuto..."`;
    `Fearfully, I went a little closer.`;
    `The darkness grew deeper.`;
    `And at the same time, the light she gave off grew more brilliant.`;
@@ -402,7 +402,7 @@ text(() => {
    `It had to be...`;
    `She was...she was...the ghost...I had seen...`;
    //??
-   Unk(C5A084)`"The empty fall sky...Hokuto is calling out...Brings a chill to me."`;
+   Anon(C5A084)`"The empty fall sky...Hokuto is calling out...Brings a chill to me."`;
 
 });
 hideTextbox();

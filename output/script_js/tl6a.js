@@ -1005,7 +1005,7 @@ hideTextbox();
 showTextbox();
 text(() => {
    //??
-   Unk(VSE03_06)`"......! ......!"`;
+   Anon(VSE03_06)`"......! ......!"`;
    `What the...?`;
    `I heard a strange sound.`;
    `I re-inserted the voice converter into my ear.`;
@@ -1015,13 +1015,13 @@ text(() => {
 showTextbox();
 text(() => {
    //??
-   Unk(T6T222)`"Come in..."`;
+   Anon(T6T222)`"Come in..."`;
    //??
-   Unk(T6T223)`"IBF 3, please respond"`;
+   Anon(T6T223)`"IBF 3, please respond"`;
    //??
-   Unk(T6T224)`"This is the emergency rescue team from the Maritime Defense Force."`;
+   Anon(T6T224)`"This is the emergency rescue team from the Maritime Defense Force."`;
    //??
-   Unk(T6T225)`"We are under the direction of Insel null."`;
+   Anon(T6T225)`"We are under the direction of Insel null."`;
    `Was I actually hearing someone's voice over the speaker!?`;
 
 });

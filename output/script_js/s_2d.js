@@ -940,7 +940,7 @@ playSFX({ name: `SE01_02`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    //??
-   Unk(T2C339)`"Whack!"`;
+   Anon(T2C339)`"Whack!"`;
 
 });
 playSFX({ name: `SE05_05`, a1: 0, volume: 100 });
@@ -2190,7 +2190,7 @@ text(() => {
    `Uh...it had to be...`;
    Kid`"You...I found you!"`;
    //??
-   Unk(S2C342)`"!?"`;
+   Anon(S2C342)`"!?"`;
    `As if it had given up, the silhouette started toward me.`;
 
 });
@@ -2354,7 +2354,7 @@ text(() => {
    `I called out to that clinging 'something.'`;
    Kid`"Uh, isn't that tiring? It sure looks dangerous."`;
    //??
-   Unk(S2C346)`"...!"`;
+   Anon(S2C346)`"...!"`;
    Kid`"But you sure have got a lot of guts."`;
    Kid`"You're tougher than I thought, Takeshi."`;
 

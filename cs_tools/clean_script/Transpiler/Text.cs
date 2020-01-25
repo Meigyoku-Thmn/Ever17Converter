@@ -46,7 +46,7 @@ class Text {
                name = Config.jsInvalidChar1.Replace(name, "_");
                name = Config.jsInvalidChar2.Replace(name, "");
                if (Config.codeProvider.IsValidIdentifier(name) == false) {
-                  if (name[0] == '?') name = "Unk";
+                  if (name[0] == '?') name = "Anon";
                   else throw new InvalidSyntaxException($"Unknown name tag format at line {inputLine + 1} of file '{filePath}'");
                }
                if (name != name_comment)

@@ -1238,7 +1238,7 @@ playSFX({ name: `SE00_01`, a1: 0, volume: 100 });
 showTextbox();
 text(() => {
    //??
-   Unk(S3B109)`"What are you doing?"`;
+   Anon(S3B109)`"What are you doing?"`;
    `Suddenly the door opened...`;
    `White light poured into my eyes.`;
    Kid`"Ah...ah...ungh..."`;
@@ -1277,7 +1277,7 @@ text(() => {
    `It smelled of disinfectant...`;
    `Was this the...infirmary?`;
    //??
-   Unk(S3B110)`"Are you awake now?"`;
+   Anon(S3B110)`"Are you awake now?"`;
    `A shadow passed above me on the bed.`;
 
 });

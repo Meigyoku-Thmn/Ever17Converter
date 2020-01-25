@@ -219,13 +219,13 @@ stopSFX()
 showTextbox();
 text(() => {
    //??
-   Unk(S1A195)`"Heeeeey! Somebooooody!"`;
+   Anon(S1A195)`"Heeeeey! Somebooooody!"`;
    //??
-   Unk(S1A196)`"Somebooooody!"`;
+   Anon(S1A196)`"Somebooooody!"`;
    //??
-   Unk(S1A197)`"Is there anybody there?"`;
+   Anon(S1A197)`"Is there anybody there?"`;
    //??
-   Unk(S1A198)`"Anybody?"`;
+   Anon(S1A198)`"Anybody?"`;
    `Two girl's voices could be heard from within the elevator.`;
 
 });
@@ -243,9 +243,9 @@ text(() => {
    You(S1A199)`"Hold on just a little longer!"`;
    You(S1A200)`"We're going to open the door for you!"`;
    //??
-   Unk(S1A201)`"Alright! Oh good!"`;
+   Anon(S1A201)`"Alright! Oh good!"`;
    //??
-   Unk(S1A202)`"I was so worried that no one would come."`;
+   Anon(S1A202)`"I was so worried that no one would come."`;
 
 });
 fgload({ id: 1, name: `YU12BDM`, x: 320, useAnim: true });
@@ -314,7 +314,7 @@ text(() => {
    Kid`"Th-thanks..."`;
    `My finger smelled faintly sweet.`;
    //??
-   Unk(S1A211)`"Uh, the door still won't open?"`;
+   Anon(S1A211)`"Uh, the door still won't open?"`;
 
 });
 fgload({ id: 1, name: `YU03BDL`, x: 320, useAnim: true });
@@ -405,7 +405,7 @@ text(() => {
    `It was a bit nice...`;
    You(S1A222)`"Wait! Hold on! We're almost there!"`;
    //??
-   Unk(S1A223)`"Please help."`;
+   Anon(S1A223)`"Please help."`;
    `You took the marker and started prying it between the doors again.`;
    `She stuck her finger in the gap.`;
    `And then she opened the door with a flourish.`;
@@ -418,11 +418,11 @@ stopSFX()
 showTextbox();
 text(() => {
    //??
-   Unk(S1A224)`"Wow!"`;
+   Anon(S1A224)`"Wow!"`;
    `With You on my shoulders, I looked up.`;
    `A girl in a uniform was peeking down.`;
    //??
-   Unk(S1A225)`"Whoa!"`;
+   Anon(S1A225)`"Whoa!"`;
    You(S1A226)`"Ahhh!"`;
 
 });
@@ -479,13 +479,13 @@ bgload({ name: `EV_SA01C`, transition: 20 });
 showTextbox();
 text(() => {
    //??
-   Unk(S1A231)`"Wah-ha-ha-ha..."`;
+   Anon(S1A231)`"Wah-ha-ha-ha..."`;
    `The girls...`;
    `The girls were pointing at me and laughing.`;
    `Their innocent faces were enveloped in celestial-like light.`;
    `Just like a couple of angels...staring down from heaven.`;
    //??
-   Unk(S1A232)`"Hey, are you alright?"`;
+   Anon(S1A232)`"Hey, are you alright?"`;
    `I didn't know why...`;
    `It was a bizarre sense of something-like deja vu-that came welling up in my mind.`;
    `I felt like I had seen this all before.`;
@@ -493,11 +493,11 @@ text(() => {
    `Like it was a fragment of some familiar everyday scenery...`;
    `I couldn't explain it, but somehow I had that vague sense about things.`;
    //??
-   Unk(S1A233)`"Huh? Why is the floor all wet? Did a water pipe burst?"`;
+   Anon(S1A233)`"Huh? Why is the floor all wet? Did a water pipe burst?"`;
    `(Oh, they don't know because they've been stuck in the elevator.)`;
    `As I was about to answer, the girl cut me off.`;
    //??
-   Unk(S1A234)`"But that's so important as..."`;
+   Anon(S1A234)`"But that's so important as..."`;
 
 });
 bgload({ name: `BG22B1`, transition: 20 });
@@ -505,7 +505,7 @@ multifgload2({ id1: 1, id2: 2, name1: `YU17BWM`, name2: `SA12ADM`, x1: 128, x2: 
 showTextbox();
 text(() => {
    //??
-   Unk(S1A235)`"...just what are you doing here, Nakkyu?"`;
+   Anon(S1A235)`"...just what are you doing here, Nakkyu?"`;
    `The girl said this as she descended from the elevator, patting her clothes back into place.`;
 
 });

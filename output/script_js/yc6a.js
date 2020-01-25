@@ -589,7 +589,7 @@ text(() => {
    Takeshi(C6A023)`"Hey mister! Are you alright!?"`;
    `Takeshi rushed over to the man and lifted him into a sitting position.`;
    //??
-   Unk`"........."`;
+   Anon`"........."`;
    `The man didn't reply to Takeshi's call, he just sat there with his eyes closed.`;
 
 });
