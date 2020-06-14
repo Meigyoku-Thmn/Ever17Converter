@@ -1,0 +1,27 @@
+{
+   "root": true,
+   "parser": "@typescript-eslint/parser",
+   "plugins": [
+      "@typescript-eslint"
+   ],
+   "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+   ],
+   "rules": {
+      "prefer-const": [
+         "warn",
+         {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+         }
+      ],
+      "no-var": [
+         "warn"
+      ],
+      "no-constant-condition": 0,
+      "semi": "warn",
+      "@typescript-eslint/no-explicit-any": "off",
+      "no-unused-vars": "warn"
+   }
+}

@@ -15,6 +15,17 @@
          }
       },
       {
+         "name": "JS To Rpy",
+         "type": "coreclr",
+         "request": "launch",
+         "program": "${workspaceFolder}/cs_tools/js2rpy/bin/Debug/netcoreapp3.1/js2rpy.exe",
+         "cwd": "${workspaceFolder}/cs_tools/js2rpy",
+         "preLaunchTask": "build_js2rpy",
+         "logging": {
+            "moduleLoad": false
+         }
+      },
+      {
          "name": "Python Attach",
          "type": "python",
          "request": "attach",
@@ -33,6 +44,6 @@
          "request": "launch",
          "name": "Launch Game Mod",
          "program": "${workspaceFolder}\\index.js"
-      }
+      },
    ]
 }

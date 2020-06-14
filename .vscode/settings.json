@@ -22,5 +22,6 @@
    },
    "python.pythonPath": "C:\\Python27\\python.exe",
    "editor.tabSize": 3,
-   "editor.detectIndentation": false
+   "editor.detectIndentation": false,
+   "eslint.enable": true
 }

@@ -1,0 +1,20 @@
+{
+   "compilerOptions": {
+      "module": "System",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outDir": "built",
+      "sourceMap": true,
+      "target": "ES2017",
+      "moduleResolution": "Node",
+      "skipLibCheck": true
+   },
+   "include": [
+      "host.ts"
+   ],
+   "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+   ]
+}

@@ -2,6 +2,18 @@
    "version": "2.0.0",
    "tasks": [
       {
+         "label": "build_js2rpy",
+         "command": "dotnet",
+         "type": "process",
+         "args": [
+            "build",
+            "${workspaceFolder}/cs_tools/js2rpy/js2rpy.csproj",
+            "/property:GenerateFullPaths=true",
+            "/consoleloggerparameters:NoSummary"
+         ],
+         "problemMatcher": "$msCompile"
+      },
+      {
          "label": "build_clean_script",
          "command": "dotnet",
          "type": "process",
