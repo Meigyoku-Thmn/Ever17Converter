@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 namespace extractor {
    static class FFMpeg {
       // ffmpeg -y -i bgm06.wav -c:a libvorbis -q:a 5.0 bgm06.ogg
-      // ffmpeg -y -i bgm06.wav -c:a libopus -compression_level 5 bgm06.opus
       static readonly string CvPath = @"/ffmpeg/bin/ffmpeg.exe";
       public static void ToOggFile(this MemoryStream inp, string outName) {
          var proc = new Process {
@@ -23,13 +22,8 @@ namespace extractor {
             }
          };
          proc.Start();
-         try {
-            Task.Run(() => {
-               proc.StandardInput.BaseStream.Write(inp.GetBuffer(), 0, (int)inp.Length);
-               proc.StandardInput.Close();
-            }).Wait();
-         } catch (Exception e) when (e.InnerException is IOException) {
-         }
+         proc.StandardInput.BaseStream.Write(inp.GetBuffer(), 0, (int)inp.Length);
+         proc.StandardInput.Close();
          proc.WaitForExit();
          var error = proc.StandardError.ReadToEnd();
          if (proc.ExitCode != 0) throw new Exception($"ffmpeg has exited with code {proc.ExitCode}\r\n{error}");
@@ -54,10 +48,7 @@ namespace extractor {
          var outputTask = Task.Run(() => {
             proc.StandardOutput.BaseStream.CopyTo(outStream);
          });
-         try {
-            Task.WaitAll(inputTask, outputTask);
-         } catch (Exception e) when (e.InnerException is IOException) {
-         }
+         Task.WaitAll(inputTask, outputTask);
          proc.WaitForExit();
          var error = proc.StandardError.ReadToEnd();
          if (proc.ExitCode != 0) throw new Exception($"ffmpeg has exited with code {proc.ExitCode}\r\n{error}");

@@ -1,15 +1,16 @@
 import fs from 'fs';
 import path from 'path';
-import frida, {
-   Session, ScriptMessageHandler, Script, ScriptRuntime, Message, MessageType
-} from "frida";
+import * as frida from 'frida';
+import { Session, ScriptMessageHandler, Script, ScriptRuntime, Message, MessageType } from 'frida';
 import watch from 'node-watch';
-import { isNumber } from 'util';
 
-const MOD_PATH = "built/injected.js";
-const MOD_SCRIPT_CONTENT = fs.readFileSync(MOD_PATH, "utf8");
-const SCRIPT_PATH = "C:/Home/Program File/Infinity Series/Ever17/script.dat";
-const TARGET_PATH = "C:/Home/Program File/Infinity Series/Ever17/ever17PC_us.exe";
+function readJSON(path: string) {
+   return JSON.parse(fs.readFileSync(path, 'utf8'));
+}
+const PACKAGE_JSON = readJSON("package.json");
+const MOD_PATH = __dirname + "/injected.js";
+const SCRIPT_PATH = PACKAGE_JSON.scriptPath;
+const TARGET_PATH = PACKAGE_JSON.targetPath;
 
 type Metadata = Record<number, { fileSize: number, fileName: string }>;
 
@@ -24,7 +25,9 @@ type Metadata = Record<number, { fileSize: number, fileName: string }>;
 
    const watcher = watch(MOD_PATH, async evt => {
       if (evt != "update") return;
+      console.log("Unload old injected js script.");
       await script.unload();
+      console.log("Load new injected js script.");
       script = await loadScript(session, messageEvent);
       await script.load();
    });
@@ -41,11 +44,11 @@ type Metadata = Record<number, { fileSize: number, fileName: string }>;
          return;
       switch (message.payload.command) {
          case "GetScriptMetadata":
-            console.log('Received GetScriptMetadata message');
+            console.log('Received GetScriptMetadata command');
             script.post({ type: "ScriptMetadata", message: metadata });
             break;
          case "GetUnitData":
-            console.log('Received GetUnitData message');
+            console.log('Received GetUnitData command');
             try {
                const unitBuf = fs.readFileSync("base_script/en/" + message.payload.unitName);
                injectBufferByConfig(unitBuf, message.payload.unitName);
@@ -84,14 +87,15 @@ function loadScriptMetadata(): Metadata {
 }
 
 async function loadScript(session: Session, event: ScriptMessageHandler): Promise<Script> {
-   const script = await session.createScript(MOD_SCRIPT_CONTENT, { name: MOD_PATH, runtime: ScriptRuntime.V8 });
+   const scriptContent = fs.readFileSync(MOD_PATH, "utf8");
+   const script = await session.createScript(scriptContent, { name: MOD_PATH, runtime: ScriptRuntime.V8 });
    script.message.connect(event);
    return script;
 }
 
 function injectBufferByConfig(buf: Buffer, name: string): void {
    // please don't use characters outside ascii table, this is just for reverse engineering
-   const config = JSON.parse(fs.readFileSync("./scr_mod.json", 'utf8'));
+   const config = readJSON("./scr_mod.json");
    const entryPoint = buf.readUInt32LE(12);
    let hookName = config.fileRedirect[name]?.toString().trim() as string;
    if (hookName?.length === 0) {
@@ -102,7 +106,7 @@ function injectBufferByConfig(buf: Buffer, name: string): void {
       buf.writeUInt8(0x00, entryPoint + 2 + hookName.length);
    }
    const newEntryPoint = parseInt(config.entryPointRedirect[name]);
-   if (isNumber(newEntryPoint)) {
+   if (typeof newEntryPoint === 'number') {
       buf.writeUInt32LE(newEntryPoint, 12);
    }
    // too lazy to check for error

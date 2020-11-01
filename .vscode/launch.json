@@ -42,8 +42,14 @@
       {
          "type": "node",
          "request": "launch",
-         "name": "Launch Game Mod",
-         "program": "${workspaceFolder}\\index.js"
+         "name": "Launch Frida",
+         "cwd": "${workspaceRoot}",
+         "runtimeExecutable": "npm",
+         "runtimeArgs": [
+            "run-script",
+            "frida-debug",
+         ],
+         "port": 9229
       },
    ]
 }

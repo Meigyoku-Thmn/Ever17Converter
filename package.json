@@ -3,29 +3,43 @@
    "version": "1.0.0",
    "description": "friaprj",
    "main": "mod.js",
+   "//": "If you use relative path on Windows, you can use the 'call' command before the path to run an executable",
+   "targetPath": "../ever17PC_us/ever17PC_us.exe",
+   "scriptPath": "../ever17PC_us/script.dat",
+   "renpyPythonPath": "C:/renpy/lib/windows-i686/python",
    "scripts": {
-      "setup": "npm i --production",
-      "rpy": "C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj || true",
-      "rpy-dbg": "cross-env use_debug=true C:/renpy/lib/windows-i686/python -EO C:/renpy/renpy.py renpyprj || true",
-      "e17": "C:/Home/Program^ File/Infinity^ Series/Ever17/ever17PC_us.exe",
+      "//1": "---- Run the Renpy project directly ----",
+      "rpy": "cross-var $npm_package_renpyPythonPath -EO C:/renpy/renpy.py renpyprj || true",
+      "//2": "---- Run the Renpy project directly with debug mode on ----",
+      "rpy-dbg": "cross-var cross-env use_debug=true $npm_package_renpyPythonPath -EO C:/renpy/renpy.py renpyprj || true",
+      "//3": "---- Run Ever17 executable ----",
+      "ever17": "cross-var call $npm_package_targetPath",
+      "//4": "---- Remove Renpy compiled files ----",
       "clear-rpyc": "cd ./renpyprj/game && del /Q /F /S *.rpyc 1>nul && cd ../..",
-      "install-pydep": "C:/renpy/lib/windows-i686/python -m pip install --target renpyprj/game/python-packages -r requeriments.txt"
+      "//5": "---- Install dependencies for the Renpy project ----",
+      "install-pydep": "cross-var $npm_package_renpyPythonPath -m pip install --target renpyprj/game/python-packages -r requeriments.txt",
+      "//6": "---- Run the Frida project ----",
+      "frida": "tsc-watch --onFirstSuccess \"node --enable-source-maps ./frida-built/host.js\"",
+      "//7": "---- Run the Frida project in debug mode ----",
+      "frida-debug": "tsc-watch --onFirstSuccess \"node --inspect-brk --enable-source-maps ./frida-built/host.js\""
    },
    "author": "",
    "license": "ISC",
    "dependencies": {
-      "esprima": "^4.0.1",
-      "esquery": "^1.3.1",
-      "frida": "^12.9.8",
-      "node-watch": "^0.6.4"
+      "frida": "^12.10.4",
+      "node-watch": "^0.6.4",
+      "press-any-key": "^0.1.1"
    },
    "devDependencies": {
       "@types/frida-gum": "^15.3.0",
-      "@types/node": "^14.0.13",
-      "@typescript-eslint/eslint-plugin": "^3.2.0",
-      "@typescript-eslint/parser": "^3.2.0",
+      "@types/node": "^14.0.14",
+      "@typescript-eslint/eslint-plugin": "^3.4.0",
+      "@typescript-eslint/parser": "^3.4.0",
       "cross-env": "^7.0.2",
-      "eslint": "^7.2.0"
+      "cross-var": "^1.1.0",
+      "eslint": "^7.3.1",
+      "tsc-watch": "^4.2.9",
+      "typescript": "^3.9.5"
    },
    "repository": {}
 }

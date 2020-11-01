@@ -1,9 +1,9 @@
 {
    "fileRedirect": {
-      "op00.scr": "s_1a.scr"
+      "op0gg0.scr": "s_1ag.scr"
    },
    "entryPointRedirect": {
-      "s_1a.scr": "0x00000e43"
+      "s_gg1a.scr": "0x00000e43"
    },
    "overwrite": {
       "s_2dđa.scr": [

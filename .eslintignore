@@ -7,4 +7,6 @@ coverage
 # ignore itself
 .eslintrc.js
 # ignore script
+frida-built
+# ignore output
 output

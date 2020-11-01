@@ -1,17 +1,19 @@
 {
    "compilerOptions": {
-      "module": "System",
+      "module": "CommonJS",
       "noImplicitAny": false,
       "removeComments": true,
       "preserveConstEnums": true,
-      "outDir": "built",
+      "outDir": "frida-built",
       "sourceMap": true,
       "target": "ES2017",
       "moduleResolution": "Node",
-      "skipLibCheck": true
+      "skipLibCheck": true,
+      "esModuleInterop": true,
    },
    "include": [
-      "host.ts"
+      "frida/host.ts",
+      "frida/injected.ts"
    ],
    "exclude": [
       "node_modules",
