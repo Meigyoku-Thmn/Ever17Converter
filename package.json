@@ -19,27 +19,34 @@
       "//5": "---- Install dependencies for the Renpy project ----",
       "install-pydep": "cross-var $npm_package_renpyPythonPath -m pip install --target renpyprj/game/python-packages -r requeriments.txt",
       "//6": "---- Run the Frida project ----",
-      "frida": "tsc-watch --onFirstSuccess \"node --enable-source-maps ./frida-built/host.js\"",
+      "frida": "tsc-watch --onFirstSuccess \"ts-node ./frida/host.ts\"",
       "//7": "---- Run the Frida project in debug mode ----",
-      "frida-debug": "tsc-watch --onFirstSuccess \"node --inspect-brk --enable-source-maps ./frida-built/host.js\""
+      "frida-debug": "tsc-watch --onFirstSuccess \"node --inspect-brk ./frida/host.ts\"",
+      "//8": "---- Cleanup ----",
+      "clean": "rimraf frida-built",
+      "//9": "---- Build for Frida ----",
+      "build-frida": "browserify frida/injected.ts -p [ tsify ] > frida-built/injected.js"
    },
    "author": "",
    "license": "ISC",
    "dependencies": {
-      "frida": "^12.10.4",
-      "node-watch": "^0.6.4",
-      "press-any-key": "^0.1.1"
+      "frida": "^14.0.5",
+      "node-watch": "^0.7.0"
    },
    "devDependencies": {
-      "@types/frida-gum": "^15.3.0",
-      "@types/node": "^14.0.14",
-      "@typescript-eslint/eslint-plugin": "^3.4.0",
-      "@typescript-eslint/parser": "^3.4.0",
+      "@types/frida-gum": "^16.2.0",
+      "@types/node": "^14.14.6",
+      "@typescript-eslint/eslint-plugin": "^4.6.0",
+      "@typescript-eslint/parser": "^4.6.0",
+      "browserify": "^17.0.0",
       "cross-env": "^7.0.2",
       "cross-var": "^1.1.0",
-      "eslint": "^7.3.1",
+      "eslint": "^7.12.1",
+      "rimraf": "^3.0.2",
+      "ts-node": "^9.0.0",
       "tsc-watch": "^4.2.9",
-      "typescript": "^3.9.5"
+      "tsify": "^5.0.2",
+      "typescript": "^3.9.7"
    },
    "repository": {}
 }

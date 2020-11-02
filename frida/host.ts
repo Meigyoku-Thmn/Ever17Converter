@@ -8,7 +8,7 @@ function readJSON(path: string) {
    return JSON.parse(fs.readFileSync(path, 'utf8'));
 }
 const PACKAGE_JSON = readJSON("package.json");
-const MOD_PATH = __dirname + "/injected.js";
+const MOD_PATH = path.join(__dirname, "../frida-built/injected.js");
 const SCRIPT_PATH = PACKAGE_JSON.scriptPath;
 const TARGET_PATH = PACKAGE_JSON.targetPath;
 

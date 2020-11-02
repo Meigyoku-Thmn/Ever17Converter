@@ -1,5 +1,3 @@
-frida-built
-
 #general swap/backup files
 *.so
 *.log

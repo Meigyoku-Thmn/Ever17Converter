@@ -20,7 +20,7 @@
       "cs_tools/**/obj": true,
       "cs_tools/**/*.csproj.user": true,
       "cs_tools/**/Properties": true,
-      "frida-built": true,
+      // "frida-built": true,
    },
    "editor.tabSize": 3,
    "editor.detectIndentation": false,

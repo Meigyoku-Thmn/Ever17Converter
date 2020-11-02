@@ -1,4 +1,4 @@
-import { createCStruct, Int32, Pointer, UInt32 } from './frida-struct';
+import { createCStruct, int32, pointer, uint32 } from './frida-struct';
 import { keep, wrapCdecl2Stdcall, sendCommand, getUnitData } from './utils';
 
 console.log(`injected.js opened.`);
@@ -42,18 +42,18 @@ console.log(`injected.js opened.`);
 // -- ADD VSYNC --
 (function () {
    const OPENADAPTERFROMHDC = {
-      hDc: Pointer,
-      hAdapter: UInt32,
+      hDc: pointer,
+      hAdapter: uint32,
       AdapterLuid: {
-         LowPart: UInt32,
-         HighPart: Int32,
+         LowPart: uint32,
+         HighPart: int32,
       },
-      VidPnSourceId: UInt32,
+      VidPnSourceId: uint32,
    };
    const WAITFORVERTICALBLANKEVENT = {
-      hAdapter: UInt32,
-      hDevice: UInt32,
-      VidPnSourceId: UInt32,
+      hAdapter: uint32,
+      hDevice: uint32,
+      VidPnSourceId: uint32,
    };
 
    const S_OK = 0;
@@ -93,7 +93,7 @@ console.log(`injected.js opened.`);
          }
          Thread.sleep(delay / 1000);
       }
-   }, 'void', ['uint']);
+   }, 'void', ['uint'], 'mscdecl');
    const WaitForVBlankWrapper = wrapCdecl2Stdcall(WaitForVBlank, 1);
    const VBlankPatchPoint = ptr(0x0042F90F);
    Memory.patchCode(VBlankPatchPoint, 6, code => {
@@ -103,4 +103,4 @@ console.log(`injected.js opened.`);
       cw.flush();
    });
    keep(OpenAdapterFromHdc, WaitForVerticalBlankEvent, GetDC, we, WaitForVBlank, WaitForVBlankWrapper);
-})();
+});
