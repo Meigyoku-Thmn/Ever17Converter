@@ -45,7 +45,9 @@ screen main_menu():
                   style "bubble_text" xcenter 0.5
             null width 10
             text ("""A1. Prologue  Premonitions & Omens
-{center}May  1st{/center}
+{center}ABC{/center}
+{center}May  1st May  1st May  1st May  1st May  1st May  1st{/center}
+{center}TTT{/center}
 [Park staff]
 "Are you having stomach pains?"
     It was the tanuki...

@@ -4,11 +4,12 @@ import * as frida from 'frida';
 import { Session, ScriptMessageHandler, Script, ScriptRuntime, Message, MessageType } from 'frida';
 import watch from 'node-watch';
 
+console.log('Remember to build your shellcode!');
 function readJSON(path: string) {
    return JSON.parse(fs.readFileSync(path, 'utf8'));
 }
 const PACKAGE_JSON = readJSON("package.json");
-const MOD_PATH = path.join(__dirname, "../frida-built/injected.js");
+const MOD_PATH = path.join(__dirname, "../frida-built/shellcode.js");
 const SCRIPT_PATH = PACKAGE_JSON.scriptPath;
 const TARGET_PATH = PACKAGE_JSON.targetPath;
 
@@ -19,17 +20,30 @@ type Metadata = Record<number, { fileSize: number, fileName: string }>;
    const pid = await frida.spawn(TARGET_PATH);
    const session = await frida.attach(pid);
 
-   let script = await loadScript(session, messageEvent);
+   let script: Script;
+   try {
+      script = await loadScript(session, messageEvent);
+   } catch (err) {
+      console.error(err);
+      await frida.kill(pid);
+      console.log('Target process was terminated.');
+      process.exit();
+   }
    await script.load();
    await frida.resume(pid);
 
+   process.on('SIGINT', () => {
+      frida.kill(pid);
+      console.log('Target process was terminated.');
+   });
+
    const watcher = watch(MOD_PATH, async evt => {
       if (evt != "update") return;
-      console.log("Unload old injected js script.");
       await script.unload();
-      console.log("Load new injected js script.");
+      console.log("Unloaded old shellcode js script.");
       script = await loadScript(session, messageEvent);
       await script.load();
+      console.log("Loaded new shellcode js script.");
    });
    session.detached.connect(() => {
       console.log("Session detached.");
@@ -88,7 +102,10 @@ function loadScriptMetadata(): Metadata {
 
 async function loadScript(session: Session, event: ScriptMessageHandler): Promise<Script> {
    const scriptContent = fs.readFileSync(MOD_PATH, "utf8");
-   const script = await session.createScript(scriptContent, { name: MOD_PATH, runtime: ScriptRuntime.V8 });
+   const script = await session.createScript(scriptContent, {
+      name: MOD_PATH.replace(/\.[^/.]+$/, ""),
+      runtime: ScriptRuntime.Default
+   });
    script.message.connect(event);
    return script;
 }

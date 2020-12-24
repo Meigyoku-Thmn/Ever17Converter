@@ -28,9 +28,10 @@ label splashscreen:
 label start:
    play music "../../output/asset/bgm/bgm06.ogg"
    scene bg room
-   e """You've created a new Ren'Py game. You've created a new Ren'Py game. You've created a new Ren'Py game.
+   e """You've created a new Ren'Py game.
 {center}You've created a new Ren'Py game.{/center}
 {right}You've created a new Ren'Py game.{/right}
+You've created a new Ren'Py game.
 """
    e "Once you add a story, pictures, and music, you can release it to the world!"
 

@@ -5,7 +5,7 @@ import types
 from renpy.defaultstore import config, Fixed
 from functools import wraps, partial
 Style = renpy.styledata.styleclass.Style
-from renpy.text.text import Text
+from renpy.text.text import Text, Layout, DisplayableSegment
 style = renpy.store.style
 im = renpy.display.im
 
@@ -301,15 +301,57 @@ def align_tag(mode):
          stl['xcenter'] = 0.5
       stl['ypos'] = 0
       d = Fixed(Text(contents, text_instance.slow, None, None, text_instance.slow_done, **stl))
+      d.text_from_align_tag = True
+      d.child.text_from_align_tag = True
       return [
          (renpy.TEXT_DISPLAYABLE, d)
       ]
    return impl
 
+def hook_text_layout():
+   ori_ctor = Layout.__init__
+   def ctor(layout, text, *args, **kwargs):
+      text.last_layout = layout
+      return ori_ctor(layout, text, *args, **kwargs)
+   Layout.__init__ = ctor;
+
+def hook_displayable_segment():
+   ori_assign_times = DisplayableSegment.assign_times
+   def assign_times(segment, gt, glyphs):
+      end_time = current_time = ori_assign_times(segment, gt, glyphs)
+      if getattr(segment.d, 'text_from_align_tag', False):
+         segment.d.child.slow_text_base_time = current_time
+         end_time = current_time + segment.d.child.last_layout.lines[-1].glyphs[-1].time
+      return end_time
+   DisplayableSegment.assign_times = assign_times
+   
+def hook_text():
+   Render = renpy.display.render.Render
+   ori_text_render = Text.render;
+   def text_render(text_element, width, height, st, at):
+      has_align_tag_flag = getattr(text_element, 'text_from_align_tag', False)
+      if has_align_tag_flag:
+         base_time = getattr(text_element, 'slow_text_base_time', float("inf"))
+         if base_time == float('inf'):
+            print 'Infinity'
+         st = st - base_time
+      return ori_text_render(text_element, width, height, st, at)
+   Text.render = text_render;
+   ori_text_event = Text.event
+   def text_event(text_element, ev, x, y, st):
+      has_align_tag_flag = getattr(text_element, 'text_from_align_tag', False)
+      if has_align_tag_flag:
+         base_time = getattr(text_element, 'slow_text_base_time', float("inf"))
+         st = st - base_time
+      return ori_text_event(text_element, ev, x, y, st)
+   Text.event = text_event
+
 def init():
    if renpy.version(tuple=True) != (7, 3, 5, 606):
       raise Exception("You are using a Renpy version that is newer or older than what I expected. Please check.")
    Text.apply_custom_tags = text_apply_custom_tags
-   
    renpy.config.custom_text_tags["center"] = align_tag('center')
    renpy.config.custom_text_tags["right"] = align_tag('right')
+   hook_text_layout()
+   hook_displayable_segment()
+   hook_text()

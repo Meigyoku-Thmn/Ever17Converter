@@ -38,7 +38,7 @@ screen clearlist():
       map={"value": 'man_ycrop', "is_scrolling": "is_scrolling"})
    default dragging = None
    default last_st = 0.0
-   default s = objectview(me.scope, mappee=scroller, map={"man_ycrop": 'value'})
+   default s = objectview(me.scope) #, mappee=scroller, map={"man_ycrop": 'value'})
 
    # functions
    python:
