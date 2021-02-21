@@ -37,9 +37,9 @@ struct Header {
 }
 ```
 - `magic` must be `"LNK\0"`;
-- `padding` is just padding and always zero.
+- `padding` is just padding, value doesn't matter.
 
-Right after that, there is an array that has `nRecords` pieces of record's information (Index), corresponding to each records respectively. Each piece of information has this structure:
+Right after that, there is an array that has `nRecords` pieces of record information (Index), corresponding to each records. Each piece of information has this structure:
 ```c
 struct Index {
    uint32_t relOffset;
@@ -48,7 +48,7 @@ struct Index {
 }
 ```
 - `relOffset` is the relative offset of the corresponding record in the archive.<br>Absolute offset is `sizeof(Header) + nRecords * sizeof(Index) + relOffset`;
-- `attributes` is the attributes of the corresponding record in the archive;
+- `attributes` is the attributes of the corresponding record in the archive, contains the record's size and a compression flag;
 - `name` is the __file name__ of the corresponding record. This is a __null-terminated__ string, the length of this string doesn't exceed 24 bytes, including the terminating NULL.
 
 ## About the attributes of record
