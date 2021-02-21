@@ -116,6 +116,7 @@ function injectBufferByConfig(buf: Buffer, name: string): void {
    const entryPoint = buf.readUInt32LE(12);
    let hookName = config.fileRedirect[name]?.toString().trim() as string;
    if (hookName?.length === 0) {
+      // write to entrypoint a command that jumps to hookName file
       hookName = path.basename(hookName, ".scr").toUpperCase();
       buf.writeUInt8(0x10, entryPoint);
       buf.writeUInt8(0x01, entryPoint + 1);
@@ -123,12 +124,14 @@ function injectBufferByConfig(buf: Buffer, name: string): void {
       buf.writeUInt8(0x00, entryPoint + 2 + hookName.length);
    }
    const newEntryPoint = parseInt(config.entryPointRedirect[name]);
+   // change entrypoint to another point in the file
    if (typeof newEntryPoint === 'number') {
       buf.writeUInt32LE(newEntryPoint, 12);
    }
    // too lazy to check for error
    const overwriteArr = config.overwrite[name];
    if (overwriteArr != null && Array.isArray(overwriteArr)) {
+      // patch some bytecodes
       for (const item of overwriteArr) {
          const offset = parseInt(item.offset) + parseInt(item.shift);
          const byteArr = item.content.split(' ').filter(e => e.trim().length > 0).map(e => parseInt(e, 16));

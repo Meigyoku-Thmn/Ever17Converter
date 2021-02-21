@@ -114,7 +114,7 @@ namespace converter {
          //Read opcodes						
          FileInfo decF = new FileInfo(
             Path.Combine(scriptF.FullName, Path.GetFileNameWithoutExtension(file.Name)) + ".dec");
-         input.BaseStream.Position = jumpTable[0];
+         input.BaseStream.Position = jumpTable[0]; // entry point
          input.BaseStream.Limit(Math.Min(textTableOffset, graphicsTableOffset));
          if (graphicsTableOffset < textTableOffset) {
             Log.Write("graphicsTableOffset < textTableOffset");

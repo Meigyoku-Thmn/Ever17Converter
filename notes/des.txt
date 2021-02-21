@@ -1,0 +1,28 @@
+lib:
+- thư viện esprima dùng để đọc js, không cần thiết nữa
+
+string_extractor:
+- Trích xuất hard-coded string từ phiên bản Tiếng Anh
+
+js2rpy:
+- chuyển đổi js sang rpy, không cần thiết nữa
+
+extractor:
+- trích xuất dữ liệu hình ảnh, âm thanh và screensaver
+- screensaver không cần thiết
+
+convertor:
+- chuyển đổi bytecode của game sang dạng thể hiện văn bản thô (gần như là lossless conversion)
+- dùng để tìm hiểu cấu trúc dữ liệu của script game
+
+clean_script:
+- suy luận và chuyển đổi dữ liệu văn bản thô sang dạng thể hiện javascript (lossy conversion)
+- dùng để tìm hiểu cấu trúc dữ liệu của script game
+- ban đầu định dùng để làm dữ liệu gốc để chuyển sang Renpy, tuy nhiên chủ project này đã đổi ý
+
+phương pháp mới:
+- bytecode => new lossless plain-text
+- bytecode => renpy, hoặc
+- new lossless plain-text => renpy
+- sử dụng cú pháp giống với batch script cho plain-text, tự parse, không dựa dẫm vào ngôn ngữ có sẵn nữa
+- chuyển toàn bộ hệ thống sang NodeJS để code đỡ bloat và dễ triển khai hơn

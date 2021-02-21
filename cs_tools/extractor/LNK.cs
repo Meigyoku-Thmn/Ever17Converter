@@ -40,7 +40,7 @@ namespace extractor {
             //Offset in file is relative to end of header
             long offset = 16 + 32 * recordsL + rawOffset;
             uint size = shiftedSize >> 1;
-            bool compressed = (shiftedSize & 1) == 1 ? true : false;
+            bool compressed = (shiftedSize & 1) == 1;
             records[n] = new Record(offset, filename, size, compressed);
          }
          return records;
