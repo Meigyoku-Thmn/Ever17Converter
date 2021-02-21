@@ -19,16 +19,12 @@ The LNK format stores multiple records, each record correctsponds to a file, the
 
 The records in saver.dat, sysvoice.dat, wallpaper.dat files are encrypted. Some records are compressed.
 
-<div style="float: right; margin-left: 20px">
-
 # Layout
 | Name of segment | Note               |
 | -               | -                  |
 | Header          |                    |
 | List of Indexes | `nRecord` elements |
 | List of Records | `nRecord` elements |
-
-</div>
 
 # File format
 
@@ -51,7 +47,7 @@ struct Index {
    char name[24];
 }
 ```
-- `relOffset` is the relative offset of the corresponding record in the archive.  Absolute offset is `sizeof(Header) + nRecords * sizeof(Index) + relOffset`;
+- `relOffset` is the relative offset of the corresponding record in the archive.<br>Absolute offset is `sizeof(Header) + nRecords * sizeof(Index) + relOffset`;
 - `attributes` is the attributes of the corresponding record in the archive;
 - `name` is the __file name__ of the corresponding record. This is a __null-terminated__ string, the length of this string doesn't exceed 24 bytes, including the terminating NULL.
 
@@ -160,6 +156,5 @@ static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0)
    }
    @out.Position = 0;
    return @out;
-}
 }
 ```
