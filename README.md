@@ -3,3 +3,5 @@ The goal of this project is to find a way to "convert" the Ever17 Visual Novel i
 Basically, I try to convert __everything__, even the tiniest visual effect.
 - Almost all significant opcodes are resolved;
 - Can extract everything.
+
+This is somewhat a "scratch" project, so don't expect it tidy.
