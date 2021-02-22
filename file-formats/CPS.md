@@ -3,7 +3,7 @@ This is the format for graphics in Ever17.
 
 Unfortunately, I still don't know much about this format, except some code I adapted from https://weeaboo.nl/ (thanks!)
 
-My code is horrible in performance, sorry.
+My code is horrible in performance, sorry, they are from my researching code about this game, so performance was not a priority.
 
 # How to decode CPS format
 (C#) Prepare a `Stream` and the `length` (in bytes), then pass them to the `ToPRT` method, this returns a decoded stream.
