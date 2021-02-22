@@ -1,7 +1,7 @@
 # About the WAF file format
 This is the format for audio in Ever17.
 
-Like the CPS format, I don't know much about this format. My code is adapted from ?
+Like the CPS format, I don't know much about this format. My code is adapted from https://github.com/vn-tools/arc_unpacker
 
 This format seems to be just a variant of the wav format. The codec is ?
 
