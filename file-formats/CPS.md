@@ -5,6 +5,8 @@ Unfortunately, I still don't know much about this format, except some code I ada
 
 My code is horrible in performance, sorry, they are from my researching code about this game, so performance was not a priority.
 
+The final PRT image format has an interesting thing: the [strides](https://docs.microsoft.com/en-us/windows/win32/medfound/image-stride). I think the format was made like that, so it can be copied directly to the graphics memory.
+
 # How to decode CPS format
 (C#) Prepare a `Stream` and the `length` (in bytes), then pass them to the `ToPRT` method, this returns a decoded stream.
 ```csharp
