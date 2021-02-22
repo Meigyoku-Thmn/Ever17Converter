@@ -37,9 +37,10 @@ struct Header {
 }
 ```
 - `magic` must be `"LNK\0"`;
+- `nRecord` is the number of records in archive;
 - `padding` is just padding, value doesn't matter.
 
-Right after that, there is an array that has `nRecords` pieces of record information (Index), corresponding to each records. Each piece of information has this structure:
+Right after that, there is an array that has `nRecords` pieces of record information (`Index indexes[nRecord]`), corresponding to each records. Each piece of information has this structure:
 ```c
 struct Index {
    uint32_t relOffset;
@@ -57,7 +58,7 @@ struct Index {
 
 ## How to know which record is encrypted
 - You check the __file name__, if the file name ends with `".wav"`, `".jpg"` or `".scr"` (by case-insensitive manner), then that record is encrypted;
-- Except records in script.dat which are non-encrypted;
+- Except records in script.dat which are non-encrypted.
 
 ## Algorithm to decrypt records
 ```csharp
@@ -84,7 +85,7 @@ static void DecryptInPlace(byte[] record, string name) {
 ```
 
 ## Algorithm to decompress records
-To decompress record, set the `_uncompressedLength` parameter to zero. This algorithm is also used as a step in the process of decoding `"*.cps"` files which is covered in another documentation. 
+To decompress record, pass zero to the `_uncompressedLength` parameter (This algorithm is also used as a step in the process of decoding `"*.cps"` files which is covered in another documentation).
 ```csharp
 static uint ExpectedMagic = Encoding.ASCII.GetBytes("lnd\0").ToUInt32();
 static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0) {
@@ -96,7 +97,9 @@ static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0)
       inp.Position += 4;
       uncompressedLength = din.ReadUInt32();
       inp.Position += 4;
-   } else uncompressedLength = _uncompressedLength;
+   } else {
+      uncompressedLength = _uncompressedLength;
+   }
    var @out = new MemoryStream(new byte[uncompressedLength], 0, (int)uncompressedLength, true, true);
    int w = 0;
    byte[] temp = new byte[16 << 10];
