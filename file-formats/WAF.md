@@ -3,7 +3,11 @@ This is the format for audio in Ever17.
 
 Like the CPS format, I don't know much about this format. My code is adapted from https://github.com/vn-tools/arc_unpacker
 
-This format seems to be just a variant of the wav format. The codec is ?
+This format seems to be just a variant of the wav format. The codec is "Microsoft ADPCM Format" (WAVE_FORMAT_ADPCM).
+
+Reference:
+* https://github.com/vn-tools/arc_unpacker/blob/master/src/dec/kid/waf_audio_decoder.cc
+* https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml
 
 # Decode the WAF file format
 (C#) Prepare a Stream and the length (in bytes), then pass them to the ToWAV method, this returns a wav stream, not much a decoding process, the content is copied as-is.
