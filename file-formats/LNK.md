@@ -20,11 +20,11 @@ The LNK format stores multiple records, each record correctsponds to a file, the
 The records in saver.dat, sysvoice.dat, wallpaper.dat files are encrypted. Some records are compressed.
 
 # Sequential Layout
-| Name of segment | Note                   |
-| -               | -                      |
-| Header          |                        |
-| List of Indexes | Has `nRecord` elements |
-| List of Records | Has `nRecord` elements |
+| Name of segment     | Note                              |
+| -                   | -                                 |
+| Header              |                                   |
+| List of **Index**es | Has `nRecord` **Index** elements  |
+| List of **Record**s | Has `nRecord` **Record** elements |
 
 # File format
 
