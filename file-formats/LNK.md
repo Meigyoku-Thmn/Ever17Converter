@@ -54,7 +54,7 @@ struct Index {
 
 ## About the attributes of record
 - If the least significant bit of it is set, then the corresponding record is __compressed__;
-- Take the `attributes` and shift it right, discarding the least significant bit, then you will get the size of the record: `attributes >> 1`.
+- Take the `attributes` and shift it right (discard the least significant bit), then you will get the size of the record: `attributes >> 1`.
 
 ## How to know which record is encrypted
 - You check the __file name__, if the file name ends with `".wav"`, `".jpg"` or `".scr"` (by case-insensitive manner), then that record is encrypted;
