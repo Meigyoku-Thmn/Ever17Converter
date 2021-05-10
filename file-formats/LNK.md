@@ -22,7 +22,7 @@ The records in saver.dat, sysvoice.dat, wallpaper.dat files are encrypted. Some 
 # Sequential Layout
 | Name of segment     | Note                              |
 | -                   | -                                 |
-| Header              |                                   |
+| **Header**          | Retrieve `nRecord` from here      |
 | List of **Index**es | Has `nRecord` **Index** elements  |
 | List of **Record**s | Has `nRecord` **Record** elements |
 
