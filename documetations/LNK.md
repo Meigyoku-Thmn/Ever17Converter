@@ -20,11 +20,11 @@ The LNK format stores multiple records, each record correctsponds to a file, the
 The records in saver.dat, sysvoice.dat, wallpaper.dat files are encrypted. Some records are compressed.
 
 # Sequential Layout
-| Name of segment     | Note                              |
-| -                   | -                                 |
-| **Header**          | Retrieve `nRecord` from here      |
-| List of **Index**es | Has `nRecord` **Index** elements  |
-| List of **Record**s | Has `nRecord` **Record** elements |
+| Name of segment  | Note |
+| -                | - |
+| **Header**       | Retrieve `nRecord` from here |
+| **Index** table  | Has `nRecord` **Index** elements  |
+| **Record** table | Has `nRecord` **Record** elements |
 
 # File format
 
@@ -85,7 +85,7 @@ static void DecryptInPlace(byte[] record, string name) {
 ```
 
 ## Algorithm to decompress records
-To decompress record, pass zero to the `_uncompressedLength` parameter (This algorithm is also used as a step in the process of decoding `"*.cps"` files which is covered in another documentation).
+To decompress record, pass a record stream to the `inp` parameter and zero to the `_uncompressedLength` parameter (This algorithm is also used as a step in the process of decoding `"*.cps"` files which is covered in another documentation).
 ```csharp
 static uint ExpectedMagic = Encoding.ASCII.GetBytes("lnd\0").ToUInt32();
 static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0) {
@@ -107,7 +107,7 @@ static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0)
       int b = din.ReadByte();
       if ((b & 0x80) != 0) {
          if ((b & 0x40) != 0) {
-            //Copy single byte k times
+            // Copy single byte k times
             int k = (b & 0x1f) + 2;
             if ((b & 0x20) != 0) {
                k += din.ReadByte() << 5;
@@ -118,11 +118,11 @@ static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0)
                w++;
             }
          } else {
-            //Copy previously decompressed bytes to output
+            // Copy previously decompressed bytes to output
             int offset = ((b & 0x03) << 8) + din.ReadByte() + 1;
             int count = ((b >> 2) & 0x0f) + 2;
             int readIndex = w - offset;
-            //Can't copy multiple bytes at a time, readIndex+count may be greater than the initial write pos
+            // Can't copy multiple bytes at a time, readIndex+count may be greater than the initial write pos
             for (int n = 0; n < count && w < uncompressedLength; n++) {
                var currentPos = @out.Position;
                @out.Position = readIndex + n;
@@ -134,7 +134,7 @@ static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0)
          }
       } else {
          if ((b & 0x40) != 0) {
-            //Copy byte sequence k times
+            // Copy byte sequence k times
             int count = (b & 0x3f) + 2;
             int k = din.ReadByte() + 1;
             din.Read(temp, 0, count);
@@ -145,7 +145,7 @@ static MemoryStream DecompressLND(this Stream inp, uint _uncompressedLength = 0)
                }
             }
          } else {
-            //Copy byte sequence
+            // Copy byte sequence
             int count = (b & 0x1f) + 1;
             if ((b & 0x20) != 0) {
                count += din.ReadByte() << 5;
