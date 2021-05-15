@@ -75,6 +75,8 @@ I believe the game doesn't even try to validate this, or anything, because this 
 
 When jumping into a script, the game take the first offset to find the starting place for execution.
 
+The last index in this segment doesn't point to anywhere usable. It is not even a valid offset. Still don't understand what it is.
+
 ## Main script
 (No. 3) is a sequence of main opcodes. Click for [More info](#understanding-about-the-idea-of-this-file-format).
 
