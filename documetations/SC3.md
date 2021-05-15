@@ -51,7 +51,6 @@ Main opcodes and textual opcodes and how they works are documented separately in
 | 6   | Textual script             | A sequence of textual opcodes, indexed by No. 4 |
 | 7   | Background names           | A sequence of null-terminated background file names, pointed by No. 5 |
 
-
 # File format
 
 ## Header
@@ -67,10 +66,40 @@ struct Header {
 - `textualScriptOffset` is the absolute offset that points to the textual opcode index table;
 - `backgroundOffset` is the absolute offset that points to the background index table.
 
-(Not done yet)
+`textualScriptOffset` and `backgroundOffset` can point to [EOF](https://en.wikipedia.org/wiki/End-of-file) (equal to the size of script file, not -1), that means (No. 4) with (No. 6) and (No. 5) with (No. 7) are zero-lengthed respectively. There are only 3 files has this case which both offsets point to EOF.
+
+I believe the game doesn't even try to validate this, or anything, because this file format is meant to be interpreted for script execution, and it's the job of a certain compiler (which the devs used to generate script files) to validate.
 
 ## Main script index table
-No. 2 is the main script index table, this is an array of offset
+(No. 2) is the main script index table, this is an array of 4-byte offsets. Each offset points to certain opcode in (No. 3). Read the [last section](#understanding-about-the-idea-of-this-file-format) to understand more about this.
+
+When jumping into a script, the game take the first offset to find the starting place for execution.
+
+## Main script
+(No. 3) is a sequence of main opcodes. Click for [More info](#understanding-about-the-idea-of-this-file-format).
+
+This segment's size is a multiple of 4. Otherwise, zero byte is padded to the left of it to fulfil the size. I don't know is this required or not.
+
+Indexes in (No. 2) never point to padded bytes.
+
+So a script file can have (No. 3) begining like this:
+```
+00 00|fe 28 0a a4 b0 14 ...
+^  ^ |^
+(pad)|first opcode 
+```
+
+## Textual script index table
+(No. 4) is an array of 4-byte offsets. Each offset points to certain textual subroutine in (No. 6). Click for [More info](#understanding-about-the-idea-of-this-file-format).
+
+## Background index table
+(No. 5) is a array of 4-byte offsets. Each offset points to certain null-terminated string in (No. 7). Click for [More info](#understanding-about-the-idea-of-this-file-format).
+
+## Textual script
+(No. 6) is a sequence of textual subroutines. Each subroutine is a sequence of textual opcodes. Click for [More info](#understanding-about-the-idea-of-this-file-format).
+
+## Background names
+(No. 7) A sequence of null-terminated background file names. Click for [More info](#understanding-about-the-idea-of-this-file-format).
 
 # Understanding about the idea of this file format
 *(I don't know how to do this properly, so I just leave critical points)*
@@ -99,4 +128,43 @@ This game also uses a background segment (No. 7), it's a sequence of [null-termi
 
 Somewhat similar to label, some opcodes access and load background image by accepting an ordinal number that points to a background index that points to a background name. You can say that (No. 7) is a [string pool](https://en.wikipedia.org/wiki/String_interning), it exists because backgrounds are reused a lot in scripts.
 
-(Maybe not done yet)
+The textual script segment (No. 6) is a sequence of subroutines, each subroutine is a sequence of textual opcodes. Each subroutine is indexed by the textual script index table (No. 4). The main script calls into a particular subroutine by looking it up on the index table, the same way as label in main script.
+
+Some script files don't have (No. 4) with (No. 6) or (No. 5) with (No. 7). Those segments are zero-lengthed in that case. The hint is that `textualScriptOffset` and/or `backgroundOffset` point to EOF of file. 
+
+There is no specified length for any segments nor any subroutines, but you can easily calculate it for each segment and each subroutine.
+
+# How to calculate the size of each segment
+## Size of main script index table segment
+The first offset of (No. 2) always point to the first opcode in (No. 3). So, at first glance, the size can be calculated like this:
+```c
+int sizeOfNo2 = getFirstOffset() - sizeof(Header); // 12 byte Header
+```
+But in some script file, (No. 3) is padded, so you have to calculate it like this:
+```c
+int startOffset = getFirstOffset();
+int no3StartPos = startOffset - (startOffset % 4);
+int sizeOfNo2 = no3StartPos - sizeof(Header);
+```
+## Size of main script segment
+```c
+int sizeOfNo3 = textualScriptOffset - no3StartPos;
+```
+## Size of textual script index table segment
+```c
+int sizeOfNo4 = backgroundOffset - textualScriptOffset;
+```
+## Size of background index table segment
+The first offset of (No. 4) always point to the first subroutine in (No. 6). So:
+```c
+int sizeOfNo5 = getFirstSubroutineOffset() - backgroundOffset;
+```
+## Size of textual script segment
+The first offset of (No. 5) always point to the first null-terminated string in (No. 7). So:
+```c
+int sizeOfNo6 = getFirstStringOffset() - getFirstSubroutineOffset();
+```
+## Size of Background names segment
+```c
+int sizeOfNo7 = getFileSize() - getFirstStringOffset();
+```
