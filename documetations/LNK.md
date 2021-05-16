@@ -14,7 +14,6 @@ The following files use the LNK file format:
 - `voice.dat` (contains voices for every dialogues);
 - `wallpaper.dat` (contains bonus wallpapers).
 
-
 The LNK format stores multiple records, each record correctsponds to a file, there is no folder.
 
 The records in saver.dat, sysvoice.dat, wallpaper.dat files are encrypted. Some records are compressed.

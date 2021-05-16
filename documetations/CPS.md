@@ -1,7 +1,7 @@
 # About CPS file format
 This is the format for graphics in Ever17.
 
-Unfortunately, I still don't know much about this format, except some code I adapted from https://weeaboo.nl/ (thanks!)
+Unfortunately, I still don't know much about this format, except some code I adapted from https://weeaboo.nl/ (thanks!).
 
 My code is horrible in performance, sorry, they are from my researching code about this game, so performance was not a priority.
 
@@ -11,6 +11,7 @@ The final PRT image format has an interesting thing: the [strides](https://docs.
 (C#) Prepare a `Stream` and the `length` (in bytes), then pass them to the `ToPRT` method, this returns a decoded stream.
 ```csharp
 static readonly uint ExpectedMagic = Encoding.ASCII.GetBytes("CPS\0").ToUInt32();
+// this decoding method relies on the integer overflow behavior of C#
 public static MemoryStream ToPRT(this Stream inp, long length = -1) {
    var lastPos = inp.Position;
    var inb = new BinaryReader(inp);
@@ -40,6 +41,7 @@ public static MemoryStream ToPRT(this Stream inp, long length = -1) {
 static bool HasLeft(this Stream @this) {
    return @this.Position < @this.Length;
 }
+// this decrypting method relies on the integer overflow behavior of C#
 static void DecryptInPlace(byte[] input, uint size_comp, uint offset) {
    var inputStream = new BinaryReader(new MemoryStream(input));
    var outputStream = new BinaryWriter(new MemoryStream(input, true));

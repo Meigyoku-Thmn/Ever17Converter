@@ -52,7 +52,7 @@ namespace extractor
                 inputFileStream.Close();
                 Parallel.ForEach(
                    Partitioner.Create(records, EnumerablePartitionerOptions.NoBuffering),
-                   new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount },
+                   new ParallelOptions { MaxDegreeOfParallelism = 1 },
                    (record) => {
                        Console.WriteLine(record.filename);
                        var outFileName = record.filename;

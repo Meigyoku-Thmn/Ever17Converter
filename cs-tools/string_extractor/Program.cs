@@ -1,4 +1,4 @@
-﻿using PeNet.Structures;
+﻿using PeNet;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,7 +22,7 @@ namespace string_extractor {
          }
       }
       // http://www.rohitab.com/discuss/topic/40291-how-to-convert-file-offset-to-va-in-pe-file/
-      static ulong VAToFileOffset(ulong dwVirtAddr, PeNet.PeFile peFile) {
+      static ulong VAToFileOffset(ulong dwVirtAddr, PeFile peFile) {
          var secHdrs = peFile.ImageSectionHeaders;
          var dwImageBase = peFile.ImageNtHeaders.OptionalHeader.ImageBase;
          ulong dwReturn = dwVirtAddr;
@@ -86,7 +86,7 @@ namespace string_extractor {
             Console.WriteLine("Wrong exe file!");
             Environment.Exit(-1);
          }
-         var targetHeader = new PeNet.PeFile(targetPath);
+         var targetHeader = new PeFile(targetPath);
          var target = new BinaryReader(File.OpenRead(targetPath));
 
          var scut_pointers_offset = 0x00040E88;

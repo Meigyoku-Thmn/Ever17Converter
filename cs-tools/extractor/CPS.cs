@@ -16,7 +16,7 @@ namespace extractor {
 
          var size_comp = inb.ReadUInt32();
          var version = inb.ReadUInt16();
-         if (version != 0x66) throw new IOException($"Unknown CPS file version (0x{version.ToString("X")})");
+         if (version != 0x66) throw new IOException($"Unknown CPS file version (0x{version:X})");
          var comprType = inb.ReadUInt16();
          var size_orig = inb.ReadUInt32();
 
