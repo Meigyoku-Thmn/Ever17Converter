@@ -16,7 +16,9 @@ The following files use the LNK file format:
 
 The LNK format stores multiple records, each record correctsponds to a file, there is no folder.
 
-The records in saver.dat, sysvoice.dat, wallpaper.dat files are encrypted. Some records are compressed.
+The records in `saver.dat`, `sysvoice.dat`, `wallpaper.dat` files are encrypted.
+
+Some records are compressed.
 
 # Sequential Layout
 | Name of segment  | Note |
