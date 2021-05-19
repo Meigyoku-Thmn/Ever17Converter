@@ -5,3 +5,5 @@ Basically, I try to convert __everything__, even the tiniest visual effect.
 - Can extract everything.
 
 This is somewhat a "scratch" project, so don't expect it tidy. I will make a new repo and delete this one once I finish this.
+
+Link to the documentation so far: https://github.com/Meigyoku-Thmn/Ever17Converter/tree/master/documetations
