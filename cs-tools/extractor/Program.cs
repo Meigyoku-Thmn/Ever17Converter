@@ -37,8 +37,8 @@ namespace extractor
             }
             ExtractFolder(src, dst, inputNames);
         }
-        static readonly bool use_ffmpeg = true;
-        static readonly bool use_png_optimizer = true;
+        static readonly bool use_ffmpeg = false;
+        static readonly bool use_png_optimizer = false;
         public static void ExtractFolder(string srcDirName, string dstDirName, string[] inputNames)
         {
             var s1 = Stopwatch.StartNew();

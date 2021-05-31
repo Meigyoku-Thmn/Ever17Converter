@@ -1,0 +1,60 @@
+0x00: noop
+0x0a: gotoif
+0x26: switch
+0xff: calltext
+0xfe: varop
+0x10: command
+0x05: sleep
+0x28: l_unk28
+0x19: l_unk19
+0x12: l_unk12
+0x13: l_unk13
+0x06: l_unk06
+0x0d: l_unk0d
+0x15: l_unk15
+
+
+noop:
+không có tham số
+
+gotoif:
+01 <expression> <operator> 01 <expression> 01 00 <2-byte ordinal number>
+expression không có padding
+
+switch:
+<expression> 00
+[00 27 <expression> 00 00 <2-byte ordinal number>] lặp lại nhiều lần đến khi nào không còn thấy [00 27] nữa
+
+calltext:
+<2-byte ordinal number>
+
+varop:
+<expression> <2-byte operator> <expression (1)> [2-byte padding (*)]
+(*) Nếu (1) là (c0 -> cf) expression thì không có padding
+
+command:
+<opcode>
+
+sleep: 
+<expression> 00 00
+
+l_unk28:
+không có tham số
+
+l_unk19:
+<expression> 00 00 <expression> 00 00
+
+l_unk12:
+<expression> 00 00
+
+l_unk13:
+<expression> 00 00
+
+l_unk06:
+không có tham số
+
+l_unk0d:
+<expression> 00 00 <2 bytes>
+
+l_unk15:
+<1 byte> <expression> 00 00 <expression> 00 00 <2 bytes>

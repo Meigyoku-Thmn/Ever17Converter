@@ -13,16 +13,16 @@ namespace converter {
 
       public override string ToString() => name;
 
-      public static readonly StrOpcode waitForClick = new StrOpcode(0x2);
-      public static readonly StrOpcode clearText = new StrOpcode(0x3);
-      public static readonly StrOpcode delay = new StrOpcode(0x4, 1);
-      public static readonly StrOpcode appendText = new StrOpcode(0x5, 2);
-      public static readonly StrOpcode choice = new StrOpcode(0xB, 1);
-      public static readonly StrOpcode waitForSound = new StrOpcode(0xC, 0);
-      public static readonly StrOpcode sound = new StrOpcode(0xD, 0);
-      public static readonly StrOpcode marker = new StrOpcode(0xE, 0);
-      public static readonly StrOpcode nextPage = new StrOpcode(0x10, 1);
-      public static readonly StrOpcode bigChar = new StrOpcode(0x11, 0);
+      public static readonly StrOpcode waitForClick = new(0x2);
+      public static readonly StrOpcode clearText = new(0x3);
+      public static readonly StrOpcode delay = new(0x4, 1);
+      public static readonly StrOpcode appendText = new(0x5, 2);
+      public static readonly StrOpcode choice = new(0xB, 1);
+      public static readonly StrOpcode waitForSound = new(0xC, 0);
+      public static readonly StrOpcode sound = new(0xD, 0);
+      public static readonly StrOpcode marker = new(0xE, 0);
+      public static readonly StrOpcode nextPage = new(0x10, 1);
+      public static readonly StrOpcode bigChar = new(0x11, 0);
 
       private StrOpcode(int id) : this(id, 0) { }
       private StrOpcode(int id, int args, string name = null) {

@@ -1,0 +1,52 @@
+c0 -> cf: configuration for mono overlay, screen shaking
+a0 -> af: constant number from -4096 to -1
+b0 -> bf: constant number from 0 to 4095
+80 -> 8f: constant number from 0 to 15
+e0: rbg
+
+assignment operator: 2 byte
+   0x14 -> :=
+   0x17 -> +=
+
+comparison operator: 2 byte
+   0x0c -> ==
+   0x0d -> !=
+   0x0e -> <=
+   0x0f -> >=
+   0x10 -> <
+   0x11 -> >
+
+c0 -> cf:
+arg1 = mode - 0xc0
+arg2 = read 8
+arg3 = read 8
+arg4 = read 8
+arg5 = read 8
+
+a0 -> af:
+a = read 8
+value = 256 * (mode - 0xA0) + a
+
+b0 -> bf:
+a = read 8
+value = 256 * (mode - 0xBF) + (a - 0x100)
+
+80 -> 8f:
+value = mode - 0x80
+
+e0:
+r = read 8
+g = read 8
+b = read 8
+
+28 0a: variable
+<1-byte kind> <1-byte name> 14
+kind is 0xa0 -> light/torch variable
+kind is 0xa2 -> effect variable
+kind is 0xa3 -> system variable
+kind is 0xa4 ->
+   name in (0, 0x1f] -> global variable
+   name else -> local variable
+
+33 0a: random generating function call
+<expression> 14 -> random(<expression>)

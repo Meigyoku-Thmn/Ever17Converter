@@ -46,7 +46,7 @@ namespace extractor {
             if (height2 != 0) height = height2;
          }
 
-         var stride = (((width * bitDepth / 8) + 3) / 4) * 4;
+         var stride = ((width * bitDepth / 8) + 3) / 4 * 4;
 
          inb.BaseStream.Position = paletteOffset;
          Color[] palette = null;
