@@ -47,9 +47,9 @@ Main opcodes and textual opcodes and how they works are documented separately in
 | 2   | Main script index table    | The first index is the entry point of a script file |
 | 3   | Main script                | A sequence of main opcodes, indexed by No. 2 |
 | 4   | Textual script index table | |
-| 5   | Background index table     | |
+| 5   | Image index table          | |
 | 6   | Textual script             | A sequence of textual opcodes, indexed by No. 4 |
-| 7   | Background names           | A sequence of null-terminated background file names, pointed by No. 5 |
+| 7   | Image names                | A sequence of null-terminated image file names, pointed by No. 5 |
 
 # File format
 
@@ -64,7 +64,7 @@ struct Header {
 ```
 - `magic` must be `"SC3\0"`;
 - `textualScriptOffset` is the absolute offset that points to the textual opcode index table;
-- `backgroundOffset` is the absolute offset that points to the background index table.
+- `backgroundOffset` is the absolute offset that points to the image index table.
 
 `textualScriptOffset` and `backgroundOffset` can point to [EOF](https://en.wikipedia.org/wiki/End-of-file) (equal to the size of script file, not -1), that means (No. 4) with (No. 6) and (No. 5) with (No. 7) are zero-lengthed respectively. There are only 3 files has this case which both offsets point to EOF.
 
@@ -94,14 +94,14 @@ So a script file can have (No. 3) begining like this:
 ## Textual script index table
 (No. 4) is an array of 4-byte offsets. Each offset points to certain textual subroutine in (No. 6). Click for [More info](#understanding-about-the-idea-of-this-file-format).
 
-## Background index table
+## Image index table
 (No. 5) is a array of 4-byte offsets. Each offset points to certain null-terminated string in (No. 7). Click for [More info](#understanding-about-the-idea-of-this-file-format).
 
 ## Textual script
 (No. 6) is a sequence of textual subroutines. Each subroutine is a sequence of textual opcodes. Click for [More info](#understanding-about-the-idea-of-this-file-format).
 
-## Background names
-(No. 7) A sequence of null-terminated background file names. Click for [More info](#understanding-about-the-idea-of-this-file-format).
+## Image names
+(No. 7) A sequence of null-terminated image file names. Click for [More info](#understanding-about-the-idea-of-this-file-format).
 
 # Understanding about the idea of this file format
 *(I don't know how to do this properly, so I just leave critical points)*
@@ -126,9 +126,9 @@ The main script segment (No. 3) is really a sequence of main opcodes, while the 
 
 A few opcodes of main script has the same effect as a "[goto](https://en.wikipedia.org/wiki/Goto)" statment that can jump to other opcodes on the main script. They accept an ordinal number that point to a label, the game can read the label to know where to jump to (relative jump by [jump table](https://en.wikipedia.org/wiki/Branch_table));
 
-This game also uses a background segment (No. 7), it's a sequence of [null-terminated strings](https://en.wikipedia.org/wiki/Null-terminated_string), each string is a background file name pointed by a corresponding index in (No. 5).
+This game also uses an image segment (No. 7), it's a sequence of [null-terminated strings](https://en.wikipedia.org/wiki/Null-terminated_string), each string is an image file name pointed by a corresponding index in (No. 5).
 
-Somewhat similar to label, some opcodes access and load background image by accepting an ordinal number that points to a background index that points to a background name. You can say that (No. 7) is a [string pool](https://en.wikipedia.org/wiki/String_interning), it exists because backgrounds are reused a lot in scripts.
+Somewhat similar to label, some opcodes access and load image by accepting an ordinal number that points to a index that points to an image name. You can say that (No. 7) is a [string pool](https://en.wikipedia.org/wiki/String_interning), it exists because images are reused a lot in scripts (Although it was done poorly as there are some duplicated image names).
 
 The textual script segment (No. 6) is a sequence of subroutines, each subroutine is a sequence of textual opcodes. Each subroutine is indexed by the textual script index table (No. 4). The main script calls into a particular subroutine by looking it up on the index table, the same way as label in main script.
 
@@ -156,7 +156,7 @@ int sizeOfNo3 = textualScriptOffset - no3StartPos;
 ```c
 int sizeOfNo4 = backgroundOffset - textualScriptOffset;
 ```
-## Size of background index table segment
+## Size of image index table segment
 The first offset of (No. 4) always point to the first subroutine in (No. 6). So:
 ```c
 int sizeOfNo5 = getFirstSubroutineOffset() - backgroundOffset;
@@ -166,7 +166,7 @@ The first offset of (No. 5) always point to the first null-terminated string in 
 ```c
 int sizeOfNo6 = getFirstStringOffset() - getFirstSubroutineOffset();
 ```
-## Size of Background names segment
+## Size of image names segment
 ```c
 int sizeOfNo7 = getFileSize() - getFirstStringOffset();
 ```
