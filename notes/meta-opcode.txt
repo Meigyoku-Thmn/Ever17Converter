@@ -29,8 +29,9 @@ calltext:
 <2-byte ordinal number>
 
 varop:
-<expression> <2-byte operator> <expression (1)> [2-byte padding (*)]
+<expression> <1-byte operator> 00 <expression (1)> [2-byte padding (*)]
 (*) Nếu (1) là (c0 -> cf) expression thì không có padding
+(*) Nếu (1) là variable expression thì padding 1 byte
 
 command:
 <opcode>
