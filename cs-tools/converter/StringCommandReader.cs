@@ -141,7 +141,7 @@ namespace converter {
             readCharTemp[n] = (byte)Read();
          }
 
-         var rs = Encoding.GetEncoding(ScriptConverter.InputEncoding).GetString(readCharTemp, 0, numBytes);
+         var rs = ScriptConverter.CP1252.GetString(readCharTemp, 0, numBytes);
          switch (rs) {
             case "①": // Circled Number One
                rs = "{💧💧}";

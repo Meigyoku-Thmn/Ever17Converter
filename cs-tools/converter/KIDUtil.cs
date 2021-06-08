@@ -44,7 +44,7 @@ namespace converter {
          return MakeString(bytes, 0, bytes.Length);
       }
       public static string MakeString(byte[] bytes, int off, int len) {
-         return Encoding.GetEncoding(ScriptConverter.InputEncoding).GetString(bytes, off, len);
+         return ScriptConverter.CP1252.GetString(bytes, off, len);
       }
       public static string GetVarname(string v) {
          return "v_" + v;

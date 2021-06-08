@@ -9,12 +9,11 @@ namespace converter
 {
     class ScriptConverter
     {
-        static internal string InputEncoding = "shift_jis";
+        static internal Encoding CP1252 = CodePagesEncodingProvider.Instance.GetEncoding(1252);
         static void Main(string[] args)
         {
             var scriptFile = new DirectoryInfo(args[0]);
             var dstFolder = new DirectoryInfo(args[1]);
-            InputEncoding = args.ElementAtOrDefault(2) ?? InputEncoding;
             try
             {
                 Log.Reset();
@@ -572,7 +571,7 @@ namespace converter
             }
             else if (op == Opcode._switch)
             {
-                StringBuilder sb = new StringBuilder();
+                var sb = new StringBuilder();
                 sb.Append($"{op}{NewLine}");
 
                 //Conditional?
@@ -582,7 +581,7 @@ namespace converter
                     Log.Write($"  [Unknown] Unexpectedly came across a weird opcode ({condOp2}) during a {op} at " + string.Format("{0:x8}", currentOpcodeOffset));
                 }
 
-                StringBuilder varopBuffer = new StringBuilder();
+                var varopBuffer = new StringBuilder();
                 varopBuffer.Append("switch_varop ");
                 {
                     int arg0 = Read();

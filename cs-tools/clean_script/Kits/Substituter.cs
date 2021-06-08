@@ -2,18 +2,15 @@ using System;
 using System.Collections.Generic;
 
 partial class Kits {
-   static Kits() {
-      Kits.SubstituteVar = Kits.SubstituteVar.Memoize();
-   }
    public static string FixJPTextInEnVer(string input) {
       if (input == "‚k‚qQ‚`‚O‚O‚Ì’l‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB") {
          input = "ＬＲ＿Ａ００の値が正しくありません。";
       }
       return input;
    }
-   public static Func<string, string, (string var, Dictionary<string, string> @enum)> SubstituteVar = (type, var) => {
+   public static (string var, Dictionary<string, string> @enum) SubstituteVar(string type, string var) {
       string rs = var;
-      Dictionary<string, string> @enum = new Dictionary<string, string>();
+      var @enum = new Dictionary<string, string>();
       switch (type) {
          case "g_":
             switch (var) {
@@ -280,5 +277,5 @@ partial class Kits {
 
       }
       return (rs, @enum);
-   };
+   }
 }
